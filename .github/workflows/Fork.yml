@@ -13,7 +13,7 @@ permissions:
 
 
 jobs:
-  Fork-FLITER-list:
+  Fork-Fliter-list:
     runs-on: ubuntu-latest
     env:
       TZ: 'Asia/Shanghai'
