@@ -10,7 +10,7 @@ on:
 permissions:
   actions: write  # 确保有权限写入工作流
   contents: write  # 确保有权更改内容
-  workflows: write  # 允许删除工作流运行
+
 
 jobs:
   Fork-FLITER-list:
