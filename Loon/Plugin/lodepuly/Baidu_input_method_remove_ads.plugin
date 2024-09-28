@@ -25,7 +25,7 @@
 ^https:\/\/mime\.baidu\.com\/v5\/(fb\/st\?logtype|(notiv3|cellloc_noti|noti_cloudswitch_noti)\/info) reject-dict
 
 [Script]
-http-response ^https?:\/\/mime\.baidu\.com\/(imrobot\/v1\/pub\/relation\/get_robot_list|v5\/custom_page\/(layout|getdata)) script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Baidu_input_method/Baidu_input_method_remove_ads.js, requires-body = true, tag = 百度输入法去广告
+http-response ^https?:\/\/mime\.baidu\.com\/(imrobot\/v1\/pub\/relation\/get_robot_list|v5\/custom_page\/(layout|getdata)) script-path = https://raw.githubusercontent.com/Moli-X/Tool/X/Loon/Script/lodepuly/Baidu_input_method/Baidu_input_method_remove_ads.js, requires-body = true, tag = 百度输入法去广告
 
 [MitM]
 hostname = imeres.baidu.com, mbd.baidu.com, mime.baidu.com

@@ -20,10 +20,10 @@
 
 [Script]
 # 主页推广
-http-response ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/homeInit\/v3 script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/PICC_Insurance/PICC_Insurance_remove_ads.js, requires-body = true, tag = 移除主页推广
+http-response ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/homeInit\/v3 script-path = https://raw.githubusercontent.com/Moli-X/Tool/X/Loon/Script/lodepuly/PICC_Insurance/PICC_Insurance_remove_ads.js, requires-body = true, tag = 移除主页推广
 
 # 我的页面
-http-response ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/v3 script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/PICC_Insurance/PICC_Insurance_remove_ads.js, requires-body = true, tag = 移除我的页面推广
+http-response ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/v3 script-path = https://raw.githubusercontent.com/Moli-X/Tool/X/Loon/Script/lodepuly/PICC_Insurance/PICC_Insurance_remove_ads.js, requires-body = true, tag = 移除我的页面推广
 
 [MitM]
 hostname = zgrb.epicc.com.cn
