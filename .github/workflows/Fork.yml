@@ -640,8 +640,7 @@ jobs:
         for file in *.plugin; do
           if [ "$file" ] ; then
             # 修改脚本链接
-            sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/R
-Moli-X\/Tool\/X\/Loon\/Script\/lodepuly/g' "$file"
+            sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/Moli-X\/Tool\/X\/Loon\/Script\/lodepuly/g' "$file"
           else
             echo "$file not found."
           fi
