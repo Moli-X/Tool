@@ -1,25 +1,39 @@
-# 内容：Wechat 微信
-# 数量：22条
-USER-AGENT,MicroMessenger*
-USER-AGENT,WeChat*
+# NAME: WeChat
+# DOMAIN: 8
+# DOMAIN-SUFFIX: 22
+# IP-ASN: 1
+# USER-AGENT: 2
+# TOTAL: 33
+DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
+DOMAIN,btrace.qq.com
+DOMAIN,dldir1.qq.com
+DOMAIN,slife.xy-asia.com
+DOMAIN,soup.v.qq.com
+DOMAIN,vweixinf.tc.qq.com
+DOMAIN,weixin110.qq.com
+DOMAIN,wup.imtt.qq.com
+DOMAIN-SUFFIX,iot-tencent.com
+DOMAIN-SUFFIX,lbs.gtimg.com
+DOMAIN-SUFFIX,map.qq.com
 DOMAIN-SUFFIX,qlogo.cn
 DOMAIN-SUFFIX,qpic.cn
-DOMAIN-SUFFIX,weixin.qq.com
-DOMAIN-SUFFIX,wxapp.tc.qq.com
 DOMAIN-SUFFIX,servicewechat.com
 DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,up-hl.3g.qq.com
+DOMAIN-SUFFIX,vweixinthumb.tc.qq.com
 DOMAIN-SUFFIX,wechat.com
 DOMAIN-SUFFIX,wechatlegal.net
+DOMAIN-SUFFIX,wechatos.net
 DOMAIN-SUFFIX,wechatpay.com
 DOMAIN-SUFFIX,weixin.com
+DOMAIN-SUFFIX,weixin.qq.com
 DOMAIN-SUFFIX,weixinbridge.com
 DOMAIN-SUFFIX,weixinsxy.com
-IP-CIDR,101.32.104.4/32,no-resolve
-IP-CIDR,101.32.104.41/32,no-resolve
-IP-CIDR,101.32.104.56/32,no-resolve
-IP-CIDR,101.32.118.25/32,no-resolve
-IP-CIDR,101.32.133.16/32,no-resolve
-IP-CIDR,101.32.133.53/32,no-resolve
-IP-CIDR,101.32.133.209/32,no-resolve
-IP-CIDR,129.226.3.47/32,no-resolve
-IP-CIDR,129.226.107.244/32,no-resolve
+DOMAIN-SUFFIX,wx.gtimg.com
+DOMAIN-SUFFIX,wx.qq.com
+DOMAIN-SUFFIX,wxapp.tc.qq.com
+DOMAIN-SUFFIX,wxs.qq.com
+DOMAIN-SUFFIX,yun-hl.3g.qq.com
+USER-AGENT,MicroMessenger*
+USER-AGENT,WeChat*
+IP-ASN,132203,no-resolve

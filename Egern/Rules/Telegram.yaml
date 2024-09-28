@@ -1,8 +1,9 @@
 no_resolve: true
 domain_set:
-- events-gateway.ncdev.site
-- api.mixpanel.com
+- api.imem.app
+- api.swiftgram.app
 domain_suffix_set:
+- cdn-telegram.org
 - comments.app
 - contest.com
 - graph.org
@@ -15,7 +16,6 @@ domain_suffix_set:
 - telega.one
 - telegra.ph
 - telegram-cdn.org
-- cdn-telegram.org
 - telegram.dog
 - telegram.me
 - telegram.org
@@ -25,34 +25,23 @@ domain_suffix_set:
 - tg.dev
 - tx.me
 - usercontent.dev
-- walletbot.me
-- imem.app
-- swiftgram.app
-- iturrit.com
 domain_keyword_set:
-- telegram
 - nicegram
 domain_regex_set:
 ip_cidr_set:
-- 91.108.12.0/22
-- 91.108.20.0/22
-- 91.105.192.0/23
-- 185.76.151.0/24
+- 109.239.140.0/24
 - 149.154.160.0/20
-- 91.108.4.0/22
-- 91.108.8.0/22
-- 91.108.16.0/22
-- 91.108.56.0/22
+- 5.28.192.0/18
+- 91.108.0.0/16
 ip_cidr6_set:
-- 2a0a:f280::/32
-- 2001:b28:f23c::/48
-- 2001:b28:f23d::/48
 - 2001:67c:4e8::/48
+- 2001:b28:f23c::/47
 - 2001:b28:f23f::/48
+- 2a0a:f280::/29
 asn_set:
-- '59930'
-- '44907'
 - '211157'
-- '62041'
+- '44907'
+- '59930'
 - '62014'
+- '62041'
 url_regex_set:
