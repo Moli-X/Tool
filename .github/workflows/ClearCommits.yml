@@ -6,8 +6,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  actions: read  # 允许读取 Action
-  contents: write  # 允许写入内容  
+  actions: write  # 确保有权限写入工作流
+  contents: write  # 确保有权更改内容
+  workflows: write  # 允许删除工作流运行
 
 jobs:
   build:
