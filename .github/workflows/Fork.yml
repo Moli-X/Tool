@@ -1146,44 +1146,18 @@ jobs:
         done
        
 ###### Commit
-    # - name: Add and Commits
-      # run: |
-        # cd Tool-repo
-        # if [[ -n $(git status -s) ]]; then
-          # git config --local user.email "action@github.com"
-          # git config --local user.name "GitHub Action"
-          # git add .
-          # git commit -m "Auto Update $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')"
-          # git push origin HEAD
-        # else
-          # echo "No changes to commit."
-        # fi
-    - name: Add and Commit Changes
+    - name: Add and Commits
       run: |
-        cd Tool-repo  # 确保在正确的目录
-        git add .  # 添加所有更改到暂存区
-        git commit -m "Auto Update $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')" || echo "No changes to commit."  # 尝试提交，如果没有变更则输出信息
-        git push origin HEAD:$(git rev-parse --abbrev-ref HEAD)  # 将更改推送到当前分支
-
-    - name: Check Git Configuration
-      run: |
-        git config --list
-    
-    - name: Configure Git
-      run: |
-        cd Tool-repo  # 进入目标目录
-        git config --local user.email "action@github.com"  # 设置邮箱
-        git config --local user.name "GitHub Action"  # 设置用户名
-        git config --local --list  # 输出当前配置确认是否设置成功
-
-    - name: Check Git Version
-      run: git --version
-
-    - name: Debugging Info
-      run: |
-        echo "Current branch: $(git rev-parse --abbrev-ref HEAD)"
-        echo "Staged changes:"
-        git diff --cached
+        cd Tool-repo
+        if [[ -n $(git status -s) ]]; then
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Auto Update $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')"
+          git push origin HEAD
+        else
+          echo "No changes to commit."
+        fi
 
 
     - name: Cleanup Workflow
