@@ -559,6 +559,8 @@ jobs:
         curl -L -o Tool-repo/Loon/Rules/WeChat.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Wechat.list"
         curl -L -o Tool-repo/Loon/Rules/ChinaDomain.list "https://ruleset.skk.moe/List/non_ip/domestic.conf"
         curl -L -o Tool-repo/Loon/Rules/ChinaASN.list "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+        # 抖音 
+        curl -L -o Tool-repo/Loon/Rules/DouYin.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/DouYin/DouYin.list"
         # 游戏规则 
         curl -L -o Tool-repo/Loon/Rules/Game.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list"
         curl -L -o Tool-repo/Loon/Rules/Steam.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list"
