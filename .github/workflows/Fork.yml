@@ -8,8 +8,8 @@ on:
     - cron: "30 * * * *"
 
 permissions:
-  actions: write  # 确保有权限写入工作流
-  contents: write  # 确保有权更改内容
+  actions: write  
+  contents: write  
 
 
 jobs:
@@ -40,6 +40,7 @@ jobs:
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
 
+        # 苹果
         curl -L -o Tool-repo/Loon/Rules/APNs.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Loon/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
         curl -L -o Tool-repo/Loon/Rules/AppStore.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
@@ -152,6 +153,7 @@ jobs:
                    -e '/# UPDATED:/d' \
                    -e '/404: Not Found/d' \
                    "$file"
+
             # 如果为IP规则且不包含no-resolve 则添加no-resolve
             awk '/^IP-/ && !/,no-resolve/ {print $0",no-resolve"; next} {print}' "$file" > tmpfile
             mv tmpfile "$file"
@@ -176,23 +178,20 @@ jobs:
         cd Tool-repo/Loon/Plugin/lodepuly
         for file in *.plugin; do
           if [ "$file" ] ; then
+
             # 修改脚本链接
             sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/Moli-X\/Tool\/X\/Loon\/Script\/lodepuly/g' "$file"
-    
             # 修改作者注释部分为 "莫离[https://github.com/Moli-X]"
             sed -i 's/#!author = .*/#!author = 莫离[https:\/\/github.com\/Moli-X]/g' "$file"
-            
             # 修改主页链接为 raw 格式
             sed -i 's|#!homepage = .*|#!homepage = https:\/\/github.com\/Moli-X\/Tool\/raw\/X\/Loon\/Plugin\/lodepuly\/'"$file"'|g' "$file"
-            
             # 增加 "# 编辑=" 部分，链接为 edit 格式
             sed -i '/#!homepage = .*/a # 编辑 = https:\/\/github.com\/Moli-X\/Tool\/edit\/X\/Loon\/Plugin\/lodepuly\/'"$file" "$file"
-            
             # 增加 "# 原链接 = " 部分，设置为 Fork 的原始链接      https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/1.1.1.1.plugin
             if grep -q "#!idate =" "$file"; then
               sed -i '/#!idate = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Tool/Loon\/Plugin\/'"$file" "$file"
             elif grep -q "#!icon =" "$file"; then
-              sed -i '/#!icon = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Tool/Loon\/Plugin\/'"$file" "$file"
+              sed -i '/#!icon = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Tool/Loon\//Plugin\/'"$file" "$file"
             fi
     
           else
@@ -206,6 +205,7 @@ jobs:
     - name: Copy Clash/Rules
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
+
         # 流媒体
         cp -r Tool-repo/Surge/Rules/Emby.list Tool-repo/Clash/Rules/Emby.list
         curl -L -o Tool-repo/Clash/Rules/TikTok.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/TikTok.list"
@@ -308,6 +308,7 @@ jobs:
                    -e '/# UPDATED:/d' \
                    -e '/404: Not Found/d' \
                    "$file"
+
             # 如果为IP规则且不包含no-resolve 则添加no-resolve
             awk '/^IP-/ && !/,no-resolve/ {print $0",no-resolve"; next} {print}' "$file" > tmpfile
             mv tmpfile "$file"
@@ -348,6 +349,7 @@ jobs:
         for file in Reject.list; do
           if [ -f "$file" ]; then
             sorted_file="sorted_${file}"
+
             # 使用 grep 去掉包含 # 的行
             grep -v '^\s*#' "$file" | grep -v '^\s*$' | sort | uniq > "$sorted_file"
             mv "$sorted_file" "$file"
@@ -362,6 +364,8 @@ jobs:
     - name: Copy QuantumultX/Rules
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
+
+        # 苹果
         curl -L -o Tool-repo/QuantumultX/Rules/APNs.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/QuantumultX/Rules/Lan.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
         curl -L -o Tool-repo/QuantumultX/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
@@ -490,6 +494,7 @@ jobs:
     - name: Copy Surge/Rules
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
+
         # 苹果
         curl -L -o Tool-repo/Surge/Rules/APNs.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Surge/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
@@ -600,6 +605,7 @@ jobs:
                    -e '/# 规则: /d' \
                    -e '/404: Not Found/d' \
                    "$file"
+
             # 如果为IP规则且不包含no-resolve 则添加no-resolve
             awk '/^IP-/ && !/,no-resolve/ {print $0",no-resolve"; next} {print}' "$file" > tmpfile
             mv tmpfile "$file"
@@ -655,6 +661,7 @@ jobs:
         for file in Reject.list CDN.list; do
           if [ -f "$file" ]; then
             sorted_file="sorted_${file}"
+
             # 使用 grep 去掉包含 # 的行
             grep -v '^\s*#' "$file" | grep -v '^\s*$' | sort | uniq > "$sorted_file"
             mv "$sorted_file" "$file"
@@ -777,6 +784,7 @@ jobs:
                    -e '/# UPDATED:/d' \
                    -e '/404: Not Found/d' \
                    "$file"
+
             # 如果为IP规则且不包含no-resolve 则添加no-resolve
             awk '/^IP-/ && !/,no-resolve/ {print $0",no-resolve"; next} {print}' "$file" > tmpfile
             mv tmpfile "$file"
@@ -792,6 +800,7 @@ jobs:
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
 
+        # 苹果
         curl -L -o Tool-repo/Stash/Rules/APNs.yaml "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Stash/Rules/Apple.yaml "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
         curl -L -o Tool-repo/Stash/Rules/AppStore.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
@@ -973,6 +982,7 @@ jobs:
                    -e '/# UPDATED:/d' \
                    -e '/404: Not Found/d' \
                    "$file"
+
             # 如果为IP规则且不包含no-resolve 则添加no-resolve
             awk '/^IP-/ && !/,no-resolve/ {print $0",no-resolve"; next} {print}' "$file" > tmpfile
             mv tmpfile "$file"
