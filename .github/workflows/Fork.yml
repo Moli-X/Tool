@@ -171,34 +171,34 @@ jobs:
         cp -r lodepuly_Tmp/Resource/Script/* Tool-repo/Loon/Script/lodepuly/
         rm -rf lodepuly_Tmp   
 
-- name: Edit Loon/Plugin
-  run: |
-    cd Tool-repo/Loon/Plugin/lodepuly
-    for file in *.plugin; do
-      if [ "$file" ] ; then
-        # 修改脚本链接
-        sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/Moli-X\/Tool\/X\/Loon\/Script\/lodepuly/g' "$file"
-
-        # 修改作者注释部分为 "莫离[https://github.com/Moli-X]"
-        sed -i 's/#!author = .*/#!author = 莫离[https:\/\/github.com\/Moli-X]/g' "$file"
-        
-        # 修改主页链接为 raw 格式
-        sed -i 's|#!homepage = .*|#!homepage = https:\/\/github.com\/Moli-X\/Tool\/raw\/X\/Loon\/Plugin\/lodepuly\/'"$file"'|g' "$file"
-        
-        # 增加 "#!Edit=" 部分，链接为 edit 格式
-        sed -i '/#!homepage = .*/a #!Edit = https:\/\/github.com\/Moli-X\/Tool\/edit\/X\/Loon\/Plugin\/lodepuly\/'"$file" "$file"
-        
-        # 增加 "# 原链接 = " 部分，设置为 Fork 的原始链接
-        if grep -q "#!idate =" "$file"; then
-          sed -i '/#!idate = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Plugin\/'"$file" "$file"
-        elif grep -q "#!icon =" "$file"; then
-          sed -i '/#!icon = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Plugin\/'"$file" "$file"
-        fi
-
-      else
-        echo "$file not found."
-      fi
-    done
+    - name: Edit Loon/Plugin
+      run: |
+        cd Tool-repo/Loon/Plugin/lodepuly
+        for file in *.plugin; do
+          if [ "$file" ] ; then
+            # 修改脚本链接
+            sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/Moli-X\/Tool\/X\/Loon\/Script\/lodepuly/g' "$file"
+    
+            # 修改作者注释部分为 "莫离[https://github.com/Moli-X]"
+            sed -i 's/#!author = .*/#!author = 莫离[https:\/\/github.com\/Moli-X]/g' "$file"
+            
+            # 修改主页链接为 raw 格式
+            sed -i 's|#!homepage = .*|#!homepage = https:\/\/github.com\/Moli-X\/Tool\/raw\/X\/Loon\/Plugin\/lodepuly\/'"$file"'|g' "$file"
+            
+            # 增加 "#!Edit=" 部分，链接为 edit 格式
+            sed -i '/#!homepage = .*/a #!Edit = https:\/\/github.com\/Moli-X\/Tool\/edit\/X\/Loon\/Plugin\/lodepuly\/'"$file" "$file"
+            
+            # 增加 "# 原链接 = " 部分，设置为 Fork 的原始链接
+            if grep -q "#!idate =" "$file"; then
+              sed -i '/#!idate = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Plugin\/'"$file" "$file"
+            elif grep -q "#!icon =" "$file"; then
+              sed -i '/#!icon = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Plugin\/'"$file" "$file"
+            fi
+    
+          else
+            echo "$file not found."
+          fi
+        done
 
 ###### Clash
 
