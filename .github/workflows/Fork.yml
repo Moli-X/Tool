@@ -188,11 +188,11 @@ jobs:
             # 增加 "# 编辑=" 部分，链接为 edit 格式
             sed -i '/#!homepage = .*/a # 编辑 = https:\/\/github.com\/Moli-X\/Tool\/edit\/X\/Loon\/Plugin\/lodepuly\/'"$file" "$file"
             
-            # 增加 "# 原链接 = " 部分，设置为 Fork 的原始链接
+            # 增加 "# 原链接 = " 部分，设置为 Fork 的原始链接      https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/1.1.1.1.plugin
             if grep -q "#!idate =" "$file"; then
-              sed -i '/#!idate = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Plugin\/'"$file" "$file"
+              sed -i '/#!idate = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Tool/Loon\/Plugin\/'"$file" "$file"
             elif grep -q "#!icon =" "$file"; then
-              sed -i '/#!icon = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Plugin\/'"$file" "$file"
+              sed -i '/#!icon = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Tool/Loon\/Plugin\/'"$file" "$file"
             fi
     
           else
