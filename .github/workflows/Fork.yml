@@ -188,6 +188,9 @@ jobs:
             # 增加 "#!Edit=" 部分，链接为 edit 格式
             sed -i '/#!homepage = .*/a #!Edit = https:\/\/github.com\/Moli-X\/Tool\/edit\/X\/Loon\/Plugin\/lodepuly\/'"$file" "$file"
             
+            # 增加 "# 原链接 = " 部分，设置为 Fork 的原始链接
+            sed -i '/#!author = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Plugin\/'"$file" "$file"
+
           else
             echo "$file not found."
           fi
