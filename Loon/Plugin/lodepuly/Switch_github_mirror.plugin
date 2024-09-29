@@ -2,7 +2,6 @@
 #!desc = 此插件通过重定向至镜像站的方式解决GitHub的RAW资源下载困难的问题，使用前需要配置此插件的镜像源。由于镜像站均为热心网友提供，可能无法保证服务的长期可用性。若开启此插件后无法下载RAW资源，可尝试切换镜像源，或者禁用此插件。
 #!openUrl = https://apps.apple.com/app/id1477376905
 #!author = 莫离[https://github.com/Moli-X]
-# 原链接 = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Plugin/Switch_github_mirror.plugin
 #!tag = 反代加速
 #!system = 
 #!system_version = 
@@ -10,6 +9,7 @@
 #!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/Switch_github_mirror.plugin
 #!Edit = https://github.com/Moli-X/Tool/edit/X/Loon/Plugin/lodepuly/Switch_github_mirror.plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/GitHub.png
+# 原链接 = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Plugin/Switch_github_mirror.plugin
 #!select = 镜像源, A镜像, B镜像
 #!date = 2024-04-24 16:13:05
 

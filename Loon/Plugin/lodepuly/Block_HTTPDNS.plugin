@@ -2,7 +2,6 @@
 #!desc = 拦截常见的HTTPDNS服务，以确保这些请求都能够在Loon的DNS框架下工作。
 #!openUrl = 
 #!author = 莫离[https://github.com/Moli-X]
-# 原链接 = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Plugin/Block_HTTPDNS.plugin
 #!tag = DNS
 #!system = 
 #!system_version = 
@@ -10,6 +9,7 @@
 #!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/Block_HTTPDNS.plugin
 #!Edit = https://github.com/Moli-X/Tool/edit/X/Loon/Plugin/lodepuly/Block_HTTPDNS.plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/HTTPDNS.png
+# 原链接 = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Plugin/Block_HTTPDNS.plugin
 #!date = 2024-09-25 15:45:58
 
 [Rule]

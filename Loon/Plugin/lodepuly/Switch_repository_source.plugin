@@ -2,7 +2,6 @@
 #!desc = 用于切换可莉仓库源的插件，以便能够在直连的情况下也能更新仓库资源。此插件和GitHub加速类插件冲突，不可同时启用。可在Bitbucket、GitLab和GitHub平台之间切换可莉的仓库源。
 #!openUrl = 
 #!author = 莫离[https://github.com/Moli-X]
-# 原链接 = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Plugin/Switch_repository_source.plugin
 #!tag = 插件管理
 #!system = 
 #!system_version = 
@@ -10,6 +9,7 @@
 #!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/Switch_repository_source.plugin
 #!Edit = https://github.com/Moli-X/Tool/edit/X/Loon/Plugin/lodepuly/Switch_repository_source.plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/Switch.png
+# 原链接 = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Plugin/Switch_repository_source.plugin
 #!select = 仓库源, Bitbucket - 四网直连, GitLab - 电信联通直连, GitHub - 访问不畅
 #!date = 2024-04-21 02:37:51
 
