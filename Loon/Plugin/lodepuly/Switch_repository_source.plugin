@@ -1,5 +1,5 @@
 #!name = 可莉仓库源切换
-#!desc = 用于切换可莉仓库源的插件，以便能够在直连的情况下也能更新仓库资源。此插件和GitHub加速类插件冲突，不可同时启用。可在Bitbucket、GitLab和GitHub平台之间切换可莉的仓库源。
+#!desc = 用于切换可莉仓库源的插件，以便能够在直连的情况下也能更新仓库资源。此插件和GitHub加速类插件冲突，不可同时启用。可在Gitea、GitLab和GitHub平台之间切换可莉的仓库源。
 #!openUrl = 
 #!author = 莫离[https://github.com/Moli-X]
 #!tag = 插件管理
@@ -10,17 +10,17 @@
 # 编辑 = https://github.com/Moli-X/Tool/edit/X/Loon/Plugin/lodepuly/Switch_repository_source.plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/Switch.png
 # 原链接 = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon//Plugin/Switch_repository_source.plugin
-#!select = 仓库源, Bitbucket - 四网直连, GitLab - 电信联通直连, GitHub - 访问不畅
+#!select = 仓库源, Gitea - 四网直连, GitLab - 电信联通直连, GitHub - 访问不畅
 #!date = 2024-04-21 02:37:51
 
 [Rule]
 DOMAIN-SUFFIX, gitlab.com, DIRECT
-DOMAIN-SUFFIX, bitbucket.org, DIRECT
+DOMAIN-SUFFIX, gitea.com, DIRECT
 
 [Script]
 http-request ^https:\/\/raw\.githubusercontent\.com\/luestr\/ProxyResource\/main\/ script-path = https://raw.githubusercontent.com/Moli-X/Tool/X/Loon/Script/lodepuly/Switch_repository_source/Switch_repository_source.js, tag = GitHub换源
 http-request ^https:\/\/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/ script-path = https://raw.githubusercontent.com/Moli-X/Tool/X/Loon/Script/lodepuly/Switch_repository_source/Switch_repository_source.js, tag = GitLab换源
-http-request ^https:\/\/bitbucket\.org\/luestr\/proxyresource\/raw\/main\/ script-path = https://raw.githubusercontent.com/Moli-X/Tool/X/Loon/Script/lodepuly/Switch_repository_source/Switch_repository_source.js, tag = Bitbucket换源
+http-request ^https:\/\/gitea\.com\/latick\/ProxyResource\/raw\/branch\/main\/ script-path = https://raw.githubusercontent.com/Moli-X/Tool/X/Loon/Script/lodepuly/Switch_repository_source/Switch_repository_source.js, tag = Gitea换源
 
 [MitM]
-hostname = gitlab.com, raw.githubusercontent.com, bitbucket.org
+hostname = gitlab.com, raw.githubusercontent.com, gitea.com
