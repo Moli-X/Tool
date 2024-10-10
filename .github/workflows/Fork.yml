@@ -26,6 +26,14 @@ jobs:
         path: Tool-repo
         token: ${{ secrets.PAT_TOKEN }}  
 
+###### Fork
+
+    - name: Copy Yml
+      run: |
+        mkdir -p Tool/.github/Record
+        curl -L -o Tool-repo/.github/Record/Fork.yml "https://github.com/Repcz/Tool/raw/X/.github/workflows/Fork.yml"
+        curl -L -o Tool-repo/.github/Record/ClearCommits.yml "https://github.com/Repcz/Tool/raw/X/.github/workflows/ClearCommits.yml"
+
 ###### GeoIP
 
     - name: Copy 
