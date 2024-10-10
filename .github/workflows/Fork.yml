@@ -155,7 +155,9 @@ jobs:
         cp -r Tool-repo/Surge/Rules/Lan.list Tool-repo/Loon/Rules/Lan.list
         # Other
         curl -L -o Tool-repo/Loon/Loon.conf "https://github.com/Moli-X/Resources/raw/main/Loon/Loon.conf"
-        curl -L -o Tool-repo/Loon/Readme.md "https://github.com/Moli-X/Resources/raw/main/Readme.md"
+        # # curl -L -o Tool-repo/Loon/Readme.md "https://github.com/Moli-X/Resources/raw/main/Loon/Readme.md"
+        # curl -s https://gitlab.com/lodepuly/vpn_tool/-/raw/master/README.md | \
+        # sed -n '/<table/,/<\/table>/p' > Tool-repo/Loon/Readme.md
 
 
        # 适配规则
@@ -1229,6 +1231,20 @@ jobs:
         mkdir -p Tool/GeoIP
         curl -L -o Tool-repo/GeoIP/CN_Country.mmdb "https://raw.githubusercontent.com/Masaiki/GeoIP2-CN/release/Country.mmdb"
         curl -L -o Tool-repo/GeoIP/Global_Country.mmdb "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"
+
+    - name: Copy README.md Table and Add Resources
+      run: |
+        # 复制 <table> 内容
+        curl -s https://gitlab.com/lodepuly/vpn_tool/-/raw/master/README.md | \
+        sed -n '/<table/,/<\/table>/p' > Tool-repo/Loon/Readme.md
+    
+        # 添加 Resources 部分
+        echo '### Resources' >> Tool-repo/Loon/Readme.md
+        echo '<a href="https://t.me/GodMoliibot"><img src="https://raw.githubusercontent.com/Moli-X/Resources/main/Icon/Image/Hello.gif" width="20%" height="20%"></a>' >> Tool-repo/Loon/Readme.md
+        echo '' >> Tool-repo/Loon/Readme.md
+        echo 'TG Channel：https://t.me/QuantX' >> Tool-repo/Loon/Readme.md
+        echo '' >> Tool-repo/Loon/Readme.md
+        echo '## Loon脚本收集: [欢迎投稿](https://t.me/Skill_XX )' >> Tool-repo/Loon/Readme.md
 
        
 ###### Commit
