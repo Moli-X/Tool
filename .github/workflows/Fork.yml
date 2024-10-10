@@ -1,5 +1,5 @@
 # 2024-08-28 
-# 参考链接:https://github.com/Repcz/Tool/blob/X/.github/workflows/Fork.yml
+
 name: Fork & Edit
 
 on:
@@ -34,13 +34,7 @@ jobs:
         curl -L -o Tool-repo/.github/Record/Fork.yml "https://github.com/Repcz/Tool/raw/X/.github/workflows/Fork.yml"
         curl -L -o Tool-repo/.github/Record/ClearCommits.yml "https://github.com/Repcz/Tool/raw/X/.github/workflows/ClearCommits.yml"
 
-###### GeoIP
 
-    - name: Copy 
-      run: |
-        mkdir -p Tool/GeoIP
-        curl -L -o Tool-repo/GeoIP/CN_Country.mmdb "https://raw.githubusercontent.com/Masaiki/GeoIP2-CN/release/Country.mmdb"
-        curl -L -o Tool-repo/GeoIP/Global_Country.mmdb "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"
 
 ###### Loon
 
@@ -189,8 +183,8 @@ jobs:
 
             # 修改脚本链接
             sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/Moli-X\/Tool\/X\/Loon\/Script\/lodepuly/g' "$file"
-            # 修改作者注释部分为 "莫离[https://github.com/Moli-X]"
-            sed -i 's/#!author = .*/#!author = 莫离[https:\/\/github.com\/Moli-X]/g' "$file"
+            # # 修改作者注释部分为 "莫离[https://github.com/Moli-X]"
+            # sed -i 's/#!author = .*/#!author = 莫离[https:\/\/github.com\/Moli-X]/g' "$file"
             # 修改主页链接为 raw 格式
             sed -i 's|#!homepage = .*|#!homepage = https:\/\/github.com\/Moli-X\/Tool\/raw\/X\/Loon\/Plugin\/lodepuly\/'"$file"'|g' "$file"
             # 增加 "# 编辑=" 部分，链接为 edit 格式
@@ -1187,6 +1181,16 @@ jobs:
             echo "$file not found."
           fi
         done
+
+
+###### GeoIP
+
+    - name: Copy 
+      run: |
+        mkdir -p Tool/GeoIP
+        curl -L -o Tool-repo/GeoIP/CN_Country.mmdb "https://raw.githubusercontent.com/Masaiki/GeoIP2-CN/release/Country.mmdb"
+        curl -L -o Tool-repo/GeoIP/Global_Country.mmdb "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"
+
        
 ###### Commit
     - name: Add and Commits
