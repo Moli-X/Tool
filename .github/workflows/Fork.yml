@@ -1,4 +1,4 @@
-# 2024-10-10
+# 2024-08-28 
 
 name: Fork & Edit
 
@@ -173,6 +173,7 @@ jobs:
         git clone https://gitlab.com/lodepuly/vpn_tool.git lodepuly_Tmp
         cp -r lodepuly_Tmp/Tool/Loon/Plugin/* Tool-repo/Loon/Plugin/lodepuly
         cp -r lodepuly_Tmp/Resource/Script/* Tool-repo/Loon/Script/lodepuly/
+        curl -L -o Tool-repo/Loon/Loon.conf "https://github.com/Moli-X/Resources/raw/main/Loon/Loon.conf"
         rm -rf lodepuly_Tmp   
 
     - name: Edit Loon/Plugin
@@ -183,8 +184,8 @@ jobs:
 
             # 修改脚本链接
             sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/Moli-X\/Tool\/X\/Loon\/Script\/lodepuly/g' "$file"
-            # # 修改作者注释部分为 "莫离[https://github.com/Moli-X]"
-            # sed -i 's/#!author = .*/#!author = 莫离[https:\/\/github.com\/Moli-X]/g' "$file"
+            # 修改作者注释部分为 "莫离[https://github.com/Moli-X]"
+            sed -i 's/#!author = .*/#!author = 莫离[https:\/\/github.com\/Moli-X]/g' "$file"
             # 修改主页链接为 raw 格式
             sed -i 's|#!homepage = .*|#!homepage = https:\/\/github.com\/Moli-X\/Tool\/raw\/X\/Loon\/Plugin\/lodepuly\/'"$file"'|g' "$file"
             # 增加 "# 编辑=" 部分，链接为 edit 格式
@@ -1200,7 +1201,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Auto Update $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')"
+          git commit -m "Update $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')"
           git push origin HEAD
         else
           echo "No changes to commit."
