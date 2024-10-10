@@ -1,250 +1,583 @@
+<table>
+  <tr>
+    <th>类别</th>
+    <th>序号</th>
+    <th>名称</th>
+  </tr>
+  <tr>
+    <td rowspan="109"><strong>去广告插件</strong></td>
+  <tr>
+    <td>001</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/BlockAdvertisers.plugin">广告平台拦截器</a></td>
+  </tr>
+  <tr>
+    <td>002</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Remove_ads_by_keli.plugin">可莉广告过滤器</a></td>
+  </tr>
+  <tr>
+    <td>003</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Cainiao_remove_ads.plugin">菜鸟去广告</a></td>
+  </tr>
+  <tr>
+    <td>004</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Himalaya_remove_ads.plugin">喜马拉雅去广告</a></td>
+  </tr>
+  <tr>
+    <td>005</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Tieba_remove_ads.plugin">贴吧去广告</a></td>
+  </tr>
+  <tr>
+    <td>006</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/YouTube_remove_ads.plugin">YouTube去广告</a></td>
+  </tr>
+  <tr>
+    <td>007</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Weibo_remove_ads.plugin">微博去广告</a></td>
+  </tr>
+  <tr>
+    <td>008</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Bilibili_remove_ads.plugin">Bilibili去广告</a></td>
+  </tr>
+  <tr>
+    <td>009</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Weibo_intl_remove_ads.plugin">微博国际版去广告</a></td>
+  </tr>
+  <tr>
+    <td>010</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Baidu_input_method_remove_ads.plugin">百度输入法去广告</a></td>
+  </tr>
+  <tr>
+    <td>011</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Zhihu_remove_ads.plugin">知乎去广告</a></td>
+  </tr>
+  <tr>
+    <td>012</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/NeteaseCloudMusic_remove_ads.plugin">网易云音乐去广告</a></td>
+  </tr>
+  <tr>
+    <td>013</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/CoolApk_remove_ads.plugin">酷安去广告</a></td>
+  </tr>
+  <tr>
+    <td>014</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/smzdm_remove_ads.plugin">什么值得买去广告</a></td>
+  </tr>
+  <tr>
+    <td>015</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/RedPaper_remove_ads.plugin">小红书去广告</a></td>
+  </tr>
+  <tr>
+    <td>016</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Weixin_Official_Accounts_remove_ads.plugin">微信公众号去广告</a></td>
+  </tr>
+  <tr>
+    <td>017</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/QQMusic_remove_ads.plugin">QQ音乐去广告</a></td>
+  </tr>
+  <tr>
+    <td>018</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Daily_remove_ads.plugin">推栏去广告</a></td>
+  </tr>
+  <tr>
+    <td>019</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/IThome_remove_ads.plugin">IT之家去广告</a></td>
+  </tr>
+  <tr>
+    <td>020</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/BaiduSearchWebpage_remove_ads.plugin">百度搜索网页去广告</a></td>
+  </tr>
+  <tr>
+    <td>021</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/BaiduNetDisk_remove_ads.plugin">百度网盘去广告</a></td>
+  </tr>
+  <tr>
+    <td>022</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/TubeMax_remove_ads.plugin">TubeMax去广告</a></td>
+  </tr>
+  <tr>
+    <td>023</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Amap_remove_ads.plugin">高德地图去广告</a></td>
+  </tr>
+  <tr>
+    <td>024</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/WexinMiniPrograms_Remove_ads.plugin">微信小程序去广告</a></td>
+  </tr>
+  <tr>
+    <td>025</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/QiDian_remove_ads.plugin">起点读书去广告</a></td>
+  </tr>
+  <tr>
+    <td>026</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/AliYunDrive_remove_ads.plugin">阿里云盘去广告</a></td>
+  </tr>
+  <tr>
+    <td>027</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/iQiYi_Video_remove_ads.plugin">爱奇艺视频去广告</a></td>
+  </tr>
+  <tr>
+    <td>028</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/DragonRead_remove_ads.plugin">番茄小说去广告</a></td>
+  </tr>
+  <tr>
+    <td>029</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/YouKu_Video_remove_ads.plugin">优酷视频去广告</a></td>
+  </tr>
+  <tr>
+    <td>030</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/BabyTree_remove_ads.plugin">宝宝树孕育去广告</a></td>
+  </tr>
+  <tr>
+    <td>031</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Tencent_Video_remove_ads.plugin">腾讯视频去广告</a></td>
+  </tr>
+  <tr>
+    <td>032</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/CaixinMedia_remove_ads.plugin">财新去广告</a></td>
+  </tr>
+  <tr>
+    <td>033</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Mango_Viedo_remove_ads.plugin">芒果TV去广告</a></td>
+  </tr>
+  <tr>
+    <td>034</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Umetrip_remove_ads.plugin">航旅纵横去广告</a></td>
+  </tr>
+  <tr>
+    <td>035</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/JD_remove_ads.plugin">京东去广告</a></td>
+  </tr>
+  <tr>
+    <td>036</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/PiPiXia_remove_ads.plugin">皮皮虾去广告</a></td>
+  </tr>
+  <tr>
+    <td>037</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Taobao_remove_ads.plugin">淘宝去广告</a></td>
+  </tr>
+  <tr>
+    <td>038</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/NeteaseNews_remove_ads.plugin">网易新闻去广告</a></td>
+  </tr>
+  <tr>
+    <td>039</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/12306_remove_ads.plugin">12306去广告</a></td>
+  </tr>
+  <tr>
+    <td>040</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Reddit_remove_ads.plugin">Reddit去广告</a></td>
+  </tr>
+  <tr>
+    <td>041</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Soul_remove_ads.plugin">Soul去广告</a></td>
+  </tr>
+  <tr>
+    <td>042</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/QQKSong_remove_ads.plugin">全民K歌去广告</a></td>
+  </tr>
+  <tr>
+    <td>043</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/mobileClouds_remove_ads.plugin">中国移动云盘去广告</a></td>
+  </tr>
+  <tr>
+    <td>044</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/PICC_Insurance_remove_ads.plugin">中国人保去广告</a></td>
+  </tr>
+  <tr>
+    <td>045</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Spotify_remove_ads.plugin">Spotify去广告</a></td>
+  </tr>
+  <tr>
+    <td>046</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/SevenCat_remove_ads.plugin">七猫小说去广告</a></td>
+  </tr>
+  <tr>
+    <td>047</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/HUPU_remove_ads.plugin">虎扑去广告</a></td>
+  </tr>
+  <tr>
+    <td>048</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/GaoDing_remove_ads.plugin">稿定设计去广告</a></td>
+  </tr>
+  <tr>
+    <td>049</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/PuPuMall_remove_ads.plugin">朴朴超市去广告</a></td>
+  </tr>
+  <tr>
+    <td>050</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/DiDi_remove_ads.plugin">滴滴出行去广告</a></td>
+  </tr>
+  <tr>
+    <td>051</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Aiinquiry_remove_ads.plugin">爱企查去广告</a></td>
+  </tr>
+  <tr>
+    <td>052</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/QiXinBao_remove_ads.plugin">启信宝去广告</a></td>
+  </tr>
+  <tr>
+    <td>053</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/ZhuanZhuan_remove_ads.plugin">转转去广告</a></td>
+  </tr>
+  <tr>
+    <td>054</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/RiskBird_remove_ads.plugin">风鸟去广告</a></td>
+  </tr>
+  <tr>
+    <td>055</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/iMaiCai_remove_ads.plugin">小象超市去广告</a></td>
+  </tr>
+  <tr>
+    <td>056</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/ZuiYou_remove_ads.plugin">最右去广告</a></td>
+  </tr>
+  <tr>
+    <td>057</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/MailMaster_remove_ads.plugin">网易邮箱大师去广告</a></td>
+  </tr>
+  <tr>
+    <td>058</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/MiaoRead_remove_ads.plugin">小喵看书去广告</a></td>
+  </tr>
+  <tr>
+    <td>059</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/SafetyHome_remove_ads.plugin">360智慧生活去广告</a></td>
+  </tr>
+  <tr>
+    <td>060</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/360SmartCamera_remove_ads.plugin">360摄像机去广告</a></td>
+  </tr>
+  <tr>
+    <td>061</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/VideoGo_remove_ads.plugin">萤石云视频去广告</a></td>
+  </tr>
+  <tr>
+    <td>062</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/FlyerTea_remove_ads.plugin">飞客去广告</a></td>
+  </tr>
+  <tr>
+    <td>063</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/ShouYinTongMerchant_remove_ads.plugin">收银通商户端去广告</a></td>
+  </tr>
+  <tr>
+    <td>064</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/FenBi_remove_ads.plugin">粉笔去广告</a></td>
+  </tr>
+  <tr>
+    <td>065</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/TV_Assistant_remove_ads.plugin">乐播投屏去广告</a></td>
+  </tr>
+  <tr>
+    <td>066</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/XiaoHeiHe_remove_ads.plugin">小黑盒去广告</a></td>
+  </tr>
+  <tr>
+    <td>067</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Snowball_remove_ads.plugin">雪球去广告</a></td>
+  </tr>
+  <tr>
+    <td>068</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/KingdeeMyMoney_remove_ads.plugin">随手记去广告</a></td>
+  </tr>
+  <tr>
+    <td>069</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/XunLei_remove_ads.plugin">迅雷去广告</a></td>
+  </tr>
+  <tr>
+    <td>070</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/ShuQiCenterReader_remove_ads.plugin">书旗小说去广告</a></td>
+  </tr>
+  <tr>
+    <td>071</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/QuarkBrowser_remove_ads.plugin">夸克去广告</a></td>
+  </tr>
+  <tr>
+    <td>072</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/JiaXiaoDrive_remove_ads.plugin">驾校一点通去广告</a></td>
+  </tr>
+  <tr>
+    <td>073</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/JiaKaoBaoDian_remove_ads.plugin">驾考宝典去广告</a></td>
+  </tr>
+  <tr>
+    <td>074</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/DuiTang_remove_ads.plugin">堆糖去广告</a></td>
+  </tr>
+  <tr>
+    <td>075</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/AutoHome_remove_ads.plugin">汽车之家去广告</a></td>
+  </tr>
+  <tr>
+    <td>076</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/KuGou_remove_ads.plugin">酷狗音乐去广告</a></td>
+  </tr>
+  <tr>
+    <td>077</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Kuwo_remove_ads.plugin">酷我音乐去广告</a></td>
+  </tr>
+  <tr>
+    <td>078</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/DubbingShow_remove_ads.plugin">配音秀去广告</a></td>
+  </tr>
+  <tr>
+    <td>079</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/MKZ_remove_ads.plugin">漫客栈去广告</a></td>
+  </tr>
+  <tr>
+    <td>080</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/KuaiKanComic_remove_ads.plugin">快看漫画去广告</a></td>
+  </tr>
+  <tr>
+    <td>081</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/BiliComic_remove_ads.plugin">哔哩哔哩漫画去广告</a></td>
+  </tr>
+  <tr>
+    <td>082</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/XFuse_remove_ads.plugin">磁力宅播放器去广告</a></td>
+  </tr>
+  <tr>
+    <td>083</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/ColorfulClouds_remove_ads.plugin">彩云天气去广告</a></td>
+  </tr>
+  <tr>
+    <td>084</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Uki_remove_ads.plugin">Uki去广告</a></td>
+  </tr>
+  <tr>
+    <td>085</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Douyu_remove_ads.plugin">斗鱼去广告</a></td>
+  </tr>
+  <tr>
+    <td>086</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/GuideRank_remove_ads.plugin">盖得排行去广告</a></td>
+  </tr>
+  <tr>
+    <td>087</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/FleaMarket_remove_ads.plugin">闲鱼去广告</a></td>
+  </tr>
+  <tr>
+    <td>088</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/PinDuoDuo_remove_ads.plugin">拼多多去广告</a></td>
+  </tr>
+  <tr>
+    <td>089</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/CatEarFM_remove_ads.plugin">猫耳FM去广告</a></td>
+  </tr>
+  <tr>
+    <td>090</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/XiaoCan_remove_ads.plugin">小蚕霸王餐去广告</a></td>
+  </tr>
+  <tr>
+    <td>091</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/BooHee_remove_ads.plugin">薄荷健康去广告</a></td>
+  </tr>
+  <tr>
+    <td>092</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/MaiMai_remove_ads.plugin">脉脉去广告</a></td>
+  </tr>
+  <tr>
+    <td>093</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/YoudaoDict_remove_ads.plugin">网易有道词典去广告</a></td>
+  </tr>
+  <tr>
+    <td>094</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/MeiTu_remove_ads.plugin">美图秀秀去广告</a></td>
+  </tr>
+  <tr>
+    <td>095</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/555DY_remove_ads.plugin">555电影去广告</a></td>
+  </tr>
+  <tr>
+    <td>096</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/SeasunJX3_remove_ads.plugin">剑网三无界去广告</a></td>
+  </tr>
+  <tr>
+    <td>097</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Keep_remove_ads.plugin">Keep去广告</a></td>
+  </tr>
+  <tr>
+    <td>098</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/123NetWorkDisk_remove_ads.plugin">123云盘去广告</a></td>
+  </tr>
+  <tr>
+    <td>099</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/YoudaoTrans_remove_ads.plugin">有道翻译官去广告</a></td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/MeituMYXJ_remove_ads.plugin">美颜相机去广告</a></td>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/YY_Voice_remove_ads.plugin">YY去广告</a></td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/SF-Express_remove_ads.plugin">顺丰速运去广告</a></td>
+  </tr>
+  <tr>
+    <td>103</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/91160_remove_ads.plugin">健康160去广告</a></td>
+  </tr>
+  <tr>
+    <td>104</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/NetEaseGodlike_remove_ads.plugin">网易大神去广告</a></td>
+  </tr>
+  <tr>
+    <td>105</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/SodaMusic_remove_ads.plugin">汽水音乐去广告</a></td>
+  </tr>
+  <tr>
+    <td>106</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/KuaiDi100_remove_ads.plugin">快递100去广告</a></td>
+  </tr>
+  <tr>
+    <td>107</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/ChengFenMiao_remove_ads.plugin">成分喵去广告</a></td>
+  </tr>
+  <tr>
+    <td>108</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/KGRing_remove_ads.plugin">酷狗铃声去广告</a></td>
+  </tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  <tr>
+    <th>类别</th>
+    <th>序号</th>
+    <th>名称</th>
+  </tr>
+  <tr>
+    <td rowspan="5"><strong>自签插件</strong></td>
+  <tr>
+    <td>01</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/UnionPay_remove_ads_with_ssl_unpinning.plugin">云闪付去广告</a></td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/DouBan_remove_ads.plugin">豆瓣去广告</a></td>
+  </tr>
+  <tr>
+    <td>03</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/BaiduMap_remove_ads.plugin">百度地图去广告</a></td>
+  </tr>
+  <tr>
+    <td>04</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/FC_Box_remove_ads.plugin">丰巢去广告</a></td>
+  </tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  <tr>
+    <th>类别</th>
+    <th>序号</th>
+    <th>名称</th>
+  </tr>
+  <tr>
+    <td rowspan="26"><strong>功能插件</strong></td>
+  <tr>
+    <td>01</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/LoonGallery.plugin">插件仓库</a></td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Script-Hub.plugin">Script-Hub</a></td>
+  </tr>
+  <tr>
+    <td>03</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Sub-Store.plugin">Sub-Store</a></td>
+  </tr>
+  <tr>
+    <td>04</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Google.plugin">Google重定向</a></td>
+  </tr>
+  <tr>
+    <td>05</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/1.1.1.1.plugin">1.1.1.1配置管理</a></td>
+  </tr>
+  <tr>
+    <td>06</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/BoxJs.plugin">BoxJs</a></td>
+  </tr>
+  <tr>
+    <td>07</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/WARP_Node_Query.plugin">WARP节点查询</a></td>
+  </tr>
+  <tr>
+    <td>08</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/JD_Price.plugin">京东比价</a></td>
+  </tr>
+  <tr>
+    <td>09</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/YouTubeSubtitlesTranslation.plugin">YouTube翻译</a></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Auto_Join_TF.plugin">自动加入TF</a></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/VVebo_repair.plugin">VVebo时间线修复</a></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/TestFlightRegionUnlock.plugin">TestFlight地区解锁</a></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Switch_github_mirror.plugin">GitHub加速</a></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Node_detection_tool.plugin">节点检测工具</a></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/QQ_Redirect.plugin">QQ链接解锁</a></td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Fileball_mount.plugin">Fileball网盘挂载</a></td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Block_HTTPDNS.plugin">拦截HTTPDNS</a></td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Weixin_external_links_unlock.plugin">微信外部链接解锁</a></td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/TikTok_redirect.plugin">TikTok多地区解锁</a></td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Spotify_lyrics_translation.plugin">Spotify歌词翻译</a></td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/ClydeTime/BiliBili/master/modules/BiliBiliDailyBonus.plugin">BiliBili每日等级任务</a></td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/NodeLinkCheck.Plugin">代理链路检测</a></td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/QuickSearch.plugin">快捷搜索</a></td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/UnnooQuan_remove_watermark.plugin">知识星球去水印</a></td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/AppleWeatherEnhancer.plugin">Apple天气增强</a></td>
+  </tr>
+</table>
 ### Resources
 <a href="https://t.me/GodMoliibot"><img src="https://raw.githubusercontent.com/Moli-X/Resources/main/Icon/Image/Hello.gif" width="20%" height="20%"></a>
 
 TG Channel：https://t.me/QuantX
 
-## 脚本收集: [欢迎投稿](https://t.me/Skill_XX )
-<table>
-    <tr> <th> 类别 </th> <th> 序号 </th> <th> 功能 </th> <th> 链接 </th> <th> 作者 </th> </tr >
-	<tr>
-		<td rowspan="29"><strong>会员解锁</strong></td>
-		<td > 1 </td> <td ><strong> <em>莫离合集</em> </strong></td> <td ><a href="https://github.com/Moli-X/Resources/raw/main/Rewrite/Collections.conf"><em>Collections.conf</em></a></td><td>Moli-X</td>
-    </tr>
-	<tr>
-		<td > 2 </td> <td > <strong><em>墨鱼合集</em> </strong></td> <td ><a href="https://github.com/ddgksf2013/dev/raw/master/ForOwnUse.conf"><em>ForOwnUse.conf</em></a></td><td>ddgksf2013</td>
-    </tr>
-	<tr>
-		<td > 3 </td> <td > <strong><em>奇心合集</em> </strong></td> <td ><a href="https://github.com/zwf234/rules/raw/master/QuantumultX/qxrules.conf"><em>qxrules.conf</em></a></td><td>zwf234</td>
-    </tr>
-    <tr>
-		<td > 4 </td> <td > 真B站去广告+解锁普通视频<br><strong><em>1080P高码率</em></strong> </td> <td ><a href="https://github.com/Moli-X/Resources/raw/main/Script/Bilibili/AD_Bilibili.conf"><em>BilibiliVip.conf</em></a></td><td>ddgksf2013</td>
-    </tr>	
-	<tr>
-		<td > 5 </td> <td > Spotify会员 </td> <td ><a href="https://raw.githubusercontent.com/Moli-X/Resources/main/Loon/Spotify/Spotify.plugin"><em>Spotify.plugin</em></a></td><td>app2smile</td>
-    </tr>
-	<tr>
-		<td > 6 </td> <td > 酷我音乐SVIP+净化 </td> <td ><a href="https://raw.githubusercontent.com/Moli-X/Resources/main/Loon/KuWo.plugin"><em>KuWo.plugin</em></a></td><td>WeiRen0</td>
-    </tr>
-	<tr>
-		<td > 7 </td> <td > Soul解除送礼私聊限制 </td> <td ><a href="https://raw.githubusercontent.com/Crazy-Z7/Scrip/main/Soul.js"><em>Soul.js</em></a></td><td>Crazy-Z7</td>
-    </tr>
-	<tr>
-		<td > 8 </td> <td > 芒果VIP </td> <td ><a href="https://github.com/Moli-X/Resources/raw/main/Rewrite/MgTV.conf"><em>MgTV.conf</em></a></td><td>WeiRen0</td>
-    </tr>
-	<tr>
-		<td > 9 </td> <td > <strong><em>美图秀秀VIP+粉钻</em> </strong></td> <td ><a href="https://github.com/Moli-X/Resources/raw/main/Rewrite/MTxiuxiu.conf"><em>MTxiuxiu.conf</em></a></td><td>gjwj666</td>
-    </tr>
-	<tr>
-		<td > 10 </td> <td > 滴答清单VIP </td> <td ><a href="https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ddqd.js"><em>ddqd.js</em></a></td><td>89996462</td>
-    </tr>
-	<tr>
-		<td > 11 </td> <td > 沙拉祝频解锁 </td> <td ><a href="https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/slsp.js"><em>slsp.js</em></a></td><td>89996462</td>
-    </tr>
-	<tr>
-		<td > 12 </td> <td > 中华诗词库VIP </td> <td ><a href="https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zhsck.js"><em>ycdz/zhsck.js</em></a></td><td>89996462</td>
-    </tr>
-	<tr>
-		<td > 13 </td> <td > 聊天话术VIP </td> <td ><a href="https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/lths.js"><em>lths.js</em></a></td><td>89996462</td>
-    </tr>
-	<tr>
-		<td > 14 </td> <td > 美颜相机VIP </td> <td ><a href="https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/myCamera.js"><em>myCamera.js</em></a></td><td>Eric</td>
-    </tr>
-	<tr>
-		<td > 15 </td> <td > 萌猪记账VIP </td> <td ><a href="https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mzjz.js"><em>mzjz.js</em></a></td><td>89996462</td>
-    </tr>
-	<tr>
-		<td > 16 </td> <td > 蜗牛读书VIP </td> <td ><a href="https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/yywnds.js"><em>yywnds.js</em></a></td><td>89996462</td>
-    </tr>
-	<tr>
-		<td > 17 </td> <td > 有道词典VIP </td> <td ><a href="https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/wyydcd.js"><em>wyydcd.js</em></a></td><td>89996462</td>
-    </tr>
-	<tr>
-		<td > 18 </td> <td > TopWidgets解锁 </td> <td ><a href="https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js"><em>widgets.js</em></a></td><td>89996462</td>
-    </tr>
-	<tr>
-		<td > 19 </td> <td > 扫描全能王VIP </td> <td ><a href="https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/smqnw.js"><em>smqnw.js</em></a></td><td>89996462</td>
-    </tr>
-	<tr>
-		<td > 20 </td> <td > 白描-OCR-VIP </td> <td ><a href="https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/baimiao.js"><em>baimiao.js</em></a></td><td>89996462</td>
-    </tr>
-	<tr>
-		<td > 21 </td> <td > 七猫小说VIP </td> <td ><a href="https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js"><em>QiMaoXiaoShuo.js</em></a></td><td>I-am-R-E</td>
-    </tr>
-	<tr>
-		<td > 22 </td> <td > 阿里云VIP </td> <td ><a href="https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js"><em>alidrive.js</em></a></td><td>chxm1023</td>
-    </tr>
-	<tr>
-		<td > 23 </td> <td > 知乎VIP </td> <td ><a href="https://raw.githubusercontent.com/WeiRen0/Scripts/main/ZHVIP.js"><em>ZHVIP.js</em></a></td><td>WeiRen0</td>
-    </tr>
-	<tr>
-		<td > 24 </td> <td > 芒果TV </td> <td ><a href="https://github.com/Moli-X/Resources/raw/main/Loon/Mgtv.plugin"><em>Mgtv.plugin</em></a></td><td>WeiGiegie</td>
-    </tr>
-	<tr>
-		<td > 25 </td> <td > 美队TV </td> <td ><a href="https://github.com/Moli-X/Resources/raw/main/Loon/Mdtv.plugin"><em>Mdtv.plugin</em></a></td><td>WeiGiegie</td>
-    </tr>
-	<tr>
-		<td > 26 </td> <td > 喜马拉雅 </td> <td ><a href="https://github.com/Moli-X/Resources/raw/main/Loon/Xmly.plugin"><em>Xmly.plugin</em></a></td><td>WeiGiegie</td>
-    </tr>
-	<tr>
-		<td > 27 </td> <td > 帆书 </td> <td ><a href="https://github.com/Moli-X/Resources/raw/main/Loon/Fdds.plugin"><em>Fdds.plugin</em></a></td><td>WeiGiegie</td>
-    </tr>
-	<tr>
-		<td > 28 </td> <td > Grow </td> <td ><a href="https://github.com/Moli-X/Resources/raw/main/Loon/Grow.plugin"><em>Grow.plugin</em></a></td><td>Yqc007</td>
-    </tr>
-	<tr>
-		<td > 29 </td> <td > 剪映 </td> <td ><a href="https://github.com/Moli-X/Resources/raw/main/Loon/JianYing.plugin"><em>JianYing.plugin</em></a></td><td>Yqc007</td>
-    </tr>
-	<tr>
-		<td colspan="5">  </td>
-    </tr>
-    <tr>
-		<td rowspan="26"><strong>广告屏蔽</strong></td>
-		<td > 1 </td> <td > <strong><em>莫离去广告</em></strong> </td> <td ><a href="https://github.com/Moli-X/Resources/raw/main/Rewrite/ADBlock.conf"><em>ADBlock.conf</em></a></td><td>Moli-X</td>
-    </tr>
-    <tr>
-		<td > 2 </td> <td > <strong><em>墨鱼去广告</em> </strong></td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/StartUp.conf"><em>StartUp.conf</em></a></td><td>ddgksf2013</td>
-    </tr>
-    <tr>
-		<td > 3 </td> <td > <strong><em>奇心去广告</em> </strong></td> <td ><a href="https://raw.githubusercontent.com/zwf234/rules/master/QuantumultX/tailadv.conf"><em>tailadv.conf</em></a></td><td>zwf234</td>  
-    </tr>
-    <tr>
-		<td > 4 </td> <td > 油管去广告<br><strong><em>画中画</strong></em> </td> <td ><a href="https://github.com/Moli-X/Resources/raw/main/Rewrite/YouTube.conf"><em>YouTube.conf</em></a></td><td>divineEngine<br>Maasea</td>  
-    </tr>
-	<tr>
-		<td > 5 </td> <td > 知乎去广告 </td> <td ><a href="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zheye/zheye.snippet"><em>Zhihu_Plus.conf</em></a></td><td>blackmatrix7</td>  
-    </tr>
-	<tr>
-		<td > 6 </td> <td > 百度贴吧去广告 </td> <td ><a href="https://github.com/app2smile/rules/raw/master/module/tieba-qx.conf"><em>Tieba_Ads.conf</em></a></td><td>app2smile</td>  
-    </tr>
-	<tr>
-		<td > 7 </td> <td > 百度网盘去广告 </td> <td ><a href="https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/QuantumultX/rewrite/MyRewrite.conf"><em>BdPanAdBlock.conf</em></a></td><td>zqzess</td>  
-    </tr>
-	<tr>
-		<td > 8 </td> <td > <strong><em>高德地图去广告</em></strong> </td> <td ><a href="https://github.com/RuCu6/QuanX/raw/main/Rewrites/Cube/amap.snippet"><em>amap.snippet</em></a></td><td>RuCu6</td>  
-    </tr>
-	<tr>
-		<td > 9 </td> <td > <strong><em>喜马拉雅去广告</strong></em> </td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Ximalaya.conf"><em>XmlyAdBlock.conf</em></a></td><td>ddgksf2013</td>  
-    </tr>
-	<tr>
-		<td > 10 </td> <td > 小红书去广告</td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/XiaoHongShu.conf"><em>XiaoHongShu.conf</em></a></td><td>ddgksf2013</td>  
-    </tr>
-	<tr>
-		<td > 11 </td> <td > Keep超级净化</td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/KeepStyle.conf"><em>keepStyle.conf</em></a></td><td>ddgksf2013</td>  
-    </tr>
-	<tr>
-		<td > 12 </td> <td > <strong>Pixiv去广告 </strong></td> <td ><a href="https://github.com/ddgksf2013/Scripts/raw/master/pixivAds.js"><em>PixivAds.js</em></a></td><td>ddgksf2013</td>  
-    </tr>
-	<tr>
-		<td > 13 </td> <td > 酷安去广告</td> <td ><a href="https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js"><em>coolapk.js</em></a></td><td>ddgksf2013</td>  
-    </tr>
-	<tr>
-		<td > 14 </td> <td > 12306去广告</td> <td ><a href="https://github.com/ddgksf2013/Scripts/raw/master/12306.js"><em>12306.js</em></a></td><td>ddgksf2013</td>  
-    </tr>
-	<tr>
-		<td > 15 </td> <td > 多多视频去广告 </td> <td ><a href="https://raw.githubusercontent.com/ddgksf2013/Scripts/master/rrtv_json.js"><em>DuoduoVideoAds.js</em></a></td><td>ddgksf2013</td>  
-    </tr>
-	<tr>
-		<td > 16 </td> <td > <strong>微博(国际版)去广告 </strong></td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Weibo.conf"><em>Weibo.conf</em></a></td><td>ddgksf2013</td>  
-    </tr>
-	<tr>
-		<td > 17 </td> <td > 网易云去广告 </td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Netease.conf"><em>Netease.conf</em></a></td><td>ddgksf2013</td>  
-    </tr>
-	<tr>
-		<td > 18 </td> <td > 菜鸟裹裹去广告 </td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Cainiao.conf"><em>Cainiao.conf</em></a></td><td>ddgksf2013</td>  
-    </tr>
-	<tr>
-		<td > 19 </td> <td > 起点去广告[卸载重装] </td> <td ><a href="https://raw.githubusercontent.com/app2smile/rules/master/module/qidian.conf"><em>qidian.conf</em></a></td><td>app2smile</td>  
-    </tr>
-	<tr>
-		<td > 20 </td> <td > 随手记去广告 </td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/SuiShouJi.conf"><em>SuiShouJi.conf</em></a></td><td>ddgksf2013</td>  
-    </tr>
-	<tr>
-		<td > 21 </td> <td > Bing首页简化 </td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/BingSimplify.conf"><em>BingSimplify.conf</em></a></td><td>ddgksf2013</td>  
-    </tr>
-    <tr>
-		<td > 22 </td> <td > 爱奇艺去广告 </td> <td ><a href="https://raw.githubusercontent.com/ddgksf2013/Scripts/master/iqiyi_open_ads.js"><em>iqiyi_open_ads.js</em></a></td><td>ddgksf2013</td>
-    </tr>
-	<tr>
-		<td > 23 </td> <td > 影视网站去广告 </td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/Html/WebAdBlock.conf"><em>WebAdBlock.conf</em></a></td><td>ddgksf2013</td>
-    </tr>
-	<tr>
-		<td > 24 </td> <td > Pornhub去广告 </td> <td ><a href="https://raw.githubusercontent.com/ddgksf2013/Scripts/master/pornhub.js"><em>pornhub.js</em></a></td><td>ddgksf2013</td>
-    </tr>
-    <tr>
-		<td > 25 </td> <td > 微信小程序 </td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Applet.conf"><em>Applet.conf</em></a></td><td>ddgksf2013</td>
-    </tr>
-    <tr>
-		<td > 26 </td> <td > 拼多多去广告 </td> <td ><a href="https://github.com/Moli-X/Resources/raw/main/Loon/Pinduoduo.plugin"><em>Pinduoduo.plugin</em></a></td><td>ZenmoFeiShi</td>
-    </tr>
-   <tr>
-		<td colspan="5">  </td>
-    </tr>
-	<tr>
-		<td rowspan="14"><strong>应用增强</strong></td>
-		<td > 1 </td> <td > <strong><em>B站自动换区</em></strong> </td> <td ><a href="https://github.com/Moli-X/Resources/blob/main/Rewrite/Bilibili/AutoBilibili.conf"><em>AutoBilibili.conf</em></a></td><td>Nobyda</td>
-    </tr>
-	<tr>
-		<td > 2 </td> <td > B站换区[暂不适配QX] </td> <td ><a href="https://github.com/BiliUniverse/Universe/wiki/🌐-Global"><em>Global.snippet</em></a></td><td>BiliUniverse</td>
-    </tr>
-	<tr>
-		<td > 3 </td> <td > <strong><em>B站自定义界面<em> </strong></td> <td ><a href="https://github.com/BiliUniverse/Universe/wiki/⚙-Enhanced"><em>Enhanced.snippet</em></a></td><td>BiliUniverse</td>
-    </tr>
-	<tr>
-		<td > 4 </td> <td > <strong>B站CC繁体字幕转简体</strong> </td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/Function/Bilibili_CC.conf"><em>Bilibili_CC.conf</em></a></td><td>ddgksf2013</td>
-    </tr>
-	<tr>
-		<td > 5 </td> <td > 百度网盘倍速 </td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/Function/BaiduCloud.conf"><em>BaiduCloud.conf</em></a></td><td>ddgksf2013</td>
-    </tr>
-	<tr>
-		<td > 6 </td> <td > Youtube无中文字幕机翻方案 </td> <td ><a href="https://raw.githubusercontent.com/id77/QuantumultX/master/rewrite/Youtube_CC.conf#out=Hant"><em>Youtube_CC.conf</em></a></td><td>id77</td>
-    </tr>
-	<tr>
-		<td > 7 </td> <td > 各种流媒体字幕翻译 </td> <td ><a href="https://raw.githubusercontent.com/Neurogram-R/Quantumult-X/main/snippet/Dualsub.snippet"><em>Dualsub.conf</em></a></td><td>Neurogram-R</td>
-    </tr>
-	<tr>
-		<td > 8 </td> <td > 微信110解锁被屏蔽的URL </td> <td ><a href="https://github.com/zZPiglet/Task/raw/master/UnblockURLinWeChat.conf"><em>WeChat110.conf</em></a></td><td>zZPiglet</td>
-    </tr>
-	<tr>
-		<td > 9 </td> <td > 指南针解锁经纬度 </td> <td ><a href="https://raw.githubusercontent.com/VirgilClyne/iRingo/main/qxrewrite/Location.qxrewrite"><em>Location.conf</em></a></td><td>VirgilClyne</td>
-    </tr>
-	<tr>
-		<td > 10 </td> <td > Testflight共享+解锁区域限制 </td> <td ><a href="https://raw.githubusercontent.com/NobyDa/Script/master/TestFlight/TestFlightAccount.js"><em>TestFlightAccount.js</em></a></td><td>NobyDa</td>
-    </tr>
-	<tr>
-		<td > 11 </td> <td > UposRedirect </td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/Function/UposRedirect.conf"><em>UposRedirect.conf</em></a></td><td>ddgksf2013</td>
-    </tr>
-	<tr>
-		<td > 12 </td> <td > <strong>阿里云盘倍速</strong> </td> <td ><a href="https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js"><em>alicloud.js</em></a></td><td>ddgksf2013</td>
-    </tr>
-	<tr>
-		<td > 13 </td> <td > <strong>Fileball云盘挂载[暂不适配QX]</strong> </td> <td ><a href="https://raw.githubusercontent.com/githubdulong/Script/master/Surge/Fileball.sgmodule"><em>Fileball.sgmodule</em></a></td><td>githubdulong</td>
-    </tr>
-	<tr>
-		<td > 14 </td> <td > <strong>Spotify歌词翻译 </strong></td> <td ><a href="https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-lyric.js"><em>spotify-lyric.js</em></a></td><td>app2smile</td>
-    </tr>
-	<tr>
-		<td colspan="5">  </td>
-    </tr>
-	<tr>
-		<td rowspan="3"><strong>网页优化</strong></td>
-		<td > 1 </td> <td > <strong><em>Safari超级搜索</em></strong><br>翻译·社区·购物·换区·视频·引擎  </td> <td ><a href="https://raw.githubusercontent.com/Moli-X/Resources/main/Rewrite/Search.conf"><em>Search.conf</em></a></td><td>Moli-X</td>
-    </tr>
-	<tr>
-		<td > 2 </td> <td > Google自动翻页 </td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/Html/EndlessGoogle.conf"><em>EndlessGoogle.conf</em></a></td><td>langkhach</td>
-    </tr>
-	<tr>
-		<td > 3 </td> <td > 豆瓣电影<br><strong><em>网页优化+快捷观影</em></strong>  </td> <td ><a href="https://github.com/ddgksf2013/Rewrite/raw/master/Html/Douban.conf"><em>Douban.conf</em></a></td><td>ddgksf2013</td>
-    </tr>
-</table>
-
-## 莫离各平台配置：
-* 莫离QuantumultX配置 [***QuantumultX.conf***](https://raw.githubusercontent.com/Moli-X/Resources/main/Rewrite/QuantumultX.conf) 
-* 莫离Loon配置 [***Loon.conf***](https://raw.githubusercontent.com/Moli-X/Resources/main/Loon/Loon.conf) 
-* 莫离Surge配置 [***SurgePRO.conf***](https://github.com/Moli-X/Resources/raw/main/Surge/SurgePRO.conf) 
-* 莫离Clash配置 [***Clash.yml***](https://raw.githubusercontent.com/Moli-X/Resources/main/Clash/Clash.yml) 
-## 莫离各平台脚本跳转：
-* 莫离QuantumultX重写👉👉👉👉[***✅重写***](https://github.com/Moli-X/Resources/tree/main/Rewrite) 
-* 莫离LOON模块👉👉👉👉👉👉[***✅模块***](https://github.com/Moli-X/Resources/tree/main/Loon) 
-* 莫离分流规则👉👉👉👉👉👉[***✅分流***](https://github.com/Moli-X/Resources/tree/main/Filter) 
-
-## ------------------------------------------------------[⬆️回到顶部⬆️](#readme)	
+## Loon脚本收集: [欢迎投稿](https://t.me/Skill_XX )
