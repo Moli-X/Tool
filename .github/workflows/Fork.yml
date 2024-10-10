@@ -1,4 +1,4 @@
-# 2024-08-28 
+# 2024-10-10 
 
 name: Fork & Edit
 
@@ -188,8 +188,8 @@ jobs:
             sed -i 's/#!author = .*/#!author = 莫离[https:\/\/github.com\/Moli-X]/g' "$file"
             # 修改主页链接为 raw 格式
             sed -i 's|#!homepage = .*|#!homepage = https:\/\/github.com\/Moli-X\/Tool\/raw\/X\/Loon\/Plugin\/lodepuly\/'"$file"'|g' "$file"
-            # 增加 "# 编辑=" 部分，链接为 edit 格式
-            sed -i '/#!homepage = .*/a # 编辑 = https:\/\/github.com\/Moli-X\/Tool\/edit\/X\/Loon\/Plugin\/lodepuly\/'"$file" "$file"
+            # # 增加 "# 编辑=" 部分，链接为 edit 格式
+            # sed -i '/#!homepage = .*/a # 编辑 = https:\/\/github.com\/Moli-X\/Tool\/edit\/X\/Loon\/Plugin\/lodepuly\/'"$file" "$file"
             # 增加 "# 原链接 = " 部分，设置为 Fork 的原始链接      https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/1.1.1.1.plugin
             if grep -q "#!idate =" "$file"; then
               sed -i '/#!idate = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Tool/Loon\/Plugin\/'"$file" "$file"
