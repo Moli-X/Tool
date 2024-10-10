@@ -29,14 +29,26 @@ jobs:
 
 ###### 控制开关
 
-    - name: Set multiple environment variables
+    - name: Set Environment
+      id: set-env
       run: |
-        echo "LOON_SWITCH=true" >> $GITHUB_ENV
-        echo "CLASH_SWITCH=true" >> $GITHUB_ENV
-        echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
-        echo "SURGE_SWITCH=false" >> $GITHUB_ENV
-        echo "STASH_SWITCH=false" >> $GITHUB_ENV
-        echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
+
+        # 获取当前日期的天数
+        day=$(date +%d)
+        # 计算当前天数模4   
+        if (( day % 4 == 0 )); then
+          echo "SURGE_SWITCH=true" >> $GITHUB_ENV
+          echo "SURGE_SWITCH=true" >> $GITHUB_ENV
+          echo "SURGE_SWITCH=true" >> $GITHUB_ENV
+        else
+          echo "SURGE_SWITCH=falsee" >> $GITHUB_ENV
+          echo "SURGE_SWITCH=false" >> $GITHUB_ENV
+          echo "SURGE_SWITCH=false" >> $GITHUB_ENV
+        fi
+      echo "LOON_SWITCH=true" >> $GITHUB_ENV
+      echo "CLASH_SWITCH=true" >> $GITHUB_ENV
+      echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
+
 
 ###### Fork
 
