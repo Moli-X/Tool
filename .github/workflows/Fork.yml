@@ -155,7 +155,7 @@ jobs:
         cp -r Tool-repo/Surge/Rules/Lan.list Tool-repo/Loon/Rules/Lan.list
         # Other
         curl -L -o Tool-repo/Loon/Loon.conf "https://github.com/Moli-X/Resources/raw/main/Loon/Loon.conf"
-        curl -L -o Tool-repo/LOON/Readme.md "https://github.com/Moli-X/Resources/raw/main/Readme.md"
+        curl -L -o Tool-repo/Loon/Readme.md "https://github.com/Moli-X/Resources/raw/main/Readme.md"
 
 
        # 适配规则
