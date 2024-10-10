@@ -1232,20 +1232,24 @@ jobs:
         curl -L -o Tool-repo/GeoIP/CN_Country.mmdb "https://raw.githubusercontent.com/Masaiki/GeoIP2-CN/release/Country.mmdb"
         curl -L -o Tool-repo/GeoIP/Global_Country.mmdb "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"
 
+###### 可莉README
     - name: Copy README.md Table and Add Resources
       run: |
-        # 复制 <table> 内容
-        curl -s https://gitlab.com/lodepuly/vpn_tool/-/raw/master/README.md | \
-        sed -n '/<table/,/<\/table>/p' > Tool-repo/Loon/Readme.md
-    
         # 添加 Resources 部分
-        echo '### Resources' >> Tool-repo/Loon/Readme.md
+        echo '### Resources' > Tool-repo/Loon/Readme.md
         echo '<a href="https://t.me/GodMoliibot"><img src="https://raw.githubusercontent.com/Moli-X/Resources/main/Icon/Image/Hello.gif" width="20%" height="20%"></a>' >> Tool-repo/Loon/Readme.md
         echo '' >> Tool-repo/Loon/Readme.md
         echo 'TG Channel：https://t.me/QuantX' >> Tool-repo/Loon/Readme.md
         echo '' >> Tool-repo/Loon/Readme.md
         echo '## Loon脚本收集: [欢迎投稿](https://t.me/Skill_XX )' >> Tool-repo/Loon/Readme.md
-
+    
+        # 复制 <table> 内容
+        curl -s https://gitlab.com/lodepuly/vpn_tool/-/raw/master/README.md | \
+        sed -n '/<table/,/<\/table>/p' >> Tool-repo/Loon/Readme.md
+    
+        # 替换 Plugin URL
+        sed -i 's|https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/|https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/|g' Tool-repo/Loon/Readme.md
+    
        
 ###### Commit
     - name: Add and Commits
