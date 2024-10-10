@@ -45,9 +45,9 @@ jobs:
           echo "SURGE_SWITCH=false" >> $GITHUB_ENV
           echo "SURGE_SWITCH=false" >> $GITHUB_ENV
         fi
-      echo "LOON_SWITCH=true" >> $GITHUB_ENV
-      echo "CLASH_SWITCH=true" >> $GITHUB_ENV
-      echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
+        echo "LOON_SWITCH=true" >> $GITHUB_ENV
+        echo "CLASH_SWITCH=true" >> $GITHUB_ENV
+        echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
 
 
 ###### Fork
