@@ -35,15 +35,20 @@ jobs:
 
         # 获取当前日期的天数
         day=$(date +%d)
+        # 计算今天是每4天的第几天
+        day_in_cycle=$(( (day - 1) % 4 + 1 ))
+        echo "今天是循环天数的第 $day_in_cycle 天"
         # 计算当前天数模4   
-        if (( day % 4 == 0 )); then
+        if (( day_in_cycle == 1 )); then
           echo "SURGE_SWITCH=true" >> $GITHUB_ENV
-          echo "SURGE_SWITCH=true" >> $GITHUB_ENV
-          echo "SURGE_SWITCH=true" >> $GITHUB_ENV
+          echo "EGERN_SWITCH=true" >> $GITHUB_ENV
+          echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
+          echo "SWITCH 状态: TRUE"
         else
           echo "SURGE_SWITCH=falsee" >> $GITHUB_ENV
-          echo "SURGE_SWITCH=false" >> $GITHUB_ENV
-          echo "SURGE_SWITCH=false" >> $GITHUB_ENV
+          echo "EGERN_SWITCH=false" >> $GITHUB_ENV
+          echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
+          echo "SWITCH 状态: FALSE"
         fi
         echo "LOON_SWITCH=true" >> $GITHUB_ENV
         echo "CLASH_SWITCH=true" >> $GITHUB_ENV
