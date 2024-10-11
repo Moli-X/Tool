@@ -62,6 +62,16 @@ jobs:
           # 判断计数器值，设置 SURGE, EGERN 和 SHADOWROCKET 的开关
         fi
 
+        # 读取计数器值（确保计数器文件存在）
+        COUNTER_FILE="counter.txt"
+        if [ -f "$COUNTER_FILE" ]; then
+          counter=$(cat "$COUNTER_FILE")
+        else
+          counter=10  
+          echo "计数器文件不存在"  
+        fi
+
+
           # 查询当前次数值
           echo "此次运行后计数器值为：$counter"   
           if (( counter % 3 == 0 )); then
@@ -77,14 +87,6 @@ jobs:
           fi
 
     
-        # 读取计数器值（确保计数器文件存在）
-        COUNTER_FILE="counter.txt"
-        if [ -f "$COUNTER_FILE" ]; then
-          counter=$(cat "$COUNTER_FILE")
-        else
-          counter=0  
-          echo "计数器文件不存在"  
-        fi
 
 
         # 增加计数器值
