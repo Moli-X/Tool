@@ -9,13 +9,13 @@
 #!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/WPS_checkin.plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/WPS.png
 # 原链接 = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon//Plugin/WPS_checkin.plugin
-#!date = 2024-10-11 15:14:27
+#!date = 2024-10-11 15:17:36
 
 [Argument]
 CaptureCookie = switch, false, true, tag = 捕获Cookie, desc = 此开关控制插件是否捕获Cookie
 AK = input, "", tag = API Key, desc = 这里需要输入有效的API Key
 SK = input, "", tag = Secret Key, desc = 这里需要输入有效的Secret Key
-MAX_RETRIES = input, "5", tag = 最大运行次数, desc = 仅允许填写阿拉伯数字
+MAX_RETRIES = input, "5", tag = 失败重试次数, desc = 仅允许填写阿拉伯数字
 # TIMEOUT = input, "120", tag = 脚本超时参数, desc = 仅允许填写阿拉伯数字，单位为秒。 // 此项暂不支持传参
 CRONEXP = input, "0 8 * * *", tag = 定时参数, desc = 这里需要输入符合CRON表达式的参数
 
