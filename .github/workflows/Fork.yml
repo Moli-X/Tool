@@ -28,33 +28,18 @@ jobs:
         token: ${{ secrets.PAT_TOKEN }}  
 
 ###### 控制开关
-        
-    
 
-    # 设置环境变量并更新计数器
     - name: Set Environment
       id: set-env
       run: |
-        # 设置调试模式开关
-        Debug=true  # 将此行改为 Debug=true 而非 echo 赋值，确保后续可以直接引用
+        Debug=true
+        echo "Debug模式为：$Debug"
     
-        echo "Debug模式为：$Debug"  # 输出当前Debug模式，方便调试
+        echo "当前工作目录为：$(pwd)"
+        echo "当前目录下的文件："
+        ls -al
     
-        if [ "$Debug" = true ]; then
-          # 如果 Debug 模式开启，所有开关关闭
-          echo "LOON_SWITCH=false" >> $GITHUB_ENV
-          echo "CLASH_SWITCH=false" >> $GITHUB_ENV
-          echo "QUANTUMULTX_SWITCH=false" >> $GITHUB_ENV
-          echo "Debug 模式开启，开关关闭"
-        else
-          # 正常模式，设置相应的开关
-          echo "LOON_SWITCH=true" >> $GITHUB_ENV
-          echo "CLASH_SWITCH=true" >> $GITHUB_ENV
-          echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
-        fi
-    
-        # 读取计数器值（确保计数器文件存在）
-        COUNTER_FILE="./.github/workflows/counter.txt"
+        COUNTER_FILE="$GITHUB_WORKSPACE/.github/workflows/counter.txt"
         if [ -f "$COUNTER_FILE" ]; then
           counter=$(cat "$COUNTER_FILE")
         else
@@ -62,28 +47,67 @@ jobs:
           echo "计数器文件不存在，使用默认值：$counter"
         fi
     
-        # 查询当前次数值
         echo "此次运行前计数器值为：$counter"
-        if (( counter % 3 == 0 )); then
-          echo "SURGE_SWITCH=true" >> $GITHUB_ENV
-          echo "EGERN_SWITCH=true" >> $GITHUB_ENV
-          echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
-          echo "SURGE、EGERN 和 SHADOWROCKET 开启"
-        else
-          echo "SURGE_SWITCH=false" >> $GITHUB_ENV
-          echo "EGERN_SWITCH=false" >> $GITHUB_ENV
-          echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
-          echo "SURGE、EGERN 和 SHADOWROCKET 关闭"
-        fi
-    
-        # 增加计数器值
         counter=$((counter + 1))
         echo "$counter" > "$COUNTER_FILE"
         echo "计数器值已保存到 $COUNTER_FILE，最后计数器值为：$counter"
-    
-        # 记录计数器文件内容
-        echo "计数器文件内容："
         cat "$COUNTER_FILE"
+        
+    
+
+    # # 设置环境变量并更新计数器
+    # - name: Set Environment
+      # id: set-env
+      # run: |
+        # # 设置调试模式开关
+        # Debug=true  # 将此行改为 Debug=true 而非 echo 赋值，确保后续可以直接引用
+    
+        # echo "Debug模式为：$Debug"  # 输出当前Debug模式，方便调试
+    
+        # if [ "$Debug" = true ]; then
+          # # 如果 Debug 模式开启，所有开关关闭
+          # echo "LOON_SWITCH=false" >> $GITHUB_ENV
+          # echo "CLASH_SWITCH=false" >> $GITHUB_ENV
+          # echo "QUANTUMULTX_SWITCH=false" >> $GITHUB_ENV
+          # echo "Debug 模式开启，开关关闭"
+        # else
+          # # 正常模式，设置相应的开关
+          # echo "LOON_SWITCH=true" >> $GITHUB_ENV
+          # echo "CLASH_SWITCH=true" >> $GITHUB_ENV
+          # echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
+        # fi
+    
+        # # 读取计数器值（确保计数器文件存在）
+        # COUNTER_FILE="./.github/workflows/counter.txt"
+        # if [ -f "$COUNTER_FILE" ]; then
+          # counter=$(cat "$COUNTER_FILE")
+        # else
+          # counter=7  
+          # echo "计数器文件不存在，使用默认值：$counter"
+        # fi
+    
+        # # 查询当前次数值
+        # echo "此次运行前计数器值为：$counter"
+        # if (( counter % 3 == 0 )); then
+          # echo "SURGE_SWITCH=true" >> $GITHUB_ENV
+          # echo "EGERN_SWITCH=true" >> $GITHUB_ENV
+          # echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
+          # echo "SURGE、EGERN 和 SHADOWROCKET 开启"
+        # else
+          # echo "SURGE_SWITCH=false" >> $GITHUB_ENV
+          # echo "EGERN_SWITCH=false" >> $GITHUB_ENV
+          # echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
+          # echo "SURGE、EGERN 和 SHADOWROCKET 关闭"
+        # fi
+    
+        # # 增加计数器值
+        # counter=$((counter + 1))
+        # echo "$counter" > "$COUNTER_FILE"
+        # echo "计数器值已保存到 $COUNTER_FILE，最后计数器值为：$counter"
+    
+        # # 记录计数器文件内容
+        # echo "计数器文件内容："
+        # cat "$COUNTER_FILE"
     
     
 ###### Fork
