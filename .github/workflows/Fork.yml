@@ -44,6 +44,7 @@ jobs:
         echo "尝试下载计数器文件..."
         if curl -o "$COUNTER_FILE" -s "https://github.com/Moli-X/Tool/raw/X/.github/workflows/counter.txt"; then
           echo "计数器文件下载成功。"
+          echo "计数器文件内容为：$(cat "$COUNTER_FILE")"  # 打印文件内容
         else
           echo "无法下载计数器文件，使用默认值：7"
           echo "7" > "$COUNTER_FILE"  # 创建文件并写入默认值
