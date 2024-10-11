@@ -1282,6 +1282,7 @@ jobs:
 ###### GeoIP
 
     - name: Copy 
+      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/GeoIP
         curl -L -o Tool-repo/GeoIP/CN_Country.mmdb "https://raw.githubusercontent.com/Masaiki/GeoIP2-CN/release/Country.mmdb"
@@ -1289,6 +1290,7 @@ jobs:
 
 ###### 可莉README
     - name: Copy README.md Table and Add Resources
+      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         # 添加 Resources 部分
         echo '### Resources' > Tool-repo/Loon/Readme.md
