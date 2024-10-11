@@ -92,14 +92,13 @@ jobs:
 
 
     - name: Save counter to cache
-      run: |
-        echo "保存计数器值到缓存..."
-        if [ -f "counter.txt" ]; then
-          echo "计数器文件存在，准备保存..."
-          echo "$counter" > counter.txt
-        else
-          echo "计数器文件不存在，无法保存。"
-        fi
+      if: success()
+      uses: actions/cache@v4
+      with:
+        path: counter.txt
+        key: counter-cache
+
+
 ###### Fork
 
     - name: Copy Yml
