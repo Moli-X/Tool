@@ -36,7 +36,7 @@ jobs:
         path: counter.txt
         key: counter-cache-Linux  # 使用稳定的缓存键
         restore-keys: |
-          counter-cache-Linux-
+          counter-cache-Linux
     
 # 设置环境变量并更新计数器
     - name: Set Environment
