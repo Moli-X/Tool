@@ -30,69 +30,69 @@ jobs:
 
 
 ###### 控制开关
-
-- name: Cache counter file
-  id: cache-counter
-  uses: actions/cache@v4
-  with:
-    path: counter.txt
-    key: counter-cache
-    restore-keys: |
-      counter-cache
-
-- name: Set Environment
-  id: set-env
-  run: |
-    echo "正在设置环境变量..."
-
-    # LOON、CLASH 和 QUANTUMULTX 每次都开启
-    echo "LOON_SWITCH=true" >> $GITHUB_ENV
-    echo "CLASH_SWITCH=true" >> $GITHUB_ENV
-    echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
-
-    # 读取计数器文件（如果不存在则初始化为0）
-    COUNTER_FILE="counter.txt"
-    if [ -f "$COUNTER_FILE" ]; then
-      counter=$(cat "$COUNTER_FILE")
-      echo "当前计数器值为：$counter"
-    else
-      echo "计数器文件不存在，初始化为 0"
-      counter=0
-    fi
-
-    # 增加计数器值并输出日志
-    counter=$((counter + 1))
-    echo "此次运行后计数器值为：$counter"
-
-    # 判断是否需要清零
-    if (( counter >= 100 )); then
-      counter=0
-      echo "计数器已达到 100，重置为 0。"
-    fi
-
-    # 判断是否达到3次
-    if (( counter % 3 == 0 )); then
-      echo "SURGE_SWITCH=true" >> $GITHUB_ENV
-      echo "EGERN_SWITCH=true" >> $GITHUB_ENV
-      echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
-      echo "计数器值：$counter，SURGE、EGERN 和 SHADOWROCKET 开启"
-    else
-      echo "SURGE_SWITCH=false" >> $GITHUB_ENV
-      echo "EGERN_SWITCH=false" >> $GITHUB_ENV
-      echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
-      echo "计数器值：$counter，SURGE、EGERN 和 SHADOWROCKET 关闭"
-    fi
-
-    # 保存新的计数器值
-    echo "$counter" > "$COUNTER_FILE"
-    echo "计数器值已保存到 $COUNTER_FILE"
-
-- name: Save counter to cache
-  if: always() # 始终执行
-  run: |
-    echo "保存计数器值到缓存..."
-    echo "$counter" > counter.txt
-
+    
+    - name: Cache counter file
+      id: cache-counter
+      uses: actions/cache@v4
+      with:
+        path: counter.txt
+        key: counter-cache
+        restore-keys: |
+          counter-cache
+    
+    - name: Set Environment
+      id: set-env
+      run: |
+        echo "正在设置环境变量..."
+    
+        # LOON、CLASH 和 QUANTUMULTX 每次都开启
+        echo "LOON_SWITCH=true" >> $GITHUB_ENV
+        echo "CLASH_SWITCH=true" >> $GITHUB_ENV
+        echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
+    
+        # 读取计数器文件（如果不存在则初始化为0）
+        COUNTER_FILE="counter.txt"
+        if [ -f "$COUNTER_FILE" ]; then
+          counter=$(cat "$COUNTER_FILE")
+          echo "当前计数器值为：$counter"
+        else
+          echo "计数器文件不存在，初始化为 0"
+          counter=0
+        fi
+    
+        # 增加计数器值并输出日志
+        counter=$((counter + 1))
+        echo "此次运行后计数器值为：$counter"
+    
+        # 判断是否需要清零
+        if (( counter >= 100 )); then
+          counter=0
+          echo "计数器已达到 100，重置为 0。"
+        fi
+    
+        # 判断是否达到3次
+        if (( counter % 3 == 0 )); then
+          echo "SURGE_SWITCH=true" >> $GITHUB_ENV
+          echo "EGERN_SWITCH=true" >> $GITHUB_ENV
+          echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
+          echo "计数器值：$counter，SURGE、EGERN 和 SHADOWROCKET 开启"
+        else
+          echo "SURGE_SWITCH=false" >> $GITHUB_ENV
+          echo "EGERN_SWITCH=false" >> $GITHUB_ENV
+          echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
+          echo "计数器值：$counter，SURGE、EGERN 和 SHADOWROCKET 关闭"
+        fi
+    
+        # 保存新的计数器值
+        echo "$counter" > "$COUNTER_FILE"
+        echo "计数器值已保存到 $COUNTER_FILE"
+    
+    - name: Save counter to cache
+      if: always() # 始终执行
+      run: |
+        echo "保存计数器值到缓存..."
+        echo "$counter" > counter.txt
+    
 
 ###### Fork
 
