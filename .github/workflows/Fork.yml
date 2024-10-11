@@ -27,9 +27,7 @@ jobs:
         path: Tool-repo
         token: ${{ secrets.PAT_TOKEN }}  
 
-
-
-    ###### 控制开关
+###### 控制开关
     # 恢复缓存
     - name: Restore counter file from cache
       id: cache-counter
@@ -88,15 +86,17 @@ jobs:
         echo "计数器值已保存到 counter.txt"
         cat counter.txt
 
-    - name: Save counter to cache
-      if: success()
+    - name: Log counter before saving to cache
       run: |
-        echo "保存计数器值到缓存..."
+        echo "保存计数器值到缓存之前的日志..."
         cat counter.txt
+
+    - name: Save counter to cache
       uses: actions/cache@v4
       with:
         path: counter.txt
         key: counter-cache-${{ github.run_id }}  # 使用运行 ID 生成唯一的键
+
 
 ###### Fork
 
