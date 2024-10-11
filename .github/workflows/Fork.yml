@@ -101,14 +101,7 @@ jobs:
         echo "计数器文件内容："
         cat "$COUNTER_FILE"
     
-    # 保存更新后的计数器文件到缓存
-    - name: Save updated counter to cache
-      run: |
-        echo "$counter" > counter.txt  
-        echo "计数器值为：$counter"
-    
-        echo "验证保存后计数器文件内容："
-        cat counter.txt
+
     
 ###### Fork
 
