@@ -49,20 +49,21 @@ jobs:
     
         if [ "$Debug" = true ]; then
           # 如果 Debug 模式开启，所有开关关闭
-          echo "SURGE_SWITCH=false" >> $GITHUB_ENV
-          echo "EGERN_SWITCH=false" >> $GITHUB_ENV
-          echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
+
           echo "LOON_SWITCH=false" >> $GITHUB_ENV
           echo "CLASH_SWITCH=false" >> $GITHUB_ENV
           echo "QUANTUMULTX_SWITCH=false" >> $GITHUB_ENV
-          echo "Debug 模式开启，所有开关关闭"
+          echo "Debug 模式开启，开关关闭"
         else
           # 正常模式，设置相应的开关
           echo "LOON_SWITCH=true" >> $GITHUB_ENV
           echo "CLASH_SWITCH=true" >> $GITHUB_ENV
           echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
-    
           # 判断计数器值，设置 SURGE, EGERN 和 SHADOWROCKET 的开关
+        fi
+
+          # 查询当前次数值
+          echo "此次运行后计数器值为：$counter"   
           if (( counter % 3 == 0 )); then
             echo "SURGE_SWITCH=true" >> $GITHUB_ENV
             echo "EGERN_SWITCH=true" >> $GITHUB_ENV
@@ -74,7 +75,7 @@ jobs:
             echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
             echo "SURGE、EGERN 和 SHADOWROCKET 关闭"
           fi
-        fi
+
     
         # 读取计数器值（确保计数器文件存在）
         COUNTER_FILE="counter.txt"
@@ -83,7 +84,8 @@ jobs:
         else
           counter=0  # 如果文件不存在，则初始化为0
         fi
-    
+
+
         # 增加计数器值
         counter=$((counter + 1))
     
