@@ -82,7 +82,8 @@ jobs:
         if [ -f "$COUNTER_FILE" ]; then
           counter=$(cat "$COUNTER_FILE")
         else
-          counter=0  # 如果文件不存在，则初始化为0
+          counter=0  
+          echo "计数器文件不存在"  
         fi
 
 
