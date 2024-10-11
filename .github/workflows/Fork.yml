@@ -27,66 +27,52 @@ jobs:
         path: Tool-repo
         token: ${{ secrets.PAT_TOKEN }}  
 
-    # 确保在正确的 git 仓库环境下配置 git 用户信息
-    - name: Setup Git Config
-      run: |
-        cd Tool-repo
-        git config --global user.name 'GitHub Actions'
-        git config --global user.email 'actions@github.com'
-
-
 ###### 控制开关
-    - name: Set counter
-      id: set-counter
-      run: |
-        # 从 GitHub Actions 的状态文件中获取计数器
-        counter=$(cat counter.txt || echo 0)
 
-        # 增加计数器
-        counter=$((counter + 1))
-
-        # 如果计数器大于等于100，重置为0
-        if [ $counter -ge 100 ]; then
-          counter=0
-        fi
-
-        # 保存新的计数器值到文件
-        echo "$counter" > counter.txt
-
-        # 输出计数器值
-        echo "counter=$counter" >> $GITHUB_ENV
-
-    - name: Set environment switches
+    - name: Set Environment
+      id: set-env
       run: |
         # LOON、CLASH 和 QUANTUMULTX 每次都开启
         echo "LOON_SWITCH=true" >> $GITHUB_ENV
         echo "CLASH_SWITCH=true" >> $GITHUB_ENV
         echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
+    
+        # 读取计数器文件（如果不存在则初始化为0）
+        COUNTER_FILE="counter.txt"
+        if [ ! -f "$COUNTER_FILE" ]; then
+          echo "0" > "$COUNTER_FILE"
+        fi
+    
+        # 读取计数器值
+        counter=$(cat "$COUNTER_FILE")
         
-        # 获取计数器值
-        counter=$counter
-        
-        # 判断计数器是否达到3次以开启其他开关
+        # 增加计数器值
+        counter=$((counter + 1))
+    
+        # 判断是否需要清零
+        if (( counter >= 100 )); then
+          counter=0
+          echo "计数器已达到100，重置为0。"
+        fi
+    
+        # 判断是否达到3次
         if (( counter % 3 == 0 )); then
           echo "SURGE_SWITCH=true" >> $GITHUB_ENV
           echo "EGERN_SWITCH=true" >> $GITHUB_ENV
           echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
-          echo "本次计数：$counter , SURGE、EGERN 和 SHADOWROCKET 开启"
+          echo "当前是第 $((counter / 3)) 次开启 SURGE、EGERN 和 SHADOWROCKET" 
         else
           echo "SURGE_SWITCH=false" >> $GITHUB_ENV
           echo "EGERN_SWITCH=false" >> $GITHUB_ENV
           echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
-          echo "本次计数：$counter , SURGE、EGERN 和 SHADOWROCKET 关闭"
+          echo "SURGE、EGERN 和 SHADOWROCKET 关闭，本次计数：$counter"
         fi
-
-    - name: Commit updated counter
-      run: |
-        git config --global user.name 'GitHub Actions'
-        git config --global user.email 'actions@github.com'
-        git add counter.txt
-        git commit -m "Update counter"
-        git push
-        
+    
+        # 保存新的计数器值
+        echo "$counter" > "$COUNTER_FILE"
+    
+    
+    
 ###### Fork
 
     - name: Copy Yml
@@ -187,6 +173,9 @@ jobs:
         cp -r Tool-repo/Surge/Rules/Lan.list Tool-repo/Loon/Rules/Lan.list
         # Other
         curl -L -o Tool-repo/Loon/Loon.conf "https://github.com/Moli-X/Resources/raw/main/Loon/Loon.conf"
+        # # curl -L -o Tool-repo/Loon/Readme.md "https://github.com/Moli-X/Resources/raw/main/Loon/Readme.md"
+        # curl -s https://gitlab.com/lodepuly/vpn_tool/-/raw/master/README.md | \
+        # sed -n '/<table/,/<\/table>/p' > Tool-repo/Loon/Readme.md
 
 
        # 适配规则
