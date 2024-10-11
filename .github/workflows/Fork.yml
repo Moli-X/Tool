@@ -28,43 +28,44 @@ jobs:
         token: ${{ secrets.PAT_TOKEN }}  
 
 ###### 控制开关
+- name: Set Environment
+  id: set-env
+  run: |
+    Debug=true
+    echo "Debug模式为：$Debug"
 
-    - name: Set Environment
-      id: set-env
-      run: |
-        Debug=true
-        echo "Debug模式为：$Debug"
-    
-        # 设置计数器文件的路径
-        COUNTER_FILE="$GITHUB_WORKSPACE/.github/workflows/counter.txt"
-    
-        # 确保目录存在
-        mkdir -p "$GITHUB_WORKSPACE/.github/workflows/"
-    
-        # 尝试从 URL 下载计数器文件
-        echo "尝试下载计数器文件..."
-        if curl -o "$COUNTER_FILE" -s "https://github.com/Moli-X/Tool/raw/X/.github/workflows/counter.txt"; then
-          echo "计数器文件下载成功。"
-        else
-          echo "无法下载计数器文件，使用默认值：7"
-          echo "7" > "$COUNTER_FILE"  # 创建文件并写入默认值
-        fi
-    
-        # 读取计数器值
-        if [ -f "$COUNTER_FILE" ]; then
-          counter=$(cat "$COUNTER_FILE")
-        else
-          counter=7  
-          echo "计数器文件不存在，使用默认值：$counter"
-          echo "$counter" > "$COUNTER_FILE"  # 创建文件
-        fi
-    
-        echo "此次运行前计数器值为：$counter"
-        counter=$((counter + 1))
-        echo "$counter" > "$COUNTER_FILE"
-        echo "计数器值已保存到 $COUNTER_FILE，最后计数器值为：$counter"
-        echo "计数器文件内容："
-        cat "$COUNTER_FILE"
+    # 设置计数器文件的路径
+    COUNTER_FILE="$GITHUB_WORKSPACE/.github/workflows/counter.txt"
+
+    # 确保目录存在
+    mkdir -p "$GITHUB_WORKSPACE/.github/workflows/"
+
+    # 尝试从 URL 下载计数器文件
+    echo "尝试下载计数器文件..."
+    if curl -o "$COUNTER_FILE" -s "https://github.com/Moli-X/Tool/raw/X/.github/workflows/counter.txt"; then
+      echo "计数器文件下载成功。"
+    else
+      echo "无法下载计数器文件，使用默认值：7"
+      echo "7" > "$COUNTER_FILE"  # 创建文件并写入默认值
+    fi
+
+    # 读取计数器值
+    if [ -f "$COUNTER_FILE" ]; then
+      counter=$(cat "$COUNTER_FILE")
+      echo "读取计数器值成功：$counter"
+    else
+      counter=7  
+      echo "计数器文件不存在，使用默认值：$counter"
+      echo "$counter" > "$COUNTER_FILE"  # 创建文件
+    fi
+
+    echo "此次运行前计数器值为：$counter"
+    counter=$((counter + 1))
+    echo "$counter" > "$COUNTER_FILE"
+    echo "计数器值已保存到 $COUNTER_FILE，最后计数器值为：$counter"
+    echo "计数器文件内容："
+    cat "$COUNTER_FILE"
+
  
 
     # # 设置环境变量并更新计数器
