@@ -39,14 +39,15 @@ jobs:
           counter-cache-Linux-
       continue-on-error: true
 
-    - name: Check if counter file exists
+    - name: Check if counter file has changes
       run: |
-        if [ -f counter.txt ]; then
-          echo "计数器文件存在，内容如下："
-          cat counter.txt
+        echo "Checking if counter file has changed..."
+        if cmp -s counter.txt /home/runner/work/Tool/Tool/counter.txt; then
+          echo "计数器文件未变化，不更新缓存。"
+          echo "UPDATE_CACHE=false" >> $GITHUB_ENV
         else
-          echo "计数器文件不存在，初始化为0"
-          echo "0" > counter.txt
+          echo "计数器文件有变化，更新缓存。"
+          echo "UPDATE_CACHE=true" >> $GITHUB_ENV
         fi
 
     - name: Set Environment
