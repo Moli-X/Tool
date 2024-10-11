@@ -28,13 +28,12 @@ jobs:
         token: ${{ secrets.PAT_TOKEN }}  
 
 ###### 控制开关
-    # 缓存计数器文件
-    - name: Cache counter file
-      id: cache-counter
-      uses: actions/cache@v4.1.0
+    - name: Restore counter file from cache
+      id: restore-counter
+      uses: actions/cache@v4
       with:
         path: counter.txt
-        key: counter-cache-Linux  # 使用稳定的缓存键
+        key: counter-cache-Linux
         restore-keys: |
           counter-cache-Linux
     
@@ -105,8 +104,18 @@ jobs:
         # 记录计数器文件内容
         echo "计数器文件内容："
         cat "$COUNTER_FILE"
-    
 
+    - name: Save updated counter to cache in cache storage
+      uses: actions/cache@v4
+      with:
+        path: counter.txt
+        key: counter-cache-Linux    
+
+    - name: Debug cache restore
+      run: |
+        echo "缓存键为：counter-cache-Linux"
+        echo "检查缓存恢复后的计数器文件内容："
+        cat counter.txt || echo "计数器文件不存在"
     
 ###### Fork
 
