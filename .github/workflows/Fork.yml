@@ -38,14 +38,15 @@ jobs:
         restore-keys: |
           counter-cache-Linux-
     
-    # 设置环境变量并更新计数器
+# 设置环境变量并更新计数器
     - name: Set Environment
       id: set-env
       run: |
-
         # 设置调试模式开关
-         echo "Debug=true" >> $GITHUB_ENV 
-
+        Debug=true  # 将此行改为 Debug=true 而非 echo 赋值，确保后续可以直接引用
+    
+        echo "Debug模式为：$Debug"  # 输出当前Debug模式，方便调试
+    
         if [ "$Debug" = true ]; then
           # 如果 Debug 模式开启，所有开关关闭
           echo "SURGE_SWITCH=false" >> $GITHUB_ENV
@@ -60,7 +61,7 @@ jobs:
           echo "LOON_SWITCH=true" >> $GITHUB_ENV
           echo "CLASH_SWITCH=true" >> $GITHUB_ENV
           echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
-          
+    
           # 判断计数器值，设置 SURGE, EGERN 和 SHADOWROCKET 的开关
           if (( counter % 3 == 0 )); then
             echo "SURGE_SWITCH=true" >> $GITHUB_ENV
@@ -74,23 +75,41 @@ jobs:
             echo "SURGE、EGERN 和 SHADOWROCKET 关闭"
           fi
         fi
-        
+    
+        # 读取计数器值（确保计数器文件存在）
+        COUNTER_FILE="counter.txt"
+        if [ -f "$COUNTER_FILE" ]; then
+          counter=$(cat "$COUNTER_FILE")
+        else
+          counter=0  # 如果文件不存在，则初始化为0
+        fi
+    
+        # 增加计数器值
+        counter=$((counter + 1))
+    
+        # 判断是否需要清零
+        if (( counter >= 100 )); then
+          counter=0
+          echo "计数器已达到100，重置为0。"
+        fi
+    
         # 保存新的计数器值
         echo "$counter" > "$COUNTER_FILE"
         echo "计数器值已保存到 counter.txt"
-
+    
         # 记录计数器文件内容
         echo "计数器文件内容："
-        cat counter.txt
-
+        cat "$COUNTER_FILE"
+    
     # 保存更新后的计数器文件到缓存
     - name: Save updated counter to cache
       run: |
-         echo "$counter" > counter.txt  
-         echo "计数器值为：$counter"
-
-         echo "验证保存后计数器文件内容："
-         cat counter.txt
+        echo "$counter" > counter.txt  
+        echo "计数器值为：$counter"
+    
+        echo "验证保存后计数器文件内容："
+        cat counter.txt
+    
 ###### Fork
 
     - name: Copy Yml
