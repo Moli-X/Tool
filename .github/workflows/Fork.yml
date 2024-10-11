@@ -38,7 +38,7 @@ jobs:
         COUNTER_FILE="$GITHUB_WORKSPACE/.github/workflows/counter.txt"
     
         # 尝试从 URL 下载计数器文件
-        if curl -o "$COUNTER_FILE" -s "https://raw.githubusercontent.com/Moli-X/Tool/refs/heads/X/.github/workflows/counter.txt"; then
+        if curl -o "$COUNTER_FILE" -s "https://github.com/Moli-X/Tool/raw/X/.github/workflows/counter.txt"; then
           counter=$(cat "$COUNTER_FILE")
         else
           counter=7  
