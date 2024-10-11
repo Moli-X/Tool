@@ -1,4 +1,4 @@
-# 2024-10-11
+# 2024-10-10 
 
 name: Fork & Edit
 
@@ -27,13 +27,15 @@ jobs:
         path: Tool-repo
         token: ${{ secrets.PAT_TOKEN }}  
 
+
+
 ###### 控制开关
 
     - name: Set counter
       id: set-counter
       run: |
-        # 获取上一次的计数器值（从状态文件中获取，如果不存在则默认为0）
-        counter=${{ state.counter || 0 }}
+        # 获取上一次的计数器值，如果不存在，则默认为0
+        counter="${{ state.counter || 0 }}"
 
         # 增加计数器
         counter=$((counter + 1))
@@ -43,42 +45,28 @@ jobs:
           counter=0
         fi
 
-        # 输出计数器到环境文件中
-        echo "COUNTER=$counter" >> $GITHUB_ENV
-
-        # 将新的计数器值输出到 state 中，供下一次运行时使用
+        # 保存新的计数器值到 GitHub Actions 状态
         echo "::save-state name=counter::$counter"
 
-        # 输出计数器到控制台
-        echo "Counter value: $counter"
-
-    - name: Set Environment
-      id: set-env
+    - name: Set environment switches
       run: |
         # LOON、CLASH 和 QUANTUMULTX 每次都开启
         echo "LOON_SWITCH=true" >> $GITHUB_ENV
         echo "CLASH_SWITCH=true" >> $GITHUB_ENV
         echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
-
-        # 获取计数器值
-        counter=${{ env.COUNTER }}
-
-        # 显示此次运行是第几次
-        echo "此次运行是第 $counter 次"
-
-        # 判断是否达到3次
+        
+        # 判断计数器是否达到3次以开启其他开关
         if (( counter % 3 == 0 )); then
           echo "SURGE_SWITCH=true" >> $GITHUB_ENV
           echo "EGERN_SWITCH=true" >> $GITHUB_ENV
           echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
-          echo "SURGE、EGERN 和 SHADOWROCKET 已开启"
+          echo "本次计数：$counter , SURGE、EGERN 和 SHADOWROCKET 开启"
         else
           echo "SURGE_SWITCH=false" >> $GITHUB_ENV
           echo "EGERN_SWITCH=false" >> $GITHUB_ENV
           echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
-          echo "SURGE、EGERN 和 SHADOWROCKET 已关闭"
-        fi  # 结束 if 语句
-
+          echo "本次计数：$counter , SURGE、EGERN 和 SHADOWROCKET 关闭"
+        fi
 
     
         
