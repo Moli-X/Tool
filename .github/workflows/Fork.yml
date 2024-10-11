@@ -44,8 +44,9 @@ jobs:
       run: |
 
         # 设置调试模式开关
-        Debug=true  
-    
+         echo "Debug=true" >> $GITHUB_ENV 
+         echo "当前 Debug 模式为：$Debug"
+
         if [ "$Debug" = true ]; then
           # 如果 Debug 模式开启，所有开关关闭
           echo "SURGE_SWITCH=false" >> $GITHUB_ENV
