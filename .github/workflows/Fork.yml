@@ -72,7 +72,9 @@ jobs:
         # 保存新的计数器值
         echo "$counter" > "$COUNTER_FILE"
         echo "计数器值已保存到 counter.txt"
-    
+        echo "计数器文件内容："
+        cat counter.txt
+
     # 保存更新后的计数器文件到缓存
     - name: Save counter to cache
       uses: actions/cache@v4
