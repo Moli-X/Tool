@@ -34,15 +34,10 @@ jobs:
       id: set-env
       run: |
 
-        # 判断是否为手动触发
-        if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-          Debug=true  # 手动运行时
-        else
-          Debug=false   # 自动运行时
-        fi
-    
-        echo "Debug模式为：$Debug"
-    
+        # 调试模式是否开启
+        Debug=false   
+        echo "Debug状态为：$Debug"
+
         if [ "$Debug" = true ]; then
           # 如果 Debug 模式开启，所有开关关闭
           echo "LOON_SWITCH=false" >> $GITHUB_ENV
@@ -62,6 +57,7 @@ jobs:
           echo "EGERN_SWITCH=true" >> $GITHUB_ENV
           echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
           echo "STASH_SWITCH=true" >> $GITHUB_ENV
+          echo "Debug 模式关闭，所有正常运行"
         fi
 
 
