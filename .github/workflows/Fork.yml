@@ -34,7 +34,9 @@ jobs:
       uses: actions/cache@v4
       with:
         path: counter.txt
-        key: counter-cache-Linux-${{ github.run_id }}  # 使用唯一的 key
+        key: counter-cache-Linux  # 使用固定的 key
+        restore-keys: |
+          counter-cache-Linux-
       continue-on-error: true
 
     - name: Check if counter file exists
@@ -94,9 +96,7 @@ jobs:
       uses: actions/cache@v4
       with:
         path: counter.txt
-        key: counter-cache-Linux-${{ github.run_id }}  # 使用唯一的 key
-        restore-keys: |
-          counter-cache-Linux-
+        key: counter-cache-Linux  # 使用固定的 key
 
     - name: Check updated counter file
       run: |
