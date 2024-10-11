@@ -28,57 +28,54 @@ jobs:
         token: ${{ secrets.PAT_TOKEN }}  
 
 ###### 控制开关
+ 
 
-###### 控制开关
-
-###### 控制开关
-
-- name: Set counter
-  id: set-counter
-  run: |
-    # 从 GitHub Actions 的状态文件中获取计数器
-    counter=${{ steps.set-counter.outputs.counter || 0 }}
-
-    # 增加计数器
-    counter=$((counter + 1))
-
-    # 如果计数器大于等于100，重置为0
-    if [ $counter -ge 100 ]; then
-      counter=0
-    fi
-
-    # 输出计数器到环境文件中
-    echo "Counter value: $counter"
-    echo "COUNTER=$counter" >> $GITHUB_ENV
-
-- name: Set Environment
-  id: set-env
-  run: |
-
-    # LOON、CLASH 和 QUANTUMULTX 每次都开启
-    echo "LOON_SWITCH=true" >> $GITHUB_ENV
-    echo "CLASH_SWITCH=true" >> $GITHUB_ENV
-    echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
-
-    # 获取计数器值
-    counter=${{ env.COUNTER }}
-
-    # 显示此次运行是第几次
-    echo "第 $counter 次运行"
-
-    # 判断是否达到3次
-    if (( counter % 3 == 0 )); then
-      echo "SURGE_SWITCH=true" >> $GITHUB_ENV
-      echo "EGERN_SWITCH=true" >> $GITHUB_ENV
-      echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
-      echo "SURGE、EGERN 和 SHADOWROCKET 已开启"
-    else
-      echo "SURGE_SWITCH=false" >> $GITHUB_ENV
-      echo "EGERN_SWITCH=false" >> $GITHUB_ENV
-      echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
-      echo "SURGE、EGERN 和 SHADOWROCKET 已关闭"
-    fi
-
+    - name: Set counter
+     id: set-counter
+     run: |
+       # 从 GitHub Actions 的状态文件中获取计数器
+       counter=${{ steps.set-counter.outputs.counter || 0 }}
+   
+       # 增加计数器
+       counter=$((counter + 1))
+   
+       # 如果计数器大于等于100，重置为0
+       if [ $counter -ge 100 ]; then
+         counter=0
+       fi
+   
+       # 输出计数器到环境文件中
+       echo "Counter value: $counter"
+       echo "COUNTER=$counter" >> $GITHUB_ENV
+   
+   - name: Set Environment
+     id: set-env
+     run: |
+   
+       # LOON、CLASH 和 QUANTUMULTX 每次都开启
+       echo "LOON_SWITCH=true" >> $GITHUB_ENV
+       echo "CLASH_SWITCH=true" >> $GITHUB_ENV
+       echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
+   
+       # 获取计数器值
+       counter=${{ env.COUNTER }}
+   
+       # 显示此次运行是第几次
+       echo "第 $counter 次运行"
+   
+       # 判断是否达到3次
+       if (( counter % 3 == 0 )); then
+         echo "SURGE_SWITCH=true" >> $GITHUB_ENV
+         echo "EGERN_SWITCH=true" >> $GITHUB_ENV
+         echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
+         echo "SURGE、EGERN 和 SHADOWROCKET 已开启"
+       else
+         echo "SURGE_SWITCH=false" >> $GITHUB_ENV
+         echo "EGERN_SWITCH=false" >> $GITHUB_ENV
+         echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
+         echo "SURGE、EGERN 和 SHADOWROCKET 已关闭"
+       fi
+    
     
 ###### Fork
 
