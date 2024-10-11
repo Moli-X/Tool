@@ -105,17 +105,25 @@ jobs:
         echo "计数器文件内容："
         cat "$COUNTER_FILE"
 
+    - name: Generate new cache key based on counter.txt
+      id: generate-key
+      run: |
+        key="counter-cache-Linux-$(sha256sum counter.txt | cut -d' ' -f1)"
+        echo "Generated cache key: $key"
+        echo "key=$key" >> $GITHUB_ENV
+
+    # 保存更新后的计数器文件到缓存
     - name: Save updated counter to cache in cache storage
       uses: actions/cache@v4
       with:
         path: counter.txt
-        key: counter-cache-Linux    
+        key: ${{ env.key }}
 
-    - name: Debug cache restore
+    # 输出计数器文件的内容以验证保存成功
+    - name: Verify saved counter
       run: |
-        echo "缓存键为：counter-cache-Linux"
-        echo "检查缓存恢复后的计数器文件内容："
-        cat counter.txt || echo "计数器文件不存在"
+        echo "保存后的计数器文件内容："
+        cat counter.txt
     
 ###### Fork
 
