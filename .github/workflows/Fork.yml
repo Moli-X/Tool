@@ -40,38 +40,45 @@ jobs:
     
     # 设置环境变量并更新计数器
     - name: Set Environment
+      id: set-env
       run: |
-        echo "正在设置环境变量..."
-        COUNTER_FILE="counter.txt"
-
-        # 读取计数器文件（如果不存在则初始化为0）
-        if [ ! -f "$COUNTER_FILE" ]; then
-          echo "计数器文件不存在，初始化为 0"
-          echo "0" > "$COUNTER_FILE"
-        fi
+        # 设置调试模式开关
+        Debug=false  # 将 Debug 设置为 true 或 false
     
-        # 读取计数器值
-        counter=$(cat "$COUNTER_FILE")
-        echo "当前计数器值为：$counter"
-    
-        # 增加计数器值
-        counter=$((counter + 1))
-        echo "此次运行后计数器值为：$counter"
-        
-        # 判断是否达到3次
-        if (( counter % 3 == 0 )); then
-          echo "SURGE_SWITCH=true" >> $GITHUB_ENV
-          echo "EGERN_SWITCH=true" >> $GITHUB_ENV
-          echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
-        else
+        if [ "$Debug" = true ]; then
+          # 如果 Debug 模式开启，所有开关关闭
           echo "SURGE_SWITCH=false" >> $GITHUB_ENV
           echo "EGERN_SWITCH=false" >> $GITHUB_ENV
           echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
+          echo "LOON_SWITCH=false" >> $GITHUB_ENV
+          echo "CLASH_SWITCH=false" >> $GITHUB_ENV
+          echo "QUANTUMULTX_SWITCH=false" >> $GITHUB_ENV
+          echo "Debug 模式开启，所有开关关闭"
+        else
+          # 正常模式，设置相应的开关
+          echo "LOON_SWITCH=true" >> $GITHUB_ENV
+          echo "CLASH_SWITCH=true" >> $GITHUB_ENV
+          echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
+          
+          # 判断计数器值，设置 SURGE, EGERN 和 SHADOWROCKET 的开关
+          if (( counter % 3 == 0 )); then
+            echo "SURGE_SWITCH=true" >> $GITHUB_ENV
+            echo "EGERN_SWITCH=true" >> $GITHUB_ENV
+            echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
+            echo "SURGE、EGERN 和 SHADOWROCKET 开启" 
+          else
+            echo "SURGE_SWITCH=false" >> $GITHUB_ENV
+            echo "EGERN_SWITCH=false" >> $GITHUB_ENV
+            echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
+            echo "SURGE、EGERN 和 SHADOWROCKET 关闭"
+          fi
         fi
-    
+        
         # 保存新的计数器值
         echo "$counter" > "$COUNTER_FILE"
         echo "计数器值已保存到 counter.txt"
+
+        # 记录计数器文件内容
         echo "计数器文件内容："
         cat counter.txt
 
