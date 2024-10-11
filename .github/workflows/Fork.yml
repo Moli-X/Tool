@@ -28,27 +28,19 @@ jobs:
         token: ${{ secrets.PAT_TOKEN }}  
 
 ###### 控制开关
-    - name: Restore counter file from cache
-      id: restore-counter
-      uses: actions/cache@v4
-      with:
-        path: counter.txt
-        key: counter-cache-Linux
-        restore-keys: |
-          counter-cache-Linux
     
+
     # 设置环境变量并更新计数器
     - name: Set Environment
       id: set-env
       run: |
         # 设置调试模式开关
         Debug=true  # 将此行改为 Debug=true 而非 echo 赋值，确保后续可以直接引用
-
+    
         echo "Debug模式为：$Debug"  # 输出当前Debug模式，方便调试
-
+    
         if [ "$Debug" = true ]; then
           # 如果 Debug 模式开启，所有开关关闭
-
           echo "LOON_SWITCH=false" >> $GITHUB_ENV
           echo "CLASH_SWITCH=false" >> $GITHUB_ENV
           echo "QUANTUMULTX_SWITCH=false" >> $GITHUB_ENV
@@ -58,45 +50,40 @@ jobs:
           echo "LOON_SWITCH=true" >> $GITHUB_ENV
           echo "CLASH_SWITCH=true" >> $GITHUB_ENV
           echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
-          # 判断计数器值，设置 SURGE, EGERN 和 SHADOWROCKET 的开关
         fi
-
+    
         # 读取计数器值（确保计数器文件存在）
         COUNTER_FILE="counter.txt"
         if [ -f "$COUNTER_FILE" ]; then
           counter=$(cat "$COUNTER_FILE")
         else
           counter=7  
-          echo "计数器文件不存在"  
+          echo "计数器文件不存在，使用默认值：$counter"
         fi
-
-
-          # 查询当前次数值
-          echo "此次运行前计数器值为：$counter"   
-          if (( counter % 3 == 0 )); then
-            echo "SURGE_SWITCH=true" >> $GITHUB_ENV
-            echo "EGERN_SWITCH=true" >> $GITHUB_ENV
-            echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
-            echo "SURGE、EGERN 和 SHADOWROCKET 开启" 
-          else
-            echo "SURGE_SWITCH=false" >> $GITHUB_ENV
-            echo "EGERN_SWITCH=false" >> $GITHUB_ENV
-            echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
-            echo "SURGE、EGERN 和 SHADOWROCKET 关闭"
-          fi
-
-
+    
+        # 查询当前次数值
+        echo "此次运行前计数器值为：$counter"
+        if (( counter % 3 == 0 )); then
+          echo "SURGE_SWITCH=true" >> $GITHUB_ENV
+          echo "EGERN_SWITCH=true" >> $GITHUB_ENV
+          echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
+          echo "SURGE、EGERN 和 SHADOWROCKET 开启"
+        else
+          echo "SURGE_SWITCH=false" >> $GITHUB_ENV
+          echo "EGERN_SWITCH=false" >> $GITHUB_ENV
+          echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
+          echo "SURGE、EGERN 和 SHADOWROCKET 关闭"
+        fi
+    
         # 增加计数器值
         counter=$((counter + 1))
         echo "$counter" > "$COUNTER_FILE"
         echo "计数器值已保存到 $COUNTER_FILE，最后计数器值为：$counter"
-        echo "计数器值已保存到 counter.txt"
-
+    
         # 记录计数器文件内容
         echo "计数器文件内容："
         cat "$COUNTER_FILE"
-
-
+    
     
 ###### Fork
 
