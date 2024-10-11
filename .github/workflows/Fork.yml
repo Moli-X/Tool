@@ -42,7 +42,7 @@ jobs:
       id: set-env
       run: |
         # 设置调试模式开关
-        Debug=true  # 将此行改为 Debug=true 而非 echo 赋值，确保后续可以直接引用
+        Debug=false  # 将此行改为 Debug=true 而非 echo 赋值，确保后续可以直接引用
     
         echo "Debug模式为：$Debug"  # 输出当前Debug模式，方便调试
     
