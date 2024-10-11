@@ -28,6 +28,7 @@ jobs:
         token: ${{ secrets.PAT_TOKEN }}  
 
 ###### 控制开关
+        
     
 
     # 设置环境变量并更新计数器
@@ -53,7 +54,7 @@ jobs:
         fi
     
         # 读取计数器值（确保计数器文件存在）
-        COUNTER_FILE="counter.txt"
+        COUNTER_FILE="./.github/workflows/counter.txt"
         if [ -f "$COUNTER_FILE" ]; then
           counter=$(cat "$COUNTER_FILE")
         else
