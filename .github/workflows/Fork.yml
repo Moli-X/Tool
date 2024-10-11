@@ -30,12 +30,11 @@ jobs:
 
 
 ###### 控制开关
-
     - name: Set counter
       id: set-counter
       run: |
-        # 获取上一次的计数器值，如果不存在，则默认为0
-        counter="${{ state.counter || 0 }}"
+        # 从 GitHub Actions 的状态文件中获取计数器
+        counter=$(cat counter.txt || echo 0)
 
         # 增加计数器
         counter=$((counter + 1))
@@ -45,8 +44,11 @@ jobs:
           counter=0
         fi
 
-        # 保存新的计数器值到 GitHub Actions 状态
-        echo "::save-state name=counter::$counter"
+        # 保存新的计数器值到文件
+        echo "$counter" > counter.txt
+
+        # 输出计数器值
+        echo "counter=$counter" >> $GITHUB_ENV
 
     - name: Set environment switches
       run: |
@@ -54,6 +56,9 @@ jobs:
         echo "LOON_SWITCH=true" >> $GITHUB_ENV
         echo "CLASH_SWITCH=true" >> $GITHUB_ENV
         echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
+        
+        # 获取计数器值
+        counter=$counter
         
         # 判断计数器是否达到3次以开启其他开关
         if (( counter % 3 == 0 )); then
@@ -68,7 +73,13 @@ jobs:
           echo "本次计数：$counter , SURGE、EGERN 和 SHADOWROCKET 关闭"
         fi
 
-    
+    - name: Commit updated counter
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+        git add counter.txt
+        git commit -m "Update counter"
+        git push
         
 ###### Fork
 
