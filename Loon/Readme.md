@@ -584,4 +584,18 @@ TG Channel：https://t.me/QuantX
     <td>25</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/AppleWeatherEnhancer.plugin">Apple天气增强</a></td>
   </tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  <tr>
+    <th>类别</th>
+    <th>序号</th>
+    <th>名称</th>
+  </tr>
+  <tr>
+    <td rowspan="2"><strong>签到插件</strong></td>
+  <tr>
+    <td>01</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/WPS_checkin.plugin">WPS每日签到</a></td>
+  </tr>
 </table>
