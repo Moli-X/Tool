@@ -29,7 +29,7 @@ jobs:
 
 ###### 控制开关
 
-    # 设
+    # 环境判断
     - name: Set Environment
       id: set-env
       run: |
