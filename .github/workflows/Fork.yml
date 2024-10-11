@@ -27,7 +27,16 @@ jobs:
         path: Tool-repo
         token: ${{ secrets.PAT_TOKEN }}  
 
+
+
 ###### 控制开关
+
+    - name: Cache counter file
+      id: cache-counter
+      uses: actions/cache@v3
+      with:
+        path: counter.txt
+        key: counter-cache
 
     - name: Set Environment
       id: set-env
@@ -60,12 +69,12 @@ jobs:
           echo "SURGE_SWITCH=true" >> $GITHUB_ENV
           echo "EGERN_SWITCH=true" >> $GITHUB_ENV
           echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
-          echo "当前是第 $((counter / 3)) 次开启 SURGE、EGERN 和 SHADOWROCKET" 
+          echo "本次计数：$counter,SURGE、EGERN 和 SHADOWROCKET 开启" 
         else
           echo "SURGE_SWITCH=false" >> $GITHUB_ENV
           echo "EGERN_SWITCH=false" >> $GITHUB_ENV
           echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
-          echo "SURGE、EGERN 和 SHADOWROCKET 关闭，本次计数：$counter"
+          echo "本次计数：$counter,SURGE、EGERN 和 SHADOWROCKET 关闭"
         fi
     
         # 保存新的计数器值
