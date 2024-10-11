@@ -73,7 +73,7 @@ jobs:
 
 
           # 查询当前次数值
-          echo "此次运行后计数器值为：$counter"   
+          echo "此次运行前计数器值为：$counter"   
           if (( counter % 3 == 0 )); then
             echo "SURGE_SWITCH=true" >> $GITHUB_ENV
             echo "EGERN_SWITCH=true" >> $GITHUB_ENV
@@ -91,7 +91,7 @@ jobs:
 
         # 增加计数器值
         counter=$((counter + 1))
-    
+        echo "此次运行后计数器值为：$counter" 
         # 判断是否需要清零
         if (( counter >= 100 )); then
           counter=0
