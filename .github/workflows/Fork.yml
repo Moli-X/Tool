@@ -31,7 +31,7 @@ jobs:
     # 缓存计数器文件
     - name: Cache counter file
       id: cache-counter
-      uses: actions/cache@v4
+      uses: actions/cache@v4.1.0
       with:
         path: counter.txt
         key: counter-cache-Linux  # 使用稳定的缓存键
