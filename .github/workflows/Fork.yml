@@ -33,26 +33,44 @@ jobs:
       id: set-env
       run: |
 
-        # 获取当前日期的天数
-        day=$(date +%d)
-        # 计算今天是每4天的第几天
-        day_in_cycle=$(( (day - 1) % 4 + 1 ))
-        echo "今天是循环天数的第 $day_in_cycle 天"
-        # 计算当前天数模4   
-        if (( day_in_cycle == 1 )); then
-          echo "SURGE_SWITCH=true" >> $GITHUB_ENV
-          echo "EGERN_SWITCH=true" >> $GITHUB_ENV
-          echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
-          echo "SWITCH 状态: TRUE"
-        else
-          echo "SURGE_SWITCH=falsee" >> $GITHUB_ENV
-          echo "EGERN_SWITCH=false" >> $GITHUB_ENV
-          echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
-          echo "SWITCH 状态: FALSE"
-        fi
+        # LOON、CLASH 和 QUANTUMULTX 每次都开启
         echo "LOON_SWITCH=true" >> $GITHUB_ENV
         echo "CLASH_SWITCH=true" >> $GITHUB_ENV
         echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
+    
+        # 读取计数器文件（如果不存在则初始化为0）
+        COUNTER_FILE="counter.txt"
+        if [ ! -f "$COUNTER_FILE" ]; then
+          echo "0" > "$COUNTER_FILE"
+        fi
+    
+        # 读取计数器值
+        counter=$(cat "$COUNTER_FILE")
+        
+        # 增加计数器值
+        counter=$((counter + 1))
+    
+        # 判断是否需要清零
+        if (( counter >= 100 )); then
+          counter=0
+          echo "计数器已达到100，重置为0。"
+        fi
+    
+        # 判断是否达到3次
+        if (( counter % 3 == 0 )); then
+          echo "SURGE_SWITCH=true" >> $GITHUB_ENV
+          echo "EGERN_SWITCH=true" >> $GITHUB_ENV
+          echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
+          echo "本次计数：$counter , SURGE、EGERN 和 SHADOWROCKET 开启" 
+        else
+          echo "SURGE_SWITCH=false" >> $GITHUB_ENV
+          echo "EGERN_SWITCH=false" >> $GITHUB_ENV
+          echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
+          echo "本次计数：$counter ,SURGE、EGERN 和 SHADOWROCKET 关闭"
+        fi
+    
+        # 保存新的计数器值
+        echo "$counter" > "$COUNTER_FILE"
 
 
 ###### Fork
