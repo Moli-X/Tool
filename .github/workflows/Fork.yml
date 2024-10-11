@@ -80,8 +80,12 @@ jobs:
         # 保存新的计数器值
         echo "$counter" > "$COUNTER_FILE"
     
-    
-    
+    - name: Save counter to cache
+      if: success()
+      run: |
+        echo "Saving updated counter value..."
+        echo "$counter" > counter.txt
+   
 ###### Fork
 
     - name: Copy Yml
