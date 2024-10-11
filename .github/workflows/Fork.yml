@@ -32,36 +32,40 @@ jobs:
     - name: Set counter
       id: set-counter
       run: |
-        # 从 GitHub Actions 的状态文件中获取计数器
-        counter=${{ steps.set-counter.outputs.counter || 0 }}
-    
+        # 获取上一次的计数器值，如果没有默认为0
+        counter=$(cat /github/home/counter || echo 0)
+
         # 增加计数器
         counter=$((counter + 1))
-    
+
         # 如果计数器大于等于100，重置为0
         if [ $counter -ge 100 ]; then
           counter=0
         fi
-    
+
         # 输出计数器到环境文件中
-        echo "Counter value: $counter"
         echo "COUNTER=$counter" >> $GITHUB_ENV
-    
+
+        # 将新的计数器值写入到文件，保存状态
+        echo "$counter" > /github/home/counter
+
+        # 输出计数器到控制台
+        echo "Counter value: $counter"
+
     - name: Set Environment
       id: set-env
       run: |
-    
         # LOON、CLASH 和 QUANTUMULTX 每次都开启
         echo "LOON_SWITCH=true" >> $GITHUB_ENV
         echo "CLASH_SWITCH=true" >> $GITHUB_ENV
         echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
-    
+
         # 获取计数器值
         counter=${{ env.COUNTER }}
-    
+
         # 显示此次运行是第几次
         echo "此次运行是第 $counter 次"
-    
+
         # 判断是否达到3次
         if (( counter % 3 == 0 )); then
           echo "SURGE_SWITCH=true" >> $GITHUB_ENV
@@ -176,9 +180,6 @@ jobs:
         cp -r Tool-repo/Surge/Rules/Lan.list Tool-repo/Loon/Rules/Lan.list
         # Other
         curl -L -o Tool-repo/Loon/Loon.conf "https://github.com/Moli-X/Resources/raw/main/Loon/Loon.conf"
-        # # curl -L -o Tool-repo/Loon/Readme.md "https://github.com/Moli-X/Resources/raw/main/Loon/Readme.md"
-        # curl -s https://gitlab.com/lodepuly/vpn_tool/-/raw/master/README.md | \
-        # sed -n '/<table/,/<\/table>/p' > Tool-repo/Loon/Readme.md
 
 
        # 适配规则
