@@ -1,4 +1,4 @@
-# 2024-10-10 
+# 2024-10-11
 
 name: Fork & Edit
 
@@ -32,16 +32,8 @@ jobs:
     - name: Set counter
       id: set-counter
       run: |
-        # 定义文件路径
-        COUNTER_FILE="/github/home/counter"
-
-        # 检查计数器文件是否存在，如果不存在则初始化为0
-        if [ ! -f "$COUNTER_FILE" ]; then
-          echo "0" > "$COUNTER_FILE"
-        fi
-
-        # 获取上一次的计数器值
-        counter=$(cat "$COUNTER_FILE")
+        # 获取上一次的计数器值（从状态文件中获取，如果不存在则默认为0）
+        counter=${{ state.counter || 0 }}
 
         # 增加计数器
         counter=$((counter + 1))
@@ -54,8 +46,8 @@ jobs:
         # 输出计数器到环境文件中
         echo "COUNTER=$counter" >> $GITHUB_ENV
 
-        # 将新的计数器值写入到文件，保存状态
-        echo "$counter" > "$COUNTER_FILE"
+        # 将新的计数器值输出到 state 中，供下一次运行时使用
+        echo "::save-state name=counter::$counter"
 
         # 输出计数器到控制台
         echo "Counter value: $counter"
@@ -85,7 +77,8 @@ jobs:
           echo "EGERN_SWITCH=false" >> $GITHUB_ENV
           echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
           echo "SURGE、EGERN 和 SHADOWROCKET 已关闭"
-        fi  
+        fi  # 结束 if 语句
+
 
     
         
