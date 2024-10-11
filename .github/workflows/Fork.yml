@@ -92,7 +92,18 @@ jobs:
         echo "计数器值已保存到 counter.txt"
         cat counter.txt
 
+    - name: Save updated counter file to cache if changed
+      id: check-changes
+      run: |
+        if cmp -s counter.txt "${{ steps.cache-counter.outputs.cache-hit }}"; then
+          echo "计数器文件未变化，不更新缓存。"
+        else
+          echo "计数器文件有变化，更新缓存。"
+          echo "UPDATE_CACHE=true" >> $GITHUB_ENV
+        fi
+
     - name: Save updated counter file to cache
+      if: env.UPDATE_CACHE == 'true'
       uses: actions/cache@v4
       with:
         path: counter.txt
@@ -102,15 +113,6 @@ jobs:
       run: |
         echo "保存后的计数器文件内容："
         cat counter.txt
-
-    # 清除历史缓存
-    - name: Delete old caches
-      run: |
-        echo "清除历史缓存..."
-        curl -X DELETE \
-        -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-        -H "Accept: application/vnd.github+json" \
-        "https://api.github.com/repos/${{ github.repository }}/actions/caches?ref=X"
 
 ###### Fork
 
