@@ -34,27 +34,31 @@ jobs:
       uses: actions/cache@v4
       with:
         path: counter.txt
-        key: counter-cache-${{ github.run_id }}  # 使用运行 ID 生成唯一的键
-      continue-on-error: true  # 如果缓存不存在，继续执行
+        key: counter-cache-Linux-${{ github.run_id }}  # 使用唯一的 key
+      continue-on-error: true
+
+    - name: Check if counter file exists
+      run: |
+        if [ -f counter.txt ]; then
+          echo "计数器文件存在，内容如下："
+          cat counter.txt
+        else
+          echo "计数器文件不存在，初始化为0"
+          echo "0" > counter.txt
+        fi
 
     - name: Set Environment
       id: set-env
       run: |
         echo "正在设置环境变量..."
-        
+
         # LOON、CLASH 和 QUANTUMULTX 每次都开启
         echo "LOON_SWITCH=true" >> $GITHUB_ENV
         echo "CLASH_SWITCH=true" >> $GITHUB_ENV
         echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
 
-        # 读取计数器文件（如果不存在则初始化为0）
+        # 读取计数器文件
         COUNTER_FILE="counter.txt"
-        if [ ! -f "$COUNTER_FILE" ]; then
-          echo "计数器文件不存在，初始化为 0"
-          echo "0" > "$COUNTER_FILE"
-        fi
-
-        # 读取计数器值
         counter=$(cat "$COUNTER_FILE")
         echo "当前计数器值为：$counter"
         
@@ -86,17 +90,27 @@ jobs:
         echo "计数器值已保存到 counter.txt"
         cat counter.txt
 
-    - name: Log counter before saving to cache
-      run: |
-        echo "保存计数器值到缓存之前的日志..."
-        cat counter.txt
-
-    - name: Save counter to cache
+    - name: Save updated counter file to cache
       uses: actions/cache@v4
       with:
         path: counter.txt
-        key: counter-cache-${{ github.run_id }}  # 使用运行 ID 生成唯一的键
+        key: counter-cache-Linux-${{ github.run_id }}  # 使用唯一的 key
+        restore-keys: |
+          counter-cache-Linux-
 
+    - name: Check updated counter file
+      run: |
+        echo "保存后的计数器文件内容："
+        cat counter.txt
+
+    # 清除历史缓存
+    - name: Delete old caches
+      run: |
+        echo "清除历史缓存..."
+        curl -X DELETE \
+        -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+        -H "Accept: application/vnd.github+json" \
+        "https://api.github.com/repos/${{ github.repository }}/actions/caches?ref=main"
 
 ###### Fork
 
