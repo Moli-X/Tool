@@ -2,11 +2,17 @@
 const $ = new ToolClient();
 $.getScript`https://cdn.jsdelivr.net/npm/fabric@latest/dist/fabric.min.js`;
 
+const AK = $argument.AK;
+const SK = $argument.SK;
+const MAX_RETRIES = $argument.MAX_RETRIES;
+
+/*
 const {
   AK,
   SK,
   MAX_RETRIES = 5,
 } = $.parseArgument();
+*/
 
 const captureRequest = () => {
   const parse = (delimiter) => (str) =>
