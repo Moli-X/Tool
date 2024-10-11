@@ -28,13 +28,15 @@ jobs:
         token: ${{ secrets.PAT_TOKEN }}  
 
 ###### 控制开关
-# 缓存计数器文件
+    # 缓存计数器文件
     - name: Cache counter file
       id: cache-counter
       uses: actions/cache@v4
       with:
         path: counter.txt
-        key: counter-cache-Linux-${{ github.run_id }} # 使用运行ID确保每次缓存唯一
+        key: counter-cache-Linux  # 使用稳定的缓存键
+        restore-keys: |
+          counter-cache-Linux-
     
     # 设置环境变量并更新计数器
     - name: Set Environment
@@ -76,7 +78,7 @@ jobs:
       uses: actions/cache@v4
       with:
         path: counter.txt
-        key: counter-cache-Linux-${{ github.run_id }} # 确保每次运行使用不同的缓存key
+        key: counter-cache-Linux  # 仍使用相同的缓存键
     
     # 验证保存后的计数器值
     - name: Check updated counter file
