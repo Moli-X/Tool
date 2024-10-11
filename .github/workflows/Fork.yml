@@ -44,14 +44,13 @@ jobs:
       id: set-env
       run: |
         echo "正在设置环境变量..."
-
-        # LOON、CLASH 和 QUANTUMULTX 每次都开启
         echo "LOON_SWITCH=true" >> $GITHUB_ENV
         echo "CLASH_SWITCH=true" >> $GITHUB_ENV
         echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
 
-        # 读取计数器文件（如果不存在则初始化为0）
         COUNTER_FILE="counter.txt"
+        
+        # 尝试恢复缓存
         if [ -f "$COUNTER_FILE" ]; then
           counter=$(cat "$COUNTER_FILE")
           echo "当前计数器值为：$counter"
@@ -86,6 +85,11 @@ jobs:
         # 保存新的计数器值到文件
         echo "$counter" > "$COUNTER_FILE"
         echo "计数器值已保存到 $COUNTER_FILE"
+
+        # 调试信息：输出计数器文件的内容
+        echo "计数器文件内容："
+        cat "$COUNTER_FILE" || echo "计数器文件不存在"
+
 
     - name: Save counter to cache
       run: |
