@@ -43,7 +43,7 @@ jobs:
       run: |
         echo "正在设置环境变量..."
         COUNTER_FILE="counter.txt"
-        
+
         # 读取计数器文件（如果不存在则初始化为0）
         if [ ! -f "$COUNTER_FILE" ]; then
           echo "计数器文件不存在，初始化为 0"
@@ -72,20 +72,16 @@ jobs:
         # 保存新的计数器值
         echo "$counter" > "$COUNTER_FILE"
         echo "计数器值已保存到 counter.txt"
-        echo "计数器文件counter.txt内容："
+        echo "计数器文件内容："
         cat counter.txt
 
     # 保存更新后的计数器文件到缓存
     - name: Save updated counter to cache
       run: |
-          echo "计数器文件有变化，更新缓存。"
-          echo "$counter" > counter.txt  # 更新缓存内容
-           echo "此次运行后计数器counter值为：$counter"
-    # 验证保存后的计数器值
-    - name: Check updated counter file
-      run: |
-        echo "验证保存后计数器文件counter.txt内容："
-        cat counter.txt
+         echo "$counter" > counter.txt  # 更新缓存内容
+         echo "计数器值为：$counter"
+         echo "验证保存后计数器文件内容："
+         cat counter.txt
 ###### Fork
 
     - name: Copy Yml
