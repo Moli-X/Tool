@@ -35,19 +35,20 @@ jobs:
         Debug=true
         echo "Debug模式为：$Debug"
     
-        echo "当前工作目录为：$(pwd)"
-        echo "计数器文件路径为：$GITHUB_WORKSPACE/counter.txt"
+        # 设置计数器文件的路径
+        COUNTER_FILE="$GITHUB_WORKSPACE/.github/workflows/counter.txt"
     
-        # 列出文件
-        echo "当前目录下的文件："
-        ls -al "$GITHUB_WORKSPACE/"
+        # 确保目录存在
+        mkdir -p "$GITHUB_WORKSPACE/.github/workflows/"
     
-        COUNTER_FILE="$GITHUB_WORKSPACE/counter.txt"
-        if [ -f "$COUNTER_FILE" ]; then
+        # 尝试从 URL 下载计数器文件
+        echo "尝试下载计数器文件..."
+        if curl -o "$COUNTER_FILE" -s "https://github.com/Moli-X/Tool/raw/X/.github/workflows/counter.txt"; then
           counter=$(cat "$COUNTER_FILE")
         else
           counter=7  
-          echo "计数器文件不存在，使用默认值：$counter"
+          echo "无法下载计数器文件，使用默认值：$counter"
+          echo "$counter" > "$COUNTER_FILE"  # 创建文件
         fi
     
         echo "此次运行前计数器值为：$counter"
@@ -56,7 +57,7 @@ jobs:
         echo "计数器值已保存到 $COUNTER_FILE，最后计数器值为：$counter"
         echo "计数器文件内容："
         cat "$COUNTER_FILE"
-
+    
 
     # # 设置环境变量并更新计数器
     # - name: Set Environment
