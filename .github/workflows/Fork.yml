@@ -106,6 +106,7 @@ jobs:
 ###### Fork
 
     - name: Copy Yml
+      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/.github/Record
         curl -L -o Tool-repo/.github/Record/Fork.yml "https://github.com/Repcz/Tool/raw/X/.github/workflows/Fork.yml"
@@ -1303,6 +1304,7 @@ jobs:
        
 ###### Commit
     - name: Add and Commits
+      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         cd Tool-repo
         if [[ -n $(git status -s) ]]; then
