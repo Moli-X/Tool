@@ -64,7 +64,7 @@ jobs:
     
 ###### Fork
 
-    - name: Copy Yml
+    - name: Copy workflows
       if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/.github/Record
@@ -323,6 +323,9 @@ jobs:
         curl -L -o Tool-repo/Clash/Rules/AdGuardChinese.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/AdGuardChinese.list"
         # Lan
         cp -r Tool-repo/Surge/Rules/Lan.list Tool-repo/Clash/Rules/Lan.list
+        # 覆写
+        curl -L -o Tool-repo/Clash/Rules/Meta/Override.js "https://github.com/Repcz/Tool/raw/X/Clash/Meta/Override.js"
+        curl -L -o Tool-repo/Clash/Rules/Meta/ConfigSet.js "https://github.com/Moli-X/Resources/raw/main/Clash/Script/ConfigSet.js"
 
       # 适配规则
     - name: Edit Clash/Rules
@@ -1234,7 +1237,7 @@ jobs:
 
 ###### GeoIP
 
-    - name: Copy 
+    - name: Copy  GeoIP
       if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/GeoIP
