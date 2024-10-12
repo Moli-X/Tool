@@ -252,8 +252,8 @@ jobs:
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
 
-        cp -r Tool-repo/Clash/Meta/Override.js "https://github.com/Repcz/Tool/raw/X/Clash/Meta/Override.js"
-        cp -r Tool-repo/Clash/Meta/ConfigSet.js "https://github.com/Moli-X/Resources/raw/main/Clash/Script/ConfigSet.js"
+        curl -L -o Tool-repo/Clash/Meta/Override.js "https://github.com/Repcz/Tool/raw/X/Clash/Meta/Override.js"
+        curl -L -o Tool-repo/Clash/Meta/ConfigSet.js "https://github.com/Moli-X/Resources/raw/main/Clash/Script/ConfigSet.js"
         # 流媒体 复制流媒体规则文件
         cp -r Tool-repo/Surge/Rules/Emby.list Tool-repo/Clash/Rules/Emby.list
         curl -L -o Tool-repo/Clash/Rules/TikTok.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/TikTok.list"
