@@ -324,49 +324,76 @@ jobs:
 
 
 
-    # 合并所有操作为一个步骤
-    - name: Edit, copy, and remove duplicates in Clash/Rules
-      if: env.CLASH_SWITCH == 'true'  # 根据环境变量控制是否执行
+    - name: Edit Clash/Rules
+      if: env.CLASH_SWITCH == 'true'  # 添加开关条件
       run: |
+        cd Tool-repo/Clash/Rules
+        for file in *.list; do
+          if [ "$file" != "ChinaIPv4.list" ] && [ "$file" != "ChinaIPv6.list" ] && [ "$file" != "Lan.list" ]; then
+            sed -i -e 's/, /,/g' \
+                   -e 's/;/# /g' \
+                   -e 's/host,/HOST,/g' \
+                   -e 's/host-/HOST-/g' \
+                   -e 's/-suffix/-SUFFIX/g' \
+                   -e 's/-keyword/-KEYWORD/g' \
+                   -e 's/ip-cidr/IP-CIDR/g' \
+                   -e 's/geoip/GEOIP/g' \
+                   -e 's/HOST,/DOMAIN,/g' \
+                   -e 's/HOST-/DOMAIN-/g' \
+                   -e 's/IP6-CIDR,/IP-CIDR6,/g' \
+                   -e 's/,REJECT$//g' \
+                   -e 's/,DIRECT$//g' \
+                   -e 's/,reject$//g' \
+                   -e 's/,direct$//g' \
+                   -e 's/,extended-matching$//g' \
+                   -e '/\(OR\|AND\|NOT\|USER-AGENT\|URL-REGEX\|IP-ASN\),/ s/^/#/' \
+                   -e '/# 内容：/d' \
+                   -e '/# 数量：/d' \
+                   -e '/# 更新：/d' \
+                   -e '/# NAME:/d' \
+                   -e '/# AUTHOR:/d' \
+                   -e '/# REPO:/d' \
+                   -e '/# UPDATED:/d' \
+                   -e '/404: Not Found/d' \
+                   "$file"
 
-        # 创建所需目录
-        mkdir -p Tool-repo/Clash/Rules
-        cd Tool-repo/Clash/Rules  # 切换到指定目录
-    
-        # 处理规则文件
-        for file in *.list; do  # 遍历所有以 .list 结尾的文件
-          # 跳过指定的文件（ChinaIPv4.list, ChinaIPv6.list, Lan.list）
-          if [[ "$file" != "ChinaIPv4.list" && "$file" != "ChinaIPv6.list" && "$file" != "Lan.list" ]]; then
-            # 使用 sed 命令进行文本替换和格式调整
-            sed -i -e 's/, /,/g' \  # 移除逗号后的空格
-                   -e 's/;/# /g' \  # 将分号替换为注释符号 #
-                   -e 's/host-/HOST-/g; s/-suffix/-SUFFIX/g; s/-keyword/-KEYWORD/g; s/ip-cidr/IP-CIDR/g; s/geoip/GEOIP/g; s/HOST-/DOMAIN-/g; s/IP6-CIDR,/IP-CIDR6,/g; s/,REJECT$//g; s/,DIRECT$//g; s/,reject$//g; s/,direct$//g; s/,extended-matching$//g' \  # 格式转换
-                   -e '/\(OR\|AND\|NOT\|USER-AGENT\|URL-REGEX\|IP-ASN\),/ s/^/#/' \  # 在包含特定关键字的行前添加注释
-                   -e '/# 内容：|# 数量：|# 更新：|# NAME:|# AUTHOR:|# REPO:|# UPDATED:|404: Not Found/d' "$file"  # 删除特定注释和无用行
-            
-            # 如果是 IP 规则且没有 no-resolve，则添加 no-resolve
-            awk '/^IP-/ && !/,no-resolve/ {print $0",no-resolve"; next} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            # 如果为IP规则且不包含no-resolve 则添加no-resolve
+            awk '/^IP-/ && !/,no-resolve/ {print $0",no-resolve"; next} {print}' "$file" > tmpfile
+            mv tmpfile "$file"
           else
-            echo "$file not processed."  # 如果是跳过的文件，提示未处理
+            echo "$file not found."
           fi
         done
-    
-        # 追加自定义规则到 Reject.list
-        if [ -f "Reject.list" ]; then  # 如果 Reject.list 存在
-          cat AdGuardChinese.list >> Reject.list  # 将 AdGuardChinese.list 的内容追加到 Reject.list
-        else
-          echo "Reject.list not found."  # 如果 Reject.list 不存在，输出提示
-        fi
-    
-        # 去重和排序 Reject.list
-        if [ -f "Reject.list" ]; then  # 如果 Reject.list 存在
-          # 去掉空行和注释行，排序后去重，并覆盖原文件
-          grep -v '^\s*#' Reject.list | grep -v '^\s*$' | sort | uniq > sorted_Reject.list && mv sorted_Reject.list Reject.list
-        else
-          echo "Reject.list not found."  # 如果 Reject.list 不存在，输出提示
-        fi
-      shell: bash  # 指定使用 bash 作为脚本解释器
 
+
+      # 追加规则
+    - name: Copy custom rules
+      if: env.CLASH_SWITCH == 'true'  # 添加开关条件
+      run: |
+        if [ -f "Tool-repo/Clash/Rules/Reject.list" ] ; then
+          cat Tool-repo/Clash/Rules/AdGuardChinese.list >> Tool-repo/Clash/Rules/Reject.list
+        else
+          echo "$file not found."
+        fi
+
+      # 去重排序
+    - name: Remove duplicates and lines 
+      if: env.CLASH_SWITCH == 'true'  # 添加开关条件
+      run: |
+        cd Tool-repo/Clash/Rules
+        shopt -s nullglob  # 避免没有匹配的文件时保留原始通配符
+        for file in Reject.list; do
+          if [ -f "$file" ]; then
+            sorted_file="sorted_${file}"
+
+            # 使用 grep 去掉包含 # 的行
+            grep -v '^\s*#' "$file" | grep -v '^\s*$' | sort | uniq > "$sorted_file"
+            mv "$sorted_file" "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+      shell: bash       
 
     # 覆写
     - name: Copy Meta
