@@ -1240,6 +1240,11 @@ jobs:
         mkdir -p Tool/GeoIP
         curl -L -o Tool-repo/GeoIP/CN_Country.mmdb "https://raw.githubusercontent.com/Masaiki/GeoIP2-CN/release/Country.mmdb"
         curl -L -o Tool-repo/GeoIP/Global_Country.mmdb "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"
+        curl -L -o Tool-repo/GeoIP/geoip-lite.dat "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
+        curl -L -o Tool-repo/GeoIP/geosite.dat "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+        curl -L -o Tool-repo/GeoIP/country-lite.mmdb "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb"
+        curl -L -o Tool-repo/GeoIP/GeoLite2-ASN.mmdb "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
+
 
 ###### 可莉README
     - name: Copy README.md Table and Add Resources
