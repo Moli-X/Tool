@@ -328,6 +328,9 @@ jobs:
     - name: Edit, copy, and remove duplicates in Clash/Rules
       if: env.CLASH_SWITCH == 'true'  # 根据环境变量控制是否执行
       run: |
+
+        # 创建所需目录
+        mkdir -p Tool-repo/Clash/Rules
         cd Tool-repo/Clash/Rules  # 切换到指定目录
     
         # 处理规则文件
