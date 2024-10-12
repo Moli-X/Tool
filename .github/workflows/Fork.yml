@@ -399,7 +399,7 @@ jobs:
     - name: Copy Meta
       if: env.CLASH_SWITCH == 'true'  # 根据环境变量控制是否执行
       run: |
-        cd Tool-repo/Clash/Meta  # 切换到指定目录
+        mkdir -p Tool-repo/Clash/Meta
 
         curl -L -o Tool-repo/Clash/Meta/Override.js "https://github.com/Repcz/Tool/raw/X/Clash/Meta/Override.js"
         curl -L -o Tool-repo/Clash/Meta/ConfigSet.js "https://github.com/Moli-X/Resources/raw/main/Clash/Script/ConfigSet.js"
