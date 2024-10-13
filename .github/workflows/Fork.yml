@@ -228,7 +228,7 @@ jobs:
             sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/Moli-X\/Tool\/X\/Loon\/Script\/lodepuly/g' "$file"
             
             # 修改作者注释部分为 "莫离[https://github.com/Moli-X]"
-            sed -i 's/#!author = .*/#!author = 莫离[https:\/\/github.com\/Moli-X]/g' "$file"
+            sed -i 's/#!author = .*/#!author = 莫离[https:\/\/github.com\/Moli-X\/Tool\/blob\/X\/Loon\/Readme.md]/g' "$file"
             
             # 修改主页链接为 raw 格式
             sed -i 's|#!homepage = .*|#!homepage = https:\/\/github.com\/Moli-X\/Tool\/raw\/X\/Loon\/Plugin\/lodepuly\/'"$file"'|g' "$file"
@@ -236,9 +236,6 @@ jobs:
             # 修改 #!openUrl = 为 #App链接 =
             sed -i 's/#!openUrl = /#App链接 = /g' "$file"
     
-            # 限制 #!desc = 后的内容长度为最多 20 个字符，按符号截断
-            sed -i -E '/#!desc = /s/(#!desc = .{20}[^，。；,.;!?]*).*/\1/g' "$file"
-            
             # 增加 "# 原链接 = " 部分，设置为 Fork 的原始链接      
             if grep -q "#!idate =" "$file"; then
               sed -i '/#!idate = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Tool/Loon\/Plugin\/'"$file" "$file"
