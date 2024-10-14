@@ -593,9 +593,13 @@ TG Channel：https://t.me/QuantX
     <th>名称</th>
   </tr>
   <tr>
-    <td rowspan="2"><strong>签到插件</strong></td>
+    <td rowspan="3"><strong>签到插件</strong></td>
   <tr>
     <td>01</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/WPS_checkin.plugin">WPS每日签到</a></td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/bgvioletsky/ios_rule/main/Loon/plugin/sxmd_sign.plugin">书香门第每日签到</a></td>
   </tr>
 </table>
