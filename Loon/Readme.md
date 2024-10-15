@@ -42,7 +42,7 @@ TG Channel：https://t.me/QuantX
   </tr>
   <tr>
     <td>008</td>
-    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/Bilibili_remove_ads.plugin">Bilibili去广告</a></td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/Bilibili_remove_ads.plugin">哔哩哔哩去广告</a></td>
   </tr>
   <tr>
     <td>009</td>
@@ -483,7 +483,7 @@ TG Channel：https://t.me/QuantX
     <th>名称</th>
   </tr>
   <tr>
-    <td rowspan="26"><strong>功能插件</strong></td>
+    <td rowspan="25"><strong>功能插件</strong></td>
   <tr>
     <td>01</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/LoonGallery.plugin">插件仓库</a></td>
@@ -564,24 +564,21 @@ TG Channel：https://t.me/QuantX
     <td>20</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/Spotify_lyrics_translation.plugin">Spotify歌词翻译</a></td>
   </tr>
+
   <tr>
     <td>21</td>
-    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/ClydeTime/BiliBili/master/modules/BiliBiliDailyBonus.plugin">BiliBili每日等级任务</a></td>
-  </tr>
-  <tr>
-    <td>22</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/NodeLinkCheck.Plugin">代理链路检测</a></td>
   </tr>
   <tr>
-    <td>23</td>
+    <td>22</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/QuickSearch.plugin">快捷搜索</a></td>
   </tr>
   <tr>
-    <td>24</td>
+    <td>23</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/UnnooQuan_remove_watermark.plugin">知识星球去水印</a></td>
   </tr>
   <tr>
-    <td>25</td>
+    <td>24</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/AppleWeatherEnhancer.plugin">Apple天气增强</a></td>
   </tr>
     <td></td>
@@ -593,13 +590,17 @@ TG Channel：https://t.me/QuantX
     <th>名称</th>
   </tr>
   <tr>
-    <td rowspan="3"><strong>签到插件</strong></td>
+    <td rowspan="4"><strong>签到插件</strong></td>
   <tr>
     <td>01</td>
-    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/WPS_checkin.plugin">WPS每日签到</a></td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/ClydeTime/BiliBili/master/modules/BiliBiliDailyBonus.plugin">BiliBili每日等级任务</a></td>
   </tr>
   <tr>
     <td>02</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/WPS_checkin.plugin">WPS每日签到</a></td>
+  </tr>
+  <tr>
+    <td>03</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/bgvioletsky/ios_rule/main/Loon/plugin/sxmd_sign.plugin">书香门第每日签到</a></td>
   </tr>
 </table>
