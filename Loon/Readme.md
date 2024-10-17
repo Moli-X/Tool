@@ -590,7 +590,7 @@ TG Channel：https://t.me/QuantX
     <th>名称</th>
   </tr>
   <tr>
-    <td rowspan="4"><strong>签到插件</strong></td>
+    <td rowspan="5"><strong>签到插件</strong></td>
   <tr>
     <td>01</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/ClydeTime/BiliBili/master/modules/BiliBiliDailyBonus.plugin">BiliBili每日等级任务</a></td>
@@ -602,5 +602,9 @@ TG Channel：https://t.me/QuantX
   <tr>
     <td>03</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/bgvioletsky/ios_rule/main/Loon/plugin/sxmd_sign.plugin">书香门第每日签到</a></td>
+  </tr>
+  <tr>
+    <td>04</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/FollowRSS_checkin.plugin">Follow每日签到</a></td>
   </tr>
 </table>
