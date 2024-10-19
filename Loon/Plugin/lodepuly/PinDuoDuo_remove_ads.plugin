@@ -9,7 +9,7 @@
 #!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/PinDuoDuo_remove_ads.plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/PinDuoDuo.png
 # 原链接 = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon//Plugin/PinDuoDuo_remove_ads.plugin
-#!date = 2024-10-07 21:05:14
+#!date = 2024-10-19 17:18:31
 
 [Rule]
 # 拦截HTTPDNS
@@ -29,6 +29,7 @@ DOMAIN, th.pinduoduo.com, REJECT
 [Rewrite]
 ^https:\/\/api\.(?:pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash\? reject-dict
 ^https:\/\/api\.pinduoduo\.com\/api\/alexa\/goods\/back_up\? reject-dict
+^https:\/\/api\.pinduoduo\.com\/api\/aquarius\/hungary\/global\/homepage\? reject-dict
 ^https:\/\/api\.pinduoduo\.com\/api\/brand-olay\/goods_detail\/bybt_guide reject-dict
 ^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v3\/query\/(?:likes|my_order_group|new_chat_group|order_express_group|personal) reject-dict
 ^https:\/\/api\.pinduoduo\.com\/api\/engels\/reviews\/require\/append reject-dict
