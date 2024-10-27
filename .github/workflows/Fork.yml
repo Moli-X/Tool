@@ -249,9 +249,8 @@ jobs:
 
     # Fork loon 插件
     - name: Copy Loon/Plugin
-
       run: |
-        mkdir -p Tool/Loon/Plugin
+        mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Plugin
         # 下载 Spotify.plugin
         curl -L -o Tool/Loon/Plugin/Spotify.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin" 
         curl -L -o Tool/Loon/Plugin/Remove_ads_by_keli "https://kelee.one/Tool/Loon/Plugin/Remove_ads_by_keli.plugin" 
