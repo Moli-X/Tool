@@ -247,13 +247,24 @@ jobs:
           fi
         done
 
-     # Fork loon 插件
-    - name: Copy Loon/Plugin
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
+    # Fork loon 插件
+    - name: Merge Spotify.plugin
+      if: env.LOON_SWITCH == 'true'
       run: |
-        mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Plugin
-        # DualSubs
-        curl -L -o Tool-repo/Loon/Plugin/Spotify.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
+        # 下载两个插件的内容
+        curl -L -o Tool-repo/Loon/Plugin/spotify_temp.plugin "https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin"
+        curl -L -o Tool-repo/Loon/Plugin/spotify_release.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
+        
+        # 提取 [Rewrite] 部分并添加到 spotify_release.plugin
+        awk '/\[Rewrite\]/,/^$/' Tool-repo/Loon/Plugin/spotify_temp.plugin >> Tool-repo/Loon/Plugin/spotify_release.plugin
+        
+        # 提取 [Script] 部分并添加到 spotify_release.plugin 的 [Script] 下面
+        awk '/\[Script\]/,/^$/' Tool-repo/Loon/Plugin/spotify_temp.plugin | sed '1d' >> Tool-repo/Loon/Plugin/spotify_release.plugin
+    
+        # 将合并后的内容重命名为最终文件
+        mv Tool-repo/Loon/Plugin/spotify_release.plugin Tool/Loon/Plugin/Spotify.plugin
+
+
 
 ###### Clash
 
