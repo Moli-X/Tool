@@ -260,20 +260,26 @@ jobs:
         # 下载第二个插件
         curl -L -o Tool/Loon/Plugin/spotify2.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
     
+        # 创建最终的 Spotify.plugin 文件
+        touch Tool/Loon/Plugin/Spotify.plugin
+    
         # 提取 [Rewrite] 部分并追加到最终文件
         echo "[Rewrite]" >> Tool/Loon/Plugin/Spotify.plugin
         awk '/\[Rewrite\]/,/^\s*$/' Tool/Loon/Plugin/spotify1.plugin | tail -n +2 >> Tool/Loon/Plugin/Spotify.plugin
     
-        # 提取 [Script] 部分并追加到最终文件
+        # 添加一个空行以分隔部分
         echo >> Tool/Loon/Plugin/Spotify.plugin
-        echo "[Script]" >> Tool/Loon/Plugin/Spotify.plugin
-        awk '/\[Script\]/,/^\s*$/' Tool/Loon/Plugin/spotify1.plugin | tail -n +2 >> Tool/Loon/Plugin/Spotify.plugin
     
-        # 将第二个插件的 [Script] 部分追加到最终文件
-        awk '/\[Script\]/,/^\s*$/' Tool/Loon/Plugin/spotify2.plugin | tail -n +2 >> Tool/Loon/Plugin/Spotify.plugin
+        # 提取第二个插件的 [Script] 部分并写入
+        echo "[Script]" >> Tool/Loon/Plugin/Spotify.plugin
+        awk '/\[Script\]/,/^\s*$/' Tool/Loon/Plugin/spotify2.plugin >> Tool/Loon/Plugin/Spotify.plugin
+    
+        # 添加 [Script] 部分的内容
+        awk '/\[Script\]/,/^\s*$/' Tool/Loon/Plugin/spotify1.plugin | tail -n +2 >> Tool/Loon/Plugin/Spotify.plugin
     
         # 可选：删除中间文件
         rm Tool/Loon/Plugin/spotify1.plugin Tool/Loon/Plugin/spotify2.plugin
+
 
 
 
