@@ -206,7 +206,7 @@ jobs:
 
       # Fork 可莉插件、脚本
     - name: Fork lodepuly Plugin&Script
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
+      if: env.LOON_SWITCH == 'false'  # 添加开关条件
       run: |
         rm -rf Tool-repo/Loon/Plugin/lodepuly/*
         rm -rf Tool-repo/Loon/Script/lodepuly/*
@@ -217,7 +217,7 @@ jobs:
         rm -rf lodepuly_Tmp   
 
     - name: Edit Loon/Plugin
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
+      if: env.LOON_SWITCH == 'false'  # 添加开关条件
       run: |
         cd Tool-repo/Loon/Plugin/lodepuly
         for file in *.plugin; do
