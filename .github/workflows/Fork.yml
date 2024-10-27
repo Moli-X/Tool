@@ -35,7 +35,7 @@ jobs:
       run: |
 
         # 调试模式是否开启
-        Debug=false   
+        Debug=true   
         echo "Debug状态为：$Debug"
 
         if [ "$Debug" = true ]; then
@@ -249,7 +249,7 @@ jobs:
 
     # Fork loon 插件
     - name: Copy Loon/Plugin
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
+    # if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         # 创建必要的目录结构
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Plugin
@@ -1317,7 +1317,6 @@ jobs:
        
 ###### Commit
     - name: Add and Commits
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         cd Tool-repo
         if [[ -n $(git status -s) ]]; then
