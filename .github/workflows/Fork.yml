@@ -248,24 +248,33 @@ jobs:
         done
 
     # Fork loon 插件
-    - name: Merge Spotify.plugin
-      if: env.LOON_SWITCH == 'true'
+    - name: Copy Loon/Plugin
+      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
-        # 创建目标目录
-        mkdir -p Tool/Loon/Plugin
+        # 创建必要的目录结构
+        mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Plugin
     
-        # 下载两个插件的内容
-        curl -L -o Tool-repo/Loon/Plugin/spotify_temp.plugin "https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin"
-        curl -L -o Tool-repo/Loon/Plugin/spotify_release.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
+        # 下载第一个插件
+        curl -L -o Tool/Loon/Plugin/spotify1.plugin "https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin"
         
-        # 提取 [Rewrite] 部分并添加到 spotify_release.plugin
-        awk '/\[Rewrite\]/,/^$/' Tool-repo/Loon/Plugin/spotify_temp.plugin >> Tool-repo/Loon/Plugin/spotify_release.plugin
-        
-        # 提取 [Script] 部分并添加到 spotify_release.plugin 的 [Script] 下面
-        awk '/\[Script\]/,/^$/' Tool-repo/Loon/Plugin/spotify_temp.plugin | sed '1d' >> Tool-repo/Loon/Plugin/spotify_release.plugin
+        # 下载第二个插件
+        curl -L -o Tool/Loon/Plugin/spotify2.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
     
-        # 将合并后的内容重命名为最终文件
-        mv Tool-repo/Loon/Plugin/spotify_release.plugin Tool/Loon/Plugin/Spotify.plugin
+        # 提取 [Rewrite] 部分并追加到最终文件
+        echo "[Rewrite]" >> Tool/Loon/Plugin/Spotify.plugin
+        awk '/\[Rewrite\]/,/^\s*$/' Tool/Loon/Plugin/spotify1.plugin | tail -n +2 >> Tool/Loon/Plugin/Spotify.plugin
+    
+        # 提取 [Script] 部分并追加到最终文件
+        echo >> Tool/Loon/Plugin/Spotify.plugin
+        echo "[Script]" >> Tool/Loon/Plugin/Spotify.plugin
+        awk '/\[Script\]/,/^\s*$/' Tool/Loon/Plugin/spotify1.plugin | tail -n +2 >> Tool/Loon/Plugin/Spotify.plugin
+    
+        # 将第二个插件的 [Script] 部分追加到最终文件
+        awk '/\[Script\]/,/^\s*$/' Tool/Loon/Plugin/spotify2.plugin | tail -n +2 >> Tool/Loon/Plugin/Spotify.plugin
+    
+        # 可选：删除中间文件
+        rm Tool/Loon/Plugin/spotify1.plugin Tool/Loon/Plugin/spotify2.plugin
+
 
 
 
