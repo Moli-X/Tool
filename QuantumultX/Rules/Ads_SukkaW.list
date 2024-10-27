@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-10-26T19:57:15.669Z
-# Size: 111727
+# Last Updated: 2024-10-27T11:39:16.581Z
+# Size: 111735
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -1754,6 +1754,7 @@ HOST-SUFFIX,textklicks.de,REJECT
 HOST-SUFFIX,viralmails.de,REJECT
 HOST-SUFFIX,wiredminds.de,REJECT
 HOST-SUFFIX,123-counter.de,REJECT
+HOST-SUFFIX,adpresenter.de,REJECT
 HOST-SUFFIX,affilimatch.de,REJECT
 HOST-SUFFIX,bitcoinpara.de,REJECT
 HOST-SUFFIX,blog-o-rama.de,REJECT
@@ -40088,9 +40089,11 @@ HOST-SUFFIX,4q87v.icu,REJECT
 HOST-SUFFIX,4wfe3.icu,REJECT
 HOST-SUFFIX,5brxi.icu,REJECT
 HOST-SUFFIX,5mltq.icu,REJECT
+HOST-SUFFIX,5z2oy.icu,REJECT
 HOST-SUFFIX,62zd0.icu,REJECT
 HOST-SUFFIX,6zfem.icu,REJECT
 HOST-SUFFIX,82zcb.icu,REJECT
+HOST-SUFFIX,8gra3.icu,REJECT
 HOST-SUFFIX,8q88n.icu,REJECT
 HOST-SUFFIX,9s64g.icu,REJECT
 HOST-SUFFIX,9t51o.icu,REJECT
@@ -40449,6 +40452,8 @@ HOST-SUFFIX,pwcegau.icu,REJECT
 HOST-SUFFIX,pxqqytk.icu,REJECT
 HOST-SUFFIX,qdjsiyt.icu,REJECT
 HOST-SUFFIX,qfaaokr.icu,REJECT
+HOST-SUFFIX,qnqtgyq.icu,REJECT
+HOST-SUFFIX,qqganna.icu,REJECT
 HOST-SUFFIX,qrmozsc.icu,REJECT
 HOST-SUFFIX,qtoidch.icu,REJECT
 HOST-SUFFIX,rayajmp.icu,REJECT
@@ -40464,6 +40469,7 @@ HOST-SUFFIX,rsyepnq.icu,REJECT
 HOST-SUFFIX,ryqgdrh.icu,REJECT
 HOST-SUFFIX,sgozmks.icu,REJECT
 HOST-SUFFIX,shopeee.icu,REJECT
+HOST-SUFFIX,sjluuom.icu,REJECT
 HOST-SUFFIX,skaumbp.icu,REJECT
 HOST-SUFFIX,slcmvgr.icu,REJECT
 HOST-SUFFIX,snueirk.icu,REJECT
@@ -44517,6 +44523,7 @@ HOST-SUFFIX,udipsumt.top,REJECT
 HOST-SUFFIX,ugidskit.top,REJECT
 HOST-SUFFIX,ultracdn.top,REJECT
 HOST-SUFFIX,unifdlat.top,REJECT
+HOST-SUFFIX,uouvxlit.top,REJECT
 HOST-SUFFIX,urutvnct.top,REJECT
 HOST-SUFFIX,uumnxiet.top,REJECT
 HOST-SUFFIX,uwursert.top,REJECT
@@ -51786,6 +51793,7 @@ HOST-SUFFIX,powerpushtrafic.space,REJECT
 HOST-SUFFIX,vaytiennhanh247.space,REJECT
 HOST-SUFFIX,warumbistdusoarm.space,REJECT
 HOST-SUFFIX,012024jhvjhkozekl.space,REJECT
+HOST-SUFFIX,bigstoreminigames.space,REJECT
 HOST-SUFFIX,vaytienduyetnhanh.space,REJECT
 HOST-SUFFIX,vaytiennhanh1phut.space,REJECT
 HOST-SUFFIX,vaytienlaisuatthap.space,REJECT
