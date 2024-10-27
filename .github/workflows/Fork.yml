@@ -248,10 +248,8 @@ jobs:
         done
 
     # Fork loon 插件
-
-    # Fork loon 插件
     - name: Copy Loon/Plugin
-#       if: env.LOON_SWITCH == 'true'  # 添加开关条件
+
       run: |
         mkdir -p Tool/Loon/Plugin
         # 下载 Spotify.plugin
@@ -259,12 +257,20 @@ jobs:
         
         # 检查文件是否存在
         ls Tool/Loon/Plugin
+    
+        # 查看下载的文件内容
+        echo "Contents of Spotify.plugin:"
+        cat Tool/Loon/Plugin/Spotify.plugin
         
         # 下载并追加 [Rewrite] 部分
         curl -s https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin | sed -n '/^\[Rewrite\]/,/^\[/p' >> Tool/Loon/Plugin/Spotify.plugin
         
         # 下载并追加 [Script] 部分
         curl -s https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin | sed -n '/^\[Script\]/,/^\[/p' >> Tool/Loon/Plugin/Spotify.plugin
+    
+        # 检查最终文件内容
+        echo "Final contents of Spotify.plugin after appending:"
+        cat Tool/Loon/Plugin/Spotify.plugin
 
 
 
