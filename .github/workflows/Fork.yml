@@ -251,7 +251,7 @@ jobs:
 
     # Fork loon 插件
     - name: Copy Loon/Plugin
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
+#       if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/Loon/Plugin
         # 下载 Spotify.plugin
@@ -1305,7 +1305,6 @@ jobs:
        
 ###### Commit
     - name: Add and Commits
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         cd Tool-repo
         if [[ -n $(git status -s) ]]; then
