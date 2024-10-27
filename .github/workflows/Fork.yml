@@ -161,10 +161,9 @@ jobs:
         curl -L -o Tool-repo/Loon/Rules/Ads_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliu.list"
         # Lan
         cp -r Tool-repo/Surge/Rules/Lan.list Tool-repo/Loon/Rules/Lan.list
+
         # Other
         curl -L -o Tool-repo/Loon/Loon.conf "https://github.com/Moli-X/Resources/raw/main/Loon/Loon.conf"
-
-
 
        # 适配规则
     - name: Edit Loon/Rules
@@ -240,7 +239,7 @@ jobs:
             if grep -q "#!idate =" "$file"; then
               sed -i '/#!idate = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Tool/Loon\/Plugin\/'"$file" "$file"
             elif grep -q "#!icon =" "$file"; then
-              sed -i '/#!icon = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Tool/Loon\//Plugin\/'"$file" "$file"
+              sed -i '/#!icon = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Tool/Loon\/Plugin\/'"$file" "$file"
             fi
     
           else
@@ -248,7 +247,13 @@ jobs:
           fi
         done
 
-
+     # Fork loon 插件
+    - name: Copy Loon/Plugin
+      if: env.LOON_SWITCH == 'true'  # 添加开关条件
+      run: |
+        mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Plugin
+        # DualSubs
+        curl -L -o Tool-repo/Loon/Plugin/Spotify.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
 
 ###### Clash
 
