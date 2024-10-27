@@ -206,7 +206,7 @@ jobs:
 
       # Fork 可莉插件、脚本
     - name: Fork lodepuly Plugin&Script
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
+      if: env.LOON_SWITCH == 'pause  # 添加开关条件
       run: |
         rm -rf Tool-repo/Loon/Plugin/lodepuly/*
         rm -rf Tool-repo/Loon/Script/lodepuly/*
@@ -217,7 +217,7 @@ jobs:
         rm -rf lodepuly_Tmp   
 
     - name: Edit Loon/Plugin
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
+      if: env.LOON_SWITCH == 'pause'  # 添加开关条件
       run: |
         cd Tool-repo/Loon/Plugin/lodepuly
         for file in *.plugin; do
@@ -253,24 +253,9 @@ jobs:
       run: |
         mkdir -p Tool/Loon/Plugin
         # 下载 Spotify.plugin
-        curl -L -o Tool/Loon/Plugin/Spotify.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin" && echo "Downloaded Spotify.plugin successfully" || echo "Failed to download Spotify.plugin" >> error.log
-        
-        # 检查文件是否存在
-        ls Tool/Loon/Plugin
-    
-        # 查看下载的文件内容
-        echo "Contents of Spotify.plugin:"
-        cat Tool/Loon/Plugin/Spotify.plugin
-        
-        # 下载并追加 [Rewrite] 部分
-        curl -s https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin | sed -n '/^\[Rewrite\]/,/^\[/p' >> Tool/Loon/Plugin/Spotify.plugin
-        
-        # 下载并追加 [Script] 部分
-        curl -s https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin | sed -n '/^\[Script\]/,/^\[/p' >> Tool/Loon/Plugin/Spotify.plugin
-    
-        # 检查最终文件内容
-        echo "Final contents of Spotify.plugin after appending:"
-        cat Tool/Loon/Plugin/Spotify.plugin
+        curl -L -o Tool/Loon/Plugin/Spotify.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin" 
+        curl -L -o Tool/Loon/Plugin/Remove_ads_by_keli "https://kelee.one/Tool/Loon/Plugin/Remove_ads_by_keli.plugin" 
+
 
 
 
