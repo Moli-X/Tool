@@ -206,7 +206,7 @@ jobs:
 
       # Fork 可莉插件、脚本
     - name: Fork lodepuly Plugin&Script
-      if: env.LOON_SWITCH == 'pause  # 添加开关条件
+      if: env.LOON_SWITCH == 'pause'   # 添加开关条件
       run: |
         rm -rf Tool-repo/Loon/Plugin/lodepuly/*
         rm -rf Tool-repo/Loon/Script/lodepuly/*
