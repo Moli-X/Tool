@@ -249,18 +249,23 @@ jobs:
 
     # Fork loon 插件
 
+    # Fork loon 插件
     - name: Copy Loon/Plugin
-   #   if: env.LOON_SWITCH == 'true'  # 添加开关条件
+      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
-        mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Plugin
+        mkdir -p Tool/Loon/Plugin
         # 下载 Spotify.plugin
-        curl -L -o Tool/Loon/Plugin/Spotify.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
+        curl -L -o Tool/Loon/Plugin/Spotify.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin" && echo "Downloaded Spotify.plugin successfully" || echo "Failed to download Spotify.plugin" >> error.log
+        
+        # 检查文件是否存在
+        ls Tool/Loon/Plugin
         
         # 下载并追加 [Rewrite] 部分
         curl -s https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin | sed -n '/^\[Rewrite\]/,/^\[/p' >> Tool/Loon/Plugin/Spotify.plugin
         
         # 下载并追加 [Script] 部分
         curl -s https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin | sed -n '/^\[Script\]/,/^\[/p' >> Tool/Loon/Plugin/Spotify.plugin
+
 
 
 
