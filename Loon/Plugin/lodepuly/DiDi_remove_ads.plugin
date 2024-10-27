@@ -27,7 +27,7 @@ AND, ((IP-ASN, 63646, no-resolve), (DEST-PORT, 25641), (PROTOCOL, TCP)), REJECT
 ^https:\/\/daijia\.kuaidadi\.com\/gateway reject-dict
 ^https:\/\/freight\.xiaojukeji\.com\/gateway reject-dict
 ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget reject-dict
-^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast reject-dict
+# ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast reject-dict
 ^https:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf reject-dict
 
 [Script]
