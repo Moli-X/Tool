@@ -248,35 +248,19 @@ jobs:
         done
 
     # Fork loon 插件
+
     - name: Copy Loon/Plugin
-     #  if: env.LOON_SWITCH == 'true'  # 添加开关条件
+   #   if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
-        # 创建必要的目录结构
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Plugin
-    
-        # 下载第一个插件
-        curl -L -o Tool/Loon/Plugin/spotify1.plugin "https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin"
+        # 下载 Spotify.plugin
+        curl -L -o Tool/Loon/Plugin/Spotify.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
         
-        # 下载第二个插件
-        curl -L -o Tool/Loon/Plugin/spotify2.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
-    
-        # 创建最终的 Spotify.plugin 文件
-        echo "[Rewrite]" > Tool/Loon/Plugin/Spotify.plugin
-        # 提取 [Rewrite] 部分并写入
-        awk '/\[Rewrite\]/,/^\s*$/' Tool/Loon/Plugin/spotify1.plugin | tail -n +2 >> Tool/Loon/Plugin/Spotify.plugin
-    
-        # 添加空行以分隔部分
-        echo >> Tool/Loon/Plugin/Spotify.plugin
-    
-        # 提取第二个插件的 [Script] 部分并写入
-        echo "[Script]" >> Tool/Loon/Plugin/Spotify.plugin
-        awk '/\[Script\]/,/^\s*$/' Tool/Loon/Plugin/spotify2.plugin | tail -n +2 >> Tool/Loon/Plugin/Spotify.plugin
-    
-        # 添加 spotify1.plugin 的 [Script] 部分
-        awk '/\[Script\]/,/^\s*$/' Tool/Loon/Plugin/spotify1.plugin | tail -n +2 >> Tool/Loon/Plugin/Spotify.plugin
-    
-        # 可选：删除中间文件
-        rm Tool/Loon/Plugin/spotify1.plugin Tool/Loon/Plugin/spotify2.plugin
+        # 下载并追加 [Rewrite] 部分
+        curl -s https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin | sed -n '/^\[Rewrite\]/,/^\[/p' >> Tool/Loon/Plugin/Spotify.plugin
+        
+        # 下载并追加 [Script] 部分
+        curl -s https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin | sed -n '/^\[Script\]/,/^\[/p' >> Tool/Loon/Plugin/Spotify.plugin
 
 
 
