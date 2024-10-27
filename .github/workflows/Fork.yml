@@ -35,7 +35,7 @@ jobs:
       run: |
 
         # 调试模式是否开启
-        Debug=true   
+        Debug=false  
         echo "Debug状态为：$Debug"
 
         if [ "$Debug" = true ]; then
@@ -247,19 +247,14 @@ jobs:
           fi
         done
 
-    # Fork loon 插件
+    # # Fork loon 插件
 
-    - name: Copy Loon/Plugin
-      if: env.LOON_SWITCH == 'false'  # 添加开关条件
-      run: |
-        mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Plugin
-        # DualSubs
-        curl -L -o Tool-repo/Loon/Plugin/Spotify.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
-        curl -L -o Tool-repo/Loon/Plugin/Remove_ads_by_keli.plugin "https://kelee.one/Tool/Loon/Plugin/Remove_ads_by_keli.plugin" 
-
-
-
-
+    # - name: Copy Loon/Plugin
+      # if: env.LOON_SWITCH == 'false'  # 添加开关条件
+      # run: |
+        # mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Plugin
+        # # DualSubs
+        # curl -L -o Tool-repo/Loon/Plugin/Spotify.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
 
 
 
