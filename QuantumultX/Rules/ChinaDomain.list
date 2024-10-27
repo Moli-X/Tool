@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-10-20T17:02:38.848Z
-# Size: 775
+# Last Updated: 2024-10-26T14:37:42.473Z
+# Size: 739
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -23,6 +23,7 @@ HOST-SUFFIX,360.cn,DIRECT
 HOST-SUFFIX,88y.cn,DIRECT
 HOST-SUFFIX,boc.cn,DIRECT
 HOST-SUFFIX,cls.cn,DIRECT
+HOST-SUFFIX,com.cn,DIRECT
 HOST-SUFFIX,dxy.cn,DIRECT
 HOST-SUFFIX,edu.cn,DIRECT
 HOST-SUFFIX,gov.cn,DIRECT
@@ -35,6 +36,7 @@ HOST-SUFFIX,wps.cn,DIRECT
 HOST-SUFFIX,2144.cn,DIRECT
 HOST-SUFFIX,cctv.cn,DIRECT
 HOST-SUFFIX,cntv.cn,DIRECT
+HOST-SUFFIX,didi.cn,DIRECT
 HOST-SUFFIX,kuwo.cn,DIRECT
 HOST-SUFFIX,migu.cn,DIRECT
 HOST-SUFFIX,neea.cn,DIRECT
@@ -79,7 +81,6 @@ HOST-SUFFIX,mifile.cn,DIRECT
 HOST-SUFFIX,mybank.cn,DIRECT
 HOST-SUFFIX,neixin.cn,DIRECT
 HOST-SUFFIX,pplive.cn,DIRECT
-HOST-SUFFIX,qqmail.cn,DIRECT
 HOST-SUFFIX,roblox.cn,DIRECT
 HOST-SUFFIX,sinajs.cn,DIRECT
 HOST-SUFFIX,suning.cn,DIRECT
@@ -100,7 +101,6 @@ HOST-SUFFIX,soulapp.cn,DIRECT
 HOST-SUFFIX,tripcdn.cn,DIRECT
 HOST-SUFFIX,51ctocdn.cn,DIRECT
 HOST-SUFFIX,bilibili.cn,DIRECT
-HOST-SUFFIX,biligame.cn,DIRECT
 HOST-SUFFIX,cmbchina.cn,DIRECT
 HOST-SUFFIX,dbankcdn.cn,DIRECT
 HOST-SUFFIX,digicert.cn,DIRECT
@@ -121,7 +121,6 @@ HOST-SUFFIX,tencentcs.cn,DIRECT
 HOST-SUFFIX,sharepoint.cn,DIRECT
 HOST-SUFFIX,toutiaoimg.cn,DIRECT
 HOST-SUFFIX,baishancdnx.cn,DIRECT
-HOST-SUFFIX,bilibilipay.cn,DIRECT
 HOST-SUFFIX,chinaunicom.cn,DIRECT
 HOST-SUFFIX,mobileservice.cn,DIRECT
 HOST-SUFFIX,officewebapps.cn,DIRECT
@@ -130,6 +129,7 @@ HOST-SUFFIX,douban.fm,DIRECT
 HOST-SUFFIX,jd.hk,DIRECT
 HOST-SUFFIX,juejin.im,DIRECT
 HOST-SUFFIX,netease.im,DIRECT
+HOST-SUFFIX,gitee.io,DIRECT
 HOST-SUFFIX,jianshu.io,DIRECT
 HOST-SUFFIX,air-matters.io,DIRECT
 HOST-SUFFIX,openinstall.io,DIRECT
@@ -175,6 +175,7 @@ HOST-SUFFIX,1905.com,DIRECT
 HOST-SUFFIX,21cn.com,DIRECT
 HOST-SUFFIX,36kr.com,DIRECT
 HOST-SUFFIX,4399.com,DIRECT
+HOST-SUFFIX,9xiu.com,DIRECT
 HOST-SUFFIX,amap.com,DIRECT
 HOST-SUFFIX,cctv.com,DIRECT
 HOST-SUFFIX,csdn.com,DIRECT
@@ -219,6 +220,7 @@ HOST-SUFFIX,baidu.com,DIRECT
 HOST-SUFFIX,baike.com,DIRECT
 HOST-SUFFIX,bdatu.com,DIRECT
 HOST-SUFFIX,bdimg.com,DIRECT
+HOST-SUFFIX,ccrgt.com,DIRECT
 HOST-SUFFIX,china.com,DIRECT
 HOST-SUFFIX,cowcs.com,DIRECT
 HOST-SUFFIX,ctrip.com,DIRECT
@@ -231,6 +233,7 @@ HOST-SUFFIX,docin.com,DIRECT
 HOST-SUFFIX,douyu.com,DIRECT
 HOST-SUFFIX,duapp.com,DIRECT
 HOST-SUFFIX,eatuo.com,DIRECT
+HOST-SUFFIX,flyme.com,DIRECT
 HOST-SUFFIX,frdic.com,DIRECT
 HOST-SUFFIX,futu5.com,DIRECT
 HOST-SUFFIX,gaode.com,DIRECT
@@ -307,7 +310,6 @@ HOST-SUFFIX,chuimg.com,DIRECT
 HOST-SUFFIX,cmbimg.com,DIRECT
 HOST-SUFFIX,ctfile.com,DIRECT
 HOST-SUFFIX,dnspod.com,DIRECT
-HOST-SUFFIX,douban.com,DIRECT
 HOST-SUFFIX,douyin.com,DIRECT
 HOST-SUFFIX,dpfile.com,DIRECT
 HOST-SUFFIX,duokan.com,DIRECT
@@ -454,6 +456,7 @@ HOST-SUFFIX,tencent.com,DIRECT
 HOST-SUFFIX,tnkjmec.com,DIRECT
 HOST-SUFFIX,toutiao.com,DIRECT
 HOST-SUFFIX,udqqimg.com,DIRECT
+HOST-SUFFIX,upaiyun.com,DIRECT
 HOST-SUFFIX,volccdn.com,DIRECT
 HOST-SUFFIX,weidian.com,DIRECT
 HOST-SUFFIX,xoyocdn.com,DIRECT
@@ -606,7 +609,6 @@ HOST-SUFFIX,alibaba-inc.com,DIRECT
 HOST-SUFFIX,alicloudccp.com,DIRECT
 HOST-SUFFIX,aliyundrive.com,DIRECT
 HOST-SUFFIX,baidustatic.com,DIRECT
-HOST-SUFFIX,bilibilipay.com,DIRECT
 HOST-SUFFIX,byteacctimg.com,DIRECT
 HOST-SUFFIX,chinamobile.com,DIRECT
 HOST-SUFFIX,cowtransfer.com,DIRECT
@@ -619,6 +621,7 @@ HOST-SUFFIX,landiannews.com,DIRECT
 HOST-SUFFIX,leetcode-cn.com,DIRECT
 HOST-SUFFIX,taopiaopiao.com,DIRECT
 HOST-SUFFIX,toutiaopage.com,DIRECT
+HOST-SUFFIX,xiaoaisound.com,DIRECT
 HOST-SUFFIX,xiaohongshu.com,DIRECT
 HOST-SUFFIX,aicoinstorge.com,DIRECT
 HOST-SUFFIX,baiducontent.com,DIRECT
@@ -634,6 +637,7 @@ HOST-SUFFIX,segmentfault.com,DIRECT
 HOST-SUFFIX,tencentmusic.com,DIRECT
 HOST-SUFFIX,toutiaocloud.com,DIRECT
 HOST-SUFFIX,weixinbridge.com,DIRECT
+HOST-SUFFIX,xiaomixiaoai.com,DIRECT
 HOST-SUFFIX,xiaomiyoupin.com,DIRECT
 HOST-SUFFIX,zuimeitianqi.com,DIRECT
 HOST-SUFFIX,alipayobjects.com,DIRECT
@@ -642,6 +646,7 @@ HOST-SUFFIX,coolapkmarket.com,DIRECT
 HOST-SUFFIX,fengkongcloud.com,DIRECT
 HOST-SUFFIX,huoshanstatic.com,DIRECT
 HOST-SUFFIX,pphimalayanrt.com,DIRECT
+HOST-SUFFIX,tencent-cloud.com,DIRECT
 HOST-SUFFIX,toutiaostatic.com,DIRECT
 HOST-SUFFIX,chinanetcenter.com,DIRECT
 HOST-SUFFIX,heytapdownload.com,DIRECT
@@ -658,6 +663,7 @@ HOST-SUFFIX,263.net,DIRECT
 HOST-SUFFIX,360.net,DIRECT
 HOST-SUFFIX,3322.net,DIRECT
 HOST-SUFFIX,csdn.net,DIRECT
+HOST-SUFFIX,cz88.net,DIRECT
 HOST-SUFFIX,duba.net,DIRECT
 HOST-SUFFIX,ipip.net,DIRECT
 HOST-SUFFIX,jb51.net,DIRECT
@@ -708,60 +714,17 @@ HOST-SUFFIX,8866.org,DIRECT
 HOST-SUFFIX,9966.org,DIRECT
 HOST-SUFFIX,aliapp.org,DIRECT
 HOST-SUFFIX,docschina.org,DIRECT
+HOST-SUFFIX,miot-spec.org,DIRECT
 HOST-SUFFIX,icourse163.org,DIRECT
-HOST,dns.pub,DIRECT
 HOST,doh.pub,DIRECT
-HOST,dot.pub,DIRECT
 HOST-SUFFIX,landian.vip,DIRECT
 HOST-SUFFIX,126.link,DIRECT
 HOST-SUFFIX,yqkk.link,DIRECT
 HOST-SUFFIX,haowu.link,DIRECT
 HOST-SUFFIX,chunyu.mobi,DIRECT
 HOST-SUFFIX,xunyou.mobi,DIRECT
+HOST-SUFFIX,mijia.tech,DIRECT
 HOST-SUFFIX,c-t.work,DIRECT
-HOST-SUFFIX,jd.com.cn,DIRECT
-HOST-SUFFIX,qq.com.cn,DIRECT
-HOST-SUFFIX,ui.com.cn,DIRECT
-HOST-SUFFIX,kfc.com.cn,DIRECT
-HOST-SUFFIX,zol.com.cn,DIRECT
-HOST-SUFFIX,asus.com.cn,DIRECT
-HOST-SUFFIX,chsi.com.cn,DIRECT
-HOST-SUFFIX,cntv.com.cn,DIRECT
-HOST-SUFFIX,icbc.com.cn,DIRECT
-HOST-SUFFIX,sina.com.cn,DIRECT
-HOST-SUFFIX,sohu.com.cn,DIRECT
-HOST-SUFFIX,ubnt.com.cn,DIRECT
-HOST-SUFFIX,vivo.com.cn,DIRECT
-HOST-SUFFIX,58cdn.com.cn,DIRECT
-HOST-SUFFIX,95588.com.cn,DIRECT
-HOST-SUFFIX,cnnic.com.cn,DIRECT
-HOST-SUFFIX,gtimg.com.cn,DIRECT
-HOST-SUFFIX,right.com.cn,DIRECT
-HOST-SUFFIX,weibo.com.cn,DIRECT
-HOST-SUFFIX,alipay.com.cn,DIRECT
-HOST-SUFFIX,dccnet.com.cn,DIRECT
-HOST-SUFFIX,huawei.com.cn,DIRECT
-HOST-SUFFIX,ipanda.com.cn,DIRECT
-HOST-SUFFIX,lenovo.com.cn,DIRECT
-HOST-SUFFIX,nearme.com.cn,DIRECT
-HOST-SUFFIX,pcauto.com.cn,DIRECT
-HOST-SUFFIX,wegame.com.cn,DIRECT
-HOST-SUFFIX,yunpan.com.cn,DIRECT
-HOST-SUFFIX,abchina.com.cn,DIRECT
-HOST-SUFFIX,cainiao.com.cn,DIRECT
-HOST-SUFFIX,firefox.com.cn,DIRECT
-HOST-SUFFIX,tencent.com.cn,DIRECT
-HOST-SUFFIX,weather.com.cn,DIRECT
-HOST-SUFFIX,zol-img.com.cn,DIRECT
-HOST-SUFFIX,autohome.com.cn,DIRECT
-HOST-SUFFIX,pconline.com.cn,DIRECT
-HOST-SUFFIX,amazonaws.com.cn,DIRECT
-HOST-SUFFIX,battlenet.com.cn,DIRECT
-HOST-SUFFIX,hoopchina.com.cn,DIRECT
-HOST-SUFFIX,jetbrains.com.cn,DIRECT
-HOST-SUFFIX,mcdonalds.com.cn,DIRECT
-HOST-SUFFIX,ubionline.com.cn,DIRECT
-HOST-SUFFIX,chinatelecom.com.cn,DIRECT
 HOST-SUFFIX,assets.msn.cn,DIRECT
 HOST,www.intel.cn,DIRECT
 HOST,lv.queniujq.cn,DIRECT
@@ -774,6 +737,7 @@ HOST-SUFFIX,steam.ksyna.com,DIRECT
 HOST-SUFFIX,steam.clngaa.com,DIRECT
 HOST-SUFFIX,dl.eccdnx.com,DIRECT
 HOST,www.layuicdn.com,DIRECT
+HOST,cdnstatic.tencentcs.com,DIRECT
 HOST-SUFFIX,dl.pinyuncloud.com,DIRECT
 HOST-SUFFIX,dl.bscstorage.net,DIRECT
 HOST,cn.download.nvidia.com,DIRECT

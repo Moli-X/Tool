@@ -3,9 +3,7 @@ domain_set:
 - url.cn
 - acg.tv
 - b23.tv
-- dns.pub
 - doh.pub
-- dot.pub
 - www.intel.cn
 - lv.queniujq.cn
 - assets1.xboxlive.cn
@@ -13,6 +11,7 @@ domain_set:
 - dl.ubnt.com
 - config.ubnt.com
 - www.layuicdn.com
+- cdnstatic.tencentcs.com
 - cn.download.nvidia.com
 - gstore.val.manlaxy.com
 domain_suffix_set:
@@ -30,6 +29,7 @@ domain_suffix_set:
 - 88y.cn
 - boc.cn
 - cls.cn
+- com.cn
 - dxy.cn
 - edu.cn
 - gov.cn
@@ -41,6 +41,7 @@ domain_suffix_set:
 - 2144.cn
 - cctv.cn
 - cntv.cn
+- didi.cn
 - kuwo.cn
 - migu.cn
 - neea.cn
@@ -85,7 +86,6 @@ domain_suffix_set:
 - mybank.cn
 - neixin.cn
 - pplive.cn
-- qqmail.cn
 - roblox.cn
 - sinajs.cn
 - suning.cn
@@ -106,7 +106,6 @@ domain_suffix_set:
 - tripcdn.cn
 - 51ctocdn.cn
 - bilibili.cn
-- biligame.cn
 - cmbchina.cn
 - dbankcdn.cn
 - digicert.cn
@@ -127,7 +126,6 @@ domain_suffix_set:
 - sharepoint.cn
 - toutiaoimg.cn
 - baishancdnx.cn
-- bilibilipay.cn
 - chinaunicom.cn
 - mobileservice.cn
 - officewebapps.cn
@@ -136,6 +134,7 @@ domain_suffix_set:
 - jd.hk
 - juejin.im
 - netease.im
+- gitee.io
 - jianshu.io
 - air-matters.io
 - openinstall.io
@@ -179,6 +178,7 @@ domain_suffix_set:
 - 21cn.com
 - 36kr.com
 - 4399.com
+- 9xiu.com
 - amap.com
 - cctv.com
 - csdn.com
@@ -223,6 +223,7 @@ domain_suffix_set:
 - baike.com
 - bdatu.com
 - bdimg.com
+- ccrgt.com
 - china.com
 - cowcs.com
 - ctrip.com
@@ -235,6 +236,7 @@ domain_suffix_set:
 - douyu.com
 - duapp.com
 - eatuo.com
+- flyme.com
 - frdic.com
 - futu5.com
 - gaode.com
@@ -311,7 +313,6 @@ domain_suffix_set:
 - cmbimg.com
 - ctfile.com
 - dnspod.com
-- douban.com
 - douyin.com
 - dpfile.com
 - duokan.com
@@ -458,6 +459,7 @@ domain_suffix_set:
 - tnkjmec.com
 - toutiao.com
 - udqqimg.com
+- upaiyun.com
 - volccdn.com
 - weidian.com
 - xoyocdn.com
@@ -610,7 +612,6 @@ domain_suffix_set:
 - alicloudccp.com
 - aliyundrive.com
 - baidustatic.com
-- bilibilipay.com
 - byteacctimg.com
 - chinamobile.com
 - cowtransfer.com
@@ -623,6 +624,7 @@ domain_suffix_set:
 - leetcode-cn.com
 - taopiaopiao.com
 - toutiaopage.com
+- xiaoaisound.com
 - xiaohongshu.com
 - aicoinstorge.com
 - baiducontent.com
@@ -638,6 +640,7 @@ domain_suffix_set:
 - tencentmusic.com
 - toutiaocloud.com
 - weixinbridge.com
+- xiaomixiaoai.com
 - xiaomiyoupin.com
 - zuimeitianqi.com
 - alipayobjects.com
@@ -646,6 +649,7 @@ domain_suffix_set:
 - fengkongcloud.com
 - huoshanstatic.com
 - pphimalayanrt.com
+- tencent-cloud.com
 - toutiaostatic.com
 - chinanetcenter.com
 - heytapdownload.com
@@ -662,6 +666,7 @@ domain_suffix_set:
 - 360.net
 - 3322.net
 - csdn.net
+- cz88.net
 - duba.net
 - ipip.net
 - jb51.net
@@ -712,6 +717,7 @@ domain_suffix_set:
 - 9966.org
 - aliapp.org
 - docschina.org
+- miot-spec.org
 - icourse163.org
 - landian.vip
 - 126.link
@@ -719,50 +725,8 @@ domain_suffix_set:
 - haowu.link
 - chunyu.mobi
 - xunyou.mobi
+- mijia.tech
 - c-t.work
-- jd.com.cn
-- qq.com.cn
-- ui.com.cn
-- kfc.com.cn
-- zol.com.cn
-- asus.com.cn
-- chsi.com.cn
-- cntv.com.cn
-- icbc.com.cn
-- sina.com.cn
-- sohu.com.cn
-- ubnt.com.cn
-- vivo.com.cn
-- 58cdn.com.cn
-- 95588.com.cn
-- cnnic.com.cn
-- gtimg.com.cn
-- right.com.cn
-- weibo.com.cn
-- alipay.com.cn
-- dccnet.com.cn
-- huawei.com.cn
-- ipanda.com.cn
-- lenovo.com.cn
-- nearme.com.cn
-- pcauto.com.cn
-- wegame.com.cn
-- yunpan.com.cn
-- abchina.com.cn
-- cainiao.com.cn
-- firefox.com.cn
-- tencent.com.cn
-- weather.com.cn
-- zol-img.com.cn
-- autohome.com.cn
-- pconline.com.cn
-- amazonaws.com.cn
-- battlenet.com.cn
-- hoopchina.com.cn
-- jetbrains.com.cn
-- mcdonalds.com.cn
-- ubionline.com.cn
-- chinatelecom.com.cn
 - assets.msn.cn
 - 71.am.com
 - steam.ksyna.com
