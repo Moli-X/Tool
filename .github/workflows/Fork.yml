@@ -251,6 +251,9 @@ jobs:
     - name: Merge Spotify.plugin
       if: env.LOON_SWITCH == 'true'
       run: |
+        # 创建目标目录
+        mkdir -p Tool/Loon/Plugin
+    
         # 下载两个插件的内容
         curl -L -o Tool-repo/Loon/Plugin/spotify_temp.plugin "https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin"
         curl -L -o Tool-repo/Loon/Plugin/spotify_release.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
@@ -263,6 +266,7 @@ jobs:
     
         # 将合并后的内容重命名为最终文件
         mv Tool-repo/Loon/Plugin/spotify_release.plugin Tool/Loon/Plugin/Spotify.plugin
+
 
 
 
