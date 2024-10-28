@@ -35,7 +35,7 @@ jobs:
       run: |
 
         # 调试模式是否开启
-        Debug=true 
+        Debug=false  
         echo "Debug状态为：$Debug"
 
         if [ "$Debug" = true ]; then
@@ -1313,17 +1313,20 @@ jobs:
 
 
 ###### 可莉README
-    - name: 可莉README修改
+    - name: 提取并添加表格内容
       run: |
+        # 创建或清空目标 README 文件
+        echo '' > Tool-repo/Loon/Readme.md
+    
         # 添加 Resources 部分
-        echo '### Resources' > Tool-repo/Loon/Readme.md
+        echo '### Resources' >> Tool-repo/Loon/Readme.md
         echo '<a href="https://t.me/GodMoliibot"><img src="https://raw.githubusercontent.com/Moli-X/Resources/main/Icon/Image/Hello.gif" width="20%" height="20%"></a>' >> Tool-repo/Loon/Readme.md
         echo '' >> Tool-repo/Loon/Readme.md
         echo 'TG Channel：https://t.me/QuantX' >> Tool-repo/Loon/Readme.md
         echo '' >> Tool-repo/Loon/Readme.md
         echo '## Loon脚本收集: [欢迎投稿](https://t.me/Skill_XX )' >> Tool-repo/Loon/Readme.md
     
-        # 复制 <table> 内容
+        # 获取并提取 <table> 内容
         curl -s https://github.com/luestr/ProxyResource/raw/main/README.md | \
         sed -n '/<table>/,/<\/table>/p' >> Tool-repo/Loon/Readme.md
     
@@ -1331,9 +1334,7 @@ jobs:
         if [ $? -ne 0 ]; then
           echo "获取 <table> 内容失败"
         fi
-    
-        # 替换 Plugin URL
-        sed -i 's|https://kelee.one/Tool/Loon/Plugin/|https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/|g' Tool-repo/Loon/Readme.md
+
 
     
        
