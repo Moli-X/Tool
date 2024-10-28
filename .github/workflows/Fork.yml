@@ -35,7 +35,7 @@ jobs:
       run: |
 
         # 调试模式是否开启
-        Debug=false  
+        Debug=true  
         echo "Debug状态为：$Debug"
 
         if [ "$Debug" = true ]; then
@@ -1327,13 +1327,18 @@ jobs:
         echo '## Loon脚本收集: [欢迎投稿](https://t.me/Skill_XX )' >> Tool-repo/Loon/Readme.md
     
         # 获取并提取 <table> 内容
-        curl -s https://github.com/luestr/ProxyResource/raw/main/README.md | \
-        sed -n '/<table>/,/<\/table>/p' >> Tool-repo/Loon/Readme.md
-    
-        # 检查输出
+        content=$(curl -s https://github.com/luestr/ProxyResource/raw/main/README.md)
         if [ $? -ne 0 ]; then
-          echo "获取 <table> 内容失败"
+          echo "curl 获取内容失败"
+          exit 1
         fi
+    
+        echo "$content" | sed -n '/<table>/,/<\/table>/p' >> Tool-repo/Loon/Readme.md
+    
+        if [ $? -ne 0 ]; then
+          echo "sed 提取 <table> 内容失败"
+        fi
+
 
 
     
