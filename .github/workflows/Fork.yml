@@ -1,4 +1,4 @@
-# 2024-10-10 
+# 2024-10-28
 
 name: Fork & Edit
 
@@ -250,15 +250,28 @@ jobs:
         done
 
 
-    # # Fork loon 插件
-    - name: Copy Loon/Plugin
+    - name: Copy Loon/Plugins
       if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
-        mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Plugin
-        # DualSubs
-        curl -L -o Tool-repo/Loon/Plugin/Spotify.plugin "https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
-
-    - name: Edit Loon/Plugin
+        mkdir -p Tool-repo/Loon/Plugin
+    
+        # 定义插件及其原链接
+        declare -A plugins=(
+          ["Spotify"]="https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
+          ["boxjs.rewrite.loon"]="https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.plugin"
+          # 添加更多插件和链接
+        )
+        
+        # 下载插件并在文件中添加原链接
+        for plugin in "${!plugins[@]}"; do
+          original_link="${plugins[$plugin]}"
+          curl -L -o "Tool-repo/Loon/Plugin/$plugin.plugin" "$original_link"
+          
+          # 将原链接添加到文件开头
+          echo "# 原链接 : $original_link" | cat - "Tool-repo/Loon/Plugin/$plugin.plugin" > temp && mv temp "Tool-repo/Loon/Plugin/$plugin.plugin"
+        done
+    
+    - name: Edit Loon/Plugins
       if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         cd Tool-repo/Loon/Plugin
@@ -269,11 +282,9 @@ jobs:
             sed -i 's|#!homepage = .*|#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/'"$file"'|g' "$file"
             # 修改 #!openUrl = 为 #App链接 =
             sed -i 's|#!openUrl = |#App链接 = |g' "$file"
-            # 添加 # 原链接 : 为fork的链接
-            original_link="https://github.com/DualSubs/Spotify/releases/latest"  # 请根据实际链接进行修改
-            sed -i '1s|^|# 原链接 : '"$original_link"'\n|' "$file"
           fi
         done
+
 
 
 
