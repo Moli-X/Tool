@@ -258,7 +258,7 @@ jobs:
         # 定义插件及其原链接
         declare -A plugins=(
           ["Spotify"]="https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
-          ["OtherPlugin"]="https://github.com/DualSubs/OtherPlugin/releases/latest/download/OtherPlugin.plugin"
+          ["Boxjs"]="https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.plugin"
           # 添加更多插件和链接
         )
         
