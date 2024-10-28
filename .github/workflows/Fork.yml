@@ -14,7 +14,7 @@ permissions:
 
 
 jobs:
-  Fork-Fliter-list:
+  ForkRepository:
     runs-on: ubuntu-latest
     env:
       TZ: 'Asia/Shanghai'
@@ -30,7 +30,7 @@ jobs:
 ###### 控制开关
 
     # 环境判断
-    - name: Set Environment
+    - name: 设置环境变量
       id: set-env
       run: |
 
@@ -64,7 +64,7 @@ jobs:
     
 ###### Fork
 
-    - name: Copy workflows
+    - name: 复刻原始文件
       if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/.github/Record
@@ -75,7 +75,7 @@ jobs:
 
 ###### Loon
 
-    - name: Copy Loon/Rules
+    - name: 复刻LOON规则
       if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
@@ -166,7 +166,7 @@ jobs:
         curl -L -o Tool-repo/Loon/Loon.conf "https://github.com/Moli-X/Resources/raw/main/Loon/Loon.conf"
 
        # 适配规则
-    - name: Edit Loon/Rules
+    - name: 编辑LOON规则
       if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         cd Tool-repo/Loon/Rules
@@ -205,7 +205,7 @@ jobs:
         done
 
       # Fork 可莉插件、脚本
-    - name: Fork lodepuly Plugin&Script
+    - name: 整体复刻LOON模块
       if: env.LOON_SWITCH == 'pause'   # 添加开关条件
       run: |
         rm -rf Tool-repo/Loon/Plugin/lodepuly/*
@@ -218,7 +218,7 @@ jobs:
 
 
 
-    - name: Edit Loon/Plugin
+    - name: 整体编辑LOON模块
       if: env.LOON_SWITCH == 'pause'  # 添加开关条件
       run: |
         cd Tool-repo/Loon/Plugin/lodepuly
@@ -250,7 +250,7 @@ jobs:
         done
 
 
-    - name: Copy Loon/Plugins
+    - name: 单独复刻LOON模块
       if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool-repo/Loon/Plugin
@@ -271,7 +271,7 @@ jobs:
           echo "# 原链接 : $original_link" | cat - "Tool-repo/Loon/Plugin/$plugin.plugin" > temp && mv temp "Tool-repo/Loon/Plugin/$plugin.plugin"
         done
     
-    - name: Edit Loon/Plugins
+    - name: 单独编辑LOON模块
       if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         cd Tool-repo/Loon/Plugin
@@ -304,12 +304,12 @@ jobs:
 
 ###### Clash
 
-    - name: Copy Clash/Rules
+    - name: 复刻CLASH规则
       if: env.CLASH_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
 
-        # 流媒体 复制流媒体规则文件
+        # 流媒体 复刻流媒体规则文件
         cp -r Tool-repo/Surge/Rules/Emby.list Tool-repo/Clash/Rules/Emby.list
         curl -L -o Tool-repo/Clash/Rules/TikTok.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/TikTok.list"
         curl -L -o Tool-repo/Clash/Rules/Netflix.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
@@ -381,7 +381,7 @@ jobs:
 
 
 
-    - name: Edit Clash/Rules
+    - name: 编辑CLASH规则
       if: env.CLASH_SWITCH == 'true'  # 添加开关条件
       run: |
         cd Tool-repo/Clash/Rules
@@ -424,7 +424,7 @@ jobs:
 
 
       # 追加规则
-    - name: Copy custom rules
+    - name: 追加REJECT规则
       if: env.CLASH_SWITCH == 'true'  # 添加开关条件
       run: |
         if [ -f "Tool-repo/Clash/Rules/Reject.list" ] ; then
@@ -434,7 +434,7 @@ jobs:
         fi
 
       # 去重排序
-    - name: Remove duplicates and lines 
+    - name: 去重REJECT规则 
       if: env.CLASH_SWITCH == 'true'  # 添加开关条件
       run: |
         cd Tool-repo/Clash/Rules
@@ -453,7 +453,7 @@ jobs:
       shell: bash       
 
     # 覆写
-    - name: Copy Meta
+    - name: 复刻META覆写
       if: env.CLASH_SWITCH == 'true'  # 根据环境变量控制是否执行
       run: |
         mkdir -p Tool-repo/Clash/Meta
@@ -464,7 +464,7 @@ jobs:
 
 ###### QuantumultX
 
-    - name: Copy QuantumultX/Rules
+    - name: 复刻QuantumultX规则
       if: env.QUANTUMULTX_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
@@ -548,7 +548,7 @@ jobs:
         curl -L -o Tool-repo/QuantumultX/Readme.md "https://github.com/Moli-X/Resources/raw/main/Readme.md"
 
       # 适配规则
-    - name: Edit QuantumultX/Rules
+    - name: 编辑QuantumultX规则
       if: env.QUANTUMULTX_SWITCH == 'true'  # 添加开关条件
       run: |
         cd Tool-repo/QuantumultX/Rules
@@ -597,7 +597,7 @@ jobs:
 
 ###### Surge
 
-    - name: Copy Surge/Rules
+    - name: 复刻Surge规则
       if: env.SURGE_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
@@ -683,7 +683,7 @@ jobs:
         curl -L -o Tool-repo/Surge/Rules/Tracking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Tracking.list"
 
       # 适配规则
-    - name: Edit Surge/Rules
+    - name: 编辑Surge规则
       if: env.SURGE_SWITCH == 'true'  # 添加开关条件
       run: |
         cd Tool-repo/Surge/Rules
@@ -735,7 +735,7 @@ jobs:
         done
 
       # 追加规则
-    - name: Copy custom rules
+    - name: 追加Surge/REJECT规则
       if: env.SURGE_SWITCH == 'true'  # 添加开关条件
       run: |
         if [ -f "Tool-repo/Surge/Rules/Reject.list" ] ; then
@@ -763,7 +763,7 @@ jobs:
         fi
 
       # 去重排序
-    - name: Remove duplicates and lines 
+    - name: 去重Surge/REJECT规则 
       if: env.SURGE_SWITCH == 'true'  # 添加开关条件
       run: |
         cd Tool-repo/Surge/Rules
@@ -785,7 +785,7 @@ jobs:
 
 ###### Shadowrocket
 
-    - name: Copy Shadowrocket/Rules
+    - name: 复刻Shadowrocket规则
       if: env.SHADOWROCKET_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
@@ -867,7 +867,7 @@ jobs:
         cp -r Tool-repo/Surge/Rules/Lan.list Tool-repo/Shadowrocket/Rules/Lan.list
 
       # 适配规则
-    - name: Edit Shadowrocket/Rules
+    - name: 编辑Shadowrocket规则
       if: env.SHADOWROCKET_SWITCH == 'true'  # 添加开关条件
       run: |
         cd Tool-repo/Shadowrocket/Rules
@@ -908,7 +908,7 @@ jobs:
 
 ###### Stash
 
-    - name: Copy Stash/Rules 
+    - name: 复刻Stash规则
       if: env.STASH_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
@@ -1066,7 +1066,7 @@ jobs:
 
 
       # 适配 Stash 规则 yaml
-    - name: Edit Stash/Rules 
+    - name: 编辑Stash规则 
       if: env.STASH_SWITCH == 'true'  # 添加开关条件
       run: |
         cd Tool-repo/Stash/Rules
@@ -1121,7 +1121,7 @@ jobs:
 
 ###### Egern       
 
-    - name: Copy Egern/Rules
+    - name: 复刻Egern规则
       if: env.EGERN_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
@@ -1206,7 +1206,7 @@ jobs:
 
 
       # 适配规则
-    - name: Edit Egern/Rules
+    - name: 编辑Egern规则
       if: env.EGERN_SWITCH == 'true'  # 添加开关条件
       run: |
         cd Tool-repo/Egern/Rules
@@ -1282,7 +1282,7 @@ jobs:
         rm tmpfile
 
       # 适配 egern 规则 yaml
-    - name: Edit Egern/Rules add no-resolve
+    - name: 适配Egern规则添加no-resolve
       if: env.EGERN_SWITCH == 'true'  # 添加开关条件
       run: |
         cd Tool-repo/Egern/Rules
@@ -1300,7 +1300,7 @@ jobs:
 
 ###### GeoIP
 
-    - name: Copy  GeoIP
+    - name: 复刻GeoIP规则
       if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/GeoIP
@@ -1313,7 +1313,7 @@ jobs:
 
 
 ###### 可莉README
-    - name: Copy README.md Table and Add Resources
+    - name: 可莉README修改
       if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         # 添加 Resources 部分
@@ -1333,7 +1333,7 @@ jobs:
     
        
 ###### Commit
-    - name: Add and Commits
+    - name: 添加Commits
       run: |
         cd Tool-repo
         if [[ -n $(git status -s) ]]; then
@@ -1347,7 +1347,7 @@ jobs:
         fi
 
 
-    - name: Cleanup Workflow
+    - name: 清理Workflow
       uses: Mattraks/delete-workflow-runs@main
       with:
         token: ${{ secrets.PAT_TOKEN }} 
