@@ -1313,28 +1313,28 @@ jobs:
 
 
 ###### 可莉README
-      - name: 提取 <table> 内容
-        run: |
-          # 获取 README.md 内容
-          content=$(curl -s https://github.com/luestr/ProxyResource/raw/main/README.md)
-          
-          # 检查 curl 是否成功
-          if [ $? -ne 0 ]; then
-            echo "curl 获取内容失败"
-            exit 1
-          fi
+    - name: 提取 <table> 内容
+      run: |
+        # 获取 README.md 内容
+        content=$(curl -s https://github.com/luestr/ProxyResource/raw/main/README.md)
+        
+        # 检查 curl 是否成功
+        if [ $? -ne 0 ]; then
+          echo "curl 获取内容失败"
+          exit 1
+        fi
 
-          # 提取 <table> 到 </table> 之间的内容
-          table_content=$(echo "$content" | sed -n '/<table>/,/<\/table>/p')
+        # 提取 <table> 到 </table> 之间的内容
+        table_content=$(echo "$content" | sed -n '/<table>/,/<\/table>/p')
 
-          # 检查 sed 是否成功
-          if [ $? -ne 0 ]; then
-            echo "sed 提取 <table> 内容失败"
-            exit 1
-          fi
+        # 检查 sed 是否成功
+        if [ $? -ne 0 ]; then
+          echo "sed 提取 <table> 内容失败"
+          exit 1
+        fi
 
-          # 输出提取的内容到文件
-          echo "$table_content" > Tool-repo/Loon/Readme.md
+        # 输出提取的内容到文件
+        echo "$table_content" > Tool-repo/Loon/Readme.md
 
 
     
