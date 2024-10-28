@@ -265,15 +265,16 @@ jobs:
         for file in *.plugin; do
           if [ "$file" ] ; then
             # 修改作者注释部分为 "莫离[https://github.com/Moli-X]"
-            sed -i 's/#!author = .*/#!author = 莫离[https:\/\/github.com\/Moli-X\/Tool\/blob\/X\/Loon\/Readme.md]/g' "$file"
-            sed -i 's|#!homepage = .*|#!homepage = https:\/\/github.com\/Moli-X\/Tool\/raw\/X\/Loon\/Plugin\/lodepuly\/'"$file"'|g' "$file"
+            sed -i 's|#!author = .*|#!author = 莫离[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|g' "$file"
+            sed -i 's|#!homepage = .*|#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/'"$file"'|g' "$file"
             # 修改 #!openUrl = 为 #App链接 =
-            sed -i 's/#!openUrl = /#App链接 = /g' "$file"
+            sed -i 's|#!openUrl = |#App链接 = |g' "$file"
             # 添加 # 原链接 : 为fork的链接
             original_link="https://github.com/DualSubs/Spotify/releases/latest"  # 请根据实际链接进行修改
-            sed -i '1s/^/# 原链接 : '"$original_link"'\n/' "$file"
+            sed -i '1s|^|# 原链接 : '"$original_link"'\n|' "$file"
           fi
         done
+
 
 
 
