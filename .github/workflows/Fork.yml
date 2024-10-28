@@ -1328,8 +1328,14 @@ jobs:
         curl -s https://github.com/luestr/ProxyResource/raw/main/README.md | \
         sed -n '/<table/,/<\/table>/p' >> Tool-repo/Loon/Readme.md
     
+        # 检查输出
+        if [ $? -ne 0 ]; then
+          echo "获取 <table> 内容失败"
+        fi
+    
         # 替换 Plugin URL
         sed -i 's|https://kelee.one/Tool/Loon/Plugin/|https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/|g' Tool-repo/Loon/Readme.md
+
     
        
 ###### Commit
