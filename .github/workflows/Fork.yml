@@ -35,7 +35,7 @@ jobs:
       run: |
 
         # 调试模式是否开启
-        Debug=false  
+        Debug=true 
         echo "Debug状态为：$Debug"
 
         if [ "$Debug" = true ]; then
@@ -1314,7 +1314,6 @@ jobs:
 
 ###### 可莉README
     - name: 可莉README修改
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         # 添加 Resources 部分
         echo '### Resources' > Tool-repo/Loon/Readme.md
@@ -1326,7 +1325,7 @@ jobs:
     
         # 复制 <table> 内容
         curl -s https://github.com/luestr/ProxyResource/raw/main/README.md | \
-        sed -n '/<table/,/<\/table>/p' >> Tool-repo/Loon/Readme.md
+        sed -n '/<table>/,/<\/table>/p' >> Tool-repo/Loon/Readme.md
     
         # 检查输出
         if [ $? -ne 0 ]; then
