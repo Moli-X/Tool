@@ -277,14 +277,25 @@ jobs:
         cd Tool-repo/Loon/Plugin
         for file in *.plugin; do
           if [ "$file" ] ; then
-            # 修改作者注释部分为 "莫离[https://github.com/Moli-X]"
-            sed -i 's|#!author = .*|#!author = 莫离[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|g' "$file"
-            sed -i 's|#!homepage = .*|#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/'"$file"'|g' "$file"
-            # 修改 #!openUrl = 为 #App链接 =
-            sed -i 's|#!openUrl = |#App链接 = |g' "$file"
+            # 确保 #!author 行存在并进行修改
+            if grep -q '#!author =' "$file"; then
+              sed -i 's|#!author = .*|#!author = 莫离[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|g' "$file"
+            else
+              echo '#!author = 莫离[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]' >> "$file"
+            fi
+            
+            # 确保 #!homepage 行存在并进行修改
+            sed -i 's|#!homepage = .*|#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/'"$file"'|g' "$file"
+            
+            # 确保 #!openUrl 行存在并进行修改
+            if grep -q '#!openUrl =' "$file"; then
+              sed -i 's|#!openUrl = |#App链接 = |g' "$file"
+            else
+              echo '#App链接 = ' >> "$file"
+            fi
           fi
         done
-    
+
 
 
 
