@@ -1325,11 +1325,11 @@ jobs:
         echo '## Loon脚本收集: [欢迎投稿](https://t.me/Skill_XX )' >> Tool-repo/Loon/Readme.md
     
         # 复制 <table> 内容
-        curl -s https://gitlab.com/lodepuly/vpn_tool/-/raw/master/README.md | \
+        curl -s https://github.com/luestr/ProxyResource/raw/main/README.md | \
         sed -n '/<table/,/<\/table>/p' >> Tool-repo/Loon/Readme.md
     
         # 替换 Plugin URL
-        sed -i 's|https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/|https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/|g' Tool-repo/Loon/Readme.md
+        sed -i 's|https://kelee.one/Tool/Loon/Plugin/|https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/|g' Tool-repo/Loon/Readme.md
     
        
 ###### Commit
