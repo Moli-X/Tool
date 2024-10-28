@@ -258,7 +258,7 @@ jobs:
         # 定义插件及其原链接
         declare -A plugins=(
           ["Spotify"]="https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
-          ["Boxjs"]="https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.plugin"
+          ["OtherPlugin"]="https://github.com/DualSubs/OtherPlugin/releases/latest/download/OtherPlugin.plugin"
           # 添加更多插件和链接
         )
         
@@ -277,19 +277,19 @@ jobs:
         cd Tool-repo/Loon/Plugin
         for file in *.plugin; do
           if [ "$file" ] ; then
-            # 确保 #!author 行存在并进行修改
-            if grep -q '#!author =' "$file"; then
-              sed -i 's|#!author = .*|#!author = 莫离[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|g' "$file"
+            # 修改 #!author 行
+            if grep -q '#!author' "$file"; then
+              sed -i 's|#!author[ ]*=.*|#!author = 莫离[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|g' "$file"
             else
               echo '#!author = 莫离[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]' >> "$file"
             fi
             
-            # 确保 #!homepage 行存在并进行修改
-            sed -i 's|#!homepage = .*|#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/'"$file"'|g' "$file"
+            # 修改 #!homepage 行
+            sed -i 's|#!homepage[ ]*=.*|#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/'"$file"'|g' "$file"
             
-            # 确保 #!openUrl 行存在并进行修改
-            if grep -q '#!openUrl =' "$file"; then
-              sed -i 's|#!openUrl = |#App链接 = |g' "$file"
+            # 修改 #!openUrl 行
+            if grep -q '#!openUrl' "$file"; then
+              sed -i 's|#!openUrl[ ]*=.*|#App链接 = |g' "$file"
             else
               echo '#App链接 = ' >> "$file"
             fi
