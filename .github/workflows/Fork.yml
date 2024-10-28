@@ -1313,32 +1313,28 @@ jobs:
 
 
 ###### 可莉README
-    - name: 提取并添加表格内容
-      run: |
-        # 创建或清空目标 README 文件
-        echo '' > Tool-repo/Loon/Readme.md
-    
-        # 添加 Resources 部分
-        echo '### Resources' >> Tool-repo/Loon/Readme.md
-        echo '<a href="https://t.me/GodMoliibot"><img src="https://raw.githubusercontent.com/Moli-X/Resources/main/Icon/Image/Hello.gif" width="20%" height="20%"></a>' >> Tool-repo/Loon/Readme.md
-        echo '' >> Tool-repo/Loon/Readme.md
-        echo 'TG Channel：https://t.me/QuantX' >> Tool-repo/Loon/Readme.md
-        echo '' >> Tool-repo/Loon/Readme.md
-        echo '## Loon脚本收集: [欢迎投稿](https://t.me/Skill_XX )' >> Tool-repo/Loon/Readme.md
-    
-        # 获取并提取 <table> 内容
-        content=$(curl -s https://github.com/luestr/ProxyResource/raw/main/README.md)
-        if [ $? -ne 0 ]; then
-          echo "curl 获取内容失败"
-          exit 1
-        fi
-    
-        echo "$content" | sed -n '/<table>/,/<\/table>/p' >> Tool-repo/Loon/Readme.md
-    
-        if [ $? -ne 0 ]; then
-          echo "sed 提取 <table> 内容失败"
-        fi
+      - name: 提取 <table> 内容
+        run: |
+          # 获取 README.md 内容
+          content=$(curl -s https://github.com/luestr/ProxyResource/raw/main/README.md)
+          
+          # 检查 curl 是否成功
+          if [ $? -ne 0 ]; then
+            echo "curl 获取内容失败"
+            exit 1
+          fi
 
+          # 提取 <table> 到 </table> 之间的内容
+          table_content=$(echo "$content" | sed -n '/<table>/,/<\/table>/p')
+
+          # 检查 sed 是否成功
+          if [ $? -ne 0 ]; then
+            echo "sed 提取 <table> 内容失败"
+            exit 1
+          fi
+
+          # 输出提取的内容到文件
+          echo "$table_content" > Tool-repo/Loon/Readme.md
 
 
     
