@@ -1,4 +1,4 @@
-# 2024-10-10 
+# 2024-10-28 
 
 name: Fork & Edit
 
@@ -20,7 +20,7 @@ jobs:
       TZ: 'Asia/Shanghai'
     
     steps: 
-    - name: Checkout target repository
+    - name: 验证目标存储库
       uses: actions/checkout@v4.1.0
       with:
         repository: Moli-X/Tool
@@ -35,7 +35,7 @@ jobs:
       run: |
 
         # 调试模式是否开启
-        Debug=true  
+        Debug=false  
         echo "Debug状态为：$Debug"
 
         if [ "$Debug" = true ]; then
@@ -1314,7 +1314,9 @@ jobs:
 
 ###### 可莉README
     - name: 提取并添加表格内容
+      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
+
         # 创建或清空目标 README 文件
         mkdir -p Tool/Loon
         echo '' > Tool-repo/Loon/Readme.md
