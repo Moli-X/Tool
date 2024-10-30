@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-10-30T08:01:06.026Z
-# Size: 109729
+# Last Updated: 2024-10-30T12:39:42.664Z
+# Size: 109731
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -7171,6 +7171,7 @@ HOST-SUFFIX,nexeps.com,REJECT
 HOST-SUFFIX,nffkfg.com,REJECT
 HOST-SUFFIX,nfztms.com,REJECT
 HOST-SUFFIX,ngjzmt.com,REJECT
+HOST-SUFFIX,nhnace.com,REJECT
 HOST-SUFFIX,nigmen.com,REJECT
 HOST-SUFFIX,nitmus.com,REJECT
 HOST-SUFFIX,nkdyzf.com,REJECT
@@ -72477,7 +72478,6 @@ HOST-SUFFIX,filter-eu.nexrtb.com,REJECT
 HOST-SUFFIX,xml-eu-v4.nexrtb.com,REJECT
 HOST-SUFFIX,rtb-useast-v4.nexrtb.com,REJECT
 HOST-SUFFIX,forms.nexsan.com,REJECT
-HOST-SUFFIX,cdn.nhnace.com,REJECT
 HOST-SUFFIX,sc.nickjr.com,REJECT
 HOST-SUFFIX,ssc.nickjr.com,REJECT
 HOST-SUFFIX,pig.nigano.com,REJECT
@@ -96828,6 +96828,7 @@ HOST-SUFFIX,rt.savingprograms.net,REJECT
 HOST-SUFFIX,a8clk.sirtuinbooster.net,REJECT
 HOST-SUFFIX,play.skydreamcasino.net,REJECT
 HOST-SUFFIX,stats.spreadtheworld.net,REJECT
+HOST-SUFFIX,events.swiftlycontent.net,REJECT
 HOST-SUFFIX,minnow.tapas-software.net,REJECT
 HOST-SUFFIX,track.usadailyoffers.net,REJECT
 HOST-SUFFIX,nope.xn--mgbkt9eckr.net,REJECT
@@ -98536,6 +98537,7 @@ HOST-SUFFIX,log.bloodsugars.live,REJECT
 HOST-SUFFIX,t.themonument.live,REJECT
 HOST-SUFFIX,ad.top-max-buy.live,REJECT
 HOST-SUFFIX,server.officeclowns.live,REJECT
+HOST-SUFFIX,log.cleandesigner.live,REJECT
 HOST-SUFFIX,lbtbing.leanbodytonic.live,REJECT
 HOST-SUFFIX,pinniped.quarantinecup.live,REJECT
 HOST-SUFFIX,get.redboost-site.live,REJECT
