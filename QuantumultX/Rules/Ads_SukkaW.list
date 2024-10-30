@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-10-29T18:44:17.196Z
-# Size: 109722
+# Last Updated: 2024-10-30T08:01:06.026Z
+# Size: 109729
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -5805,6 +5805,7 @@ HOST-SUFFIX,spxhu.com,REJECT
 HOST-SUFFIX,srcip.com,REJECT
 HOST-SUFFIX,srgev.com,REJECT
 HOST-SUFFIX,srkft.com,REJECT
+HOST-SUFFIX,srvgl.com,REJECT
 HOST-SUFFIX,ssevt.com,REJECT
 HOST-SUFFIX,sslph.com,REJECT
 HOST-SUFFIX,ssrv7.com,REJECT
@@ -7170,7 +7171,6 @@ HOST-SUFFIX,nexeps.com,REJECT
 HOST-SUFFIX,nffkfg.com,REJECT
 HOST-SUFFIX,nfztms.com,REJECT
 HOST-SUFFIX,ngjzmt.com,REJECT
-HOST-SUFFIX,nhnace.com,REJECT
 HOST-SUFFIX,nigmen.com,REJECT
 HOST-SUFFIX,nitmus.com,REJECT
 HOST-SUFFIX,nkdyzf.com,REJECT
@@ -8180,6 +8180,7 @@ HOST-SUFFIX,afxjwyg.com,REJECT
 HOST-SUFFIX,agilone.com,REJECT
 HOST-SUFFIX,aiejlfb.com,REJECT
 HOST-SUFFIX,aigccdn.com,REJECT
+HOST-SUFFIX,aikkits.com,REJECT
 HOST-SUFFIX,aimatch.com,REJECT
 HOST-SUFFIX,airfind.com,REJECT
 HOST-SUFFIX,airpush.com,REJECT
@@ -14354,6 +14355,7 @@ HOST-SUFFIX,eecmaivie.com,REJECT
 HOST-SUFFIX,eegeeglou.com,REJECT
 HOST-SUFFIX,efreecode.com,REJECT
 HOST-SUFFIX,egfqlswbf.com,REJECT
+HOST-SUFFIX,ehrmanoda.com,REJECT
 HOST-SUFFIX,ejvdfssdj.com,REJECT
 HOST-SUFFIX,ela-3-tnk.com,REJECT
 HOST-SUFFIX,electnext.com,REJECT
@@ -24299,6 +24301,7 @@ HOST-SUFFIX,jubilantaura.com,REJECT
 HOST-SUFFIX,jubilanthush.com,REJECT
 HOST-SUFFIX,jubnaadserve.com,REJECT
 HOST-SUFFIX,jugerfowells.com,REJECT
+HOST-SUFFIX,juglarunioid.com,REJECT
 HOST-SUFFIX,julyouncecat.com,REJECT
 HOST-SUFFIX,junkieswudge.com,REJECT
 HOST-SUFFIX,justrelevant.com,REJECT
@@ -40136,6 +40139,7 @@ HOST-SUFFIX,5brxi.icu,REJECT
 HOST-SUFFIX,5mltq.icu,REJECT
 HOST-SUFFIX,5z2oy.icu,REJECT
 HOST-SUFFIX,62zd0.icu,REJECT
+HOST-SUFFIX,6ft8a.icu,REJECT
 HOST-SUFFIX,6zfem.icu,REJECT
 HOST-SUFFIX,82zcb.icu,REJECT
 HOST-SUFFIX,8gra3.icu,REJECT
@@ -40370,6 +40374,7 @@ HOST-SUFFIX,ayalcid.icu,REJECT
 HOST-SUFFIX,azsqkrc.icu,REJECT
 HOST-SUFFIX,baggvon.icu,REJECT
 HOST-SUFFIX,baigamp.icu,REJECT
+HOST-SUFFIX,bdawrsi.icu,REJECT
 HOST-SUFFIX,blciqbk.icu,REJECT
 HOST-SUFFIX,blinxmi.icu,REJECT
 HOST-SUFFIX,bmougwx.icu,REJECT
@@ -40556,6 +40561,7 @@ HOST-SUFFIX,vuyibsm.icu,REJECT
 HOST-SUFFIX,wbgafrr.icu,REJECT
 HOST-SUFFIX,wcsmvmf.icu,REJECT
 HOST-SUFFIX,weagehn.icu,REJECT
+HOST-SUFFIX,whrwlxg.icu,REJECT
 HOST-SUFFIX,wkabios.icu,REJECT
 HOST-SUFFIX,wlkukrv.icu,REJECT
 HOST-SUFFIX,wnmoobz.icu,REJECT
@@ -44286,6 +44292,7 @@ HOST-SUFFIX,hetlwsu.top,REJECT
 HOST-SUFFIX,hewrutu.top,REJECT
 HOST-SUFFIX,hfjsliu.top,REJECT
 HOST-SUFFIX,hnalzlu.top,REJECT
+HOST-SUFFIX,houbliu.top,REJECT
 HOST-SUFFIX,hrtlisu.top,REJECT
 HOST-SUFFIX,hsylieu.top,REJECT
 HOST-SUFFIX,htyusiu.top,REJECT
@@ -71447,7 +71454,6 @@ HOST-SUFFIX,beijing.buzhi5.com,REJECT
 HOST-SUFFIX,rt.bvtrkr.com,REJECT
 HOST-SUFFIX,pbjs-stream.bydata.com,REJECT
 HOST-SUFFIX,oocrzh.byojet.com,REJECT
-HOST-SUFFIX,webcare.byside.com,REJECT
 HOST-SUFFIX,webminer.c3pool.com,REJECT
 HOST-SUFFIX,go.c4weld.com,REJECT
 HOST-SUFFIX,gg.caixin.com,REJECT
@@ -72471,6 +72477,7 @@ HOST-SUFFIX,filter-eu.nexrtb.com,REJECT
 HOST-SUFFIX,xml-eu-v4.nexrtb.com,REJECT
 HOST-SUFFIX,rtb-useast-v4.nexrtb.com,REJECT
 HOST-SUFFIX,forms.nexsan.com,REJECT
+HOST-SUFFIX,cdn.nhnace.com,REJECT
 HOST-SUFFIX,sc.nickjr.com,REJECT
 HOST-SUFFIX,ssc.nickjr.com,REJECT
 HOST-SUFFIX,pig.nigano.com,REJECT
