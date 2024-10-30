@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-10-30T13:24:00.557Z
-# Size: 109733
+# Last Updated: 2024-10-30T14:04:34.267Z
+# Size: 109741
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -42835,6 +42835,7 @@ HOST-SUFFIX,watchthistop.net,REJECT
 HOST-SUFFIX,waujigarailo.net,REJECT
 HOST-SUFFIX,web-boosting.net,REJECT
 HOST-SUFFIX,web-rotation.net,REJECT
+HOST-SUFFIX,webmaxlogger.net,REJECT
 HOST-SUFFIX,whaidroansee.net,REJECT
 HOST-SUFFIX,whegnoangirt.net,REJECT
 HOST-SUFFIX,whidribsiheg.net,REJECT
@@ -61594,6 +61595,7 @@ HOST-SUFFIX,muskox.appital.io,REJECT
 HOST-SUFFIX,skink.asorman.io,REJECT
 HOST-SUFFIX,collect-eu.attraqt.io,REJECT
 HOST-SUFFIX,collect-ap2.attraqt.io,REJECT
+HOST-SUFFIX,ad.bandlab.io,REJECT
 HOST-SUFFIX,link.bestest.io,REJECT
 HOST-SUFFIX,link-staging.bestest.io,REJECT
 HOST-SUFFIX,geo.bluedot.io,REJECT
@@ -73755,6 +73757,8 @@ HOST-SUFFIX,techsupport.balluff.com,REJECT
 HOST-SUFFIX,distributors.balluff.com,REJECT
 HOST-SUFFIX,smetrics.banamex.com,REJECT
 HOST-SUFFIX,go.bandits.com,REJECT
+HOST-SUFFIX,amplitude.bandlab.com,REJECT
+HOST-SUFFIX,amplitude-experiment.bandlab.com,REJECT
 HOST-SUFFIX,logger.baofeng.com,REJECT
 HOST-SUFFIX,syycwa.barcelo.com,REJECT
 HOST-SUFFIX,oms.barrons.com,REJECT
@@ -76477,6 +76481,7 @@ HOST-SUFFIX,www.cntr-di5.com,REJECT
 HOST-SUFFIX,www.cntr-di7.com,REJECT
 HOST-SUFFIX,metrics.coalesse.com,REJECT
 HOST-SUFFIX,l.coastapp.com,REJECT
+HOST-SUFFIX,ads.cocomobi.com,REJECT
 HOST-SUFFIX,bpgbcl.coconala.com,REJECT
 HOST-SUFFIX,marketing.codebaby.com,REJECT
 HOST-SUFFIX,abcd.coderays.com,REJECT
@@ -81078,6 +81083,7 @@ HOST-SUFFIX,ferret.tailgraph.com,REJECT
 HOST-SUFFIX,gotest.taillight.com,REJECT
 HOST-SUFFIX,cashback.takhfifan.com,REJECT
 HOST-SUFFIX,log.talkie-ai.com,REJECT
+HOST-SUFFIX,relay-event.talkie-ai.com,REJECT
 HOST-SUFFIX,app.talksport.com,REJECT
 HOST-SUFFIX,www.tank3pull.com,REJECT
 HOST-SUFFIX,secure.tank3pull.com,REJECT
@@ -98002,6 +98008,7 @@ HOST-SUFFIX,link.btl.vin,REJECT
 HOST-SUFFIX,ads.cdvn.vip,REJECT
 HOST-SUFFIX,share.tp666.vip,REJECT
 HOST-SUFFIX,s.fuxporn.vip,REJECT
+HOST-SUFFIX,sensorsdata.glowapp.vip,REJECT
 HOST-SUFFIX,play.nekobot.vip,REJECT
 HOST-SUFFIX,cdn.shrtfly.vip,REJECT
 HOST-SUFFIX,as1.maturexxx.vip,REJECT
@@ -99760,6 +99767,7 @@ HOST-SUFFIX,content.welovecinema.bnpparibas,REJECT
 HOST-SUFFIX,stats.nonprofit.foundation,REJECT
 HOST-SUFFIX,gamefowl.nonprofit.foundation,REJECT
 HOST-SUFFIX,swordfish.lorem.industries,REJECT
+HOST-SUFFIX,ad.deepthought.industries,REJECT
 HOST-SUFFIX,go.dxc.technology,REJECT
 HOST-SUFFIX,omni.dxc.technology,REJECT
 HOST-SUFFIX,somni.dxc.technology,REJECT
