@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-02T12:36:12.415Z
-# Size: 109655
+# Last Updated: 2024-11-02T18:52:30.492Z
+# Size: 109661
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -7122,6 +7122,7 @@ HOST-SUFFIX,moradu.com,REJECT
 HOST-SUFFIX,morict.com,REJECT
 HOST-SUFFIX,mors22.com,REJECT
 HOST-SUFFIX,mosspf.com,REJECT
+HOST-SUFFIX,mossru.com,REJECT
 HOST-SUFFIX,movcpm.com,REJECT
 HOST-SUFFIX,mpay69.com,REJECT
 HOST-SUFFIX,mrelko.com,REJECT
@@ -44358,6 +44359,7 @@ HOST-SUFFIX,qewruty.top,REJECT
 HOST-SUFFIX,qfjsliy.top,REJECT
 HOST-SUFFIX,qkitery.top,REJECT
 HOST-SUFFIX,qnalzly.top,REJECT
+HOST-SUFFIX,qoubliy.top,REJECT
 HOST-SUFFIX,qsyliey.top,REJECT
 HOST-SUFFIX,qtyusiy.top,REJECT
 HOST-SUFFIX,quresdy.top,REJECT
@@ -52305,8 +52307,10 @@ HOST-SUFFIX,booster.monster,REJECT
 HOST-SUFFIX,appspeed.monster,REJECT
 HOST-SUFFIX,headshot.monster,REJECT
 HOST-SUFFIX,progaming.monster,REJECT
+HOST-SUFFIX,webfreesave.monster,REJECT
 HOST-SUFFIX,opengalaxyapps.monster,REJECT
 HOST-SUFFIX,10skhbdhjfsdf100.monster,REJECT
+HOST-SUFFIX,synchroparomologyauditable.monster,REJECT
 HOST-SUFFIX,pub.network,REJECT
 HOST-SUFFIX,cdn7.network,REJECT
 HOST-SUFFIX,admax.network,REJECT
@@ -72287,7 +72291,6 @@ HOST-SUFFIX,m.moomoo.com,REJECT
 HOST-SUFFIX,zozwyc.moscot.com,REJECT
 HOST-SUFFIX,click.moselo.com,REJECT
 HOST-SUFFIX,click-testing.moselo.com,REJECT
-HOST-SUFFIX,adx.mossru.com,REJECT
 HOST-SUFFIX,app.motiwy.com,REJECT
 HOST-SUFFIX,ercamj.motogp.com,REJECT
 HOST-SUFFIX,m1tm.motor1.com,REJECT
@@ -73604,6 +73607,7 @@ HOST-SUFFIX,ohm-dot-hackster-io.appspot.com,REJECT
 HOST-SUFFIX,goo-access-analytics.appspot.com,REJECT
 HOST-SUFFIX,tracker-dot-optimeeze.appspot.com,REJECT
 HOST-SUFFIX,leiki-doubleclick-proxy.appspot.com,REJECT
+HOST-SUFFIX,event-dot-learning-piano.appspot.com,REJECT
 HOST-SUFFIX,ga-tracker-dot-detmir-bonus.appspot.com,REJECT
 HOST-SUFFIX,event-reporting-dot-webylytics.appspot.com,REJECT
 HOST-SUFFIX,tracker-dot-dfty-optimeeze-leroymerlinfr.appspot.com,REJECT
@@ -83895,6 +83899,8 @@ HOST-SUFFIX,sitecat.troweprice.com,REJECT
 HOST-SUFFIX,sitecats.troweprice.com,REJECT
 HOST-SUFFIX,xgspzv.troyestore.com,REJECT
 HOST-SUFFIX,ads-router-noneu.truecaller.com,REJECT
+HOST-SUFFIX,ads-config-engine-noneu.truecaller.com,REJECT
+HOST-SUFFIX,insights-categorizer-noneu.truecaller.com,REJECT
 HOST-SUFFIX,sstats.truist-prd.com,REJECT
 HOST-SUFFIX,sstats.truist-tst.com,REJECT
 HOST-SUFFIX,invitejs.trustpilot.com,REJECT
