@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-03T14:17:22.189Z
-# Size: 109720
+# Last Updated: 2024-11-04T02:03:51.890Z
+# Size: 109729
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -5494,6 +5494,7 @@ HOST-SUFFIX,knewy.com,REJECT
 HOST-SUFFIX,knlob.com,REJECT
 HOST-SUFFIX,knowd.com,REJECT
 HOST-SUFFIX,kovla.com,REJECT
+HOST-SUFFIX,kra18.com,REJECT
 HOST-SUFFIX,ktxtr.com,REJECT
 HOST-SUFFIX,kuyun.com,REJECT
 HOST-SUFFIX,kvaaa.com,REJECT
@@ -13331,6 +13332,7 @@ HOST-SUFFIX,vpuaklat.com,REJECT
 HOST-SUFFIX,vreqnait.com,REJECT
 HOST-SUFFIX,vroaafoi.com,REJECT
 HOST-SUFFIX,vsesumki.com,REJECT
+HOST-SUFFIX,vsojfsoj.com,REJECT
 HOST-SUFFIX,vssidgov.com,REJECT
 HOST-SUFFIX,vstvstsa.com,REJECT
 HOST-SUFFIX,vteflygt.com,REJECT
@@ -40167,6 +40169,7 @@ HOST-SUFFIX,5z2oy.icu,REJECT
 HOST-SUFFIX,62zd0.icu,REJECT
 HOST-SUFFIX,6ft8a.icu,REJECT
 HOST-SUFFIX,6zfem.icu,REJECT
+HOST-SUFFIX,7f7rt.icu,REJECT
 HOST-SUFFIX,82zcb.icu,REJECT
 HOST-SUFFIX,8gra3.icu,REJECT
 HOST-SUFFIX,8q88n.icu,REJECT
@@ -40443,6 +40446,7 @@ HOST-SUFFIX,eeaczcf.icu,REJECT
 HOST-SUFFIX,enokouv.icu,REJECT
 HOST-SUFFIX,eoucxzw.icu,REJECT
 HOST-SUFFIX,extopae.icu,REJECT
+HOST-SUFFIX,ezrcowa.icu,REJECT
 HOST-SUFFIX,faaqgje.icu,REJECT
 HOST-SUFFIX,fdyacma.icu,REJECT
 HOST-SUFFIX,fjqcqdr.icu,REJECT
@@ -40474,6 +40478,7 @@ HOST-SUFFIX,ifxqubw.icu,REJECT
 HOST-SUFFIX,ihssdas.icu,REJECT
 HOST-SUFFIX,ioffers.icu,REJECT
 HOST-SUFFIX,ioykmxa.icu,REJECT
+HOST-SUFFIX,ipqajyy.icu,REJECT
 HOST-SUFFIX,ipsoazr.icu,REJECT
 HOST-SUFFIX,iqgessh.icu,REJECT
 HOST-SUFFIX,ismuwcm.icu,REJECT
@@ -40590,6 +40595,7 @@ HOST-SUFFIX,urpkktc.icu,REJECT
 HOST-SUFFIX,uskecsx.icu,REJECT
 HOST-SUFFIX,uvekyvs.icu,REJECT
 HOST-SUFFIX,uvwnkmf.icu,REJECT
+HOST-SUFFIX,uwsaqoi.icu,REJECT
 HOST-SUFFIX,uyyquln.icu,REJECT
 HOST-SUFFIX,vbiakpu.icu,REJECT
 HOST-SUFFIX,vdoqomz.icu,REJECT
@@ -44438,6 +44444,7 @@ HOST-SUFFIX,uewrutt.top,REJECT
 HOST-SUFFIX,ufjslit.top,REJECT
 HOST-SUFFIX,ukitert.top,REJECT
 HOST-SUFFIX,unalzlt.top,REJECT
+HOST-SUFFIX,uoublit.top,REJECT
 HOST-SUFFIX,urtlist.top,REJECT
 HOST-SUFFIX,usyliet.top,REJECT
 HOST-SUFFIX,uuresdt.top,REJECT
@@ -71917,6 +71924,7 @@ HOST-SUFFIX,vphsiv.gsshop.com,REJECT
 HOST-SUFFIX,dls.guidrr.com,REJECT
 HOST-SUFFIX,ad.gunosy.com,REJECT
 HOST-SUFFIX,tr.gunosy.com,REJECT
+HOST-SUFFIX,ads-delivery.gunosy.com,REJECT
 HOST-SUFFIX,1.gunsuo.com,REJECT
 HOST-SUFFIX,tagman.guoman.com,REJECT
 HOST-SUFFIX,m.gxwztv.com,REJECT
@@ -94056,6 +94064,7 @@ HOST-SUFFIX,auto-deploy.pages.dev,REJECT
 HOST-SUFFIX,tahr.rasen.dev,REJECT
 HOST,sashimi.royli.dev,REJECT
 HOST-SUFFIX,wildebeest.trigo.dev,REJECT
+HOST-SUFFIX,analytics.ahrefs.dev,REJECT
 HOST-SUFFIX,butterfly.dharsh.dev,REJECT
 HOST-SUFFIX,stats.dillen.dev,REJECT
 HOST-SUFFIX,pa-stats.encore.dev,REJECT
