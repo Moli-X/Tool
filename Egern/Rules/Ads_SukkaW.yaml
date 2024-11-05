@@ -1,6 +1,5 @@
 no_resolve: true
 domain_set:
-- adcloud.jp
 - lgtvsdp.com
 - samsungqbe.com
 - samsungcloudsolution.com
@@ -9,7 +8,6 @@ domain_set:
 - hc-ssp.sm.cn
 - huichuan.sm.cn
 - applogios.uc.cn
-- leak.360.cn
 - ntp.msn.cn
 - assets.msn.cn
 - minfo.wps.cn
@@ -73,10 +71,8 @@ domain_set:
 - sa.holopin.io
 - events.jianshu.io
 - s.maketheweb.io
-- abema-adx.ameba.jp
 - x.o2.pl
 - gif.7mmtv.sx
-- ads.wasu.tv
 - adwasu.wasu.tv
 - adsystem.wasu.tv
 - tracking.yorg.app
@@ -94,12 +90,10 @@ domain_set:
 - img-x.jd.com
 - janapi.jd.com
 - ta.qq.com
-- tajs.qq.com
 - tcss.qq.com
 - tpns.qq.com
 - adver.qq.com
 - adping.qq.com
-- wspeed.qq.com
 - adsfile.qq.com
 - adsview.qq.com
 - adsclick.qq.com
@@ -134,19 +128,13 @@ domain_set:
 - log.ys7.com
 - cdn.1rtb.com
 - ad.21cn.com
-- admarket.21cn.com
 - optimus-ads.amap.com
 - amap-aos-info-nogw.amap.com
 - free-aos-cdn-image.amap.com
-- hd.hupu.com
 - adx.hupu.com
 - ccdace.hupu.com
-- shence.hupu.com
-- fz.letv.com
 - g3.letv.com
 - ark.letv.com
-- pro.letv.com
-- stat.letv.com
 - minisite.letv.com
 - adlaunch.moji.com
 - ads.sina.com
@@ -192,17 +180,13 @@ domain_set:
 - userimg.qunar.com
 - adsence.sogou.com
 - new.taobc.com
-- nstat.tudou.com
-- stats.tudou.com
 - adplay.tudou.com
 - iwstat.tudou.com
 - adtrack.ucweb.com
 - iflow.uczzd.com
 - game.weibo.com
 - adnew.wifi8.com
-- adfile.wifi8.com
 - adunion.wifi8.com
-- ysm.yahoo.com
 - gemini.yahoo.com
 - adx.yiche.com
 - hz.youku.com
@@ -263,7 +247,6 @@ domain_set:
 - v9-dc-ad.ixigua.com
 - ad.maoyan.com
 - adm.meiguo.com
-- applog.mobike.com
 - access-sngapm.qcloud.com
 - frontier-aweme-hl.snssdk.com
 - shouji.sougou.com
@@ -302,13 +285,10 @@ domain_set:
 - impservice.youdao.com
 - inst.360safe.com
 - hydra.alibaba.com
-- thirdparty.biliapi.com
-- update.coolyun.com
 - log-sdk.gifshow.com
 - geo.hicloud.com
 - healthdata.hicloud.com
 - ad.huajiao.com
-- res.hunantv.com
 - click.hunantv.com
 - adapi.izuiyou.com
 - ad.jiemian.com
@@ -321,7 +301,6 @@ domain_set:
 - httpdnsvip.meituan.com
 - traffic.mogujie.com
 - ads.mojicdn.com
-- init.phpwind.com
 - zzy1.quyaoya.com
 - adxapi.readgps.com
 - inside.rtbasia.com
@@ -329,16 +308,6 @@ domain_set:
 - insights.samsung.com
 - analytics.spotify.com
 - feedback.windows.com
-- tracker1.zmzfile.com
-- tracker2.zmzfile.com
-- tracker3.zmzfile.com
-- tracker4.zmzfile.com
-- tracker5.zmzfile.com
-- htracker1.zmzfile.com
-- htracker2.zmzfile.com
-- htracker3.zmzfile.com
-- htracker4.zmzfile.com
-- htracker5.zmzfile.com
 - httpdns-sc.aliyuncs.com
 - httpdns-api.aliyuncs.com
 - log.b612kaji.com
@@ -348,7 +317,6 @@ domain_set:
 - galaxy.bjcathay.com
 - cdn.cr-relay.com
 - huawei.facebook.com
-- regist.fotoable.com
 - vs.funshion.com
 - adm.funshion.com
 - conf.funshion.com
@@ -366,7 +334,6 @@ domain_set:
 - geolocation.onetrust.com
 - news.qhstatic.com
 - click.qianqian.com
-- inte.sogoucdn.com
 - ad.ximalaya.com
 - dns.ximalaya.com
 - adbs.ximalaya.com
@@ -384,7 +351,6 @@ domain_set:
 - httpdns.bilivideo.com
 - ad.caiyunapp.com
 - choice.microsoft.com
-- js.shshuoshu.com
 - m.sjzhushou.com
 - stun.smartgslb.com
 - strip.taobaocdn.com
@@ -425,7 +391,6 @@ domain_set:
 - iflow.uczzd.net
 - adres.myaora.net
 - tw13b093.sandai.net
-- thirdparty.biliapi.net
 - adimg.daumcdn.net
 - rt.funshion.net
 - static.vuevideo.net
@@ -435,7 +400,6 @@ domain_set:
 - advertise.baicizhan.org
 - ssl.360antivirus.org
 - collect.foresightnews.pro
-- analyze.innei.ren
 - analytics.bytegiftia.top
 - plausible.joincommunity.xyz
 - grs.dbankcloud.asia
@@ -489,7 +453,6 @@ domain_set:
 - adreq.vivo.com.cn
 - adxlog.vivo.com.cn
 - stnetsdk.vivo.com.cn
-- adsstatic.vivo.com.cn
 - ort-stsdk.vivo.com.cn
 - prt-stsdk.vivo.com.cn
 - onrt-stsdk.vivo.com.cn
@@ -524,9 +487,7 @@ domain_set:
 - promote.biz.weibo.cn
 - m.game.weibo.cn
 - mdrecv.app.cntvwb.cn
-- sdapprecv.app.cntvwb.cn
 - vdapprecv.app.cntvwb.cn
-- img.auction-ads.wpscdn.cn
 - lcs.dev.surepush.cn
 - susapi.dev.surepush.cn
 - sstc.ngrok.xiaomiqiu.cn
@@ -560,7 +521,7 @@ domain_set:
 - wup.imtt.qq.com
 - adfilter.imtt.qq.com
 - report.qqweb.qq.com
-- trace.video.qq.com
+- btrace.video.qq.com
 - wxsmsdy.video.qq.com
 - sdkconfig.video.qq.com
 - huatuocode.huatuo.qq.com
@@ -575,9 +536,7 @@ domain_set:
 - rmads.eu.msn.com
 - catalog.video.msn.com
 - match.p4p.1688.com
-- ad.k.21cn.com
 - msg.m.letv.com
-- pro.hoye.letv.com
 - n.mark.letv.com
 - mob.bz.mgtv.com
 - vip.bz.mgtv.com
@@ -590,7 +549,6 @@ domain_set:
 - credits3.bz.mgtv.com
 - encounter.bz.mgtv.com
 - rc-topic-api.bz.mgtv.com
-- rom.pt.miui.com
 - info.sec.miui.com
 - flash.sec.miui.com
 - proxy.sec.miui.com
@@ -608,7 +566,6 @@ domain_set:
 - ads.aplus.pptv.com
 - msg.video.qiyi.com
 - msg2.video.qiyi.com
-- w.x.baidu.com
 - click.bes.baidu.com
 - ps.map.baidu.com
 - sv.map.baidu.com
@@ -618,8 +575,6 @@ domain_set:
 - log.music.baidu.com
 - ad.player.baidu.com
 - river.zhidao.baidu.com
-- ad.m.iqiyi.com
-- a.ckm.iqiyi.com
 - emoticon.sns.iqiyi.com
 - c.uaa.iqiyi.com
 - policy.video.iqiyi.com
@@ -650,7 +605,6 @@ domain_set:
 - c.yes.youku.com
 - ad.mobile.youku.com
 - das.mobile.youku.com
-- gamex.mobile.youku.com
 - b.smartvideo.youku.com
 - osfota.cdn.aliyun.com
 - vv84.bj.bcebos.com
@@ -659,7 +613,6 @@ domain_set:
 - miniapp-ad.cdn.bcebos.com
 - mobads-pre-config.cdn.bcebos.com
 - links.services.disqus.com
-- mi-stat.gslb.mi-idc.com
 - ads.data.pplive.com
 - gas.data.pplive.com
 - plt.data.pplive.com
@@ -745,9 +698,7 @@ domain_set:
 - config-p2p-other.vcloud.ks-live.com
 - httpdns-sdk.n.netease.com
 - ad.bn.netease.com
-- bigdata.ssp.samsung.com
 - cdn-ads.oss-cn-shanghai.aliyuncs.com
-- cdn.adapi.fotoable.com
 - adse.wsa.ximalaya.com
 - misc.in.duokanbox.com
 - api.game.letvstore.com
@@ -764,7 +715,6 @@ domain_set:
 - iadmat.nosdn.127.net
 - haitaoad.nosdn.127.net
 - iadmatapk.nosdn.127.net
-- live.tvpot.daum.net
 - s3.pfp.sina.net
 - hz.tbusergw.taobao.net
 - resolver.msg.xiaomi.net
@@ -793,7 +743,6 @@ domain_set:
 - stnetsdk.appstore.vivo.com.cn
 - u1.img.mobile.sina.cn
 - click.uve.mobile.sina.cn
-- gw5.push.mcp.weibo.cn
 - staging.admin.e.mi.com
 - sg.a.stat.mi.com
 - adsmind.apdcdn.tc.qq.com
@@ -3560,6 +3509,7 @@ domain_suffix_set:
 - ad-drop.jp
 - ad-move.jp
 - ad-seek.jp
+- adcloud.jp
 - adflare.jp
 - appollo.jp
 - dbfocus.jp
@@ -10286,6 +10236,7 @@ domain_suffix_set:
 - phkwimm.com
 - phluant.com
 - phpstat.com
+- phpwind.com
 - pigeoon.com
 - pigspie.com
 - pihmvhv.com
@@ -15973,6 +15924,7 @@ domain_suffix_set:
 - showsteel.com
 - showzyeye.com
 - shredquiz.com
+- shshuoshu.com
 - shughaxiw.com
 - sickflock.com
 - sicksmash.com
@@ -52379,6 +52331,7 @@ domain_suffix_set:
 - js.ubaike.cn
 - un.ubaike.cn
 - manage.wdfans.cn
+- auction-ads.wpscdn.cn
 - mg.xhkvff.cn
 - iads.xinmin.cn
 - tongji.xinmin.cn
@@ -64534,6 +64487,7 @@ domain_suffix_set:
 - play.rheo.tv
 - app.subs.tv
 - link.tubi.tv
+- ads.wasu.tv
 - adsc.wasu.tv
 - bas.boshi.tv
 - wstats.e-wok.tv
@@ -65768,6 +65722,7 @@ domain_suffix_set:
 - rqd.qq.com
 - wxs.qq.com
 - push.qq.com
+- tajs.qq.com
 - adnet.qq.com
 - aegis.qq.com
 - analy.qq.com
@@ -65780,6 +65735,7 @@ domain_suffix_set:
 - pingjs.qq.com
 - pingma.qq.com
 - sngmta.qq.com
+- wspeed.qq.com
 - pingtas.qq.com
 - rmonitor.qq.com
 - beaconcdn.qq.com
@@ -66880,6 +66836,9 @@ domain_suffix_set:
 - app.lark.com
 - smetrics.lcbo.com
 - dc.letv.com
+- fz.letv.com
+- pro.letv.com
+- stat.letv.com
 - fe-go.letv.com
 - webp2p.letv.com
 - s-webp2p.letv.com
@@ -67521,6 +67480,7 @@ domain_suffix_set:
 - e.baidu.com
 - g.baidu.com
 - s.baidu.com
+- x.baidu.com
 - cb.baidu.com
 - cm.baidu.com
 - em.baidu.com
@@ -68101,6 +68061,7 @@ domain_suffix_set:
 - cdn.iople.com
 - iwa.iplsc.com
 - vpdyyz.iqair.com
+- ckm.iqiyi.com
 - cupid.iqiyi.com
 - elqtracking.iqvia.com
 - eloquatracking.iqvia.com
@@ -68688,6 +68649,8 @@ domain_suffix_set:
 - sanalytics.trutv.com
 - yiohzu.tsigs.com
 - ebanking.ttoh4.com
+- nstat.tudou.com
+- stats.tudou.com
 - hola.tukif.com
 - lm1.tuliu.com
 - tracking.tving.com
@@ -74564,6 +74527,7 @@ domain_suffix_set:
 - metrics.fortinet.com
 - tracking.fortnite.com
 - open.fotition.com
+- adapi.fotoable.com
 - wvvw.france24.com
 - webstat.freaks4u.com
 - a8cv.free-max.com
@@ -75801,6 +75765,7 @@ domain_suffix_set:
 - marketing.soenergy.com
 - tracker.softcube.com
 - lu.sogoucdn.com
+- inte.sogoucdn.com
 - theta.sogoucdn.com
 - smetrics.solidigm.com
 - rtb-uswest-ak.solomath.com
@@ -98977,6 +98942,7 @@ domain_suffix_set:
 - 1.feihua.net.cn
 - t.home.news.cn
 - track.lc.quark.cn
+- push.mcp.weibo.cn
 - www2.info.renesas.cn
 - open.e.kuaishou.cn
 - ubacollect-drcn.cloud.dbankcloud.cn
@@ -102956,6 +102922,7 @@ domain_suffix_set:
 - tr.news.kuhn.com
 - cs.analytics.lego.com
 - apple.www.letv.com
+- pro.hoye.letv.com
 - d.mail.levi.com
 - e.mail.levi.com
 - presence.teams.live.com
@@ -103122,6 +103089,7 @@ domain_suffix_set:
 - ablink.help.innit.com
 - ablink.hello.innit.com
 - elqtrk.thailand.intel.com
+- ad.m.iqiyi.com
 - ndct-data.video.iqiyi.com
 - secure.constellation.iqvia.com
 - web.campaign.jaked.com
@@ -103236,6 +103204,7 @@ domain_suffix_set:
 - beacon.search.yahoo.com
 - visit.webhosting.yahoo.com
 - log.ycapp.yiche.com
+- gamex.mobile.youku.com
 - images.seemore.zebra.com
 - secure.info.zetes.com
 - tracking.info.zetes.com
@@ -103395,6 +103364,7 @@ domain_suffix_set:
 - data.stagemailing.mcafee.com
 - ssl.o.mdedge.com
 - images.news.meraas.com
+- mi-stat.gslb.mi-idc.com
 - resolver.gslb.mi-idc.com
 - go.fem.mingle.com
 - go.jsh.mingle.com
@@ -107379,6 +107349,7 @@ domain_suffix_set:
 - server2.www1.dr.goldenserviceawards.net.jumia.co.ke
 - ei-api.testlb-gwy.easyjet.com.edgekey.net.easyjet.com
 - origin.www.images.2.forms.healthcare.philips.com
+- histats.com
 - notify6.com
 - crazyegg.com
 - amplitude.com

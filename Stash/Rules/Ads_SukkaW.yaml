@@ -1,8 +1,8 @@
 payload:
   #########################################
   # Sukka's Ruleset - Reject Base
-  # Last Updated: 2024-11-05T15:56:35.917Z
-  # Size: 107345
+  # Last Updated: 2024-11-05T17:20:44.950Z
+  # Size: 107315
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -2698,7 +2698,7 @@ payload:
   - DOMAIN-SUFFIX,ad-drop.jp
   - DOMAIN-SUFFIX,ad-move.jp
   - DOMAIN-SUFFIX,ad-seek.jp
-  - DOMAIN,adcloud.jp
+  - DOMAIN-SUFFIX,adcloud.jp
   - DOMAIN-SUFFIX,adflare.jp
   - DOMAIN-SUFFIX,appollo.jp
   - DOMAIN-SUFFIX,dbfocus.jp
@@ -9426,6 +9426,7 @@ payload:
   - DOMAIN-SUFFIX,phkwimm.com
   - DOMAIN-SUFFIX,phluant.com
   - DOMAIN-SUFFIX,phpstat.com
+  - DOMAIN-SUFFIX,phpwind.com
   - DOMAIN-SUFFIX,pigeoon.com
   - DOMAIN-SUFFIX,pigspie.com
   - DOMAIN-SUFFIX,pihmvhv.com
@@ -15113,6 +15114,7 @@ payload:
   - DOMAIN-SUFFIX,showsteel.com
   - DOMAIN-SUFFIX,showzyeye.com
   - DOMAIN-SUFFIX,shredquiz.com
+  - DOMAIN-SUFFIX,shshuoshu.com
   - DOMAIN-SUFFIX,shughaxiw.com
   - DOMAIN-SUFFIX,sickflock.com
   - DOMAIN-SUFFIX,sicksmash.com
@@ -51355,7 +51357,6 @@ payload:
   - DOMAIN-SUFFIX,hao.360.cn
   - DOMAIN-SUFFIX,wan.360.cn
   - DOMAIN-SUFFIX,down.360.cn
-  - DOMAIN,leak.360.cn
   - DOMAIN-SUFFIX,jiagu.360.cn
   - DOMAIN-SUFFIX,union.360.cn
   - DOMAIN-SUFFIX,mobilem.360.cn
@@ -51566,6 +51567,7 @@ payload:
   - DOMAIN-SUFFIX,js.ubaike.cn
   - DOMAIN-SUFFIX,un.ubaike.cn
   - DOMAIN-SUFFIX,manage.wdfans.cn
+  - DOMAIN-SUFFIX,auction-ads.wpscdn.cn
   - DOMAIN-SUFFIX,mg.xhkvff.cn
   - DOMAIN-SUFFIX,iads.xinmin.cn
   - DOMAIN-SUFFIX,tongji.xinmin.cn
@@ -59516,7 +59518,6 @@ payload:
   - DOMAIN-SUFFIX,wxnxau.air-r.jp
   - DOMAIN-SUFFIX,a8cv.all24.jp
   - DOMAIN-SUFFIX,ln.ameba.jp
-  - DOMAIN,abema-adx.ameba.jp
   - DOMAIN-SUFFIX,fpida.amphi.jp
   - DOMAIN-SUFFIX,a8clk.ancar.jp
   - DOMAIN-SUFFIX,a8cv.aplod.jp
@@ -63748,7 +63749,7 @@ payload:
   - DOMAIN-SUFFIX,play.rheo.tv
   - DOMAIN-SUFFIX,app.subs.tv
   - DOMAIN-SUFFIX,link.tubi.tv
-  - DOMAIN,ads.wasu.tv
+  - DOMAIN-SUFFIX,ads.wasu.tv
   - DOMAIN-SUFFIX,adsc.wasu.tv
   - DOMAIN,adwasu.wasu.tv
   - DOMAIN,adsystem.wasu.tv
@@ -65000,7 +65001,7 @@ payload:
   - DOMAIN-SUFFIX,rqd.qq.com
   - DOMAIN-SUFFIX,wxs.qq.com
   - DOMAIN-SUFFIX,push.qq.com
-  - DOMAIN,tajs.qq.com
+  - DOMAIN-SUFFIX,tajs.qq.com
   - DOMAIN,tcss.qq.com
   - DOMAIN,tpns.qq.com
   - DOMAIN-SUFFIX,adnet.qq.com
@@ -65017,7 +65018,7 @@ payload:
   - DOMAIN-SUFFIX,pingjs.qq.com
   - DOMAIN-SUFFIX,pingma.qq.com
   - DOMAIN-SUFFIX,sngmta.qq.com
-  - DOMAIN,wspeed.qq.com
+  - DOMAIN-SUFFIX,wspeed.qq.com
   - DOMAIN,adsfile.qq.com
   - DOMAIN,adsview.qq.com
   - DOMAIN-SUFFIX,pingtas.qq.com
@@ -65714,7 +65715,6 @@ payload:
   - DOMAIN,ad.21cn.com
   - DOMAIN-SUFFIX,market.21cn.com
   - DOMAIN-SUFFIX,adshows.21cn.com
-  - DOMAIN,admarket.21cn.com
   - DOMAIN-SUFFIX,ssp.21ic.com
   - DOMAIN-SUFFIX,fxjs.2541.com
   - DOMAIN-SUFFIX,js.263y.com
@@ -66039,10 +66039,8 @@ payload:
   - DOMAIN-SUFFIX,t-ak.hulu.com
   - DOMAIN-SUFFIX,metcon.hulu.com
   - DOMAIN-SUFFIX,vortex.hulu.com
-  - DOMAIN,hd.hupu.com
   - DOMAIN,adx.hupu.com
   - DOMAIN,ccdace.hupu.com
-  - DOMAIN,shence.hupu.com
   - DOMAIN-SUFFIX,df.huya.com
   - DOMAIN-SUFFIX,ylog.huya.com
   - DOMAIN-SUFFIX,e-stat.huya.com
@@ -66160,11 +66158,11 @@ payload:
   - DOMAIN-SUFFIX,app.lark.com
   - DOMAIN-SUFFIX,smetrics.lcbo.com
   - DOMAIN-SUFFIX,dc.letv.com
-  - DOMAIN,fz.letv.com
+  - DOMAIN-SUFFIX,fz.letv.com
   - DOMAIN,g3.letv.com
   - DOMAIN,ark.letv.com
-  - DOMAIN,pro.letv.com
-  - DOMAIN,stat.letv.com
+  - DOMAIN-SUFFIX,pro.letv.com
+  - DOMAIN-SUFFIX,stat.letv.com
   - DOMAIN-SUFFIX,fe-go.letv.com
   - DOMAIN-SUFFIX,webp2p.letv.com
   - DOMAIN,minisite.letv.com
@@ -66815,6 +66813,7 @@ payload:
   - DOMAIN-SUFFIX,e.baidu.com
   - DOMAIN-SUFFIX,g.baidu.com
   - DOMAIN-SUFFIX,s.baidu.com
+  - DOMAIN-SUFFIX,x.baidu.com
   - DOMAIN-SUFFIX,cb.baidu.com
   - DOMAIN-SUFFIX,cm.baidu.com
   - DOMAIN-SUFFIX,em.baidu.com
@@ -67415,6 +67414,7 @@ payload:
   - DOMAIN-SUFFIX,iwa.iplsc.com
   - DOMAIN-SUFFIX,vpdyyz.iqair.com
   - DOMAIN,afp.iqiyi.com
+  - DOMAIN-SUFFIX,ckm.iqiyi.com
   - DOMAIN-SUFFIX,cupid.iqiyi.com
   - DOMAIN,yuedu.iqiyi.com
   - DOMAIN,mbdlog.iqiyi.com
@@ -68018,8 +68018,8 @@ payload:
   - DOMAIN-SUFFIX,sanalytics.trutv.com
   - DOMAIN-SUFFIX,yiohzu.tsigs.com
   - DOMAIN-SUFFIX,ebanking.ttoh4.com
-  - DOMAIN,nstat.tudou.com
-  - DOMAIN,stats.tudou.com
+  - DOMAIN-SUFFIX,nstat.tudou.com
+  - DOMAIN-SUFFIX,stats.tudou.com
   - DOMAIN,adplay.tudou.com
   - DOMAIN,iwstat.tudou.com
   - DOMAIN-SUFFIX,hola.tukif.com
@@ -68143,7 +68143,6 @@ payload:
   - DOMAIN-SUFFIX,events.whisk.com
   - DOMAIN-SUFFIX,axp.who13.com
   - DOMAIN,adnew.wifi8.com
-  - DOMAIN,adfile.wifi8.com
   - DOMAIN,adunion.wifi8.com
   - DOMAIN-SUFFIX,sdata.wiley.com
   - DOMAIN-SUFFIX,marketing.wingd.com
@@ -68180,7 +68179,6 @@ payload:
   - DOMAIN-SUFFIX,noa.yahoo.com
   - DOMAIN-SUFFIX,nol.yahoo.com
   - DOMAIN-SUFFIX,ras.yahoo.com
-  - DOMAIN,ysm.yahoo.com
   - DOMAIN-SUFFIX,ganon.yahoo.com
   - DOMAIN-SUFFIX,3p-geo.yahoo.com
   - DOMAIN-SUFFIX,3p-udc.yahoo.com
@@ -69517,7 +69515,6 @@ payload:
   - DOMAIN-SUFFIX,info.mmmlaw.com
   - DOMAIN-SUFFIX,zg.mmyuer.com
   - DOMAIN-SUFFIX,a.mobify.com
-  - DOMAIN,applog.mobike.com
   - DOMAIN-SUFFIX,ma.moblrn.com
   - DOMAIN-SUFFIX,info.mobmed.com
   - DOMAIN-SUFFIX,kyjoyk.modoza.com
@@ -70974,7 +70971,6 @@ payload:
   - DOMAIN-SUFFIX,m.bigroad.com
   - DOMAIN-SUFFIX,hcjpbc.bikemag.com
   - DOMAIN-SUFFIX,meta-events.bikereg.com
-  - DOMAIN,thirdparty.biliapi.com
   - DOMAIN-SUFFIX,br.bio-rad.com
   - DOMAIN-SUFFIX,eakwza.bipicar.com
   - DOMAIN-SUFFIX,xwpoxv.birdies.com
@@ -71144,7 +71140,6 @@ payload:
   - DOMAIN-SUFFIX,app.cookdtv.com
   - DOMAIN-SUFFIX,logend.cookpad.com
   - DOMAIN-SUFFIX,smetrics.coolray.com
-  - DOMAIN,update.coolyun.com
   - DOMAIN-SUFFIX,trck.coomeet.com
   - DOMAIN-SUFFIX,omni.copaair.com
   - DOMAIN-SUFFIX,somni.copaair.com
@@ -71705,7 +71700,6 @@ payload:
   - DOMAIN-SUFFIX,trackcommon.hujiang.com
   - DOMAIN-SUFFIX,da.hunantv.com
   - DOMAIN-SUFFIX,log.hunantv.com
-  - DOMAIN,res.hunantv.com
   - DOMAIN,click.hunantv.com
   - DOMAIN-SUFFIX,ping.hungama.com
   - DOMAIN-SUFFIX,t.huskers.com
@@ -72324,7 +72318,6 @@ payload:
   - DOMAIN-SUFFIX,analytics.pgatour.com
   - DOMAIN-SUFFIX,swebanalytics.pgatour.com
   - DOMAIN-SUFFIX,r.phhhoto.com
-  - DOMAIN,init.phpwind.com
   - DOMAIN-SUFFIX,halibut.phytype.com
   - DOMAIN-SUFFIX,stats.piaggio.com
   - DOMAIN-SUFFIX,invite.piceapp.com
@@ -73197,16 +73190,6 @@ payload:
   - DOMAIN-SUFFIX,app.ziptoss.com
   - DOMAIN-SUFFIX,d.ziyuanm.com
   - DOMAIN-SUFFIX,www.zmxncb5.com
-  - DOMAIN,tracker1.zmzfile.com
-  - DOMAIN,tracker2.zmzfile.com
-  - DOMAIN,tracker3.zmzfile.com
-  - DOMAIN,tracker4.zmzfile.com
-  - DOMAIN,tracker5.zmzfile.com
-  - DOMAIN,htracker1.zmzfile.com
-  - DOMAIN,htracker2.zmzfile.com
-  - DOMAIN,htracker3.zmzfile.com
-  - DOMAIN,htracker4.zmzfile.com
-  - DOMAIN,htracker5.zmzfile.com
   - DOMAIN-SUFFIX,stats.zotabox.com
   - DOMAIN-SUFFIX,static.zotabox.com
   - DOMAIN-SUFFIX,saclel.zotapay.com
@@ -74050,7 +74033,7 @@ payload:
   - DOMAIN-SUFFIX,metrics.fortinet.com
   - DOMAIN-SUFFIX,tracking.fortnite.com
   - DOMAIN-SUFFIX,open.fotition.com
-  - DOMAIN,regist.fotoable.com
+  - DOMAIN-SUFFIX,adapi.fotoable.com
   - DOMAIN-SUFFIX,wvvw.france24.com
   - DOMAIN-SUFFIX,webstat.freaks4u.com
   - DOMAIN-SUFFIX,a8cv.free-max.com
@@ -75305,7 +75288,7 @@ payload:
   - DOMAIN-SUFFIX,marketing.soenergy.com
   - DOMAIN-SUFFIX,tracker.softcube.com
   - DOMAIN-SUFFIX,lu.sogoucdn.com
-  - DOMAIN,inte.sogoucdn.com
+  - DOMAIN-SUFFIX,inte.sogoucdn.com
   - DOMAIN-SUFFIX,theta.sogoucdn.com
   - DOMAIN-SUFFIX,smetrics.solidigm.com
   - DOMAIN-SUFFIX,rtb-uswest-ak.solomath.com
@@ -78124,7 +78107,6 @@ payload:
   - DOMAIN-SUFFIX,tracking.shopstyle.com
   - DOMAIN-SUFFIX,analytics.shorthand.com
   - DOMAIN-SUFFIX,hz.shouyoutv.com
-  - DOMAIN,js.shshuoshu.com
   - DOMAIN-SUFFIX,web.sidsavage.com
   - DOMAIN-SUFFIX,t.sieu-viet.com
   - DOMAIN-SUFFIX,bran.sightdots.com
@@ -92292,7 +92274,6 @@ payload:
   - DOMAIN-SUFFIX,stats.behance.net
   - DOMAIN-SUFFIX,go.betobet.net
   - DOMAIN-SUFFIX,app.bidhead.net
-  - DOMAIN,thirdparty.biliapi.net
   - DOMAIN-SUFFIX,8cc5ff581a88.bitsngo.net
   - DOMAIN-SUFFIX,marketing.bluebox.net
   - DOMAIN-SUFFIX,stocker.bonnint.net
@@ -95395,7 +95376,6 @@ payload:
   - DOMAIN-SUFFIX,track.lapa.pub
   - DOMAIN-SUFFIX,plaus.outpost.pub
   - DOMAIN-SUFFIX,ferret.itsf.red
-  - DOMAIN,analyze.innei.ren
   - DOMAIN-SUFFIX,t.fml.rip
   - DOMAIN-SUFFIX,slit.lewd.rip
   - DOMAIN-SUFFIX,owa.any.run
@@ -98530,7 +98510,6 @@ payload:
   - DOMAIN-SUFFIX,stsdk.vivo.com.cn
   - DOMAIN,adxlog.vivo.com.cn
   - DOMAIN,stnetsdk.vivo.com.cn
-  - DOMAIN,adsstatic.vivo.com.cn
   - DOMAIN,ort-stsdk.vivo.com.cn
   - DOMAIN,prt-stsdk.vivo.com.cn
   - DOMAIN,onrt-stsdk.vivo.com.cn
@@ -98637,11 +98616,10 @@ payload:
   - DOMAIN-SUFFIX,track.lc.quark.cn
   - DOMAIN,dp.im.weibo.cn
   - DOMAIN,promote.biz.weibo.cn
+  - DOMAIN-SUFFIX,push.mcp.weibo.cn
   - DOMAIN,m.game.weibo.cn
   - DOMAIN,mdrecv.app.cntvwb.cn
-  - DOMAIN,sdapprecv.app.cntvwb.cn
   - DOMAIN,vdapprecv.app.cntvwb.cn
-  - DOMAIN,img.auction-ads.wpscdn.cn
   - DOMAIN-SUFFIX,www2.info.renesas.cn
   - DOMAIN-SUFFIX,open.e.kuaishou.cn
   - DOMAIN,lcs.dev.surepush.cn
@@ -102391,7 +102369,7 @@ payload:
   - DOMAIN,report.qqweb.qq.com
   - DOMAIN-SUFFIX,statistic.qzone.qq.com
   - DOMAIN-SUFFIX,rcgi.video.qq.com
-  - DOMAIN,trace.video.qq.com
+  - DOMAIN,btrace.video.qq.com
   - DOMAIN,wxsmsdy.video.qq.com
   - DOMAIN,sdkconfig.video.qq.com
   - DOMAIN,huatuocode.huatuo.qq.com
@@ -102596,7 +102574,6 @@ payload:
   - DOMAIN,match.p4p.1688.com
   - DOMAIN-SUFFIX,tr.newsletter.1oag.com
   - DOMAIN-SUFFIX,images.warranty.2-10.com
-  - DOMAIN,ad.k.21cn.com
   - DOMAIN-SUFFIX,a8clk.wedding.294p.com
   - DOMAIN-SUFFIX,links.e.aetv.com
   - DOMAIN-SUFFIX,links.em.aetv.com
@@ -102671,7 +102648,7 @@ payload:
   - DOMAIN-SUFFIX,cs.analytics.lego.com
   - DOMAIN,msg.m.letv.com
   - DOMAIN-SUFFIX,apple.www.letv.com
-  - DOMAIN,pro.hoye.letv.com
+  - DOMAIN-SUFFIX,pro.hoye.letv.com
   - DOMAIN,n.mark.letv.com
   - DOMAIN-SUFFIX,d.mail.levi.com
   - DOMAIN-SUFFIX,e.mail.levi.com
@@ -102696,7 +102673,6 @@ payload:
   - DOMAIN,encounter.bz.mgtv.com
   - DOMAIN,rc-topic-api.bz.mgtv.com
   - DOMAIN-SUFFIX,images.engage.mims.com
-  - DOMAIN,rom.pt.miui.com
   - DOMAIN-SUFFIX,tracking.rus.miui.com
   - DOMAIN-SUFFIX,adv.sec.miui.com
   - DOMAIN-SUFFIX,api.sec.miui.com
@@ -102802,7 +102778,6 @@ payload:
   - DOMAIN-SUFFIX,au.ff.avast.com
   - DOMAIN-SUFFIX,analytics.ff.avast.com
   - DOMAIN-SUFFIX,streamback.ff.avast.com
-  - DOMAIN,w.x.baidu.com
   - DOMAIN,click.bes.baidu.com
   - DOMAIN,ps.map.baidu.com
   - DOMAIN,sv.map.baidu.com
@@ -102878,8 +102853,7 @@ payload:
   - DOMAIN-SUFFIX,ablink.help.innit.com
   - DOMAIN-SUFFIX,ablink.hello.innit.com
   - DOMAIN-SUFFIX,elqtrk.thailand.intel.com
-  - DOMAIN,ad.m.iqiyi.com
-  - DOMAIN,a.ckm.iqiyi.com
+  - DOMAIN-SUFFIX,ad.m.iqiyi.com
   - DOMAIN,emoticon.sns.iqiyi.com
   - DOMAIN,c.uaa.iqiyi.com
   - DOMAIN,policy.video.iqiyi.com
@@ -103024,7 +102998,7 @@ payload:
   - DOMAIN,c.yes.youku.com
   - DOMAIN,ad.mobile.youku.com
   - DOMAIN,das.mobile.youku.com
-  - DOMAIN,gamex.mobile.youku.com
+  - DOMAIN-SUFFIX,gamex.mobile.youku.com
   - DOMAIN,b.smartvideo.youku.com
   - DOMAIN-SUFFIX,images.seemore.zebra.com
   - DOMAIN-SUFFIX,secure.info.zetes.com
@@ -103192,7 +103166,7 @@ payload:
   - DOMAIN-SUFFIX,data.stagemailing.mcafee.com
   - DOMAIN-SUFFIX,ssl.o.mdedge.com
   - DOMAIN-SUFFIX,images.news.meraas.com
-  - DOMAIN,mi-stat.gslb.mi-idc.com
+  - DOMAIN-SUFFIX,mi-stat.gslb.mi-idc.com
   - DOMAIN-SUFFIX,resolver.gslb.mi-idc.com
   - DOMAIN-SUFFIX,go.fem.mingle.com
   - DOMAIN-SUFFIX,go.jsh.mingle.com
@@ -103677,7 +103651,6 @@ payload:
   - DOMAIN-SUFFIX,tr.contact.ruinart.com
   - DOMAIN-SUFFIX,retail-client-events-service.internal.salsify.com
   - DOMAIN-SUFFIX,bldr.mkt.samsung.com
-  - DOMAIN,bigdata.ssp.samsung.com
   - DOMAIN-SUFFIX,images.b2bmkt.samsung.com
   - DOMAIN-SUFFIX,analytics.bigdata.samsung.com
   - DOMAIN-SUFFIX,images.b2bindia.samsung.com
@@ -104009,7 +103982,6 @@ payload:
   - DOMAIN-SUFFIX,app.e.flukecal.com
   - DOMAIN-SUFFIX,track.f1store.formula1.com
   - DOMAIN-SUFFIX,strack.f1store.formula1.com
-  - DOMAIN,cdn.adapi.fotoable.com
   - DOMAIN-SUFFIX,email.everyonesocial.frontier.com
   - DOMAIN-SUFFIX,r.sib2.gardrops.com
   - DOMAIN-SUFFIX,app.gfis.genworth.com
@@ -105838,7 +105810,6 @@ payload:
   - DOMAIN-SUFFIX,email.everyonesocial.colt.net
   - DOMAIN-SUFFIX,stat.tiara.daum.net
   - DOMAIN-SUFFIX,real-feedback.toros.daum.net
-  - DOMAIN,live.tvpot.daum.net
   - DOMAIN-SUFFIX,a8cv.ias.il24.net
   - DOMAIN-SUFFIX,a8clk.ias.il24.net
   - DOMAIN-SUFFIX,images.marketing.kaec.net
@@ -106523,7 +106494,6 @@ payload:
   - DOMAIN-SUFFIX,log.vdn.apps.cntv.cn
   - DOMAIN,u1.img.mobile.sina.cn
   - DOMAIN,click.uve.mobile.sina.cn
-  - DOMAIN,gw5.push.mcp.weibo.cn
   - DOMAIN-SUFFIX,images.universidad.javeriana.edu.co
   - DOMAIN-SUFFIX,app.info.coopenae.fi.cr
   - DOMAIN-SUFFIX,images.info.coopenae.fi.cr
@@ -107376,8 +107346,8 @@ payload:
   ################## EOF ##################
   #########################################
   # Sukka's Ruleset - Reject Domains
-  # Last Updated: 2024-10-26T07:11:39.357Z
-  # Size: 136
+  # Last Updated: 2024-11-05T17:20:45.535Z
+  # Size: 137
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -107385,6 +107355,7 @@ payload:
   # The ruleset supports AD blocking,tracking protection,privacy protection,anti-phishing,anti-mining
   #########################################
   - DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
+  - DOMAIN-SUFFIX,histats.com
   - DOMAIN-SUFFIX,notify6.com
   - DOMAIN-SUFFIX,crazyegg.com
   - DOMAIN-SUFFIX,amplitude.com
