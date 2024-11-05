@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-05T15:56:35.917Z
-# Size: 107345
+# Last Updated: 2024-11-05T17:20:44.950Z
+# Size: 107315
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -2697,7 +2697,7 @@ HOST-SUFFIX,x-lift.jp,REJECT
 HOST-SUFFIX,ad-drop.jp,REJECT
 HOST-SUFFIX,ad-move.jp,REJECT
 HOST-SUFFIX,ad-seek.jp,REJECT
-HOST,adcloud.jp,REJECT
+HOST-SUFFIX,adcloud.jp,REJECT
 HOST-SUFFIX,adflare.jp,REJECT
 HOST-SUFFIX,appollo.jp,REJECT
 HOST-SUFFIX,dbfocus.jp,REJECT
@@ -9425,6 +9425,7 @@ HOST-SUFFIX,phkucgq.com,REJECT
 HOST-SUFFIX,phkwimm.com,REJECT
 HOST-SUFFIX,phluant.com,REJECT
 HOST-SUFFIX,phpstat.com,REJECT
+HOST-SUFFIX,phpwind.com,REJECT
 HOST-SUFFIX,pigeoon.com,REJECT
 HOST-SUFFIX,pigspie.com,REJECT
 HOST-SUFFIX,pihmvhv.com,REJECT
@@ -15112,6 +15113,7 @@ HOST-SUFFIX,showcrack.com,REJECT
 HOST-SUFFIX,showsteel.com,REJECT
 HOST-SUFFIX,showzyeye.com,REJECT
 HOST-SUFFIX,shredquiz.com,REJECT
+HOST-SUFFIX,shshuoshu.com,REJECT
 HOST-SUFFIX,shughaxiw.com,REJECT
 HOST-SUFFIX,sickflock.com,REJECT
 HOST-SUFFIX,sicksmash.com,REJECT
@@ -51354,7 +51356,6 @@ HOST-SUFFIX,tf.360.cn,REJECT
 HOST-SUFFIX,hao.360.cn,REJECT
 HOST-SUFFIX,wan.360.cn,REJECT
 HOST-SUFFIX,down.360.cn,REJECT
-HOST,leak.360.cn,REJECT
 HOST-SUFFIX,jiagu.360.cn,REJECT
 HOST-SUFFIX,union.360.cn,REJECT
 HOST-SUFFIX,mobilem.360.cn,REJECT
@@ -51565,6 +51566,7 @@ HOST-SUFFIX,kmp.twbymc.cn,REJECT
 HOST-SUFFIX,js.ubaike.cn,REJECT
 HOST-SUFFIX,un.ubaike.cn,REJECT
 HOST-SUFFIX,manage.wdfans.cn,REJECT
+HOST-SUFFIX,auction-ads.wpscdn.cn,REJECT
 HOST-SUFFIX,mg.xhkvff.cn,REJECT
 HOST-SUFFIX,iads.xinmin.cn,REJECT
 HOST-SUFFIX,tongji.xinmin.cn,REJECT
@@ -59515,7 +59517,6 @@ HOST-SUFFIX,a8cv.04510.jp,REJECT
 HOST-SUFFIX,wxnxau.air-r.jp,REJECT
 HOST-SUFFIX,a8cv.all24.jp,REJECT
 HOST-SUFFIX,ln.ameba.jp,REJECT
-HOST,abema-adx.ameba.jp,REJECT
 HOST-SUFFIX,fpida.amphi.jp,REJECT
 HOST-SUFFIX,a8clk.ancar.jp,REJECT
 HOST-SUFFIX,a8cv.aplod.jp,REJECT
@@ -63747,7 +63748,7 @@ HOST-SUFFIX,stats.reto.tv,REJECT
 HOST-SUFFIX,play.rheo.tv,REJECT
 HOST-SUFFIX,app.subs.tv,REJECT
 HOST-SUFFIX,link.tubi.tv,REJECT
-HOST,ads.wasu.tv,REJECT
+HOST-SUFFIX,ads.wasu.tv,REJECT
 HOST-SUFFIX,adsc.wasu.tv,REJECT
 HOST,adwasu.wasu.tv,REJECT
 HOST,adsystem.wasu.tv,REJECT
@@ -64999,7 +65000,7 @@ HOST-SUFFIX,qzs.qq.com,REJECT
 HOST-SUFFIX,rqd.qq.com,REJECT
 HOST-SUFFIX,wxs.qq.com,REJECT
 HOST-SUFFIX,push.qq.com,REJECT
-HOST,tajs.qq.com,REJECT
+HOST-SUFFIX,tajs.qq.com,REJECT
 HOST,tcss.qq.com,REJECT
 HOST,tpns.qq.com,REJECT
 HOST-SUFFIX,adnet.qq.com,REJECT
@@ -65016,7 +65017,7 @@ HOST-SUFFIX,mtrace.qq.com,REJECT
 HOST-SUFFIX,pingjs.qq.com,REJECT
 HOST-SUFFIX,pingma.qq.com,REJECT
 HOST-SUFFIX,sngmta.qq.com,REJECT
-HOST,wspeed.qq.com,REJECT
+HOST-SUFFIX,wspeed.qq.com,REJECT
 HOST,adsfile.qq.com,REJECT
 HOST,adsview.qq.com,REJECT
 HOST-SUFFIX,pingtas.qq.com,REJECT
@@ -65713,7 +65714,6 @@ HOST-SUFFIX,cdn.1vag.com,REJECT
 HOST,ad.21cn.com,REJECT
 HOST-SUFFIX,market.21cn.com,REJECT
 HOST-SUFFIX,adshows.21cn.com,REJECT
-HOST,admarket.21cn.com,REJECT
 HOST-SUFFIX,ssp.21ic.com,REJECT
 HOST-SUFFIX,fxjs.2541.com,REJECT
 HOST-SUFFIX,js.263y.com,REJECT
@@ -66038,10 +66038,8 @@ HOST-SUFFIX,t2.hulu.com,REJECT
 HOST-SUFFIX,t-ak.hulu.com,REJECT
 HOST-SUFFIX,metcon.hulu.com,REJECT
 HOST-SUFFIX,vortex.hulu.com,REJECT
-HOST,hd.hupu.com,REJECT
 HOST,adx.hupu.com,REJECT
 HOST,ccdace.hupu.com,REJECT
-HOST,shence.hupu.com,REJECT
 HOST-SUFFIX,df.huya.com,REJECT
 HOST-SUFFIX,ylog.huya.com,REJECT
 HOST-SUFFIX,e-stat.huya.com,REJECT
@@ -66159,11 +66157,11 @@ HOST-SUFFIX,resources.l1id.com,REJECT
 HOST-SUFFIX,app.lark.com,REJECT
 HOST-SUFFIX,smetrics.lcbo.com,REJECT
 HOST-SUFFIX,dc.letv.com,REJECT
-HOST,fz.letv.com,REJECT
+HOST-SUFFIX,fz.letv.com,REJECT
 HOST,g3.letv.com,REJECT
 HOST,ark.letv.com,REJECT
-HOST,pro.letv.com,REJECT
-HOST,stat.letv.com,REJECT
+HOST-SUFFIX,pro.letv.com,REJECT
+HOST-SUFFIX,stat.letv.com,REJECT
 HOST-SUFFIX,fe-go.letv.com,REJECT
 HOST-SUFFIX,webp2p.letv.com,REJECT
 HOST,minisite.letv.com,REJECT
@@ -66814,6 +66812,7 @@ HOST-SUFFIX,a.baidu.com,REJECT
 HOST-SUFFIX,e.baidu.com,REJECT
 HOST-SUFFIX,g.baidu.com,REJECT
 HOST-SUFFIX,s.baidu.com,REJECT
+HOST-SUFFIX,x.baidu.com,REJECT
 HOST-SUFFIX,cb.baidu.com,REJECT
 HOST-SUFFIX,cm.baidu.com,REJECT
 HOST-SUFFIX,em.baidu.com,REJECT
@@ -67414,6 +67413,7 @@ HOST-SUFFIX,cdn.iople.com,REJECT
 HOST-SUFFIX,iwa.iplsc.com,REJECT
 HOST-SUFFIX,vpdyyz.iqair.com,REJECT
 HOST,afp.iqiyi.com,REJECT
+HOST-SUFFIX,ckm.iqiyi.com,REJECT
 HOST-SUFFIX,cupid.iqiyi.com,REJECT
 HOST,yuedu.iqiyi.com,REJECT
 HOST,mbdlog.iqiyi.com,REJECT
@@ -68017,8 +68017,8 @@ HOST-SUFFIX,stracking.trutv.com,REJECT
 HOST-SUFFIX,sanalytics.trutv.com,REJECT
 HOST-SUFFIX,yiohzu.tsigs.com,REJECT
 HOST-SUFFIX,ebanking.ttoh4.com,REJECT
-HOST,nstat.tudou.com,REJECT
-HOST,stats.tudou.com,REJECT
+HOST-SUFFIX,nstat.tudou.com,REJECT
+HOST-SUFFIX,stats.tudou.com,REJECT
 HOST,adplay.tudou.com,REJECT
 HOST,iwstat.tudou.com,REJECT
 HOST-SUFFIX,hola.tukif.com,REJECT
@@ -68142,7 +68142,6 @@ HOST-SUFFIX,syndication.whibp.com,REJECT
 HOST-SUFFIX,events.whisk.com,REJECT
 HOST-SUFFIX,axp.who13.com,REJECT
 HOST,adnew.wifi8.com,REJECT
-HOST,adfile.wifi8.com,REJECT
 HOST,adunion.wifi8.com,REJECT
 HOST-SUFFIX,sdata.wiley.com,REJECT
 HOST-SUFFIX,marketing.wingd.com,REJECT
@@ -68179,7 +68178,6 @@ HOST-SUFFIX,geo.yahoo.com,REJECT
 HOST-SUFFIX,noa.yahoo.com,REJECT
 HOST-SUFFIX,nol.yahoo.com,REJECT
 HOST-SUFFIX,ras.yahoo.com,REJECT
-HOST,ysm.yahoo.com,REJECT
 HOST-SUFFIX,ganon.yahoo.com,REJECT
 HOST-SUFFIX,3p-geo.yahoo.com,REJECT
 HOST-SUFFIX,3p-udc.yahoo.com,REJECT
@@ -69516,7 +69514,6 @@ HOST-SUFFIX,marketing.mma-mi.com,REJECT
 HOST-SUFFIX,info.mmmlaw.com,REJECT
 HOST-SUFFIX,zg.mmyuer.com,REJECT
 HOST-SUFFIX,a.mobify.com,REJECT
-HOST,applog.mobike.com,REJECT
 HOST-SUFFIX,ma.moblrn.com,REJECT
 HOST-SUFFIX,info.mobmed.com,REJECT
 HOST-SUFFIX,kyjoyk.modoza.com,REJECT
@@ -70973,7 +70970,6 @@ HOST-SUFFIX,smetrics.biglots.com,REJECT
 HOST-SUFFIX,m.bigroad.com,REJECT
 HOST-SUFFIX,hcjpbc.bikemag.com,REJECT
 HOST-SUFFIX,meta-events.bikereg.com,REJECT
-HOST,thirdparty.biliapi.com,REJECT
 HOST-SUFFIX,br.bio-rad.com,REJECT
 HOST-SUFFIX,eakwza.bipicar.com,REJECT
 HOST-SUFFIX,xwpoxv.birdies.com,REJECT
@@ -71143,7 +71139,6 @@ HOST-SUFFIX,12.cookcai.com,REJECT
 HOST-SUFFIX,app.cookdtv.com,REJECT
 HOST-SUFFIX,logend.cookpad.com,REJECT
 HOST-SUFFIX,smetrics.coolray.com,REJECT
-HOST,update.coolyun.com,REJECT
 HOST-SUFFIX,trck.coomeet.com,REJECT
 HOST-SUFFIX,omni.copaair.com,REJECT
 HOST-SUFFIX,somni.copaair.com,REJECT
@@ -71704,7 +71699,6 @@ HOST-SUFFIX,track.hujiang.com,REJECT
 HOST-SUFFIX,trackcommon.hujiang.com,REJECT
 HOST-SUFFIX,da.hunantv.com,REJECT
 HOST-SUFFIX,log.hunantv.com,REJECT
-HOST,res.hunantv.com,REJECT
 HOST,click.hunantv.com,REJECT
 HOST-SUFFIX,ping.hungama.com,REJECT
 HOST-SUFFIX,t.huskers.com,REJECT
@@ -72323,7 +72317,6 @@ HOST-SUFFIX,go.petmire.com,REJECT
 HOST-SUFFIX,analytics.pgatour.com,REJECT
 HOST-SUFFIX,swebanalytics.pgatour.com,REJECT
 HOST-SUFFIX,r.phhhoto.com,REJECT
-HOST,init.phpwind.com,REJECT
 HOST-SUFFIX,halibut.phytype.com,REJECT
 HOST-SUFFIX,stats.piaggio.com,REJECT
 HOST-SUFFIX,invite.piceapp.com,REJECT
@@ -73196,16 +73189,6 @@ HOST-SUFFIX,fdfda.zhuzhai.com,REJECT
 HOST-SUFFIX,app.ziptoss.com,REJECT
 HOST-SUFFIX,d.ziyuanm.com,REJECT
 HOST-SUFFIX,www.zmxncb5.com,REJECT
-HOST,tracker1.zmzfile.com,REJECT
-HOST,tracker2.zmzfile.com,REJECT
-HOST,tracker3.zmzfile.com,REJECT
-HOST,tracker4.zmzfile.com,REJECT
-HOST,tracker5.zmzfile.com,REJECT
-HOST,htracker1.zmzfile.com,REJECT
-HOST,htracker2.zmzfile.com,REJECT
-HOST,htracker3.zmzfile.com,REJECT
-HOST,htracker4.zmzfile.com,REJECT
-HOST,htracker5.zmzfile.com,REJECT
 HOST-SUFFIX,stats.zotabox.com,REJECT
 HOST-SUFFIX,static.zotabox.com,REJECT
 HOST-SUFFIX,saclel.zotapay.com,REJECT
@@ -74049,7 +74032,7 @@ HOST-SUFFIX,lantern.fortinet.com,REJECT
 HOST-SUFFIX,metrics.fortinet.com,REJECT
 HOST-SUFFIX,tracking.fortnite.com,REJECT
 HOST-SUFFIX,open.fotition.com,REJECT
-HOST,regist.fotoable.com,REJECT
+HOST-SUFFIX,adapi.fotoable.com,REJECT
 HOST-SUFFIX,wvvw.france24.com,REJECT
 HOST-SUFFIX,webstat.freaks4u.com,REJECT
 HOST-SUFFIX,a8cv.free-max.com,REJECT
@@ -75304,7 +75287,7 @@ HOST-SUFFIX,hiuplq.soccer24.com,REJECT
 HOST-SUFFIX,marketing.soenergy.com,REJECT
 HOST-SUFFIX,tracker.softcube.com,REJECT
 HOST-SUFFIX,lu.sogoucdn.com,REJECT
-HOST,inte.sogoucdn.com,REJECT
+HOST-SUFFIX,inte.sogoucdn.com,REJECT
 HOST-SUFFIX,theta.sogoucdn.com,REJECT
 HOST-SUFFIX,smetrics.solidigm.com,REJECT
 HOST-SUFFIX,rtb-uswest-ak.solomath.com,REJECT
@@ -78123,7 +78106,6 @@ HOST-SUFFIX,widget.shopstyle.com,REJECT
 HOST-SUFFIX,tracking.shopstyle.com,REJECT
 HOST-SUFFIX,analytics.shorthand.com,REJECT
 HOST-SUFFIX,hz.shouyoutv.com,REJECT
-HOST,js.shshuoshu.com,REJECT
 HOST-SUFFIX,web.sidsavage.com,REJECT
 HOST-SUFFIX,t.sieu-viet.com,REJECT
 HOST-SUFFIX,bran.sightdots.com,REJECT
@@ -92291,7 +92273,6 @@ HOST-SUFFIX,ploy.batmobi.net,REJECT
 HOST-SUFFIX,stats.behance.net,REJECT
 HOST-SUFFIX,go.betobet.net,REJECT
 HOST-SUFFIX,app.bidhead.net,REJECT
-HOST,thirdparty.biliapi.net,REJECT
 HOST-SUFFIX,8cc5ff581a88.bitsngo.net,REJECT
 HOST-SUFFIX,marketing.bluebox.net,REJECT
 HOST-SUFFIX,stocker.bonnint.net,REJECT
@@ -95394,7 +95375,6 @@ HOST-SUFFIX,ad.lapa.pub,REJECT
 HOST-SUFFIX,track.lapa.pub,REJECT
 HOST-SUFFIX,plaus.outpost.pub,REJECT
 HOST-SUFFIX,ferret.itsf.red,REJECT
-HOST,analyze.innei.ren,REJECT
 HOST-SUFFIX,t.fml.rip,REJECT
 HOST-SUFFIX,slit.lewd.rip,REJECT
 HOST-SUFFIX,owa.any.run,REJECT
@@ -98529,7 +98509,6 @@ HOST,adreq.vivo.com.cn,REJECT
 HOST-SUFFIX,stsdk.vivo.com.cn,REJECT
 HOST,adxlog.vivo.com.cn,REJECT
 HOST,stnetsdk.vivo.com.cn,REJECT
-HOST,adsstatic.vivo.com.cn,REJECT
 HOST,ort-stsdk.vivo.com.cn,REJECT
 HOST,prt-stsdk.vivo.com.cn,REJECT
 HOST,onrt-stsdk.vivo.com.cn,REJECT
@@ -98636,11 +98615,10 @@ HOST,wapwbclick.mobile.sina.cn,REJECT
 HOST-SUFFIX,track.lc.quark.cn,REJECT
 HOST,dp.im.weibo.cn,REJECT
 HOST,promote.biz.weibo.cn,REJECT
+HOST-SUFFIX,push.mcp.weibo.cn,REJECT
 HOST,m.game.weibo.cn,REJECT
 HOST,mdrecv.app.cntvwb.cn,REJECT
-HOST,sdapprecv.app.cntvwb.cn,REJECT
 HOST,vdapprecv.app.cntvwb.cn,REJECT
-HOST,img.auction-ads.wpscdn.cn,REJECT
 HOST-SUFFIX,www2.info.renesas.cn,REJECT
 HOST-SUFFIX,open.e.kuaishou.cn,REJECT
 HOST,lcs.dev.surepush.cn,REJECT
@@ -102390,7 +102368,7 @@ HOST-SUFFIX,monitor.music.qq.com,REJECT
 HOST,report.qqweb.qq.com,REJECT
 HOST-SUFFIX,statistic.qzone.qq.com,REJECT
 HOST-SUFFIX,rcgi.video.qq.com,REJECT
-HOST,trace.video.qq.com,REJECT
+HOST,btrace.video.qq.com,REJECT
 HOST,wxsmsdy.video.qq.com,REJECT
 HOST,sdkconfig.video.qq.com,REJECT
 HOST,huatuocode.huatuo.qq.com,REJECT
@@ -102595,7 +102573,6 @@ HOST-SUFFIX,branch.familybase.vzw.com,REJECT
 HOST,match.p4p.1688.com,REJECT
 HOST-SUFFIX,tr.newsletter.1oag.com,REJECT
 HOST-SUFFIX,images.warranty.2-10.com,REJECT
-HOST,ad.k.21cn.com,REJECT
 HOST-SUFFIX,a8clk.wedding.294p.com,REJECT
 HOST-SUFFIX,links.e.aetv.com,REJECT
 HOST-SUFFIX,links.em.aetv.com,REJECT
@@ -102670,7 +102647,7 @@ HOST-SUFFIX,tr.news.kuhn.com,REJECT
 HOST-SUFFIX,cs.analytics.lego.com,REJECT
 HOST,msg.m.letv.com,REJECT
 HOST-SUFFIX,apple.www.letv.com,REJECT
-HOST,pro.hoye.letv.com,REJECT
+HOST-SUFFIX,pro.hoye.letv.com,REJECT
 HOST,n.mark.letv.com,REJECT
 HOST-SUFFIX,d.mail.levi.com,REJECT
 HOST-SUFFIX,e.mail.levi.com,REJECT
@@ -102695,7 +102672,6 @@ HOST,credits3.bz.mgtv.com,REJECT
 HOST,encounter.bz.mgtv.com,REJECT
 HOST,rc-topic-api.bz.mgtv.com,REJECT
 HOST-SUFFIX,images.engage.mims.com,REJECT
-HOST,rom.pt.miui.com,REJECT
 HOST-SUFFIX,tracking.rus.miui.com,REJECT
 HOST-SUFFIX,adv.sec.miui.com,REJECT
 HOST-SUFFIX,api.sec.miui.com,REJECT
@@ -102801,7 +102777,6 @@ HOST-SUFFIX,go.prealpha.avant.com,REJECT
 HOST-SUFFIX,au.ff.avast.com,REJECT
 HOST-SUFFIX,analytics.ff.avast.com,REJECT
 HOST-SUFFIX,streamback.ff.avast.com,REJECT
-HOST,w.x.baidu.com,REJECT
 HOST,click.bes.baidu.com,REJECT
 HOST,ps.map.baidu.com,REJECT
 HOST,sv.map.baidu.com,REJECT
@@ -102877,8 +102852,7 @@ HOST-SUFFIX,images.alliances.infor.com,REJECT
 HOST-SUFFIX,ablink.help.innit.com,REJECT
 HOST-SUFFIX,ablink.hello.innit.com,REJECT
 HOST-SUFFIX,elqtrk.thailand.intel.com,REJECT
-HOST,ad.m.iqiyi.com,REJECT
-HOST,a.ckm.iqiyi.com,REJECT
+HOST-SUFFIX,ad.m.iqiyi.com,REJECT
 HOST,emoticon.sns.iqiyi.com,REJECT
 HOST,c.uaa.iqiyi.com,REJECT
 HOST,policy.video.iqiyi.com,REJECT
@@ -103023,7 +102997,7 @@ HOST,huodong.vip.youku.com,REJECT
 HOST,c.yes.youku.com,REJECT
 HOST,ad.mobile.youku.com,REJECT
 HOST,das.mobile.youku.com,REJECT
-HOST,gamex.mobile.youku.com,REJECT
+HOST-SUFFIX,gamex.mobile.youku.com,REJECT
 HOST,b.smartvideo.youku.com,REJECT
 HOST-SUFFIX,images.seemore.zebra.com,REJECT
 HOST-SUFFIX,secure.info.zetes.com,REJECT
@@ -103191,7 +103165,7 @@ HOST-SUFFIX,enterprise2.secureforms.mcafee.com,REJECT
 HOST-SUFFIX,data.stagemailing.mcafee.com,REJECT
 HOST-SUFFIX,ssl.o.mdedge.com,REJECT
 HOST-SUFFIX,images.news.meraas.com,REJECT
-HOST,mi-stat.gslb.mi-idc.com,REJECT
+HOST-SUFFIX,mi-stat.gslb.mi-idc.com,REJECT
 HOST-SUFFIX,resolver.gslb.mi-idc.com,REJECT
 HOST-SUFFIX,go.fem.mingle.com,REJECT
 HOST-SUFFIX,go.jsh.mingle.com,REJECT
@@ -103676,7 +103650,6 @@ HOST-SUFFIX,data.pharmacyservices.riteaid.com,REJECT
 HOST-SUFFIX,tr.contact.ruinart.com,REJECT
 HOST-SUFFIX,retail-client-events-service.internal.salsify.com,REJECT
 HOST-SUFFIX,bldr.mkt.samsung.com,REJECT
-HOST,bigdata.ssp.samsung.com,REJECT
 HOST-SUFFIX,images.b2bmkt.samsung.com,REJECT
 HOST-SUFFIX,analytics.bigdata.samsung.com,REJECT
 HOST-SUFFIX,images.b2bindia.samsung.com,REJECT
@@ -104008,7 +103981,6 @@ HOST-SUFFIX,email.staging-link.flipgive.com,REJECT
 HOST-SUFFIX,app.e.flukecal.com,REJECT
 HOST-SUFFIX,track.f1store.formula1.com,REJECT
 HOST-SUFFIX,strack.f1store.formula1.com,REJECT
-HOST,cdn.adapi.fotoable.com,REJECT
 HOST-SUFFIX,email.everyonesocial.frontier.com,REJECT
 HOST-SUFFIX,r.sib2.gardrops.com,REJECT
 HOST-SUFFIX,app.gfis.genworth.com,REJECT
@@ -105837,7 +105809,6 @@ HOST-SUFFIX,app.insider.cavs.net,REJECT
 HOST-SUFFIX,email.everyonesocial.colt.net,REJECT
 HOST-SUFFIX,stat.tiara.daum.net,REJECT
 HOST-SUFFIX,real-feedback.toros.daum.net,REJECT
-HOST,live.tvpot.daum.net,REJECT
 HOST-SUFFIX,a8cv.ias.il24.net,REJECT
 HOST-SUFFIX,a8clk.ias.il24.net,REJECT
 HOST-SUFFIX,images.marketing.kaec.net,REJECT
@@ -106522,7 +106493,6 @@ HOST-SUFFIX,browser.events.data.msn.cn,REJECT
 HOST-SUFFIX,log.vdn.apps.cntv.cn,REJECT
 HOST,u1.img.mobile.sina.cn,REJECT
 HOST,click.uve.mobile.sina.cn,REJECT
-HOST,gw5.push.mcp.weibo.cn,REJECT
 HOST-SUFFIX,images.universidad.javeriana.edu.co,REJECT
 HOST-SUFFIX,app.info.coopenae.fi.cr,REJECT
 HOST-SUFFIX,images.info.coopenae.fi.cr,REJECT
@@ -107375,8 +107345,8 @@ HOST,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe,REJECT
 ################## EOF ##################
 #########################################
 # Sukka's Ruleset - Reject Domains
-# Last Updated: 2024-10-26T07:11:39.357Z
-# Size: 136
+# Last Updated: 2024-11-05T17:20:45.535Z
+# Size: 137
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -107384,6 +107354,7 @@ HOST,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe,REJECT
 # The ruleset supports AD blocking,tracking protection,privacy protection,anti-phishing,anti-mining
 #########################################
 HOST,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe,REJECT
+HOST-SUFFIX,histats.com,REJECT
 HOST-SUFFIX,notify6.com,REJECT
 HOST-SUFFIX,crazyegg.com,REJECT
 HOST-SUFFIX,amplitude.com,REJECT
