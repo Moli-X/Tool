@@ -41,7 +41,6 @@ domain_set:
 - trackapp.guahao.cn
 - ad.hpplay.cn
 - adeng.hpplay.cn
-- adserviceretry.kglink.cn
 - cdn.pocoiq.cn
 - oct.pocoiq.cn
 - asimgs.pplive.cn
@@ -98,7 +97,6 @@ domain_set:
 - adsgroup.qq.com
 - adshmmsg.qq.com
 - adsview2.qq.com
-- pingfore.qq.com
 - adslvfile.qq.com
 - adslvseed.qq.com
 - qring-tms.qq.com
@@ -127,7 +125,6 @@ domain_set:
 - amap-aos-info-nogw.amap.com
 - free-aos-cdn-image.amap.com
 - adx.hupu.com
-- ccdace.hupu.com
 - g3.letv.com
 - ark.letv.com
 - minisite.letv.com
@@ -166,9 +163,6 @@ domain_set:
 - tongji.meizu.com
 - userimg.qunar.com
 - adsence.sogou.com
-- new.taobc.com
-- adplay.tudou.com
-- iwstat.tudou.com
 - adtrack.ucweb.com
 - iflow.uczzd.com
 - game.weibo.com
@@ -182,10 +176,7 @@ domain_set:
 - myes.youku.com
 - dmapp.youku.com
 - lstat.youku.com
-- tdrec.youku.com
-- ykatr.youku.com
 - ykrec.youku.com
-- actives.youku.com
 - mobilemsg.youku.com
 - apiv4-iyes.youku.com
 - guanggaoad.youku.com
@@ -207,7 +198,6 @@ domain_set:
 - httpdns.alicdn.com
 - acjs.aliyun.com
 - click.aliyun.com
-- osupdate.aliyun.com
 - device-metrics-us-2.amazon.com
 - file.apicvn.com
 - sdkconf.avlyun.com
@@ -229,7 +219,6 @@ domain_set:
 - v9-dc-ad.ixigua.com
 - ad.maoyan.com
 - adm.meiguo.com
-- access-sngapm.qcloud.com
 - frontier-aweme-hl.snssdk.com
 - shouji.sougou.com
 - re.taobao.com
@@ -496,7 +485,6 @@ domain_set:
 - adfilter.imtt.qq.com
 - report.qqweb.qq.com
 - btrace.video.qq.com
-- wxsmsdy.video.qq.com
 - sdkconfig.video.qq.com
 - dns.weixin.qq.com
 - httpdns-v6.gslb.yy.com
@@ -552,7 +540,6 @@ domain_set:
 - cm.passport.iqiyi.com
 - log.web.kugou.com
 - log.stat.kugou.com
-- ads.bssdl.kugou.com
 - splashimgretrybssdl.cloud.kugou.com
 - ads.service.kugou.com
 - adsfile.bssdlbig.kugou.com
@@ -566,9 +553,6 @@ domain_set:
 - sdk.m.youku.com
 - amdc.m.youku.com
 - push.m.youku.com
-- dev-push.m.youku.com
-- val.api.youku.com
-- test.ott.youku.com
 - c.yes.youku.com
 - ad.mobile.youku.com
 - das.mobile.youku.com
@@ -593,10 +577,6 @@ domain_set:
 - agoodm.m.taobao.com
 - adashbc.m.taobao.com
 - show.re.taobao.com
-- ff.win.taobao.com
-- api.wapa.taobao.com
-- intl.wapa.taobao.com
-- agoodm.wapa.taobao.com
 - m.simba.taobao.com
 - dsp.simba.taobao.com
 - fav.simba.taobao.com
@@ -605,7 +585,6 @@ domain_set:
 - redirect.simba.taobao.com
 - pindao.huoban.taobao.com
 - api.waptest.taobao.com
-- intl.waptest.taobao.com
 - api.d.xiaomi.com
 - tc.hd.xiaomi.com
 - secode2.hd.xiaomi.com
@@ -682,7 +661,6 @@ domain_set:
 - haitaoad.nosdn.127.net
 - iadmatapk.nosdn.127.net
 - s3.pfp.sina.net
-- hz.tbusergw.taobao.net
 - resolver.msg.xiaomi.net
 - api.chat.xiaomi.net
 - mlog.search.xiaomi.net
@@ -694,7 +672,6 @@ domain_set:
 - contactapi.micloud.xiaomi.net
 - phonecallapi.micloud.xiaomi.net
 - sec.resource.xiaomi.net
-- al-log.d.meituan.net
 - huodong.ios.shouji.360.cn
 - act.commercial.shouji.360.cn
 - soft.data.weather.360.cn
@@ -721,7 +698,6 @@ domain_set:
 - api.sec.intl.miui.com
 - trial.api.huangye.miui.com
 - ad.api.3g.tudou.com
-- test.sdk.m.youku.com
 - ad.api.3g.youku.com
 - statis.api.3g.youku.com
 - ad.api.mobile.youku.com
@@ -758,7 +734,6 @@ domain_set:
 - v2.fm.n.duokanbox.com
 - i1.services.social.microsoft.com
 - test.api.xlmc.sandai.net
-- hz.pre.tbusergw.taobao.net
 - lxcdn.dl.files.xiaomi.net
 - api.g.micloud.xiaomi.net
 - migrate.driveapi.micloud.xiaomi.net
@@ -766,7 +741,6 @@ domain_set:
 - api.collect.data.intl.miui.com
 - store.tv.api.3g.youku.com
 - store.xl.api.3g.youku.com
-- a-dxk.play.api.3g.youku.com
 - prod.nexusrules.live.com.akadns.net
 - adx-dre.op.dbankcloud.com.edgekey.net
 - this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
@@ -11876,6 +11850,7 @@ domain_suffix_set:
 - entterto.com
 - epitrack.com
 - epsaivuz.com
+- eqhadccx.com
 - ereportz.com
 - erniphiq.com
 - erosyndc.com
@@ -12145,6 +12120,7 @@ domain_suffix_set:
 - hishopes.com
 - hitmatic.com
 - hitslink.com
+- hjsvhcyo.com
 - hlviet84.com
 - hoa44trk.com
 - hoanaijo.com
@@ -12705,6 +12681,7 @@ domain_suffix_set:
 - olatumal.com
 - olayomad.com
 - olitoedr.com
+- olkhtegk.com
 - olkrzytv.com
 - olvwnmnp.com
 - olxwweaf.com
@@ -17756,6 +17733,7 @@ domain_suffix_set:
 - ehokeeshex.com
 - ehqaobjhna.com
 - ehrydnmdoe.com
+- eieuuwdcqx.com
 - ejcet5y9ag.com
 - ejdkqclkzq.com
 - eland-tech.com
@@ -18418,6 +18396,7 @@ domain_suffix_set:
 - markahouse.com
 - markedpail.com
 - marktworks.com
+- marshalget.com
 - marvelbuds.com
 - mathneedle.com
 - max-adserv.com
@@ -20565,6 +20544,7 @@ domain_suffix_set:
 - feedperfect.com
 - feelresolve.com
 - feuingcrche.com
+- fgzydoqqoly.com
 - fhahujwafaf.com
 - fhsmtrnsfnt.com
 - fhyazslzuaw.com
@@ -21342,6 +21322,7 @@ domain_suffix_set:
 - owppijqakeo.com
 - oxhoftarius.com
 - oxidetoward.com
+- oxvbfpwwewu.com
 - ozbnagojbop.com
 - ozelmedikal.com
 - ozwxhoonxlm.com
@@ -21388,6 +21369,7 @@ domain_suffix_set:
 - pervertmine.com
 - pesterolive.com
 - petametrics.com
+- peterjoggle.com
 - petrifacius.com
 - pezoomsekre.com
 - phaighoosie.com
@@ -23327,6 +23309,7 @@ domain_suffix_set:
 - gloveroadmap.com
 - gluxouvauure.com
 - gmixiwowford.com
+- gnjaifthgesd.com
 - gnyjxyzqdcjb.com
 - go2linktrack.com
 - goadservices.com
@@ -26489,6 +26472,7 @@ domain_suffix_set:
 - playertraffic.com
 - playvideoclub.com
 - pleasemeright.com
+- pliablenutmeg.com
 - ploughbrushed.com
 - ploughplbroch.com
 - pluginsjquery.com
@@ -28588,6 +28572,7 @@ domain_suffix_set:
 - rummentaltheme.com
 - ruthlessdegree.com
 - rutkimcuong24h.com
+- ryrmvbnpmhphkx.com
 - sabotageharass.com
 - sackbarngroups.com
 - sadbasindinner.com
@@ -28844,6 +28829,7 @@ domain_suffix_set:
 - tonsilyearling.com
 - tontrinevengre.com
 - tooasthmaloose.com
+- toocssfghbvgqb.com
 - toolughitilagu.com
 - toothbrushnote.com
 - top100bloggers.com
@@ -30447,6 +30433,7 @@ domain_suffix_set:
 - xxxrevpushclcdu.com
 - yeah1publishing.com
 - your-sexy-match.com
+- ytransionscorma.com
 - yuanchengxiezuo.com
 - ywpdobsvqlchvrl.com
 - ywronwasthetron.com
@@ -31225,6 +31212,7 @@ domain_suffix_set:
 - precariousgrumpy.com
 - precisioncounter.com
 - predictivdisplay.com
+- preferablycarbon.com
 - prelandcleanerlp.com
 - premiumvertising.com
 - pressingequation.com
@@ -31421,6 +31409,7 @@ domain_suffix_set:
 - storiesfaultszap.com
 - straitchangeless.com
 - strandedprobable.com
+- strastconversity.com
 - streamsearchclub.com
 - strungcourthouse.com
 - studiouspassword.com
@@ -32227,6 +32216,7 @@ domain_suffix_set:
 - nomadodiouscherry.com
 - nondescriptelapse.com
 - noodledesperately.com
+- normallycollector.com
 - notification-list.com
 - notificationallow.com
 - notonthebedsheets.com
@@ -32434,6 +32424,7 @@ domain_suffix_set:
 - site-kaiseki-tool.com
 - slanginsolentthus.com
 - sleazysoundbegins.com
+- slickgoalenhanced.com
 - slippersappointed.com
 - sloppyegotistical.com
 - slumberloandefine.com
@@ -33156,6 +33147,7 @@ domain_suffix_set:
 - phimhaykiemtien24h.com
 - pickuppestsyndrome.com
 - pinefluencydiffuse.com
+- pinpricktuxedokept.com
 - pinprickwinconfirm.com
 - piouspoemgoodnight.com
 - planetarium-planet.com
@@ -33219,6 +33211,7 @@ domain_suffix_set:
 - repeatedlyitsbrash.com
 - repeatedlyshepherd.com
 - reprintvariousecho.com
+- researchingdestroy.com
 - respectlodgingfoil.com
 - respondedkinkysofa.com
 - reticencecarefully.com
@@ -33973,6 +33966,7 @@ domain_suffix_set:
 - resolvedswordlinked.com
 - restlessconsequence.com
 - retortedattendnovel.com
+- retrostingychemical.com
 - rewardclaim-ycl8trk.com
 - rhinocerosobtrusive.com
 - rinsederangeordered.com
@@ -35892,6 +35886,7 @@ domain_suffix_set:
 - vayvon-shinhanbank-24h.com
 - velvetneutralunnatural.com
 - vietcombank-vaytinchap.com
+- vindictivegrabnautical.com
 - violationspoonconfront.com
 - vongquay-pubgmobilevng.com
 - vongquaycongnghegarena.com
@@ -36861,6 +36856,7 @@ domain_suffix_set:
 - prisonrecollectionecstasy.com
 - professorrevealingoctopus.com
 - profoundbagpipeexaggerate.com
+- pronounlazinessunderstand.com
 - purchasertormentscoundrel.com
 - railroadfatherenlargement.com
 - realiseequanimityliteracy.com
@@ -37825,6 +37821,7 @@ domain_suffix_set:
 - catsnthings.fun
 - dienmayxanh.fun
 - farewell457.fun
+- fsltwwmfxqh.fun
 - gallicize25.fun
 - galvanize26.fun
 - gamecocks24.fun
@@ -38553,6 +38550,7 @@ domain_suffix_set:
 - zthxobgk.icu
 - jbib-hxyf.icu
 - lazadaapp.icu
+- nqvi-lnlu.icu
 - qa-vatote.icu
 - walmartva.icu
 - jztwidpixa.icu
@@ -40501,6 +40499,7 @@ domain_suffix_set:
 - nsultingcoe.net
 - oapsoulreen.net
 - offerstrack.net
+- ogragrugece.net
 - ogrepsougie.net
 - oneclickpic.net
 - opentracker.net
@@ -40587,6 +40586,7 @@ domain_suffix_set:
 - clickexperts.net
 - cliquesteria.net
 - datexchanges.net
+- decmutsoocha.net
 - deepsaifaide.net
 - def-platform.net
 - dimpoaghoorg.net
@@ -40645,6 +40645,7 @@ domain_suffix_set:
 - orbitnetwork.net
 - paiglumousty.net
 - peephoogruku.net
+- phadsophoogh.net
 - phaimsebsils.net
 - phautchiwaiw.net
 - phidaukrauvo.net
@@ -40693,6 +40694,7 @@ domain_suffix_set:
 - thordoodovoo.net
 - thudsurdardu.net
 - thukimoocult.net
+- thulroucmoan.net
 - tikiratingvn.net
 - toojeestoone.net
 - topfliightss.net
@@ -40797,7 +40799,9 @@ domain_suffix_set:
 - zireemilsoude.net
 - auckodsailtoas.net
 - centralnervous.net
+- chipheeshimseg.net
 - choafaidoonsoy.net
+- choobatchautoo.net
 - convergeselect.net
 - dating-service.net
 - decibelinsight.net
@@ -40814,6 +40818,7 @@ domain_suffix_set:
 - goobefirumaupt.net
 - goryachie-foto.net
 - granseerdissee.net
+- gromairgexucmo.net
 - imageadvantage.net
 - infohimatalk77.net
 - izumoukraumsew.net
@@ -41639,6 +41644,7 @@ domain_suffix_set:
 - thechleads.pro
 - tinhotnhat.pro
 - videopotok.pro
+- wangrocery.pro
 - wild-plant.pro
 - wlen1bty92.pro
 - worst-zone.pro
@@ -42621,6 +42627,7 @@ domain_suffix_set:
 - ivemjdir-g.top
 - kamiyayday.top
 - kstorybank.top
+- leetdyeing.top
 - leggymomme.top
 - lizijing12.top
 - lolacorded.top
@@ -42721,6 +42728,7 @@ domain_suffix_set:
 - alzlwkeavrlw.top
 - assilagfilii.top
 - astersrepent.top
+- atabekdoubly.top
 - avwjyvzeymmb.top
 - aweyqalyljbj.top
 - baothanhnien.top
@@ -42872,6 +42880,7 @@ domain_suffix_set:
 - ayzylwqazoqow.top
 - azkwwrerlmebb.top
 - bairnsvibrion.top
+- balloteblanch.top
 - batatasendere.top
 - bestowsubplat.top
 - biggainsurvey.top
@@ -42963,6 +42972,7 @@ domain_suffix_set:
 - rjqzljvorryba.top
 - rmervvazooqzk.top
 - rmwzbomjvqmjw.top
+- rmyblerajazov.top
 - ropablegaliot.top
 - salmiacforked.top
 - sheoguekibosh.top
@@ -42985,6 +42995,7 @@ domain_suffix_set:
 - watchmytopapp.top
 - wevrwqjlylbyz.top
 - wjljwqbmmjzqj.top
+- wkamwqkbaomev.top
 - wkmorvzqjmqbj.top
 - wkwqljwykoamr.top
 - wmeqobozarabk.top
@@ -43045,6 +43056,7 @@ domain_suffix_set:
 - papererweerish.top
 - phanmemgiamsat.top
 - pianolaweeshee.top
+- pottierneronic.top
 - ptersudisurvey.top
 - puranasebriose.top
 - rabbinsfoldage.top
@@ -46362,6 +46374,7 @@ domain_suffix_set:
 - shipsmotorw.xyz
 - sieglinde22.xyz
 - sigheemibod.xyz
+- siwheelsukr.xyz
 - smhmayvtwii.xyz
 - soathouchoa.xyz
 - sofcryingfo.xyz
@@ -46579,6 +46592,7 @@ domain_suffix_set:
 - hmuylvbwbpead.xyz
 - igvhfmubsaqty.xyz
 - inrsfubuavjii.xyz
+- iqpqoamhyccih.xyz
 - jouwhoanepoob.xyz
 - kaqhfijxlkbfa.xyz
 - kffxyakqgbprk.xyz
@@ -47686,6 +47700,7 @@ domain_suffix_set:
 - nch-software.info
 - newsupdatewe.info
 - nhanvientiki.info
+- nnightherefl.info
 - onemileliond.info
 - onscormation.info
 - onservantasr.info
@@ -47810,6 +47825,7 @@ domain_suffix_set:
 - wnedandlooked.info
 - wsaidthemathe.info
 - wutienitme247.info
+- yalittlewallo.info
 - yedbehindforh.info
 - yeesihighlyre.info
 - yeswplearning.info
@@ -48162,6 +48178,7 @@ domain_suffix_set:
 - srch.life
 - viyo.life
 - 41eak.life
+- akijk.life
 - hrwbr.life
 - mtuvr.life
 - synkd.life
@@ -48340,6 +48357,7 @@ domain_suffix_set:
 - cfcdist.loan
 - pdheuryopd.loan
 - candyai.love
+- be-frioaj.love
 - pptnuhffs.love
 - iv-akuifxp.love
 - x-zjxfhysb.love
@@ -48601,6 +48619,7 @@ domain_suffix_set:
 - hhffks967.shop
 - hhffnu135.shop
 - lazadaapp.shop
+- lingswhod.shop
 - loeilbygo.shop
 - muntswe58.shop
 - mybgrea97.shop
@@ -48692,6 +48711,7 @@ domain_suffix_set:
 - kulangflook.shop
 - limpghebeta.shop
 - longanpulex.shop
+- luxestassal.shop
 - mautsanaces.shop
 - mestmoanful.shop
 - moutcoverer.shop
@@ -48741,6 +48761,7 @@ domain_suffix_set:
 - crawlerjamie.shop
 - cs1olr0so31y.shop
 - etm1lv06e6j6.shop
+- fewerreteach.shop
 - fishesparkas.shop
 - futharcconny.shop
 - gatsbybooger.shop
@@ -48750,6 +48771,7 @@ domain_suffix_set:
 - glynnoutcity.shop
 - hoofedpazend.shop
 - inspakedolts.shop
+- instarspouff.shop
 - intunetossed.shop
 - jipperbehoot.shop
 - kaitakavixen.shop
@@ -48804,7 +48826,9 @@ domain_suffix_set:
 - wmmbcwzd24bk.shop
 - ygkw9x53vm45.shop
 - yodelalloxan.shop
+- altaicpranava.shop
 - amarinmandyai.shop
+- arabicpostboy.shop
 - arenosegesten.shop
 - assaiscucujus.shop
 - avocetdentary.shop
@@ -49233,6 +49257,7 @@ domain_suffix_set:
 - nvuzubaus.tech
 - servboost.tech
 - u-oxmzhuo.tech
+- vctcajeme.tech
 - videohead.tech
 - paservices.tech
 - primis-amp.tech
@@ -49946,6 +49971,7 @@ domain_suffix_set:
 - 22media.world
 - adtrace.world
 - jfkc5pwa.world
+- szreismz.world
 - vietlott.world
 - greedseed.world
 - refpasrasw.world
@@ -85954,6 +85980,7 @@ domain_suffix_set:
 - a8clk.cocorotherapy.com
 - yg.coehornjobbet.com
 - wi.cohereseugene.com
+- earth.cointelegraph.com
 - plutonium.cointelegraph.com
 - tracking.coldspringusa.com
 - monkey.colinjohnston.com
