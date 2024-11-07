@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-07T12:37:39.040Z
-# Size: 107634
+# Last Updated: 2024-11-07T14:03:44.187Z
+# Size: 107635
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -90640,6 +90640,7 @@ HOST-SUFFIX,smetrics.ambetteroftennessee.com,REJECT
 HOST-SUFFIX,help.americancrashclaims.com,REJECT
 HOST-SUFFIX,path.americansavinghacks.com,REJECT
 HOST-SUFFIX,rtrack.americasolarsavings.com,REJECT
+HOST-SUFFIX,api.amplitudeexperiment.com,REJECT
 HOST-SUFFIX,ngdhuv.annonces-caravaning.com,REJECT
 HOST-SUFFIX,filter.anuerprivatelimited.com,REJECT
 HOST-SUFFIX,static.anuerprivatelimited.com,REJECT
