@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-11T01:35:51.895Z
-# Size: 107899
+# Last Updated: 2024-11-11T03:26:20.651Z
+# Size: 107902
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -712,6 +712,7 @@ HOST-SUFFIX,crjeymh.cn,REJECT
 HOST-SUFFIX,cuvtnzv.cn,REJECT
 HOST-SUFFIX,czouthy.cn,REJECT
 HOST-SUFFIX,czresus.cn,REJECT
+HOST-SUFFIX,dchdmhf.cn,REJECT
 HOST-SUFFIX,ddaixdz.cn,REJECT
 HOST-SUFFIX,dfejqmh.cn,REJECT
 HOST-SUFFIX,dmclick.cn,REJECT
@@ -866,6 +867,7 @@ HOST-SUFFIX,sjalipa.cn,REJECT
 HOST-SUFFIX,sltbjrf.cn,REJECT
 HOST-SUFFIX,smxflvz.cn,REJECT
 HOST-SUFFIX,soorbka.cn,REJECT
+HOST-SUFFIX,sopqvhe.cn,REJECT
 HOST-SUFFIX,splfnok.cn,REJECT
 HOST-SUFFIX,spsfupq.cn,REJECT
 HOST-SUFFIX,srldkqj.cn,REJECT
@@ -78964,6 +78966,7 @@ HOST-SUFFIX,marketing.threadsol.com,REJECT
 HOST-SUFFIX,l.thumbtack.com,REJECT
 HOST-SUFFIX,open.ticketbro.com,REJECT
 HOST-SUFFIX,tracking.tidalhifi.com,REJECT
+HOST,log.tidbcloud.com,REJECT
 HOST-SUFFIX,privacy.tigerbeer.com,REJECT
 HOST-SUFFIX,link.tigerhall.com,REJECT
 HOST-SUFFIX,go.tigertool.com,REJECT
