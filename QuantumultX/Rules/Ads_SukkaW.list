@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-12T14:16:00.846Z
-# Size: 109224
+# Last Updated: 2024-11-12T14:49:14.110Z
+# Size: 109225
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -85600,6 +85600,7 @@ HOST-SUFFIX,marketing.leading-edge.com,REJECT
 HOST-SUFFIX,ukaxwr.leastedisoha.com,REJECT
 HOST-SUFFIX,ioxqdp.leatherology.com,REJECT
 HOST-SUFFIX,analytics.leavemanager.com,REJECT
+HOST,stats.leavemealone.com,REJECT
 HOST-SUFFIX,zodxgk.lecoqsportif.com,REJECT
 HOST-SUFFIX,wallaby.legendkeeper.com,REJECT
 HOST-SUFFIX,smetrics.lenscrafters.com,REJECT
