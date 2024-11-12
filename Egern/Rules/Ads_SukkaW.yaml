@@ -130,6 +130,7 @@ domain_set:
 - optimus-ads.amap.com
 - amap-aos-info-nogw.amap.com
 - free-aos-cdn-image.amap.com
+- httpdns.cctv.com
 - adx.hupu.com
 - g3.letv.com
 - ark.letv.com
@@ -264,6 +265,7 @@ domain_set:
 - advertpay-vip-ssl.xunlei.com
 - log-yex.youdao.com
 - impservice.youdao.com
+- httpdns.zybang.com
 - inst.360safe.com
 - hydra.alibaba.com
 - httpdns.bcelive.com
@@ -347,6 +349,7 @@ domain_set:
 - app-ad.variflight.com
 - hd.xiaojukeji.com
 - httpdns.calorietech.com
+- httpdns.huaweicloud.com
 - emma-414870e223.huodonghezi.com
 - oppo.yidianzixun.com
 - httpdns-ocloud.heytapmobile.com
@@ -469,9 +472,11 @@ domain_set:
 - susapi.dev.surepush.cn
 - sstc.ngrok.xiaomiqiu.cn
 - adx-drcn.op.dbankcloud.cn
+- httpdns-browser.platform.dbankcloud.cn
 - h-adashx.ut.ele.me
 - log.star.ele.me
 - grs.platform.dbankcloud.ru
+- doh.ptqy.gitv.tv
 - stat.m.jd.com
 - d.g.mi.com
 - f1.g.mi.com
@@ -492,6 +497,7 @@ domain_set:
 - masdk.3g.qq.com
 - tools.3g.qq.com
 - activeqq.3g.qq.com
+- httpdns.kg.qq.com
 - adv.app.qq.com
 - adpm.app.qq.com
 - wup.imtt.qq.com
@@ -535,6 +541,7 @@ domain_set:
 - calopenupdate.comm.miui.com
 - hot.browser.miui.com
 - qsb.browser.miui.com
+- httpdns.browser.miui.com
 - security.browser.miui.com
 - mp.huangye.miui.com
 - ad.api.moji.com
@@ -585,6 +592,7 @@ domain_set:
 - gas.data.pplive.com
 - plt.data.pplive.com
 - web.data.pplive.com
+- httpdns.n.shifen.com
 - w.m.taobao.com
 - re.m.taobao.com
 - rj.m.taobao.com
@@ -657,12 +665,14 @@ domain_set:
 - kuaikan.netmon.360safe.com
 - gvod.aiseejapp.atianqi.com
 - httpdns.c.cdnhwc2.com
+- httpdns1.cc.cdnhwc5.com
 - adx-dra.op.hicloud.com
 - log.v2.hunantv.com
 - slb-p2p.vcloud.ks-live.com
 - config-p2p-other.vcloud.ks-live.com
 - httpdns-sdk.n.netease.com
 - ad.bn.netease.com
+- httpdns.danuoyi.tbcache.com
 - cdn-ads.oss-cn-shanghai.aliyuncs.com
 - adse.wsa.ximalaya.com
 - misc.in.duokanbox.com
@@ -672,8 +682,11 @@ domain_set:
 - adx-dra.op.dbankcloud.com
 - adx-dre.op.dbankcloud.com
 - adx-drru.op.dbankcloud.com
+- httpdns.platform.dbankcloud.com
 - httpdns.push.heytapmobi.com
+- httpdns.ocloud.heytapmobi.com
 - httpdns.push.oppomobile.com
+- httpdns.ocloud.oppomobile.com
 - iadmusicmat.music.126.net
 - iadmusicmatvideo.music.126.net
 - iadmat.nosdn.127.net
@@ -770,11 +783,13 @@ domain_set:
 - ttnet-dig.feishu.cn
 - ttnet-doh.feishu.cn
 - dns.jd.com
+- httpdns.cctv.com
 - httpdns.baidu.com
 - httpsdns.baidu.com
 - doh.iqiyi.com
 - hdns.ksyun.com
 - httpdns.alicdn.com
+- httpdns.zybang.com
 - httpdns.bcelive.com
 - httpdns.meituan.com
 - httpdnsvip.meituan.com
@@ -789,11 +804,15 @@ domain_set:
 - httpdns.yunxindns.com
 - hd.xiaojukeji.com
 - httpdns.calorietech.com
+- httpdns.huaweicloud.com
 - httpdns-push.heytapmobile.com
 - httpdns-ocloud.heytapmobile.com
 - httpdns-euex-push.heytapmobile.com
 - httpdns.volcengineapi.com
 - this_rule_set_is_made_by_sukkaw.skk.moe
+- httpdns-browser.platform.dbankcloud.cn
+- doh.ptqy.gitv.tv
+- httpdns.kg.qq.com
 - dns.weixin.qq.com
 - aedns.weixin.qq.com
 - httpdns.gslb.yy.com
@@ -801,11 +820,18 @@ domain_set:
 - union-httpdns.gslb.yy.com
 - yyapp-httpdns.gslb.yy.com
 - httpdns.music.163.com
+- httpdns.browser.miui.com
 - httpdns.kwd.inkuai.com
+- httpdns.n.shifen.com
 - httpdns.c.cdnhwc2.com
+- httpdns1.cc.cdnhwc5.com
 - httpdns-sdk.n.netease.com
+- httpdns.danuoyi.tbcache.com
+- httpdns.platform.dbankcloud.com
 - httpdns.push.heytapmobi.com
+- httpdns.ocloud.heytapmobi.com
 - httpdns.push.oppomobile.com
+- httpdns.ocloud.oppomobile.com
 - dns.weixin.qq.com.cn
 domain_suffix_set:
 - say.ac

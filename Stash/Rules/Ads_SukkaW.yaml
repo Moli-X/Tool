@@ -1,8 +1,8 @@
 payload:
   #########################################
   # Sukka's Ruleset - Reject Base
-  # Last Updated: 2024-11-12T12:39:15.313Z
-  # Size: 109211
+  # Last Updated: 2024-11-12T14:16:00.846Z
+  # Size: 109224
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -67097,6 +67097,7 @@ payload:
   - DOMAIN-SUFFIX,som.cbsi.com
   - DOMAIN-SUFFIX,intent.cbsi.com
   - DOMAIN-SUFFIX,ad.cctv.com
+  - DOMAIN,httpdns.cctv.com
   - DOMAIN-SUFFIX,mdws.cdcu.com
   - DOMAIN-SUFFIX,smetrics.cfox.com
   - DOMAIN-SUFFIX,analytic.cibc.com
@@ -71890,6 +71891,7 @@ payload:
   - DOMAIN-SUFFIX,ssp.zryydi.com
   - DOMAIN-SUFFIX,link.zulily.com
   - DOMAIN-SUFFIX,cdn.zxclan.com
+  - DOMAIN,httpdns.zybang.com
   - DOMAIN-SUFFIX,ck.zzipps.com
   - DOMAIN-SUFFIX,asg.zzipps.com
   - DOMAIN-SUFFIX,cdn.007moms.com
@@ -83659,6 +83661,7 @@ payload:
   - DOMAIN-SUFFIX,rtb-apac.houseofpubs.com
   - DOMAIN-SUFFIX,rtb-useast.houseofpubs.com
   - DOMAIN-SUFFIX,smetrics.howifightms.com
+  - DOMAIN,httpdns.huaweicloud.com
   - DOMAIN-SUFFIX,cdn.hunteryvely.com
   - DOMAIN,emma-414870e223.huodonghezi.com
   - DOMAIN-SUFFIX,nzqrfa.hushpuppies.com
@@ -100388,6 +100391,7 @@ payload:
   - DOMAIN-SUFFIX,ubacollect-drcn.cloud.dbankcloud.cn
   - DOMAIN-SUFFIX,dnkeeper.platform.dbankcloud.cn
   - DOMAIN-SUFFIX,logservice-dre.platform.dbankcloud.cn
+  - DOMAIN,httpdns-browser.platform.dbankcloud.cn
   - DOMAIN-SUFFIX,cookies.jll.com.co
   - DOMAIN-SUFFIX,email-am.jll.com.co
   - DOMAIN-SUFFIX,email-em.jll.com.co
@@ -103031,6 +103035,7 @@ payload:
   - DOMAIN-SUFFIX,analitik.bik.gov.tr
   - DOMAIN-SUFFIX,tr.email.d8.tv
   - DOMAIN-SUFFIX,tr.email.d17.tv
+  - DOMAIN,doh.ptqy.gitv.tv
   - DOMAIN-SUFFIX,cupid.ptqy.gitv.tv
   - DOMAIN-SUFFIX,streamstats.prd.dlive.tv
   - DOMAIN-SUFFIX,api.cid.samba.tv
@@ -104213,6 +104218,7 @@ payload:
   - DOMAIN-SUFFIX,up-hl.3g.qq.com
   - DOMAIN-SUFFIX,yun-hl.3g.qq.com
   - DOMAIN,activeqq.3g.qq.com
+  - DOMAIN,httpdns.kg.qq.com
   - DOMAIN,adv.app.qq.com
   - DOMAIN,adpm.app.qq.com
   - DOMAIN-SUFFIX,beacon.cdn.qq.com
@@ -104556,6 +104562,7 @@ payload:
   - DOMAIN-SUFFIX,r.browser.miui.com
   - DOMAIN,hot.browser.miui.com
   - DOMAIN,qsb.browser.miui.com
+  - DOMAIN,httpdns.browser.miui.com
   - DOMAIN,security.browser.miui.com
   - DOMAIN,mp.huangye.miui.com
   - DOMAIN-SUFFIX,images.fans.mlse.com
@@ -105105,6 +105112,7 @@ payload:
   - DOMAIN-SUFFIX,images.stanleyhealthcare.sbdinc.com
   - DOMAIN-SUFFIX,tr.recouvrement.seeric.com
   - DOMAIN-SUFFIX,jpaasne.e.shifen.com
+  - DOMAIN,httpdns.n.shifen.com
   - DOMAIN-SUFFIX,click.em.soothe.com
   - DOMAIN-SUFFIX,link.email.soothe.com
   - DOMAIN-SUFFIX,t2.click.subway.com
@@ -105297,6 +105305,7 @@ payload:
   - DOMAIN-SUFFIX,images.e.brother.com
   - DOMAIN-SUFFIX,tracking.server.bytecon.com
   - DOMAIN,httpdns.c.cdnhwc2.com
+  - DOMAIN,httpdns1.cc.cdnhwc5.com
   - DOMAIN-SUFFIX,s.info.cemexgo.com
   - DOMAIN-SUFFIX,app.global.certain.com
   - DOMAIN-SUFFIX,tr.newsletter.chandon.com
@@ -105550,6 +105559,7 @@ payload:
   - DOMAIN-SUFFIX,6519114.automated.tajawal.com
   - DOMAIN-SUFFIX,19035955.automated.tajawal.com
   - DOMAIN-SUFFIX,a8cv.store.tavenal.com
+  - DOMAIN,httpdns.danuoyi.tbcache.com
   - DOMAIN-SUFFIX,images.info.telogis.com
   - DOMAIN-SUFFIX,content.wire.telstra.com
   - DOMAIN-SUFFIX,forms.businessnews.telstra.com
@@ -106412,6 +106422,7 @@ payload:
   - DOMAIN,adx-dra.op.dbankcloud.com
   - DOMAIN,adx-dre.op.dbankcloud.com
   - DOMAIN,adx-drru.op.dbankcloud.com
+  - DOMAIN,httpdns.platform.dbankcloud.com
   - DOMAIN-SUFFIX,openlocation-drcn.platform.dbankcloud.com
   - DOMAIN-SUFFIX,mit.researchlog.dbresearch.com
   - DOMAIN-SUFFIX,trck.internalnews.dbschenker.com
@@ -106451,6 +106462,7 @@ payload:
   - DOMAIN-SUFFIX,tms.hft.hellofresh.com
   - DOMAIN-SUFFIX,trk.discover.herculesrx.com
   - DOMAIN,httpdns.push.heytapmobi.com
+  - DOMAIN,httpdns.ocloud.heytapmobi.com
   - DOMAIN-SUFFIX,pages.feedback.hofvillage.com
   - DOMAIN-SUFFIX,images.mailaway.homelidays.com
   - DOMAIN-SUFFIX,data.emails.imaginbank.com
@@ -106524,6 +106536,7 @@ payload:
   - DOMAIN-SUFFIX,dragate.dc.oppomobile.com
   - DOMAIN-SUFFIX,stat-in.dc.oppomobile.com
   - DOMAIN,httpdns.push.oppomobile.com
+  - DOMAIN,httpdns.ocloud.oppomobile.com
   - DOMAIN-SUFFIX,a8clk.cart.ordersupli.com
   - DOMAIN-SUFFIX,tracking.ent.oviahealth.com
   - DOMAIN-SUFFIX,images.link.pentonauto.com
@@ -109242,8 +109255,8 @@ payload:
   ################## EOF ##################
   #########################################
   # Sukka's Ruleset - Reject Domains
-  # Last Updated: 2024-11-11T01:35:52.581Z
-  # Size: 147
+  # Last Updated: 2024-11-12T14:16:01.329Z
+  # Size: 160
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -109266,11 +109279,13 @@ payload:
   - DOMAIN,ttnet-doh.feishu.cn
   - DOMAIN-SUFFIX,net.mydays.de
   - DOMAIN,dns.jd.com
+  - DOMAIN,httpdns.cctv.com
   - DOMAIN,httpdns.baidu.com
   - DOMAIN,httpsdns.baidu.com
   - DOMAIN,doh.iqiyi.com
   - DOMAIN,hdns.ksyun.com
   - DOMAIN,httpdns.alicdn.com
+  - DOMAIN,httpdns.zybang.com
   - DOMAIN,httpdns.bcelive.com
   - DOMAIN,httpdns.meituan.com
   - DOMAIN,httpdnsvip.meituan.com
@@ -109285,6 +109300,7 @@ payload:
   - DOMAIN,httpdns.yunxindns.com
   - DOMAIN,hd.xiaojukeji.com
   - DOMAIN,httpdns.calorietech.com
+  - DOMAIN,httpdns.huaweicloud.com
   - DOMAIN,httpdns-push.heytapmobile.com
   - DOMAIN,httpdns-ocloud.heytapmobile.com
   - DOMAIN,httpdns-euex-push.heytapmobile.com
@@ -109293,6 +109309,9 @@ payload:
   - DOMAIN-SUFFIX,incoming-telemetry.thunderbird.net
   - DOMAIN-SUFFIX,telemetry.mozilla.org
   - DOMAIN-SUFFIX,telemetry-coverage.mozilla.org
+  - DOMAIN,httpdns-browser.platform.dbankcloud.cn
+  - DOMAIN,doh.ptqy.gitv.tv
+  - DOMAIN,httpdns.kg.qq.com
   - DOMAIN,dns.weixin.qq.com
   - DOMAIN,aedns.weixin.qq.com
   - DOMAIN,httpdns.gslb.yy.com
@@ -109301,13 +109320,20 @@ payload:
   - DOMAIN,yyapp-httpdns.gslb.yy.com
   - DOMAIN-SUFFIX,httpdns.c.163.com
   - DOMAIN,httpdns.music.163.com
+  - DOMAIN,httpdns.browser.miui.com
   - DOMAIN,httpdns.kwd.inkuai.com
+  - DOMAIN,httpdns.n.shifen.com
   - DOMAIN,httpdns.c.cdnhwc2.com
+  - DOMAIN,httpdns1.cc.cdnhwc5.com
   - DOMAIN-SUFFIX,classify-client.services.mozilla.com
   - DOMAIN-SUFFIX,httpdns.n.netease.com
   - DOMAIN,httpdns-sdk.n.netease.com
+  - DOMAIN,httpdns.danuoyi.tbcache.com
+  - DOMAIN,httpdns.platform.dbankcloud.com
   - DOMAIN,httpdns.push.heytapmobi.com
+  - DOMAIN,httpdns.ocloud.heytapmobi.com
   - DOMAIN,httpdns.push.oppomobile.com
+  - DOMAIN,httpdns.ocloud.oppomobile.com
   - DOMAIN,dns.weixin.qq.com.cn
   - DOMAIN-KEYWORD,.estream.
   - DOMAIN-KEYWORD,jshosting
