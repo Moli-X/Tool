@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-12T12:39:15.313Z
-# Size: 109211
+# Last Updated: 2024-11-12T14:16:00.846Z
+# Size: 109224
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -67096,6 +67096,7 @@ HOST-SUFFIX,saa.cbsi.com,REJECT
 HOST-SUFFIX,som.cbsi.com,REJECT
 HOST-SUFFIX,intent.cbsi.com,REJECT
 HOST-SUFFIX,ad.cctv.com,REJECT
+HOST,httpdns.cctv.com,REJECT
 HOST-SUFFIX,mdws.cdcu.com,REJECT
 HOST-SUFFIX,smetrics.cfox.com,REJECT
 HOST-SUFFIX,analytic.cibc.com,REJECT
@@ -71889,6 +71890,7 @@ HOST-SUFFIX,rmxhti.zpacks.com,REJECT
 HOST-SUFFIX,ssp.zryydi.com,REJECT
 HOST-SUFFIX,link.zulily.com,REJECT
 HOST-SUFFIX,cdn.zxclan.com,REJECT
+HOST,httpdns.zybang.com,REJECT
 HOST-SUFFIX,ck.zzipps.com,REJECT
 HOST-SUFFIX,asg.zzipps.com,REJECT
 HOST-SUFFIX,cdn.007moms.com,REJECT
@@ -83658,6 +83660,7 @@ HOST-SUFFIX,static.houseofpubs.com,REJECT
 HOST-SUFFIX,rtb-apac.houseofpubs.com,REJECT
 HOST-SUFFIX,rtb-useast.houseofpubs.com,REJECT
 HOST-SUFFIX,smetrics.howifightms.com,REJECT
+HOST,httpdns.huaweicloud.com,REJECT
 HOST-SUFFIX,cdn.hunteryvely.com,REJECT
 HOST,emma-414870e223.huodonghezi.com,REJECT
 HOST-SUFFIX,nzqrfa.hushpuppies.com,REJECT
@@ -100387,6 +100390,7 @@ HOST,adx-drcn.op.dbankcloud.cn,REJECT
 HOST-SUFFIX,ubacollect-drcn.cloud.dbankcloud.cn,REJECT
 HOST-SUFFIX,dnkeeper.platform.dbankcloud.cn,REJECT
 HOST-SUFFIX,logservice-dre.platform.dbankcloud.cn,REJECT
+HOST,httpdns-browser.platform.dbankcloud.cn,REJECT
 HOST-SUFFIX,cookies.jll.com.co,REJECT
 HOST-SUFFIX,email-am.jll.com.co,REJECT
 HOST-SUFFIX,email-em.jll.com.co,REJECT
@@ -103030,6 +103034,7 @@ HOST-SUFFIX,zhcmli.ayakkabidunyasi.com.tr,REJECT
 HOST-SUFFIX,analitik.bik.gov.tr,REJECT
 HOST-SUFFIX,tr.email.d8.tv,REJECT
 HOST-SUFFIX,tr.email.d17.tv,REJECT
+HOST,doh.ptqy.gitv.tv,REJECT
 HOST-SUFFIX,cupid.ptqy.gitv.tv,REJECT
 HOST-SUFFIX,streamstats.prd.dlive.tv,REJECT
 HOST-SUFFIX,api.cid.samba.tv,REJECT
@@ -104212,6 +104217,7 @@ HOST,tools.3g.qq.com,REJECT
 HOST-SUFFIX,up-hl.3g.qq.com,REJECT
 HOST-SUFFIX,yun-hl.3g.qq.com,REJECT
 HOST,activeqq.3g.qq.com,REJECT
+HOST,httpdns.kg.qq.com,REJECT
 HOST,adv.app.qq.com,REJECT
 HOST,adpm.app.qq.com,REJECT
 HOST-SUFFIX,beacon.cdn.qq.com,REJECT
@@ -104555,6 +104561,7 @@ HOST-SUFFIX,tracking.india.miui.com,REJECT
 HOST-SUFFIX,r.browser.miui.com,REJECT
 HOST,hot.browser.miui.com,REJECT
 HOST,qsb.browser.miui.com,REJECT
+HOST,httpdns.browser.miui.com,REJECT
 HOST,security.browser.miui.com,REJECT
 HOST,mp.huangye.miui.com,REJECT
 HOST-SUFFIX,images.fans.mlse.com,REJECT
@@ -105104,6 +105111,7 @@ HOST-SUFFIX,a8clk.shop.saraya.com,REJECT
 HOST-SUFFIX,images.stanleyhealthcare.sbdinc.com,REJECT
 HOST-SUFFIX,tr.recouvrement.seeric.com,REJECT
 HOST-SUFFIX,jpaasne.e.shifen.com,REJECT
+HOST,httpdns.n.shifen.com,REJECT
 HOST-SUFFIX,click.em.soothe.com,REJECT
 HOST-SUFFIX,link.email.soothe.com,REJECT
 HOST-SUFFIX,t2.click.subway.com,REJECT
@@ -105296,6 +105304,7 @@ HOST-SUFFIX,links.email.bravotv.com,REJECT
 HOST-SUFFIX,images.e.brother.com,REJECT
 HOST-SUFFIX,tracking.server.bytecon.com,REJECT
 HOST,httpdns.c.cdnhwc2.com,REJECT
+HOST,httpdns1.cc.cdnhwc5.com,REJECT
 HOST-SUFFIX,s.info.cemexgo.com,REJECT
 HOST-SUFFIX,app.global.certain.com,REJECT
 HOST-SUFFIX,tr.newsletter.chandon.com,REJECT
@@ -105549,6 +105558,7 @@ HOST-SUFFIX,19035955.loyalty.tajawal.com,REJECT
 HOST-SUFFIX,6519114.automated.tajawal.com,REJECT
 HOST-SUFFIX,19035955.automated.tajawal.com,REJECT
 HOST-SUFFIX,a8cv.store.tavenal.com,REJECT
+HOST,httpdns.danuoyi.tbcache.com,REJECT
 HOST-SUFFIX,images.info.telogis.com,REJECT
 HOST-SUFFIX,content.wire.telstra.com,REJECT
 HOST-SUFFIX,forms.businessnews.telstra.com,REJECT
@@ -106411,6 +106421,7 @@ HOST-SUFFIX,images.informador.davivienda.com,REJECT
 HOST,adx-dra.op.dbankcloud.com,REJECT
 HOST,adx-dre.op.dbankcloud.com,REJECT
 HOST,adx-drru.op.dbankcloud.com,REJECT
+HOST,httpdns.platform.dbankcloud.com,REJECT
 HOST-SUFFIX,openlocation-drcn.platform.dbankcloud.com,REJECT
 HOST-SUFFIX,mit.researchlog.dbresearch.com,REJECT
 HOST-SUFFIX,trck.internalnews.dbschenker.com,REJECT
@@ -106450,6 +106461,7 @@ HOST-SUFFIX,app.go.healthways.com,REJECT
 HOST-SUFFIX,tms.hft.hellofresh.com,REJECT
 HOST-SUFFIX,trk.discover.herculesrx.com,REJECT
 HOST,httpdns.push.heytapmobi.com,REJECT
+HOST,httpdns.ocloud.heytapmobi.com,REJECT
 HOST-SUFFIX,pages.feedback.hofvillage.com,REJECT
 HOST-SUFFIX,images.mailaway.homelidays.com,REJECT
 HOST-SUFFIX,data.emails.imaginbank.com,REJECT
@@ -106523,6 +106535,7 @@ HOST-SUFFIX,conff.dc.oppomobile.com,REJECT
 HOST-SUFFIX,dragate.dc.oppomobile.com,REJECT
 HOST-SUFFIX,stat-in.dc.oppomobile.com,REJECT
 HOST,httpdns.push.oppomobile.com,REJECT
+HOST,httpdns.ocloud.oppomobile.com,REJECT
 HOST-SUFFIX,a8clk.cart.ordersupli.com,REJECT
 HOST-SUFFIX,tracking.ent.oviahealth.com,REJECT
 HOST-SUFFIX,images.link.pentonauto.com,REJECT
@@ -109241,8 +109254,8 @@ HOST,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe,REJECT
 ################## EOF ##################
 #########################################
 # Sukka's Ruleset - Reject Domains
-# Last Updated: 2024-11-11T01:35:52.581Z
-# Size: 147
+# Last Updated: 2024-11-12T14:16:01.329Z
+# Size: 160
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -109265,11 +109278,13 @@ HOST,ttnet-dig.feishu.cn,REJECT
 HOST,ttnet-doh.feishu.cn,REJECT
 HOST-SUFFIX,net.mydays.de,REJECT
 HOST,dns.jd.com,REJECT
+HOST,httpdns.cctv.com,REJECT
 HOST,httpdns.baidu.com,REJECT
 HOST,httpsdns.baidu.com,REJECT
 HOST,doh.iqiyi.com,REJECT
 HOST,hdns.ksyun.com,REJECT
 HOST,httpdns.alicdn.com,REJECT
+HOST,httpdns.zybang.com,REJECT
 HOST,httpdns.bcelive.com,REJECT
 HOST,httpdns.meituan.com,REJECT
 HOST,httpdnsvip.meituan.com,REJECT
@@ -109284,6 +109299,7 @@ HOST,stun.smartgslb.com,REJECT
 HOST,httpdns.yunxindns.com,REJECT
 HOST,hd.xiaojukeji.com,REJECT
 HOST,httpdns.calorietech.com,REJECT
+HOST,httpdns.huaweicloud.com,REJECT
 HOST,httpdns-push.heytapmobile.com,REJECT
 HOST,httpdns-ocloud.heytapmobile.com,REJECT
 HOST,httpdns-euex-push.heytapmobile.com,REJECT
@@ -109292,6 +109308,9 @@ HOST,this_rule_set_is_made_by_sukkaw.skk.moe,REJECT
 HOST-SUFFIX,incoming-telemetry.thunderbird.net,REJECT
 HOST-SUFFIX,telemetry.mozilla.org,REJECT
 HOST-SUFFIX,telemetry-coverage.mozilla.org,REJECT
+HOST,httpdns-browser.platform.dbankcloud.cn,REJECT
+HOST,doh.ptqy.gitv.tv,REJECT
+HOST,httpdns.kg.qq.com,REJECT
 HOST,dns.weixin.qq.com,REJECT
 HOST,aedns.weixin.qq.com,REJECT
 HOST,httpdns.gslb.yy.com,REJECT
@@ -109300,13 +109319,20 @@ HOST,union-httpdns.gslb.yy.com,REJECT
 HOST,yyapp-httpdns.gslb.yy.com,REJECT
 HOST-SUFFIX,httpdns.c.163.com,REJECT
 HOST,httpdns.music.163.com,REJECT
+HOST,httpdns.browser.miui.com,REJECT
 HOST,httpdns.kwd.inkuai.com,REJECT
+HOST,httpdns.n.shifen.com,REJECT
 HOST,httpdns.c.cdnhwc2.com,REJECT
+HOST,httpdns1.cc.cdnhwc5.com,REJECT
 HOST-SUFFIX,classify-client.services.mozilla.com,REJECT
 HOST-SUFFIX,httpdns.n.netease.com,REJECT
 HOST,httpdns-sdk.n.netease.com,REJECT
+HOST,httpdns.danuoyi.tbcache.com,REJECT
+HOST,httpdns.platform.dbankcloud.com,REJECT
 HOST,httpdns.push.heytapmobi.com,REJECT
+HOST,httpdns.ocloud.heytapmobi.com,REJECT
 HOST,httpdns.push.oppomobile.com,REJECT
+HOST,httpdns.ocloud.oppomobile.com,REJECT
 HOST,dns.weixin.qq.com.cn,REJECT
 HOST-KEYWORD,.estream.,REJECT
 HOST-KEYWORD,jshosting,REJECT
