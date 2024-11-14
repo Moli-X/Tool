@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-14T07:44:36.125Z
-# Size: 109277
+# Last Updated: 2024-11-14T12:40:12.643Z
+# Size: 109282
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -37626,6 +37626,7 @@ DOMAIN-SUFFIX,udb3n.icu
 DOMAIN-SUFFIX,ve0ke.icu
 DOMAIN-SUFFIX,vmr6t.icu
 DOMAIN-SUFFIX,vn-rb.icu
+DOMAIN-SUFFIX,vnuuh.icu
 DOMAIN-SUFFIX,wcd2l.icu
 DOMAIN-SUFFIX,whgh1.icu
 DOMAIN-SUFFIX,x0or8.icu
@@ -63744,6 +63745,7 @@ DOMAIN-SUFFIX,ans.avast.ru
 DOMAIN-SUFFIX,yefktd.avito.ru
 DOMAIN-SUFFIX,bvexmf.bigtv.ru
 DOMAIN-SUFFIX,bans.bride.ru
+DOMAIN-SUFFIX,stats.bunkr.ru
 DOMAIN-SUFFIX,analytics.chita.ru
 DOMAIN-SUFFIX,cnb.cnews.ru
 DOMAIN-SUFFIX,edirect.efind.ru
@@ -101323,6 +101325,8 @@ DOMAIN-SUFFIX,sdkconfig.pulse.m10s.io
 DOMAIN-SUFFIX,lararforbundet.analytics.ozzi.io
 DOMAIN-SUFFIX,join.staging.spur.io
 DOMAIN-SUFFIX,join-test.pre-prod.spur.io
+DOMAIN-SUFFIX,ads-image.production-public.tubi.io
+DOMAIN-SUFFIX,user-signals.production-public.tubi.io
 DOMAIN-SUFFIX,analytics-ingestion.production-public.tubi.io
 DOMAIN-SUFFIX,GEOIP.apps.avada.io
 DOMAIN-SUFFIX,link.team.bnext.io
@@ -104356,6 +104360,7 @@ DOMAIN-SUFFIX,images.voyage.apl.com
 DOMAIN-SUFFIX,securefamilylink.wireless.att.com
 DOMAIN-SUFFIX,a1.api.bbc.com
 DOMAIN-SUFFIX,ev.api.bdg.com
+DOMAIN-SUFFIX,ev2.api.bdg.com
 DOMAIN-SUFFIX,response.b2b.bea.com
 DOMAIN-SUFFIX,images.go.bge.com
 DOMAIN-SUFFIX,images.learn.blr.com
