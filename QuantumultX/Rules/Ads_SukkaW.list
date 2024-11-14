@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-14T14:19:20.071Z
-# Size: 109291
+# Last Updated: 2024-11-14T14:52:29.674Z
+# Size: 109292
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -48854,6 +48854,7 @@ HOST-SUFFIX,scl6gc5l.site,REJECT
 HOST-SUFFIX,screenov.site,REJECT
 HOST-SUFFIX,theapple.site,REJECT
 HOST-SUFFIX,xdisplay.site,REJECT
+HOST-SUFFIX,xinfubao.site,REJECT
 HOST-SUFFIX,xqeoitqw.site,REJECT
 HOST-SUFFIX,23oct2023.site,REJECT
 HOST-SUFFIX,airartapt.site,REJECT
@@ -109321,8 +109322,8 @@ HOST,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe,REJECT
 ################## EOF ##################
 #########################################
 # Sukka's Ruleset - Reject Domains
-# Last Updated: 2024-11-12T14:16:01.329Z
-# Size: 160
+# Last Updated: 2024-11-14T14:40:56.964Z
+# Size: 159
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -109456,7 +109457,6 @@ HOST-WILDCARD,beacons*.gvt?.com,REJECT
 HOST-WILDCARD,*ad.ixigua.com,REJECT
 HOST-WILDCARD,tracking.*.miui.com,REJECT
 HOST-WILDCARD,*.tracking.*.miui.com,REJECT
-#AND,((USER-AGENT,bili*),(NOT,((OR,((HOST-SUFFIX,bilibili.com),(HOST-SUFFIX,hdslb.com),(HOST-SUFFIX,wo.cn),(HOST-SUFFIX,biligame.com),(HOST-SUFFIX,bilivideo.com),(HOST-SUFFIX,bilivideo.cn),(HOST-SUFFIX,biliapi.com),(HOST-SUFFIX,biliapi.net),(HOST-SUFFIX,biliintl.com),(HOST-SUFFIX,bstarstatic.com),(HOST-SUFFIX,akamaized.net))))))
 #URL-REGEX,/\d+/resolve
 #URL-REGEX,/\d+/sign_d
 IP-CIDR,39.97.128.148/32,REJECT

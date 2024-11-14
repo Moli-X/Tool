@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-14T14:52:29.674Z
-# Size: 109292
+# Last Updated: 2024-11-14T16:01:51.648Z
+# Size: 109302
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -41911,6 +41911,7 @@ DOMAIN-SUFFIX,jubbkon.top
 DOMAIN-SUFFIX,juresda.top
 DOMAIN-SUFFIX,justapp.top
 DOMAIN-SUFFIX,jwatera.top
+DOMAIN-SUFFIX,jweisia.top
 DOMAIN-SUFFIX,jwerioa.top
 DOMAIN-SUFFIX,jyisloa.top
 DOMAIN-SUFFIX,jyuwkba.top
@@ -61735,6 +61736,7 @@ DOMAIN-SUFFIX,elqtrk.intel.la
 DOMAIN-SUFFIX,starget.intel.la
 DOMAIN-SUFFIX,1.xuexi.la
 DOMAIN-SUFFIX,tt.biquge.la
+DOMAIN-SUFFIX,union.maccms.la
 DOMAIN-SUFFIX,pixel.carambo.la
 DOMAIN-SUFFIX,route.carambo.la
 DOMAIN-SUFFIX,logging.carambo.la
@@ -66292,6 +66294,7 @@ DOMAIN-SUFFIX,gdt.qq.com
 DOMAIN-SUFFIX,qzs.qq.com
 DOMAIN-SUFFIX,rqd.qq.com
 DOMAIN-SUFFIX,wxs.qq.com
+DOMAIN-SUFFIX,imtt.qq.com
 DOMAIN-SUFFIX,push.qq.com
 DOMAIN-SUFFIX,tajs.qq.com
 DOMAIN-SUFFIX,tcss.qq.com
@@ -68037,6 +68040,7 @@ DOMAIN-SUFFIX,iadcontent.apple.com
 DOMAIN,securemetrics.apple.com
 DOMAIN-SUFFIX,api-adservices.apple.com
 DOMAIN-SUFFIX,supportmetrics.apple.com
+DOMAIN,events-analytics.apple.com
 DOMAIN-SUFFIX,books-analytics-events.apple.com
 DOMAIN-SUFFIX,notes-analytics-events.apple.com
 DOMAIN-SUFFIX,stocks-analytics-events.apple.com
@@ -68958,6 +68962,7 @@ DOMAIN-SUFFIX,aduniv.nesin.com
 DOMAIN-SUFFIX,info.netec.com
 DOMAIN-SUFFIX,metrics.nexmo.com
 DOMAIN-SUFFIX,smetrics.nexmo.com
+DOMAIN,analytics.nexon.com
 DOMAIN-SUFFIX,data.nexxt.com
 DOMAIN-SUFFIX,metrics.nfluk.com
 DOMAIN-SUFFIX,tag.nifty.com
@@ -71821,6 +71826,7 @@ DOMAIN-SUFFIX,s.wlink1.com
 DOMAIN-SUFFIX,s.wlink2.com
 DOMAIN-SUFFIX,app.wonder.com
 DOMAIN-SUFFIX,axp.woodtv.com
+DOMAIN,analytics.workos.com
 DOMAIN-SUFFIX,axp.wowktv.com
 DOMAIN-SUFFIX,smetrics.wsib2b.com
 DOMAIN-SUFFIX,axp.wvnstv.com
@@ -76454,6 +76460,7 @@ DOMAIN-SUFFIX,lyz.radio366.com
 DOMAIN-SUFFIX,app.radixdlt.com
 DOMAIN-SUFFIX,cdn.raekdata.com
 DOMAIN-SUFFIX,inviso.rampanel.com
+DOMAIN-SUFFIX,free.ranklet4.com
 DOMAIN-SUFFIX,tracking.rapidape.com
 DOMAIN-SUFFIX,website-security.rapidssl.com
 DOMAIN-SUFFIX,go.rapidtrc.com
@@ -83860,7 +83867,7 @@ DOMAIN-SUFFIX,smetrics.latitudepay.com
 DOMAIN-SUFFIX,gazelle.laurenagray.com
 DOMAIN-SUFFIX,display.lawbulletin.com
 DOMAIN-SUFFIX,stats.laxallstars.com
-DOMAIN-SUFFIX,plausible.leaningtech.com
+DOMAIN,plausible.leaningtech.com
 DOMAIN-SUFFIX,privacy.learcapital.com
 DOMAIN-SUFFIX,enews.learninga-z.com
 DOMAIN-SUFFIX,stats.legendofnom.com
@@ -86927,6 +86934,7 @@ DOMAIN-SUFFIX,analytics-secure.dollargeneral.com
 DOMAIN-SUFFIX,metrics.doppiostreams.com
 DOMAIN-SUFFIX,ii.dorothycanzos.com
 DOMAIN-SUFFIX,fn.dowagerbeurre.com
+DOMAIN-SUFFIX,union.dplayerstatic.com
 DOMAIN-SUFFIX,hs.drewitecossic.com
 DOMAIN-SUFFIX,a8clk.driver-island.com
 DOMAIN-SUFFIX,trace21.dsb-ebusiness.com
@@ -93747,6 +93755,7 @@ DOMAIN-SUFFIX,ssp.hinet.net
 DOMAIN-SUFFIX,vatrack.hinet.net
 DOMAIN-SUFFIX,abc.hkepc.net
 DOMAIN-SUFFIX,ads-yallo-production.imgix.net
+DOMAIN,front-perf.imoim.net
 DOMAIN-SUFFIX,aa-metrics.jalan.net
 DOMAIN-SUFFIX,analytics.jazel.net
 DOMAIN-SUFFIX,share.jobeo.net
@@ -93810,6 +93819,8 @@ DOMAIN-SUFFIX,ad.vkool.net
 DOMAIN-SUFFIX,analytics.vodgc.net
 DOMAIN-SUFFIX,a.vturb.net
 DOMAIN-SUFFIX,stat-ssl.webcg.net
+DOMAIN-SUFFIX,tcp.whoer.net
+DOMAIN-SUFFIX,whrq.whoer.net
 DOMAIN-SUFFIX,a8clk.wi-ho.net
 DOMAIN-SUFFIX,txvoin.with2.net
 DOMAIN-SUFFIX,data.wptag.net
@@ -97965,6 +97976,7 @@ DOMAIN-SUFFIX,info.guardianews.site
 DOMAIN-SUFFIX,track.naturalvida.site
 DOMAIN-SUFFIX,blimberwham.quaggletwix.site
 DOMAIN-SUFFIX,quivvlewag389.shimmerglow.site
+DOMAIN,bad.third-party.site
 DOMAIN-SUFFIX,search.valuehunter.site
 DOMAIN-SUFFIX,v1.venterapide.site
 DOMAIN-SUFFIX,lp.viavelsaude.site
@@ -104290,9 +104302,6 @@ DOMAIN,adpm.app.qq.com
 DOMAIN-SUFFIX,beacon.cdn.qq.com
 DOMAIN-SUFFIX,analytics.map.qq.com
 DOMAIN-SUFFIX,log.tbs.qq.com
-DOMAIN-SUFFIX,cfg.imtt.qq.com
-DOMAIN,wup.imtt.qq.com
-DOMAIN,adfilter.imtt.qq.com
 DOMAIN-SUFFIX,mqqad.html5.qq.com
 DOMAIN-SUFFIX,uplog.inews.qq.com
 DOMAIN-SUFFIX,monitor.music.qq.com
@@ -105949,6 +105958,7 @@ DOMAIN-SUFFIX,images.loyalty.lindtusa.com
 DOMAIN-SUFFIX,data.em.linkedin.com
 DOMAIN-SUFFIX,analytics.pointdrive.linkedin.com
 DOMAIN-SUFFIX,a8clk.ap.livede55.com
+DOMAIN-SUFFIX,atsod.launch.liveramp.com
 DOMAIN-SUFFIX,app.link.livibank.com
 DOMAIN-SUFFIX,data.crm.lizearle.com
 DOMAIN-SUFFIX,tr.communication.lvmhdare.com
