@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-14T07:44:36.125Z
-# Size: 109277
+# Last Updated: 2024-11-14T12:40:12.643Z
+# Size: 109282
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -37626,6 +37626,7 @@ HOST-SUFFIX,udb3n.icu,REJECT
 HOST-SUFFIX,ve0ke.icu,REJECT
 HOST-SUFFIX,vmr6t.icu,REJECT
 HOST-SUFFIX,vn-rb.icu,REJECT
+HOST-SUFFIX,vnuuh.icu,REJECT
 HOST-SUFFIX,wcd2l.icu,REJECT
 HOST-SUFFIX,whgh1.icu,REJECT
 HOST-SUFFIX,x0or8.icu,REJECT
@@ -63744,6 +63745,7 @@ HOST-SUFFIX,ans.avast.ru,REJECT
 HOST-SUFFIX,yefktd.avito.ru,REJECT
 HOST-SUFFIX,bvexmf.bigtv.ru,REJECT
 HOST-SUFFIX,bans.bride.ru,REJECT
+HOST-SUFFIX,stats.bunkr.ru,REJECT
 HOST-SUFFIX,analytics.chita.ru,REJECT
 HOST-SUFFIX,cnb.cnews.ru,REJECT
 HOST-SUFFIX,edirect.efind.ru,REJECT
@@ -101323,6 +101325,8 @@ HOST-SUFFIX,sdkconfig.pulse.m10s.io,REJECT
 HOST-SUFFIX,lararforbundet.analytics.ozzi.io,REJECT
 HOST-SUFFIX,join.staging.spur.io,REJECT
 HOST-SUFFIX,join-test.pre-prod.spur.io,REJECT
+HOST-SUFFIX,ads-image.production-public.tubi.io,REJECT
+HOST-SUFFIX,user-signals.production-public.tubi.io,REJECT
 HOST-SUFFIX,analytics-ingestion.production-public.tubi.io,REJECT
 HOST-SUFFIX,GEOIP.apps.avada.io,REJECT
 HOST-SUFFIX,link.team.bnext.io,REJECT
@@ -104356,6 +104360,7 @@ HOST-SUFFIX,images.voyage.apl.com,REJECT
 HOST-SUFFIX,securefamilylink.wireless.att.com,REJECT
 HOST-SUFFIX,a1.api.bbc.com,REJECT
 HOST-SUFFIX,ev.api.bdg.com,REJECT
+HOST-SUFFIX,ev2.api.bdg.com,REJECT
 HOST-SUFFIX,response.b2b.bea.com,REJECT
 HOST-SUFFIX,images.go.bge.com,REJECT
 HOST-SUFFIX,images.learn.blr.com,REJECT
