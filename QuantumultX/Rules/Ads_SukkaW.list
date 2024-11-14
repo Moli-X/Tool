@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-14T14:52:29.674Z
-# Size: 109292
+# Last Updated: 2024-11-14T16:01:51.648Z
+# Size: 109302
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -41911,6 +41911,7 @@ HOST-SUFFIX,jubbkon.top,REJECT
 HOST-SUFFIX,juresda.top,REJECT
 HOST-SUFFIX,justapp.top,REJECT
 HOST-SUFFIX,jwatera.top,REJECT
+HOST-SUFFIX,jweisia.top,REJECT
 HOST-SUFFIX,jwerioa.top,REJECT
 HOST-SUFFIX,jyisloa.top,REJECT
 HOST-SUFFIX,jyuwkba.top,REJECT
@@ -61735,6 +61736,7 @@ HOST-SUFFIX,elqtrk.intel.la,REJECT
 HOST-SUFFIX,starget.intel.la,REJECT
 HOST-SUFFIX,1.xuexi.la,REJECT
 HOST-SUFFIX,tt.biquge.la,REJECT
+HOST-SUFFIX,union.maccms.la,REJECT
 HOST-SUFFIX,pixel.carambo.la,REJECT
 HOST-SUFFIX,route.carambo.la,REJECT
 HOST-SUFFIX,logging.carambo.la,REJECT
@@ -66292,6 +66294,7 @@ HOST-SUFFIX,gdt.qq.com,REJECT
 HOST-SUFFIX,qzs.qq.com,REJECT
 HOST-SUFFIX,rqd.qq.com,REJECT
 HOST-SUFFIX,wxs.qq.com,REJECT
+HOST-SUFFIX,imtt.qq.com,REJECT
 HOST-SUFFIX,push.qq.com,REJECT
 HOST-SUFFIX,tajs.qq.com,REJECT
 HOST-SUFFIX,tcss.qq.com,REJECT
@@ -68037,6 +68040,7 @@ HOST-SUFFIX,iadcontent.apple.com,REJECT
 HOST,securemetrics.apple.com,REJECT
 HOST-SUFFIX,api-adservices.apple.com,REJECT
 HOST-SUFFIX,supportmetrics.apple.com,REJECT
+HOST,events-analytics.apple.com,REJECT
 HOST-SUFFIX,books-analytics-events.apple.com,REJECT
 HOST-SUFFIX,notes-analytics-events.apple.com,REJECT
 HOST-SUFFIX,stocks-analytics-events.apple.com,REJECT
@@ -68958,6 +68962,7 @@ HOST-SUFFIX,aduniv.nesin.com,REJECT
 HOST-SUFFIX,info.netec.com,REJECT
 HOST-SUFFIX,metrics.nexmo.com,REJECT
 HOST-SUFFIX,smetrics.nexmo.com,REJECT
+HOST,analytics.nexon.com,REJECT
 HOST-SUFFIX,data.nexxt.com,REJECT
 HOST-SUFFIX,metrics.nfluk.com,REJECT
 HOST-SUFFIX,tag.nifty.com,REJECT
@@ -71821,6 +71826,7 @@ HOST-SUFFIX,s.wlink1.com,REJECT
 HOST-SUFFIX,s.wlink2.com,REJECT
 HOST-SUFFIX,app.wonder.com,REJECT
 HOST-SUFFIX,axp.woodtv.com,REJECT
+HOST,analytics.workos.com,REJECT
 HOST-SUFFIX,axp.wowktv.com,REJECT
 HOST-SUFFIX,smetrics.wsib2b.com,REJECT
 HOST-SUFFIX,axp.wvnstv.com,REJECT
@@ -76454,6 +76460,7 @@ HOST-SUFFIX,lyz.radio366.com,REJECT
 HOST-SUFFIX,app.radixdlt.com,REJECT
 HOST-SUFFIX,cdn.raekdata.com,REJECT
 HOST-SUFFIX,inviso.rampanel.com,REJECT
+HOST-SUFFIX,free.ranklet4.com,REJECT
 HOST-SUFFIX,tracking.rapidape.com,REJECT
 HOST-SUFFIX,website-security.rapidssl.com,REJECT
 HOST-SUFFIX,go.rapidtrc.com,REJECT
@@ -83860,7 +83867,7 @@ HOST-SUFFIX,smetrics.latitudepay.com,REJECT
 HOST-SUFFIX,gazelle.laurenagray.com,REJECT
 HOST-SUFFIX,display.lawbulletin.com,REJECT
 HOST-SUFFIX,stats.laxallstars.com,REJECT
-HOST-SUFFIX,plausible.leaningtech.com,REJECT
+HOST,plausible.leaningtech.com,REJECT
 HOST-SUFFIX,privacy.learcapital.com,REJECT
 HOST-SUFFIX,enews.learninga-z.com,REJECT
 HOST-SUFFIX,stats.legendofnom.com,REJECT
@@ -86927,6 +86934,7 @@ HOST-SUFFIX,analytics-secure.dollargeneral.com,REJECT
 HOST-SUFFIX,metrics.doppiostreams.com,REJECT
 HOST-SUFFIX,ii.dorothycanzos.com,REJECT
 HOST-SUFFIX,fn.dowagerbeurre.com,REJECT
+HOST-SUFFIX,union.dplayerstatic.com,REJECT
 HOST-SUFFIX,hs.drewitecossic.com,REJECT
 HOST-SUFFIX,a8clk.driver-island.com,REJECT
 HOST-SUFFIX,trace21.dsb-ebusiness.com,REJECT
@@ -93747,6 +93755,7 @@ HOST-SUFFIX,ssp.hinet.net,REJECT
 HOST-SUFFIX,vatrack.hinet.net,REJECT
 HOST-SUFFIX,abc.hkepc.net,REJECT
 HOST-SUFFIX,ads-yallo-production.imgix.net,REJECT
+HOST,front-perf.imoim.net,REJECT
 HOST-SUFFIX,aa-metrics.jalan.net,REJECT
 HOST-SUFFIX,analytics.jazel.net,REJECT
 HOST-SUFFIX,share.jobeo.net,REJECT
@@ -93810,6 +93819,8 @@ HOST-SUFFIX,ad.vkool.net,REJECT
 HOST-SUFFIX,analytics.vodgc.net,REJECT
 HOST-SUFFIX,a.vturb.net,REJECT
 HOST-SUFFIX,stat-ssl.webcg.net,REJECT
+HOST-SUFFIX,tcp.whoer.net,REJECT
+HOST-SUFFIX,whrq.whoer.net,REJECT
 HOST-SUFFIX,a8clk.wi-ho.net,REJECT
 HOST-SUFFIX,txvoin.with2.net,REJECT
 HOST-SUFFIX,data.wptag.net,REJECT
@@ -97965,6 +97976,7 @@ HOST-SUFFIX,info.guardianews.site,REJECT
 HOST-SUFFIX,track.naturalvida.site,REJECT
 HOST-SUFFIX,blimberwham.quaggletwix.site,REJECT
 HOST-SUFFIX,quivvlewag389.shimmerglow.site,REJECT
+HOST,bad.third-party.site,REJECT
 HOST-SUFFIX,search.valuehunter.site,REJECT
 HOST-SUFFIX,v1.venterapide.site,REJECT
 HOST-SUFFIX,lp.viavelsaude.site,REJECT
@@ -104290,9 +104302,6 @@ HOST,adpm.app.qq.com,REJECT
 HOST-SUFFIX,beacon.cdn.qq.com,REJECT
 HOST-SUFFIX,analytics.map.qq.com,REJECT
 HOST-SUFFIX,log.tbs.qq.com,REJECT
-HOST-SUFFIX,cfg.imtt.qq.com,REJECT
-HOST,wup.imtt.qq.com,REJECT
-HOST,adfilter.imtt.qq.com,REJECT
 HOST-SUFFIX,mqqad.html5.qq.com,REJECT
 HOST-SUFFIX,uplog.inews.qq.com,REJECT
 HOST-SUFFIX,monitor.music.qq.com,REJECT
@@ -105949,6 +105958,7 @@ HOST-SUFFIX,images.loyalty.lindtusa.com,REJECT
 HOST-SUFFIX,data.em.linkedin.com,REJECT
 HOST-SUFFIX,analytics.pointdrive.linkedin.com,REJECT
 HOST-SUFFIX,a8clk.ap.livede55.com,REJECT
+HOST-SUFFIX,atsod.launch.liveramp.com,REJECT
 HOST-SUFFIX,app.link.livibank.com,REJECT
 HOST-SUFFIX,data.crm.lizearle.com,REJECT
 HOST-SUFFIX,tr.communication.lvmhdare.com,REJECT
