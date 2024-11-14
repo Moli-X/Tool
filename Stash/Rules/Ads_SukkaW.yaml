@@ -1,8 +1,8 @@
 payload:
   #########################################
   # Sukka's Ruleset - Reject Base
-  # Last Updated: 2024-11-14T14:19:20.071Z
-  # Size: 109291
+  # Last Updated: 2024-11-14T14:52:29.674Z
+  # Size: 109292
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -48855,6 +48855,7 @@ payload:
   - DOMAIN-SUFFIX,screenov.site
   - DOMAIN-SUFFIX,theapple.site
   - DOMAIN-SUFFIX,xdisplay.site
+  - DOMAIN-SUFFIX,xinfubao.site
   - DOMAIN-SUFFIX,xqeoitqw.site
   - DOMAIN-SUFFIX,23oct2023.site
   - DOMAIN-SUFFIX,airartapt.site
@@ -109322,8 +109323,8 @@ payload:
   ################## EOF ##################
   #########################################
   # Sukka's Ruleset - Reject Domains
-  # Last Updated: 2024-11-12T14:16:01.329Z
-  # Size: 160
+  # Last Updated: 2024-11-14T14:40:56.964Z
+  # Size: 159
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -109457,7 +109458,6 @@ payload:
   - DOMAIN-WILDCARD,*ad.ixigua.com
   - DOMAIN-WILDCARD,tracking.*.miui.com
   - DOMAIN-WILDCARD,*.tracking.*.miui.com
-  #AND,((USER-AGENT,bili*),(NOT,((OR,((DOMAIN-SUFFIX,bilibili.com),(DOMAIN-SUFFIX,hdslb.com),(DOMAIN-SUFFIX,wo.cn),(DOMAIN-SUFFIX,biligame.com),(DOMAIN-SUFFIX,bilivideo.com),(DOMAIN-SUFFIX,bilivideo.cn),(DOMAIN-SUFFIX,biliapi.com),(DOMAIN-SUFFIX,biliapi.net),(DOMAIN-SUFFIX,biliintl.com),(DOMAIN-SUFFIX,bstarstatic.com),(DOMAIN-SUFFIX,akamaized.net))))))
   #URL-REGEX,/\d+/resolve
   #URL-REGEX,/\d+/sign_d
   - IP-CIDR,39.97.128.148/32,no-resolve
