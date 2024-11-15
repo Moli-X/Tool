@@ -12,7 +12,7 @@ TG Channel：https://t.me/QuantX
     <th>名称</th>
   </tr>
   <tr>
-    <td rowspan="120"><strong>去广告插件</strong></td>
+    <td rowspan="121"><strong>去广告插件</strong></td>
   <tr>
     <td>001</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/BlockAdvertisers.plugin">广告平台拦截器</a></td>
@@ -488,6 +488,10 @@ TG Channel：https://t.me/QuantX
   <tr>
     <td>119</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/BitqiuPan_remove_ads.plugin">比特球云盘去广告</a></td>
+  </tr>
+  <tr>
+    <td>120</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/lodepuly/MojiWeather_remove_ads.plugin">墨迹天气去广告</a></td>
   </tr>
     <td></td>
     <td></td>
