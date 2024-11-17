@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-17T12:36:55.670Z
-# Size: 109373
+# Last Updated: 2024-11-17T14:14:15.149Z
+# Size: 109376
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -64185,6 +64185,7 @@ HOST-SUFFIX,tk.airfrance.sa,REJECT
 HOST-SUFFIX,smetrics.schindler.sa,REJECT
 HOST-SUFFIX,agxwhz.bloomingdales.sa,REJECT
 HOST-SUFFIX,stat.u.sb,REJECT
+HOST,stat.dns.sb,REJECT
 HOST-SUFFIX,stats.tnc.sc,REJECT
 HOST-SUFFIX,sms.3.se,REJECT
 HOST-SUFFIX,mitt.3.se,REJECT
@@ -98189,6 +98190,8 @@ HOST-SUFFIX,frdoki.historicalpainting.work,REJECT
 HOST-SUFFIX,frdoki.heisei-housewarming.work,REJECT
 HOST-SUFFIX,intextlinks.idg.zone,REJECT
 HOST-SUFFIX,somni.rkt.zone,REJECT
+HOST,cwa.html.zone,REJECT
+HOST,umm.html.zone,REJECT
 HOST-SUFFIX,prod.adjoe.zone,REJECT
 HOST-SUFFIX,fraud.adjoe.zone,REJECT
 HOST-SUFFIX,play.wavelength.zone,REJECT
