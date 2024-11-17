@@ -252,7 +252,6 @@ jobs:
         # GFW
         curl -L -o Tool-repo/Clash/Rules/ProxyGFW.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
         # Trust
-        curl -L -o Tool-repo/Clash/Rules/Trust.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Trust.list"
         cp -r Tool-repo/Surge/Rules/Trust.list Tool-repo/Clash/Rules/Trust.list
         # TronLink
         cp -r Tool-repo/Surge/Rules/TronLink.list Tool-repo/Clash/Rules/Talkatone.list
@@ -278,6 +277,8 @@ jobs:
         curl -L -o Tool-repo/Clash/Rules/Ads_Dlerio.list "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
         curl -L -o Tool-repo/Clash/Rules/Anti-ad.list "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt"
         curl -L -o Tool-repo/Clash/Rules/AdGuardChinese.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/AdGuardChinese.list"
+        cp -r Tool-repo/Surge/Rules/Reject.list Tool-repo/Clash/Rules/Reject.list
+
         # Lan
         cp -r Tool-repo/Surge/Rules/Lan.list Tool-repo/Clash/Rules/Lan.list
 
