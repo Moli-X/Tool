@@ -1,8 +1,8 @@
 payload:
   #########################################
   # Sukka's Ruleset - Reject Base
-  # Last Updated: 2024-11-17T12:36:55.670Z
-  # Size: 109373
+  # Last Updated: 2024-11-17T14:14:15.149Z
+  # Size: 109376
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -64186,6 +64186,7 @@ payload:
   - DOMAIN-SUFFIX,smetrics.schindler.sa
   - DOMAIN-SUFFIX,agxwhz.bloomingdales.sa
   - DOMAIN-SUFFIX,stat.u.sb
+  - DOMAIN,stat.dns.sb
   - DOMAIN-SUFFIX,stats.tnc.sc
   - DOMAIN-SUFFIX,sms.3.se
   - DOMAIN-SUFFIX,mitt.3.se
@@ -98190,6 +98191,8 @@ payload:
   - DOMAIN-SUFFIX,frdoki.heisei-housewarming.work
   - DOMAIN-SUFFIX,intextlinks.idg.zone
   - DOMAIN-SUFFIX,somni.rkt.zone
+  - DOMAIN,cwa.html.zone
+  - DOMAIN,umm.html.zone
   - DOMAIN-SUFFIX,prod.adjoe.zone
   - DOMAIN-SUFFIX,fraud.adjoe.zone
   - DOMAIN-SUFFIX,play.wavelength.zone
