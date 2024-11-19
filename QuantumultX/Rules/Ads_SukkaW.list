@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-19T02:36:22.917Z
-# Size: 110068
+# Last Updated: 2024-11-19T11:30:42.959Z
+# Size: 110071
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -11664,6 +11664,7 @@ HOST-SUFFIX,linezing.com,REJECT
 HOST-SUFFIX,linkfars.com,REJECT
 HOST-SUFFIX,linkmepu.com,REJECT
 HOST-SUFFIX,linkmink.com,REJECT
+HOST-SUFFIX,linksprf.com,REJECT
 HOST-SUFFIX,list-ads.com,REJECT
 HOST-SUFFIX,liverail.com,REJECT
 HOST-SUFFIX,livestat.com,REJECT
@@ -37570,6 +37571,7 @@ HOST-SUFFIX,cfcdist.gdn,REJECT
 HOST-SUFFIX,cloudcdn.gdn,REJECT
 HOST-SUFFIX,cloudmedia.gdn,REJECT
 HOST-SUFFIX,xoilactv123.gdn,REJECT
+HOST-SUFFIX,4t6u.icu,REJECT
 HOST-SUFFIX,0pdsa.icu,REJECT
 HOST-SUFFIX,1cecn.icu,REJECT
 HOST-SUFFIX,1dki0.icu,REJECT
@@ -70033,6 +70035,7 @@ HOST-SUFFIX,cdn.adspmg.com,REJECT
 HOST-SUFFIX,console.adspmg.com,REJECT
 HOST-SUFFIX,cdn.adt356.com,REJECT
 HOST-SUFFIX,cdn.adt361.com,REJECT
+HOST-SUFFIX,cdn.adt512.com,REJECT
 HOST-SUFFIX,cdn.adt532.com,REJECT
 HOST-SUFFIX,fpa-api.adweek.com,REJECT
 HOST-SUFFIX,fpa-cdn.adweek.com,REJECT
@@ -70622,7 +70625,6 @@ HOST-SUFFIX,engagement.feedly.com,REJECT
 HOST-SUFFIX,1.feihua.com,REJECT
 HOST-SUFFIX,cash.femjoy.com,REJECT
 HOST-SUFFIX,links.fennel.com,REJECT
-HOST-SUFFIX,hub.fghtem.com,REJECT
 HOST-SUFFIX,go.fhlbny.com,REJECT
 HOST-SUFFIX,join.fhlbny.com,REJECT
 HOST-SUFFIX,learn.fhlbny.com,REJECT
@@ -98322,6 +98324,7 @@ HOST-SUFFIX,gtgpgx.europa.jobs,REJECT
 HOST-SUFFIX,stat.wanted.jobs,REJECT
 HOST-SUFFIX,data-927768f668.pharmastellen.jobs,REJECT
 HOST-SUFFIX,smetrics.home.kpmg,REJECT
+HOST-SUFFIX,stats.amur.life,REJECT
 HOST-SUFFIX,v.cdn4.life,REJECT
 HOST-SUFFIX,afi.iino.life,REJECT
 HOST-SUFFIX,cv.nell.life,REJECT
