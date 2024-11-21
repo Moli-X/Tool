@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-21T13:51:34.809Z
-# Size: 110195
+# Last Updated: 2024-11-21T14:58:55.431Z
+# Size: 110193
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -42062,6 +42062,7 @@ HOST-SUFFIX,ityusio.top,REJECT
 HOST-SUFFIX,iuresdo.top,REJECT
 HOST-SUFFIX,iwatero.top,REJECT
 HOST-SUFFIX,iweisio.top,REJECT
+HOST-SUFFIX,iweizao.top,REJECT
 HOST-SUFFIX,iwerioo.top,REJECT
 HOST-SUFFIX,iyisloo.top,REJECT
 HOST-SUFFIX,iyjqgpo.top,REJECT
@@ -69921,8 +69922,6 @@ HOST-SUFFIX,syndication.whibd.com,REJECT
 HOST-SUFFIX,syndication.whibp.com,REJECT
 HOST-SUFFIX,events.whisk.com,REJECT
 HOST-SUFFIX,axp.who13.com,REJECT
-HOST,adnew.wifi8.com,REJECT
-HOST,adunion.wifi8.com,REJECT
 HOST-SUFFIX,sdata.wiley.com,REJECT
 HOST-SUFFIX,marketing.wingd.com,REJECT
 HOST-SUFFIX,pop.wioau.com,REJECT
@@ -105745,7 +105744,6 @@ HOST-SUFFIX,adstrategy.biz.weibo.com,REJECT
 HOST,adimg.uve.weibo.com,REJECT
 HOST,wbapp.uve.weibo.com,REJECT
 HOST,sdkapp.uve.weibo.com,REJECT
-HOST,ad.yun.wifi8.com,REJECT
 HOST-SUFFIX,images.news.wiley.com,REJECT
 HOST-SUFFIX,images.publishing.wiley.com,REJECT
 HOST-SUFFIX,tr.email.wtwco.com,REJECT
