@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-20T14:37:40.099Z
-# Size: 110147
+# Last Updated: 2024-11-21T02:59:41.398Z
+# Size: 110163
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -44,6 +44,7 @@ HOST-SUFFIX,afp.ai,REJECT
 HOST-SUFFIX,vdo.ai,REJECT
 HOST-SUFFIX,clrt.ai,REJECT
 HOST-SUFFIX,wknd.ai,REJECT
+HOST-SUFFIX,cunda.ai,REJECT
 HOST-SUFFIX,nrich.ai,REJECT
 HOST-SUFFIX,spiny.ai,REJECT
 HOST-SUFFIX,hybrid.ai,REJECT
@@ -712,6 +713,7 @@ HOST-SUFFIX,crjeymh.cn,REJECT
 HOST-SUFFIX,cuvtnzv.cn,REJECT
 HOST-SUFFIX,czouthy.cn,REJECT
 HOST-SUFFIX,czresus.cn,REJECT
+HOST-SUFFIX,daiitmk.cn,REJECT
 HOST-SUFFIX,dchdmhf.cn,REJECT
 HOST-SUFFIX,ddaixdz.cn,REJECT
 HOST-SUFFIX,dfejqmh.cn,REJECT
@@ -875,6 +877,7 @@ HOST-SUFFIX,stbwhln.cn,REJECT
 HOST-SUFFIX,sugilip.cn,REJECT
 HOST-SUFFIX,svhdbmp.cn,REJECT
 HOST-SUFFIX,svncowt.cn,REJECT
+HOST-SUFFIX,syfgtby.cn,REJECT
 HOST-SUFFIX,szapaqi.cn,REJECT
 HOST-SUFFIX,tdhserg.cn,REJECT
 HOST-SUFFIX,trpyceq.cn,REJECT
@@ -1836,6 +1839,7 @@ HOST-SUFFIX,counter-treff.de,REJECT
 HOST-SUFFIX,counteronline.de,REJECT
 HOST-SUFFIX,counterserver.de,REJECT
 HOST-SUFFIX,directcounter.de,REJECT
+HOST-SUFFIX,fairanalytics.de,REJECT
 HOST-SUFFIX,gameover-shop.de,REJECT
 HOST-SUFFIX,haymarketstat.de,REJECT
 HOST-SUFFIX,klamm-counter.de,REJECT
@@ -2369,6 +2373,7 @@ HOST-SUFFIX,bidmatic.io,REJECT
 HOST-SUFFIX,bitcoadz.io,REJECT
 HOST-SUFFIX,bitmedia.io,REJECT
 HOST-SUFFIX,bitspush.io,REJECT
+HOST-SUFFIX,caerulus.io,REJECT
 HOST-SUFFIX,cdnspace.io,REJECT
 HOST-SUFFIX,chainads.io,REJECT
 HOST-SUFFIX,click360.io,REJECT
@@ -3827,6 +3832,7 @@ HOST-SUFFIX,seo-sport.ru,REJECT
 HOST-SUFFIX,seobloger.ru,REJECT
 HOST-SUFFIX,sniperlog.ru,REJECT
 HOST-SUFFIX,svivqrhrh.ru,REJECT
+HOST-SUFFIX,tapulsads.ru,REJECT
 HOST-SUFFIX,targetman.ru,REJECT
 HOST-SUFFIX,teasernet.ru,REJECT
 HOST-SUFFIX,tgel2ebtx.ru,REJECT
@@ -4015,6 +4021,7 @@ HOST-SUFFIX,primechoice.ru,REJECT
 HOST-SUFFIX,promoblocks.ru,REJECT
 HOST-SUFFIX,rctfgrazkha.ru,REJECT
 HOST-SUFFIX,reklamaizer.ru,REJECT
+HOST-SUFFIX,richlifeads.ru,REJECT
 HOST-SUFFIX,rustrackers.ru,REJECT
 HOST-SUFFIX,securemoney.ru,REJECT
 HOST-SUFFIX,startscript.ru,REJECT
@@ -7213,6 +7220,7 @@ HOST-SUFFIX,ohgskf.com,REJECT
 HOST-SUFFIX,oijkse.com,REJECT
 HOST-SUFFIX,oiycak.com,REJECT
 HOST-SUFFIX,okanjo.com,REJECT
+HOST-SUFFIX,olgrae.com,REJECT
 HOST-SUFFIX,olibes.com,REJECT
 HOST-SUFFIX,omheth.com,REJECT
 HOST-SUFFIX,onacao.com,REJECT
@@ -12284,6 +12292,7 @@ HOST-SUFFIX,qdzyspjx.com,REJECT
 HOST-SUFFIX,qfavlkgf.com,REJECT
 HOST-SUFFIX,qgwjydxo.com,REJECT
 HOST-SUFFIX,qhemphox.com,REJECT
+HOST-SUFFIX,qhestrad.com,REJECT
 HOST-SUFFIX,qhocciks.com,REJECT
 HOST-SUFFIX,qhupdate.com,REJECT
 HOST-SUFFIX,qichexin.com,REJECT
@@ -14268,6 +14277,7 @@ HOST-SUFFIX,illumenix.com,REJECT
 HOST-SUFFIX,iloacmoam.com,REJECT
 HOST-SUFFIX,imagiflex.com,REJECT
 HOST-SUFFIX,imamictra.com,REJECT
+HOST-SUFFIX,imcounter.com,REJECT
 HOST-SUFFIX,imgcdnbet.com,REJECT
 HOST-SUFFIX,imghst-de.com,REJECT
 HOST-SUFFIX,imgsniper.com,REJECT
@@ -14432,6 +14442,7 @@ HOST-SUFFIX,ladsmoney.com,REJECT
 HOST-SUFFIX,lairauque.com,REJECT
 HOST-SUFFIX,landelcut.com,REJECT
 HOST-SUFFIX,landingpg.com,REJECT
+HOST-SUFFIX,lanky-bar.com,REJECT
 HOST-SUFFIX,laserstat.com,REJECT
 HOST-SUFFIX,latinwayy.com,REJECT
 HOST-SUFFIX,laughdrum.com,REJECT
@@ -37612,6 +37623,7 @@ HOST-SUFFIX,cloudcdn.gdn,REJECT
 HOST-SUFFIX,cloudmedia.gdn,REJECT
 HOST-SUFFIX,xoilactv123.gdn,REJECT
 HOST-SUFFIX,1buo.icu,REJECT
+HOST-SUFFIX,3sas.icu,REJECT
 HOST-SUFFIX,4t6u.icu,REJECT
 HOST-SUFFIX,7aey.icu,REJECT
 HOST-SUFFIX,0pdsa.icu,REJECT
@@ -38208,6 +38220,7 @@ HOST-SUFFIX,thnuvgme.icu,REJECT
 HOST-SUFFIX,tqanmatx.icu,REJECT
 HOST-SUFFIX,tuxpfiok.icu,REJECT
 HOST-SUFFIX,uaqdgrfr.icu,REJECT
+HOST-SUFFIX,vkbxaixl.icu,REJECT
 HOST-SUFFIX,vrdfxioe.icu,REJECT
 HOST-SUFFIX,vzdkngmf.icu,REJECT
 HOST-SUFFIX,wenoolgo.icu,REJECT
@@ -41968,6 +41981,7 @@ HOST-SUFFIX,ctyusif.top,REJECT
 HOST-SUFFIX,curesdf.top,REJECT
 HOST-SUFFIX,cwaterf.top,REJECT
 HOST-SUFFIX,cweisif.top,REJECT
+HOST-SUFFIX,cweizaf.top,REJECT
 HOST-SUFFIX,cweriof.top,REJECT
 HOST-SUFFIX,cyjqgpf.top,REJECT
 HOST-SUFFIX,cyretuf.top,REJECT
@@ -42006,6 +42020,7 @@ HOST-SUFFIX,htyusiu.top,REJECT
 HOST-SUFFIX,huresdu.top,REJECT
 HOST-SUFFIX,hwateru.top,REJECT
 HOST-SUFFIX,hweisiu.top,REJECT
+HOST-SUFFIX,hweizau.top,REJECT
 HOST-SUFFIX,hweriou.top,REJECT
 HOST-SUFFIX,hyislou.top,REJECT
 HOST-SUFFIX,hyjqgpu.top,REJECT
@@ -44691,6 +44706,7 @@ HOST-SUFFIX,njxraqb.xyz,REJECT
 HOST-SUFFIX,nlfbdgr.xyz,REJECT
 HOST-SUFFIX,nljrvdh.xyz,REJECT
 HOST-SUFFIX,nnrbyty.xyz,REJECT
+HOST-SUFFIX,nois5gj.xyz,REJECT
 HOST-SUFFIX,npjvgug.xyz,REJECT
 HOST-SUFFIX,npnpxoz.xyz,REJECT
 HOST-SUFFIX,npnzfri.xyz,REJECT
@@ -74651,7 +74667,6 @@ HOST-SUFFIX,xlog.tiktokv.com,REJECT
 HOST-SUFFIX,rtlog.tiktokv.com,REJECT
 HOST-SUFFIX,mcs-va.tiktokv.com,REJECT
 HOST-SUFFIX,xlog-va.tiktokv.com,REJECT
-HOST-SUFFIX,log-boot.tiktokv.com,REJECT
 HOST-SUFFIX,rtc-logger-va.tiktokv.com,REJECT
 HOST-SUFFIX,mcs-va-useast2a.tiktokv.com,REJECT
 HOST-SUFFIX,tjnffp.tilebar.com,REJECT
@@ -110121,6 +110136,7 @@ HOST-SUFFIX,ads-api.production.nebula-drupal.stuff.co.nz,REJECT
 HOST-SUFFIX,imagenes.marketing.calidad.pucp.edu.pe,REJECT
 HOST-SUFFIX,ivzplytl9nqc6ex2.a.asg.maxx.ddac.ru,REJECT
 HOST-SUFFIX,uat.smetrics.globalcommon.citibank.com.sg,REJECT
+HOST-SUFFIX,tracker.prod.ams3.k8s.hyperia.sk,REJECT
 HOST-SUFFIX,phpmyadmin.toolmonger.net.jumia.co.tz,REJECT
 HOST-SUFFIX,ati-a1.946d001b783803c1.xhst.bbci.co.uk,REJECT
 HOST-SUFFIX,data.email.yourmessage.aviva.co.uk,REJECT
