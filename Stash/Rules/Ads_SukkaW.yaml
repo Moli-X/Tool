@@ -1,8 +1,8 @@
 payload:
   #########################################
   # Sukka's Ruleset - Reject Base
-  # Last Updated: 2024-11-21T13:51:34.809Z
-  # Size: 110195
+  # Last Updated: 2024-11-21T14:58:55.431Z
+  # Size: 110193
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -42063,6 +42063,7 @@ payload:
   - DOMAIN-SUFFIX,iuresdo.top
   - DOMAIN-SUFFIX,iwatero.top
   - DOMAIN-SUFFIX,iweisio.top
+  - DOMAIN-SUFFIX,iweizao.top
   - DOMAIN-SUFFIX,iwerioo.top
   - DOMAIN-SUFFIX,iyisloo.top
   - DOMAIN-SUFFIX,iyjqgpo.top
@@ -69922,8 +69923,6 @@ payload:
   - DOMAIN-SUFFIX,syndication.whibp.com
   - DOMAIN-SUFFIX,events.whisk.com
   - DOMAIN-SUFFIX,axp.who13.com
-  - DOMAIN,adnew.wifi8.com
-  - DOMAIN,adunion.wifi8.com
   - DOMAIN-SUFFIX,sdata.wiley.com
   - DOMAIN-SUFFIX,marketing.wingd.com
   - DOMAIN-SUFFIX,pop.wioau.com
@@ -105746,7 +105745,6 @@ payload:
   - DOMAIN,adimg.uve.weibo.com
   - DOMAIN,wbapp.uve.weibo.com
   - DOMAIN,sdkapp.uve.weibo.com
-  - DOMAIN,ad.yun.wifi8.com
   - DOMAIN-SUFFIX,images.news.wiley.com
   - DOMAIN-SUFFIX,images.publishing.wiley.com
   - DOMAIN-SUFFIX,tr.email.wtwco.com
