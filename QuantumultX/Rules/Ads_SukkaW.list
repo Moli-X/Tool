@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-11-21T07:08:31.785Z
-# Size: 110166
+# Last Updated: 2024-11-21T12:41:17.928Z
+# Size: 110172
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -8211,6 +8211,7 @@ HOST-SUFFIX,animits.com,REJECT
 HOST-SUFFIX,aniview.com,REJECT
 HOST-SUFFIX,antcixn.com,REJECT
 HOST-SUFFIX,antoiew.com,REJECT
+HOST-SUFFIX,aomsitf.com,REJECT
 HOST-SUFFIX,apeidol.com,REJECT
 HOST-SUFFIX,apex-ad.com,REJECT
 HOST-SUFFIX,apexcdn.com,REJECT
@@ -8290,6 +8291,7 @@ HOST-SUFFIX,bfgtfxd.com,REJECT
 HOST-SUFFIX,bhcumsc.com,REJECT
 HOST-SUFFIX,bhqfnuq.com,REJECT
 HOST-SUFFIX,bidgear.com,REJECT
+HOST-SUFFIX,bidjora.com,REJECT
 HOST-SUFFIX,bidsopt.com,REJECT
 HOST-SUFFIX,bigbolz.com,REJECT
 HOST-SUFFIX,bigrstr.com,REJECT
@@ -9144,6 +9146,7 @@ HOST-SUFFIX,lum-lpm.com,REJECT
 HOST-SUFFIX,lumitos.com,REJECT
 HOST-SUFFIX,lumtest.com,REJECT
 HOST-SUFFIX,luuming.com,REJECT
+HOST-SUFFIX,luunels.com,REJECT
 HOST-SUFFIX,lvsnmgg.com,REJECT
 HOST-SUFFIX,lxnkuie.com,REJECT
 HOST-SUFFIX,lxtrack.com,REJECT
@@ -44762,6 +44765,7 @@ HOST-SUFFIX,pxxnejx.xyz,REJECT
 HOST-SUFFIX,pzphmkf.xyz,REJECT
 HOST-SUFFIX,qbhjokk.xyz,REJECT
 HOST-SUFFIX,qbhzghb.xyz,REJECT
+HOST-SUFFIX,qcixkb1.xyz,REJECT
 HOST-SUFFIX,qdtjjxr.xyz,REJECT
 HOST-SUFFIX,qdtzbbh.xyz,REJECT
 HOST-SUFFIX,qhbhlii.xyz,REJECT
@@ -55627,6 +55631,7 @@ HOST-SUFFIX,data-01bd19c0b0.nq-online.de,REJECT
 HOST-SUFFIX,data-ba9232a07a.nuernberg.de,REJECT
 HOST-SUFFIX,data-6345746ba5.nwzonline.de,REJECT
 HOST-SUFFIX,data-bc58d40c93.nwzonline.de,REJECT
+HOST-SUFFIX,matomo.oekoloewe.de,REJECT
 HOST-SUFFIX,data-3069017f33.oldenburg.de,REJECT
 HOST-SUFFIX,d.omsnative.de,REJECT
 HOST-SUFFIX,data-d4db30a18b.on-online.de,REJECT
@@ -59728,6 +59733,7 @@ HOST-SUFFIX,metrics.goindigo.in,REJECT
 HOST-SUFFIX,smetrics.goindigo.in,REJECT
 HOST-SUFFIX,lnk.joinpopp.in,REJECT
 HOST-SUFFIX,js.kakuyomu.in,REJECT
+HOST-SUFFIX,utics.nodejibi.in,REJECT
 HOST-SUFFIX,download.poolking.in,REJECT
 HOST-SUFFIX,9984342.reddoorz.in,REJECT
 HOST-SUFFIX,link.shopview.in,REJECT
@@ -66309,6 +66315,7 @@ HOST-SUFFIX,android-system-virus-detect.web.app,REJECT
 HOST-SUFFIX,link.wix.app,REJECT
 HOST-SUFFIX,carp.acda.app,REJECT
 HOST-SUFFIX,open.ailo.app,REJECT
+HOST-SUFFIX,events.bsky.app,REJECT
 HOST-SUFFIX,go.calo.app,REJECT
 HOST-SUFFIX,hop.dttd.app,REJECT
 HOST-SUFFIX,share.dusk.app,REJECT
@@ -99877,7 +99884,6 @@ HOST-SUFFIX,smetrics.tab.com.au,REJECT
 HOST-SUFFIX,smetrics.ten.com.au,REJECT
 HOST-SUFFIX,antelope.u3a.com.au,REJECT
 HOST-SUFFIX,get.ukg.com.au,REJECT
-HOST-SUFFIX,stream.9now.com.au,REJECT
 HOST-SUFFIX,assets1.aami.com.au,REJECT
 HOST-SUFFIX,assets2.aami.com.au,REJECT
 HOST-SUFFIX,activate.aami.com.au,REJECT
