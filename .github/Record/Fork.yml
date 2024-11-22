@@ -1,4 +1,4 @@
-# 最后更新时间: 2024-11-22 22:40
+# 最后更新时间: 2024-11-22 22:50
 name: Fork & Edit
 
 on:
@@ -34,9 +34,9 @@ jobs:
     - name: Copy Surge/Rules
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
-        alias curl = curl -A "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
+        
         # 苹果
-        curl -L -o Tool-repo/Surge/Rules/APNs.list "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Surge/Rules/APNs.list "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Surge/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
         curl -L -o Tool-repo/Surge/Rules/AppStore.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
         curl -L -o Tool-repo/Surge/Rules/AppleID.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleID/AppleID.list"
@@ -64,7 +64,7 @@ jobs:
         # 甲骨文
         curl -L -o Tool-repo/Surge/Rules/Oracle.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Oracle/Oracle.list"
         # 流媒体
-        curl -L -o Tool-repo/Surge/Rules/TikTok.list "https://kelee.one/Tool/Loon/Rule/TikTok.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Surge/Rules/TikTok.list "https://kelee.one/Tool/Loon/Rule/TikTok.list"
         curl -L -o Tool-repo/Surge/Rules/Netflix.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list"
         curl -L -o Tool-repo/Surge/Rules/HBO.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
         curl -L -o Tool-repo/Surge/Rules/Disney.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
@@ -85,8 +85,8 @@ jobs:
         curl -L -o Tool-repo/Surge/Rules/Epic.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
         curl -L -o Tool-repo/Surge/Rules/Game.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list"
         # 下载CDN
-        curl -L -o Tool-repo/Surge/Rules/DownloadCDN_Global.list "https://kelee.one/Tool/Loon/Rule/InternationalDownloadCDN.list"
-        curl -L -o Tool-repo/Surge/Rules/DownloadCDN_CN.list "https://kelee.one/Tool/Loon/Rule/ChinaDownloadCDN.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Surge/Rules/DownloadCDN_Global.list "https://kelee.one/Tool/Loon/Rule/InternationalDownloadCDN.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Surge/Rules/DownloadCDN_CN.list "https://kelee.one/Tool/Loon/Rule/ChinaDownloadCDN.list"
         # 国内规则 
         curl -L -o Tool-repo/Surge/Rules/Bilibili.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
         curl -L -o Tool-repo/Surge/Rules/WeChat.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/WeChat.list"
@@ -212,10 +212,10 @@ jobs:
     - name: Copy Clash/Rules
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
-        alias curl = curl -A "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
+        
         # 流媒体
         cp -r Tool-repo/Surge/Rules/Emby.list Tool-repo/Clash/Rules/Emby.list
-        curl -L -o Tool-repo/Clash/Rules/TikTok.list "https://kelee.one/Tool/Loon/Rule/TikTok.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Clash/Rules/TikTok.list "https://kelee.one/Tool/Loon/Rule/TikTok.list"
         curl -L -o Tool-repo/Clash/Rules/Netflix.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
         curl -L -o Tool-repo/Clash/Rules/HBO.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
         curl -L -o Tool-repo/Clash/Rules/Disney.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
@@ -271,8 +271,8 @@ jobs:
         curl -L -o Tool-repo/Clash/Rules/Steam.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list"
         curl -L -o Tool-repo/Clash/Rules/Epic.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
         # 下载CDN
-        curl -L -o Tool-repo/Clash/Rules/DownloadCDN_Global.list "https://kelee.one/Tool/Loon/Rule/InternationalDownloadCDN.list"
-        curl -L -o Tool-repo/Clash/Rules/DownloadCDN_CN.list "https://kelee.one/Tool/Loon/Rule/ChinaDownloadCDN.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Clash/Rules/DownloadCDN_Global.list "https://kelee.one/Tool/Loon/Rule/InternationalDownloadCDN.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Clash/Rules/DownloadCDN_CN.list "https://kelee.one/Tool/Loon/Rule/ChinaDownloadCDN.list"
         # 广告规则 
         curl -L -o Tool-repo/Clash/Rules/Ads_EasyListChina.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easylistchina_surge.list"
         curl -L -o Tool-repo/Clash/Rules/Ads_EasyListPrivacy.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easyprivacy_surge.list"
@@ -370,8 +370,8 @@ jobs:
     - name: Copy QuantumultX/Rules
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
-        alias curl = curl -A "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
-        curl -L -o Tool-repo/QuantumultX/Rules/APNs.list "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
+        
+        curl -A "Surge iOS/3367" -L -o Tool-repo/QuantumultX/Rules/APNs.list "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/QuantumultX/Rules/Lan.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
         curl -L -o Tool-repo/QuantumultX/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
         curl -L -o Tool-repo/QuantumultX/Rules/AppStore.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
@@ -400,7 +400,7 @@ jobs:
         curl -L -o Tool-repo/QuantumultX/Rules/Microsoft.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Microsoft.list"
         # 流媒体
         cp -r Tool-repo/Surge/Rules/Emby.list Tool-repo/QuantumultX/Rules/Emby.list
-        curl -L -o Tool-repo/QuantumultX/Rules/TikTok.list "https://kelee.one/Tool/Loon/Rule/TikTok.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/QuantumultX/Rules/TikTok.list "https://kelee.one/Tool/Loon/Rule/TikTok.list"
         curl -L -o Tool-repo/QuantumultX/Rules/Netflix.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
         curl -L -o Tool-repo/QuantumultX/Rules/HBO.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
         curl -L -o Tool-repo/QuantumultX/Rules/Disney.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
@@ -497,9 +497,8 @@ jobs:
     - name: Copy Loon/Rules
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
-        alias curl = curl -A "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
 
-        curl -L -o Tool-repo/Loon/Rules/APNs.list "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Loon/Rules/APNs.list "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Loon/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
         curl -L -o Tool-repo/Loon/Rules/AppStore.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
         curl -L -o Tool-repo/Loon/Rules/AppleID.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleID/AppleID.list"
@@ -526,7 +525,7 @@ jobs:
         curl -L -o Tool-repo/Loon/Rules/OneDrive.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list"
         curl -L -o Tool-repo/Loon/Rules/Microsoft.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Microsoft.list"
         # 流媒体
-        curl -L -o Tool-repo/Loon/Rules/TikTok.list "https://kelee.one/Tool/Loon/Rule/TikTok.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Loon/Rules/TikTok.list "https://kelee.one/Tool/Loon/Rule/TikTok.list"
         curl -L -o Tool-repo/Loon/Rules/Netflix.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
         curl -L -o Tool-repo/Loon/Rules/HBO.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
         curl -L -o Tool-repo/Loon/Rules/Disney.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
@@ -618,9 +617,8 @@ jobs:
     - name: Copy Shadowrocket/Rules
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
-        alias curl = curl -A "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
 
-        curl -L -o Tool-repo/Shadowrocket/Rules/APNs.list "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Shadowrocket/Rules/APNs.list "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Shadowrocket/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
         curl -L -o Tool-repo/Shadowrocket/Rules/AppStore.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
         curl -L -o Tool-repo/Shadowrocket/Rules/AppleID.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleID/AppleID.list"
@@ -647,7 +645,7 @@ jobs:
         curl -L -o Tool-repo/Shadowrocket/Rules/OneDrive.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list"
         curl -L -o Tool-repo/Shadowrocket/Rules/Microsoft.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Microsoft.list"
         # 流媒体
-        curl -L -o Tool-repo/Shadowrocket/Rules/TikTok.list "https://kelee.one/Tool/Loon/Rule/TikTok.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Shadowrocket/Rules/TikTok.list "https://kelee.one/Tool/Loon/Rule/TikTok.list"
         curl -L -o Tool-repo/Shadowrocket/Rules/Netflix.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
         curl -L -o Tool-repo/Shadowrocket/Rules/HBO.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
         curl -L -o Tool-repo/Shadowrocket/Rules/Disney.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
@@ -738,9 +736,8 @@ jobs:
     - name: Copy Stash/Rules 
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
-        alias curl = curl -A "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
 
-        curl -L -o Tool-repo/Stash/Rules/APNs.yaml "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Stash/Rules/APNs.yaml "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Stash/Rules/Apple.yaml "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
         curl -L -o Tool-repo/Stash/Rules/AppStore.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
         curl -L -o Tool-repo/Stash/Rules/AppleID.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleID/AppleID.list"
@@ -769,7 +766,7 @@ jobs:
         # 甲骨文
         curl -L -o Tool-repo/Stash/Rules/Oracle.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Oracle/Oracle.list"
         # 流媒体
-        curl -L -o Tool-repo/Stash/Rules/TikTok.yaml "https://kelee.one/Tool/Loon/Rule/TikTok.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Stash/Rules/TikTok.yaml "https://kelee.one/Tool/Loon/Rule/TikTok.list"
         curl -L -o Tool-repo/Stash/Rules/Netflix.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
         curl -L -o Tool-repo/Stash/Rules/HBO.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
         curl -L -o Tool-repo/Stash/Rules/Disney.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
@@ -814,7 +811,7 @@ jobs:
         # Lan
         cp -r Tool-repo/Surge/Rules/Lan.list Tool-repo/Stash/Rules/Lan.yaml
 
-        curl -L -o Tool-repo/Stash/Rules/APNs.list "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Stash/Rules/APNs.list "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Stash/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
         curl -L -o Tool-repo/Stash/Rules/AppStore.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
         curl -L -o Tool-repo/Stash/Rules/AppleID.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleID/AppleID.list"
@@ -843,7 +840,7 @@ jobs:
         # 甲骨文
         curl -L -o Tool-repo/Stash/Rules/Oracle.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Oracle/Oracle.list"
         # 流媒体
-        curl -L -o Tool-repo/Stash/Rules/TikTok.list "https://kelee.one/Tool/Loon/Rule/TikTok.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Stash/Rules/TikTok.list "https://kelee.one/Tool/Loon/Rule/TikTok.list"
         curl -L -o Tool-repo/Stash/Rules/Netflix.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
         curl -L -o Tool-repo/Stash/Rules/HBO.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
         curl -L -o Tool-repo/Stash/Rules/Disney.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
@@ -946,9 +943,8 @@ jobs:
     - name: Copy Egern/Rules
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
-        alias curl = curl -A "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
 
-        curl -L -o Tool-repo/Egern/Rules/APNs.yaml "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Egern/Rules/APNs.yaml "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Egern/Rules/Apple.yaml "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
         curl -L -o Tool-repo/Egern/Rules/AppStore.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
         curl -L -o Tool-repo/Egern/Rules/AppleID.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleID/AppleID.list"
@@ -977,7 +973,7 @@ jobs:
         # 甲骨文
         curl -L -o Tool-repo/Egern/Rules/Oracle.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Oracle/Oracle.list"
         # 流媒体
-        curl -L -o Tool-repo/Egern/Rules/TikTok.yaml "https://kelee.one/Tool/Loon/Rule/TikTok.list"
+        curl -A "Surge iOS/3367" -L -o Tool-repo/Egern/Rules/TikTok.yaml "https://kelee.one/Tool/Loon/Rule/TikTok.list"
         curl -L -o Tool-repo/Egern/Rules/Netflix.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
         curl -L -o Tool-repo/Egern/Rules/HBO.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
         curl -L -o Tool-repo/Egern/Rules/Disney.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
