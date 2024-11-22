@@ -369,7 +369,7 @@ jobs:
     - name: Copy QuantumultX/Rules
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
-        curl -L -o Tool-repo/QuantumultX/Rules/APNs.list "https://kelee/Tool/Loon/Rule/ApplePushNotificationService.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/APNs.list "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/QuantumultX/Rules/Lan.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
         curl -L -o Tool-repo/QuantumultX/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
         curl -L -o Tool-repo/QuantumultX/Rules/AppStore.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
