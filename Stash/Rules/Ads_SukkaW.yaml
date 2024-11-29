@@ -1,8 +1,8 @@
 payload:
   #########################################
   # Sukka's Ruleset - Reject Base
-  # Last Updated: 2024-11-29T09:26:52.678Z
-  # Size: 109856
+  # Last Updated: 2024-11-29T10:54:53.735Z
+  # Size: 109857
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -77900,6 +77900,7 @@ payload:
   - DOMAIN-SUFFIX,trx3.famousfix.com
   - DOMAIN-SUFFIX,ab.fanatical.com
   - DOMAIN-SUFFIX,ef.fanatical.com
+  - DOMAIN-SUFFIX,gh.fanatical.com
   - DOMAIN-SUFFIX,tracking.fanbridge.com
   - DOMAIN-SUFFIX,link-dev.fandompay.com
   - DOMAIN-SUFFIX,omapi.fangraphs.com
