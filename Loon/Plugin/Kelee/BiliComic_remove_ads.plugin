@@ -33,4 +33,4 @@ http-response ^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetClas
 http-response ^https:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.User\/UCenterConf script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/BiliComic_remove_ads.js,requires-body=true,tag=精简我的页面
 
 [MitM]
-hostname=manga.bilibili.com
+hostname=manga.bilibili.com#App链接 = 

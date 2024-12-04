@@ -22,4 +22,4 @@
 http-response ^https:\/\/napi\.ithome\.com\/api\/(?:news\/index|topmenu\/getfeeds\?|api\/douyin\/GetLiveInfo) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/IThome_remove_ads.js,requires-body=true,tag=IT之家去广告
 
 [MitM]
-hostname=napi.ithome.com,api.zuihuimai.com,dat.ruanmei.com
+hostname=napi.ithome.com,api.zuihuimai.com,dat.ruanmei.com#App链接 = 

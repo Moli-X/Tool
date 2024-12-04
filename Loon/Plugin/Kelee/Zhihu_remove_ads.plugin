@@ -64,4 +64,4 @@ http-response ^https:\/\/appcloud2\.zhihu\.com\/v3\/config script-path=https://g
 http-response ^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/zhihu\/config\/all\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Zhihu_remove_ads.js,requires-body=true,tag=拦截服务器推送配置 config all
 
 [MitM]
-hostname=*.zhihu.com
+hostname=*.zhihu.com#App链接 = 

@@ -75,4 +75,4 @@ DOMAIN,utoken.umeng.com,REJECT
 ^https:\/\/api\.miaomiaoyd\.com\/book\/config\/getAdsSettings$ reject
 
 [MitM]
-hostname=api.miaomiaoyd.com
+hostname=api.miaomiaoyd.com#App链接 = 

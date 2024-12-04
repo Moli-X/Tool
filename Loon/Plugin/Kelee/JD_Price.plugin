@@ -15,4 +15,4 @@
 http-response ^https?:\/\/api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/JD_Price.js,requires-body=true,tag=京东比价
 
 [MitM]
-hostname=api.m.jd.com
+hostname=api.m.jd.com#App链接 = 

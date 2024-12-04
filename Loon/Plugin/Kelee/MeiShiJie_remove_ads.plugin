@@ -124,4 +124,4 @@ DOMAIN-KEYWORD,asiad.byteactivity,REJECT
 ^https:\/\/newapi\.meishi\.cc\/indexnew\/home_feeds response-body-json-jq 'if .data.items then .data.items |= map(select(.type | . != "101" and . != "12")) else . end'
 
 [MitM]
-hostname=newapi.meishi.cc
+hostname=newapi.meishi.cc#App链接 = 

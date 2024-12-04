@@ -25,4 +25,4 @@ http-response ^https:\/\/account\.95516\.com\/fortune\/inApp\/common\/ script-pa
 http-response ^https:\/\/content\.95516\.com\/koala-pre\/koala\/(recommend\/hotList|right\/queryAllRights) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/UnionPay_remove_ads_with_ssl_unpinning.js,requires-body=true,tag=移除云闪付推广
 
 [MitM]
-hostname=account.95516.com,base.95516.com,content.95516.com
+hostname=account.95516.com,base.95516.com,content.95516.com#App链接 = 

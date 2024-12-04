@@ -97,4 +97,4 @@ DOMAIN,log.umsns.com,REJECT
 ^https:\/\/consumer\.fcbox\.com\/fcboxactivityweb\/api\/guidePopup\/popup$ reject-dict
 
 [MitM]
-hostname=consumer.fcbox.com,dsp.fcbox.com
+hostname=consumer.fcbox.com,dsp.fcbox.com#App链接 = 

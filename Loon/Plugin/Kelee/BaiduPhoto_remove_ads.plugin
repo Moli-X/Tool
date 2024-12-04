@@ -82,4 +82,4 @@ DOMAIN-KEYWORD,asiad.byteactivity,REJECT
 ^https:\/\/mbd\.baidu\.com\/ccs\/v1\/start\/confsync\? response-body-json-del data.service.config.advertisement data.service.config.youa.pm_config_ad 
 
 [MitM]
-hostname=pan.baidu.com,mbd.baidu.com
+hostname=pan.baidu.com,mbd.baidu.com#App链接 = 

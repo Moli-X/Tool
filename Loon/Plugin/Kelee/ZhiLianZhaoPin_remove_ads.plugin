@@ -114,4 +114,4 @@ URL-REGEX,"^https:\/\/(ask|cgate)\.zhaopin\.com\/operation\/ad\/",REJECT
 ^https:\/\/cgate\.zhaopin\.com\/bdp\/commercial\/queryLinkData$ reject
 
 [MitM]
-hostname=ask.zhaopin.com,cgate.zhaopin.com
+hostname=ask.zhaopin.com,cgate.zhaopin.com#App链接 = 

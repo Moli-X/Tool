@@ -24,4 +24,4 @@ DOMAIN,render-web.11222.cn,REJECT
 http-response ^https:\/\/ocean\.shuqireader\.com\/sqios\/render\/render\/page\/bookstore$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/ShuQiCenterReader_remove_ads.js,requires-body=true,tag=移除书城横幅和阅读广告
 
 [MitM]
-hostname=ocean.shuqireader.com,huichuan.sm.cn
+hostname=ocean.shuqireader.com,huichuan.sm.cn#App链接 = 

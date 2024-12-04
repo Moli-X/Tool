@@ -16,4 +16,4 @@ http-request ^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|albu
 http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Spotify_proto.js,requires-body=true,binary-body-mode=true,timeout=10,tag=Proto处理
 
 [MitM]
-hostname=spclient.wg.spotify.com
+hostname=spclient.wg.spotify.com#App链接 = 

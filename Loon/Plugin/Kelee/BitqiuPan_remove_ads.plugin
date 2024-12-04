@@ -31,4 +31,4 @@ DOMAIN,log.umsns.com,REJECT
 ^https:\/\/pan-api\.bitqiu\.com\/activity\/guides$ reject-dict
 
 [MitM]
-hostname=pan-api.bitqiu.com
+hostname=pan-api.bitqiu.com#App链接 = 

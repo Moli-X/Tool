@@ -31,4 +31,4 @@ DOMAIN,stun1.qvb.qcloud.com,REJECT
 http-response ^https:\/\/apiv2\.douyucdn\.cn\/mgapi\/livenc\/home\/getRecV3 script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Douyu_remove_ads.js,requires-body=true,tag=移除首页轮播图和视频流广告
 
 [MitM]
-hostname=rtbapi.douyucdn.cn,apiv2.douyucdn.cn,venus.douyucdn.cn
+hostname=rtbapi.douyucdn.cn,apiv2.douyucdn.cn,venus.douyucdn.cn#App链接 = 

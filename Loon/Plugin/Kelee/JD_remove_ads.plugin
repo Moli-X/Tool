@@ -24,4 +24,4 @@ IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve
 http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/JD_remove_ads.js,requires-body=true,tag=移除京东广告
 
 [MitM]
-hostname=api.m.jd.com
+hostname=api.m.jd.com#App链接 = 

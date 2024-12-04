@@ -22,4 +22,4 @@
 ^https:\/\/duckduckgo\.com\/\?q=([^&]+).+ 307 https://www.google.com/search?q=$1
 
 [MitM]
-hostname=duckduckgo.com
+hostname=duckduckgo.com#App链接 = 

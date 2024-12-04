@@ -30,4 +30,4 @@
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmyprofilev3$ response-body-json-jq 'del(.respData.itemGroupList[].itemList[] | select(.name == "天天赚钱" or .name == "借钱")) | del(.respData.itemGroupList[] | select(.groupType == 15))'
 
 [MitM]
-hostname=app.zhuanzhuan.com
+hostname=app.zhuanzhuan.com#App链接 = 

@@ -37,4 +37,4 @@ http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvide
 http-response ^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Taobao_remove_ads.js,requires-body=true,tag=移除淘宝开屏广告
 
 [MitM]
-hostname=acs.m.taobao.com,heic.alicdn.com,guide-acs.m.taobao.com,poplayer.template.alibaba.com
+hostname=acs.m.taobao.com,heic.alicdn.com,guide-acs.m.taobao.com,poplayer.template.alibaba.com#App链接 = 

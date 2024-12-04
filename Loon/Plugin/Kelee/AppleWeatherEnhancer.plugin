@@ -32,4 +32,4 @@ http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v1\/availability\/ script
 http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v2\/weather\/ script-path=https://github.com/NSRingo/WeatherKit/releases/download/v1.8.17/response.bundle.js,requires-body=true,binary-body-mode=true,tag=Weather响应处理,argument=[{NextHour.Provider},{AQI.Provider},{AQI.ReplaceProviders},{AQI.Local.Scale},{AQI.Local.ReplaceScales},{AQI.Local.ConvertUnits},{API.ColorfulClouds.Token},{API.QWeather.Host},{API.QWeather.Token},{API.WAQI.Token}]
 
 [MitM]
-hostname=weatherkit.apple.com
+hostname=weatherkit.apple.com#App链接 = 

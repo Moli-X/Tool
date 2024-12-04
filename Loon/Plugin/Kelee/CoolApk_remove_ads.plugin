@@ -20,4 +20,4 @@ http-response ^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8|init) sc
 http-response ^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/CoolApk_remove_ads.js,requires-body=true,tag=移除酷安广告
 
 [MitM]
-hostname=api.coolapk.com
+hostname=api.coolapk.com#App链接 = 

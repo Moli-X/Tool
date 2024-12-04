@@ -20,4 +20,4 @@
 ^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/(templates|all_editor_tools)\/resources$ response-body-json-jq 'walk(if type == "object" and .badge_img_url? then .badge_img_url = "" else . end)'
 
 [MitM]
-hostname=www.gaoding.com
+hostname=www.gaoding.com#App链接 = 

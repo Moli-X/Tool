@@ -37,4 +37,4 @@ http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(?:v2\/note\/feed|v3
 http-response ^https:\/\/(?:edith|rec|www)\.xiaohongshu\.com\/api\/sns\/(?:v4\/note\/videofeed|v10\/note\/video\/save) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/RedPaper_remove_ads.js,requires-body=true,tag=移除视频水印
 
 [MitM]
-hostname=edith.xiaohongshu.com,rec.xiaohongshu.com,www.xiaohongshu.com
+hostname=edith.xiaohongshu.com,rec.xiaohongshu.com,www.xiaohongshu.com#App链接 = 

@@ -32,4 +32,4 @@ http-response ^https?:\/\/music\.youtube\.com\/youtubei\/v1\/browse\?(.*)subtype
 http-response ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/browse\?(.*)subtype=Translate script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/YouTube_Subtitles_Translate/YouTube_Subtitles_Translate_response.js,requires-body=true,binary-body-mode=true,tag=Proto·YouTube Music翻译歌词响应,argument=
 
 [MitM]
-hostname=www.youtube.com,m.youtube.com,tv.youtube.com,music.youtube.com,youtubei.googleapis.com
+hostname=www.youtube.com,m.youtube.com,tv.youtube.com,music.youtube.com,youtubei.googleapis.com#App链接 = 

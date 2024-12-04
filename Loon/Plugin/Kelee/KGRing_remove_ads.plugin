@@ -114,4 +114,4 @@ DOMAIN-SUFFIX,adukwai.com,REJECT
 ^http:\/\/api\.ring\.kugou\.com\/user\/notice\/recommend$ reject-dict
 
 [MitM]
-hostname=api.ring.kugou.com
+hostname=api.ring.kugou.com#App链接 = 

@@ -61,4 +61,4 @@ http-response ^https:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php scr
 http-response ^https:\/\/wbapp\.uve\.weibo\.com\/(?:preload\/get_ad|wbapplua\/wbpullad\.lua) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Weibo_remove_ads.js,requires-body=true,tag=移除开屏广告
 
 [MitM]
-hostname=*.weibo.cn,*.weibo.com,weibo.com
+hostname=*.weibo.cn,*.weibo.com,weibo.com#App链接 = 

@@ -149,4 +149,4 @@ DOMAIN-SUFFIX,adbkwai.com,REJECT
 ^https:\/\/client-lz\.rili\.cn\/lizhi\/api\/fortune\/overview\? reject-dict
 
 [MitM]
-hostname=v0-client-lz.rili.cn,client-lz.rili.cn
+hostname=v0-client-lz.rili.cn,client-lz.rili.cn#App链接 = 

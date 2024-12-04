@@ -22,4 +22,4 @@
 (^https:\/\/pingtas\.qq\.com\/webview\/pingd\?dm=c\.pc\.qq\.com&pvi=\d+&si=s\d+&url=\/ios\.html\?url%3d)(http.*)(%26level.*%26level.*) 307 $2
 
 [MitM]
-hostname=pingtas.qq.com,c.pc.qq.com,cgi.connect.qq.com
+hostname=pingtas.qq.com,c.pc.qq.com,cgi.connect.qq.com#App链接 = 

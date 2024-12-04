@@ -21,4 +21,4 @@ DOMAIN,raw.kkgithub.com,DIRECT
 http-request ^https:\/\/raw\.githubusercontent\.com\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Switch_github_mirror.js,tag=GitHub加速
 
 [MitM]
-hostname=raw.githubusercontent.com
+hostname=raw.githubusercontent.com#App链接 = 

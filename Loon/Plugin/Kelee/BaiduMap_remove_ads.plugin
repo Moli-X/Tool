@@ -30,4 +30,4 @@ IP-CIDR,186.76.76.200/32,REJECT,no-resolve
 ^https:\/\/newclient\.map\.baidu\.com\/living\/nearby\/api\? response-body-json-del Result.cards[1] Result.cards[4] Result.cards[5] Result.cards[9]
 
 [MitM]
-hostname=afd.baidu.com,newclient.map.baidu.com,yongche.baidu.com,ecom.map.baidu.com
+hostname=afd.baidu.com,newclient.map.baidu.com,yongche.baidu.com,ecom.map.baidu.com#App链接 = 

@@ -47,4 +47,4 @@ http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.c
 http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Cainiao_remove_ads.js,requires-body=true,tag=移除菜鸟小程序推广
 
 [MitM]
-hostname=cn-acs.m.cainiao.com,guide-acs.m.taobao.com
+hostname=cn-acs.m.cainiao.com,guide-acs.m.taobao.com#App链接 = 

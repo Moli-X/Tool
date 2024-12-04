@@ -54,4 +54,4 @@ URL-REGEX,"^http:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_k_main_page_banner\/
 ^https:\/\/wnsaviator\.kg\.qq\.com\/wnsaviator\/api\/v1\/transMerge\?_webcgikey=get_activity_entry$ reject-dict
 
 [MitM]
-hostname=wallpaper-1258344696.file.myqcloud.com,amsweb-cdn-*-1258344696.file.myqcloud.com,wnsaviator.kg.qq.com
+hostname=wallpaper-1258344696.file.myqcloud.com,amsweb-cdn-*-1258344696.file.myqcloud.com,wnsaviator.kg.qq.com#App链接 = 

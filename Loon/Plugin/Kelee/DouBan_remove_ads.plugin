@@ -119,4 +119,4 @@ DOMAIN-KEYWORD,asiad.byteactivity,REJECT
 ^https:\/\/frodo\.douban\.com\/api\/v\d\/search\/found_words reject-dict
 
 [MitM]
-hostname=api.douban.com,frodo.douban.com,m.douban.com
+hostname=api.douban.com,frodo.douban.com,m.douban.com#App链接 = 

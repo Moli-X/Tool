@@ -24,4 +24,4 @@ http-request ^https:\/\/moapi\.wps\.cn\/app\/ios\/v1\/app$ script-path=https://g
 cron {CRONEXP} script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/WPS_checkin.js,tag=WPS每日签到,timeout=120,argument=[{AK},{SK},{MAX_RETRIES}]
 
 [MitM]
-hostname=moapi.wps.cn
+hostname=moapi.wps.cn#App链接 = 

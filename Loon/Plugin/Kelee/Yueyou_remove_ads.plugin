@@ -93,4 +93,4 @@ DOMAIN,log.umsns.com,REJECT
 ^https:\/\/goway\.reader\.yueyouxs\.com\/assemble\/app\/basic\/getAppInfo\? response-body-json-replace data.isAdClosed true 
 
 [MitM]
-hostname=goway.reader.yueyouxs.com
+hostname=goway.reader.yueyouxs.com#App链接 = 

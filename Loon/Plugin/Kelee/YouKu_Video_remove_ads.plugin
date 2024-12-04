@@ -47,4 +47,4 @@ http-response ^https:\/\/push\.m\.youku\.com\/collect-api\/get_push_interval_con
 http-response ^https:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/YouKu_Video_remove_ads.js,requires-body=true,tag=移除开屏广告
 
 [MitM]
-hostname=acs.youku.com,push.m.youku.com,un-acs.youku.com
+hostname=acs.youku.com,push.m.youku.com,un-acs.youku.com#App链接 = 

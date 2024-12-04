@@ -16,4 +16,4 @@ http-response ^https:\/\/jzts\.cmpassport\.com\/personalized\/getPushContent scr
 http-response ^https:\/\/ad\.mcloud\.139\.com\/advertapi\/adv-filter\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/mobileClouds_remove_ads.js,requires-body=true,tag=移除应用内广告
 
 [MitM]
-hostname=jzts.cmpassport.com,ad.mcloud.139.com
+hostname=jzts.cmpassport.com,ad.mcloud.139.com#App链接 = 

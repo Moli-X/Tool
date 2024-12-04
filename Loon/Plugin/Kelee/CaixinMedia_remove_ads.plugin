@@ -27,4 +27,4 @@ http-response ^https:\/\/mappsv5\.caixin\.com\/articlev5\/\d+\/\d+\.json$ script
 http-response ^https:\/\/mapps?v5\.caixin\.com\/(channelv5\/list|\/?index_page_v5\/)\w+ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/CaixinMedia_remove_ads.js,requires-body=true,tag=移除正文广告
 
 [MitM]
-hostname=e*.caixin.com,g*.caixin.com,m*.caixin.com
+hostname=e*.caixin.com,g*.caixin.com,m*.caixin.com#App链接 = 

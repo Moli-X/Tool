@@ -136,4 +136,4 @@ AND,((DOMAIN-KEYWORD,adash),(DOMAIN-SUFFIX,ut.taobao.com)),REJECT
 ^https:\/\/apivip\.kuaiduizuoye\.com\/viponline\/scancode\/mycard$ reject-dict
 
 [MitM]
-hostname=www.kuaiduizuoye.com,apivip.kuaiduizuoye.com
+hostname=www.kuaiduizuoye.com,apivip.kuaiduizuoye.com#App链接 = 

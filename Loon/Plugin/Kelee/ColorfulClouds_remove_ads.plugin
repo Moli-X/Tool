@@ -24,4 +24,4 @@ DOMAIN,gather.colorfulclouds.net,REJECT
 http-response ^https:\/\/(wrapper\.cyapi\.cn|api\.caiyunapp\.com|cdn-w\.caiyunapp\.com)\/v1\/activity\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/ColorfulClouds_remove_ads.js,requires-body=true,tag=彩云天气去广告
 
 [MitM]
-hostname=biz.cyapi.cn,starplucker.cyapi.cn,api.caiyunapp.com,cdn-w.caiyunapp.com
+hostname=biz.cyapi.cn,starplucker.cyapi.cn,api.caiyunapp.com,cdn-w.caiyunapp.com#App链接 = 

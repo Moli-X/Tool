@@ -23,4 +23,4 @@ http-request ^https?:\/\/sub\.store script-path=https://raw.githubusercontent.co
 cron "0 0 1 ? * ?" script-path=https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/cron-sync-artifacts.min.js,tag=Sub-Store Sync
 
 [MitM]
-hostname=sub.store
+hostname=sub.store#App链接 = 

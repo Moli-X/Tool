@@ -29,4 +29,4 @@ AND,((DOMAIN-SUFFIX,youtubei.googleapis.com),(PROTOCOL,QUIC)),REJECT
 http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/YouTube_remove_ads/YouTube_remove_ads_response.js,requires-body=true,binary-body-mode=true,argument=[{blockUpload},{blockImmersive},{captionLang},{lyricLang},{debug}],tag=YouTube去广告
 
 [MitM]
-hostname=*.googlevideo.com,youtubei.googleapis.com
+hostname=*.googlevideo.com,youtubei.googleapis.com#App链接 = 

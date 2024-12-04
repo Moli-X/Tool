@@ -71,4 +71,4 @@ http-response ^https:\/\/api(5-lq)?\.pipix\.com\/bds\/feed\/stream\/v2\/ script-
 http-response ^https:\/\/api(5-lq)?\.pipix\.com\/bds\/user\/check_in\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/PiPiXia_remove_ads.js,requires-body=true,tag=精简我的页面
 
 [MitM]
-hostname=api.pipix.com,api5-lq.pipix.com
+hostname=api.pipix.com,api5-lq.pipix.com#App链接 = 

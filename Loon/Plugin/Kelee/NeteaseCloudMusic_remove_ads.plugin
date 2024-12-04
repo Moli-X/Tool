@@ -50,4 +50,4 @@ http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/link\/pos
 http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/user\/follow\/users\/mixed\/get script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=显示未关注你的人
 
 [MitM]
-hostname=interface.music.163.com,interface?.music.163.com,ipv4.music.163.com
+hostname=interface.music.163.com,interface?.music.163.com,ipv4.music.163.com#App链接 = 

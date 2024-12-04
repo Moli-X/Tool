@@ -125,4 +125,4 @@ DOMAIN,adui.tg.meitu.com,REJECT
 ^https:\/\/(api|tool)\.xiuxiu\.meitu\.com\/v\d\/tool\/common\/home\.json response-body-json-del data[0].items[10] data[1].scheme data[1].wallet_title data[1].items[1] data[1].items[1] data[2].items[1]
 
 [MitM]
-hostname=api.xiuxiu.meitu.com,tool.xiuxiu.meitu.com,api.posters.meitu.com
+hostname=api.xiuxiu.meitu.com,tool.xiuxiu.meitu.com,api.posters.meitu.com#App链接 = 

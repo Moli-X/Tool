@@ -90,4 +90,4 @@ DOMAIN,plbslog.umeng.com,REJECT
 http-response ^https:\/\/base\.mkzcdn\.com\/app\/config\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/MKZ_remove_ads.js,requires-body=true,tag=配置修改
 
 [MitM]
-hostname=base.mkzcdn.com
+hostname=base.mkzcdn.com#App链接 = 

@@ -19,4 +19,4 @@ DOMAIN,ad.iot.360.cn,REJECT
 ^https:\/\/jia\.360\.cn\/conf\/v1\.json response-body-json-del tab_conf ad_conf activity
 
 [MitM]
-hostname=jia.360.cn
+hostname=jia.360.cn#App链接 = 

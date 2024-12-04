@@ -37,4 +37,4 @@ http-response ^https:\/\/search\.video\.iqiyi\.com\/q\? script-path=https://gith
 http-response ^https?:\/\/(kjp|t7z)\.cupid\.iqiyi\.com\/mixer\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除开屏和播放广告
 
 [MitM]
-hostname=-i.vip.iqiyi.com,*.iqiyi.com
+hostname=-i.vip.iqiyi.com,*.iqiyi.com#App链接 = 

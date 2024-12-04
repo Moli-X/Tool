@@ -43,4 +43,4 @@ DOMAIN-SUFFIX,union.baidu.com,REJECT
 ^https:\/\/app\.chengfenmiao\.com\/item\/closet\? reject-dict
 
 [MitM]
-hostname=app.chengfenmiao.com
+hostname=app.chengfenmiao.com#App链接 = 

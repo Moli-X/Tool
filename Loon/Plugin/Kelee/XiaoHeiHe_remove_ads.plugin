@@ -18,4 +18,4 @@
 http-response ^https:\/\/api\.xiaoheihe\.cn\/bbs\/app\/feeds\/news script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/XiaoHeiHe_remove_ads.js,requires-body=true,tag=移除热点板块信息流广告
 
 [MitM]
-hostname=api.xiaoheihe.cn
+hostname=api.xiaoheihe.cn#App链接 = 

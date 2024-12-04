@@ -28,4 +28,4 @@ IP-CIDR,115.236.121.195/32,REJECT,no-resolve
 ^https:\/\/app-conf\.ds\.163\.com\/v1\/app\/base\/conf\/static\/start-config\? response-body-replace-regex \{"os":"all","weight":50\.0,"hidden":false,"name":"游戏"\},\{"os":"all","weight":50\.0,"hidden":false,"name":"频道"\}, null
 
 [MitM]
-hostname=god.gameyw.netease.com,app-conf.ds.163.com
+hostname=god.gameyw.netease.com,app-conf.ds.163.com#App链接 = 

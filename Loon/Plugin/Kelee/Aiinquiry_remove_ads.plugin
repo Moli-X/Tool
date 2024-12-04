@@ -28,4 +28,4 @@ URL-REGEX,"^http:\/\/180\.76\.76\.112\/v\d\/",REJECT
 ^https:\/\/aiqicha\.baidu\.com\/apps\/searchRecommendAjax reject-dict
 
 [MitM]
-hostname=aiqicha.baidu.com
+hostname=aiqicha.baidu.com#App链接 = 

@@ -39,4 +39,4 @@ DOMAIN,th.pinduoduo.com,REJECT
 http-response ^https:\/\/api\.pinduoduo\.com\/api\/alexa\/homepage\/hub\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/PinDuoDuo_remove_ads.js,requires-body=true,tag=精简首页
 
 [MitM]
-hostname=api.pinduoduo.com,api.yangkeduo.com
+hostname=api.pinduoduo.com,api.yangkeduo.com#App链接 = 

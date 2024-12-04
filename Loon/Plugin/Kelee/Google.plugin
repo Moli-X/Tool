@@ -16,4 +16,4 @@
 ^https?:\/\/(ditu|maps).google\.cn 307 https://maps.google.com
 
 [MitM]
-hostname=www.google.cn
+hostname=www.google.cn#App链接 = 

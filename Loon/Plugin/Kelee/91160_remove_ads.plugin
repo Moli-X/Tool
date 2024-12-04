@@ -104,4 +104,4 @@ DOMAIN-SUFFIX,igexin.com,REJECT
 ^https:\/\/soapi\.91160\.com\/homepage-recommendation\/recommendation\/medical\/complex\? response-body-json-del data.checkupList
 
 [MitM]
-hostname=patientgate.91160.com,soapi.91160.com,msglb.91160.com,patientappapi.91160.com
+hostname=patientgate.91160.com,soapi.91160.com,msglb.91160.com,patientappapi.91160.com#App链接 = 

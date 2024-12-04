@@ -21,4 +21,4 @@ http-response ^https?:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/(
 http-response ^https?:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/\w+\?(.*)subtype=External requires-body=true,binary-body-mode=true,script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/External_Lyrics_response.js,tag=外部歌词响应·Proto
 
 [MitM]
-hostname=api.spotify.com,spclient.wg.spotify.com
+hostname=api.spotify.com,spclient.wg.spotify.com#App链接 = 

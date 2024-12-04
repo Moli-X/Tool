@@ -36,4 +36,4 @@ IP-CIDR,121.196.197.147/32,REJECT,no-resolve
 http-response ^https:\/\/(?:api-\w+|chat-live|post)\.soulapp\.cn\/(?:chat\/limitInfo|chatroom\/chatClassifyRoomList|homepage\/diamond\/position\/info|v2\/post\/recSquare\/subTabs|v6\/planet\/config) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Soul_remove_ads.js,requires-body=true,tag=移除Soul广告
 
 [MitM]
-hostname=api*.soulapp.cn,gateway-mobile-gray.soulapp.cn,post.soulapp.cn,ssp.soulapp.cn
+hostname=api*.soulapp.cn,gateway-mobile-gray.soulapp.cn,post.soulapp.cn,ssp.soulapp.cn#App链接 = 

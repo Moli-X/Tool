@@ -18,4 +18,4 @@ DOMAIN-SUFFIX,wxs.qq.com,REJECT
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|jsmonitor|masonryfeed|relatedarticle)\? reject-dict
 
 [MitM]
-hostname=mp.weixin.qq.com
+hostname=mp.weixin.qq.com#App链接 = 

@@ -149,4 +149,4 @@ DOMAIN,yumao.puata.info,REJECT
 ^https:\/\/api\.xiachufang\.com\/v2\/mark_mission\/get_sticker_info\.json reject-dict
 
 [MitM]
-hostname=api.xiachufang.com
+hostname=api.xiachufang.com#App链接 = 

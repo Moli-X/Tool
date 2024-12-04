@@ -68,4 +68,4 @@ DOMAIN-SUFFIX,jpush.io,REJECT
 ^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/memberGoods\/pointMallService\/goodsList$ reject-dict
 
 [MitM]
-hostname=ccsp-egmas.sf-express.com,ucmp.sf-express.com
+hostname=ccsp-egmas.sf-express.com,ucmp.sf-express.com#App链接 = 

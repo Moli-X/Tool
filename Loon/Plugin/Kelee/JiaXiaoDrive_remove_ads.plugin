@@ -95,4 +95,4 @@ DOMAIN,utoken.umeng.com,REJECT
 http-response ^https:\/\/api\.ksedt\.com\/api\/config\/ response-body-json-del result.homead result.h5_promotion_page result.advert_interval result.abtest_h5url result.launchApp result.goucheConfig result.gouche result.mainLiveConfig result.discover result.adSdkSwitch4testPointVideo result.adSdkSwitch4simulationExam result.examPageLoadADSwitch
 
 [MitM]
-hostname=richmanrules.ksedt.com,gouche.ksedt.com,muses.ksedt.com,op.ksedt.com,api.ksedt.com
+hostname=richmanrules.ksedt.com,gouche.ksedt.com,muses.ksedt.com,op.ksedt.com,api.ksedt.com#App链接 = 

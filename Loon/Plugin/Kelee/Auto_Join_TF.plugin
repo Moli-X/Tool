@@ -26,4 +26,4 @@ http-request ^https://testflight.apple.com/join/(.*) script-path=https://github.
 cron {TimingParameters} script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Auto_join_TF.js,tag=自动加入TF,timeout=180
 
 [MitM]
-hostname=testflight.apple.com
+hostname=testflight.apple.com#App链接 = 

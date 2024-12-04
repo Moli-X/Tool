@@ -21,4 +21,4 @@ http-response ^https?:\/\/api\.weibo\.cn\/\d\/statuses\/.*timeline script-path=h
 http-response ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Weibo_intl_remove_ads.js,requires-body=true,tag=微博轻享版去广告
 
 [MitM]
-hostname=*api.weibo.cn,sdkapp.uve.weibo.com
+hostname=*api.weibo.cn,sdkapp.uve.weibo.com#App链接 = 

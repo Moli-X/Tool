@@ -73,4 +73,4 @@ DOMAIN,aaid.umeng.com,REJECT
 ^https:\/\/gorgon\.youdao\.com\/gorgon\/request\.s reject-dict
 
 [MitM]
-hostname=gorgon.youdao.com
+hostname=gorgon.youdao.com#App链接 = 

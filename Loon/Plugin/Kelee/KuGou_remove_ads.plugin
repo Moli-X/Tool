@@ -48,4 +48,4 @@ URL-REGEX,"^http:\/\/log\.stat\.kugou\.com\/mobile\/ad\.html",REJECT
 http-response ^https:\/\/gateway(retry)?\.kugou\.com\/ocean\/v\d\/tab\/list_v\d script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/KuGou_remove_ads.js,requires-body=true,tag=精简顶部标签
 
 [MitM]
-hostname=gateway.kugou.com,fx.service.kugou.com,hwstore.kugou.com,ep.kugou.com,gatewayretry.kugou.com,gzacshow.kugou.com,m1fxgroup.kugou.com
+hostname=gateway.kugou.com,fx.service.kugou.com,hwstore.kugou.com,ep.kugou.com,gatewayretry.kugou.com,gzacshow.kugou.com,m1fxgroup.kugou.com#App链接 = 

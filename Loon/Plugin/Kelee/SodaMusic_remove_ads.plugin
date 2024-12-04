@@ -86,4 +86,4 @@ DOMAIN-KEYWORD,asiad.byteactivity,REJECT
 ^https:\/\/beta-luna\.douyin\.com\/luna\/commerce\/v2\/commerce_info\? reject-dict
 
 [MitM]
-hostname=webcast-open.douyin.com,beta-luna.douyin.com
+hostname=webcast-open.douyin.com,beta-luna.douyin.com#App链接 = 

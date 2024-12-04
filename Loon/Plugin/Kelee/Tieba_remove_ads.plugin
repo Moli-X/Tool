@@ -30,4 +30,4 @@ http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|
 http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/tieba-proto.js,requires-body=true,binary-body-mode=true,timeout=10,tag=Proto处理
 
 [MitM]
-hostname=tiebac.baidu.com,tieba.baidu.com
+hostname=tiebac.baidu.com,tieba.baidu.com#App链接 = 
