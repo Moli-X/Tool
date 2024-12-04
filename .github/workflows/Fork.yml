@@ -216,6 +216,15 @@ jobs:
         cp -r lodepuly_Tmp/Resource/Script/* Tool-repo/Loon/Script/lodepuly/
         rm -rf lodepuly_Tmp   
 
+    - name: 整体复刻Kelee模块脚本
+      if: env.LOON_SWITCH == 'true'   # 添加开关条件
+      run: |
+        rm -rf Tool-repo/Loon/Plugin/Kelee/*
+        rm -rf Tool-repo/Loon/Script/Kelee/*
+        wget -r -np -nH --cut-dirs=3 -R "index.html*" --user-agent="Surge iOS/3367" -P Tool-repo/Loon/Plugin/Kelee/ https://kelee.one/Tool/Loon/Plugin/
+        wget -r -np -nH --cut-dirs=3 -R "index.html*" --user-agent="Surge iOS/3367" -P Tool-repo/Loon/Script/Kelee/ https://kelee.one/Tool/Loon/Script/
+
+
     - name: 整体编辑LOON模块
       if: env.LOON_SWITCH == 'pause'  # 添加开关条件
       run: |
@@ -285,8 +294,12 @@ jobs:
         # 定义插件及其原链接
         declare -A Scripts=(
             ["PinDuoDuo_remove_ads"]="https://kelee.one/Resource/Script/PinDuoDuo/PinDuoDuo_remove_ads.js"
-
-          
+            ["Amap_remove_ads"]="https://kelee.one/Resource/Script/Amap/Amap_remove_ads.js"
+            ["JD_remove_ads"]="https://kelee.one/Resource/Script/JD/JD_remove_ads.js"
+            ["NodeLinkCheck"]="https://kelee.one/Resource/Script/NodeLinkCheck/NodeLinkCheck.js"
+            ["Taobao_remove_ads"]="https://kelee.one/Resource/Script/Taobao/Taobao_remove_ads.js"
+            ["replace-body"]="https://kelee.one/Resource/Script/CommonScript/replace-body.js"
+            ["iQiYi_Video_remove_ads"]="https://kelee.one/Resource/Script/iQiYi_Video/iQiYi_Video_remove_ads.js"
           # 添加更多插件和链接
         )
         
