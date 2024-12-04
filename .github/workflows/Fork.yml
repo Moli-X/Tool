@@ -442,19 +442,34 @@ jobs:
     - name: 提取链接
       if: env.LOON_SWITCH == 'true'
       run: |
+        # 确保目标目录存在
         mkdir -p Tool-repo/Loon/Script/Kelee
     
+        # 切换到 Kelee 目录
         cd Tool-repo/Loon/Plugin/Kelee
+    
+        # 输出当前路径，确保路径正确
+        echo "当前工作目录：$(pwd)"
+    
+        # 遍历 .plugin 文件并提取 .js 链接
         for file in *.plugin; do
-          if [ -f "$file" ] ; then
-            # 只提取以 .js 结尾的脚本链接
+          if [ -f "$file" ]; then
+            # 提取链接
             grep -o 'https://kelee\.one/Resource/Script/[^ ]*\.js' "$file" | while read -r script_url; do
               script_name=$(basename "$script_url")
-              # 下载脚本到 Loon/Script/Kelee 目录
+    
+              # 确保下载目录存在
+              if [ ! -d "Tool-repo/Loon/Script/Kelee" ]; then
+                echo "目标目录不存在，创建目录..."
+                mkdir -p Tool-repo/Loon/Script/Kelee
+              fi
+    
+              # 使用 curl 下载脚本
               curl -A "Surge iOS/3367" -L -o "Tool-repo/Loon/Script/Kelee/$script_name" "$script_url" || echo "Failed to download $script_url" >> error.log
             done
           fi
         done
+
 
 
 
