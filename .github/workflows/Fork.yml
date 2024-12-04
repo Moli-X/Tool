@@ -443,6 +443,7 @@ jobs:
         cd Tool-repo/Loon/Plugin/Kelee
         for file in *.plugin; do
           if [ "$file" ] ; then
+
             # 只提取以 .js 结尾的脚本链接
             grep -o 'https://kelee\.one/Resource/Script/[^ ]*\.js' "$file" | while read -r script_url; do
               script_name=$(basename "$script_url")
@@ -459,7 +460,8 @@ jobs:
         cd Tool-repo/Loon/Plugin/Kelee  # 进入 Plugin 目录
         for file in *.plugin; do
           if [ "$file" ] ; then
-            
+
+
             # 修改脚本链接
             sed -i 's|https://kelee\.one/Resource/Script/[^/]*|https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee|g' "$file"
             
@@ -470,11 +472,11 @@ jobs:
             sed -i 's|#!homepage[ ]*=.*|#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/'"$file"'|g' "$file"
             
             # 修改 #!openUrl 行
-            if grep -q '#!openUrl' "$file"; then
-              sed -i 's|#!openUrl[ ]*=.*|#App链接 = |g' "$file"
-            else
-              echo '#App链接 = ' >> "$file"
-            fi
+            # if grep -q '#!openUrl' "$file"; then
+              # sed -i 's|#!openUrl[ ]*=.*|#App链接 = |g' "$file"
+            # else
+              # echo '#App链接 = ' >> "$file"
+            # fi
           fi
         done
 
