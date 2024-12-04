@@ -1,0 +1,40 @@
+# 原链接 : https://kelee.one/Tool/Loon/Plugin/iQiYi_Video_remove_ads.plugin
+#!name=爱奇艺去广告
+#!desc=过滤爱奇艺客户端广告，由于此插件不再维护，客户端版本高于14.11.6可能会导致此插件失效，请勿升级客户端。
+#!openUrl=https://apps.apple.com/app/id1190755526
+#!author=RuCu6[https://github.com/RuCu6]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
+#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/iQiYi_Video.png
+#!date=2024-11-28 00:00:00
+
+[Rule]
+DOMAIN-SUFFIX,cupid.iqiyi.com,DIRECT
+DOMAIN,api.iqiyi.com,REJECT
+
+[Rewrite]
+^https:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show\? reject-dict
+^https:\/\/iface2\.iqiyi\.com\/ivos\/interact\/video\/data\? reject-dict
+^https:\/\/iface2\.iqiyi\.com\/video\/3\.0\/v_interface_proxy\? reject-dict
+^https:\/\/iface2\.iqiyi\.com\/views_pop\/3\.0\/pop_control\? reject-dict
+
+[Script]
+http-response ^http:\/\/[\d\.]+\/3f1\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\? script-path=https://kelee.one/Resource/Script/iQiYi_Video/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除首页信息流广告
+http-response ^http:\/\/access\.if\.iqiyi\.com\/3f1\/cards\.iqiyi\.com\/(views_category\/3\.0\/category_home|views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\? script-path=https://kelee.one/Resource/Script/iQiYi_Video/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除首页信息流广告
+http-response ^https:\/\/cards\.iqiyi\.com\/views_category\/3\.0\/(category_home|categorylib_content|film_hybrid)\? script-path=https://kelee.one/Resource/Script/iQiYi_Video/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除首页信息流广告
+http-response ^https:\/\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\? script-path=https://kelee.one/Resource/Script/iQiYi_Video/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除首页信息流广告
+http-response ^https:\/\/cards\.iqiyi\.com\/views_plt\/3\.0\/player_tabs_v2\? script-path=https://kelee.one/Resource/Script/iQiYi_Video/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除播放详情页广告
+http-response ^https:\/\/cards\.iqiyi\.com\/views_search\/3\.0\/(hot_query_)?search\? script-path=https://kelee.one/Resource/Script/iQiYi_Video/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除搜索页列表推广
+http-response ^https:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments\? script-path=https://kelee.one/Resource/Script/iQiYi_Video/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除评论区推广
+http-response ^https:\/\/iface2\.iqiyi\.com\/aggregate\/3\.0\/getMyMenus\? script-path=https://kelee.one/Resource/Script/iQiYi_Video/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除我的页面菜单推广
+http-response ^https:\/\/iface2\.iqiyi\.com\/control\/3\.0\/init_proxy\? script-path=https://kelee.one/Resource/Script/iQiYi_Video/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除首页左上角天气
+http-response ^https:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/common_switch\? script-path=https://kelee.one/Resource/Script/iQiYi_Video/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除各标签页页二楼推广
+http-response ^https:\/\/iface2\.iqiyi\.com\/views\/3\.0\/(bottom_theme|home_top_menu)\? script-path=https://kelee.one/Resource/Script/iQiYi_Video/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除底栏和顶部标签页推广
+http-response ^https:\/\/search\.video\.iqiyi\.com\/q\? script-path=https://kelee.one/Resource/Script/iQiYi_Video/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除搜索框填充词
+http-response ^https?:\/\/(kjp|t7z)\.cupid\.iqiyi\.com\/mixer\? script-path=https://kelee.one/Resource/Script/iQiYi_Video/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除开屏和播放广告
+
+[MitM]
+hostname=-i.vip.iqiyi.com,*.iqiyi.com
