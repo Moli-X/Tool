@@ -489,7 +489,7 @@ jobs:
             sed -i 's|\(#!author=.*\)\[[^]]*\]|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
             
             # 修改 #!homepage 行
-            sed -i 's|#!homepage[ ]*=.*|#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/'"$file"'|g' "$file"
+            sed -i 's|#!homepage[ ]*=.*|#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/'"$file"'|g' "$file"
             
 
 
