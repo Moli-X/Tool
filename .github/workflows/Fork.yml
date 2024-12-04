@@ -269,6 +269,7 @@ jobs:
             [Taobao_remove_ads]="https://kelee.one/Tool/Loon/Plugin/Taobao_remove_ads.plugin"
             [Keep_remove_ads]="https://kelee.one/Tool/Loon/Plugin/Keep_remove_ads.plugin"
             [NeteaseCloudMusic_remove_ads]="https://kelee.one/Tool/Loon/Plugin/NeteaseCloudMusic_remove_ads.plugin"
+            [LuckinCoffee_remove_ads]="https://kelee.one/Tool/Loon/Plugin/LuckinCoffee_remove_ads.plugin"
         )
         
         # 下载插件并在文件中添加原链接
@@ -278,8 +279,14 @@ jobs:
             
             # 将原链接添加到文件开头
            # echo "# 原链接 : $url" | cat - "Tool-repo/Loon/Plugin/Kelee/$plugin_name.plugin" > temp && mv temp "Tool-repo/Loon/Plugin/Kelee/$plugin_name.plugin"
+            sed -i "1s|^|# 原链接 : $url\n|" "Tool-repo/Loon/Plugin/Kelee/$plugin_name.plugin"  # 在文件开头添加原链接
         done
-    
+
+        # 删除 error.log 文件
+        rm -f Tool-repo/Loon/Plugin/Kelee/error.log || echo "No error log to delete"
+
+
+
     - name: 提取链接
       if: env.LOON_SWITCH == 'true'
       run: |
