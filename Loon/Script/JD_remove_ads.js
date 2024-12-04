@@ -1,3 +1,4 @@
+# 原链接 : https://kelee.one/Resource/Script/JD/JD_remove_ads.js
 /*
 脚本引用https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/jingdong.js
 */

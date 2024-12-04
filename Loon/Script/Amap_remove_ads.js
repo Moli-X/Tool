@@ -1,3 +1,4 @@
+# 原链接 : https://kelee.one/Resource/Script/Amap/Amap_remove_ads.js
 /*
 引用地址 https://raw.githubusercontent.com/RuCu6/Loon/refs/heads/main/Scripts/amap.js
 */

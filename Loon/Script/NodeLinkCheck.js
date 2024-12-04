@@ -1,3 +1,4 @@
+# 原链接 : https://kelee.one/Resource/Script/NodeLinkCheck/NodeLinkCheck.js
 /*
 引用地址https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/NodeLinkCheck/Script/NodeLinkCheck.js
 */

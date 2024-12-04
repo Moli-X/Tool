@@ -1,3 +1,4 @@
+# 原链接 : https://kelee.one/Resource/Script/iQiYi_Video/iQiYi_Video_remove_ads.js
 /*
 引用脚本https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js
 */
