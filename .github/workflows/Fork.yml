@@ -488,13 +488,16 @@ jobs:
 
 
             # 修改 #!author 行（处理等号前可能有空格的情况）
-            sed -i 's|\(#!author\s*=\s*.*\)\[[^]]*\]|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
+            sed -i 's|\(#!author\s*=\s*.*\)\(\[\([^]]*\)\]\)*|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
+            # sed -i 's|\(#!author\s*=\s*.*\)\[[^]]*\]|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
             
             # 修改 #!homepage 行（处理等号前可能有空格的情况）
             sed -i 's|#!homepage\s*=\s*.*|#!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/'"$file"'|g' "$file"
 
-            # 直接修改 #!openUrl 为 #App链接
-            sed -i 's|^#!openUrl\s*=\s*\(.*\)|#App链接=\1|' "$file"
+
+            # 直接修改 #!openUrl 或 #!openurl 为 #App链接
+            sed -i 's|^#!open[uU]rl\s*=\s*\(.*\)|#App链接=\1|' "$file"
+            #sed -i 's|^#!openUrl\s*=\s*\(.*\)|#App链接=\1|' "$file"
           fi
         done
 
