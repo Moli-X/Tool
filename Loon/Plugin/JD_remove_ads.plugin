@@ -7,7 +7,7 @@
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/JD_remove_ads.plugin
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/JD_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JD.png
 #!date=2024-11-28 00:00:00
 
@@ -24,5 +24,4 @@ IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve
 http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/JD_remove_ads.js,requires-body=true,tag=移除京东广告
 
 [MitM]
-hostname=api.m.jd.com#App链接 = 
-#App链接 = 
+hostname=api.m.jd.com

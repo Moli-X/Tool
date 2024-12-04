@@ -7,7 +7,7 @@
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/iQiYi_Video_remove_ads.plugin
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/iQiYi_Video_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/iQiYi_Video.png
 #!date=2024-11-28 00:00:00
 
@@ -37,5 +37,4 @@ http-response ^https:\/\/search\.video\.iqiyi\.com\/q\? script-path=https://gith
 http-response ^https?:\/\/(kjp|t7z)\.cupid\.iqiyi\.com\/mixer\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除开屏和播放广告
 
 [MitM]
-hostname=-i.vip.iqiyi.com,*.iqiyi.com#App链接 = 
-#App链接 = 
+hostname=-i.vip.iqiyi.com,*.iqiyi.com
