@@ -254,19 +254,20 @@ jobs:
       if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool-repo/Loon/Plugin
-        mkdir -p Tool-repo/Loon/Script
+
         
         # 定义插件及其原链接
         declare -A plugins=(
-            ["Spotify"]="https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.plugin"
-            ["Boxjs"]="https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.plugin"
-            ["PinDuoDuo_remove_ads"]="https://kelee.one/Tool/Loon/Plugin/PinDuoDuo_remove_ads.plugin"
-            ["Amap_remove_ads"]="https://kelee.one/Tool/Loon/Plugin/Amap_remove_ads.plugin"
+            [Spotify]="https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.plugin"
+            [Boxjs]="https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.plugin"
+            [PinDuoDuo_remove_ads]="https://kelee.one/Tool/Loon/Plugin/PinDuoDuo_remove_ads.plugin"
+            [Amap_remove_ads]="https://kelee.one/Tool/Loon/Plugin/Amap_remove_ads.plugin"
             [NodeLinkCheck]="https://kelee.one/Tool/Loon/Plugin/NodeLinkCheck.Plugin"
             [iQiYi_Video_remove_ads]="https://kelee.one/Tool/Loon/Plugin/iQiYi_Video_remove_ads.plugin"
             [Tencent_Video_remove_ads]="https://kelee.one/Tool/Loon/Plugin/Tencent_Video_remove_ads.plugin"
             [JD_remove_ads]="https://kelee.one/Tool/Loon/Plugin/JD_remove_ads.plugin"
             [Taobao_remove_ads]="https://kelee.one/Tool/Loon/Plugin/Taobao_remove_ads.plugin"
+            [Keep_remove_ads]="https://kelee.one/Tool/Loon/Plugin/Keep_remove_ads.plugin"
         )
         
         # 下载插件并在文件中添加原链接
@@ -278,11 +279,14 @@ jobs:
             echo "# 原链接 : $url" | cat - "Tool-repo/Loon/Plugin/$plugin_name.plugin" > temp && mv temp "Tool-repo/Loon/Plugin/$plugin_name.plugin"
         done
     
-        # 编辑LOON模块
-        cd Tool-repo/Loon/Plugin
+    - name: 提取链接
+      if: env.LOON_SWITCH == 'true'  # 添加开关条件
+      run: |
+        mkdir -p Tool-repo/Loon/Plugin
+        mkdir -p Tool-repo/Loon/Script
+        cd Tool-repo/Loon/Plugin  # 进入 Plugin 目录
         for file in *.plugin; do
           if [ "$file" ] ; then
-            
             # 查找是否存在 https://kelee.one/Resource/Script/ 链接
             grep -o 'https://kelee\.one/Resource/Script/[^ ]*' "$file" | while read -r script_url; do
               
@@ -290,13 +294,23 @@ jobs:
               script_name=$(basename "$script_url")
               
               # 下载对应的 JS 文件
-              curl -A "Surge iOS/3367" -L -o "Tool-repo/Loon/Script/$script_name" "$script_url"
-              
-              # 将文件中的链接替换为新的 GitHub 链接
-              sed -i "s|$script_url|https://github.com/Moli-X/Tool/raw/X/Loon/Script/$script_name|g" "$file"
+              curl -A "Surge iOS/3367" -L -o "../Script/$script_name" "$script_url"
               
             done
-    
+          fi
+        done
+
+    - name: 编辑LOON模块
+      if: env.LOON_SWITCH == 'true'  # 添加开关条件
+      run: |
+        mkdir -p Tool-repo/Loon/Plugin
+        cd Tool-repo/Loon/Plugin  # 进入 Plugin 目录
+        for file in *.plugin; do
+          if [ "$file" ] ; then
+            
+            # 修改脚本链接
+            sed -i 's|https://kelee\.one/Resource/Script/[^/]*|https://github.com/Moli-X/Tool/raw/X/Loon/Script|g' "$file"
+            
             # 修改 #!author 行
             sed -i 's|\(#!author=.*\)\[[^]]*\]|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
             
