@@ -1,13 +1,13 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/PinDuoDuo_remove_ads.plugin
 #!name=拼多多去广告
 #!desc=移除开屏广告、底栏多多视频、会场入口、聊天页面精选推荐及推广，精简首页和个人中心。
-#!openUrl=https://apps.apple.com/app/id1044283059
+#App链接 = 
 #!author=RuCu6[https://github.com/RuCu6],ZenmoFeiShi[https://github.com/ZenmoFeiShi],可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/PinDuoDuo_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PinDuoDuo.png
 #!date=2024-11-28 00:00:00
 
@@ -36,7 +36,7 @@ DOMAIN,th.pinduoduo.com,REJECT
 ^https:\/\/api\.pinduoduo\.com\/search_hotquery\? reject-dict
 
 [Script]
-http-response ^https:\/\/api\.pinduoduo\.com\/api\/alexa\/homepage\/hub\? script-path=https://kelee.one/Resource/Script/PinDuoDuo/PinDuoDuo_remove_ads.js,requires-body=true,tag=精简首页
+http-response ^https:\/\/api\.pinduoduo\.com\/api\/alexa\/homepage\/hub\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/PinDuoDuo/PinDuoDuo_remove_ads.js,requires-body=true,tag=精简首页
 
 [MitM]
 hostname=api.pinduoduo.com,api.yangkeduo.com
