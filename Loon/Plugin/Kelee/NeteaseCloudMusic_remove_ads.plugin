@@ -1,0 +1,53 @@
+# 原链接 : https://kelee.one/Tool/Loon/Plugin/NeteaseCloudMusic_remove_ads.plugin
+#!name=网易云音乐去广告
+#!desc=过滤网易云音乐广告，并允许自定义界面。
+#!openUrl=https://apps.apple.com/app/id590338362
+#!author=RuCu6[https://github.com/RuCu6],Keywos[https://github.com/Keywos]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
+#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/NeteaseCloudMusic.png
+#!date=2024-12-02 01:13:20
+
+[Argument]
+MY=switch,false,true,tag=[隐藏底栏]漫游标签,desc=
+DT=switch,false,true,tag=[隐藏底部]笔记标签,desc=
+FX=switch,false,true,tag=[隐藏底部]发现标签,desc=
+PRGG=switch,false,true,tag=[隐藏首页]问候语,desc=
+PRRK=switch,false,true,tag=[隐藏首页]排行榜,desc=
+PRDRD=switch,false,true,tag=[隐藏首页]每日推荐,desc=
+PRSCVPT=switch,false,true,tag=[隐藏首页]推荐歌单,desc=
+PRST=switch,false,true,tag=[隐藏首页]最近常听,desc=
+PRRR=switch,false,true,tag=[隐藏首页]雷达歌单,desc=
+HMPR=switch,false,true,tag=[隐藏首页]音乐合伙人,desc=
+PRMST=switch,false,true,tag=[隐藏首页]推荐专属歌单,desc=
+PRCN=switch,false,true,tag=[隐藏首页]你的专属歌单,desc=
+
+[Rule]
+DOMAIN,httpdns.music.163.com,REJECT
+DOMAIN,httpdns.n.netease.com,REJECT
+DOMAIN,iadmat.nosdn.127.net,REJECT
+DOMAIN,iadmatapk.nosdn.127.net,REJECT
+DOMAIN,iadmusicmat.music.126.net,REJECT
+DOMAIN-SUFFIX,163jiasu.com,REJECT
+
+[Rewrite]
+^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/e?api\/(?:batch|v\d\/resource\/comment\/floor\/get|homepage\/block\/page|link\/page\/rcmd\/(block\/resource\/multi\/refresh|resource\/show)|user\/follow\/users\/mixed\/get|link\/home\/framework\/tab) header-del x-aeapi
+^https?:\/\/(ipv4|interface\d?)\.music\.163.com\/e?api\/ad reject-dict
+^https?:\/\/interface\d?\.music\.163\.com\/w?e?api\/(side-bar\/mini-program\/music-service\/account|delivery\/(batch-deliver|deliver)|moment\/tab\/info\/get|yunbei\/account\/entrance\/get) reject-dict
+^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(resource\/comments?\/musiciansaid|community\/friends\/fans-group\/artist\/group\/get|user\/sub\/artist|music\/songshare\/text\/recommend\/get|mine\/applet\/redpoint|resniche\/position\/play\/new\/get) reject-dict
+^https?:\/\/interface\d?\.music\.163.com\/w?e?api\/(search\/(chart|default|rcmd\/keyword|specialkeyword)|resource-exposure\/|activity\/bonus\/playpage\/time\/query) reject-dict
+^https?:\/\/interface\d?\.music\.163.com\/eapi\/(mlivestream\/entrance\/playpage|link\/(position\/show\/strategy|scene\/show)|ios\/version|v\d\/content\/exposure\/comment\/banner) reject-dict
+
+[Script]
+http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/(batch|v\d\/resource\/comment\/floor\/get) script-path=https://kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=评论区
+http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/(homepage\/block\/page|link\/page\/rcmd\/(resource\/show|block\/resource\/multi\/refresh)) script-path=https://kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,argument=[{PRGG},{PRRK},{PRDRD},{PRSCVPT},{PRST},{PRRR},{HMPR},{PRMST},{PRCN}],tag=主页
+http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/link\/home\/framework\/tab script-path=https://kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,argument=[{MY},{DT},{FX}],tag=底部选项卡
+http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/link\/page\/discovery\/resource\/show script-path=https://kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=发现页
+http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/link\/position\/show\/resource script-path=https://kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=我的页面
+http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/user\/follow\/users\/mixed\/get script-path=https://kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=显示未关注你的人
+
+[MitM]
+hostname=interface.music.163.com,interface?.music.163.com,ipv4.music.163.com
