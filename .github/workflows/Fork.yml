@@ -438,12 +438,13 @@ jobs:
     - name: 提取链接
       if: env.LOON_SWITCH == 'true'
       run: |
+        # 输出当前工作目录
         echo "当前工作目录：$(pwd)"
-    
+
         # 确保目录存在
         mkdir -p Loon/Plugin/Kelee
         mkdir -p Loon/Script/Kelee
-    
+
         # 检查目录是否创建成功
         if [ -d "Loon/Plugin/Kelee" ]; then
           echo "成功创建目录 Loon/Plugin/Kelee"
@@ -451,33 +452,34 @@ jobs:
           echo "目录创建失败 Loon/Plugin/Kelee"
           exit 1
         fi
-    
-        cd Loon/Plugin/Kelee
-    
 
-    
+        # 查看当前目录下的文件
+        echo "查看当前目录文件："
+        ls -l Loon/Plugin/Kelee
+
         # 用一个临时文件来存储所有提取到的 URL，进行去重
         temp_urls=$(mktemp)
-        
-        # 提取所有 .js 链接并保存到 temp_urls 文件中
-        for file in *.plugin; do
-          if [ "$file" ] ; then
+
+        # 提取所有 .plugin 文件中的 .js 链接
+        # 假设 .plugin 文件在 X/Loon/Plugin/Kelee 目录下
+        for file in Loon/Plugin/Kelee/*.plugin; do
+          if [ "$file" ]; then
+            echo "处理文件：$file"
             grep -o 'https://kelee\.one/Resource/Script/[^ ]*\.js' "$file" >> "$temp_urls"
           fi
         done
-    
+
         # 对 temp_urls 文件中的 URL 进行去重，并逐个下载
         sort -u "$temp_urls" | while read -r script_url; do
           script_name=$(basename "$script_url")
           echo "正在下载脚本：$script_url"
-          curl -A "Surge iOS/3367" -L -o "Tool-repo/Loon/Script/Kelee/$script_name" "$script_url" \
+          curl -A "Surge iOS/3367" -L -o "Loon/Script/Kelee/$script_name" "$script_url" \
             && echo "下载成功：$script_name" \
             || echo "下载失败：$script_url" >> error.log
         done
-    
+
         # 删除临时文件
         rm "$temp_urls"
-    
     
 
 
