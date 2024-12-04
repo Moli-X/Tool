@@ -40,11 +40,11 @@ DOMAIN,ykad-data.youku.com,REJECT
 ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad reject-dict
 
 [Script]
-http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.mine\.main\.cn script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//Cainiao_remove_ads.js,requires-body=true,tag=移除我的页面推广
-http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.m?show\.cn script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//Cainiao_remove_ads.js,requires-body=true,tag=移除首页推广
-http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(pickup\.empty\.page|protocol\.homepage)\.get\.cn script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//Cainiao_remove_ads.js,requires-body=true,tag=移除首页推广
-http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.conversation\.list\.cn script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//Cainiao_remove_ads.js,requires-body=true,tag=移除消息中心推广
-http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//Cainiao_remove_ads.js,requires-body=true,tag=移除菜鸟小程序推广
+http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.mine\.main\.cn script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Cainiao_remove_ads.js,requires-body=true,tag=移除我的页面推广
+http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.m?show\.cn script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Cainiao_remove_ads.js,requires-body=true,tag=移除首页推广
+http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(pickup\.empty\.page|protocol\.homepage)\.get\.cn script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Cainiao_remove_ads.js,requires-body=true,tag=移除首页推广
+http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.conversation\.list\.cn script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Cainiao_remove_ads.js,requires-body=true,tag=移除消息中心推广
+http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Cainiao_remove_ads.js,requires-body=true,tag=移除菜鸟小程序推广
 
 [MitM]
 hostname=cn-acs.m.cainiao.com,guide-acs.m.taobao.com

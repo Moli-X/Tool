@@ -19,6 +19,6 @@ URL-REGEX,"^http:\/\/pic08\.babytreeimg\.com\/knowledge\/2022\/0923\/\w+",REJECT
 URL-REGEX,"^http:\/\/plough\.babytree\.com\/plough\.do",REJECT-DICT
 
 [Script]
-http-response ^http:\/\/api\.babytree\.com\/bafconfigcenter_intf\/config\/get\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//BabyTree_remove_ads.js,requires-body=true,tag=调整整体配置
-http-response ^http:\/\/go\.babytree\.com\/go_pregnancy\/api\/(app_index\/get_app_tab|cms_column\/get_column_list|feeds\/get_index_feeds_list|user\/get_user_info)\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//BabyTree_remove_ads.js,requires-body=true,tag=移除各页面推广
-http-response ^http:\/\/go\.babytree\.com\/go_search\/api\/mobile_search_new\/search_index script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//BabyTree_remove_ads.js,requires-body=true,tag=移除搜索列表推广
+http-response ^http:\/\/api\.babytree\.com\/bafconfigcenter_intf\/config\/get\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BabyTree_remove_ads.js,requires-body=true,tag=调整整体配置
+http-response ^http:\/\/go\.babytree\.com\/go_pregnancy\/api\/(app_index\/get_app_tab|cms_column\/get_column_list|feeds\/get_index_feeds_list|user\/get_user_info)\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BabyTree_remove_ads.js,requires-body=true,tag=移除各页面推广
+http-response ^http:\/\/go\.babytree\.com\/go_search\/api\/mobile_search_new\/search_index script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BabyTree_remove_ads.js,requires-body=true,tag=移除搜索列表推广

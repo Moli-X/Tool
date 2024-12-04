@@ -12,11 +12,11 @@
 #!date=2024-11-28 00:00:00
 
 [Script]
-http-request ^https:\/\/api\.weibo\.cn\/2\/users\/show\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//VVebo_repair.js,tag=修复时间线
-http-request ^https:\/\/api\.weibo\.cn\/2\/statuses\/user_timeline\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//VVebo_repair.js,tag=修复时间线
-http-request ^https:\/\/api\.weibo\.cn\/2\/remind\/unread_count\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//VVebo_repair.js,tag=修复时间线
-http-response ^https:\/\/api\.weibo\.cn\/2\/profile\/statuses\/tab\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//VVebo_repair.js,requires-body=true,tag=修复时间线
-http-response ^https:\/\/api\.weibo\.cn\/2\/cardlist\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//VVebo_repair.js,requires-body=true,tag=修复我的页面
+http-request ^https:\/\/api\.weibo\.cn\/2\/users\/show\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VVebo_repair.js,tag=修复时间线
+http-request ^https:\/\/api\.weibo\.cn\/2\/statuses\/user_timeline\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VVebo_repair.js,tag=修复时间线
+http-request ^https:\/\/api\.weibo\.cn\/2\/remind\/unread_count\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VVebo_repair.js,tag=修复时间线
+http-response ^https:\/\/api\.weibo\.cn\/2\/profile\/statuses\/tab\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VVebo_repair.js,requires-body=true,tag=修复时间线
+http-response ^https:\/\/api\.weibo\.cn\/2\/cardlist\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VVebo_repair.js,requires-body=true,tag=修复我的页面
 
 [MitM]
 hostname=api.weibo.cn

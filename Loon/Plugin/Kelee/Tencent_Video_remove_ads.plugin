@@ -33,7 +33,7 @@ URL-REGEX,"^http:\/\/apd-\w+\.v\.smtcdns\.com\/(defaultts|omts|vmind\.qqvideo)\.
 ^https?:\/\/vv\.video\.qq\.com\/(diff|get)vmind reject-dict
 
 [Script]
-http-request ^https?:\/\/vv\.video\.qq\.com\/getvinfo script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//replace-body.js,requires-body=true,argument="&sppreviewtype=\d(.*)&spsrt=\d->&sppreviewtype=0$1&spsrt=0",tag=移除广告
+http-request ^https?:\/\/vv\.video\.qq\.com\/getvinfo script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/replace-body.js,requires-body=true,argument="&sppreviewtype=\d(.*)&spsrt=\d->&sppreviewtype=0$1&spsrt=0",tag=移除广告
 
 [MitM]
 hostname=vv.video.qq.com

@@ -27,7 +27,7 @@ DOMAIN,tmeadcomm.y.qq.com,REJECT
 ^https:\/\/iosapi\.peiyinxiu\.com\/api\/Union\/HomeData response-body-json-del obj.data
 
 [Script]
-http-response ^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Film\/GetConfigValue script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//DubbingShow_remove_ads.js,requires-body=true,tag=移除首页底部弹窗
+http-response ^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Film\/GetConfigValue script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/DubbingShow_remove_ads.js,requires-body=true,tag=移除首页底部弹窗
 
 [MitM]
 hostname=iosapi.peiyinxiu.com

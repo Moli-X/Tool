@@ -21,7 +21,7 @@ DOMAIN,gather.colorfulclouds.net,REJECT
 ^https:\/\/starplucker\.cyapi\.cn\/v3\/(config\/cypage\/\w+\/conditions|notification\/message_center|operation\/homefeatures) reject-dict
 
 [Script]
-http-response ^https:\/\/(wrapper\.cyapi\.cn|api\.caiyunapp\.com|cdn-w\.caiyunapp\.com)\/v1\/activity\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//ColorfulClouds_remove_ads.js,requires-body=true,tag=彩云天气去广告
+http-response ^https:\/\/(wrapper\.cyapi\.cn|api\.caiyunapp\.com|cdn-w\.caiyunapp\.com)\/v1\/activity\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/ColorfulClouds_remove_ads.js,requires-body=true,tag=彩云天气去广告
 
 [MitM]
 hostname=biz.cyapi.cn,starplucker.cyapi.cn,api.caiyunapp.com,cdn-w.caiyunapp.com

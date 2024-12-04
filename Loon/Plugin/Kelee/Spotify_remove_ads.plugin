@@ -12,8 +12,8 @@
 #!date=2024-11-28 00:00:00
 
 [Script]
-http-request ^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//Spotify_remove_ads.js,timeout=10,tag=JSON处理
-http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//Spotify_proto.js,requires-body=true,binary-body-mode=true,timeout=10,tag=Proto处理
+http-request ^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Spotify_remove_ads.js,timeout=10,tag=JSON处理
+http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Spotify_proto.js,requires-body=true,binary-body-mode=true,timeout=10,tag=Proto处理
 
 [MitM]
 hostname=spclient.wg.spotify.com

@@ -22,8 +22,8 @@
 ^https:\/\/app\.missevan\.com\/site\/config$ response-body-json-del info.teenager_popup_mode
 
 [Script]
-http-response ^https:\/\/app\.missevan\.com\/site\/icons\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//CatEarFM_remove_ads.js,requires-body=true,tag=精简首页顶部入口
-http-response ^https:\/\/app\.missevan\.com\/discovery\/list$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//CatEarFM_remove_ads.js,requires-body=true,tag=精简发现页面
+http-response ^https:\/\/app\.missevan\.com\/site\/icons\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CatEarFM_remove_ads.js,requires-body=true,tag=精简首页顶部入口
+http-response ^https:\/\/app\.missevan\.com\/discovery\/list$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CatEarFM_remove_ads.js,requires-body=true,tag=精简发现页面
 
 [MitM]
 hostname=app.missevan.com,fm.missevan.com

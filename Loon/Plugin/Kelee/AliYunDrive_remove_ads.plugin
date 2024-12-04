@@ -19,8 +19,8 @@ IP-CIDR,203.107.1.1/24,REJECT,no-resolve
 ^https:\/\/api\.alipan\.com\/adrive\/v1\/file\/getTopFolders reject-dict
 
 [Script]
-http-response ^https:\/\/(biz)?api\.alipan\.com\/apps\/v\d\/users?\/home\/(news|widgets) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//AliYunDrive_remove_ads.js,requires-body=true,tag=移除阿里云盘广告
-http-response ^https:\/\/member\.alipan\.com\/v1\/users\/onboard_list script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//AliYunDrive_remove_ads.js,requires-body=true,tag=移除阿里云盘广告
+http-response ^https:\/\/(biz)?api\.alipan\.com\/apps\/v\d\/users?\/home\/(news|widgets) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AliYunDrive_remove_ads.js,requires-body=true,tag=移除阿里云盘广告
+http-response ^https:\/\/member\.alipan\.com\/v1\/users\/onboard_list script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AliYunDrive_remove_ads.js,requires-body=true,tag=移除阿里云盘广告
 
 [MitM]
 hostname=api.alipan.com,member.alipan.com,bizapi.alipan.com

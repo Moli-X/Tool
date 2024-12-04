@@ -36,7 +36,7 @@ DOMAIN,th.pinduoduo.com,REJECT
 ^https:\/\/api\.pinduoduo\.com\/search_hotquery\? reject-dict
 
 [Script]
-http-response ^https:\/\/api\.pinduoduo\.com\/api\/alexa\/homepage\/hub\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//PinDuoDuo_remove_ads.js,requires-body=true,tag=精简首页
+http-response ^https:\/\/api\.pinduoduo\.com\/api\/alexa\/homepage\/hub\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/PinDuoDuo_remove_ads.js,requires-body=true,tag=精简首页
 
 [MitM]
 hostname=api.pinduoduo.com,api.yangkeduo.com

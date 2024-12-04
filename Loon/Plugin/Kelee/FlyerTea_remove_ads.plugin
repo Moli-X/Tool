@@ -18,8 +18,8 @@
 ^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=getdata reject-dict
 
 [Script]
-http-response ^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?version=5 script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//FlyerTea_remove_ads.js,requires-body=true,tag=移除板块广告
-http-response ^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=plugin&id=k_misign:sign script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//FlyerTea_remove_ads.js,requires-body=true,tag=移除签到弹窗广告
+http-response ^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?version=5 script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FlyerTea_remove_ads.js,requires-body=true,tag=移除板块广告
+http-response ^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=plugin&id=k_misign:sign script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FlyerTea_remove_ads.js,requires-body=true,tag=移除签到弹窗广告
 
 [MitM]
 hostname=www.flyert.com.cn,ptf.flyertrip.com
