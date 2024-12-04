@@ -1,27 +1,31 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/Script-Hub.plugin
-#!name=Script-Hub
-#!desc=将其他工具的Rewrite、Rule和JavaScript资源转换为Loon能识别的格式，使用前请在本插件的详情页面为[PROXY]项分配代理策略。在插件列表中点击此插件上的链接查看使用方法。
-#App链接=https://script.hub/
-#!author=xream[https://github.com/xream],Keywos[https://github.com/Keywos],CKYB[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md],小白脸
-#!tag=资源转换
-#!system=
-#!system_version=
-#!loon_version=3.2.1(749)
+# 原链接 : https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.loon.plugin
+#!name=Script Hub: 重写 & 规则集转换
+#!desc=https://script.hub
+#!author=@小白脸 @xream @keywos @ckyb
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script-Hub.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Script-Hub.png
-#!date=2024-11-28 00:00:00
-#!select=ScriptHub通知,开启通知,关闭通知,跟随链接
+#!openurl=https://script.hub/
+#!icon=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/assets/icon-dark.png
+#!select=启用插件随机图标, 启用, 禁用
+#!select=替换原始插件图标, 启用, 禁用
+#!select=插件随机图标合集, Doraemon(100P),Shin-chan(100P),Weslie-Wolffy(100P),Tom-Jerry(100P),Genshin(160P),Shin-Miya(100P),OnePiece(100P),Stitch(100P),Pokemon(112P),PokemonGif(56P),Digimon(56P),Transformers(48P),Maruko-chan(100P),AttackOnTitan(84P),Naruto(284P)
+#!select=ScriptHub通知, 开启通知, 关闭通知, 跟随链接
 #!input=Parser_body_max
 #!input=Parser_http_timeout
+
+[General]
+force-http-engine-hosts = script.hub, *.script.hub
 
 [Rule]
 DOMAIN,scripthub.vercel.app,PROXY
 
 [Script]
-http-request ^https?:\/\/script\.hub\/($|edit\/|reload) script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-hub.beta.js,timeout=120,tag=前端界面
-http-request ^https?:\/\/script\.hub\/file\/_start_\/.+type=(?:qx-rewrite|surge-module|loon-plugin|all-module) script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/Rewrite-Parser.beta.js,timeout=120,tag=Rewrite转换
-http-request ^https?:\/\/script\.hub\/file\/_start_\/.+type=rule-set script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/rule-parser.beta.js,timeout=120,tag=Rule转换
-http-request ^https?:\/\/script\.hub\/convert\/ script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-converter.beta.js,timeout=120,tag=JavaScript转换
+http-request ^https?:\/\/script\.hub\/($|edit\/|reload) script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-hub.js, timeout=300, tag=Script Hub: 前端
 
-[MitM]
-hostname=script.hub,*.script.hub
+http-request ^https?:\/\/script\.hub\/file\/_start_\/.+type=(?:qx-rewrite|surge-module|loon-plugin|all-module) script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/Rewrite-Parser.js, timeout=300, tag=Script Hub: 重写转换
+
+http-request ^https?:\/\/script\.hub\/file\/_start_\/.+type=rule-set script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/rule-parser.js, timeout=300, tag=Script Hub: 规则集转换
+
+http-request ^https?:\/\/script\.hub\/convert\/ script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-converter.js, timeout=300, tag=Script Hub: 脚本转换
+
+[MITM]
+hostname = script.hub, *.script.hub
