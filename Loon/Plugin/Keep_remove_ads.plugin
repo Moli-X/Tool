@@ -7,7 +7,7 @@
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Keep_remove_ads.plugin
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Keep_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Keep.png
 #!date=2024-11-28 00:00:00
 
@@ -27,4 +27,4 @@ DOMAIN,hc-ssp.sm.cn,REJECT
 http-response ^https:\/\/api\.gotokeep\.com\/config\/v3\/basic script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Keep_remove_ads.js,requires-body=true,tag=移除首页活动标签
 
 [MitM]
-hostname=api.gotokeep.com,kad.gotokeep.com
+hostname=api.gotokeep.com,kad.gotokeep.com#App链接 = 

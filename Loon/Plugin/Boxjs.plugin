@@ -3,7 +3,7 @@
 #!desc=Data manager
 #App链接 = 
 #!author=chavyleung
-#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Boxjs.plugin
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Boxjs.plugin
 #!icon=https://raw.githubusercontent.com/chavyleung/scripts/master/box/icons/BoxJs.png
 
 [Rule]
@@ -14,3 +14,4 @@ http-request ^https?:\/\/(.+\.)?boxjs\.(com|net) script-path=https://raw.githubu
 
 [MITM]
 hostname = boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net
+#App链接 = 

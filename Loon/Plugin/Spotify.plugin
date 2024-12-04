@@ -3,7 +3,7 @@
 #!desc = Spotify 增强及双语歌词
 #App链接 = 
 #!author = VirgilClyne[https://github.com/VirgilClyne]
-#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Spotify.plugin
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Spotify.plugin
 #!icon = https://github.com/DualSubs/Spotify/raw/main/src/assets/icon_rounded.png
 #!tag = 🍿️ DualSubs
 #!system = iOS,iPadOS,macOS
@@ -32,3 +32,4 @@ http-response ^https?:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/\
 
 [MITM]
 hostname = api.spotify.com, spclient.wg.spotify.com
+#App链接 = 
