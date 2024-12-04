@@ -316,10 +316,9 @@ jobs:
           if [ "$file" ] ; then
 
             # 修改脚本链接
-            sed -i 's|https://kelee\.one/Resource/Script|https://github.com/Moli-X/Tool/raw/X/Loon/Script|g' "$file"
+            sed -i 's|https://kelee\.one/Resource/Script/[^/]*|https://github.com/Moli-X/Tool/raw/X/Loon/Script|g' "$file"
             # 修改 #!author 行
-            sed -i 's|\(#!author=[^[]*\[\)[^\]]*\]|\1https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
-
+            sed -i 's|\(#!author=.*\)\[[^]]*\]|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
             # 修改 #!homepage 行
             sed -i 's|#!homepage[ ]*=.*|#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/'"$file"'|g' "$file"
             
