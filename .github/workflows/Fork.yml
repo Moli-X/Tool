@@ -257,7 +257,7 @@ jobs:
     
         # 定义插件及其原链接
         declare -A plugins=(
-            ["Spotify"]="https://github.com/DualSubs/Spotify/releases/latest/download/Spotify.plugin"
+            ["Spotify"]="https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.plugin"
             ["Boxjs"]="https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.plugin"
             ["PinDuoDuo_remove_ads"]="https://kelee.one/Tool/Loon/Plugin/PinDuoDuo_remove_ads.plugin"
             ["Amap_remove_ads"]="https://kelee.one/Tool/Loon/Plugin/Amap_remove_ads.plugin"
