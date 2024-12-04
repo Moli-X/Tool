@@ -474,7 +474,7 @@ jobs:
 
 
     - name: 编辑LOON模块
-      if: env.LOON_SWITCH == 'P'  # 添加开关条件
+      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool-repo/Loon/Plugin/Kelee
         cd Tool-repo/Loon/Plugin/Kelee  # 进入 Plugin 目录
