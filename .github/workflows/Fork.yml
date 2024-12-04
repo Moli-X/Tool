@@ -1,4 +1,4 @@
-# 2024-12-04
+# 2024-11-19
 
 name: Fork & Edit
 
@@ -283,7 +283,6 @@ jobs:
       if: env.LOON_SWITCH == 'true'
       run: |
         mkdir -p Tool-repo/Loon/Script/Kelee
-        rm -rf Tool-repo/Loon/Script/Kelee/*
         cd Tool-repo/Loon/Plugin/Kelee
         for file in *.plugin; do
           if [ "$file" ] ; then
