@@ -1,13 +1,13 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Douyu_remove_ads.plugin
 #!name=斗鱼去广告
 #!desc=移除开屏、首页视频流、首页轮播图广告，移除直播间悬浮窗。
-#!openUrl=https://apps.apple.com/app/id863882795
-#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
+#App链接=https://apps.apple.com/app/id863882795
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Douyu_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Douyu.png
 #!date=2024-11-28 00:00:00
 
@@ -28,7 +28,7 @@ DOMAIN,stun1.qvb.qcloud.com,REJECT
 ^https:\/\/venus\.douyucdn\.cn\/venus\/config\/static\/update.+keyCodeSet=flow_config response-body-json-replace greatGodGameSitterSwitch 0 followMoreAnchorEntrance 0 sdklivebanner 0 homeActFloatSwitch 0 bringGoodsSwitch 0 qqGameSwitch 0
 
 [Script]
-http-response ^https:\/\/apiv2\.douyucdn\.cn\/mgapi\/livenc\/home\/getRecV3 script-path=https://kelee.one/Resource/Script/Douyu/Douyu_remove_ads.js,requires-body=true,tag=移除首页轮播图和视频流广告
+http-response ^https:\/\/apiv2\.douyucdn\.cn\/mgapi\/livenc\/home\/getRecV3 script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Douyu_remove_ads.js,requires-body=true,tag=移除首页轮播图和视频流广告
 
 [MitM]
 hostname=rtbapi.douyucdn.cn,apiv2.douyucdn.cn,venus.douyucdn.cn

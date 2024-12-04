@@ -1,13 +1,13 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/UnionPay_remove_ads_with_ssl_unpinning.plugin
 #!name=云闪付去广告
 #!desc=过滤银联云闪付广告，需要IPA签名注入方可使用，仅支持云闪付10.1.2版。App Store用户请勿使用此插件，务必点击下方主页链接查看详细教程。
-#!openUrl=https://apps.apple.com/app/id600273928
-#!author=RuCu6[https://github.com/RuCu6]
+#App链接=https://apps.apple.com/app/id600273928
+#!author=RuCu6[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage=https://getupnote.com/share/notes/zSn1ShBmzNYISKcTgjXE5oHMrNf2/34bf3aad-7872-497d-b239-198e27e8c84c
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/UnionPay_remove_ads_with_ssl_unpinning.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/UnionPay.png
 #!date=2024-11-28 00:00:00
 
@@ -20,9 +20,9 @@ DOMAIN,tysdk.95516.com,REJECT
 ^https:\/\/wallet\.95516\.com(:10533)?\/s\/wl\/icon\/large\/1 reject
 
 [Script]
-http-response ^https:\/\/base\.95516\.com\/app\/inApp\/sys\/appShowGroup\/ script-path=https://kelee.one/Resource/Script/UnionPay/UnionPay_remove_ads_with_ssl_unpinning.js,requires-body=true,tag=移除云闪付推广
-http-response ^https:\/\/account\.95516\.com\/fortune\/inApp\/common\/ script-path=https://kelee.one/Resource/Script/UnionPay/UnionPay_remove_ads_with_ssl_unpinning.js,requires-body=true,tag=移除云闪付推广
-http-response ^https:\/\/content\.95516\.com\/koala-pre\/koala\/(recommend\/hotList|right\/queryAllRights) script-path=https://kelee.one/Resource/Script/UnionPay/UnionPay_remove_ads_with_ssl_unpinning.js,requires-body=true,tag=移除云闪付推广
+http-response ^https:\/\/base\.95516\.com\/app\/inApp\/sys\/appShowGroup\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/UnionPay_remove_ads_with_ssl_unpinning.js,requires-body=true,tag=移除云闪付推广
+http-response ^https:\/\/account\.95516\.com\/fortune\/inApp\/common\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/UnionPay_remove_ads_with_ssl_unpinning.js,requires-body=true,tag=移除云闪付推广
+http-response ^https:\/\/content\.95516\.com\/koala-pre\/koala\/(recommend\/hotList|right\/queryAllRights) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/UnionPay_remove_ads_with_ssl_unpinning.js,requires-body=true,tag=移除云闪付推广
 
 [MitM]
 hostname=account.95516.com,base.95516.com,content.95516.com

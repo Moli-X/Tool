@@ -1,13 +1,13 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/FleaMarket_remove_ads.plugin
 #!name=闲鱼去广告
 #!desc=移除开屏广告、商品信息流广告、搜索栏填充词、我的页面推广横幅。
-#!openUrl=https://apps.apple.com/app/id510909506
-#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md],ZenMoFiShi[https://github.com/ZenmoFeiShi],RuCu6[https://github.com/RuCu6]
+#App链接=https://apps.apple.com/app/id510909506
+#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md],ZenMoFiShi[https://github.com/ZenmoFeiShi],RuCu6[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/FleaMarket_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/FleaMarket.png
 #!date=2024-11-28 00:00:00
 
@@ -28,10 +28,10 @@ AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch"),(USER-AGENT,"%E9%97%B2%E9%
 ^https:\/\/h5\.m\.goofish\.com\/wow\/moyu\/moyu-project\/[\w-]*search[\w-]*\/pages\/ reject-200
 
 [Script]
-http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.idle\.user\.page\.my\.adapter\/ script-path=https://kelee.one/Resource/Script/FleaMarket/FleaMarket_remove_ads.js,requires-body=true,tag=移除我的页面推广
-http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ script-path=https://kelee.one/Resource/Script/FleaMarket/FleaMarket_remove_ads.js,requires-body=true,tag=移除首页信息流推广
-http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/ script-path=https://kelee.one/Resource/Script/FleaMarket/FleaMarket_remove_ads.js,requires-body=true,tag=移除首页顶部标签推广
-http-response ^https:\/\/g-(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\/ script-path=https://kelee.one/Resource/Script/FleaMarket/FleaMarket_remove_ads.js,requires-body=true,tag=移除搜索结果广告
+http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.idle\.user\.page\.my\.adapter\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FleaMarket_remove_ads.js,requires-body=true,tag=移除我的页面推广
+http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FleaMarket_remove_ads.js,requires-body=true,tag=移除首页信息流推广
+http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FleaMarket_remove_ads.js,requires-body=true,tag=移除首页顶部标签推广
+http-response ^https:\/\/g-(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FleaMarket_remove_ads.js,requires-body=true,tag=移除搜索结果广告
 
 [MitM]
 hostname=acs.m.goofish.com,g-acs.m.goofish.com

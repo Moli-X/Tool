@@ -1,13 +1,13 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/BiliComic_remove_ads.plugin
 #!name=哔哩哔哩漫画去广告
 #!desc=移除开屏广告、应用内悬浮窗、各类横幅广告、你可能喜欢、小说推荐、首页弹窗，精简首页标签、底栏活动按钮和我的页面。
-#!openUrl=https://apps.apple.com/app/id1426252715
-#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
+#App链接=https://apps.apple.com/app/id1426252715
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/BiliComic_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BiliComic.png
 #!date=2024-11-28 00:00:00
 
@@ -29,8 +29,8 @@ URL-REGEX,"^http:\/\/119\.29\.29\.29\/d",REJECT
 ^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/ListFlash reject-dict
 
 [Script]
-http-response ^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetClassPageAllTabs script-path=https://kelee.one/Resource/Script/BiliComic/BiliComic_remove_ads.js,requires-body=true,tag=移除顶部标签
-http-response ^https:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.User\/UCenterConf script-path=https://kelee.one/Resource/Script/BiliComic/BiliComic_remove_ads.js,requires-body=true,tag=精简我的页面
+http-response ^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetClassPageAllTabs script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BiliComic_remove_ads.js,requires-body=true,tag=移除顶部标签
+http-response ^https:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.User\/UCenterConf script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BiliComic_remove_ads.js,requires-body=true,tag=精简我的页面
 
 [MitM]
 hostname=manga.bilibili.com

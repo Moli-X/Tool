@@ -1,13 +1,13 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/DiDi_remove_ads.plugin
 #!name=滴滴出行去广告
 #!desc=移除开屏广告、精简首页、底栏和我的页面。
-#!openUrl=https://apps.apple.com/app/id554499054
-#!author=ZenmoFeiShi[https://github.com/ZenmoFeiShi],可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
+#App链接=https://apps.apple.com/app/id554499054
+#!author=ZenmoFeiShi[https://github.com/ZenmoFeiShi],可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/DiDi_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DiDi.png
 #!date=2024-11-28 00:00:00
 
@@ -28,11 +28,11 @@ AND,((IP-ASN,63646,no-resolve),(DEST-PORT,25641),(PROTOCOL,TCP)),REJECT
 ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/other\/slow reject-dict
 
 [Script]
-http-response ^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me script-path=https://kelee.one/Resource/Script/DiDi/DiDi_remove_ads.js,requires-body=true,tag=移除广告
-http-response ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core script-path=https://kelee.one/Resource/Script/DiDi/DiDi_remove_ads.js,requires-body=true,tag=移除广告
-http-response ^https:\/\/api\.udache\.com\/gulfstream\/pre-sale\/v1\/other\/pGetSceneList script-path=https://kelee.one/Resource/Script/DiDi/DiDi_remove_ads.js,requires-body=true,tag=移除广告
-http-response ^https:\/\/conf\.diditaxi\.com\.cn\/ota\/na\/yuantu\/infoList script-path=https://kelee.one/Resource/Script/DiDi/DiDi_remove_ads.js,requires-body=true,tag=移除广告
-http-response ^https:\/\/api\.udache\.com\/gulfstream\/passenger-center\/v2\/other\/pInTripLayout script-path=https://kelee.one/Resource/Script/DiDi/DiDi_remove_ads.js,requires-body=true,tag=移除广告
+http-response ^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/DiDi_remove_ads.js,requires-body=true,tag=移除广告
+http-response ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/DiDi_remove_ads.js,requires-body=true,tag=移除广告
+http-response ^https:\/\/api\.udache\.com\/gulfstream\/pre-sale\/v1\/other\/pGetSceneList script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/DiDi_remove_ads.js,requires-body=true,tag=移除广告
+http-response ^https:\/\/conf\.diditaxi\.com\.cn\/ota\/na\/yuantu\/infoList script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/DiDi_remove_ads.js,requires-body=true,tag=移除广告
+http-response ^https:\/\/api\.udache\.com\/gulfstream\/passenger-center\/v2\/other\/pInTripLayout script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/DiDi_remove_ads.js,requires-body=true,tag=移除广告
 
 [MitM]
 hostname=common.diditaxi.com.cn,freight.xiaojukeji.com,daijia.kuaidadi.com,162.14.157.*,ct.xiaojukeji.com,res.xiaojukeji.com,conf.diditaxi.com.cn ,api.udache.com ,123.207.209.*,112.53.55.225,120.241.142.*,120.241.143.*,116.85.2.*,116.85.3.*,139.199.240.84
