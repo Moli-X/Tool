@@ -2,12 +2,12 @@
 #!name=酷安去广告
 #!desc=过滤酷安广告
 #!openUrl=https://apps.apple.com/app/id1422581869
-#!author=RuCu6[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!author=RuCu6[https://github.com/RuCu6]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/CoolApk_remove_ads.plugin
+#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CoolApk.png
 #!date=2024-11-28 00:00:00
 
@@ -15,9 +15,9 @@
 ^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch reject-dict
 
 [Script]
-http-response ^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/CoolApk_remove_ads.js,requires-body=true,tag=移除酷安广告
-http-response ^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8|init) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/CoolApk_remove_ads.js,requires-body=true,tag=移除酷安广告
-http-response ^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/CoolApk_remove_ads.js,requires-body=true,tag=移除酷安广告
+http-response ^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\? script-path=https://kelee.one/Resource/Script/CoolApk/CoolApk_remove_ads.js,requires-body=true,tag=移除酷安广告
+http-response ^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8|init) script-path=https://kelee.one/Resource/Script/CoolApk/CoolApk_remove_ads.js,requires-body=true,tag=移除酷安广告
+http-response ^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\? script-path=https://kelee.one/Resource/Script/CoolApk/CoolApk_remove_ads.js,requires-body=true,tag=移除酷安广告
 
 [MitM]
 hostname=api.coolapk.com

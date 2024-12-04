@@ -2,12 +2,12 @@
 #!name=YouTube去广告
 #!desc=移除YouTube视频、瀑布流、搜索和Shorts中的广告，移除底部的上传按钮，增加画中画及字幕翻译功能。移除YouTube Music底部的上传、选段和升级按钮，增加歌词翻译，支持二者的后台播放。此插件需要启用MitM over HTTP/2和QUIC回退保护。支持Premium订阅用户使用，不支持tvOS设备。
 #!openUrl=https://apps.apple.com/app/id544007664
-#!author=Maasea[https://github.com/Maasea],VirgilClyne[https://github.com/VirgilClyne],Choler[https://github.com/Choler],DivineEngine[https://github.com/DivineEngine],app2smile[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!author=Maasea[https://github.com/Maasea],VirgilClyne[https://github.com/VirgilClyne],Choler[https://github.com/Choler],DivineEngine[https://github.com/DivineEngine],app2smile[https://github.com/app2smile]
 #!tag=去广告
 #!system=iOS,iPadOS,macOS
 #!system_version=15
 #!loon_version=3.2.4(787)
-#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/YouTube_remove_ads.plugin
+#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YouTube.png
 #!date=2024-11-28 02:07:31
 
@@ -26,7 +26,7 @@ AND,((DOMAIN-SUFFIX,youtubei.googleapis.com),(PROTOCOL,QUIC)),REJECT
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad mock-response-body data-type=text status-code=502
 
 [Script]
-http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/YouTube_remove_ads/YouTube_remove_ads_response.js,requires-body=true,binary-body-mode=true,argument=[{blockUpload},{blockImmersive},{captionLang},{lyricLang},{debug}],tag=YouTube去广告
+http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch) script-path=https://kelee.one/Resource/Script/YouTube/YouTube_remove_ads/YouTube_remove_ads_response.js,requires-body=true,binary-body-mode=true,argument=[{blockUpload},{blockImmersive},{captionLang},{lyricLang},{debug}],tag=YouTube去广告
 
 [MitM]
 hostname=*.googlevideo.com,youtubei.googleapis.com

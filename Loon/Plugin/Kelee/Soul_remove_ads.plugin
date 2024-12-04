@@ -2,12 +2,12 @@
 #!name=Soul去广告
 #!desc=移除开屏广告、移除话题页面热Soul话题、移除评论区礼物榜、移除更新提示、移除青少年弹窗、移除我的页面推广、移除悬浮部件。
 #!openUrl=https://apps.apple.com/app/id1032287195
-#!author=ZenmoFeiShi[https://github.com/ZenmoFeiShi],RuCu6[https://github.com/RuCu6],可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!author=ZenmoFeiShi[https://github.com/ZenmoFeiShi],RuCu6[https://github.com/RuCu6],可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Soul_remove_ads.plugin
+#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Soul.png
 #!date=2024-11-28 00:00:00
 
@@ -33,7 +33,7 @@ IP-CIDR,121.196.197.147/32,REJECT,no-resolve
 ^https:\/\/(?:api-\w+|gateway-mobile-gray|post)\.soulapp\.cn\/(?:furion\/position\/content|hot\/soul\/rank|mobile\/app\/version\/queryIos|official\/scene\/module|teenager\/config|v2\/post\/gift\/list|v\d\/post\/homepage\/guide\/card) response-body-json-del data
 
 [Script]
-http-response ^https:\/\/(?:api-\w+|chat-live|post)\.soulapp\.cn\/(?:chat\/limitInfo|chatroom\/chatClassifyRoomList|homepage\/diamond\/position\/info|v2\/post\/recSquare\/subTabs|v6\/planet\/config) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Soul_remove_ads.js,requires-body=true,tag=移除Soul广告
+http-response ^https:\/\/(?:api-\w+|chat-live|post)\.soulapp\.cn\/(?:chat\/limitInfo|chatroom\/chatClassifyRoomList|homepage\/diamond\/position\/info|v2\/post\/recSquare\/subTabs|v6\/planet\/config) script-path=https://kelee.one/Resource/Script/Soul/Soul_remove_ads.js,requires-body=true,tag=移除Soul广告
 
 [MitM]
 hostname=api*.soulapp.cn,gateway-mobile-gray.soulapp.cn,post.soulapp.cn,ssp.soulapp.cn

@@ -2,12 +2,12 @@
 #!name=小象超市去广告
 #!desc=移除开屏广告、应用内弹窗、猜你想买、横幅推广和悬浮窗。
 #!openUrl=https://apps.apple.com/app/id1444411068
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/iMaiCai_remove_ads.plugin
+#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/iMaiCai.png
 #!date=2024-11-28 00:00:00
 
@@ -21,7 +21,7 @@
 ^https:\/\/businessapi\.ksedt\.com\/signupindex\/jxlist reject-dict
 
 [Script]
-http-response ^https:\/\/portal-portm\.meituan\.com\/horn_ios\/mergeRequest script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/iMaiCai_remove_ads.js,requires-body=true,tag=移除下发广告
+http-response ^https:\/\/portal-portm\.meituan\.com\/horn_ios\/mergeRequest script-path=https://kelee.one/Resource/Script/iMaiCai/iMaiCai_remove_ads.js,requires-body=true,tag=移除下发广告
 
 [MitM]
 hostname=portal-portm.meituan.com,mall.meituan.com,businessapi.ksedt.com

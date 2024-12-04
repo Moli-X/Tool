@@ -2,12 +2,12 @@
 #!name=酷我音乐去广告
 #!desc=移除开屏广告、各类弹窗、悬浮窗、各类横幅广告、信息流广告、歌词评论区广告和播放器界面广告，精简侧边栏。
 #!openUrl=https://apps.apple.com/app/id588673713
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kuwo_remove_ads.plugin
+#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Kuwo.png
 #!date=2024-11-28 00:00:00
 
@@ -44,7 +44,7 @@ URL-REGEX,"^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/album\/adBar\/",REJECT-DICT
 ^https:\/\/appi\.kuwo\.cn\/kuwopay\/personal\/cells reject-dict
 
 [Script]
-http-response ^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/tingshu\/index\/radio script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Kuwo_remove_ads.js,requires-body=true,tag=移除听书页面广告
+http-response ^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/tingshu\/index\/radio script-path=https://kelee.one/Resource/Script/Kuwo/Kuwo_remove_ads.js,requires-body=true,tag=移除听书页面广告
 
 [MitM]
 hostname=appi.kuwo.cn,mc.tencentmusic.com,vip*.kuwo.cn,tingshu.kuwo.cn

@@ -2,12 +2,12 @@
 #!name=GitHub加速
 #!desc=此插件通过重定向至镜像站的方式解决GitHub的RAW资源下载困难的问题，使用前需要配置此插件的镜像源。由于镜像站均为热心网友提供，可能无法保证服务的长期可用性。若开启此插件后无法下载RAW资源，可尝试切换镜像源，或者禁用此插件。
 #!openUrl=https://apps.apple.com/app/id1477376905
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
 #!tag=反代加速
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Switch_github_mirror.plugin
+#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/GitHub.png
 #!select=镜像源,A镜像,B镜像
 #!date=2024-11-28 00:00:00
@@ -18,7 +18,7 @@ DOMAIN,hub.incept.pw,DIRECT
 DOMAIN,raw.kkgithub.com,DIRECT
 
 [Script]
-http-request ^https:\/\/raw\.githubusercontent\.com\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Switch_github_mirror.js,tag=GitHub加速
+http-request ^https:\/\/raw\.githubusercontent\.com\/ script-path=https://kelee.one/Resource/Script/GitHub/Switch_github_mirror.js,tag=GitHub加速
 
 [MitM]
 hostname=raw.githubusercontent.com
