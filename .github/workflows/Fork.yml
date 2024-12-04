@@ -443,7 +443,7 @@ jobs:
       run: |
         mkdir -p Tool-repo/Loon/Script/Kelee
 
-        cd Tool-repo/Loon/Plugin
+        cd Tool-repo/Loon/Plugin/Kelee
         for file in *.plugin; do
           if [ "$file" ] ; then
             # 只提取以 .js 结尾的脚本链接
