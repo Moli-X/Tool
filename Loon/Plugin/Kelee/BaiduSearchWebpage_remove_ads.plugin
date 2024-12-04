@@ -16,3 +16,4 @@ http-response ^https?:\/\/(www|m)\.baidu\.com\/?($|\?from=\w{8,9}) script-path=h
 
 [MitM]
 hostname=m.baidu.com,www.baidu.com#App链接 = 
+#App链接 = 

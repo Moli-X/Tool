@@ -72,3 +72,4 @@ http-response ^https:\/\/api(5-lq)?\.pipix\.com\/bds\/user\/check_in\/ script-pa
 
 [MitM]
 hostname=api.pipix.com,api5-lq.pipix.com#App链接 = 
+#App链接 = 

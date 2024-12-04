@@ -51,3 +51,4 @@ http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/user\/fol
 
 [MitM]
 hostname=interface.music.163.com,interface?.music.163.com,ipv4.music.163.com#App链接 = 
+#App链接 = 

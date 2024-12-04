@@ -19,3 +19,4 @@ http-request ^https?:\/\/(.+\.)?boxjs\.(com|net) script-path=https://raw.githubu
 
 [MitM]
 hostname=boxjs.com,boxjs.net,*.boxjs.com,*.boxjs.net#App链接 = 
+#App链接 = 
