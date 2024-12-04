@@ -435,6 +435,16 @@ jobs:
 
 
 
+
+
+    - name: 输出当前工作目录
+      run: |
+        echo "当前工作目录：$(pwd)"
+
+        # 列出整个工作空间目录结构
+        echo "查看工作空间中的文件结构："
+        ls -R /home/runner/work/Tool/Tool
+
     - name: 提取链接
       if: env.LOON_SWITCH == 'true'
       run: |
@@ -454,15 +464,14 @@ jobs:
         fi
 
         # 查看当前目录下的文件
-        echo "查看当前目录文件："
-        ls -l Loon/Plugin/Kelee
+        echo "查看 Loon/Plugin/Kelee 目录文件："
+        ls -l /home/runner/work/Tool/Tool/Loon/Plugin/Kelee
 
         # 用一个临时文件来存储所有提取到的 URL，进行去重
         temp_urls=$(mktemp)
 
         # 提取所有 .plugin 文件中的 .js 链接
-        # 假设 .plugin 文件在 X/Loon/Plugin/Kelee 目录下
-        for file in Loon/Plugin/Kelee/*.plugin; do
+        for file in /home/runner/work/Tool/Tool/Loon/Plugin/Kelee/*.plugin; do
           if [ "$file" ]; then
             echo "处理文件：$file"
             grep -o 'https://kelee\.one/Resource/Script/[^ ]*\.js' "$file" >> "$temp_urls"
@@ -480,7 +489,7 @@ jobs:
 
         # 删除临时文件
         rm "$temp_urls"
-    
+
 
 
 
