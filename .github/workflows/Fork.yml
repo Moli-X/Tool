@@ -481,23 +481,19 @@ jobs:
         for file in *.plugin; do
           if [ "$file" ] ; then
 
-
             # 修改脚本链接
             sed -i 's|https://kelee\.one/Resource/Script/[^/]*|https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script|g' "$file"
             
-            # 修改 #!author 行
-            sed -i 's|\(#!author=.*\)\[[^]]*\]|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
+            # 修改 #!author 行（处理等号前可能有空格的情况）
+            sed -i 's|\(#!author\s*=\s*.*\)\[[^]]*\]|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
             
-            # 修改 #!homepage 行
-            sed -i 's|#!homepage[ ]*=.*|#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/'"$file"'|g' "$file"
-            
-
+            # 修改 #!homepage 行（处理等号前可能有空格的情况）
+            sed -i 's|#!homepage\s*=\s*.*|#!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/'"$file"'|g' "$file"
 
             # 判断是否存在 #!openUrl 行，如果存在，修改为 #App链接
             if grep -q '^#!openUrl=' "$file"; then
               sed -i 's|^#!openUrl=\(.*\)|#App链接=\1|' "$file"
             fi
-
           fi
         done
 
