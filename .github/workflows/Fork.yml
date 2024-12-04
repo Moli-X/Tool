@@ -448,9 +448,6 @@ jobs:
         # 切换到 Kelee 目录
         cd Tool-repo/Loon/Plugin/Kelee
     
-        # 输出当前路径，确保路径正确
-        echo "当前工作目录：$(pwd)"
-    
         # 遍历 .plugin 文件并提取 .js 链接
         for file in *.plugin; do
           if [ -f "$file" ]; then
@@ -486,7 +483,7 @@ jobs:
 
 
             # 修改脚本链接
-            sed -i 's|https://kelee\.one/Resource/Script/[^/]*|https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee|g' "$file"
+            sed -i 's|https://kelee\.one/Resource/Script/[^/]*|https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script|g' "$file"
             
             # 修改 #!author 行
             sed -i 's|\(#!author=.*\)\[[^]]*\]|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
@@ -494,12 +491,13 @@ jobs:
             # 修改 #!homepage 行
             sed -i 's|#!homepage[ ]*=.*|#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/'"$file"'|g' "$file"
             
-            # 修改 #!openUrl 行
-            # if grep -q '#!openUrl' "$file"; then
-              # sed -i 's|#!openUrl[ ]*=.*|#App链接 = |g' "$file"
-            # else
-              # echo '#App链接 = ' >> "$file"
-            # fi
+
+
+            # 判断是否存在 #!openUrl 行，如果存在，修改为 #App链接
+            if grep -q '^#!openUrl=' "$file"; then
+              sed -i 's|^#!openUrl=\(.*\)|#App链接=\1|' "$file"
+            fi
+
           fi
         done
 
