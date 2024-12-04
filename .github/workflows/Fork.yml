@@ -439,6 +439,7 @@ jobs:
       if: env.LOON_SWITCH == 'true'
       run: |
         mkdir -p Tool-repo/Loon/Plugin/Kelee
+        mkdir -p Tool-repo/Loon/Script/Kelee
         cd Tool-repo/Loon/Plugin/Kelee
 
         # 用一个临时文件来存储所有提取到的 URL，进行去重
