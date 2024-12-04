@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Cainiao_remove_ads.plugin
 #!name=菜鸟去广告
 #!desc=过滤菜鸟广告
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id951610982
 #!author=RuCu6[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -47,6 +47,4 @@ http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.c
 http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Cainiao_remove_ads.js,requires-body=true,tag=移除菜鸟小程序推广
 
 [MitM]
-hostname=cn-acs.m.cainiao.com,guide-acs.m.taobao.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=cn-acs.m.cainiao.com,guide-acs.m.taobao.com

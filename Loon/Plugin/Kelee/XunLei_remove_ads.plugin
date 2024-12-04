@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/XunLei_remove_ads.plugin
 #!name=迅雷去广告
 #!desc=移除开屏广告、首页横幅广告，精简我的页面。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1503466530
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -93,6 +93,4 @@ DOMAIN,et.tanx.com,REJECT
 http-response ^https:\/\/conf-m-ssl\.xunlei\.com\/external\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/XunLei_remove_ads.js,requires-body=true,tag=精简我的页面
 
 [MitM]
-hostname=api-shoulei-ssl.xunlei.com,conf-m-ssl.xunlei.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=api-shoulei-ssl.xunlei.com,conf-m-ssl.xunlei.com

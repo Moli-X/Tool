@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/PiPiXia_remove_ads.plugin
 #!name=皮皮虾去广告
 #!desc=移除开屏广告、评论区广告、视频流广告，精简我的页面。已知问题，评论区无内容。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1393912676
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -71,6 +71,4 @@ http-response ^https:\/\/api(5-lq)?\.pipix\.com\/bds\/feed\/stream\/v2\/ script-
 http-response ^https:\/\/api(5-lq)?\.pipix\.com\/bds\/user\/check_in\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/PiPiXia_remove_ads.js,requires-body=true,tag=精简我的页面
 
 [MitM]
-hostname=api.pipix.com,api5-lq.pipix.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=api.pipix.com,api5-lq.pipix.com

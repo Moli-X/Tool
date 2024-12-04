@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/FlyerTea_remove_ads.plugin
 #!name=飞客去广告
 #!desc=移除开屏广告、首页广告、板块广告、帖内广告和我的页面广告。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id547560608
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -22,6 +22,4 @@ http-response ^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?version=
 http-response ^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=plugin&id=k_misign:sign script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/FlyerTea_remove_ads.js,requires-body=true,tag=移除签到弹窗广告
 
 [MitM]
-hostname=www.flyert.com.cn,ptf.flyertrip.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=www.flyert.com.cn,ptf.flyertrip.com

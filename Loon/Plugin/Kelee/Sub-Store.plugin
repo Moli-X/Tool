@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Sub-Store.plugin
 #!name=Sub-Store
 #!desc=高级订阅管理工具，使用前请在本插件的详情页面为[PROXY]项分配代理策略。
-#App链接 = 
+#!openUrl=https://sub.store
 #!author=Peng-YM[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=订阅管理
 #!system=
@@ -23,6 +23,4 @@ http-request ^https?:\/\/sub\.store script-path=https://raw.githubusercontent.co
 cron "0 0 1 ? * ?" script-path=https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/cron-sync-artifacts.min.js,tag=Sub-Store Sync
 
 [MitM]
-hostname=sub.store#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=sub.store

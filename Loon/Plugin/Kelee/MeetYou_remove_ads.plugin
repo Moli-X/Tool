@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/MeetYou_remove_ads.plugin
 #!name=美柚去广告
 #!desc=移除开屏广告、弹窗推广和信息流推广，移除青少年模式弹窗和我的页面推广。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id634896669
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -148,6 +148,4 @@ DOMAIN,ad-evods.tianya.tv,REJECT
 ^https:\/\/images\.pinduoduo\.com\/marketing_api\/ reject
 
 [MitM]
-hostname=circle.seeyouyima.com,circle.xmseeyouyima.com,common.seeyouyima.com,video-dsp.pddpic.com,t-dsp.pinduoduo.com,images.pinduoduo.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=circle.seeyouyima.com,circle.xmseeyouyima.com,common.seeyouyima.com,video-dsp.pddpic.com,t-dsp.pinduoduo.com,images.pinduoduo.com

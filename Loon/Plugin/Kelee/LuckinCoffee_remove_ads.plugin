@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/LuckinCoffee_remove_ads.plugin
 #!name=瑞幸咖啡去广告
 #!desc=移除开屏广告、弹窗和各类横幅推广。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1296749505
 #!author=Sliverkiss[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -22,6 +22,4 @@
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNew reject
 
 [MitM]
-hostname=capi.lkcoffee.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=capi.lkcoffee.com

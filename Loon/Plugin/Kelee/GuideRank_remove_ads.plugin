@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/GuideRank_remove_ads.plugin
 #!name=盖得排行去广告
 #!desc=精简首页、移除分类横幅推广、单单返猜你喜欢和编辑精选，移除我的页面推广。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1129695874
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -25,6 +25,4 @@
 ^https:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/personal\/getPersonPageInfo\.do reject-dict
 
 [MitM]
-hostname=zone.guiderank-app.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=zone.guiderank-app.com

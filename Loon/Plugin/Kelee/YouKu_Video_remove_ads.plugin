@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/YouKu_Video_remove_ads.plugin
 #!name=优酷视频去广告
 #!desc=过滤优酷视频客户端广告，由于此插件不再维护，客户端版本高于11.0.48可能会导致此插件失效，请勿升级客户端。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id336141475
 #!author=RuCu6[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -47,6 +47,4 @@ http-response ^https:\/\/push\.m\.youku\.com\/collect-api\/get_push_interval_con
 http-response ^https:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/YouKu_Video_remove_ads.js,requires-body=true,tag=移除开屏广告
 
 [MitM]
-hostname=acs.youku.com,push.m.youku.com,un-acs.youku.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=acs.youku.com,push.m.youku.com,un-acs.youku.com

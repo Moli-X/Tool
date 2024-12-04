@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/XFuse_remove_ads.plugin
 #!name=磁力宅播放器去广告
 #!desc=移除开屏广告、弹窗和文件列表广告。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id6497060674
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -94,6 +94,4 @@ DOMAIN,log.umtrack.com,REJECT
 ^https:\/\/cili\.xfuse\.fun\/s\/ reject
 
 [MitM]
-hostname=cili.xfuse.fun,i.micecube.com,img.mofyi.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=cili.xfuse.fun,i.micecube.com,img.mofyi.com

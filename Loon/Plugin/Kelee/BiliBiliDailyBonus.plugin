@@ -21,7 +21,4 @@ http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-p
 http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(网页)
 
 [MITM]
-hostname = app.bilibili.com, m.bilibili.com#App链接 = 
-#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname = app.bilibili.com, m.bilibili.com

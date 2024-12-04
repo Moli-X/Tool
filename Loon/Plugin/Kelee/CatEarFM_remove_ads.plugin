@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/CatEarFM_remove_ads.plugin
 #!name=猫耳FM去广告
 #!desc=移除开屏广告、横幅推广、移除青少年模式弹窗，精简首页顶部入口和发现页面。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1148465254
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -26,6 +26,4 @@ http-response ^https:\/\/app\.missevan\.com\/site\/icons\? script-path=https://g
 http-response ^https:\/\/app\.missevan\.com\/discovery\/list$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/CatEarFM_remove_ads.js,requires-body=true,tag=精简发现页面
 
 [MitM]
-hostname=app.missevan.com,fm.missevan.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=app.missevan.com,fm.missevan.com

@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/MailMaster_remove_ads.plugin
 #!name=网易邮箱大师去广告
 #!desc=移除网易邮箱大师开屏广告、签到任务提醒，精简侧拉抽屉和我的页面。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id897003024
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -190,6 +190,4 @@ DOMAIN-SUFFIX,bridgeoos.com,REJECT
 ^https:\/\/images\.pinduoduo\.com\/marketing_api\/ reject
 
 [MitM]
-hostname=appconf.mail.163.com,dashi.163.com,video-dsp.pddpic.com,t-dsp.pinduoduo.com,images.pinduoduo.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=appconf.mail.163.com,dashi.163.com,video-dsp.pddpic.com,t-dsp.pinduoduo.com,images.pinduoduo.com

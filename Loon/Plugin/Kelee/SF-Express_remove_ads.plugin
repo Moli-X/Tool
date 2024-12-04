@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/SF-Express_remove_ads.plugin
 #!name=顺丰速运去广告
 #!desc=移除开屏广告、首页下拉抽屉、首页推广、应用内悬浮窗、横幅广告，精简我的页面。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id899529698
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -68,6 +68,4 @@ DOMAIN-SUFFIX,jpush.io,REJECT
 ^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/memberGoods\/pointMallService\/goodsList$ reject-dict
 
 [MitM]
-hostname=ccsp-egmas.sf-express.com,ucmp.sf-express.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=ccsp-egmas.sf-express.com,ucmp.sf-express.com

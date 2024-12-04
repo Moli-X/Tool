@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Block_HTTPDNS.plugin
 #!name=拦截HTTPDNS
 #!desc=拦截常见的HTTPDNS服务，以确保这些请求都能够在Loon的DNS框架下工作。
-#App链接 = 
+#!openUrl=
 #!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md],VirgilClyne[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=DNS
 #!system=
@@ -201,6 +201,4 @@ DOMAIN,httpdns.zybang.com,REJECT
 ^https:\/\/msglb\.91160\.com\/msg\/outer\/broker\/get$ reject-dict
 
 [MitM]
-hostname=119.29.29.29,203.107.1.1,203.107.1.33,203.107.1.66,203.107.1.67,203.107.1.97,2401:b180:2000:30::1c,2401:b180:2000:20::10,amdc.alipay.com,180.76.76.200,180.76.76.112,appconf.mail.163.com,msglb.91160.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=119.29.29.29,203.107.1.1,203.107.1.33,203.107.1.66,203.107.1.67,203.107.1.97,2401:b180:2000:30::1c,2401:b180:2000:20::10,amdc.alipay.com,180.76.76.200,180.76.76.112,appconf.mail.163.com,msglb.91160.com

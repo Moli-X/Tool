@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/QtingFM_remove_ads.plugin
 #!name=蜻蜓FM去广告
 #!desc=移除开屏广告、信息流广告、各类相关内容推荐，精简我的页面。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id506685538
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -172,6 +172,4 @@ DOMAIN-SUFFIX,66mobi.com,REJECT
 ^https:\/\/images\.pinduoduo\.com\/marketing_api\/ reject
 
 [MitM]
-hostname=app.qtfm.cn,entry.qtfm.cn,recpage-c.qtfm.cn,user.qtfm.cn,search.qtfm.cn,video-dsp.pddpic.com,t-dsp.pinduoduo.com,images.pinduoduo.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=app.qtfm.cn,entry.qtfm.cn,recpage-c.qtfm.cn,user.qtfm.cn,search.qtfm.cn,video-dsp.pddpic.com,t-dsp.pinduoduo.com,images.pinduoduo.com

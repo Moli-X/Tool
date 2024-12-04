@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/CaixinMedia_remove_ads.plugin
 #!name=财新去广告
 #!desc=过滤财新广告
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id356023612
 #!author=RuCu6[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -27,6 +27,4 @@ http-response ^https:\/\/mappsv5\.caixin\.com\/articlev5\/\d+\/\d+\.json$ script
 http-response ^https:\/\/mapps?v5\.caixin\.com\/(channelv5\/list|\/?index_page_v5\/)\w+ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/CaixinMedia_remove_ads.js,requires-body=true,tag=移除正文广告
 
 [MitM]
-hostname=e*.caixin.com,g*.caixin.com,m*.caixin.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=e*.caixin.com,g*.caixin.com,m*.caixin.com

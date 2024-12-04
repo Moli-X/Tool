@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Auto_Join_TF.plugin
 #!name=自动加入TestFlight
 #!desc=自动监控TestFlight名额，一旦有新的名额即刻加入。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id899247664
 #!author=DecoAri[https://github.com/DecoAri],xream[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=定时任务
 #!system=
@@ -26,6 +26,4 @@ http-request ^https://testflight.apple.com/join/(.*) script-path=https://github.
 cron {TimingParameters} script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Auto_join_TF.js,tag=自动加入TF,timeout=180
 
 [MitM]
-hostname=testflight.apple.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=testflight.apple.com

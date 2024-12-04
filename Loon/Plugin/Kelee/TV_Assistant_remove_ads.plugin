@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/TV_Assistant_remove_ads.plugin
 #!name=乐播投屏去广告
 #!desc=移除开屏广告、首页横幅推广、全网全网热投榜，移除我的页面横幅推广。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1116038378
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -68,6 +68,4 @@ DOMAIN,utoken.umeng.com,REJECT
 http-response ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_tab_red_dot\?user-tag=1$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/TV_Assistant_remove_ads.js,requires-body=true,tag=移除底栏视频标签
 
 [MitM]
-hostname=saas.hpplay.cn#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=saas.hpplay.cn

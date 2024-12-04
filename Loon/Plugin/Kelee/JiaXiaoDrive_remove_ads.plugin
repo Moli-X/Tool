@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/JiaXiaoDrive_remove_ads.plugin
 #!name=驾校一点通去广告
 #!desc=移除开屏广告、各页面广告横幅、弹窗广告，移除社区广告。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id620262310
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -95,6 +95,4 @@ DOMAIN,utoken.umeng.com,REJECT
 http-response ^https:\/\/api\.ksedt\.com\/api\/config\/ response-body-json-del result.homead result.h5_promotion_page result.advert_interval result.abtest_h5url result.launchApp result.goucheConfig result.gouche result.mainLiveConfig result.discover result.adSdkSwitch4testPointVideo result.adSdkSwitch4simulationExam result.examPageLoadADSwitch
 
 [MitM]
-hostname=richmanrules.ksedt.com,gouche.ksedt.com,muses.ksedt.com,op.ksedt.com,api.ksedt.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=richmanrules.ksedt.com,gouche.ksedt.com,muses.ksedt.com,op.ksedt.com,api.ksedt.com

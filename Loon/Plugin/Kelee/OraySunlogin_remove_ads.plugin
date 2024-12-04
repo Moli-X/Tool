@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/OraySunlogin_remove_ads.plugin
 #!name=向日葵去广告
 #!desc=移除开屏广告、广告横幅。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id551941458
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -78,6 +78,4 @@ DOMAIN-KEYWORD,asiad.byteactivity,REJECT
 ^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_iOS_DEVICE_FREE\? reject
 
 [MitM]
-hostname=client-api-v2.oray.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=client-api-v2.oray.com

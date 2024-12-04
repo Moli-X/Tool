@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Weixin_Official_Accounts_remove_ads.plugin
 #!name=微信公众号去广告
 #!desc=过滤微信公众号广告
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id414478124
 #!author=RuCu6[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=功能增强
 #!system=
@@ -18,6 +18,4 @@ DOMAIN-SUFFIX,wxs.qq.com,REJECT
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|jsmonitor|masonryfeed|relatedarticle)\? reject-dict
 
 [MitM]
-hostname=mp.weixin.qq.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=mp.weixin.qq.com

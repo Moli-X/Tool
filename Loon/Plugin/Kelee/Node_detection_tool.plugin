@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Node_detection_tool.plugin
 #!name=节点检测工具
 #!desc=适用于Loon的节点检测工具，可进行地理位置、节点解锁、入口落地等查询。请在所有节点页面选择一个节点长按，出现菜单后进行测试。
-#App链接 = 
+#!openUrl=
 #!author=xream[https://github.com/xream],Keywos[https://github.com/Keywos],KOP-XIAO[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=节点检测
 #!system=
@@ -14,6 +14,4 @@
 [Script]
 generic script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/NetworkEntryAndExitQueries.js,timeout=10,tag=入口落地查询,img-url=globe.asia.australia.system
 generic script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/LocationDetection.js,timeout=10,tag=地理位置查询,img-url=location.circle.system
-generic script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/NodeUnlockDetection.js,timeout=20,tag=节点解锁查询,img-url=play.circle.system#App链接 = 
-#App链接 = 
-#App链接 = 
+generic script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/NodeUnlockDetection.js,timeout=20,tag=节点解锁查询,img-url=play.circle.system

@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/iMaiCai_remove_ads.plugin
 #!name=小象超市去广告
 #!desc=移除开屏广告、应用内弹窗、猜你想买、横幅推广和悬浮窗。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1444411068
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -24,6 +24,4 @@
 http-response ^https:\/\/portal-portm\.meituan\.com\/horn_ios\/mergeRequest script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/iMaiCai_remove_ads.js,requires-body=true,tag=移除下发广告
 
 [MitM]
-hostname=portal-portm.meituan.com,mall.meituan.com,businessapi.ksedt.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=portal-portm.meituan.com,mall.meituan.com,businessapi.ksedt.com

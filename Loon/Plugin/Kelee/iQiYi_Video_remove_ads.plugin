@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/iQiYi_Video_remove_ads.plugin
 #!name=爱奇艺去广告
 #!desc=过滤爱奇艺客户端广告，由于此插件不再维护，客户端版本高于14.11.6可能会导致此插件失效，请勿升级客户端。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1190755526
 #!author=RuCu6[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -37,6 +37,4 @@ http-response ^https:\/\/search\.video\.iqiyi\.com\/q\? script-path=https://gith
 http-response ^https?:\/\/(kjp|t7z)\.cupid\.iqiyi\.com\/mixer\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/iQiYi_Video_remove_ads.js,requires-body=true,tag=移除开屏和播放广告
 
 [MitM]
-hostname=-i.vip.iqiyi.com,*.iqiyi.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=-i.vip.iqiyi.com,*.iqiyi.com

@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/LoonGallery.plugin
 #!name=插件仓库
 #!desc=一站式插件仓库任君选择，一键安装，方便快捷。使用前请在本插件的详情页面为[PROXY]项分配代理策略。
-#App链接 = 
+#!openUrl=https://🎈.com
 #!author=Peng-YM[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=插件管理
 #!system=
@@ -19,6 +19,4 @@ DOMAIN,raw.githubusercontent.com,PROXY
 http-request ^https?:\/\/xn--ck8h\.com script-path=https://raw.githubusercontent.com/Loon0x00/Loon-Gallery/master/backend/gallery.js,requires-body=true,timeout=120,tag=Loon插件仓库
 
 [MitM]
-hostname=xn--ck8h.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=xn--ck8h.com

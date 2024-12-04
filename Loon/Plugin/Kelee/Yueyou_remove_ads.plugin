@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Yueyou_remove_ads.plugin
 #!name=阅友去广告
 #!desc=移除开屏广告、弹窗广告和阅读页面广告，移除底栏福利按钮。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1066723192
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -93,6 +93,4 @@ DOMAIN,log.umsns.com,REJECT
 ^https:\/\/goway\.reader\.yueyouxs\.com\/assemble\/app\/basic\/getAppInfo\? response-body-json-replace data.isAdClosed true 
 
 [MitM]
-hostname=goway.reader.yueyouxs.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=goway.reader.yueyouxs.com

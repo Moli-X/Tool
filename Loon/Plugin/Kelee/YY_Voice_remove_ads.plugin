@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/YY_Voice_remove_ads.plugin
 #!name=YY去广告
 #!desc=移除开屏广告、应用内弹窗，精简底栏和我的页面。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id427941017
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -76,6 +76,4 @@ DOMAIN,sdk.beizi.biz,REJECT
 http-response ^https:\/\/personal-center\.yy\.com\/personalCenter\/list\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/YY_Voice_remove_ads.js,requires-body=true,tag=精简我的页面
 
 [MitM]
-hostname=yyapp-act-entrance.yy.com,yyapp-fastnet.yy.com,personal-center.yy.com,tab.yy.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=yyapp-act-entrance.yy.com,yyapp-fastnet.yy.com,personal-center.yy.com,tab.yy.com

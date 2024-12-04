@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Umetrip_remove_ads.plugin
 #!name=航旅纵横去广告
 #!desc=过滤航旅纵横广告
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id480161784
 #!author=佚名
 #!tag=去广告
 #!system=
@@ -18,6 +18,4 @@ URL-REGEX,"^http?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 http-response ^http?:\/\/(114\.115\.217\.129)|(home\.umetrip\.com)\/gateway\/api\/umetrip\/native$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Umetrip_remove_ads.js,tag=移除首页广告
 
 [MitM]
-hostname=114.115.217.129,home.umetrip.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=114.115.217.129,home.umetrip.com

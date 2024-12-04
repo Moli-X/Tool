@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/HUPU_remove_ads.plugin
 #!name=虎扑去广告
 #!desc=移除虎扑开屏广告、首页顶部推广、我的页面多余模块及各类横幅推广。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id906632439
 #!author=ZenmoFeiShi[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -28,6 +28,4 @@ http-response ^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/buffer\/h
 http-response ^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bplapi\/user\/v1\/more script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/HUPU_remove_ads.js,requires-body=true,tag=移除虎扑广告
 
 [MitM]
-hostname=games.mobileapi.hupu.com,fairy.mobileapi.hupu.com,bbs.mobileapi.hupu.com,goblin.hupu.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=games.mobileapi.hupu.com,fairy.mobileapi.hupu.com,bbs.mobileapi.hupu.com,goblin.hupu.com

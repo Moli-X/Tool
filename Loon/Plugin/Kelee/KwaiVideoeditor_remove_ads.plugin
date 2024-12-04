@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/KwaiVideoeditor_remove_ads.plugin
 #!name=快影去广告
 #!desc=移除开屏广告、信息流推广、横幅推广，移除悬浮部件。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1195860596
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -161,6 +161,4 @@ DOMAIN,sdk.push.mob.com,REJECT
 ^https:\/\/api\.kmovie\.gifshow\.com\/rest\/n\/kmovie\/app\/resource\/activity\/pendant\? reject-dict
 
 [MitM]
-hostname=api.kmovie.gifshow.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=api.kmovie.gifshow.com

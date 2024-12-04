@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/ShuQiCenterReader_remove_ads.plugin
 #!name=书旗小说去广告
 #!desc=移除书城横幅广告、听书广告、阅读广告、章末推荐、福利入口、悬浮窗、推荐搜索词，精简我的页面。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id733689509
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -24,6 +24,4 @@ DOMAIN,render-web.11222.cn,REJECT
 http-response ^https:\/\/ocean\.shuqireader\.com\/sqios\/render\/render\/page\/bookstore$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/ShuQiCenterReader_remove_ads.js,requires-body=true,tag=移除书城横幅和阅读广告
 
 [MitM]
-hostname=ocean.shuqireader.com,huichuan.sm.cn#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=ocean.shuqireader.com,huichuan.sm.cn

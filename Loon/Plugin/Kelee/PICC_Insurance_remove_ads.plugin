@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/PICC_Insurance_remove_ads.plugin
 #!name=中国人保去广告
 #!desc=移除中国人保开屏广告和应用内广告
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id710189980
 #!author=Sliverkiss[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -21,6 +21,4 @@ http-response ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/homeInit\/v3 s
 http-response ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/v3 script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/PICC_Insurance_remove_ads.js,requires-body=true,tag=移除我的页面推广
 
 [MitM]
-hostname=zgrb.epicc.com.cn#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=zgrb.epicc.com.cn

@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/MeituMYXJ_remove_ads.plugin
 #!name=美颜相机去广告
 #!desc=移除开屏广告、应用内弹窗，精简首页和我的页面。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id592331499
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -132,6 +132,4 @@ DOMAIN,da.mosspf.com,REJECT
 http-response ^https:\/\/api\.meiyan\.com\/operation\/home\.json\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/MeituMYXJ_remove_ads.js,requires-body=true,tag=精简首页功能栏目并移除美颜推荐
 
 [MitM]
-hostname=api.meiyan.com,video-dsp.pddpic.com,t-dsp.pinduoduo.com,images.pinduoduo.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=api.meiyan.com,video-dsp.pddpic.com,t-dsp.pinduoduo.com,images.pinduoduo.com

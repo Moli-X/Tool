@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/XiaChuFang_remove_ads.plugin
 #!name=下厨房去广告
 #!desc=移除开屏广告、信息流推广、各类横幅推广，精简首页标签。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id460979760
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -149,6 +149,4 @@ DOMAIN,yumao.puata.info,REJECT
 ^https:\/\/api\.xiachufang\.com\/v2\/mark_mission\/get_sticker_info\.json reject-dict
 
 [MitM]
-hostname=api.xiachufang.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=api.xiachufang.com

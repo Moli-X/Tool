@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Daily_remove_ads.plugin
 #!name=推栏去广告
 #!desc=过滤推栏广告
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1352849256
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -15,6 +15,4 @@
 ^https?:\/\/m\.pvp\.xoyo\.com\/conf\/server-mapping$ response-body-json-del data.splashConf data.splashConfNew
 
 [MitM]
-hostname=m.pvp.xoyo.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=m.pvp.xoyo.com

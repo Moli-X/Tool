@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/IThome_remove_ads.plugin
 #!name=IT之家去广告
 #!desc=过滤IT之家信息流广告和文末广告，自定义移除置顶和轮播图。自定义移除项需在插件配置，此插件仅支持8.30及以上版本客户端。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id570610859
 #!author=Keywos[https://github.com/Keywos],可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -22,6 +22,4 @@
 http-response ^https:\/\/napi\.ithome\.com\/api\/(?:news\/index|topmenu\/getfeeds\?|api\/douyin\/GetLiveInfo) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/IThome_remove_ads.js,requires-body=true,tag=IT之家去广告
 
 [MitM]
-hostname=napi.ithome.com,api.zuihuimai.com,dat.ruanmei.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=napi.ithome.com,api.zuihuimai.com,dat.ruanmei.com

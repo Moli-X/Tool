@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/smzdm_remove_ads.plugin
 #!name=什么值得买去广告
 #!desc=移除开屏广告、首页顶部广告、好价信息顶部广告、信息页广告、红包弹窗、精简我的页面。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id518213356
 #!author=ZenmoFeiShi[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -39,6 +39,4 @@ http-response ^https:\/\/s3\.zdmimg\.com\/third\/index  script-path=https://gith
 http-response ^https:\/\/post\.m\.smzdm\.com\/ajax_app\/ajax_get_footer_list  script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/smzdm_remove_ads.js,requires-body=true,tag=移除广告
 
 [MitM]
-hostname=haojia-api.smzdm.com,homepage-api.smzdm.com,app-api.smzdm.com,user-api.smzdm.com,article-api.smzdm.com ,qianbao.smzdm.com,s3.zdmimg.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=haojia-api.smzdm.com,homepage-api.smzdm.com,app-api.smzdm.com,user-api.smzdm.com,article-api.smzdm.com ,qianbao.smzdm.com,s3.zdmimg.com

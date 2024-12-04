@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/VideoGo_remove_ads.plugin
 #!name=萤石云视频去广告
 #!desc=移除开屏广告、首页推广、我的页面推广。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id571195405
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -93,6 +93,4 @@ DOMAIN-SUFFIX,pos.baidu.com,REJECT
 [Script]
 
 [MitM]
-hostname=api.ys7.com,i.ys7.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=api.ys7.com,i.ys7.com

@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/KingdeeMyMoney_remove_ads.plugin
 #!name=随手记去广告
 #!desc=移除开屏广告、神象云账本内部广告、我的页面广告，移除社区入口。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id372353614
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -20,6 +20,4 @@
 ^https:\/\/yun\.feidee\.net\/cab-periodic-activity-ws\/terminal\/v1\/members\/status reject-dict
 
 [MitM]
-hostname=tg.feidee.com,yunmk.feidee.net,community.feidee.com,api.feidee.net,yun.feidee.net#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=tg.feidee.com,yunmk.feidee.net,community.feidee.com,api.feidee.net,yun.feidee.net

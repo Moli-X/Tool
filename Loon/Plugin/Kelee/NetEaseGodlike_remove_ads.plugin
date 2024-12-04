@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/NetEaseGodlike_remove_ads.plugin
 #!name=网易大神去广告
 #!desc=移除开屏广告，精简我的页面。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1359055423
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -28,6 +28,4 @@ IP-CIDR,115.236.121.195/32,REJECT,no-resolve
 ^https:\/\/app-conf\.ds\.163\.com\/v1\/app\/base\/conf\/static\/start-config\? response-body-replace-regex \{"os":"all","weight":50\.0,"hidden":false,"name":"游戏"\},\{"os":"all","weight":50\.0,"hidden":false,"name":"频道"\}, null
 
 [MitM]
-hostname=god.gameyw.netease.com,app-conf.ds.163.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=god.gameyw.netease.com,app-conf.ds.163.com

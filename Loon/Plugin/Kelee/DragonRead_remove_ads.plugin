@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/DragonRead_remove_ads.plugin
 #!name=番茄小说去广告
 #!desc=移除番茄小说开屏广告、移除文章底部和章末广告、移除听书页面广告、移除悬浮部件和底栏多余的福利标签。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1468454200
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -59,6 +59,4 @@ DOMAIN-KEYWORD,api-access.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
-DOMAIN-KEYWORD,asiad.byteactivity,REJECT#App链接 = 
-#App链接 = 
-#App链接 = 
+DOMAIN-KEYWORD,asiad.byteactivity,REJECT

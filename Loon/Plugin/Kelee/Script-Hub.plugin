@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Script-Hub.plugin
 #!name=Script-Hub
 #!desc=将其他工具的Rewrite、Rule和JavaScript资源转换为Loon能识别的格式，使用前请在本插件的详情页面为[PROXY]项分配代理策略。在插件列表中点击此插件上的链接查看使用方法。
-#App链接 = 
+#!openUrl=https://script.hub/
 #!author=xream[https://github.com/xream],Keywos[https://github.com/Keywos],CKYB[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md],小白脸
 #!tag=资源转换
 #!system=
@@ -24,6 +24,4 @@ http-request ^https?:\/\/script\.hub\/file\/_start_\/.+type=rule-set script-path
 http-request ^https?:\/\/script\.hub\/convert\/ script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-converter.beta.js,timeout=120,tag=JavaScript转换
 
 [MitM]
-hostname=script.hub,*.script.hub#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=script.hub,*.script.hub

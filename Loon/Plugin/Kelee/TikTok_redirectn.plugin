@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/TikTok_redirect.plugin
 #!name=TikTok解锁
 #!desc=移除TikTok视频水印并自定义解锁地区，需要配置此插件至对应地区的节点。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id835599320
 #!author=Keywos[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=功能增强
 #!system=
@@ -119,6 +119,4 @@ DOMAIN-KEYWORD,ttlivecdn.com.,PROXY
 http-request https?:\/\/.+.(tiktokv|tiktokcdn).com\/.+(region\d?=CN|&mcc_mnc=\d+) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/TikTok_redirect.js,tag=TikTok解锁
 
 [MitM]
-hostname=*.byteoversea.com,*.tik-tokapi.com,*.tiktokv.com,*.tiktokcdn.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=*.byteoversea.com,*.tik-tokapi.com,*.tiktokv.com,*.tiktokcdn.com

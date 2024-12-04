@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/UnnooQuan_remove_watermark.plugin
 #!name=知识星球去水印
 #!desc=移除内容的水印编号
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1039749242
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!system=
 #!system_version=
@@ -15,6 +15,4 @@
 ^https:\/\/articles\.zsxq\.com\/inline_form\/id_[a-z0-9]+\.html response-body-replace-regex name="group_enable_watermark"\x20value="true" name="group_enable_watermark"\x20value="false"
 
 [MitM]
-hostname=api.zsxq.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=api.zsxq.com

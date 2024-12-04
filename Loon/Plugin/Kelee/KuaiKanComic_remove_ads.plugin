@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/KuaiKanComic_remove_ads.plugin
 #!name=快看漫画去广告
 #!desc=移除开屏广告、悬浮窗、漫画广告、社区广告、各类弹窗，精简顶部标签、我的页面。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id906936224
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -124,6 +124,4 @@ http-response ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/homepage\/comicVi
 http-response ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/unified_feed$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/KuaiKanComic_remove_ads.js,requires-body=true,tag=精简社区信息流
 
 [MitM]
-hostname=api.kkmh.com,cdn-api.kkmh.com,social.kkmh.com,cdn-social.kkmh.com,h5.kuaikanmanhua.com,cdn-h5.kuaikanmanhua.com,pay.kkmh.com,cdn-pay.kkmh.com,shop.kkmh.com,cdn-shop.kkmh.com,topic.kkmh.com,cdn-topic.kkmh.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=api.kkmh.com,cdn-api.kkmh.com,social.kkmh.com,cdn-social.kkmh.com,h5.kuaikanmanhua.com,cdn-h5.kuaikanmanhua.com,pay.kkmh.com,cdn-pay.kkmh.com,shop.kkmh.com,cdn-shop.kkmh.com,topic.kkmh.com,cdn-topic.kkmh.com

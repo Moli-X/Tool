@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Taobao_remove_ads.plugin
 #!name=淘宝去广告
 #!desc=过滤淘宝开屏广告
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id387682726
 #!author=RuCu6[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -37,6 +37,4 @@ http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvide
 http-response ^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Taobao_remove_ads.js,requires-body=true,tag=移除淘宝开屏广告
 
 [MitM]
-hostname=acs.m.taobao.com,heic.alicdn.com,guide-acs.m.taobao.com,poplayer.template.alibaba.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=acs.m.taobao.com,heic.alicdn.com,guide-acs.m.taobao.com,poplayer.template.alibaba.com

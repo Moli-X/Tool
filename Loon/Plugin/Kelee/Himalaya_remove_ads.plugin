@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Himalaya_remove_ads.plugin
 #!name=喜马拉雅去广告
 #!desc=移除开屏广告、播放器广告、各类推荐内容，精简频道和我的页面。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id876336838
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -178,6 +178,4 @@ DOMAIN,adx.halomobi.com,REJECT
 ^https:\/\/images\.pinduoduo\.com\/marketing_api\/ reject
 
 [MitM]
-hostname=gslbali.ximalaya.com,search.ximalaya.com,searchwsa.ximalaya.com,mobile.ximalaya.com,mobilehera.ximalaya.com,mobwsa.ximalaya.com,m.ximalaya.com,mwsa.ximalaya.com,video-dsp.pddpic.com,t-dsp.pinduoduo.com,images.pinduoduo.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=gslbali.ximalaya.com,search.ximalaya.com,searchwsa.ximalaya.com,mobile.ximalaya.com,mobilehera.ximalaya.com,mobwsa.ximalaya.com,m.ximalaya.com,mwsa.ximalaya.com,video-dsp.pddpic.com,t-dsp.pinduoduo.com,images.pinduoduo.com

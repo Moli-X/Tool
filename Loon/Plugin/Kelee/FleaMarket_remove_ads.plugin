@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/FleaMarket_remove_ads.plugin
 #!name=闲鱼去广告
 #!desc=移除开屏广告、商品信息流广告、搜索栏填充词、我的页面推广横幅。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id510909506
 #!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md],ZenMoFiShi[https://github.com/ZenmoFeiShi],RuCu6[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -34,6 +34,4 @@ http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.
 http-response ^https:\/\/g-(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/FleaMarket_remove_ads.js,requires-body=true,tag=移除搜索结果广告
 
 [MitM]
-hostname=acs.m.goofish.com,g-acs.m.goofish.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=acs.m.goofish.com,g-acs.m.goofish.com

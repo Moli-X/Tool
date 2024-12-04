@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/MiaoRead_remove_ads.plugin
 #!name=小喵看书去广告
 #!desc=移除小喵看书章末广告
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id6445987673
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -75,6 +75,4 @@ DOMAIN,utoken.umeng.com,REJECT
 ^https:\/\/api\.miaomiaoyd\.com\/book\/config\/getAdsSettings$ reject
 
 [MitM]
-hostname=api.miaomiaoyd.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=api.miaomiaoyd.com

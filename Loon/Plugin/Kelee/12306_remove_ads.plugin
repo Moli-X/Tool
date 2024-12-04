@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/12306_remove_ads.plugin
 #!name=12306去广告
 #!desc=过滤12306应用内广告及开屏广告
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id564818797
 #!author=RuCu6[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -19,6 +19,4 @@ http-request ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList$ script-path=https://g
 http-request ^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/12306_remove_ads.js,tag=移除12306应用内广告
 
 [MitM]
-hostname=ad.12306.cn,mobile.12306.cn#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=ad.12306.cn,mobile.12306.cn

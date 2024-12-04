@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Keep_remove_ads.plugin
 #!name=Keep去广告
 #!desc=移除开屏广告、应用内广告和弹窗广告。移除首页活动标签、关注推荐、文章相关推荐。修改首页默认标签为推荐页面。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id952694580
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -27,6 +27,4 @@ DOMAIN,hc-ssp.sm.cn,REJECT
 http-response ^https:\/\/api\.gotokeep\.com\/config\/v3\/basic script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Keep_remove_ads.js,requires-body=true,tag=移除首页活动标签
 
 [MitM]
-hostname=api.gotokeep.com,kad.gotokeep.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=api.gotokeep.com,kad.gotokeep.com

@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/QuickSearch.plugin
 #!name=快捷搜索
 #!desc=为Safari提供快速切换搜索引擎的能力，在插件列表中点击此插件上的链接查看使用方法。
-#App链接 = 
+#!openUrl=https://github.com/luestr/ProxyResource/blob/main/Resource/Markdown/QuickSearch/README.md
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -22,6 +22,4 @@
 ^https:\/\/duckduckgo\.com\/\?q=([^&]+).+ 307 https://www.google.com/search?q=$1
 
 [MitM]
-hostname=duckduckgo.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=duckduckgo.com

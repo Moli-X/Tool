@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/ZhuanZhuan_remove_ads.plugin
 #!name=转转去广告
 #!desc=移除开屏广告、应用内悬浮窗、信息流推广、商品推荐、首页弹窗，精简我的页面。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1002355194
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -30,6 +30,4 @@
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmyprofilev3$ response-body-json-jq 'del(.respData.itemGroupList[].itemList[] | select(.name == "天天赚钱" or .name == "借钱")) | del(.respData.itemGroupList[] | select(.groupType == 15))'
 
 [MitM]
-hostname=app.zhuanzhuan.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=app.zhuanzhuan.com

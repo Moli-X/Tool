@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/BitqiuPan_remove_ads.plugin
 #!name=比特球云盘去广告
 #!desc=移除开屏广告和各类横幅推广。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1388178609
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -31,6 +31,4 @@ DOMAIN,log.umsns.com,REJECT
 ^https:\/\/pan-api\.bitqiu\.com\/activity\/guides$ reject-dict
 
 [MitM]
-hostname=pan-api.bitqiu.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=pan-api.bitqiu.com

@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/KuGou_remove_ads.plugin
 #!name=酷狗音乐去广告
 #!desc=移除开屏广告、应用各类弹窗、各类横幅广告、评论区广告和播放器界面广告。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id472208016
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -48,6 +48,4 @@ URL-REGEX,"^http:\/\/log\.stat\.kugou\.com\/mobile\/ad\.html",REJECT
 http-response ^https:\/\/gateway(retry)?\.kugou\.com\/ocean\/v\d\/tab\/list_v\d script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/KuGou_remove_ads.js,requires-body=true,tag=精简顶部标签
 
 [MitM]
-hostname=gateway.kugou.com,fx.service.kugou.com,hwstore.kugou.com,ep.kugou.com,gatewayretry.kugou.com,gzacshow.kugou.com,m1fxgroup.kugou.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=gateway.kugou.com,fx.service.kugou.com,hwstore.kugou.com,ep.kugou.com,gatewayretry.kugou.com,gzacshow.kugou.com,m1fxgroup.kugou.com

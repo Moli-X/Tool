@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/BoxJs.plugin
 #!name=BoxJs
 #!desc=JavaScript数据管理器，用于管理脚本储存的数据。使用前请在本插件的详情页面为[PROXY]项分配代理策略。
-#App链接 = 
+#!openUrl=http://boxjs.com
 #!author=chavyleung[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=数据管理
 #!system=
@@ -18,6 +18,4 @@ DOMAIN-SUFFIX,jsdelivr.net,PROXY
 http-request ^https?:\/\/(.+\.)?boxjs\.(com|net) script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js,requires-body= true,tag=BoxJS,timeout=120
 
 [MitM]
-hostname=boxjs.com,boxjs.net,*.boxjs.com,*.boxjs.net#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=boxjs.com,boxjs.net,*.boxjs.com,*.boxjs.net

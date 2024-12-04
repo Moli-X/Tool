@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/SevenCat_remove_ads.plugin
 #!name=七猫小说去广告
 #!desc=移除大部分七猫小说广告，但受限于七猫小说自身对MitM和VPN状态的检测，部分页面广告无法移除。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id1387717110
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -33,6 +33,4 @@ DOMAIN-SUFFIX,gdt.qq.com,REJECT
 ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/user\/my-center\? response-body-json-del data.func_area[1]  data.func_area[2]
 
 [MitM]
-hostname=api-cfg.wtzw.com,sf3-fe-tos.pglstatp-toutiao.com,api-bc.wtzw.com,api-gw.wtzw.com,cdn.wtzw.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=api-cfg.wtzw.com,sf3-fe-tos.pglstatp-toutiao.com,api-bc.wtzw.com,api-gw.wtzw.com,cdn.wtzw.com

@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/FenBi_remove_ads.plugin
 #!name=粉笔去广告
 #!desc=移除开屏广告、首页弹窗和悬浮窗。
-#App链接 = 
+#!openUrl=https://apps.apple.com/app/id584660358
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
@@ -18,6 +18,4 @@
 ^https:\/\/market-api\.fenbi\.com\/iphone\/v1\/assistant\/entrance\/show reject-dict
 
 [MitM]
-hostname=keapi.fenbi.com,market-api.fenbi.com,tiku.fenbi.com#App链接 = 
-#App链接 = 
-#App链接 = 
+hostname=keapi.fenbi.com,market-api.fenbi.com,tiku.fenbi.com
