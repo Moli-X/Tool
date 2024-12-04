@@ -292,7 +292,7 @@ jobs:
         
         # 下载插件并在文件中添加原链接
         for Js_name in "${!Scripts[@]}"; do
-            url="${Scripts[$plugin_name]}"
+            url="${Scripts[$Js_name]}"
             curl -A "Surge iOS/3367" -L -o "Tool-repo/Loon/Script/${Js_name}.js" "$url"
           
           # 将原链接添加到文件开头
