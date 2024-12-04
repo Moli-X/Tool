@@ -282,14 +282,15 @@ jobs:
     - name: 提取链接
       if: env.LOON_SWITCH == 'true'
       run: |
-        mkdir -p Tool-repo/Loon/Script
+        mkdir -p Tool-repo/Loon/Script/Kelee
+        rm -rf Tool-repo/Loon/Script/Kelee/*
         cd Tool-repo/Loon/Plugin
         for file in *.plugin; do
           if [ "$file" ] ; then
             # 只提取以 .js 结尾的脚本链接
             grep -o 'https://kelee\.one/Resource/Script/[^ ]*\.js' "$file" | while read -r script_url; do
               script_name=$(basename "$script_url")
-              curl -A "Surge iOS/3367" -L -o "../Script/$script_name" "$script_url" || echo "Failed to download $script_url" >> error.log
+              curl -A "Surge iOS/3367" -L -o "../Script/Kelee/$script_name" "$script_url" || echo "Failed to download $script_url" >> error.log
             done
           fi
         done
