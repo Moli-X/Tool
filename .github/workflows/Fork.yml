@@ -482,8 +482,8 @@ jobs:
           if [ "$file" ] ; then
 
             # 修改脚本链接
-            sed -i 's|https://kelee\.one/Resource/Script/[^/]*|https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script|g' "$file"
-            
+            sed -i 's|https://kelee\.one/Resource/Script/[^/]*\([^ ]*\.js\)|https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/\1|' "$file"
+
             # 修改 #!author 行（处理等号前可能有空格的情况）
             sed -i 's|\(#!author\s*=\s*.*\)\[[^]]*\]|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
             
