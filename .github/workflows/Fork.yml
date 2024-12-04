@@ -443,7 +443,7 @@ jobs:
       if: env.LOON_SWITCH == 'true'
       run: |
         # 确保目标目录存在
-        mkdir -p Tool-repo/Loon/Script/Kelee
+        mkdir -p Script
     
         # 切换到 Kelee 目录
         cd Tool-repo/Loon/Plugin/Kelee
@@ -459,13 +459,13 @@ jobs:
               script_name=$(basename "$script_url")
     
               # 确保下载目录存在
-              if [ ! -d "Tool-repo/Loon/Script/Kelee" ]; then
+              if [ ! -d "Script" ]; then
                 echo "目标目录不存在，创建目录..."
-                mkdir -p Tool-repo/Loon/Script/Kelee
+                mkdir -p Script
               fi
     
               # 使用 curl 下载脚本
-              curl -A "Surge iOS/3367" -L -o "Tool-repo/Loon/Script/Kelee/$script_name" "$script_url" || echo "Failed to download $script_url" >> error.log
+              curl -A "Surge iOS/3367" -L -o "Script/$script_name" "$script_url" || echo "Failed to download $script_url" >> error.log
             done
           fi
         done
