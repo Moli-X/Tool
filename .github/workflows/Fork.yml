@@ -431,7 +431,7 @@ jobs:
         done
 
         # 删除 error.log 文件
-        rm -f Tool-repo/Loon/Plugin/Kelee/error.log || echo "No error log to delete"
+        # rm -f Tool-repo/Loon/Plugin/Kelee/error.log || echo "No error log to delete"
 
 
 
@@ -439,8 +439,6 @@ jobs:
       if: env.LOON_SWITCH == 'true'
       run: |
         mkdir -p Tool-repo/Loon/Script/Kelee
-        mkdir -p Tool-repo/Loon/Plugin/Kelee
-    
         cd Tool-repo/Loon/Plugin/Kelee
         
         # 确保文件夹中有插件文件
