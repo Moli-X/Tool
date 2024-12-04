@@ -259,8 +259,12 @@ jobs:
             ["Boxjs"]="https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.plugin"
             ["PinDuoDuo_remove_ads"]="https://kelee.one/Tool/Loon/Plugin/PinDuoDuo_remove_ads.plugin"
             ["Amap_remove_ads"]="https://kelee.one/Tool/Loon/Plugin/Amap_remove_ads.plugin"
-          
-          # 添加更多插件和链接
+            [NodeLinkCheck]="https://kelee.one/Tool/Loon/Plugin/NodeLinkCheck.Plugin"
+            [iQiYi_Video_remove_ads]="https://kelee.one/Tool/Loon/Plugin/iQiYi_Video_remove_ads.plugin"
+            [Tencent_Video_remove_ads]="https://kelee.one/Tool/Loon/Plugin/Tencent_Video_remove_ads.plugin"
+            [JD_remove_ads]="https://kelee.one/Tool/Loon/Plugin/JD_remove_ads.plugin"
+            [Taobao_remove_ads]="https://kelee.one/Tool/Loon/Plugin/Taobao_remove_ads.plugin"
+
         )
         
         # 下载插件并在文件中添加原链接
@@ -271,23 +275,44 @@ jobs:
           # 将原链接添加到文件开头
           echo "# 原链接 : $url" | cat - "Tool-repo/Loon/Plugin/$plugin_name.plugin" > temp && mv temp "Tool-repo/Loon/Plugin/$plugin_name.plugin"
         done
-    
-    - name: 单独编辑LOON模块
+
+
+    - name: 单独复刻LOON脚本js文件
       if: env.LOON_SWITCH == 'true'  # 添加开关条件
+      run: |
+        mkdir -p Tool-repo/Loon/Script
+    
+        # 定义插件及其原链接
+        declare -A Scripts=(
+            ["PinDuoDuo_remove_ads"]="https://kelee\.one/Resource/Script/PinDuoDuo/PinDuoDuo_remove_ads.js"
+
+          
+          # 添加更多插件和链接
+        )
+        
+        # 下载插件并在文件中添加原链接
+        for Js_name in "${!Scripts[@]}"; do
+            url="${Scripts[$plugin_name]}"
+            curl -A "Surge iOS/3367" -L -o "Tool-repo/Loon/Script/${Js_name}.js" "$url"
+          
+          # 将原链接添加到文件开头
+          echo "# 原链接 : $url" | cat - "Tool-repo/Loon/Script/$Js_name.js" > temp && mv temp "Tool-repo/Loon/Plugin/$Js_name.js"
+        done
+    
+
+
+    
+    - name: 编辑LOON模块
+      if: env.LOON_SWITCH == 'pause'  # 添加开关条件
       run: |
         cd Tool-repo/Loon/Plugin
         for file in *.plugin; do
           if [ "$file" ] ; then
-            # 修改 #!author 行
-            if grep -q '#!author' "$file"; then
-              sed -i 's|#!author[ ]*=.*|#!author = 莫离[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|g' "$file"
-            else
-              echo '#!author = 莫离[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]' >> "$file"
-            fi
 
             # 修改脚本链接
             sed -i 's|https://kelee\.one/Resource/Script|https://github.com/Moli-X/Tool/raw/X/Loon/Script/lodepuly|g' "$file"
-
+            # 修改 #!author 行
+            sed -i 's|\(#!author=[^[]*\[\)[^\]]*\]|\1https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
 
             # 修改 #!homepage 行
             sed -i 's|#!homepage[ ]*=.*|#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/'"$file"'|g' "$file"
