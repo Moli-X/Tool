@@ -38,3 +38,4 @@ http-response ^https:\/\/(?:api-\w+|chat-live|post)\.soulapp\.cn\/(?:chat\/limit
 [MitM]
 hostname=api*.soulapp.cn,gateway-mobile-gray.soulapp.cn,post.soulapp.cn,ssp.soulapp.cn#App链接 = 
 #App链接 = 
+#App链接 = 

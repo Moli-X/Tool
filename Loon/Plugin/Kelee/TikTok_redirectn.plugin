@@ -121,3 +121,4 @@ http-request https?:\/\/.+.(tiktokv|tiktokcdn).com\/.+(region\d?=CN|&mcc_mnc=\d+
 [MitM]
 hostname=*.byteoversea.com,*.tik-tokapi.com,*.tiktokv.com,*.tiktokcdn.com#App链接 = 
 #App链接 = 
+#App链接 = 

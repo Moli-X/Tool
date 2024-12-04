@@ -54,3 +54,4 @@ http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/(?:mine|myinfo) scr
 [MitM]
 hostname=ap?.bilibili.com,grpc.biliapi.net,www.bilibili.com,m.bilibili.com,*live.bilibili.com#App链接 = 
 #App链接 = 
+#App链接 = 
