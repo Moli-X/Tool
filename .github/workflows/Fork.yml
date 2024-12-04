@@ -302,7 +302,7 @@ jobs:
             curl -A "Surge iOS/3367" -L -o "Tool-repo/Loon/Script/${Js_name}.js" "$url"
           
           # 将原链接添加到文件开头
-          echo "# 原链接 : $url" | cat - "Tool-repo/Loon/Script/$Js_name.js" > temp && mv temp "Tool-repo/Loon/Plugin/$Js_name.js"
+          echo "# 原链接 : $url" | cat - "Tool-repo/Loon/Script/$Js_name.js" > temp && mv temp "Tool-repo/Loon/Script/$Js_name.js"
         done
     
 
