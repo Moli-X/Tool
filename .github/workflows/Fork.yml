@@ -440,7 +440,7 @@ jobs:
       run: |
         mkdir -p Tool-repo/Loon/Script/Kelee
 
-        cd Tool-repo/Loon/Plugin/Kelee
+        cd Tool-repo/Loon/Plugin
         for file in *.plugin; do
           if [ "$file" ] ; then
             # 只提取以 .js 结尾的脚本链接
