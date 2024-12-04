@@ -438,8 +438,9 @@ jobs:
     - name: 提取链接
       if: env.LOON_SWITCH == 'true'
       run: |
-    
+        mkdir -p Tool-repo/Loon/Plugin/Kelee
         cd Tool-repo/Loon/Plugin/Kelee
+
         # 用一个临时文件来存储所有提取到的 URL，进行去重
         temp_urls=$(mktemp)
     
@@ -455,7 +456,7 @@ jobs:
         sort -u "$temp_urls" | while read -r script_url; do
           script_name=$(basename "$script_url")
           echo "正在下载脚本：$script_url"
-          curl -A "Surge iOS/3367" -L -o "../Script/Kelee/$script_name" "$script_url" \
+          curl -A "Surge iOS/3367" -L -o "Tool-repo/Loon/Script/Kelee/$script_name" "$script_url" \
             && echo "下载成功：$script_name" \
             || echo "下载失败：$script_url" >> error.log
         done
