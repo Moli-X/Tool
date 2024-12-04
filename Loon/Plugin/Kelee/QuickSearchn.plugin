@@ -1,0 +1,25 @@
+# 原链接 : https://kelee.one/Tool/Loon/Plugin/QuickSearch.plugin
+#!name=快捷搜索
+#!desc=为Safari提供快速切换搜索引擎的能力，在插件列表中点击此插件上的链接查看使用方法。
+#App链接 = 
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/QuickSearchn.plugin
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Safari.png
+#!date=2024-11-28 00:00:00
+
+[Rewrite]
+^https:\/\/duckduckgo\.com\/\?q=bd\+([^&]+).+ 307 https://www.baidu.com/s?wd=$1
+^https:\/\/duckduckgo\.com\/\?q=bdimg\+([^&]+).+ 307 https://image.baidu.com/search/index?tn=baiduimage&word=$1
+^https:\/\/duckduckgo\.com\/\?q=gimg\+([^&]+).+ 307 https://www.google.com/search?&tbm=isch&q=$1
+^https:\/\/duckduckgo\.com\/\?q=b\+([^&]+).+ 307 https://www.bing.com/search?q=$1
+^https:\/\/duckduckgo\.com\/\?q=wk\+([^&]+).+ 307 https://zh.wikipedia.org/wiki/$1
+^https:\/\/duckduckgo\.com\/\?q=qm\+([^&]+).+ 307 https://www.qimai.cn/search/index/country/cn/search/$1
+^https:\/\/duckduckgo\.com\/\?q=gh\+([^&]+).+ 307 https://github.com/search?q=$1
+^https:\/\/duckduckgo\.com\/\?q=([^&]+).+ 307 https://www.google.com/search?q=$1
+
+[MitM]
+hostname=duckduckgo.com

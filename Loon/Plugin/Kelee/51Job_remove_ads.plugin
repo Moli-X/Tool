@@ -1,0 +1,26 @@
+# 原链接 : https://kelee.one/Tool/Loon/Plugin/51Job_remove_ads.plugin
+#!name=前程无忧去广告
+#!desc=移除开屏广告、弹窗、信息流推广、职位页面推广和各类横幅推广。
+#App链接 = 
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/51Job_remove_ads.plugin
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/51Job.png
+#!date=2024-11-28 00:00:00
+
+[Rewrite]
+^https:\/\/appapi\.51job\.com\/api\/market\/get_launch\.php\? reject-dict
+^https:\/\/cupid\.51job(app)?\.com\/open\/51job-activities\/secJob\/queryHomeSecondConfigV2\? reject-dict
+^https:\/\/cupid\.51job(app)?\.com\/open\/noauth\/recommend\/job-tab-dynamic\? response-body-json-del resultbody.adsTabFeeds
+^https:\/\/cupid\.51job(app)?\.com\/open\/noauth\/jobs\/detail\/sesame-competitive\/ reject-dict
+^https:\/\/cupid\.51job(app)?\.com\/open\/user-task\/user\/task\/ response-body-json-del resultbody.availableTaskList
+^https:\/\/cupid\.51jobapp(app)?\.com\/open\/resume\/strategy\/resume-build\? reject-dict
+^https:\/\/cupid\.51job(app)?\.com\/open\/noauth\/popUp\/ reject-dict
+^https:\/\/cupid\.51job(app)?\.com\/open\/tab\/good-job\/modules response-body-json-del resultbody.bannerList
+^https:\/\/cupid\.51job(app)?\.com\/open\/operation\/get\/banner-list\? reject-dict
+
+[MitM]
+hostname=appapi.51job.com,cupid.51job.com,cupid.51jobapp.com

@@ -1,0 +1,71 @@
+# 原链接 : https://kelee.one/Tool/Loon/Plugin/TV_Assistant_remove_ads.plugin
+#!name=乐播投屏去广告
+#!desc=移除开屏广告、首页横幅推广、全网全网热投榜，移除我的页面横幅推广。
+#App链接 = 
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/TV_Assistant_remove_ads.plugin
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TV_Assistant.png
+#!date=2024-11-28 00:00:00
+
+[Rule]
+AND,((DOMAIN-KEYWORD,ads),(DOMAIN-KEYWORD,normal),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
+AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
+AND,((DOMAIN-KEYWORD,minigame),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
+AND,((DOMAIN-KEYWORD,tnc),(AND,((OR,((DOMAIN-KEYWORD,-bjlgy),(DOMAIN-KEYWORD,-alisc),(DOMAIN-KEYWORD,-aliec))),(OR,((DOMAIN-SUFFIX,snssdk.com),(DOMAIN-SUFFIX,toutiaoapi.com),(DOMAIN-SUFFIX,bytedance.com),(DOMAIN-SUFFIX,zijieapi.com)))))),REJECT // 拦截HTTPDNS
+DOMAIN,mon.zijieapi.com,REJECT
+DOMAIN,mssdk-bu.bytedance.com,REJECT
+DOMAIN,toblog.ctobsnssdk.com,REJECT
+DOMAIN,lf-cdn-tos.bytescm.com,REJECT
+DOMAIN-KEYWORD,-ad-sign.byteimg.com,REJECT
+DOMAIN-KEYWORD,-be-pack-sign.pglstatp-toutiao.com,REJECT
+DOMAIN-KEYWORD,-be-pack.pglstatp-toutiao.com,REJECT
+DOMAIN-KEYWORD,-fe-tos.pglstatp-toutiao.com,REJECT
+DOMAIN-KEYWORD,api-access.pangolin-sdk-toutiao,REJECT
+DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
+DOMAIN,gdfp.gifshow.com,REJECT
+DOMAIN,open.e.kuaishou.com,REJECT
+DOMAIN-SUFFIX,adukwai.com,REJECT
+DOMAIN,mobads.baidu.com,REJECT
+DOMAIN,mobads-logs.baidu.com,REJECT
+DOMAIN,wn.pos.baidu.com,REJECT
+DOMAIN,bgg.baidu.com,REJECT
+DOMAIN,als.baidu.com,REJECT
+DOMAIN,feed-image.baidu.com,REJECT
+DOMAIN-SUFFIX,union.baidu.cn,REJECT
+DOMAIN-SUFFIX,union.baidu.com,REJECT
+DOMAIN,tower.ubixioe.com,REJECT
+DOMAIN,sdk-data.ubixioe.com,REJECT
+DOMAIN,api-c.dutils.com,REJECT
+DOMAIN,api-d.dutils.com,REJECT
+DOMAIN,api-p0.yksdks.com,REJECT
+DOMAIN,cache-verify.dutils.com,REJECT
+DOMAIN,cdn-api-verify.dutils.com,REJECT
+DOMAIN,devs-data.dutils.com,REJECT
+DOMAIN,log-verify.dutils.com,REJECT
+DOMAIN,m.mpl.dutils.com,REJECT
+DOMAIN,api.share.mob.com,REJECT
+DOMAIN,api.verify.mob.com,REJECT
+DOMAIN,log-verify.mob.com,REJECT
+DOMAIN,sdk.push.mob.com,REJECT
+DOMAIN,cnlogs.umeng.com,REJECT
+DOMAIN,errlog.umeng.com,REJECT
+DOMAIN,ucc.umeng.com,REJECT
+DOMAIN,ulogs.umeng.com,REJECT
+DOMAIN,utoken.umeng.com,REJECT
+
+[Rewrite]
+^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_home_pop_up reject-dict
+^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_home_tips reject-dict
+^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_index_operate2 reject-dict
+^https:\/\/saas\.hpplay\.cn\/api\/lebo-rabbit\/app-card\/list reject-dict
+^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app-user-banner reject-dict
+
+[Script]
+http-response ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_tab_red_dot\?user-tag=1$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/TV_Assistant_remove_ads.js,requires-body=true,tag=移除底栏视频标签
+
+[MitM]
+hostname=saas.hpplay.cn

@@ -1,0 +1,33 @@
+# 原链接 : https://kelee.one/Tool/Loon/Plugin/Tieba_remove_ads.plugin
+#!name=百度贴吧去广告
+#!desc=移除开屏广告、信息流广告和帖内广告，精简侧拉抽屉及我的页面。需注意此插件会导致新回复等通知功能不可用，需手动进入消息页点击查看。仅限iOS 15及以上版本系统使用。
+#App链接 = 
+#!author=ZenmoFeiShi[https://github.com/ZenmoFeiShi],可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md],app2smile[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=15
+#!loon_version=3.2.4(787)
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Tieba_remove_ads.plugin
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Tieba.png
+#!date=2024-11-28 00:00:00
+
+[Rule]
+DOMAIN,afd.baidu.com,REJECT
+DOMAIN,mobads.baidu.com,REJECT
+DOMAIN,180.76.76.200,REJECT
+IP-CIDR,180.76.76.200/32,REJECT,no-resolve
+
+[Rewrite]
+^https:\/\/tiebac\.baidu\.com\/c\/f\/search\/discover reject-dict
+^https:\/\/tiebac\.baidu\.com\/c\/f\/forum\/forumGuide reject-dict
+
+[Script]
+http-response ^https:\/\/tiebac\.baidu\.com\/livefeed\/feed script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Tieba_remove_ads.js,requires-body=true,tag=清理首页
+http-response ^https:\/\/tiebac\.baidu\.com\/c\/f\/sidebar\/home script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Tieba_remove_ads.js,requires-body=true,tag=清理侧拉抽屉
+http-response ^https:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Tieba_remove_ads.js,requires-body=true,tag=清理我的页面
+http-response ^https:\/\/tieba\.baidu\.com\/c\/f\/frs\/frsBottom script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/Tieba_remove_ads.js,requires-body=true,tag=清理首页
+http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/tieba-json.js,requires-body=true,timeout=10,tag=JSON处理
+http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/tieba-proto.js,requires-body=true,binary-body-mode=true,timeout=10,tag=Proto处理
+
+[MitM]
+hostname=tiebac.baidu.com,tieba.baidu.com

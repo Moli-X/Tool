@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-12-03T12:41:41.829Z
-# Size: 110397
+# Last Updated: 2024-12-04T06:38:16.248Z
+# Size: 110410
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -11591,6 +11591,7 @@ HOST-SUFFIX,linezing.com,REJECT
 HOST-SUFFIX,linkfars.com,REJECT
 HOST-SUFFIX,linkmepu.com,REJECT
 HOST-SUFFIX,linkmink.com,REJECT
+HOST-SUFFIX,linksprf.com,REJECT
 HOST-SUFFIX,list-ads.com,REJECT
 HOST-SUFFIX,liverail.com,REJECT
 HOST-SUFFIX,livestat.com,REJECT
@@ -12338,6 +12339,7 @@ HOST-SUFFIX,scanfang.com,REJECT
 HOST-SUFFIX,sconvtrk.com,REJECT
 HOST-SUFFIX,scriptil.com,REJECT
 HOST-SUFFIX,scrollye.com,REJECT
+HOST-SUFFIX,scroscoi.com,REJECT
 HOST-SUFFIX,sdk4push.com,REJECT
 HOST-SUFFIX,seaofads.com,REJECT
 HOST-SUFFIX,seedoupo.com,REJECT
@@ -14639,6 +14641,7 @@ HOST-SUFFIX,numberium.com,REJECT
 HOST-SUFFIX,numbninth.com,REJECT
 HOST-SUFFIX,nummobile.com,REJECT
 HOST-SUFFIX,nutiipwkk.com,REJECT
+HOST-SUFFIX,nuvaioqds.com,REJECT
 HOST-SUFFIX,nv3tosjqd.com,REJECT
 HOST-SUFFIX,nvtvssczb.com,REJECT
 HOST-SUFFIX,nwwrtbbit.com,REJECT
@@ -28965,6 +28968,7 @@ HOST-SUFFIX,neropolicycreat.com,REJECT
 HOST-SUFFIX,netapplications.com,REJECT
 HOST-SUFFIX,new-vietcombank.com,REJECT
 HOST-SUFFIX,newsforyourmood.com,REJECT
+HOST-SUFFIX,newtabextension.com,REJECT
 HOST-SUFFIX,nganhang-vpbank.com,REJECT
 HOST-SUFFIX,ngaytetlienquan.com,REJECT
 HOST-SUFFIX,nglestpeoplesho.com,REJECT
@@ -29772,6 +29776,7 @@ HOST-SUFFIX,committeeoutcome.com,REJECT
 HOST-SUFFIX,competemerriment.com,REJECT
 HOST-SUFFIX,compileformality.com,REJECT
 HOST-SUFFIX,comprehendpaying.com,REJECT
+HOST-SUFFIX,concealmentmimic.com,REJECT
 HOST-SUFFIX,conceivedtowards.com,REJECT
 HOST-SUFFIX,conduit-services.com,REJECT
 HOST-SUFFIX,confessioneurope.com,REJECT
@@ -36997,6 +37002,8 @@ HOST-SUFFIX,cfcdist.gdn,REJECT
 HOST-SUFFIX,cloudcdn.gdn,REJECT
 HOST-SUFFIX,cloudmedia.gdn,REJECT
 HOST-SUFFIX,xoilactv123.gdn,REJECT
+HOST-SUFFIX,d5r.icu,REJECT
+HOST-SUFFIX,fo0.icu,REJECT
 HOST-SUFFIX,0dwm.icu,REJECT
 HOST-SUFFIX,1buo.icu,REJECT
 HOST-SUFFIX,1gtp.icu,REJECT
@@ -37021,6 +37028,7 @@ HOST-SUFFIX,fy60.icu,REJECT
 HOST-SUFFIX,g41i.icu,REJECT
 HOST-SUFFIX,k5uj.icu,REJECT
 HOST-SUFFIX,oo3z.icu,REJECT
+HOST-SUFFIX,q1bp.icu,REJECT
 HOST-SUFFIX,w59g.icu,REJECT
 HOST-SUFFIX,wi1f.icu,REJECT
 HOST-SUFFIX,xa7j.icu,REJECT
@@ -37610,6 +37618,7 @@ HOST-SUFFIX,lbjekygz.icu,REJECT
 HOST-SUFFIX,lfrdskwj.icu,REJECT
 HOST-SUFFIX,ljzcawea.icu,REJECT
 HOST-SUFFIX,locpikbb.icu,REJECT
+HOST-SUFFIX,lumvkebr.icu,REJECT
 HOST-SUFFIX,nbfsvreu.icu,REJECT
 HOST-SUFFIX,ngxzkaxf.icu,REJECT
 HOST-SUFFIX,nlxgjwye.icu,REJECT
@@ -41549,6 +41558,7 @@ HOST-SUFFIX,kweizad.top,REJECT
 HOST-SUFFIX,kweriod.top,REJECT
 HOST-SUFFIX,kyislod.top,REJECT
 HOST-SUFFIX,kyuwkbd.top,REJECT
+HOST-SUFFIX,ldamcsl.top,REJECT
 HOST-SUFFIX,ldoshbl.top,REJECT
 HOST-SUFFIX,letlwsl.top,REJECT
 HOST-SUFFIX,lewrutl.top,REJECT
@@ -41583,6 +41593,7 @@ HOST-SUFFIX,nextpsh.top,REJECT
 HOST-SUFFIX,nitsche.top,REJECT
 HOST-SUFFIX,now-dns.top,REJECT
 HOST-SUFFIX,oaiqksi.top,REJECT
+HOST-SUFFIX,odamcsk.top,REJECT
 HOST-SUFFIX,oewrutk.top,REJECT
 HOST-SUFFIX,ofjslik.top,REJECT
 HOST-SUFFIX,okiterk.top,REJECT
@@ -44898,6 +44909,7 @@ HOST-SUFFIX,oongouha.xyz,REJECT
 HOST-SUFFIX,oophoame.xyz,REJECT
 HOST-SUFFIX,oopoawee.xyz,REJECT
 HOST-SUFFIX,ootchaig.xyz,REJECT
+HOST-SUFFIX,op3xdork.xyz,REJECT
 HOST-SUFFIX,ophophiz.xyz,REJECT
 HOST-SUFFIX,opsoudaw.xyz,REJECT
 HOST-SUFFIX,oqejupqb.xyz,REJECT
@@ -63657,6 +63669,7 @@ HOST-SUFFIX,1l-hit.mail.ru,REJECT
 HOST-SUFFIX,alt-ad.mail.ru,REJECT
 HOST-SUFFIX,showbiz.mail.ru,REJECT
 HOST-SUFFIX,top-fwz1.mail.ru,REJECT
+HOST-SUFFIX,media-stat.mail.ru,REJECT
 HOST-SUFFIX,top-staging.mail.ru,REJECT
 HOST-SUFFIX,analytics.move.ru,REJECT
 HOST-SUFFIX,analytics.msk1.ru,REJECT
@@ -63890,6 +63903,7 @@ HOST-SUFFIX,analytics.fontanka.ru,REJECT
 HOST-SUFFIX,statistics.fppressa.ru,REJECT
 HOST-SUFFIX,radar.imgsmail.ru,REJECT
 HOST-SUFFIX,mediator.imgsmail.ru,REJECT
+HOST-SUFFIX,media-advcycle.imgsmail.ru,REJECT
 HOST-SUFFIX,ads.imovideo.ru,REJECT
 HOST-SUFFIX,ads-gdl.imovideo.ru,REJECT
 HOST-SUFFIX,ads.interfax.ru,REJECT
@@ -70324,7 +70338,6 @@ HOST-SUFFIX,engagement.feedly.com,REJECT
 HOST-SUFFIX,1.feihua.com,REJECT
 HOST-SUFFIX,cash.femjoy.com,REJECT
 HOST-SUFFIX,links.fennel.com,REJECT
-HOST-SUFFIX,hub.fghtem.com,REJECT
 HOST-SUFFIX,go.fhlbny.com,REJECT
 HOST-SUFFIX,join.fhlbny.com,REJECT
 HOST-SUFFIX,learn.fhlbny.com,REJECT
@@ -110427,8 +110440,8 @@ HOST,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe,REJECT
 ################## EOF ##################
 #########################################
 # Sukka's Ruleset - Reject Domains
-# Last Updated: 2024-11-14T14:40:56.964Z
-# Size: 159
+# Last Updated: 2024-12-04T06:38:16.526Z
+# Size: 160
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -110506,6 +110519,7 @@ HOST,httpdns.push.heytapmobi.com,REJECT
 HOST,httpdns.ocloud.heytapmobi.com,REJECT
 HOST,httpdns.push.oppomobile.com,REJECT
 HOST,httpdns.ocloud.oppomobile.com,REJECT
+HOST,resolver.msg.xiaomi.net,REJECT
 HOST,dns.weixin.qq.com.cn,REJECT
 HOST-KEYWORD,.estream.,REJECT
 HOST-KEYWORD,jshosting,REJECT

@@ -1,0 +1,71 @@
+# 原链接 : https://kelee.one/Tool/Loon/Plugin/SF-Express_remove_ads.plugin
+#!name=顺丰速运去广告
+#!desc=移除开屏广告、首页下拉抽屉、首页推广、应用内悬浮窗、横幅广告，精简我的页面。
+#App链接 = 
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/SF-Express_remove_ads.plugin
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SF-Express.png
+#!date=2024-11-28 00:00:00
+
+[Rule]
+DOMAIN,adsmind.gdtimg.com,REJECT
+DOMAIN,adsmind.ugdtimg.com,REJECT
+DOMAIN,c2.gdt.qq.com,REJECT
+DOMAIN,huatuocode.huatuo.qq.com,REJECT
+DOMAIN,info4.video.qq.com,REJECT
+DOMAIN,info6.video.qq.com,REJECT
+DOMAIN,ios.bugly.qq.com,REJECT
+DOMAIN,ios.video.mpush.qq.com,REJECT
+DOMAIN,mi.gdt.qq.com,REJECT
+DOMAIN,otheve.beacon.qq.com,REJECT
+DOMAIN,pgdt.gtimg.cn,REJECT
+DOMAIN,pgdt.ugdtimg.com,REJECT
+DOMAIN,qzs.gdtimg.com,REJECT
+DOMAIN,qzs.qq.com,REJECT
+DOMAIN,rmonitor.qq.com,REJECT
+DOMAIN,sdk.e.qq.com,REJECT
+DOMAIN,sdkconfig.video.qq.com,REJECT
+DOMAIN,t.gdt.qq.com,REJECT
+DOMAIN,tmead.y.qq.com,REJECT
+DOMAIN,tmeadbak.y.qq.com,REJECT
+DOMAIN,tmeadcomm.y.qq.com,REJECT
+DOMAIN,tpns.qq.com,REJECT
+DOMAIN,v.gdt.qq.com,REJECT
+DOMAIN,v2.gdt.qq.com,REJECT
+DOMAIN,win.gdt.qq.com,REJECT
+DOMAIN,wup.imtt.qq.com,REJECT
+DOMAIN,tpstelemetry.tencent.com,REJECT
+DOMAIN-KEYWORD,trace.qq.com,REJECT
+DOMAIN-KEYWORD,trace.video.qq.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,l.qq.com,REJECT
+DOMAIN-SUFFIX,ugdtimg.com,REJECT
+IP-CIDR,47.110.187.87/32,REJECT,no-resolve
+DOMAIN,ali-stats.jpush.cn,REJECT
+DOMAIN,ce3e75d5.jpush.cn,REJECT
+DOMAIN,config-junion.jpush.cn,REJECT
+DOMAIN,config.jpush.cn,REJECT
+DOMAIN,fcapi-ipv6.jpush.cn,REJECT
+DOMAIN,gd-stats.jpush.cn,REJECT
+DOMAIN,s.jpush.cn,REJECT
+DOMAIN,sdk.verification.jiguang.cn,REJECT
+DOMAIN,sis-ipv6.jpush.cn,REJECT
+DOMAIN,smartop-sdkapi.jiguang.cn,REJECT
+DOMAIN,status-ipv6.jpush.cn,REJECT
+DOMAIN,tsis.jpush.cn,REJECT
+DOMAIN,user.jpush.cn,REJECT
+DOMAIN-SUFFIX,jiguang.cn,REJECT
+DOMAIN-SUFFIX,jpush.cn,REJECT
+DOMAIN-SUFFIX,jpush.io,REJECT
+
+[Rewrite]
+^https:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/queryInfoFlow$ reject-dict
+^https:\/\/ccsp-egmas\.sf-express\.com\/cx-app-video\/video\/app\/video\/labelClusterList$ reject-dict
+^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/memberGoods\/pointMallService\/goodsList$ reject-dict
+
+[MitM]
+hostname=ccsp-egmas.sf-express.com,ucmp.sf-express.com

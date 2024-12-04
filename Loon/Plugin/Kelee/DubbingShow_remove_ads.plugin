@@ -1,0 +1,33 @@
+# 原链接 : https://kelee.one/Tool/Loon/Plugin/DubbingShow_remove_ads.plugin
+#!name=配音秀去广告
+#!desc=移除开屏广告、弹窗、横幅、各类关注推荐。
+#App链接 = 
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/DubbingShow_remove_ads.plugin
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DubbingShow.png
+#!date=2024-11-28 00:00:00
+
+[Rule]
+DOMAIN,ios.bugly.qq.com,REJECT
+DOMAIN,sdk.e.qq.com,REJECT
+DOMAIN,us.l.qq.com,REJECT
+DOMAIN-SUFFIX,ugdtimg.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN,tmeadcomm.y.qq.com,REJECT
+
+[Rewrite]
+首页 - 推荐 - 语聊横幅
+^https:\/\/iosapi\.peiyinxiu\.com\/Api\/live\/LiveList response-body-json-del data.banners
+^https:\/\/iosapi\.peiyinxiu\.com\/api\/live\/FollowList response-body-json-del obj.data
+^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Friend\/GetRecommendUsers response-body-json-del obj.data
+^https:\/\/iosapi\.peiyinxiu\.com\/api\/Union\/HomeData response-body-json-del obj.data
+
+[Script]
+http-response ^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Film\/GetConfigValue script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/DubbingShow_remove_ads.js,requires-body=true,tag=移除首页底部弹窗
+
+[MitM]
+hostname=iosapi.peiyinxiu.com

@@ -1,0 +1,29 @@
+# 原链接 : https://kelee.one/Tool/Loon/Plugin/CatEarFM_remove_ads.plugin
+#!name=猫耳FM去广告
+#!desc=移除开屏广告、横幅推广、移除青少年模式弹窗，精简首页顶部入口和发现页面。
+#App链接 = 
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/CatEarFM_remove_ads.plugin
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CatEarFM.png
+#!date=2024-11-28 00:00:00
+
+[Rewrite]
+^https:\/\/app\.missevan\.com\/site\/launch\? response-body-json-del info
+^https:\/\/fm\.missevan\.com\/api\/v2\/meta\/banner$ response-body-json-del info
+^https:\/\/app\.missevan\.com\/site\/get-top$ response-body-json-del info.extra_banners
+^https:\/\/fm\.missevan\.com\/api\/v2\/recommended\/top$ response-body-json-del info
+^https:\/\/app\.missevan\.com\/drama\/catalog-homepage\? response-body-json-del info.extra_banners
+^https:\/\/app\.missevan\.com\/catalog\/sound-homepage\? response-body-json-del info.extra_banners
+^https:\/\/fm\.missevan\.com\/api\/v2\/chatroom\/sound\/recommend\? response-body-json-del info
+^https:\/\/app\.missevan\.com\/site\/config$ response-body-json-del info.teenager_popup_mode
+
+[Script]
+http-response ^https:\/\/app\.missevan\.com\/site\/icons\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/CatEarFM_remove_ads.js,requires-body=true,tag=精简首页顶部入口
+http-response ^https:\/\/app\.missevan\.com\/discovery\/list$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/CatEarFM_remove_ads.js,requires-body=true,tag=精简发现页面
+
+[MitM]
+hostname=app.missevan.com,fm.missevan.com

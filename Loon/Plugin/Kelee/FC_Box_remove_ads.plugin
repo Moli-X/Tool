@@ -1,0 +1,100 @@
+# 原链接 : https://kelee.one/Tool/Loon/Plugin/FC_Box_remove_ads.plugin
+#!name=丰巢去广告
+#!desc=移除弹窗，精简首页和生活服务。需要IPA签名注入方可使用，App Store用户请勿使用此插件，务必点击下方主页链接查看详细教程。
+#App链接 = 
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/FC_Box_remove_ads.plugin
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/FC_Box.png
+#!date=2024-11-28 00:00:00
+
+[Rule]
+DOMAIN,adsmind.gdtimg.com,REJECT
+DOMAIN,adsmind.ugdtimg.com,REJECT
+DOMAIN,c2.gdt.qq.com,REJECT
+DOMAIN,huatuocode.huatuo.qq.com,REJECT
+DOMAIN,info4.video.qq.com,REJECT
+DOMAIN,info6.video.qq.com,REJECT
+DOMAIN,ios.bugly.qq.com,REJECT
+DOMAIN,ios.video.mpush.qq.com,REJECT
+DOMAIN,mi.gdt.qq.com,REJECT
+DOMAIN,otheve.beacon.qq.com,REJECT
+DOMAIN,pgdt.gtimg.cn,REJECT
+DOMAIN,pgdt.ugdtimg.com,REJECT
+DOMAIN,qzs.gdtimg.com,REJECT
+DOMAIN,qzs.qq.com,REJECT
+DOMAIN,rmonitor.qq.com,REJECT
+DOMAIN,sdk.e.qq.com,REJECT
+DOMAIN,sdkconfig.video.qq.com,REJECT
+DOMAIN,t.gdt.qq.com,REJECT
+DOMAIN,tmead.y.qq.com,REJECT
+DOMAIN,tmeadbak.y.qq.com,REJECT
+DOMAIN,tmeadcomm.y.qq.com,REJECT
+DOMAIN,tpns.qq.com,REJECT
+DOMAIN,v.gdt.qq.com,REJECT
+DOMAIN,v2.gdt.qq.com,REJECT
+DOMAIN,win.gdt.qq.com,REJECT
+DOMAIN,wup.imtt.qq.com,REJECT
+DOMAIN,tpstelemetry.tencent.com,REJECT
+DOMAIN-KEYWORD,trace.qq.com,REJECT
+DOMAIN-KEYWORD,trace.video.qq.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,l.qq.com,REJECT
+DOMAIN-SUFFIX,ugdtimg.com,REJECT
+IP-CIDR,47.110.187.87/32,REJECT,no-resolve
+DOMAIN,als.baidu.com,REJECT
+DOMAIN,bgg.baidu.com,REJECT
+DOMAIN,cpro.baidustatic.com,REJECT
+DOMAIN,feed-image.baidu.com,REJECT
+DOMAIN,click-bes.baidu.com,REJECT
+DOMAIN,eclick.baidu.com,REJECT
+DOMAIN,mobads-logs.baidu.com,REJECT
+DOMAIN,mobads-pre-config.cdn.bcebos.com,REJECT
+DOMAIN,mobads.baidu.com,REJECT
+DOMAIN,nadvideo2.baidu.com,REJECT
+DOMAIN,wn.pos.baidu.com,REJECT
+DOMAIN,miniapp-ad.cdn.bcebos.com,REJECT
+DOMAIN-SUFFIX,union.baidu.cn,REJECT
+DOMAIN-SUFFIX,union.baidu.com,REJECT
+DOMAIN,b-gtc.getui.net,REJECT
+DOMAIN,c-gtc.getui.net,REJECT
+DOMAIN,c-hzgt2.getui.com,REJECT
+DOMAIN,c-ido.getui.net,REJECT
+DOMAIN,c-gtc.getui.net,REJECT
+DOMAIN,dnms.getui.com,REJECT
+DOMAIN,ido.getui.net,REJECT
+DOMAIN,sdk-conf.getui.com,REJECT
+DOMAIN,sdk-open-phone.getui.com,REJECT
+DOMAIN-SUFFIX,mobileservice.cn,REJECT
+DOMAIN-SUFFIX,getui.com,REJECT
+DOMAIN-SUFFIX,igexin.com,REJECT
+DOMAIN,cnlogs.umeng.com,REJECT
+DOMAIN,errlog.umeng.com,REJECT
+DOMAIN,errnewlog.umeng.com,REJECT
+DOMAIN,ucc.umeng.com,REJECT
+DOMAIN,ulogs.umeng.com,REJECT
+DOMAIN,utoken.umeng.com,REJECT
+DOMAIN,deeplink.umeng.com,REJECT
+DOMAIN,aspect-upush.umeng.com,REJECT
+DOMAIN,plbslog.umeng.com,REJECT
+DOMAIN,log.umtrack.com,REJECT
+DOMAIN,aaid.umeng.com,REJECT
+DOMAIN,log.umsns.com,REJECT
+
+[Rewrite]
+^https:\/\/consumer\.fcbox\.com\/fcboxactivityweb\/api\/v\d\/clientPage\/modulesAggregated\? reject-dict
+^https:\/\/consumer\.fcbox\.com\/fcboxactivityweb\/api\/v\d\/clientPage\/jinGangFirst\?
+^https:\/\/consumer\.fcbox\.com\/v2\/home\/mallInfo$ reject-dict
+^https:\/\/dsp\.fcbox\.com\/adSearch\/ reject-dict
+^https:\/\/consumer\.fcbox\.com\/hs-portal\/app\/config\/page\/home\/v2\? reject-dict
+^https:\/\/consumer\.fcbox\.com\/post\/suggestion\/query$ reject-dict
+^https:\/\/consumer\.fcbox\.com\/v1\/dynamicConfig\/findTabbarConfig\/mainPage$ response-body-json-del data.lifeService data.mall
+^https:\/\/consumer\.fcbox\.com\/fcboxactivityweb\/marketingEntrance\/retentionPopup$ reject-dict
+^https:\/\/consumer\.fcbox\.com\/fcboxactivityweb\/api\/clientPopup\/v\d\/queryPopupWithPriority$ reject-dict
+^https:\/\/consumer\.fcbox\.com\/fcboxactivityweb\/api\/guidePopup\/popup$ reject-dict
+
+[MitM]
+hostname=consumer.fcbox.com,dsp.fcbox.com

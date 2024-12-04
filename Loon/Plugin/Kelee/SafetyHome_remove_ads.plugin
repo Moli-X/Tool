@@ -1,0 +1,21 @@
+# 原链接 : https://kelee.one/Tool/Loon/Plugin/SafetyHome_remove_ads.plugin
+#!name=360智慧生活去广告
+#!desc=移除开屏广告、首页推广横幅、商城入口及我的页面推广。
+#App链接 = 
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/SafetyHome_remove_ads.plugin
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SafetyHome.png
+#!date=2024-11-28 00:00:00
+
+[Rule]
+DOMAIN,ad.iot.360.cn,REJECT
+
+[Rewrite]
+^https:\/\/app\.home\.360\.cn\/v1\/config\/custom_config reject-dict
+
+[MitM]
+hostname=app.home.360.cn

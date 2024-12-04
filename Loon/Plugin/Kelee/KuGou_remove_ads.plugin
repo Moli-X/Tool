@@ -1,0 +1,51 @@
+# 原链接 : https://kelee.one/Tool/Loon/Plugin/KuGou_remove_ads.plugin
+#!name=酷狗音乐去广告
+#!desc=移除开屏广告、应用各类弹窗、各类横幅广告、评论区广告和播放器界面广告。
+#App链接 = 
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
+#!homepage = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/KuGou_remove_ads.plugin
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KuGou.png
+#!date=2024-11-28 00:00:00
+
+[Rule]
+DOMAIN,ads.service.kugou.com,REJECT
+DOMAIN,adstats.tencentmusic.com,REJECT
+DOMAIN,adsmind.gdtimg.com,REJECT
+DOMAIN,adserviceretry.kugou.com,REJECT
+DOMAIN,adserviceretry.kglink.cn,REJECT
+DOMAIN,ad.tencentmusic.com,REJECT
+DOMAIN,adservice.kugou.com,REJECT
+DOMAIN,splashimgretrybssdl.cloud.kugou.com,REJECT
+DOMAIN,ios.bugly.qq.com,REJECT
+DOMAIN,sdk.e.qq.com,REJECT
+DOMAIN,us.l.qq.com,REJECT
+DOMAIN-SUFFIX,ugdtimg.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+URL-REGEX,"^http:\/\/log\.stat\.kugou\.com\/mobile\/ad\.html",REJECT
+
+[Rewrite]
+^https:\/\/fx\.service\.kugou\.com\/mfx-kugoulive\/ad\/ reject-dict
+^https:\/\/gateway(retry)?\.kugou\.com\/adp\/ad\/ reject-dict
+^https:\/\/gateway(retry)?\.kugou\.com\/ads\.gateway\/ reject-dict
+^https:\/\/gateway(retry)?\.kugou\.com\/v\d\/feeds\/follow_feed_fallback reject-dict
+^https:\/\/gateway(retry)?\.kugou\.com\/mstc\/musicsymbol\/v\d\/system\/profile reject-dict
+^https:\/\/gateway(retry)?\.kugou\.com\/searchnofocus\/v\d\/search_no_focus_word reject-dict
+^https:\/\/gateway(retry)?\.kugou\.com\/adp\/bubble\/v\d\/song_play reject-dict
+^https:\/\/gateway(retry)?\.kugou\.com\/singerdiscuss\/v\d\/entrance\/comment reject-dict
+^https:\/\/gateway(retry)?\.kugou\.com\/r\/v\d\/general\/putin\/midad reject-dict
+^https:\/\/gateway(retry)?\.kugou\.com\/ocean\/v\d\/sound\/banner reject-dict
+^https:\/\/gzacshow\.kugou\.com\/mfanxing-home\/cdn\/room\/index\/list_v2 reject-dict
+^https:\/\/gzacshow\.kugou\.com\/mfx-rt-show\/cdn\/mo\/show\/headline reject-dict
+^https:\/\/m1fxgroup\.kugou\.com\/fxsing\/yqc\/alongInfo\/getUserAlongInfo reject-dict
+^https:\/\/hwstore\.kugou\.com\/v\d\/get_store_data reject-dict
+^https:\/\/ep\.kugou\.com\/v\d\/album_shop\/get_entrance_info reject-dict
+
+[Script]
+http-response ^https:\/\/gateway(retry)?\.kugou\.com\/ocean\/v\d\/tab\/list_v\d script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Kelee/KuGou_remove_ads.js,requires-body=true,tag=精简顶部标签
+
+[MitM]
+hostname=gateway.kugou.com,fx.service.kugou.com,hwstore.kugou.com,ep.kugou.com,gatewayretry.kugou.com,gzacshow.kugou.com,m1fxgroup.kugou.com
