@@ -15,7 +15,7 @@
 ^https:\/\/app-v1\.ecoliving168\.com\/api\/v1\/advert\/config reject-dict
 
 [Script]
-http-response ^https:\/\/app-v1\.ecoliving168\.com\/api\/v1\/movie\/index_recommend\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/555DY_remove_ads.js,requires-body=true,tag=移除横幅广告
+http-response ^https:\/\/app-v1\.ecoliving168\.com\/api\/v1\/movie\/index_recommend\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//555DY_remove_ads.js,requires-body=true,tag=移除横幅广告
 
 [MitM]
 hostname=app-v1.ecoliving168.com

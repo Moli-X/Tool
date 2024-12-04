@@ -18,7 +18,7 @@
 ^https:\/\/(h3\.)?open\.taou\.com\/maimai\/feed\/v6\/detail_recommend_feeds\? response-body-json-del feeds
 
 [Script]
-http-response ^https:\/\/(h3\.)?open\.taou\.com\/maimai\/(feed|gossip)\/v\d\/(focus_feed|gossip_detail_comment|feed_detail_comment?)\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/MaiMai_remove_ads.js,requires-body=true,tag=移除信息流和评论区大块广告
+http-response ^https:\/\/(h3\.)?open\.taou\.com\/maimai\/(feed|gossip)\/v\d\/(focus_feed|gossip_detail_comment|feed_detail_comment?)\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//MaiMai_remove_ads.js,requires-body=true,tag=移除信息流和评论区大块广告
 
 [MitM]
 hostname=open.taou.com,h3.open.taou.com

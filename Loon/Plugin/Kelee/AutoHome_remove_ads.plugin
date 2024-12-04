@@ -39,12 +39,12 @@ DOMAIN,adproxy.autohome.com.cn,REJECT
 ^https:\/\/a\.athm\.cn\/clientlive\.api\.autohome\.com\.cn\/api\/live\/getserieswindowsinfo reject-dict
 
 [Script]
-http-response ^https:\/\/news\.app\.autohome\.com\.cn\/news_v\d+(?:\.\d+){2}\/news\/homenavigation script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoHome_remove_ads.js,requires-body=true,tag=精简我的页面
-http-response ^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/((usercenter\/getservicecards)|(carcard\/allcard)|(carcard\/mycardv\d+)|(carcard\/cards)) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoHome_remove_ads.js,requires-body=true,tag=精简我的页面
-http-response ^https:\/\/(a\.athm\.cn\/)?club\.app\.autohome\.com\.cn\/club_v\d+(?:\.\d+){2}\/club\/index\/businessv\d+ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoHome_remove_ads.js,requires-body=true,tag=社区广场去广告
-http-response ^https:\/\/(a\.athm\.cn\/)?cars\.app\.autohome\.com\.cn\/carstreaming\/selectcarportal\/reclist script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoHome_remove_ads.js,requires-body=true,tag=移除直播浮窗
-http-response ^https:\/\/(a\.athm\.cn\/)?cars\.app\.autohome\.com\.cn\/carstreaming\/selectcarportal\/seriestopwithtagscard script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoHome_remove_ads.js,requires-body=true,tag=移除报价页面直播内容
-http-response ^https:\/\/(a\.athm\.cn\/)?apiautoappusc\.che168\.com\/apic\/v\d+\/gethomepagefeed script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoHome_remove_ads.js,requires-body=true,tag=移除二手车竖版轮播图
+http-response ^https:\/\/news\.app\.autohome\.com\.cn\/news_v\d+(?:\.\d+){2}\/news\/homenavigation script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//AutoHome_remove_ads.js,requires-body=true,tag=精简我的页面
+http-response ^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/((usercenter\/getservicecards)|(carcard\/allcard)|(carcard\/mycardv\d+)|(carcard\/cards)) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//AutoHome_remove_ads.js,requires-body=true,tag=精简我的页面
+http-response ^https:\/\/(a\.athm\.cn\/)?club\.app\.autohome\.com\.cn\/club_v\d+(?:\.\d+){2}\/club\/index\/businessv\d+ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//AutoHome_remove_ads.js,requires-body=true,tag=社区广场去广告
+http-response ^https:\/\/(a\.athm\.cn\/)?cars\.app\.autohome\.com\.cn\/carstreaming\/selectcarportal\/reclist script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//AutoHome_remove_ads.js,requires-body=true,tag=移除直播浮窗
+http-response ^https:\/\/(a\.athm\.cn\/)?cars\.app\.autohome\.com\.cn\/carstreaming\/selectcarportal\/seriestopwithtagscard script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//AutoHome_remove_ads.js,requires-body=true,tag=移除报价页面直播内容
+http-response ^https:\/\/(a\.athm\.cn\/)?apiautoappusc\.che168\.com\/apic\/v\d+\/gethomepagefeed script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//AutoHome_remove_ads.js,requires-body=true,tag=移除二手车竖版轮播图
 
 [MitM]
 hostname=a.athm.cn,adproxy.autohome.com.cn,apiautoappusc.che168.com,autoapi.autohome.com.cn,cars.app.autohome.com.cn,clientlive.api.autohome.com.cn,club.app.autohome.com.cn,dealer.m.autohome.com.cn,maam.pingan.com.cn,mobile.app.autohome.com.cn,news.app.autohome.com.cn,pcmx.autohome.com.cn

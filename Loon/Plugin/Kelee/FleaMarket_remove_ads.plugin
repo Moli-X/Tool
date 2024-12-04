@@ -28,10 +28,10 @@ AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch"),(USER-AGENT,"%E9%97%B2%E9%
 ^https:\/\/h5\.m\.goofish\.com\/wow\/moyu\/moyu-project\/[\w-]*search[\w-]*\/pages\/ reject-200
 
 [Script]
-http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.idle\.user\.page\.my\.adapter\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FleaMarket_remove_ads.js,requires-body=true,tag=移除我的页面推广
-http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FleaMarket_remove_ads.js,requires-body=true,tag=移除首页信息流推广
-http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FleaMarket_remove_ads.js,requires-body=true,tag=移除首页顶部标签推广
-http-response ^https:\/\/g-(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FleaMarket_remove_ads.js,requires-body=true,tag=移除搜索结果广告
+http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.idle\.user\.page\.my\.adapter\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//FleaMarket_remove_ads.js,requires-body=true,tag=移除我的页面推广
+http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//FleaMarket_remove_ads.js,requires-body=true,tag=移除首页信息流推广
+http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//FleaMarket_remove_ads.js,requires-body=true,tag=移除首页顶部标签推广
+http-response ^https:\/\/g-(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//FleaMarket_remove_ads.js,requires-body=true,tag=移除搜索结果广告
 
 [MitM]
 hostname=acs.m.goofish.com,g-acs.m.goofish.com

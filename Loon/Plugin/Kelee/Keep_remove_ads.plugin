@@ -24,7 +24,7 @@ DOMAIN,hc-ssp.sm.cn,REJECT
 ^https:\/\/api\.gotokeep\.com\/guide-webapp\/v1\/popup\/getPopUp reject-dict
 
 [Script]
-http-response ^https:\/\/api\.gotokeep\.com\/config\/v3\/basic script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Keep_remove_ads.js,requires-body=true,tag=移除首页活动标签
+http-response ^https:\/\/api\.gotokeep\.com\/config\/v3\/basic script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//Keep_remove_ads.js,requires-body=true,tag=移除首页活动标签
 
 [MitM]
 hostname=api.gotokeep.com,kad.gotokeep.com

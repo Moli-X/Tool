@@ -45,7 +45,7 @@ URL-REGEX,"^http:\/\/log\.stat\.kugou\.com\/mobile\/ad\.html",REJECT
 ^https:\/\/ep\.kugou\.com\/v\d\/album_shop\/get_entrance_info reject-dict
 
 [Script]
-http-response ^https:\/\/gateway(retry)?\.kugou\.com\/ocean\/v\d\/tab\/list_v\d script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/KuGou_remove_ads.js,requires-body=true,tag=精简顶部标签
+http-response ^https:\/\/gateway(retry)?\.kugou\.com\/ocean\/v\d\/tab\/list_v\d script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//KuGou_remove_ads.js,requires-body=true,tag=精简顶部标签
 
 [MitM]
 hostname=gateway.kugou.com,fx.service.kugou.com,hwstore.kugou.com,ep.kugou.com,gatewayretry.kugou.com,gzacshow.kugou.com,m1fxgroup.kugou.com

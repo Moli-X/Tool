@@ -65,7 +65,7 @@ DOMAIN,utoken.umeng.com,REJECT
 ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app-user-banner reject-dict
 
 [Script]
-http-response ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_tab_red_dot\?user-tag=1$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/TV_Assistant_remove_ads.js,requires-body=true,tag=移除底栏视频标签
+http-response ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_tab_red_dot\?user-tag=1$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script//TV_Assistant_remove_ads.js,requires-body=true,tag=移除底栏视频标签
 
 [MitM]
 hostname=saas.hpplay.cn
