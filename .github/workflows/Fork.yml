@@ -438,26 +438,23 @@ jobs:
     - name: 提取链接
       if: env.LOON_SWITCH == 'true'
       run: |
-        # 输出当前工作目录
         echo "当前工作目录：$(pwd)"
     
-        # 确保父目录存在
-        mkdir -p Tool-repo/Loon/Plugin
-        mkdir -p Tool-repo/Loon/Script
-    
-        # 创建目标目录
-        mkdir -p Tool-repo/Loon/Plugin/Kelee
-        mkdir -p Tool-repo/Loon/Script/Kelee
+        # 确保目录存在
+        mkdir -p Loon/Plugin/Kelee
+        mkdir -p Loon/Script/Kelee
     
         # 检查目录是否创建成功
-        if [ -d "Tool-repo/Loon/Plugin/Kelee" ]; then
-          echo "成功创建目录 Tool-repo/Loon/Plugin/Kelee"
+        if [ -d "Loon/Plugin/Kelee" ]; then
+          echo "成功创建目录 Loon/Plugin/Kelee"
         else
-          echo "目录创建失败 Tool-repo/Loon/Plugin/Kelee"
+          echo "目录创建失败 Loon/Plugin/Kelee"
           exit 1
         fi
     
-        cd Tool-repo/Loon/Plugin/Kelee
+        cd Loon/Plugin/Kelee
+    
+
     
         # 用一个临时文件来存储所有提取到的 URL，进行去重
         temp_urls=$(mktemp)
