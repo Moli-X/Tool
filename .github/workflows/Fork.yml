@@ -60,7 +60,6 @@ jobs:
           echo "Debug 模式关闭，所有正常运行"
         fi
 
-
     
 ###### Fork
 
@@ -71,7 +70,7 @@ jobs:
         curl -L -o Tool-repo/.github/Record/Build.yml "https://github.com/Repcz/Tool/raw/X/.github/workflows/Build.yml"
         curl -L -o Tool-repo/.github/Record/ClearCommits.yml "https://github.com/Repcz/Tool/raw/X/.github/workflows/ClearCommits.yml"
 
-    - name: Run Bash Script
+    - name: 规则下载
       run: |
 
         # 检查是否在正确的仓库中
@@ -84,43 +83,64 @@ jobs:
         
             # 定义关联数组（使用简洁的键名）
             declare -A files=(
+                # 苹果
                 ["APNs"]="https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
                 ["Apple"]="https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
                 ["AppleProxy"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleProxy/AppleProxy.list"
-                ["OpenAI"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list"
+                ["AppStore"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppStore/AppStore.list"  
+                ["AppleID"]="https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/AppleID/AppleID.list"   
+                # AI               
+                ["OpenAI"]="https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/OpenAI/OpenAI.list"
                 ["Claude"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Claude.list"
                 ["AI"]="https://ruleset.skk.moe/List/non_ip/ai.conf"
+                # 社交媒体
                 ["Twitter"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
                 ["Instagram"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Instagram.list"
                 ["Spotify"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list"
+                # 谷歌
                 ["YouTube"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
                 ["Google"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list"
-                ["Github"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list"
+                # 微软
+                ["Github"]="https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/GitHub/GitHub.list"
                 ["OneDrive"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list"
                 ["Microsoft"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Microsoft.list"
+                # 极狐
+                ["GitLab"]="https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/GitLab/GitLab.list"
+                # 甲骨文
                 ["Oracle"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Oracle/Oracle.list"
+                # 流媒体
+                ["DouYin"]="https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/DouYin/DouYin.list"
                 ["TikTok"]="https://kelee.one/Tool/Loon/Rule/TikTok.list"
                 ["Netflix"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list"
                 ["HBO"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
                 ["Disney"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
                 ["PrimeVideo"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrimeVideo/PrimeVideo.list"
+                # PayPal
                 ["PayPal"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list"
+                # Cloudflare
                 ["Cloudflare"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloudflare/Cloudflare.list"
+                # 游戏
                 ["Steam"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list"
                 ["Epic"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
                 ["Game"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list"
+                # 下载CDN
                 ["DownloadCDN_Global"]="https://kelee.one/Tool/Loon/Rule/InternationalDownloadCDN.list"
                 ["DownloadCDN_CN"]="https://kelee.one/Tool/Loon/Rule/ChinaDownloadCDN.list"
+                # 远程软件 
+                ["TeamViewer"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/TeamViewer/TeamViewer.list"
+                # 国内规则 
                 ["Bilibili"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
                 ["WeChat"]="https://raw.githubusercontent.com/NobyDa/Script/master/Surge/WeChat.list"
                 ["ChinaASN"]="https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
                 ["ChinaDomain"]="https://ruleset.skk.moe/List/non_ip/domestic.conf"
+                ["Lan"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
+                # 广告规则
                 ["Ads_limbopro"]="https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Surge/rule/Adblock4limbo_surge.list"
                 ["Ads_EasyListChina"]="https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easylistchina_surge.list"
                 ["Ads_EasyListPrivacy"]="https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easyprivacy_surge.list"
                 ["Ads_Dlerio"]="https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/AdBlock.list"
                 ["Ads_AWAvenue"]="https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge.list"
-                ["TeamViewer"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/TeamViewer/TeamViewer.list"
+
             )
         
             # 下载文件
@@ -136,9 +156,7 @@ jobs:
         fi
 
 
-
-
-    - name: Source build
+    - name: Source创建
       run: |
         for file in Tool-repo/Ruleset/*.list ; do
           if [ -f "$file" ]; then
@@ -156,7 +174,7 @@ jobs:
           fi
         done
 
-    - name: Source sort
+    - name: Source整理
       run: |
         for file in Tool-repo/Ruleset/*.list ; do
           if [ -f "$file" ]; then
@@ -186,7 +204,7 @@ jobs:
           fi
         done
 
-    - name: Copy files
+    - name: Copy文件
       run: |
         rm -rf Tool-repo/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
         mkdir -p Tool-repo/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
@@ -203,6 +221,7 @@ jobs:
 
 ###### Loon
     - name: Loon
+      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         for file in Tool-repo/Loon/Rules/*.list; do
           if [ -f "$file" ]; then
@@ -212,52 +231,6 @@ jobs:
             awk -v fname="$file_names" 'NR==1 {print "# 规则名称: " fname} {print}' "$file" > tmpfile && mv tmpfile "$file"
             awk -v count="$line_count" 'NR==2 {print "# 规则统计: " count} {print}' "$file" > tmpfile && mv tmpfile "$file"
             sed -i '2a\\' "$file"
-          else
-            echo "$file not found."
-          fi
-        done
-
-
-      # Fork 可莉插件、脚本
-    - name: 整体复刻LOON模块
-      if: env.LOON_SWITCH == 'pause'   # 添加开关条件
-      run: |
-        rm -rf Tool-repo/Loon/Plugin/lodepuly/*
-        rm -rf Tool-repo/Loon/Script/lodepuly/*
-        mkdir -p Tool-repo/Loon/Plugin/lodepuly
-        git clone https://gitlab.com/lodepuly/vpn_tool.git lodepuly_Tmp
-        cp -r lodepuly_Tmp/Tool/Loon/Plugin/* Tool-repo/Loon/Plugin/lodepuly
-        cp -r lodepuly_Tmp/Resource/Script/* Tool-repo/Loon/Script/lodepuly/
-        rm -rf lodepuly_Tmp   
-
-
-
-    - name: 整体编辑LOON模块
-      if: env.LOON_SWITCH == 'pause'  # 添加开关条件
-      run: |
-        cd Tool-repo/Loon/Plugin/lodepuly
-        for file in *.plugin; do
-          if [ "$file" ] ; then
-    
-            # 修改脚本链接
-            sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/Moli-X\/Tool\/X\/Loon\/Script\/lodepuly/g' "$file"
-            
-            # 修改作者注释部分为 "莫离[https://github.com/Moli-X]"
-            sed -i 's/#!author = .*/#!author = 莫离[https:\/\/github.com\/Moli-X\/Tool\/blob\/X\/Loon\/Readme.md]/g' "$file"
-            
-            # 修改主页链接为 raw 格式
-            sed -i 's|#!homepage = .*|#!homepage = https:\/\/github.com\/Moli-X\/Tool\/raw\/X\/Loon\/Plugin\/lodepuly\/'"$file"'|g' "$file"
-    
-            # 修改 #!openUrl = 为 #App链接 =
-            sed -i 's/#!openUrl = /#App链接 = /g' "$file"
-    
-            # 增加 "# 原链接 = " 部分，设置为 Fork 的原始链接      
-            if grep -q "#!idate =" "$file"; then
-              sed -i '/#!idate = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Tool/Loon\/Plugin\/'"$file" "$file"
-            elif grep -q "#!icon =" "$file"; then
-              sed -i '/#!icon = .*/a # 原链接 = https:\/\/gitlab.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Tool/Loon\/Plugin\/'"$file" "$file"
-            fi
-    
           else
             echo "$file not found."
           fi
@@ -471,7 +444,7 @@ jobs:
                 echo "目标目录不存在，创建目录..."
                 mkdir -p Script
               fi
-    
+
               # 使用 curl 下载脚本
               curl -A "Surge iOS/3367" -L -o "Script/$script_name" "$script_url" || echo "Failed to download $script_url" >> error.log
             done
@@ -489,15 +462,11 @@ jobs:
             # 修改以 .js 结尾的脚本链接，删除一个文件夹部分
             sed -i 's|https://kelee\.one/Resource/Script/.*/\([^/]*\.js\)|https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/\1|' "$file"
 
-
-
             # 修改 #!homepage 行（处理等号前可能有空格的情况）
             sed -i 's|#!homepage\s*=\s*.*|#!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/'"$file"'|g' "$file"
 
-
             # 直接修改 #!openUrl 或 #!openurl 为 #App链接
             sed -i 's|^#!open[uU]rl\s*=\s*\(.*\)|#App链接=\1|' "$file"
-            #sed -i 's|^#!openUrl\s*=\s*\(.*\)|#App链接=\1|' "$file"
 
             # 判断是否有 []，如果有就替换最后一个 []，否则直接添加
             sed -i '/^#!author/{
@@ -509,21 +478,16 @@ jobs:
             s|\(#!author\s*=\s*.*\),\([^,]*\)\[\([^]]*\)\]|\1,\2[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|
             }' "$file"
 
-            # sed -i 's|\(#!author\s*=\s*.*\)\[[^]]*\]|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
-            
-
-
-
           fi
         done
 
 
 
 
-
 ###### Clash
 
-    - name: Clash
+    - name: Clash规则
+      if: env.CLASH_SWITCH == 'true'  # 添加开关条件
       run: |
         rm -rf Tool-repo/Ruleset
         for file in Tool-repo/Clash/Rules/*.list; do
@@ -540,12 +504,19 @@ jobs:
           fi
         done
 
+    - name: 复刻Meta覆写
+      if: env.CLASH_SWITCH == 'true'  # 根据环境变量控制是否执行
+      run: |
+        mkdir -p Tool-repo/Clash/Meta
 
+        curl -L -o Tool-repo/Clash/Meta/Override.js "https://github.com/Repcz/Tool/raw/X/Clash/Meta/Override.js"
+        curl -L -o Tool-repo/Clash/Meta/ConfigSet.js "https://github.com/Moli-X/Resources/raw/main/Clash/Script/ConfigSet.js"
 
 
 ###### QuantumultX
 
-    - name: QuantumultX
+    - name: QuantumultX规则
+      if: env.QUANTUMULTX_SWITCH == 'true'  # 添加开关条件
       run: |
         for file in Tool-repo/QuantumultX/Rules/*.list; do
           if [ -f "$file" ]; then
@@ -580,7 +551,8 @@ jobs:
 
 ###### Surge
 
-    - name: Surge
+    - name: Surge规则
+      if: env.SURGE_SWITCH == 'true'  # 添加开关条件
       run: |
         for file in Tool-repo/Surge/Rules/*.list; do
           if [ -f "$file" ]; then
@@ -598,7 +570,8 @@ jobs:
 
 ###### Shadowrocket
 
-    - name: Shadowrocket
+    - name: Shadowrocket规则
+      if: env.SHADOWROCKET_SWITCH == 'true'  # 添加开关条件
       run: |
         for file in Tool-repo/Shadowrocket/Rules/*.list; do
           if [ -f "$file" ]; then
@@ -616,7 +589,8 @@ jobs:
 
 ###### Stash
 
-    - name: Stash
+    - name: Stash规则
+      if: env.STASH_SWITCH == 'true'  # 添加开关条件
       run: |
         for file in Tool-repo/Stash/Rules/*.list; do
           if [ -f "$file" ]; then
@@ -641,7 +615,8 @@ jobs:
 
 ###### Egern       
 
-    - name: Egern
+    - name: Egern规则
+      if: env.EGERN_SWITCH == 'true'  # 添加开关条件
       run: |
         for file in Tool-repo/Egern/Rules/*.yaml; do
           if [ -f "$file" ]; then
@@ -693,14 +668,6 @@ jobs:
         curl -L -o Tool-repo/GeoIP/GeoLite2-ASN.mmdb "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
 
 
-###### Meta
-    - name: 复刻META覆写
-      if: env.CLASH_SWITCH == 'true'  # 根据环境变量控制是否执行
-      run: |
-        mkdir -p Tool-repo/Clash/Meta
-
-        curl -L -o Tool-repo/Clash/Meta/Override.js "https://github.com/Repcz/Tool/raw/X/Clash/Meta/Override.js"
-        curl -L -o Tool-repo/Clash/Meta/ConfigSet.js "https://github.com/Moli-X/Resources/raw/main/Clash/Script/ConfigSet.js"
 
 
 ###### 可莉README
@@ -728,10 +695,6 @@ jobs:
         sed -i 's|https://kelee.one/Tool/Loon/Plugin|https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee|g' Tool-repo/Loon/Readme.md
 
     
-
-
-
-
     
        
 ###### Commit
