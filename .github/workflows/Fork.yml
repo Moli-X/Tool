@@ -1,4 +1,4 @@
-# 2024-12-04
+# 2024-12-05
 
 name: Fork & Edit
 
@@ -99,6 +99,7 @@ jobs:
                 ["Instagram"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Instagram.list"
                 ["Spotify"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list"
                 ["Telegram"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list" 
+                ["Facebook"]="https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Facebook/Facebook.list" 
                 # 谷歌
                 ["YouTube"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
                 ["Google"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list"
@@ -143,6 +144,7 @@ jobs:
                 # 国外规则 
                 ["ProxyGFWlist"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
                 # 广告规则
+                ["HTTPDNS.Block"]="https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/HTTPDNS.Block.list"
                 ["Ads_limbopro"]="https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Surge/rule/Adblock4limbo_surge.list"
                 ["Ads_EasyListChina"]="https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easylistchina_surge.list"
                 ["Ads_EasyListPrivacy"]="https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easyprivacy_surge.list"
