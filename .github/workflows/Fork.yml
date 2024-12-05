@@ -565,6 +565,13 @@ jobs:
           fi
         done
 
+
+    - name: 单独复刻QX配置
+      if: env.QUANTUMULTX_SWITCH == 'true'  # 添加开关条件
+      run: |
+        mkdir -p Tool/QuantumultX
+        curl -L -o Tool-repo/QuantumultX/QuantumultX.conf "https://github.com/GodMoli/QuanX/raw/main/File/Auto.conf"
+
 ###### Surge
 
     - name: Surge规则
