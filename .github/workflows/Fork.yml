@@ -68,7 +68,7 @@ jobs:
       if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/.github/Record
-        curl -L -o Tool-repo/.github/Record/Fork.yml "https://github.com/Repcz/Tool/raw/X/.github/workflows/Buid.yml"
+        curl -L -o Tool-repo/.github/Record/Buid.yml "https://github.com/Repcz/Tool/raw/X/.github/workflows/Buid.yml"
         curl -L -o Tool-repo/.github/Record/ClearCommits.yml "https://github.com/Repcz/Tool/raw/X/.github/workflows/ClearCommits.yml"
 
     - name: Run Bash Script
@@ -559,10 +559,7 @@ jobs:
             sed -i 's|https://kelee\.one/Resource/Script/.*/\([^/]*\.js\)|https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/\1|' "$file"
 
 
-            # 修改 #!author 行，确保替换现有的 [] 或者添加新的链接
-            sed -i 's|\(#!author\s*=\s*.*\)\(\[\([^]]*\)\]\)*|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
-            # sed -i 's|\(#!author\s*=\s*.*\)\[[^]]*\]|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
-            
+
             # 修改 #!homepage 行（处理等号前可能有空格的情况）
             sed -i 's|#!homepage\s*=\s*.*|#!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/'"$file"'|g' "$file"
 
@@ -570,6 +567,22 @@ jobs:
             # 直接修改 #!openUrl 或 #!openurl 为 #App链接
             sed -i 's|^#!open[uU]rl\s*=\s*\(.*\)|#App链接=\1|' "$file"
             #sed -i 's|^#!openUrl\s*=\s*\(.*\)|#App链接=\1|' "$file"
+
+            # 判断是否有 []，如果有就替换最后一个 []，否则直接添加
+            sed -i '/^#!author/{
+            # 如果没有 []，在末尾添加新的链接
+            /^[^[]*$/ s|\(#!author\s*=\s*[^,]*\)$|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|
+            # 如果有 []，替换最后一个 [] 内容
+            s|\(#!author\s*=\s*.*\)\[\([^]]*\)\]|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|
+            # 如果有多个作者，只替换最后一个作者的 [] 或者加到末尾
+            s|\(#!author\s*=\s*.*\),\([^,]*\)\[\([^]]*\)\]|\1,\2[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|
+            }' "$file"
+
+            # sed -i 's|\(#!author\s*=\s*.*\)\[[^]]*\]|\1[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]|' "$file"
+            
+
+
+
           fi
         done
 
