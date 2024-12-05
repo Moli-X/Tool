@@ -1,7 +1,7 @@
 /*
 脚本引用https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/breakssl.js
 */
-// 2023-12-07 18:25
+// 2023-12-11 17:00
 
 const url = $request.url;
 const header = $request.headers;
