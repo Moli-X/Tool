@@ -670,7 +670,7 @@ jobs:
       if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/GeoIP
-        curl -L -o Tool-repo/GeoIP/CN_Country.mmdb "https://raw.githubusercontent.com/Masaiki/GeoIP2-CN/release/Country.mmdb"
+        curl -L -o Tool-repo/GeoIP/CN_Country.mmdb "https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb"
         curl -L -o Tool-repo/GeoIP/Global_Country.mmdb "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"
         curl -L -o Tool-repo/GeoIP/geoip-lite.dat "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
         curl -L -o Tool-repo/GeoIP/geosite.dat "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
