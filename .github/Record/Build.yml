@@ -147,6 +147,7 @@ jobs:
                 "Telegram.list https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Custom/Telegram.list"
                 "TronLink.list https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Custom/TronLink.list"
                 "Trust.list https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Custom/Trust.list"
+                "Ads_DiDiChuXing.list https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Custom/Ads_DiDiChuXing.list"
             )
             for file in "${files[@]}"; do
                 set -- $file
