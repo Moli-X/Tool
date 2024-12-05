@@ -1,7 +1,7 @@
 /*
 脚本引用https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
 */
-// 2023-11-15 17:20
+// 2023-12-11 17:00
 
 const url = $request.url;
 if (!$response.body) $done({});
