@@ -1,46 +1,52 @@
-# NAME: Telegram
-# DOMAIN: 2
-# HOST-KEYWORD: 1
-# HOST-SUFFIX: 22
-# IP-ASN: 5
-# IP-CIDR: 4
-# IP-CIDR6: 4
-# TOTAL: 38
-HOST,api.imem.app,PROXY
-HOST,api.swiftgram.app,PROXY
-HOST-SUFFIX,cdn-telegram.org,PROXY
-HOST-SUFFIX,comments.app,PROXY
-HOST-SUFFIX,contest.com,PROXY
-HOST-SUFFIX,graph.org,PROXY
-HOST-SUFFIX,legra.ph,PROXY
-HOST-SUFFIX,mbrx.app,PROXY
-HOST-SUFFIX,quiz.directory,PROXY
-HOST-SUFFIX,stel.com,PROXY
-HOST-SUFFIX,t.me,PROXY
-HOST-SUFFIX,tdesktop.com,PROXY
-HOST-SUFFIX,telega.one,PROXY
-HOST-SUFFIX,telegra.ph,PROXY
-HOST-SUFFIX,telegram-cdn.org,PROXY
-HOST-SUFFIX,telegram.dog,PROXY
-HOST-SUFFIX,telegram.me,PROXY
-HOST-SUFFIX,telegram.org,PROXY
-HOST-SUFFIX,telegram.space,PROXY
-HOST-SUFFIX,telegramdownload.com,PROXY
-HOST-SUFFIX,telesco.pe,PROXY
-HOST-SUFFIX,tg.dev,PROXY
-HOST-SUFFIX,tx.me,PROXY
-HOST-SUFFIX,usercontent.dev,PROXY
-HOST-KEYWORD,nicegram,PROXY
-IP-ASN,211157,PROXY
-IP-ASN,44907,PROXY
-IP-ASN,59930,PROXY
-IP-ASN,62014,PROXY
-IP-ASN,62041,PROXY
-IP-CIDR,109.239.140.0/24,PROXY
-IP-CIDR,149.154.160.0/20,PROXY
-IP-CIDR,5.28.192.0/18,PROXY
-IP-CIDR,91.108.0.0/16,PROXY
-IP6-CIDR,2001:67c:4e8::/48,PROXY
-IP6-CIDR,2001:b28:f23c::/47,PROXY
-IP6-CIDR,2001:b28:f23f::/48,PROXY
-IP6-CIDR,2a0a:f280::/29,PROXY
+# 规则名称: Telegram
+# 规则统计: 49
+
+HOST,api.mixpanel.com,Telegram
+HOST,events-gateway.ncdev.site,Telegram
+HOST-SUFFIX,cdn-telegram.org,Telegram
+HOST-SUFFIX,comments.app,Telegram
+HOST-SUFFIX,contest.com,Telegram
+HOST-SUFFIX,graph.org,Telegram
+HOST-SUFFIX,imem.app,Telegram
+HOST-SUFFIX,iturrit.com,Telegram
+HOST-SUFFIX,legra.ph,Telegram
+HOST-SUFFIX,mbrx.app,Telegram
+HOST-SUFFIX,quiz.directory,Telegram
+HOST-SUFFIX,stel.com,Telegram
+HOST-SUFFIX,swiftgram.app,Telegram
+HOST-SUFFIX,t.me,Telegram
+HOST-SUFFIX,tdesktop.com,Telegram
+HOST-SUFFIX,telega.one,Telegram
+HOST-SUFFIX,telegra.ph,Telegram
+HOST-SUFFIX,telegram-cdn.org,Telegram
+HOST-SUFFIX,telegram.dog,Telegram
+HOST-SUFFIX,telegram.me,Telegram
+HOST-SUFFIX,telegram.org,Telegram
+HOST-SUFFIX,telegram.space,Telegram
+HOST-SUFFIX,telegramdownload.com,Telegram
+HOST-SUFFIX,telesco.pe,Telegram
+HOST-SUFFIX,tg.dev,Telegram
+HOST-SUFFIX,tx.me,Telegram
+HOST-SUFFIX,usercontent.dev,Telegram
+HOST-SUFFIX,walletbot.me,Telegram
+HOST-KEYWORD,nicegram,Telegram
+HOST-KEYWORD,telegram,Telegram
+IP-CIDR,149.154.160.0/20,Telegram
+IP-CIDR,185.76.151.0/24,Telegram
+IP-CIDR,91.105.192.0/23,Telegram
+IP-CIDR,91.108.12.0/22,Telegram
+IP-CIDR,91.108.16.0/22,Telegram
+IP-CIDR,91.108.20.0/22,Telegram
+IP-CIDR,91.108.4.0/22,Telegram
+IP-CIDR,91.108.56.0/22,Telegram
+IP-CIDR,91.108.8.0/22,Telegram
+IP6-CIDR,2001:67c:4e8::/48,Telegram
+IP6-CIDR,2001:b28:f23c::/48,Telegram
+IP6-CIDR,2001:b28:f23d::/48,Telegram
+IP6-CIDR,2001:b28:f23f::/48,Telegram
+IP6-CIDR,2a0a:f280::/32,Telegram
+IP-ASN,211157,Telegram
+IP-ASN,44907,Telegram
+IP-ASN,59930,Telegram
+IP-ASN,62014,Telegram
+IP-ASN,62041,Telegram

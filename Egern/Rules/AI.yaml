@@ -1,45 +1,40 @@
-no_resolve: true
+# 规则名称: AI
+# 规则统计: 34
+
 domain_set:
-- browser-intake-datadoghq.com
-- chat.openai.com.cdn.cloudflare.net
-- gemini.google.com
-- openai-api.arkoselabs.com
-- openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-- openaicomproductionae4b.blob.core.windows.net
-- production-openaicom-storage.azureedge.net
-- static.cloudflareinsights.com
+  - ai.google.dev
+  - alkalicore-pa.clients6.google.com
+  - alkalimakersuite-pa.clients6.google.com
+  - api.github.com
+  - gateway.ai.cloudflare.com
 domain_suffix_set:
-- ai.com
-- algolia.net
-- api.statsig.com
-- auth0.com
-- chatgpt.com
-- chatgpt.livekit.cloud
-- client-api.arkoselabs.com
-- events.statsigapi.net
-- featuregates.org
-- host.livekit.cloud
-- identrust.com
-- intercom.io
-- intercomcdn.com
-- launchdarkly.com
-- oaistatic.com
-- oaiusercontent.com
-- observeit.net
-- openai.com
-- openaiapi-site.azureedge.net
-- openaicom.imgix.net
-- segment.io
-- sentry.io
-- stripe.com
-- turn.livekit.cloud
+  - ai.com
+  - aistudio.google.com
+  - anthropic.com
+  - bard.google.com
+  - chat.com
+  - chatgpt.com
+  - claude.ai
+  - clipdrop.co
+  - deepmind.com
+  - deepmind.google
+  - dify.ai
+  - geller-pa.googleapis.com
+  - gemini.google.com
+  - generativeai.google
+  - generativelanguage.googleapis.com
+  - groq.com
+  - jasper.ai
+  - makersuite.google.com
+  - meta.ai
+  - notebooklm.google
+  - notebooklm.google.com
+  - oaistatic.com
+  - oaiusercontent.com
+  - openart.ai
+  - perplexity.ai
+  - poe.com
+  - proactivebackend-pa.googleapis.com
+  - x.ai
 domain_keyword_set:
-- openai
-domain_regex_set:
-ip_cidr_set:
-- 24.199.123.28/32
-- 64.23.132.171/32
-ip_cidr6_set:
-asn_set:
-- '20473'
-url_regex_set:
+  - openai

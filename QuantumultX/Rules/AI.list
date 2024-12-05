@@ -1,43 +1,37 @@
-# NAME: OpenAI
-# DOMAIN: 8
-# HOST-KEYWORD: 1
-# HOST-SUFFIX: 24
-# IP-ASN: 1
-# IP-CIDR: 2
-# TOTAL: 36
-HOST,browser-intake-datadoghq.com,PROXY
-HOST,chat.openai.com.cdn.cloudflare.net,PROXY
-HOST,gemini.google.com,PROXY
-HOST,openai-api.arkoselabs.com,PROXY
-HOST,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,PROXY
-HOST,openaicomproductionae4b.blob.core.windows.net,PROXY
-HOST,production-openaicom-storage.azureedge.net,PROXY
-HOST,static.cloudflareinsights.com,PROXY
-HOST-SUFFIX,ai.com,PROXY
-HOST-SUFFIX,algolia.net,PROXY
-HOST-SUFFIX,api.statsig.com,PROXY
-HOST-SUFFIX,auth0.com,PROXY
-HOST-SUFFIX,chatgpt.com,PROXY
-HOST-SUFFIX,chatgpt.livekit.cloud,PROXY
-HOST-SUFFIX,client-api.arkoselabs.com,PROXY
-HOST-SUFFIX,events.statsigapi.net,PROXY
-HOST-SUFFIX,featuregates.org,PROXY
-HOST-SUFFIX,host.livekit.cloud,PROXY
-HOST-SUFFIX,identrust.com,PROXY
-HOST-SUFFIX,intercom.io,PROXY
-HOST-SUFFIX,intercomcdn.com,PROXY
-HOST-SUFFIX,launchdarkly.com,PROXY
-HOST-SUFFIX,oaistatic.com,PROXY
-HOST-SUFFIX,oaiusercontent.com,PROXY
-HOST-SUFFIX,observeit.net,PROXY
-HOST-SUFFIX,openai.com,PROXY
-HOST-SUFFIX,openaiapi-site.azureedge.net,PROXY
-HOST-SUFFIX,openaicom.imgix.net,PROXY
-HOST-SUFFIX,segment.io,PROXY
-HOST-SUFFIX,sentry.io,PROXY
-HOST-SUFFIX,stripe.com,PROXY
-HOST-SUFFIX,turn.livekit.cloud,PROXY
-HOST-KEYWORD,openai,PROXY
-IP-ASN,20473,PROXY
-IP-CIDR,24.199.123.28/32,PROXY
-IP-CIDR,64.23.132.171/32,PROXY
+# 规则名称: AI
+# 规则统计: 34
+
+HOST,ai.google.dev,AI
+HOST,alkalicore-pa.clients6.google.com,AI
+HOST,alkalimakersuite-pa.clients6.google.com,AI
+HOST,api.github.com,AI
+HOST,gateway.ai.cloudflare.com,AI
+HOST-SUFFIX,ai.com,AI
+HOST-SUFFIX,aistudio.google.com,AI
+HOST-SUFFIX,anthropic.com,AI
+HOST-SUFFIX,bard.google.com,AI
+HOST-SUFFIX,chat.com,AI
+HOST-SUFFIX,chatgpt.com,AI
+HOST-SUFFIX,claude.ai,AI
+HOST-SUFFIX,clipdrop.co,AI
+HOST-SUFFIX,deepmind.com,AI
+HOST-SUFFIX,deepmind.google,AI
+HOST-SUFFIX,dify.ai,AI
+HOST-SUFFIX,geller-pa.googleapis.com,AI
+HOST-SUFFIX,gemini.google.com,AI
+HOST-SUFFIX,generativeai.google,AI
+HOST-SUFFIX,generativelanguage.googleapis.com,AI
+HOST-SUFFIX,groq.com,AI
+HOST-SUFFIX,jasper.ai,AI
+HOST-SUFFIX,makersuite.google.com,AI
+HOST-SUFFIX,meta.ai,AI
+HOST-SUFFIX,notebooklm.google,AI
+HOST-SUFFIX,notebooklm.google.com,AI
+HOST-SUFFIX,oaistatic.com,AI
+HOST-SUFFIX,oaiusercontent.com,AI
+HOST-SUFFIX,openart.ai,AI
+HOST-SUFFIX,perplexity.ai,AI
+HOST-SUFFIX,poe.com,AI
+HOST-SUFFIX,proactivebackend-pa.googleapis.com,AI
+HOST-SUFFIX,x.ai,AI
+HOST-KEYWORD,openai,AI
