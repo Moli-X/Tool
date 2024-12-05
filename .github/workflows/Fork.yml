@@ -77,10 +77,43 @@ jobs:
         repo_name=$(basename "$GITHUB_REPOSITORY")
         if [[ "$repo_name" == "Tool" ]]; then
             echo "Running in Tool repository"
-            
             # 创建目标文件夹
             mkdir -p Tool-repo/Ruleset
-        
+            # 定义下载规则的函数
+            download_rules() {
+                local output_file="$1"
+                shift
+                local urls=("$@")
+                > "$output_file"
+                for url in "${urls[@]}"; do
+                    echo "Downloading: $url"
+                    curl -f -L "$url" >> "$output_file" || { echo "Download Failed: $url"; exit 1; }
+                    echo "" >> "$output_file"
+                done
+            }
+
+            # 合并广告规则
+            download_rules "Tool-repo/Ruleset/Reject.list" \
+                "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list" \
+                "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Malicious.list" \
+                "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Tracking.list" \
+                "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list"
+            
+            # 合并 SukkaW 广告规则
+            download_rules "Tool-repo/Ruleset/Ads_SukkaW.list" \
+                "https://ruleset.skk.moe/List/domainset/reject.conf" \
+                "https://ruleset.skk.moe/List/non_ip/reject.conf"
+            
+            # 合并 SukkaW CDN 规则
+            download_rules "Tool-repo/Ruleset/CDN.list" \
+                "https://ruleset.skk.moe/List/domainset/cdn.conf" \
+                "https://ruleset.skk.moe/List/non_ip/cdn.conf"
+            
+            # 合并 GFW 规则
+            download_rules "Tool-repo/Ruleset/ProxyGFW.list" \
+                "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list" \
+                "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt"
+
             # 定义关联数组（使用简洁的键名）
             declare -A files=(
                 # 苹果
@@ -141,8 +174,6 @@ jobs:
                 ["ChinaASN"]="https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
                 ["ChinaDomain"]="https://ruleset.skk.moe/List/non_ip/domestic.conf"
                 ["Lan"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
-                # 国外规则 
-                ["ProxyGFWlist"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
                 # 广告规则
                 ["HTTPDNS.Block"]="https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/HTTPDNS.Block.list"
                 ["Ads_limbopro"]="https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Surge/rule/Adblock4limbo_surge.list"
