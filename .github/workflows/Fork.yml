@@ -589,7 +589,11 @@ jobs:
           fi
         done
 
-
+    - name: 单独复刻Surge配置
+      if: env.SURGE_SWITCH == 'true'  # 添加开关条件
+      run: |
+        mkdir -p Tool/Surge
+        curl -L -o Tool-repo/Surge/SurgePRO.conf "https://github.com/Moli-X/Resources/raw/main/Surge/SurgePRO.conf"
 
 ###### Shadowrocket
 
@@ -608,6 +612,13 @@ jobs:
             echo "$file not found."
           fi
         done
+
+    - name: 单独复刻Shadowrocket配置
+      if: env.SHADOWROCKET_SWITCH == 'true'  # 添加开关条件
+      run: |
+        mkdir -p Tool/Shadowrocket
+        curl -L -o Tool-repo/Shadowrocket/Shadowrocket.conf "https://raw.githubusercontent.com/Moli-X/Shadowrocket/Master/Rewite/Shadowrocket.conf"
+
 
 
 ###### Stash
