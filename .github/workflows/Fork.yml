@@ -249,7 +249,7 @@ jobs:
         done
 
 
-    - name: 单独复刻LOON模块
+    - name: 批量复刻LOON模块
       if: env.LOON_SWITCH == 'true'  # 添加开关条件         # mkdir -p Tool/Loon/Plugin/Kelee
       run: |
         mkdir -p Tool-repo/Loon/Plugin/Kelee
@@ -493,7 +493,11 @@ jobs:
           fi
         done
 
-
+    - name: 单独复刻loon配置
+      if: env.LOON_SWITCH == 'true'  # 添加开关条件
+      run: |
+        mkdir -p Tool/Loon
+        curl -L -o Tool-repo/Loon/Loon.conf "https://github.com/Moli-X/Resources/raw/main/Loon/Loon.conf"
 
 
 ###### Clash
