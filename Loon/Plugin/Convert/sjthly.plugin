@@ -1,5 +1,0 @@
-[Script]
-http-response ^https:\/\/.* url script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sjthly.js, requires-body=true, timeout=60, tag=sjthly
-
-[MITM]
-hostname = raw.githubusercontent.com
