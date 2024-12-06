@@ -83,4 +83,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: merged-plugin
-        path: Tool/Loon/Plugin/Merg/merged.plugin
+        path: Tool-repo/Loon/Plugin/Merg/merged.plugin
