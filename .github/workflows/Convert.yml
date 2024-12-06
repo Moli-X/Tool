@@ -17,7 +17,7 @@ jobs:
 
     steps: 
     - name: Checkout the repository
-      uses: actions/checkout@v3  # 使用稳定版本
+      uses: actions/checkout@v3
       with:
         repository: Moli-X/Tool
         path: Tool-repo
@@ -26,49 +26,41 @@ jobs:
     - name: Define scripts information
       id: define_scripts
       run: |
-        # 定义多个脚本的链接和名称
-        echo "[nicegram]=\"https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js\"" >> $GITHUB_ENV
+        # 使用严格格式定义所有脚本的名称和链接
+        echo "[Spotify]=\"https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.plugin\"" >> $GITHUB_ENV
+        echo "[Nicegram]=\"https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js\"" >> $GITHUB_ENV
         echo "[sjthly]=\"https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sjthly.js\"" >> $GITHUB_ENV
         echo "[snow]=\"https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js\"" >> $GITHUB_ENV
 
     - name: Prepare conversion script
       run: |
         set -e  # 遇到错误时立即退出
-        # 创建目标文件夹，如果不存在则创建
-        mkdir -p Tool-repo/Tool/Loon/Plugin/Convert
-        echo "Target folder Tool-repo/Tool/Loon/Plugin/Convert exists: $(ls -ld Tool-repo/Tool/Loon/Plugin/Convert)"
+        mkdir -p Tool-repo/Loon/Plugin/Convert
+        echo "Target folder Tool-repo/Loon/Plugin/Convert exists: $(ls -ld Tool-repo/Loon/Plugin/Convert)"
         
         # 定义下载和转换的函数
         download_and_convert() {
-          script_url=$1
-          script_name=$2
+          script_info=$1
           
-          # 创建转换后的文件
-          echo "[Script]" > Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin
-          echo "http-response ^https:\/\/.* url script-path=$script_url, requires-body=true, timeout=60, tag=$script_name" >> Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin
-          echo "" >> Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin
-          echo "[MITM]" >> Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin
-          echo "hostname = $(echo $script_url | sed -E 's|https?://([^/]+).*|\1|')" >> Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin
+          # 使用正则表达式提取名称和URL
+          script_name=$(echo $script_info | sed -E 's/\[(.*)\]=.*/\1/')  # 提取方括号中的名称
+          script_url=$(echo $script_info | sed -E 's/.*="(https:\/\/[^"]+)"/\1/')  # 提取URL
 
-          echo "Converted and saved to Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin"
+          # 创建转换后的文件
+          plugin_name=$(echo $script_name | sed 's/\[//g; s/\]//g')  # 移除方括号
+          echo "[Script]" > Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+          echo "http-response ^https:\/\/.* url script-path=$script_url, requires-body=true, timeout=60, tag=$plugin_name" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+          echo "" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+          echo "[MITM]" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+          echo "hostname = $(echo $script_url | sed -E 's|https?://([^/]+).*|\1|')" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+
+          echo "Converted and saved to Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin"
         }
 
-        # 获取脚本信息
-        SCRIPT_URLS=(
-          "https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js"
-          "https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sjthly.js"
-          "https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js"
-        )
-        
-        SCRIPT_NAMES=("nicegram" "sjthly" "snow")
-
-        # 并行下载并转换每个脚本
-        for i in ${!SCRIPT_URLS[@]}; do
-          script_name=${SCRIPT_NAMES[$i]}
-          script_url=${SCRIPT_URLS[$i]}
-          
-          # 在后台执行每个脚本的转换，不下载 .js 文件
-          download_and_convert $script_url $script_name &
+        # 遍历环境变量中所有定义的脚本，并调用下载和转换函数
+        # 使用正则表达式获取所有以 [ 名称 ] 格式定义的变量
+        for script_info in $(printenv | grep -E '^\[.*\]=".*"'); do
+          download_and_convert "$script_info" &  # 使用环境变量获取对应的值
         done
 
         # 等待所有后台任务完成
@@ -79,7 +71,8 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: converted-scripts
-        path: Tool-repo/Tool/Loon/Plugin/Convert/
+        path: Tool-repo/Loon/Plugin/Convert/
+
 
 ###### Commit
     - name: 添加Commits
