@@ -35,7 +35,7 @@ jobs:
     - name: Prepare conversion script
       run: |
         set -e  # 遇到错误时立即退出
-        mkdir -p Tool-repo/Loon/Plugin/Convert  # 确保目标目录存在
+        mkdir -p Tool-repo/Loon/Plugin/Convert
         echo "Target folder Tool-repo/Loon/Plugin/Convert exists: $(ls -ld Tool-repo/Loon/Plugin/Convert)"
         
         # 定义下载和转换的函数
@@ -49,12 +49,113 @@ jobs:
           # 创建转换后的文件
           plugin_name=$(echo $script_name | sed 's/\[//g; s/\]//g')  # 移除方括号
           
-          # 生成符合目标格式的内容
+          # 保持 http-response 中的 URL，并提取域名
           echo "[Script]" > Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
-          echo "http-response ^https?:\/\/(nicegram\.cloud\/api\/v\d\/user\/info|restore-access\.indream\.app\/restoreAccess) script-path=$script_url, requires-body=true, timeout=60, tag=$plugin_name" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+          echo "http-response $(echo $script_url | sed -E 's/^https:\/\/.*\//^https:\/\/.*/') script-path=$script_url, requires-body=true, timeout=60, tag=$plugin_name" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
           echo "" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
           echo "[MITM]" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
-          echo "hostname = nicegram.cloud, restore-access.indream.app" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+          
+          # 提取主机名并添加到 MITM 部分
+          hostname=$(echo $script_url | sed -E 's|https?://([^/]+).*|\1|')  # 提取域名
+          echo "hostname = $hostname" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+
+          echo "Converted and saved to Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin"
+        }
+
+        # 自动遍历所有符合 [name]="url" 格式的环境变量
+        for script_info in $(compgen -A variable | grep -E '^\[.*\]'); do
+          download_and_convert "${!script_info}" &  # 使用环境变量名获取对应的值
+        done
+
+        # 等待所有后台任务完成
+        wait
+        echo "All scripts have been converted."
+
+    - name: Upload Converted Scripts
+      uses: actions/upload-artifact@v3
+      with:
+        name: converted-scripts
+        path: Tool-repo/Loon/Plugin/Convert/
+
+    - name: 添加Commits
+      run: |
+        cd Tool-repo
+        if [[ -n $(git status -s) ]]; then
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add . 
+          git commit -m "Update $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')"
+          git push origin HEAD
+        else
+          echo "No changes to commit."
+        fi
+
+    - name: 清理Workflow
+      uses: Mattraks/delete-workflow-runs@main
+      with:
+        token: ${{ secrets.PAT_TOKEN }} 
+        retain_days: 0
+        keep_minimum_runs: 2
+name: Convert & Edit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 * * * *"  # 每小时运行一次
+
+permissions:
+  actions: write
+  contents: read  # 确保有权限读取内容
+
+jobs:
+  ForkRepository:
+    runs-on: ubuntu-latest
+    env:
+      TZ: 'Asia/Shanghai'
+
+    steps: 
+    - name: Checkout the repository
+      uses: actions/checkout@v3
+      with:
+        repository: Moli-X/Tool
+        path: Tool-repo
+        token: ${{ secrets.PAT_TOKEN }}
+
+    - name: Define scripts information
+      id: define_scripts
+      run: |
+        # 使用严格格式定义所有脚本的名称和链接
+        echo "[Spotify]=\"https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.plugin\"" >> $GITHUB_ENV
+        echo "[Nicegram]=\"https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js\"" >> $GITHUB_ENV
+        echo "[sjthly]=\"https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sjthly.js\"" >> $GITHUB_ENV
+        echo "[snow]=\"https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js\"" >> $GITHUB_ENV
+
+    - name: Prepare conversion script
+      run: |
+        set -e  # 遇到错误时立即退出
+        mkdir -p Tool-repo/Loon/Plugin/Convert
+        echo "Target folder Tool-repo/Loon/Plugin/Convert exists: $(ls -ld Tool-repo/Loon/Plugin/Convert)"
+        
+        # 定义下载和转换的函数
+        download_and_convert() {
+          script_info=$1
+          
+          # 使用正则表达式提取名称和URL
+          script_name=$(echo $script_info | sed -E 's/\[(.*)\]=.*/\1/')  # 提取方括号中的名称
+          script_url=$(echo $script_info | sed -E 's/.*="(https:\/\/[^"]+)"/\1/')  # 提取URL
+
+          # 创建转换后的文件
+          plugin_name=$(echo $script_name | sed 's/\[//g; s/\]//g')  # 移除方括号
+          
+          # 保持 http-response 中的 URL，并提取域名
+          echo "[Script]" > Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+          echo "http-response $(echo $script_url | sed -E 's/^https:\/\/.*\//^https:\/\/.*/') script-path=$script_url, requires-body=true, timeout=60, tag=$plugin_name" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+          echo "" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+          echo "[MITM]" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+          
+          # 提取主机名并添加到 MITM 部分
+          hostname=$(echo $script_url | sed -E 's|https?://([^/]+).*|\1|')  # 提取域名
+          echo "hostname = $hostname" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
 
           echo "Converted and saved to Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin"
         }
