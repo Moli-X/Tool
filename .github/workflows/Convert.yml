@@ -30,6 +30,10 @@ jobs:
         echo "SCRIPT_URLS='https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sjthly.js https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js'" >> $GITHUB_ENV
         echo "SCRIPT_NAMES='nicegram sjthly snow'" >> $GITHUB_ENV
 
+        # 输出调试信息
+        echo "SCRIPT_URLS=$SCRIPT_URLS"
+        echo "SCRIPT_NAMES=$SCRIPT_NAMES"
+
     - name: Download and Convert Scripts
       run: |
         # 创建目标文件夹
@@ -38,6 +42,10 @@ jobs:
         # 获取脚本信息
         urls=($SCRIPT_URLS)
         names=($SCRIPT_NAMES)
+
+        # 打印出 URL 和名称，以调试
+        echo "URLs: ${urls[@]}"
+        echo "Names: ${names[@]}"
 
         # 遍历脚本信息并转换
         for i in ${!urls[@]}; do
@@ -74,3 +82,25 @@ jobs:
       with:
         name: converted-scripts
         path: Tool/Loon/Plugin/Convert/
+
+###### Commit
+    - name: 添加Commits
+      run: |
+        cd Tool-repo
+        if [[ -n $(git status -s) ]]; then
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Update $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')"
+          git push origin HEAD
+        else
+          echo "No changes to commit."
+        fi
+
+
+    - name: 清理Workflow
+      uses: Mattraks/delete-workflow-runs@main
+      with:
+        token: ${{ secrets.PAT_TOKEN }} 
+        retain_days: 0
+        keep_minimum_runs: 2
