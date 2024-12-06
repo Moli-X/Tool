@@ -26,7 +26,7 @@ jobs:
     - name: Define scripts information
       id: define_scripts
       run: |
-        # 将脚本的 URL 和名称分别存储为环境变量（每行一个值）
+        # 在这里添加多个脚本的链接和名称
         echo "SCRIPT_URLS=https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sjthly.js https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js" >> $GITHUB_ENV
         echo "SCRIPT_NAMES=nicegram sjthly snow" >> $GITHUB_ENV
 
@@ -38,10 +38,9 @@ jobs:
       run: |
         # 创建目标文件夹，如果不存在则创建
         mkdir -p Tool/Loon/Plugin/Convert
-
         # 确认目标文件夹已创建
         echo "Target folder Tool/Loon/Plugin/Convert exists: $(ls -ld Tool/Loon/Plugin/Convert)"
-
+        
         # 获取脚本信息
         urls=($SCRIPT_URLS)
         names=($SCRIPT_NAMES)
@@ -69,7 +68,10 @@ jobs:
             exit 1
           fi
           echo "Downloaded: $script_name.js"
-
+          
+          # 列出下载的文件以确认
+          echo "Contents of Tool/Loon/Plugin/Convert: $(ls Tool/Loon/Plugin/Convert)"
+          
           # 创建转换后的文件
           echo "[Script]" > Tool/Loon/Plugin/Convert/$script_name.plugin
           echo "http-response ^https:\/\/.* url script-path=$script_url, requires-body=true, timeout=60, tag=$script_name" >> Tool/Loon/Plugin/Convert/$script_name.plugin
@@ -78,6 +80,9 @@ jobs:
           echo "hostname = $(echo $script_url | sed -E 's|https?://([^/]+).*|\1|')" >> Tool/Loon/Plugin/Convert/$script_name.plugin
 
           echo "Converted and saved to Tool/Loon/Plugin/Convert/$script_name.plugin"
+
+          # 列出文件确认转换后的文件
+          echo "Contents of Tool/Loon/Plugin/Convert after conversion: $(ls Tool/Loon/Plugin/Convert)"
         done
 
     - name: Upload Converted Scripts
@@ -99,7 +104,6 @@ jobs:
         else
           echo "No changes to commit."
         fi
-
 
     - name: 清理Workflow
       uses: Mattraks/delete-workflow-runs@main
