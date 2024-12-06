@@ -35,8 +35,8 @@ jobs:
       run: |
         set -e  # 遇到错误时立即退出
         # 创建目标文件夹，如果不存在则创建
-        mkdir -p Tool/Loon/Plugin/Convert
-        echo "Target folder Tool/Loon/Plugin/Convert exists: $(ls -ld Tool/Loon/Plugin/Convert)"
+        mkdir -p Tool-repo/Tool/Loon/Plugin/Convert
+        echo "Target folder Tool-repo/Tool/Loon/Plugin/Convert exists: $(ls -ld Tool-repo/Tool/Loon/Plugin/Convert)"
         
         # 定义下载和转换的函数
         download_and_convert() {
@@ -45,16 +45,16 @@ jobs:
           
           # 下载脚本
           echo "Downloading: $script_url"
-          curl -L -o Tool/Loon/Plugin/Convert/$script_name.js $script_url
+          curl -L -o Tool-repo/Tool/Loon/Plugin/Convert/$script_name.js $script_url
           
           # 创建转换后的文件
-          echo "[Script]" > Tool/Loon/Plugin/Convert/$script_name.plugin
-          echo "http-response ^https:\/\/.* url script-path=$script_url, requires-body=true, timeout=60, tag=$script_name" >> Tool/Loon/Plugin/Convert/$script_name.plugin
-          echo "" >> Tool/Loon/Plugin/Convert/$script_name.plugin
-          echo "[MITM]" >> Tool/Loon/Plugin/Convert/$script_name.plugin
-          echo "hostname = $(echo $script_url | sed -E 's|https?://([^/]+).*|\1|')" >> Tool/Loon/Plugin/Convert/$script_name.plugin
+          echo "[Script]" > Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin
+          echo "http-response ^https:\/\/.* url script-path=$script_url, requires-body=true, timeout=60, tag=$script_name" >> Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin
+          echo "" >> Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin
+          echo "[MITM]" >> Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin
+          echo "hostname = $(echo $script_url | sed -E 's|https?://([^/]+).*|\1|')" >> Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin
 
-          echo "Converted and saved to Tool/Loon/Plugin/Convert/$script_name.plugin"
+          echo "Converted and saved to Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin"
         }
 
         # 获取脚本信息
@@ -83,7 +83,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: converted-scripts
-        path: Tool/Loon/Plugin/Convert/
+        path: Tool-repo/Tool/Loon/Plugin/Convert/
 
 ###### Commit
     - name: 添加Commits
