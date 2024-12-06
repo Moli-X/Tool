@@ -9,7 +9,6 @@ permissions:
   actions: write  
   contents: write  
 
-
 jobs:
   ForkRepository:
     runs-on: ubuntu-latest
@@ -22,11 +21,11 @@ jobs:
       with:
         repository: Moli-X/Tool
         path: Tool-repo
-        token: ${{ secrets.PAT_TOKEN }}  
+        token: ${{ secrets.PAT_TOKEN }}
 
     - name: Download and process plugins
       run: |
-        # 创建目标目录 Tool/Loon/Plugin/Merg
+        # 确保目标目录 Tool/Loon/Plugin/Merg 存在，若没有则创建
         mkdir -p Tool/Loon/Plugin/Merg
 
         # 定义下载并处理插件的函数
@@ -50,8 +49,7 @@ jobs:
 
         # 调用下载并处理函数
         download_rules "https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.plugin" \
-            "https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.plugin" 
-
+            "https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.plugin"
 
     - name: Upload merged plugin
       uses: actions/upload-artifact@v3
