@@ -49,15 +49,12 @@ jobs:
           # 创建转换后的文件
           plugin_name=$(echo $script_name | sed 's/\[//g; s/\]//g')  # 移除方括号
           
-          # 保持 http-response 中的 URL，并提取域名
+          # 生成符合目标格式的内容
           echo "[Script]" > Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
-          echo "http-response $(echo $script_url | sed -E 's/https:\/\/([^/]+)\/(.*)/^https:\/\/\1\/\2/') script-path=$script_url, requires-body=true, timeout=60, tag=$plugin_name" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+          echo "http-response ^https?:\/\/(nicegram\.cloud\/api\/v\d\/user\/info|restore-access\.indream\.app\/restoreAccess) script-path=$script_url, requires-body=true, timeout=60, tag=$plugin_name" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
           echo "" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
           echo "[MITM]" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
-          
-          # 提取主机名并添加到 MITM 部分
-          hostname=$(echo $script_url | sed -E 's|https?://([^/]+).*|\1|')  # 提取域名
-          echo "hostname = $hostname" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+          echo "hostname = nicegram.cloud, restore-access.indream.app" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
 
           echo "Converted and saved to Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin"
         }
