@@ -3,11 +3,11 @@ name: Convert & Edit
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 * * * *"
+    - cron: "30 * * * *"  # 每小时运行一次
 
 permissions:
-  actions: write  
-  contents: write  
+  actions: write
+  contents: read  # 确保有权限读取内容
 
 jobs:
   ForkRepository:
@@ -16,12 +16,12 @@ jobs:
       TZ: 'Asia/Shanghai'
 
     steps: 
-    - name: 验证目标存储库
-      uses: actions/checkout@v4.2.2
+    - name: Checkout the repository
+      uses: actions/checkout@v3  # 使用稳定版本
       with:
         repository: Moli-X/Tool
         path: Tool-repo
-        token: ${{ secrets.PAT_TOKEN }}  
+        token: ${{ secrets.PAT_TOKEN }}
 
     - name: Define scripts information
       id: define_scripts
@@ -44,8 +44,19 @@ jobs:
           script_name=${names[$i]}
           script_url=${urls[$i]}
 
+          # 检查 URL 是否有效
+          if [[ -z "$script_url" || ! "$script_url" =~ ^https?:// ]]; then
+            echo "Error: Invalid or empty URL for $script_name"
+            exit 1
+          fi
+
           # 下载脚本
+          echo "Downloading: $script_url"
           curl -L -o Tool/Loon/Plugin/Convert/$script_name.js $script_url
+          if [ $? -ne 0 ]; then
+            echo "Error: Failed to download $script_name.js"
+            exit 1
+          fi
           echo "Downloaded: $script_name.js"
 
           # 创建转换后的文件
@@ -53,7 +64,7 @@ jobs:
           echo "http-response ^https:\/\/.* url script-path=$script_url, requires-body=true, timeout=60, tag=$script_name" >> Tool/Loon/Plugin/Convert/$script_name.plugin
           echo "" >> Tool/Loon/Plugin/Convert/$script_name.plugin
           echo "[MITM]" >> Tool/Loon/Plugin/Convert/$script_name.plugin
-          echo "hostname = $(echo $script_url | sed -E 's/https?:\/\/([^\/]+).*/\1/')" >> Tool/Loon/Plugin/Convert/$script_name.plugin
+          echo "hostname = $(echo $script_url | sed -E 's|https?://([^/]+).*|\1|')" >> Tool/Loon/Plugin/Convert/$script_name.plugin
 
           echo "Converted and saved to Tool/Loon/Plugin/Convert/$script_name.plugin"
         done
