@@ -36,8 +36,11 @@ jobs:
 
     - name: Download and Convert Scripts
       run: |
-        # 创建目标文件夹
+        # 创建目标文件夹，如果不存在则创建
         mkdir -p Tool/Loon/Plugin/Convert
+
+        # 确认目标文件夹已创建
+        echo "Target folder Tool/Loon/Plugin/Convert exists: $(ls -ld Tool/Loon/Plugin/Convert)"
 
         # 获取脚本信息
         urls=($SCRIPT_URLS)
