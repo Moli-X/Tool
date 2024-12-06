@@ -26,51 +26,26 @@ jobs:
     - name: Define scripts information
       id: define_scripts
       run: |
-        # 在这里添加多个脚本的链接和名称
-        echo "SCRIPT_URLS=https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sjthly.js https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js" >> $GITHUB_ENV
-        echo "SCRIPT_NAMES=nicegram sjthly snow" >> $GITHUB_ENV
+        # 定义多个脚本的链接和名称
+        echo "[nicegram]=\"https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js\"" >> $GITHUB_ENV
+        echo "[sjthly]=\"https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sjthly.js\"" >> $GITHUB_ENV
+        echo "[snow]=\"https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js\"" >> $GITHUB_ENV
 
-        # 输出调试信息
-        echo "SCRIPT_URLS=$SCRIPT_URLS"
-        echo "SCRIPT_NAMES=$SCRIPT_NAMES"
-
-    - name: Download and Convert Scripts
+    - name: Prepare conversion script
       run: |
+        set -e  # 遇到错误时立即退出
         # 创建目标文件夹，如果不存在则创建
         mkdir -p Tool/Loon/Plugin/Convert
-        # 确认目标文件夹已创建
         echo "Target folder Tool/Loon/Plugin/Convert exists: $(ls -ld Tool/Loon/Plugin/Convert)"
         
-        # 获取脚本信息
-        urls=($SCRIPT_URLS)
-        names=($SCRIPT_NAMES)
-
-        # 打印出 URL 和名称，以调试
-        echo "URLs: ${urls[@]}"
-        echo "Names: ${names[@]}"
-
-        # 遍历脚本信息并转换
-        for i in ${!urls[@]}; do
-          script_name=${names[$i]}
-          script_url=${urls[$i]}
-
-          # 检查 URL 是否有效
-          if [[ -z "$script_url" || ! "$script_url" =~ ^https?:// ]]; then
-            echo "Error: Invalid or empty URL for $script_name"
-            exit 1
-          fi
-
+        # 定义下载和转换的函数
+        download_and_convert() {
+          script_url=$1
+          script_name=$2
+          
           # 下载脚本
           echo "Downloading: $script_url"
           curl -L -o Tool/Loon/Plugin/Convert/$script_name.js $script_url
-          if [ $? -ne 0 ]; then
-            echo "Error: Failed to download $script_name.js"
-            exit 1
-          fi
-          echo "Downloaded: $script_name.js"
-          
-          # 列出下载的文件以确认
-          echo "Contents of Tool/Loon/Plugin/Convert: $(ls Tool/Loon/Plugin/Convert)"
           
           # 创建转换后的文件
           echo "[Script]" > Tool/Loon/Plugin/Convert/$script_name.plugin
@@ -80,10 +55,29 @@ jobs:
           echo "hostname = $(echo $script_url | sed -E 's|https?://([^/]+).*|\1|')" >> Tool/Loon/Plugin/Convert/$script_name.plugin
 
           echo "Converted and saved to Tool/Loon/Plugin/Convert/$script_name.plugin"
+        }
 
-          # 列出文件确认转换后的文件
-          echo "Contents of Tool/Loon/Plugin/Convert after conversion: $(ls Tool/Loon/Plugin/Convert)"
+        # 获取脚本信息
+        SCRIPT_URLS=(
+          "https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js"
+          "https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sjthly.js"
+          "https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js"
+        )
+        
+        SCRIPT_NAMES=("nicegram" "sjthly" "snow")
+
+        # 并行下载并转换每个脚本
+        for i in ${!SCRIPT_URLS[@]}; do
+          script_name=${SCRIPT_NAMES[$i]}
+          script_url=${SCRIPT_URLS[$i]}
+          
+          # 在后台执行每个脚本的下载和转换，使用 & 实现并行
+          download_and_convert $script_url $script_name &
         done
+
+        # 等待所有后台任务完成
+        wait
+        echo "All scripts have been downloaded and converted."
 
     - name: Upload Converted Scripts
       uses: actions/upload-artifact@v3
