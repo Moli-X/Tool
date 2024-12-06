@@ -48,19 +48,23 @@ jobs:
 
           # 创建转换后的文件
           plugin_name=$(echo $script_name | sed 's/\[//g; s/\]//g')  # 移除方括号
+          
+          # 保持 http-response 中的 URL，并提取域名
           echo "[Script]" > Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
-          echo "http-response ^https:\/\/.* url script-path=$script_url, requires-body=true, timeout=60, tag=$plugin_name" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+          echo "http-response $(echo $script_url | sed -E 's/^https:\/\/.*\//^https:\/\/.*/') script-path=$script_url, requires-body=true, timeout=60, tag=$plugin_name" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
           echo "" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
           echo "[MITM]" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
-          echo "hostname = $(echo $script_url | sed -E 's|https?://([^/]+).*|\1|')" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+          
+          # 提取主机名并添加到 MITM 部分
+          hostname=$(echo $script_url | sed -E 's|https?://([^/]+).*|\1|')  # 提取域名
+          echo "hostname = $hostname" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
 
           echo "Converted and saved to Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin"
         }
 
-        # 遍历环境变量中所有定义的脚本，并调用下载和转换函数
-        # 使用正则表达式获取所有以 [ 名称 ] 格式定义的变量
-        for script_info in $(printenv | grep -E '^\[.*\]=".*"'); do
-          download_and_convert "$script_info" &  # 使用环境变量获取对应的值
+        # 自动遍历所有符合 [name]="url" 格式的环境变量
+        for script_info in $(compgen -A variable | grep -E '^\[.*\]'); do
+          download_and_convert "${!script_info}" &  # 使用环境变量名获取对应的值
         done
 
         # 等待所有后台任务完成
@@ -73,15 +77,13 @@ jobs:
         name: converted-scripts
         path: Tool-repo/Loon/Plugin/Convert/
 
-
-###### Commit
     - name: 添加Commits
       run: |
         cd Tool-repo
         if [[ -n $(git status -s) ]]; then
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add .
+          git add . 
           git commit -m "Update $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')"
           git push origin HEAD
         else
