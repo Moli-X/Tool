@@ -1,0 +1,5 @@
+[Script]
+http-response ^https:\/\/.* url script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js, requires-body=true, timeout=60, tag=nicegram
+
+[MITM]
+hostname = raw.githubusercontent.com
