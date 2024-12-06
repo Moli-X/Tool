@@ -51,7 +51,7 @@ jobs:
           
           # 保持 http-response 中的 URL，并提取域名
           echo "[Script]" > Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
-          echo "http-response $(echo $script_url | sed -E 's/^https:\/\/.*\//^https:\/\/.*/') script-path=$script_url, requires-body=true, timeout=60, tag=$plugin_name" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
+          echo "http-response $(echo $script_url | sed -E 's/https:\/\/([^/]+)\/(.*)/^https:\/\/\1\/\2/') script-path=$script_url, requires-body=true, timeout=60, tag=$plugin_name" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
           echo "" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
           echo "[MITM]" >> Tool-repo/Loon/Plugin/Convert/$plugin_name.plugin
           
