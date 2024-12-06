@@ -325,6 +325,7 @@ jobs:
           fi
         done
 
+        cd Tool-repo/QuantumultX/Rules
         cp Ads_DiDiChuXing.list DDCX.snippet
 
     - name: Shadowrocket
