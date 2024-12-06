@@ -1,0 +1,5 @@
+[Script]
+http-response ^https:\/\/.* url script-path=https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.plugin, requires-body=true, timeout=60, tag=Spotify
+
+[MITM]
+hostname = github.com
