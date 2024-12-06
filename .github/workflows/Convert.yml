@@ -1,0 +1,65 @@
+name: Fork & Edit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 * * * *"
+
+permissions:
+  actions: write  
+  contents: write  
+
+jobs:
+  ForkRepository:
+    runs-on: ubuntu-latest
+    env:
+      TZ: 'Asia/Shanghai'
+
+    steps: 
+    - name: 验证目标存储库
+      uses: actions/checkout@v4.2.2
+      with:
+        repository: Moli-X/Tool
+        path: Tool-repo
+        token: ${{ secrets.PAT_TOKEN }}  
+
+    - name: Define scripts information
+      id: define_scripts
+      run: |
+        # 在这里添加多个脚本的链接和名称
+        echo "SCRIPT_URLS='https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sjthly.js https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js'" >> $GITHUB_ENV
+        echo "SCRIPT_NAMES='nicegram sjthly snow'" >> $GITHUB_ENV
+
+    - name: Download and Convert Scripts
+      run: |
+        # 创建目标文件夹
+        mkdir -p Tool/Loon/Plugin/Convert
+
+        # 获取脚本信息
+        urls=($SCRIPT_URLS)
+        names=($SCRIPT_NAMES)
+
+        # 遍历脚本信息并转换
+        for i in ${!urls[@]}; do
+          script_name=${names[$i]}
+          script_url=${urls[$i]}
+
+          # 下载脚本
+          curl -L -o Tool/Loon/Plugin/Convert/$script_name.js $script_url
+          echo "Downloaded: $script_name.js"
+
+          # 创建转换后的文件
+          echo "[Script]" > Tool/Loon/Plugin/Convert/$script_name.plugin
+          echo "http-response ^https:\/\/.* url script-path=$script_url, requires-body=true, timeout=60, tag=$script_name" >> Tool/Loon/Plugin/Convert/$script_name.plugin
+          echo "" >> Tool/Loon/Plugin/Convert/$script_name.plugin
+          echo "[MITM]" >> Tool/Loon/Plugin/Convert/$script_name.plugin
+          echo "hostname = $(echo $script_url | sed -E 's/https?:\/\/([^\/]+).*/\1/')" >> Tool/Loon/Plugin/Convert/$script_name.plugin
+
+          echo "Converted and saved to Tool/Loon/Plugin/Convert/$script_name.plugin"
+        done
+
+    - name: Upload Converted Scripts
+      uses: actions/upload-artifact@v3
+      with:
+        name: converted-scripts
+        path: Tool/Loon/Plugin/Convert/
