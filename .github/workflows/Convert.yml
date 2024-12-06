@@ -26,9 +26,9 @@ jobs:
     - name: Define scripts information
       id: define_scripts
       run: |
-        # 在这里添加多个脚本的链接和名称
-        echo "SCRIPT_URLS='https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sjthly.js https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js'" >> $GITHUB_ENV
-        echo "SCRIPT_NAMES='nicegram sjthly snow'" >> $GITHUB_ENV
+        # 将脚本的 URL 和名称分别存储为环境变量（每行一个值）
+        echo "SCRIPT_URLS=https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sjthly.js https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js" >> $GITHUB_ENV
+        echo "SCRIPT_NAMES=nicegram sjthly snow" >> $GITHUB_ENV
 
         # 输出调试信息
         echo "SCRIPT_URLS=$SCRIPT_URLS"
