@@ -1,0 +1,60 @@
+name: Merge Loon Plugins
+
+on:
+  push:
+    branches:
+      - X
+
+permissions:
+  actions: write  
+  contents: write  
+
+
+jobs:
+  ForkRepository:
+    runs-on: ubuntu-latest
+    env:
+      TZ: 'Asia/Shanghai'
+    
+    steps: 
+    - name: 验证目标存储库
+      uses: actions/checkout@v4.2.2
+      with:
+        repository: Moli-X/Tool
+        path: Tool-repo
+        token: ${{ secrets.PAT_TOKEN }}  
+
+    - name: Download and process plugins
+      run: |
+        # 创建目标目录 Tool/Loon/Plugin/Merg
+        mkdir -p Tool/Loon/Plugin/Merg
+
+        # 定义下载并处理插件的函数
+        download_rules() {
+          # 遍历插件 URL 列表并下载内容
+          for url in "$@"; do
+            echo "Downloading $url"
+            curl -L -o temp_plugin "$url"
+            
+            # 提取 Script 和 MITM 部分，分别放置到对应的文件中
+            echo "[Script]" >> Tool/Loon/Plugin/Merg/merged.plugin
+            grep -A 1000 '\[Script\]' temp_plugin | grep -B 1000 '\[MITM\]' >> Tool/Loon/Plugin/Merg/merged.plugin
+
+            echo "[MITM]" >> Tool/Loon/Plugin/Merg/merged.plugin
+            grep -A 1000 '\[MITM\]' temp_plugin >> Tool/Loon/Plugin/Merg/merged.plugin
+
+            # 删除临时文件
+            rm temp_plugin
+          done
+        }
+
+        # 调用下载并处理函数
+        download_rules "https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.plugin" \
+            "https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.plugin" 
+
+
+    - name: Upload merged plugin
+      uses: actions/upload-artifact@v3
+      with:
+        name: merged-plugin
+        path: Tool/Loon/Plugin/Merg/merged.plugin
