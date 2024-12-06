@@ -1,9 +1,9 @@
 name: Merge Loon Plugins
 
 on:
-  push:
-    branches:
-      - X
+  workflow_dispatch:
+  schedule:
+    - cron: "30 * * * *"  # 每小时运行一次
 
 permissions:
   actions: write  
@@ -26,25 +26,53 @@ jobs:
     - name: Download and process plugins
       run: |
         # 确保目标目录 Tool/Loon/Plugin/Merg 存在，若没有则创建
-        mkdir -p Tool/Loon/Plugin/Merg
+        mkdir -p Tool-repo/Loon/Plugin/Merg
 
         # 定义下载并处理插件的函数
         download_rules() {
+          # 初始化变量
+          script_content=""
+          mitm_content=""
+          other_content=""
+
           # 遍历插件 URL 列表并下载内容
           for url in "$@"; do
             echo "Downloading $url"
             curl -L -o temp_plugin "$url"
             
-            # 提取 Script 和 MITM 部分，分别放置到对应的文件中
-            echo "[Script]" >> Tool/Loon/Plugin/Merg/merged.plugin
-            grep -A 1000 '\[Script\]' temp_plugin | grep -B 1000 '\[MITM\]' >> Tool/Loon/Plugin/Merg/merged.plugin
+            # 提取 Script 部分并合并
+            script_section=$(grep -A 1000 '\[Script\]' temp_plugin | grep -B 1000 '\[MITM\]')
+            if [ ! -z "$script_section" ]; then
+              script_content="${script_content}${script_section}\n"
+            fi
 
-            echo "[MITM]" >> Tool/Loon/Plugin/Merg/merged.plugin
-            grep -A 1000 '\[MITM\]' temp_plugin >> Tool/Loon/Plugin/Merg/merged.plugin
+            # 提取 MITM 部分并合并
+            mitm_section=$(grep -A 1000 '\[MITM\]' temp_plugin)
+            if [ ! -z "$mitm_section" ]; then
+              mitm_content="${mitm_content}${mitm_section}\n"
+            fi
+
+            # 提取其它部分
+            other_section=$(grep -vE '\[Script\]|\[MITM\]' temp_plugin)
+            if [ ! -z "$other_section" ]; then
+              other_content="${other_content}${other_section}\n"
+            fi
 
             # 删除临时文件
             rm temp_plugin
           done
+
+          # 合并 Script 部分
+          echo "[Script]" >> Tool-repo/Loon/Plugin/Merg/merged.plugin
+          echo -e "$script_content" | sed '/^\s*$/d' >> Tool-repo/Loon/Plugin/Merg/merged.plugin
+
+          # 合并 MITM 部分
+          echo "[MITM]" >> Tool-repo/Loon/Plugin/Merg/merged.plugin
+          mitm_content=$(echo "$mitm_content" | sed '/^\s*$/d' | tr '\n' ',' | sed 's/,$//')
+          echo "$mitm_content" >> Tool-repo/Loon/Plugin/Merg/merged.plugin
+
+          # 合并其他部分
+          echo -e "$other_content" | sed '/^\s*$/d' >> Tool-repo/Loon/Plugin/Merg/merged.plugin
         }
 
         # 调用下载并处理函数
