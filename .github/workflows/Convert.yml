@@ -35,7 +35,7 @@ jobs:
     - name: Prepare conversion script
       run: |
         set -e  # 遇到错误时立即退出
-        mkdir -p Tool-repo/Loon/Plugin/Convert
+        mkdir -p Tool-repo/Loon/Plugin/Convert  # 确保目标目录存在
         echo "Target folder Tool-repo/Loon/Plugin/Convert exists: $(ls -ld Tool-repo/Loon/Plugin/Convert)"
         
         # 定义下载和转换的函数
