@@ -325,6 +325,8 @@ jobs:
           fi
         done
 
+        cp Ads_DiDiChuXing.list DDCX.snippet
+
     - name: Shadowrocket
       run: |
         for file in Tool-repo/Shadowrocket/Rules/*.list; do
