@@ -43,18 +43,14 @@ jobs:
           script_url=$1
           script_name=$2
           
-          # 下载脚本
-          echo "Downloading: $script_url"
-          curl -L -o Tool-repo/Loon/Plugin/Convert/$script_name.js $script_url
-          
           # 创建转换后的文件
-          echo "[Script]" > Tool-repo/Loon/Plugin/Convert/$script_name.plugin
-          echo "http-response ^https:\/\/.* url script-path=$script_url, requires-body=true, timeout=60, tag=$script_name" >> Tool-repo/Loon/Plugin/Convert/$script_name.plugin
-          echo "" >> Tool-repo/Loon/Plugin/Convert/$script_name.plugin
-          echo "[MITM]" >> Tool-repo/Loon/Plugin/Convert/$script_name.plugin
-          echo "hostname = $(echo $script_url | sed -E 's|https?://([^/]+).*|\1|')" >> Tool-repo/Loon/Plugin/Convert/$script_name.plugin
+          echo "[Script]" > Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin
+          echo "http-response ^https:\/\/.* url script-path=$script_url, requires-body=true, timeout=60, tag=$script_name" >> Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin
+          echo "" >> Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin
+          echo "[MITM]" >> Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin
+          echo "hostname = $(echo $script_url | sed -E 's|https?://([^/]+).*|\1|')" >> Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin
 
-          echo "Converted and saved to Tool-repo/Loon/Plugin/Convert/$script_name.plugin"
+          echo "Converted and saved to Tool-repo/Tool/Loon/Plugin/Convert/$script_name.plugin"
         }
 
         # 获取脚本信息
@@ -71,19 +67,19 @@ jobs:
           script_name=${SCRIPT_NAMES[$i]}
           script_url=${SCRIPT_URLS[$i]}
           
-          # 在后台执行每个脚本的下载和转换，使用 & 实现并行
+          # 在后台执行每个脚本的转换，不下载 .js 文件
           download_and_convert $script_url $script_name &
         done
 
         # 等待所有后台任务完成
         wait
-        echo "All scripts have been downloaded and converted."
+        echo "All scripts have been converted."
 
     - name: Upload Converted Scripts
       uses: actions/upload-artifact@v3
       with:
         name: converted-scripts
-        path: Tool-repo/Loon/Plugin/Convert/
+        path: Tool-repo/Tool/Loon/Plugin/Convert/
 
 ###### Commit
     - name: 添加Commits
