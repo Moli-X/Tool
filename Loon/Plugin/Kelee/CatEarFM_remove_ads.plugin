@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/CatEarFM_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CatEarFM.png
-#!date=2024-11-28 00:00:00
+#!date=2024-12-07 17:29:07
 
 [Rewrite]
 ^https:\/\/app\.missevan\.com\/site\/launch\? response-body-json-del info
@@ -20,10 +20,10 @@
 ^https:\/\/app\.missevan\.com\/catalog\/sound-homepage\? response-body-json-del info.extra_banners
 ^https:\/\/fm\.missevan\.com\/api\/v2\/chatroom\/sound\/recommend\? response-body-json-del info
 ^https:\/\/app\.missevan\.com\/site\/config$ response-body-json-del info.teenager_popup_mode
+^https:\/\/app\.missevan\.com\/site\/icons\? response-body-json-jq '.info.icons |= (if . == null then null else map(select(.title != "直播" and .title != "周边商城")) end)'
+^https:\/\/app\.missevan\.com\/discovery\/list$ response-body-json-jq '.info |= with_entries(.value |= (if . == null then null else map(select(.title != "直播间" and .title != "广播剧" and .title != "免流服务")) end))'
 
 [Script]
-http-response ^https:\/\/app\.missevan\.com\/site\/icons\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CatEarFM_remove_ads.js,requires-body=true,tag=精简首页顶部入口
-http-response ^https:\/\/app\.missevan\.com\/discovery\/list$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CatEarFM_remove_ads.js,requires-body=true,tag=精简发现页面
 
 [MitM]
 hostname=app.missevan.com,fm.missevan.com
