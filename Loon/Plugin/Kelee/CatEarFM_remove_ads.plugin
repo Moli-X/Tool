@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/CatEarFM_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CatEarFM.png
-#!date=2024-12-08 00:43:13
+#!date=2024-12-08 00:49:15
 
 [Rewrite]
 ^https:\/\/app\.missevan\.com\/site\/launch\? response-body-json-del info
