@@ -9,21 +9,21 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/CatEarFM_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CatEarFM.png
-#!date=2024-12-07 17:29:07
+#!date=2024-12-07 21:23:38
 
 [Rewrite]
 ^https:\/\/app\.missevan\.com\/site\/launch\? response-body-json-del info
-^https:\/\/fm\.missevan\.com\/api\/v2\/meta\/banner$ response-body-json-del info
-^https:\/\/app\.missevan\.com\/site\/get-top$ response-body-json-del info.extra_banners
-^https:\/\/fm\.missevan\.com\/api\/v2\/recommended\/top$ response-body-json-del info
+^https:\/\/app\.missevan\.com\/site\/get-top$ response-body-json-del search_words info.extra_banners
+^https:\/\/app\.missevan\.com\/you-might-like\/my-favors\? response-body-json-del info.video_card
+^https:\/\/fm\.missevan\.com\/api\/v\d\/recommended\/top$ response-body-json-del info
 ^https:\/\/app\.missevan\.com\/drama\/catalog-homepage\? response-body-json-del info.extra_banners
+^https:\/\/fm\.missevan\.com\/api\/v\d\/chatroom\/open\/search-recommend-list$ reject-dict
 ^https:\/\/app\.missevan\.com\/catalog\/sound-homepage\? response-body-json-del info.extra_banners
-^https:\/\/fm\.missevan\.com\/api\/v2\/chatroom\/sound\/recommend\? response-body-json-del info
+^https:\/\/fm\.missevan\.com\/api\/v\d\/chatroom\/sound\/recommend\? response-body-json-del info
+^https:\/\/app\.missevan\.com\/sound\/recommend\? reject-dict
+^https:\/\/fm\.missevan\.com\/api\/v2\/chatroom\/open\/list\? reject-dict
 ^https:\/\/app\.missevan\.com\/site\/config$ response-body-json-del info.teenager_popup_mode
 ^https:\/\/app\.missevan\.com\/site\/icons\? response-body-json-jq '.info.icons |= (if . == null then null else map(select(.title != "直播" and .title != "周边商城")) end)'
-^https:\/\/app\.missevan\.com\/discovery\/list$ response-body-json-jq '.info |= with_entries(.value |= (if . == null then null else map(select(.title != "直播间" and .title != "广播剧" and .title != "免流服务")) end))'
-
-[Script]
 
 [MitM]
 hostname=app.missevan.com,fm.missevan.com
