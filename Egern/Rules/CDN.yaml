@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 2780
+# 规则统计: 2784
 
 domain_set:
   - 0x0.st
@@ -60,6 +60,7 @@ domain_set:
   - app.roboflow.com
   - app.viral-loops.com
   - appassets.mvtdev.com
+  - apple-relay.apple.com
   - apple-relay.cloudflare.com
   - apple-relay.fastly-edge.com
   - apps.profitihub.com
@@ -1986,6 +1987,7 @@ domain_suffix_set:
   - applicationinsights.azure.cn
   - applicationinsights.azure.com
   - appmifile.com
+  - appsflyersdk.com
   - aspnetcdn.com
   - assets-servd.host
   - assets-yammer.com
@@ -2037,6 +2039,7 @@ domain_suffix_set:
   - cdn-lfs.huggingface.co
   - cdn-one.com
   - cdn-spurit.com
+  - cdn-telegram.org
   - cdn-uploads.huggingface.co
   - cdn-website.com
   - cdn-zlib.sk
@@ -2297,6 +2300,7 @@ domain_suffix_set:
   - in.appcenter.ms
   - infura-ipfs.io
   - ingest.sentry.io
+  - ingest.us.sentry.io
   - instant.page
   - intercomassets.com
   - intercomcdn.com
