@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 2787
+# 规则统计: 2791
 
 domain_set:
   - 0x0.st
@@ -666,6 +666,7 @@ domain_set:
   - content.arduino.cc
   - content.invisioncic.com
   - content.jwplatform.com
+  - content.overwolf.com
   - content.product.glitch.com
   - content.wepik.com
   - contents-thumbnail2.fc2.com
@@ -1547,6 +1548,7 @@ domain_set:
   - static-assets.mapbox.com
   - static-assets.npr.org
   - static-assets.vinted.com
+  - static-beta.curseforge.com
   - static-ca-cdn.eporner.com
   - static-cache.fboom.me
   - static-cache.k2s.cc
@@ -2210,6 +2212,7 @@ domain_suffix_set:
   - fonts.com
   - fonts.net
   - forbesimg.com
+  - forgecdn.net
   - framercdn.com
   - framerstatic.com
   - framerusercontent.com
@@ -2724,6 +2727,7 @@ domain_suffix_set:
   - video.missav.com
   - videodelivery.net
   - vimeocdn.com
+  - vodvideo.cbsnews.com
   - vox-cdn.com
   - vsassets.io
   - vscode-cdn.net
