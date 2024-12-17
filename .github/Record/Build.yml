@@ -153,6 +153,7 @@ jobs:
                 "TronLink.list https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Custom/TronLink.list"
                 "Trust.list https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Custom/Trust.list"
                 "Ads_DiDiChuXing.list https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Custom/Ads_DiDiChuXing.list"
+                "FILTER_REGION.list https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Custom/FILTER_REGION.list"
             )
             for file in "${files[@]}"; do
                 set -- $file
