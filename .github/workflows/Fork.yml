@@ -455,7 +455,7 @@ jobs:
             [WPS_checkin]="https://kelee.one/Tool/Loon/Plugin/WPS_checkin.plugin"
             [sxmd_sign]="https://raw.githubusercontent.com/bgvioletsky/ios_rule/main/Loon/plugin/sxmd_sign.plugin"
             [FollowRSS_checkin]="https://kelee.one/Tool/Loon/Plugin/FollowRSS_checkin.plugin"
-            [KebidaDushu_remove_ads.plugin]="https://kelee.one/Tool/Loon/Plugin/KebidaDushu_remove_ads.plugin"
+            [KebidaDushu_remove_ads]="https://kelee.one/Tool/Loon/Plugin/KebidaDushu_remove_ads.plugin"
         )
         
         # 下载插件并在文件中添加原链接
