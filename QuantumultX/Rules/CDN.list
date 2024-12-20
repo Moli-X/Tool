@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 2899
+# 规则统计: 2900
 
 HOST,0x0.st,CDN
 HOST,3dna.nationbuilder.com,CDN
@@ -2889,6 +2889,7 @@ HOST-WILDCARD,ocsp.*.amazontrust.com,CDN
 HOST-WILDCARD,proxy-*.dailymotion.com,CDN
 HOST-WILDCARD,rr?---??.ouo.si,CDN
 HOST-WILDCARD,s3.*.wasabisys.com,CDN
+HOST-WILDCARD,sdk.*.braze.eu,CDN
 HOST-WILDCARD,static*.tgstat.ru,CDN
 HOST-WILDCARD,static-??-cdn.eporner.com,CDN
 HOST-WILDCARD,t?.nhentai.net,CDN
