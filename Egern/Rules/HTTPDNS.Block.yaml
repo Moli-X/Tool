@@ -1,5 +1,5 @@
 # 规则名称: HTTPDNS.Block
-# 规则统计: 45
+# 规则统计: 46
 
 domain_set:
   - dns.jd.com
@@ -13,6 +13,7 @@ domain_set:
   - httpdns.baidubce.com
   - httpdns.bilivideo.com
   - httpdns.c.cdnhwc2.com
+  - httpdns.calorietech.com
   - httpdns.meituan.com
   - httpdns.music.163.com
   - httpdns.n.netease.com
