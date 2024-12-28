@@ -1,6 +1,6 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/JD_Price.plugin
 #!name=京东比价
-#!desc=在京东应用内嵌入比价信息，点击商品标题即可查看，仅支持京东的标准模式。
+#!desc=点击商品详情后以通知的形式推送比价内容
 #App链接=https://apps.apple.com/app/id414245413
 #!author=githubdulong[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=功能增强
@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/JD_Price.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JD.png
-#!date=2024-12-27 12:33:47
+#!date=2024-12-29 00:51:00
 
 [Script]
 http-response ^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/JD_Price.js,requires-body=true,tag=京东比价
