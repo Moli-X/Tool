@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 2874
+# 规则统计: 2878
 
 domain_set:
   - 0x0.st
@@ -331,7 +331,6 @@ domain_set:
   - cdn.arstechnica.net
   - cdn.artstation.com
   - cdn.ashbyprd.com
-  - cdn.assets.as2.amazonaws.com
   - cdn.auth0.com
   - cdn.autoketing.org
   - cdn.axieinfinity.com
@@ -1737,6 +1736,7 @@ domain_set:
   - static.opensea.io
   - static.oracle.com
   - static.osdn.net
+  - static.pingcap.com
   - static.playstation.com
   - static.plus.net
   - static.politico.com
@@ -2048,10 +2048,12 @@ domain_suffix_set:
   - assets-servd.host
   - assets-yammer.com
   - assets.adidas.com
+  - assets.as2.amazonaws.com
   - assets.digitalocean.com
   - assets.getpocket.com
   - assets.heroku.com
   - assets.pinterest.com
+  - assets.shortbread.aws.dev
   - assets.tumblr.com
   - assets.ubuntu.com
   - assettype.com
@@ -2103,6 +2105,7 @@ domain_suffix_set:
   - cdn-zlib.sk
   - cdn.applicationinsights.io
   - cdn.bsky.app
+  - cdn.chrome.marketplace.aws.dev
   - cdn.cookielaw.org
   - cdn.cwinfo.net
   - cdn.discordapp.com
@@ -2826,6 +2829,7 @@ domain_suffix_set:
   - whweitao.com
   - widget.cluster.groovehq.com
   - widget.clutch.co
+  - widgets.marketplace.aws.dev
   - wikia.nocookie.net
   - wikiplus-app.com
   - winudf.com
