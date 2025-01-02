@@ -11,6 +11,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QQMusic.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN,adstats.tencentmusic.com,REJECT
 DOMAIN,ad.tencentmusic.com,REJECT

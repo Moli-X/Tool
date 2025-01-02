@@ -12,6 +12,7 @@
 #!select=解锁地区,台湾,日本,韩国,泰国,越南,英国,法国,德国,美国,巴西,俄罗斯,墨西哥,土耳其,西班牙,阿根廷,新加坡,菲律宾,马来西亚
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 AND,((GEOIP,CN),(DOMAIN,pitaya.bytedance.com)),DIRECT // 此为抖音和TikTok的*.bytedance.com共用域名，仅国外解析结果走代理
 DOMAIN,api.snapkit.com,PROXY
@@ -111,12 +112,15 @@ DOMAIN-KEYWORD,tiktokv.com.,PROXY
 DOMAIN-KEYWORD,ttcdn-tos.,PROXY
 DOMAIN-KEYWORD,ttlivecdn.com.,PROXY
 
+
 [Rewrite]
 ^https:\/\/api-va\.tiktokv\.com\/api\/ad\/ reject
 ^https:\/\/tnc\d+-platform-\w+\.tiktokv\.com\/get_domains\/ reject
 
+
 [Script]
 http-request https?:\/\/.+.(tiktokv|tiktokcdn).com\/.+(region\d?=CN|&mcc_mnc=\d+) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/TikTok_redirect.js,tag=TikTok解锁
+
 
 [MitM]
 hostname=*.byteoversea.com,*.tik-tokapi.com,*.tiktokv.com,*.tiktokcdn.com

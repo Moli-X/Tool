@@ -11,11 +11,13 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MojiWeather.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN,dsp-x.jd.com,REJECT
 DOMAIN,im-x.jd.com,REJECT
 DOMAIN,xlog.jd.com,REJECT
 DOMAIN,janapi.jd.com,REJECT
+
 DOMAIN,adsmind.gdtimg.com,REJECT
 DOMAIN,adsmind.ugdtimg.com,REJECT
 DOMAIN,c2.gdt.qq.com,REJECT
@@ -51,9 +53,11 @@ DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,l.qq.com,REJECT
 DOMAIN-SUFFIX,ugdtimg.com,REJECT
 IP-CIDR,47.110.187.87/32,REJECT,no-resolve
+
 DOMAIN,ztoken.uyunad.com,REJECT
 DOMAIN,aaid.uyunad.com,REJECT
 DOMAIN,yumao.puata.info,REJECT
+
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
 DOMAIN,errnewlog.umeng.com,REJECT
@@ -66,6 +70,7 @@ DOMAIN,plbslog.umeng.com,REJECT
 DOMAIN,log.umtrack.com,REJECT
 DOMAIN,aaid.umeng.com,REJECT
 DOMAIN,log.umsns.com,REJECT
+
 DOMAIN,b-gtc.getui.net,REJECT
 DOMAIN,c-gtc.getui.net,REJECT
 DOMAIN,c-hzgt2.getui.com,REJECT
@@ -78,6 +83,7 @@ DOMAIN,sdk-open-phone.getui.com,REJECT
 DOMAIN-SUFFIX,mobileservice.cn,REJECT
 DOMAIN-SUFFIX,getui.com,REJECT
 DOMAIN-SUFFIX,igexin.com,REJECT
+
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ttam-),(DOMAIN-SUFFIX,ibyteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,ssdk-),(DOMAIN-SUFFIX,pangle.io)),REJECT
@@ -126,6 +132,7 @@ DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
+
 DOMAIN,api-c.dutils.com,REJECT
 DOMAIN,api-d.dutils.com,REJECT
 DOMAIN,api-p0.yksdks.com,REJECT
@@ -138,6 +145,7 @@ DOMAIN,api.share.mob.com,REJECT
 DOMAIN,api.verify.mob.com,REJECT
 DOMAIN,log-verify.mob.com,REJECT
 DOMAIN,sdk.push.mob.com,REJECT
+
 DOMAIN,ossgw.alicdn.com,REJECT
 DOMAIN,ems.youku.com,REJECT
 DOMAIN,hudong.alicdn.com,REJECT
@@ -148,14 +156,19 @@ DOMAIN,adash.man.aliyuncs.com,REJECT
 DOMAIN,applog.uc.cn,REJECT
 AND,((DOMAIN-KEYWORD,adash),(DOMAIN-SUFFIX,ut.taobao.com)),REJECT
 
+
 [Rewrite]
 ^https:\/\/fcard\.api\.moji\.com\/flycard\/flyCard\? reject
+
 ^https:\/\/vdo\.api\.moji\.com\/shortvideo\/card\/subscribe$ reject-dict
 ^https:\/\/vdo\.api\.moji\.com\/shortvideo\/video\/index_flow\? reject-dict
 ^https:\/\/vdo\.api\.moji\.com\/shortvideo\/video_user\/hotGuyRcm\? reject-dict
 ^https:\/\/vdo\.api\.moji\.com\/shortvideo\/zone\/follow_src_zone\? reject-dict
+
 ^https:\/\/sns\.api\.moji\.com\/user\/dynamic_v9\/json\/someone_interest\? reject-dict
+
 ^https:\/\/mme\.api\.moji\.com\/json\/entrance\/list$ response-body-json-jq 'del(.entrance_region_res_list[] | select(.region_name == "皇冠区域" or .region_name == "banner区")) | .entrance_region_res_list[].entrance_res_list |= if . then map(select(.entrance_name | . != "墨迹钱包" and . != "墨圈")) else . end'
+
 
 [MitM]
 hostname=fcard.api.moji.com,vdo.api.moji.com,sns.api.moji.com,mme.api.moji.com,psnlz.api.moji.com

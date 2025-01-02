@@ -11,19 +11,31 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QiXinBao.png
 #!date=2024-11-28 00:00:00
 
+
 [Rewrite]
 ^https:\/\/appc\.qixin\.com\/v4\/general\/getSearchPlaceholderRedirect$ reject-dict
+
 ^https:\/\/appc-v6\.qixin\.com\/v4\/general\/getAppFloatAd$ reject-dict
+
 ^https:\/\/appc-v6\.qixin\.com\/v4\/general\/getAppBanners$ reject-dict
+
 ^https:\/\/appc-v6\.qixin\.com\/v4\/user\/getUserActivitys$ reject-dict
+
 ^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/homePageRecommend\/recommendCard\d+ reject-dict
+
 ^https:\/\/appc-v6\.qixin\.com\/v4\/user\/getRecommendPersons$ reject-dict
+
 ^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/getRecommendEnts$ reject-dict
+
 ^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/getRecommendation$ reject-dict
+
 ^https:\/\/appc-v6\.qixin\.com\/v4\/general\/getAppBottomBanners$ reject-dict
+
 ^https:\/\/qxb-minicode-pic-osscache\.qixin\.com\/web\/ reject
 
+
 [Script]
+
 
 [MitM]
 hostname=appc.qixin.com,appc-v6.qixin.com,qxb-minicode-pic-osscache.qixin.com

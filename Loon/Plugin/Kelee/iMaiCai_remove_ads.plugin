@@ -11,6 +11,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/iMaiCai.png
 #!date=2024-11-28 00:00:00
 
+
 [Rewrite]
 ^https:\/\/mall\.meituan\.com\/api\/c\/homepage\/splash reject-dict
 ^https:\/\/mall\.meituan\.com\/api\/c\/homepage\/bubble\/operate\/info reject-dict
@@ -20,8 +21,10 @@
 ^https:\/\/mall\.meituan\.com\/api\/c\/poi\/\d+\/personal\/recommend reject-dict
 ^https:\/\/businessapi\.ksedt\.com\/signupindex\/jxlist reject-dict
 
+
 [Script]
 http-response ^https:\/\/portal-portm\.meituan\.com\/horn_ios\/mergeRequest script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/iMaiCai_remove_ads.js,requires-body=true,tag=移除下发广告
+
 
 [MitM]
 hostname=portal-portm.meituan.com,mall.meituan.com,businessapi.ksedt.com

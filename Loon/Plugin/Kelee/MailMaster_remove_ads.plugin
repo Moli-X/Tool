@@ -11,6 +11,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MailMaster.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN,httpdns.music.163.com,REJECT
 DOMAIN,httpdns.n.netease.com,REJECT
@@ -23,6 +24,7 @@ IP-CIDR,59.111.239.61/32,REJECT,no-resolve
 IP-CIDR,59.111.239.62/32,REJECT,no-resolve
 IP-CIDR,115.236.121.51/32,REJECT,no-resolve
 IP-CIDR,115.236.121.195/32,REJECT,no-resolve
+
 URL-REGEX,"^http:\/\/81\.69\.130\.131\/d",REJECT
 URL-REGEX,"^http:\/\/101\.35\.204\.35\/d",REJECT
 URL-REGEX,"^http:\/\/101\.35\.212\.35\/d",REJECT
@@ -32,6 +34,7 @@ URL-REGEX,"^http:\/\/114\.110\.97\.30\/d",REJECT
 URL-REGEX,"^http:\/\/114\.110\.97\.97\/d",REJECT
 URL-REGEX,"^http:\/\/121\.5\.84\.85\/d",REJECT
 URL-REGEX,"^http:\/\/\[2402:4e00:1411:201:0:9964:ba21:5a41\]\/d",REJECT
+
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ttam-),(DOMAIN-SUFFIX,ibyteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,ssdk-),(DOMAIN-SUFFIX,pangle.io)),REJECT
@@ -80,6 +83,7 @@ DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
+
 DOMAIN,als.baidu.com,REJECT
 DOMAIN,bgg.baidu.com,REJECT
 DOMAIN,cpro.baidustatic.com,REJECT
@@ -94,6 +98,7 @@ DOMAIN,wn.pos.baidu.com,REJECT
 DOMAIN,miniapp-ad.cdn.bcebos.com,REJECT
 DOMAIN-SUFFIX,union.baidu.cn,REJECT
 DOMAIN-SUFFIX,union.baidu.com,REJECT
+
 DOMAIN,adsmind.gdtimg.com,REJECT
 DOMAIN,adsmind.ugdtimg.com,REJECT
 DOMAIN,c2.gdt.qq.com,REJECT
@@ -128,6 +133,7 @@ DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,l.qq.com,REJECT
 DOMAIN-SUFFIX,ugdtimg.com,REJECT
 IP-CIDR,47.110.187.87/32,REJECT,no-resolve
+
 DOMAIN,ossgw.alicdn.com,REJECT
 DOMAIN,ems.youku.com,REJECT
 DOMAIN,hudong.alicdn.com,REJECT
@@ -136,6 +142,7 @@ DOMAIN,beacon-api.aliyuncs.com,REJECT
 DOMAIN,adash.man.aliyuncs.com,REJECT
 DOMAIN,applog.uc.cn,REJECT
 AND,((DOMAIN-KEYWORD,adash),(DOMAIN-SUFFIX,ut.taobao.com)),REJECT
+
 DOMAIN,nex.163.com,REJECT
 DOMAIN,iad.g.163.com,REJECT
 DOMAIN,adx-bj.anythinktech.com,REJECT
@@ -143,12 +150,16 @@ DOMAIN,api.anythinktech.com,REJECT
 DOMAIN,tk.anythinktech.com,REJECT
 DOMAIN,da.anythinktech.com,REJECT
 DOMAIN,gorgon.youdao.com,REJECT
+
 DOMAIN,dsp-x.jd.com,REJECT
 DOMAIN,xlog.jd.com,REJECT
 DOMAIN,janapi.jd.com,REJECT
+
 DOMAIN,sdk.beizi.biz,REJECT
 DOMAIN,api-htp.beizi.biz,REJECT
+
 DOMAIN,guide2.bianxianmao.com,REJECT
+
 DOMAIN,api.mosspf.com,REJECT
 DOMAIN,da.mosspf.com,REJECT
 DOMAIN,mores.toponad.com,REJECT
@@ -156,21 +167,27 @@ DOMAIN,api.toponadss.com,REJECT
 DOMAIN,da.toponadss.com,REJECT
 DOMAIN,tk.toponadss.com,REJECT
 DOMAIN,adx-os.toponadss.com,REJECT
+
 DOMAIN,mores.motowoo.com,REJECT
 DOMAIN-SUFFIX,motowoo.com,REJECT
+
 DOMAIN,gdfp.gifshow.com,REJECT
 DOMAIN,open.e.kuaishou.com,REJECT
 DOMAIN-SUFFIX,adukwai.com,REJECT
+
 DOMAIN,ztoken.uyunad.com,REJECT
 DOMAIN,aaid.uyunad.com,REJECT
+
 DOMAIN,api.htp.hubcloud.com.cn,REJECT
 DOMAIN,res1.hubcloud.com.cn,REJECT
 DOMAIN,sdktmp.hubcloud.com.cn,REJECT
 DOMAIN,v.adx.hubcloud.com.cn,REJECT
+
 DOMAIN,caid.adintl.cn,REJECT
 DOMAIN,sv.adintl.cn,REJECT
 DOMAIN,v.adintl.cn,REJECT
 DOMAIN,oss.cdn.adintl.cn,REJECT
+
 DOMAIN,tk.bridgeoos.com,REJECT
 DOMAIN,da.bridgeoos.com,REJECT
 DOMAIN,api.bridgeoos.com,REJECT
@@ -178,16 +195,23 @@ DOMAIN,adx-os.bridgeoos.com,REJECT
 DOMAIN,adx-sg-req.bridgeoos.com,REJECT
 DOMAIN-SUFFIX,bridgeoos.com,REJECT
 
+
 [Rewrite]
 ^https:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$ reject-dict
+
 ^https:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/page\/v2\/conf\.do$ response-body-json-del data.functionOperatorInfoList data.memberOperator data.activityTabInfoList
+
 ^https:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/config\/function\.do$ response-body-json-jq 'walk(if type == "object" and has("name") and .name == "看视频扩容" then empty else . end) | del(.data.config[] | select(.functionName == "Function-AD"))'
+
 ^https:\/\/dashi\.163\.com\/task-center-api\/fapi\/task\/list$ reject-dict
+
 ^https:\/\/appconf\.mail\.163\.com\/mailoperating\/mailmaster\/api\/operator\/get$ reject-dict
+
 ^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ reject
 ^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_union reject
 ^https:\/\/images\.pinduoduo\.com\/mrk\/ reject
 ^https:\/\/images\.pinduoduo\.com\/marketing_api\/ reject
+
 
 [MitM]
 hostname=appconf.mail.163.com,dashi.163.com,video-dsp.pddpic.com,t-dsp.pinduoduo.com,images.pinduoduo.com

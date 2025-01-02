@@ -11,12 +11,17 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ShouYinTongMerchant.png
 #!date=2024-11-28 00:00:00
 
+
 [Rewrite]
 ^https:\/\/syt\.leshuazf\.com\/merchant\/merchant\/showOpenScreenAd$ reject-dict
+
 ^https:\/\/m\.fqfin\.cn\/cls\/leshuapay\/preCredit\.json$ reject-dict
 ^https:\/\/syt\.leshuazf\.com\/merchant\/messageCenter\/stationLetterList$ reject-dict
+
 ^https:\/\/syt\.leshuazf\.com\/merchant\/merchant\/getBannerConfig$ reject-dict
+
 ^https:\/\/syt\.leshuazf\.com\/merchant\/popup\/getPopupInfo$ reject-dict
+
 
 [MitM]
 hostname=syt.leshuazf.com,m.fqfin.cn

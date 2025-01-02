@@ -11,6 +11,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ChengFenMiao.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
@@ -24,6 +25,7 @@ DOMAIN,plbslog.umeng.com,REJECT
 DOMAIN,log.umtrack.com,REJECT
 DOMAIN,aaid.umeng.com,REJECT
 DOMAIN,log.umsns.com,REJECT
+
 DOMAIN,als.baidu.com,REJECT
 DOMAIN,bgg.baidu.com,REJECT
 DOMAIN,cpro.baidustatic.com,REJECT
@@ -39,8 +41,10 @@ DOMAIN,miniapp-ad.cdn.bcebos.com,REJECT
 DOMAIN-SUFFIX,union.baidu.cn,REJECT
 DOMAIN-SUFFIX,union.baidu.com,REJECT
 
+
 [Rewrite]
 ^https:\/\/app\.chengfenmiao\.com\/item\/closet\? reject-dict
+
 
 [MitM]
 hostname=app.chengfenmiao.com

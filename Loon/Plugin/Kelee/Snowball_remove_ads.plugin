@@ -11,8 +11,10 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Snowball.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 URL-REGEX,"^http:\/\/119\.29\.29\.98\/d\?",REJECT
+
 
 [Rewrite]
 ^https:\/\/api\.xueqiu\.com\/snowpard\/launch_strategy\/query\.json\?channel=1&height=932 reject-dict
@@ -27,6 +29,7 @@ URL-REGEX,"^http:\/\/119\.29\.29\.98\/d\?",REJECT
 ^https:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/portfolio_tab_symbol\.json reject-dict
 ^https:\/\/stock\.xueqiu\.com\/v5\/stock\/group\/recommend\/default\/list\.json reject-dict
 ^https:\/\/api\.xueqiu\.com\/livestream\/structure\/live\/hotCard\.json reject-dict
+
 
 [MitM]
 hostname=api.xueqiu.com,open.xueqiu.com,stock.xueqiu.com,39.103.79.14,39.106.97.84,47.95.49.75,101.201.62.20,101.201.62.26,101.201.175.228,124.250.48.3,182.92.145.50,182.92.251.113

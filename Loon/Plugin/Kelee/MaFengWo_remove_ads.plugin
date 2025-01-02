@@ -11,10 +11,13 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MaFengWo.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 IP-CIDR,119.29.29.98/32,REJECT,no-resolve
 URL-REGEX,"^http:\/\/162\.14\.3\.250\/v4",REJECT
+
 DOMAIN,advert.mafengwo.cn,REJECT
+
 DOMAIN,api-c.dutils.com,REJECT
 DOMAIN,api-d.dutils.com,REJECT
 DOMAIN,api-p0.yksdks.com,REJECT
@@ -28,10 +31,14 @@ DOMAIN,api.verify.mob.com,REJECT
 DOMAIN,log-verify.mob.com,REJECT
 DOMAIN,sdk.push.mob.com,REJECT
 
+
 [Rewrite]
 ^https:\/\/mapi\.mafengwo\.cn\/discovery\/get_index\/v7\? response-body-json-jq '.data.list |= map(select(.data.business_type != "gdcpm"))'
+
 ^https:\/\/mapi\.mafengwo\.cn\/sales\/home\/get_header\/v3\? response-body-json-jq '.data.list[] |= ( .data |= del(.banners) )'
+
 ^https:\/\/mapi\.mafengwo\.cn\/user\/growth\/get_growth_tip\/v1\? reject-dict
+
 
 [MitM]
 hostname=mapi.mafengwo.cn

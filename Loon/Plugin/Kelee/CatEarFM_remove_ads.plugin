@@ -11,21 +11,34 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CatEarFM.png
 #!date=2024-12-08 00:49:15
 
+
 [Rewrite]
 ^https:\/\/app\.missevan\.com\/site\/launch\? response-body-json-del info
+
 ^https:\/\/app\.missevan\.com\/site\/config$ response-body-json-del info.homepage_top_task_button info.teenager_popup_mode
+
 ^https:\/\/app\.missevan\.com\/site\/get-top$ response-body-json-del info.search_words info.extra_banners
+
 ^https:\/\/app\.missevan\.com\/you-might-like\/my-favors\? response-body-json-del info.video_card
 ^https:\/\/app\.missevan\.com\/you-might-like\/my-favors\? response-body-json-jq '.info.ranks.data|=map(select(.name!="直播榜"))'
+
 ^https:\/\/fm\.missevan\.com\/api\/v2\/recommended\/top\? response-body-json-del info
+
 ^https:\/\/app\.missevan\.com\/drama\/catalog-homepage\? response-body-json-del info.extra_banners
+
 ^https:\/\/fm\.missevan\.com\/api\/v\d\/chatroom\/open\/search-recommend-list$ reject-dict
+
 ^https:\/\/app\.missevan\.com\/catalog\/sound-homepage\? response-body-json-del info.extra_banners
+
 ^https:\/\/fm\.missevan\.com\/api\/v\d\/chatroom\/sound\/recommend\? response-body-json-del info
+
 ^https:\/\/app\.missevan\.com\/sound\/recommend\? reject-dict
 ^https:\/\/app\.missevan\.com\/drama\/get-recommend-by-id\? reject-dict
+
 ^https:\/\/fm\.missevan\.com\/api\/v\d\/meta\/banner$ reject-dict
+
 ^https:\/\/app\.missevan\.com\/site\/icons\? response-body-json-jq '.info.icons |= (if . == null then null else map(select(.title != "直播" and .title != "周边商城")) end)'
+
 
 [MitM]
 hostname=app.missevan.com,fm.missevan.com

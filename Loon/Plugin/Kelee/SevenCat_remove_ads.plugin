@@ -11,10 +11,12 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SevenCat.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN,cdn-ad.wtzw.com,REJECT
 DOMAIN,cdn-new-ad.wtzw.com,REJECT
 DOMAIN-SUFFIX,gdt.qq.com,REJECT
+
 
 [Rewrite]
 ^https:\/\/api-cfg\.wtzw\.com\/v\d\/splash\/ reject-dict
@@ -25,12 +27,15 @@ DOMAIN-SUFFIX,gdt.qq.com,REJECT
 ^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
 ^https:\/\/api-gw\.wtzw\.com\/welf\/app\/v\d\/task\/red-packet reject-dict
 ^https:\/\/cdn\.wtzw\.com\/bookimg\/free\/api\/v\d\/reader\/reader-copy-paragraph-all\.json reject-dict
+
 ^https:\/\/api-cfg\.wtzw\.com\/v\d\/reward\/ reject
 ^https:\/\/api-cfg\.wtzw\.com\/v\d\/adv\/ reject
 ^https:\/\/api-cfg\.wtzw\.com\/v\d\/offline-adv\/index reject-dict
 ^https:\/\/api-cfg\.wtzw\.com\/v\d\/operation\/index\?ad_personal_switch reject-dict
 ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/withdraw\/init reject-dict
+
 ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/user\/my-center\? response-body-json-del data.func_area[1]  data.func_area[2]
+
 
 [MitM]
 hostname=api-cfg.wtzw.com,sf3-fe-tos.pglstatp-toutiao.com,api-bc.wtzw.com,api-gw.wtzw.com,cdn.wtzw.com

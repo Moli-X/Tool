@@ -11,8 +11,10 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/OraySunlogin.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN,mobads.baidu.com,REJECT
+
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
 DOMAIN,errnewlog.umeng.com,REJECT
@@ -25,6 +27,7 @@ DOMAIN,plbslog.umeng.com,REJECT
 DOMAIN,log.umtrack.com,REJECT
 DOMAIN,aaid.umeng.com,REJECT
 DOMAIN,log.umsns.com,REJECT
+
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ttam-),(DOMAIN-SUFFIX,ibyteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,ssdk-),(DOMAIN-SUFFIX,pangle.io)),REJECT
@@ -74,8 +77,10 @@ DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
 
+
 [Rewrite]
 ^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_iOS_DEVICE_FREE\? reject
+
 
 [MitM]
 hostname=client-api-v2.oray.com

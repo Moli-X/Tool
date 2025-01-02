@@ -11,18 +11,28 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/GuideRank.png
 #!date=2024-11-28 00:00:00
 
+
 [Rewrite]
 ^https:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/common\/getWeworkPromotionInfoBySceneType reject-dict
+
 ^https:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/popUpAdCollection\/getActiveCollection\.do reject-dict
+
 ^https:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/common\/getWeworkPromotionInfoBySceneType reject-dict
 ^https:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/common\/getWeworkCategoryPromotionInfo reject-dict
+
 ^https:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/home\/getHomePageV response-body-json-del data.countdownBanner data.newEvaluations data.freeToPayBannerPhotoUrl data.groupBuyingList data.multiCountdownBanner data.banners data.multiPlatformBanner data.specialSaleBannerPhotoUrl data.guide90Evaluation data.insurancePromotions
 ^https:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/stockTaking\/pageStockTakingForHomePage reject-dict
+
 ^https:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/common\/getInitData\.do response-body-json-del data.SpecialSalePageMidTabConfig
+
 ^https:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/specialSale\/pageRecommendedItems reject-dict
+
 ^https:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/manualOperationGoods\/pageManualOperationGoods reject-dict
+
 ^https:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/specialSale\/listSpecialSalePageBanner reject-dict
+
 ^https:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/personal\/getPersonPageInfo\.do reject-dict
+
 
 [MitM]
 hostname=zone.guiderank-app.com

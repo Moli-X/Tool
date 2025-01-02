@@ -11,6 +11,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TV_Assistant.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 AND,((DOMAIN-KEYWORD,ads),(DOMAIN-KEYWORD,normal),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
@@ -26,9 +27,11 @@ DOMAIN-KEYWORD,-be-pack.pglstatp-toutiao.com,REJECT
 DOMAIN-KEYWORD,-fe-tos.pglstatp-toutiao.com,REJECT
 DOMAIN-KEYWORD,api-access.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
+
 DOMAIN,gdfp.gifshow.com,REJECT
 DOMAIN,open.e.kuaishou.com,REJECT
 DOMAIN-SUFFIX,adukwai.com,REJECT
+
 DOMAIN,mobads.baidu.com,REJECT
 DOMAIN,mobads-logs.baidu.com,REJECT
 DOMAIN,wn.pos.baidu.com,REJECT
@@ -37,8 +40,10 @@ DOMAIN,als.baidu.com,REJECT
 DOMAIN,feed-image.baidu.com,REJECT
 DOMAIN-SUFFIX,union.baidu.cn,REJECT
 DOMAIN-SUFFIX,union.baidu.com,REJECT
+
 DOMAIN,tower.ubixioe.com,REJECT
 DOMAIN,sdk-data.ubixioe.com,REJECT
+
 DOMAIN,api-c.dutils.com,REJECT
 DOMAIN,api-d.dutils.com,REJECT
 DOMAIN,api-p0.yksdks.com,REJECT
@@ -51,11 +56,13 @@ DOMAIN,api.share.mob.com,REJECT
 DOMAIN,api.verify.mob.com,REJECT
 DOMAIN,log-verify.mob.com,REJECT
 DOMAIN,sdk.push.mob.com,REJECT
+
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
 DOMAIN,ucc.umeng.com,REJECT
 DOMAIN,ulogs.umeng.com,REJECT
 DOMAIN,utoken.umeng.com,REJECT
+
 
 [Rewrite]
 ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_home_pop_up reject-dict
@@ -64,8 +71,10 @@ DOMAIN,utoken.umeng.com,REJECT
 ^https:\/\/saas\.hpplay\.cn\/api\/lebo-rabbit\/app-card\/list reject-dict
 ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app-user-banner reject-dict
 
+
 [Script]
 http-response ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_tab_red_dot\?user-tag=1$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/TV_Assistant_remove_ads.js,requires-body=true,tag=移除底栏视频标签
+
 
 [MitM]
 hostname=saas.hpplay.cn

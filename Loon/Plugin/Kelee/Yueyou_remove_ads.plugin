@@ -11,8 +11,10 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Yueyou.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN,ads.reader.yueyouxs.com,REJECT
+
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ttam-),(DOMAIN-SUFFIX,ibyteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,ssdk-),(DOMAIN-SUFFIX,pangle.io)),REJECT
@@ -61,6 +63,7 @@ DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
+
 DOMAIN,als.baidu.com,REJECT
 DOMAIN,bgg.baidu.com,REJECT
 DOMAIN,cpro.baidustatic.com,REJECT
@@ -75,6 +78,7 @@ DOMAIN,wn.pos.baidu.com,REJECT
 DOMAIN,miniapp-ad.cdn.bcebos.com,REJECT
 DOMAIN-SUFFIX,union.baidu.cn,REJECT
 DOMAIN-SUFFIX,union.baidu.com,REJECT
+
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
 DOMAIN,errnewlog.umeng.com,REJECT
@@ -88,9 +92,12 @@ DOMAIN,log.umtrack.com,REJECT
 DOMAIN,aaid.umeng.com,REJECT
 DOMAIN,log.umsns.com,REJECT
 
+
 [Rewrite]
 ^https:\/\/goway\.reader\.yueyouxs\.com\/assemble\/app\/basic\/getAppInfo\? response-body-json-del data.isShowDLPopup data.isShowGame data.touTiaoShowDlPopup data.offLineDownload.WatchVideoBtnDesc data.readVipFirstCfg data.readVipNormalCfg data.notifyAd data.hotStartSplashTime data.hotStartReqSwitch data.isShowBFTab data.popReqDelayTime data.benefitCfg data.chestTask data.hotStartAd data.activeTagList data.secondOrderCfg data.secondOrderList data.blockedWordsCfg data.aaReportListCfg data.pddAdSwitch data.isShowShelfAuthPopup data.firstPopUpAmount
+
 ^https:\/\/goway\.reader\.yueyouxs\.com\/assemble\/app\/basic\/getAppInfo\? response-body-json-replace data.isAdClosed true 
+
 
 [MitM]
 hostname=goway.reader.yueyouxs.com

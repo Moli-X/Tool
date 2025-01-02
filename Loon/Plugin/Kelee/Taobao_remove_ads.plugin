@@ -11,6 +11,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Taobao.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN,adashx.m.taobao.com,REJECT
 DOMAIN,ossgw.alicdn.com,REJECT
@@ -18,6 +19,7 @@ DOMAIN,ems.youku.com,REJECT
 DOMAIN,hudong.alicdn.com,REJECT
 DOMAIN,h-adashx.ut.taobao.com,REJECT
 DOMAIN,ut.taobao.com,REJECT
+
 
 [Rewrite]
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.(allresource|predict) reject-dict
@@ -32,9 +34,11 @@ DOMAIN,ut.taobao.com,REJECT
 ^https:\/\/heic\.alicdn\.com\/imgextra\/i\d\/\d*\/?[\w!]+-\d-(octopus|tps-1125-1602|tps-1080-1920)\.(jp|pn)g_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q[59]0 reject-dict
 ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(volvo\.secondfloor\.getconfig|wireless\.home\.newface\.awesome\.get) reject-dict
 
+
 [Script]
 http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Taobao_remove_ads.js,requires-body=true,tag=移除淘宝开屏广告
 http-response ^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Taobao_remove_ads.js,requires-body=true,tag=移除淘宝开屏广告
+
 
 [MitM]
 hostname=acs.m.taobao.com,heic.alicdn.com,guide-acs.m.taobao.com,poplayer.template.alibaba.com

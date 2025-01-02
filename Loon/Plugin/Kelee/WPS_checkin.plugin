@@ -11,6 +11,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WPS.png
 #!date=2024-11-28 00:00:00
 
+
 [Argument]
 CaptureCookie=switch,false,true,tag=捕获Cookie,desc=此开关控制插件是否捕获Cookie
 AK=input,"",tag=百度API Key,desc=这里需要输入有效的百度API Key
@@ -19,9 +20,12 @@ DAY=input,"1",tag=兑换天数,desc=每日签到时自动兑换的天数，可�
 MAX_RETRIES=input,"5",tag=失败重试次数,desc=仅允许填写阿拉伯数字
 CRONEXP=input,"0 8 * * *",tag=定时参数,desc=这里需要输入符合CRON表达式的参数
 
+
 [Script]
 http-request ^https:\/\/moapi\.wps\.cn\/app\/ios\/v1\/app$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/WPS_checkin.js,requires-body=true,tag=捕获Cookie,enable={CaptureCookie}
+
 cron {CRONEXP} script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/WPS_checkin.js,tag=WPS每日签到,timeout=120,argument=[{AK},{SK},{MAX_RETRIES}]
+
 
 [MitM]
 hostname=moapi.wps.cn

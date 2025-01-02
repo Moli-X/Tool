@@ -11,6 +11,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QtingFM.png
 #!date=2024-12-03 21:08:45
 
+
 [Rule]
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ttam-),(DOMAIN-SUFFIX,ibyteimg.com)),REJECT
@@ -60,6 +61,7 @@ DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
+
 DOMAIN,adsmind.gdtimg.com,REJECT
 DOMAIN,adsmind.ugdtimg.com,REJECT
 DOMAIN,c2.gdt.qq.com,REJECT
@@ -95,6 +97,7 @@ DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,l.qq.com,REJECT
 DOMAIN-SUFFIX,ugdtimg.com,REJECT
 IP-CIDR,47.110.187.87/32,REJECT,no-resolve
+
 DOMAIN,afd.baidu.com,REJECT
 DOMAIN,als.baidu.com,REJECT
 DOMAIN,bgg.baidu.com,REJECT
@@ -111,6 +114,7 @@ DOMAIN,miniapp-ad.cdn.bcebos.com,REJECT
 DOMAIN,mobads-pre-config.cdn.bcebos.com,REJECT
 DOMAIN-SUFFIX,union.baidu.cn,REJECT
 DOMAIN-SUFFIX,union.baidu.com,REJECT
+
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
 DOMAIN,errnewlog.umeng.com,REJECT
@@ -123,6 +127,7 @@ DOMAIN,plbslog.umeng.com,REJECT
 DOMAIN,log.umtrack.com,REJECT
 DOMAIN,aaid.umeng.com,REJECT
 DOMAIN,log.umsns.com,REJECT
+
 DOMAIN,b-gtc.getui.net,REJECT
 DOMAIN,c-gtc.getui.net,REJECT
 DOMAIN,c-hzgt2.getui.com,REJECT
@@ -136,10 +141,12 @@ DOMAIN,ido.gepush.com,REJECT
 DOMAIN-SUFFIX,mobileservice.cn,REJECT
 DOMAIN-SUFFIX,getui.com,REJECT
 DOMAIN-SUFFIX,igexin.com,REJECT
+
 DOMAIN,gdfp.gifshow.com,REJECT
 DOMAIN,open.e.kuaishou.com,REJECT
 DOMAIN,adtrack.e.kuaishou.com,REJECT
 DOMAIN-SUFFIX,adukwai.com,REJECT
+
 DOMAIN,api-c.dutils.com,REJECT
 DOMAIN,api-d.dutils.com,REJECT
 DOMAIN,api-p0.yksdks.com,REJECT
@@ -152,24 +159,38 @@ DOMAIN,api.share.mob.com,REJECT
 DOMAIN,api.verify.mob.com,REJECT
 DOMAIN,log-verify.mob.com,REJECT
 DOMAIN,sdk.push.mob.com,REJECT
+
 DOMAIN-SUFFIX,66mobi.com,REJECT
+
 
 [Rewrite]
 ^https:\/\/app\.qtfm\.cn\/recommendapi\/v\d\/emotion$ reject
+
 ^https:\/\/search\.qtfm\.cn\/v\d\/keyword\/default$ reject
+
 ^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/signin\/show_homepage_icon$ response-body-json-replace data.display_icon false
+
 ^https:\/\/app\.qtfm\.cn\/recommendapi\/v\d\/hotpage\? response-body-json-jq 'del(.data.head[].data[] | select(.title == "超级会员")) | del(.data.head[].data[] | select(.link.type == "RadioStation")) | del(.data.head[] | select(.title == "听头条")) | del(.data.feeds[] | select(.type == "ListenListRadio"))'
+
 ^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/channel\/\d{6}\/playpage\/\d{8} response-body-json-del data.related_recommend
+
 ^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/mylistenpage response-body-json-del data.banner
+
 ^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/i_listen\/guess_you_like\? reject-dict
+
 ^https:\/\/recpage-c\.qtfm\.cn\/v\d\/favorites$ reject-dict
+
 ^https:\/\/user\.qtfm\.cn\/u\d\/api\/v\d\/user\/following_podcaster\? reject-dict
+
 ^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/subscribed_channels\? response-body-json-del data.recommends
+
 ^https:\/\/entry\.qtfm\.cn\/api\/v\d\/personal\/\?carrier response-body-json-jq 'delpaths([["data", "membership"], ["data", "level_info"]]) | .data.discovery.entries |= map(select(.title != "借钱"))'
+
 ^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ reject
 ^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_union reject
 ^https:\/\/images\.pinduoduo\.com\/mrk\/ reject
 ^https:\/\/images\.pinduoduo\.com\/marketing_api\/ reject
+
 
 [MitM]
 hostname=app.qtfm.cn,entry.qtfm.cn,recpage-c.qtfm.cn,user.qtfm.cn,search.qtfm.cn,video-dsp.pddpic.com,t-dsp.pinduoduo.com,images.pinduoduo.com

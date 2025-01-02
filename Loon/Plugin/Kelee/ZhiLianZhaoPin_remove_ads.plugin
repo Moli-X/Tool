@@ -11,6 +11,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ZhiLianZhaoPin.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN,httpdns.music.163.com,REJECT
 DOMAIN,httpdns.n.netease.com,REJECT
@@ -23,6 +24,7 @@ IP-CIDR,59.111.239.61/32,REJECT,no-resolve
 IP-CIDR,59.111.239.62/32,REJECT,no-resolve
 IP-CIDR,115.236.121.51/32,REJECT,no-resolve
 IP-CIDR,115.236.121.195/32,REJECT,no-resolve
+
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ttam-),(DOMAIN-SUFFIX,ibyteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,ssdk-),(DOMAIN-SUFFIX,pangle.io)),REJECT
@@ -71,6 +73,7 @@ DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
+
 DOMAIN,adsmind.gdtimg.com,REJECT
 DOMAIN,adsmind.ugdtimg.com,REJECT
 DOMAIN,c2.gdt.qq.com,REJECT
@@ -106,12 +109,17 @@ DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,l.qq.com,REJECT
 DOMAIN-SUFFIX,ugdtimg.com,REJECT
 IP-CIDR,47.110.187.87/32,REJECT,no-resolve
+
 URL-REGEX,"^https:\/\/(ask|cgate)\.zhaopin\.com\/operation\/ad\/",REJECT
+
 
 [Rewrite]
 ^https:\/\/ask\.zhaopin\.com\/plat-zqa-server\/home\/\d\.\d\.\d\/getHomeContents\? response-body-json-del data.templates[0].data.banner
+
 ^https:\/\/cgate\.zhaopin\.com\/resumeapi\/resumeCheck\/positionDetailBottomTipCheck$ reject-dict
+
 ^https:\/\/cgate\.zhaopin\.com\/bdp\/commercial\/queryLinkData$ reject
+
 
 [MitM]
 hostname=ask.zhaopin.com,cgate.zhaopin.com

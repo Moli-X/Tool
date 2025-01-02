@@ -11,23 +11,34 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BaiduMap.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN,httpdns.baidubce.com,REJECT
 IP-CIDR,186.76.76.200/32,REJECT,no-resolve
 
+
 [Rewrite]
 ^https:\/\/afd\.baidu\.com\/afd\/entry\?action=(update|query) reject-dict
+
 ^https:\/\/newclient\.map\.baidu\.com\/feed\/govui\/rich_content response-body-json-del data
+
 ^https:\/\/newclient\.map\.baidu\.com\/client\/noticebar\/get\? response-body-json-del content.multi_data
+
 ^https:\/\/newclient\.map\.baidu\.com\/(client\/)?usersystem\/mine\/page\? response-body-json-replace data {}
+
 ^https:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads&type=user_home_new_service response-body-json-del ads
+
 ^https:\/\/yongche\.baidu\.com\/gomarketing\/api\/popup\/getentrancecordovaurl$ reject-dict
+
 ^https:\/\/yongche\.baidu\.com\/goorder\/passenger\/cobuild\/pull\? reject-dict
 ^https:\/\/yongche\.baidu\.com\/goorder\/passenger\/operationgirdle$ reject-dict
 ^https:\/\/yongche\.baidu\.com\/goorder\/passenger\/baseinfo$ reject-dict
+
 ^https:\/\/ecom\.map\.baidu\.com\/ad-ops\/afd\/popup\? reject-dict
 ^https:\/\/maphotel\.baidu\.com\/hotel\/goextranet\/activity\/detail\? reject-dict
+
 ^https:\/\/newclient\.map\.baidu\.com\/living\/nearby\/api\? response-body-json-del Result.cards[1] Result.cards[4] Result.cards[5] Result.cards[9]
+
 
 [MitM]
 hostname=afd.baidu.com,newclient.map.baidu.com,yongche.baidu.com,ecom.map.baidu.com

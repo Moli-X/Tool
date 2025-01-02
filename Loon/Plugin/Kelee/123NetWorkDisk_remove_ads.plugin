@@ -11,6 +11,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/123NetWorkDisk.png
 #!date=2024-12-29 00:42:21
 
+
 [Rule]
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
@@ -23,6 +24,7 @@ DOMAIN,aspect-upush.umeng.com,REJECT
 DOMAIN,plbslog.umeng.com,REJECT
 DOMAIN,log.umtrack.com,REJECT
 DOMAIN,aaid.umeng.com,REJECT
+
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ttam-),(DOMAIN-SUFFIX,ibyteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,ssdk-),(DOMAIN-SUFFIX,pangle.io)),REJECT
@@ -71,24 +73,32 @@ DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
+
 DOMAIN,gdfp.gifshow.com,REJECT
 DOMAIN,open.e.kuaishou.com,REJECT
 DOMAIN-SUFFIX,adukwai.com,REJECT
+
 DOMAIN,sdk.beizi.biz,REJECT
+
 DOMAIN,sdk.1rtb.net,REJECT
 DOMAIN,cdn.1rtb.com,REJECT
+
 DOMAIN,adx.halomobi.com,REJECT
+
 DOMAIN,api.htp.hubcloud.com.cn,REJECT
 DOMAIN,res1.hubcloud.com.cn,REJECT
 DOMAIN,sdktmp.hubcloud.com.cn,REJECT
 DOMAIN,v.adx.hubcloud.com.cn,REJECT
 
+
 [Rewrite]
 ^https:\/\/www\.123pan\.com\/api\/config\/get reject-dict
+
 ^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ reject
 ^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_union reject
 ^https:\/\/images\.pinduoduo\.com\/mrk\/ reject
 ^https:\/\/images\.pinduoduo\.com\/marketing_api\/ reject
+
 
 [MitM]
 hostname=www.123pan.com,video-dsp.pddpic.com,t-dsp.pinduoduo.com,images.pinduoduo.com

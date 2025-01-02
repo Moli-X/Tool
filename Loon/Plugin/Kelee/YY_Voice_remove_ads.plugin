@@ -11,12 +11,16 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YY_Voice.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN,yyapp-httpdns.gslb.yy.com,REJECT
 DOMAIN,union-httpdns.gslb.yy.com,REJECT
 DOMAIN,httpdns-v6.gslb.yy.com,REJECT
+
 DOMAIN,splash.yy.com,REJECT
+
 DOMAIN,dsp-ad.yy.com,REJECT
+
 DOMAIN,adsmind.gdtimg.com,REJECT
 DOMAIN,adsmind.ugdtimg.com,REJECT
 DOMAIN,c2.gdt.qq.com,REJECT
@@ -50,6 +54,7 @@ DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,l.qq.com,REJECT
 DOMAIN-SUFFIX,ugdtimg.com,REJECT
 IP-CIDR,47.110.187.87/32,REJECT,no-resolve
+
 DOMAIN,api-c.dutils.com,REJECT
 DOMAIN,api-d.dutils.com,REJECT
 DOMAIN,api-p0.yksdks.com,REJECT
@@ -62,18 +67,25 @@ DOMAIN,api.share.mob.com,REJECT
 DOMAIN,api.verify.mob.com,REJECT
 DOMAIN,log-verify.mob.com,REJECT
 DOMAIN,sdk.push.mob.com,REJECT
+
 DOMAIN,dsp-x.jd.com,REJECT
 DOMAIN,xlog.jd.com,REJECT
 DOMAIN,janapi.jd.com,REJECT
+
 DOMAIN,sdk.tianmu.mobi,REJECT
+
 DOMAIN,sdk.beizi.biz,REJECT
+
 
 [Rewrite]
 ^https:\/\/yyapp-act-entrance\.yy\.com\/entrance\/list\? reject-dict
+
 ^https:\/\/tab\.yy\.com\/tabs\? response-body-json-del data.tabs[0]
+
 
 [Script]
 http-response ^https:\/\/personal-center\.yy\.com\/personalCenter\/list\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/YY_Voice_remove_ads.js,requires-body=true,tag=精简我的页面
+
 
 [MitM]
 hostname=yyapp-act-entrance.yy.com,yyapp-fastnet.yy.com,personal-center.yy.com,tab.yy.com

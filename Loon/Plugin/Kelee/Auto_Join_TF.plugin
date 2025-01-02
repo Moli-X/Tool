@@ -12,18 +12,24 @@
 #!input=APP_ID
 #!date=2024-11-28 00:00:00
 
+
 [Argument]
 CaptureAccountToken=switch,false,true,tag=捕获账号令牌,desc=此开关控制插件是否捕获账户令牌
 CaptureAppID=switch,false,true,tag=捕获应用ID,desc=此开关控制插件是否捕获应用ID
 TimingParameters=input,"*/1 * * * * *",tag=定时参数,desc=这里需要输入符合CRON表达式的参数
 
+
 [Rule]
 DOMAIN,testflight.apple.com,PROXY
 
+
 [Script]
 http-request ^https?:\/\/testflight\.apple\.com\/v3\/accounts\/.*\/apps$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/TF_keys.js,tag=获取账号令牌,enable={CaptureAccountToken}
+
 http-request ^https://testflight.apple.com/join/(.*) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/TF_keys.js,tag=应用ID捕获,enable={CaptureAppID}
+
 cron {TimingParameters} script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Auto_join_TF.js,tag=自动加入TF,timeout=180
+
 
 [MitM]
 hostname=testflight.apple.com

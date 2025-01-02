@@ -11,12 +11,15 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/360SmartCamera.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN,ad.jia.360.cn,REJECT
 DOMAIN,ad.iot.360.cn,REJECT
 
+
 [Rewrite]
 ^https:\/\/jia\.360\.cn\/conf\/v1\.json response-body-json-del tab_conf ad_conf activity
+
 
 [MitM]
 hostname=jia.360.cn

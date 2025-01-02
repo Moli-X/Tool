@@ -11,11 +11,14 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SafetyHome.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN,ad.iot.360.cn,REJECT
 
+
 [Rewrite]
 ^https:\/\/app\.home\.360\.cn\/v1\/config\/custom_config reject-dict
+
 
 [MitM]
 hostname=app.home.360.cn

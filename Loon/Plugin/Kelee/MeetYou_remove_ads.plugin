@@ -11,6 +11,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MeetYou.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN,httpdns.music.163.com,REJECT
 DOMAIN,httpdns.n.netease.com,REJECT
@@ -23,8 +24,10 @@ IP-CIDR,59.111.239.61/32,REJECT,no-resolve
 IP-CIDR,59.111.239.62/32,REJECT,no-resolve
 IP-CIDR,115.236.121.51/32,REJECT,no-resolve
 IP-CIDR,115.236.121.195/32,REJECT,no-resolve
+
 DOMAIN,ad.seeyouyima.com,REJECT
 DOMAIN,axxd.xmseeyouyima.com,REJECT
+
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ttam-),(DOMAIN-SUFFIX,ibyteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,ssdk-),(DOMAIN-SUFFIX,pangle.io)),REJECT
@@ -73,6 +76,7 @@ DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
+
 DOMAIN,adsmind.gdtimg.com,REJECT
 DOMAIN,adsmind.ugdtimg.com,REJECT
 DOMAIN,c2.gdt.qq.com,REJECT
@@ -108,6 +112,7 @@ DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,l.qq.com,REJECT
 DOMAIN-SUFFIX,ugdtimg.com,REJECT
 IP-CIDR,47.110.187.87/32,REJECT,no-resolve
+
 DOMAIN,ossgw.alicdn.com,REJECT
 DOMAIN,ems.youku.com,REJECT
 DOMAIN,hudong.alicdn.com,REJECT
@@ -117,6 +122,7 @@ DOMAIN,beacon-api.aliyuncs.com,REJECT
 DOMAIN,adash.man.aliyuncs.com,REJECT
 DOMAIN,applog.uc.cn,REJECT
 AND,((DOMAIN-KEYWORD,adash),(DOMAIN-SUFFIX,ut.taobao.com)),REJECT
+
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
 DOMAIN,errnewlog.umeng.com,REJECT
@@ -129,23 +135,30 @@ DOMAIN,plbslog.umeng.com,REJECT
 DOMAIN,log.umtrack.com,REJECT
 DOMAIN,aaid.umeng.com,REJECT
 DOMAIN,log.umsns.com,REJECT
+
 DOMAIN,gdfp.gifshow.com,REJECT
 DOMAIN,open.e.kuaishou.com,REJECT
 DOMAIN,adtrack.e.kuaishou.com,REJECT
 DOMAIN-SUFFIX,adukwai.com,REJECT
 DOMAIN-SUFFIX,adbkwai.com,REJECT
+
 DOMAIN,ztoken.uyunad.com,REJECT
 DOMAIN,aaid.uyunad.com,REJECT
 DOMAIN,yumao.puata.info,REJECT
+
 DOMAIN,ad-evods.tianya.tv,REJECT
+
 
 [Rewrite]
 ^https:\/\/circle\.(xm)?seeyouyima\.com\/v\d\/article_recommend\? reject
+
 ^https:\/\/common\.seeyouyima\.com\/v2\/conf_list$ response-body-json-del data.confList.Minor_mode_card
+
 ^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ reject
 ^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_union reject
 ^https:\/\/images\.pinduoduo\.com\/mrk\/ reject
 ^https:\/\/images\.pinduoduo\.com\/marketing_api\/ reject
+
 
 [MitM]
 hostname=circle.seeyouyima.com,circle.xmseeyouyima.com,common.seeyouyima.com,video-dsp.pddpic.com,t-dsp.pinduoduo.com,images.pinduoduo.com

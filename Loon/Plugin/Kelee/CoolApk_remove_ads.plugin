@@ -11,11 +11,14 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CoolApk.png
 #!date=2024-12-05 14:00:35
 
+
 [Rewrite]
 ^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch reject-dict
 
+
 [Script]
 http-response ^https:\/\/api\.coolapk\.com\/v6\/(?:feed\/detail|feed\/replyList|page\/dataList|main\/dataList|main\/indexV8|main\/init) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CoolApk_remove_ads.js,requires-body=true,tag=移除酷安广告
+
 
 [MitM]
 hostname=api.coolapk.com

@@ -11,6 +11,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/NetEaseGodlike.png
 #!date=2024-12-04 15:48:23
 
+
 [Rule]
 DOMAIN,httpdns.music.163.com,REJECT
 DOMAIN,httpdns.n.netease.com,REJECT
@@ -23,9 +24,12 @@ IP-CIDR,59.111.239.62/32,REJECT,no-resolve
 IP-CIDR,115.236.121.51/32,REJECT,no-resolve
 IP-CIDR,115.236.121.195/32,REJECT,no-resolve
 
+
 [Rewrite]
 ^https:\/\/god\.gameyw\.netease\.com\/v\d\/ad reject
+
 ^https:\/\/app-conf\.ds\.163\.com\/v1\/app\/base\/conf\/static\/start-config\? response-body-replace-regex \{"os":"all","weight":50\.0,"hidden":false,"name":"游戏"\},\{"os":"all","weight":50\.0,"hidden":false,"name":"频道"\}, null
+
 
 [MitM]
 hostname=god.gameyw.netease.com,app-conf.ds.163.com

@@ -11,6 +11,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AppleWeather.png
 #!date=2024-11-28 00:00:00
 
+
 [Argument]
 NextHour.Provider=select,"ColorfulClouds","WeatherKit","QWeather",tag=[未来一小时降水强度]数据源,desc=选择WeatherKit等同于不做修改
 AQI.Provider=select,"ColorfulClouds","WeatherKit","QWeather","WAQI",tag=[空气质量]数据源,desc=选择WeatherKit等同于不做修改
@@ -23,13 +24,16 @@ API.QWeather.Host=select,"devapi.qweather.com","api.qweather.com",tag=[API]和�
 API.QWeather.Token=input,"",tag=[API]和风天气API令牌,desc=填写此字段将自动使用和风天气高级API
 API.WAQI.Token=input,"",tag=[API]WAQI API令牌,desc=填写此字段将自动使用WAQI高级API
 
+
 [Rule]
 DOMAIN,weather-analytics-events.apple.com,REJECT
 DOMAIN-SUFFIX,tthr.apple.com,REJECT
 
+
 [Script]
 http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v1\/availability\/ script-path=https://github.com/NSRingo/WeatherKit/releases/download/v1.8.17/response.bundle.js,requires-body=true,tag=Availability响应处理,argument=[{NextHour.Provider},{AQI.Provider},{AQI.ReplaceProviders},{AQI.Local.Scale},{AQI.Local.ReplaceScales},{AQI.Local.ConvertUnits},{API.ColorfulClouds.Token},{API.QWeather.Host},{API.QWeather.Token},{API.WAQI.Token}]
 http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v2\/weather\/ script-path=https://github.com/NSRingo/WeatherKit/releases/download/v1.8.17/response.bundle.js,requires-body=true,binary-body-mode=true,tag=Weather响应处理,argument=[{NextHour.Provider},{AQI.Provider},{AQI.ReplaceProviders},{AQI.Local.Scale},{AQI.Local.ReplaceScales},{AQI.Local.ConvertUnits},{API.ColorfulClouds.Token},{API.QWeather.Host},{API.QWeather.Token},{API.WAQI.Token}]
+
 
 [MitM]
 hostname=weatherkit.apple.com

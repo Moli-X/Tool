@@ -11,9 +11,11 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Google.png
 #!date=2024-11-28 00:00:00
 
+
 [Rewrite]
 ^https?:\/\/(www.)?(g|google)\.cn 307 https://www.google.com
 ^https?:\/\/(ditu|maps).google\.cn 307 https://maps.google.com
+
 
 [MitM]
 hostname=www.google.cn

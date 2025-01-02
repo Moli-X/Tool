@@ -11,6 +11,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BitqiuPan.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
@@ -25,10 +26,14 @@ DOMAIN,log.umtrack.com,REJECT
 DOMAIN,aaid.umeng.com,REJECT
 DOMAIN,log.umsns.com,REJECT
 
+
 [Rewrite]
 ^https:\/\/pan-api\.bitqiu\.com\/activity\/getPromoteGuide$ reject-dict
+
 ^http:\/\/pan-api\.bitqiu\.com\/activity\/getUrlList$ reject-dict
+
 ^https:\/\/pan-api\.bitqiu\.com\/activity\/guides$ reject-dict
+
 
 [MitM]
 hostname=pan-api.bitqiu.com

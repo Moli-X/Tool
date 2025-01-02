@@ -11,11 +11,14 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weixin.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 DOMAIN-SUFFIX,wxs.qq.com,REJECT
 
+
 [Rewrite]
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|jsmonitor|masonryfeed|relatedarticle)\? reject-dict
+
 
 [MitM]
 hostname=mp.weixin.qq.com

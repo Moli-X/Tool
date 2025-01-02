@@ -11,13 +11,20 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KingdeeMyMoney.png
 #!date=2024-11-28 00:00:00
 
+
 [Rewrite]
 ^https:\/\/tg\.feidee\.com\/online_ad\/api\/search\.do$ reject-dict
+
 ^https:\/\/yunmk\.feidee\.net\/cab-market-ws\/market\/v2\/contents$ reject-dict
+
 ^https:\/\/tg\.feidee\.com\/vis-ad-engine-ws\/api\/v2\/ads\/.+esultNum reject-dict
+
 ^https:\/\/api\.feidee\.net\/v1\/configs\/client\/configs reject
+
 ^https:\/\/tg\.feidee\.com\/vis-ad-engine-ws\/api\/show reject-dict
+
 ^https:\/\/yun\.feidee\.net\/cab-periodic-activity-ws\/terminal\/v1\/members\/status reject-dict
+
 
 [MitM]
 hostname=tg.feidee.com,yunmk.feidee.net,community.feidee.com,api.feidee.net,yun.feidee.net

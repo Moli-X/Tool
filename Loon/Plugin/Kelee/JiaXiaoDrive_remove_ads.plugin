@@ -11,6 +11,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JiaXiaoDrive.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ttam-),(DOMAIN-SUFFIX,ibyteimg.com)),REJECT
@@ -60,10 +61,13 @@ DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
+
 DOMAIN,gdfp.gifshow.com,REJECT
 DOMAIN,open.e.kuaishou.com,REJECT
 DOMAIN-SUFFIX,adukwai.com,REJECT
+
 DOMAIN,sdk.beizi.biz,REJECT
+
 DOMAIN,mobads.baidu.com,REJECT
 DOMAIN,mobads-logs.baidu.com,REJECT
 DOMAIN,wn.pos.baidu.com,REJECT
@@ -72,19 +76,24 @@ DOMAIN,als.baidu.com,REJECT
 DOMAIN,feed-image.baidu.com,REJECT
 DOMAIN-SUFFIX,union.baidu.cn,REJECT
 DOMAIN-SUFFIX,union.baidu.com,REJECT
+
 DOMAIN,ios.bugly.qq.com,REJECT
 DOMAIN,sdk.e.qq.com,REJECT
 DOMAIN-SUFFIX,ugdtimg.com,REJECT
 DOMAIN-SUFFIX,gdtimg.com,REJECT
 DOMAIN-SUFFIX,gdt.qq.com,REJECT
+
 DOMAIN-SUFFIX,openinstall.io,REJECT
+
 DOMAIN,zxid-m.mobileservice.cn,REJECT
+
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
 DOMAIN,errnewlog.umeng.com,REJECT
 DOMAIN,ucc.umeng.com,REJECT
 DOMAIN,ulogs.umeng.com,REJECT
 DOMAIN,utoken.umeng.com,REJECT
+
 
 [Rewrite]
 ^https:\/\/richmanrules\.ksedt\.com\/serverConfig\/3\/adConfig\.json reject-dict
@@ -93,6 +102,7 @@ DOMAIN,utoken.umeng.com,REJECT
 ^https:\/\/op\.ksedt\.com\/jxedtLive\/liveIntroduceResource reject-dict
 ^https:\/\/richmanrules\.ksedt\.com\/intellectWaterfall\/find$ reject-dict
 http-response ^https:\/\/api\.ksedt\.com\/api\/config\/ response-body-json-del result.homead result.h5_promotion_page result.advert_interval result.abtest_h5url result.launchApp result.goucheConfig result.gouche result.mainLiveConfig result.discover result.adSdkSwitch4testPointVideo result.adSdkSwitch4simulationExam result.examPageLoadADSwitch
+
 
 [MitM]
 hostname=richmanrules.ksedt.com,gouche.ksedt.com,muses.ksedt.com,op.ksedt.com,api.ksedt.com

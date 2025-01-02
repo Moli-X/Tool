@@ -11,7 +11,9 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Safari.png
 #!date=2024-11-28 00:00:00
 
+
 [Rewrite]
+
 ^https:\/\/duckduckgo\.com\/\?q=bd\+([^&]+).+ 307 https://www.baidu.com/s?wd=$1
 ^https:\/\/duckduckgo\.com\/\?q=bdimg\+([^&]+).+ 307 https://image.baidu.com/search/index?tn=baiduimage&word=$1
 ^https:\/\/duckduckgo\.com\/\?q=gimg\+([^&]+).+ 307 https://www.google.com/search?&tbm=isch&q=$1
@@ -20,6 +22,7 @@
 ^https:\/\/duckduckgo\.com\/\?q=qm\+([^&]+).+ 307 https://www.qimai.cn/search/index/country/cn/search/$1
 ^https:\/\/duckduckgo\.com\/\?q=gh\+([^&]+).+ 307 https://github.com/search?q=$1
 ^https:\/\/duckduckgo\.com\/\?q=([^&]+).+ 307 https://www.google.com/search?q=$1
+
 
 [MitM]
 hostname=duckduckgo.com

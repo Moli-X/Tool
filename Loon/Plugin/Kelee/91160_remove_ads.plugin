@@ -11,9 +11,11 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/91160.png
 #!date=2024-11-28 00:00:00
 
+
 [Rule]
 URL-REGEX,"^https:\/\/patientgate\.91160\.com\/advert-api\/v1\/advert\/homepage_icon\?",DIRECT
 URL-REGEX,"^https:\/\/patientgate\.91160\.com\/advert-api\/",REJECT-DICT
+
 DOMAIN,httpdns.music.163.com,REJECT
 DOMAIN,httpdns.n.netease.com,REJECT
 DOMAIN,httpdns-sdk.n.netease.com,REJECT
@@ -25,6 +27,7 @@ IP-CIDR,59.111.239.61/32,REJECT,no-resolve
 IP-CIDR,59.111.239.62/32,REJECT,no-resolve
 IP-CIDR,115.236.121.51/32,REJECT,no-resolve
 IP-CIDR,115.236.121.195/32,REJECT,no-resolve
+
 DOMAIN,adsmind.gdtimg.com,REJECT
 DOMAIN,adsmind.ugdtimg.com,REJECT
 DOMAIN,c2.gdt.qq.com,REJECT
@@ -58,6 +61,7 @@ DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,l.qq.com,REJECT
 DOMAIN-SUFFIX,ugdtimg.com,REJECT
 IP-CIDR,47.110.187.87/32,REJECT,no-resolve
+
 DOMAIN,als.baidu.com,REJECT
 DOMAIN,bgg.baidu.com,REJECT
 DOMAIN,cpro.baidustatic.com,REJECT
@@ -72,6 +76,7 @@ DOMAIN,wn.pos.baidu.com,REJECT
 DOMAIN,miniapp-ad.cdn.bcebos.com,REJECT
 DOMAIN-SUFFIX,union.baidu.cn,REJECT
 DOMAIN-SUFFIX,union.baidu.com,REJECT
+
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
 DOMAIN,errnewlog.umeng.com,REJECT
@@ -83,7 +88,9 @@ DOMAIN,aspect-upush.umeng.com,REJECT
 DOMAIN,plbslog.umeng.com,REJECT
 DOMAIN,log.umtrack.com,REJECT
 DOMAIN,aaid.umeng.com,REJECT
+
 DOMAIN-SUFFIX,openinstall.io,REJECT
+
 DOMAIN,b-gtc.getui.net,REJECT
 DOMAIN,c-gtc.getui.net,REJECT
 DOMAIN,c-hzgt2.getui.com,REJECT
@@ -97,11 +104,16 @@ DOMAIN-SUFFIX,mobileservice.cn,REJECT
 DOMAIN-SUFFIX,getui.com,REJECT
 DOMAIN-SUFFIX,igexin.com,REJECT
 
+
 [Rewrite]
 ^https:\/\/msglb\.91160\.com\/msg\/outer\/broker\/get$ reject-dict
+
 ^https:\/\/patientgate\.91160\.com\/rec\/homepage\/open\/getUserGoodsList\? reject-dict
+
 ^https:\/\/patientappapi\.91160\.com\/cus_index\.php\?c=adver reject
+
 ^https:\/\/soapi\.91160\.com\/homepage-recommendation\/recommendation\/medical\/complex\? response-body-json-del data.checkupList
+
 
 [MitM]
 hostname=patientgate.91160.com,soapi.91160.com,msglb.91160.com,patientappapi.91160.com
