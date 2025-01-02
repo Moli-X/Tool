@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 2895
+# 规则统计: 2899
 
 domain_set:
   - 0x0.st
@@ -63,6 +63,7 @@ domain_set:
   - apple-relay.apple.com
   - apple-relay.cloudflare.com
   - apple-relay.fastly-edge.com
+  - apps.bazaarvoice.com
   - apps.profitihub.com
   - archive.mozilla.org
   - artworks.thetvdb.com
@@ -968,6 +969,7 @@ domain_set:
   - images.g2crowd.com
   - images.idgesg.net
   - images.macrumors.com
+  - images.mattel.net
   - images.microcms-assets.io
   - images.moegoat.com
   - images.moovitapp.com
@@ -1415,6 +1417,7 @@ domain_set:
   - quriobot.com
   - r.r10s.jp
   - r2.leadsy.ai
+  - rapid-cdn.yottaa.com
   - raw.github.com
   - rawmarkdown.cloudflareaccess.org
   - rebound.postmarkapp.com
@@ -2279,6 +2282,7 @@ domain_suffix_set:
   - fiverrcdn.com
   - fivetiu.com
   - flagcdn.com
+  - flaglog.com
   - flagpedia.net
   - flk-ipfs.xyz
   - fncstatic.com

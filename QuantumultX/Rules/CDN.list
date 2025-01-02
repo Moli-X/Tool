@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 2929
+# 规则统计: 2933
 
 HOST,0x0.st,CDN
 HOST,3dna.nationbuilder.com,CDN
@@ -62,6 +62,7 @@ HOST,appassets.mvtdev.com,CDN
 HOST,apple-relay.apple.com,CDN
 HOST,apple-relay.cloudflare.com,CDN
 HOST,apple-relay.fastly-edge.com,CDN
+HOST,apps.bazaarvoice.com,CDN
 HOST,apps.profitihub.com,CDN
 HOST,archive.mozilla.org,CDN
 HOST,artworks.thetvdb.com,CDN
@@ -967,6 +968,7 @@ HOST,images.freeimages.com,CDN
 HOST,images.g2crowd.com,CDN
 HOST,images.idgesg.net,CDN
 HOST,images.macrumors.com,CDN
+HOST,images.mattel.net,CDN
 HOST,images.microcms-assets.io,CDN
 HOST,images.moegoat.com,CDN
 HOST,images.moovitapp.com,CDN
@@ -1414,6 +1416,7 @@ HOST,pytorch.org,CDN
 HOST,quriobot.com,CDN
 HOST,r.r10s.jp,CDN
 HOST,r2.leadsy.ai,CDN
+HOST,rapid-cdn.yottaa.com,CDN
 HOST,raw.github.com,CDN
 HOST,rawmarkdown.cloudflareaccess.org,CDN
 HOST,rebound.postmarkapp.com,CDN
@@ -2277,6 +2280,7 @@ HOST-SUFFIX,firestore.googleapis.com,CDN
 HOST-SUFFIX,fiverrcdn.com,CDN
 HOST-SUFFIX,fivetiu.com,CDN
 HOST-SUFFIX,flagcdn.com,CDN
+HOST-SUFFIX,flaglog.com,CDN
 HOST-SUFFIX,flagpedia.net,CDN
 HOST-SUFFIX,flk-ipfs.xyz,CDN
 HOST-SUFFIX,fncstatic.com,CDN
