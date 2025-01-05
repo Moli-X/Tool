@@ -646,63 +646,65 @@ jobs:
           fi
         done
 
+##### Egern       
+    - name: Egern规则
+      run: |
+        # 确保目标目录存在
+        mkdir -p Tool-repo/Egern/Rules
+        cd Tool-repo/Egern/Rules
+        # 遍历Tool-repo/Egern/Rules目录下的所有.yaml文件
+        for file in Tool-repo/Egern/Rules/*.yaml; do
+          # 如果文件存在
+          if [ -f "$file" ]; then
+            # 删除文件中的USER-AGENT、PROCESS-NAME、DEST-PORT行
+            sed -i -e '/^USER-AGENT/d' "$file"
+            sed -i -e '/^PROCESS-NAME/d' "$file"
+            sed -i -e '/^DEST-PORT/d' "$file"
+            # 将DOMAIN, DOMAIN-SUFFIX, DOMAIN-KEYWORD, IP-CIDR, IP-CIDR6, IP-ASN, URL-REGEX, GEOIP行前添加domain_set:, domain_suffix_set:, domain_keyword_set:, ip_cidr_set:, ip_cidr6_set:, asn_set:, url_regex_set:, geoip_set:
+            awk '/^DOMAIN,/ && !added {print "domain_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            awk '/^DOMAIN-SUFFIX,/ && !added {print "domain_suffix_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            awk '/^DOMAIN-KEYWORD,/ && !added {print "domain_keyword_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            awk '/^IP-CIDR,/ && !added {print "ip_cidr_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            awk '/^IP-CIDR6,/ && !added {print "ip_cidr6_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            awk '/^IP-ASN,/ && !added {print "asn_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            awk '/^URL-REGEX,/ && !added {print "url_regex_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            awk '/^GEOIP,/ && !added {print "geoip_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+          else
+            # 如果文件不存在，输出提示信息
+            echo "$file not found."
+          fi
+        done
 
+        # 遍历Tool-repo/Egern/Rules目录下的所有.yaml文件
+        for file in Tool-repo/Egern/Rules/*.yaml; do
+          # 如果文件存在
+          if [ -f "$file" ]; then
+            # 如果文件中存在IP-ASN、IP-CIDR、IP-CIDR6行，在文件开头添加o_resolve: true
+            if grep -qE '^IP-(ASN|CIDR|CIDR6).*no-resolve$' "$file"; then
+            sed -i '1i\no_resolve: true' "$file"
+            fi
+            # 将URL-REGEX行中的第二个逗号后的内容加上双引号
+            sed -i -E 's/^(URL-REGEX,)([^,]+)$/\1"\2"/' "$file"
+            # 将DOMAIN、DOMAIN-SUFFIX、DOMAIN-KEYWORD、IP-CIDR、IP-CIDR6、IP-ASN、URL-REGEX、GEOIP行前添加  -
+            sed -i -E 's/^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|IP-CIDR|IP-CIDR6|IP-ASN|URL-REGEX|GEOIP),/  - /g' "$file"
+            # 删除文件中的no-resolve
+            sed -i 's/,no-resolve//g' "$file"
+            # 获取文件名
+            file_names=$(basename "$file" .yaml)
+            # 获取文件中的行数
+            line_count=$(grep -c '^  - ' "$file")
+            # 在文件开头添加规则名称
+            awk -v fname="$file_names" 'NR==1 {print "# 规则名称: " fname} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            # 在文件开头添加规则统计
+            awk -v count="$line_count" 'NR==2 {print "# 规则统计: " count} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            # 在文件开头添加空行
+            sed -i '2a\\' "$file"
+          else
+            # 如果文件不存在，输出提示信息
+            echo "$file not found."
+          fi
+        done
 
-###### Egern       
-    # - name: Egern规则
-      # run: |
-        # # 遍历Tool-repo/Egern/Rules目录下的所有.yaml文件
-        # for file in Tool-repo/Egern/Rules/*.yaml; do
-          # # 如果文件存在
-          # if [ -f "$file" ]; then
-            # # 删除文件中的USER-AGENT、PROCESS-NAME、DEST-PORT行
-            # sed -i -e '/^USER-AGENT/d' "$file"
-            # sed -i -e '/^PROCESS-NAME/d' "$file"
-            # sed -i -e '/^DEST-PORT/d' "$file"
-            # # 将DOMAIN, DOMAIN-SUFFIX, DOMAIN-KEYWORD, IP-CIDR, IP-CIDR6, IP-ASN, URL-REGEX, GEOIP行前添加domain_set:, domain_suffix_set:, domain_keyword_set:, ip_cidr_set:, ip_cidr6_set:, asn_set:, url_regex_set:, geoip_set:
-            # awk '/^DOMAIN,/ && !added {print "domain_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            # awk '/^DOMAIN-SUFFIX,/ && !added {print "domain_suffix_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            # awk '/^DOMAIN-KEYWORD,/ && !added {print "domain_keyword_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            # awk '/^IP-CIDR,/ && !added {print "ip_cidr_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            # awk '/^IP-CIDR6,/ && !added {print "ip_cidr6_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            # awk '/^IP-ASN,/ && !added {print "asn_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            # awk '/^URL-REGEX,/ && !added {print "url_regex_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            # awk '/^GEOIP,/ && !added {print "geoip_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-          # else
-            # # 如果文件不存在，输出提示信息
-            # echo "$file not found."
-          # fi
-        # done
-
-        # # 遍历Tool-repo/Egern/Rules目录下的所有.yaml文件
-        # for file in Tool-repo/Egern/Rules/*.yaml; do
-          # # 如果文件存在
-          # if [ -f "$file" ]; then
-            # # 如果文件中存在IP-ASN、IP-CIDR、IP-CIDR6行，在文件开头添加o_resolve: true
-            # if grep -qE '^IP-(ASN|CIDR|CIDR6).*no-resolve$' "$file"; then
-            # sed -i '1i\no_resolve: true' "$file"
-            # fi
-            # # 将URL-REGEX行中的第二个逗号后的内容加上双引号
-            # sed -i -E 's/^(URL-REGEX,)([^,]+)$/\1"\2"/' "$file"
-            # # 将DOMAIN、DOMAIN-SUFFIX、DOMAIN-KEYWORD、IP-CIDR、IP-CIDR6、IP-ASN、URL-REGEX、GEOIP行前添加  -
-            # sed -i -E 's/^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|IP-CIDR|IP-CIDR6|IP-ASN|URL-REGEX|GEOIP),/  - /g' "$file"
-            # # 删除文件中的no-resolve
-            # sed -i 's/,no-resolve//g' "$file"
-            # # 获取文件名
-            # file_names=$(basename "$file" .yaml)
-            # # 获取文件中的行数
-            # line_count=$(grep -c '^  - ' "$file")
-            # # 在文件开头添加规则名称
-            # awk -v fname="$file_names" 'NR==1 {print "# 规则名称: " fname} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            # # 在文件开头添加规则统计
-            # awk -v count="$line_count" 'NR==2 {print "# 规则统计: " count} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            # # 在文件开头添加空行
-            # sed -i '2a\\' "$file"
-          # else
-            # # 如果文件不存在，输出提示信息
-            # echo "$file not found."
-          # fi
-        # done
 
 
 ###### GeoIP
