@@ -1,10 +1,6 @@
-# 规则名称: Trendmicro
-# 规则统计: 4
+DOMAIN,osce140-en.fbs25.trendmicro.com
+DOMAIN-SUFFIX,trendmicro.com
+DOMAIN-SUFFIX,trendmicro.com.cn
+DOMAIN-KEYWORD,trendmicro
 
-domain_set:
-  - osce140-en.fbs25.trendmicro.com
-domain_suffix_set:
-  - trendmicro.com
-  - trendmicro.com.cn
-domain_keyword_set:
-  - trendmicro
+# Name:trendmicro

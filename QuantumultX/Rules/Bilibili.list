@@ -1,5 +1,5 @@
 # 规则名称: Bilibili
-# 规则统计: 23
+# 规则统计: 25
 
 HOST,apiintl.biliapi.net,Bilibili
 HOST,upos-hz-mirrorakam.akamaized.net,Bilibili
@@ -24,3 +24,5 @@ HOST-SUFFIX,smtcdns.net,Bilibili
 USER-AGENT,Bilibili*,Bilibili
 USER-AGENT,bili*,Bilibili
 USER-AGENT,bili-inter*,Bilibili
+# 内容：Bilibili 哔哩哔哩
+# 数量：23条

@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 764
+# 规则统计: 775
 
 DOMAIN,acg.tv
 DOMAIN,assets1.xboxlive.cn
@@ -15,6 +15,7 @@ DOMAIN,lv.queniujq.cn
 DOMAIN,media.cdn.queniuqe.com
 DOMAIN,ocsp.globalsign.com
 DOMAIN,ocsp2.globalsign.com
+DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
 DOMAIN,url.cn
 DOMAIN,www.intel.cn
 DOMAIN,www.layuicdn.com
@@ -765,3 +766,13 @@ DOMAIN-WILDCARD,*.qhimgs?.com
 USER-AGENT,%E4%BC%98%E9%85%B7*
 USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*
 USER-AGENT,TeslaMap
+#
+# GitHub: https://github.com/SukkaW/Surge
+# Homepage: https://ruleset.skk.moe
+# Last Updated: 2024-12-31T04:15:49.279Z
+# License: AGPL 3.0
+# Size: 765
+# Sukka's Ruleset - Domestic Domains
+# This file contains known addresses that are avaliable in the Mainland China.
+################## EOF ##################
+#########################################

@@ -1,5 +1,5 @@
 # 规则名称: Spotify
-# 规则统计: 29
+# 规则统计: 39
 
 DOMAIN,audio4-ak-spotify-com.akamaized.net
 DOMAIN,cdn-spotify-experiments.conductrics.com
@@ -30,3 +30,13 @@ DOMAIN-SUFFIX,tospotify.com
 DOMAIN-KEYWORD,spotify
 IP-CIDR,104.154.127.126/32,no-resolve
 IP-CIDR,35.186.224.47/32,no-resolve
+# AUTHOR: blackmatrix7
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 20
+# DOMAIN: 6
+# IP-CIDR: 2
+# NAME: Spotify
+# PROCESS-NAME: 1
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# TOTAL: 30
+# UPDATED: 2024-11-25 02:12:13

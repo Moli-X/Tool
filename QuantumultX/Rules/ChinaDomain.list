@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 764
+# 规则统计: 775
 
 HOST,acg.tv,ChinaDomain
 HOST,assets1.xboxlive.cn,ChinaDomain
@@ -15,6 +15,7 @@ HOST,lv.queniujq.cn,ChinaDomain
 HOST,media.cdn.queniuqe.com,ChinaDomain
 HOST,ocsp.globalsign.com,ChinaDomain
 HOST,ocsp2.globalsign.com,ChinaDomain
+HOST,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe,ChinaDomain
 HOST,url.cn,ChinaDomain
 HOST,www.intel.cn,ChinaDomain
 HOST,www.layuicdn.com,ChinaDomain
@@ -765,3 +766,13 @@ HOST-WILDCARD,*.qhimgs?.com,ChinaDomain
 USER-AGENT,%E4%BC%98%E9%85%B7*,ChinaDomain
 USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*,ChinaDomain
 USER-AGENT,TeslaMap,ChinaDomain
+#
+# GitHub: https://github.com/SukkaW/Surge
+# Homepage: https://ruleset.skk.moe
+# Last Updated: 2024-12-31T04:15:49.279Z
+# License: AGPL 3.0
+# Size: 765
+# Sukka's Ruleset - Domestic Domains
+# This file contains known addresses that are avaliable in the Mainland China.
+################## EOF ##################
+#########################################

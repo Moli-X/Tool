@@ -1,5 +1,5 @@
 # 规则名称: AutoBilibili
-# 规则统计: 12
+# 规则统计: 13
 
 DOMAIN,api.biliapi.com
 DOMAIN,api.biliapi.net
@@ -13,3 +13,4 @@ DOMAIN,upos-hz-mirrorakam.akamaized.net
 DOMAIN,www.bilibili.com
 DOMAIN-KEYWORD,cn-hk-eq-bcache-
 IP-CIDR,121.11.192.0/24,no-resolve
+# 该规则集用于配合bilibili自动地区脚本使用。

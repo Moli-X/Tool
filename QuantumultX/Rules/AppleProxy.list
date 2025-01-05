@@ -1,5 +1,5 @@
 # 规则名称: AppleProxy
-# 规则统计: 44
+# 规则统计: 53
 
 HOST,api-glb-sea.smoot.apple.com,AppleProxy
 HOST,apple.comscoreresearch.com,AppleProxy
@@ -45,3 +45,12 @@ USER-AGENT,AppleTV*,AppleProxy
 USER-AGENT,com.apple.news*,AppleProxy
 USER-AGENT,com.apple.trustd*,AppleProxy
 USER-AGENT,com.apple.tv*,AppleProxy
+# AUTHOR: blackmatrix7
+# DOMAIN-SUFFIX: 12
+# DOMAIN: 27
+# NAME: AppleProxy
+# PROCESS-NAME: 1
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# TOTAL: 45
+# UPDATED: 2024-07-03 16:16:17
+# USER-AGENT: 5

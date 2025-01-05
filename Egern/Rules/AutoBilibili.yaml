@@ -1,19 +1,13 @@
-# 规则名称: AutoBilibili
-# 规则统计: 12
-
-no_resolve: true
-domain_set:
-  - api.biliapi.com
-  - api.biliapi.net
-  - api.bilibili.com
-  - app.biliapi.com
-  - app.biliapi.net
-  - app.bilibili.com
-  - grpc.biliapi.net
-  - m.bilibili.com
-  - upos-hz-mirrorakam.akamaized.net
-  - www.bilibili.com
-domain_keyword_set:
-  - cn-hk-eq-bcache-
-ip_cidr_set:
-  - 121.11.192.0/24
+DOMAIN,api.biliapi.com
+DOMAIN,api.biliapi.net
+DOMAIN,api.bilibili.com
+DOMAIN,app.biliapi.com
+DOMAIN,app.biliapi.net
+DOMAIN,app.bilibili.com
+DOMAIN,grpc.biliapi.net
+DOMAIN,m.bilibili.com
+DOMAIN,upos-hz-mirrorakam.akamaized.net
+DOMAIN,www.bilibili.com
+DOMAIN-KEYWORD,cn-hk-eq-bcache-
+IP-CIDR,121.11.192.0/24,no-resolve
+# 该规则集用于配合bilibili自动地区脚本使用。

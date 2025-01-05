@@ -1,5 +1,5 @@
 # 规则名称: YouTube
-# 规则统计: 17
+# 规则统计: 19
 
 HOST,youtubei.googleapis.com,YouTube
 HOST,yt3.ggpht.com,YouTube
@@ -18,3 +18,5 @@ HOST-KEYWORD,youtube,YouTube
 USER-AGENT,*youtube*,YouTube
 USER-AGENT,YouTube*,YouTube
 USER-AGENT,com.google.ios.youtube*,YouTube
+# 内容：YouTube
+# 数量：17条

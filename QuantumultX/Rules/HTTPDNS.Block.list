@@ -1,5 +1,5 @@
 # 规则名称: HTTPDNS.Block
-# 规则统计: 46
+# 规则统计: 71
 
 HOST,dns.jd.com,HTTPDNS.Block
 HOST,dns.weibo.cn,HTTPDNS.Block
@@ -47,3 +47,28 @@ IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,HTTPDNS.Block
 IP6-CIDR,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,HTTPDNS.Block
 IP6-CIDR,2402:db40:5100:1011::5/128,HTTPDNS.Block
 IP6-CIDR,240e:928:1400:10::25/128,HTTPDNS.Block
+
+# Alibaba
+# Aliyun
+# Baidu
+# BaiduBCE
+# Bilibili
+# Huawei
+# JD
+# JD Cloud
+# Keep
+# Kuaishou
+# Meituan
+# NetEase
+# Oppo
+# Tencent Cloud
+# Volcengine
+# Weibo
+# Weixin
+# Wework
+# Zhihu
+#!author=VirgilClyne
+#!desc=阻止常见的 HTTPDNS 服务器
+#!homepage=https://github.com/VirgilClyne/GetSomeFries/wiki/🚫-HTTPDNS
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
+#!name=🍟 Fries: 🚫 Block HTTPDNS

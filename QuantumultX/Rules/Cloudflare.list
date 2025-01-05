@@ -1,5 +1,5 @@
 # 规则名称: Cloudflare
-# 规则统计: 65
+# 规则统计: 73
 
 HOST-SUFFIX,cf-ipfs.com,Cloudflare
 HOST-SUFFIX,cf-ns.com,Cloudflare
@@ -66,3 +66,11 @@ IP6-CIDR,2606:4700::/32,Cloudflare
 IP6-CIDR,2803:f800::/32,Cloudflare
 IP6-CIDR,2a06:98c0::/29,Cloudflare
 IP6-CIDR,2c0f:f248::/32,Cloudflare
+# AUTHOR: blackmatrix7
+# DOMAIN-SUFFIX: 43
+# IP-CIDR6: 7
+# IP-CIDR: 15
+# NAME: Cloudflare
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# TOTAL: 65
+# UPDATED: 2024-08-14 02:12:03

@@ -1,511 +1,676 @@
-# 规则名称: Ads_limbopro
-# 规则统计: 505
+DOMAIN,118.89.204.198,reject
+DOMAIN,25e87c0802f91cf8cgg.6uzxtlv.cn,reject
+DOMAIN,a.wkanx.com,reject
+DOMAIN,ad-analysis.pconline.com.cn,reject
+DOMAIN,ad-cdn.qingting.fm,reject
+DOMAIN,ad-stat.ksosoft.com,reject
+DOMAIN,ad.21cn.com,reject
+DOMAIN,ad.360in.com,reject
+DOMAIN,ad.51wnl-cq.com,reject
+DOMAIN,ad.api.moji.com,reject
+DOMAIN,ad.bn.netease.com,reject
+DOMAIN,ad.hpplay.cn,reject
+DOMAIN,ad.k.21cn.com,reject
+DOMAIN,ad.mobile.youku.com,reject
+DOMAIN,ad.qingting.fm,reject
+DOMAIN,ad.tencentmusic.com,reject
+DOMAIN,ad.toutiao.com,reject
+DOMAIN,ad.ximalaya.com,reject
+DOMAIN,ad.yixin.im,reject
+DOMAIN,adbehavior.wsa.ximalaya.com,reject
+DOMAIN,adbehavior.ximalaya.com,reject
+DOMAIN,adbs.ximalaya.com,reject
+DOMAIN,adc.hpplay.cn,reject
+DOMAIN,adcdn.hpplay.cn,reject
+DOMAIN,adeng.hpplay.cn,reject
+DOMAIN,adextra.51wnl-cq.com,reject
+DOMAIN,adfile.wifi8.com,reject
+DOMAIN,adimg.uve.weibo.com,reject
+DOMAIN,adimg.vue.weibo.com,reject
+DOMAIN,adlaunch.moji.com,reject
+DOMAIN,adlaunch.qingting.fm,reject
+DOMAIN,adlog.vivo.com.cn,reject
+DOMAIN,adm.10jqka.com.cn,reject
+DOMAIN,adm0.autoimg.cn,reject
+DOMAIN,adm1.autoimg.cn,reject
+DOMAIN,adm2.autoimg.cn,reject
+DOMAIN,adm3.autoimg.cn,reject
+DOMAIN,admarket.21cn.com,reject
+DOMAIN,admarketing.yahoo.net,reject
+DOMAIN,admonitor.thepaper.cn,reject
+DOMAIN,admusicpic.music.126.net,reject
+DOMAIN,adnew.wifi8.com,reject
+DOMAIN,adpai.thepaper.cn,reject
+DOMAIN,adproxy.autohome.com.cn,reject
+DOMAIN,adreq.vivo.com.cn,reject
+DOMAIN,ads-d.viber.com,reject
+DOMAIN,ads-img-qc.xhscdn.com,reject
+DOMAIN,ads-marketing-vivofs.vivo.com.cn,reject
+DOMAIN,ads-video-al.xhscdn.com,reject
+DOMAIN,ads-video-qc.xhscdn.com,reject
+DOMAIN,ads.aplus.pptv.com,reject
+DOMAIN,ads.aplusapi.pptv.com,reject
+DOMAIN,ads.auctions.yahoo.com,reject
+DOMAIN,ads.aws.viber.com,reject
+DOMAIN,ads.finance.yahoo.com,reject
+DOMAIN,ads.mojicdn.com,reject
+DOMAIN,ads.service.kugou.com,reject
+DOMAIN,ads.snapchat.com,reject
+DOMAIN,ads.viber.com,reject
+DOMAIN,ads.yahoo.com,reject
+DOMAIN,ads.yahoo.de,reject
+DOMAIN,ads.youtube.com,reject
+DOMAIN,adsapi.snapchat.com,reject
+DOMAIN,adsdk.vivo.com.cn,reject
+DOMAIN,adse.wsa.ximalaya.com,reject
+DOMAIN,adse.ximalaya.com,reject
+DOMAIN,adsebs.ximalaya.com,reject
+DOMAIN,adserviceretry.kugou.com,reject
+DOMAIN,adsfile.bssdlbig.kugou.com,reject
+DOMAIN,adsfilebssdlbig.tx.kugou.com,reject
+DOMAIN,adsfs.oppomobile.com,reject
+DOMAIN,adshows.21cn.com,reject
+DOMAIN,adsmind.apdcdn.tc.qq.com,reject
+DOMAIN,adsmind.gdtimg.com,reject
+DOMAIN,adsmind.tc.qq.com,reject
+DOMAIN,adsmind.ugdtimg.com,reject
+DOMAIN,adsp.xunlei.com,reject
+DOMAIN,adsstatic.vivo.com.cn,reject
+DOMAIN,adstats.tencentmusic.com,reject
+DOMAIN,adstore-index-1252524079.file.myqcloud.com,reject
+DOMAIN,adv-adlog.variflight.com,reject
+DOMAIN,adv-ads.variflight.com,reject
+DOMAIN,advertise.baicizhan.com,reject
+DOMAIN,advertise.baicizhan.org,reject
+DOMAIN,adwbs.ximalaya.com,reject
+DOMAIN,adx-api.hupu.com,reject
+DOMAIN,adx.hupu.com,reject
+DOMAIN,adx.op.cp18.ott.cibntv.net,reject
+DOMAIN,adx.yiche.com,reject
+DOMAIN,adxlog.vivo.com.cn,reject
+DOMAIN,afd.baidu.com,reject
+DOMAIN,al.autohome.com.cn,reject
+DOMAIN,als.baidu.com,reject
+DOMAIN,api.newad.ifeng.com,reject
+DOMAIN,apicdn.viglink.com,reject
+DOMAIN,app-ad.variflight.com,reject
+DOMAIN,appcloud2.in.zhihu.com,reject
+DOMAIN,applogapi.autohome.com.cn,reject
+DOMAIN,apppv.zol.com.cn,reject
+DOMAIN,ark.letv.com,reject
+DOMAIN,asimgs.pplive.cn,reject
+DOMAIN,atrace.chelaile.net.cn,reject
+DOMAIN,c1wx.lianwangtech.com,reject
+DOMAIN,cdn.adapi.fotoable.com,reject
+DOMAIN,counter.kingsoft.com,reject
+DOMAIN,counter.ksosoft.com,reject
+DOMAIN,cwx.lianwangtech.com,reject
+DOMAIN,dagonghuzhu.com,reject
+DOMAIN,data-hoisin.coocaa.com,reject
+DOMAIN,de.as.pptv.com,reject
+DOMAIN,dispatcher.360in.com,reject
+DOMAIN,dsp.toutiao.com,reject
+DOMAIN,duclick.baidu.com,reject
+DOMAIN,emma-414870e223.huodonghezi.com,reject
+DOMAIN,etl.xlmc.sandai.net,reject
+DOMAIN,exp.360in.com,reject
+DOMAIN,fg.knlk2md.cn,reject
+DOMAIN,g.koowo.com,reject
+DOMAIN,g1.163.com,reject
+DOMAIN,g3.letv.com,reject
+DOMAIN,galaxy.bjcathay.com,reject
+DOMAIN,ggc.cmvideo.cn,reject
+DOMAIN,ggic03.miguvideo.com,reject
+DOMAIN,ggmk.miguvideo.com,reject
+DOMAIN,ggv.cmvideo.cn,reject
+DOMAIN,ggx.cmvideo.cn,reject
+DOMAIN,ggx03.miguvideo.com,reject
+DOMAIN,glitter.services.disqus.com,reject
+DOMAIN,goblin.hupu.com,reject
+DOMAIN,gorgon.youdao.com,reject
+DOMAIN,hbftgh.ibjkqnhjwd.xyz,reject
+DOMAIN,hnrtg.iujkegbpo.xyz,reject
+DOMAIN,hui.sohu.com,reject
+DOMAIN,iad.g.163.com,reject
+DOMAIN,iad0ssl.pcauto.com.cn,reject
+DOMAIN,iad0ssl.pconline.com.cn,reject
+DOMAIN,iadmat.nosdn.127.net,reject
+DOMAIN,iadmusicmat.music.126.net,reject
+DOMAIN,iadmusicmatvideo.music.126.net,reject
+DOMAIN,ifengad.3g.ifeng.com,reject
+DOMAIN,img.auction-ads.wpscdn.cn,reject
+DOMAIN,imgad0.pcauto.com.cn,reject
+DOMAIN,imgad0.pconline.com.cn,reject
+DOMAIN,imgadpai.thepaper.cn,reject
+DOMAIN,impservice.dictapp.youdao.com,reject
+DOMAIN,impservice.youdao.com,reject
+DOMAIN,ivy.pchouse.com.cn,reject
+DOMAIN,iyes.youku.com,reject
+DOMAIN,js-ad.a.yximgs.com,reject
+DOMAIN,juggler.services.disqus.com,reject
+DOMAIN,kgmobilestat.kugou.com,reject
+DOMAIN,kgmobilestatbak.kugou.com,reject
+DOMAIN,kmef.ikjwmfeds.xyz,reject
+DOMAIN,kmopoer.jkbuymjhp.xyz,reject
+DOMAIN,koprtgh.omhoa.com,reject
+DOMAIN,livep.l.t002.ottcn.com,reject
+DOMAIN,log.51wnl-cq.com,reject
+DOMAIN,log.ycapp.yiche.com,reject
+DOMAIN,logs.chelaile.net.cn,reject
+DOMAIN,mc.viglink.com,reject
+DOMAIN,mdrecv.app.cntvwb.cn,reject
+DOMAIN,minfo.wps.cn,reject
+DOMAIN,mobad.ijinshan.com,reject
+DOMAIN,mobads-logs.baidu.com,reject
+DOMAIN,mobads.baidu.com,reject
+DOMAIN,mobilead.kuwo.cn,reject
+DOMAIN,mobileads.msn.com,reject
+DOMAIN,mobilelog.kugou.com,reject
+DOMAIN,mqtt.zhihu.com,reject
+DOMAIN,n.3g.163.com,reject
+DOMAIN,n.mark.letv.com,reject
+DOMAIN,nadvideo2.baidu.com,reject
+DOMAIN,nex.163.com,reject
+DOMAIN,nggfe.fdgem.com,reject
+DOMAIN,ns2.viglink.com,reject
+DOMAIN,ns3.viglink.com,reject
+DOMAIN,ns4.viglink.com,reject
+DOMAIN,nsclick.baidu.com,reject
+DOMAIN,optimus-ads.amap.com,reject
+DOMAIN,optimus-ads.amap.com.w.alikunlun.com,reject
+DOMAIN,pangolin.snssdk.com,reject
+DOMAIN,pgdt.gtimg.cn,reject
+DOMAIN,pgdt.gtimg.com,reject
+DOMAIN,pgdt.ugdtimg.com,reject
+DOMAIN,pin.hpplay.cn,reject
+DOMAIN,pl.cp31.ott.cibntv.net,reject
+DOMAIN,pvnapp.zol.com.cn,reject
+DOMAIN,qa.viglink.com,reject
+DOMAIN,r.51wnl-cq.com,reject
+DOMAIN,rd.autohome.com.cn,reject
+DOMAIN,regist.fotoable.com,reject
+DOMAIN,rich.kuwo.cn,reject
+DOMAIN,richmanapi.jxedt.com,reject
+DOMAIN,richmanmain.jxedt.com,reject
+DOMAIN,richmanrules.jxedt.com,reject
+DOMAIN,rp.hpplay.cn,reject
+DOMAIN,rpt.hpplay.cn,reject
+DOMAIN,rthmnj.xyz,reject
+DOMAIN,sax.sina.com.cn,reject
+DOMAIN,saxn.sina.com.cn,reject
+DOMAIN,saxs.sina.com.cn,reject
+DOMAIN,sdapprecv.app.cntvwb.cn,reject
+DOMAIN,splashimgbssdl.yun.kugou.com,reject
+DOMAIN,splashqqlive.gtimg.com,reject
+DOMAIN,stat.10jqka.com.cn,reject
+DOMAIN,sugar.zhihu.com,reject
+DOMAIN,t-ads.xiaohongshu.com,reject
+DOMAIN,t7z.cupid.iqiyi.com,reject
+DOMAIN,t7z.cupid.ptqy.gitv.tv,reject
+DOMAIN,tc.vpubmi.com,reject
+DOMAIN,tempest.services.disqus.com,reject
+DOMAIN,tg.gtlpaj.com,reject
+DOMAIN,tmead.y.qq.com,reject
+DOMAIN,tunion-api.m.taobao.com,reject
+DOMAIN,u1.img.mobile.sina.cn,reject
+DOMAIN,ups.ksmobile.net,reject
+DOMAIN,v1.log.moji.com,reject
+DOMAIN,vcardsdkservice.vivo.com.cn,reject
+DOMAIN,vdapprecv.app.cntvwb.cn,reject
+DOMAIN,wa.gtimg.com,reject
+DOMAIN,ws.ksmobile.net,reject
+DOMAIN,yt-adp.nosdn.127.net,reject
+DOMAIN,yt-adp.ws.126.net,reject
+DOMAIN-SUFFIX,107iwh.cn,reject
+DOMAIN-SUFFIX,22c.in,reject
+DOMAIN-SUFFIX,2700.5mgrgsc.cn,reject
+DOMAIN-SUFFIX,29b124c44a.com,reject
+DOMAIN-SUFFIX,2qpqwkx.cn,reject
+DOMAIN-SUFFIX,2xmzazd.cn,reject
+DOMAIN-SUFFIX,3adtjg.com,reject
+DOMAIN-SUFFIX,42yenxh.cn,reject
+DOMAIN-SUFFIX,51.la,reject
+DOMAIN-SUFFIX,51daeka.com,reject
+DOMAIN-SUFFIX,578d72001a.com,reject
+DOMAIN-SUFFIX,5e87c0802f91cf8cgg.6uzxtlv.cn,reject
+DOMAIN-SUFFIX,5mgrgsc.cn,reject
+DOMAIN-SUFFIX,6fi3bv9.cn,reject
+DOMAIN-SUFFIX,6uzxtlv.cn,reject
+DOMAIN-SUFFIX,777.000123456789.space,reject
+DOMAIN-SUFFIX,7tad.cn,reject
+DOMAIN-SUFFIX,9e77b6e6e2.2e3f31faae.com,reject
+DOMAIN-SUFFIX,a.adforcast.com,reject
+DOMAIN-SUFFIX,a.bestcontentfood.top,reject
+DOMAIN-SUFFIX,a.realsrv.com,reject
+DOMAIN-SUFFIX,a.shukriya90.com,reject
+DOMAIN-SUFFIX,ad.cmvideo.cn,reject
+DOMAIN-SUFFIX,ad.pornimg.xyz,reject
+DOMAIN-SUFFIX,ad.sohu.com,reject
+DOMAIN-SUFFIX,ad.vidverto.io,reject
+DOMAIN-SUFFIX,addthis.com,reject
+DOMAIN-SUFFIX,ads.exosrv.com,reject
+DOMAIN-SUFFIX,ads.internal.unity3d.com,reject
+DOMAIN-SUFFIX,ads.msn.com,reject
+DOMAIN-SUFFIX,ads.oppomobile.com,reject
+DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com,reject
+DOMAIN-SUFFIX,ads.sohu.com,reject
+DOMAIN-SUFFIX,ads.superad.cc,reject
+DOMAIN-SUFFIX,ads1.msn.com,reject
+DOMAIN-SUFFIX,ads2.msn.com,reject
+DOMAIN-SUFFIX,adserve.work,reject
+DOMAIN-SUFFIX,adserver.yahoo.com,reject
+DOMAIN-SUFFIX,adspecs.yahoo.com,reject
+DOMAIN-SUFFIX,advertising.yahoo.com,reject
+DOMAIN-SUFFIX,adxadserv.com,reject
+DOMAIN-SUFFIX,alexametrics.com,reject
+DOMAIN-SUFFIX,alitui.weibo.com,reject
+DOMAIN-SUFFIX,amung.us,reject
+DOMAIN-SUFFIX,annabelleabe.com,reject
+DOMAIN-SUFFIX,asewlfjqwlflkew.com,reject
+DOMAIN-SUFFIX,atm.youku.com,reject
+DOMAIN-SUFFIX,atmib.com,reject
+DOMAIN-SUFFIX,aty.sohu.com,reject
+DOMAIN-SUFFIX,awaitcola.com,reject
+DOMAIN-SUFFIX,b1sync.zemanta.com,reject
+DOMAIN-SUFFIX,beacon.sina.com.cn,reject
+DOMAIN-SUFFIX,bhichong.com,reject
+DOMAIN-SUFFIX,bingads.microsoft.com,reject
+DOMAIN-SUFFIX,bizhixiang.cn,reject
+DOMAIN-SUFFIX,bjzysd.net,reject
+DOMAIN-SUFFIX,bn.ufitjvn.com,reject
+DOMAIN-SUFFIX,cashewsforlife208.com,reject
+DOMAIN-SUFFIX,catdomepimyth.com,reject
+DOMAIN-SUFFIX,cdn.tsyndicate.com,reject
+DOMAIN-SUFFIX,cdn.viglink.com,reject
+DOMAIN-SUFFIX,citadelpathstatue.com,reject
+DOMAIN-SUFFIX,clarity.ms,reject
+DOMAIN-SUFFIX,cpro.baidu.com,reject
+DOMAIN-SUFFIX,creative.kbnmnl.com,reject
+DOMAIN-SUFFIX,creative.live.missav.com,reject
+DOMAIN-SUFFIX,creative.mnaspm.com,reject
+DOMAIN-SUFFIX,creative.myavlive.com,reject
+DOMAIN-SUFFIX,creative.xlviirdr.com,reject
+DOMAIN-SUFFIX,d.zxptw.cn,reject
+DOMAIN-SUFFIX,d10lumateci472.cloudfront.net,reject
+DOMAIN-SUFFIX,d227cncaprzd7y.cloudfront.net,reject
+DOMAIN-SUFFIX,da.hunantv.com,reject
+DOMAIN-SUFFIX,da.mgtv.com,reject
+DOMAIN-SUFFIX,ddmax20.xyz,reject
+DOMAIN-SUFFIX,deliver.ifeng.com,reject
+DOMAIN-SUFFIX,designslicensedeep.com,reject
+DOMAIN-SUFFIX,disqusads.com,reject
+DOMAIN-SUFFIX,double.net,reject
+DOMAIN-SUFFIX,doubleclick.net,reject
+DOMAIN-SUFFIX,dsp.youdao.com,reject
+DOMAIN-SUFFIX,dtscout.com,reject
+DOMAIN-SUFFIX,du0pud0sdlmzf.cloudfront.net,reject
+DOMAIN-SUFFIX,duapps.com,reject
+DOMAIN-SUFFIX,dvzk66.cn,reject
+DOMAIN-SUFFIX,dwyhup.cn,reject
+DOMAIN-SUFFIX,e.kuaishou.com,reject
+DOMAIN-SUFFIX,e.qq.com,reject
+DOMAIN-SUFFIX,e67repidwnfu7gcha.com,reject
+DOMAIN-SUFFIX,effectscouncilman.com,reject
+DOMAIN-SUFFIX,enrichyummy.com,reject
+DOMAIN-SUFFIX,etahub.com,reject
+DOMAIN-SUFFIX,evtubescms.phncdn.com,reject
+DOMAIN-SUFFIX,exdynsrv.com,reject
+DOMAIN-SUFFIX,exemptambientcream.com,reject
+DOMAIN-SUFFIX,exosrv.com,reject
+DOMAIN-SUFFIX,eyebrowscrambledlater.com,reject
+DOMAIN-SUFFIX,fanza.cc,reject
+DOMAIN-SUFFIX,farmcrapsubsist.com,reject
+DOMAIN-SUFFIX,farwine.com,reject
+DOMAIN-SUFFIX,gdt.qq.com,reject
+DOMAIN-SUFFIX,gemini.yahoo.com,reject
+DOMAIN-SUFFIX,ggsfq.com,reject
+DOMAIN-SUFFIX,gn01.top,reject
+DOMAIN-SUFFIX,go.mnaspm.com,reject
+DOMAIN-SUFFIX,go.myavlive.com,reject
+DOMAIN-SUFFIX,go.xlvirdr.com
+DOMAIN-SUFFIX,googleadservices.com,reject
+DOMAIN-SUFFIX,googleadsserving.cn,reject
+DOMAIN-SUFFIX,googlesyndication.com,reject
+DOMAIN-SUFFIX,googletagservices.com,reject
+DOMAIN-SUFFIX,gsjln04hd.com,reject
+DOMAIN-SUFFIX,gtlpaj.com,reject
+DOMAIN-SUFFIX,haoyundm.com,reject
+DOMAIN-SUFFIX,haoyuntj.com,reject
+DOMAIN-SUFFIX,hbhuatie.com,reject
+DOMAIN-SUFFIX,histats.com,reject
+DOMAIN-SUFFIX,hoisin.coocaa.com,reject
+DOMAIN-SUFFIX,hoisin.coocaatv.com,reject
+DOMAIN-SUFFIX,iad-01.braze.com,reject
+DOMAIN-SUFFIX,iad-02.braze.com,reject
+DOMAIN-SUFFIX,iad-03.appboy.com,reject
+DOMAIN-SUFFIX,iad-03.braze.com,reject
+DOMAIN-SUFFIX,iad-04.braze.com,reject
+DOMAIN-SUFFIX,iad-05.braze.com,reject
+DOMAIN-SUFFIX,iad-06.braze.com,reject
+DOMAIN-SUFFIX,iad-08.braze.com,reject
+DOMAIN-SUFFIX,iad.appboy.com,reject
+DOMAIN-SUFFIX,iadsdk.apple.com,reject
+DOMAIN-SUFFIX,ig66.vip,reject
+DOMAIN-SUFFIX,ig67.vip,reject
+DOMAIN-SUFFIX,img.hylmxing.com,reject
+DOMAIN-SUFFIX,imgxxx.shunxincar.cn,reject
+DOMAIN-SUFFIX,impactserving.com,reject
+DOMAIN-SUFFIX,impolo.com,reject
+DOMAIN-SUFFIX,in-page-push.com,reject
+DOMAIN-SUFFIX,ingest.sentry,reject
+DOMAIN-SUFFIX,ioacfu.com,reject
+DOMAIN-SUFFIX,itnuzleafan.com,reject
+DOMAIN-SUFFIX,iycwl.com,reject
+DOMAIN-SUFFIX,jads.co,reject
+DOMAIN-SUFFIX,jianxinshanghai.com,reject
+DOMAIN-SUFFIX,jidukeji.com,reject
+DOMAIN-SUFFIX,jknmthwd.xyz,reject
+DOMAIN-SUFFIX,js.51toubu.com,reject
+DOMAIN-SUFFIX,js.users.51.la,reject
+DOMAIN-SUFFIX,js.wpshsdk.com,reject
+DOMAIN-SUFFIX,js.wpushsdk.com,reject
+DOMAIN-SUFFIX,jspassport.ssl.qhimg.com,reject
+DOMAIN-SUFFIX,juicyads.com,reject
+DOMAIN-SUFFIX,juicyads.in,reject
+DOMAIN-SUFFIX,kk.braincf.com,reject
+DOMAIN-SUFFIX,kkjhgfds.top,reject
+DOMAIN-SUFFIX,knlk2md.cn,reject
+DOMAIN-SUFFIX,l.qq.com,reject
+DOMAIN-SUFFIX,links.services.disqus.com,reject
+DOMAIN-SUFFIX,log.hunantv.com,reject
+DOMAIN-SUFFIX,magsrv.com,reject
+DOMAIN-SUFFIX,maphuahin.com,reject
+DOMAIN-SUFFIX,maxwellsery.com,reject
+DOMAIN-SUFFIX,mc.yandex.ru,reject
+DOMAIN-SUFFIX,mc7clurd09pla4nrtat7ion.com,reject
+DOMAIN-SUFFIX,media.aso1.net,reject
+DOMAIN-SUFFIX,media.dalysv.com,reject
+DOMAIN-SUFFIX,mm9842.com,reject
+DOMAIN-SUFFIX,moatads.com,reject
+DOMAIN-SUFFIX,my.rtmark.net,reject
+DOMAIN-SUFFIX,nby360.com,reject
+DOMAIN-SUFFIX,netdjs.net,reject
+DOMAIN-SUFFIX,new.xiongzhangad.com,reject
+DOMAIN-SUFFIX,oawhaursaith.com,reject
+DOMAIN-SUFFIX,onerousethelpictures.com,reject
+DOMAIN-SUFFIX,p242.plainwrk.name,reject
+DOMAIN-SUFFIX,pagead2.googlesyndication.com,reject
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,reject
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,reject
+DOMAIN-SUFFIX,pc.stgowan.com,reject
+DOMAIN-SUFFIX,phloxsub73ulata.com,reject
+DOMAIN-SUFFIX,pitrespite.com,reject
+DOMAIN-SUFFIX,playersb.com,reject
+DOMAIN-SUFFIX,popin.cc,reject
+DOMAIN-SUFFIX,pos.baidu.com,reject
+DOMAIN-SUFFIX,pu0glv.cn,reject
+DOMAIN-SUFFIX,purpleads.io,reject
+DOMAIN-SUFFIX,pv.sohu.com,reject
+DOMAIN-SUFFIX,qinzhihao.com,reject
+DOMAIN-SUFFIX,qoiw1xw.cn,reject
+DOMAIN-SUFFIX,qqq123987.site,reject
+DOMAIN-SUFFIX,qw2v.changshuohr.net,reject
+DOMAIN-SUFFIX,qweewq2021.online,reject
+DOMAIN-SUFFIX,rads.msn.com,reject
+DOMAIN-SUFFIX,realsrv.com,reject
+DOMAIN-SUFFIX,referrer.disqus.com,reject
+DOMAIN-SUFFIX,regulationprivilegescan.top,reject
+DOMAIN-SUFFIX,rmhfrtnd.com,reject
+DOMAIN-SUFFIX,run.haireig.com,reject
+DOMAIN-SUFFIX,s.csyfe.com,reject
+DOMAIN-SUFFIX,s10.histats.com,reject
+DOMAIN-SUFFIX,s96.cnzz.com,reject
+DOMAIN-SUFFIX,server.mch3.com,reject
+DOMAIN-SUFFIX,show.suning.beer,reject
+DOMAIN-SUFFIX,solestudious.com,reject
+DOMAIN-SUFFIX,son-in-lawmorbid.com,reject
+DOMAIN-SUFFIX,spotxchange.com,reject
+DOMAIN-SUFFIX,stat.gn01.top,reject
+DOMAIN-SUFFIX,tapioni.com,reject
+DOMAIN-SUFFIX,tcc.qscvli.com,reject
+DOMAIN-SUFFIX,tfosrv.com,reject
+DOMAIN-SUFFIX,thumb.fvs.io,reject
+DOMAIN-SUFFIX,tj.orlandowaggons.com,reject
+DOMAIN-SUFFIX,trackwilltrk.com,reject
+DOMAIN-SUFFIX,trafficforce.com,reject
+DOMAIN-SUFFIX,trafforsrv.com,reject
+DOMAIN-SUFFIX,tskdfjksldk.sdhsgcj.com,reject
+DOMAIN-SUFFIX,tsyndicate.com,reject
+DOMAIN-SUFFIX,tu.xasnjafnvn.com,reject
+DOMAIN-SUFFIX,tyrantdb.com,reject
+DOMAIN-SUFFIX,union.youdao.com,reject
+DOMAIN-SUFFIX,unityads.unity3d.com,reject
+DOMAIN-SUFFIX,unreshiramor.com,reject
+DOMAIN-SUFFIX,uus52.com,reject
+DOMAIN-SUFFIX,uus58.com,reject
+DOMAIN-SUFFIX,v2.hunantv.com,reject
+DOMAIN-SUFFIX,v3.fstats.xyz,reject
+DOMAIN-SUFFIX,video.ktkjmp.com,reject
+DOMAIN-SUFFIX,vjugz.com,reject
+DOMAIN-SUFFIX,vntsm.com,reject
+DOMAIN-SUFFIX,webp2p.letv.com,reject
+DOMAIN-SUFFIX,widgets.amung.us,reject
+DOMAIN-SUFFIX,wine-api.net,reject
+DOMAIN-SUFFIX,wpadmngr.com,reject
+DOMAIN-SUFFIX,wpncdn.com,reject
+DOMAIN-SUFFIX,wss.haoyundmn.com,reject
+DOMAIN-SUFFIX,wuzbhjpvsf.com,reject
+DOMAIN-SUFFIX,www.govshenzhen.cn,reject
+DOMAIN-SUFFIX,x2sfa.javgg.eu,reject
+DOMAIN-SUFFIX,xd3r.javgg.eu,reject
+DOMAIN-SUFFIX,xlivrdr.com,reject
+DOMAIN-SUFFIX,xlvirdr.com,reject
+DOMAIN-SUFFIX,xn--2qux23c9ziyrq.club,reject
+DOMAIN-SUFFIX,xn--2qux23c9ziyrq.plus,reject
+DOMAIN-SUFFIX,xn--3bs795g.link,reject
+DOMAIN-SUFFIX,xn--3bs795g.zone,reject
+DOMAIN-SUFFIX,xn--qrq171dxpq.com,reject
+DOMAIN-SUFFIX,xn--xhq9mt12cf5v.xn--io0a7i,reject
+DOMAIN-SUFFIX,xxxjmp.com,reject
+DOMAIN-SUFFIX,yandex.ru,reject
+DOMAIN-SUFFIX,youradexchange.com,reject
+DOMAIN-SUFFIX,zprofuqkssny.com,reject
+DOMAIN-KEYWORD,112wan,reject
+DOMAIN-KEYWORD,789htbet,reject
+DOMAIN-KEYWORD,adform,reject
+DOMAIN-KEYWORD,adservice,reject
+DOMAIN-KEYWORD,asewlfjqwlflkew,reject
+DOMAIN-KEYWORD,bngpt,reject
+DOMAIN-KEYWORD,bongacash,reject
+DOMAIN-KEYWORD,brushshopy,reject
+DOMAIN-KEYWORD,dat8,reject
+DOMAIN-KEYWORD,dfkj8,reject
+DOMAIN-KEYWORD,dlads,reject
+DOMAIN-KEYWORD,dtscout,reject
+DOMAIN-KEYWORD,e2wysbacctt1,reject
+DOMAIN-KEYWORD,exosrv,reject
+DOMAIN-KEYWORD,greenplasticdua,reject
+DOMAIN-KEYWORD,haowanyou,reject
+DOMAIN-KEYWORD,histats,reject
+DOMAIN-KEYWORD,in-page-push,reject
+DOMAIN-KEYWORD,jads,reject
+DOMAIN-KEYWORD,juruigj,reject
+DOMAIN-KEYWORD,lieyou,reject
+DOMAIN-KEYWORD,mathtag,reject
+DOMAIN-KEYWORD,mdapp09,reject
+DOMAIN-KEYWORD,mifengv,reject
+DOMAIN-KEYWORD,o333o,reject
+DOMAIN-KEYWORD,onenews,reject
+DOMAIN-KEYWORD,pagespeed-mod,reject
+DOMAIN-KEYWORD,stsdk.vivo.com.cn,reject
+DOMAIN-KEYWORD,stsdk.vivoglobal.com,reject
+DOMAIN-KEYWORD,stunninglover,reject
+DOMAIN-KEYWORD,toateeli,reject
+DOMAIN-KEYWORD,trwl1,reject
+DOMAIN-KEYWORD,xxshuyuan,reject
+IP-CIDR6,## IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 
-domain_set:
-  - 118.89.204.198
-  - 25e87c0802f91cf8cgg.6uzxtlv.cn
-  - a.wkanx.com
-  - ad-analysis.pconline.com.cn
-  - ad-cdn.qingting.fm
-  - ad-stat.ksosoft.com
-  - ad.21cn.com
-  - ad.360in.com
-  - ad.51wnl-cq.com
-  - ad.api.moji.com
-  - ad.bn.netease.com
-  - ad.hpplay.cn
-  - ad.k.21cn.com
-  - ad.mobile.youku.com
-  - ad.qingting.fm
-  - ad.tencentmusic.com
-  - ad.toutiao.com
-  - ad.ximalaya.com
-  - ad.yixin.im
-  - adbehavior.wsa.ximalaya.com
-  - adbehavior.ximalaya.com
-  - adbs.ximalaya.com
-  - adc.hpplay.cn
-  - adcdn.hpplay.cn
-  - adeng.hpplay.cn
-  - adextra.51wnl-cq.com
-  - adfile.wifi8.com
-  - adimg.uve.weibo.com
-  - adimg.vue.weibo.com
-  - adlaunch.moji.com
-  - adlaunch.qingting.fm
-  - adlog.vivo.com.cn
-  - adm.10jqka.com.cn
-  - adm0.autoimg.cn
-  - adm1.autoimg.cn
-  - adm2.autoimg.cn
-  - adm3.autoimg.cn
-  - admarket.21cn.com
-  - admarketing.yahoo.net
-  - admonitor.thepaper.cn
-  - admusicpic.music.126.net
-  - adnew.wifi8.com
-  - adpai.thepaper.cn
-  - adproxy.autohome.com.cn
-  - adreq.vivo.com.cn
-  - ads-d.viber.com
-  - ads-img-qc.xhscdn.com
-  - ads-marketing-vivofs.vivo.com.cn
-  - ads-video-al.xhscdn.com
-  - ads-video-qc.xhscdn.com
-  - ads.aplus.pptv.com
-  - ads.aplusapi.pptv.com
-  - ads.auctions.yahoo.com
-  - ads.aws.viber.com
-  - ads.finance.yahoo.com
-  - ads.mojicdn.com
-  - ads.service.kugou.com
-  - ads.snapchat.com
-  - ads.viber.com
-  - ads.yahoo.com
-  - ads.yahoo.de
-  - ads.youtube.com
-  - adsapi.snapchat.com
-  - adsdk.vivo.com.cn
-  - adse.wsa.ximalaya.com
-  - adse.ximalaya.com
-  - adsebs.ximalaya.com
-  - adserviceretry.kugou.com
-  - adsfile.bssdlbig.kugou.com
-  - adsfilebssdlbig.tx.kugou.com
-  - adsfs.oppomobile.com
-  - adshows.21cn.com
-  - adsmind.apdcdn.tc.qq.com
-  - adsmind.gdtimg.com
-  - adsmind.tc.qq.com
-  - adsmind.ugdtimg.com
-  - adsp.xunlei.com
-  - adsstatic.vivo.com.cn
-  - adstats.tencentmusic.com
-  - adstore-index-1252524079.file.myqcloud.com
-  - adv-adlog.variflight.com
-  - adv-ads.variflight.com
-  - advertise.baicizhan.com
-  - advertise.baicizhan.org
-  - adwbs.ximalaya.com
-  - adx-api.hupu.com
-  - adx.hupu.com
-  - adx.op.cp18.ott.cibntv.net
-  - adx.yiche.com
-  - adxlog.vivo.com.cn
-  - afd.baidu.com
-  - al.autohome.com.cn
-  - als.baidu.com
-  - api.newad.ifeng.com
-  - apicdn.viglink.com
-  - app-ad.variflight.com
-  - appcloud2.in.zhihu.com
-  - applogapi.autohome.com.cn
-  - apppv.zol.com.cn
-  - ark.letv.com
-  - asimgs.pplive.cn
-  - atrace.chelaile.net.cn
-  - c1wx.lianwangtech.com
-  - cdn.adapi.fotoable.com
-  - counter.kingsoft.com
-  - counter.ksosoft.com
-  - cwx.lianwangtech.com
-  - dagonghuzhu.com
-  - data-hoisin.coocaa.com
-  - de.as.pptv.com
-  - dispatcher.360in.com
-  - dsp.toutiao.com
-  - duclick.baidu.com
-  - emma-414870e223.huodonghezi.com
-  - etl.xlmc.sandai.net
-  - exp.360in.com
-  - fg.knlk2md.cn
-  - g.koowo.com
-  - g1.163.com
-  - g3.letv.com
-  - galaxy.bjcathay.com
-  - ggc.cmvideo.cn
-  - ggic03.miguvideo.com
-  - ggmk.miguvideo.com
-  - ggv.cmvideo.cn
-  - ggx.cmvideo.cn
-  - ggx03.miguvideo.com
-  - glitter.services.disqus.com
-  - goblin.hupu.com
-  - gorgon.youdao.com
-  - hbftgh.ibjkqnhjwd.xyz
-  - hnrtg.iujkegbpo.xyz
-  - hui.sohu.com
-  - iad.g.163.com
-  - iad0ssl.pcauto.com.cn
-  - iad0ssl.pconline.com.cn
-  - iadmat.nosdn.127.net
-  - iadmusicmat.music.126.net
-  - iadmusicmatvideo.music.126.net
-  - ifengad.3g.ifeng.com
-  - img.auction-ads.wpscdn.cn
-  - imgad0.pcauto.com.cn
-  - imgad0.pconline.com.cn
-  - imgadpai.thepaper.cn
-  - impservice.dictapp.youdao.com
-  - impservice.youdao.com
-  - ivy.pchouse.com.cn
-  - iyes.youku.com
-  - js-ad.a.yximgs.com
-  - juggler.services.disqus.com
-  - kgmobilestat.kugou.com
-  - kgmobilestatbak.kugou.com
-  - kmef.ikjwmfeds.xyz
-  - kmopoer.jkbuymjhp.xyz
-  - koprtgh.omhoa.com
-  - livep.l.t002.ottcn.com
-  - log.51wnl-cq.com
-  - log.ycapp.yiche.com
-  - logs.chelaile.net.cn
-  - mc.viglink.com
-  - mdrecv.app.cntvwb.cn
-  - minfo.wps.cn
-  - mobad.ijinshan.com
-  - mobads-logs.baidu.com
-  - mobads.baidu.com
-  - mobilead.kuwo.cn
-  - mobileads.msn.com
-  - mobilelog.kugou.com
-  - mqtt.zhihu.com
-  - n.3g.163.com
-  - n.mark.letv.com
-  - nadvideo2.baidu.com
-  - nex.163.com
-  - nggfe.fdgem.com
-  - ns2.viglink.com
-  - ns3.viglink.com
-  - ns4.viglink.com
-  - nsclick.baidu.com
-  - optimus-ads.amap.com
-  - optimus-ads.amap.com.w.alikunlun.com
-  - pangolin.snssdk.com
-  - pgdt.gtimg.cn
-  - pgdt.gtimg.com
-  - pgdt.ugdtimg.com
-  - pin.hpplay.cn
-  - pl.cp31.ott.cibntv.net
-  - pvnapp.zol.com.cn
-  - qa.viglink.com
-  - r.51wnl-cq.com
-  - rd.autohome.com.cn
-  - regist.fotoable.com
-  - rich.kuwo.cn
-  - richmanapi.jxedt.com
-  - richmanmain.jxedt.com
-  - richmanrules.jxedt.com
-  - rp.hpplay.cn
-  - rpt.hpplay.cn
-  - rthmnj.xyz
-  - sax.sina.com.cn
-  - saxn.sina.com.cn
-  - saxs.sina.com.cn
-  - sdapprecv.app.cntvwb.cn
-  - splashimgbssdl.yun.kugou.com
-  - splashqqlive.gtimg.com
-  - stat.10jqka.com.cn
-  - sugar.zhihu.com
-  - t-ads.xiaohongshu.com
-  - t7z.cupid.iqiyi.com
-  - t7z.cupid.ptqy.gitv.tv
-  - tc.vpubmi.com
-  - tempest.services.disqus.com
-  - tg.gtlpaj.com
-  - tmead.y.qq.com
-  - tunion-api.m.taobao.com
-  - u1.img.mobile.sina.cn
-  - ups.ksmobile.net
-  - v1.log.moji.com
-  - vcardsdkservice.vivo.com.cn
-  - vdapprecv.app.cntvwb.cn
-  - wa.gtimg.com
-  - ws.ksmobile.net
-  - yt-adp.nosdn.127.net
-  - yt-adp.ws.126.net
-domain_suffix_set:
-  - 107iwh.cn
-  - 22c.in
-  - 2700.5mgrgsc.cn
-  - 29b124c44a.com
-  - 2qpqwkx.cn
-  - 2xmzazd.cn
-  - 3adtjg.com
-  - 42yenxh.cn
-  - 51.la
-  - 51daeka.com
-  - 578d72001a.com
-  - 5e87c0802f91cf8cgg.6uzxtlv.cn
-  - 5mgrgsc.cn
-  - 6fi3bv9.cn
-  - 6uzxtlv.cn
-  - 777.000123456789.space
-  - 7tad.cn
-  - 9e77b6e6e2.2e3f31faae.com
-  - a.adforcast.com
-  - a.bestcontentfood.top
-  - a.realsrv.com
-  - a.shukriya90.com
-  - ad.cmvideo.cn
-  - ad.pornimg.xyz
-  - ad.sohu.com
-  - ad.vidverto.io
-  - addthis.com
-  - ads.exosrv.com
-  - ads.internal.unity3d.com
-  - ads.msn.com
-  - ads.oppomobile.com
-  - ads.prd.ie.internal.unity3d.com
-  - ads.sohu.com
-  - ads.superad.cc
-  - ads1.msn.com
-  - ads2.msn.com
-  - adserve.work
-  - adserver.yahoo.com
-  - adspecs.yahoo.com
-  - advertising.yahoo.com
-  - adxadserv.com
-  - alexametrics.com
-  - alitui.weibo.com
-  - amung.us
-  - annabelleabe.com
-  - asewlfjqwlflkew.com
-  - atm.youku.com
-  - atmib.com
-  - aty.sohu.com
-  - awaitcola.com
-  - b1sync.zemanta.com
-  - beacon.sina.com.cn
-  - bhichong.com
-  - bingads.microsoft.com
-  - bizhixiang.cn
-  - bjzysd.net
-  - bn.ufitjvn.com
-  - cashewsforlife208.com
-  - catdomepimyth.com
-  - cdn.tsyndicate.com
-  - cdn.viglink.com
-  - citadelpathstatue.com
-  - clarity.ms
-  - cpro.baidu.com
-  - creative.kbnmnl.com
-  - creative.live.missav.com
-  - creative.mnaspm.com
-  - creative.myavlive.com
-  - creative.xlviirdr.com
-  - d.zxptw.cn
-  - d10lumateci472.cloudfront.net
-  - d227cncaprzd7y.cloudfront.net
-  - da.hunantv.com
-  - da.mgtv.com
-  - ddmax20.xyz
-  - deliver.ifeng.com
-  - designslicensedeep.com
-  - disqusads.com
-  - double.net
-  - doubleclick.net
-  - dsp.youdao.com
-  - dtscout.com
-  - du0pud0sdlmzf.cloudfront.net
-  - duapps.com
-  - dvzk66.cn
-  - dwyhup.cn
-  - e.kuaishou.com
-  - e.qq.com
-  - e67repidwnfu7gcha.com
-  - effectscouncilman.com
-  - enrichyummy.com
-  - etahub.com
-  - evtubescms.phncdn.com
-  - exdynsrv.com
-  - exemptambientcream.com
-  - exosrv.com
-  - eyebrowscrambledlater.com
-  - fanza.cc
-  - farmcrapsubsist.com
-  - farwine.com
-  - gdt.qq.com
-  - gemini.yahoo.com
-  - ggsfq.com
-  - gn01.top
-  - go.mnaspm.com
-  - go.myavlive.com
-  - go.xlvirdr.com
-  - googleadservices.com
-  - googleadsserving.cn
-  - googlesyndication.com
-  - googletagservices.com
-  - gsjln04hd.com
-  - gtlpaj.com
-  - haoyundm.com
-  - haoyuntj.com
-  - hbhuatie.com
-  - histats.com
-  - hoisin.coocaa.com
-  - hoisin.coocaatv.com
-  - iad-01.braze.com
-  - iad-02.braze.com
-  - iad-03.appboy.com
-  - iad-03.braze.com
-  - iad-04.braze.com
-  - iad-05.braze.com
-  - iad-06.braze.com
-  - iad-08.braze.com
-  - iad.appboy.com
-  - iadsdk.apple.com
-  - ig66.vip
-  - ig67.vip
-  - img.hylmxing.com
-  - imgxxx.shunxincar.cn
-  - impactserving.com
-  - impolo.com
-  - in-page-push.com
-  - ingest.sentry
-  - ioacfu.com
-  - itnuzleafan.com
-  - iycwl.com
-  - jads.co
-  - jianxinshanghai.com
-  - jidukeji.com
-  - jknmthwd.xyz
-  - js.51toubu.com
-  - js.users.51.la
-  - js.wpshsdk.com
-  - js.wpushsdk.com
-  - jspassport.ssl.qhimg.com
-  - juicyads.com
-  - juicyads.in
-  - kk.braincf.com
-  - kkjhgfds.top
-  - knlk2md.cn
-  - l.qq.com
-  - links.services.disqus.com
-  - log.hunantv.com
-  - magsrv.com
-  - maphuahin.com
-  - maxwellsery.com
-  - mc.yandex.ru
-  - mc7clurd09pla4nrtat7ion.com
-  - media.aso1.net
-  - media.dalysv.com
-  - mm9842.com
-  - moatads.com
-  - my.rtmark.net
-  - nby360.com
-  - netdjs.net
-  - new.xiongzhangad.com
-  - oawhaursaith.com
-  - onerousethelpictures.com
-  - p242.plainwrk.name
-  - pagead2.googlesyndication.com
-  - pangolin-sdk-toutiao-b.com
-  - pangolin-sdk-toutiao.com
-  - pc.stgowan.com
-  - phloxsub73ulata.com
-  - pitrespite.com
-  - playersb.com
-  - popin.cc
-  - pos.baidu.com
-  - pu0glv.cn
-  - purpleads.io
-  - pv.sohu.com
-  - qinzhihao.com
-  - qoiw1xw.cn
-  - qqq123987.site
-  - qw2v.changshuohr.net
-  - qweewq2021.online
-  - rads.msn.com
-  - realsrv.com
-  - referrer.disqus.com
-  - regulationprivilegescan.top
-  - rmhfrtnd.com
-  - run.haireig.com
-  - s.csyfe.com
-  - s10.histats.com
-  - s96.cnzz.com
-  - server.mch3.com
-  - show.suning.beer
-  - solestudious.com
-  - son-in-lawmorbid.com
-  - spotxchange.com
-  - stat.gn01.top
-  - tapioni.com
-  - tcc.qscvli.com
-  - tfosrv.com
-  - thumb.fvs.io
-  - tj.orlandowaggons.com
-  - trackwilltrk.com
-  - trafficforce.com
-  - trafforsrv.com
-  - tskdfjksldk.sdhsgcj.com
-  - tsyndicate.com
-  - tu.xasnjafnvn.com
-  - tyrantdb.com
-  - union.youdao.com
-  - unityads.unity3d.com
-  - unreshiramor.com
-  - uus52.com
-  - uus58.com
-  - v2.hunantv.com
-  - v3.fstats.xyz
-  - video.ktkjmp.com
-  - vjugz.com
-  - vntsm.com
-  - webp2p.letv.com
-  - widgets.amung.us
-  - wine-api.net
-  - wpadmngr.com
-  - wpncdn.com
-  - wss.haoyundmn.com
-  - wuzbhjpvsf.com
-  - www.govshenzhen.cn
-  - x2sfa.javgg.eu
-  - xd3r.javgg.eu
-  - xlivrdr.com
-  - xlvirdr.com
-  - xn--2qux23c9ziyrq.club
-  - xn--2qux23c9ziyrq.plus
-  - xn--3bs795g.link
-  - xn--3bs795g.zone
-  - xn--qrq171dxpq.com
-  - xn--xhq9mt12cf5v.xn--io0a7i
-  - xxxjmp.com
-  - yandex.ru
-  - youradexchange.com
-  - zprofuqkssny.com
-domain_keyword_set:
-  - 112wan
-  - 789htbet
-  - adform
-  - adservice
-  - asewlfjqwlflkew
-  - bngpt
-  - bongacash
-  - brushshopy
-  - dat8
-  - dfkj8
-  - dlads
-  - dtscout
-  - e2wysbacctt1
-  - exosrv
-  - greenplasticdua
-  - haowanyou
-  - histats
-  - in-page-push
-  - jads
-  - juruigj
-  - lieyou
-  - mathtag
-  - mdapp09
-  - mifengv
-  - o333o
-  - onenews
-  - pagespeed-mod
-  - stsdk.vivo.com.cn
-  - stsdk.vivoglobal.com
-  - stunninglover
-  - toateeli
-  - trwl1
-  - xxshuyuan
+# (0~9)
+# (A)
+# (B)
+# (C)
+# (D)
+# (G)
+# (H)
+# (J)
+# (K)
+# (L)
+# (M)
+# (N)
+# (P)
+# (Q)
+# (S)
+# (T)
+# (V)
+# (X)
+# (Y)
+# (Z)
+# --- (Alibaba) ---
+# --- (Baidu) ---
+# --- (Tencent) ---
+# ------
+# > 51wnl
+# > AMap
+# > Apple
+# > Autohome
+# > BitAuto
+# > Braze
+# > ByteDance
+# > CCTVVideo
+# > CNTV
+# > Camera360
+# > Chelaile
+# > ChinaTelecom
+# > Douban
+# > General
+# > Google
+# > HunanTV
+# > Hupu
+# > Kingsoft
+# > Kuaishou
+# > Le
+# > LinkWiFi
+# > Microsoft
+# > MiguVideo
+# > MojiWeather
+# > NetEase
+# > OPPO
+# > PConline
+# > PPTV
+# > PeanutWiFi
+# > Phoenix New Media
+# > Photoable
+# > QingTing
+# > SOHU
+# > Sina
+# > Skyworth
+# > Snapchat
+# > Tencent Music (TME)
+# > The Paper
+# > Thunder
+# > TongHuaShun
+# > VariFlight
+# > Viber
+# > Xiaohongshu
+# > Ximalaya
+# > YOUKU
+# > Yahoo
+# > ZOL
+# > Zhihu
+# > baicizhan
+# > happycast
+# > iQIYI
+# > vivo
+# >jxedt
+# AND,((USER-AGENT,Frodo*), (DOMAIN,119.29.29.29)),reject
+# Advertising
+# DOMAIN,wxsnsdy.wxs.qq.com,reject
+# DOMAIN,wxsnsdythumb.wxs.qq.com,reject
+# USER-AGENT,AVOS*
+## */
+## /*
+## ACL4SSR BadAD: 591 Domains/IP/Others From https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+## Adblock4limbo: 545 Domains/IP/Others From https://github.com/limbopro/Adblock4limbo
+## EasyList China: 4769 Domains/IP/Others From https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt
+## EasyList/EasylistChina/EasyPrivacy 隐私追踪器/去广告分流规则请在Github仓库 Adblock4limbo -> rule 文件夹下查找，按需添加...
+## EasyList: 29643 Domains/IP/Others From https://easylist.to/easylist/easylist.txt
+## EasyPrivacy: 41441 Domains/IP/Others From https://easylist.to/easylist/easyprivacy.txt
+## IP-CIDR,101.227.200.11/32,no-resolve
+## IP-CIDR,101.227.200.28/32,no-resolve
+## IP-CIDR,101.227.97.240/32,no-resolve
+## IP-CIDR,118.89.204.198/32,no-resolve
+## IP-CIDR,124.192.153.42/32,no-resolve
+## Last updated at  2/1月/2025/10:39
+## Peter Lowe’s Ad and tracking server list: 3547 Domains/IP/Others From https://pgl.yoyo.org/adservers/serverlist.php
+## Repo: https://github.com/limbopro/Adblock4limbo  
+## Written by limbopro
+## 仓库地址：https://github.com/limbopro/Adblock4limbo/tree/main/rule
+## 以上共计: 80536 Domains/IP/Others (非去重统计)
+## 原文参阅 https://limbopro.com/archives/12904.html
+## 参阅 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list
+## 如需完整配置，参阅请原文 https://limbopro.com/archives/12904.html
+## 电报群组 https://t.me/Adblock4limbo  
+#### 91porn.com
+#### DOMAIN-SUFFIX,killcovid2021.com,reject
+#### Guard Advertising.list 神机规则
+#### cn1.91short.com
+#### disqus  
+#### javday.tv
+#### www.ntdm9.com
+#### www.tz659.com  
+#### xiaobaotv.net
+#### 毒奶去广告计划
+##### 4hu.tv
+##### Jable.tv av吃到饱  
+##### avgle.me  
+##### dilili.tv  
+##### hitomi.la
+##### https://91mjw.com/  
+##### https://avple.tv/  
+##### https://gimy.tv/ 剧迷tv  
+##### https://hanime1.me/
+##### https://hpjav.tv/ JAVFAN #NSFW  
+##### https://javgg.net/  
+##### https://javmost.xyz/  
+##### https://m.biquge.com.cn/  
+##### https://m.diyibanzhu.me/ 第一版主小说网
+##### https://supjav.com/
+##### https://www.lyxsjmm.com/
+##### https://www.novel543.com/ 小说网
+##### https://www.tvc.cc/  
+##### https://www.tvn.cc/ 韩剧TV  
+##### https://www.zhenbuka.com/  
+##### https://www5.javmost.com/  
+##### m.po18vip.com 
+##### m.yhdm.io  
+##### missav.com  
+##### netflav.com Netflav  
+##### nfmovies.com 奈菲影视  
+##### njav.tv
+##### pornhub.com  
+##### streamtape.com
+##### ww7.pornhoarder.tv
+##### www.cocomanhua.com  
+##### www.dmmiku.com
+##### www.hltv.org
+##### www.hptoon.com  
+##### www.porntrex.com/  
+###### m.pianku.me/ 手机片库网  
+#DOMAIN,delivery-node-aziz.voe-network.net,reject
+#DOMAIN,inspiringaccurate.com,reject
+#DOMAIN,track.aso1.net,reject
+#DOMAIN-KEYWORD,mmiyue,reject
+#DOMAIN-KEYWORD,vidoza,reject
+#DOMAIN-KEYWORD,wixsite.com,reject
+#DOMAIN-SUFFIX,107iwh.cn:4032,reject
+#DOMAIN-SUFFIX,ads.bullionyield.com,reject
+#DOMAIN-SUFFIX,byteimg.com,reject
+#DOMAIN-SUFFIX,cc58.oss-cn-beijing.aliyuncs.com,reject
+#DOMAIN-SUFFIX,cloudfront.net,reject
+#DOMAIN-SUFFIX,dood.la,reject
+#DOMAIN-SUFFIX,jsdelivr.net,reject
+#DOMAIN-SUFFIX,oss-accelerate.aliyuncs.com,reject
+#DOMAIN-SUFFIX,qinhemuye.com:443,reject
+#DOMAIN-SUFFIX,streamtape.com,reject
+#DOMAIN-SUFFIX,wixstatic.com,reject
+#DOMAIN-SUFFIX,yabo729.com,reject

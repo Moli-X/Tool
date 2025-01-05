@@ -1,5 +1,5 @@
 # 规则名称: Reject
-# 规则统计: 6697
+# 规则统计: 6806
 
 DOMAIN,118.89.204.198
 DOMAIN,a.wkanx.com
@@ -145,7 +145,7 @@ DOMAIN,appnext.hs.llnwd.net
 DOMAIN,apppv.zol.com.cn
 DOMAIN,asimgs.pplive.cn
 DOMAIN,atrace.chelaile.net.cn
-DOMAIN,browsercfg-drcn.cloud.dbankcloud.cn
+DOMAIN,browsercfg-drcn.cloud.dbankcloud.cn // 甚至想 DOMAIN-KEYWORD,drcn.cloud.dbankcloud.cn
 DOMAIN,business-cdn.shouji.sogou.com
 DOMAIN,c.bing.com
 DOMAIN,c.clarity.ms
@@ -6698,3 +6698,112 @@ IP-CIDR,23.231.151.252/32,no-resolve
 IP-CIDR,60.190.139.164/32,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 USER-AGENT,AVOS*
+
+# (0~9)
+# (A)
+# (B)
+# (C)
+# (G)
+# (H)
+# (J)
+# (K)
+# (L)
+# (M)
+# (N)
+# (P)
+# (Q)
+# (S)
+# (T)
+# (V)
+# (X)
+# (Y)
+# (Z)
+# --- (Alibaba) ---
+# --- (Baidu) ---
+# --- (Tencent) ---
+# ------
+# > 360
+# > 51.LA
+# > 51wnl
+# > 58
+# > AMap
+# > Adobe Flash China Special Edition
+# > Antiy
+# > Apple
+# > Autohome
+# > Baidu
+# > BitAuto
+# > Braze
+# > ByteDance
+# > C&J Marketing
+# > CCTVVideo
+# > CNTV
+# > Camera360
+# > Chelaile
+# > ChinaTelecom
+# > Daum
+# > General
+# > Google
+# > GozenData
+# > GrowingIO
+# > Huawei
+# > HunanTV
+# > Hupu
+# > Kingsoft
+# > KuaiZip
+# > Kuaishou
+# > LinkWiFi
+# > MI
+# > MacKeeper
+# > Microsoft
+# > MiguVideo
+# > MojiWeather
+# > NetEase
+# > OPPO
+# > PConline
+# > PPTV
+# > PeanutWiFi
+# > Phoenix New Media
+# > Photoable
+# > QingTing
+# > SOHU
+# > Sina
+# > Skyworth
+# > Snapchat
+# > TalkingData
+# > Tencent
+# > Tencent Music (TME)
+# > Tenjin
+# > The Paper
+# > Thunder
+# > TongHuaShun
+# > VariFlight
+# > Viber
+# > Xiaohongshu
+# > Ximalaya
+# > YOUKU
+# > Yahoo
+# > ZOL
+# > Zhihu
+# > ZiTian
+# > baicizhan
+# > funnull
+# > happycast
+# > iQIYI
+# > jxedt
+# > vivo
+# Advertising
+# DOMAIN,api.miwifi.com // 影响 Mi Wi-Fi(id859962702)，但建议注意 https://www.v2ex.com/t/746094
+# DOMAIN,wxsnsdy.wxs.qq.com
+# DOMAIN,wxsnsdythumb.wxs.qq.com
+# Privacy
+# https://www.lizhi.io/blog/40002904
+# https://www.v2ex.com/t/772523
+# https://www.zhihu.com/question/281163698/answer/441388130
+# https://www.zhihu.com/question/46746200
+# https://zhuanlan.zhihu.com/p/39534279
+# 内容：EasyListChina列表，只包含ABP中的 EasyListChina 内容
+# 广告列表 adblock rules
+# 数量：5554条
+# 更新：2024-12-14 11:14:42
+# 来源：https://easylist-downloads.adblockplus.org/easylistchina.txt

@@ -1,5 +1,5 @@
 # 规则名称: Notion
-# 规则统计: 6
+# 规则统计: 13
 
 HOST,http-inputs-notion.splunkcloud.com,Notion
 HOST-SUFFIX,notion-static.com,Notion
@@ -7,3 +7,10 @@ HOST-SUFFIX,notion.com,Notion
 HOST-SUFFIX,notion.new,Notion
 HOST-SUFFIX,notion.site,Notion
 HOST-SUFFIX,notion.so,Notion
+# AUTHOR: blackmatrix7
+# DOMAIN-SUFFIX: 5
+# DOMAIN: 1
+# NAME: Notion
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# TOTAL: 6
+# UPDATED: 2024-07-03 16:16:54

@@ -1,5 +1,5 @@
 # 规则名称: Apple
-# 规则统计: 67
+# 规则统计: 69
 
 DOMAIN,apple.comscoreresearch.com
 DOMAIN-SUFFIX,aaplimg.com
@@ -68,3 +68,5 @@ USER-AGENT,com.apple.tv*
 USER-AGENT,fmflocatord*
 USER-AGENT,geod*
 USER-AGENT,locationd*
+
+# This ruleset includes 99% of apple inc network connections(global). If there are any missing, please PR.

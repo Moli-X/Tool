@@ -1,5 +1,5 @@
 # 规则名称: OneDrive
-# 规则统计: 18
+# 规则统计: 20
 
 DOMAIN-SUFFIX,livefilestore.com
 DOMAIN-SUFFIX,oneclient.sfx.ms
@@ -19,3 +19,5 @@ PROCESS-NAME,OneDrive
 PROCESS-NAME,OneDriveUpdater
 USER-AGENT,OneDrive*
 USER-AGENT,OneDriveiOSApp*
+# 内容：OneDrive
+# 数量：18条

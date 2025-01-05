@@ -1,18 +1,20 @@
-# 规则名称: DouYin
-# 规则统计: 13
-
-domain_set:
-  - lf3-static.bytednsdoc.com
-  - v5-dy-o-abtest.zjcdn.com
-domain_suffix_set:
-  - amemv.com
-  - douyincdn.com
-  - douyinpic.com
-  - douyinstatic.com
-  - douyinvod.com
-  - idouyinvod.com
-  - ixigua.com
-  - ixiguavideo.com
-  - pstatp.com
-  - snssdk.com
-  - toutiao.com
+DOMAIN,lf3-static.bytednsdoc.com
+DOMAIN,v5-dy-o-abtest.zjcdn.com
+DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,douyinpic.com
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,douyinvod.com
+DOMAIN-SUFFIX,idouyinvod.com
+DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,ixiguavideo.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,toutiao.com
+# AUTHOR: blackmatrix7
+# DOMAIN-SUFFIX: 11
+# DOMAIN: 2
+# NAME: DouYin
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# TOTAL: 13
+# UPDATED: 2024-07-03 16:17:40

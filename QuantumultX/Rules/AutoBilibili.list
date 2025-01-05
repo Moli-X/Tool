@@ -1,5 +1,5 @@
 # 规则名称: AutoBilibili
-# 规则统计: 12
+# 规则统计: 13
 
 HOST,api.biliapi.com,AutoBilibili
 HOST,api.biliapi.net,AutoBilibili
@@ -13,3 +13,4 @@ HOST,upos-hz-mirrorakam.akamaized.net,AutoBilibili
 HOST,www.bilibili.com,AutoBilibili
 HOST-KEYWORD,cn-hk-eq-bcache-,AutoBilibili
 IP-CIDR,121.11.192.0/24,AutoBilibili
+# 该规则集用于配合bilibili自动地区脚本使用。

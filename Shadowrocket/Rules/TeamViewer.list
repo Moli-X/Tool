@@ -1,5 +1,5 @@
 # 规则名称: TeamViewer
-# 规则统计: 8
+# 规则统计: 16
 
 DOMAIN-SUFFIX,teamviewer.com
 IP-CIDR,139.220.243.27/32,no-resolve
@@ -9,3 +9,11 @@ IP-CIDR6,2a0b:b580::/48,no-resolve
 IP-CIDR6,2a0b:b581::/48,no-resolve
 IP-CIDR6,2a0b:b582::/48,no-resolve
 IP-CIDR6,2a0b:b583::/48,no-resolve
+# AUTHOR: blackmatrix7
+# DOMAIN-SUFFIX: 1
+# IP-CIDR6: 4
+# IP-CIDR: 3
+# NAME: TeamViewer
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# TOTAL: 8
+# UPDATED: 2024-07-03 16:16:12

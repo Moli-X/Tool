@@ -1,5 +1,5 @@
 # 规则名称: Lan
-# 规则统计: 35
+# 规则统计: 40
 
 HOST,instant.arubanetworks.com,Lan
 HOST,router.asus.com,Lan
@@ -36,3 +36,8 @@ IP6-CIDR,::1/128,Lan
 IP6-CIDR,fc00::/7,Lan
 IP6-CIDR,fd00::/8,Lan
 IP6-CIDR,fe80::/10,Lan
+
+# ACL4SSR标志 如没有，代表不是用ACL4SSR规则
+# Router managed 路由器管理域名
+# 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
+# 本地/局域网地址

@@ -1,5 +1,5 @@
 # 规则名称: OpenAI
-# 规则统计: 36
+# 规则统计: 46
 
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,chat.openai.com.cdn.cloudflare.net
@@ -37,3 +37,13 @@ DOMAIN-KEYWORD,openai
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 IP-ASN,20473,no-resolve
+# AUTHOR: blackmatrix7
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 24
+# DOMAIN: 8
+# IP-ASN: 1
+# IP-CIDR: 2
+# NAME: OpenAI
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# TOTAL: 36
+# UPDATED: 2024-07-03 16:18:28

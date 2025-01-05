@@ -1,10 +1,11 @@
 # 规则名称: AI
-# 规则统计: 34
+# 规则统计: 45
 
 HOST,ai.google.dev,AI
 HOST,alkalicore-pa.clients6.google.com,AI
 HOST,api.github.com,AI
 HOST,gateway.ai.cloudflare.com,AI
+HOST,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe,AI
 HOST-SUFFIX,ai.com,AI
 HOST-SUFFIX,aistudio.google.com,AI
 HOST-SUFFIX,anthropic.com,AI
@@ -35,3 +36,13 @@ HOST-SUFFIX,sora.com,AI
 HOST-SUFFIX,x.ai,AI
 HOST-KEYWORD,alkalimakersuite-pa.clients6.google.com,AI
 HOST-KEYWORD,openai,AI
+#
+# GitHub: https://github.com/SukkaW/Surge
+# Homepage: https://ruleset.skk.moe
+# Last Updated: 2024-12-14T11:39:57.287Z
+# License: AGPL 3.0
+# Size: 35
+# Sukka's Ruleset - AIGC Domains
+# This file contains domains of OpenAI, Claude.
+################## EOF ##################
+#########################################

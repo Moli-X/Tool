@@ -1,5 +1,5 @@
 # 规则名称: Ads_Dlerio
-# 规则统计: 8280
+# 规则统计: 8302
 
 DOMAIN,118.89.204.198
 DOMAIN,ad.bn.netease.com
@@ -8281,3 +8281,25 @@ URL-REGEX,https?:\/\/sax\w?\.sina\.com\.cn
 URL-REGEX,https?:\/\/server-\w+\.imrworldwide\.com
 URL-REGEX,https?:\/\/www\.bldimg\.com\/(background|splash)\/\.+\.png
 USER-AGENT,AVOS*
+
+# > Baidu
+# > Bilibili
+# > China Mobile
+# > China Net
+# > China Unicom
+# > Didi
+# > Dr.Peng
+# > Letv
+# > MGTV
+# > Netease
+# > Other
+# > PPTV
+# > Site
+# > Sohu
+# > Vod
+# > Youku & Tudou
+# > Youtube
+# > Zhihu
+# > ele
+# > iqiyi & pps
+# Ads in Video apps

@@ -1,5 +1,5 @@
 # 规则名称: Google
-# 规则统计: 24
+# 规则统计: 26
 
 DOMAIN-SUFFIX,1e100.net
 DOMAIN-SUFFIX,2mdn.net
@@ -25,3 +25,5 @@ DOMAIN-KEYWORD,gmail
 DOMAIN-KEYWORD,google
 IP-CIDR,173.194.0.0/16,no-resolve
 IP-CIDR,74.125.0.0/16,no-resolve
+# 内容：Google
+# 数量：24条
