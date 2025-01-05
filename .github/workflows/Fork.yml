@@ -681,7 +681,7 @@ jobs:
 
 
 ###### Egern       
-    - name: Egern
+    - name: Egern规则
       run: |
         for file in Tool-repo/Egern/Rules/*.yaml; do
           if [ -f "$file" ]; then
@@ -718,6 +718,7 @@ jobs:
             echo "$file not found."
           fi
         done
+
 
 ###### GeoIP
 
