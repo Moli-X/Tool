@@ -680,10 +680,8 @@ jobs:
 
 
 
-
 ###### Egern       
-
-    - name: Egern规则
+    - name: Egern
       run: |
         for file in Tool-repo/Egern/Rules/*.yaml; do
           if [ -f "$file" ]; then
@@ -721,7 +719,6 @@ jobs:
           fi
         done
 
-        
 ###### GeoIP
 
     - name: 复刻GeoIP规则
