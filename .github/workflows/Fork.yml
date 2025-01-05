@@ -27,38 +27,6 @@ jobs:
         path: Tool-repo
         token: ${{ secrets.GITHUB_TOKEN }}  
 
-###### 控制开关
-
-    # 环境判断
-    - name: 设置环境变量
-      id: set-env
-      run: |
-
-        # 调试模式是否开启
-        Debug=false  
-        echo "Debug状态为：$Debug"
-
-        if [ "$Debug" = true ]; then
-          # 如果 Debug 模式开启，所有开关关闭
-          echo "LOON_SWITCH=false" >> $GITHUB_ENV
-          echo "CLASH_SWITCH=false" >> $GITHUB_ENV
-          echo "QUANTUMULTX_SWITCH=false" >> $GITHUB_ENV
-          echo "SURGE_SWITCH=false" >> $GITHUB_ENV
-          echo "EGERN_SWITCH=false" >> $GITHUB_ENV
-          echo "SHADOWROCKET_SWITCH=false" >> $GITHUB_ENV
-          echo "STASH_SWITCH=false" >> $GITHUB_ENV
-          echo "Debug 模式开启，所有开关关闭"
-        else
-          # 正常模式，设置相应的开关
-          echo "LOON_SWITCH=true" >> $GITHUB_ENV
-          echo "CLASH_SWITCH=true" >> $GITHUB_ENV
-          echo "QUANTUMULTX_SWITCH=true" >> $GITHUB_ENV
-          echo "SURGE_SWITCH=true" >> $GITHUB_ENV
-          echo "EGERN_SWITCH=true" >> $GITHUB_ENV
-          echo "SHADOWROCKET_SWITCH=true" >> $GITHUB_ENV
-          echo "STASH_SWITCH=true" >> $GITHUB_ENV
-          echo "Debug 模式关闭，所有正常运行"
-        fi
 
     
 ###### Fork
@@ -681,43 +649,60 @@ jobs:
 
 
 ###### Egern       
-    - name: Egern规则
-      run: |
-        for file in Tool-repo/Egern/Rules/*.yaml; do
-          if [ -f "$file" ]; then
-            sed -i -e '/^USER-AGENT/d' "$file"
-            sed -i -e '/^PROCESS-NAME/d' "$file"
-            sed -i -e '/^DEST-PORT/d' "$file"
-            awk '/^DOMAIN,/ && !added {print "domain_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            awk '/^DOMAIN-SUFFIX,/ && !added {print "domain_suffix_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            awk '/^DOMAIN-KEYWORD,/ && !added {print "domain_keyword_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            awk '/^IP-CIDR,/ && !added {print "ip_cidr_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            awk '/^IP-CIDR6,/ && !added {print "ip_cidr6_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            awk '/^IP-ASN,/ && !added {print "asn_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            awk '/^URL-REGEX,/ && !added {print "url_regex_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            awk '/^GEOIP,/ && !added {print "geoip_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
-          else
-            echo "$file not found."
-          fi
-        done
+    # - name: Egern规则
+      # run: |
+        # # 遍历Tool-repo/Egern/Rules目录下的所有.yaml文件
+        # for file in Tool-repo/Egern/Rules/*.yaml; do
+          # # 如果文件存在
+          # if [ -f "$file" ]; then
+            # # 删除文件中的USER-AGENT、PROCESS-NAME、DEST-PORT行
+            # sed -i -e '/^USER-AGENT/d' "$file"
+            # sed -i -e '/^PROCESS-NAME/d' "$file"
+            # sed -i -e '/^DEST-PORT/d' "$file"
+            # # 将DOMAIN, DOMAIN-SUFFIX, DOMAIN-KEYWORD, IP-CIDR, IP-CIDR6, IP-ASN, URL-REGEX, GEOIP行前添加domain_set:, domain_suffix_set:, domain_keyword_set:, ip_cidr_set:, ip_cidr6_set:, asn_set:, url_regex_set:, geoip_set:
+            # awk '/^DOMAIN,/ && !added {print "domain_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            # awk '/^DOMAIN-SUFFIX,/ && !added {print "domain_suffix_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            # awk '/^DOMAIN-KEYWORD,/ && !added {print "domain_keyword_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            # awk '/^IP-CIDR,/ && !added {print "ip_cidr_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            # awk '/^IP-CIDR6,/ && !added {print "ip_cidr6_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            # awk '/^IP-ASN,/ && !added {print "asn_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            # awk '/^URL-REGEX,/ && !added {print "url_regex_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            # awk '/^GEOIP,/ && !added {print "geoip_set:"; added=1} {print}' "$file" > tmpfile && mv tmpfile "$file"
+          # else
+            # # 如果文件不存在，输出提示信息
+            # echo "$file not found."
+          # fi
+        # done
 
-        for file in Tool-repo/Egern/Rules/*.yaml; do
-          if [ -f "$file" ]; then
-            if grep -qE '^IP-(ASN|CIDR|CIDR6).*no-resolve$' "$file"; then
-            sed -i '1i\no_resolve: true' "$file"
-            fi
-            sed -i -E 's/^(URL-REGEX,)([^,]+)$/\1"\2"/' "$file"
-            sed -i -E 's/^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|IP-CIDR|IP-CIDR6|IP-ASN|URL-REGEX|GEOIP),/  - /g' "$file"
-            sed -i 's/,no-resolve//g' "$file"
-            file_names=$(basename "$file" .yaml)
-            line_count=$(grep -c '^  - ' "$file")
-            awk -v fname="$file_names" 'NR==1 {print "# 规则名称: " fname} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            awk -v count="$line_count" 'NR==2 {print "# 规则统计: " count} {print}' "$file" > tmpfile && mv tmpfile "$file"
-            sed -i '2a\\' "$file"
-          else
-            echo "$file not found."
-          fi
-        done
+        # # 遍历Tool-repo/Egern/Rules目录下的所有.yaml文件
+        # for file in Tool-repo/Egern/Rules/*.yaml; do
+          # # 如果文件存在
+          # if [ -f "$file" ]; then
+            # # 如果文件中存在IP-ASN、IP-CIDR、IP-CIDR6行，在文件开头添加o_resolve: true
+            # if grep -qE '^IP-(ASN|CIDR|CIDR6).*no-resolve$' "$file"; then
+            # sed -i '1i\no_resolve: true' "$file"
+            # fi
+            # # 将URL-REGEX行中的第二个逗号后的内容加上双引号
+            # sed -i -E 's/^(URL-REGEX,)([^,]+)$/\1"\2"/' "$file"
+            # # 将DOMAIN、DOMAIN-SUFFIX、DOMAIN-KEYWORD、IP-CIDR、IP-CIDR6、IP-ASN、URL-REGEX、GEOIP行前添加  -
+            # sed -i -E 's/^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|IP-CIDR|IP-CIDR6|IP-ASN|URL-REGEX|GEOIP),/  - /g' "$file"
+            # # 删除文件中的no-resolve
+            # sed -i 's/,no-resolve//g' "$file"
+            # # 获取文件名
+            # file_names=$(basename "$file" .yaml)
+            # # 获取文件中的行数
+            # line_count=$(grep -c '^  - ' "$file")
+            # # 在文件开头添加规则名称
+            # awk -v fname="$file_names" 'NR==1 {print "# 规则名称: " fname} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            # # 在文件开头添加规则统计
+            # awk -v count="$line_count" 'NR==2 {print "# 规则统计: " count} {print}' "$file" > tmpfile && mv tmpfile "$file"
+            # # 在文件开头添加空行
+            # sed -i '2a\\' "$file"
+          # else
+            # # 如果文件不存在，输出提示信息
+            # echo "$file not found."
+          # fi
+        # done
 
 
 ###### GeoIP
