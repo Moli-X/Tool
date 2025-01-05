@@ -64,7 +64,6 @@ jobs:
 ###### Fork
 
     - name: 复刻原始文件
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/.github/Record
         curl -L -o Tool-repo/.github/Record/Build.yml "https://github.com/Repcz/Tool/raw/X/.github/workflows/Build.yml"
@@ -278,7 +277,6 @@ jobs:
 
 ###### Loon
     - name: Loon
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         for file in Tool-repo/Loon/Rules/*.list; do
           if [ -f "$file" ]; then
@@ -295,7 +293,6 @@ jobs:
 
 
     - name: 批量复刻LOON模块
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件         # mkdir -p Tool/Loon/Plugin/Kelee
       run: |
         mkdir -p Tool-repo/Loon/Plugin/Kelee
 
@@ -485,7 +482,6 @@ jobs:
 
 
     - name: 提取链接
-      if: env.LOON_SWITCH == 'true'
       run: |
         # 确保目标目录存在
         mkdir -p Script
@@ -513,7 +509,6 @@ jobs:
         done
 
     - name: 编辑LOON模块
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool-repo/Loon/Plugin/Kelee
         cd Tool-repo/Loon/Plugin/Kelee  # 进入 Plugin 目录
@@ -543,7 +538,6 @@ jobs:
         done
 
     - name: 单独复刻loon配置
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/Loon
         curl -L -o Tool-repo/Loon/Loon.conf "https://github.com/Moli-X/Resources/raw/main/Loon/Loon.conf"
@@ -552,7 +546,6 @@ jobs:
 ###### Clash
 
     - name: Clash规则
-      if: env.CLASH_SWITCH == 'true'  # 添加开关条件
       run: |
         rm -rf Tool-repo/Ruleset
         for file in Tool-repo/Clash/Rules/*.list; do
@@ -570,7 +563,6 @@ jobs:
         done
 
     - name: 复刻Meta覆写
-      if: env.CLASH_SWITCH == 'true'  # 根据环境变量控制是否执行
       run: |
         mkdir -p Tool-repo/Clash/Meta
 
@@ -581,7 +573,6 @@ jobs:
 ###### QuantumultX
 
     - name: QuantumultX规则
-      if: env.QUANTUMULTX_SWITCH == 'true'  # 添加开关条件
       run: |
         for file in Tool-repo/QuantumultX/Rules/*.list; do
           if [ -f "$file" ]; then
@@ -616,7 +607,6 @@ jobs:
 
 
     - name: 单独复刻QX配置
-      if: env.QUANTUMULTX_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/QuantumultX
         curl -L -o Tool-repo/QuantumultX/QuantumultX.conf "https://github.com/GodMoli/QuanX/raw/main/File/Auto.conf"
@@ -624,7 +614,6 @@ jobs:
 ###### Surge
 
     - name: Surge规则
-      if: env.SURGE_SWITCH == 'true'  # 添加开关条件
       run: |
         for file in Tool-repo/Surge/Rules/*.list; do
           if [ -f "$file" ]; then
@@ -639,7 +628,6 @@ jobs:
         done
 
     - name: 单独复刻Surge配置
-      if: env.SURGE_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/Surge
         curl -L -o Tool-repo/Surge/SurgePRO.conf "https://github.com/Moli-X/Resources/raw/main/Surge/SurgePRO.conf"
@@ -647,7 +635,6 @@ jobs:
 ###### Shadowrocket
 
     - name: Shadowrocket规则
-      if: env.SHADOWROCKET_SWITCH == 'true'  # 添加开关条件
       run: |
         for file in Tool-repo/Shadowrocket/Rules/*.list; do
           if [ -f "$file" ]; then
@@ -663,7 +650,6 @@ jobs:
         done
 
     - name: 单独复刻Shadowrocket配置
-      if: env.SHADOWROCKET_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/Shadowrocket
         curl -L -o Tool-repo/Shadowrocket/Shadowrocket.conf "https://raw.githubusercontent.com/Moli-X/Shadowrocket/Master/Rewite/Shadowrocket.conf"
@@ -673,7 +659,6 @@ jobs:
 ###### Stash
 
     - name: Stash规则
-      if: env.STASH_SWITCH == 'true'  # 添加开关条件
       run: |
         for file in Tool-repo/Stash/Rules/*.list; do
           if [ -f "$file" ]; then
@@ -699,7 +684,6 @@ jobs:
 ###### Egern       
 
     - name: Egern规则
-      if: env.EGERN_SWITCH == 'true'  # 添加开关条件
       run: |
         for file in Tool-repo/Egern/Rules/*.yaml; do
           if [ -f "$file" ]; then
@@ -740,7 +724,6 @@ jobs:
 ###### GeoIP
 
     - name: 复刻GeoIP规则
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
         mkdir -p Tool/GeoIP
         curl -L -o Tool-repo/GeoIP/CN_Country.mmdb "https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb"
@@ -755,7 +738,6 @@ jobs:
 
 ###### 可莉README
     - name: 提取并添加表格内容
-      if: env.LOON_SWITCH == 'true'  # 添加开关条件
       run: |
 
         # 创建或清空目标 README 文件
