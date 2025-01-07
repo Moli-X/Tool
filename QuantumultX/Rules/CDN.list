@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 2957
+# 规则统计: 2969
 
 HOST,cdn-msp.18comic.vip,CDN
 HOST,cdn-msp.jmcomic-zzz.one,CDN
@@ -52,9 +52,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-02T13:01:56.768Z
-# Last Updated: 2025-01-06T15:14:58.416Z
+# Last Updated: 2025-01-07T10:40:24.283Z
 # License: AGPL 3.0
-# Size: 2898
+# Size: 2910
 # Size: 46
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1044,6 +1044,7 @@ assets.dnsfilter.com,CDN
 assets.documentcloud.org,CDN
 assets.dwncdn.net,CDN
 assets.ecomm.ui.com,CDN
+assets.embeddables.com,CDN
 assets.euractiv.com,CDN
 assets.exercism.org,CDN
 assets.extension.grammarly.com,CDN
@@ -1361,7 +1362,9 @@ cdn.jetboost.io,CDN
 cdn.jetphotos.com,CDN
 cdn.jitbit.com,CDN
 cdn.joincommunity.xyz,CDN
+cdn.joinhoney.com,CDN
 cdn.jolipage.co,CDN
+cdn.jotfor.ms,CDN
 cdn.judge.me,CDN
 cdn.jwplayer.com,CDN
 cdn.kinopio.club,CDN
@@ -1924,6 +1927,7 @@ images.spr.so,CDN
 images.store.crowdstrike.com,CDN
 images.svc.ui.com,CDN
 images.tokopedia.net,CDN
+images.typeform.com,CDN
 images.unsplash.com,CDN
 images.web3.storage,CDN
 images.weserv.nl,CDN
@@ -2033,6 +2037,7 @@ imgs.xkcd.com,CDN
 imgs3.hcaptcha.com,CDN
 imgsrv.crunchyroll.com,CDN
 imgssl.constantcontact.com,CDN
+import-cdn.default.com,CDN
 ims.windy.com,CDN
 info.cloudflare.com,CDN
 info.knak.com,CDN
@@ -2127,6 +2132,7 @@ media-cdn.atlassian.com,CDN
 media-cdn.comfy.social,CDN
 media-cdn.epicgames.com,CDN
 media-cldnry.s-nbcnews.com,CDN
+media-cms.onesignal.com,CDN
 media-s3-eu-west-1.ceros.com,CDN
 media-s3-us-east-1.ceros.com,CDN
 media-s3-us-west-1.ceros.com,CDN
@@ -2153,6 +2159,7 @@ media.graphassets.com,CDN
 media.hachyderm.io,CDN
 media.infosec.exchange,CDN
 media.istockphoto.com,CDN
+media.kit.com,CDN
 media.licdn.com,CDN
 media.loom-app.com,CDN
 media.mas.to,CDN
@@ -2209,6 +2216,7 @@ namedotcom-cdn.name.tools,CDN
 navismithapis-cdn.com,CDN
 nbcnewsdigital-static.nbcuni.com,CDN
 net-fe-static-assets.network-controller.svc.ui.com,CDN
+netlify.apollo.io,CDN
 newassets.hcaptcha.com,CDN
 newsletter.postmarkapp.com,CDN
 next-images.opencollective.com,CDN
@@ -2443,6 +2451,7 @@ s3.go2778.com,CDN
 s3.m.0x.mk,CDN
 s3.masto.ai,CDN
 s3.picacomic.com,CDN
+s3.producthunt.com,CDN
 s3.stackabuse.com,CDN
 s3.toot.io,CDN
 s3.us-west-000.backblazeb2.com,CDN
@@ -2466,6 +2475,7 @@ screenshots.webflow.com,CDN
 scripts.dailymail.co.uk,CDN
 scripts.webeo.com,CDN
 sdata.ndtv.com,CDN
+sdk.customfit.ai,CDN
 sdk.listenlive.co,CDN
 sdk.qikify.com,CDN
 sdk.snapkit.com,CDN
@@ -2572,6 +2582,7 @@ static-redesign.cnbcfm.com,CDN
 static-resource.np.community.playstation.net,CDN
 static-secure-uploads.ui.com,CDN
 static-sg-cdn.eporner.com,CDN
+static-staging.scroll.com,CDN
 static-sv.fc2.com,CDN
 static-web-prod.skillshare.com,CDN
 static-web.grammarly.com,CDN
@@ -2924,6 +2935,7 @@ webassets.linear.app,CDN
 webfonts.zoho.com,CDN
 webp.frostming.com,CDN
 website-cdn.ipinfo.io,CDN
+webstatic.chargebee.com,CDN
 widget.freshworks.com,CDN
 widget.intercom.io,CDN
 widget.kapa.ai,CDN

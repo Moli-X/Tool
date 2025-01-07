@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 2955
+# 规则统计: 2967
 
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic-zzz.one
@@ -50,9 +50,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-02T13:01:56.768Z
-# Last Updated: 2025-01-06T15:14:58.416Z
+# Last Updated: 2025-01-07T10:40:24.283Z
 # License: AGPL 3.0
-# Size: 2898
+# Size: 2910
 # Size: 46
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1042,6 +1042,7 @@ assets.dnsfilter.com
 assets.documentcloud.org
 assets.dwncdn.net
 assets.ecomm.ui.com
+assets.embeddables.com
 assets.euractiv.com
 assets.exercism.org
 assets.extension.grammarly.com
@@ -1359,7 +1360,9 @@ cdn.jetboost.io
 cdn.jetphotos.com
 cdn.jitbit.com
 cdn.joincommunity.xyz
+cdn.joinhoney.com
 cdn.jolipage.co
+cdn.jotfor.ms
 cdn.judge.me
 cdn.jwplayer.com
 cdn.kinopio.club
@@ -1922,6 +1925,7 @@ images.spr.so
 images.store.crowdstrike.com
 images.svc.ui.com
 images.tokopedia.net
+images.typeform.com
 images.unsplash.com
 images.web3.storage
 images.weserv.nl
@@ -2031,6 +2035,7 @@ imgs.xkcd.com
 imgs3.hcaptcha.com
 imgsrv.crunchyroll.com
 imgssl.constantcontact.com
+import-cdn.default.com
 ims.windy.com
 info.cloudflare.com
 info.knak.com
@@ -2125,6 +2130,7 @@ media-cdn.atlassian.com
 media-cdn.comfy.social
 media-cdn.epicgames.com
 media-cldnry.s-nbcnews.com
+media-cms.onesignal.com
 media-s3-eu-west-1.ceros.com
 media-s3-us-east-1.ceros.com
 media-s3-us-west-1.ceros.com
@@ -2151,6 +2157,7 @@ media.graphassets.com
 media.hachyderm.io
 media.infosec.exchange
 media.istockphoto.com
+media.kit.com
 media.licdn.com
 media.loom-app.com
 media.mas.to
@@ -2207,6 +2214,7 @@ namedotcom-cdn.name.tools
 navismithapis-cdn.com
 nbcnewsdigital-static.nbcuni.com
 net-fe-static-assets.network-controller.svc.ui.com
+netlify.apollo.io
 newassets.hcaptcha.com
 newsletter.postmarkapp.com
 next-images.opencollective.com
@@ -2441,6 +2449,7 @@ s3.go2778.com
 s3.m.0x.mk
 s3.masto.ai
 s3.picacomic.com
+s3.producthunt.com
 s3.stackabuse.com
 s3.toot.io
 s3.us-west-000.backblazeb2.com
@@ -2464,6 +2473,7 @@ screenshots.webflow.com
 scripts.dailymail.co.uk
 scripts.webeo.com
 sdata.ndtv.com
+sdk.customfit.ai
 sdk.listenlive.co
 sdk.qikify.com
 sdk.snapkit.com
@@ -2570,6 +2580,7 @@ static-redesign.cnbcfm.com
 static-resource.np.community.playstation.net
 static-secure-uploads.ui.com
 static-sg-cdn.eporner.com
+static-staging.scroll.com
 static-sv.fc2.com
 static-web-prod.skillshare.com
 static-web.grammarly.com
@@ -2922,6 +2933,7 @@ webassets.linear.app
 webfonts.zoho.com
 webp.frostming.com
 website-cdn.ipinfo.io
+webstatic.chargebee.com
 widget.freshworks.com
 widget.intercom.io
 widget.kapa.ai
