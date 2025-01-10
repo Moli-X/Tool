@@ -1,5 +1,5 @@
 # 规则名称: Ads_SukkaW
-# 规则统计: 112460
+# 规则统计: 112465
 
 HOST,aedns.weixin.qq.com,Ads_SukkaW
 HOST,api-js.mixpanel.com,Ads_SukkaW
@@ -194,9 +194,9 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-09T02:36:43.826Z
-# Last Updated: 2025-01-09T12:39:33.551Z
+# Last Updated: 2025-01-09T16:58:10.482Z
 # License: AGPL 3.0
-# Size: 112257
+# Size: 112262
 # Size: 171
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Domains
@@ -20842,6 +20842,9 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .clientlog.midomi.com,Ads_SukkaW
 .clientlog.music.163.com,Ads_SukkaW
 .clientlog.portal.office.com,Ads_SukkaW
+.clientlog3.music.163.com,Ads_SukkaW
+.clientlogdep.music.163.com,Ads_SukkaW
+.clientlogsf.music.163.com,Ads_SukkaW
 .clientmetrics-augmentum.kik.com,Ads_SukkaW
 .clientmetrics.kik.com,Ads_SukkaW
 .clientoutcry.com,Ads_SukkaW
@@ -64258,6 +64261,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .net1.netski.com,Ads_SukkaW
 .net4ever.graciaflamenca.es,Ads_SukkaW
 .netagent.cz,Ads_SukkaW
+.netapm.music.163.com,Ads_SukkaW
 .netapplications.com,Ads_SukkaW
 .netavenir.com,Ads_SukkaW
 .netbina.com,Ads_SukkaW
@@ -104972,6 +104976,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .volcanoexhibitmeaning.com,Ads_SukkaW
 .volcanostricken.com,Ads_SukkaW
 .volceapplog.com,Ads_SukkaW
+.volces.com,Ads_SukkaW
 .voldarinis.com,Ads_SukkaW
 .vole.contemporaryartlibrary.org,Ads_SukkaW
 .vole.nettskaperne.no,Ads_SukkaW
@@ -110056,6 +110061,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .ydwrkwwqytj.xyz,Ads_SukkaW
 .ydybwjpa.xyz,Ads_SukkaW
 .ydzlen.mebloo.pl,Ads_SukkaW
+.ye.dun.163yun.com,Ads_SukkaW
 .ye185hcamw.com,Ads_SukkaW
 .yeabble.com,Ads_SukkaW
 .yeah1publishing.com,Ads_SukkaW
@@ -111888,7 +111894,6 @@ click.hunantv.com,Ads_SukkaW
 click.mz.simba.taobao.com,Ads_SukkaW
 click.qianqian.com,Ads_SukkaW
 click.uve.mobile.sina.cn,Ads_SukkaW
-clientlog3.music.163.com,Ads_SukkaW
 clkservice.mail.youdao.com,Ads_SukkaW
 clkservice2.dict.youdao.com,Ads_SukkaW
 cm.bilibili.com,Ads_SukkaW

@@ -1,5 +1,5 @@
 # 规则名称: Ads_SukkaW
-# 规则统计: 112460
+# 规则统计: 112465
 
 DOMAIN,aedns.weixin.qq.com
 DOMAIN,api-js.mixpanel.com
@@ -194,9 +194,9 @@ URL-REGEX,/\d+/sign_d
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-09T02:36:43.826Z
-# Last Updated: 2025-01-09T12:39:33.551Z
+# Last Updated: 2025-01-09T16:58:10.482Z
 # License: AGPL 3.0
-# Size: 112257
+# Size: 112262
 # Size: 171
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Domains
@@ -20842,6 +20842,9 @@ URL-REGEX,/\d+/sign_d
 .clientlog.midomi.com
 .clientlog.music.163.com
 .clientlog.portal.office.com
+.clientlog3.music.163.com
+.clientlogdep.music.163.com
+.clientlogsf.music.163.com
 .clientmetrics-augmentum.kik.com
 .clientmetrics.kik.com
 .clientoutcry.com
@@ -64258,6 +64261,7 @@ URL-REGEX,/\d+/sign_d
 .net1.netski.com
 .net4ever.graciaflamenca.es
 .netagent.cz
+.netapm.music.163.com
 .netapplications.com
 .netavenir.com
 .netbina.com
@@ -104972,6 +104976,7 @@ URL-REGEX,/\d+/sign_d
 .volcanoexhibitmeaning.com
 .volcanostricken.com
 .volceapplog.com
+.volces.com
 .voldarinis.com
 .vole.contemporaryartlibrary.org
 .vole.nettskaperne.no
@@ -110056,6 +110061,7 @@ URL-REGEX,/\d+/sign_d
 .ydwrkwwqytj.xyz
 .ydybwjpa.xyz
 .ydzlen.mebloo.pl
+.ye.dun.163yun.com
 .ye185hcamw.com
 .yeabble.com
 .yeah1publishing.com
@@ -111888,7 +111894,6 @@ click.hunantv.com
 click.mz.simba.taobao.com
 click.qianqian.com
 click.uve.mobile.sina.cn
-clientlog3.music.163.com
 clkservice.mail.youdao.com
 clkservice2.dict.youdao.com
 cm.bilibili.com
