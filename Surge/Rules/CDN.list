@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 2980
+# 规则统计: 2979
 
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic-zzz.one
@@ -52,9 +52,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-02T13:01:56.768Z
-# Last Updated: 2025-01-09T08:39:31.835Z
+# Last Updated: 2025-01-10T12:39:19.252Z
 # License: AGPL 3.0
-# Size: 2921
+# Size: 2920
 # Size: 46
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -88,6 +88,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .ampproject.org
 .anpoimages.com
 .ant.design
+.aolcdn.com
 .api.instabug.com
 .api.loganalytics.io
 .app-analytics-services.com
@@ -558,6 +559,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .mm.bing.net
 .mmtcdn.com
 .mngbcn.com
+.monitor.azure.com
 .motherlessmedia.com
 .msftconnecttest.com
 .msftncsi.com
@@ -2295,7 +2297,6 @@ pic-bstarstatic.akamaized.net
 pic.7mmtv.me
 pic.cangku.moe
 pic.imge.cc
-pic.libilibi.top
 pic.macked.app
 pic.onlinewebfonts.com
 pic.skk.moe
@@ -2534,7 +2535,6 @@ sp-spiegel-de.spiegel.de
 sp.nba.com
 sp.replit.com
 spcdn.incartupsell.com
-spoppe-b.azureedge.net
 spoprod-a.akamaihd.net
 sprig.figma.com
 st-eu.dynamicyield.com
@@ -2727,7 +2727,6 @@ static.skyassets.com
 static.snapchat.com
 static.snaptube.in
 static.snyk.io
-static.socratic.org
 static.solarwinds.com
 static.spankbang.com
 static.srcspot.com
