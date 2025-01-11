@@ -1,5 +1,5 @@
 # 规则名称: Ads_SukkaW
-# 规则统计: 112490
+# 规则统计: 112315
 
 DOMAIN,aedns.weixin.qq.com
 DOMAIN,api-js.mixpanel.com
@@ -184,7 +184,6 @@ URL-REGEX,/\d+/sign_d
 #  - https://perflyst.github.io/PiHoleBlocklist/SmartTV-AGH.txt
 #  - https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt
 #  - https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
-#  - https://raw.githubusercontent.com/durablenapkin/block/master/luminati.txt
 #  - https://raw.githubusercontent.com/durablenapkin/block/master/tvstream.txt
 #  - https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
 #  - https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Huawei-AdBlock.txt
@@ -194,9 +193,9 @@ URL-REGEX,/\d+/sign_d
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-09T02:36:43.826Z
-# Last Updated: 2025-01-10T15:32:00.340Z
+# Last Updated: 2025-01-11T12:36:18.030Z
 # License: AGPL 3.0
-# Size: 112287
+# Size: 112113
 # Size: 171
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Domains
@@ -2545,6 +2544,7 @@ URL-REGEX,/\d+/sign_d
 .9l5ss9l.de
 .9nl.eu
 .9ohy40tok.com
+.9pub.io
 .9r7i9bo06157.top
 .9s4l9nik.de
 .9s64g.icu
@@ -4666,6 +4666,7 @@ URL-REGEX,/\d+/sign_d
 .abbankquick.com
 .abbankvn.com
 .abbasidquippy.shop
+.abbateerupted.com
 .abberantdiscussion.com
 .abberantdoggie.com
 .abberantpawnpalette.com
@@ -14272,6 +14273,7 @@ URL-REGEX,/\d+/sign_d
 .ayehxorfaiqry.com
 .ayga.xyz
 .aygccr.eonet.jp
+.ayiztaefkfzs.com
 .aykqyjzbkkkra.top
 .ayleaf.petersofkensington.com.au
 .aymijlwl.com
@@ -15118,6 +15120,7 @@ URL-REGEX,/\d+/sign_d
 .bc0ca74b.live
 .bc13945167.9cf57a043f.com
 .bc34.wijnvoordeel.nl
+.bc4.fun
 .bc6dc48b743dc5d01.clicknplay.to
 .bc84617c73.com
 .bc930c99b5.77cdc6d130.com
@@ -16098,6 +16101,7 @@ URL-REGEX,/\d+/sign_d
 .binaryborrowedorganized.com
 .binarycrest.com
 .binaryfailure.com
+.binaryoptionz.com
 .binaryrecentrecentcut.com
 .bincatracs.com
 .bineukdwithme.com
@@ -16608,44 +16612,6 @@ URL-REGEX,/\d+/sign_d
 .bn.orthodoxy.ru
 .bn.take-profit.org
 .bn.voyage-prive.com
-.bn2wns1.wns.windows.com
-.bn3sch020010558.wns.windows.com
-.bn3sch020010560.wns.windows.com
-.bn3sch020010618.wns.windows.com
-.bn3sch020010629.wns.windows.com
-.bn3sch020010631.wns.windows.com
-.bn3sch020010635.wns.windows.com
-.bn3sch020010636.wns.windows.com
-.bn3sch020010650.wns.windows.com
-.bn3sch020011727.wns.windows.com
-.bn3sch020012850.wns.windows.com
-.bn3sch020020322.wns.windows.com
-.bn3sch020020749.wns.windows.com
-.bn3sch020022328.wns.windows.com
-.bn3sch020022335.wns.windows.com
-.bn3sch020022361.wns.windows.com
-.bn4sch101120814.wns.windows.com
-.bn4sch101120818.wns.windows.com
-.bn4sch101120911.wns.windows.com
-.bn4sch101120913.wns.windows.com
-.bn4sch101121019.wns.windows.com
-.bn4sch101121109.wns.windows.com
-.bn4sch101121118.wns.windows.com
-.bn4sch101121223.wns.windows.com
-.bn4sch101121407.wns.windows.com
-.bn4sch101121618.wns.windows.com
-.bn4sch101121704.wns.windows.com
-.bn4sch101121709.wns.windows.com
-.bn4sch101121714.wns.windows.com
-.bn4sch101121908.wns.windows.com
-.bn4sch101122117.wns.windows.com
-.bn4sch101122310.wns.windows.com
-.bn4sch101122312.wns.windows.com
-.bn4sch101122421.wns.windows.com
-.bn4sch101123108.wns.windows.com
-.bn4sch101123110.wns.windows.com
-.bn4sch101123202.wns.windows.com
-.bn4sch102110124.wns.windows.com
 .bn5x.net
 .bnagilu.com
 .bnalzlv.top
@@ -19364,104 +19330,14 @@ URL-REGEX,/\d+/sign_d
 .cdryuoe.com
 .cds1.stn.llnw.net
 .cds10.stn.llnw.net
-.cds1203.lon.llnw.net
-.cds1204.lon.llnw.net
-.cds1209.lon.llnw.net
-.cds1219.lon.llnw.net
-.cds1228.lon.llnw.net
-.cds1244.lon.llnw.net
-.cds1257.lon.llnw.net
-.cds1265.lon.llnw.net
-.cds1269.lon.llnw.net
-.cds1273.lon.llnw.net
-.cds1285.lon.llnw.net
-.cds1287.lon.llnw.net
-.cds1289.lon.llnw.net
-.cds1293.lon.llnw.net
-.cds1307.lon.llnw.net
-.cds1310.lon.llnw.net
-.cds1325.lon.llnw.net
-.cds1327.lon.llnw.net
 .cds177.dus.llnw.net
 .cds20005.stn.llnw.net
-.cds20404.lcy.llnw.net
-.cds20411.lcy.llnw.net
-.cds20415.lcy.llnw.net
-.cds20416.lcy.llnw.net
-.cds20417.lcy.llnw.net
-.cds20424.lcy.llnw.net
-.cds20425.lcy.llnw.net
-.cds20431.lcy.llnw.net
-.cds20435.lcy.llnw.net
-.cds20440.lcy.llnw.net
-.cds20443.lcy.llnw.net
-.cds20445.lcy.llnw.net
-.cds20450.lcy.llnw.net
-.cds20452.lcy.llnw.net
-.cds20457.lcy.llnw.net
-.cds20461.lcy.llnw.net
-.cds20469.lcy.llnw.net
-.cds20475.lcy.llnw.net
-.cds20482.lcy.llnw.net
-.cds20485.lcy.llnw.net
-.cds20495.lcy.llnw.net
-.cds21205.lon.llnw.net
-.cds21207.lon.llnw.net
-.cds21225.lon.llnw.net
-.cds21229.lon.llnw.net
-.cds21233.lon.llnw.net
-.cds21238.lon.llnw.net
-.cds21244.lon.llnw.net
-.cds21249.lon.llnw.net
-.cds21256.lon.llnw.net
-.cds21257.lon.llnw.net
-.cds21258.lon.llnw.net
-.cds21261.lon.llnw.net
-.cds21267.lon.llnw.net
-.cds21278.lon.llnw.net
-.cds21281.lon.llnw.net
-.cds21293.lon.llnw.net
-.cds21309.lon.llnw.net
-.cds21313.lon.llnw.net
-.cds21321.lon.llnw.net
 .cds27.ory.llnw.net
-.cds299.lcy.llnw.net
 .cds30027.stn.llnw.net
-.cds308.lcy.llnw.net
-.cds310.lcy.llnw.net
 .cds38.ory.llnw.net
-.cds405.lcy.llnw.net
-.cds406.lcy.llnw.net
 .cds407.fra.llnw.net
-.cds416.lcy.llnw.net
-.cds421.lcy.llnw.net
-.cds422.lcy.llnw.net
-.cds425.lcy.llnw.net
-.cds426.lcy.llnw.net
-.cds447.lcy.llnw.net
-.cds458.lcy.llnw.net
-.cds459.lcy.llnw.net
 .cds46.ory.llnw.net
-.cds461.lcy.llnw.net
-.cds468.lcy.llnw.net
-.cds469.lcy.llnw.net
-.cds471.lcy.llnw.net
-.cds483.lcy.llnw.net
-.cds484.lcy.llnw.net
-.cds489.lcy.llnw.net
-.cds493.lcy.llnw.net
-.cds494.lcy.llnw.net
 .cds54.ory.llnw.net
-.cds812.lon.llnw.net
-.cds815.lon.llnw.net
-.cds818.lon.llnw.net
-.cds832.lon.llnw.net
-.cds836.lon.llnw.net
-.cds840.lon.llnw.net
-.cds843.lon.llnw.net
-.cds857.lon.llnw.net
-.cds868.lon.llnw.net
-.cds869.lon.llnw.net
 .cdsbnrs.com
 .cdscs990.fun
 .cdszgg.xyz
@@ -25174,6 +25050,7 @@ URL-REGEX,/\d+/sign_d
 .d3dpet1g0ty5ed.cloudfront.net
 .d3dq1nh1l1pzqy.cloudfront.net
 .d3ec0pbimicc4r.cloudfront.net
+.d3edbb478c.com
 .d3efeah7vk80fy.cloudfront.net
 .d3ej838ds58re9.cloudfront.net
 .d3ejxyz09ctey7.cloudfront.net
@@ -25504,6 +25381,7 @@ URL-REGEX,/\d+/sign_d
 .daffaite.com
 .daffodilnotifyquarterback.com
 .dafvng.sunrefre.jp
+.dagassapereion.com
 .dagcoin.org
 .dagd0kz7sipfl.cloudfront.net
 .dagheepsoach.net
@@ -31823,6 +31701,7 @@ URL-REGEX,/\d+/sign_d
 .dzrs3yuexz.com
 .dzs55b7slwyx.cloudfront.net
 .dzsevh.voyage-prive.com
+.dzsopgxm.com
 .dzsorpf.com
 .dzszbb.homes.co.jp
 .dztatn.soulberry.jp
@@ -36782,6 +36661,7 @@ URL-REGEX,/\d+/sign_d
 .flaweyesight.com
 .flawgrandparentsmysterious.com
 .flaxconfession.com
+.flaxdescale.com
 .flaxierfilmset.com
 .flbuhz.justlease.be
 .flcounter.com
@@ -43370,82 +43250,7 @@ URL-REGEX,/\d+/sign_d
 .hjxajf.com
 .hjyfhi.misterspex.fi
 .hk-go.experian.com
-.hk2.wns.windows.com
 .hk2d.tourismemauricie.com
-.hk2sch130020721.wns.windows.com
-.hk2sch130020723.wns.windows.com
-.hk2sch130020726.wns.windows.com
-.hk2sch130020729.wns.windows.com
-.hk2sch130020732.wns.windows.com
-.hk2sch130020824.wns.windows.com
-.hk2sch130020843.wns.windows.com
-.hk2sch130020851.wns.windows.com
-.hk2sch130020854.wns.windows.com
-.hk2sch130020855.wns.windows.com
-.hk2sch130020924.wns.windows.com
-.hk2sch130020936.wns.windows.com
-.hk2sch130020940.wns.windows.com
-.hk2sch130020956.wns.windows.com
-.hk2sch130020958.wns.windows.com
-.hk2sch130020961.wns.windows.com
-.hk2sch130021017.wns.windows.com
-.hk2sch130021029.wns.windows.com
-.hk2sch130021035.wns.windows.com
-.hk2sch130021137.wns.windows.com
-.hk2sch130021142.wns.windows.com
-.hk2sch130021153.wns.windows.com
-.hk2sch130021217.wns.windows.com
-.hk2sch130021246.wns.windows.com
-.hk2sch130021249.wns.windows.com
-.hk2sch130021260.wns.windows.com
-.hk2sch130021264.wns.windows.com
-.hk2sch130021322.wns.windows.com
-.hk2sch130021323.wns.windows.com
-.hk2sch130021329.wns.windows.com
-.hk2sch130021334.wns.windows.com
-.hk2sch130021360.wns.windows.com
-.hk2sch130021432.wns.windows.com
-.hk2sch130021433.wns.windows.com
-.hk2sch130021435.wns.windows.com
-.hk2sch130021437.wns.windows.com
-.hk2sch130021440.wns.windows.com
-.hk2sch130021450.wns.windows.com
-.hk2sch130021518.wns.windows.com
-.hk2sch130021523.wns.windows.com
-.hk2sch130021526.wns.windows.com
-.hk2sch130021527.wns.windows.com
-.hk2sch130021544.wns.windows.com
-.hk2sch130021554.wns.windows.com
-.hk2sch130021618.wns.windows.com
-.hk2sch130021634.wns.windows.com
-.hk2sch130021638.wns.windows.com
-.hk2sch130021646.wns.windows.com
-.hk2sch130021652.wns.windows.com
-.hk2sch130021654.wns.windows.com
-.hk2sch130021657.wns.windows.com
-.hk2sch130021723.wns.windows.com
-.hk2sch130021726.wns.windows.com
-.hk2sch130021727.wns.windows.com
-.hk2sch130021730.wns.windows.com
-.hk2sch130021731.wns.windows.com
-.hk2sch130021754.wns.windows.com
-.hk2sch130021829.wns.windows.com
-.hk2sch130021830.wns.windows.com
-.hk2sch130021833.wns.windows.com
-.hk2sch130021840.wns.windows.com
-.hk2sch130021842.wns.windows.com
-.hk2sch130021851.wns.windows.com
-.hk2sch130021852.wns.windows.com
-.hk2sch130021927.wns.windows.com
-.hk2sch130021928.wns.windows.com
-.hk2sch130021929.wns.windows.com
-.hk2sch130021958.wns.windows.com
-.hk2sch130022035.wns.windows.com
-.hk2sch130022041.wns.windows.com
-.hk2sch130022049.wns.windows.com
-.hk2sch130022135.wns.windows.com
-.hk2wns1.wns.windows.com
-.hk2wns1b.wns.windows.com
 .hkaphqknkao.com
 .hkbumv.icu
 .hkcciq.westfaelischer-jobanzeiger.de
@@ -43603,7 +43408,6 @@ URL-REGEX,/\d+/sign_d
 .hola.org
 .hola.ph
 .hola.sk
-.hola.tukif.com
 .hola.xebel.co
 .holacdn.com
 .holahupa.com
@@ -48662,6 +48466,7 @@ URL-REGEX,/\d+/sign_d
 .jeannenoises.com
 .jeanspurrcleopatra.com
 .jebhnmggi.xyz
+.jebrhb.icu
 .jeccmq.wehkamp.nl
 .jecheon.idealle.space
 .jechusou.com
@@ -48829,6 +48634,7 @@ URL-REGEX,/\d+/sign_d
 .jiaopei.com
 .jias115.com
 .jiathis.com
+.jibbahazara.top
 .jibn12.jintang114.org
 .jibyrm.jeep-official.it
 .jicamadoless.com
@@ -49007,6 +48813,7 @@ URL-REGEX,/\d+/sign_d
 .joberopolicycr.com
 .jobeyeball.com
 .jobfilletfortitude.com
+.jobfukectivetr.com
 .joblessdrum.com
 .joblouder.com
 .jobs.smpgn.co
@@ -49142,6 +48949,7 @@ URL-REGEX,/\d+/sign_d
 .joozoowoak.net
 .jopbvpsglwfm.com
 .jopd.ru
+.joptodsougegauw.com
 .joqawz.snipes.nl
 .joqowqyaarewj.top
 .jor-el.net
@@ -54414,6 +54222,7 @@ URL-REGEX,/\d+/sign_d
 .locate.findfashionevents.com
 .locatedstructure.com
 .locatejav182.fun
+.locatejest.com
 .location.cyou
 .location.imsmetals.com
 .locationaircondition.com
@@ -55882,6 +55691,7 @@ URL-REGEX,/\d+/sign_d
 .lzjsfu.hobobags.com
 .lznfuab.xyz
 .lzoasvofvzw.com
+.lzqmjakwlllvk.top
 .lzrhay.farmaciasoccavo.it
 .lzrikate.com
 .lzrkfp.shoppbs.org
@@ -56410,6 +56220,7 @@ URL-REGEX,/\d+/sign_d
 .makelove.co.il
 .makemyvids.com
 .makeshiftmine.com
+.makesimpact.com
 .makethebusiness.com
 .makeupenumerate.com
 .makhzanpopulin.com
@@ -56529,6 +56340,7 @@ URL-REGEX,/\d+/sign_d
 .manslaughterhallucinateenjoyment.com
 .mansudee.net
 .mantaray.bullshitgoggles.com
+.mantis-intelligence.com
 .mantisadnetwork.com
 .mantrafox.com
 .manualquiet.com
@@ -56545,6 +56357,7 @@ URL-REGEX,/\d+/sign_d
 .mapamnni.com
 .mapbasin.com
 .mapchilde.top
+.mapcommand.com
 .mapeeree.xyz
 .maper.info
 .maphuahin.com
@@ -66906,6 +66719,7 @@ URL-REGEX,/\d+/sign_d
 .omvdpd.megapolomoda.com.br
 .omvenusaurchan.com
 .omvzcq.vidaxl.be
+.omwovzodgck.com
 .omxodt.shredoptics.com
 .omxwt.cn
 .omynews.net
@@ -67654,6 +67468,7 @@ URL-REGEX,/\d+/sign_d
 .oskiwood.com
 .osm-onead.cdn.hinet.net
 .osmeticjewlike.com
+.osminaclumber.com
 .osmosedshrined.top
 .osmzym.xyz
 .osnksi.czytam.pl
@@ -68645,7 +68460,6 @@ URL-REGEX,/\d+/sign_d
 .paqgoc.shipgratis.si
 .paqqlk.motatos.de
 .paqvfi.petzone.com
-.par02p.wns.windows.com
 .parabit.ru
 .parachutecourtyardgrid.com
 .parachutelacquer.com
@@ -70296,11 +70110,9 @@ URL-REGEX,/\d+/sign_d
 .ping-traffic.info
 .ping.buto.tv
 .ping.dozuki.com
-.ping.fastsimon.com
 .ping.getadblock.com
 .ping.hashnode.com
 .ping.hungama.com
-.ping.instantsearchplus.com
 .ping.irisphotos.app
 .ping.naturadapt.com
 .ping.paidy.com
@@ -72235,6 +72047,7 @@ URL-REGEX,/\d+/sign_d
 .projectsunblock.com
 .projectwonderful.com
 .prolatecyclus.com
+.proleclips.com
 .prolicensekeys.com
 .prolinker.ru
 .proll.esexa.online
@@ -72457,6 +72270,7 @@ URL-REGEX,/\d+/sign_d
 .proxy.telemetry.us-ashburn-1.oci.oraclecloud.com
 .proxy.trysavvy.com
 .proxyas.com
+.proxyway.com
 .prplad.com
 .prplads.com
 .prpmdp.xyz
@@ -74510,6 +74324,7 @@ URL-REGEX,/\d+/sign_d
 .rankonefoldonefold.com
 .rankpeers.com
 .rankstarvation.com
+.ranmaotome.com
 .ransomsection.com
 .ransomwidelyproducing.com
 .rantedcamels.shop
@@ -76278,6 +76093,7 @@ URL-REGEX,/\d+/sign_d
 .risale.ru
 .risausso.com
 .riscati.com
+.riscats.com
 .riscil.com
 .riseshamelessdrawers.com
 .riseup-t-code.com
@@ -77364,6 +77180,7 @@ URL-REGEX,/\d+/sign_d
 .ruxmkiqkasw.com
 .ruzotchaufu.xyz
 .rv-syzfedv.rocks
+.rvardsusyseinp.org
 .rvbqze.albamoda.de
 .rvddfchkj.xyz
 .rvdnyq.topito.com
@@ -77388,6 +77205,7 @@ URL-REGEX,/\d+/sign_d
 .rvvmynjd.love
 .rvxdoi.ipekistanbul.com
 .rvxmlj.icu
+.rvxsvwqf.icu
 .rvz9.destinia.co.ro
 .rw.marchex.io
 .rwcboa.rjliving.com.au
@@ -80629,6 +80447,7 @@ URL-REGEX,/\d+/sign_d
 .seyfwl.smaker.pl
 .seyfwl.styl.pl
 .seyfwl.swiatkobiety.pl
+.seymourlamboy.com
 .sezixz.officesupply.com
 .sf-ads.io
 .sf-insights.io
@@ -80685,7 +80504,6 @@ URL-REGEX,/\d+/sign_d
 .sg.log.ulivetv.net
 .sg.lucanet.com
 .sg.xclick24.com
-.sg2p.wns.windows.com
 .sg3.notarize.com
 .sg536.cn
 .sgad.site
@@ -90800,6 +90618,7 @@ URL-REGEX,/\d+/sign_d
 .stocks-analytics-events.apple.com
 .stocks-analytics-events.news.apple-dns.net
 .stocksinvulnerablemonday.com
+.stocktheme.com
 .stolenforensicssausage.com
 .stomachscience.com
 .stomi.info
@@ -90982,6 +90801,7 @@ URL-REGEX,/\d+/sign_d
 .stream-all.com
 .stream-log.dditscdn.com
 .stream.corporatefinanceinstitute.com
+.stream.datago.ru
 .stream.spongead.com
 .streamadvancedheavilythe-file.top
 .streamateaccess.com
@@ -94142,6 +93962,7 @@ URL-REGEX,/\d+/sign_d
 .techservices.trapptechnology.com
 .techsupport.balluff.com
 .tecominchisel.com
+.tectureclod.top
 .tecuil.com
 .teczbq.amicashop.com
 .ted.dailymail.co.uk
@@ -94169,6 +93990,7 @@ URL-REGEX,/\d+/sign_d
 .teestoagloupaza.net
 .teethfan.com
 .teetusee.xyz
+.teewhilemath.net
 .tefrjctjwuu.com
 .tefuse.com
 .tegleebs.com
@@ -96182,6 +96004,7 @@ URL-REGEX,/\d+/sign_d
 .touchyeccentric.com
 .touchytautogs.com
 .touena.xyz
+.tougaipteehuboo.xyz
 .toughdrizzleleftover.com
 .tougrauwaizus.net
 .touptaisu.com
@@ -101364,6 +101187,7 @@ URL-REGEX,/\d+/sign_d
 .tuitionpancake.com
 .tujourda.net
 .tukid.info
+.tukif.com
 .tukveks.com
 .tuky889900.com
 .tulclqxikva.icu
@@ -103664,6 +103488,7 @@ URL-REGEX,/\d+/sign_d
 .vde1.voyage-prive.de
 .vdeiar.gracobaby.com
 .vdfvdf33q.fun
+.vdhf042.fun
 .vdijpo.famm.us
 .vdivrv.gift-shop.jp
 .vdjpqtsxuwc.xyz
@@ -106699,6 +106524,7 @@ URL-REGEX,/\d+/sign_d
 .weus2watcab01.blob.core.windows.net
 .weus2watcab02.blob.core.windows.net
 .wevbgr.vidaxl.it
+.wevechinse.com
 .wew.dushiwenxue.net
 .wewaixor.com
 .wewearegogogo.com
@@ -108065,7 +107891,6 @@ URL-REGEX,/\d+/sign_d
 .www.bestinterestings.com
 .www.bfc-mp.caisse-epargne.fr
 .www.bigboy.monster
-.www.binaryoptionz.com
 .www.bis-dic15.com
 .www.blocwhite7.com
 .www.blogtoplist.se
