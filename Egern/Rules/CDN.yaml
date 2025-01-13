@@ -49,9 +49,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-02T13:01:56.768Z
-# Last Updated: 2025-01-10T13:37:09.342Z
+# Last Updated: 2025-01-13T02:07:44.808Z
 # License: AGPL 3.0
-# Size: 2919
+# Size: 2926
 # Size: 46
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -836,6 +836,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .uber-assets.com
 .ucarecdn.com
 .udify.app
+.uicdn.net
 .ungh.cc
 .ungrounded.net
 .unpkg.co
@@ -1039,6 +1040,7 @@ assets.coingecko.com
 assets.context.ly
 assets.controld.com
 assets.convertkit.com
+assets.cyberghostvpn.com
 assets.dev.to
 assets.dify.ai
 assets.dnsfilter.com
@@ -1106,6 +1108,7 @@ assets.quillbot.com
 assets.raspberrypi.com
 assets.repair.org
 assets.safing.io
+assets.salesmartly.com
 assets.scaleflex.com
 assets.science.nasa.gov
 assets.scroll.com
@@ -1357,6 +1360,7 @@ cdn.hypershort.com
 cdn.icomoon.io
 cdn.imageengine.io
 cdn.img.ly
+cdn.ionos.de
 cdn.ip2location.io
 cdn.ipregistry.co
 cdn.jetboost.io
@@ -1578,6 +1582,7 @@ cdnstatic.porno-cum.com
 cdnstatic.w1mp.com
 cdnstatic.w4nkr.com
 cds.connatix.com
+certificates.godaddy.com
 certona.gap.com
 cf-assets.www.cloudflare.com
 cf-images.us-east-1.prod.boltdns.net
@@ -1965,6 +1970,7 @@ img-en.fs.com
 img-prod-cms-rt-microsoft-com.akamaized.net
 img-s-msn-com.akamaized.net
 img.3movs.com
+img.adspower.net
 img.agrd.eu
 img.announcekit.app
 img.api.video
@@ -2914,6 +2920,7 @@ vir.wsj.net
 viu-static.akamaized.net
 vjs.zencdn.net
 vod.jfly.xyz
+vpncdn.protonweb.com
 vscode-sync-insiders.trafficmanager.net
 vscode-sync.trafficmanager.net
 vuejs.org
