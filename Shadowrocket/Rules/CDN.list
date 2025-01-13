@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 2985
+# 规则统计: 2986
 
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic-zzz.one
@@ -52,9 +52,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-02T13:01:56.768Z
-# Last Updated: 2025-01-13T02:07:44.808Z
+# Last Updated: 2025-01-13T09:39:02.564Z
 # License: AGPL 3.0
-# Size: 2926
+# Size: 2927
 # Size: 46
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1705,6 +1705,7 @@ edge-consumer-static.azureedge.net
 edge-mobile-static.azureedge.net
 edge.marker.io
 edge.personalizer.io
+edge.sitecorecloud.io
 edge1.certona.net
 edgeassetservice.azureedge.net
 edgecdn-embza6g8cacagcbn.z01.azurefd.net
