@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 2988
+# 规则统计: 2995
 
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic-zzz.one
@@ -52,9 +52,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-02T13:01:56.768Z
-# Last Updated: 2025-01-13T14:15:06.735Z
+# Last Updated: 2025-01-14T12:37:58.124Z
 # License: AGPL 3.0
-# Size: 2929
+# Size: 2936
 # Size: 46
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -384,7 +384,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .hsto.org
 .hubspotusercontent-eu1.net
 .hubspotusercontent-na1.net
+.hubspotusercontent00.net
+.hubspotusercontent10.net
+.hubspotusercontent20.net
 .hubspotusercontent30.net
+.hubspotusercontent40.net
 .i-dont-care-about-cookies.eu
 .i.optimole.com
 .ibytedtos.com
@@ -1508,6 +1512,7 @@ cdn.verifypass.com
 cdn.vidible.tv
 cdn.vidyard.com
 cdn.viglink.com
+cdn.vuukle.com
 cdn.wccftech.com
 cdn.weglot.com
 cdn.wikiwiki.jp
@@ -1896,6 +1901,7 @@ image.telanganatoday.com
 image.theblockbeats.info
 image.thefly.com
 image.tmdb.org
+image.vuukle.com
 image.westinyou.com
 imagehost.player.fm
 imageio.forbes.com
@@ -2179,6 +2185,7 @@ media.hachyderm.io
 media.infosec.exchange
 media.istockphoto.com
 media.kit.com
+media.lantern.io
 media.licdn.com
 media.loom-app.com
 media.mas.to
