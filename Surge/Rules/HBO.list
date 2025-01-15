@@ -1,7 +1,6 @@
 # 规则名称: HBO
 # 规则统计: 55
 
-DOMAIN,wmff.warnermediacdn.com
 DOMAIN-SUFFIX,bcbolthboa-a.akamaihd.net
 DOMAIN-SUFFIX,cf-images.ap-southeast-1.prod.boltdns.net
 DOMAIN-SUFFIX,cinemax.com
@@ -38,6 +37,7 @@ DOMAIN-SUFFIX,hbomaxdash.s.llnwi.net
 DOMAIN-SUFFIX,hbonow.com
 DOMAIN-SUFFIX,hbounify-prod.evergent.com
 DOMAIN-SUFFIX,manifest.prod.boltdns.net
+DOMAIN-SUFFIX,max.com
 DOMAIN-SUFFIX,maxgo.com
 DOMAIN-SUFFIX,now-ashare.com
 DOMAIN-SUFFIX,now-tv.com
@@ -46,13 +46,13 @@ DOMAIN-SUFFIX,now.com.hk
 DOMAIN-SUFFIX,nowe.com
 DOMAIN-SUFFIX,nowe.hk
 DOMAIN-SUFFIX,players.brightcove.net
+DOMAIN-SUFFIX,warnermediacdn.com
 DOMAIN-SUFFIX,youboranqs01.com
 PROCESS-NAME,com.hbo.hbonow
 # AUTHOR: blackmatrix7
-# DOMAIN-SUFFIX: 45
-# DOMAIN: 1
+# DOMAIN-SUFFIX: 47
 # NAME: HBO
 # PROCESS-NAME: 1
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# TOTAL: 47
-# UPDATED: 2024-07-03 16:16:13
+# TOTAL: 48
+# UPDATED: 2025-01-15 02:13:02
