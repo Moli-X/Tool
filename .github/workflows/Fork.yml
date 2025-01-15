@@ -535,8 +535,8 @@ jobs:
         mkdir -p Tool-repo/Clash/Meta
 
         curl -L -o Tool-repo/Clash/Meta/Override.js "https://github.com/Repcz/Tool/raw/X/Clash/Meta/Override.js"
-        curl -L -o Tool-repo/Clash/Meta/ConfigSet.js "https://github.com/Moli-X/Resources/raw/main/Clash/Script/ConfigSet.js"
-
+        curl -L -o Tool-repo/Clash/Meta/MihomoParty.js "https://github.com/Moli-X/Resources/raw/main/Clash/Script/MihomoParty.js"
+        curl -L -o Tool-repo/Clash/Meta/MihomoParty.yaml "https://github.com/Moli-X/Resources/raw/main/Clash/MihomoParty.yaml"
 
 ###### QuantumultX
 
