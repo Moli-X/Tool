@@ -1,7 +1,8 @@
 # 规则名称: VSCode
-# 规则统计: 4
+# 规则统计: 5
 
-  - DOMAIN-SUFFIX,trafficmanager.net
-  - DOMAIN-SUFFIX,vscode-sync.trafficmanager.net
-  - DOMAIN-SUFFIX,vscode-unpkg.net
-payload:
+DOMAIN-SUFFIX,trafficmanager.net
+DOMAIN-SUFFIX,vscode-sync.trafficmanager.net
+DOMAIN-SUFFIX,vscode-unpkg.net
+
+# Name:VSCode
