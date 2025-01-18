@@ -1,5 +1,5 @@
 # 规则名称: Ads_limbopro
-# 规则统计: 676
+# 规则统计: 681
 
 HOST,118.89.204.198,reject,Ads_limbopro
 HOST,25e87c0802f91cf8cgg.6uzxtlv.cn,reject,Ads_limbopro
@@ -246,6 +246,7 @@ HOST-SUFFIX,a.adforcast.com,reject,Ads_limbopro
 HOST-SUFFIX,a.bestcontentfood.top,reject,Ads_limbopro
 HOST-SUFFIX,a.realsrv.com,reject,Ads_limbopro
 HOST-SUFFIX,a.shukriya90.com,reject,Ads_limbopro
+HOST-SUFFIX,ad-nex.com,reject,Ads_limbopro
 HOST-SUFFIX,ad.cmvideo.cn,reject,Ads_limbopro
 HOST-SUFFIX,ad.pornimg.xyz,reject,Ads_limbopro
 HOST-SUFFIX,ad.sohu.com,reject,Ads_limbopro
@@ -355,6 +356,7 @@ HOST-SUFFIX,iad.appboy.com,reject,Ads_limbopro
 HOST-SUFFIX,iadsdk.apple.com,reject,Ads_limbopro
 HOST-SUFFIX,ig66.vip,reject,Ads_limbopro
 HOST-SUFFIX,ig67.vip,reject,Ads_limbopro
+HOST-SUFFIX,img.ad-nex.com,reject,Ads_limbopro
 HOST-SUFFIX,img.hylmxing.com,reject,Ads_limbopro
 HOST-SUFFIX,imgxxx.shunxincar.cn,reject,Ads_limbopro
 HOST-SUFFIX,impactserving.com,reject,Ads_limbopro
@@ -370,6 +372,7 @@ HOST-SUFFIX,jidukeji.com,reject,Ads_limbopro
 HOST-SUFFIX,jknmthwd.xyz,reject,Ads_limbopro
 HOST-SUFFIX,js.51toubu.com,reject,Ads_limbopro
 HOST-SUFFIX,js.users.51.la,reject,Ads_limbopro
+HOST-SUFFIX,js.waqool.com,reject,Ads_limbopro
 HOST-SUFFIX,js.wpshsdk.com,reject,Ads_limbopro
 HOST-SUFFIX,js.wpushsdk.com,reject,Ads_limbopro
 HOST-SUFFIX,jspassport.ssl.qhimg.com,reject,Ads_limbopro
@@ -451,6 +454,7 @@ HOST-SUFFIX,v3.fstats.xyz,reject,Ads_limbopro
 HOST-SUFFIX,video.ktkjmp.com,reject,Ads_limbopro
 HOST-SUFFIX,vjugz.com,reject,Ads_limbopro
 HOST-SUFFIX,vntsm.com,reject,Ads_limbopro
+HOST-SUFFIX,waqool.com,reject,Ads_limbopro
 HOST-SUFFIX,webp2p.letv.com,reject,Ads_limbopro
 HOST-SUFFIX,widgets.amung.us,reject,Ads_limbopro
 HOST-SUFFIX,wine-api.net,reject,Ads_limbopro
@@ -593,22 +597,22 @@ IP6-CIDR,## IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,Ads_limbopro
 ## */
 ## /*
 ## ACL4SSR BadAD: 591 Domains/IP/Others From https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-## Adblock4limbo: 545 Domains/IP/Others From https://github.com/limbopro/Adblock4limbo
-## EasyList China: 4458 Domains/IP/Others From https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt
+## Adblock4limbo: 549 Domains/IP/Others From https://github.com/limbopro/Adblock4limbo
+## EasyList China: 4482 Domains/IP/Others From https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt
 ## EasyList/EasylistChina/EasyPrivacy 隐私追踪器/去广告分流规则请在Github仓库 Adblock4limbo -> rule 文件夹下查找，按需添加...
-## EasyList: 29904 Domains/IP/Others From https://easylist.to/easylist/easylist.txt
-## EasyPrivacy: 41448 Domains/IP/Others From https://easylist.to/easylist/easyprivacy.txt
+## EasyList: 29959 Domains/IP/Others From https://easylist.to/easylist/easylist.txt
+## EasyPrivacy: 41449 Domains/IP/Others From https://easylist.to/easylist/easyprivacy.txt
 ## IP-CIDR,101.227.200.11/32
 ## IP-CIDR,101.227.200.28/32
 ## IP-CIDR,101.227.97.240/32
 ## IP-CIDR,118.89.204.198/32
 ## IP-CIDR,124.192.153.42/32
-## Last updated at 14/1月/2025/23:23
-## Peter Lowe’s Ad and tracking server list: 3544 Domains/IP/Others From https://pgl.yoyo.org/adservers/serverlist.php
+## Last updated at 17/1月/2025/23:37
+## Peter Lowe’s Ad and tracking server list: 3548 Domains/IP/Others From https://pgl.yoyo.org/adservers/serverlist.php
 ## Repo: https://github.com/limbopro/Adblock4limbo  
 ## Written by limbopro
 ## 仓库地址：https://github.com/limbopro/Adblock4limbo/tree/main/rule
-## 以上共计: 80490 Domains/IP/Others (非去重统计)
+## 以上共计: 80578 Domains/IP/Others (非去重统计)
 ## 原文参阅 https://limbopro.com/archives/12904.html
 ## 参阅 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list
 ## 如需完整配置，参阅请原文 https://limbopro.com/archives/12904.html
@@ -630,6 +634,7 @@ IP6-CIDR,## IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,Ads_limbopro
 ##### hitomi.la
 ##### https://91mjw.com/  
 ##### https://avple.tv/  
+##### https://bi-girl.net/
 ##### https://gimy.tv/ 剧迷tv  
 ##### https://hanime1.me/
 ##### https://hpjav.tv/ JAVFAN #NSFW  
