@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3090
+# 规则统计: 3108
 
 HOST,cdn-msp.18comic.vip,CDN
 HOST,cdn-msp.jmcomic-zzz.one,CDN
@@ -62,9 +62,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-20T08:01:15.981Z
-# Last Updated: 2025-01-22T01:20:33.556Z
+# Last Updated: 2025-01-22T12:10:56.229Z
 # License: AGPL 3.0
-# Size: 3021
+# Size: 3039
 # Size: 56
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -750,6 +750,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .replicate.delivery,CDN
 .repo.anaconda.com,CDN
 .res.office365.com,CDN
+.rescript-lang.org,CDN
 .rocketcdn.me,CDN
 .rollupjs.org,CDN
 .roseimgs.com,CDN
@@ -1577,6 +1578,7 @@ cdn.weglot.com,CDN
 cdn.wikiwiki.jp,CDN
 cdn.windowsreport.com,CDN
 cdn.wishpond.net,CDN
+cdn.workos.com,CDN
 cdn.worldvectorlogo.com,CDN
 cdn.writeas.net,CDN
 cdn.xeiaso.net,CDN
@@ -1592,6 +1594,7 @@ cdn01.jotfor.ms,CDN
 cdn02.jotfor.ms,CDN
 cdn03.jotfor.ms,CDN
 cdn1.airdroid.com,CDN
+cdn1.bigcommerce.com,CDN
 cdn1.dan.com,CDN
 cdn1.edgedatg.com,CDN
 cdn1.epicgames.com,CDN
@@ -1602,10 +1605,13 @@ cdn1.plesk.com,CDN
 cdn1.stamped.io,CDN
 cdn1.sysgears.com,CDN
 cdn1.unrealengine.com,CDN
+cdn10.bigcommerce.com,CDN
+cdn11.bigcommerce.com,CDN
 cdn2-imgix.macpaw.com,CDN
 cdn2.abiresearch.com,CDN
 cdn2.airdroid.com,CDN
 cdn2.auth0.com,CDN
+cdn2.bigcommerce.com,CDN
 cdn2.dan.com,CDN
 cdn2.downdetector.com,CDN
 cdn2.edgedatg.com,CDN
@@ -1621,6 +1627,7 @@ cdn2.sysgears.com,CDN
 cdn2.ttloli.com,CDN
 cdn2.turboviplay.cc,CDN
 cdn2.unrealengine.com,CDN
+cdn3.bigcommerce.com,CDN
 cdn3.dan.com,CDN
 cdn3.edgedatg.com,CDN
 cdn3.hextom.com,CDN
@@ -1629,15 +1636,21 @@ cdn3.onlyfans.com,CDN
 cdn3.stamped.io,CDN
 cdn3.sysgears.com,CDN
 cdn3.unrealengine.com,CDN
+cdn4.bigcommerce.com,CDN
 cdn4.edgedatg.com,CDN
 cdn4.iconfinder.com,CDN
 cdn4.sysgears.com,CDN
+cdn5.bigcommerce.com,CDN
 cdn5.edgedatg.com,CDN
 cdn5.hextom.com,CDN
 cdn5.iconfinder.com,CDN
 cdn6.aptoide.com,CDN
+cdn6.bigcommerce.com,CDN
 cdn6.edgedatg.com,CDN
+cdn7.bigcommerce.com,CDN
 cdn77.boyfriendtv.com,CDN
+cdn8.bigcommerce.com,CDN
+cdn9.bigcommerce.com,CDN
 cdna.artstation.com,CDN
 cdnapisec.kaltura.com,CDN
 cdnb.artstation.com,CDN
@@ -1663,6 +1676,7 @@ cf.javfree.me,CDN
 cf.shopee.tw,CDN
 cfvod.kaltura.com,CDN
 chart.googleapis.com,CDN
+checkout-sdk.bigcommerce.com,CDN
 checkout.stripe.com,CDN
 ci.testling.com,CDN
 claritystatic.azureedge.net,CDN
@@ -1766,6 +1780,8 @@ e3.365dm.com,CDN
 eaassets-a.akamaihd.net,CDN
 easylist-downloads.adblockplus.org,CDN
 ec-prod.scene7.com,CDN
+ecommplugins-scripts.trustpilot.com,CDN
+ecommplugins-trustboxsettings.trustpilot.com,CDN
 edata.ndtv.com,CDN
 edge-consumer-static.azureedge.net,CDN
 edge-mobile-static.azureedge.net,CDN
@@ -1867,6 +1883,7 @@ forest-mt-s3.seekrtech.com,CDN
 frames-commandbar-prod.commandbar.com,CDN
 freeshippingbar.herokuapp.com,CDN
 front-resource.fs.com,CDN
+frontend-apps.workos.com,CDN
 fs2.onlyhentaistuff.com,CDN
 fscdn.eppo.cloud,CDN
 g-static.ap4r.com,CDN
@@ -2152,6 +2169,7 @@ js.createsend1.com,CDN
 js.hsforms.net,CDN
 js.jotform.com,CDN
 js.klarn.com,CDN
+js.klarna.com,CDN
 js.memberful.com,CDN
 js.navattic.com,CDN
 js.partnerstack.com,CDN
