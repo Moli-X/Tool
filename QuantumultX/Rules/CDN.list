@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3108
+# 规则统计: 3126
 
 HOST,cdn-msp.18comic.vip,CDN
 HOST,cdn-msp.jmcomic-zzz.one,CDN
@@ -9,7 +9,6 @@ HOST-KEYWORD,-cdn.eporner.com,CDN
 HOST-KEYWORD,-files.gitbook.io,CDN
 HOST-KEYWORD,-res.cloudinary.com,CDN
 HOST-KEYWORD,cdn.adultempire.com,CDN
-HOST-KEYWORD,cdnstatic.,CDN
 HOST-KEYWORD,dsn.algolia.net,CDN
 HOST-KEYWORD,vod-adaptive.akamaized.net,CDN
 HOST-KEYWORD,web-assets.zendesk,CDN
@@ -61,11 +60,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-01-20T08:01:15.981Z
-# Last Updated: 2025-01-22T12:10:56.229Z
+# Last Updated: 2025-01-23T06:05:22.734Z
+# Last Updated: 2025-01-23T06:05:23.456Z
 # License: AGPL 3.0
-# Size: 3039
-# Size: 56
+# Size: 3058
+# Size: 55
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -81,6 +80,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .98avcdn.xyz,CDN
 .9cache.com,CDN
 .a.storyblok.com,CDN
+.a1tb.com,CDN
 .aacdn.nagich.com,CDN
 .aayinltcs.arduino.cc,CDN
 .abc-cdn.net.au,CDN
@@ -218,6 +218,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .cdnjs.network,CDN
 .cdnmania.org,CDN
 .cdnpk.net,CDN
+.cdnpm.net,CDN
 .cdnppb.net,CDN
 .cdnpure.com,CDN
 .cdnst.net,CDN
@@ -368,6 +369,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .gateway.serph.network,CDN
 .gcr.io,CDN
 .gcr.si,CDN
+.gdvid.info,CDN
 .gentcdn.com,CDN
 .getcomposer.org,CDN
 .ggpht.com,CDN
@@ -599,6 +601,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .misskeyusercontent.com,CDN
 .misskeyusercontent.jp,CDN
 .missuo.ru,CDN
+.mjedge.net,CDN
 .mktgcdn.com,CDN
 .mlcdn.com,CDN
 .mm.bing.net,CDN
@@ -643,6 +646,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .notionusercontent.com,CDN
 .now.sh,CDN
 .npm.io,CDN
+.npmcdn.com,CDN
 .npmfs.com,CDN
 .nxcli.io,CDN
 .nxedge.io,CDN
@@ -1574,6 +1578,7 @@ cdn.vidyard.com,CDN
 cdn.viglink.com,CDN
 cdn.vuukle.com,CDN
 cdn.wccftech.com,CDN
+cdn.webclicks24.com,CDN
 cdn.weglot.com,CDN
 cdn.wikiwiki.jp,CDN
 cdn.windowsreport.com,CDN
@@ -1583,6 +1588,7 @@ cdn.worldvectorlogo.com,CDN
 cdn.writeas.net,CDN
 cdn.xeiaso.net,CDN
 cdn.xgroovy.com,CDN
+cdn.xvidzz.com,CDN
 cdn.yinghuazy.xyz,CDN
 cdn.ywxi.net,CDN
 cdn.zapier.com,CDN
@@ -1843,6 +1849,8 @@ fastporndelivery.hqporner.com,CDN
 favicon.yandex.net,CDN
 favicons.nextdns.io,CDN
 favicons.teams.cloudflare.com,CDN
+fdn.gsmarena.com,CDN
+fdn2.gsmarena.com,CDN
 fesdk.nexon.com,CDN
 fiddle.fastly.dev,CDN
 fiddle.jshell.net,CDN
@@ -2026,6 +2034,7 @@ images.prismic.io,CDN
 images.ptt.cc,CDN
 images.purevpn-tools.com,CDN
 images.scalero.io,CDN
+images.scrolller.com,CDN
 images.spot.im,CDN
 images.spr.so,CDN
 images.store.crowdstrike.com,CDN
@@ -2225,6 +2234,7 @@ loutre.blockchair.io,CDN
 ltn.hitomi.la,CDN
 lumiere-a.akamaihd.net,CDN
 m-cdn.phonearena.com,CDN
+m.porn3dx.com,CDN
 m.wsj.net,CDN
 m3.gab.com,CDN
 m3u8.girigirilove.com,CDN
@@ -2735,6 +2745,7 @@ static.bbci.co.uk,CDN
 static.bit.cloud,CDN
 static.bit.dev,CDN
 static.bitfinex.com,CDN
+static.bravoporn.com,CDN
 static.buffer.com,CDN
 static.bytepan.com,CDN
 static.canva.com,CDN
@@ -2871,6 +2882,7 @@ static.underhentai.net,CDN
 static.v2ex.com,CDN
 static.vinted.com,CDN
 static.vocadb.net,CDN
+static.webclicks24.com,CDN
 static.whatsapp.net,CDN
 static.workday.com,CDN
 static.xgroovy.com,CDN
@@ -2881,17 +2893,22 @@ static.zaobao.com.sg,CDN
 static01.nyt.com,CDN
 static02.nyt.com,CDN
 static1.lottiefiles.com,CDN
+static1.muchohentai.com,CDN
 static1.smartbear.co,CDN
 static1.squarespace.com,CDN
 static10.lottiefiles.com,CDN
 static2.avg.com,CDN
 static2.lottiefiles.com,CDN
+static2.muchohentai.com,CDN
 static2.onlyfans.com,CDN
 static2.sharepointonline.com,CDN
 static3.lottiefiles.com,CDN
+static3.muchohentai.com,CDN
 static3.squarespace.com,CDN
 static4.lottiefiles.com,CDN
+static4.muchohentai.com,CDN
 static5.lottiefiles.com,CDN
+static5.muchohentai.com,CDN
 static6.lottiefiles.com,CDN
 static7.lottiefiles.com,CDN
 static8.lottiefiles.com,CDN
@@ -3049,6 +3066,7 @@ vscode-sync-insiders.trafficmanager.net,CDN
 vscode-sync.trafficmanager.net,CDN
 vuejs.org,CDN
 vz-2222604c-50b.b-cdn.net,CDN
+vz-c0fe498e-5ab.b-cdn.net,CDN
 w.chatlio.com,CDN
 w.soundcloud.com,CDN
 w2.influxdata.com,CDN

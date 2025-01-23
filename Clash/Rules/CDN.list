@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3106
+# 规则统计: 3124
 
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic-zzz.one
@@ -9,7 +9,6 @@ DOMAIN-KEYWORD,-cdn.eporner.com
 DOMAIN-KEYWORD,-files.gitbook.io
 DOMAIN-KEYWORD,-res.cloudinary.com
 DOMAIN-KEYWORD,cdn.adultempire.com
-DOMAIN-KEYWORD,cdnstatic.
 DOMAIN-KEYWORD,dsn.algolia.net
 DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 DOMAIN-KEYWORD,web-assets.zendesk
@@ -59,11 +58,11 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-01-20T08:01:15.981Z
-# Last Updated: 2025-01-22T12:10:56.229Z
+# Last Updated: 2025-01-23T06:05:22.734Z
+# Last Updated: 2025-01-23T06:05:23.456Z
 # License: AGPL 3.0
-# Size: 3039
-# Size: 56
+# Size: 3058
+# Size: 55
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -79,6 +78,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .98avcdn.xyz
 .9cache.com
 .a.storyblok.com
+.a1tb.com
 .aacdn.nagich.com
 .aayinltcs.arduino.cc
 .abc-cdn.net.au
@@ -216,6 +216,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .cdnjs.network
 .cdnmania.org
 .cdnpk.net
+.cdnpm.net
 .cdnppb.net
 .cdnpure.com
 .cdnst.net
@@ -366,6 +367,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .gateway.serph.network
 .gcr.io
 .gcr.si
+.gdvid.info
 .gentcdn.com
 .getcomposer.org
 .ggpht.com
@@ -597,6 +599,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .misskeyusercontent.com
 .misskeyusercontent.jp
 .missuo.ru
+.mjedge.net
 .mktgcdn.com
 .mlcdn.com
 .mm.bing.net
@@ -641,6 +644,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .notionusercontent.com
 .now.sh
 .npm.io
+.npmcdn.com
 .npmfs.com
 .nxcli.io
 .nxedge.io
@@ -1572,6 +1576,7 @@ cdn.vidyard.com
 cdn.viglink.com
 cdn.vuukle.com
 cdn.wccftech.com
+cdn.webclicks24.com
 cdn.weglot.com
 cdn.wikiwiki.jp
 cdn.windowsreport.com
@@ -1581,6 +1586,7 @@ cdn.worldvectorlogo.com
 cdn.writeas.net
 cdn.xeiaso.net
 cdn.xgroovy.com
+cdn.xvidzz.com
 cdn.yinghuazy.xyz
 cdn.ywxi.net
 cdn.zapier.com
@@ -1841,6 +1847,8 @@ fastporndelivery.hqporner.com
 favicon.yandex.net
 favicons.nextdns.io
 favicons.teams.cloudflare.com
+fdn.gsmarena.com
+fdn2.gsmarena.com
 fesdk.nexon.com
 fiddle.fastly.dev
 fiddle.jshell.net
@@ -2024,6 +2032,7 @@ images.prismic.io
 images.ptt.cc
 images.purevpn-tools.com
 images.scalero.io
+images.scrolller.com
 images.spot.im
 images.spr.so
 images.store.crowdstrike.com
@@ -2223,6 +2232,7 @@ loutre.blockchair.io
 ltn.hitomi.la
 lumiere-a.akamaihd.net
 m-cdn.phonearena.com
+m.porn3dx.com
 m.wsj.net
 m3.gab.com
 m3u8.girigirilove.com
@@ -2733,6 +2743,7 @@ static.bbci.co.uk
 static.bit.cloud
 static.bit.dev
 static.bitfinex.com
+static.bravoporn.com
 static.buffer.com
 static.bytepan.com
 static.canva.com
@@ -2869,6 +2880,7 @@ static.underhentai.net
 static.v2ex.com
 static.vinted.com
 static.vocadb.net
+static.webclicks24.com
 static.whatsapp.net
 static.workday.com
 static.xgroovy.com
@@ -2879,17 +2891,22 @@ static.zaobao.com.sg
 static01.nyt.com
 static02.nyt.com
 static1.lottiefiles.com
+static1.muchohentai.com
 static1.smartbear.co
 static1.squarespace.com
 static10.lottiefiles.com
 static2.avg.com
 static2.lottiefiles.com
+static2.muchohentai.com
 static2.onlyfans.com
 static2.sharepointonline.com
 static3.lottiefiles.com
+static3.muchohentai.com
 static3.squarespace.com
 static4.lottiefiles.com
+static4.muchohentai.com
 static5.lottiefiles.com
+static5.muchohentai.com
 static6.lottiefiles.com
 static7.lottiefiles.com
 static8.lottiefiles.com
@@ -3047,6 +3064,7 @@ vscode-sync-insiders.trafficmanager.net
 vscode-sync.trafficmanager.net
 vuejs.org
 vz-2222604c-50b.b-cdn.net
+vz-c0fe498e-5ab.b-cdn.net
 w.chatlio.com
 w.soundcloud.com
 w2.influxdata.com
