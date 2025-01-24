@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3125
+# 规则统计: 3129
 
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic-zzz.one
@@ -59,9 +59,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-23T06:05:22.734Z
-# Last Updated: 2025-01-23T13:55:57.863Z
+# Last Updated: 2025-01-24T09:15:45.323Z
 # License: AGPL 3.0
-# Size: 3059
+# Size: 3063
 # Size: 55
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -228,6 +228,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .chasecdn.com
 .chcdn.xyz
 .chesscomfiles.com
+.claudeusercontent.com
 .clientmetrics-pa.googleapis.com
 .cloud.influxdata.com
 .cloud1.influxdata.com
@@ -1479,6 +1480,7 @@ cdn.now.gg
 cdn.onesignal.com
 cdn.onetime.dog
 cdn.onlyhentaistuff.com
+cdn.openai.com
 cdn.osxdaily.com
 cdn.paddle.com
 cdn.pagefly.io
@@ -2340,6 +2342,7 @@ my-json-server.typicode.com
 mycommerce.akamaized.net
 na-library.klarnaservices.com
 namedotcom-cdn.name.tools
+nav.yumenosora.co.jp
 navismithapis-cdn.com
 nbcnewsdigital-static.nbcuni.com
 net-fe-static-assets.network-controller.svc.ui.com
@@ -2775,6 +2778,7 @@ static.ettoday.net
 static.euronews.com
 static.fasthosts.co.uk
 static.fboom.me
+static.fbot.me
 static.fc2.com
 static.fc2cn.com
 static.ffx.io
