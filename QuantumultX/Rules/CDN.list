@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3133
+# 规则统计: 3128
 
 HOST,cdn-msp.18comic.vip,CDN
 HOST,cdn-msp.jmcomic-zzz.one,CDN
@@ -61,9 +61,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-23T06:05:22.734Z
-# Last Updated: 2025-01-26T04:13:19.284Z
+# Last Updated: 2025-01-26T14:31:00.685Z
 # License: AGPL 3.0
-# Size: 3065
+# Size: 3060
 # Size: 55
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -127,7 +127,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .assets.tumblr.com,CDN
 .assets.ubuntu.com,CDN
 .assettype.com,CDN
-.avdocker3.com,CDN
 .avximg.com,CDN
 .awsstatic.com,CDN
 .ax1x.com,CDN
@@ -216,9 +215,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .cdninstagram.com,CDN
 .cdnjhd.com,CDN
 .cdnjs.network,CDN
-.cdnmania.org,CDN
 .cdnpk.net,CDN
-.cdnpm.net,CDN
 .cdnppb.net,CDN
 .cdnpure.com,CDN
 .cdnst.net,CDN
@@ -639,6 +636,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .nextui.org,CDN
 .nftstorage.link,CDN
 .ngfiles.com,CDN
+.nhentaimg.com,CDN
 .nincontent.com,CDN
 .ninjastream.to,CDN
 .nitrocdn.com,CDN
@@ -2569,10 +2567,8 @@ s1.maxstream.org,CDN
 s1.qwant.com,CDN
 s10.maxstream.org,CDN
 s11.maxstream.org,CDN
-s12.maxstream.org,CDN
 s13.maxstream.org,CDN
 s2.coinmarketcap.com,CDN
-s2.maxstream.org,CDN
 s2.qwant.com,CDN
 s3-alpha-sig.figma.com,CDN
 s3-alpha.figma.com,CDN
@@ -3132,5 +3128,4 @@ www.typescriptlang.org,CDN
 wwwimages2.adobe.com,CDN
 xpaywalletcdn.azureedge.net,CDN
 yep.video.yahoo.com,CDN
-yummlystatic.com,CDN
 zephr-templates.cnbc.com,CDN

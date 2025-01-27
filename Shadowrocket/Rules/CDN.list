@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3133
+# 规则统计: 3128
 
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic-zzz.one
@@ -61,9 +61,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-23T06:05:22.734Z
-# Last Updated: 2025-01-26T04:13:19.284Z
+# Last Updated: 2025-01-26T14:31:00.685Z
 # License: AGPL 3.0
-# Size: 3065
+# Size: 3060
 # Size: 55
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -127,7 +127,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .assets.tumblr.com
 .assets.ubuntu.com
 .assettype.com
-.avdocker3.com
 .avximg.com
 .awsstatic.com
 .ax1x.com
@@ -216,9 +215,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .cdninstagram.com
 .cdnjhd.com
 .cdnjs.network
-.cdnmania.org
 .cdnpk.net
-.cdnpm.net
 .cdnppb.net
 .cdnpure.com
 .cdnst.net
@@ -639,6 +636,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .nextui.org
 .nftstorage.link
 .ngfiles.com
+.nhentaimg.com
 .nincontent.com
 .ninjastream.to
 .nitrocdn.com
@@ -2569,10 +2567,8 @@ s1.maxstream.org
 s1.qwant.com
 s10.maxstream.org
 s11.maxstream.org
-s12.maxstream.org
 s13.maxstream.org
 s2.coinmarketcap.com
-s2.maxstream.org
 s2.qwant.com
 s3-alpha-sig.figma.com
 s3-alpha.figma.com
@@ -3132,5 +3128,4 @@ www.typescriptlang.org
 wwwimages2.adobe.com
 xpaywalletcdn.azureedge.net
 yep.video.yahoo.com
-yummlystatic.com
 zephr-templates.cnbc.com
