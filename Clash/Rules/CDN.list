@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3126
+# 规则统计: 3131
 
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic-zzz.one
@@ -59,9 +59,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-23T06:05:22.734Z
-# Last Updated: 2025-01-26T14:31:00.685Z
+# Last Updated: 2025-01-27T07:42:36.720Z
 # License: AGPL 3.0
-# Size: 3060
+# Size: 3065
 # Size: 55
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1014,6 +1014,7 @@ analytics.twitter.com
 analytics.welcomesoftware.com
 anchor.digitalocean.com
 android-safebrowsing.google.com
+answers-afd.microsoft.com
 api-esp-ap.piano.io
 api-eu.mixpanel.com
 api-frameworks.vercel.sh
@@ -1525,6 +1526,7 @@ cdn.royaleapi.com
 cdn.safecharge.com
 cdn.sanity.io
 cdn.sc.gl
+cdn.schemaapp.com
 cdn.sciencecast.org
 cdn.search.brave.com
 cdn.sedo.com
@@ -1867,6 +1869,7 @@ files.slack.com
 files.smashing.media
 files.writefreely.org
 files.yande.re
+filestore.community.support.microsoft.com
 filestore.fortinet.com
 firebase-settings.crashlytics.com
 firebaselogging-pa.googleapis.com
@@ -2865,6 +2868,7 @@ static.snyk.io
 static.solarwinds.com
 static.spankbang.com
 static.srcspot.com
+static.staff-start.com
 static.start.me
 static.status.io
 static.telegraph.co.uk
@@ -3071,6 +3075,7 @@ vz-c0fe498e-5ab.b-cdn.net
 w.chatlio.com
 w.soundcloud.com
 w2.influxdata.com
+wa.arounddeal.com
 wac-cdn-2.atlassian.com
 wac-cdn.atlassian.com
 waitlisted.co
