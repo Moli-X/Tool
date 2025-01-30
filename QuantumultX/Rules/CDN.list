@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3132
+# 规则统计: 3134
 
 HOST,cdn-msp.18comic.vip,CDN
 HOST,cdn-msp.jmcomic-zzz.one,CDN
@@ -61,9 +61,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-23T06:05:22.734Z
-# Last Updated: 2025-01-29T14:50:46.969Z
+# Last Updated: 2025-01-30T11:28:24.604Z
 # License: AGPL 3.0
-# Size: 3064
+# Size: 3066
 # Size: 55
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1374,6 +1374,7 @@ cdn.concert.io,CDN
 cdn.configcat.com,CDN
 cdn.consentmanager.net,CDN
 cdn.contentful.com,CDN
+cdn.conveythis.com,CDN
 cdn.credible.com,CDN
 cdn.css.net,CDN
 cdn.cxense.com,CDN
@@ -1399,6 +1400,7 @@ cdn.equalweb.com,CDN
 cdn.eu.contentful.com,CDN
 cdn.european-alternatives.eu,CDN
 cdn.faire.com,CDN
+cdn.fastcomments.com,CDN
 cdn.filen.io,CDN
 cdn.firebase.com,CDN
 cdn.fluidplayer.com,CDN
