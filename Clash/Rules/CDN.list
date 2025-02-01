@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3136
+# 规则统计: 3149
 
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic-zzz.one
@@ -59,9 +59,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-01-23T06:05:22.734Z
-# Last Updated: 2025-01-31T10:40:55.239Z
+# Last Updated: 2025-02-01T11:37:56.845Z
 # License: AGPL 3.0
-# Size: 3070
+# Size: 3083
 # Size: 55
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -851,6 +851,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .strpst.com
 .stylexjs.com
 .substackcdn.com
+.superfiliate-cdn.com
 .surge.sh
 .surrit.com
 .susercontent.com
@@ -872,6 +873,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .tile.openstreetmap.org
 .tile.osm.org
 .timg135.top
+.tindiemedia.com
 .tiqcdn.com
 .tkcdns.com
 .tmsimg.com
@@ -1025,6 +1027,7 @@ api.bintray.com
 api.crashguard.me
 api.dicebear.com
 api.iconify.design
+api.instantly.ai
 api.mintlify.com
 api.mixpanel.com
 api.producthunt.com
@@ -1260,6 +1263,7 @@ brick.a.ssl.fastly.net
 brick.freetls.fastly.net
 bst.icons8.com
 btn.hitomi.la
+bundle.dyn-rev.app
 bundle.trysavvy.com
 bundlephobia.com
 bundler.nice-team.net
@@ -1327,6 +1331,7 @@ cdn.7tv.app
 cdn.accounts.nintendo.com
 cdn.adguard.com
 cdn.adguard.info
+cdn.aimerce.ai
 cdn.amcharts.com
 cdn.announcekit.app
 cdn.answeroverflow.com
@@ -1416,6 +1421,7 @@ cdn.geekzone.co.nz
 cdn.getkoala.com
 cdn.gettr.com
 cdn.ghostery.com
+cdn.giftcardpro.app
 cdn.glitch.com
 cdn.glitch.global
 cdn.glitch.me
@@ -1779,6 +1785,7 @@ divhunt.b-cdn.net
 dl.airdroid.com
 dl.nwjs.io
 dl2.nwjs.io
+do.featurebase.app
 docker.cloudsmith.io
 docs.rs
 doppler-config.cbsivideo.com
@@ -2247,6 +2254,7 @@ m.porn3dx.com
 m.wsj.net
 m3.gab.com
 m3u8.girigirilove.com
+makerworld.bblmw.com
 mangaz-books.j-comi.jp
 mangaz-static.j-comi.jp
 mantisloader.mantis-awx.com
@@ -2299,6 +2307,7 @@ media.nationwide.com
 media.npr.org
 media.orz.uno
 media.owcnow.com
+media.printables.com
 media.pullopen.xyz
 media.ra.kroll.com
 media.shopimind.com
@@ -2447,6 +2456,7 @@ platform-assets.typekit.net
 platform.instagram.com
 platform.twitter.com
 platforms.makemytrip.com
+play.gotolstoy.com
 play.izanmei.net
 play.publicradio.org
 play.vidyard.com
@@ -2540,6 +2550,7 @@ resources-cache.prod.sketch.com
 resources-live.sketch.cloud
 resources.esportsinsider.com
 resources.help.salesforce.com
+rest.happierleads.com
 rsi.grafana.com
 rsms.me
 rtcg-access.bytevcloud.com
@@ -3061,6 +3072,7 @@ video-images.vice.com
 video-meta.humix.com
 video.bsky.app
 video.cdnbye.com
+video.dailymail.co.uk
 video1.7mmtv.sx
 video2.7mmtv.sx
 videos.elephas.app
@@ -3105,6 +3117,7 @@ website-cdn.ipinfo.io
 webstatic.chargebee.com
 widget.docsbot.ai
 widget.freshworks.com
+widget.gotolstoy.com
 widget.intercom.io
 widget.kapa.ai
 widget.trustpilot.com
