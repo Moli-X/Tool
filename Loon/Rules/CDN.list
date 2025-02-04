@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3151
+# 规则统计: 3148
 
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic-zzz.one
@@ -12,12 +12,8 @@ DOMAIN-KEYWORD,cdn.adultempire.com
 DOMAIN-KEYWORD,dsn.algolia.net
 DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 DOMAIN-KEYWORD,web-assets.zendesk
-DOMAIN-WILDCARD,*.ffzy-online?.com
-DOMAIN-WILDCARD,*.ffzy-play?.com
 DOMAIN-WILDCARD,*.fsvod?.com
 DOMAIN-WILDCARD,*.kuaikan-cdn?.com
-DOMAIN-WILDCARD,*.lz-cdn?.com
-DOMAIN-WILDCARD,*.lz-cdn??.com
 DOMAIN-WILDCARD,appcenter-filemanagement-*.cloudapp.net
 DOMAIN-WILDCARD,assets*.freshdesk.com
 DOMAIN-WILDCARD,blog-imgs-??.2nt.com
@@ -60,11 +56,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-01-23T06:05:22.734Z
-# Last Updated: 2025-02-01T11:37:56.845Z
+# Last Updated: 2025-02-04T08:12:23.245Z
+# Last Updated: 2025-02-04T12:38:43.128Z
 # License: AGPL 3.0
-# Size: 3083
-# Size: 55
+# Size: 3084
+# Size: 51
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -1898,6 +1894,7 @@ fonts.codeberg.org
 fonts.gishan.cc
 fonts.googleapis.com
 fonts.gstatic.com
+fonts.mailerlite.com
 fonts.sony.net
 fonts.svc.ui.com
 fonts.twitter.com
