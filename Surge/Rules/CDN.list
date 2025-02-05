@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3148
+# 规则统计: 3158
 
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic-zzz.one
@@ -56,10 +56,10 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-02-04T08:12:23.245Z
-# Last Updated: 2025-02-04T12:38:43.128Z
+# Last Updated: 2025-02-05T02:21:42.365Z
+# Last Updated: 2025-02-05T06:41:06.119Z
 # License: AGPL 3.0
-# Size: 3084
+# Size: 3094
 # Size: 51
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -295,6 +295,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .easylist.to
 .ebayimg.com
 .ebaystatic.com
+.edge.storage-yahoo.jp
 .edgestorewebcdn.azureedge.net
 .eggjs.org
 .ehgt.org
@@ -317,6 +318,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .externulls.com
 .ezocdn.com
 .f-droid.org
+.f.hubspotemail.net
 .f.hubspotfree.net
 .fakeimg.pl
 .fakestoreapi.com
@@ -971,6 +973,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .yastatic.net
 .yelpcdn.com
 .yimg.com
+.yimg.jp
 .ymq.cool
 .yourimageshare.com
 .ypncdn.com
@@ -1722,6 +1725,7 @@ components.justanswer.com
 config.extension.grammarly.com
 connect-js.stripe.com
 connect.facebook.net
+connect.nosto.com
 connectivitycheck.android.com
 connectivitycheck.gstatic.com
 consent-manager.ft.com
@@ -1736,6 +1740,7 @@ content.api.news
 content.arduino.cc
 content.invisioncic.com
 content.jwplatform.com
+content.kaspersky-labs.com
 content.overwolf.com
 content.product.glitch.com
 content.wepik.com
@@ -1760,6 +1765,7 @@ css-1-cdn.airdroid.com
 css.blackmagicdesign.com
 css.createsend1.com
 curl.se
+cw-image-resizer.cwg.tw
 d4.alternativeto.net
 dam.freshworks.com
 data.jsdelivr.com
@@ -2386,6 +2392,7 @@ ocsp.digicert.com
 ocsp.godaddy.com
 ocsp.sectigo.com
 ocsp.usertrust.com
+oct8neproxy.azurewebsites.net
 ohttp-relay1.fastly-edge.com
 ooo.0o0.ooo
 open-vsx.org
@@ -2473,6 +2480,7 @@ polyfill.bbhub.io
 pomf2.lain.la
 pool.jortage.com
 pplx-next-static-public.perplexity.ai
+pplx-res.cloudinary.com
 practicaldev-herokuapp-com.freetls.fastly.net
 prego-cache.prod.sketch.com
 prettier.io
@@ -2512,6 +2520,7 @@ quriobot.com
 r.r10s.jp
 r2.1hanime.com
 r2.leadsy.ai
+r2cdn.perplexity.ai
 rapid-cdn.yottaa.com
 raw.github.com
 rawmarkdown.cloudflareaccess.org
@@ -2800,6 +2809,7 @@ static.fc2.com
 static.fc2cn.com
 static.ffx.io
 static.figma.com
+static.filehorse.com
 static.filestackapi.com
 static.foxbusiness.com
 static.foxnews.com

@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3148
+# 规则统计: 3158
 
 HOST,cdn-msp.18comic.vip,CDN
 HOST,cdn-msp.jmcomic-zzz.one,CDN
@@ -56,10 +56,10 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-02-04T08:12:23.245Z
-# Last Updated: 2025-02-04T12:38:43.128Z
+# Last Updated: 2025-02-05T02:21:42.365Z
+# Last Updated: 2025-02-05T06:41:06.119Z
 # License: AGPL 3.0
-# Size: 3084
+# Size: 3094
 # Size: 51
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -295,6 +295,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .easylist.to,CDN
 .ebayimg.com,CDN
 .ebaystatic.com,CDN
+.edge.storage-yahoo.jp,CDN
 .edgestorewebcdn.azureedge.net,CDN
 .eggjs.org,CDN
 .ehgt.org,CDN
@@ -317,6 +318,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .externulls.com,CDN
 .ezocdn.com,CDN
 .f-droid.org,CDN
+.f.hubspotemail.net,CDN
 .f.hubspotfree.net,CDN
 .fakeimg.pl,CDN
 .fakestoreapi.com,CDN
@@ -971,6 +973,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .yastatic.net,CDN
 .yelpcdn.com,CDN
 .yimg.com,CDN
+.yimg.jp,CDN
 .ymq.cool,CDN
 .yourimageshare.com,CDN
 .ypncdn.com,CDN
@@ -1722,6 +1725,7 @@ components.justanswer.com,CDN
 config.extension.grammarly.com,CDN
 connect-js.stripe.com,CDN
 connect.facebook.net,CDN
+connect.nosto.com,CDN
 connectivitycheck.android.com,CDN
 connectivitycheck.gstatic.com,CDN
 consent-manager.ft.com,CDN
@@ -1736,6 +1740,7 @@ content.api.news,CDN
 content.arduino.cc,CDN
 content.invisioncic.com,CDN
 content.jwplatform.com,CDN
+content.kaspersky-labs.com,CDN
 content.overwolf.com,CDN
 content.product.glitch.com,CDN
 content.wepik.com,CDN
@@ -1760,6 +1765,7 @@ css-1-cdn.airdroid.com,CDN
 css.blackmagicdesign.com,CDN
 css.createsend1.com,CDN
 curl.se,CDN
+cw-image-resizer.cwg.tw,CDN
 d4.alternativeto.net,CDN
 dam.freshworks.com,CDN
 data.jsdelivr.com,CDN
@@ -2386,6 +2392,7 @@ ocsp.digicert.com,CDN
 ocsp.godaddy.com,CDN
 ocsp.sectigo.com,CDN
 ocsp.usertrust.com,CDN
+oct8neproxy.azurewebsites.net,CDN
 ohttp-relay1.fastly-edge.com,CDN
 ooo.0o0.ooo,CDN
 open-vsx.org,CDN
@@ -2473,6 +2480,7 @@ polyfill.bbhub.io,CDN
 pomf2.lain.la,CDN
 pool.jortage.com,CDN
 pplx-next-static-public.perplexity.ai,CDN
+pplx-res.cloudinary.com,CDN
 practicaldev-herokuapp-com.freetls.fastly.net,CDN
 prego-cache.prod.sketch.com,CDN
 prettier.io,CDN
@@ -2512,6 +2520,7 @@ quriobot.com,CDN
 r.r10s.jp,CDN
 r2.1hanime.com,CDN
 r2.leadsy.ai,CDN
+r2cdn.perplexity.ai,CDN
 rapid-cdn.yottaa.com,CDN
 raw.github.com,CDN
 rawmarkdown.cloudflareaccess.org,CDN
@@ -2800,6 +2809,7 @@ static.fc2.com,CDN
 static.fc2cn.com,CDN
 static.ffx.io,CDN
 static.figma.com,CDN
+static.filehorse.com,CDN
 static.filestackapi.com,CDN
 static.foxbusiness.com,CDN
 static.foxnews.com,CDN
