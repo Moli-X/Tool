@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3162
+# 规则统计: 3167
 
 HOST,cdn-msp.18comic.vip,CDN
 HOST,cdn-msp.jmcomic-zzz.one,CDN
@@ -57,10 +57,10 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-02-06T14:31:12.288Z
 # Last Updated: 2025-02-07T13:11:49.857Z
+# Last Updated: 2025-02-08T07:02:59.128Z
 # License: AGPL 3.0
-# Size: 3097
+# Size: 3102
 # Size: 52
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -791,6 +791,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .shortpixel.ai,CDN
 .similarcdn.com,CDN
 .simplecastcdn.com,CDN
+.simpleflyingimages.com,CDN
 .sirv.com,CDN
 .siteintercept.qualtrics.com,CDN
 .sitescdn.net,CDN
@@ -803,6 +804,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .smartscreen.microsoft.com,CDN
 .smassets.net,CDN
 .smilecdn.co,CDN
+.smmallcdn.net,CDN
 .smushcdn.com,CDN
 .sndcdn.com,CDN
 .sny.monosnap.com,CDN
@@ -812,6 +814,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .splunkcloud.com,CDN
 .sqspcdn.com,CDN
 .squarespace-cdn.com,CDN
+.srcdn.com,CDN
 .ss-cdn.com,CDN
 .ssl-images-amazon.com,CDN
 .sstatic.net,CDN
@@ -967,6 +970,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .xhpingcdn.com,CDN
 .xingcdn.com,CDN
 .xlog.app,CDN
+.xm-apps-static.com,CDN
 .xnxx-cdn.com,CDN
 .xvideos-cdn.com,CDN
 .yammerusercontent.com,CDN
@@ -2864,6 +2868,7 @@ static.mytonwallet.io,CDN
 static.na1.visioncritical.com,CDN
 static.namebeta.com,CDN
 static.netify.ai,CDN
+static.newmobilelife.com,CDN
 static.news.bitcoin.com,CDN
 static.nhentai.net,CDN
 static.nicehash.com,CDN
