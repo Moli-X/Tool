@@ -121,19 +121,19 @@ jobs:
                 "PayPal.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list"
                 # Cloudflare
                 "Cloudflare.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloudflare/Cloudflare.list"
-                # 游戏规则 
+                # 游戏规则
                 "Steam.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list"
                 "Epic.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
                 "Game.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list"
                 # 下载CDN
                 "DownloadCDN_Global.list https://kelee.one/Tool/Loon/Rule/InternationalDownloadCDN.list"
                 "DownloadCDN_CN.list https://kelee.one/Tool/Loon/Rule/ChinaDownloadCDN.list"
-                # 国内规则 
+                # 国内规则
                 "Bilibili.list https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
                 "WeChat.list https://raw.githubusercontent.com/NobyDa/Script/master/Surge/WeChat.list"
                 "ChinaASN.list https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
                 "ChinaDomain.list https://ruleset.skk.moe/List/non_ip/domestic.conf"
-                # 广告规则 
+                # 广告规则
                 "Ads_limbopro.list https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Surge/rule/Adblock4limbo_surge.list"
                 "Ads_EasyListChina.list https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easylistchina_surge.list"
                 "Ads_EasyListPrivacy.list https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easyprivacy_surge.list"
@@ -287,7 +287,7 @@ jobs:
             echo "$file not found."
           fi
         done
-
+  
     - name: Loon
       run: |
         for file in Tool-repo/Loon/Rules/*.list; do
