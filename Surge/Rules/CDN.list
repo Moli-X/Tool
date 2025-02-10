@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3168
+# 规则统计: 3172
 
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic-zzz.one
@@ -58,10 +58,10 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-02-08T07:02:59.128Z
 # Last Updated: 2025-02-09T03:47:19.928Z
+# Last Updated: 2025-02-10T01:33:34.345Z
 # License: AGPL 3.0
-# Size: 3102
+# Size: 3106
 # Size: 53
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -190,6 +190,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .cdn.mozilla.net
 .cdn.nimg.jp
 .cdn.nintendo.net
+.cdn.pbs.org
 .cdn.printfriendly.com
 .cdn.prismic.io
 .cdn.prod.atlassian-dev.net
@@ -1354,6 +1355,7 @@ cdn.autoketing.org
 cdn.axieinfinity.com
 cdn.babylonjs.com
 cdn.bfe.dev
+cdn.bfldr.com
 cdn.bigcloud.click
 cdn.birdie.so
 cdn.botframework.com
@@ -2194,6 +2196,7 @@ ipfs.d.tube
 irp-cdn.multiscreensite.com
 j.udn.com.tw
 jac.yahoosandbox.com
+jaws.pbs.org
 jfe-cdn.qualtrics.com
 jira-frontend-bifrost.prod-east.frontend.public.atl-paas.net
 js-1-cdn.airdroid.com
@@ -2307,6 +2310,7 @@ media.graphassets.com
 media.hachyderm.io
 media.infosec.exchange
 media.inhumanity.com
+media.invisioncic.com
 media.istockphoto.com
 media.kit.com
 media.lantern.io
