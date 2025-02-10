@@ -59,7 +59,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-09T03:47:19.928Z
-# Last Updated: 2025-02-10T01:33:34.345Z
+# Last Updated: 2025-02-10T10:26:29.011Z
 # License: AGPL 3.0
 # Size: 3106
 # Size: 53
@@ -79,6 +79,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .9cache.com
 .a.storyblok.com
 .a1tb.com
+.a7s.imgix.com
 .aacdn.nagich.com
 .aayinltcs.arduino.cc
 .abc-cdn.net.au
@@ -730,7 +731,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .pxlecdn.com
 .pypi.org
 .pythonhosted.org
-.pztv.ca
 .qooqlevideo.com
 .quay.io
 .quip-cdn.com
@@ -1392,6 +1392,7 @@ cdn.conveythis.com
 cdn.credible.com
 cdn.css.net
 cdn.cxense.com
+cdn.daily.dev
 cdn.dap.dmm.co.jp
 cdn.datacamp.com
 cdn.datatables.net
@@ -1551,7 +1552,6 @@ cdn.sciencecast.org
 cdn.search.brave.com
 cdn.sedo.com
 cdn.segment.com
-cdn.sellix.io
 cdn.seondf.com
 cdn.setapp.com
 cdn.sheetjs.com
@@ -1925,6 +1925,7 @@ fs2.onlyhentaistuff.com
 fscdn.eppo.cloud
 g-static.ap4r.com
 g1.nyt.com
+gearbox.imgix.com
 genesis-cdn.ff.com
 geoip-js.com
 gfx-data.news-engineering.aws.wapo.pub
@@ -1995,7 +1996,6 @@ icons.zeabur.com
 iframe.nbcnews.com
 imag.malavida.com
 image-forwarder.notaku.so
-image.4fuk.org
 image.ap-mail.org
 image.civitai.com
 image.cnbcfm.com
@@ -2294,6 +2294,7 @@ media.cmx.edu.kg
 media.cnn.com
 media.contentapi.ea.com
 media.convertkit.com
+media.daily.dev
 media.datacenterdynamics.com
 media.dev.to
 media.discordapp.net
@@ -3060,7 +3061,6 @@ unlimited-cdn.waifu2x.net
 unsubscribe-imgs.leavemealone.com
 updates.signal.org
 updates2.signal.org
-upload.filebase.com
 upload.wikimedia.org
 uploads.codesandbox.io
 uploads.guim.co.uk
