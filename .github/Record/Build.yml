@@ -3,13 +3,14 @@ name: Build
 on:
   workflow_dispatch:
   schedule:
-    - cron: "52 3,15 * * *"
+    - cron: "5 0,12 * * *"
 
 jobs:
   Build:
     runs-on: ubuntu-latest
     env:
       TZ: "Asia/Shanghai"
+      SING_BOX_VERSION: 1.10.5
 
     steps:
     - name: Checkout Repository
@@ -218,15 +219,18 @@ jobs:
     - name: Copy files
       run: |
         rm -rf Tool-repo/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge,sing-box}/Rules
-        mkdir -p Tool-repo/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge,sing-box/Rules
+        mkdir -p Tool-repo/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge,sing-box}/Rules
         for file in Tool-repo/Ruleset/*.list; do
           filename=$(basename "$file")
           for dir in Clash Loon QuantumultX Shadowrocket Stash Surge; do
+            mkdir -p "Tool-repo/$dir/Rules"
             cp "$file" "Tool-repo/$dir/Rules/$filename"
           done
           # 复制到 Egern 文件夹, 并将后缀改为.yaml
+          mkdir -p "Tool-repo/Egern/Rules"
           cp "$file" "Tool-repo/Egern/Rules/${filename%.*}.yaml"
           # 复制到 sing-box 文件夹, 并将后缀改为.json
+          mkdir -p "Tool-repo/sing-box/Rules"
           cp "$file" "Tool-repo/sing-box/Rules/${filename%.*}.json"
         done
         echo "Files copied successfully."
@@ -390,15 +394,15 @@ jobs:
           fi
         done
 
-    - name: Sing-box
+    - name: sing-box
       run: |
-        # 安装 Sing-box
+        # 安装 sing-box
         curl -L -o sing-box.tar.gz https://github.com/SagerNet/sing-box/releases/download/v${SING_BOX_VERSION}/sing-box-${SING_BOX_VERSION}-linux-amd64.tar.gz
         tar -xzf sing-box.tar.gz
         chmod +x sing-box-${SING_BOX_VERSION}-linux-amd64/sing-box
         sudo mv sing-box-${SING_BOX_VERSION}-linux-amd64/sing-box /usr/local/bin/sing-box
         sing-box version
-        # 处理 Rule-set
+        # 处理 Rules
         for file in Tool-repo/sing-box/Rules/*.json; do
           if [ -f "$file" ]; then
             sed -i -e '/^PROCESS-NAME/d' "$file"
@@ -410,6 +414,8 @@ jobs:
             sed -i -e '/^URL-REGEX/d' "$file"
             sed -i -e '/^DOMAIN-WILDCARD/d' "$file"
             sed -i -e '/^GEOIP/d' "$file"
+            sed -i -e '/^#/d' "$file"
+            sed -i -e '/^$/d' "$file"
 
             temp_file=$(mktemp)
             echo '{' > "$temp_file"
@@ -466,6 +472,9 @@ jobs:
             echo "$file not found."
           fi
         done
+        rm -rf ${{ github.workspace }}/Tool-repo/sing-box/Rules/ChinaASN.{json,srs}
+        rm -rf ${{ github.workspace }}/Tool-repo/sing-box/Rules/FILTER_REGION.{json,srs}
+      
 
     - name: Push Update
       run: |
