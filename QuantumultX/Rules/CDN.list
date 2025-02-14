@@ -1,6 +1,7 @@
 # 规则名称: CDN
-# 规则统计: 3175
+# 规则统计: 3203
 
+HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
 HOST,cdn-msp.jmcomic-zzz.one,CDN
 HOST,cdn-msp.jmcomic.me,CDN
@@ -19,11 +20,13 @@ HOST-WILDCARD,assets*.freshdesk.com,CDN
 HOST-WILDCARD,blog-imgs-??.2nt.com,CDN
 HOST-WILDCARD,blog-imgs-??.fc2.com,CDN
 HOST-WILDCARD,browser-intake-*-datadoghq.com,CDN
+HOST-WILDCARD,cdn-msp?.18comic.org,CDN
 HOST-WILDCARD,cdn-msp?.18comic.vip,CDN
 HOST-WILDCARD,cdn-msp?.jmcomic-zzz.one,CDN
 HOST-WILDCARD,cdn-msp?.jmcomic.me,CDN
 HOST-WILDCARD,cdn?-dl.pornhost.com,CDN
 HOST-WILDCARD,cdn?-thumbs.pornhost.com,CDN
+HOST-WILDCARD,cdn?.18girlssex.com,CDN
 HOST-WILDCARD,cdn?.mikuclub.fun,CDN
 HOST-WILDCARD,cdns.*.gigya.com,CDN
 HOST-WILDCARD,file?.mikuclub.fun,CDN
@@ -58,11 +61,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-02-09T03:47:19.928Z
-# Last Updated: 2025-02-13T15:29:23.318Z
+# Last Updated: 2025-02-14T07:39:44.113Z
+# Last Updated: 2025-02-14T08:44:35.307Z
 # License: AGPL 3.0
-# Size: 3109
-# Size: 53
+# Size: 3134
+# Size: 56
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -138,6 +141,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .bestjavcdn.com,CDN
 .bftuvip.com,CDN
 .bfzypic.com,CDN
+.biccam.com,CDN
 .bigcdn.cc,CDN
 .bigcontent.io,CDN
 .bitbucket.io,CDN
@@ -269,6 +273,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .data.debugbear.com,CDN
 .datocms-assets.com,CDN
 .daumcdn.net,CDN
+.dditscdn.com,CDN
 .ddpic.info,CDN
 .delegated-ipfs.dev,CDN
 .deno.land,CDN
@@ -287,6 +292,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .doppiocdn.live,CDN
 .doppiocdn.net,CDN
 .doppiocdn.org,CDN
+.drivecdn.com,CDN
 .dropboxstatic.com,CDN
 .dsc.cloud,CDN
 .dtci-pe-vp-image-resizer.platform.edgedatg.com,CDN
@@ -364,6 +370,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .ftcdn.net,CDN
 .futurecdn.net,CDN
 .gadgets360cdn.com,CDN
+.gamccdn.com,CDN
 .gamesgamescdn.com,CDN
 .gammacdn.com,CDN
 .gateway.originprotocol.com,CDN
@@ -642,6 +649,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .ngfiles.com,CDN
 .nhentaimg.com,CDN
 .nincontent.com,CDN
+.nineyu.com,CDN
 .ninjastream.to,CDN
 .nitrocdn.com,CDN
 .nodejs.org,CDN
@@ -963,6 +971,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .wolongcdnm3u8.com,CDN
 .wolongzywcdn3.com,CDN
 .workers.dev,CDN
+.wowmodels.com,CDN
 .wp.com,CDN
 .wpcomstaging.com,CDN
 .wpmucdn.com,CDN
@@ -1176,6 +1185,7 @@ assets.ontrack.com,CDN
 assets.openshift.com,CDN
 assets.openshift.net,CDN
 assets.orz.uno,CDN
+assets.peatio.com,CDN
 assets.pixlee.com,CDN
 assets.plurk.com,CDN
 assets.poool.fr,CDN
@@ -1216,6 +1226,7 @@ assets.visioncritical.net,CDN
 assets.vodafone.co.uk,CDN
 assets.vogue.com,CDN
 assets.volvo.com,CDN
+assets.wikiwand.com,CDN
 assets.xboxservices.com,CDN
 assets.xmind.net,CDN
 assets.yande.re,CDN
@@ -1253,6 +1264,7 @@ avatars.plurk.com,CDN
 avts.wmlabs.net,CDN
 axiecdn.axieinfinity.com,CDN
 az700632.vo.msecnd.net,CDN
+b.peatio.com,CDN
 b.sf-syn.com,CDN
 badbits.dwebops.pub,CDN
 badge.buildkite.com,CDN
@@ -1336,6 +1348,7 @@ cdn-static.talent.com,CDN
 cdn-uicons.flaticon.com,CDN
 cdn-www.bluestacks.com,CDN
 cdn-yotpo-images-production.yotpo.com,CDN
+cdn.17app.co,CDN
 cdn.18jav.tv,CDN
 cdn.7tv.app,CDN
 cdn.accounts.nintendo.com,CDN
@@ -1372,6 +1385,7 @@ cdn.c1.amplience.net,CDN
 cdn.calibermind.com,CDN
 cdn.cameo.com,CDN
 cdn.cbd.int,CDN
+cdn.changelog.com,CDN
 cdn.channel.io,CDN
 cdn.chess24.com,CDN
 cdn.circle.so,CDN
@@ -1401,6 +1415,7 @@ cdn.datatables.net,CDN
 cdn.datdota.com,CDN
 cdn.db-ip.com,CDN
 cdn.decrypt.co,CDN
+cdn.delight-vr.com,CDN
 cdn.deta.space,CDN
 cdn.dnsimple.com,CDN
 cdn.document360.io,CDN
@@ -1604,6 +1619,7 @@ cdn.vuukle.com,CDN
 cdn.wccftech.com,CDN
 cdn.webclicks24.com,CDN
 cdn.weglot.com,CDN
+cdn.wikiwand.com,CDN
 cdn.wikiwiki.jp,CDN
 cdn.windowsreport.com,CDN
 cdn.wishpond.net,CDN
@@ -1618,11 +1634,14 @@ cdn.ywxi.net,CDN
 cdn.zapier.com,CDN
 cdn.zeabur.com,CDN
 cdn.zhujiwiki.com,CDN
+cdn0-thumbs.worldsex.com,CDN
 cdn0.dan.com,CDN
 cdn0.iconfinder.com,CDN
 cdn01.jotfor.ms,CDN
 cdn02.jotfor.ms,CDN
 cdn03.jotfor.ms,CDN
+cdn1-assets.worldsex.com,CDN
+cdn1-thumbs.worldsex.com,CDN
 cdn1.airdroid.com,CDN
 cdn1.bigcommerce.com,CDN
 cdn1.dan.com,CDN
@@ -2032,6 +2051,7 @@ images-assets.nasa.gov,CDN
 images-eds-ssl.xboxlive.com,CDN
 images-ext-1.discordapp.net,CDN
 images-ext-2.discordapp.net,CDN
+images.991.com,CDN
 images.arigatotravel.com,CDN
 images.axios.com,CDN
 images.bfmtv.com,CDN
@@ -2103,6 +2123,7 @@ img-cos.mandaoo.com,CDN
 img-en.fs.com,CDN
 img-prod-cms-rt-microsoft-com.akamaized.net,CDN
 img-s-msn-com.akamaized.net,CDN
+img.177pica.com,CDN
 img.3movs.com,CDN
 img.adspower.net,CDN
 img.agrd.eu,CDN
@@ -2145,6 +2166,7 @@ img.ml0987.com,CDN
 img.moedog.org,CDN
 img.moegirl.tw,CDN
 img.mresou.com,CDN
+img.openshop.com.hk,CDN
 img.pawoo.net,CDN
 img.perfops.net,CDN
 img.picacomic.com,CDN
@@ -2260,6 +2282,7 @@ livedoor.blogimg.jp,CDN
 livemap-tiles1.waze.com,CDN
 load.csell.co,CDN
 loader.mantis-intelligence.com,CDN
+log-collector.17app.co,CDN
 logo.clearbit.com,CDN
 logos.kiwibrowser.com,CDN
 logos.speedtestcustom.com,CDN
@@ -2420,6 +2443,7 @@ optimizely.com,CDN
 organizer.bizzabo.com,CDN
 osint.digitalside.it,CDN
 oss-binaries.phusionpassenger.com,CDN
+oss.1p3a.com,CDN
 oss.moe.cat,CDN
 ovo.wxw.moe,CDN
 ovp.itv.com,CDN
@@ -2590,6 +2614,7 @@ s-cdn.anthropic.com,CDN
 s-cdn.phonearena.com,CDN
 s.abcnews.com,CDN
 s.gishan.cc,CDN
+s.imgflip.com,CDN
 s.imgur.com,CDN
 s.namemc.com,CDN
 s.plurk.com,CDN
@@ -2823,6 +2848,7 @@ static.fboom.me,CDN
 static.fbot.me,CDN
 static.fc2.com,CDN
 static.fc2cn.com,CDN
+static.fc2id.com,CDN
 static.ffx.io,CDN
 static.figma.com,CDN
 static.filehorse.com,CDN
@@ -2891,6 +2917,7 @@ static.oomol.com,CDN
 static.opensea.io,CDN
 static.oracle.com,CDN
 static.osdn.net,CDN
+static.peatio.com,CDN
 static.pingcap.com,CDN
 static.playstation.com,CDN
 static.plus.net,CDN
@@ -3137,6 +3164,7 @@ web-static.archive.org,CDN
 web-static.pages.iheart.com,CDN
 web-toolbar.playstation.com,CDN
 webassets.linear.app,CDN
+webcdn.17app.co,CDN
 webfonts.zoho.com,CDN
 webp.frostming.com,CDN
 website-cdn.ipinfo.io,CDN

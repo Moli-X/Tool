@@ -1,6 +1,7 @@
 # 规则名称: CDN
-# 规则统计: 3173
+# 规则统计: 3201
 
+DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic-zzz.one
 DOMAIN,cdn-msp.jmcomic.me
@@ -19,11 +20,13 @@ DOMAIN-WILDCARD,assets*.freshdesk.com
 DOMAIN-WILDCARD,blog-imgs-??.2nt.com
 DOMAIN-WILDCARD,blog-imgs-??.fc2.com
 DOMAIN-WILDCARD,browser-intake-*-datadoghq.com
+DOMAIN-WILDCARD,cdn-msp?.18comic.org
 DOMAIN-WILDCARD,cdn-msp?.18comic.vip
 DOMAIN-WILDCARD,cdn-msp?.jmcomic-zzz.one
 DOMAIN-WILDCARD,cdn-msp?.jmcomic.me
 DOMAIN-WILDCARD,cdn?-dl.pornhost.com
 DOMAIN-WILDCARD,cdn?-thumbs.pornhost.com
+DOMAIN-WILDCARD,cdn?.18girlssex.com
 DOMAIN-WILDCARD,cdn?.mikuclub.fun
 DOMAIN-WILDCARD,cdns.*.gigya.com
 DOMAIN-WILDCARD,file?.mikuclub.fun
@@ -56,11 +59,11 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-02-09T03:47:19.928Z
-# Last Updated: 2025-02-13T15:29:23.318Z
+# Last Updated: 2025-02-14T07:39:44.113Z
+# Last Updated: 2025-02-14T08:44:35.307Z
 # License: AGPL 3.0
-# Size: 3109
-# Size: 53
+# Size: 3134
+# Size: 56
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -136,6 +139,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .bestjavcdn.com
 .bftuvip.com
 .bfzypic.com
+.biccam.com
 .bigcdn.cc
 .bigcontent.io
 .bitbucket.io
@@ -267,6 +271,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .data.debugbear.com
 .datocms-assets.com
 .daumcdn.net
+.dditscdn.com
 .ddpic.info
 .delegated-ipfs.dev
 .deno.land
@@ -285,6 +290,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .doppiocdn.live
 .doppiocdn.net
 .doppiocdn.org
+.drivecdn.com
 .dropboxstatic.com
 .dsc.cloud
 .dtci-pe-vp-image-resizer.platform.edgedatg.com
@@ -362,6 +368,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .ftcdn.net
 .futurecdn.net
 .gadgets360cdn.com
+.gamccdn.com
 .gamesgamescdn.com
 .gammacdn.com
 .gateway.originprotocol.com
@@ -640,6 +647,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .ngfiles.com
 .nhentaimg.com
 .nincontent.com
+.nineyu.com
 .ninjastream.to
 .nitrocdn.com
 .nodejs.org
@@ -961,6 +969,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .wolongcdnm3u8.com
 .wolongzywcdn3.com
 .workers.dev
+.wowmodels.com
 .wp.com
 .wpcomstaging.com
 .wpmucdn.com
@@ -1174,6 +1183,7 @@ assets.ontrack.com
 assets.openshift.com
 assets.openshift.net
 assets.orz.uno
+assets.peatio.com
 assets.pixlee.com
 assets.plurk.com
 assets.poool.fr
@@ -1214,6 +1224,7 @@ assets.visioncritical.net
 assets.vodafone.co.uk
 assets.vogue.com
 assets.volvo.com
+assets.wikiwand.com
 assets.xboxservices.com
 assets.xmind.net
 assets.yande.re
@@ -1251,6 +1262,7 @@ avatars.plurk.com
 avts.wmlabs.net
 axiecdn.axieinfinity.com
 az700632.vo.msecnd.net
+b.peatio.com
 b.sf-syn.com
 badbits.dwebops.pub
 badge.buildkite.com
@@ -1334,6 +1346,7 @@ cdn-static.talent.com
 cdn-uicons.flaticon.com
 cdn-www.bluestacks.com
 cdn-yotpo-images-production.yotpo.com
+cdn.17app.co
 cdn.18jav.tv
 cdn.7tv.app
 cdn.accounts.nintendo.com
@@ -1370,6 +1383,7 @@ cdn.c1.amplience.net
 cdn.calibermind.com
 cdn.cameo.com
 cdn.cbd.int
+cdn.changelog.com
 cdn.channel.io
 cdn.chess24.com
 cdn.circle.so
@@ -1399,6 +1413,7 @@ cdn.datatables.net
 cdn.datdota.com
 cdn.db-ip.com
 cdn.decrypt.co
+cdn.delight-vr.com
 cdn.deta.space
 cdn.dnsimple.com
 cdn.document360.io
@@ -1602,6 +1617,7 @@ cdn.vuukle.com
 cdn.wccftech.com
 cdn.webclicks24.com
 cdn.weglot.com
+cdn.wikiwand.com
 cdn.wikiwiki.jp
 cdn.windowsreport.com
 cdn.wishpond.net
@@ -1616,11 +1632,14 @@ cdn.ywxi.net
 cdn.zapier.com
 cdn.zeabur.com
 cdn.zhujiwiki.com
+cdn0-thumbs.worldsex.com
 cdn0.dan.com
 cdn0.iconfinder.com
 cdn01.jotfor.ms
 cdn02.jotfor.ms
 cdn03.jotfor.ms
+cdn1-assets.worldsex.com
+cdn1-thumbs.worldsex.com
 cdn1.airdroid.com
 cdn1.bigcommerce.com
 cdn1.dan.com
@@ -2030,6 +2049,7 @@ images-assets.nasa.gov
 images-eds-ssl.xboxlive.com
 images-ext-1.discordapp.net
 images-ext-2.discordapp.net
+images.991.com
 images.arigatotravel.com
 images.axios.com
 images.bfmtv.com
@@ -2101,6 +2121,7 @@ img-cos.mandaoo.com
 img-en.fs.com
 img-prod-cms-rt-microsoft-com.akamaized.net
 img-s-msn-com.akamaized.net
+img.177pica.com
 img.3movs.com
 img.adspower.net
 img.agrd.eu
@@ -2143,6 +2164,7 @@ img.ml0987.com
 img.moedog.org
 img.moegirl.tw
 img.mresou.com
+img.openshop.com.hk
 img.pawoo.net
 img.perfops.net
 img.picacomic.com
@@ -2258,6 +2280,7 @@ livedoor.blogimg.jp
 livemap-tiles1.waze.com
 load.csell.co
 loader.mantis-intelligence.com
+log-collector.17app.co
 logo.clearbit.com
 logos.kiwibrowser.com
 logos.speedtestcustom.com
@@ -2418,6 +2441,7 @@ optimizely.com
 organizer.bizzabo.com
 osint.digitalside.it
 oss-binaries.phusionpassenger.com
+oss.1p3a.com
 oss.moe.cat
 ovo.wxw.moe
 ovp.itv.com
@@ -2588,6 +2612,7 @@ s-cdn.anthropic.com
 s-cdn.phonearena.com
 s.abcnews.com
 s.gishan.cc
+s.imgflip.com
 s.imgur.com
 s.namemc.com
 s.plurk.com
@@ -2821,6 +2846,7 @@ static.fboom.me
 static.fbot.me
 static.fc2.com
 static.fc2cn.com
+static.fc2id.com
 static.ffx.io
 static.figma.com
 static.filehorse.com
@@ -2889,6 +2915,7 @@ static.oomol.com
 static.opensea.io
 static.oracle.com
 static.osdn.net
+static.peatio.com
 static.pingcap.com
 static.playstation.com
 static.plus.net
@@ -3135,6 +3162,7 @@ web-static.archive.org
 web-static.pages.iheart.com
 web-toolbar.playstation.com
 webassets.linear.app
+webcdn.17app.co
 webfonts.zoho.com
 webp.frostming.com
 website-cdn.ipinfo.io
