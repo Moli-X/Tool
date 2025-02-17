@@ -62,9 +62,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-17T01:48:50.679Z
-# Last Updated: 2025-02-17T01:48:54.268Z
+# Last Updated: 2025-02-17T08:53:23.885Z
 # License: AGPL 3.0
-# Size: 3141
+# Size: 3151
 # Size: 59
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -699,6 +699,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .picsum.photos
 .pimg.tw
 .pinimg.com
+.pipedriveassets.com
 .pixelcdn.net
 .pixfs.net
 .pixhost.to
@@ -859,6 +860,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .storage.yandexcloud.net
 .storjipfs-gateway.com
 .storry.tv
+.strapi.logto.io
 .stream.publicradio.org
 .streamhentai.org
 .streamhk.com
@@ -1435,6 +1437,7 @@ cdn.engagement.ai
 cdn.equalweb.com
 cdn.eu.contentful.com
 cdn.european-alternatives.eu
+cdn.evbstatic.com
 cdn.faire.com
 cdn.fastcomments.com
 cdn.filen.io
@@ -1531,6 +1534,7 @@ cdn.pagefly.io
 cdn.pagic.org
 cdn.parsely.com
 cdn.pathfactory.com
+cdn.pendo.io
 cdn.perfops.net
 cdn.permutive.com
 cdn.piano.io
@@ -1716,6 +1720,7 @@ cdns.gigya.com
 cdnstatic.porno-cum.com
 cdnstatic.w1mp.com
 cdnstatic.w4nkr.com
+cdntranscend.eventbrite.com
 cds.connatix.com
 certificates.godaddy.com
 certona.gap.com
@@ -1733,6 +1738,7 @@ checkout-sdk.bigcommerce.com
 checkout.stripe.com
 ci.testling.com
 claritystatic.azureedge.net
+clickup.marketlinc.com
 clips-media-assets2.twitch.tv
 cloud.redhat.com
 cloud.typenetwork.com
@@ -1802,6 +1808,7 @@ cw-image-resizer.cwg.tw
 d4.alternativeto.net
 dam.freshworks.com
 data.jsdelivr.com
+data.web.clickup.com
 david-dm.org
 db.onlinewebfonts.com
 ddcdn.comtucdncom.com
@@ -1895,6 +1902,7 @@ f002.backblazeb2.com
 f003.backblazeb2.com
 f004.backblazeb2.com
 fast.wistia.com
+fast.wistia.net
 fastly-cloud.typenetwork.com
 fastporndelivery.hqporner.com
 favicon.yandex.net
@@ -2276,6 +2284,7 @@ ledger-wp-website-s3-prd.ledger.com
 lib.arvancloud.ir
 libraries.hund.io
 libs.quillbot.com
+lift-ai-js.marketlinc.com
 link.storjshare.io
 linkstorage.linkfire.com
 linuxiac.b-cdn.net
@@ -2707,6 +2716,7 @@ secure-uploads.ui.com
 secure.beer7live.com
 secure.fanboy.co.nz
 secure.telegraph.co.uk
+segapi.clerk.com
 segment.digitalocean.com
 sentry.ainopara.com
 service-icons.zeabur.com
