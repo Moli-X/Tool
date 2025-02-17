@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3211
+# 规则统计: 3213
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -17,6 +17,7 @@ HOST-KEYWORD,dsn.algolia.net,CDN
 HOST-KEYWORD,vod-adaptive.akamaized.net,CDN
 HOST-KEYWORD,web-assets.zendesk,CDN
 HOST-WILDCARD,*.fsvod?.com,CDN
+HOST-WILDCARD,*.img.*.sendibm?.com,CDN
 HOST-WILDCARD,*.kuaikan-cdn?.com,CDN
 HOST-WILDCARD,appcenter-filemanagement-*.cloudapp.net,CDN
 HOST-WILDCARD,assets*.freshdesk.com,CDN
@@ -63,11 +64,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-02-14T14:59:34.150Z
-# Last Updated: 2025-02-15T06:55:38.705Z
+# Last Updated: 2025-02-17T01:48:50.679Z
+# Last Updated: 2025-02-17T01:48:54.268Z
 # License: AGPL 3.0
-# Size: 3140
-# Size: 58
+# Size: 3141
+# Size: 59
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -2100,6 +2101,7 @@ images.svc.ui.com,CDN
 images.tokopedia.net,CDN
 images.typeform.com,CDN
 images.unsplash.com,CDN
+images.videolan.org,CDN
 images.web3.storage,CDN
 images.weserv.nl,CDN
 images.wikia.com,CDN

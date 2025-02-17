@@ -14,6 +14,7 @@ DOMAIN-KEYWORD,dsn.algolia.net
 DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 DOMAIN-KEYWORD,web-assets.zendesk
 DOMAIN-WILDCARD,*.fsvod?.com
+DOMAIN-WILDCARD,*.img.*.sendibm?.com
 DOMAIN-WILDCARD,*.kuaikan-cdn?.com
 DOMAIN-WILDCARD,appcenter-filemanagement-*.cloudapp.net
 DOMAIN-WILDCARD,assets*.freshdesk.com
@@ -60,11 +61,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-02-14T14:59:34.150Z
-# Last Updated: 2025-02-15T06:55:38.705Z
+# Last Updated: 2025-02-17T01:48:50.679Z
+# Last Updated: 2025-02-17T01:48:54.268Z
 # License: AGPL 3.0
-# Size: 3140
-# Size: 58
+# Size: 3141
+# Size: 59
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -2097,6 +2098,7 @@ images.svc.ui.com
 images.tokopedia.net
 images.typeform.com
 images.unsplash.com
+images.videolan.org
 images.web3.storage
 images.weserv.nl
 images.wikia.com
