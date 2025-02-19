@@ -62,9 +62,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-17T01:48:50.679Z
-# Last Updated: 2025-02-17T08:53:23.885Z
+# Last Updated: 2025-02-18T16:43:05.342Z
 # License: AGPL 3.0
-# Size: 3151
+# Size: 3160
 # Size: 59
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -580,6 +580,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .line-scdn.net
 .local.webcontainer.io
 .localizecdn.com
+.lodash.com
 .loggly.com
 .logz.io
 .loli.net
@@ -1474,6 +1475,7 @@ cdn.hypershort.com
 cdn.icomoon.io
 cdn.imageengine.io
 cdn.img.ly
+cdn.infoq.com
 cdn.ionos.de
 cdn.ip2location.io
 cdn.ipregistry.co
@@ -2210,6 +2212,7 @@ img4.airdroid.com
 img6.airdroid.com
 imgcdn.cna.com.tw
 imgix.setapp.com
+imgopt.infoq.com
 imgproxy.fourthwall.com
 imgrs.apkcombo.com
 imgs.plurk.com
@@ -2529,6 +2532,7 @@ playgroundcdn.typescriptlang.org
 plugins-artifacts.gradle.org
 plugins.dprint.dev
 plus.unsplash.com
+polyfill-fe.toss.im
 polyfill.bbhub.io
 pomf2.lain.la
 pool.jortage.com
@@ -2841,6 +2845,7 @@ static.cloud.coveo.com
 static.cloudcachetci.com
 static.cnbeta.com.tw
 static.codepen.io
+static.cohere.so
 static.coinall.ltd
 static.coingecko.com
 static.community.workday.com
@@ -2874,6 +2879,7 @@ static.foxnews.com
 static.freeimages.com
 static.getbutton.io
 static.gettyimages.com
+static.gitbook.com
 static.global.visioncritical.com
 static.gnome.org
 static.gopro.com
@@ -2934,6 +2940,7 @@ static.oomol.com
 static.opensea.io
 static.oracle.com
 static.osdn.net
+static.parallels.com
 static.peatio.com
 static.pingcap.com
 static.playstation.com
@@ -2963,6 +2970,7 @@ static.tenki.jp
 static.test-beta.com
 static.theguardian.com
 static.tokenview.io
+static.toss.im
 static.tp-link.com
 static.tradingview.com
 static.tronscan.org
@@ -3180,6 +3188,7 @@ web-cdn.bitrise.io
 web-static.archive.org
 web-static.pages.iheart.com
 web-toolbar.playstation.com
+webappassets.smartsheet.com
 webassets.linear.app
 webcdn.17app.co
 webfonts.zoho.com

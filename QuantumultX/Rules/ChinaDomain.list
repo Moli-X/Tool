@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 785
+# 规则统计: 789
 
 HOST,acg.tv,ChinaDomain
 HOST,assets1.xboxlive.cn,ChinaDomain
@@ -431,9 +431,11 @@ HOST-SUFFIX,kingsoft-office-service.com,ChinaDomain
 HOST-SUFFIX,kkmh.com,ChinaDomain
 HOST-SUFFIX,koubei.com,ChinaDomain
 HOST-SUFFIX,ks-cdn.com,ChinaDomain
+HOST-SUFFIX,ksapisrv.com,ChinaDomain
 HOST-SUFFIX,ksmobile.com,ChinaDomain
 HOST-SUFFIX,ksord.com,ChinaDomain
 HOST-SUFFIX,ksosoft.com,ChinaDomain
+HOST-SUFFIX,ksurl.cn,ChinaDomain
 HOST-SUFFIX,ksyun.com,ChinaDomain
 HOST-SUFFIX,ku6.com,ChinaDomain
 HOST-SUFFIX,kuaishou.com,ChinaDomain
@@ -513,6 +515,7 @@ HOST-SUFFIX,netstatic.net,ChinaDomain
 HOST-SUFFIX,news.cn,ChinaDomain
 HOST-SUFFIX,nga.cn,ChinaDomain
 HOST-SUFFIX,ngabbs.com,ChinaDomain
+HOST-SUFFIX,nlark.com,ChinaDomain
 HOST-SUFFIX,nmc.cn,ChinaDomain
 HOST-SUFFIX,npmmirror.com,ChinaDomain
 HOST-SUFFIX,nubia.cn,ChinaDomain
@@ -754,6 +757,7 @@ HOST-SUFFIX,yunos.com,ChinaDomain
 HOST-SUFFIX,yunpan.cn,ChinaDomain
 HOST-SUFFIX,yunpan.com,ChinaDomain
 HOST-SUFFIX,yupoo.com,ChinaDomain
+HOST-SUFFIX,yuque.com,ChinaDomain
 HOST-SUFFIX,yximgs.com,ChinaDomain
 HOST-SUFFIX,yy.com,ChinaDomain
 HOST-SUFFIX,zdic.net,ChinaDomain
@@ -779,9 +783,9 @@ USER-AGENT,TeslaMap,ChinaDomain
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-02-15T14:56:09.738Z
+# Last Updated: 2025-02-19T01:17:55.469Z
 # License: AGPL 3.0
-# Size: 775
+# Size: 779
 # Sukka's Ruleset - Domestic Domains
 # This file contains known addresses that are avaliable in the Mainland China.
 ################## EOF ##################

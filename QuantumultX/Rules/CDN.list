@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3223
+# 规则统计: 3232
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -65,9 +65,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-17T01:48:50.679Z
-# Last Updated: 2025-02-17T08:53:23.885Z
+# Last Updated: 2025-02-18T16:43:05.342Z
 # License: AGPL 3.0
-# Size: 3151
+# Size: 3160
 # Size: 59
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -583,6 +583,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .line-scdn.net,CDN
 .local.webcontainer.io,CDN
 .localizecdn.com,CDN
+.lodash.com,CDN
 .loggly.com,CDN
 .logz.io,CDN
 .loli.net,CDN
@@ -1477,6 +1478,7 @@ cdn.hypershort.com,CDN
 cdn.icomoon.io,CDN
 cdn.imageengine.io,CDN
 cdn.img.ly,CDN
+cdn.infoq.com,CDN
 cdn.ionos.de,CDN
 cdn.ip2location.io,CDN
 cdn.ipregistry.co,CDN
@@ -2213,6 +2215,7 @@ img4.airdroid.com,CDN
 img6.airdroid.com,CDN
 imgcdn.cna.com.tw,CDN
 imgix.setapp.com,CDN
+imgopt.infoq.com,CDN
 imgproxy.fourthwall.com,CDN
 imgrs.apkcombo.com,CDN
 imgs.plurk.com,CDN
@@ -2532,6 +2535,7 @@ playgroundcdn.typescriptlang.org,CDN
 plugins-artifacts.gradle.org,CDN
 plugins.dprint.dev,CDN
 plus.unsplash.com,CDN
+polyfill-fe.toss.im,CDN
 polyfill.bbhub.io,CDN
 pomf2.lain.la,CDN
 pool.jortage.com,CDN
@@ -2844,6 +2848,7 @@ static.cloud.coveo.com,CDN
 static.cloudcachetci.com,CDN
 static.cnbeta.com.tw,CDN
 static.codepen.io,CDN
+static.cohere.so,CDN
 static.coinall.ltd,CDN
 static.coingecko.com,CDN
 static.community.workday.com,CDN
@@ -2877,6 +2882,7 @@ static.foxnews.com,CDN
 static.freeimages.com,CDN
 static.getbutton.io,CDN
 static.gettyimages.com,CDN
+static.gitbook.com,CDN
 static.global.visioncritical.com,CDN
 static.gnome.org,CDN
 static.gopro.com,CDN
@@ -2937,6 +2943,7 @@ static.oomol.com,CDN
 static.opensea.io,CDN
 static.oracle.com,CDN
 static.osdn.net,CDN
+static.parallels.com,CDN
 static.peatio.com,CDN
 static.pingcap.com,CDN
 static.playstation.com,CDN
@@ -2966,6 +2973,7 @@ static.tenki.jp,CDN
 static.test-beta.com,CDN
 static.theguardian.com,CDN
 static.tokenview.io,CDN
+static.toss.im,CDN
 static.tp-link.com,CDN
 static.tradingview.com,CDN
 static.tronscan.org,CDN
@@ -3183,6 +3191,7 @@ web-cdn.bitrise.io,CDN
 web-static.archive.org,CDN
 web-static.pages.iheart.com,CDN
 web-toolbar.playstation.com,CDN
+webappassets.smartsheet.com,CDN
 webassets.linear.app,CDN
 webcdn.17app.co,CDN
 webfonts.zoho.com,CDN
