@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3231
+# 规则统计: 3235
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -63,9 +63,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-17T01:48:50.679Z
-# Last Updated: 2025-02-19T04:20:13.052Z
+# Last Updated: 2025-02-20T10:26:00.171Z
 # License: AGPL 3.0
-# Size: 3161
+# Size: 3165
 # Size: 59
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -149,7 +149,6 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .bitgetimg.com
 .blackbaudcdn.net
 .bleepstatic.com
-.blob.core.windows.net
 .blobcdn.com
 .blogblog.com
 .bmp.ovh
@@ -342,7 +341,6 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .fbsbx.com
 .featureassets.org
 .ffzy888.com
-.file.core.windows.net
 .filecunhua.top
 .files.bbci.co.uk
 .files.gitbook.io
@@ -1087,13 +1085,16 @@ asset-cdn.uscardforum.com
 asset.booth.pm
 asset.chase.com
 asset.mansionglobal.com
+assets-app.circleci.com
 assets-cdn.123rf.com
 assets-cdn.abcnews.com
 assets-cdn.abcotvs.net
 assets-cdn.jable.tv
 assets-cdn.watchdisneyfe.com
 assets-cms.kraken.com
+assets-docs.circleci.com
 assets-fe.change.org
+assets-growth-common.circleci.com
 assets-next.matters.news
 assets-next.mattersprotocol.io
 assets-production.packagecloud.io
@@ -1438,6 +1439,7 @@ cdn.embed.ly
 cdn.embedly.com
 cdn.engagement.ai
 cdn.equalweb.com
+cdn.equinix.com
 cdn.eu.contentful.com
 cdn.european-alternatives.eu
 cdn.evbstatic.com
@@ -1528,6 +1530,7 @@ cdn.networklessons.com
 cdn.neverbounce.com
 cdn.nolt.io
 cdn.now.gg
+cdn.nperf.com
 cdn.onesignal.com
 cdn.onetime.dog
 cdn.onlyhentaistuff.com
@@ -3220,6 +3223,7 @@ wl-apps.yourwebsite.life
 wp.salesforce.com
 wpmedia.tealium.com
 ws-assets.zoominfo.com
+ws-cdn.nperf.com
 ws2-cache.aptoide.com
 ww2-secure.justanswer.com
 ww2.justanswer.com

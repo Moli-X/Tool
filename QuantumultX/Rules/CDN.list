@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3233
+# 规则统计: 3237
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -65,9 +65,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-17T01:48:50.679Z
-# Last Updated: 2025-02-19T04:20:13.052Z
+# Last Updated: 2025-02-20T10:26:00.171Z
 # License: AGPL 3.0
-# Size: 3161
+# Size: 3165
 # Size: 59
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -151,7 +151,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .bitgetimg.com,CDN
 .blackbaudcdn.net,CDN
 .bleepstatic.com,CDN
-.blob.core.windows.net,CDN
 .blobcdn.com,CDN
 .blogblog.com,CDN
 .bmp.ovh,CDN
@@ -344,7 +343,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .fbsbx.com,CDN
 .featureassets.org,CDN
 .ffzy888.com,CDN
-.file.core.windows.net,CDN
 .filecunhua.top,CDN
 .files.bbci.co.uk,CDN
 .files.gitbook.io,CDN
@@ -1089,13 +1087,16 @@ asset-cdn.uscardforum.com,CDN
 asset.booth.pm,CDN
 asset.chase.com,CDN
 asset.mansionglobal.com,CDN
+assets-app.circleci.com,CDN
 assets-cdn.123rf.com,CDN
 assets-cdn.abcnews.com,CDN
 assets-cdn.abcotvs.net,CDN
 assets-cdn.jable.tv,CDN
 assets-cdn.watchdisneyfe.com,CDN
 assets-cms.kraken.com,CDN
+assets-docs.circleci.com,CDN
 assets-fe.change.org,CDN
+assets-growth-common.circleci.com,CDN
 assets-next.matters.news,CDN
 assets-next.mattersprotocol.io,CDN
 assets-production.packagecloud.io,CDN
@@ -1440,6 +1441,7 @@ cdn.embed.ly,CDN
 cdn.embedly.com,CDN
 cdn.engagement.ai,CDN
 cdn.equalweb.com,CDN
+cdn.equinix.com,CDN
 cdn.eu.contentful.com,CDN
 cdn.european-alternatives.eu,CDN
 cdn.evbstatic.com,CDN
@@ -1530,6 +1532,7 @@ cdn.networklessons.com,CDN
 cdn.neverbounce.com,CDN
 cdn.nolt.io,CDN
 cdn.now.gg,CDN
+cdn.nperf.com,CDN
 cdn.onesignal.com,CDN
 cdn.onetime.dog,CDN
 cdn.onlyhentaistuff.com,CDN
@@ -3222,6 +3225,7 @@ wl-apps.yourwebsite.life,CDN
 wp.salesforce.com,CDN
 wpmedia.tealium.com,CDN
 ws-assets.zoominfo.com,CDN
+ws-cdn.nperf.com,CDN
 ws2-cache.aptoide.com,CDN
 ww2-secure.justanswer.com,CDN
 ww2.justanswer.com,CDN
