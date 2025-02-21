@@ -62,9 +62,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-17T01:48:50.679Z
-# Last Updated: 2025-02-20T10:26:00.171Z
+# Last Updated: 2025-02-20T15:20:18.506Z
 # License: AGPL 3.0
-# Size: 3165
+# Size: 3164
 # Size: 59
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -284,6 +284,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .discourse-cdn.com
 .disquscdn.com
 .divio-media.net
+.dlunar.net
 .dmcdn.net
 .docker.io
 .dogehls.xyz
@@ -526,7 +527,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .ipfs.telos.miami
 .ipfs.tribecap.co
 .ipfs.trusti.id
-.ipfs.tubby.cloud
 .ipfs.uploads.nu
 .ipfs.xoqq.ch
 .ipfs.yt
@@ -2618,7 +2618,6 @@ resource.fs.com
 resource.video.nimg.jp
 resources-cache.prod.sketch.com
 resources-live.sketch.cloud
-resources.esportsinsider.com
 resources.help.salesforce.com
 rest.happierleads.com
 rsi.grafana.com

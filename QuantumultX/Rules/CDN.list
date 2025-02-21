@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3237
+# 规则统计: 3236
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -65,9 +65,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-17T01:48:50.679Z
-# Last Updated: 2025-02-20T10:26:00.171Z
+# Last Updated: 2025-02-20T15:20:18.506Z
 # License: AGPL 3.0
-# Size: 3165
+# Size: 3164
 # Size: 59
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -287,6 +287,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .discourse-cdn.com,CDN
 .disquscdn.com,CDN
 .divio-media.net,CDN
+.dlunar.net,CDN
 .dmcdn.net,CDN
 .docker.io,CDN
 .dogehls.xyz,CDN
@@ -529,7 +530,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .ipfs.telos.miami,CDN
 .ipfs.tribecap.co,CDN
 .ipfs.trusti.id,CDN
-.ipfs.tubby.cloud,CDN
 .ipfs.uploads.nu,CDN
 .ipfs.xoqq.ch,CDN
 .ipfs.yt,CDN
@@ -2621,7 +2621,6 @@ resource.fs.com,CDN
 resource.video.nimg.jp,CDN
 resources-cache.prod.sketch.com,CDN
 resources-live.sketch.cloud,CDN
-resources.esportsinsider.com,CDN
 resources.help.salesforce.com,CDN
 rest.happierleads.com,CDN
 rsi.grafana.com,CDN
