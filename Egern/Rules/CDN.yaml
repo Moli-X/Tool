@@ -62,9 +62,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-17T01:48:50.679Z
-# Last Updated: 2025-02-22T13:59:20.627Z
+# Last Updated: 2025-02-23T05:01:35.895Z
 # License: AGPL 3.0
-# Size: 3166
+# Size: 3168
 # Size: 59
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -696,6 +696,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .phncdn.com
 .photobucket.com
 .phprcdn.com
+.pichost.top
 .picsum.photos
 .pimg.tw
 .pinimg.com
@@ -2664,6 +2665,7 @@ s3-alpha-sig.figma.com
 s3-alpha.figma.com
 s3-figma-plugin-images-production-sig.figma.com
 s3-symbol-logo.tradingview.com
+s3.2233778.xyz
 s3.aaaaa.io
 s3.acg.mn
 s3.arkjp.net
