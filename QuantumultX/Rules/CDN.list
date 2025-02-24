@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3240
+# 规则统计: 3243
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -65,9 +65,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-17T01:48:50.679Z
-# Last Updated: 2025-02-23T05:01:35.895Z
+# Last Updated: 2025-02-24T07:22:12.478Z
 # License: AGPL 3.0
-# Size: 3168
+# Size: 3171
 # Size: 59
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -600,6 +600,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .mcusercontent.com,CDN
 .media-amazon.com,CDN
 .media-imdb.com,CDN
+.media.amplience.net,CDN
 .media.beeper.com,CDN
 .media.ci-en.jp,CDN
 .media.strapiapp.com,CDN
@@ -831,6 +832,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .someonewhocares.org,CDN
 .sourceforge.io,CDN
 .splunkcloud.com,CDN
+.spreadshirtmedia.com,CDN
 .sqspcdn.com,CDN
 .squarespace-cdn.com,CDN
 .srcdn.com,CDN
@@ -1518,7 +1520,6 @@ cdn.mathjax.org,CDN
 cdn.matterhorn.app,CDN
 cdn.mcauto-images-production.sendgrid.net,CDN
 cdn.mcr.ea.com,CDN
-cdn.media.amplience.net,CDN
 cdn.mewe.com,CDN
 cdn.micro.blog,CDN
 cdn.minecraft-server-list.com,CDN
@@ -1723,6 +1724,7 @@ cdna.artstation.com,CDN
 cdnapisec.kaltura.com,CDN
 cdnb.artstation.com,CDN
 cdne-pics.youjizz.com,CDN
+cdnfonts.devolutions.net,CDN
 cdnjs.betterstack.com,CDN
 cdnjs.buymeacoffee.com,CDN
 cdnjs.cat.net,CDN
@@ -2761,6 +2763,7 @@ snippet.maze.co,CDN
 snippets.freshchat.com,CDN
 snyk-widget.herokuapp.com,CDN
 social-cdn.vivaldi.net,CDN
+solve-widget.forethought.ai,CDN
 source.domaintools.com,CDN
 sourcepoint.theguardian.com,CDN
 sp-spiegel-de.spiegel.de,CDN
@@ -2811,7 +2814,7 @@ static-exp3.licdn.com,CDN
 static-forms.klaviyo.com,CDN
 static-gcp.freepikcompany.com,CDN
 static-id.fc2.com,CDN
-static-landing.probit.com,CDN
+static-landing.probiplacehold.cot.com,CDN
 static-lccn.leetcode.com,CDN
 static-main.moovit.com,CDN
 static-media.fox.com,CDN

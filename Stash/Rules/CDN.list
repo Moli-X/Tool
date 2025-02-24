@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3238
+# 规则统计: 3241
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -63,9 +63,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-17T01:48:50.679Z
-# Last Updated: 2025-02-23T05:01:35.895Z
+# Last Updated: 2025-02-24T07:22:12.478Z
 # License: AGPL 3.0
-# Size: 3168
+# Size: 3171
 # Size: 59
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -598,6 +598,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .mcusercontent.com
 .media-amazon.com
 .media-imdb.com
+.media.amplience.net
 .media.beeper.com
 .media.ci-en.jp
 .media.strapiapp.com
@@ -829,6 +830,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .someonewhocares.org
 .sourceforge.io
 .splunkcloud.com
+.spreadshirtmedia.com
 .sqspcdn.com
 .squarespace-cdn.com
 .srcdn.com
@@ -1516,7 +1518,6 @@ cdn.mathjax.org
 cdn.matterhorn.app
 cdn.mcauto-images-production.sendgrid.net
 cdn.mcr.ea.com
-cdn.media.amplience.net
 cdn.mewe.com
 cdn.micro.blog
 cdn.minecraft-server-list.com
@@ -1721,6 +1722,7 @@ cdna.artstation.com
 cdnapisec.kaltura.com
 cdnb.artstation.com
 cdne-pics.youjizz.com
+cdnfonts.devolutions.net
 cdnjs.betterstack.com
 cdnjs.buymeacoffee.com
 cdnjs.cat.net
@@ -2759,6 +2761,7 @@ snippet.maze.co
 snippets.freshchat.com
 snyk-widget.herokuapp.com
 social-cdn.vivaldi.net
+solve-widget.forethought.ai
 source.domaintools.com
 sourcepoint.theguardian.com
 sp-spiegel-de.spiegel.de
@@ -2809,7 +2812,7 @@ static-exp3.licdn.com
 static-forms.klaviyo.com
 static-gcp.freepikcompany.com
 static-id.fc2.com
-static-landing.probit.com
+static-landing.probiplacehold.cot.com
 static-lccn.leetcode.com
 static-main.moovit.com
 static-media.fox.com
