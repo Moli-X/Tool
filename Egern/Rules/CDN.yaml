@@ -45,7 +45,8 @@ DOMAIN-WILDCARD,s?.maxstream.org
 DOMAIN-WILDCARD,s??.maxstream.org
 DOMAIN-WILDCARD,s???.pornone.com
 DOMAIN-WILDCARD,sdk.*.braze.eu
-DOMAIN-WILDCARD,static*.tgstat.ru
+DOMAIN-WILDCARD,static?.tgstat.ru
+DOMAIN-WILDCARD,static??.tgstat.ru
 DOMAIN-WILDCARD,t?.nhentai.net
 DOMAIN-WILDCARD,th-*.pornone.com
 DOMAIN-WILDCARD,v.rn???.xyz
@@ -61,11 +62,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-02-17T01:48:50.679Z
-# Last Updated: 2025-02-24T07:22:12.478Z
+# Last Updated: 2025-02-25T17:35:32.973Z
+# Last Updated: 2025-02-25T17:35:34.895Z
 # License: AGPL 3.0
-# Size: 3171
-# Size: 59
+# Size: 3178
+# Size: 60
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -1431,6 +1432,7 @@ cdn.db-ip.com
 cdn.decrypt.co
 cdn.delight-vr.com
 cdn.deta.space
+cdn.devolutions.net
 cdn.dnsimple.com
 cdn.document360.io
 cdn.donmai.us
@@ -1510,6 +1512,7 @@ cdn.lihkg.com
 cdn.linearicons.com
 cdn.livechatinc.com
 cdn.loom.com
+cdn.macstories.net
 cdn.manageengine.com
 cdn.maptiler.com
 cdn.masto.host
@@ -1732,6 +1735,7 @@ cdnstatic.porno-cum.com
 cdnstatic.w1mp.com
 cdnstatic.w4nkr.com
 cdntranscend.eventbrite.com
+cdnweb.devolutions.net
 cds.connatix.com
 certificates.godaddy.com
 certona.gap.com
@@ -2204,6 +2208,7 @@ img.skk.moe
 img.sparemin.com
 img.sparknotes.com
 img.supjav.com
+img.telemetr.io
 img.timero.xyz
 img.urlnode.com
 img.utdstc.com
@@ -2435,6 +2440,7 @@ nbcnewsdigital-static.nbcuni.com
 net-fe-static-assets.network-controller.svc.ui.com
 netlify.apollo.io
 newassets.hcaptcha.com
+news-assets.apple.com
 newsletter.postmarkapp.com
 next-images.opencollective.com
 nextra.site
@@ -2965,6 +2971,7 @@ static.replay.io
 static.rust-lang.org
 static.scarf.sh
 static.scroll.com
+static.seel.com
 static.skyassets.com
 static.snapchat.com
 static.snaptube.in
@@ -3081,6 +3088,7 @@ telemetry.individual.githubcopilot.com
 telemetry.nextjs.org
 telemetry.split.io
 telemetry.vercel.com
+telemetry2.devolutions.net
 th.bing.com
 themes.fourthwall.com
 thingproxy.freeboard.io
