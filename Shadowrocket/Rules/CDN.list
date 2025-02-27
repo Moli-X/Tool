@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3253
+# 规则统计: 3264
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -43,6 +43,7 @@ DOMAIN-WILDCARD,object-storage-*.vexxhost.net
 DOMAIN-WILDCARD,ocsp.*.amazontrust.com
 DOMAIN-WILDCARD,proxy-*.dailymotion.com
 DOMAIN-WILDCARD,rr?---??.ouo.si
+DOMAIN-WILDCARD,s3-*.figma.com
 DOMAIN-WILDCARD,s3.*.wasabisys.com
 DOMAIN-WILDCARD,s?.maxstream.org
 DOMAIN-WILDCARD,s??.maxstream.org
@@ -65,11 +66,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-02-25T17:35:32.973Z
-# Last Updated: 2025-02-26T08:23:50.828Z
+# Last Updated: 2025-02-26T13:42:07.293Z
+# Last Updated: 2025-02-26T16:14:11.428Z
 # License: AGPL 3.0
-# Size: 3180
-# Size: 60
+# Size: 3190
+# Size: 61
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -1266,7 +1267,6 @@ at.cbsi.com
 atn.hitomi.la
 attachments.office.net
 auth.split.io
-autoupdate.termius.com
 avatar.freepik.com
 avatar.stefanjudis.com
 avatar2.bahamut.com.tw
@@ -1661,8 +1661,10 @@ cdn.ywxi.net
 cdn.zapier.com
 cdn.zeabur.com
 cdn.zhujiwiki.com
+cdn0-i.techbang.com
 cdn0.dan.com
 cdn0.iconfinder.com
+cdn0.techbang.com
 cdn01.jotfor.ms
 cdn02.jotfor.ms
 cdn03.jotfor.ms
@@ -1677,6 +1679,7 @@ cdn1.identitymind.com
 cdn1.plesk.com
 cdn1.stamped.io
 cdn1.sysgears.com
+cdn1.techbang.com
 cdn1.unrealengine.com
 cdn10.bigcommerce.com
 cdn11.bigcommerce.com
@@ -1697,6 +1700,7 @@ cdn2.macpaw.com
 cdn2.onlyfans.com
 cdn2.stamped.io
 cdn2.sysgears.com
+cdn2.techbang.com
 cdn2.ttloli.com
 cdn2.turboviplay.cc
 cdn2.unrealengine.com
@@ -1758,6 +1762,8 @@ checkout.stripe.com
 ci.testling.com
 claritystatic.azureedge.net
 clickup.marketlinc.com
+clientsdk.launchdarkly.com
+clientstream.launchdarkly.com
 clips-media-assets2.twitch.tv
 cloud.redhat.com
 cloud.typenetwork.com
@@ -1908,6 +1914,8 @@ euc-widget.freshworks.com
 event.ithome.com.tw
 events-delivery.apple.com
 events-live.apple.com
+events.launchdarkly.com
+events.ld.catamorphic.com
 events.split.io
 events.tableplus.com
 experience-ap.piano.io
@@ -1934,6 +1942,7 @@ fiddle.fastly.dev
 fiddle.jshell.net
 file.izanmei.net
 files.armorgames.com
+files.buildwithfern.com
 files.jotform.com
 files.mastodon.ktachibana.party
 files.mastodon.online
@@ -2040,6 +2049,7 @@ ias.r10s.jp
 ichef.bbci.co.uk
 icons.buffer.com
 icons.duckduckgo.com
+icons.ferndocs.com
 icons.leavemealone.com
 icons.llamao.fi
 icons.ly
@@ -2676,6 +2686,7 @@ s2.coinmarketcap.com
 s2.qwant.com
 s3-alpha-sig.figma.com
 s3-alpha.figma.com
+s3-figma-force-client-reloads-production.figma.com
 s3-figma-plugin-images-production-sig.figma.com
 s3-symbol-logo.tradingview.com
 s3.2233778.xyz
