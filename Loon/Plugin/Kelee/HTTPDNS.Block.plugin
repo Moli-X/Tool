@@ -30,7 +30,7 @@ DOMAIN,httpdns.baidu.com,REJECT
 # BaiduBCE
 # refer: https://bce-cdn.bj.bcebos.com/p3m/pdf/bce-doc/online/HTTPDNS/HTTPDNS.pdf
 DOMAIN,httpdns.baidubce.com,REJECT
-IP-CIDR,186.76.76.200/32,REJECT,no-resolve
+IP-CIDR,180.76.76.200/32,REJECT,no-resolve
 
 # Bilibili
 DOMAIN,httpdns.bilivideo.com,REJECT
@@ -50,9 +50,6 @@ IP-CIDR,103.224.222.208/32,REJECT,no-resolve
 
 # Keep
 DOMAIN,httpdns.calorietech.com,REJECT
-
-# Kuaishou
-DOMAIN,kuaishou.httpdns.pro,REJECT
 
 # Meituan
 DOMAIN,httpdns.meituan.com,REJECT
@@ -77,6 +74,7 @@ DOMAIN,httpdns.push.oppomobile.com,REJECT
 
 # Tencent Cloud
 # refer：https://cloud.tencent.com/document/product/379/95497
+DOMAIN-SUFFIX,kuaishou.httpdns.pro,REJECT
 IP-CIDR,119.29.29.98/32,REJECT,no-resolve
 IP-CIDR,119.29.29.99/32,REJECT,no-resolve
 
@@ -109,7 +107,7 @@ IP-CIDR,182.254.118.119/32,REJECT,no-resolve
 
 # Zhihu
 # refer: https://github.com/lwd-temp/anti-ip-attribution/issues/24
-IP-CIDR,118.89.204.198/23,REJECT,no-resolve
+IP-CIDR,118.89.204.198/32,REJECT,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
 
 [URL Rewrite]
@@ -154,6 +152,9 @@ IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
 ^http:\/\/116\.63\.10\.31\/resolve - reject
 ^http:\/\/112\.64\.218\.119\/resolve - reject
 ^http:\/\/112\.65\.200\.117\/resolve - reject
+
+# ByteDance
+^https?:\/\/.+\.zijieapi\.com\/get_domains\/ - reject
 
 # JD
 ^https:\/\/dns\.jd\.com\/v6\/b - reject
@@ -201,4 +202,4 @@ IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
 ^http:\/\/103\.41\.167\.237\/v2\/resolv - reject
 
 [MITM]
-hostname = 119.29.29.98, 119.29.29.99, amdc.alipay.com, amdc-sibling.alipay.com.cn, dns.jd.com, *.httpdns.pro
+hostname = 119.29.29.98, 119.29.29.99, amdc.alipay.com, amdc-sibling.alipay.com.cn, dns.jd.com, *.httpdns.pro, *.zijieapi.com

@@ -1,5 +1,5 @@
 # 规则名称: HTTPDNS.Block
-# 规则统计: 71
+# 规则统计: 70
 
 HOST,dns.jd.com,HTTPDNS.Block
 HOST,dns.weibo.cn,HTTPDNS.Block
@@ -20,20 +20,20 @@ HOST,httpdns.push.oppomobile.com,HTTPDNS.Block
 HOST,httpdns.volcengineapi.com,HTTPDNS.Block
 HOST,httpdns.yunxindns.com,HTTPDNS.Block
 HOST,httpsdns.baidu.com,HTTPDNS.Block
-HOST,kuaishou.httpdns.pro,HTTPDNS.Block
 HOST,lofter.httpdns.c.163.com,HTTPDNS.Block
 HOST,music.httpdns.c.163.com,HTTPDNS.Block
+HOST-SUFFIX,httpdns.pro,HTTPDNS.Block
 IP-CIDR,101.124.19.122/32,HTTPDNS.Block
 IP-CIDR,103.224.222.208/32,HTTPDNS.Block
 IP-CIDR,115.236.121.195/32,HTTPDNS.Block
 IP-CIDR,115.236.121.51/32,HTTPDNS.Block
-IP-CIDR,118.89.204.198/23,HTTPDNS.Block
+IP-CIDR,118.89.204.198/32,HTTPDNS.Block
 IP-CIDR,119.29.29.98/32,HTTPDNS.Block
 IP-CIDR,119.29.29.99/32,HTTPDNS.Block
 IP-CIDR,123.151.54.50/32,HTTPDNS.Block
+IP-CIDR,180.76.76.200/32,HTTPDNS.Block
 IP-CIDR,182.254.116.117/32,HTTPDNS.Block
 IP-CIDR,182.254.118.119/32,HTTPDNS.Block
-IP-CIDR,186.76.76.200/32,HTTPDNS.Block
 IP-CIDR,203.107.1.0/24,HTTPDNS.Block
 IP-CIDR,39.97.128.148/32,HTTPDNS.Block
 IP-CIDR,39.97.130.51/32,HTTPDNS.Block
@@ -57,7 +57,6 @@ IP6-CIDR,240e:928:1400:10::25/128,HTTPDNS.Block
 # JD
 # JD Cloud
 # Keep
-# Kuaishou
 # Meituan
 # NetEase
 # Oppo

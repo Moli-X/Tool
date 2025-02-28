@@ -1,5 +1,5 @@
 # 规则名称: HTTPDNS.Block
-# 规则统计: 71
+# 规则统计: 70
 
 DOMAIN,dns.jd.com
 DOMAIN,dns.weibo.cn
@@ -20,20 +20,20 @@ DOMAIN,httpdns.push.oppomobile.com
 DOMAIN,httpdns.volcengineapi.com
 DOMAIN,httpdns.yunxindns.com
 DOMAIN,httpsdns.baidu.com
-DOMAIN,kuaishou.httpdns.pro
 DOMAIN,lofter.httpdns.c.163.com
 DOMAIN,music.httpdns.c.163.com
+DOMAIN-SUFFIX,httpdns.pro
 IP-CIDR,101.124.19.122/32
 IP-CIDR,103.224.222.208/32
 IP-CIDR,115.236.121.195/32
 IP-CIDR,115.236.121.51/32
-IP-CIDR,118.89.204.198/23
+IP-CIDR,118.89.204.198/32
 IP-CIDR,119.29.29.98/32
 IP-CIDR,119.29.29.99/32
 IP-CIDR,123.151.54.50/32
+IP-CIDR,180.76.76.200/32
 IP-CIDR,182.254.116.117/32
 IP-CIDR,182.254.118.119/32
-IP-CIDR,186.76.76.200/32
 IP-CIDR,203.107.1.0/24
 IP-CIDR,39.97.128.148/32
 IP-CIDR,39.97.130.51/32
@@ -57,7 +57,6 @@ IP-CIDR6,240e:928:1400:10::25/128
 # JD
 # JD Cloud
 # Keep
-# Kuaishou
 # Meituan
 # NetEase
 # Oppo
