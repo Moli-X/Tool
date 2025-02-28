@@ -11,34 +11,47 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CatEarFM.png
 #!date=2024-12-08 00:49:15
 
-
 [Rewrite]
+# 开屏广告
 ^https:\/\/app\.missevan\.com\/site\/launch\? response-body-json-del info
 
+# 首页 - 右上角日常任务入口、青少年模式弹窗
 ^https:\/\/app\.missevan\.com\/site\/config$ response-body-json-del info.homepage_top_task_button info.teenager_popup_mode
 
+# 首页 - 发现 - 搜索词填充词、信息流轮播图推广
 ^https:\/\/app\.missevan\.com\/site\/get-top$ response-body-json-del info.search_words info.extra_banners
 
+# 首页 - 发现 - 信息流视频卡片推广、直播榜
 ^https:\/\/app\.missevan\.com\/you-might-like\/my-favors\? response-body-json-del info.video_card
 ^https:\/\/app\.missevan\.com\/you-might-like\/my-favors\? response-body-json-jq '.info.ranks.data|=map(select(.name!="直播榜"))'
 
+# 首页 - 发现 - 主播推荐列表
 ^https:\/\/fm\.missevan\.com\/api\/v2\/recommended\/top\? response-body-json-del info
 
+# 首页 - 广播剧 - 轮播图推广、热门搜索词
 ^https:\/\/app\.missevan\.com\/drama\/catalog-homepage\? response-body-json-del info.extra_banners
 
+# 搜索 - 声优推荐列表
 ^https:\/\/fm\.missevan\.com\/api\/v\d\/chatroom\/open\/search-recommend-list$ reject-dict
 
+# 首页 - 声音恋人 - 轮播图推广、热门搜索词
 ^https:\/\/app\.missevan\.com\/catalog\/sound-homepage\? response-body-json-del info.extra_banners
 
+# 播放器 - 主播推荐
 ^https:\/\/fm\.missevan\.com\/api\/v\d\/chatroom\/sound\/recommend\? response-body-json-del info
 
+# 播放器 - 剧集推荐
 ^https:\/\/app\.missevan\.com\/sound\/recommend\? reject-dict
 ^https:\/\/app\.missevan\.com\/drama\/get-recommend-by-id\? reject-dict
 
+# 直播 - 关注推荐
+# ^https:\/\/fm\.missevan\.com\/api\/v2\/chatroom\/open\/recommend-list\?marker= reject-dict
+
+# 直播 - 主播横幅推荐
 ^https:\/\/fm\.missevan\.com\/api\/v\d\/meta\/banner$ reject-dict
 
+# 精简首页顶部入口
 ^https:\/\/app\.missevan\.com\/site\/icons\? response-body-json-jq '.info.icons |= (if . == null then null else map(select(.title != "直播" and .title != "周边商城")) end)'
-
 
 [MitM]
 hostname=app.missevan.com,fm.missevan.com

@@ -11,14 +11,12 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SeasunJX3.png
 #!date=2024-11-28 00:00:00
 
-
 [General]
 real-ip=*-update.xoyocdn.com
 
-
 [Rewrite]
+# 热点推送
 ^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt reject
-
 
 [MitM]
 hostname=jx3comm.xoyocdn.com

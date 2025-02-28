@@ -11,16 +11,16 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/RiskBird.png
 #!date=2024-11-28 00:00:00
 
-
 [Rewrite]
+# 首页 - 轮播图
 ^https:\/\/m\.riskbird\.com\/prod-qbb-api\/user\/getBannerList reject-dict
 
+# 首页 - 热门企业
 ^https:\/\/m\.riskbird\.com\/prod-qbb-api\/searchHotEnt reject-dict
 
-
 [Script]
+# 查老板 - 推荐老板
 http-response ^https:\/\/m\.riskbird\.com\/prod-qbb-api\/query\/person\/personRecommend script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/RiskBird_remove_ads.js,requires-body=true,tag=移除推荐老板
-
 
 [MitM]
 hostname=m.riskbird.com

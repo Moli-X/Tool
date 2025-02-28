@@ -11,7 +11,6 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/smzdm.png
 #!date=2024-11-28 00:00:00
 
-
 [Rule]
 DOMAIN,aaid.uyunad.com,REJECT
 DOMAIN,acs4baichuan.m.taobao.com,REJECT
@@ -24,10 +23,8 @@ DOMAIN,sec.umeng.com,REJECT
 DOMAIN,ulogs.umeng.com,REJECT
 DOMAIN,ynuf.aliapp.org,REJECT
 
-
 [Rewrite]
 ^https:\/\/haojia\.m\.smzdm\.com\/detail_modul\/(other_modul|wiki_related_modul)|^https:\/\/s3\.zdmimg\.com\/third\/index|^https:\/\/app-api\.smzdm\.com\/util\/loading reject-dict
-
 
 [Script]
 http-response ^https:\/\/app-api\.smzdm\.com\/util\/loading  script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/smzdm_remove_ads.js,requires-body=true,tag=移除广告
@@ -40,7 +37,6 @@ http-response ^https:\/\/article-api\.smzdm\.com\/publish\/get_bubble  script-pa
 http-response ^https:\/\/qianbao\.smzdm\.com\/v\d\/app\/home  script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/smzdm_remove_ads.js,requires-body=true,tag=移除广告
 http-response ^https:\/\/s3\.zdmimg\.com\/third\/index  script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/smzdm_remove_ads.js,requires-body=true,tag=移除广告
 http-response ^https:\/\/post\.m\.smzdm\.com\/ajax_app\/ajax_get_footer_list  script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/smzdm_remove_ads.js,requires-body=true,tag=移除广告
-
 
 [MitM]
 hostname=haojia-api.smzdm.com,homepage-api.smzdm.com,app-api.smzdm.com,user-api.smzdm.com,article-api.smzdm.com ,qianbao.smzdm.com,s3.zdmimg.com

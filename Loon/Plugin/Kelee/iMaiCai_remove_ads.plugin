@@ -11,20 +11,25 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/iMaiCai.png
 #!date=2024-11-28 00:00:00
 
-
 [Rewrite]
+# 开屏广告
 ^https:\/\/mall\.meituan\.com\/api\/c\/homepage\/splash reject-dict
+# 首页 - 领券悬浮红包
 ^https:\/\/mall\.meituan\.com\/api\/c\/homepage\/bubble\/operate\/info reject-dict
+# 分类 - 横幅推广
 ^https:\/\/mall\.meituan\.com\/api\/c\/jigsaw\/code\/category-banner-\d+\/ reject-dict
+# 购物车 - 您可能想买
 ^https:\/\/mall\.meituan\.com\/api\/c\/poi\/\d+\/order\/recommend\/v\d reject-dict
+# 我的页面 - 轮播图
 ^https:\/\/mall\.meituan\.com\/api\/c\/banner\/ reject-dict
+# 我的页面 - 您可能想买
 ^https:\/\/mall\.meituan\.com\/api\/c\/poi\/\d+\/personal\/recommend reject-dict
+# 报名 - 驾校推荐列表
 ^https:\/\/businessapi\.ksedt\.com\/signupindex\/jxlist reject-dict
 
-
 [Script]
+# 下发广告
 http-response ^https:\/\/portal-portm\.meituan\.com\/horn_ios\/mergeRequest script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/iMaiCai_remove_ads.js,requires-body=true,tag=移除下发广告
-
 
 [MitM]
 hostname=portal-portm.meituan.com,mall.meituan.com,businessapi.ksedt.com

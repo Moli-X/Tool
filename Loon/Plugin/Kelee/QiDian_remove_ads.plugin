@@ -11,10 +11,8 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QiDian.png
 #!date=2024-11-28 00:00:00
 
-
 [Script]
 http-response ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/(deeplink\/geturl|dailyrecommend\/getdailyrecommend)|v1\/(client\/getconf$|bookshelf\/getHoverAdv|adv\/getadvlistbatch\?positions=iOS_tab)) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/QiDian_remove_ads.js,requires-body=true,tag=起点读书去广告
-
 
 [MitM]
 hostname=magev6.if.qidian.com

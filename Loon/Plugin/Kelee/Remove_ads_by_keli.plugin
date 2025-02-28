@@ -11,27 +11,33 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/KeLee.png
 #!date=2024-12-02 10:07:27
 
-
 [Rule]
+# Outlook
 DOMAIN,acdn.adnxs.com,REJECT
 DOMAIN,mediation.adnxs.com,REJECT
 DOMAIN,sin3-ib.adnxs.com,REJECT
 
+# 小米
 DOMAIN,sdkconfig.ad.xiaomi.com,REJECT
 DOMAIN,data.mistat.xiaomi.com,REJECT
 DOMAIN,tracking.intl.miui.com,REJECT
 
+# 米家
 DOMAIN,sdkconfig.ad.xiaomi.com,REJECT
 
+# 通用广告
 DOMAIN-SUFFIX,doubleclick-cn.net,REJECT
 DOMAIN-SUFFIX,doubleclick.net,REJECT
 
+# 虎牙直播开屏广告
 DOMAIN,business.msstatic.com,REJECT
 DOMAIN-SUFFIX,v1d.szbdyd.com,REJECT
 URL-REGEX,"^http:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns$",REJECT
 
+# 中国联通
 DOMAIN-SUFFIX,m1.ad.10010.com,REJECT
 
+# 中国电信
 DOMAIN,ad.21cn.com,REJECT
 DOMAIN,ad.k.21cn.com,REJECT
 DOMAIN,admarket.21cn.com,REJECT
@@ -39,24 +45,31 @@ DOMAIN,adshows.21cn.com,REJECT
 IP-CIDR,122.229.8.47/32,REJECT,no-resolve
 IP-CIDR,122.229.29.89/32,REJECT,no-resolve
 
+# 快递100
 URL-REGEX,"^http:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do",REJECT-DICT
 URL-REGEX,"^http:\/\/p\.kuaidi100\.com\/advertisement\/",REJECT-DICT
 
+# 亲邻开门
 DOMAIN,mall-dsp2.qinlinkeji.com,REJECT // 首页商品信息流
 DOMAIN,mallapi2.qinlinkeji.com,REJECT // 商城页面
 
+# Pixiv - 作品底部广告
 DOMAIN,open-pixon.ads-pixiv.net,REJECT
 
-
 [Rewrite]
+# 摩托范弹窗广告
 ^https?:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk reject
 
+# 车来了 - 为您推荐
 ^https:\/\/cdn\.web\.chelaile\.net\.cn\/info-flow\/index\.html reject
 
+# 最右
 ^http:\/\/mercury-gateway\.ixiaochuan\.cn\/mercury\/v1\/ad\/ reject
 
+# 米家
 ^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner) reject-dict
 
+# 小米
 ^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start reject-200
 ^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\/ reject-200
 ^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen reject-200
@@ -70,13 +83,17 @@ DOMAIN,open-pixon.ads-pixiv.net,REJECT
 ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\? reject-img
 ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\? reject-img
 
+# 小米有品
 ^https:\/\/shopapi\.io\.mi\.com\/mtop\/mf\/resource\/homePage\/pageConfig reject-200
+# 小米运动
 ^https:\/\/api-mifit-cn2\.huami\.com\/discovery\/mi\/cards\/startpage_ad reject
 
+# 米读
 ^https:\/\/apiwz\.midukanshu\.com\/advert\/getPopup$ reject
 ^https:\/\/apiwz\.midukanshu\.com\/advert\/treasureInfo$ reject
 ^https:\/\/apiwz\.midukanshu\.com\/config\/getAds$ reject
 
+# 有兔阅读（米兔）
 ^http:\/\/img\.dailmo\.com\/img\/61\/23c7125bfe6166d69f3bff5b0ca4d31e\.jpg reject
 ^http:\/\/img\.dailmo\.com\/img\/50\/edb40c6392f848df37f9c31d8a6f90f6\.jpg reject
 ^http:\/\/img\.dailmo\.com\/img\/6\/90585d9e96c73dd49644af57d8501624\.jpg reject
@@ -88,36 +105,57 @@ DOMAIN,open-pixon.ads-pixiv.net,REJECT
 ^http:\/\/img\.allahall\.com\/img\/59\/6a13a75dfe46ebfdac96bd27ef098885\.jpg reject
 ^http:\/\/app\.zhoudamozi\.com\/ad\/.+ reject-200
 
+# 拼多多 //api.pinduoduo.com,api.yangkeduo.com
 ^https:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash reject
 
+# 闲鱼 //gw.alicdn.com,acs.m.taobao.com
 ^https:\/\/gw\.alicdn\.com\/mt\/ reject
 ^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} reject
 ^https:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4} reject
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome reject
 
+# QQ
+# QQ钱包广告 //m.qianbao.qq.com
 ^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getQQshopData\? reject-dict
 ^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getGameData\? reject-dict
+# QQ钱包公益广告
 ^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getFootData\? reject-dict
 
+# 和风天气 hfapp-service.qweather.net
 ^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\? reject-dict
 
+# 航旅纵横 @Dragon
+# 首页悬浮标签
 ^http:\/\/home\.umetrip\.com\/gateway\/api\/umetrip\/native reject
+# 我的页面轮播图
 ^http:\/\/umerp\.umetrip\.com\/gateway\/api\/umetrip\/native reject
 
+# 掌上英雄联盟 @𝑨梦 @𝑪𝒉𝒙𝒎𝟏𝟎𝟐𝟑
 ^https?:\/\/us\.l\.qq\.com\/exapp reject-200
 
+# 中国移动开屏广告
 ^https:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(explorePage\/getAdverList|init\/startInit) reject
 
+# 有道词典 @安妮
+# 翻译广告
 ^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab reject-dict
+# 听读训练
 ^https:\/\/dict\.youdao\.com\/homepage\/tile reject-dict
+# 首次查词弹窗
 ^https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig reject-dict
+# 首页弹窗
 ^https:\/\/cdke\.youdao\.com\/course3\/recommend\/dict\/startup reject-dict
+# 搜索预想
 ^https:\/\/dict\.youdao\.com\/commonsearch reject-dict
+# 会员优惠券弹窗
 ^https:\/\/dict\.youdao\.com\/vip\/activity\/couponinfo reject-dict
+# 首页左上角福利中心
 ^https:\/\/dict\.youdao\.com\/dictusertask\/system reject-dict
 
+# 深圳通
 ^https?:\/\/ecard\.shenzhentong\.com\/wxweb\/bwxppub2\/QryAdvertList\.do reject-200
 
+# 埋堆堆 @Kuraki //sfo.mddcloud.com.cn,mob.mddcloud.com.cn,toblog.ctobsnssdk.com,t-dsp.pinduoduo.com,mobads-pre-config.cdn.bcebos.com,sdk1xyajs.data.kuiniuca.com,conf-darwin.xycdn.com,*.ubixioe.com
 ^https?:\/\/mob\.mddcloud\.com\.cn\/adApi\/advert\/(first|third)part\/advertList reject-dict
 ^https?:\/\/t-dsp\.pinduoduo\.com reject-200
 ^https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/preload\.php reject-200
@@ -127,55 +165,81 @@ DOMAIN,open-pixon.ads-pixiv.net,REJECT
 ^https?:\/\/conf-darwin\.xycdn\.com reject-dict
 ^https?:\/\/sdk1xyajs\.data\.kuiniuca\.com reject
 
+# 威锋 - 开屏广告
 ^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/yesList reject
 
+# 闲鱼 - 开屏广告
 ^https:\/\/iyes\.youku\.com\/uts\/v1\/start\/ reject-dict
+# 闲鱼 - 底部浮层发布球
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.get\/ reject-dict
 
+# 创客贴设计 - 开屏广告
 ^https:\/\/gw\.chuangkit\.com\/team\/app\/common\/ad\/ reject-dict
 
+# 稿定设计 - 开屏广告
 ^https:\/\/qiye\.gaoding\.com\/api\/v3\/oc\/v2\/delivery-pits\/ios-splash\/ reject-dict
 
+# 猫眼 - 移除开屏广告、红包悬浮
 ^https:\/\/p0\.pipi\.cn\/(adAdmin|mediaplus\/maoyantong_ads_fe)\/\w+\.jpg\?imageMogr2\/quality\/ reject-dict
 ^https:\/\/p0\.pipi\.cn\/(adAdmin|mediaplus\/maoyantong_ads_fe)\/\w+\.(jpg|png)\?imageMogr2\/thumbnail\/(860x0|!165x165|!1049x1169) reject-dict
 
+# 站酷 - 开屏广告
 ^https:\/\/api\.zcool\.com\.cn\/v\d\.\d\.\d/common\/open-screen reject-dict
 
+# 香山智能 - 开屏广告
 ^https:\/\/shealthyapi\.senssun\.com\/v1\/app\/banner\/findByType\?type=bottom$
 
+# 懒饭 - 开屏广告
 ^https:\/\/lanfanapp\.com\/api\/v1\/ads\/ reject-dict
 
+#向日葵 #开屏广告 #主机名client-api-v2.oray.com
 ^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_IOS_STARTUP reject-dict
+#向日葵 #首页文字广告
 ^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_IOS_DEVICE reject-dict
+#向日葵 #发现页广告
 ^https:\/\/client-api-v2\.oray\.com\/materials\/SUNLOGIN_CLIENT_IOS_PROMOTION reject-dict
 
+# 10099
 ^https:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage reject
 
+# 飞智游戏厅 - 开屏广告
 ^https:\/\/api\.flydigi\.com\/android\/v2\/ad reject-dict
 
+# 水印相机 - 去开屏广告
 ^https:\/\/api\.xiangji\.qq\.com\/splash$ reject-dict
 
+# 央视频广告
 ^https:\/\/cdn\.cmgadx\.com\/sdk\/pool\/ reject-dict
 
+# 亲邻开门
 ^https:\/\/qadx\.qinlinad\.com\/ad\/ reject-dict
 
+# 小米运动健康
+# 运动页面活动推广
 ^https:\/\/watch\.iot\.mi\.com\/cgi-op\/api\/v1\/watch\/health\/resource\?business=MI_WATCH_SPORT reject-dict
 
+# 设备页面横幅推广
 ^https:\/\/watch\.iot\.mi\.com\/cgi-op\/api\/v1\/watch\/health\/resource\?business=MI_HEALTH_DEVICE_TAB_PAGE reject-dict
 
+# 淘票票 - 开屏广告
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryloadingbanner\/ reject-dict
+# 淘票票 - 弹窗
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.life\.popup\.get\/ reject-dict
 
+# Pixiv - 底栏广告
 ^https:\/\/d\.socdm\.com\/adsv\/ reject-dict
 
+# 中国联通 - 开屏广告 - by xream
 ^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm mock-response-body data-type=json data="{"imgIndex":"0","adv":{"startup_adv":{"advCntList":[],"buttonList":[]}},"respCode":"0000"}"
 
+# 催眠大师 - 开屏广告 - by xream
 ^https?:\/\/cmds\.omesoft\.com\/HypnotistWS\.asmx response-body-replace-regex <GetADResult>\.\*\?<\/GetADResult> <GetADResult>{"ret":0,"msg":"正常","err_code":0,"data":{"ad":[]}}</GetADResult>
 
+# 粉象生活 - 开屏广告 - by xream
 ^https?:\/\/api\.fenxianglife\.com\/njia\/index\/popup\/v2 response-body-json-jq '.data.list = []'
 
+# 小爱音箱 - 开屏广告和横幅 - by xream
 ^https?:\/\/info\.mina\.xiaoaisound\.com\/(advertise|payGuide)\/ mock-response-body data-type=json data="{"code":0,"message":"Success","data":[]}"
-
 
 [Script]
 

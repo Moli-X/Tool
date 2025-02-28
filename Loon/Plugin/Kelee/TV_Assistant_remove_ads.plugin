@@ -11,7 +11,6 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TV_Assistant.png
 #!date=2024-11-28 00:00:00
 
-
 [Rule]
 AND,((DOMAIN-KEYWORD,ads),(DOMAIN-KEYWORD,normal),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
@@ -28,10 +27,12 @@ DOMAIN-KEYWORD,-fe-tos.pglstatp-toutiao.com,REJECT
 DOMAIN-KEYWORD,api-access.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
 
+# 快手联盟 - 广告服务商
 DOMAIN,gdfp.gifshow.com,REJECT
 DOMAIN,open.e.kuaishou.com,REJECT
 DOMAIN-SUFFIX,adukwai.com,REJECT
 
+# 百度联盟 - 广告服务商
 DOMAIN,mobads.baidu.com,REJECT
 DOMAIN,mobads-logs.baidu.com,REJECT
 DOMAIN,wn.pos.baidu.com,REJECT
@@ -41,9 +42,11 @@ DOMAIN,feed-image.baidu.com,REJECT
 DOMAIN-SUFFIX,union.baidu.cn,REJECT
 DOMAIN-SUFFIX,union.baidu.com,REJECT
 
+# 上海优比客思科技有限公司 - 广告服务商
 DOMAIN,tower.ubixioe.com,REJECT
 DOMAIN,sdk-data.ubixioe.com,REJECT
 
+# 袤博 - 广告服务商
 DOMAIN,api-c.dutils.com,REJECT
 DOMAIN,api-d.dutils.com,REJECT
 DOMAIN,api-p0.yksdks.com,REJECT
@@ -57,24 +60,28 @@ DOMAIN,api.verify.mob.com,REJECT
 DOMAIN,log-verify.mob.com,REJECT
 DOMAIN,sdk.push.mob.com,REJECT
 
+# 友盟
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
 DOMAIN,ucc.umeng.com,REJECT
 DOMAIN,ulogs.umeng.com,REJECT
 DOMAIN,utoken.umeng.com,REJECT
 
-
 [Rewrite]
+# 首页 - 弹窗
 ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_home_pop_up reject-dict
+# 首页 - 顶部横幅推广
 ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_home_tips reject-dict
+# 首页 - 底部横幅推广
 ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_index_operate2 reject-dict
+# 首页 - 全网热投榜
 ^https:\/\/saas\.hpplay\.cn\/api\/lebo-rabbit\/app-card\/list reject-dict
+# 我的页面 - 横幅推广
 ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app-user-banner reject-dict
 
-
 [Script]
+# 移除底栏视频标签
 http-response ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_tab_red_dot\?user-tag=1$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/TV_Assistant_remove_ads.js,requires-body=true,tag=移除底栏视频标签
-
 
 [MitM]
 hostname=saas.hpplay.cn

@@ -11,26 +11,33 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/51Job.png
 #!date=2024-12-29 00:13:17
 
-
 [Rewrite]
+# 开屏广告
 ^https:\/\/appapi\.51job\.com\/api\/market\/get_launch\.php\? reject-dict
 
+# 职位 - 下拉二楼
 ^https:\/\/cupid\.51job(app)?\.com\/open\/51job-activities\/secJob\/queryHomeSecondConfigV2\? reject-dict
 
+# 职位 - 招聘信息流广告
 ^https:\/\/cupid\.51job(app)?\.com\/open\/noauth\/recommend\/job-tab-dynamic\? response-body-json-del resultbody.adsTabFeeds
 
+# 职位 - 职位详情 - 竞争力分析
 ^https:\/\/cupid\.51job(app)?\.com\/open\/noauth\/jobs\/detail\/sesame-competitive\/ reject-dict
 
+# 任务弹窗
 ^https:\/\/cupid\.51job(app)?\.com\/open\/user-task\/user\/task\/ response-body-json-del resultbody.availableTaskList
 
+# 简历向导
 ^https:\/\/cupid\.51jobapp(app)?\.com\/open\/resume\/strategy\/resume-build\? reject-dict
 
+# 弹窗
 ^https:\/\/cupid\.51job(app)?\.com\/open\/noauth\/popUp\/ reject-dict
 
+# 我的页面 - 横幅推广
 ^https:\/\/cupid\.51job(app)?\.com\/open\/tab\/good-job\/modules response-body-json-del resultbody.bannerList
 
+# 消息页面 - 无忧小助手 - 横幅推广
 ^https:\/\/cupid\.51job(app)?\.com\/open\/operation\/get\/banner-list\? reject-dict
-
 
 [MitM]
 hostname=appapi.51job.com,cupid.51job.com,cupid.51jobapp.com

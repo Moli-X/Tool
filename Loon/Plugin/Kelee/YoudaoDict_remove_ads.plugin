@@ -11,8 +11,8 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YoudaoDict.png
 #!date=2024-11-28 00:00:00
 
-
 [Rule]
+# 拦截HTTPDNS
 DOMAIN,httpdns.music.163.com,REJECT
 DOMAIN,httpdns.n.netease.com,REJECT
 DOMAIN,httpdns-sdk.n.netease.com,REJECT
@@ -24,6 +24,7 @@ IP-CIDR,59.111.239.62/32,REJECT,no-resolve
 IP-CIDR,115.236.121.51/32,REJECT,no-resolve
 IP-CIDR,115.236.121.195/32,REJECT,no-resolve
 
+# 友盟
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
 DOMAIN,errnewlog.umeng.com,REJECT
@@ -36,18 +37,21 @@ DOMAIN,plbslog.umeng.com,REJECT
 DOMAIN,log.umtrack.com,REJECT
 DOMAIN,aaid.umeng.com,REJECT
 
-
 [Rewrite]
+# 开屏广告
 ^https:\/\/gorgon\.youdao\.com\/gorgon\/brand\/prefetch\.s\? reject-dict
 
+# 首页右上角推广
 ^https:\/\/dict\.youdao\.com\/homepage\/toolbar\/get\? response-body-json-del data.vipTag
 
+# 首页横幅及信息流广告
 ^https:\/\/gorgon\.youdao\.com\/gorgon\/request\.s\? reject-dict
 
+# 翻译页面推广
 ^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab\? response-body-json-del data
 
+# 学习 - 弹窗data.popup / 顶部标签data.tab / 搜索填充词data.searchSuggestList / 轮播图data.newBanner / 四六级出分测试data.icon.promotionList / 文字角标data.icon.iconList[1].bubble data.icon.iconList[2].bubble data.icon.iconList[8].bubble
 ^https:\/\/dict\.youdao\.com\/course\/tab\/home\? response-body-json-del data.popup data.tab data.searchSuggestList data.newBanner data.icon.promotionList data.icon.iconList[1].bubble data.icon.iconList[2].bubble data.icon.iconList[8].bubble
-
 
 [MitM]
 hostname=gorgon.youdao.com,dict.youdao.com

@@ -11,30 +11,41 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BiliComic.png
 #!date=2024-11-28 00:00:00
 
-
 [Rule]
+# 拦截HTTPDNS
 URL-REGEX,"^http:\/\/203\.107\.1\.33\/191607\/resolve\?",REJECT
 URL-REGEX,"^http:\/\/119\.29\.29\.29\/d",REJECT
 
-
 [Rewrite]
+# 底栏 - 活动按钮
 ^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetActivityTab reject-dict
+# 首页 - 推荐 - 悬浮窗
 ^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetBubbles reject-dict
+# 我的、搜索 - 横幅广告
 ^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetCommonBanner reject-dict
 ^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/SearchBanner reject-dict
+# 我的 - 今日推荐阅读任务
 ^https:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.SeasonV\d\/GetSeasonInfo reject-dict
+# 书架 - 漫画 - 你可能喜欢
 ^https:\/\/manga\.bilibili\.com\/twirp\/bookshelf\.v\d\.Bookshelf\/ListEmptyRecommend reject-dict
+# 书架 - 小说 - 你可能喜欢
 ^https:\/\/manga\.bilibili\.com\/twirp\/bookshelf\.v\d\.Bookshelf\/NovelRecommend reject-dict
+# 小说 - 详情 - 更多推荐
 ^https:\/\/manga\.bilibili\.com\/twirp\/novel\.v\d\.Novel\/MoreRecommend reject-dict
+# 小说 - 详情 - 悬浮窗
 ^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetBubbles reject-dict
+# 首页 - 弹窗
 ^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/AppInit reject-dict
+# 开屏广告
 ^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/ListFlash reject-dict
 
-
 [Script]
+# 顶部标签
 http-response ^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetClassPageAllTabs script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BiliComic_remove_ads.js,requires-body=true,tag=移除顶部标签
+# 我的页面
 http-response ^https:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.User\/UCenterConf script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BiliComic_remove_ads.js,requires-body=true,tag=精简我的页面
-
+# 小说列表横幅
+# http-response ^https:\/\/manga\.bilibili\.com\/twirp\/novel\.v\d\.Home\/Home script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BiliComic_remove_ads.js,requires-body=true,tag=移除小说列表横幅
 
 [MitM]
 hostname=manga.bilibili.com

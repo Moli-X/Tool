@@ -11,31 +11,40 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QiXinBao.png
 #!date=2024-11-28 00:00:00
 
-
 [Rewrite]
+# 首页 - 搜索栏热搜词
 ^https:\/\/appc\.qixin\.com\/v4\/general\/getSearchPlaceholderRedirect$ reject-dict
 
+# 首页 - 悬浮窗
 ^https:\/\/appc-v6\.qixin\.com\/v4\/general\/getAppFloatAd$ reject-dict
 
+# 首页 - 轮播图
 ^https:\/\/appc-v6\.qixin\.com\/v4\/general\/getAppBanners$ reject-dict
 
+# 首页 - 弹窗
 ^https:\/\/appc-v6\.qixin\.com\/v4\/user\/getUserActivitys$ reject-dict
 
+# 首页 - 个性化推荐
 ^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/homePageRecommend\/recommendCard\d+ reject-dict
 
+# 首页 - 热门老板
 ^https:\/\/appc-v6\.qixin\.com\/v4\/user\/getRecommendPersons$ reject-dict
 
+# 首页 - 热门企业
 ^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/getRecommendEnts$ reject-dict
 
+# 首页 - 轮播消息
 ^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/getRecommendation$ reject-dict
 
+# 我的页面 - 轮播图
 ^https:\/\/appc-v6\.qixin\.com\/v4\/general\/getAppBottomBanners$ reject-dict
 
+# 开屏广告
 ^https:\/\/qxb-minicode-pic-osscache\.qixin\.com\/web\/ reject
 
-
 [Script]
-
+# 首页 - 个性化推荐
+# http-response ^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/homePageRecommend\/recommendCard\d+ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/QiXinBao_remove_ads.js,requires-body=true,tag=移除个性化推荐信息流
 
 [MitM]
 hostname=appc.qixin.com,appc-v6.qixin.com,qxb-minicode-pic-osscache.qixin.com

@@ -11,65 +11,89 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AutoHome.png
 #!date=2024-11-28 00:00:00
 
-
 [Rule]
+# 拦截HTTPDNS
 IP-CIDR,119.29.29.98/32,REJECT,no-resolve
 IP-CIDR,119.29.29.99/32,REJECT,no-resolve
 URL-REGEX,"^http:\/\/182\.254\.116\.116\/d",REJECT
 DOMAIN,adproxy.autohome.com.cn,REJECT
 
-
 [Rewrite]
+# 我的页面 - 广告横幅
 ^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/findEquitysV5 reject-dict
 
+# 我的页面 - 我的车库
 ^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/mycardv6 reject-dict
 
+# 我的页面 - 去问问
 ^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/chat\/gse\/recquery reject-dict
 
+# 我的页面 - 福利中心超级低价
 ^https:\/\/autoapi\.autohome\.com\.cn\/ypttd\/yjc\/web\/mkgt\/act\/seckillInfo reject-dict
 
+# 我的页面 - 热门活动
 ^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/gethotactcards reject-dict
 
+# 我的页面 - 特惠洗车、到站加油
 ^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/extendedcards reject-dict
 ^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/getwashcarlist reject-dict
 ^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/getdealertab reject-dict
 
+# 我的页面 - 加油站列表
 ^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/getoillist reject-dict
 
+# 开屏广告
 ^https:\/\/pcmx\.autohome\.com\.cn\/queryCreativeList reject-dict
 
+# 看看期货
 ^https:\/\/maam\.pingan\.com\.cn\/maam\/buoy\/getBuoyList\.do reject-dict
 
+# 文末广告
 ^https:\/\/news\.app\.autohome\.com\.cn\/cont_v\d+(?:\.\d+){2}\/api\/article\/extenddata reject-dict
 
+# 文末广告、信息流广告、评论区广告
 ^https:\/\/adproxy\.autohome\.com\.cn\/AdvertiseService\/AppHandler\.ashx reject-dict
 
+# 首页 - 问答 - 推广横幅
 ^https:\/\/club\.app\.autohome\.com\.cn\/club_v\d+(?:\.\d+){2}\/club\/channelqa\/header reject-dict
 
+# 首页 - 本地 - 购车优惠
 ^https:\/\/dealer\.m\.autohome\.com\.cn\/handler\/other\/getdata\?__action=super\.list reject-dict
 
+# 首页 - 本地 - VR看车
 ^https:\/\/autoapi\.autohome\.com\.cn\/arvr-dealercloud-api\/online\/aggregation\/exhibitionList reject-dict
 
+# 首页 - 本地 - 购车红包
 ^https:\/\/dealer\.m\.autohome\.com\.cn\/handler\/other\/getdata\?__action=vrcore\.list reject-dict
 
+# 首页 - 看经销商说车抢优惠
 ^https:\/\/dealer\.m\.autohome\.com\.cn\/handler\/other\/getdata\?__action=platform\.search reject-dict
 
+# 选车 - 新能源报价页面直播内容
 ^https:\/\/a\.athm\.cn\/clientlive\.api\.autohome\.com\.cn\/api\/live\/getserieswindowsinfo reject-dict
+
+# 选车 - 买车 - 竖版焦点图广告
+# ^https:\/\/dealer\.m\.autohome\.com\.cn\/handler\/other\/getdata\?__action=dealerlq\.getpics&picType=195 reject-dict
 
 
 [Script]
+# 首页 - 左上角以旧换新
 http-response ^https:\/\/news\.app\.autohome\.com\.cn\/news_v\d+(?:\.\d+){2}\/news\/homenavigation script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoHome_remove_ads.js,requires-body=true,tag=精简我的页面
 
+# 我的页面 - 精简精选服务、全部服务、添加我的爱车领券、热门活动
 http-response ^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/((usercenter\/getservicecards)|(carcard\/allcard)|(carcard\/mycardv\d+)|(carcard\/cards)) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoHome_remove_ads.js,requires-body=true,tag=精简我的页面
 
+# 社区广场 - 广告轮播图
 http-response ^https:\/\/(a\.athm\.cn\/)?club\.app\.autohome\.com\.cn\/club_v\d+(?:\.\d+){2}\/club\/index\/businessv\d+ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoHome_remove_ads.js,requires-body=true,tag=社区广场去广告
 
+# 选车 - 直播浮窗
 http-response ^https:\/\/(a\.athm\.cn\/)?cars\.app\.autohome\.com\.cn\/carstreaming\/selectcarportal\/reclist script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoHome_remove_ads.js,requires-body=true,tag=移除直播浮窗
 
+# 选车 - 新车报价页面直播内容 - 无效
 http-response ^https:\/\/(a\.athm\.cn\/)?cars\.app\.autohome\.com\.cn\/carstreaming\/selectcarportal\/seriestopwithtagscard script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoHome_remove_ads.js,requires-body=true,tag=移除报价页面直播内容
 
+# 二手车 - 竖版轮播图 - 无效
 http-response ^https:\/\/(a\.athm\.cn\/)?apiautoappusc\.che168\.com\/apic\/v\d+\/gethomepagefeed script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoHome_remove_ads.js,requires-body=true,tag=移除二手车竖版轮播图
-
 
 [MitM]
 hostname=a.athm.cn,adproxy.autohome.com.cn,apiautoappusc.che168.com,autoapi.autohome.com.cn,cars.app.autohome.com.cn,clientlive.api.autohome.com.cn,club.app.autohome.com.cn,dealer.m.autohome.com.cn,maam.pingan.com.cn,mobile.app.autohome.com.cn,news.app.autohome.com.cn,pcmx.autohome.com.cn

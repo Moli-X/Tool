@@ -11,23 +11,28 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/LuckinCoffee.png
 #!date=2024-11-28 00:00:00
 
-
 [Rewrite]
+# 日历
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/growUp\/calendarList reject
 
+# 礼品卡
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/promotion\/giftCard\/topPage reject
 
+# 幸运集杯横幅
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/base\/myLittleLuck reject
 
+# 新人推荐
 ^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/menu\/ordinaryUserLayeredArea reject
 
+# 轮播图
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/common\/modules reject
 
+# 首页商品列表
 ^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/homepage\/homePageCoffeeList reject
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/eorder\/product\/popAppTagProductList reject
 
+# 开屏广告
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNew reject
-
 
 [MitM]
 hostname=capi.lkcoffee.com

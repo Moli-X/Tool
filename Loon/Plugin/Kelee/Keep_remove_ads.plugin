@@ -11,29 +11,33 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Keep.png
 #!date=2024-11-28 00:00:00
 
-
 [Rule]
+# 拦截HTTPDNS
 DOMAIN,httpdns.n.netease.com,REJECT
 DOMAIN,httpdns.calorietech.com,REJECT
 
+# 拦截广告下发
 DOMAIN,hc-ssp.sm.cn,REJECT
 
-
 [Rewrite]
+# 搜索填充词
 ^https:\/\/api\.gotokeep\.com\/search\/v6\/default\/keyword\/list reject-dict
 
+# 关注 - 关注推荐
 ^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/followPage response-body-json-replace data {}
 
+# 信息流推广
 ^https:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v1\/ad reject-dict
 
+# 文章相关推荐
 ^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/entryDetail response-body-json-replace data {}
 
+# 弹窗
 ^https:\/\/api\.gotokeep\.com\/guide-webapp\/v1\/popup\/getPopUp reject-dict
 
-
 [Script]
+# 首页 - 活动标签
 http-response ^https:\/\/api\.gotokeep\.com\/config\/v3\/basic script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Keep_remove_ads.js,requires-body=true,tag=移除首页活动标签
-
 
 [MitM]
 hostname=api.gotokeep.com,kad.gotokeep.com

@@ -11,7 +11,6 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/HUPU.png
 #!date=2024-11-28 00:00:00
 
-
 [Rewrite]
 ^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bplapi\/reddot\/v1\/app\/getReddot reject-dict
 ^https:\/\/bbs\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/(bbsallapi\/tag\/v1\/heatTag|bbsrankapi\/v1\/rating\/list) reject-dict
@@ -22,13 +21,11 @@
 ^https:\/\/games\.mobileapi\.hupu\.com\/3\/8\.0\.86\/bplcommentapi\/bpl\/score_tab\/groups reject-dict
 ^https:\/\/games\.mobileapi\.hupu\.com\/3\/8\.0\.86\/bplapi\/banner\/getLocationBanners reject-dict
 
-
 [Script]
 http-response ^https:\/\/fairy\.mobileapi\.hupu\.com\/mang\/preview\/banners script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/HUPU_remove_ads.js,requires-body=true,tag=移除虎扑广告
 http-response ^https:\/\/bbs\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bbsallapi\/lego\/data script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/HUPU_remove_ads.js,requires-body=true,tag=移除虎扑广告
 http-response ^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/buffer\/hotList script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/HUPU_remove_ads.js,requires-body=true,tag=移除虎扑广告
 http-response ^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bplapi\/user\/v1\/more script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/HUPU_remove_ads.js,requires-body=true,tag=移除虎扑广告
-
-
+  
 [MitM]
 hostname=games.mobileapi.hupu.com,fairy.mobileapi.hupu.com,bbs.mobileapi.hupu.com,goblin.hupu.com

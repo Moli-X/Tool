@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3264
+# 规则统计: 3268
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -67,9 +67,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-26T13:42:07.293Z
-# Last Updated: 2025-02-26T16:14:11.428Z
+# Last Updated: 2025-02-28T09:27:25.336Z
 # License: AGPL 3.0
-# Size: 3190
+# Size: 3194
 # Size: 61
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -565,6 +565,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .jwpcdn.com
 .jwpsrv.com
 .k8s.io
+.kakaocdn.net
 .kc-usercontent.com
 .kinja-img.com
 .kinja-static.com
@@ -2262,6 +2263,7 @@ interactive.guim.co.uk
 ip-ranges.amazonaws.com
 ipfs.d.tube
 irp-cdn.multiscreensite.com
+isitmaintained.com
 j.udn.com.tw
 jac.yahoosandbox.com
 jaws.pbs.org
@@ -2707,6 +2709,7 @@ s3.m.0x.mk
 s3.masto.ai
 s3.picacomic.com
 s3.producthunt.com
+s3.sitepoint.com
 s3.stackabuse.com
 s3.toot.io
 s3.tradingview.com
@@ -3198,6 +3201,7 @@ vod.jfly.xyz
 vpncdn.protonweb.com
 vscode-sync-insiders.trafficmanager.net
 vscode-sync.trafficmanager.net
+vsmarketplacebadge.apphb.com
 vuejs.org
 vz-2222604c-50b.b-cdn.net
 vz-c0fe498e-5ab.b-cdn.net

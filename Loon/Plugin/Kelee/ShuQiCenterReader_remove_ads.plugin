@@ -11,22 +11,24 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ShuQiCenterReader.png
 #!date=2024-11-28 00:00:00
 
-
 [Rule]
+# 移除福利页面
 DOMAIN,render-web.11222.cn,REJECT
 
-
 [Rewrite]
+# 开屏广告
 ^https:\/\/huichuan\.sm\.cn\/nativead reject-dict
 
+
+# 阅读页面广告
 ^https:\/\/ocean\.shuqireader\.com\/api\/route\/iosReadPage\/adV2 reject-dict
 ^https:\/\/ocean\.shuqireader\.com\/api\/route\/ios\/readPage$ reject-dict
+# 移除渲染资源 - 移除福利入口、悬浮窗资源、我的页面推广、推荐搜索词
 ^https:\/\/ocean\.shuqireader\.com\/api\/render\/load\/resource reject
 
-
 [Script]
+# 书城横幅和阅读广告
 http-response ^https:\/\/ocean\.shuqireader\.com\/sqios\/render\/render\/page\/bookstore$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/ShuQiCenterReader_remove_ads.js,requires-body=true,tag=移除书城横幅和阅读广告
-
 
 [MitM]
 hostname=ocean.shuqireader.com,huichuan.sm.cn

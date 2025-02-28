@@ -11,17 +11,20 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KwaiVideoeditor.png
 #!date=2024-11-28 00:00:00
 
-
 [Rule]
+# 腾讯HTTPDNS
 URL-REGEX,"^http?:\/\/119\.29\.29\.29\/d",REJECT
 
+# 快手HTTPDNS
 DOMAIN,kuaishou.httpdns.pro,REJECT
 DOMAIN,httpdns.kwd.inkuai.com,REJECT
 DOMAIN,apidns.kwd.inkuai.com,REJECT
 DOMAIN,apidns-js.kwd.inkuai.com,REJECT
 
+# 金山云HTTPDNS
 DOMAIN,hdns.ksyun.com,REJECT
 
+# 百度HTTPDNS
 DOMAIN,httpdns.baidu.com,REJECT
 DOMAIN,httpsdns.baidu.com,REJECT
 DOMAIN,httpdns.bcelive.com,REJECT
@@ -35,8 +38,10 @@ URL-REGEX,"^http:\/\/180\.76\.76\.112\/v\d\/resolve",REJECT
 URL-REGEX,"^http:\/\/180\.76\.76\.220\/v\d\/resolve",REJECT
 IP-CIDR,186.76.76.200/32,REJECT,no-resolve
 
+# 阿里巴巴HTTPDNS
 DOMAIN,httpdns.alicdn.com,REJECT
 
+# 华为云HTTPDNS
 DOMAIN,httpdns-browser.platform.dbankcloud.cn,REJECT
 DOMAIN,httpdns.huaweicloud.com,REJECT
 DOMAIN,httpdns.c.cdnhwc2.com,REJECT
@@ -44,7 +49,9 @@ DOMAIN,httpdns.platform.dbankcloud.cn,REJECT
 DOMAIN,httpdns.platform.dbankcloud.com,REJECT
 DOMAIN,httpdns1.cc.cdnhwc5.com,REJECT
 
+# 字节跳动广告
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
+# AND,((DOMAIN-KEYWORD,-sign-),(DOMAIN-SUFFIX,tiktokcdn.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ttam-),(DOMAIN-SUFFIX,ibyteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,ssdk-),(DOMAIN-SUFFIX,pangle.io)),REJECT
 AND,((DOMAIN-KEYWORD,pangolin),(DOMAIN-SUFFIX,sgsnssdk.com)),REJECT
@@ -53,6 +60,7 @@ AND,((DOMAIN-KEYWORD,v),(DOMAIN-KEYWORD,-be-pack.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-be-pack.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,s),(DOMAIN-KEYWORD,-fe-scm.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-ttcdn-tos.pstatp.com)),REJECT
+# AND,((DOMAIN-KEYWORD,p),(DOMAIN-KEYWORD,-be-pack-sign.pglstatp-toutiao.com)),REJECT // 被更精细的规则替代
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-fe-tos.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-static.i18n-pglstatp.com)),REJECT
 AND,((DOMAIN-KEYWORD,if),(DOMAIN-KEYWORD,-cdn-tos.bytescm.com)),REJECT //误杀
@@ -93,6 +101,7 @@ DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
 
+# 腾讯
 DOMAIN,adsmind.gdtimg.com,REJECT
 DOMAIN,adsmind.ugdtimg.com,REJECT
 DOMAIN,c2.gdt.qq.com,REJECT
@@ -102,10 +111,12 @@ DOMAIN,info6.video.qq.com,REJECT
 DOMAIN,ios.bugly.qq.com,REJECT
 DOMAIN,pro.bugly.qq.com,REJECT
 DOMAIN,ios.video.mpush.qq.com,REJECT
+# DOMAIN,mazu.m.qq.com,REJECT // 误杀
 DOMAIN,mi.gdt.qq.com,REJECT
 DOMAIN,otheve.beacon.qq.com,REJECT
 DOMAIN,pgdt.gtimg.cn,REJECT
 DOMAIN,pgdt.ugdtimg.com,REJECT
+# DOMAIN,qzonestyle.gtimg.cn,REJECT // 误杀
 DOMAIN,qzs.gdtimg.com,REJECT
 DOMAIN,qzs.qq.com,REJECT
 DOMAIN,rmonitor.qq.com,REJECT
@@ -129,11 +140,13 @@ DOMAIN-SUFFIX,l.qq.com,REJECT
 DOMAIN-SUFFIX,ugdtimg.com,REJECT
 IP-CIDR,47.110.187.87/32,REJECT,no-resolve
 
+# 快手联盟 - 广告服务商
 DOMAIN,gdfp.gifshow.com,REJECT
 DOMAIN,open.e.kuaishou.com,REJECT
 DOMAIN,adtrack.e.kuaishou.com,REJECT
 DOMAIN-SUFFIX,adukwai.com,REJECT
 
+# 百度联盟 - 广告服务商
 DOMAIN,afd.baidu.com,REJECT
 DOMAIN,als.baidu.com,REJECT
 DOMAIN,bgg.baidu.com,REJECT
@@ -150,6 +163,7 @@ DOMAIN,miniapp-ad.cdn.bcebos.com,REJECT
 DOMAIN-SUFFIX,union.baidu.cn,REJECT
 DOMAIN-SUFFIX,union.baidu.com,REJECT
 
+# 袤博 - 广告服务商
 DOMAIN,api-c.dutils.com,REJECT
 DOMAIN,api-d.dutils.com,REJECT
 DOMAIN,api-p0.yksdks.com,REJECT
@@ -163,19 +177,22 @@ DOMAIN,api.verify.mob.com,REJECT
 DOMAIN,log-verify.mob.com,REJECT
 DOMAIN,sdk.push.mob.com,REJECT
 
-
 [Rewrite]
+# 开屏广告
 ^https:\/\/api\.kmovie\.gifshow\.com\/rest\/n\/kmovie\/app\/resource\/get\? reject-dict
 
+# 剪辑 - 创意试手
 ^https:\/\/api\.kmovie\.gifshow\.com\/rest\/n\/kmovie\/app\/banner\/common\/getBannerByTypeV2\? response-body-json-jq 'del(.list[] | select(.bannerChannelName == "活动"))'
 ^https:\/\/api\.kmovie\.gifshow\.com\/rest\/n\/kmovie\/app\/banner\/common\/getAllBannerPage\? response-body-json-jq 'del(.data[] | select(.bannerChannelName == "活动"))'
 
+# 剪同款 - 横幅推广
 ^https:\/\/api\.kmovie\.gifshow\.com\/rest\/n\/kmovie\/app\/banner\/common\/getBannerByType\? reject-dict
 
+# 剪同款 - 信息流广告
 ^https:\/\/api\.kmovie\.gifshow\.com\/rest\/n\/kmovie\/app\/merchant\/ad\/ reject-dict
 
+# 悬浮部件 - 多品类模板师招募
 ^https:\/\/api\.kmovie\.gifshow\.com\/rest\/n\/kmovie\/app\/resource\/activity\/pendant\? reject-dict
-
 
 [MitM]
 hostname=api.kmovie.gifshow.com

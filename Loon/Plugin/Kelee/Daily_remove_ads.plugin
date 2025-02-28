@@ -11,10 +11,8 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Daily.png
 #!date=2024-12-04 11:02:01
 
-
 [Rewrite]
 ^https?:\/\/m\.pvp\.xoyo\.com\/conf\/server-mapping$ response-body-json-del data.splashConf data.splashConfNew
-
 
 [MitM]
 hostname=m.pvp.xoyo.com

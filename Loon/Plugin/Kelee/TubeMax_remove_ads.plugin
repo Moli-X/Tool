@@ -11,7 +11,6 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TubeMax.png
 #!date=2024-11-28 00:00:00
 
-
 [Rule]
 DOMAIN,app.tubemaxapp.com,PROXY
 DOMAIN-SUFFIX,adjust.com,REJECT
@@ -23,10 +22,8 @@ DOMAIN-SUFFIX,appier.net,REJECT
 DOMAIN-SUFFIX,adsmoloco.com,REJECT
 DOMAIN-SUFFIX,adcanvas.com,REJECT
 
-
 [Rewrite]
 ^https:\/\/.*\.i18n-pglstatp\.com\/obj\/ad-pattern-sg reject
-
 
 [MitM]
 hostname=*.i18n-pglstatp.com

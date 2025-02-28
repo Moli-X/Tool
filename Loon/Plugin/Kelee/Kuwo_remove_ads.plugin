@@ -11,19 +11,29 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Kuwo.png
 #!date=2024-11-28 00:00:00
 
-
 [Rule]
+# 拦截HTTPDNS
 DOMAIN,serveraddr.service.kugou.com,REJECT
 DOMAIN,twns.p2ptun.qq.com,REJECT
 DOMAIN,tp2p.kg.qq.com,REJECT
 IP-CIDR,81.71.61.216/32,REJECT,no-resolve
 
+# 腾讯优量汇 - 广告服务商
 DOMAIN,ios.bugly.qq.com,REJECT
 DOMAIN,sdk.e.qq.com,REJECT
 DOMAIN,us.l.qq.com,REJECT
 DOMAIN-SUFFIX,ugdtimg.com,REJECT
+# DOMAIN,adsmind.ugdtimg.com,REJECT
+# DOMAIN,pgdt.ugdtimg.com,REJECT
+# DOMAIN,qzs.gdtimg.com,REJECT
 
 DOMAIN-SUFFIX,gdt.qq.com,REJECT
+# DOMAIN,mi.gdt.qq.com,REJECT
+# DOMAIN,win.gdt.qq.com,REJECT
+# DOMAIN,v2.gdt.qq.com,REJECT
+# v.gdt.qq.com,REJECT
+# t.gdt.qq.com,REJECT
+# c2.gdt.qq.com,REJECT
 DOMAIN,tmeadcomm.y.qq.com,REJECT
 DOMAIN,mobilead.kuwo.cn,REJECT
 DOMAIN,adstats.tencentmusic.com,REJECT
@@ -31,6 +41,7 @@ DOMAIN,adsmind.gdtimg.com,REJECT
 DOMAIN,ad.tencentmusic.com,REJECT
 DOMAIN,mc.tencentmusic.com,REJECT
 
+# 广告配置
 URL-REGEX,"^http:\/\/rich\.kuwo\.cn\/AdService\/",REJECT-DICT
 URL-REGEX,"^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/user\/freeMode\/",REJECT-DICT
 URL-REGEX,"^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/app\/pasterAdvert\/",REJECT-DICT
@@ -38,25 +49,29 @@ URL-REGEX,"^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/app\/startup\/config",REJECT-
 URL-REGEX,"^http:\/\/rich\.kuwo\.cn\/EcomResourceServer\/",REJECT-DICT
 IP-CIDR,111.206.98.63/32,REJECT,no-resolve
 
+# 搜索填充词
 URL-REGEX,"^http:\/\/searchrecterm\.kuwo\.cn\/recterm\.s",REJECT-DICT
 
+# 精简我的页面侧边栏
 URL-REGEX,"^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/app\/newMenuList\/menuListInfo",REJECT-DICT
 
+# 迷你播放器横幅
 URL-REGEX,"^http:\/\/vip\d\.kuwo\.cn\/vip\/v\d\/sysinfo\?op=getRePayAndDoPayBox",REJECT-DICT
 
+# 听书页面广告
 URL-REGEX,"^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/album\/adBar\/",REJECT-DICT
 
-
 [Rewrite]
+# 首页 - 推广语
 ^https:\/\/vip\d\.kuwo\.cn\/commercia\/vipconf\/projectPage\/getPageContent reject-dict
 ^https:\/\/tingshu\.kuwo\.cn\/v2\/api\/pay\/user\/info reject-dict
 
+# 我的页面横幅
 ^https:\/\/appi\.kuwo\.cn\/kuwopay\/personal\/cells reject-dict
 
-
 [Script]
+# 移除听书页面广告
 http-response ^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/tingshu\/index\/radio script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Kuwo_remove_ads.js,requires-body=true,tag=移除听书页面广告
-
 
 [MitM]
 hostname=appi.kuwo.cn,mc.tencentmusic.com,vip*.kuwo.cn,tingshu.kuwo.cn

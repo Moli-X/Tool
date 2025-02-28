@@ -11,7 +11,6 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YouTube.png
 #!date=2024-11-28 02:07:31
 
-
 [Argument]
 blockUpload=switch,false,true,tag=隐藏上传按钮,desc=用于隐藏YouTube底栏的上传按钮
 blockImmersive=switch,false,true,tag=隐藏选段按钮,desc=用于隐藏YouTube Music底栏的选段按钮
@@ -19,19 +18,16 @@ captionLang=select,"zh-Hans","zh-Hant","ja","ko","en","off",tag=字幕翻译语�
 lyricLang=select,"zh-Hans","zh-Hant","ja","ko","en","off",tag=歌词翻译语言,desc=需要把YouTube Music字幕翻译翻译为何种语言
 debug=switch,false,true,tag=启用调试模式,desc=此插件的调试模式
 
-
 [Rule]
 AND,((DOMAIN-SUFFIX,googlevideo.com),(PROTOCOL,QUIC)),REJECT
 AND,((DOMAIN-SUFFIX,youtubei.googleapis.com),(PROTOCOL,QUIC)),REJECT
 
-
 [Rewrite]
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad mock-response-body data-type=text status-code=502
 
-
 [Script]
+# YouTube去广告
 http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/YouTube_remove_ads_response.js,requires-body=true,binary-body-mode=true,argument=[{blockUpload},{blockImmersive},{captionLang},{lyricLang},{debug}],tag=YouTube去广告
-
 
 [MitM]
 hostname=*.googlevideo.com,youtubei.googleapis.com

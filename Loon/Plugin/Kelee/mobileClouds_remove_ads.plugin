@@ -11,12 +11,10 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/mobileClouds.png
 #!date=2024-11-28 00:00:00
 
-
 [Script]
 http-response ^https:\/\/jzts\.cmpassport\.com\/personalized\/getPushContent script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/mobileClouds_remove_ads.js,requires-body=true,tag=移除开屏广告
 
 http-response ^https:\/\/ad\.mcloud\.139\.com\/advertapi\/adv-filter\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/mobileClouds_remove_ads.js,requires-body=true,tag=移除应用内广告
-
 
 [MitM]
 hostname=jzts.cmpassport.com,ad.mcloud.139.com
