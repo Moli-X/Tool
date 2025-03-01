@@ -1,7 +1,7 @@
 /*
 引用地址 https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/xiaohongshu.js
 */
-// 2024-11-10 13:10
+// 2025-01-30 08:35
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -72,6 +72,14 @@ if (url.includes("/v1/note/imagefeed") || url.includes("/v2/note/feed")) {
     // 原始数据有问题 强制返回成功响应
     obj = { code: 0, success: true, msg: "成功", data: { datas: livePhoto } };
   }
+} else if (url.includes("/v1/system/service/ui/config")) {
+  // 整体 ui 配置
+  if (obj?.data?.sideConfigHomepage?.componentConfig?.sidebar_config_cny_2025) {
+    obj.data.sideConfigHomepage.componentConfig.sidebar_config_cny_2025 = {};
+  }
+  if (obj?.data?.sideConfigPersonalPage?.componentConfig?.sidebar_config_cny_2025) {
+    obj.data.sideConfigPersonalPage.componentConfig.sidebar_config_cny_2025 = {};
+  }
 } else if (url.includes("/v1/system_service/config")) {
   // 整体配置
   const item = ["app_theme", "loading_img", "splash", "store"];
@@ -82,8 +90,8 @@ if (url.includes("/v1/note/imagefeed") || url.includes("/v2/note/feed")) {
   }
 } else if (url.includes("/v2/note/widgets")) {
   // 详情页小部件
-  const item = ["cooperate_binds", "generic", "note_next_step"];
-  // cooperate_binds合作品牌 note_next_step活动
+  const item = ["cooperate_binds", "generic", "note_next_step", "widgets_nbb", "widgets_ncb", "widgets_ndb"];
+  // cooperate_binds合作品牌 note_next_step活动 widgets_nbb相关搜索
   if (obj?.data) {
     for (let i of item) {
       delete obj.data[i];
@@ -143,31 +151,42 @@ if (url.includes("/v1/note/imagefeed") || url.includes("/v2/note/feed")) {
   }
 } else if (url.includes("/v4/note/videofeed")) {
   // 信息流 视频
+  let modDatas = [];
   let newDatas = [];
   let unlockDatas = [];
   if (obj?.data?.length > 0) {
     for (let item of obj.data) {
-      if (item?.id !== "" && item?.video_info_v2?.media?.stream?.h265?.[0]?.master_url !== "") {
-        let myData = {
-          id: item.id,
-          url: item.video_info_v2.media.stream.h265[0].master_url
-        };
-        newDatas.push(myData);
-      }
-      if (item?.share_info?.function_entries?.length > 0) {
-        // 视频下载限制
-        const additem = { type: "video_download" };
-        // 检查是否存在 video_download 并获取其索引
-        let videoDownloadIndex = item.share_info.function_entries.findIndex((i) => i?.type === "video_download");
-        if (videoDownloadIndex !== -1) {
-          // 如果存在，将其移动到数组的第一个位置
-          let videoDownloadEntry = item.share_info.function_entries.splice(videoDownloadIndex, 1)[0];
-          item.share_info.function_entries.splice(0, 0, videoDownloadEntry);
-        } else {
-          // 如果不存在，在数组开头添加一个新的 video_download 对象
-          item.share_info.function_entries.splice(0, 0, additem);
+      if (item?.model_type === "note") {
+        if (item?.id !== "" && item?.video_info_v2?.media?.stream?.h265?.[0]?.master_url !== "") {
+          let myData = {
+            id: item.id,
+            url: item.video_info_v2.media.stream.h265[0].master_url
+          };
+          newDatas.push(myData);
         }
+        if (item?.share_info?.function_entries?.length > 0) {
+          // 视频下载限制
+          const additem = { type: "video_download" };
+          // 检查是否存在 video_download 并获取其索引
+          let videoDownloadIndex = item.share_info.function_entries.findIndex((i) => i?.type === "video_download");
+          if (videoDownloadIndex !== -1) {
+            // 如果存在，将其移动到数组的第一个位置
+            let videoDownloadEntry = item.share_info.function_entries.splice(videoDownloadIndex, 1)[0];
+            item.share_info.function_entries.splice(0, 0, videoDownloadEntry);
+          } else {
+            // 如果不存在，在数组开头添加一个新的 video_download 对象
+            item.share_info.function_entries.splice(0, 0, additem);
+          }
+        }
+        if (item.hasOwnProperty("ad")) {
+          continue;
+        } else {
+          modDatas.push(item);
+        }
+      } else {
+        continue;
       }
+      obj.data = modDatas;
     }
     $persistentStore.write(JSON.stringify(newDatas), "redBookVideoFeed"); // 普通视频 写入持久化存储
   }
@@ -203,6 +222,9 @@ if (url.includes("/v1/note/imagefeed") || url.includes("/v2/note/feed")) {
         // 信息流-赞助
         continue;
       } else if (item.hasOwnProperty("card_icon")) {
+        // 信息流-带货
+        continue;
+      } else if (item.hasOwnProperty("note_attributes")) {
         // 信息流-带货
         continue;
       } else if (item?.note_attributes?.includes("goods")) {

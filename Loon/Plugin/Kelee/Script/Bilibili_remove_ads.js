@@ -1,5 +1,5 @@
 // 脚本引用 https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/bilibili/json.js
-// 2024-11-08 12:30
+// 2024-11-09 15:15
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -15,7 +15,7 @@ if (url.includes("/x/resource/show/tab/v2")) {
   }
   // 首页导航栏
   if (obj?.data?.tab?.length > 0) {
-    const sortLists = ["推荐", "热门", "动画", "影视", "直播"];
+    const sortLists = ["推荐", "热门", "影视", "动画", "直播"];
     obj.data.tab = obj.data.tab
       .filter((i) => sortLists?.includes(i?.name))
       .sort((a, b) => sortLists.indexOf(a?.name) - sortLists.indexOf(b?.name));
@@ -150,11 +150,6 @@ if (url.includes("/x/resource/show/tab/v2")) {
     }
     obj.data.items = newItems;
   }
-} else if (url.includes("/x/v2/search/square")) {
-  // 搜索框
-  if (obj?.data) {
-    obj.data = { type: "history", title: "搜索历史", search_hotword_revision: 2 };
-  }
 } else if (url.includes("/x/v2/splash")) {
   // 开屏广告
   if (obj?.data) {
@@ -203,17 +198,8 @@ if (url.includes("/x/resource/show/tab/v2")) {
       }
     });
   }
-} else if (url.includes("/xlive/app-room/v1/index/getInfoByRoom")) {
-  // 直播
-  if (obj?.data?.activity_banner_info) {
-    delete obj.data.activity_banner_info;
-  }
-  if (obj?.data?.shopping_info) {
-    obj.data.shopping_info = { is_show: 0 };
-  }
-  if (obj?.data?.new_tab_info?.outer_list?.length > 0) {
-    obj.data.new_tab_info.outer_list = obj.data.new_tab_info.outer_list.filter((i) => i?.biz_id !== 33);
-  }
+} else {
+  $done({});
 }
 
 $done({ body: JSON.stringify(obj) });
