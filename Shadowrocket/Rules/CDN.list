@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3268
+# 规则统计: 3271
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -67,9 +67,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-26T13:42:07.293Z
-# Last Updated: 2025-02-28T09:27:25.336Z
+# Last Updated: 2025-03-01T06:35:12.802Z
 # License: AGPL 3.0
-# Size: 3194
+# Size: 3197
 # Size: 61
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -721,6 +721,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .placekitten.com
 .placewaifu.com
 .pnpm.io
+.pocket-image-cache.com
 .poecdn.net
 .polyfill-fastly.io
 .porn-d.xyz
@@ -2007,6 +2008,7 @@ hawk.tomsguide.com
 headway-widget.net
 hentaiworldtv.b-cdn.net
 hhhhhhome86227170.wordpress.com
+hips.hearstapps.com
 hls.hentaicity.com
 home.integrate.com
 hp.foxnews.com
@@ -2393,6 +2395,7 @@ media.mas.to
 media.masto.nu
 media.mstdn.io
 media.nationwide.com
+media.newyorker.com
 media.nownews.com
 media.npr.org
 media.orz.uno

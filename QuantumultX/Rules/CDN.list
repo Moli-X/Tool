@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3268
+# 规则统计: 3271
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -67,9 +67,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-26T13:42:07.293Z
-# Last Updated: 2025-02-28T09:27:25.336Z
+# Last Updated: 2025-03-01T06:35:12.802Z
 # License: AGPL 3.0
-# Size: 3194
+# Size: 3197
 # Size: 61
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -721,6 +721,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .placekitten.com,CDN
 .placewaifu.com,CDN
 .pnpm.io,CDN
+.pocket-image-cache.com,CDN
 .poecdn.net,CDN
 .polyfill-fastly.io,CDN
 .porn-d.xyz,CDN
@@ -2007,6 +2008,7 @@ hawk.tomsguide.com,CDN
 headway-widget.net,CDN
 hentaiworldtv.b-cdn.net,CDN
 hhhhhhome86227170.wordpress.com,CDN
+hips.hearstapps.com,CDN
 hls.hentaicity.com,CDN
 home.integrate.com,CDN
 hp.foxnews.com,CDN
@@ -2393,6 +2395,7 @@ media.mas.to,CDN
 media.masto.nu,CDN
 media.mstdn.io,CDN
 media.nationwide.com,CDN
+media.newyorker.com,CDN
 media.nownews.com,CDN
 media.npr.org,CDN
 media.orz.uno,CDN
