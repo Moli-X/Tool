@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3275
+# 规则统计: 3281
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -67,9 +67,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-26T13:42:07.293Z
-# Last Updated: 2025-03-02T15:04:43.806Z
+# Last Updated: 2025-03-03T08:59:20.788Z
 # License: AGPL 3.0
-# Size: 3201
+# Size: 3207
 # Size: 61
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -308,6 +308,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .dwcdn.net,CDN
 .dweb.eu.org,CDN
 .dweb.link,CDN
+.dynamic-static-assets.com,CDN
 .e.crashlytics.com,CDN
 .easylist.to,CDN
 .ebayimg.com,CDN
@@ -705,6 +706,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .photobucket.com,CDN
 .phprcdn.com,CDN
 .pichost.top,CDN
+.picjs.xyz,CDN
 .picsum.photos,CDN
 .pimg.tw,CDN
 .pinimg.com,CDN
@@ -1575,6 +1577,7 @@ cdn.privacy-mgmt.com,CDN
 cdn.privacy.paramount.com,CDN
 cdn.prod.ext.web.purview.azure.com,CDN
 cdn.prod.www.spiegel.de,CDN
+cdn.promotekit.com,CDN
 cdn.prowritingaid.com,CDN
 cdn.quadpay.com,CDN
 cdn.quickemailverification.com,CDN
@@ -1762,6 +1765,7 @@ cf.shopee.tw,CDN
 cfvod.kaltura.com,CDN
 chart.googleapis.com,CDN
 chat-content.beanfun.com,CDN
+chatwidgetmetrics-proxy.usepylon.com,CDN
 checkout-sdk.bigcommerce.com,CDN
 checkout.stripe.com,CDN
 ci.testling.com,CDN
@@ -2858,6 +2862,7 @@ static-staging.scroll.com,CDN
 static-sv.fc2.com,CDN
 static-web-prod.skillshare.com,CDN
 static-web.grammarly.com,CDN
+static-www.onlyoffice.com,CDN
 static.4shared.com,CDN
 static.ada.support,CDN
 static.addtoany.com,CDN
@@ -3239,6 +3244,7 @@ webcdn.17app.co,CDN
 webfonts.zoho.com,CDN
 webp.frostming.com,CDN
 website-cdn.ipinfo.io,CDN
+website-prod.cache.wpscdn.com,CDN
 webstatic.chargebee.com,CDN
 widget.docsbot.ai,CDN
 widget.freshworks.com,CDN

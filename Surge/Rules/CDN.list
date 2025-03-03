@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3275
+# 规则统计: 3281
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -67,9 +67,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-26T13:42:07.293Z
-# Last Updated: 2025-03-02T15:04:43.806Z
+# Last Updated: 2025-03-03T08:59:20.788Z
 # License: AGPL 3.0
-# Size: 3201
+# Size: 3207
 # Size: 61
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -308,6 +308,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .dwcdn.net
 .dweb.eu.org
 .dweb.link
+.dynamic-static-assets.com
 .e.crashlytics.com
 .easylist.to
 .ebayimg.com
@@ -705,6 +706,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .photobucket.com
 .phprcdn.com
 .pichost.top
+.picjs.xyz
 .picsum.photos
 .pimg.tw
 .pinimg.com
@@ -1575,6 +1577,7 @@ cdn.privacy-mgmt.com
 cdn.privacy.paramount.com
 cdn.prod.ext.web.purview.azure.com
 cdn.prod.www.spiegel.de
+cdn.promotekit.com
 cdn.prowritingaid.com
 cdn.quadpay.com
 cdn.quickemailverification.com
@@ -1762,6 +1765,7 @@ cf.shopee.tw
 cfvod.kaltura.com
 chart.googleapis.com
 chat-content.beanfun.com
+chatwidgetmetrics-proxy.usepylon.com
 checkout-sdk.bigcommerce.com
 checkout.stripe.com
 ci.testling.com
@@ -2858,6 +2862,7 @@ static-staging.scroll.com
 static-sv.fc2.com
 static-web-prod.skillshare.com
 static-web.grammarly.com
+static-www.onlyoffice.com
 static.4shared.com
 static.ada.support
 static.addtoany.com
@@ -3239,6 +3244,7 @@ webcdn.17app.co
 webfonts.zoho.com
 webp.frostming.com
 website-cdn.ipinfo.io
+website-prod.cache.wpscdn.com
 webstatic.chargebee.com
 widget.docsbot.ai
 widget.freshworks.com
