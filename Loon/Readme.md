@@ -143,7 +143,7 @@ TG Channel：https://t.me/QuantX
   </tr>
   <tr>
     <td>033</td>
-    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Mango_Viedo_remove_ads.plugin">芒果TV去广告</a></td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/MangoTV_remove_ads.plugin">芒果TV去广告</a></td>
   </tr>
   <tr>
     <td>034</td>
