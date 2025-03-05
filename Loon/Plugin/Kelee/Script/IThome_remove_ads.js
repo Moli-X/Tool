@@ -12,8 +12,11 @@ let url = $request.url,
 
 if (isLoon) {
   bannerAd = $persistentStore.read("移除轮播图广告") === "开启";
-  banner = $persistentStore.read("移除全部轮播图") === "开启";
-  tops = $persistentStore.read("移除置顶项") === "开启";
+  // banner = $persistentStore.read("移除全部轮播图") === "开启";
+  // tops = $persistentStore.read("移除置顶项") === "开启";
+  tops = $argument.removeTopSwitch;
+  banner = $argument.removeBannerSwitch;
+  bannerAd = banner;
 } else if (typeof $argument !== "undefined" && $argument !== "") {
   let ins = {};
   try {

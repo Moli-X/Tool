@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3282
+# 规则统计: 3285
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -67,9 +67,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-26T13:42:07.293Z
-# Last Updated: 2025-03-04T01:51:45.498Z
+# Last Updated: 2025-03-04T14:18:38.855Z
 # License: AGPL 3.0
-# Size: 3208
+# Size: 3211
 # Size: 61
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -277,6 +277,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .cthd.icu,CDN
 .cwwcdn.com,CDN
 .data.debugbear.com,CDN
+.dataplane.rudderstack.com,CDN
 .datocms-assets.com,CDN
 .daumcdn.net,CDN
 .dditscdn.com,CDN
@@ -774,6 +775,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .reactjs.org,CDN
 .readthedocs.io,CDN
 .reasoningtheory.net,CDN
+.recharts.org,CDN
 .redd.it,CDN
 .redditmedia.com,CDN
 .redditstatic.com,CDN
@@ -1123,6 +1125,7 @@ assets.apnews.com,CDN
 assets.atlasobscura.com,CDN
 assets.auth.magic.link,CDN
 assets.awwwards.com,CDN
+assets.basehub.com,CDN
 assets.bbhub.io,CDN
 assets.bitstamp.net,CDN
 assets.bnidx.com,CDN

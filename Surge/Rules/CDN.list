@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3282
+# 规则统计: 3285
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -67,9 +67,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-26T13:42:07.293Z
-# Last Updated: 2025-03-04T01:51:45.498Z
+# Last Updated: 2025-03-04T14:18:38.855Z
 # License: AGPL 3.0
-# Size: 3208
+# Size: 3211
 # Size: 61
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -277,6 +277,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .cthd.icu
 .cwwcdn.com
 .data.debugbear.com
+.dataplane.rudderstack.com
 .datocms-assets.com
 .daumcdn.net
 .dditscdn.com
@@ -774,6 +775,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .reactjs.org
 .readthedocs.io
 .reasoningtheory.net
+.recharts.org
 .redd.it
 .redditmedia.com
 .redditstatic.com
@@ -1123,6 +1125,7 @@ assets.apnews.com
 assets.atlasobscura.com
 assets.auth.magic.link
 assets.awwwards.com
+assets.basehub.com
 assets.bbhub.io
 assets.bitstamp.net
 assets.bnidx.com

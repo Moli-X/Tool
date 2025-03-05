@@ -9,17 +9,18 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/IThome_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/IThome.png
-#!select=移除置顶项,开启,关闭
-#!select=移除轮播图广告,开启,关闭
-#!select=移除全部轮播图,开启,关闭
-#!date=2024-11-28 00:00:00
+#!date=2025-03-04 22:39:03
+
+[Argument]
+removeTopSwitch=switch,true,tag=移除置顶项,desc=移除置顶文章
+removeBannerSwitch=switch,true,tag=移除轮播图,desc=移除轮播图
 
 [Rewrite]
 ^https?:\/\/api\.zuihuimai\.com\/static\/.*\/hongbao reject
 ^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$ reject
 
 [Script]
-http-response ^https:\/\/napi\.ithome\.com\/api\/(?:news\/index|topmenu\/getfeeds\?|api\/douyin\/GetLiveInfo) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/IThome_remove_ads.js,requires-body=true,tag=IT之家去广告
+http-response ^https:\/\/napi\.ithome\.com\/api\/(?:news\/index|topmenu\/getfeeds\?|api\/douyin\/GetLiveInfo) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/IThome_remove_ads.js,requires-body=true,tag=IT之家去广告,argument=[{removeTopSwitch},{removeBannerSwitch}]
   
 [MitM]
 hostname=napi.ithome.com,api.zuihuimai.com,dat.ruanmei.com
