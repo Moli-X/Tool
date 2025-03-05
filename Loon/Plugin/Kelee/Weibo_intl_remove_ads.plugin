@@ -9,12 +9,12 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Weibo_intl_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weibo_intl.png
-#!date=2025-03-05 00:56:01
+#!date=2025-03-05 10:07:41
 
 [Rewrite]
 ^https?:\/\/api\.weibo\.cn\/2\/ad\/weibointl\? reject-dict
-^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_searching_info& mock-response-body data-type=text data="{"retcode":0,"info":"","data":{"expiration_time":"86400","cards":[{"tip":"搜索微博","word":""}]}}"
-^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?ct=feed&a=search_topic& mock-response-body data-type=text data="{"retcode":0,"info":"","data":[],"ext":{}}"
+^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_searching_info& mock-response-body data-type=html data="{"retcode":0,"info":"","data":{"expiration_time":"86400","cards":[{"tip":"搜索微博","word":""}]}}"
+^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?ct=feed&a=search_topic& mock-response-body data-type=html data="{"retcode":0,"info":"","data":[],"ext":{}}"
 ^https?:\/\/api\.weibo\.cn\/2\/statuses\/unread_hot_timeline$ response-body-json-jq 'del(.ad, .advertises, .trends) | if .statuses then .statuses |= map(select(((.promotion.type == "ad") or (.mblogtypename | IN("广告", "廣告", "热推", "熱推"))) | not)) end'
 ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads& response-body-json-jq '.data |= . + {"ad_list":[],"pic_ad":[],"gdt_video_ad_ios":[],"display_ad":0,"ad_ios_id":null,"app_ad_ios_id":null,"reserve_ad_ios_id":"","reserve_app_ad_ios_id":"","ad_duration":604800,"ad_cd_interval":604800}'
 ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=trends& response-body-json-jq 'if .data.order then .data.order = ["search_topic"] end'
