@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/YY_Voice_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YY_Voice.png
-#!date=2025-03-05 14:19:40
+#!date=2025-03-06 00:38:1906
 
 [Rule]
 # 拦截HTTPDNS
@@ -86,16 +86,19 @@ DOMAIN,sdk.tianmu.mobi,REJECT
 DOMAIN,sdk.beizi.biz,REJECT
 
 [Rewrite]
+# 首页 - 下拉进入直播间
+^https:\/\/yyapp-fastnet\.yy\.com\/dispatch\? reject-dict
+
 # 首页 - 弹窗
 ^https:\/\/data\.3g\.yy\.com\/popup\/topLiveCardPopup\? reject-dict
 ^https:\/\/yyapp-act-entrance\.yy\.com\/entrance\/list\? reject-dict
 
 # 首页 - 横幅
-^https:\/\/yyapp-idx\.yy\.com\/mobyy\/nav\/index\/idx\? response-body-json-jq 'map(if type == "object" and has("modules") then .modules |= map(select(.name as $name | ["新版本滚动条", "通栏轮播", "新静默位"] | index($name) == null)) else . end)'
+^https:\/\/yyapp-idx\.yy\.com\/mobyy\/nav\/index\/idx\? response-body-json-jq '.data[].modules |= map(select(.name != "新版本滚动条" and .name != "通栏轮播" and .name != "新静默位"))'
 
 # 移除底栏按钮
 ^https:\/\/tab\.yy\.com\/tabs\? response-body-json-del data.tabsForSelect
-^https:\/\/tab\.yy\.com\/tabs\? response-body-json-jq '.data.tabs |= map(select(.name != "短剧"))'
+^https:\/\/tab\.yy\.com\/tabs\? response-body-json-jq '.data.tabs |= map(select(.name != "直播" and .name != "短剧")) | {data: .data, message: .message, code: .code}'
 
 # 清理我的页面
 ^https:\/\/personal-center\.yy\.com\/personalCenter\/list\? response-body-json-jq '.data.modules |= map(select(.moduleName != "Banner轮播")) | .data.modules[] |= if .entrances != null then .entrances |= map(select(.name != "度小满借钱" and .name != "手机充值" and .name != "免流量")) else . end'
