@@ -1,5 +1,5 @@
 # 规则名称: Ads_SukkaW
-# 规则统计: 64284
+# 规则统计: 64296
 
 HOST,aedns.weixin.qq.com,Ads_SukkaW
 HOST,api-js.mixpanel.com,Ads_SukkaW
@@ -169,9 +169,11 @@ IP-CIDR,115.236.121.51/32,Ads_SukkaW
 IP-CIDR,118.89.204.198/32,Ads_SukkaW
 IP-CIDR,119.29.29.98/31,Ads_SukkaW
 IP-CIDR,123.151.54.50/32,Ads_SukkaW
+IP-CIDR,180.76.76.200/32,Ads_SukkaW
 IP-CIDR,182.254.116.117/32,Ads_SukkaW
 IP-CIDR,182.254.118.119/32,Ads_SukkaW
-IP-CIDR,186.76.76.200/32,Ads_SukkaW
+IP-CIDR,202.90.108.13/32,Ads_SukkaW
+IP-CIDR,202.90.110.46/32,Ads_SukkaW
 IP-CIDR,203.107.1.0/24,Ads_SukkaW
 IP-CIDR,203.119.204.66/32,Ads_SukkaW
 IP-CIDR,203.119.238.194/32,Ads_SukkaW
@@ -206,11 +208,11 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 # Build from:
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-03-02T08:03:40.393Z
-# Last Updated: 2025-03-06T12:40:54.196Z
+# Last Updated: 2025-03-06T14:03:15.600Z
+# Last Updated: 2025-03-07T01:32:47.267Z
 # License: AGPL 3.0
-# Size: 189
-# Size: 64068
+# Size: 191
+# Size: 64078
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Domains
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-phishing, anti-mining
@@ -4291,6 +4293,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .allstat-pp.ru,Ads_SukkaW
 .alluviopurreic.com,Ads_SukkaW
 .allvideometrika.com,Ads_SukkaW
+.allworkovergot.com,Ads_SukkaW
 .allyes.com,Ads_SukkaW
 .allyes.com.cn,Ads_SukkaW
 .almareepom.com,Ads_SukkaW
@@ -7941,6 +7944,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .bibitheedseck.net,Ads_SukkaW
 .bichtf.in-themode.com,Ads_SukkaW
 .bicp-analytics.postscript.io,Ads_SukkaW
+.bidarblam.com,Ads_SukkaW
 .bidbeneficial.com,Ads_SukkaW
 .bidberry.net,Ads_SukkaW
 .bidbrain.app,Ads_SukkaW
@@ -21066,6 +21070,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .geedoovu.net,Ads_SukkaW
 .geegleshoaph.com,Ads_SukkaW
 .geejetag.com,Ads_SukkaW
+.geekries.com,Ads_SukkaW
 .geeptaunip.net,Ads_SukkaW
 .geewdashb3.fun,Ads_SukkaW
 .geewedurisou.net,Ads_SukkaW
@@ -23348,6 +23353,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .hashtstrout.com,Ads_SukkaW
 .hasomsdcoojm.com,Ads_SukkaW
 .hasslefree.redwingshoes.com,Ads_SukkaW
+.hatchaxeeftaist.com,Ads_SukkaW
 .hatlesswhsle.com,Ads_SukkaW
 .hatlikecivory.top,Ads_SukkaW
 .hats-47b.com,Ads_SukkaW
@@ -30636,6 +30642,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .lofo3l15c674.platform.replai.io,Ads_SukkaW
 .lofqvl.icu,Ads_SukkaW
 .loftempedur.net,Ads_SukkaW
+.log-2ffe60ee.westpac.com.au,Ads_SukkaW
 .log-ana.h3z.jp,Ads_SukkaW
 .log-api.cli.im,Ads_SukkaW
 .log-auth.flysleep.cn,Ads_SukkaW
@@ -40489,6 +40496,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .petargumentswhirlpool.com,Ads_SukkaW
 .petchesa.net,Ads_SukkaW
 .petchoub.com,Ads_SukkaW
+.petherobjure.top,Ads_SukkaW
 .petrolgraphcredibility.com,Ads_SukkaW
 .pettlesmethol.com,Ads_SukkaW
 .peuzhq.bookspot.be,Ads_SukkaW
@@ -43464,6 +43472,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .retrefsf.cn,Ads_SukkaW
 .retrieval-bd.duote.com,Ads_SukkaW
 .retripmoppers.com,Ads_SukkaW
+.retrosowenian.shop,Ads_SukkaW
 .retsifergoumti.net,Ads_SukkaW
 .rettornrhema.com,Ads_SukkaW
 .reuniondepadres.unisabana.edu.co,Ads_SukkaW
@@ -43535,6 +43544,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .rghpjl.tsuchiya-kaban.jp,Ads_SukkaW
 .rgjbtn.paleokorea.co.kr,Ads_SukkaW
 .rgjeqr.europcar.fr,Ads_SukkaW
+.rgju.cn,Ads_SukkaW
 .rgmmeff.icu,Ads_SukkaW
 .rgmseo.thejewellershop.com,Ads_SukkaW
 .rgrd.xyz,Ads_SukkaW
@@ -59728,6 +59738,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .viper.kyrelldixon.com,Ads_SukkaW
 .viper.sitesauce.app,Ads_SukkaW
 .vipgogo123.site,Ads_SukkaW
+.viphirsaick.net,Ads_SukkaW
 .vipicmou.net,Ads_SukkaW
 .vipimo.hohenlohe.de,Ads_SukkaW
 .vipwao.nutrimuscle.com,Ads_SukkaW
@@ -61535,6 +61546,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .wumufama.com,Ads_SukkaW
 .wuncqh.cooksongold.com,Ads_SukkaW
 .wunqlc.anayi.com,Ads_SukkaW
+.wup-2ffe60ee.westpac.com.au,Ads_SukkaW
 .wuporg.com,Ads_SukkaW
 .wuresde.top,Ads_SukkaW
 .wurst.hausschlachtebedarf.de,Ads_SukkaW

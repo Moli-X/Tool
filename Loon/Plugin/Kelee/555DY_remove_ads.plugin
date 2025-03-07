@@ -1,7 +1,7 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/555DY_remove_ads.plugin
 #!name=555电影去广告
 #!desc=移除开屏广告和各类横幅广告，支持iPadOS。
-#App链接=https://5wuv.com/
+#App链接=https://5wuv.com
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=iOS,iPadOS
@@ -9,14 +9,16 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/555DY_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/555DY.png
-#!date=2024-12-05 15:34:08
+#!date=2025-03-06 22:30:00
 
 [Rewrite]
+# https://app-site.ecoliving168.com/domain_v5.json
+
 # 广告配置
-^https:\/\/app-v1\.ecoliving168\.com\/api\/v1\/advert\/config reject-dict
+# ^https:\/\/(app-v1\.ecoliving168\.com|852b95d36\.xwlpk\.cn)\/api\/v1\/advert\/config reject-dict
 
 # 移除横幅广告
-^https:\/\/app-v1\.ecoliving168\.com\/api\/v1\/movie\/index_recommend\? response-body-json-jq '(.data[] | select(.layout == "advert_self")) |= del(.data) | .data |= map(select(.layout != "advert_self")) | .data |= map(if .layout == "index_recommend_carousel" then .list |= map(select(.type != 3)) else . end)'
+^https:\/\/(app-v1\.ecoliving168\.com|852b95d36\.xwlpk\.cn)\/api\/v1\/movie\/index_recommend\? response-body-json-jq '.data[].list |= map(select(.type != 3)) | .data |= map(select(.layout != "advert_self"))'
 
 [MitM]
-hostname=app-v1.ecoliving168.com
+hostname=app-v1.ecoliving168.com,852b95d36.xwlpk.cn

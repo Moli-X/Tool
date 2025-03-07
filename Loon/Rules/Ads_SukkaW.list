@@ -1,5 +1,5 @@
 # 规则名称: Ads_SukkaW
-# 规则统计: 64284
+# 规则统计: 64296
 
 DOMAIN,aedns.weixin.qq.com
 DOMAIN,api-js.mixpanel.com
@@ -169,9 +169,11 @@ IP-CIDR,115.236.121.51/32,no-resolve
 IP-CIDR,118.89.204.198/32,no-resolve
 IP-CIDR,119.29.29.98/31,no-resolve
 IP-CIDR,123.151.54.50/32,no-resolve
+IP-CIDR,180.76.76.200/32,no-resolve
 IP-CIDR,182.254.116.117/32,no-resolve
 IP-CIDR,182.254.118.119/32,no-resolve
-IP-CIDR,186.76.76.200/32,no-resolve
+IP-CIDR,202.90.108.13/32,no-resolve
+IP-CIDR,202.90.110.46/32,no-resolve
 IP-CIDR,203.107.1.0/24,no-resolve
 IP-CIDR,203.119.204.66/32,no-resolve
 IP-CIDR,203.119.238.194/32,no-resolve
@@ -206,11 +208,11 @@ URL-REGEX,/\d+/sign_d
 # Build from:
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-03-02T08:03:40.393Z
-# Last Updated: 2025-03-06T12:40:54.196Z
+# Last Updated: 2025-03-06T14:03:15.600Z
+# Last Updated: 2025-03-07T01:32:47.267Z
 # License: AGPL 3.0
-# Size: 189
-# Size: 64068
+# Size: 191
+# Size: 64078
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Domains
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-phishing, anti-mining
@@ -4291,6 +4293,7 @@ URL-REGEX,/\d+/sign_d
 .allstat-pp.ru
 .alluviopurreic.com
 .allvideometrika.com
+.allworkovergot.com
 .allyes.com
 .allyes.com.cn
 .almareepom.com
@@ -7941,6 +7944,7 @@ URL-REGEX,/\d+/sign_d
 .bibitheedseck.net
 .bichtf.in-themode.com
 .bicp-analytics.postscript.io
+.bidarblam.com
 .bidbeneficial.com
 .bidberry.net
 .bidbrain.app
@@ -21066,6 +21070,7 @@ URL-REGEX,/\d+/sign_d
 .geedoovu.net
 .geegleshoaph.com
 .geejetag.com
+.geekries.com
 .geeptaunip.net
 .geewdashb3.fun
 .geewedurisou.net
@@ -23348,6 +23353,7 @@ URL-REGEX,/\d+/sign_d
 .hashtstrout.com
 .hasomsdcoojm.com
 .hasslefree.redwingshoes.com
+.hatchaxeeftaist.com
 .hatlesswhsle.com
 .hatlikecivory.top
 .hats-47b.com
@@ -30636,6 +30642,7 @@ URL-REGEX,/\d+/sign_d
 .lofo3l15c674.platform.replai.io
 .lofqvl.icu
 .loftempedur.net
+.log-2ffe60ee.westpac.com.au
 .log-ana.h3z.jp
 .log-api.cli.im
 .log-auth.flysleep.cn
@@ -40489,6 +40496,7 @@ URL-REGEX,/\d+/sign_d
 .petargumentswhirlpool.com
 .petchesa.net
 .petchoub.com
+.petherobjure.top
 .petrolgraphcredibility.com
 .pettlesmethol.com
 .peuzhq.bookspot.be
@@ -43464,6 +43472,7 @@ URL-REGEX,/\d+/sign_d
 .retrefsf.cn
 .retrieval-bd.duote.com
 .retripmoppers.com
+.retrosowenian.shop
 .retsifergoumti.net
 .rettornrhema.com
 .reuniondepadres.unisabana.edu.co
@@ -43535,6 +43544,7 @@ URL-REGEX,/\d+/sign_d
 .rghpjl.tsuchiya-kaban.jp
 .rgjbtn.paleokorea.co.kr
 .rgjeqr.europcar.fr
+.rgju.cn
 .rgmmeff.icu
 .rgmseo.thejewellershop.com
 .rgrd.xyz
@@ -59728,6 +59738,7 @@ URL-REGEX,/\d+/sign_d
 .viper.kyrelldixon.com
 .viper.sitesauce.app
 .vipgogo123.site
+.viphirsaick.net
 .vipicmou.net
 .vipimo.hohenlohe.de
 .vipwao.nutrimuscle.com
@@ -61535,6 +61546,7 @@ URL-REGEX,/\d+/sign_d
 .wumufama.com
 .wuncqh.cooksongold.com
 .wunqlc.anayi.com
+.wup-2ffe60ee.westpac.com.au
 .wuporg.com
 .wuresde.top
 .wurst.hausschlachtebedarf.de

@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Reddit_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Reddit.png
-#!date=2024-12-02 10:28:36
+#!date=2025-03-07 00:52:30
 
 [Rewrite]
 ^https?:\/\/gql(-fed)?\.reddit\.com response-body-json-jq jq-path="https://kelee.one/Resource/JQLang/Reddit/Reddit_remove_ads.jq"
