@@ -1,5 +1,5 @@
 # 规则名称: Ads_SukkaW
-# 规则统计: 64294
+# 规则统计: 64296
 
 DOMAIN,aedns.weixin.qq.com
 DOMAIN,api-js.mixpanel.com
@@ -207,10 +207,10 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-06T14:03:15.600Z
-# Last Updated: 2025-03-07T01:32:47.267Z
+# Last Updated: 2025-03-07T05:42:59.364Z
 # License: AGPL 3.0
 # Size: 191
-# Size: 64078
+# Size: 64080
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Domains
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-phishing, anti-mining
@@ -2486,6 +2486,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .adat.borsonline.hu
 .adat.freemail.hu
 .adat.koponyeg.hu
+.adat.life.hu
 .adat.mindmegette.hu
 .adat.origo.hu
 .adat.videa.hu
@@ -3170,6 +3171,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .adstats.tencentmusic.com
 .adstax-cdn.adrtx.net
 .adstik.click
+.adstk.io
 .adstook.com
 .adstrategy.biz.weibo.com
 .adsunflower.com
@@ -4581,6 +4583,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .analytics-v2.wetransfer.com
 .analytics-wcms.joins.net
 .analytics.126.net
+.analytics.163.com
 .analytics.1800contacts.com
 .analytics.1stnationalbank.com
 .analytics.2290online.com
@@ -19670,6 +19673,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .fastlnd.com
 .fastnativead.com
 .fastorfar.com
+.fasttiger.io
 .fasttrack.fr
 .fasttracker.fr
 .fatafatasalalala.com
@@ -20840,7 +20844,6 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .g1386590346.co
 .g1584674682.co
 .g1584674684.co
-.g1782759015.co
 .g1be.swisslife-direct.fr
 .g2afse.com
 .g2ak5.com
@@ -21382,7 +21385,6 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .gixiluros.com
 .gizokraijaw.net
 .gizsyj.thegrommet.com
-.gj.mmstat.com
 .gjapplog.uc.cn
 .gjapplog.ucweb.com
 .gjarpi.oiaskin.co
@@ -26521,6 +26523,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .instinctiveads.com
 .institutehopelessbeck.com
 .instrumenttactics.com
+.insulatech.com
 .insurance.alliant.com
 .insurance.caainsurancecompany.com
 .insurance.leads360.com
@@ -28831,7 +28834,6 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .leadmanagement.velocify.com
 .leads.commercial.keurig.com
 .leadsleap.net
-.leadtracking.plumvoice.com
 .leadzu.com
 .leadzupc.com
 .leadzutw.com
@@ -35655,6 +35657,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .metrics.wolterskluwer.com
 .metrics.womansday.com
 .metrics.workforce.com
+.metrics.workfront.com
 .metrics.worldbank.org
 .metrics.worldmarket.com
 .metrics.worlds50bestbars.com
@@ -37045,6 +37048,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .nclljn.xyz
 .ncojkokhi.com
 .nct.ui-portal.de
+.nctrk.abmail.com.br
 .ncvsbz.bonds.com.au
 .ncvwahrct.com
 .ncvwnp.icu
@@ -39009,6 +39013,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .optumcoding.optum.com
 .optvz.com
 .optyruntchan.com
+.opulentsylvan.com
 .opummf.himiwaybike.com
 .opus.2lifecommunities.org
 .opvanillishan.com
@@ -39703,7 +39708,6 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .paqgoc.shipgratis.si
 .paqqlk.motatos.de
 .paqvfi.petzone.com
-.paradoxfactor.com
 .parakeet.buildcodelearn.com
 .parakeet.jorenvanhocht.be
 .parakeet.kenleyar.ai
@@ -42998,6 +43002,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .receiver.habby.mobi
 .receptivereaction.com
 .recessionspeaksanybody.com
+.recessrain.com
 .rechenschieber.soccerdonna.de
 .rechenschieber.transfermarkt.at
 .rechenschieber.transfermarkt.be
@@ -45497,7 +45502,6 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .secure.informationcreativeinnovative.com
 .secure.insightful-cloud-365.com
 .secure.insightful-enterprise-intelligence.com
-.secure.intelligent-consortium.com
 .secure.investingwithmind.com
 .secure.late6year.com
 .secure.laurelsprings.com
@@ -45974,7 +45978,6 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .service.hcob-bank.de
 .service.just.nl
 .service.pickuptravelguide.com
-.service.techzine.eu
 .service.trustpid.com
 .serviceo.comcast.net
 .serviceo.xfinity.com
@@ -53578,7 +53581,6 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .threewoodslose.com
 .threkuth.com
 .threrlak.com
-.thrillasoft.com
 .thrive.metagenics.com
 .thrivescriss.com
 .thronosgeneura.com
@@ -56388,6 +56390,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .tracking.care.salinasvalleyhealth.com
 .tracking.carpshop24.com
 .tracking.carsales.com.au
+.tracking.cat898.com
 .tracking.cdiscount.com
 .tracking.cello-square.com
 .tracking.cengage.com
@@ -59840,6 +59843,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .vlikiq.thelabellife.com
 .vlitag.com
 .vlogerads.com
+.vlogs.deja.media
 .vlrlav.rodinnebalenie.sk
 .vlupvo.innerartworld.com
 .vlzcsh.dtrtmen.com
@@ -61138,7 +61142,6 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .winslinks.com
 .winzessolicit.com
 .wipzxpbs.com
-.wiredforcoffee.com
 .wirjoi.meetsmore.com
 .wirsilsa.net
 .wirtooxoajet.net
@@ -63641,7 +63644,6 @@ aicleaner.shouji.360.cn
 amap-aos-info-nogw.amap.com
 amdc.m.youku.com
 amos.alicdn.com
-analytics.163.com
 analytics.infomaniak.com
 analytics.msn.com
 analytics.nexon.com

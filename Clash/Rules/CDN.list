@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3286
+# 规则统计: 3298
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -65,9 +65,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-26T13:42:07.293Z
-# Last Updated: 2025-03-07T01:32:51.872Z
+# Last Updated: 2025-03-07T07:24:54.426Z
 # License: AGPL 3.0
-# Size: 3214
+# Size: 3226
 # Size: 61
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1838,6 +1838,7 @@ crl.usertrust.com
 crl.verisign.com
 crt.comodoca.com
 crt.usertrust.com
+csp.microsoft.com
 css-1-cdn.airdroid.com
 css.blackmagicdesign.com
 css.createsend1.com
@@ -2247,12 +2248,22 @@ img.windy.com
 img.xhacgn.com
 img.xjh.me
 img.youtube.com
+img0.yna.co.kr
 img1.ak.crunchyroll.com
+img1.yna.co.kr
 img2.tnaflix.com
 img2.xiangbinjun.com
+img2.yna.co.kr
 img3.airdroid.com
+img3.yna.co.kr
 img4.airdroid.com
+img4.yna.co.kr
+img5.yna.co.kr
 img6.airdroid.com
+img6.yna.co.kr
+img7.yna.co.kr
+img8.yna.co.kr
+img9.yna.co.kr
 imgcdn.cna.com.tw
 imgix.setapp.com
 imgopt.infoq.com
@@ -2992,6 +3003,7 @@ static.oracle.com
 static.osdn.net
 static.parallels.com
 static.peatio.com
+static.pfrt.yna.co.kr
 static.pingcap.com
 static.playstation.com
 static.plus.net

@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3288
+# 规则统计: 3300
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -67,9 +67,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-26T13:42:07.293Z
-# Last Updated: 2025-03-07T01:32:51.872Z
+# Last Updated: 2025-03-07T07:24:54.426Z
 # License: AGPL 3.0
-# Size: 3214
+# Size: 3226
 # Size: 61
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1840,6 +1840,7 @@ crl.usertrust.com,CDN
 crl.verisign.com,CDN
 crt.comodoca.com,CDN
 crt.usertrust.com,CDN
+csp.microsoft.com,CDN
 css-1-cdn.airdroid.com,CDN
 css.blackmagicdesign.com,CDN
 css.createsend1.com,CDN
@@ -2249,12 +2250,22 @@ img.windy.com,CDN
 img.xhacgn.com,CDN
 img.xjh.me,CDN
 img.youtube.com,CDN
+img0.yna.co.kr,CDN
 img1.ak.crunchyroll.com,CDN
+img1.yna.co.kr,CDN
 img2.tnaflix.com,CDN
 img2.xiangbinjun.com,CDN
+img2.yna.co.kr,CDN
 img3.airdroid.com,CDN
+img3.yna.co.kr,CDN
 img4.airdroid.com,CDN
+img4.yna.co.kr,CDN
+img5.yna.co.kr,CDN
 img6.airdroid.com,CDN
+img6.yna.co.kr,CDN
+img7.yna.co.kr,CDN
+img8.yna.co.kr,CDN
+img9.yna.co.kr,CDN
 imgcdn.cna.com.tw,CDN
 imgix.setapp.com,CDN
 imgopt.infoq.com,CDN
@@ -2994,6 +3005,7 @@ static.oracle.com,CDN
 static.osdn.net,CDN
 static.parallels.com,CDN
 static.peatio.com,CDN
+static.pfrt.yna.co.kr,CDN
 static.pingcap.com,CDN
 static.playstation.com,CDN
 static.plus.net,CDN

@@ -206,10 +206,10 @@ URL-REGEX,/\d+/sign_d
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-06T14:03:15.600Z
-# Last Updated: 2025-03-07T01:32:47.267Z
+# Last Updated: 2025-03-07T05:42:59.364Z
 # License: AGPL 3.0
 # Size: 191
-# Size: 64078
+# Size: 64080
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Domains
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-phishing, anti-mining
@@ -2485,6 +2485,7 @@ URL-REGEX,/\d+/sign_d
 .adat.borsonline.hu
 .adat.freemail.hu
 .adat.koponyeg.hu
+.adat.life.hu
 .adat.mindmegette.hu
 .adat.origo.hu
 .adat.videa.hu
@@ -3169,6 +3170,7 @@ URL-REGEX,/\d+/sign_d
 .adstats.tencentmusic.com
 .adstax-cdn.adrtx.net
 .adstik.click
+.adstk.io
 .adstook.com
 .adstrategy.biz.weibo.com
 .adsunflower.com
@@ -4580,6 +4582,7 @@ URL-REGEX,/\d+/sign_d
 .analytics-v2.wetransfer.com
 .analytics-wcms.joins.net
 .analytics.126.net
+.analytics.163.com
 .analytics.1800contacts.com
 .analytics.1stnationalbank.com
 .analytics.2290online.com
@@ -19669,6 +19672,7 @@ URL-REGEX,/\d+/sign_d
 .fastlnd.com
 .fastnativead.com
 .fastorfar.com
+.fasttiger.io
 .fasttrack.fr
 .fasttracker.fr
 .fatafatasalalala.com
@@ -20839,7 +20843,6 @@ URL-REGEX,/\d+/sign_d
 .g1386590346.co
 .g1584674682.co
 .g1584674684.co
-.g1782759015.co
 .g1be.swisslife-direct.fr
 .g2afse.com
 .g2ak5.com
@@ -21381,7 +21384,6 @@ URL-REGEX,/\d+/sign_d
 .gixiluros.com
 .gizokraijaw.net
 .gizsyj.thegrommet.com
-.gj.mmstat.com
 .gjapplog.uc.cn
 .gjapplog.ucweb.com
 .gjarpi.oiaskin.co
@@ -26520,6 +26522,7 @@ URL-REGEX,/\d+/sign_d
 .instinctiveads.com
 .institutehopelessbeck.com
 .instrumenttactics.com
+.insulatech.com
 .insurance.alliant.com
 .insurance.caainsurancecompany.com
 .insurance.leads360.com
@@ -28830,7 +28833,6 @@ URL-REGEX,/\d+/sign_d
 .leadmanagement.velocify.com
 .leads.commercial.keurig.com
 .leadsleap.net
-.leadtracking.plumvoice.com
 .leadzu.com
 .leadzupc.com
 .leadzutw.com
@@ -35654,6 +35656,7 @@ URL-REGEX,/\d+/sign_d
 .metrics.wolterskluwer.com
 .metrics.womansday.com
 .metrics.workforce.com
+.metrics.workfront.com
 .metrics.worldbank.org
 .metrics.worldmarket.com
 .metrics.worlds50bestbars.com
@@ -37044,6 +37047,7 @@ URL-REGEX,/\d+/sign_d
 .nclljn.xyz
 .ncojkokhi.com
 .nct.ui-portal.de
+.nctrk.abmail.com.br
 .ncvsbz.bonds.com.au
 .ncvwahrct.com
 .ncvwnp.icu
@@ -39008,6 +39012,7 @@ URL-REGEX,/\d+/sign_d
 .optumcoding.optum.com
 .optvz.com
 .optyruntchan.com
+.opulentsylvan.com
 .opummf.himiwaybike.com
 .opus.2lifecommunities.org
 .opvanillishan.com
@@ -39702,7 +39707,6 @@ URL-REGEX,/\d+/sign_d
 .paqgoc.shipgratis.si
 .paqqlk.motatos.de
 .paqvfi.petzone.com
-.paradoxfactor.com
 .parakeet.buildcodelearn.com
 .parakeet.jorenvanhocht.be
 .parakeet.kenleyar.ai
@@ -42997,6 +43001,7 @@ URL-REGEX,/\d+/sign_d
 .receiver.habby.mobi
 .receptivereaction.com
 .recessionspeaksanybody.com
+.recessrain.com
 .rechenschieber.soccerdonna.de
 .rechenschieber.transfermarkt.at
 .rechenschieber.transfermarkt.be
@@ -45496,7 +45501,6 @@ URL-REGEX,/\d+/sign_d
 .secure.informationcreativeinnovative.com
 .secure.insightful-cloud-365.com
 .secure.insightful-enterprise-intelligence.com
-.secure.intelligent-consortium.com
 .secure.investingwithmind.com
 .secure.late6year.com
 .secure.laurelsprings.com
@@ -45973,7 +45977,6 @@ URL-REGEX,/\d+/sign_d
 .service.hcob-bank.de
 .service.just.nl
 .service.pickuptravelguide.com
-.service.techzine.eu
 .service.trustpid.com
 .serviceo.comcast.net
 .serviceo.xfinity.com
@@ -53577,7 +53580,6 @@ URL-REGEX,/\d+/sign_d
 .threewoodslose.com
 .threkuth.com
 .threrlak.com
-.thrillasoft.com
 .thrive.metagenics.com
 .thrivescriss.com
 .thronosgeneura.com
@@ -56387,6 +56389,7 @@ URL-REGEX,/\d+/sign_d
 .tracking.care.salinasvalleyhealth.com
 .tracking.carpshop24.com
 .tracking.carsales.com.au
+.tracking.cat898.com
 .tracking.cdiscount.com
 .tracking.cello-square.com
 .tracking.cengage.com
@@ -59839,6 +59842,7 @@ URL-REGEX,/\d+/sign_d
 .vlikiq.thelabellife.com
 .vlitag.com
 .vlogerads.com
+.vlogs.deja.media
 .vlrlav.rodinnebalenie.sk
 .vlupvo.innerartworld.com
 .vlzcsh.dtrtmen.com
@@ -61137,7 +61141,6 @@ URL-REGEX,/\d+/sign_d
 .winslinks.com
 .winzessolicit.com
 .wipzxpbs.com
-.wiredforcoffee.com
 .wirjoi.meetsmore.com
 .wirsilsa.net
 .wirtooxoajet.net
@@ -63640,7 +63643,6 @@ aicleaner.shouji.360.cn
 amap-aos-info-nogw.amap.com
 amdc.m.youku.com
 amos.alicdn.com
-analytics.163.com
 analytics.infomaniak.com
 analytics.msn.com
 analytics.nexon.com
