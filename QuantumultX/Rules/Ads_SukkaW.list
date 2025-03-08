@@ -1,5 +1,5 @@
 # 规则名称: Ads_SukkaW
-# 规则统计: 64298
+# 规则统计: 64307
 
 HOST,aedns.weixin.qq.com,Ads_SukkaW
 HOST,api-js.mixpanel.com,Ads_SukkaW
@@ -88,11 +88,14 @@ HOST-SUFFIX,scorecardresearch.com,Ads_SukkaW
 HOST-SUFFIX,telemetry-coverage.mozilla.org,Ads_SukkaW
 HOST-SUFFIX,telemetry.mozilla.org,Ads_SukkaW
 HOST-SUFFIX,wakuwaku.ne.jp,Ads_SukkaW
+HOST-KEYWORD,-adrevenue.appsflyersdk.com,Ads_SukkaW
 HOST-KEYWORD,-attr.appsflyersdk.com,Ads_SukkaW
 HOST-KEYWORD,-launches.appsflyersdk.com,Ads_SukkaW
 HOST-KEYWORD,-logging.nextmedia.com,Ads_SukkaW
+HOST-KEYWORD,-pia.appsflyersdk.com,Ads_SukkaW
 HOST-KEYWORD,-rtb.gravite.net,Ads_SukkaW
 HOST-KEYWORD,-s2s.sensic.net,Ads_SukkaW
+HOST-KEYWORD,-skadsdkless.appsflyersdk.com,Ads_SukkaW
 HOST-KEYWORD,-spiky.clevertap-prod.com,Ads_SukkaW
 HOST-KEYWORD,-tracker.biliapi.net,Ads_SukkaW
 HOST-KEYWORD,-txtagstore,Ads_SukkaW
@@ -208,11 +211,11 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 # Build from:
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-03-06T14:03:15.600Z
-# Last Updated: 2025-03-07T05:42:59.364Z
+# Last Updated: 2025-03-07T16:10:13.336Z
+# Last Updated: 2025-03-07T16:51:10.936Z
 # License: AGPL 3.0
-# Size: 191
-# Size: 64080
+# Size: 194
+# Size: 64086
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Domains
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-phishing, anti-mining
@@ -17107,6 +17110,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .duplonborak.shop,Ads_SukkaW
 .dupsyduckom.com,Ads_SukkaW
 .dupy-hsjctyn.icu,Ads_SukkaW
+.dupzbh.icu,Ads_SukkaW
 .duqfec.aosom.pt,Ads_SukkaW
 .duqqrl.jefchaussures.com,Ads_SukkaW
 .duqwsh.merongshop.com,Ads_SukkaW
@@ -19401,6 +19405,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .exmeqy.smartbuyglasses.de,Ads_SukkaW
 .exnesstrack.com,Ads_SukkaW
 .exnzlk.knittingroom.se,Ads_SukkaW
+.exocoed.top,Ads_SukkaW
 .exodus.arhythmically.uno,Ads_SukkaW
 .exomonyf.com,Ads_SukkaW
 .exonymneavil.com,Ads_SukkaW
@@ -27318,6 +27323,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .jivsfr.drogarianovaesperanca.com.br,Ads_SukkaW
 .jivvjl.xyz,Ads_SukkaW
 .jiwire.com,Ads_SukkaW
+.jixurt.icu,Ads_SukkaW
 .jizpyy.bett1.ch,Ads_SukkaW
 .jizxnr.xyz,Ads_SukkaW
 .jizzads.com,Ads_SukkaW
@@ -29186,7 +29192,6 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .links.qumu.com,Ads_SukkaW
 .links.riverview.org,Ads_SukkaW
 .links.voyeurweb.com,Ads_SukkaW
-.linksprf.com,Ads_SukkaW
 .linkt.ausfuellhilfe.com,Ads_SukkaW
 .linktech.cn,Ads_SukkaW
 .linsaicki.net,Ads_SukkaW
@@ -30904,6 +30909,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .logs.juspay.in,Ads_SukkaW
 .logs.mezmo.com,Ads_SukkaW
 .logs.naukri.com,Ads_SukkaW
+.logs.nebulahoroscope.com,Ads_SukkaW
 .logs.netflix.com,Ads_SukkaW
 .logs.ntvplus.tv,Ads_SukkaW
 .logs.openbank.com,Ads_SukkaW
@@ -42438,6 +42444,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .qo2.fun,Ads_SukkaW
 .qoaaa.com,Ads_SukkaW
 .qobuz.surveysparrow.com,Ads_SukkaW
+.qogonsuqq.com,Ads_SukkaW
 .qogrux.com,Ads_SukkaW
 .qohlsl.drawer.fr,Ads_SukkaW
 .qolhpm.iparts.pl,Ads_SukkaW
@@ -53604,6 +53611,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .thunnqyo.com,Ads_SukkaW
 .thuoccultive.com,Ads_SukkaW
 .thursejokers.top,Ads_SukkaW
+.thustilpn.com,Ads_SukkaW
 .thuthoock.net,Ads_SukkaW
 .thvaqe.kunooz.com,Ads_SukkaW
 .thwgtm.sporilek.cz,Ads_SukkaW
@@ -63206,6 +63214,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .ziwewm.tecovas.com,Ads_SukkaW
 .zjbfke.centerparcs.be,Ads_SukkaW
 .zjejua.portmans.com.au,Ads_SukkaW
+.zjen.cn,Ads_SukkaW
 .zjfvpv.serengeticatalog.com,Ads_SukkaW
 .zjhlsx.exxpozed.de,Ads_SukkaW
 .zjhswy.comeup.com.tr,Ads_SukkaW
