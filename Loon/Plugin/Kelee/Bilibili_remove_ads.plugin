@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Bilibili_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Bilibili.png
-#!date=2025-03-08 00:01:52
+#!date=2025-03-09 00:49:00
 
 [Argument]
 showUpList=select,"auto","true","false",tag=[动态]中[最常访问]的显示方式,desc=auto：仅当列表中存在直播状态时显示；true：始终显示；false：始终隐藏。
@@ -26,89 +26,43 @@ URL-REGEX,"^http:\/\/upos-sz-static\.bilivideo\.com\/ssaxcode\/\w{2}\/\w{2}\/\w{
 URL-REGEX,"^http:\/\/[\d\.]+:8000\/v1\/resource\/\w{32}-1-SPLASH",REJECT-DICT
 
 [Rewrite]
+# 移除开屏广告
+^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/(?:list|show|event\/list2)\? response-body-json-jq '.data |= with_entries(if .key | IN("show", "event_list") then .value = [] else . end)'
+
+# 首页标签页控制、精简底栏
+^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab\/v2\? response-body-json-jq '.data.tab=[{pos:1,id:477,name:"推荐",tab_id:"推荐tab",uri:"bilibili://pegasus/promo",default_selected:1},{pos:3,id:478,name:"热门",tab_id:"热门tab",uri:"bilibili://pegasus/hottopic"},{pos:4,id:545,name:"动画",tab_id:"bangumi",uri:"bilibili://pgc/home"},{pos:5,id:151,name:"影视",tab_id:"film",uri:"bilibili://pgc/cinema-tab"},{pos:2,id:731,name:"直播",tab_id:"直播tab",uri:"bilibili://live/home"}]|.data.top=[{pos:1,id:176,name:"消息",tab_id:"消息Top",uri:"bilibili://link/im_home",icon:"http://i0.hdslb.com/bfs/archive/d43047538e72c9ed8fd8e4e34415fbe3a4f632cb.png"}]|.data.bottom=[{pos:1,id:177,name:"首页",tab_id:"home",uri:"bilibili://main/home/",icon:"http://i0.hdslb.com/bfs/archive/63d7ee88d471786c1af45af86e8cb7f607edf91b.png",icon_selected:"http://i0.hdslb.com/bfs/archive/e5106aa688dc729e7f0eafcbb80317feb54a43bd.png"},{pos:2,id:179,name:"动态",tab_id:"dynamic",uri:"bilibili://following/home/",icon:"http://i0.hdslb.com/bfs/archive/86dfbe5fa32f11a8588b9ae0fccb77d3c27cedf6.png",icon_selected:"http://i0.hdslb.com/bfs/archive/25b658e1f6b6da57eecba328556101dbdcb4b53f.png"},{pos:5,id:181,name:"我的",tab_id:"我的Bottom",uri:"bilibili://user_center/",icon:"http://i0.hdslb.com/bfs/archive/4b0b2c49ffeb4f0c2e6a4cceebeef0aab1c53fe1.png",icon_selected:"http://i0.hdslb.com/bfs/archive/a54a8009116cb896e64ef14dcf50e5cade401e00.png"}]'
+
+# 移除首页推荐广告
+^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\? response-body-json-jq 'if .data.items then .data.items |= map(select((has("banner_item") | not) and (has("ad_info") | not) and (.card_goto == "av") and (.card_type | IN("small_cover_v2", "large_cover_single_v9", "large_cover_v1")))) end'
+
 # 播放页开通会员的横幅
 ^https:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive\? mock-response-body data-type=text status-code=200 data="{"code":0,"data":{"closeType":"close_win","container":[],"showTime":""},"message":"success"}"
 ^https:\/\/api\.bilibili\.com\/pgc\/view\/v2\/app\/season\? response-body-json-jq 'del(.data.payment)'
 
-# 直播间
-^https:\/\/api\.live\.bilibili\.com\/xlive\/app-interface\/v2\/index\/feed\? response-body-json-jq 'if .data.card_list then .data.card_list |= map(select(.card_type != "banner_v2")) end'
-^https:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom\? response-body-json-jq 'del(.data.activity_banner_info) | .data.shopping_info.is_show=0 | .data.show_reserve_status=false | .data.reserve_info.show_reserve_status=false | .data.function_card.wish_list_card=null | .data.function_card.follow_card=null | .data.new_tab_info.outer_list |= if . then map(select(.biz_id != 33)) end'
-^https:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByUser\? response-body-json-jq 'del(.data.play_together_info, .data.play_together_info_v2)'
+# 移除观影页广告
+^https:\/\/api\.bilibili\.com\/pgc\/page\/(?:bangumi|cinema\/tab)\? response-body-json-jq '.result.modules |= if . then map(if (.style | startswith("tip")) or (.module_id | IN(241, 1283, 1441, 1284)) then .items = [] elif .style | startswith("banner") then .items |= if . then map(select(.link | contains("play"))) else [] end elif .style | startswith("function") then .items |= if . then map(select(.blink | startswith("bilibili"))) else [] end end) end'
 
-# 开屏广告
-^https:\/\/(?:api\.bilibili\.com\/x\/mengqi\/v1\/resource|app\.bilibili\.com\/x\/resource\/peak\/download) reject-dict
+# 移除竖屏视频广告
+^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\/story\? response-body-json-jq 'if .data.items then .data.items |= map(select((.ad_info == null) and (.card_goto | startswith("ad") | not)) | del(.story_cart_icon))'
 
-# 满意度调研
-^https:\/\/api\.bilibili\.com\/x\/v2\/dm\/qoe\/show\? reject-dict
+# 移除大会员广告、移除右上角活动入口
+^https:\/\/ap[ip]\.bilibili\.com\/x\/(?:resource\/(?:top\/activity|patch\/tab)|v2\/search\/square|vip\/ads\/materials)\? mock-response-body data-type=text status-code=200 data="{"code":-404,"message":"-404","ttl":1,"data":null}"
 
-# 大会员广告
-^https:\/\/api\.bilibili\.com\/x\/vip\/ads\/materials\? reject-dict
-
-# 直播广告
+# 移除直播广告
 ^https:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v1\/ecommerce-user\/get_shopping_info\? reject-dict
 
-# IP请求、地理位置请求
-^https:\/\/api\.bilibili\.com\/x\/web-interface\/zone\?jsonp reject-dict
-^https:\/\/app\.bilibili\.com\/x\/resource\/ip reject-dict
-
-# 首页标签栏热更新
-^https:\/\/app\.bilibili\.com\/x\/resource\/patch\/tab\? reject-dict
+# 移除直播间广告
+^https:\/\/api\.live\.bilibili\.com\/xlive\/(?:app-interface\/v2\/index\/feed|app-room\/v1\/index\/getInfoBy(?:Room|User))\? response-body-json-jq '.data |= (del(.play_together_info, .play_together_info_v2, .activity_banner_info) | if .function_card then .function_card[] = null end | if .new_tab_info.outer_list then .new_tab_info.outer_list |= map(select(.biz_id != 33)) end | if .card_list then .card_list |= map(select(.card_type != "banner_v2")) end | reduce ([["show_reserve_status"], false], [["reserve_info", "show_reserve_status"], false], [["shopping_info", "is_show"], 0]) as [$path, $value] (.; if getpath($path) then setpath($path; $value) end))'
 
 # 移除皮肤推送
 ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? response-body-json-del data.common_equip
 
-# 移除右上角活动入口
-^https:\/\/app\.bilibili\.com\/x\/resource\/top\/activity\? mock-response-body data-type=text status-code=200 data="{"code":-404,"message":"啥都木有","ttl":1,"data":null}"
-
-# 搜索框填充词
-^https:\/\/app\.bilibili\.com\/x\/v2\/search\/square\? mock-response-body data-type=text status-code=200 data="{"code":0,"message":"0","ttl":1,"data":{"type":"history","title":"搜索历史","search_hotword_revision":2}}"
-
-# 屏蔽默认搜索框关键词
-^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.interface\.v1\.Search\/DefaultWords$ reject-dict
-
-# 流量卡推荐
-^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.view\.v1\.View\/TFInfo$ url reject-dict
-
-# 移除直播间链接跟踪参数
-(^https:\/\/live\.bilibili\.com\/\d+)(?:\/?\?.*) 302 $1
-
-# 移除视频链接跟踪参数
-(^https:\/\/(?:www|m)\.bilibili\.com\/video\/(?:BV\w{10}|av\d{9}))(?:\/?\?.*) 302 $1
-
-# JSON处理
-# ^https:\/\/api\.bilibili\.com\/pgc\/page\/(?:bangumi|cinema\/tab) response-body-json-jq jq-path="https://kelee.one/Resource/JQLang/Bilibili/Bilibili_remove_ads.jq"
-# ^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/(?:brand\/list|event\/list2|list|show) response-body-json-jq jq-path="https://kelee.one/Resource/JQLang/Bilibili/Bilibili_remove_ads.jq"
-# ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab\/v2\? response-body-json-jq jq-path="https://kelee.one/Resource/JQLang/Bilibili/Bilibili_remove_ads.jq"
-# ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/(?:mine|myinfo) response-body-json-jq jq-path="https://kelee.one/Resource/JQLang/Bilibili/Bilibili_remove_ads.jq"
-# ^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index response-body-json-jq jq-path="https://kelee.one/Resource/JQLang/Bilibili/Bilibili_remove_ads.jq"
-
-# 移除首页推荐广告
-^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index response-body-json-jq 'if .data.items then .data.items |= map(select((has("banner_item") | not) and (has("ad_info") | not) and (.card_goto == "av") and (.card_type | IN("small_cover_v2", "large_cover_single_v9", "large_cover_v1")))) end'
-# 移除竖屏广告
-^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\/story\? response-body-json-jq 'if .data.items then .data.items |= map(select((.ad_info == null) and (.card_goto | startswith("ad") | not)) | del(.story_cart_icon))'
+# 精简我的页面
+^https:\/\/app\.bilibili\.com\/x\/v2\/account\/mine(?:\/ipad)?\? response-body-json-jq jq-path="https://kelee.one/Resource/JQLang/Bilibili/mine_Bilibili_remove_ads.jq"
 
 [Script]
-http-response ^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.dynamic\.v2\.Dynamic\/DynAll$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_kokoryh.js,requires-body=true,binary-body-mode=true,tag=移除动态页面广告,argument=[{showUpList}]
-http-response ^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.interface\.v1\.Teenagers\/ModeStatus$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_kokoryh.js,requires-body=true,binary-body-mode=true,tag=移除青少年模式弹窗
-http-response ^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.show\.v1\.Popular\/Index$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_kokoryh.js,requires-body=true,binary-body-mode=true,tag=移除热门话题
-http-response ^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.playurl\.v1\.PlayURL\/PlayView$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_kokoryh.js,requires-body=true,binary-body-mode=true,tag=移除播放页面广告 playview
-http-response ^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.playerunite\.v1\.Player\/PlayViewUnite$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_kokoryh.js,requires-body=true,binary-body-mode=true,tag=移除播放页面广告 playerunite
-http-response ^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.view\.v1\.View\/(?:View|ViewProgress)$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_kokoryh.js,requires-body=true,binary-body-mode=true,tag=移除播放页面广告 view
-http-response ^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.viewunite\.v1\.View\/(?:RelatesFeed|View|ViewProgress)$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_kokoryh.js,requires-body=true,binary-body-mode=true,tag=移除播放页面广告 viewunite
-http-response ^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.community\.service\.dm\.v1\.DM\/DmView$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_kokoryh.js,requires-body=true,binary-body-mode=true,tag=移除交互式弹幕
-http-response ^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.main\.community\.reply\.v1\.Reply\/MainList$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_kokoryh.js,requires-body=true,binary-body-mode=true,tag=移除评论区广告
-http-response ^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.pgc\.gateway\.player\.v2\.PlayURL\/PlayView$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_kokoryh.js,requires-body=true,binary-body-mode=true,tag=移除播放器开通会员横幅
-http-response ^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.polymer\.app\.search\.v1\.Search\/SearchAll$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_kokoryh.js,requires-body=true,binary-body-mode=true,tag=移除搜索结果广告
-
-# 上部为Proto处理，下部为JSON配置处理
-
-http-response ^https:\/\/api\.bilibili\.com\/pgc\/page\/(?:bangumi|cinema\/tab) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_remove_ads.js,requires-body=true,tag=移除观影页广告
-http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/(?:brand\/list|event\/list2|list|show) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_remove_ads.js,requires-body=true,tag=移除开屏广告
-http-response ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab\/v2\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_remove_ads.js,requires-body=true,tag=精简首页顶部标签
-http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/(?:mine|myinfo) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_remove_ads.js,requires-body=true,tag=精简我的页面
-
-# 已被JQ替代
-# http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_remove_ads.js,requires-body=true,tag=移除首页推荐广告
+# Proto处理
+http-response ^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(?:app\.(?:interface\.v1\.(?:Teenagers\/ModeStatus|Search\/DefaultWords)|show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(?:unite)?\.v1\.View\/(?:View|ViewProgress|TFInfo|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/DmView|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_kokoryh.js,requires-body=true,binary-body-mode=true,tag=Proto处理,argument=[{showUpList}]
 
 [MitM]
-hostname=*live.bilibili.com, ap?.bilibili.com, grpc.biliapi.net, m.bilibili.com, manga.bilibili.com, www.bilibili.com
+hostname=grpc.biliapi.net,app.bilibili.com,api.bilibili.com,api.live.bilibili.com,manga.bilibili.com
