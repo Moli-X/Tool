@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3302
+# 规则统计: 3300
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -67,9 +67,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-26T13:42:07.293Z
-# Last Updated: 2025-03-07T16:51:13.464Z
+# Last Updated: 2025-03-09T15:21:40.597Z
 # License: AGPL 3.0
-# Size: 3228
+# Size: 3226
 # Size: 61
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1227,7 +1227,6 @@ assets.salesmartly.com,CDN
 assets.scaleflex.com,CDN
 assets.scaleway.com,CDN
 assets.science.nasa.gov,CDN
-assets.scroll.com,CDN
 assets.sendinblue.com,CDN
 assets.shazam.com,CDN
 assets.sololearn.com,CDN
@@ -1922,6 +1921,7 @@ encrypted-vtbn2.gstatic.com,CDN
 encrypted-vtbn3.gstatic.com,CDN
 epic-social-social-modules-prod.ol.epicgames.com,CDN
 error.rakuten.co.jp,CDN
+eslint.org,CDN
 eslint.style,CDN
 eu-images.contentstack.com,CDN
 eu.cdnbye.com,CDN
@@ -2877,7 +2877,6 @@ static-redesign.cnbcfm.com,CDN
 static-resource.np.community.playstation.net,CDN
 static-secure-uploads.ui.com,CDN
 static-sg-cdn.eporner.com,CDN
-static-staging.scroll.com,CDN
 static-sv.fc2.com,CDN
 static-web-prod.skillshare.com,CDN
 static-web.grammarly.com,CDN
@@ -3020,7 +3019,6 @@ static.reo.dev,CDN
 static.replay.io,CDN
 static.rust-lang.org,CDN
 static.scarf.sh,CDN
-static.scroll.com,CDN
 static.seel.com,CDN
 static.skyassets.com,CDN
 static.snapchat.com,CDN
