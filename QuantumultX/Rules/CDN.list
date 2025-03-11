@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3300
+# 规则统计: 3303
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -67,9 +67,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-26T13:42:07.293Z
-# Last Updated: 2025-03-09T15:21:40.597Z
+# Last Updated: 2025-03-10T16:45:43.639Z
 # License: AGPL 3.0
-# Size: 3226
+# Size: 3229
 # Size: 61
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1848,6 +1848,7 @@ curl.se,CDN
 cw-image-resizer.cwg.tw,CDN
 d4.alternativeto.net,CDN
 dam.freshworks.com,CDN
+dassets.shimano.com,CDN
 data.jsdelivr.com,CDN
 data.web.clickup.com,CDN
 david-dm.org,CDN
@@ -3135,6 +3136,7 @@ telemetry.business.githubcopilot.com,CDN
 telemetry.individual.githubcopilot.com,CDN
 telemetry.nextjs.org,CDN
 telemetry.split.io,CDN
+telemetry.stepsecurity.io,CDN
 telemetry.vercel.com,CDN
 telemetry2.devolutions.net,CDN
 th.bing.com,CDN
@@ -3157,6 +3159,7 @@ tn.vjav.com,CDN
 todoist.b-cdn.net,CDN
 ton.local.twitter.com,CDN
 tools-static.wmflabs.org,CDN
+tools.refokus.com,CDN
 topbar-static.piano.io,CDN
 torrindex.net,CDN
 touchgal-image.moyu.moe,CDN
