@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3304
+# 规则统计: 3327
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -67,9 +67,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-02-26T13:42:07.293Z
-# Last Updated: 2025-03-13T01:55:02.897Z
+# Last Updated: 2025-03-14T07:01:09.707Z
 # License: AGPL 3.0
-# Size: 3230
+# Size: 3253
 # Size: 61
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -302,6 +302,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .doppiocdn.live
 .doppiocdn.net
 .doppiocdn.org
+.dreamscape.cloud
 .drivecdn.com
 .dropboxstatic.com
 .dsc.cloud
@@ -583,6 +584,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .lbpicpic.com
 .lbpictupian.com
 .lencr.org
+.li-cdn.com
 .liangzipic.com
 .licensebuttons.net
 .line-cdn.net
@@ -1039,6 +1041,7 @@ a.deviantart.net
 a.fireside.fm
 a.gawby.com
 a.kickstarter.com
+a.klaviyo.com
 a5.behance.net
 a57.foxnews.com
 academy-public.coinmarketcap.com
@@ -1374,6 +1377,7 @@ cdn-static.talent.com
 cdn-uicons.flaticon.com
 cdn-web.fydeos.io
 cdn-web.orbstack.dev
+cdn-widgetsrepository.yotpo.com
 cdn-www.bluestacks.com
 cdn-yotpo-images-production.yotpo.com
 cdn.17app.co
@@ -1413,6 +1417,7 @@ cdn.buymeacoffee.com
 cdn.c1.amplience.net
 cdn.calibermind.com
 cdn.cameo.com
+cdn.camweara.com
 cdn.cbd.int
 cdn.changelog.com
 cdn.channel.io
@@ -1493,6 +1498,7 @@ cdn.hackernoon.com
 cdn.hashnode.com
 cdn.headwayapp.co
 cdn.hellofresh.com
+cdn.hextom.com
 cdn.hiive.space
 cdn.hinative.com
 cdn.hk01.com
@@ -1553,6 +1559,7 @@ cdn.neverbounce.com
 cdn.nolt.io
 cdn.now.gg
 cdn.nperf.com
+cdn.one.store
 cdn.onesignal.com
 cdn.onetime.dog
 cdn.onlyhentaistuff.com
@@ -1561,6 +1568,7 @@ cdn.osxdaily.com
 cdn.paddle.com
 cdn.pagefly.io
 cdn.pagic.org
+cdn.paidy.com
 cdn.parsely.com
 cdn.pathfactory.com
 cdn.pendo.io
@@ -1675,6 +1683,7 @@ cdn.ywxi.net
 cdn.zapier.com
 cdn.zeabur.com
 cdn.zhujiwiki.com
+cdn.zigpoll.com
 cdn0-i.techbang.com
 cdn0.dan.com
 cdn0.iconfinder.com
@@ -1771,6 +1780,7 @@ cf.shopee.tw
 cfvod.kaltura.com
 chart.googleapis.com
 chat-content.beanfun.com
+chat.digitalgenius.com
 chatwidgetmetrics-proxy.usepylon.com
 checkout-sdk.bigcommerce.com
 checkout.stripe.com
@@ -1801,6 +1811,7 @@ common-header.nimg.jp
 compass-ssl.xbox.com
 components.clever-cloud.com
 components.justanswer.com
+components.trynow.net
 config.extension.grammarly.com
 connect-js.stripe.com
 connect.facebook.net
@@ -2348,12 +2359,14 @@ lib.arvancloud.ir
 libraries.hund.io
 libs.quillbot.com
 lift-ai-js.marketlinc.com
+limitless.cmax.ai
 link.storjshare.io
 linkstorage.linkfire.com
 linuxiac.b-cdn.net
 listing-thumbnail.live.nicovideo.jp
 live-storage.fc2.com
 live.fanmingming.com
+live.visually-io.com
 livedoor.blogimg.jp
 livemap-tiles1.waze.com
 load.csell.co
@@ -2474,6 +2487,7 @@ mosaic-blender.fxtwitter.com
 mosaic.fxtwitter.com
 mparticle.weather.com
 mstdn-s3.o3o.studio
+mta.newfold.com
 mui.com
 mwcm.nyt.com
 mwf-service.akamaized.net
@@ -2487,6 +2501,7 @@ nbcnewsdigital-static.nbcuni.com
 net-fe-static-assets.network-controller.svc.ui.com
 netlify.apollo.io
 newassets.hcaptcha.com
+newfold.scene7.com
 news-assets.apple.com
 newsletter.postmarkapp.com
 next-images.opencollective.com
@@ -2775,6 +2790,7 @@ sdk.listenlive.co
 sdk.qikify.com
 sdk.snapkit.com
 sdk.split.io
+sdks.automizely.com
 seal-newyork.bbb.org
 searchanise-ef84.kxcdn.com
 searchg2-assets.crownpeak.net
@@ -2880,6 +2896,7 @@ static-resource.np.community.playstation.net
 static-secure-uploads.ui.com
 static-sg-cdn.eporner.com
 static-sv.fc2.com
+static-us.afterpay.com
 static-web-prod.skillshare.com
 static-web.grammarly.com
 static-www.onlyoffice.com
@@ -2887,6 +2904,7 @@ static.4shared.com
 static.ada.support
 static.addtoany.com
 static.adguardvpn.com
+static.afterpay.com
 static.agilebits.com
 static.ahrefs.com
 static.aizanmei.org
@@ -2902,6 +2920,7 @@ static.bit.dev
 static.bitfinex.com
 static.bravoporn.com
 static.buffer.com
+static.buydomains.com
 static.bytepan.com
 static.canva.com
 static.captcha-delivery.com
@@ -3017,6 +3036,7 @@ static.probit.com
 static.queue-it.net
 static.rakuten.com
 static.redhat.com
+static.registration.bluehost.com
 static.reo.dev
 static.replay.io
 static.rust-lang.org
@@ -3090,6 +3110,8 @@ stats.codesandbox.io
 stats.setapp.com
 stats.setapp.macpaw.dev
 status.ui.com
+stbff.newfold.com
+stbff.scene7.com
 steamcdn-a.akamaihd.net
 steamusercontent-a.akamaihd.net
 steamuserimages-a.akamaihd.net
@@ -3268,6 +3290,7 @@ webp.frostming.com
 website-cdn.ipinfo.io
 website-prod.cache.wpscdn.com
 webstatic.chargebee.com
+widget.automizely.com
 widget.docsbot.ai
 widget.freshworks.com
 widget.gotolstoy.com
