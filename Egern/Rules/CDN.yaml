@@ -30,6 +30,7 @@ DOMAIN-WILDCARD,cdn?-dl.pornhost.com
 DOMAIN-WILDCARD,cdn?.18girlssex.com
 DOMAIN-WILDCARD,cdn?.mikuclub.fun
 DOMAIN-WILDCARD,cdns.*.gigya.com
+DOMAIN-WILDCARD,chunk-*.mux.com
 DOMAIN-WILDCARD,file?.mikuclub.fun
 DOMAIN-WILDCARD,i?.nhentai.net
 DOMAIN-WILDCARD,image*.cloudokyo.cloud
@@ -64,11 +65,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-03-16T16:42:19.882Z
-# Last Updated: 2025-03-17T02:01:21.051Z
+# Last Updated: 2025-03-17T09:56:21.810Z
+# Last Updated: 2025-03-17T09:56:23.069Z
 # License: AGPL 3.0
-# Size: 3263
-# Size: 62
+# Size: 3266
+# Size: 63
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -1298,6 +1299,7 @@ axiecdn.axieinfinity.com
 az700632.vo.msecnd.net
 b.peatio.com
 b.sf-syn.com
+b5x-sentry.1passwordservices.com
 badbits.dwebops.pub
 badge.buildkite.com
 badge.fury.io
@@ -2848,6 +2850,7 @@ sp.replit.com
 spcdn.incartupsell.com
 spoprod-a.akamaihd.net
 sprig.figma.com
+ssl.gstatic.com
 st-eu.dynamicyield.com
 st.agrd.eu
 st.deviantart.net
@@ -3329,6 +3332,7 @@ ww2.justanswer.com
 www-static.ripe.net
 www.10086.win
 www.bbthat.com
+www.gstatic.com
 www.pngmart.com
 www.tbstat.com
 www.typescriptlang.org

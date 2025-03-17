@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3338
+# 规则统计: 3342
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -33,6 +33,7 @@ HOST-WILDCARD,cdn?-dl.pornhost.com,CDN
 HOST-WILDCARD,cdn?.18girlssex.com,CDN
 HOST-WILDCARD,cdn?.mikuclub.fun,CDN
 HOST-WILDCARD,cdns.*.gigya.com,CDN
+HOST-WILDCARD,chunk-*.mux.com,CDN
 HOST-WILDCARD,file?.mikuclub.fun,CDN
 HOST-WILDCARD,i?.nhentai.net,CDN
 HOST-WILDCARD,image*.cloudokyo.cloud,CDN
@@ -67,11 +68,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-03-16T16:42:19.882Z
-# Last Updated: 2025-03-17T02:01:21.051Z
+# Last Updated: 2025-03-17T09:56:21.810Z
+# Last Updated: 2025-03-17T09:56:23.069Z
 # License: AGPL 3.0
-# Size: 3263
-# Size: 62
+# Size: 3266
+# Size: 63
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -1301,6 +1302,7 @@ axiecdn.axieinfinity.com,CDN
 az700632.vo.msecnd.net,CDN
 b.peatio.com,CDN
 b.sf-syn.com,CDN
+b5x-sentry.1passwordservices.com,CDN
 badbits.dwebops.pub,CDN
 badge.buildkite.com,CDN
 badge.fury.io,CDN
@@ -2851,6 +2853,7 @@ sp.replit.com,CDN
 spcdn.incartupsell.com,CDN
 spoprod-a.akamaihd.net,CDN
 sprig.figma.com,CDN
+ssl.gstatic.com,CDN
 st-eu.dynamicyield.com,CDN
 st.agrd.eu,CDN
 st.deviantart.net,CDN
@@ -3332,6 +3335,7 @@ ww2.justanswer.com,CDN
 www-static.ripe.net,CDN
 www.10086.win,CDN
 www.bbthat.com,CDN
+www.gstatic.com,CDN
 www.pngmart.com,CDN
 www.tbstat.com,CDN
 www.typescriptlang.org,CDN
