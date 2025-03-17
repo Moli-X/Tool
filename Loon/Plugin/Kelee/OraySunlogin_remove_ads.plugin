@@ -12,10 +12,8 @@
 #!date=2024-11-28 00:00:00
 
 [Rule]
-# 开屏广告
 DOMAIN,mobads.baidu.com,REJECT
 
-# 友盟
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
 DOMAIN,errnewlog.umeng.com,REJECT
@@ -29,9 +27,7 @@ DOMAIN,log.umtrack.com,REJECT
 DOMAIN,aaid.umeng.com,REJECT
 DOMAIN,log.umsns.com,REJECT
 
-# 字节跳动广告
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
-# AND,((DOMAIN-KEYWORD,-sign-),(DOMAIN-SUFFIX,tiktokcdn.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ttam-),(DOMAIN-SUFFIX,ibyteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,ssdk-),(DOMAIN-SUFFIX,pangle.io)),REJECT
 AND,((DOMAIN-KEYWORD,pangolin),(DOMAIN-SUFFIX,sgsnssdk.com)),REJECT
@@ -40,7 +36,6 @@ AND,((DOMAIN-KEYWORD,v),(DOMAIN-KEYWORD,-be-pack.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-be-pack.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,s),(DOMAIN-KEYWORD,-fe-scm.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-ttcdn-tos.pstatp.com)),REJECT
-# AND,((DOMAIN-KEYWORD,p),(DOMAIN-KEYWORD,-be-pack-sign.pglstatp-toutiao.com)),REJECT // 被更精细的规则替代
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-fe-tos.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-static.i18n-pglstatp.com)),REJECT
 AND,((DOMAIN-KEYWORD,if),(DOMAIN-KEYWORD,-cdn-tos.bytescm.com)),REJECT //误杀
@@ -82,7 +77,6 @@ DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
 
 [Rewrite]
-# 首页横幅
 ^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_iOS_DEVICE_FREE\? reject
 
 [MitM]

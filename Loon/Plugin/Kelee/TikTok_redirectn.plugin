@@ -13,7 +13,6 @@
 #!date=2024-11-28 00:00:00
 
 [Rule]
-# 2024-04-30 00:47:47
 AND,((GEOIP,CN),(DOMAIN,pitaya.bytedance.com)),DIRECT // 此为抖音和TikTok的*.bytedance.com共用域名，仅国外解析结果走代理
 DOMAIN,api.snapkit.com,PROXY
 DOMAIN,cocacola.co.jp,PROXY
@@ -113,9 +112,7 @@ DOMAIN-KEYWORD,ttcdn-tos.,PROXY
 DOMAIN-KEYWORD,ttlivecdn.com.,PROXY
 
 [Rewrite]
-# 去广告
 ^https:\/\/api-va\.tiktokv\.com\/api\/ad\/ reject
-# 域名解析
 ^https:\/\/tnc\d+-platform-\w+\.tiktokv\.com\/get_domains\/ reject
 
 [Script]

@@ -12,14 +12,11 @@
 #!date=2025-03-05 08:57:39
 
 [Rule]
-# 拦截HTTPDNS
 DOMAIN,httpdns.n.netease.com,REJECT
 DOMAIN,httpdns.calorietech.com,REJECT
 
-# 拦截广告下发
 DOMAIN,hc-ssp.sm.cn,REJECT
 
-# 腾讯
 DOMAIN,adsmind.gdtimg.com,REJECT
 DOMAIN,adsmind.ugdtimg.com,REJECT
 DOMAIN,c2.gdt.qq.com,REJECT
@@ -29,13 +26,11 @@ DOMAIN,info6.video.qq.com,REJECT
 DOMAIN,ios.bugly.qq.com,REJECT
 DOMAIN,pro.bugly.qq.com,REJECT
 DOMAIN,ios.video.mpush.qq.com,REJECT
-# DOMAIN,mazu.m.qq.com,REJECT // 误杀
 DOMAIN,us.l.qq.com,REJECT
 DOMAIN,mi.gdt.qq.com,REJECT
 DOMAIN,otheve.beacon.qq.com,REJECT
 DOMAIN,pgdt.gtimg.cn,REJECT
 DOMAIN,pgdt.ugdtimg.com,REJECT
-# DOMAIN,qzonestyle.gtimg.cn,REJECT // 误杀
 DOMAIN,qzs.gdtimg.com,REJECT
 DOMAIN,qzs.qq.com,REJECT
 DOMAIN,rmonitor.qq.com,REJECT
@@ -60,22 +55,16 @@ DOMAIN-SUFFIX,ugdtimg.com,REJECT
 IP-CIDR,47.110.187.87/32,REJECT,no-resolve
 
 [Rewrite]
-# 搜索填充词
 ^https:\/\/api\.gotokeep\.com\/search\/v6\/default\/keyword\/list reject-dict
 
-# 关注 - 关注推荐
 ^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/followPage response-body-json-replace data {}
 
-# 信息流推广
 ^https:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v1\/ad reject-dict
 
-# 文章相关推荐
 ^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/entryDetail response-body-json-replace data {}
 
-# 弹窗
 ^https:\/\/api\.gotokeep\.com\/guide-webapp\/v1\/popup\/getPopUp reject-dict
 
-# 移除首页活动标签
 ^https:\/\/api\.gotokeep\.com\/config\/v3\/basic response-body-json-jq '.data.homeTabs |= map(select(.name != "活动")) | .data.homeTabs[1].default = true | .data.homeTabs[2].default = false'
 
 [MitM]

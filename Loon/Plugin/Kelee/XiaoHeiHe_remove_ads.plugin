@@ -12,9 +12,7 @@
 #!date=2025-03-05 01:08:08
 
 [Rewrite]
-# 开屏广告
 ^https:\/\/api\.xiaoheihe\.cn\/account\/get_ads_info_v2 reject-dict
-# 移除热点板块信息流广告
 ^https:\/\/api\.xiaoheihe\.cn\/bbs\/app\/feeds\/news response-body-json-jq '.result.links |= map(if .content_type == 27 then del(.title, .ad_pm, .img_gif, .idea_id, .ad_report, .label, .source, .intranet_only, .ad_cm, .content_type, .protocol, .img, .ad_ratio) else . end)'
 
 [MitM]

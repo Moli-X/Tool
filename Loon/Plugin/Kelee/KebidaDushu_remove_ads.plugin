@@ -12,7 +12,6 @@
 #!date=2024-12-19 14:56:44
 
 [Rewrite]
-# 帆书移除广告
 ^https?:\/\/popup\.dushu365\.com\/api\/v2\/sfo\/(user_)?popup_(config|display)s reject
 ^https?:\/\/g[a-z0-9-]+\.dushu365\.com\/chief-orch\/config\/config\/v\d+\/(shortCut|appUpdateUnite|loadingAd) reject
 ^https?:\/\/g[a-z0-9-]+\.dushu365\.com\/fs-retain\/trialVip\/v\d+\/requestTrialVipPopDoNotSendReward reject

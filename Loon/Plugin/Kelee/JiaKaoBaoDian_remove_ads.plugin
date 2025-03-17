@@ -12,26 +12,16 @@
 #!date=2024-11-28 00:00:00
 
 [Rewrite]
-# 广告配置
 ^https:\/\/scs\.kakamobi\.cn\/api\/open\/v3\/advert-sdk\/ reject-dict
-# 广告横幅
 ^https:\/\/cheyouquan\.kakamobi\.com\/api\/open\/group\/recommend-subscribe-tag\.htm reject-dict
-# 应用配置 - 悬浮窗
 ^https:\/\/swallow\.kakamobi\.cn\/api\/open\/config\/get-config\.htm reject-dict
-# 悬浮窗
 ^https:\/\/monkey\.kakamobi\.cn\/api\/open\/live\/get-recommend-live-protocol\.htm reject-dict
-# 新用户弹窗
 ^https:\/\/jiaxiao-awd\.kakamobi\.cn\/api\/h5\/v4\/home-lead-advertise\/abtest\.htm reject-dict
-# 买车页面弹窗
 ^https:\/\/mcbd\.maiche\.com\/api\/open\/v3\/user\/get-popup-window\.htm reject-dict
-# 我的页面 - 精选服务
 ^https:\/\/jiakao-misc\.kakamobi\.cn\/api\/open\/my-tab-config\/selection-list\.htm reject-dict
-# 我的页面 - 横幅
 ^https:\/\/jiakao-misc\.kakamobi\.cn\/api\/open\/my-tab-config\/banner-list\.htm reject-dict
 ^https:\/\/squirrel\.kakamobi\.cn\/api\/open\/recommend-goods\/get-my-page-banner\.htm reject-dict
-# 买车页面广告
 ^https:\/\/mcbd\.maiche\.com\/api\/open\/v2\/jiakao-business\/get-naben-advert\.htm reject-dict
-# 其他广告
 ^https:\/\/monkey\.kakamobi\.cn\/api\/open\/live-room\/get-resource\.htm reject-dict
 
 [MitM]

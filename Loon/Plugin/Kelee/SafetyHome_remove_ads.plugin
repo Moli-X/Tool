@@ -15,7 +15,6 @@
 DOMAIN,ad.iot.360.cn,REJECT
 
 [Rewrite]
-# 商城入口
 ^https:\/\/app\.home\.360\.cn\/v1\/config\/custom_config reject-dict
 
 [MitM]

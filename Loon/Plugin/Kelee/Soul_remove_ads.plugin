@@ -12,18 +12,15 @@
 #!date=2024-11-28 00:00:00
 
 [Rule]
-# 地理位置 - 影响注册账号时的属地判断
 DOMAIN-SUFFIX,soulapp.cn,DIRECT
 IP-CIDR,8.210.3.170/32,DIRECT,no-resolve
 IP-CIDR,47.75.72.47/32,DIRECT,no-resolve
 
-# 广告下发
 DOMAIN,ad-h5-cdn.soulapp.cn,REJECT
 DOMAIN,ad-h5-station-cdn.soulapp.cn,REJECT
 DOMAIN,ad-r.soulapp.cn,REJECT
 DOMAIN,soul-ad.soulapp.cn,REJECT
 
-# 广告域名IP查询
 IP-CIDR,47.56.131.76/32,REJECT,no-resolve
 IP-CIDR,47.97.215.55/32,REJECT,no-resolve
 IP-CIDR,47.99.42.29/32,REJECT,no-resolve
@@ -33,11 +30,9 @@ IP-CIDR,120.27.235.201/32,REJECT,no-resolve
 IP-CIDR,121.196.197.147/32,REJECT,no-resolve
 
 [Rewrite]
-# 开屏广告
 ^https:\/\/ssp\.soulapp\.cn\/api\/q reject-dict
 ^https:\/\/chat-live\.soulapp\.cn\/live\/planet\/recListV2 reject-200
 
-# 页面内容
 ^https:\/\/(?:api-\w+|gateway-mobile-gray|post)\.soulapp\.cn\/(?:furion\/position\/content|hot\/soul\/rank|mobile\/app\/version\/queryIos|official\/scene\/module|teenager\/config|v2\/post\/gift\/list|v\d\/post\/homepage\/guide\/card) response-body-json-del data
 
 [Script]

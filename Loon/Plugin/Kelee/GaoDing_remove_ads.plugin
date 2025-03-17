@@ -12,22 +12,16 @@
 #!date=2024-11-29 07:57:17
 
 [Rewrite]
-# 开屏广告
 ^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/v\d\/delivery-pits\/ios-splash\/modules$ reject-dict
 
-# 模板中心弹窗
 ^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/delivery-pits\/(template|mine|home)-page-dialog\/modules$ reject-dict
 
-# 搜索栏填充词
 ^https:\/\/www\.gaoding\.com\/api\/v\d\/cp\/search-words\/v2\/placeholder reject-dict
 
-# 移除首页轮播图
 ^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/template\/resources$ response-body-json-jq '.pits |= map(select(.module_type != "BANNER"))'
 
-# 我的页面轮播图
 ^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/app_mine\/resources$ response-body-json-jq '.pits |= map(select(.module_type != "BANNER"))'
 
-# 移除功能入口角标
 ^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/(templates|all_editor_tools)\/resources$ response-body-json-jq 'walk(if type == "object" and .badge_img_url? then .badge_img_url = "" else . end)'
 
 [MitM]

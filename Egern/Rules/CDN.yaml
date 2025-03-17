@@ -9,6 +9,7 @@ DOMAIN-KEYWORD,-files.gitbook.io
 DOMAIN-KEYWORD,-res.cloudinary.com
 DOMAIN-KEYWORD,-thumbs.pornhost.com
 DOMAIN-KEYWORD,-thumbs.worldsex.com
+DOMAIN-KEYWORD,99avcdn
 DOMAIN-KEYWORD,cdn.adultempire.com
 DOMAIN-KEYWORD,dsn.algolia.net
 DOMAIN-KEYWORD,vod-adaptive.akamaized.net
@@ -63,11 +64,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-02-26T13:42:07.293Z
-# Last Updated: 2025-03-15T19:30:48.094Z
+# Last Updated: 2025-03-16T16:42:19.882Z
+# Last Updated: 2025-03-17T02:01:21.051Z
 # License: AGPL 3.0
-# Size: 3258
-# Size: 61
+# Size: 3263
+# Size: 62
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -82,6 +83,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .7mmtv.tv
 .91pic.org
 .98avcdn.xyz
+.99avcdn.com
+.99avcdn.net
+.99avcdn.org
 .9cache.com
 .a.storyblok.com
 .a1tb.com
@@ -1656,6 +1660,7 @@ cdn.tuk.dev
 cdn.unrealengine.com
 cdn.unwire.hk
 cdn.up-timely.com
+cdn.uptimia.com
 cdn.usd.fan
 cdn.userreport.com
 cdn.v2ex.com
@@ -3068,6 +3073,7 @@ static.twitchcdn.net
 static.typingclub.com
 static.ui.com
 static.underhentai.net
+static.uptimia.com
 static.v2ex.com
 static.vinted.com
 static.vocadb.net

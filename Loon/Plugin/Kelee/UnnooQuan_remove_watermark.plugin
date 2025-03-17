@@ -11,10 +11,8 @@
 #!date=2024-11-28 00:00:00
 
 [Rewrite]
-# 移除知识星球水印 - 短文
 ^https:\/\/api\.zsxq\.com\/v2\/groups\/\d+$ response-body-json-replace resp_data.group.policies.enable_watermark false
 
-# 移除知识星球水印 - 长文
 ^https:\/\/articles\.zsxq\.com\/inline_form\/id_[a-z0-9]+\.html response-body-replace-regex name="group_enable_watermark"\x20value="true" name="group_enable_watermark"\x20value="false"
 
 [MitM]

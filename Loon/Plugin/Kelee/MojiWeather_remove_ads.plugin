@@ -12,13 +12,11 @@
 #!date=2024-11-28 00:00:00
 
 [Rule]
-# 京东
 DOMAIN,dsp-x.jd.com,REJECT
 DOMAIN,im-x.jd.com,REJECT
 DOMAIN,xlog.jd.com,REJECT
 DOMAIN,janapi.jd.com,REJECT
 
-# 腾讯
 DOMAIN,adsmind.gdtimg.com,REJECT
 DOMAIN,adsmind.ugdtimg.com,REJECT
 DOMAIN,c2.gdt.qq.com,REJECT
@@ -28,12 +26,10 @@ DOMAIN,info6.video.qq.com,REJECT
 DOMAIN,ios.bugly.qq.com,REJECT
 DOMAIN,pro.bugly.qq.com,REJECT
 DOMAIN,ios.video.mpush.qq.com,REJECT
-# DOMAIN,mazu.m.qq.com,REJECT // 误杀
 DOMAIN,mi.gdt.qq.com,REJECT
 DOMAIN,otheve.beacon.qq.com,REJECT
 DOMAIN,pgdt.gtimg.cn,REJECT
 DOMAIN,pgdt.ugdtimg.com,REJECT
-# DOMAIN,qzonestyle.gtimg.cn,REJECT // 误杀
 DOMAIN,qzs.gdtimg.com,REJECT
 DOMAIN,qzs.qq.com,REJECT
 DOMAIN,rmonitor.qq.com,REJECT
@@ -57,12 +53,10 @@ DOMAIN-SUFFIX,l.qq.com,REJECT
 DOMAIN-SUFFIX,ugdtimg.com,REJECT
 IP-CIDR,47.110.187.87/32,REJECT,no-resolve
 
-# 北京锐讯灵通科技有限公司
 DOMAIN,ztoken.uyunad.com,REJECT
 DOMAIN,aaid.uyunad.com,REJECT
 DOMAIN,yumao.puata.info,REJECT
 
-# 友盟
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
 DOMAIN,errnewlog.umeng.com,REJECT
@@ -76,7 +70,6 @@ DOMAIN,log.umtrack.com,REJECT
 DOMAIN,aaid.umeng.com,REJECT
 DOMAIN,log.umsns.com,REJECT
 
-# 个推
 DOMAIN,b-gtc.getui.net,REJECT
 DOMAIN,c-gtc.getui.net,REJECT
 DOMAIN,c-hzgt2.getui.com,REJECT
@@ -90,9 +83,7 @@ DOMAIN-SUFFIX,mobileservice.cn,REJECT
 DOMAIN-SUFFIX,getui.com,REJECT
 DOMAIN-SUFFIX,igexin.com,REJECT
 
-# 字节跳动广告
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
-# AND,((DOMAIN-KEYWORD,-sign-),(DOMAIN-SUFFIX,tiktokcdn.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ttam-),(DOMAIN-SUFFIX,ibyteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,ssdk-),(DOMAIN-SUFFIX,pangle.io)),REJECT
 AND,((DOMAIN-KEYWORD,pangolin),(DOMAIN-SUFFIX,sgsnssdk.com)),REJECT
@@ -101,7 +92,6 @@ AND,((DOMAIN-KEYWORD,v),(DOMAIN-KEYWORD,-be-pack.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-be-pack.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,s),(DOMAIN-KEYWORD,-fe-scm.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-ttcdn-tos.pstatp.com)),REJECT
-# AND,((DOMAIN-KEYWORD,p),(DOMAIN-KEYWORD,-be-pack-sign.pglstatp-toutiao.com)),REJECT // 被更精细的规则替代
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-fe-tos.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-static.i18n-pglstatp.com)),REJECT
 AND,((DOMAIN-KEYWORD,if),(DOMAIN-KEYWORD,-cdn-tos.bytescm.com)),REJECT //误杀
@@ -142,7 +132,6 @@ DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
 
-# 袤博 - 广告服务商
 DOMAIN,api-c.dutils.com,REJECT
 DOMAIN,api-d.dutils.com,REJECT
 DOMAIN,api-p0.yksdks.com,REJECT
@@ -156,7 +145,6 @@ DOMAIN,api.verify.mob.com,REJECT
 DOMAIN,log-verify.mob.com,REJECT
 DOMAIN,sdk.push.mob.com,REJECT
 
-# 阿里巴巴
 DOMAIN,ossgw.alicdn.com,REJECT
 DOMAIN,ems.youku.com,REJECT
 DOMAIN,hudong.alicdn.com,REJECT
@@ -168,22 +156,15 @@ DOMAIN,applog.uc.cn,REJECT
 AND,((DOMAIN-KEYWORD,adash),(DOMAIN-SUFFIX,ut.taobao.com)),REJECT
 
 [Rewrite]
-# 天气 - 天气横幅
 ^https:\/\/fcard\.api\.moji\.com\/flycard\/flyCard\? reject
 
-# 天气 - 墨迹看点
 ^https:\/\/vdo\.api\.moji\.com\/shortvideo\/card\/subscribe$ reject-dict
-# 天气 - 墨迹看点 - 生活圈
 ^https:\/\/vdo\.api\.moji\.com\/shortvideo\/video\/index_flow\? reject-dict
-# 天气 - 墨迹看点 - 达人推荐
 ^https:\/\/vdo\.api\.moji\.com\/shortvideo\/video_user\/hotGuyRcm\? reject-dict
-# 天气 - 墨迹看点 - 关注
 ^https:\/\/vdo\.api\.moji\.com\/shortvideo\/zone\/follow_src_zone\? reject-dict
 
-# 时景 - 关注 - 你可能感兴趣的人
 ^https:\/\/sns\.api\.moji\.com\/user\/dynamic_v9\/json\/someone_interest\? reject-dict
 
-# 我的页面
 ^https:\/\/mme\.api\.moji\.com\/json\/entrance\/list$ response-body-json-jq 'del(.entrance_region_res_list[] | select(.region_name == "皇冠区域" or .region_name == "banner区")) | .entrance_region_res_list[].entrance_res_list |= if . then map(select(.entrance_name | . != "墨迹钱包" and . != "墨圈")) else . end'
 
 [MitM]

@@ -12,9 +12,7 @@
 #!date=2024-11-28 00:00:00
 
 [Rewrite]
-# 开屏广告
 ^https:\/\/api1\.zongheng\.com\/iosapi\/system\/startup$ reject
-# 弹窗
 ^https:\/\/api2\.zongheng\.com\/api\/giftBag\/bindingBag$ reject-dict
 
 [MitM]

@@ -12,13 +12,10 @@
 #!date=2024-11-28 00:00:00
 
 [Rule]
-# 放行规则
 DOMAIN,ad.12306.cn,DIRECT
 
 [Script]
-# 移除12306开屏广告
 http-request ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/12306_remove_splashscreen_ads.js,requires-body=true,tag=移除12306开屏广告
-# 移除12306应用内广告
 http-request ^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/12306_remove_ads.js,tag=移除12306应用内广告
 
 [MitM]

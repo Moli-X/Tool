@@ -17,5 +17,4 @@ cookie=input,"",tag=Cookie,desc=这里需要输入Cookie的值
 cron=input,"0 1 * * *",tag=定时参数,desc=这里需要输入符合CRON表达式的参数
 
 [Script]
-# 定时签到
 cron {cron} script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FollowRSS_checkin.js,tag=Follow每日签到,timeout=120,argument=[{token},{cookie}]

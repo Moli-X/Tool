@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3332
+# 规则统计: 3338
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -12,6 +12,7 @@ HOST-KEYWORD,-files.gitbook.io,CDN
 HOST-KEYWORD,-res.cloudinary.com,CDN
 HOST-KEYWORD,-thumbs.pornhost.com,CDN
 HOST-KEYWORD,-thumbs.worldsex.com,CDN
+HOST-KEYWORD,99avcdn,CDN
 HOST-KEYWORD,cdn.adultempire.com,CDN
 HOST-KEYWORD,dsn.algolia.net,CDN
 HOST-KEYWORD,vod-adaptive.akamaized.net,CDN
@@ -66,11 +67,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-02-26T13:42:07.293Z
-# Last Updated: 2025-03-15T19:30:48.094Z
+# Last Updated: 2025-03-16T16:42:19.882Z
+# Last Updated: 2025-03-17T02:01:21.051Z
 # License: AGPL 3.0
-# Size: 3258
-# Size: 61
+# Size: 3263
+# Size: 62
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -85,6 +86,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .7mmtv.tv,CDN
 .91pic.org,CDN
 .98avcdn.xyz,CDN
+.99avcdn.com,CDN
+.99avcdn.net,CDN
+.99avcdn.org,CDN
 .9cache.com,CDN
 .a.storyblok.com,CDN
 .a1tb.com,CDN
@@ -1659,6 +1663,7 @@ cdn.tuk.dev,CDN
 cdn.unrealengine.com,CDN
 cdn.unwire.hk,CDN
 cdn.up-timely.com,CDN
+cdn.uptimia.com,CDN
 cdn.usd.fan,CDN
 cdn.userreport.com,CDN
 cdn.v2ex.com,CDN
@@ -3071,6 +3076,7 @@ static.twitchcdn.net,CDN
 static.typingclub.com,CDN
 static.ui.com,CDN
 static.underhentai.net,CDN
+static.uptimia.com,CDN
 static.v2ex.com,CDN
 static.vinted.com,CDN
 static.vocadb.net,CDN

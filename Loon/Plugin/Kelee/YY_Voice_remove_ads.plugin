@@ -12,18 +12,14 @@
 #!date=2025-03-06 00:38:1906
 
 [Rule]
-# 拦截HTTPDNS
 DOMAIN,yyapp-httpdns.gslb.yy.com,REJECT
 DOMAIN,union-httpdns.gslb.yy.com,REJECT
 DOMAIN,httpdns-v6.gslb.yy.com,REJECT
 
-# 开屏广告
 DOMAIN,splash.yy.com,REJECT
 
-# 广告下发
 DOMAIN,dsp-ad.yy.com,REJECT
 
-# 腾讯
 DOMAIN,adsmind.gdtimg.com,REJECT
 DOMAIN,adsmind.ugdtimg.com,REJECT
 DOMAIN,c2.gdt.qq.com,REJECT
@@ -32,12 +28,10 @@ DOMAIN,info4.video.qq.com,REJECT
 DOMAIN,info6.video.qq.com,REJECT
 DOMAIN,ios.bugly.qq.com,REJECT
 DOMAIN,ios.video.mpush.qq.com,REJECT
-# DOMAIN,mazu.m.qq.com,REJECT // 误杀
 DOMAIN,mi.gdt.qq.com,REJECT
 DOMAIN,otheve.beacon.qq.com,REJECT
 DOMAIN,pgdt.gtimg.cn,REJECT
 DOMAIN,pgdt.ugdtimg.com,REJECT
-# DOMAIN,qzonestyle.gtimg.cn,REJECT // 误杀
 DOMAIN,qzs.gdtimg.com,REJECT
 DOMAIN,qzs.qq.com,REJECT
 DOMAIN,rmonitor.qq.com,REJECT
@@ -60,7 +54,6 @@ DOMAIN-SUFFIX,l.qq.com,REJECT
 DOMAIN-SUFFIX,ugdtimg.com,REJECT
 IP-CIDR,47.110.187.87/32,REJECT,no-resolve
 
-# 袤博 - 广告服务商
 DOMAIN,api-c.dutils.com,REJECT
 DOMAIN,api-d.dutils.com,REJECT
 DOMAIN,api-p0.yksdks.com,REJECT
@@ -74,33 +67,25 @@ DOMAIN,api.verify.mob.com,REJECT
 DOMAIN,log-verify.mob.com,REJECT
 DOMAIN,sdk.push.mob.com,REJECT
 
-# 京东
 DOMAIN,dsp-x.jd.com,REJECT
 DOMAIN,xlog.jd.com,REJECT
 DOMAIN,janapi.jd.com,REJECT
 
-# 天目 - 广告服务商
 DOMAIN,sdk.tianmu.mobi,REJECT
 
-# 上海倍孜
 DOMAIN,sdk.beizi.biz,REJECT
 
 [Rewrite]
-# 首页 - 下拉进入直播间
 ^https:\/\/yyapp-fastnet\.yy\.com\/dispatch\? reject-dict
 
-# 首页 - 弹窗
 ^https:\/\/data\.3g\.yy\.com\/popup\/topLiveCardPopup\? reject-dict
 ^https:\/\/yyapp-act-entrance\.yy\.com\/entrance\/list\? reject-dict
 
-# 首页 - 横幅
 ^https:\/\/yyapp-idx\.yy\.com\/mobyy\/nav\/index\/idx\? response-body-json-jq '.data[].modules |= map(select(.name != "新版本滚动条" and .name != "通栏轮播" and .name != "新静默位"))'
 
-# 移除底栏按钮
 ^https:\/\/tab\.yy\.com\/tabs\? response-body-json-del data.tabsForSelect
 ^https:\/\/tab\.yy\.com\/tabs\? response-body-json-jq '.data.tabs |= map(select(.name != "直播" and .name != "短剧")) | {data: .data, message: .message, code: .code}'
 
-# 清理我的页面
 ^https:\/\/personal-center\.yy\.com\/personalCenter\/list\? response-body-json-jq '.data.modules |= map(select(.moduleName != "Banner轮播")) | .data.modules[] |= if .entrances != null then .entrances |= map(select(.name != "度小满借钱" and .name != "手机充值" and .name != "免流量")) else . end'
 
 [MitM]

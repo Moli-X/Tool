@@ -15,7 +15,6 @@
 real-ip=*-update.xoyocdn.com,xg-flow.xoyo.com
 
 [Rewrite]
-# 热点推送
 ^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt reject
 
 [MitM]

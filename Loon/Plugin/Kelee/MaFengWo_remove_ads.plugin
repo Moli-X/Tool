@@ -12,14 +12,11 @@
 #!date=2024-11-28 00:00:00
 
 [Rule]
-# 拦截HTTPDNS
 IP-CIDR,119.29.29.98/32,REJECT,no-resolve
 URL-REGEX,"^http:\/\/162\.14\.3\.250\/v4",REJECT
 
-# 首页 - 发现 - 横幅广告
 DOMAIN,advert.mafengwo.cn,REJECT
 
-# 袤博 - 广告服务商
 DOMAIN,api-c.dutils.com,REJECT
 DOMAIN,api-d.dutils.com,REJECT
 DOMAIN,api-p0.yksdks.com,REJECT
@@ -34,13 +31,10 @@ DOMAIN,log-verify.mob.com,REJECT
 DOMAIN,sdk.push.mob.com,REJECT
 
 [Rewrite]
-# 首页 - 信息流广告
 ^https:\/\/mapi\.mafengwo\.cn\/discovery\/get_index\/v7\? response-body-json-jq '.data.list |= map(select(.data.business_type != "gdcpm"))'
 
-# 商城 - 顶部横幅
 ^https:\/\/mapi\.mafengwo\.cn\/sales\/home\/get_header\/v3\? response-body-json-jq '.data.list[] |= ( .data |= del(.banners) )'
 
-# 我的 - 打卡成就勋章弹窗
 ^https:\/\/mapi\.mafengwo\.cn\/user\/growth\/get_growth_tip\/v1\? reject-dict
 
 [MitM]

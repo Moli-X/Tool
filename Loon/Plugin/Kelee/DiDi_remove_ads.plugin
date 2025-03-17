@@ -12,14 +12,11 @@
 #!date=2025-03-06 14:59:35
 
 [Rule]
-# 拦截HTTPDNS
 DOMAIN,hd.xiaojukeji.com,REJECT
 
-# 拦截广告下发
 DOMAIN,gwp.xiaojukeji.com,REJECT
 AND,((IP-ASN,45090,no-resolve),(DEST-PORT,25641),(PROTOCOL,TCP)),REJECT
 AND,((IP-ASN,63646,no-resolve),(DEST-PORT,25641),(PROTOCOL,TCP)),REJECT
-# DOMAIN,img-ys011.didistatic.com,REJECT
 
 [Rewrite]
 ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/getMulti\? reject-dict

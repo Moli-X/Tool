@@ -12,49 +12,34 @@
 #!date=2024-11-28 00:00:00
 
 [Rewrite]
-# 开屏广告
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzlogic\/getOpenScreen$ reject-dict
 
-# 首页 - 精简
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzlogic\/mycontinenthomepage\? response-body-json-del respData.topOpera.leftOpera respData.topOpera.rightOpera2 respData.topActBanner respData.bmArea
 
-# 首页 - 顶部下拉配置
 ^https:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo\? response-body-json-del respData.freeMarketTabLeadPop respData.topOperations
 
-# 首页 - 悬浮挂件、信息流推广
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzinfoshow\/getfeedflowinfo\? response-body-json-jq 'if .respData.userRed.campName == "OCD挂件" then del(.respData.userRed) else . end | .respData.infoData |= map(del(.rotateResource,.appRecommendResource,."cargoGroupCardV2"))'
 
-# 首页 - 信息流 - 猜你想搜
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzinfoshow\/getwindvanecardv2$ reject-dict
 
-# 首页 - 弹窗
 ^https:\/\/app\.zhuanzhuan\.com\/zzopen\/popwindow\/getallpopwin\? reject-dict
 
-# 首页 - 回收 - 弹窗
 ^https:\/\/app\.zhuanzhuan\.com\/zzopen\/zzbmlogic\/queryFrontPageWindowInfo\? reject-dict
 
-# 收藏 - 订阅 - 热门精选
 ^https:\/\/app\.zhuanzhuan\.com\/zzopen\/ptuserlogic\/subscribehotrecommend$ reject-dict
 
-# 收藏 - 收藏 - 精选推荐
 ^https:\/\/app\.zhuanzhuan\.com\/zzopen\/ptsimpleshow\/recommendbymyloveinfo\? mock-response-body data-type=json data="{"respCode":0,"errorMsg":"null","errMsg":""}" status-code=200
 
-# 收藏 - 足迹 - 精选推荐
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzinfoshow\/footprintsamerecommend\? mock-response-body data-type=json data="{"respCode":0,"errorMsg":"","errMsg":""}" status-code=200
 
-# 商品页面 - 评价 - 好货推荐
 ^https:\/\/app\.zhuanzhuan\.com\/zzopen\/ypmall\/listData$ reject-dict
 
-# 我的页面 - 发布闲置赚钱
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzusercenter\/myprofilevariouscards$ reject-dict
 
-# 我的页面 - 精选好货
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzinfoshow\/getchoicegoodsinfos\? mock-response-body data-type=json data="{"respCode":0,"respData":{},"errorMsg":"","errMsg":""}" status-code=200
 
-# 我的页面 - 更多工具
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmymoretools$ response-body-json-jq 'walk(if type == "object" and .name == "免流量特权" then empty else . end) | del(.respData.groupList[] | select(.groupName == "活动参与" or .groupName == "金融工具"))'
 
-# 精简我的页面
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmyprofilev3$ response-body-json-del respData.bmNewInfo
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmyprofilev3$ response-body-json-jq 'del(.respData.itemGroupList[].itemList[] | select(.name == "天天赚钱" or .name == "借钱")) | del(.respData.itemGroupList[] | select(.groupType == 15))'
 

@@ -12,7 +12,6 @@
 #!date=2024-11-28 00:00:00
 
 [Rule]
-# 腾讯
 DOMAIN,adsmind.gdtimg.com,REJECT
 DOMAIN,adsmind.ugdtimg.com,REJECT
 DOMAIN,c2.gdt.qq.com,REJECT
@@ -22,12 +21,10 @@ DOMAIN,info6.video.qq.com,REJECT
 DOMAIN,ios.bugly.qq.com,REJECT
 DOMAIN,pro.bugly.qq.com,REJECT
 DOMAIN,ios.video.mpush.qq.com,REJECT
-# DOMAIN,mazu.m.qq.com,REJECT // 误杀
 DOMAIN,mi.gdt.qq.com,REJECT
 DOMAIN,otheve.beacon.qq.com,REJECT
 DOMAIN,pgdt.gtimg.cn,REJECT
 DOMAIN,pgdt.ugdtimg.com,REJECT
-# DOMAIN,qzonestyle.gtimg.cn,REJECT // 误杀
 DOMAIN,qzs.gdtimg.com,REJECT
 DOMAIN,qzs.qq.com,REJECT
 DOMAIN,rmonitor.qq.com,REJECT
@@ -51,7 +48,6 @@ DOMAIN-SUFFIX,l.qq.com,REJECT
 DOMAIN-SUFFIX,ugdtimg.com,REJECT
 IP-CIDR,47.110.187.87/32,REJECT,no-resolve
 
-# 友盟
 DOMAIN,cnlogs.umeng.com,REJECT
 DOMAIN,errlog.umeng.com,REJECT
 DOMAIN,errnewlog.umeng.com,REJECT
@@ -65,7 +61,6 @@ DOMAIN,log.umtrack.com,REJECT
 DOMAIN,aaid.umeng.com,REJECT
 DOMAIN,log.umsns.com,REJECT
 
-# 个推
 DOMAIN,b-gtc.getui.net,REJECT
 DOMAIN,c-gtc.getui.net,REJECT
 DOMAIN,c-hzgt2.getui.com,REJECT
@@ -79,9 +74,7 @@ DOMAIN-SUFFIX,mobileservice.cn,REJECT
 DOMAIN-SUFFIX,getui.com,REJECT
 DOMAIN-SUFFIX,igexin.com,REJECT
 
-# 字节跳动广告
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
-# AND,((DOMAIN-KEYWORD,-sign-),(DOMAIN-SUFFIX,tiktokcdn.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ttam-),(DOMAIN-SUFFIX,ibyteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,ssdk-),(DOMAIN-SUFFIX,pangle.io)),REJECT
 AND,((DOMAIN-KEYWORD,pangolin),(DOMAIN-SUFFIX,sgsnssdk.com)),REJECT
@@ -90,7 +83,6 @@ AND,((DOMAIN-KEYWORD,v),(DOMAIN-KEYWORD,-be-pack.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-be-pack.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,s),(DOMAIN-KEYWORD,-fe-scm.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-ttcdn-tos.pstatp.com)),REJECT
-# AND,((DOMAIN-KEYWORD,p),(DOMAIN-KEYWORD,-be-pack-sign.pglstatp-toutiao.com)),REJECT // 被更精细的规则替代
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-fe-tos.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-static.i18n-pglstatp.com)),REJECT
 AND,((DOMAIN-KEYWORD,if),(DOMAIN-KEYWORD,-cdn-tos.bytescm.com)),REJECT //误杀
@@ -132,7 +124,6 @@ DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
 
 [Rewrite]
-# 推荐 - 信息流广告
 ^https:\/\/newapi\.meishi\.cc\/indexnew\/home_feeds response-body-json-jq 'if .data.items then .data.items |= map(select(.type | . != "101" and . != "12")) else . end'
 
 [MitM]

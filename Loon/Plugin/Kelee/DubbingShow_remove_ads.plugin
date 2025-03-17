@@ -12,39 +12,25 @@
 #!date=2024-11-28 00:00:00
 
 [Rule]
-# 腾讯优量汇 - 广告服务商
 DOMAIN,ios.bugly.qq.com,REJECT
 DOMAIN,sdk.e.qq.com,REJECT
 DOMAIN,us.l.qq.com,REJECT
 DOMAIN-SUFFIX,ugdtimg.com,REJECT
-# DOMAIN,adsmind.ugdtimg.com,REJECT
-# DOMAIN,pgdt.ugdtimg.com,REJECT
-# DOMAIN,qzs.gdtimg.com,REJECT
 
 DOMAIN-SUFFIX,gdt.qq.com,REJECT
-# DOMAIN,mi.gdt.qq.com,REJECT
-# DOMAIN,win.gdt.qq.com,REJECT
-# DOMAIN,v2.gdt.qq.com,REJECT
-# v.gdt.qq.com,REJECT
-# t.gdt.qq.com,REJECT
-# c2.gdt.qq.com,REJECT
 DOMAIN,tmeadcomm.y.qq.com,REJECT
 
 [Rewrite]
 首页 - 推荐 - 语聊横幅
 ^https:\/\/iosapi\.peiyinxiu\.com\/Api\/live\/LiveList response-body-json-del data.banners
 
-# 首页 - 推荐 - 语聊关注推荐
 ^https:\/\/iosapi\.peiyinxiu\.com\/api\/live\/FollowList response-body-json-del obj.data
 
-# 首页 - 关注推荐
 ^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Friend\/GetRecommendUsers response-body-json-del obj.data
 
-# 消息 - 群聊推荐
 ^https:\/\/iosapi\.peiyinxiu\.com\/api\/Union\/HomeData response-body-json-del obj.data
 
 [Script]
-# 首页 - 底部弹窗
 http-response ^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Film\/GetConfigValue script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/DubbingShow_remove_ads.js,requires-body=true,tag=移除首页底部弹窗
 
 [MitM]

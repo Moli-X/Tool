@@ -12,48 +12,35 @@
 #!date=2024-11-28 00:00:00
 
 [Rule]
-# 拦截广告下发
 AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch"),(USER-AGENT,"%E9%97%B2%E9%B1%BC*")),REJECT
 
 [Rewrite]
-# 首页顶部标签
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.home\.whale\.modulet\/ reject-dict
 
-# 商品详情为你推荐
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.item\.recommend\.list\/ reject-dict
 
-# 这些宝贝超好卖
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.item\.resell\.recommendorhotcate\/ reject-dict
 
-# 消息列表推广
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.playboy\.recommend\/ reject-dict
 
-# 我的页面
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.topic\.banner\/ reject-dict
 
-# 首页动画样式
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.list\/ reject-dict
 
-# 用闲鱼币买更便宜
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.idle\.coin\.nextfresh\/ reject-dict
 
-# 搜索列表
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.discover\/ reject-dict
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.shade\/ reject-dict
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.item\.search\.activate\/ reject-dict
 ^https:\/\/h5\.m\.goofish\.com\/wow\/moyu\/moyu-project\/[\w-]*search[\w-]*\/pages\/ reject-200
 
 [Script]
-# 我的页面
 http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.idle\.user\.page\.my\.adapter\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FleaMarket_remove_ads.js,requires-body=true,tag=移除我的页面推广
 
-# 首页信息流
 http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FleaMarket_remove_ads.js,requires-body=true,tag=移除首页信息流推广
 
-# 首页顶部标签
 http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FleaMarket_remove_ads.js,requires-body=true,tag=移除首页顶部标签推广
 
-# 搜索结果广告
 http-response ^https:\/\/g-(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FleaMarket_remove_ads.js,requires-body=true,tag=移除搜索结果广告
 
 [MitM]
