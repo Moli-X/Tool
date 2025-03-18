@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3349
+# 规则统计: 3352
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -69,9 +69,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-17T09:56:21.810Z
-# Last Updated: 2025-03-17T14:41:58.584Z
+# Last Updated: 2025-03-18T07:00:02.657Z
 # License: AGPL 3.0
-# Size: 3273
+# Size: 3276
 # Size: 63
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1358,6 +1358,7 @@ cacerts.digicert.com,CDN
 cache-05.filehippo.net,CDN
 cache.armorgames.com,CDN
 cache.hackedfreegames.com,CDN
+cassette.sphdigital.com.sg,CDN
 cc.boyfriendtv.com,CDN
 cdn-1.ggjav.com,CDN
 cdn-a.sonyentertainmentnetwork.com,CDN
@@ -1640,6 +1641,7 @@ cdn.sketch.com,CDN
 cdn.skymavis.com,CDN
 cdn.smooch.io,CDN
 cdn.softswiss.net,CDN
+cdn.sphlabs.com,CDN
 cdn.split.io,CDN
 cdn.sprig.com,CDN
 cdn.sso.mozilla.com,CDN
@@ -1781,6 +1783,7 @@ cdnstatic.w1mp.com,CDN
 cdnstatic.w4nkr.com,CDN
 cdntranscend.eventbrite.com,CDN
 cdnweb.devolutions.net,CDN
+cdp.sph.com.sg,CDN
 cds.connatix.com,CDN
 certificates.godaddy.com,CDN
 certona.gap.com,CDN
