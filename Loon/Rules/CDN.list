@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3342
+# 规则统计: 3349
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -69,9 +69,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-17T09:56:21.810Z
-# Last Updated: 2025-03-17T09:56:23.069Z
+# Last Updated: 2025-03-17T14:41:58.584Z
 # License: AGPL 3.0
-# Size: 3266
+# Size: 3273
 # Size: 63
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -673,6 +673,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .nineyu.com
 .ninjastream.to
 .nitrocdn.com
+.nodecdn.net
 .nodejs.org
 .nordcdn.com
 .notify.bugsnag.com
@@ -822,6 +823,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .sentry-cdn.com
 .sessions.bugsnag.com
 .settings.crashlytics.com
+.sfbassets.com
 .sfdcstatic.com
 .sftcdn.net
 .shgcdn.com
@@ -902,6 +904,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .surge.sh
 .surrit.com
 .susercontent.com
+.sway-cdn.com
 .swiftypecdn.com
 .sxccdn.com
 .szjal.cn
@@ -1008,6 +1011,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .wpcomstaging.com
 .wpmucdn.com
 .wsimg.com
+.wsrv.nl
 .www.s81c.com
 .xda-cdn.com
 .xdaimages.com
@@ -2045,6 +2049,7 @@ gt1.onlyhentaistuff.com
 gtranslate.io
 hawk.tomsguide.com
 headway-widget.net
+heatmap-external-a.strava.com
 hentaiworldtv.b-cdn.net
 hhhhhhome86227170.wordpress.com
 hips.hearstapps.com
@@ -2789,6 +2794,7 @@ sandpack-cdn-staging.blazingly.io
 sandpack-cdn-v2.codesandbox.io
 sbl.onfastspring.com
 scdn.clerk.com
+scdn.line-apps.com
 scontent.whatsapp.net
 screenshots.codesandbox.io
 screenshots.debian.net
@@ -3197,6 +3203,7 @@ todoist.b-cdn.net
 ton.local.twitter.com
 tools-static.wmflabs.org
 tools.refokus.com
+top1cdn.top1health.com
 topbar-static.piano.io
 torrindex.net
 touchgal-image.moyu.moe

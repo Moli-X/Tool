@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3342
+# 规则统计: 3349
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -69,9 +69,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-17T09:56:21.810Z
-# Last Updated: 2025-03-17T09:56:23.069Z
+# Last Updated: 2025-03-17T14:41:58.584Z
 # License: AGPL 3.0
-# Size: 3266
+# Size: 3273
 # Size: 63
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -673,6 +673,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .nineyu.com,CDN
 .ninjastream.to,CDN
 .nitrocdn.com,CDN
+.nodecdn.net,CDN
 .nodejs.org,CDN
 .nordcdn.com,CDN
 .notify.bugsnag.com,CDN
@@ -822,6 +823,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .sentry-cdn.com,CDN
 .sessions.bugsnag.com,CDN
 .settings.crashlytics.com,CDN
+.sfbassets.com,CDN
 .sfdcstatic.com,CDN
 .sftcdn.net,CDN
 .shgcdn.com,CDN
@@ -902,6 +904,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .surge.sh,CDN
 .surrit.com,CDN
 .susercontent.com,CDN
+.sway-cdn.com,CDN
 .swiftypecdn.com,CDN
 .sxccdn.com,CDN
 .szjal.cn,CDN
@@ -1008,6 +1011,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .wpcomstaging.com,CDN
 .wpmucdn.com,CDN
 .wsimg.com,CDN
+.wsrv.nl,CDN
 .www.s81c.com,CDN
 .xda-cdn.com,CDN
 .xdaimages.com,CDN
@@ -2045,6 +2049,7 @@ gt1.onlyhentaistuff.com,CDN
 gtranslate.io,CDN
 hawk.tomsguide.com,CDN
 headway-widget.net,CDN
+heatmap-external-a.strava.com,CDN
 hentaiworldtv.b-cdn.net,CDN
 hhhhhhome86227170.wordpress.com,CDN
 hips.hearstapps.com,CDN
@@ -2789,6 +2794,7 @@ sandpack-cdn-staging.blazingly.io,CDN
 sandpack-cdn-v2.codesandbox.io,CDN
 sbl.onfastspring.com,CDN
 scdn.clerk.com,CDN
+scdn.line-apps.com,CDN
 scontent.whatsapp.net,CDN
 screenshots.codesandbox.io,CDN
 screenshots.debian.net,CDN
@@ -3197,6 +3203,7 @@ todoist.b-cdn.net,CDN
 ton.local.twitter.com,CDN
 tools-static.wmflabs.org,CDN
 tools.refokus.com,CDN
+top1cdn.top1health.com,CDN
 topbar-static.piano.io,CDN
 torrindex.net,CDN
 touchgal-image.moyu.moe,CDN
