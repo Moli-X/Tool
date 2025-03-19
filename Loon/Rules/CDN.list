@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3352
+# 规则统计: 3356
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -69,9 +69,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-17T09:56:21.810Z
-# Last Updated: 2025-03-18T07:00:02.657Z
+# Last Updated: 2025-03-18T15:44:38.109Z
 # License: AGPL 3.0
-# Size: 3276
+# Size: 3280
 # Size: 63
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1473,6 +1473,7 @@ cdn.document360.io
 cdn.donmai.us
 cdn.dotaoutpost.com
 cdn.download.it
+cdn.drata.com
 cdn.dribbble.com
 cdn.dynamicyield.com
 cdn.ecomm.ui.com
@@ -1617,6 +1618,7 @@ cdn.redhat.com
 cdn.redoc.ly
 cdn.registerdisney.go.com
 cdn.reimu.net
+cdn.report-uri.com
 cdn.rex.contents.rakuten.co.jp
 cdn.rive.app
 cdn.robinpro.gallery
@@ -2152,6 +2154,7 @@ images.contentstack.io
 images.crunchbase.com
 images.design-editor.com
 images.dmca.com
+images.drata.com
 images.ecomm.microsoft.com
 images.emojiterra.com
 images.en.aptoide.com
@@ -2756,6 +2759,7 @@ s3-alpha.figma.com
 s3-figma-force-client-reloads-production.figma.com
 s3-figma-plugin-images-production-sig.figma.com
 s3-symbol-logo.tradingview.com
+s3-zen.mds.yandex.net
 s3.2233778.xyz
 s3.aaaaa.io
 s3.acg.mn
