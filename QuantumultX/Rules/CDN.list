@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3356
+# 规则统计: 3359
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -9,6 +9,7 @@ HOST,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe,CDN
 HOST-KEYWORD,-assets.worldsex.com,CDN
 HOST-KEYWORD,-cdn.eporner.com,CDN
 HOST-KEYWORD,-files.gitbook.io,CDN
+HOST-KEYWORD,-images.disco-api.com,CDN
 HOST-KEYWORD,-res.cloudinary.com,CDN
 HOST-KEYWORD,-thumbs.pornhost.com,CDN
 HOST-KEYWORD,-thumbs.worldsex.com,CDN
@@ -68,11 +69,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-03-17T09:56:21.810Z
-# Last Updated: 2025-03-18T15:44:38.109Z
+# Last Updated: 2025-03-19T12:22:08.574Z
+# Last Updated: 2025-03-19T12:22:10.026Z
 # License: AGPL 3.0
-# Size: 3280
-# Size: 63
+# Size: 3282
+# Size: 64
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -849,6 +850,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .smmallcdn.net,CDN
 .smushcdn.com,CDN
 .sndcdn.com,CDN
+.sndimg.com,CDN
 .sny.monosnap.com,CDN
 .snzypic.com,CDN
 .someonewhocares.org,CDN
@@ -3247,6 +3249,7 @@ upos-sz-mirrorcosbstar1.bilivideo.com,CDN
 us-js.zonka.co,CDN
 us.hamreus.com,CDN
 us01ccistatic.zoom.us,CDN
+us1-prod-images.disco-api.com,CDN
 use.fortawesome.com,CDN
 use.typekit.com,CDN
 use.typekit.net,CDN
