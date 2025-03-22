@@ -1,160 +1,330 @@
 /*
-脚本引用 https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
+脚本引用 https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
 */
-// 2024-09-18 16:09:49
-const consolelog = false;
-const url = $request.url;
-const $ = new Env("京东比价");
-var regex = /product\/graphext\/(\d+)\.html/;
-var match = url.match(regex);
-let shareUrl = "https://item.m.jd.com/product/" + match[1] + '.html'
-
-request_history_price(shareUrl).then(data => {
-    if (data) {
-        if (data.ok === 1 && data.single) {
-            const lower = lowerMsgs(data.single);
-            const detail = priceSummary(data);
-            const tip = data.PriceRemark.Tip + "(仅供参考)";
-            const message =  `${lower} ${tip}`;
-            $.msg(data.single.title, message, detail)
-        } else if (data.ok === 0 && data.msg.length > 0) {
-            const message = "慢慢买提示您：" + data?.msg;
-            $.msg('比价结果', '', message)
+// 2025-03-21 22:32:52
+const http = (op) => {
+    const { promise, resolve, reject } = Promise.withResolvers();
+  
+    this.$httpClient?.[op.method || "get"](op, (err, resp, data) =>
+      err ? reject(err) : resolve(JSON.parse(data))
+    );
+  
+    this.$task?.fetch(op).then(({ body }) => resolve(JSON.parse(body)), reject);
+  
+    return promise;
+  };
+  
+  const toDate = (t) => {
+    const d = new Date(t - new Date().getTimezoneOffset() * 60000);
+    return d.toISOString().split("T")[0];
+  };
+  
+  const parseNumber = (input) => {
+    const cleaned = `${input}`.replace(/[^0-9.-]/g, "");
+    return parseFloat(cleaned);
+  };
+  
+  const formatNumber = (num) => (Number.isInteger(num) ? num : num.toFixed(2));
+  
+  const comparePrices = (a, b) => {
+    const diff = formatNumber(parseNumber(a) - parseNumber(b));
+  
+    if (diff > 0) return `↑${diff}`;
+    if (diff < 0) return `↓${-diff}`;
+    return "●";
+  };
+  
+  
+  
+  const priceHistoryTable = (data) => {
+    if (data.err) return `<h2>${data.msg}</h2>`;
+  
+    const themeDetection = `
+      <script>
+        const setTimeBasedTheme = () => {
+          const currentHour = new Date().getHours();
+          const rootElement = document.documentElement;
+          
+          const isDarkTime = currentHour >= 19 || currentHour < 7;
+          
+          if (isDarkTime) {
+            rootElement.setAttribute('data-theme', 'dark');
+          } else {
+            rootElement.setAttribute('data-theme', 'light');
+          }
         }
-        $done({});
-    } else {
-        $done({});
-    }
-}).catch(() => {
-    $done({});
-});
-
-function lowerMsgs(single) {
-    const lower = single.lowerPriceyh
-    const timestamp = parseInt(single.lowerDateyh.match(/\d+/), 10);
-    const lowerDate = $.time('yyyy-MM-dd', timestamp);
-    const lowerMsg = "历史最低:¥" + String(lower) + `(${lowerDate}) `
-    return lowerMsg
-}
-
-function priceSummary(data) {
-    let summary = "";
-    let listPriceDetail = data.PriceRemark.ListPriceDetail.slice(0, 4);
-    listPriceDetail.forEach(item => {
-        if (item.Price) {
-          let priceValue = parseFloat(item.Price.substring(1));
-          item.Price = `¥${priceValue.toFixed(2)}`;
-        }
-      });
-    let list = listPriceDetail.concat(historySummary(data.single));
-    list.forEach(item => {
-        const nameMap = {
-            "双11价格": "双十一价格",
-            "618价格": "六一八价格"
-        };
-        item.Name = nameMap[item.Name] || item.Name;
-        Delimiter = '   ';
-        summary += `${item.Name}${Delimiter}${item.Price}${Delimiter}${item.Date}${Delimiter}${item.Difference}\n`;
+        document.addEventListener('DOMContentLoaded', setTimeBasedTheme);
+      </script>
+    `;
+  
+    const css = `<style>
+      /* Theme variables */
+      :root {
+        --background-color: #fff;
+        --text-color: #262626;
+        --secondary-text-color: #8c8c8c;
+        --header-bg: #fafafa;
+        --border-color: #f0f0f0;
+        --hover-bg: #fafafa;
+        --box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        --table-border: 2px solid #f5f5f5;
+      }
+      
+      /* Dark theme variables */
+      [data-theme="dark"] {
+        --background-color: #1f1f1f;
+        --text-color: #e6e6e6;
+        --secondary-text-color: #a6a6a6;
+        --header-bg: #2a2a2a;
+        --border-color: #303030;
+        --hover-bg: #2a2a2a;
+        --box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        --table-border: 2px solid #303030;
+      }
+  
+      .price-container {
+        width: 100%;
+        background: var(--background-color);
+        transition: background 0.3s ease;
+      }
+  
+      .price-table {
+        width: 92%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        font-size: 13px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: var(--box-shadow);
+        color: var(--text-color);
+        transition: color 0.3s ease, box-shadow 0.3s ease;
+      }
+  
+      .price-table th,
+      .price-table td {
+        padding: 14px 12px;
+        text-align: center;
+        border: 1px solid var(--border-color);
+        transition: border 0.3s ease;
+      }
+  
+      .table-header {
+        background: var(--header-bg);
+        border-bottom: var(--table-border);
+        text-align: left;
+        padding-left: 16px;
+        transition: background 0.3s ease, border-bottom 0.3s ease;
+      }
+  
+      .table-header h2 {
+        margin: 0;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--text-color);
+        transition: color 0.3s ease;
+      }
+  
+      .price-table th {
+        background: var(--header-bg);
+        color: var(--secondary-text-color);
+        font-weight: normal;
+        font-size: 13px;
+        transition: background 0.3s ease, color 0.3s ease;
+      }
+  
+      .price-table td {
+        vertical-align: middle;
+        transition: all 0.3s ease;
+      }
+  
+      .price-table tr:hover td {
+        background: var(--hover-bg);
+        transition: background 0.3s ease;
+      }
+  
+      .price-table td:first-child {
+        color: var(--text-color);
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+  
+      .price-table td:nth-child(2) {
+        color: var(--secondary-text-color);
+        transition: color 0.3s ease;
+      }
+  
+      .price-up td:nth-child(3),
+      .price-up td:last-child {
+        color: #ff4d4f;
+      }
+  
+      .price-down td:nth-child(3),
+      .price-down td:last-child {
+        color: #52c41a;
+      }
+  
+      .price-same td:nth-child(3),
+      .price-same td:last-child {
+        color: var(--secondary-text-color);
+        transition: color 0.3s ease;
+      }
+  
+      .price-table td:nth-child(3) {
+        font-weight: 500;
+        font-size: 14px;
+      }
+  
+      .price-table td:last-child {
+        font-size: 12px;
+      }
+    </style>`;
+  
+    let html = `
+      ${css}
+      ${themeDetection}
+      <div class="price-container">
+        <table class="price-table">
+          <tr>
+            <th colspan="4" class="table-header">
+              <h2>${data.groupName}</h2>
+            </th>
+          </tr>
+          <tr>
+            <th>类型</th>
+            <th>日期</th>
+            <th>价格</th>
+            <th>状态</th>
+          </tr>`;
+  
+    data.atts.forEach((row) => {
+      const statusClass = row.status?.includes("↑")
+        ? "price-up"
+        : row.status.includes("↓")
+        ? "price-down"
+        : "price-same";
+  
+      const td = Object.keys(row)
+        .map((item) => `<td>${row[item]}</td>`)
+        .join("");
+  
+      html += `
+        <tr class="${statusClass}">
+         ${td}
+        </tr>`;
     });
-    return summary;
-}
-
-function historySummary(single) {
-    let currentPrice, lowest30, lowest90, lowest180, lowest360;
-    const singleArray = JSON.parse(`[${single.jiagequshiyh}]`);
-    const singleFormatted = singleArray.map(item => ({
-        Date: item[0],
-        Price: item[1],
-        Name: item[2]
-    }));
-    let list = singleFormatted.reverse().slice(0, 360); // 取最近 360 天数据
-
-    const createLowest = (name, price, date) => ({
-        Name: name,
-        Price: `¥${price.toFixed(2)}`,
-        Date: date,
-        Difference: difference(currentPrice, price),
-        price
+  
+    html += `</table></div>`;
+    return html;
+  };
+  
+  
+  
+  const getJdData = (body) => {
+    const { jiagequshiyh } = body.single;
+    const jiageData = JSON.parse(`[${jiagequshiyh}]`).reverse().slice(0, 360);
+  
+    const { result } = jiageData.reduce(
+      (acc, cur, index, arr) => {
+        return acc
+          .getMinNumber(cur)
+          .getToday(index)
+          .getLowestPrice(index, arr)
+          .getHolidays(cur)
+          .getHistPrices(++index);
+      },
+      {
+        map: new Map([
+          ["当前到手价", []],
+          ["历史最低价", []],
+          ["六一八价格", []],
+          ["双十一价格", []],
+        ]),
+  
+        price: Number.MAX_SAFE_INTEGER,
+        todayPrice: null,
+        time: null,
+  
+        get result() {
+          return [...this.map].flatMap(([name, [date, price, status]]) =>
+            date ? [{ name, date, price, status }] : []
+          );
+        },
+  
+        getToday(i) {
+          if (i === 0) {
+            this.todayPrice = this.price;
+            this.storePriceInfo("当前到手价");
+          }
+  
+          return this;
+        },
+        getLowestPrice(i, arr) {
+          if (i === arr.length - 1) this.storePriceInfo("历史最低价");
+  
+          return this;
+        },
+        getHolidays([time, price]) {
+          const holidays = ["11-11", "06-18"];
+          const date = toDate(time);
+          const holiday = holidays.find((h) => date.endsWith(h));
+          if (holiday) {
+            const title = holiday === "11-11" ? "双十一价格" : "六一八价格";
+            this.storePriceInfo(`${title}`, date, `¥${price.toFixed(2)}`);
+          }
+  
+          return this;
+        },
+        getHistPrices(i) {
+          if ([30, 60, 90, 180, 360].includes(i))
+            this.storePriceInfo(`${i}天最低`);
+  
+          return this;
+        },
+        getMinNumber([time, price]) {
+          if (price < parseNumber(this.price)) {
+            this.price = `¥${price.toFixed(2)}`;
+            this.time = toDate(time);
+          }
+  
+          return this;
+        },
+        storePriceInfo(key, date = this.time, price = this.price) {
+          const value = [date, price, comparePrices(this.todayPrice, price)];
+          this.map.set(key, value);
+        },
+      }
+    );
+  
+    return result;
+  };
+  
+  const getPriceData = async () => {
+    const body = await http({
+      method: "post",
+      url: "https://apapia-history.manmanbuy.com/ChromeWidgetServices/WidgetServices.ashx",
+      headers: {
+        "user-agent": "CFNetwork/3826.500.101 Darwin/24.4.0",
+      },
+      body: `methodName=getHistoryTrend&p_url=https://item.m.jd.com/product/${$request.url.match(
+        /\d+/
+      )}.html"`,
     });
-    list.forEach((item, index) => {
-        const date = $.time('yyyy-MM-dd', item.Date)
-        let price = item.Price;
-        if (index === 0) {
-            currentPrice = price;
-            lowest30 = createLowest("三十天最低", price, date);
-            lowest90 = createLowest("九十天最低", price, date);
-            lowest180 = createLowest("一百八最低", price, date);
-            lowest360 = createLowest("三百六最低", price, date);
-        }
-        const updateLowest = (lowest, days) => {
-            if (index < days && price < lowest.price) {
-                lowest.price = price;
-                lowest.Price = `¥${price.toFixed(2)}`;
-                lowest.Date = date;
-                lowest.Difference = difference(currentPrice, price);
-            }
-        };
-        updateLowest(lowest30, 30);
-        updateLowest(lowest90, 90);
-        updateLowest(lowest180, 180);
-        updateLowest(lowest360, 360);
-    });
-    return [lowest30, lowest90, lowest180, lowest360];
-}
-
-function difference(currentPrice, price, precision = 2) {
-    const diff = (parseFloat(currentPrice) - parseFloat(price)).toFixed(precision);
-    return diff == 0 ? "-" : `${diff > 0 ? "↑" : "↓"}${Math.abs(diff)}`;
-}
-
-
-function request_history_price(share_url) {
-    return new Promise((resolve, reject) => {
-        const options = {
-            url: "https://apapia-history.manmanbuy.com/ChromeWidgetServices/WidgetServices.ashx",
-            headers: {
-                "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
-                "User-Agent": "iPhone/CFNetwork/Darwin"
-            },
-            body: 'methodName=getHistoryTrend&p_url=' + encodeURIComponent(share_url)
-        };
-        $.post(options, (error, response, data) => {
-            if (error) {
-                consolelog && console.log("Error:\n" + error);
-                reject(error);
-            } else {
-                consolelog && console.log("Data:\n" + data);
-                resolve(JSON.parse(data));
-            }
-        });
-    });
-}
-
-// function adword_obj() {
-//     return {
-//         "bId": "eCustom_flo_199",
-//         "cf": {
-//             "bgc": "#ffffff",
-//             "spl": "empty"
-//         },
-//         "data": {
-//             "ad": {
-//                 "adword": "",
-//                 "textColor": "#8C8C8C",
-//                 "color": "#f23030",
-//                 "newALContent": true,
-//                 "hasFold": true,
-//                 "adLinkContent": "",
-//                 "adLink": ""
-//             }
-//         },
-//         "mId": "bpAdword",
-//         "refId": "eAdword_0000000028",
-//         "sortId": 13,
-//         "overHeight": 0,
-//         "overlayToViewHeight": 0,
-//         "taroDegrade": false
-//     }
-// }
-
-function Env(t,e){class s{constructor(t){this.env=t}send(t,e="GET"){t="string"==typeof t?{url:t}:t;let s=this.get;"POST"===e&&(s=this.post);const i=new Promise(((e,i)=>{s.call(this,t,((t,s,o)=>{t?i(t):e(s)}))}));return t.timeout?((t,e=1e3)=>Promise.race([t,new Promise(((t,s)=>{setTimeout((()=>{s(new Error("请求超时"))}),e)}))]))(i,t.timeout):i}get(t){return this.send.call(this.env,t)}post(t){return this.send.call(this.env,t,"POST")}}return new class{constructor(t,e){this.logLevels={debug:0,info:1,warn:2,error:3},this.logLevelPrefixs={debug:"[DEBUG] ",info:"[INFO] ",warn:"[WARN] ",error:"[ERROR] "},this.logLevel="info",this.name=t,this.http=new s(this),this.data=null,this.dataFile="box.dat",this.logs=[],this.isMute=!1,this.isNeedRewrite=!1,this.logSeparator="\n",this.encoding="utf-8",this.startTime=(new Date).getTime(),Object.assign(this,e),this.log("",`🔔${this.name}, 开始!`)}getEnv(){return"undefined"!=typeof $environment&&$environment["surge-version"]?"Surge":"undefined"!=typeof $environment&&$environment["stash-version"]?"Stash":"undefined"!=typeof module&&module.exports?"Node.js":"undefined"!=typeof $task?"Quantumult X":"undefined"!=typeof $loon?"Loon":"undefined"!=typeof $rocket?"Shadowrocket":void 0}isNode(){return"Node.js"===this.getEnv()}isQuanX(){return"Quantumult X"===this.getEnv()}isSurge(){return"Surge"===this.getEnv()}isLoon(){return"Loon"===this.getEnv()}isShadowrocket(){return"Shadowrocket"===this.getEnv()}isStash(){return"Stash"===this.getEnv()}toObj(t,e=null){try{return JSON.parse(t)}catch{return e}}toStr(t,e=null,...s){try{return JSON.stringify(t,...s)}catch{return e}}getjson(t,e){let s=e;if(this.getdata(t))try{s=JSON.parse(this.getdata(t))}catch{}return s}setjson(t,e){try{return this.setdata(JSON.stringify(t),e)}catch{return!1}}getScript(t){return new Promise((e=>{this.get({url:t},((t,s,i)=>e(i)))}))}runScript(t,e){return new Promise((s=>{let i=this.getdata("@chavy_boxjs_userCfgs.httpapi");i=i?i.replace(/\n/g,"").trim():i;let o=this.getdata("@chavy_boxjs_userCfgs.httpapi_timeout");o=o?1*o:20,o=e&&e.timeout?e.timeout:o;const[r,a]=i.split("@"),n={url:`http://${a}/v1/scripting/evaluate`,body:{script_text:t,mock_type:"cron",timeout:o},headers:{"X-Key":r,Accept:"*/*"},policy:"DIRECT",timeout:o};this.post(n,((t,e,i)=>s(i)))})).catch((t=>this.logErr(t)))}loaddata(){if(!this.isNode())return{};{this.fs=this.fs?this.fs:require("fs"),this.path=this.path?this.path:require("path");const t=this.path.resolve(this.dataFile),e=this.path.resolve(process.cwd(),this.dataFile),s=this.fs.existsSync(t),i=!s&&this.fs.existsSync(e);if(!s&&!i)return{};{const i=s?t:e;try{return JSON.parse(this.fs.readFileSync(i))}catch(t){return{}}}}}writedata(){if(this.isNode()){this.fs=this.fs?this.fs:require("fs"),this.path=this.path?this.path:require("path");const t=this.path.resolve(this.dataFile),e=this.path.resolve(process.cwd(),this.dataFile),s=this.fs.existsSync(t),i=!s&&this.fs.existsSync(e),o=JSON.stringify(this.data);s?this.fs.writeFileSync(t,o):i?this.fs.writeFileSync(e,o):this.fs.writeFileSync(t,o)}}lodash_get(t,e,s){const i=e.replace(/\[(\d+)\]/g,".$1").split(".");let o=t;for(const t of i)if(o=Object(o)[t],void 0===o)return s;return o}lodash_set(t,e,s){return Object(t)!==t||(Array.isArray(e)||(e=e.toString().match(/[^.[\]]+/g)||[]),e.slice(0,-1).reduce(((t,s,i)=>Object(t[s])===t[s]?t[s]:t[s]=Math.abs(e[i+1])>>0==+e[i+1]?[]:{}),t)[e[e.length-1]]=s),t}getdata(t){let e=this.getval(t);if(/^@/.test(t)){const[,s,i]=/^@(.*?)\.(.*?)$/.exec(t),o=s?this.getval(s):"";if(o)try{const t=JSON.parse(o);e=t?this.lodash_get(t,i,""):e}catch(t){e=""}}return e}setdata(t,e){let s=!1;if(/^@/.test(e)){const[,i,o]=/^@(.*?)\.(.*?)$/.exec(e),r=this.getval(i),a=i?"null"===r?null:r||"{}":"{}";try{const e=JSON.parse(a);this.lodash_set(e,o,t),s=this.setval(JSON.stringify(e),i)}catch(e){const r={};this.lodash_set(r,o,t),s=this.setval(JSON.stringify(r),i)}}else s=this.setval(t,e);return s}getval(t){switch(this.getEnv()){case"Surge":case"Loon":case"Stash":case"Shadowrocket":return $persistentStore.read(t);case"Quantumult X":return $prefs.valueForKey(t);case"Node.js":return this.data=this.loaddata(),this.data[t];default:return this.data&&this.data[t]||null}}setval(t,e){switch(this.getEnv()){case"Surge":case"Loon":case"Stash":case"Shadowrocket":return $persistentStore.write(t,e);case"Quantumult X":return $prefs.setValueForKey(t,e);case"Node.js":return this.data=this.loaddata(),this.data[e]=t,this.writedata(),!0;default:return this.data&&this.data[e]||null}}initGotEnv(t){this.got=this.got?this.got:require("got"),this.cktough=this.cktough?this.cktough:require("tough-cookie"),this.ckjar=this.ckjar?this.ckjar:new this.cktough.CookieJar,t&&(t.headers=t.headers?t.headers:{},t&&(t.headers=t.headers?t.headers:{},void 0===t.headers.cookie&&void 0===t.headers.Cookie&&void 0===t.cookieJar&&(t.cookieJar=this.ckjar)))}get(t,e=(()=>{})){switch(t.headers&&(delete t.headers["Content-Type"],delete t.headers["Content-Length"],delete t.headers["content-type"],delete t.headers["content-length"]),t.params&&(t.url+="?"+this.queryStr(t.params)),void 0===t.followRedirect||t.followRedirect||((this.isSurge()||this.isLoon())&&(t["auto-redirect"]=!1),this.isQuanX()&&(t.opts?t.opts.redirection=!1:t.opts={redirection:!1})),this.getEnv()){case"Surge":case"Loon":case"Stash":case"Shadowrocket":default:this.isSurge()&&this.isNeedRewrite&&(t.headers=t.headers||{},Object.assign(t.headers,{"X-Surge-Skip-Scripting":!1})),$httpClient.get(t,((t,s,i)=>{!t&&s&&(s.body=i,s.statusCode=s.status?s.status:s.statusCode,s.status=s.statusCode),e(t,s,i)}));break;case"Quantumult X":this.isNeedRewrite&&(t.opts=t.opts||{},Object.assign(t.opts,{hints:!1})),$task.fetch(t).then((t=>{const{statusCode:s,statusCode:i,headers:o,body:r,bodyBytes:a}=t;e(null,{status:s,statusCode:i,headers:o,body:r,bodyBytes:a},r,a)}),(t=>e(t&&t.error||"UndefinedError")));break;case"Node.js":let s=require("iconv-lite");this.initGotEnv(t),this.got(t).on("redirect",((t,e)=>{try{if(t.headers["set-cookie"]){const s=t.headers["set-cookie"].map(this.cktough.Cookie.parse).toString();s&&this.ckjar.setCookieSync(s,null),e.cookieJar=this.ckjar}}catch(t){this.logErr(t)}})).then((t=>{const{statusCode:i,statusCode:o,headers:r,rawBody:a}=t,n=s.decode(a,this.encoding);e(null,{status:i,statusCode:o,headers:r,rawBody:a,body:n},n)}),(t=>{const{message:i,response:o}=t;e(i,o,o&&s.decode(o.rawBody,this.encoding))}));break}}post(t,e=(()=>{})){const s=t.method?t.method.toLocaleLowerCase():"post";switch(t.body&&t.headers&&!t.headers["Content-Type"]&&!t.headers["content-type"]&&(t.headers["content-type"]="application/x-www-form-urlencoded"),t.headers&&(delete t.headers["Content-Length"],delete t.headers["content-length"]),void 0===t.followRedirect||t.followRedirect||((this.isSurge()||this.isLoon())&&(t["auto-redirect"]=!1),this.isQuanX()&&(t.opts?t.opts.redirection=!1:t.opts={redirection:!1})),this.getEnv()){case"Surge":case"Loon":case"Stash":case"Shadowrocket":default:this.isSurge()&&this.isNeedRewrite&&(t.headers=t.headers||{},Object.assign(t.headers,{"X-Surge-Skip-Scripting":!1})),$httpClient[s](t,((t,s,i)=>{!t&&s&&(s.body=i,s.statusCode=s.status?s.status:s.statusCode,s.status=s.statusCode),e(t,s,i)}));break;case"Quantumult X":t.method=s,this.isNeedRewrite&&(t.opts=t.opts||{},Object.assign(t.opts,{hints:!1})),$task.fetch(t).then((t=>{const{statusCode:s,statusCode:i,headers:o,body:r,bodyBytes:a}=t;e(null,{status:s,statusCode:i,headers:o,body:r,bodyBytes:a},r,a)}),(t=>e(t&&t.error||"UndefinedError")));break;case"Node.js":let i=require("iconv-lite");this.initGotEnv(t);const{url:o,...r}=t;this.got[s](o,r).then((t=>{const{statusCode:s,statusCode:o,headers:r,rawBody:a}=t,n=i.decode(a,this.encoding);e(null,{status:s,statusCode:o,headers:r,rawBody:a,body:n},n)}),(t=>{const{message:s,response:o}=t;e(s,o,o&&i.decode(o.rawBody,this.encoding))}));break}}time(t,e=null){const s=e?new Date(e):new Date;let i={"M+":s.getMonth()+1,"d+":s.getDate(),"H+":s.getHours(),"m+":s.getMinutes(),"s+":s.getSeconds(),"q+":Math.floor((s.getMonth()+3)/3),S:s.getMilliseconds()};/(y+)/.test(t)&&(t=t.replace(RegExp.$1,(s.getFullYear()+"").substr(4-RegExp.$1.length)));for(let e in i)new RegExp("("+e+")").test(t)&&(t=t.replace(RegExp.$1,1==RegExp.$1.length?i[e]:("00"+i[e]).substr((""+i[e]).length)));return t}queryStr(t){let e="";for(const s in t){let i=t[s];null!=i&&""!==i&&("object"==typeof i&&(i=JSON.stringify(i)),e+=`${s}=${i}&`)}return e=e.substring(0,e.length-1),e}msg(e=t,s="",i="",o={}){const r=t=>{const{$open:e,$copy:s,$media:i,$mediaMime:o}=t;switch(typeof t){case void 0:return t;case"string":switch(this.getEnv()){case"Surge":case"Stash":default:return{url:t};case"Loon":case"Shadowrocket":return t;case"Quantumult X":return{"open-url":t};case"Node.js":return}case"object":switch(this.getEnv()){case"Surge":case"Stash":case"Shadowrocket":default:{const r={};let a=t.openUrl||t.url||t["open-url"]||e;a&&Object.assign(r,{action:"open-url",url:a});let n=t["update-pasteboard"]||t.updatePasteboard||s;if(n&&Object.assign(r,{action:"clipboard",text:n}),i){let t,e,s;if(i.startsWith("http"))t=i;else if(i.startsWith("data:")){const[t]=i.split(";"),[,o]=i.split(",");e=o,s=t.replace("data:","")}else{e=i,s=(t=>{const e={JVBERi0:"application/pdf",R0lGODdh:"image/gif",R0lGODlh:"image/gif",iVBORw0KGgo:"image/png","/9j/":"image/jpg"};for(var s in e)if(0===t.indexOf(s))return e[s];return null})(i)}Object.assign(r,{"media-url":t,"media-base64":e,"media-base64-mime":o??s})}return Object.assign(r,{"auto-dismiss":t["auto-dismiss"],sound:t.sound}),r}case"Loon":{const s={};let o=t.openUrl||t.url||t["open-url"]||e;o&&Object.assign(s,{openUrl:o});let r=t.mediaUrl||t["media-url"];return i?.startsWith("http")&&(r=i),r&&Object.assign(s,{mediaUrl:r}),console.log(JSON.stringify(s)),s}case"Quantumult X":{const o={};let r=t["open-url"]||t.url||t.openUrl||e;r&&Object.assign(o,{"open-url":r});let a=t["media-url"]||t.mediaUrl;i?.startsWith("http")&&(a=i),a&&Object.assign(o,{"media-url":a});let n=t["update-pasteboard"]||t.updatePasteboard||s;return n&&Object.assign(o,{"update-pasteboard":n}),console.log(JSON.stringify(o)),o}case"Node.js":return}default:return}};if(!this.isMute)switch(this.getEnv()){case"Surge":case"Loon":case"Stash":case"Shadowrocket":default:$notification.post(e,s,i,r(o));break;case"Quantumult X":$notify(e,s,i,r(o));break;case"Node.js":break}if(!this.isMuteLog){let t=["","==============📣系统通知📣=============="];t.push(e),s&&t.push(s),i&&t.push(i),console.log(t.join("\n")),this.logs=this.logs.concat(t)}}debug(...t){this.logLevels[this.logLevel]<=this.logLevels.debug&&(t.length>0&&(this.logs=[...this.logs,...t]),console.log(`${this.logLevelPrefixs.debug}${t.map((t=>t??String(t))).join(this.logSeparator)}`))}info(...t){this.logLevels[this.logLevel]<=this.logLevels.info&&(t.length>0&&(this.logs=[...this.logs,...t]),console.log(`${this.logLevelPrefixs.info}${t.map((t=>t??String(t))).join(this.logSeparator)}`))}warn(...t){this.logLevels[this.logLevel]<=this.logLevels.warn&&(t.length>0&&(this.logs=[...this.logs,...t]),console.log(`${this.logLevelPrefixs.warn}${t.map((t=>t??String(t))).join(this.logSeparator)}`))}error(...t){this.logLevels[this.logLevel]<=this.logLevels.error&&(t.length>0&&(this.logs=[...this.logs,...t]),console.log(`${this.logLevelPrefixs.error}${t.map((t=>t??String(t))).join(this.logSeparator)}`))}log(...t){t.length>0&&(this.logs=[...this.logs,...t]),console.log(t.map((t=>t??String(t))).join(this.logSeparator))}logErr(t,e){switch(this.getEnv()){case"Surge":case"Loon":case"Stash":case"Shadowrocket":case"Quantumult X":default:this.log("",`❗️${this.name}, 错误!`,e,t);break;case"Node.js":this.log("",`❗️${this.name}, 错误!`,e,void 0!==t.message?t.message:t,t.stack);break}}wait(t){return new Promise((e=>setTimeout(e,t)))}done(t={}){const e=((new Date).getTime()-this.startTime)/1e3;switch(this.log("",`🔔${this.name}, 结束! 🕛 ${e} 秒`),this.log(),this.getEnv()){case"Surge":case"Loon":case"Stash":case"Shadowrocket":case"Quantumult X":default:$done(t);break;case"Node.js":process.exit(1)}}}(t,e)}
+  
+    if (body.err) return body;
+  
+    return {
+      groupName: "历史比价",
+      atts: getJdData(body),
+    };
+  };
+  
+  getPriceData().then((priceData) => {
+    let { body, headers } = $response;
+    const tableHTML = priceHistoryTable(priceData);
+  
+    body = body.replace("<body>", `<body>${tableHTML}`);
+  
+    $done({ body, headers });
+  });
+  
