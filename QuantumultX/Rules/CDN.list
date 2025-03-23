@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3361
+# 规则统计: 3369
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -70,9 +70,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-19T12:22:08.574Z
-# Last Updated: 2025-03-21T13:43:55.751Z
+# Last Updated: 2025-03-22T16:30:06.372Z
 # License: AGPL 3.0
-# Size: 3284
+# Size: 3292
 # Size: 64
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -201,6 +201,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .cdn.discordapp.com,CDN
 .cdn.getfeedback.com,CDN
 .cdn.greenhouse.io,CDN
+.cdn.icann.org,CDN
 .cdn.ifixit.com,CDN
 .cdn.imgeng.in,CDN
 .cdn.imghaste.com,CDN
@@ -340,6 +341,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .esm.run,CDN
 .esm.sh,CDN
 .espncdn.com,CDN
+.etsystatic.com,CDN
 .eu-browse.startpage.com,CDN
 .eu-proxy.startpage.com,CDN
 .events.backtrace.io,CDN
@@ -797,6 +799,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .repo.anaconda.com,CDN
 .res.office365.com,CDN
 .rescript-lang.org,CDN
+.rlcdn.com,CDN
 .rocketcdn.me,CDN
 .rollupjs.org,CDN
 .roseimgs.com,CDN
@@ -1070,6 +1073,7 @@ ajax.cloudflare.com,CDN
 ajax.googleapis.com,CDN
 ajax.microsoft.com,CDN
 ak.sail-horizon.com,CDN
+akamai-assets.squarespace.com,CDN
 alt.idgesg.net,CDN
 amp.azure.net,CDN
 analytics.twitter.com,CDN
@@ -1509,6 +1513,7 @@ cdn.glitch.com,CDN
 cdn.glitch.global,CDN
 cdn.glitch.me,CDN
 cdn.gofundme.com,CDN
+cdn.googlesource.com,CDN
 cdn.graph.office.net,CDN
 cdn.growthbook.io,CDN
 cdn.hackernoon.com,CDN
@@ -1821,6 +1826,8 @@ cms-assets.nodecraft.com,CDN
 cms-assets.webediamovies.pro,CDN
 cms-assets.xboxservices.com,CDN
 cms-cdn.now.gg,CDN
+cms.recordedfuture.com,CDN
+cms.therecord.media,CDN
 cms.typenetwork.com,CDN
 code.benco.io,CDN
 code.highcharts.com,CDN
@@ -2863,6 +2870,7 @@ snyk-widget.herokuapp.com,CDN
 social-cdn.vivaldi.net,CDN
 solve-widget.forethought.ai,CDN
 source.domaintools.com,CDN
+sourcemaps.squarespace.net,CDN
 sourcepoint.theguardian.com,CDN
 sp-spiegel-de.spiegel.de,CDN
 sp.nba.com,CDN

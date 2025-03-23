@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3361
+# 规则统计: 3369
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -70,9 +70,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-19T12:22:08.574Z
-# Last Updated: 2025-03-21T13:43:55.751Z
+# Last Updated: 2025-03-22T16:30:06.372Z
 # License: AGPL 3.0
-# Size: 3284
+# Size: 3292
 # Size: 64
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -201,6 +201,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .cdn.discordapp.com
 .cdn.getfeedback.com
 .cdn.greenhouse.io
+.cdn.icann.org
 .cdn.ifixit.com
 .cdn.imgeng.in
 .cdn.imghaste.com
@@ -340,6 +341,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .esm.run
 .esm.sh
 .espncdn.com
+.etsystatic.com
 .eu-browse.startpage.com
 .eu-proxy.startpage.com
 .events.backtrace.io
@@ -797,6 +799,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .repo.anaconda.com
 .res.office365.com
 .rescript-lang.org
+.rlcdn.com
 .rocketcdn.me
 .rollupjs.org
 .roseimgs.com
@@ -1070,6 +1073,7 @@ ajax.cloudflare.com
 ajax.googleapis.com
 ajax.microsoft.com
 ak.sail-horizon.com
+akamai-assets.squarespace.com
 alt.idgesg.net
 amp.azure.net
 analytics.twitter.com
@@ -1509,6 +1513,7 @@ cdn.glitch.com
 cdn.glitch.global
 cdn.glitch.me
 cdn.gofundme.com
+cdn.googlesource.com
 cdn.graph.office.net
 cdn.growthbook.io
 cdn.hackernoon.com
@@ -1821,6 +1826,8 @@ cms-assets.nodecraft.com
 cms-assets.webediamovies.pro
 cms-assets.xboxservices.com
 cms-cdn.now.gg
+cms.recordedfuture.com
+cms.therecord.media
 cms.typenetwork.com
 code.benco.io
 code.highcharts.com
@@ -2863,6 +2870,7 @@ snyk-widget.herokuapp.com
 social-cdn.vivaldi.net
 solve-widget.forethought.ai
 source.domaintools.com
+sourcemaps.squarespace.net
 sourcepoint.theguardian.com
 sp-spiegel-de.spiegel.de
 sp.nba.com
