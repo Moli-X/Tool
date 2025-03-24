@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 696
+# 规则统计: 697
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 687
-#Update content: 添加读取原始规则的合法性 有效性校验以及修复之前的部分错误，对dns层拦截的插件添加ipv6屏蔽兼容
-#Update time: 2025-03-23 00:17:14 UTC+8
+#Total lines: 688
+#Update content: Update domain.txt
+#Update time: 2025-03-24 11:36:53 UTC+8
 #Version: 1.5.9-release
 .1010pic.com,Ads_AWAvenue
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -200,6 +200,7 @@
 .audid-api.taobao.com,Ads_AWAvenue
 .audid.umeng.com,Ads_AWAvenue
 .b1-data.ads.heytapmobi.com,Ads_AWAvenue
+.badjs.weixinbridge.com,Ads_AWAvenue
 .baichuan-sdk.alicdn.com,Ads_AWAvenue
 .baichuan-sdk.taobao.com,Ads_AWAvenue
 .bdad.123pan.cn,Ads_AWAvenue
@@ -233,7 +234,6 @@
 .ccc-x.jd.com,Ads_AWAvenue
 .ccs.umeng.com,Ads_AWAvenue
 .cctv.adsunion.com,Ads_AWAvenue
-.cdn-ad.wtzw.com,Ads_AWAvenue
 .cdn-ads.oss-cn-shanghai.aliyuncs.com,Ads_AWAvenue
 .cdn-plugin-sync-upgrade-juui.hismarttv.com,Ads_AWAvenue
 .cdn.aiclk.com,Ads_AWAvenue
@@ -335,6 +335,7 @@
 .hmma.baidu.com,Ads_AWAvenue
 .hotupgrade.hpplay.cn,Ads_AWAvenue
 .houyi.kkmh.com,Ads_AWAvenue
+.hpplay.cdn.cibn.cc,Ads_AWAvenue
 .httpdns.bcelive.com,Ads_AWAvenue
 .httpdns.ocloud.oppomobile.com,Ads_AWAvenue
 .hugelog.fcbox.com,Ads_AWAvenue
