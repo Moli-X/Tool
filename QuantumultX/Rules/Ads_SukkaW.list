@@ -1,5 +1,5 @@
 # 规则名称: Ads_SukkaW
-# 规则统计: 69830
+# 规则统计: 69872
 
 HOST,aedns.weixin.qq.com,Ads_SukkaW
 HOST,api-js.mixpanel.com,Ads_SukkaW
@@ -218,10 +218,10 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-17T09:22:02.709Z
-# Last Updated: 2025-03-23T12:37:57.116Z
+# Last Updated: 2025-03-24T01:51:30.671Z
 # License: AGPL 3.0
 # Size: 200
-# Size: 69603
+# Size: 69645
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Domains
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-phishing, anti-mining
@@ -9125,6 +9125,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .bn5x.net,Ads_SukkaW
 .bnaezl.hair-gallery.fr,Ads_SukkaW
 .bnalzlv.top,Ads_SukkaW
+.bnbwvp.top,Ads_SukkaW
 .bncloudfl.com,Ads_SukkaW
 .bndxrr.xyz,Ads_SukkaW
 .bnfectkp.icu,Ads_SukkaW
@@ -17644,6 +17645,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .dcxusu.lacuracao.pe,Ads_SukkaW
 .dd.auspost.com.au,Ads_SukkaW
 .dd.control4.com,Ads_SukkaW
+.dd.g2.com,Ads_SukkaW
 .dd.leboncoin.fr,Ads_SukkaW
 .dd.nytimes.com,Ads_SukkaW
 .dd0122893e.com,Ads_SukkaW
@@ -30970,6 +30972,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .khcdhu.saraschool.net,Ads_SukkaW
 .khcsvdc.icu,Ads_SukkaW
 .khedastrilium.com,Ads_SukkaW
+.khegritww.com,Ads_SukkaW
 .khengrull.com,Ads_SukkaW
 .khesuts.com,Ads_SukkaW
 .khfiwx.sephora.com.br,Ads_SukkaW
@@ -31191,6 +31194,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .knpudr.jardin-concept.com,Ads_SukkaW
 .knuakd.capsuljewelry.com,Ads_SukkaW
 .knuinws.icu,Ads_SukkaW
+.knul.cn,Ads_SukkaW
 .knutenegros.pro,Ads_SukkaW
 .knvyzx.h201shift.com,Ads_SukkaW
 .knymhv.ariat.com,Ads_SukkaW
@@ -31522,16 +31526,31 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .l.365blog.jp,Ads_SukkaW
 .l.amamin.jp,Ads_SukkaW
 .l.ashita-sanuki.jp,Ads_SukkaW
+.l.aufeminin.com,Ads_SukkaW
+.l.autojournal.fr,Ads_SukkaW
+.l.autoplus.fr,Ads_SukkaW
+.l.beaute-test.com,Ads_SukkaW
+.l.bibamagazine.fr,Ads_SukkaW
 .l.boo-log.com,Ads_SukkaW
 .l.chesuto.jp,Ads_SukkaW
+.l.closermag.fr,Ads_SukkaW
+.l.cnetfrance.fr,Ads_SukkaW
 .l.da-te.jp,Ads_SukkaW
 .l.dev-ajo.caixabank.com,Ads_SukkaW
+.l.diapasonmag.fr,Ads_SukkaW
 .l.dm.casio.info,Ads_SukkaW
+.l.doctissimo.fr,Ads_SukkaW
 .l.dosugoi.net,Ads_SukkaW
+.l.dzfoot.com,Ads_SukkaW
+.l.entrenous.fr,Ads_SukkaW
 .l.eshizuoka.jp,Ads_SukkaW
 .l.ffsagami.com,Ads_SukkaW
 .l.ffx.io,Ads_SukkaW
+.l.football.fr,Ads_SukkaW
+.l.football365.fr,Ads_SukkaW
 .l.francetvinfo.fr,Ads_SukkaW
+.l.gamekult.com,Ads_SukkaW
+.l.grazia.fr,Ads_SukkaW
 .l.gunmablog.net,Ads_SukkaW
 .l.hama1.jp,Ads_SukkaW
 .l.hamazo.tv,Ads_SukkaW
@@ -31543,32 +31562,51 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .l.kitemi.net,Ads_SukkaW
 .l.ko-co.jp,Ads_SukkaW
 .l.kyo2.jp,Ads_SukkaW
+.l.lacremedugaming.fr,Ads_SukkaW
+.l.lechasseurfrancais.com,Ads_SukkaW
+.l.lejournaldelamaison.fr,Ads_SukkaW
+.l.lesnumeriques.com,Ads_SukkaW
 .l.lilyzhou.com,Ads_SukkaW
 .l.locmariage.fr,Ads_SukkaW
 .l.m.naver.com,Ads_SukkaW
+.l.maison-travaux.fr,Ads_SukkaW
+.l.mariefrance.fr,Ads_SukkaW
+.l.melty.fr,Ads_SukkaW
 .l.militaryblog.jp,Ads_SukkaW
 .l.miyachan.cc,Ads_SukkaW
+.l.modesettravaux.fr,Ads_SukkaW
 .l.msdl.naver.com,Ads_SukkaW
 .l.n-da.jp,Ads_SukkaW
 .l.naganoblog.jp,Ads_SukkaW
 .l.namjai.cc,Ads_SukkaW
 .l.naturum.ne.jp,Ads_SukkaW
+.l.netmums.com,Ads_SukkaW
+.l.nextplz.fr,Ads_SukkaW
+.l.nicematin.com,Ads_SukkaW
 .l.niiblo.jp,Ads_SukkaW
 .l.ooyala.com,Ads_SukkaW
 .l.osakazine.net,Ads_SukkaW
 .l.otemo-yan.net,Ads_SukkaW
 .l.ouest-france.fr,Ads_SukkaW
 .l.page.worldvision.ca,Ads_SukkaW
+.l.paroledemamans.com,Ads_SukkaW
 .l.player.ooyala.com,Ads_SukkaW
+.l.pleinevie.fr,Ads_SukkaW
 .l.premium.naver.com,Ads_SukkaW
+.l.psychologies.com,Ads_SukkaW
 .l.sagafan.jp,Ads_SukkaW
 .l.sapolog.com,Ads_SukkaW
+.l.science-et-vie.com,Ads_SukkaW
 .l.shiga-saku.net,Ads_SukkaW
+.l.sportauto.fr,Ads_SukkaW
+.l.sports.fr,Ads_SukkaW
 .l.tamaliver.jp,Ads_SukkaW
 .l.tec29.com,Ads_SukkaW
+.l.telestar.fr,Ads_SukkaW
 .l.tenkomori.tv,Ads_SukkaW
 .l.thd-web.jp,Ads_SukkaW
 .l.ti-da.net,Ads_SukkaW
+.l.topsante.com,Ads_SukkaW
 .l.training-page.worldvision.ca,Ads_SukkaW
 .l.traxmag.com,Ads_SukkaW
 .l.tsukuba.ch,Ads_SukkaW
@@ -31579,6 +31617,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .l.ykimg.com,Ads_SukkaW
 .l.yoka-yoka.jp,Ads_SukkaW
 .l.youku.com,Ads_SukkaW
+.l.zdnet.fr,Ads_SukkaW
 .l0-secure.videohub.tv,Ads_SukkaW
 .l029.recordpatriot.com,Ads_SukkaW
 .l1native.com,Ads_SukkaW
@@ -46994,6 +47033,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .r932o.com,Ads_SukkaW
 .r973.timesheraldonline.com,Ads_SukkaW
 .ra1.xyz,Ads_SukkaW
+.ra10.xyz,Ads_SukkaW
 .ra5.xyz,Ads_SukkaW
 .rabbit.kilowatt.media,Ads_SukkaW
 .rabbit.radicalxchange.org,Ads_SukkaW
@@ -49855,6 +49895,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .screenshots.goguardian.com,Ads_SukkaW
 .screensnaps.top,Ads_SukkaW
 .screenstudio.vip,Ads_SukkaW
+.screiltol.com,Ads_SukkaW
 .screspoy.com,Ads_SukkaW
 .scribe.wongnai.com,Ads_SukkaW
 .scrippscookingchannel.cookingchanneltv.com,Ads_SukkaW
@@ -64177,6 +64218,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .urimnugocfr.com,Ads_SukkaW
 .urinousbiriba.com,Ads_SukkaW
 .uriokr.bauhaus.es,Ads_SukkaW
+.urkt.cn,Ads_SukkaW
 .urkywn.martinshotels.com,Ads_SukkaW
 .urldelivery.com,Ads_SukkaW
 .urlhausa.com,Ads_SukkaW

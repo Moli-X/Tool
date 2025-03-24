@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3371
+# 规则统计: 3374
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -21,6 +21,7 @@ DOMAIN-KEYWORD,web-assets.zendesk
 DOMAIN-WILDCARD,*.fsvod?.com
 DOMAIN-WILDCARD,*.img.*.sendibm?.com
 DOMAIN-WILDCARD,*.kuaikan-cdn?.com
+DOMAIN-WILDCARD,*.skyearth?.xyz
 DOMAIN-WILDCARD,appcenter-filemanagement-*.cloudapp.net
 DOMAIN-WILDCARD,assets*.freshdesk.com
 DOMAIN-WILDCARD,blog-imgs-??.2nt.com
@@ -69,11 +70,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-03-19T12:22:08.574Z
-# Last Updated: 2025-03-23T05:09:56.976Z
+# Last Updated: 2025-03-23T14:16:38.315Z
+# Last Updated: 2025-03-24T01:51:31.145Z
 # License: AGPL 3.0
-# Size: 3294
-# Size: 64
+# Size: 3296
+# Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -3072,6 +3073,7 @@ static.pingcap.com
 static.playstation.com
 static.plus.net
 static.politico.com
+static.polldaddy.com
 static.probit.com
 static.queue-it.net
 static.rakuten.com
@@ -3228,6 +3230,7 @@ top1cdn.top1health.com
 topbar-static.piano.io
 torrindex.net
 touchgal-image.moyu.moe
+townsquare.media
 tracking.inflection.io
 truth.bahamut.com.tw
 tuf-repo-cdn.sigstore.dev

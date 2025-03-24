@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Tieba_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Tieba.png
-#!date=2024-11-28 00:00:00
+#!date=2025-03-23 22:21:51
 
 [Rule]
 DOMAIN,afd.baidu.com,REJECT
@@ -20,6 +20,7 @@ IP-CIDR,180.76.76.200/32,REJECT,no-resolve
 [Rewrite]
 ^https:\/\/tiebac\.baidu\.com\/c\/f\/search\/discover reject-dict
 ^https:\/\/tiebac\.baidu\.com\/c\/f\/forum\/forumGuide reject-dict
+^https:\/\/tiebac\.baidu\.com\/c\/u\/chat\/getChatSubscriptionList reject-dict
 
 [Script]
 http-response ^https:\/\/tiebac\.baidu\.com\/livefeed\/feed script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Tieba_remove_ads.js,requires-body=true,tag=清理首页

@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/JD_Price.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JD.png
-#!date=2025-03-21 22:38:39
+#!date=2025-03-23 22:13:24
 
 [Script]
 http-response ^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/JD_Price.js,requires-body=true,timeout=10,tag=京东比价

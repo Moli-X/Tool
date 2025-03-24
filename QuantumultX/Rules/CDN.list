@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3371
+# 规则统计: 3374
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -21,6 +21,7 @@ HOST-KEYWORD,web-assets.zendesk,CDN
 HOST-WILDCARD,*.fsvod?.com,CDN
 HOST-WILDCARD,*.img.*.sendibm?.com,CDN
 HOST-WILDCARD,*.kuaikan-cdn?.com,CDN
+HOST-WILDCARD,*.skyearth?.xyz,CDN
 HOST-WILDCARD,appcenter-filemanagement-*.cloudapp.net,CDN
 HOST-WILDCARD,assets*.freshdesk.com,CDN
 HOST-WILDCARD,blog-imgs-??.2nt.com,CDN
@@ -69,11 +70,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-03-19T12:22:08.574Z
-# Last Updated: 2025-03-23T05:09:56.976Z
+# Last Updated: 2025-03-23T14:16:38.315Z
+# Last Updated: 2025-03-24T01:51:31.145Z
 # License: AGPL 3.0
-# Size: 3294
-# Size: 64
+# Size: 3296
+# Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -3072,6 +3073,7 @@ static.pingcap.com,CDN
 static.playstation.com,CDN
 static.plus.net,CDN
 static.politico.com,CDN
+static.polldaddy.com,CDN
 static.probit.com,CDN
 static.queue-it.net,CDN
 static.rakuten.com,CDN
@@ -3228,6 +3230,7 @@ top1cdn.top1health.com,CDN
 topbar-static.piano.io,CDN
 torrindex.net,CDN
 touchgal-image.moyu.moe,CDN
+townsquare.media,CDN
 tracking.inflection.io,CDN
 truth.bahamut.com.tw,CDN
 tuf-repo-cdn.sigstore.dev,CDN
