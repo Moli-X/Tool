@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3374
+# 规则统计: 3380
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -70,10 +70,10 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-03-23T14:16:38.315Z
 # Last Updated: 2025-03-24T01:51:31.145Z
+# Last Updated: 2025-03-24T16:22:46.477Z
 # License: AGPL 3.0
-# Size: 3296
+# Size: 3302
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1169,6 +1169,7 @@ assets.chess24.com,CDN
 assets.clever-cloud.com,CDN
 assets.clickfunnels.com,CDN
 assets.cloudpilot.ai,CDN
+assets.cmcmarkets.com,CDN
 assets.codepen.io,CDN
 assets.coinbase.com,CDN
 assets.coingecko.com,CDN
@@ -1199,6 +1200,7 @@ assets.geeksforgeeks.org,CDN
 assets.genius.com,CDN
 assets.getkirby.com,CDN
 assets.github.dev,CDN
+assets.goat.com,CDN
 assets.grammarly.com,CDN
 assets.grooveapps.com,CDN
 assets.guim.co.uk,CDN
@@ -1372,6 +1374,7 @@ cdn-1.ggjav.com,CDN
 cdn-a.sonyentertainmentnetwork.com,CDN
 cdn-app.pathfactory.com,CDN
 cdn-assets.circleci.com,CDN
+cdn-avatars.huggingface.co,CDN
 cdn-bundler.nice-team.net,CDN
 cdn-c.leavemealone.com,CDN
 cdn-client.medium.com,CDN
@@ -1449,6 +1452,7 @@ cdn.circle.so,CDN
 cdn.clever-cloud.com,CDN
 cdn.cliqz.com,CDN
 cdn.cloudcraft.co,CDN
+cdn.cmcmarkets.com,CDN
 cdn.cms-twdigitalassets.com,CDN
 cdn.cnn.com,CDN
 cdn.cnx-software.com,CDN
@@ -1828,6 +1832,7 @@ cloudinary-res.cloudinary.com,CDN
 cms-assets.nodecraft.com,CDN
 cms-assets.webediamovies.pro,CDN
 cms-assets.xboxservices.com,CDN
+cms-cdn.goat.com,CDN
 cms-cdn.now.gg,CDN
 cms.recordedfuture.com,CDN
 cms.therecord.media,CDN
@@ -2129,6 +2134,7 @@ image.crisp.chat,CDN
 image.dooo.ng,CDN
 image.email.microsoftemail.com,CDN
 image.freepik.com,CDN
+image.goat.com,CDN
 image.gyutto.com,CDN
 image.gyutto.jp,CDN
 image.hkhl.hk,CDN
