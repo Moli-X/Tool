@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3380
+# 规则统计: 3386
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -71,9 +71,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-03-25T17:13:18.557Z
+# Last Updated: 2025-03-26T11:05:28.372Z
 # License: AGPL 3.0
-# Size: 3302
+# Size: 3308
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1336,6 +1336,7 @@ bot.ivy.ai,CDN
 brick.a.ssl.fastly.net,CDN
 brick.freetls.fastly.net,CDN
 bst.icons8.com,CDN
+bucket1.notaku.so,CDN
 bundle.dyn-rev.app,CDN
 bundle.trysavvy.com,CDN
 bundlephobia.com,CDN
@@ -1826,6 +1827,7 @@ clickup.marketlinc.com,CDN
 clientsdk.launchdarkly.com,CDN
 clientstream.launchdarkly.com,CDN
 clips-media-assets2.twitch.tv,CDN
+clips.kick.com,CDN
 cloud.redhat.com,CDN
 cloud.typenetwork.com,CDN
 cloudflare.tv,CDN
@@ -2014,6 +2016,7 @@ file.izanmei.net,CDN
 files.armorgames.com,CDN
 files.buildwithfern.com,CDN
 files.jotform.com,CDN
+files.kick.com,CDN
 files.mastodon.ktachibana.party,CDN
 files.mastodon.online,CDN
 files.mastodon.social,CDN
@@ -2072,6 +2075,7 @@ google-ohttp-relay-safebrowsing.fastly-edge.com,CDN
 gopkg.in,CDN
 graph.facebook.com,CDN
 gravatar.cat.net,CDN
+gstatic.com,CDN
 gt1.onlyhentaistuff.com,CDN
 gtranslate.io,CDN
 hawk.tomsguide.com,CDN
@@ -2129,7 +2133,7 @@ icons.llamao.fi,CDN
 icons.ly,CDN
 icons.zeabur.com,CDN
 iframe.nbcnews.com,CDN
-ik.imagekit.net,CDN
+ik.imgkit.net,CDN
 imag.malavida.com,CDN
 image-forwarder.notaku.so,CDN
 image.ap-mail.org,CDN
@@ -2189,6 +2193,7 @@ images.flightradar24.com,CDN
 images.freeimages.com,CDN
 images.g2crowd.com,CDN
 images.idgesg.net,CDN
+images.kick.com,CDN
 images.macrumors.com,CDN
 images.mattel.net,CDN
 images.microcms-assets.io,CDN
@@ -3117,6 +3122,7 @@ static.ui.com,CDN
 static.underhentai.net,CDN
 static.uptimia.com,CDN
 static.v2ex.com,CDN
+static.vanta.com,CDN
 static.vinted.com,CDN
 static.vocadb.net,CDN
 static.webclicks24.com,CDN
