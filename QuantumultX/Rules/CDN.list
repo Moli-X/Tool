@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3381
+# 规则统计: 3380
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -71,9 +71,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-03-25T04:38:48.777Z
+# Last Updated: 2025-03-25T17:13:18.557Z
 # License: AGPL 3.0
-# Size: 3303
+# Size: 3302
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -286,6 +286,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .csp.withgoogle.com,CDN
 .ctfassets.net,CDN
 .cthd.icu,CDN
+.customerioforms.com,CDN
 .cwwcdn.com,CDN
 .data.debugbear.com,CDN
 .dataplane.rudderstack.com,CDN
@@ -417,6 +418,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .gitpage.si,CDN
 .glass.adidas.com,CDN
 .glbimg.com,CDN
+.gold-usergeneratedcontent.net,CDN
 .googleadservices.com,CDN
 .googleusercontent.com,CDN
 .gravatar.com,CDN
@@ -1299,7 +1301,6 @@ assets9.lottiefiles.com,CDN
 assetscdn-wchat.eu.freshchat.com,CDN
 assetscdn.jable.tv,CDN
 at.cbsi.com,CDN
-atn.hitomi.la,CDN
 attachments.office.net,CDN
 auth.split.io,CDN
 avatar.freepik.com,CDN
@@ -1335,7 +1336,6 @@ bot.ivy.ai,CDN
 brick.a.ssl.fastly.net,CDN
 brick.freetls.fastly.net,CDN
 bst.icons8.com,CDN
-btn.hitomi.la,CDN
 bundle.dyn-rev.app,CDN
 bundle.trysavvy.com,CDN
 bundlephobia.com,CDN
@@ -1489,6 +1489,7 @@ cdn.download.it,CDN
 cdn.drata.com,CDN
 cdn.dribbble.com,CDN
 cdn.dynamicyield.com,CDN
+cdn.earthroulette.com,CDN
 cdn.ecomm.ui.com,CDN
 cdn.embed.ly,CDN
 cdn.embedly.com,CDN
@@ -1641,6 +1642,7 @@ cdn.royaleapi.com,CDN
 cdn.safecharge.com,CDN
 cdn.sanity.io,CDN
 cdn.sc.gl,CDN
+cdn.scaleflex.it,CDN
 cdn.schemaapp.com,CDN
 cdn.sciencecast.org,CDN
 cdn.scripts.wtwhmedia.com,CDN
@@ -2063,6 +2065,7 @@ global.divhunt.com,CDN
 glyph.medium.com,CDN
 gmedia.playstation.com,CDN
 gn-web-assets.api.bbc.com,CDN
+go.imperva.com,CDN
 go.vercel.com,CDN
 godoc.org,CDN
 google-ohttp-relay-safebrowsing.fastly-edge.com,CDN
@@ -2126,6 +2129,7 @@ icons.llamao.fi,CDN
 icons.ly,CDN
 icons.zeabur.com,CDN
 iframe.nbcnews.com,CDN
+ik.imagekit.net,CDN
 imag.malavida.com,CDN
 image-forwarder.notaku.so,CDN
 image.ap-mail.org,CDN
@@ -2338,7 +2342,6 @@ ims.windy.com,CDN
 info.cloudflare.com,CDN
 info.knak.com,CDN
 int.mwbbiz.com,CDN
-int.qiniuyun15.xyz,CDN
 integrations.gitbook.com,CDN
 interactive-examples.mdn.mozilla.net,CDN
 interactive.guim.co.uk,CDN
@@ -2418,7 +2421,6 @@ logo.clearbit.com,CDN
 logos.kiwibrowser.com,CDN
 logos.speedtestcustom.com,CDN
 loutre.blockchair.io,CDN
-ltn.hitomi.la,CDN
 lumiere-a.akamaihd.net,CDN
 m-cdn.phonearena.com,CDN
 m.porn3dx.com,CDN
@@ -2574,7 +2576,6 @@ open-vsx.org,CDN
 openapi.vercel.sh,CDN
 openseauserdata.com,CDN
 opensignal.cdnbye.com,CDN
-opt.moovweb.net,CDN
 optimizationguide-pa.googleapis.com,CDN
 optimizely.com,CDN
 organizer.bizzabo.com,CDN
@@ -3031,7 +3032,6 @@ static.institution.grammarly.com,CDN
 static.iris.informa.com,CDN
 static.itch.io,CDN
 static.j51.net,CDN
-static.javatpoint.com,CDN
 static.javcdn.info,CDN
 static.javhd.com,CDN
 static.jsbin.com,CDN
@@ -3161,7 +3161,6 @@ stats.setapp.com,CDN
 stats.setapp.macpaw.dev,CDN
 status.ui.com,CDN
 stbff.newfold.com,CDN
-stbff.scene7.com,CDN
 steamcdn-a.akamaihd.net,CDN
 steamusercontent-a.akamaihd.net,CDN
 steamuserimages-a.akamaihd.net,CDN
