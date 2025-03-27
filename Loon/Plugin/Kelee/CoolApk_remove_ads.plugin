@@ -12,7 +12,7 @@
 #!date=2025-03-27 01:02:54
 
 [Rewrite]
-^https:\/\/api\.coolapk\.com\/v6\/search\? reject-dict
+^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch reject-dict
 
 ^https:\/\/api\.coolapk\.com\/v6\/feed\/detail\? response-body-json-jq '.data.hotReplyRows |= if . then map(select(.id?)) else . end | .data.topReplyRows |= if . then map(select(.id?)) else . end | reduce ("detailSponsorCard", "include_goods", "include_goods_ids") as $key (.; .data[$key] = [])'
 
