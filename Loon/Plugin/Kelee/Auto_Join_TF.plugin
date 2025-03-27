@@ -10,12 +10,12 @@
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Auto_Join_TF.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TestFlight.png
 #!input=APP_ID
-#!date=2024-11-28 00:00:00
+#!date=2025-03-27 00:15:57
 
 [Argument]
 CaptureAccountToken=switch,false,true,tag=捕获账号令牌,desc=此开关控制插件是否捕获账户令牌
 CaptureAppID=switch,false,true,tag=捕获应用ID,desc=此开关控制插件是否捕获应用ID
-TimingParameters=input,"*/1 * * * * *",tag=定时参数,desc=这里需要输入符合CRON表达式的参数
+TimingParameters=input,"0 0/2 * * * ?",tag=定时参数,desc=这里需要输入符合CRON表达式的参数
 
 [Rule]
 DOMAIN,testflight.apple.com,PROXY

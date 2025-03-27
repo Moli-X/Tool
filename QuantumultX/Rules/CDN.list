@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3386
+# 规则统计: 3391
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -71,9 +71,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-03-26T11:05:28.372Z
+# Last Updated: 2025-03-27T01:25:13.111Z
 # License: AGPL 3.0
-# Size: 3308
+# Size: 3313
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -617,6 +617,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .lzzypic.com,CDN
 .makeuseofimages.com,CDN
 .mangadex.network,CDN
+.mangguo-youku.com,CDN
 .mapi.4kvm.net,CDN
 .marketing.aws.dev,CDN
 .mcusercontent.com,CDN
@@ -1542,6 +1543,7 @@ cdn.infoq.com,CDN
 cdn.ionos.de,CDN
 cdn.ip2location.io,CDN
 cdn.ipregistry.co,CDN
+cdn.javmg.com,CDN
 cdn.javsts.com,CDN
 cdn.jetboost.io,CDN
 cdn.jetphotos.com,CDN
@@ -2062,6 +2064,7 @@ g1.nyt.com,CDN
 gearbox.imgix.com,CDN
 genesis-cdn.ff.com,CDN
 geoip-js.com,CDN
+geojson.io,CDN
 gfx-data.news-engineering.aws.wapo.pub,CDN
 gitpkg-fork.vercel.sh,CDN
 global.divhunt.com,CDN
@@ -2071,6 +2074,7 @@ gn-web-assets.api.bbc.com,CDN
 go.imperva.com,CDN
 go.vercel.com,CDN
 godoc.org,CDN
+gohugo.io,CDN
 google-ohttp-relay-safebrowsing.fastly-edge.com,CDN
 gopkg.in,CDN
 graph.facebook.com,CDN
@@ -2483,6 +2487,7 @@ media.licdn.com,CDN
 media.loom-app.com,CDN
 media.mas.to,CDN
 media.masto.nu,CDN
+media.minecraftforum.net,CDN
 media.mstdn.io,CDN
 media.nationwide.com,CDN
 media.newyorker.com,CDN

@@ -9,22 +9,22 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/CoolApk_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CoolApk.png
-#!date=2025-03-23 23:28:31
+#!date=2025-03-27 01:02:54
 
 [Rewrite]
-^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch reject-dict
+^https:\/\/api\.coolapk\.com\/v6\/search\? reject-dict
 
-^https:\/\/api\.coolapk\.com\/v6\/?:feed\/detail response-body-json-jq '.data.hotReplyRows |= (if . and length > 0 then map(select(.id)) else . end) | .data.topReplyRows |= (if . and length > 0 then map(select(.id)) else . end) | .data.detailSponsorCard = [] | .data.include_goods = [] | .data.include_goods_ids = []'
+^https:\/\/api\.coolapk\.com\/v6\/feed\/detail\? response-body-json-jq '.data.hotReplyRows |= if . then map(select(.id?)) else . end | .data.topReplyRows |= if . then map(select(.id?)) else . end | reduce ("detailSponsorCard", "include_goods", "include_goods_ids") as $key (.; .data[$key] = [])'
 
-^https:\/\/api\.coolapk\.com\/v6\/feed\/replyList response-body-json-jq 'if (.data | length > 0) then .data |= map(select(.id != null)) else . end'
+^https:\/\/api\.coolapk\.com\/v6\/feed\/replyList response-body-json-jq 'if .data? and ((.data | type) == "array") and (.data | length > 0) then .data |= map(select(.id?)) else . end'
 
-^https:\/\/api\.coolapk\.com\/v6\/page\/dataList response-body-json-jq 'if (.data | length > 0) then .data |= map(select((.title != "酷安热搜") and (.entityTemplate != "imageScaleCard") and (.entityTemplate != "sponsorCard"))) else . end'
+^https:\/\/api\.coolapk\.com\/v6\/main\/dataList response-body-json-jq '.data |= (if (type=="array" and length>0) then map(select((.entityTemplate!="sponsorCard") and (.title!="精选配件"))) else . end)'
 
-^https:\/\/api\.coolapk\.com\/v6\/main\/dataList response-body-json-jq '.data |= map(select(.entityTemplate != "sponsorCard" and .title != "精选配件"))'
+^https:\/\/api\.coolapk\.com\/v6\/page\/dataList response-body-json-jq 'if (.data | length > 0) then .data |= map(select((.title? != "酷安热搜") and (.entityTemplate? != "imageScaleCard") and (.entityTemplate? != "sponsorCard"))) else . end'
 
-^https:\/\/api\.coolapk\.com\/v6\/main\/indexV8 response-body-json-jq 'if (.data | length > 0) then .data |= map(select((.entityTemplate != "sponsorCard") and (.entityId != 8639) and (.entityId != 29349) and (.entityId != 33006) and (.entityId != 32557) and (if .title then (.title | contains("值得买") | not) else true end) and (if .title then (.title | contains("红包") | not) else true end))) else . end'
+^https:\/\/api\.coolapk\.com\/v6\/main\/indexV8 response-body-json-jq '.data |= (if length > 0 then map(select((.entityTemplate != "sponsorCard") and ([8639,29349,33006,32557] | index(.entityId) | not) and ((.title // "" | test("值得买|红包")) | not))) else . end)'
 
-^https:\/\/api\.coolapk\.com\/v6\/main\/init response-body-json-jq '.data |= map(select(.entityId != 944 and .entityId != 945 and .entityId != 6390) | if .entityId == 20131 then .entities |= map(select(.title != "酷品")) else . end)'
+^https:\/\/api\.coolapk\.com\/v6\/main\/init response-body-json-jq '.data |= map(select(.entityId? | [944,945,6390] | index(.) | not) | if .entityId == 20131 then .entities |= map(select(.title != "酷品")) else . end)'
 
 [MitM]
 hostname=api.coolapk.com

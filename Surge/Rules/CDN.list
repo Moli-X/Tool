@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3386
+# 规则统计: 3391
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -71,9 +71,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-03-26T11:05:28.372Z
+# Last Updated: 2025-03-27T01:25:13.111Z
 # License: AGPL 3.0
-# Size: 3308
+# Size: 3313
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -617,6 +617,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .lzzypic.com
 .makeuseofimages.com
 .mangadex.network
+.mangguo-youku.com
 .mapi.4kvm.net
 .marketing.aws.dev
 .mcusercontent.com
@@ -1542,6 +1543,7 @@ cdn.infoq.com
 cdn.ionos.de
 cdn.ip2location.io
 cdn.ipregistry.co
+cdn.javmg.com
 cdn.javsts.com
 cdn.jetboost.io
 cdn.jetphotos.com
@@ -2062,6 +2064,7 @@ g1.nyt.com
 gearbox.imgix.com
 genesis-cdn.ff.com
 geoip-js.com
+geojson.io
 gfx-data.news-engineering.aws.wapo.pub
 gitpkg-fork.vercel.sh
 global.divhunt.com
@@ -2071,6 +2074,7 @@ gn-web-assets.api.bbc.com
 go.imperva.com
 go.vercel.com
 godoc.org
+gohugo.io
 google-ohttp-relay-safebrowsing.fastly-edge.com
 gopkg.in
 graph.facebook.com
@@ -2483,6 +2487,7 @@ media.licdn.com
 media.loom-app.com
 media.mas.to
 media.masto.nu
+media.minecraftforum.net
 media.mstdn.io
 media.nationwide.com
 media.newyorker.com
