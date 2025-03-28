@@ -9,12 +9,9 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/91160_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/91160.png
-#!date=2024-11-28 00:00:00
+#!date=2025-03-27 23:04:43
 
 [Rule]
-URL-REGEX,"^https:\/\/patientgate\.91160\.com\/advert-api\/v1\/advert\/homepage_icon\?",DIRECT
-URL-REGEX,"^https:\/\/patientgate\.91160\.com\/advert-api\/",REJECT-DICT
-
 DOMAIN,httpdns.music.163.com,REJECT
 DOMAIN,httpdns.n.netease.com,REJECT
 DOMAIN,httpdns-sdk.n.netease.com,REJECT
@@ -106,11 +103,24 @@ DOMAIN-SUFFIX,igexin.com,REJECT
 [Rewrite]
 ^https:\/\/msglb\.91160\.com\/msg\/outer\/broker\/get$ reject-dict
 
-^https:\/\/patientgate\.91160\.com\/rec\/homepage\/open\/getUserGoodsList\? reject-dict
-
-^https:\/\/patientappapi\.91160\.com\/cus_index\.php\?c=adver reject
+^https:\/\/patientgate\.91160\.com\/advert-api\/ reject-dict
 
 ^https:\/\/soapi\.91160\.com\/homepage-recommendation\/recommendation\/medical\/complex\? response-body-json-del data.checkupList
 
+^https:\/\/soapi\.91160\.com\/homepage-recommendation\/homepage\/flow\? response-body-json-jq '.data.rows |= map(select(.type as $type | ["GOOD", "ARTICLE"] | index($type) | not))'
+
+^https:\/\/patientgate\.91160\.com\/cube\/v1\/unit_page\/page_data\? response-body-json-jq '.data.modules |= map(select(.name == "announcement" or .name == "guide" or .name == "expert" or .name == "featuredDepartments" or .name == "featureDevice" or .name == "featureTech" or .name == "familyDoctor" or .name == "introduction" or .name == "bus" or .name == "classicCase" or .name == "askEveryone" or .name == "reviews" or .name == "notes"))'
+
+^https:\/\/snsapi\.91160\.com\/vipmemberapi\/mbCombo\/mbComboWords\? reject-dict
+
+^https:\/\/patientgate\.91160\.com\/rec\/homepage\/open\/getUserGoodsList\? reject-dict
+
+^https:\/\/snsapi\.91160\.com\/hotword\/open\/v1\/getSearchExplore\? reject-dict
+^https:\/\/snsapi\.91160\.com\/hotword\/open\/v1\/getHotWordPlate\? reject-dict
+
+^https:\/\/snsapi\.91160\.com\/engine\/backgroundWord\/queryForFrontend\? reject-dict
+
+^https:\/\/patientappapi\.91160\.com\/cus_index\.php\?c=adver reject
+
 [MitM]
-hostname=patientgate.91160.com,soapi.91160.com,msglb.91160.com,patientappapi.91160.com
+hostname=patientgate.91160.com,soapi.91160.com,snsapi.91160.com,msglb.91160.com,patientappapi.91160.com

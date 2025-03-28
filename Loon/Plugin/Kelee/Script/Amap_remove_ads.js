@@ -482,9 +482,9 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
       delete list.poi.item_info.tips_bottombar_button.hotel;
     }
     // 地图优惠推广
-    if (list?.map?.main_point) {
-      delete list.map.main_point;
-    }
+    // if (list?.map?.main_point) {
+    //   delete list.map.main_point;
+    // }
     if (list?.tips_operation_info) {
       delete list.tips_operation_info;
     }
