@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3392
+# 规则统计: 3396
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -71,9 +71,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-03-27T14:01:46.681Z
+# Last Updated: 2025-03-30T05:51:47.973Z
 # License: AGPL 3.0
-# Size: 3314
+# Size: 3318
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1485,6 +1485,7 @@ cdn.designsystem.arm.com,CDN
 cdn.deta.space,CDN
 cdn.devolutions.net,CDN
 cdn.dnsimple.com,CDN
+cdn.docsbot.com,CDN
 cdn.document360.io,CDN
 cdn.donmai.us,CDN
 cdn.dotaoutpost.com,CDN
@@ -2003,6 +2004,7 @@ f001.backblazeb2.com,CDN
 f002.backblazeb2.com,CDN
 f003.backblazeb2.com,CDN
 f004.backblazeb2.com,CDN
+fast.appcues.com,CDN
 fast.wistia.com,CDN
 fast.wistia.net,CDN
 fastly-cloud.typenetwork.com,CDN
@@ -2529,6 +2531,7 @@ media8.kissjav.com,CDN
 media9.kissjav.com,CDN
 medias.meow.social,CDN
 megapx-assets.dcard.tw,CDN
+meta.prismlauncher.org,CDN
 metrics.kapa.ai,CDN
 micro.rubiconproject.com,CDN
 minotar.net,CDN
@@ -3355,6 +3358,7 @@ website-cdn.ipinfo.io,CDN
 website-prod.cache.wpscdn.com,CDN
 webstatic.chargebee.com,CDN
 widget.automizely.com,CDN
+widget.datablocks.se,CDN
 widget.docsbot.ai,CDN
 widget.freshworks.com,CDN
 widget.gotolstoy.com,CDN
