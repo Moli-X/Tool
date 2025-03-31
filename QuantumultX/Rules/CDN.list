@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3396
+# 规则统计: 3399
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -71,9 +71,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-03-30T05:51:47.973Z
+# Last Updated: 2025-03-30T16:28:12.567Z
 # License: AGPL 3.0
-# Size: 3318
+# Size: 3321
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1420,6 +1420,7 @@ cdn.amcharts.com,CDN
 cdn.announcekit.app,CDN
 cdn.answeroverflow.com,CDN
 cdn.apkmonk.com,CDN
+cdn.app.fossa.com,CDN
 cdn.app.neononepay.com,CDN
 cdn.apponic.com,CDN
 cdn.arcade.software,CDN
@@ -2180,6 +2181,7 @@ images-ext-1.discordapp.net,CDN
 images-ext-2.discordapp.net,CDN
 images.991.com,CDN
 images.anandtech.com,CDN
+images.applegamingwiki.com,CDN
 images.arigatotravel.com,CDN
 images.axios.com,CDN
 images.bfmtv.com,CDN
@@ -3232,6 +3234,7 @@ thingproxy.freeboard.io,CDN
 this_ruleset_is_made_by_sukkaw.ruleset.skk.moe,CDN
 thumbnail.missav.com,CDN
 thumbnailer.mixcloud.com,CDN
+thumbnails.applegamingwiki.com,CDN
 thumbnails.cbsig.net,CDN
 thumbor.forbes.com,CDN
 thumbs.onlyfans.com,CDN
