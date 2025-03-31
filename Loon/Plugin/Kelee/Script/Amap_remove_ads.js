@@ -1,7 +1,7 @@
 /*
 引用地址 https://raw.githubusercontent.com/RuCu6/Loon/refs/heads/main/Scripts/amap.js
 */
-// 2024-12-04 22:50
+// 2025-03-31 09:45
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -26,9 +26,17 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
   }
 } else if (url.includes("/boss/car/order/content_info")) {
   // 打车页面
+  if (obj?.data?.lubanData?.popup?.dataList?.length > 0) {
+    // 优惠弹窗
+    obj.data.lubanData.popup.dataList = [];
+  }
   if (obj?.data?.lubanData?.skin?.dataList?.length > 0) {
     // oss营销皮肤
     obj.data.lubanData.skin.dataList = [];
+  }
+  if (obj?.data?.matrixData?.DiversionCard?.dataList?.length > 0) {
+    // 打车订单附近景点推荐列表
+    obj.data.matrixData.DiversionCard.dataList = [];
   }
 } else if (url.includes("/boss/order_web/friendly_information")) {
   // 打车页面
@@ -286,6 +294,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "claim", // 立即认领 管理店铺
     "co_branded_card",
     "collector_guide", // 游玩的图文指南
+    "commonAiAgent", // ai门店助手
     "common_coupon_bar", // 领券条幅 新客专享 省钱卡
     "common_coupon_card", // 优惠券卡片
     // "companyInfo", // 简介
@@ -531,9 +540,9 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
         delete list.poi.item_info.tips_bottombar_button.hotel;
       }
       // 地图优惠推广
-      if (list?.map?.main_point) {
-        delete list.map.main_point;
-      }
+      // if (list?.map?.main_point) {
+      //   delete list.map.main_point;
+      // }
       // 左上角动图推广
       if (list?.tips_operation_info) {
         delete list.tips_operation_info;
