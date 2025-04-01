@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3403
+# 规则统计: 3404
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -69,9 +69,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-04-01T02:05:41.107Z
+# Last Updated: 2025-04-01T09:14:48.885Z
 # License: AGPL 3.0
-# Size: 3327
+# Size: 3328
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -2656,6 +2656,7 @@ pkgs.dev.azure.com
 pl.ea.com
 platform-assets.typekit.net
 platform.instagram.com
+platform.theverge.com
 platform.twitter.com
 platforms.makemytrip.com
 play.gotolstoy.com
