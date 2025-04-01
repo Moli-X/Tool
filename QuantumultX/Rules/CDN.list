@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3400
+# 规则统计: 3405
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -71,9 +71,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-03-31T09:50:43.923Z
+# Last Updated: 2025-04-01T02:05:41.107Z
 # License: AGPL 3.0
-# Size: 3322
+# Size: 3327
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1267,6 +1267,7 @@ assets.stickpng.com,CDN
 assets.swoogo.com,CDN
 assets.the-independent.com,CDN
 assets.time.com,CDN
+assets.toiimg.com,CDN
 assets.tokopedia.net,CDN
 assets.toot.cafe,CDN
 assets.twitch.tv,CDN
@@ -1605,6 +1606,7 @@ cdn.paddle.com,CDN
 cdn.pagefly.io,CDN
 cdn.pagic.org,CDN
 cdn.paidy.com,CDN
+cdn.paritydeals.com,CDN
 cdn.parsely.com,CDN
 cdn.pathfactory.com,CDN
 cdn.pendo.io,CDN
@@ -2401,6 +2403,7 @@ jsdelivr.ioiox.net,CDN
 jslibs.blackmagicdesign.com,CDN
 jsonplaceholder.typicode.com,CDN
 jssdk.opin.media,CDN
+jssocdn.indiatimes.com,CDN
 k-cdn.depot.dev,CDN
 kdata1.com,CDN
 keyframe-cdn.abcnews.com,CDN
@@ -2538,6 +2541,7 @@ meta.prismlauncher.org,CDN
 metrics.kapa.ai,CDN
 micro.rubiconproject.com,CDN
 minotar.net,CDN
+mintlify.b-cdn.net,CDN
 mir-s3-cdn-cf.behance.net,CDN
 miro.medium.com,CDN
 mixin-images.zeromesh.net,CDN
@@ -3122,6 +3126,7 @@ static.telegraph.co.uk,CDN
 static.tenki.jp,CDN
 static.test-beta.com,CDN
 static.theguardian.com,CDN
+static.toiimg.com,CDN
 static.tokenview.io,CDN
 static.toss.im,CDN
 static.tp-link.com,CDN
