@@ -7,8 +7,8 @@
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
 #Total lines: 688
-#Update content: Update domain.txt
-#Update time: 2025-03-24 11:36:53 UTC+8
+#Update content: remove oauth-login-drcn.platform.dbankcloud.com fix #127
+#Update time: 2025-04-02 09:29:30 UTC+8
 #Version: 1.5.9-release
 .1010pic.com,Ads_AWAvenue
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -122,7 +122,6 @@
 .adtago.s3.amazonaws.com,Ads_AWAvenue
 .adtech.yahooinc.com,Ads_AWAvenue
 .adtrack.quark.cn,Ads_AWAvenue
-.adv.fjtv.net,Ads_AWAvenue
 .adv.sec.intl.miui.com,Ads_AWAvenue
 .adv.sec.miui.com,Ads_AWAvenue
 .advertising-api-eu.amazon.com,Ads_AWAvenue
@@ -184,6 +183,7 @@
 .api.htp.hubcloud.com.cn,Ads_AWAvenue
 .api.hzsanjiaomao.com,Ads_AWAvenue
 .api.installer.xiaomi.com,Ads_AWAvenue
+.api.jietuhb.com,Ads_AWAvenue
 .api.kingdata.ksyun.com,Ads_AWAvenue
 .api.statsig.com,Ads_AWAvenue
 .api.touch-moblie.com,Ads_AWAvenue
@@ -234,6 +234,7 @@
 .ccc-x.jd.com,Ads_AWAvenue
 .ccs.umeng.com,Ads_AWAvenue
 .cctv.adsunion.com,Ads_AWAvenue
+.cdn-ad.wtzw.com,Ads_AWAvenue
 .cdn-ads.oss-cn-shanghai.aliyuncs.com,Ads_AWAvenue
 .cdn-plugin-sync-upgrade-juui.hismarttv.com,Ads_AWAvenue
 .cdn.aiclk.com,Ads_AWAvenue
@@ -468,7 +469,6 @@
 .notes-analytics-events.apple.com,Ads_AWAvenue
 .nsclick.baidu.com,Ads_AWAvenue
 .o2o.api.xiaomi.com,Ads_AWAvenue
-.oauth-login-drcn.platform.dbankcloud.com,Ads_AWAvenue
 .offerwall.yandex.net,Ads_AWAvenue
 .omgmta.play.aiseet.atianqi.com,Ads_AWAvenue
 .open.e.kuaishou.cn,Ads_AWAvenue
