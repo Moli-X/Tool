@@ -68,9 +68,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-04-05T15:08:08.319Z
+# Last Updated: 2025-04-06T12:34:41.662Z
 # License: AGPL 3.0
-# Size: 3335
+# Size: 3341
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -327,6 +327,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .ebayimg.com
 .ebaystatic.com
 .edge.storage-yahoo.jp
+.edgeone.app
 .edgestorewebcdn.azureedge.net
 .eggjs.org
 .ehgt.org
@@ -1123,6 +1124,7 @@ apple-relay.cloudflare.com
 apple-relay.fastly-edge.com
 apps.bazaarvoice.com
 apps.profitihub.com
+apps.sophi.io
 archive.mozilla.org
 artworks.thetvdb.com
 asset-cdn.uscardforum.com
@@ -1808,6 +1810,7 @@ cdnjs.cloudflare.com
 cdnl.tnaflix.com
 cdns.gigya.com
 cdnstatic.porno-cum.com
+cdnstatic.tencentcs.com
 cdnstatic.w1mp.com
 cdnstatic.w4nkr.com
 cdntranscend.eventbrite.com
@@ -1896,6 +1899,7 @@ cpwebassets.codepen.io
 craftassets.unraid.net
 cravatar.eu
 creativajs.altervista.org
+creative.eizzih.com
 creator-image.javhd.com
 crl.usertrust.com
 crl.verisign.com
@@ -2763,6 +2767,7 @@ resource.video.nimg.jp
 resources-cache.prod.sketch.com
 resources-live.sketch.cloud
 resources.help.salesforce.com
+resources.whatwg.org
 rest.happierleads.com
 rsi.grafana.com
 rsms.me
@@ -3182,6 +3187,7 @@ static7.lottiefiles.com
 static8.lottiefiles.com
 static9.lottiefiles.com
 staticctf.ubisoft.com
+staticintl.cloudcachetci.com
 statics-marketingsites-eas-ms-com.akamaized.net
 statics.erothots.co
 statics.goorm.io
