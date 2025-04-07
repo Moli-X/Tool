@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 798
+# 规则统计: 800
 
 HOST,acg.tv,ChinaDomain
 HOST,assets1.xboxlive.cn,ChinaDomain
@@ -142,6 +142,8 @@ HOST-SUFFIX,baidupcs.com,ChinaDomain
 HOST-SUFFIX,baidustatic.com,ChinaDomain
 HOST-SUFFIX,baike.com,ChinaDomain
 HOST-SUFFIX,baishancdnx.cn,ChinaDomain
+HOST-SUFFIX,baixing.com,ChinaDomain
+HOST-SUFFIX,baixing.net,ChinaDomain
 HOST-SUFFIX,baomitu.com,ChinaDomain
 HOST-SUFFIX,battle.net,ChinaDomain
 HOST-SUFFIX,bcebos.com,ChinaDomain
@@ -792,9 +794,9 @@ USER-AGENT,TeslaMap,ChinaDomain
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-03-25T17:13:17.698Z
+# Last Updated: 2025-04-07T01:50:49.127Z
 # License: AGPL 3.0
-# Size: 788
+# Size: 790
 # Sukka's Ruleset - Domestic Domains
 # This file contains known addresses that are avaliable in the Mainland China.
 ################## EOF ##################

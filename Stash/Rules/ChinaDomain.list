@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 795
+# 规则统计: 797
 
 DOMAIN,acg.tv
 DOMAIN,assets1.xboxlive.cn
@@ -142,6 +142,8 @@ DOMAIN-SUFFIX,baidupcs.com
 DOMAIN-SUFFIX,baidustatic.com
 DOMAIN-SUFFIX,baike.com
 DOMAIN-SUFFIX,baishancdnx.cn
+DOMAIN-SUFFIX,baixing.com
+DOMAIN-SUFFIX,baixing.net
 DOMAIN-SUFFIX,baomitu.com
 DOMAIN-SUFFIX,battle.net
 DOMAIN-SUFFIX,bcebos.com
@@ -789,9 +791,9 @@ DOMAIN-WILDCARD,*.qhimgs?.com
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-03-25T17:13:17.698Z
+# Last Updated: 2025-04-07T01:50:49.127Z
 # License: AGPL 3.0
-# Size: 788
+# Size: 790
 # Sukka's Ruleset - Domestic Domains
 # This file contains known addresses that are avaliable in the Mainland China.
 ################## EOF ##################
