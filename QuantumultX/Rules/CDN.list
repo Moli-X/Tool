@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3420
+# 规则统计: 3427
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -71,9 +71,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-04-07T01:50:49.848Z
+# Last Updated: 2025-04-07T12:38:16.591Z
 # License: AGPL 3.0
-# Size: 3342
+# Size: 3349
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -110,6 +110,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .akamai-content-network.com,CDN
 .akidoo.top,CDN
 .alexdav.id,CDN
+.algolianet.com,CDN
 .alonestreaming.com,CDN
 .alphafish.top,CDN
 .amaicdn.com,CDN
@@ -1222,6 +1223,7 @@ assets.ipstack.com,CDN
 assets.jable.tv,CDN
 assets.jolipage.co,CDN
 assets.kagi.com,CDN
+assets.keysquare.io,CDN
 assets.kraken.com,CDN
 assets.leetcode.com,CDN
 assets.lemonsqueezy.com,CDN
@@ -1996,6 +1998,7 @@ encrypted-vtbn2.gstatic.com,CDN
 encrypted-vtbn3.gstatic.com,CDN
 epic-social-social-modules-prod.ol.epicgames.com,CDN
 error.rakuten.co.jp,CDN
+eslint-react.xyz,CDN
 eslint.org,CDN
 eslint.style,CDN
 eu-images.contentstack.com,CDN
@@ -2105,6 +2108,7 @@ hawk.tomsguide.com,CDN
 headway-widget.net,CDN
 heatmap-external-a.strava.com,CDN
 hentaiworldtv.b-cdn.net,CDN
+heroicons.com,CDN
 hhhhhhome86227170.wordpress.com,CDN
 hips.hearstapps.com,CDN
 hls.hentaicity.com,CDN
@@ -2770,6 +2774,7 @@ resource.fs.com,CDN
 resource.video.nimg.jp,CDN
 resources-cache.prod.sketch.com,CDN
 resources-live.sketch.cloud,CDN
+resources.chessbase.com,CDN
 resources.help.salesforce.com,CDN
 resources.whatwg.org,CDN
 rest.happierleads.com,CDN
@@ -3013,6 +3018,7 @@ static.canva.com,CDN
 static.captcha-delivery.com,CDN
 static.chaika.moe,CDN
 static.change.org,CDN
+static.chessarena.com,CDN
 static.cloud.coveo.com,CDN
 static.cloudcachetci.com,CDN
 static.cnbeta.com.tw,CDN
@@ -3361,6 +3367,7 @@ wac-cdn.atlassian.com,CDN
 waitlisted.co,CDN
 wandi-6402.kxcdn.com,CDN
 wcpstatic.microsoft.com,CDN
+wctour-images.worldchess.com,CDN
 weather.istatmenus.app,CDN
 web-assets.esetstatic.com,CDN
 web-assets.ifttt.com,CDN

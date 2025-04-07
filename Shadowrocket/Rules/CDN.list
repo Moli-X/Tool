@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3420
+# 规则统计: 3427
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -71,9 +71,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-04-07T01:50:49.848Z
+# Last Updated: 2025-04-07T12:38:16.591Z
 # License: AGPL 3.0
-# Size: 3342
+# Size: 3349
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -110,6 +110,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .akamai-content-network.com
 .akidoo.top
 .alexdav.id
+.algolianet.com
 .alonestreaming.com
 .alphafish.top
 .amaicdn.com
@@ -1222,6 +1223,7 @@ assets.ipstack.com
 assets.jable.tv
 assets.jolipage.co
 assets.kagi.com
+assets.keysquare.io
 assets.kraken.com
 assets.leetcode.com
 assets.lemonsqueezy.com
@@ -1996,6 +1998,7 @@ encrypted-vtbn2.gstatic.com
 encrypted-vtbn3.gstatic.com
 epic-social-social-modules-prod.ol.epicgames.com
 error.rakuten.co.jp
+eslint-react.xyz
 eslint.org
 eslint.style
 eu-images.contentstack.com
@@ -2105,6 +2108,7 @@ hawk.tomsguide.com
 headway-widget.net
 heatmap-external-a.strava.com
 hentaiworldtv.b-cdn.net
+heroicons.com
 hhhhhhome86227170.wordpress.com
 hips.hearstapps.com
 hls.hentaicity.com
@@ -2770,6 +2774,7 @@ resource.fs.com
 resource.video.nimg.jp
 resources-cache.prod.sketch.com
 resources-live.sketch.cloud
+resources.chessbase.com
 resources.help.salesforce.com
 resources.whatwg.org
 rest.happierleads.com
@@ -3013,6 +3018,7 @@ static.canva.com
 static.captcha-delivery.com
 static.chaika.moe
 static.change.org
+static.chessarena.com
 static.cloud.coveo.com
 static.cloudcachetci.com
 static.cnbeta.com.tw
@@ -3361,6 +3367,7 @@ wac-cdn.atlassian.com
 waitlisted.co
 wandi-6402.kxcdn.com
 wcpstatic.microsoft.com
+wctour-images.worldchess.com
 weather.istatmenus.app
 web-assets.esetstatic.com
 web-assets.ifttt.com
