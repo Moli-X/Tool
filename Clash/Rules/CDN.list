@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3427
+# 规则统计: 3441
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -69,9 +69,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-04-07T15:42:37.498Z
+# Last Updated: 2025-04-08T08:09:17.748Z
 # License: AGPL 3.0
-# Size: 3351
+# Size: 3365
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -750,6 +750,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .pocket-image-cache.com
 .poecdn.net
 .polyfill-fastly.io
+.pool.ntp.org
 .porn-d.xyz
 .porn5.asia
 .porndudecdn.com
@@ -1083,6 +1084,7 @@ ajax.microsoft.com
 ak.sail-horizon.com
 akamai-assets.squarespace.com
 alt.idgesg.net
+amazon-omni-cdn.com
 amp.azure.net
 analytics.twitter.com
 analytics.welcomesoftware.com
@@ -1097,6 +1099,7 @@ api.bintray.com
 api.crashguard.me
 api.dicebear.com
 api.iconify.design
+api.indexnow.org
 api.instantly.ai
 api.mintlify.com
 api.mixpanel.com
@@ -1352,6 +1355,7 @@ bundlephobia.com
 bundler.nice-team.net
 bundler.wix-code.com
 bundles.npr.org
+businessunitprofile-cdn.trustpilot.net
 busuanzi.ibruce.info
 c.1password.com
 c.fantia.jp
@@ -1379,6 +1383,7 @@ cache-05.filehippo.net
 cache.armorgames.com
 cache.hackedfreegames.com
 cassette.sphdigital.com.sg
+cc-embed.adobe.com
 cc.boyfriendtv.com
 cdn-1.ggjav.com
 cdn-a.sonyentertainmentnetwork.com
@@ -1445,6 +1450,7 @@ cdn.bigcloud.click
 cdn.birdie.so
 cdn.botframework.com
 cdn.branch.io
+cdn.brandfetch.io
 cdn.britannica.com
 cdn.bsky.social
 cdn.builder.io
@@ -1706,6 +1712,7 @@ cdn.unrealengine.com
 cdn.unwire.hk
 cdn.up-timely.com
 cdn.uptimia.com
+cdn.us-east-1.prod.moon.dubai.aws.dev
 cdn.usd.fan
 cdn.userreport.com
 cdn.v2ex.com
@@ -1858,6 +1865,7 @@ cms.recordedfuture.com
 cms.therecord.media
 cms.typenetwork.com
 code.benco.io
+code.buywithprime.amazon.com
 code.highcharts.com
 code.iconify.design
 code.ionicframework.com
@@ -1880,6 +1888,7 @@ consent-notice.ft.com
 consent.dw.com
 consentdeliveryfd.azurefd.net
 consumersite-assets.trustpilot.net
+consumersiteimages.trustpilot.net
 content-management-files.canva.com
 content-prod-live.cert.starbucks.com
 content.any.run
@@ -2065,6 +2074,7 @@ fonts.codeberg.org
 fonts.gishan.cc
 fonts.googleapis.com
 fonts.gstatic.com
+fonts.loox.io
 fonts.mailerlite.com
 fonts.sony.net
 fonts.svc.ui.com
@@ -2197,6 +2207,7 @@ images-assets.nasa.gov
 images-eds-ssl.xboxlive.com
 images-ext-1.discordapp.net
 images-ext-2.discordapp.net
+images-static.trustpilot.com
 images.991.com
 images.anandtech.com
 images.applegamingwiki.com
@@ -2221,6 +2232,7 @@ images.freeimages.com
 images.g2crowd.com
 images.idgesg.net
 images.kick.com
+images.loox.io
 images.macrumors.com
 images.mattel.net
 images.microcms-assets.io
@@ -2596,6 +2608,7 @@ nodei.co
 npm.antfu.dev
 npm.im
 npm.jsr.io
+ntp.api.bz
 ntp.msn.com
 null.jsbin.com
 o.n1mp.org
@@ -3027,6 +3040,7 @@ static.cohere.so
 static.coinall.ltd
 static.coingecko.com
 static.community.workday.com
+static.convertio.co
 static.corp.google.com
 static.cracked.io
 static.cracked.to

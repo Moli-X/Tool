@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3429
+# 规则统计: 3443
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -71,9 +71,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-04-07T15:42:37.498Z
+# Last Updated: 2025-04-08T08:09:17.748Z
 # License: AGPL 3.0
-# Size: 3351
+# Size: 3365
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -752,6 +752,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .pocket-image-cache.com,CDN
 .poecdn.net,CDN
 .polyfill-fastly.io,CDN
+.pool.ntp.org,CDN
 .porn-d.xyz,CDN
 .porn5.asia,CDN
 .porndudecdn.com,CDN
@@ -1085,6 +1086,7 @@ ajax.microsoft.com,CDN
 ak.sail-horizon.com,CDN
 akamai-assets.squarespace.com,CDN
 alt.idgesg.net,CDN
+amazon-omni-cdn.com,CDN
 amp.azure.net,CDN
 analytics.twitter.com,CDN
 analytics.welcomesoftware.com,CDN
@@ -1099,6 +1101,7 @@ api.bintray.com,CDN
 api.crashguard.me,CDN
 api.dicebear.com,CDN
 api.iconify.design,CDN
+api.indexnow.org,CDN
 api.instantly.ai,CDN
 api.mintlify.com,CDN
 api.mixpanel.com,CDN
@@ -1354,6 +1357,7 @@ bundlephobia.com,CDN
 bundler.nice-team.net,CDN
 bundler.wix-code.com,CDN
 bundles.npr.org,CDN
+businessunitprofile-cdn.trustpilot.net,CDN
 busuanzi.ibruce.info,CDN
 c.1password.com,CDN
 c.fantia.jp,CDN
@@ -1381,6 +1385,7 @@ cache-05.filehippo.net,CDN
 cache.armorgames.com,CDN
 cache.hackedfreegames.com,CDN
 cassette.sphdigital.com.sg,CDN
+cc-embed.adobe.com,CDN
 cc.boyfriendtv.com,CDN
 cdn-1.ggjav.com,CDN
 cdn-a.sonyentertainmentnetwork.com,CDN
@@ -1447,6 +1452,7 @@ cdn.bigcloud.click,CDN
 cdn.birdie.so,CDN
 cdn.botframework.com,CDN
 cdn.branch.io,CDN
+cdn.brandfetch.io,CDN
 cdn.britannica.com,CDN
 cdn.bsky.social,CDN
 cdn.builder.io,CDN
@@ -1708,6 +1714,7 @@ cdn.unrealengine.com,CDN
 cdn.unwire.hk,CDN
 cdn.up-timely.com,CDN
 cdn.uptimia.com,CDN
+cdn.us-east-1.prod.moon.dubai.aws.dev,CDN
 cdn.usd.fan,CDN
 cdn.userreport.com,CDN
 cdn.v2ex.com,CDN
@@ -1860,6 +1867,7 @@ cms.recordedfuture.com,CDN
 cms.therecord.media,CDN
 cms.typenetwork.com,CDN
 code.benco.io,CDN
+code.buywithprime.amazon.com,CDN
 code.highcharts.com,CDN
 code.iconify.design,CDN
 code.ionicframework.com,CDN
@@ -1882,6 +1890,7 @@ consent-notice.ft.com,CDN
 consent.dw.com,CDN
 consentdeliveryfd.azurefd.net,CDN
 consumersite-assets.trustpilot.net,CDN
+consumersiteimages.trustpilot.net,CDN
 content-management-files.canva.com,CDN
 content-prod-live.cert.starbucks.com,CDN
 content.any.run,CDN
@@ -2067,6 +2076,7 @@ fonts.codeberg.org,CDN
 fonts.gishan.cc,CDN
 fonts.googleapis.com,CDN
 fonts.gstatic.com,CDN
+fonts.loox.io,CDN
 fonts.mailerlite.com,CDN
 fonts.sony.net,CDN
 fonts.svc.ui.com,CDN
@@ -2199,6 +2209,7 @@ images-assets.nasa.gov,CDN
 images-eds-ssl.xboxlive.com,CDN
 images-ext-1.discordapp.net,CDN
 images-ext-2.discordapp.net,CDN
+images-static.trustpilot.com,CDN
 images.991.com,CDN
 images.anandtech.com,CDN
 images.applegamingwiki.com,CDN
@@ -2223,6 +2234,7 @@ images.freeimages.com,CDN
 images.g2crowd.com,CDN
 images.idgesg.net,CDN
 images.kick.com,CDN
+images.loox.io,CDN
 images.macrumors.com,CDN
 images.mattel.net,CDN
 images.microcms-assets.io,CDN
@@ -2598,6 +2610,7 @@ nodei.co,CDN
 npm.antfu.dev,CDN
 npm.im,CDN
 npm.jsr.io,CDN
+ntp.api.bz,CDN
 ntp.msn.com,CDN
 null.jsbin.com,CDN
 o.n1mp.org,CDN
@@ -3029,6 +3042,7 @@ static.cohere.so,CDN
 static.coinall.ltd,CDN
 static.coingecko.com,CDN
 static.community.workday.com,CDN
+static.convertio.co,CDN
 static.corp.google.com,CDN
 static.cracked.io,CDN
 static.cracked.to,CDN
