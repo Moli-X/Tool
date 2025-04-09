@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3443
+# 规则统计: 3444
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -71,9 +71,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-04-08T08:09:17.748Z
+# Last Updated: 2025-04-08T16:10:42.969Z
 # License: AGPL 3.0
-# Size: 3365
+# Size: 3366
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -604,6 +604,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .li-cdn.com,CDN
 .liangzipic.com,CDN
 .licensebuttons.net,CDN
+.lichess1.org,CDN
 .line-cdn.net,CDN
 .line-scdn.net,CDN
 .local.webcontainer.io,CDN
@@ -2187,7 +2188,6 @@ image.gyutto.jp,CDN
 image.hkhl.hk,CDN
 image.ibb.co,CDN
 image.jnislniv.xyz,CDN
-image.lichess1.org,CDN
 image.mgstage.com,CDN
 image.mux.com,CDN
 image.nmb.best,CDN
@@ -2845,6 +2845,7 @@ s3.c.im,CDN
 s3.coinmarketcap.com,CDN
 s3.cointelegraph.com,CDN
 s3.documentcloud.org,CDN
+s3.doujin.sh,CDN
 s3.dzeninfra.ru,CDN
 s3.envato.com,CDN
 s3.eu-central-003.backblazeb2.com,CDN
