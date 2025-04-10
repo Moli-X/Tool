@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3448
+# 规则统计: 3453
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -71,9 +71,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-04-09T16:24:12.702Z
+# Last Updated: 2025-04-10T10:13:44.308Z
 # License: AGPL 3.0
-# Size: 3370
+# Size: 3375
 # Size: 65
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -357,6 +357,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .f-droid.org,CDN
 .f.hubspotemail.net,CDN
 .f.hubspotfree.net,CDN
+.faceit-cdn.net,CDN
 .fakeimg.pl,CDN
 .fakestoreapi.com,CDN
 .fastly.docker.com,CDN
@@ -1348,6 +1349,7 @@ blob.sololearn.com,CDN
 boards.greenhouse.io,CDN
 bookface-static.ycombinator.com,CDN
 bot.ivy.ai,CDN
+brand-sdk.kmsmep.com,CDN
 brick.a.ssl.fastly.net,CDN
 brick.freetls.fastly.net,CDN
 bst.icons8.com,CDN
@@ -2314,6 +2316,7 @@ img.coomer.su,CDN
 img.decrypt.co,CDN
 img.dlsite.jp,CDN
 img.domaintools.com,CDN
+img.etimg.com,CDN
 img.foresightnews.pro,CDN
 img.fortawesome.com,CDN
 img.freepik.com,CDN
@@ -2514,6 +2517,7 @@ media.evolv.ai,CDN
 media.fc2.com,CDN
 media.flaticon.com,CDN
 media.fs.com,CDN
+media.gamestop.com,CDN
 media.geeksforgeeks.org,CDN
 media.gettr.com,CDN
 media.gettyimages.com,CDN
@@ -2570,6 +2574,7 @@ media7.kissjav.com,CDN
 media8.kissjav.com,CDN
 media9.kissjav.com,CDN
 medias.meow.social,CDN
+medium-media.vgm.io,CDN
 megapx-assets.dcard.tw,CDN
 meta.prismlauncher.org,CDN
 metrics.kapa.ai,CDN
