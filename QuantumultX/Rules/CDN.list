@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3454
+# 规则统计: 3455
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -57,6 +57,7 @@ HOST-WILDCARD,static?.tgstat.ru,CDN
 HOST-WILDCARD,static??.tgstat.ru,CDN
 HOST-WILDCARD,t?.nhentai.net,CDN
 HOST-WILDCARD,th-*.pornone.com,CDN
+HOST-WILDCARD,uploads-*.insided.com,CDN
 HOST-WILDCARD,v.rn???.xyz,CDN
 HOST-WILDCARD,video*.cloudokyo.cloud,CDN
 HOST-WILDCARD,video-thumbnail2.fc2.com,CDN
@@ -70,11 +71,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-04-10T15:34:03.538Z
+# Last Updated: 2025-04-11T10:05:12.753Z
+# Last Updated: 2025-04-11T10:05:13.727Z
 # License: AGPL 3.0
 # Size: 3376
-# Size: 65
+# Size: 66
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -640,6 +641,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .mercdn.net,CDN
 .metric.gstatic.com,CDN
 .mfcimg.com,CDN
+.minotar.net,CDN
 .mirror-media.xyz,CDN
 .mirrors.utermux.dev,CDN
 .misskeyusercontent.com,CDN
@@ -2579,7 +2581,6 @@ megapx-assets.dcard.tw,CDN
 meta.prismlauncher.org,CDN
 metrics.kapa.ai,CDN
 micro.rubiconproject.com,CDN
-minotar.net,CDN
 mintlify.b-cdn.net,CDN
 mir-s3-cdn-cf.behance.net,CDN
 miro.medium.com,CDN

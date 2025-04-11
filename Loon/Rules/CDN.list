@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3454
+# 规则统计: 3455
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -57,6 +57,7 @@ DOMAIN-WILDCARD,static?.tgstat.ru
 DOMAIN-WILDCARD,static??.tgstat.ru
 DOMAIN-WILDCARD,t?.nhentai.net
 DOMAIN-WILDCARD,th-*.pornone.com
+DOMAIN-WILDCARD,uploads-*.insided.com
 DOMAIN-WILDCARD,v.rn???.xyz
 DOMAIN-WILDCARD,video*.cloudokyo.cloud
 DOMAIN-WILDCARD,video-thumbnail2.fc2.com
@@ -70,11 +71,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-03-24T01:51:31.145Z
-# Last Updated: 2025-04-10T15:34:03.538Z
+# Last Updated: 2025-04-11T10:05:12.753Z
+# Last Updated: 2025-04-11T10:05:13.727Z
 # License: AGPL 3.0
 # Size: 3376
-# Size: 65
+# Size: 66
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -640,6 +641,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .mercdn.net
 .metric.gstatic.com
 .mfcimg.com
+.minotar.net
 .mirror-media.xyz
 .mirrors.utermux.dev
 .misskeyusercontent.com
@@ -2579,7 +2581,6 @@ megapx-assets.dcard.tw
 meta.prismlauncher.org
 metrics.kapa.ai
 micro.rubiconproject.com
-minotar.net
 mintlify.b-cdn.net
 mir-s3-cdn-cf.behance.net
 miro.medium.com
