@@ -12,7 +12,7 @@ TG Channel：https://t.me/QuantX
     <th>名称</th>
   </tr>
   <tr>
-    <td rowspan="131"><strong>去广告插件</strong></td>
+    <td rowspan="132"><strong>去广告插件</strong></td>
   <tr>
     <td>001</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin">广告平台拦截器</a></td>
@@ -532,6 +532,10 @@ TG Channel：https://t.me/QuantX
   <tr>
     <td>130</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/HKDouYin_remove_ads.plugin">香港抖音去广告</a></td>
+  </tr>
+  <tr>
+    <td>131</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/WPS_Documents_remove_ads.plugin">WPS文档去广告</a></td>
   </tr>
     <td></td>
     <td></td>

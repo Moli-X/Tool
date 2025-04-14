@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/MailMaster_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MailMaster.png
-#!date=2024-11-28 00:00:00
+#!date=2025-04-14 11:47:41
 
 [Rule]
 DOMAIN,httpdns.music.163.com,REJECT
@@ -199,7 +199,7 @@ DOMAIN-SUFFIX,bridgeoos.com,REJECT
 
 ^https:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/page\/v2\/conf\.do$ response-body-json-del data.functionOperatorInfoList data.memberOperator data.activityTabInfoList
 
-^https:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/config\/function\.do$ response-body-json-jq 'walk(if type == "object" and has("name") and .name == "看视频扩容" then empty else . end) | del(.data.config[] | select(.functionName == "Function-AD"))'
+^https:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/config\/function\.do$ response-body-json-jq '.data.config[] |= if .result.tools then .result.tools |= map(select(.name == "邮件追踪" or .name == "替身邮箱")) else . end | del(.data.config[] | select(.functionName == "Function-AD"))'
 
 ^https:\/\/dashi\.163\.com\/task-center-api\/fapi\/task\/list$ reject-dict
 
