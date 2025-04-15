@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3456
+# 规则统计: 3470
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -16,6 +16,8 @@ DOMAIN-KEYWORD,-thumbs.worldsex.com
 DOMAIN-KEYWORD,99avcdn
 DOMAIN-KEYWORD,cdn.adultempire.com
 DOMAIN-KEYWORD,dsn.algolia.net
+DOMAIN-KEYWORD,fonts.hanime1
+DOMAIN-KEYWORD,vdownload.hanime1
 DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 DOMAIN-KEYWORD,web-assets.zendesk
 DOMAIN-WILDCARD,*.fsvod?.com
@@ -47,6 +49,7 @@ DOMAIN-WILDCARD,object-storage-*.vexxhost.net
 DOMAIN-WILDCARD,ocsp.*.amazontrust.com
 DOMAIN-WILDCARD,proxy-*.dailymotion.com
 DOMAIN-WILDCARD,rr?---??.ouo.si
+DOMAIN-WILDCARD,s*.hanime1
 DOMAIN-WILDCARD,s3-*.figma.com
 DOMAIN-WILDCARD,s3.*.wasabisys.com
 DOMAIN-WILDCARD,s?.maxstream.org
@@ -69,11 +72,11 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-04-11T10:05:12.753Z
-# Last Updated: 2025-04-14T10:31:58.481Z
+# Last Updated: 2025-04-15T09:20:56.979Z
+# Last Updated: 2025-04-15T12:43:36.113Z
 # License: AGPL 3.0
-# Size: 3379
-# Size: 66
+# Size: 3390
+# Size: 69
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -308,6 +311,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .dlunar.net
 .dmcdn.net
 .docker.io
+.dockerstatic.com
 .dogehls.xyz
 .doodcdn.co
 .doppiocdn.com
@@ -1430,6 +1434,7 @@ cdn.123av.me
 cdn.17app.co
 cdn.18jav.tv
 cdn.7tv.app
+cdn.accounts.autodesk.com
 cdn.accounts.nintendo.com
 cdn.adguard.com
 cdn.adguard.info
@@ -1935,6 +1940,7 @@ cw-image-resizer.cwg.tw
 d2c.aws.amazon.com
 d4.alternativeto.net
 dam.freshworks.com
+damassets.autodesk.net
 dassets.shimano.com
 data.jsdelivr.com
 data.pendo.io
@@ -1999,6 +2005,7 @@ embed.savvycal.com
 embed.tawk.to
 embed.ted.com
 embed.typeform.com
+embedr.flickr.com
 embedwistia-a.akamaihd.net
 emoji-css.afeld.me
 emos.plurk.com
@@ -2049,6 +2056,7 @@ favicons.nextdns.io
 favicons.teams.cloudflare.com
 fdn.gsmarena.com
 fdn2.gsmarena.com
+featureflags.netlify.com
 fesdk.nexon.com
 fiddle.fastly.dev
 fiddle.jshell.net
@@ -2156,6 +2164,7 @@ i.iwara.tv
 i.jpg.dog
 i.kickstarter.com
 i.loli.best
+i.mediatek.com
 i.mt.lv
 i.mydramalist.com
 i.nhentai.net
@@ -2256,6 +2265,7 @@ images.pling.com
 images.plurk.com
 images.pluto.tv
 images.prismic.io
+images.profile.autodesk.com
 images.ptt.cc
 images.purevpn-tools.com
 images.scalero.io
@@ -2587,6 +2597,7 @@ miro.medium.com
 mixin-images.zeromesh.net
 mkt-site-asset.crypto.com
 mobilecenter.azureedge.net
+moderate.cleantalk.org
 momentjs.com
 moodular.jotform.com
 mosaic-blender.fxtwitter.com
@@ -2948,6 +2959,7 @@ snyk-widget.herokuapp.com
 social-cdn.vivaldi.net
 solve-widget.forethought.ai
 source.domaintools.com
+source.unsplash.com
 sourcemaps.squarespace.net
 sourcepoint.theguardian.com
 sp-spiegel-de.spiegel.de
@@ -3081,6 +3093,7 @@ static.filehorse.com
 static.filestackapi.com
 static.foxbusiness.com
 static.foxnews.com
+static.freedownloadmanager.org
 static.freeimages.com
 static.getbutton.io
 static.gettyimages.com
@@ -3430,6 +3443,7 @@ widget.user.com
 widget.usersnap.com
 widget.uservoice.com
 widgets-red.media.weather.com
+widgets.flickr.com
 widgets.listenlive.co
 widgets.media.weather.com
 widgets.outbrain.com

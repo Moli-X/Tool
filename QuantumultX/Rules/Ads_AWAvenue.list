@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 733
+# 规则统计: 730
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 724
-#Update content: remove stats.qiumibao.com
-#Update time: 2025-04-14 18:01:09 UTC+8
+#Total lines: 721
+#Update content: add “micro-xdb.com” ads.
+#Update time: 2025-04-15 19:04:21 UTC+8
 #Version: 1.6.0-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -18,9 +18,6 @@
 .aaid.umeng.com,Ads_AWAvenue
 .abtest-ch.snssdk.com,Ads_AWAvenue
 .ad-cdn.qingting.fm,Ads_AWAvenue
-.ad-cmp.hismarttv.com,Ads_AWAvenue
-.ad-download.hismarttv.com,Ads_AWAvenue
-.ad-imp.hismarttv.com,Ads_AWAvenue
 .ad-scope.com,Ads_AWAvenue
 .ad-scope.com.cn,Ads_AWAvenue
 .ad-sdk-config.youdao.com,Ads_AWAvenue
@@ -344,7 +341,6 @@
 .heads-ak.spotify.com.edgesuite.net,Ads_AWAvenue
 .heads-fa.spotify.com,Ads_AWAvenue
 .hexagon-analytics.com,Ads_AWAvenue
-.hismarttv.com,Ads_AWAvenue
 .hm.baidu.com,Ads_AWAvenue
 .hmma.baidu.com,Ads_AWAvenue
 .hotupgrade.hpplay.cn,Ads_AWAvenue
@@ -464,6 +460,7 @@
 .metrika.yandex.ru,Ads_AWAvenue
 .mi.gdt.qq.com,Ads_AWAvenue
 .miav-cse.avlyun.com,Ads_AWAvenue
+.micro-xdb.com,Ads_AWAvenue
 .mime.baidu.com,Ads_AWAvenue
 .mini-prog-drm.vodplayvideo.net,Ads_AWAvenue
 .mission-pub.smart-tv.cn,Ads_AWAvenue
