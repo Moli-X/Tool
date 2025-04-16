@@ -72,9 +72,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-15T09:20:56.979Z
-# Last Updated: 2025-04-15T12:43:36.113Z
+# Last Updated: 2025-04-16T06:42:59.247Z
 # License: AGPL 3.0
-# Size: 3390
+# Size: 3392
 # Size: 69
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -639,6 +639,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .media.strapiapp.com
 .media.tumblr.com
 .media.zestyio.com
+.mediadelivery.net
 .meetupstatic.com
 .mercdn.net
 .metric.gstatic.com
@@ -724,6 +725,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .pagecdn.io
 .pages.dev
 .parastorage.com
+.parceljs.org
 .pastebin.com
 .patientpop.com
 .patreonusercontent.com
@@ -1241,7 +1243,6 @@ assets.mastercard.com
 assets.matters.news
 assets.mayoclinic.org
 assets.media-platform.com
-assets.mediadelivery.net
 assets.monei.com
 assets.monica.im
 assets.mozilla.social
@@ -1364,6 +1365,7 @@ bundlephobia.com
 bundler.nice-team.net
 bundler.wix-code.com
 bundles.npr.org
+bunnycdn-video-assets.b-cdn.net
 businessunitprofile-cdn.trustpilot.net
 busuanzi.ibruce.info
 c.1password.com

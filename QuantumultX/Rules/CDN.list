@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3472
+# 规则统计: 3474
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -75,9 +75,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-15T09:20:56.979Z
-# Last Updated: 2025-04-15T12:43:36.113Z
+# Last Updated: 2025-04-16T06:42:59.247Z
 # License: AGPL 3.0
-# Size: 3390
+# Size: 3392
 # Size: 69
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -642,6 +642,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .media.strapiapp.com,CDN
 .media.tumblr.com,CDN
 .media.zestyio.com,CDN
+.mediadelivery.net,CDN
 .meetupstatic.com,CDN
 .mercdn.net,CDN
 .metric.gstatic.com,CDN
@@ -727,6 +728,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .pagecdn.io,CDN
 .pages.dev,CDN
 .parastorage.com,CDN
+.parceljs.org,CDN
 .pastebin.com,CDN
 .patientpop.com,CDN
 .patreonusercontent.com,CDN
@@ -1244,7 +1246,6 @@ assets.mastercard.com,CDN
 assets.matters.news,CDN
 assets.mayoclinic.org,CDN
 assets.media-platform.com,CDN
-assets.mediadelivery.net,CDN
 assets.monei.com,CDN
 assets.monica.im,CDN
 assets.mozilla.social,CDN
@@ -1367,6 +1368,7 @@ bundlephobia.com,CDN
 bundler.nice-team.net,CDN
 bundler.wix-code.com,CDN
 bundles.npr.org,CDN
+bunnycdn-video-assets.b-cdn.net,CDN
 businessunitprofile-cdn.trustpilot.net,CDN
 busuanzi.ibruce.info,CDN
 c.1password.com,CDN
