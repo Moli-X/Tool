@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3474
+# 规则统计: 3478
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -75,9 +75,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-15T09:20:56.979Z
-# Last Updated: 2025-04-16T06:42:59.247Z
+# Last Updated: 2025-04-16T16:25:25.132Z
 # License: AGPL 3.0
-# Size: 3392
+# Size: 3396
 # Size: 69
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -709,6 +709,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .nxedge.io,CDN
 .oaistatic.com,CDN
 .oaiusercontent.com,CDN
+.observableusercontent.com,CDN
 .oculuscdn.com,CDN
 .odycdn.com,CDN
 .ogads-pa.clients6.google.com,CDN
@@ -892,6 +893,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .stackblitz.io,CDN
 .stapecdn.com,CDN
 .static-prod-web.miniclip.com,CDN
+.static.amplience.net,CDN
 .static.chaosgroup.com,CDN
 .static.domains,CDN
 .static.flickr.com,CDN
@@ -931,6 +933,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .surge.sh,CDN
 .surrit.com,CDN
 .susercontent.com,CDN
+.svbtleusercontent.com,CDN
 .sway-cdn.com,CDN
 .swiftypecdn.com,CDN
 .sxccdn.com,CDN
@@ -1127,6 +1130,7 @@ app-api.vidjet.io,CDN
 app-spm.com,CDN
 app-static.eu.posthog.com,CDN
 app-static.turtl.co,CDN
+app.1password.com,CDN
 app.backinstock.org,CDN
 app.brightback.com,CDN
 app.chatwoot.com,CDN
@@ -1712,6 +1716,7 @@ cdn.svgator.com,CDN
 cdn.tailwindcss.com,CDN
 cdn.termius.com,CDN
 cdn.thenewstack.io,CDN
+cdn.thingiverse.com,CDN
 cdn.tinypass.com,CDN
 cdn.tolt.io,CDN
 cdn.tracxn.com,CDN
@@ -1890,7 +1895,6 @@ code.jquery.com,CDN
 code.piano.io,CDN
 code.upscope.io,CDN
 common-header.nimg.jp,CDN
-compass-ssl.xbox.com,CDN
 components.clever-cloud.com,CDN
 components.justanswer.com,CDN
 components.trynow.net,CDN
@@ -2358,7 +2362,6 @@ img.openshop.com.hk,CDN
 img.pawoo.net,CDN
 img.perfops.net,CDN
 img.picacomic.com,CDN
-img.ra7.xyz,CDN
 img.reg.ru,CDN
 img.reimu.net,CDN
 img.represent.com,CDN
@@ -2370,6 +2373,7 @@ img.sparemin.com,CDN
 img.sparknotes.com,CDN
 img.supjav.com,CDN
 img.telemetr.io,CDN
+img.thingiverse.com,CDN
 img.timero.xyz,CDN
 img.urlnode.com,CDN
 img.utdstc.com,CDN
@@ -2505,6 +2509,7 @@ mantisloader.mantis-awx.com,CDN
 maps.geoapify.com,CDN
 maps.gstatic.com,CDN
 marketing.figma.com,CDN
+marketing.thingiverse.com,CDN
 marketplace-web-assets.vinted.com,CDN
 mastodon-static.miao.dev,CDN
 maven.google.com,CDN
@@ -2635,7 +2640,6 @@ nodei.co,CDN
 npm.antfu.dev,CDN
 npm.im,CDN
 npm.jsr.io,CDN
-ntp.api.bz,CDN
 ntp.msn.com,CDN
 null.jsbin.com,CDN
 o.n1mp.org,CDN
@@ -2672,7 +2676,6 @@ p2.bahamut.com.tw,CDN
 pacdn.500px.org,CDN
 package-assets.oomol.com,CDN
 packages-cf.termux.dev,CDN
-packages.argotunnel.com,CDN
 packages.httpie.io,CDN
 packages.jetbrains.team,CDN
 packages.termux.dev,CDN
@@ -2708,6 +2711,7 @@ pics.vpdmm.cc,CDN
 pics.x-n-x-x.pro,CDN
 pkg-cdn.jetbrains.team,CDN
 pkg-size.dev,CDN
+pkg.cloudflare.com,CDN
 pkg.cloudflareclient.com,CDN
 pkg.csb.dev,CDN
 pkgs.dev.azure.com,CDN
@@ -3038,7 +3042,6 @@ static.ada.support,CDN
 static.addtoany.com,CDN
 static.adguardvpn.com,CDN
 static.afterpay.com,CDN
-static.agilebits.com,CDN
 static.ahrefs.com,CDN
 static.aizanmei.org,CDN
 static.apkpure.com,CDN
@@ -3152,6 +3155,7 @@ static.nhentai.net,CDN
 static.nicehash.com,CDN
 static.npmjs.com,CDN
 static.nrk.no,CDN
+static.observablehq.com,CDN
 static.oklink.com,CDN
 static.okx.com,CDN
 static.olelive.com,CDN

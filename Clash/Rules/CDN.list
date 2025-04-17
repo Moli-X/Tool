@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3472
+# 规则统计: 3476
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -73,9 +73,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-15T09:20:56.979Z
-# Last Updated: 2025-04-16T06:42:59.247Z
+# Last Updated: 2025-04-16T16:25:25.132Z
 # License: AGPL 3.0
-# Size: 3392
+# Size: 3396
 # Size: 69
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -707,6 +707,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .nxedge.io
 .oaistatic.com
 .oaiusercontent.com
+.observableusercontent.com
 .oculuscdn.com
 .odycdn.com
 .ogads-pa.clients6.google.com
@@ -890,6 +891,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .stackblitz.io
 .stapecdn.com
 .static-prod-web.miniclip.com
+.static.amplience.net
 .static.chaosgroup.com
 .static.domains
 .static.flickr.com
@@ -929,6 +931,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .surge.sh
 .surrit.com
 .susercontent.com
+.svbtleusercontent.com
 .sway-cdn.com
 .swiftypecdn.com
 .sxccdn.com
@@ -1125,6 +1128,7 @@ app-api.vidjet.io
 app-spm.com
 app-static.eu.posthog.com
 app-static.turtl.co
+app.1password.com
 app.backinstock.org
 app.brightback.com
 app.chatwoot.com
@@ -1710,6 +1714,7 @@ cdn.svgator.com
 cdn.tailwindcss.com
 cdn.termius.com
 cdn.thenewstack.io
+cdn.thingiverse.com
 cdn.tinypass.com
 cdn.tolt.io
 cdn.tracxn.com
@@ -1888,7 +1893,6 @@ code.jquery.com
 code.piano.io
 code.upscope.io
 common-header.nimg.jp
-compass-ssl.xbox.com
 components.clever-cloud.com
 components.justanswer.com
 components.trynow.net
@@ -2356,7 +2360,6 @@ img.openshop.com.hk
 img.pawoo.net
 img.perfops.net
 img.picacomic.com
-img.ra7.xyz
 img.reg.ru
 img.reimu.net
 img.represent.com
@@ -2368,6 +2371,7 @@ img.sparemin.com
 img.sparknotes.com
 img.supjav.com
 img.telemetr.io
+img.thingiverse.com
 img.timero.xyz
 img.urlnode.com
 img.utdstc.com
@@ -2503,6 +2507,7 @@ mantisloader.mantis-awx.com
 maps.geoapify.com
 maps.gstatic.com
 marketing.figma.com
+marketing.thingiverse.com
 marketplace-web-assets.vinted.com
 mastodon-static.miao.dev
 maven.google.com
@@ -2633,7 +2638,6 @@ nodei.co
 npm.antfu.dev
 npm.im
 npm.jsr.io
-ntp.api.bz
 ntp.msn.com
 null.jsbin.com
 o.n1mp.org
@@ -2670,7 +2674,6 @@ p2.bahamut.com.tw
 pacdn.500px.org
 package-assets.oomol.com
 packages-cf.termux.dev
-packages.argotunnel.com
 packages.httpie.io
 packages.jetbrains.team
 packages.termux.dev
@@ -2706,6 +2709,7 @@ pics.vpdmm.cc
 pics.x-n-x-x.pro
 pkg-cdn.jetbrains.team
 pkg-size.dev
+pkg.cloudflare.com
 pkg.cloudflareclient.com
 pkg.csb.dev
 pkgs.dev.azure.com
@@ -3036,7 +3040,6 @@ static.ada.support
 static.addtoany.com
 static.adguardvpn.com
 static.afterpay.com
-static.agilebits.com
 static.ahrefs.com
 static.aizanmei.org
 static.apkpure.com
@@ -3150,6 +3153,7 @@ static.nhentai.net
 static.nicehash.com
 static.npmjs.com
 static.nrk.no
+static.observablehq.com
 static.oklink.com
 static.okx.com
 static.olelive.com
