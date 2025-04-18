@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3478
+# 规则统计: 3482
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -75,9 +75,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-15T09:20:56.979Z
-# Last Updated: 2025-04-16T16:25:25.132Z
+# Last Updated: 2025-04-17T14:09:15.948Z
 # License: AGPL 3.0
-# Size: 3396
+# Size: 3400
 # Size: 69
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1102,6 +1102,7 @@ akamai-assets.squarespace.com,CDN
 alt.idgesg.net,CDN
 amazon-omni-cdn.com,CDN
 amp.azure.net,CDN
+analytics.canarymail.io,CDN
 analytics.twitter.com,CDN
 analytics.welcomesoftware.com,CDN
 anchor.digitalocean.com,CDN
@@ -2090,6 +2091,7 @@ firebase-settings.crashlytics.com,CDN
 firebaseinstallations.googleapis.com,CDN
 firebaselogging-pa.googleapis.com,CDN
 firebaselogging.googleapis.com,CDN
+firebaseremoteconfig.googleapis.com,CDN
 firefox.settings.services.mozilla.com,CDN
 fiverr-res.cloudinary.com,CDN
 flo.uri.sh,CDN
@@ -3254,6 +3256,7 @@ staticw2.yotpo.com,CDN
 stats.codesandbox.io,CDN
 stats.setapp.com,CDN
 stats.setapp.macpaw.dev,CDN
+status.canarymail.io,CDN
 status.ui.com,CDN
 stbff.newfold.com,CDN
 steamcdn-a.akamaihd.net,CDN
@@ -3322,6 +3325,7 @@ thumbsnap.com,CDN
 tiles.stadiamaps.com,CDN
 tiles.windy.com,CDN
 time.cloudflare.com,CDN
+time.google.com,CDN
 time.windows.com,CDN
 tn.txxx.tube,CDN
 tn.vjav.com,CDN

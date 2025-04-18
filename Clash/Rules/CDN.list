@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3476
+# 规则统计: 3480
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -73,9 +73,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-15T09:20:56.979Z
-# Last Updated: 2025-04-16T16:25:25.132Z
+# Last Updated: 2025-04-17T14:09:15.948Z
 # License: AGPL 3.0
-# Size: 3396
+# Size: 3400
 # Size: 69
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1100,6 +1100,7 @@ akamai-assets.squarespace.com
 alt.idgesg.net
 amazon-omni-cdn.com
 amp.azure.net
+analytics.canarymail.io
 analytics.twitter.com
 analytics.welcomesoftware.com
 anchor.digitalocean.com
@@ -2088,6 +2089,7 @@ firebase-settings.crashlytics.com
 firebaseinstallations.googleapis.com
 firebaselogging-pa.googleapis.com
 firebaselogging.googleapis.com
+firebaseremoteconfig.googleapis.com
 firefox.settings.services.mozilla.com
 fiverr-res.cloudinary.com
 flo.uri.sh
@@ -3252,6 +3254,7 @@ staticw2.yotpo.com
 stats.codesandbox.io
 stats.setapp.com
 stats.setapp.macpaw.dev
+status.canarymail.io
 status.ui.com
 stbff.newfold.com
 steamcdn-a.akamaihd.net
@@ -3320,6 +3323,7 @@ thumbsnap.com
 tiles.stadiamaps.com
 tiles.windy.com
 time.cloudflare.com
+time.google.com
 time.windows.com
 tn.txxx.tube
 tn.vjav.com
