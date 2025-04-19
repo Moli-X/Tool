@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3486
+# 规则统计: 3491
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -75,9 +75,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-15T09:20:56.979Z
-# Last Updated: 2025-04-18T07:41:47.929Z
+# Last Updated: 2025-04-18T17:20:46.880Z
 # License: AGPL 3.0
-# Size: 3404
+# Size: 3409
 # Size: 69
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -2118,6 +2118,7 @@ frames-commandbar-prod.commandbar.com,CDN
 freeshippingbar.herokuapp.com,CDN
 front-resource.fs.com,CDN
 frontend-apps.workos.com,CDN
+frontend.floatplane.com,CDN
 fs2.onlyhentaistuff.com,CDN
 fscdn.eppo.cloud,CDN
 g-static.ap4r.com,CDN
@@ -2671,6 +2672,7 @@ oss.1p3a.com,CDN
 oss.moe.cat,CDN
 ovo.wxw.moe,CDN
 ovp.itv.com,CDN
+p-cdnstatic.svc.litv.tv,CDN
 p-smith.com,CDN
 p.depot.dev,CDN
 p.inari.site,CDN
@@ -2691,6 +2693,7 @@ patterns.hiive.cloud,CDN
 pba.apple.com,CDN
 pbc.nypost.com,CDN
 pbc.wsj.com,CDN
+pbs.floatplane.com,CDN
 pcdn-my.pcloud.com,CDN
 pcdn-www.pcloud.com,CDN
 pcz.javidol.org,CDN
@@ -2714,6 +2717,7 @@ pics.mf8.biz,CDN
 pics.paypal.com,CDN
 pics.vpdmm.cc,CDN
 pics.x-n-x-x.pro,CDN
+pim-media.intel.com,CDN
 pkg-cdn.jetbrains.team,CDN
 pkg-size.dev,CDN
 pkg.cloudflare.com,CDN
@@ -2840,6 +2844,7 @@ runkit-packages-static.com,CDN
 rv-assets.softonic.com,CDN
 s-cdn.anthropic.com,CDN
 s-cdn.phonearena.com,CDN
+s-cdnstatic.svc.litv.tv,CDN
 s.abcnews.com,CDN
 s.gishan.cc,CDN
 s.imgflip.com,CDN

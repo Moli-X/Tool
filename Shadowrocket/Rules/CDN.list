@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3486
+# 规则统计: 3491
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -75,9 +75,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-15T09:20:56.979Z
-# Last Updated: 2025-04-18T07:41:47.929Z
+# Last Updated: 2025-04-18T17:20:46.880Z
 # License: AGPL 3.0
-# Size: 3404
+# Size: 3409
 # Size: 69
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -2118,6 +2118,7 @@ frames-commandbar-prod.commandbar.com
 freeshippingbar.herokuapp.com
 front-resource.fs.com
 frontend-apps.workos.com
+frontend.floatplane.com
 fs2.onlyhentaistuff.com
 fscdn.eppo.cloud
 g-static.ap4r.com
@@ -2671,6 +2672,7 @@ oss.1p3a.com
 oss.moe.cat
 ovo.wxw.moe
 ovp.itv.com
+p-cdnstatic.svc.litv.tv
 p-smith.com
 p.depot.dev
 p.inari.site
@@ -2691,6 +2693,7 @@ patterns.hiive.cloud
 pba.apple.com
 pbc.nypost.com
 pbc.wsj.com
+pbs.floatplane.com
 pcdn-my.pcloud.com
 pcdn-www.pcloud.com
 pcz.javidol.org
@@ -2714,6 +2717,7 @@ pics.mf8.biz
 pics.paypal.com
 pics.vpdmm.cc
 pics.x-n-x-x.pro
+pim-media.intel.com
 pkg-cdn.jetbrains.team
 pkg-size.dev
 pkg.cloudflare.com
@@ -2840,6 +2844,7 @@ runkit-packages-static.com
 rv-assets.softonic.com
 s-cdn.anthropic.com
 s-cdn.phonearena.com
+s-cdnstatic.svc.litv.tv
 s.abcnews.com
 s.gishan.cc
 s.imgflip.com
