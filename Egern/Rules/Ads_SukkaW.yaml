@@ -71,6 +71,7 @@ DOMAIN-SUFFIX,bright-sdk.com
 DOMAIN-SUFFIX,brightdata.com
 DOMAIN-SUFFIX,brightinitiative.com
 DOMAIN-SUFFIX,brightvpn.com
+DOMAIN-SUFFIX,choyoga.com
 DOMAIN-SUFFIX,classify-client.services.mozilla.com
 DOMAIN-SUFFIX,crazyegg.com
 DOMAIN-SUFFIX,data
@@ -89,9 +90,11 @@ DOMAIN-SUFFIX,holashop.org
 DOMAIN-SUFFIX,httpdns.c.163.com
 DOMAIN-SUFFIX,httpdns.n.netease.com
 DOMAIN-SUFFIX,httpdns.pro
+DOMAIN-SUFFIX,hut1.ru
 DOMAIN-SUFFIX,incoming-telemetry.thunderbird.net
 DOMAIN-SUFFIX,juejin.cn
 DOMAIN-SUFFIX,juejin.im
+DOMAIN-SUFFIX,kanuassociates.com
 DOMAIN-SUFFIX,kimo.tw
 DOMAIN-SUFFIX,l-agent.me
 DOMAIN-SUFFIX,l-cdn.com
@@ -111,10 +114,12 @@ DOMAIN-SUFFIX,luminati.io
 DOMAIN-SUFFIX,luminatichina.net
 DOMAIN-SUFFIX,luminatinet.com
 DOMAIN-SUFFIX,lumtest.com
+DOMAIN-SUFFIX,luxxeeu.com
 DOMAIN-SUFFIX,minexmr.com
 DOMAIN-SUFFIX,moebgp.com
 DOMAIN-SUFFIX,mynextphone.io
 DOMAIN-SUFFIX,net.mydays.de
+DOMAIN-SUFFIX,newzgames.com
 DOMAIN-SUFFIX,notify6.com
 DOMAIN-SUFFIX,notifysrv.com
 DOMAIN-SUFFIX,omtrdc.net
@@ -125,7 +130,9 @@ DOMAIN-SUFFIX,proxy-review.com
 DOMAIN-SUFFIX,proxyway.com
 DOMAIN-SUFFIX,rubiconproject.com
 DOMAIN-SUFFIX,scorecardresearch.com
+DOMAIN-SUFFIX,shengen.ru
 DOMAIN-SUFFIX,svd-cdn.com
+DOMAIN-SUFFIX,taxility.com
 DOMAIN-SUFFIX,telemetry-coverage.mozilla.org
 DOMAIN-SUFFIX,telemetry.mozilla.org
 DOMAIN-SUFFIX,thecodeil.com
@@ -265,14 +272,14 @@ URL-REGEX,/\d+/sign_d
 # Build from:
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-04-19T12:51:34.157Z
-# Last Updated: 2025-04-19T12:51:34.593Z
+# Last Updated: 2025-04-19T13:02:04.171Z
+# Last Updated: 2025-04-19T15:10:22.923Z
 # License: AGPL 3.0
-# Size: 250
-# Size: 67537
+# Size: 257
+# Size: 67567
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Domains
-# The domainset supports AD blocking, tracking protection, privacy protection, anti-phishing, anti-mining
+# The domainset supports AD blocking, tracking protection, privacy protection, anti-mining
 # The ruleset supports AD blocking, tracking protection, privacy protection, anti-phishing, anti-mining
 ################## EOF ##################
 #########################################
@@ -999,6 +1006,7 @@ URL-REGEX,/\d+/sign_d
 .8ail6.icu
 .8cp.icu
 .8digits.com
+.8ea1272194.com
 .8ecc2aee4f.com
 .8ehhtsv9bo7i.monkeylearn.com
 .8et.icu
@@ -9419,6 +9427,7 @@ URL-REGEX,/\d+/sign_d
 .ca.transhero.com
 .ca.video-cdn.net
 .ca.yangshengtv.com
+.ca06ef821c.com
 .ca2686564a.com
 .ca4psell23a4bur.com
 .caahwq.com
@@ -10286,6 +10295,7 @@ URL-REGEX,/\d+/sign_d
 .chourdain.com
 .chouthep.net
 .choymp.pooldawg.com
+.choyoga.com
 .chpspb.bubbleroom.fi
 .chr.conservativehealthreport.org
 .chrczt.vite-envogue.de
@@ -11849,6 +11859,7 @@ URL-REGEX,/\d+/sign_d
 .coverdistilltile.com
 .covertcourse.com
 .covettunica.com
+.covidvcfund.com
 .covivado.club
 .coviyr.modafurnishings.co.uk
 .covtk.medtronic.com
@@ -18672,6 +18683,7 @@ URL-REGEX,/\d+/sign_d
 .egret.legislative.tech
 .egswvw.hanrousa.com
 .egvemw.aboutyou.ee
+.egxtaxsqf.com
 .ehauzf.jewlr.ca
 .ehavol.consul.com.br
 .ehdkzm.ottoversand.at
@@ -19743,6 +19755,7 @@ URL-REGEX,/\d+/sign_d
 .etherart.online
 .ethhbl.dom-rafinad.ru
 .ethnic1266.fun
+.ethugloodu.com
 .etjui.cn
 .etkaiz.paprika.fr
 .etl.springbot.com
@@ -20697,6 +20710,7 @@ URL-REGEX,/\d+/sign_d
 .fesnaed.com
 .fespzx.sfr.fr
 .festfive.online
+.feturequalms.shop
 .feuageepitoke.com
 .feubgzfx.icu
 .feuqzl.woolrich.com
@@ -24268,6 +24282,7 @@ URL-REGEX,/\d+/sign_d
 .h8ne.com
 .ha-api.pushwoosh.com
 .habsoowhaum.net
+.hacx60.com
 .haddock.affilimate.com
 .haddock.jeffreyknox.dev
 .haddock.simgenie.app
@@ -24488,6 +24503,7 @@ URL-REGEX,/\d+/sign_d
 .headacheaim.com
 .headphones.xn--clinicadentalcariena-k7b.com
 .headshot.monster
+.healfultwifold.com
 .health-metrics-api.setapp.com
 .health.atlanticgeneral.org
 .health.becomehealthytogether.com
@@ -25041,6 +25057,7 @@ URL-REGEX,/\d+/sign_d
 .hostadsmarkets.com
 .hostave4.net
 .hostcontent.live
+.hoster-test.ru
 .hostolhg.com
 .hot-mob.com
 .hot.justpornflix.com
@@ -25276,6 +25293,7 @@ URL-REGEX,/\d+/sign_d
 .husky.sogou.com
 .huskypartydance.com
 .husoxn.investors.com
+.hut1.ru
 .hutjfl.pennyblack.com
 .hutkse.wecandoo.fr
 .hutoumseet.com
@@ -27466,6 +27484,7 @@ URL-REGEX,/\d+/sign_d
 .innity.net
 .innovads-server.poster.appsinnova.com
 .innovate.bionix.com
+.innovatedating.com
 .innovation.agam.nl
 .innovation.bloomsoutofthebox.com
 .innovation.boxrstore.com
@@ -28885,6 +28904,7 @@ URL-REGEX,/\d+/sign_d
 .jynwlg.veromoda.com
 .jyozavobzrlkz.top
 .jypvzd.xyz
+.jyqekzzlmymzy.top
 .jyqkijp.icu
 .jyuicr.codemonkey.com
 .jyumzv.dcshoes.com.br
@@ -28976,6 +28996,7 @@ URL-REGEX,/\d+/sign_d
 .kangaroohiccups.com
 .kanndr.badkamerdepot.be
 .kantiwl.com
+.kanuassociates.com
 .kaocko.swaglift.com
 .kaolinoleous.com
 .kaosts.com
@@ -29030,6 +29051,7 @@ URL-REGEX,/\d+/sign_d
 .kbx.weardala.com
 .kbzjmu.helvetictours.ch
 .kcaactpkyp.com
+.kcadxjoxkggcui.com
 .kcaodbdtyobr.com
 .kcecv.doctork.jp
 .kcfdom.com
@@ -32902,6 +32924,7 @@ URL-REGEX,/\d+/sign_d
 .luxupcdnb.com
 .luxupcdnc.com
 .luxury.discoverylandco.com
+.luxxeeu.com
 .luyarvx.icu
 .luyten-98c.com
 .luzfpa.dltviaggi.it
@@ -39159,6 +39182,7 @@ URL-REGEX,/\d+/sign_d
 .newt.masonwear.co
 .newtest.wunderman-email.cjm.adobe.com
 .newton.pw
+.newzgames.com
 .nex.163.com
 .nex8.space
 .nexac.com
@@ -41130,6 +41154,7 @@ URL-REGEX,/\d+/sign_d
 .ounwut.thehappyplanner.com
 .oupheerdodoomt.net
 .ouphouch.com
+.ouphushoomauh.net
 .ouplc.icu
 .oupusoma.net
 .our.sunshinecoast.qld.gov.au
@@ -43305,6 +43330,7 @@ URL-REGEX,/\d+/sign_d
 .pressize.com
 .pressyour.com
 .prestoris.com
+.pretenddyker.com
 .pretrackings.com
 .pretty-fly4.com
 .pretty-sluts-nearby.com
@@ -43536,6 +43562,7 @@ URL-REGEX,/\d+/sign_d
 .prossit.prostavive.site
 .prosumsit.com
 .prosvive.prostavive.online
+.prosystemorgo.com
 .protagcdn.com
 .protawe.com
 .proteinfrivolousfertilised.com
@@ -43588,6 +43615,7 @@ URL-REGEX,/\d+/sign_d
 .prugrr.sens-original.com
 .prugskh.com
 .prugskh.net
+.pruningcomping.top
 .prutosom.com
 .prvc.io
 .prvizg.shurgard.be
@@ -43861,6 +43889,7 @@ URL-REGEX,/\d+/sign_d
 .pushazam.com
 .pushbizapi.com
 .pushclk.com
+.pushd.netky.tech
 .pushdelone.com
 .pushdom.co
 .pushdrop.club
@@ -44918,6 +44947,7 @@ URL-REGEX,/\d+/sign_d
 .receiver.eigene.io
 .receiver.habby.mobi
 .receptivereaction.com
+.receptivity.io
 .rechenschieber.soccerdonna.de
 .rechenschieber.transfermarkt.at
 .rechenschieber.transfermarkt.be
@@ -48711,6 +48741,7 @@ URL-REGEX,/\d+/sign_d
 .shelluiqy.com
 .shelourdoals.net
 .shemsoalto.net
+.shengen.ru
 .sheoil.newyorkandcompany.com
 .shepeekr.net
 .sherlock.mediaddress.com
@@ -53752,6 +53783,7 @@ URL-REGEX,/\d+/sign_d
 .sugar.zhihu.com
 .sugilip.cn
 .sugs.m.sm.cn
+.suitedeatercrutch.com
 .sukspcwrnqpbs.life
 .sulkycook.com
 .sumatoad.com
@@ -55544,6 +55576,7 @@ URL-REGEX,/\d+/sign_d
 .tauzo.xyz
 .tawmbg.tower-london.com
 .taxfvo.mamaloesbabysjop.nl
+.taxility.com
 .taxissunroom.com
 .taxkob.equestrianstockholm.com
 .taxrsiwlggms.com
@@ -56143,6 +56176,7 @@ URL-REGEX,/\d+/sign_d
 .thidraimistah.com
 .thiltoocmom.com
 .thind-gke-euw.prd.data.corp.unity3d.com
+.thinideemissie.com
 .think.phdinc.com
 .thinksclingingentertainment.com
 .thinksuggest.org
@@ -62842,6 +62876,7 @@ URL-REGEX,/\d+/sign_d
 .vortex.hulu.com
 .vortix.prismaticshop.store
 .vothongeey.net
+.votookrogn.net
 .votruiiuefzwd.today
 .voucoapoo.com
 .vougaipte.net
@@ -65949,6 +65984,7 @@ URL-REGEX,/\d+/sign_d
 .yummycdn.com
 .yun-hl.3g.qq.com
 .yunshipei.com
+.yuntodifrz.com
 .yuoyan.finanzen.de
 .yuqmok.xyz
 .yuqnyudug.com
@@ -66156,6 +66192,7 @@ URL-REGEX,/\d+/sign_d
 .zampdsp.com
 .zamxcn.dmall.co.kr
 .zantainet.com
+.zapotasmoot.com
 .zarkph.lacotto.jp
 .zarpop.com
 .zarvsr.carredartistes.com
