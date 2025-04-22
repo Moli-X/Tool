@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3485
+# 规则统计: 3487
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -75,9 +75,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-15T09:20:56.979Z
-# Last Updated: 2025-04-20T23:23:30.937Z
+# Last Updated: 2025-04-22T11:55:26.842Z
 # License: AGPL 3.0
-# Size: 3403
+# Size: 3405
 # Size: 69
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -263,7 +263,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .cloud2.influxdata.com,CDN
 .cloudatacdn.com,CDN
 .cloudflare-ipfs.com,CDN
-.cloudflare-terms-of-service-abuse.com,CDN
 .cloudflare.docker.com,CDN
 .cloudflare.ltd,CDN
 .cloudflarestream.com,CDN
@@ -843,6 +842,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .sciencedirectassets.com,CDN
 .scorecardresearch.com,CDN
 .scribdassets.com,CDN
+.scripts.gatorapi.com,CDN
 .seadn.io,CDN
 .sendspace.com,CDN
 .senja.io,CDN
@@ -892,6 +892,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .stack.imgur.com,CDN
 .stackblitz.io,CDN
 .stapecdn.com,CDN
+.static-assets.photoshop.adobe.com,CDN
 .static-prod-web.miniclip.com,CDN
 .static.amplience.net,CDN
 .static.chaosgroup.com,CDN
@@ -3404,6 +3405,7 @@ videos.elephas.app,CDN
 videos.ohentai.org,CDN
 videos2-h.sendvid.com,CDN
 videos2.edclub.com,CDN
+vip.dytt-img.com,CDN
 vir.wsj.net,CDN
 viu-static.akamaized.net,CDN
 vjs.zencdn.net,CDN

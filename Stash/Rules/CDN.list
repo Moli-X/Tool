@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3483
+# 规则统计: 3485
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -73,9 +73,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-15T09:20:56.979Z
-# Last Updated: 2025-04-20T23:23:30.937Z
+# Last Updated: 2025-04-22T11:55:26.842Z
 # License: AGPL 3.0
-# Size: 3403
+# Size: 3405
 # Size: 69
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -261,7 +261,6 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .cloud2.influxdata.com
 .cloudatacdn.com
 .cloudflare-ipfs.com
-.cloudflare-terms-of-service-abuse.com
 .cloudflare.docker.com
 .cloudflare.ltd
 .cloudflarestream.com
@@ -841,6 +840,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .sciencedirectassets.com
 .scorecardresearch.com
 .scribdassets.com
+.scripts.gatorapi.com
 .seadn.io
 .sendspace.com
 .senja.io
@@ -890,6 +890,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .stack.imgur.com
 .stackblitz.io
 .stapecdn.com
+.static-assets.photoshop.adobe.com
 .static-prod-web.miniclip.com
 .static.amplience.net
 .static.chaosgroup.com
@@ -3402,6 +3403,7 @@ videos.elephas.app
 videos.ohentai.org
 videos2-h.sendvid.com
 videos2.edclub.com
+vip.dytt-img.com
 vir.wsj.net
 viu-static.akamaized.net
 vjs.zencdn.net
