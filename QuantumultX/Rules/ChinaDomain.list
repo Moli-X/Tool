@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 802
+# 规则统计: 804
 
 HOST,acg.tv,ChinaDomain
 HOST,assets1.xboxlive.cn,ChinaDomain
@@ -501,6 +501,8 @@ HOST-SUFFIX,miyoushe.com,ChinaDomain
 HOST-SUFFIX,mmstat.com,ChinaDomain
 HOST-SUFFIX,mobike.com,ChinaDomain
 HOST-SUFFIX,mobileservice.cn,ChinaDomain
+HOST-SUFFIX,mojicdn.com,ChinaDomain
+HOST-SUFFIX,mrw.so,ChinaDomain
 HOST-SUFFIX,msstatic.com,ChinaDomain
 HOST-SUFFIX,mtyun.com,ChinaDomain
 HOST-SUFFIX,mubu.com,ChinaDomain
@@ -796,9 +798,9 @@ USER-AGENT,TeslaMap,ChinaDomain
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-04-10T15:34:02.749Z
+# Last Updated: 2025-04-23T06:01:08.012Z
 # License: AGPL 3.0
-# Size: 792
+# Size: 794
 # Sukka's Ruleset - Domestic Domains
 # This file contains known addresses that are avaliable in the Mainland China.
 ################## EOF ##################
