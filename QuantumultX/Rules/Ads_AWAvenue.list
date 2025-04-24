@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 730
+# 规则统计: 743
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 721
-#Update content: add “micro-xdb.com” ads.
-#Update time: 2025-04-15 19:04:21 UTC+8
+#Total lines: 734
+#Update content: more TV (yunshitin、yinheqiyiguo...) ad block.
+#Update time: 2025-04-24 12:22:09 UTC+8
 #Version: 1.6.0-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -17,13 +17,13 @@
 .a0.app.xiaomi.com,Ads_AWAvenue
 .aaid.umeng.com,Ads_AWAvenue
 .abtest-ch.snssdk.com,Ads_AWAvenue
-.ad-cdn.qingting.fm,Ads_AWAvenue
 .ad-scope.com,Ads_AWAvenue
 .ad-scope.com.cn,Ads_AWAvenue
 .ad-sdk-config.youdao.com,Ads_AWAvenue
 .ad-sdk.huxiu.com,Ads_AWAvenue
 .ad.12306.cn,Ads_AWAvenue
 .ad.51wnl.com,Ads_AWAvenue
+.ad.api.3g.youku.com,Ads_AWAvenue
 .ad.bwton.com,Ads_AWAvenue
 .ad.cctv.com,Ads_AWAvenue
 .ad.cyapi.cn,Ads_AWAvenue
@@ -144,6 +144,7 @@
 .adxserver.ad.cmvideo.cn,Ads_AWAvenue
 .aegis.qq.com,Ads_AWAvenue
 .afs.googlesyndication.com,Ads_AWAvenue
+.agn.aty.sohu.com,Ads_AWAvenue
 .aiseet.aa.atianqi.com,Ads_AWAvenue
 .ali-ad.a.yximgs.com,Ads_AWAvenue
 .ali-p2p-v2.pull.yximgs.com,Ads_AWAvenue
@@ -471,6 +472,7 @@
 .mobads-logs.baidu.com,Ads_AWAvenue
 .mobads-pre-config.cdn.bcebos.com,Ads_AWAvenue
 .mobads.baidu.com,Ads_AWAvenue
+.mobaliyun.res.mgtv.com,Ads_AWAvenue
 .mobile.da.mgtv.com,Ads_AWAvenue
 .mobilelog.upqzfile.com,Ads_AWAvenue
 .mon.zijieapi.com,Ads_AWAvenue
@@ -525,6 +527,7 @@
 .pin.hpplay.cn,Ads_AWAvenue
 .pixon.ads-pixiv.net,Ads_AWAvenue
 .pkoplink.com,Ads_AWAvenue
+.pl.cp31.ott.cibntv.net,Ads_AWAvenue
 .plbslog.umeng.com,Ads_AWAvenue
 .pms.mb.qq.com,Ads_AWAvenue
 .policy.video.ptqy.gitv.tv,Ads_AWAvenue
@@ -544,11 +547,13 @@
 .rms-drcn.platform.dbankcloud.cn,Ads_AWAvenue
 .roi.soulapp.cn,Ads_AWAvenue
 .rp.hpplay.cn,Ads_AWAvenue
+.rps.hpplay.cn,Ads_AWAvenue
 .rpt.gdt.qq.com,Ads_AWAvenue
 .rtb.voiceads.cn,Ads_AWAvenue
 .s.amazon-adsystem.com,Ads_AWAvenue
 .s8t.teads.tv,Ads_AWAvenue
 .saad.ms.zhangyue.net,Ads_AWAvenue
+.saas.hpplay.cn,Ads_AWAvenue
 .samsung-com.112.2o7.net,Ads_AWAvenue
 .samsungads.com,Ads_AWAvenue
 .sanme2.taisantech.com,Ads_AWAvenue
@@ -602,6 +607,7 @@
 .stg-data.ads.heytapmobi.com,Ads_AWAvenue
 .stun.hitv.com,Ads_AWAvenue
 .success.ctobsnssdk.com,Ads_AWAvenue
+.sv-video.play.aiseet.atianqi.com,Ads_AWAvenue
 .syh-imp.cdnjtzy.com,Ads_AWAvenue
 .szbdyd.com,Ads_AWAvenue
 .t-dsp.pinduoduo.com,Ads_AWAvenue
@@ -611,6 +617,8 @@
 .t1.teads.tv,Ads_AWAvenue
 .t2.a.market.xiaomi.com,Ads_AWAvenue
 .t3.a.market.xiaomi.com,Ads_AWAvenue
+.t7z.cupid.iqiyi.com,Ads_AWAvenue
+.t7z.cupid.ptqy.gitv.tv,Ads_AWAvenue
 .tangram.e.qq.com,Ads_AWAvenue
 .tdc.qq.com,Ads_AWAvenue
 .tdsdk.cpatrk.net,Ads_AWAvenue
@@ -684,10 +692,15 @@
 .v2mi.gdt.qq.com,Ads_AWAvenue
 .v3-ad.video.yximgs.com,Ads_AWAvenue
 .v3.gdt.qq.com,Ads_AWAvenue
+.vali-ugc.cp31.ott.cibntv.net,Ads_AWAvenue
+.vd6.l.qq.com,Ads_AWAvenue
+.vi.l.qq.com,Ads_AWAvenue
 .video-ad.sm.cn,Ads_AWAvenue
 .video-dsp.pddpic.com,Ads_AWAvenue
 .video.dispatch.tc.qq.com,Ads_AWAvenue
+.video.market.xiaomi.com,Ads_AWAvenue
 .vipauth.hpplay.cn,Ads_AWAvenue
+.vipgslb.hpplay.cn,Ads_AWAvenue
 .virusinfo-cloudscan-cn.heytapmobi.com,Ads_AWAvenue
 .vlive.qqvideo.tc.qq.com,Ads_AWAvenue
 .volc.bj.ad.track.66mobi.com,Ads_AWAvenue
