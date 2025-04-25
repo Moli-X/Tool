@@ -2,14 +2,14 @@
 #!name=京东去广告
 #!desc=移除京东开屏广告，精简我的页面产品推广。
 #App链接=https://apps.apple.com/app/id414245413
-#!author=RuCu6[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!author=RuCu6[https://github.com/RuCu6],Maasea[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/JD_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JD.png
-#!date=2024-12-29 02:12:10
+#!date=2025-04-25 20:56:38
 
 [Rule]
 DOMAIN,dns.jd.com,REJECT
@@ -19,6 +19,8 @@ IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve
 
 [Rewrite]
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(searchBoxWord|stationPullService|uniformRecommend[06]) reject-dict
+
+^https:\/\/api\.m\.jd\.com\/client\.action?functionId=basicConfig response-body-json-replace data.JDMessage.socketmonitor.isSocketEstablishedAhead 0 data.JDMessage.socketmonitor.isSocketReport 0 data.JDHttpToolKit.httpdns.httpdns 0
 
 [Script]
 http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/JD_remove_ads.js,requires-body=true,tag=移除京东广告
