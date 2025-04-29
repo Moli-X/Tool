@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 778
+# 规则统计: 783
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 769
-#Update content: remove "ads-us.tiktok.com" to refresh the version.
-#Update time: 2025-04-25 03:13:15 UTC+8
+#Total lines: 774
+#Update content: add ubixai、zhangyu、yuedong、ruishi ads block.
+#Update time: 2025-04-29 18:01:30 UTC+8
 #Version: 1.6.5-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -29,6 +29,7 @@
 .ad.cctv.com,Ads_AWAvenue
 .ad.cyapi.cn,Ads_AWAvenue
 .ad.doubleclick.net,Ads_AWAvenue
+.ad.gameley.com,Ads_AWAvenue
 .ad.hpplay.cn,Ads_AWAvenue
 .ad.partner.gifshow.com,Ads_AWAvenue
 .ad.qingting.fm,Ads_AWAvenue
@@ -67,6 +68,7 @@
 .ads-api.twitter.com,Ads_AWAvenue
 .ads-img-qc.xhscdn.com,Ads_AWAvenue
 .ads-marketing-vivofs.vivo.com.cn,Ads_AWAvenue
+.ads-sdk-api.ranfenghd.com,Ads_AWAvenue
 .ads-sg.tiktok.com,Ads_AWAvenue
 .ads-video-al.xhscdn.com,Ads_AWAvenue
 .ads-video-qc.xhscdn.com,Ads_AWAvenue
@@ -95,6 +97,7 @@
 .ads5-normal-lf.zijieapi.com,Ads_AWAvenue
 .ads5-normal-lq.zijieapi.com,Ads_AWAvenue
 .ads5-normal.zijieapi.com,Ads_AWAvenue
+.adsdk.vivo.com.cn,Ads_AWAvenue
 .adse.test.ximalaya.com,Ads_AWAvenue
 .adse.wsa.ximalaya.com,Ads_AWAvenue
 .adse.ximalaya.com,Ads_AWAvenue
@@ -144,6 +147,7 @@
 .adx.ads.oppomobile.com,Ads_AWAvenue
 .adx.appsdk.com.cn,Ads_AWAvenue
 .adx.sogaha.cn,Ads_AWAvenue
+.adx.tuia.cn,Ads_AWAvenue
 .adxlog-adnet.vivo.com.cn,Ads_AWAvenue
 .adxserver.ad.cmvideo.cn,Ads_AWAvenue
 .aegis.qq.com,Ads_AWAvenue
@@ -354,6 +358,7 @@
 .h.trace.qq.com,Ads_AWAvenue
 .h5.hpplay.com.cn,Ads_AWAvenue
 .hanlanad.com,Ads_AWAvenue
+.hc-ssp.sm.cn,Ads_AWAvenue
 .heads-ak.spotify.com.edgesuite.net,Ads_AWAvenue
 .heads-fa.spotify.com,Ads_AWAvenue
 .hexagon-analytics.com,Ads_AWAvenue
@@ -503,6 +508,7 @@
 .ms.applvn.com,Ads_AWAvenue
 .ms4.applovin.com,Ads_AWAvenue
 .ms4.applvn.com,Ads_AWAvenue
+.msdk.voiceads.cn,Ads_AWAvenue
 .mssdk.volces.com,Ads_AWAvenue
 .mssdk.zijieapi.com,Ads_AWAvenue
 .mtj.baidu.com,Ads_AWAvenue
@@ -753,7 +759,6 @@
 .widgets.pinterest.com,Ads_AWAvenue
 .wildcard.moatads.com.edgekey.net,Ads_AWAvenue
 .win.gdt.qq.com,Ads_AWAvenue
-.wn.x.jd.com,Ads_AWAvenue
 .ws-keyboard.shouji.sogou.com,Ads_AWAvenue
 .ws.sj.qq.com,Ads_AWAvenue
 .wv.inner-active.mobi,Ads_AWAvenue

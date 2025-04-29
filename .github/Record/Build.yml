@@ -85,6 +85,17 @@ jobs:
                 "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Custom/xAI.list"
                 "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Custom/AI.list"
             )
+            > Tool-repo/Ruleset/AppleProxy.list
+            for url in "${urls[@]}"; do
+                echo "Downloading: $url"
+                curl -f -L "$url" >> Tool-repo/Ruleset/AppleProxy.list || { echo "Download Failed: $url"; exit 1; }
+                echo "" >> Tool-repo/Ruleset/AppleProxy.list
+            done
+            # 合并 AppleProxy 规则
+            urls=(
+                "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleProxy/AppleProxy.list"
+                "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppStore/AppStore.list"
+            )
             > Tool-repo/Ruleset/AI.list
             for url in "${urls[@]}"; do
                 echo "Downloading: $url"
@@ -95,7 +106,6 @@ jobs:
                 # 苹果
                 "APNs.list https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
                 "Apple.list https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
-                "AppleProxy.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleProxy/AppleProxy.list"
                 "AppleMusic.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMusic/AppleMusic.list"
                 "AppStore.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppStore/AppStore.list"
                 "AppleID.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleID/AppleID.list"
