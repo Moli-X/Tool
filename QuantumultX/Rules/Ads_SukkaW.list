@@ -1,5 +1,5 @@
 # 规则名称: Ads_SukkaW
-# 规则统计: 72738
+# 规则统计: 72750
 
 HOST,aedns.weixin.qq.com,Ads_SukkaW
 HOST,api-js.mixpanel.com,Ads_SukkaW
@@ -278,10 +278,10 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-27T04:04:05.022Z
-# Last Updated: 2025-04-29T12:48:02.592Z
+# Last Updated: 2025-04-29T14:12:52.989Z
 # License: AGPL 3.0
 # Size: 260
-# Size: 72451
+# Size: 72463
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Domains
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-mining
@@ -3431,7 +3431,6 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .ads.mobilefuse.net,Ads_SukkaW
 .ads.mobilityware.com,Ads_SukkaW
 .ads.mobvertising.net,Ads_SukkaW
-.ads.mythad.com,Ads_SukkaW
 .ads.oppomobile.com,Ads_SukkaW
 .ads.pdbarea.com,Ads_SukkaW
 .ads.pinger.com,Ads_SukkaW
@@ -7363,6 +7362,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .ashcdn.com,Ads_SukkaW
 .ashetandrew.com,Ads_SukkaW
 .ashhgo.com,Ads_SukkaW
+.ashiato.travel.rakuten.co.jp,Ads_SukkaW
 .ashlingzanyish.com,Ads_SukkaW
 .ashobzshava.com,Ads_SukkaW
 .ashoupsu.com,Ads_SukkaW
@@ -11361,6 +11361,12 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .clarity.fonio.ai,Ads_SukkaW
 .clarity.ms,Ads_SukkaW
 .clarium.global.ssl.fastly.net,Ads_SukkaW
+.clashcn.bid,Ads_SukkaW
+.clashfor.org,Ads_SukkaW
+.clashforandroid.org,Ads_SukkaW
+.clashforwindows.net,Ads_SukkaW
+.clashforwindows.org,Ads_SukkaW
+.clashx.org,Ads_SukkaW
 .claspedtwelve.com,Ads_SukkaW
 .classesfolksprofession.com,Ads_SukkaW
 .classic-bonus.com,Ads_SukkaW
@@ -21744,6 +21750,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .event.msi.com,Ads_SukkaW
 .event.newsbreak.com,Ads_SukkaW
 .event.northghost.com,Ads_SukkaW
+.event.notifier.rakuten.co.jp,Ads_SukkaW
 .event.ortec.com,Ads_SukkaW
 .event.platform.tunein.com,Ads_SukkaW
 .event.playground.ru,Ads_SukkaW
@@ -24140,6 +24147,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .getadx.com,Ads_SukkaW
 .getadzuki.com,Ads_SukkaW
 .getalltraffic.com,Ads_SukkaW
+.getclashvergerev.org,Ads_SukkaW
 .getclicky.com,Ads_SukkaW
 .getconnected.infor.com,Ads_SukkaW
 .getdeviceinf.com,Ads_SukkaW
@@ -34802,6 +34810,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .log-player.arte.tv,Ads_SukkaW
 .log-pq.shopfully.cloud,Ads_SukkaW
 .log-sdk.clickwifi.net,Ads_SukkaW
+.log-sdk.ksapisrv.com,Ads_SukkaW
 .log-sg.bytegsdk.com,Ads_SukkaW
 .log-stats.weathercn.com,Ads_SukkaW
 .log-tb.isnssdk.com,Ads_SukkaW
@@ -40463,6 +40472,9 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .mihaivibsaz.net,Ads_SukkaW
 .mihephypty.com,Ads_SukkaW
 .mihjpeok.com,Ads_SukkaW
+.mihomoparty.com,Ads_SukkaW
+.mihomoparty.net,Ads_SukkaW
+.mihomoparty.org,Ads_SukkaW
 .mihoutao1868.github.io,Ads_SukkaW
 .miknijrcaf.com,Ads_SukkaW
 .mikobqcusg.com,Ads_SukkaW
@@ -41640,6 +41652,7 @@ URL-REGEX,/\d+/sign_d,Ads_SukkaW
 .mysweetteam.com,Ads_SukkaW
 .mytanwan.com,Ads_SukkaW
 .mytdsnet.com,Ads_SukkaW
+.mythad.com,Ads_SukkaW
 .mythdev.b-cdn.net,Ads_SukkaW
 .mythicsallies.com,Ads_SukkaW
 .mythings.com,Ads_SukkaW
@@ -72238,7 +72251,6 @@ lockersamsungs8.r.xoxknct.com,Ads_SukkaW
 lockersamsungs8.s.xoxknct.com,Ads_SukkaW
 log-dmp.suishenyun.cn,Ads_SukkaW
 log-sdk.gifshow.com,Ads_SukkaW
-log-sdk.ksapisrv.com,Ads_SukkaW
 log-yex.youdao.com,Ads_SukkaW
 log.b612kaji.com,Ads_SukkaW
 log.music.baidu.com,Ads_SukkaW

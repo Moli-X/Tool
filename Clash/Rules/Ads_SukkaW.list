@@ -1,5 +1,5 @@
 # 规则名称: Ads_SukkaW
-# 规则统计: 72736
+# 规则统计: 72748
 
 DOMAIN,aedns.weixin.qq.com
 DOMAIN,api-js.mixpanel.com
@@ -276,10 +276,10 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-27T04:04:05.022Z
-# Last Updated: 2025-04-29T12:48:02.592Z
+# Last Updated: 2025-04-29T14:12:52.989Z
 # License: AGPL 3.0
 # Size: 260
-# Size: 72451
+# Size: 72463
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Domains
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-mining
@@ -3429,7 +3429,6 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .ads.mobilefuse.net
 .ads.mobilityware.com
 .ads.mobvertising.net
-.ads.mythad.com
 .ads.oppomobile.com
 .ads.pdbarea.com
 .ads.pinger.com
@@ -7361,6 +7360,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .ashcdn.com
 .ashetandrew.com
 .ashhgo.com
+.ashiato.travel.rakuten.co.jp
 .ashlingzanyish.com
 .ashobzshava.com
 .ashoupsu.com
@@ -11359,6 +11359,12 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .clarity.fonio.ai
 .clarity.ms
 .clarium.global.ssl.fastly.net
+.clashcn.bid
+.clashfor.org
+.clashforandroid.org
+.clashforwindows.net
+.clashforwindows.org
+.clashx.org
 .claspedtwelve.com
 .classesfolksprofession.com
 .classic-bonus.com
@@ -21742,6 +21748,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .event.msi.com
 .event.newsbreak.com
 .event.northghost.com
+.event.notifier.rakuten.co.jp
 .event.ortec.com
 .event.platform.tunein.com
 .event.playground.ru
@@ -24138,6 +24145,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .getadx.com
 .getadzuki.com
 .getalltraffic.com
+.getclashvergerev.org
 .getclicky.com
 .getconnected.infor.com
 .getdeviceinf.com
@@ -34800,6 +34808,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .log-player.arte.tv
 .log-pq.shopfully.cloud
 .log-sdk.clickwifi.net
+.log-sdk.ksapisrv.com
 .log-sg.bytegsdk.com
 .log-stats.weathercn.com
 .log-tb.isnssdk.com
@@ -40461,6 +40470,9 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .mihaivibsaz.net
 .mihephypty.com
 .mihjpeok.com
+.mihomoparty.com
+.mihomoparty.net
+.mihomoparty.org
 .mihoutao1868.github.io
 .miknijrcaf.com
 .mikobqcusg.com
@@ -41638,6 +41650,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 .mysweetteam.com
 .mytanwan.com
 .mytdsnet.com
+.mythad.com
 .mythdev.b-cdn.net
 .mythicsallies.com
 .mythings.com
@@ -72236,7 +72249,6 @@ lockersamsungs8.r.xoxknct.com
 lockersamsungs8.s.xoxknct.com
 log-dmp.suishenyun.cn
 log-sdk.gifshow.com
-log-sdk.ksapisrv.com
 log-yex.youdao.com
 log.b612kaji.com
 log.music.baidu.com
