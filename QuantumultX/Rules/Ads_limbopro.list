@@ -1,5 +1,5 @@
 # 规则名称: Ads_limbopro
-# 规则统计: 681
+# 规则统计: 688
 
 HOST,118.89.204.198,reject,Ads_limbopro
 HOST,25e87c0802f91cf8cgg.6uzxtlv.cn,reject,Ads_limbopro
@@ -276,14 +276,17 @@ HOST-SUFFIX,atmib.com,reject,Ads_limbopro
 HOST-SUFFIX,aty.sohu.com,reject,Ads_limbopro
 HOST-SUFFIX,awaitcola.com,reject,Ads_limbopro
 HOST-SUFFIX,b1sync.zemanta.com,reject,Ads_limbopro
+HOST-SUFFIX,bankingbloatedcaptive.com,reject,Ads_limbopro
 HOST-SUFFIX,beacon.sina.com.cn,reject,Ads_limbopro
 HOST-SUFFIX,bhichong.com,reject,Ads_limbopro
 HOST-SUFFIX,bingads.microsoft.com,reject,Ads_limbopro
 HOST-SUFFIX,bizhixiang.cn,reject,Ads_limbopro
 HOST-SUFFIX,bjzysd.net,reject,Ads_limbopro
 HOST-SUFFIX,bn.ufitjvn.com,reject,Ads_limbopro
+HOST-SUFFIX,capndr.com,reject,Ads_limbopro
 HOST-SUFFIX,cashewsforlife208.com,reject,Ads_limbopro
 HOST-SUFFIX,catdomepimyth.com,reject,Ads_limbopro
+HOST-SUFFIX,cb260f4651.com,reject,Ads_limbopro
 HOST-SUFFIX,cdn.tsyndicate.com,reject,Ads_limbopro
 HOST-SUFFIX,cdn.viglink.com,reject,Ads_limbopro
 HOST-SUFFIX,citadelpathstatue.com,reject,Ads_limbopro
@@ -391,12 +394,14 @@ HOST-SUFFIX,mc7clurd09pla4nrtat7ion.com,reject,Ads_limbopro
 HOST-SUFFIX,media.aso1.net,reject,Ads_limbopro
 HOST-SUFFIX,media.dalysv.com,reject,Ads_limbopro
 HOST-SUFFIX,mm9842.com,reject,Ads_limbopro
+HOST-SUFFIX,mnaspm.com,reject,Ads_limbopro
 HOST-SUFFIX,moatads.com,reject,Ads_limbopro
 HOST-SUFFIX,my.rtmark.net,reject,Ads_limbopro
 HOST-SUFFIX,nby360.com,reject,Ads_limbopro
 HOST-SUFFIX,netdjs.net,reject,Ads_limbopro
 HOST-SUFFIX,new.xiongzhangad.com,reject,Ads_limbopro
 HOST-SUFFIX,oawhaursaith.com,reject,Ads_limbopro
+HOST-SUFFIX,ohjluvpunaxg.com,reject,Ads_limbopro
 HOST-SUFFIX,onerousethelpictures.com,reject,Ads_limbopro
 HOST-SUFFIX,p242.plainwrk.name,reject,Ads_limbopro
 HOST-SUFFIX,pagead2.googlesyndication.com,reject,Ads_limbopro
@@ -408,6 +413,7 @@ HOST-SUFFIX,pitrespite.com,reject,Ads_limbopro
 HOST-SUFFIX,playersb.com,reject,Ads_limbopro
 HOST-SUFFIX,popin.cc,reject,Ads_limbopro
 HOST-SUFFIX,pos.baidu.com,reject,Ads_limbopro
+HOST-SUFFIX,ptelastaxo.com,reject,Ads_limbopro
 HOST-SUFFIX,pu0glv.cn,reject,Ads_limbopro
 HOST-SUFFIX,purpleads.io,reject,Ads_limbopro
 HOST-SUFFIX,pv.sohu.com,reject,Ads_limbopro
@@ -595,22 +601,22 @@ IP6-CIDR,## IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,Ads_limbopro
 ## */
 ## /*
 ## ACL4SSR BadAD: 589 Domains/IP/Others From https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-## Adblock4limbo: 549 Domains/IP/Others From https://github.com/limbopro/Adblock4limbo
-## EasyList China: 4328 Domains/IP/Others From https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt
+## Adblock4limbo: 555 Domains/IP/Others From https://github.com/limbopro/Adblock4limbo
+## EasyList China: 4422 Domains/IP/Others From https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt
 ## EasyList/EasylistChina/EasyPrivacy 隐私追踪器/去广告分流规则请在Github仓库 Adblock4limbo -> rule 文件夹下查找，按需添加...
-## EasyList: 28306 Domains/IP/Others From https://easylist.to/easylist/easylist.txt
-## EasyPrivacy: 41964 Domains/IP/Others From https://easylist.to/easylist/easyprivacy.txt
+## EasyList: 29322 Domains/IP/Others From https://easylist.to/easylist/easylist.txt
+## EasyPrivacy: 42035 Domains/IP/Others From https://easylist.to/easylist/easyprivacy.txt
 ## IP-CIDR,101.227.200.11/32
 ## IP-CIDR,101.227.200.28/32
 ## IP-CIDR,101.227.97.240/32
 ## IP-CIDR,118.89.204.198/32
 ## IP-CIDR,124.192.153.42/32
-## Last updated at 21/4月/2025/23:00
-## Peter Lowe’s Ad and tracking server list: 3447 Domains/IP/Others From https://pgl.yoyo.org/adservers/serverlist.php
+## Last updated at  1/5月/2025/00:00
+## Peter Lowe’s Ad and tracking server list: 3445 Domains/IP/Others From https://pgl.yoyo.org/adservers/serverlist.php
 ## Repo: https://github.com/limbopro/Adblock4limbo  
 ## Written by limbopro
 ## 仓库地址：https://github.com/limbopro/Adblock4limbo/tree/main/rule
-## 以上共计: 79183 Domains/IP/Others (非去重统计)
+## 以上共计: 80368 Domains/IP/Others (非去重统计)
 ## 原文参阅 https://limbopro.com/archives/12904.html
 ## 参阅 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list
 ## 如需完整配置，参阅请原文 https://limbopro.com/archives/12904.html
@@ -654,6 +660,7 @@ IP6-CIDR,## IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,Ads_limbopro
 ##### nfmovies.com 奈菲影视  
 ##### njav.tv
 ##### pornhub.com  
+##### rou.video
 ##### streamtape.com
 ##### ww7.pornhoarder.tv
 ##### www.cocomanhua.com  

@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3565
+# 规则统计: 3630
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -41,6 +41,7 @@ HOST-WILDCARD,chunk-*.mux.com,CDN
 HOST-WILDCARD,file?.mikuclub.fun,CDN
 HOST-WILDCARD,i?.nhentai.net,CDN
 HOST-WILDCARD,image*.cloudokyo.cloud,CDN
+HOST-WILDCARD,img-*.now.com,CDN
 HOST-WILDCARD,img?.porngo.com,CDN
 HOST-WILDCARD,img??.porngo.com,CDN
 HOST-WILDCARD,media?.kissjav.com,CDN
@@ -74,11 +75,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-04-15T09:20:56.979Z
-# Last Updated: 2025-04-29T14:15:14.803Z
+# Last Updated: 2025-04-30T14:24:59.917Z
+# Last Updated: 2025-04-30T14:25:01.137Z
 # License: AGPL 3.0
-# Size: 3483
-# Size: 69
+# Size: 3547
+# Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -120,6 +121,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .alphafish.top,CDN
 .amaicdn.com,CDN
 .ampproject.org,CDN
+.angular.dev,CDN
+.angular.io,CDN
+.angularjs.org,CDN
 .anpoimages.com,CDN
 .anpustream.com,CDN
 .ant.design,CDN
@@ -150,6 +154,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .assets.ubuntu.com,CDN
 .assettype.com,CDN
 .avximg.com,CDN
+.aweber-static.com,CDN
 .awsstatic.com,CDN
 .ax1x.com,CDN
 .azurestaticapps.net,CDN
@@ -308,6 +313,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .delegated-ipfs.dev,CDN
 .deno.land,CDN
 .denopkg.com,CDN
+.descopecdn.com,CDN
 .design-system.economist.com,CDN
 .devrum.uptime.com,CDN
 .dilcdn.com,CDN
@@ -328,6 +334,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .dreamscape.cloud,CDN
 .drivecdn.com,CDN
 .dropboxstatic.com,CDN
+.drtst.com,CDN
 .dsc.cloud,CDN
 .dtci-pe-vp-image-resizer.platform.edgedatg.com,CDN
 .dummyimage.com,CDN
@@ -379,6 +386,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .fbcdn.net,CDN
 .fbsbx.com,CDN
 .featureassets.org,CDN
+.feedercdn.com,CDN
 .ffzy888.com,CDN
 .filecunhua.top,CDN
 .files.bbci.co.uk,CDN
@@ -413,6 +421,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .gamccdn.com,CDN
 .gamesgamescdn.com,CDN
 .gammacdn.com,CDN
+.gannetcdn.com,CDN
 .gateway.originprotocol.com,CDN
 .gateway.pinata.cloud,CDN
 .gateway.serph.network,CDN
@@ -422,6 +431,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .gentcdn.com,CDN
 .getcomposer.org,CDN
 .ggpht.com,CDN
+.girlsgogamescdn.com,CDN
 .giscus.app,CDN
 .gitapp.si,CDN
 .gitcdn.link,CDN
@@ -439,12 +449,14 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .gold-usergeneratedcontent.net,CDN
 .googleadservices.com,CDN
 .googleusercontent.com,CDN
+.graphql.org,CDN
 .gravatar.com,CDN
 .gravity.jup.io,CDN
 .gw3.io,CDN
 .h-cdn.co,CDN
 .h-cdn.com,CDN
 .hackerone-user-content.com,CDN
+.haproxy.org,CDN
 .hardbin.com,CDN
 .hbfile.net,CDN
 .hdzyk-cdn.com,CDN
@@ -598,6 +610,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .jsdelivr.net,CDN
 .jspm.dev,CDN
 .jspm.io,CDN
+.jstatic.xyz,CDN
 .jw-cdn.org,CDN
 .jwpcdn.com,CDN
 .jwpsrv.com,CDN
@@ -808,6 +821,8 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .pxlecdn.com,CDN
 .pypi.org,CDN
 .pythonhosted.org,CDN
+.qbittorrent.org,CDN
+.qiniuyun22.xyz,CDN
 .qooqlevideo.com,CDN
 .quay.io,CDN
 .quip-cdn.com,CDN
@@ -820,6 +835,8 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .ravenjs.com,CDN
 .rawgit.com,CDN
 .rawgit.org,CDN
+.rawgithub.com,CDN
+.raxcdn.com,CDN
 .raygun.io,CDN
 .rbxcdn.com,CDN
 .rdtcdn.com,CDN
@@ -848,6 +865,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .rum.cronitor.io,CDN
 .runkit-packages.com,CDN
 .runkitcdn.com,CDN
+.s-nbcnews.com,CDN
 .s3.wasabisys.com,CDN
 .safebrowsing.apple,CDN
 .sb-cd.com,CDN
@@ -996,6 +1014,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .ubembed.com,CDN
 .uber-assets.com,CDN
 .ucarecdn.com,CDN
+.ucloud133.com,CDN
 .udify.app,CDN
 .uicdn.net,CDN
 .ungh.cc,CDN
@@ -1183,6 +1202,7 @@ assets-cdn.123rf.com,CDN
 assets-cdn.abcnews.com,CDN
 assets-cdn.abcotvs.net,CDN
 assets-cdn.jable.tv,CDN
+assets-cdn.porn.com,CDN
 assets-cdn.watchdisneyfe.com,CDN
 assets-cms.kraken.com,CDN
 assets-docs.circleci.com,CDN
@@ -1247,6 +1267,7 @@ assets.flodesk.com,CDN
 assets.fonts.adobe.com,CDN
 assets.foxdcg.com,CDN
 assets.frontegg.com,CDN
+assets.fxnetworks.com,CDN
 assets.garr.it,CDN
 assets.gcore.pro,CDN
 assets.geeksforgeeks.org,CDN
@@ -1477,6 +1498,7 @@ cdn-yotpo-images-production.yotpo.com,CDN
 cdn.123av.me,CDN
 cdn.17app.co,CDN
 cdn.18jav.tv,CDN
+cdn.24.co.za,CDN
 cdn.7tv.app,CDN
 cdn.accounts.autodesk.com,CDN
 cdn.accounts.nintendo.com,CDN
@@ -1517,6 +1539,7 @@ cdn.calibermind.com,CDN
 cdn.cameo.com,CDN
 cdn.camweara.com,CDN
 cdn.cbd.int,CDN
+cdn.cfr.org,CDN
 cdn.changelog.com,CDN
 cdn.channel.io,CDN
 cdn.chess24.com,CDN
@@ -1798,6 +1821,7 @@ cdn.xeiaso.net,CDN
 cdn.xgroovy.com,CDN
 cdn.xvidzz.com,CDN
 cdn.yinghuazy.xyz,CDN
+cdn.you.com,CDN
 cdn.ywxi.net,CDN
 cdn.zapier.com,CDN
 cdn.zeabur.com,CDN
@@ -1870,14 +1894,17 @@ cdn6.bigcommerce.com,CDN
 cdn6.edgedatg.com,CDN
 cdn7.bigcommerce.com,CDN
 cdn77-t.ashemaletube.com,CDN
+cdn77-t.pornoxo.com,CDN
 cdn77.ashemaletube.com,CDN
 cdn77.boyfriendtv.com,CDN
+cdn77.pornoxo.com,CDN
 cdn8.bigcommerce.com,CDN
 cdn9.bigcommerce.com,CDN
 cdna.artstation.com,CDN
 cdnapi.kaltura.com,CDN
 cdnapisec.kaltura.com,CDN
 cdnb.artstation.com,CDN
+cdnc.imagefap.com,CDN
 cdne-pics.youjizz.com,CDN
 cdnfonts.devolutions.net,CDN
 cdni.pornpics.com,CDN
@@ -1885,6 +1912,7 @@ cdnjs.betterstack.com,CDN
 cdnjs.buymeacoffee.com,CDN
 cdnjs.cat.net,CDN
 cdnjs.cloudflare.com,CDN
+cdnl.moviefap.com,CDN
 cdnl.tnaflix.com,CDN
 cdns.gigya.com,CDN
 cdnsecakmi.kaltura.com,CDN
@@ -1914,6 +1942,7 @@ chatwidgetmetrics-proxy.usepylon.com,CDN
 checkout-sdk.bigcommerce.com,CDN
 checkout.stripe.com,CDN
 ci.testling.com,CDN
+cimg.cnyes.cool,CDN
 claritystatic.azureedge.net,CDN
 clickup.marketlinc.com,CDN
 clientsdk.launchdarkly.com,CDN
@@ -2058,6 +2087,7 @@ eep.io,CDN
 eightcha.com,CDN
 embed-ssl.wistia.com,CDN
 embed-v2.testimonial.to,CDN
+embed.culturalspot.org,CDN
 embed.reddit.com,CDN
 embed.runkit.com,CDN
 embed.savvycal.com,CDN
@@ -2094,6 +2124,7 @@ events.launchdarkly.com,CDN
 events.ld.catamorphic.com,CDN
 events.split.io,CDN
 events.tableplus.com,CDN
+evt.24.com,CDN
 experience-ap.piano.io,CDN
 explorer-api.walletconnect.com,CDN
 external-content.duckduckgo.com,CDN
@@ -2204,9 +2235,11 @@ hls.hentaicity.com,CDN
 home.integrate.com,CDN
 hp.foxnews.com,CDN
 hub-assets.displaycal.net,CDN
+hubspotonwebflow.com,CDN
 hv-monsterdb-data.skk.moe,CDN
 i-cdn.embed.ly,CDN
 i.1password.com,CDN
+i.anysex.com,CDN
 i.bang.com,CDN
 i.creativecommons.org,CDN
 i.dailymail.co.uk,CDN
@@ -2239,8 +2272,12 @@ i.vgy.me,CDN
 i.xgroovy.com,CDN
 i.xozilla.xxx,CDN
 i.xxxshake.com,CDN
+i1.anysex.com,CDN
+i2.anysex.com,CDN
 i2.bahamut.com.tw,CDN
 i2.hentaifox.com,CDN
+i3.anysex.com,CDN
+i4.anysex.com,CDN
 ias.r10s.jp,CDN
 ichef.bbci.co.uk,CDN
 icons.buffer.com,CDN
@@ -2291,6 +2328,8 @@ images-assets.nasa.gov,CDN
 images-eds-ssl.xboxlive.com,CDN
 images-ext-1.discordapp.net,CDN
 images-ext-2.discordapp.net,CDN
+images-news.now.com,CDN
+images-sports.now.com,CDN
 images-static.trustpilot.com,CDN
 images.991.com,CDN
 images.anandtech.com,CDN
@@ -2420,6 +2459,7 @@ img.majors.im,CDN
 img.ml0987.com,CDN
 img.moedog.org,CDN
 img.moegirl.tw,CDN
+img.moviefap.com,CDN
 img.mresou.com,CDN
 img.openshop.com.hk,CDN
 img.pawoo.net,CDN
@@ -2570,15 +2610,18 @@ mantisloader.mantis-awx.com,CDN
 maps.geoapify.com,CDN
 maps.gstatic.com,CDN
 marber-cdn.economist.com,CDN
+marfeelexperimentsexperienceengine.mrf.io,CDN
 marketing.figma.com,CDN
 marketing.thingiverse.com,CDN
 marketplace-web-assets.vinted.com,CDN
 mastodon-static.miao.dev,CDN
 maven.google.com,CDN
+mcdn.vrporn.com,CDN
+mcdnds.vrporn.com,CDN
+mcdns.vrporn.com,CDN
 media-cdn.atlassian.com,CDN
 media-cdn.comfy.social,CDN
 media-cdn.epicgames.com,CDN
-media-cldnry.s-nbcnews.com,CDN
 media-cms.onesignal.com,CDN
 media-s3-eu-west-1.ceros.com,CDN
 media-s3-us-east-1.ceros.com,CDN
@@ -2620,6 +2663,9 @@ media.masto.nu,CDN
 media.minecraftforum.net,CDN
 media.mstdn.io,CDN
 media.nationwide.com,CDN
+media.nbcconnecticut.com,CDN
+media.nbclosangeles.com,CDN
+media.nbcnewyork.com,CDN
 media.newyorker.com,CDN
 media.nownews.com,CDN
 media.npr.org,CDN
@@ -2711,6 +2757,7 @@ objects.g0v.social,CDN
 objects.hit.moe,CDN
 ocsp.digicert.com,CDN
 ocsp.godaddy.com,CDN
+ocsp.int-x3.letsencrypt.org,CDN
 ocsp.sectigo.com,CDN
 ocsp.usertrust.com,CDN
 oct8neproxy.azurewebsites.net,CDN
@@ -2773,8 +2820,11 @@ pics.hentai.name,CDN
 pics.javhd.today,CDN
 pics.mf8.biz,CDN
 pics.paypal.com,CDN
+pics.serviporno.com,CDN
 pics.vpdmm.cc,CDN
 pics.x-n-x-x.pro,CDN
+pics2.serviporno.com,CDN
+pictures-cdn.porn.com,CDN
 pim-media.intel.com,CDN
 pkg-cdn.jetbrains.team,CDN
 pkg-size.dev,CDN
@@ -2812,6 +2862,7 @@ pplx-res.cloudinary.com,CDN
 practicaldev-herokuapp-com.freetls.fastly.net,CDN
 prego-cache.prod.sketch.com,CDN
 prettier.io,CDN
+preview.anysex.com,CDN
 preview.xgroovy.com,CDN
 previews.123rf.com,CDN
 previews.fleek.co,CDN
@@ -2911,6 +2962,7 @@ s.imgflip.com,CDN
 s.imgur.com,CDN
 s.midishow.net,CDN
 s.namemc.com,CDN
+s.pacn.ws,CDN
 s.plurk.com,CDN
 s.rfi.fr,CDN
 s.slideme.org,CDN
@@ -2978,6 +3030,9 @@ sandpack-cdn-staging.blazingly.io,CDN
 sandpack-cdn-v2.codesandbox.io,CDN
 sato.manyse.com,CDN
 sbl.onfastspring.com,CDN
+scache.vzw.com,CDN
+scache1.vzw.com,CDN
+scache2.vzw.com,CDN
 scdn.clerk.com,CDN
 scdn.line-apps.com,CDN
 scontent.whatsapp.net,CDN
@@ -3012,6 +3067,7 @@ services.linkfire.com,CDN
 settings.kiwibrowser.com,CDN
 sf-coze-web-cdn.coze.com,CDN
 sf-flow-web-cdn.ciciai.com,CDN
+sfiles.cnyes.cool,CDN
 shell.cdn.office.net,CDN
 shopify.cleverecommerce.com,CDN
 shots.codepen.io,CDN
@@ -3035,6 +3091,7 @@ snippet.maze.co,CDN
 snippets.freshchat.com,CDN
 snyk-widget.herokuapp.com,CDN
 social-cdn.vivaldi.net,CDN
+social-reaction-api.hk01.com,CDN
 solve-widget.forethought.ai,CDN
 source.domaintools.com,CDN
 source.unsplash.com,CDN
@@ -3046,6 +3103,7 @@ sp.replit.com,CDN
 spcdn.incartupsell.com,CDN
 spoprod-a.akamaihd.net,CDN
 sprig.figma.com,CDN
+ss7.vzw.com,CDN
 ssl.gstatic.com,CDN
 st-eu.dynamicyield.com,CDN
 st.agrd.eu,CDN
@@ -3119,6 +3177,7 @@ static.adguardvpn.com,CDN
 static.afterpay.com,CDN
 static.ahrefs.com,CDN
 static.aizanmei.org,CDN
+static.anysex.com,CDN
 static.apkpure.com,CDN
 static.arxiv.org,CDN
 static.assetlab.io,CDN
@@ -3158,6 +3217,7 @@ static.crypto.com,CDN
 static.dash.cloudflare.com,CDN
 static.deepl.com,CDN
 static.doujins.com,CDN
+static.drtuber.com,CDN
 static.dw.com,CDN
 static.dzeninfra.ru,CDN
 static.e621.net,CDN
@@ -3212,6 +3272,7 @@ static.kobo.com,CDN
 static.launchdarkly.com,CDN
 static.licdn.com,CDN
 static.linear.app,CDN
+static.lingq.com,CDN
 static.maxmind.com,CDN
 static.mediafire.com,CDN
 static.meiguo.com,CDN
@@ -3409,6 +3470,7 @@ time.cloudflare.com,CDN
 time.google.com,CDN
 time.windows.com,CDN
 tn.txxx.tube,CDN
+tn.upornia.com,CDN
 tn.vjav.com,CDN
 todoist.b-cdn.net,CDN
 tools-static.wmflabs.org,CDN
@@ -3449,6 +3511,7 @@ uploads.linear.app,CDN
 uploads.sitepoint.com,CDN
 upos-sz-mirroralibstar1.bilivideo.com,CDN
 upos-sz-mirrorcosbstar1.bilivideo.com,CDN
+uptn.nv7s.com,CDN
 us-js.zonka.co,CDN
 us.hamreus.com,CDN
 us01ccistatic.zoom.us,CDN
@@ -3468,6 +3531,7 @@ v2-images.crackle.com,CDN
 v2.listenloop.com,CDN
 v2uploads.zopim.io,CDN
 vanilla-extract.style,CDN
+vcdn.anysex.com,CDN
 versionbadg.es,CDN
 vetted.ai,CDN
 vice-prod.sdiapi.com,CDN
@@ -3538,6 +3602,7 @@ widget.user.com,CDN
 widget.usersnap.com,CDN
 widget.uservoice.com,CDN
 widgets-red.media.weather.com,CDN
+widgets.coaches.gnc.com,CDN
 widgets.flickr.com,CDN
 widgets.listenlive.co,CDN
 widgets.media.weather.com,CDN
