@@ -73,9 +73,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-30T14:24:59.917Z
-# Last Updated: 2025-04-30T14:25:01.137Z
+# Last Updated: 2025-05-01T11:59:42.626Z
 # License: AGPL 3.0
-# Size: 3547
+# Size: 3502
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -267,7 +267,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .cloud2.influxdata.com
 .cloudatacdn.com
 .cloudflare-ipfs.com
-.cloudflare.docker.com
 .cloudflare.ltd
 .cloudflarestream.com
 .cloudfront.net
@@ -289,7 +288,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .crash-reports.browser.yandex.net
 .crashlytics2.l.google.com
 .crashlyticsreports-pa.googleapis.com
-.crates.io
 .crossbell.io
 .crunchyrollcdn.com
 .csb.app
@@ -376,7 +374,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .faceit-cdn.net
 .fakeimg.pl
 .fakestoreapi.com
-.fastly.docker.com
 .fastlycdn.com
 .favicone.com
 .fbcdn.com
@@ -422,11 +419,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .gateway.originprotocol.com
 .gateway.pinata.cloud
 .gateway.serph.network
-.gcr.io
 .gcr.si
 .gdvid.info
 .gentcdn.com
-.getcomposer.org
 .ggpht.com
 .girlsgogamescdn.com
 .giscus.app
@@ -595,7 +590,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .jdbstatic.com
 .jinyingimage.com
 .jisuimage.com
-.jitpack.io
 .jpg5.su
 .jpgjingpinx.com
 .js-eu1.hubspot.com
@@ -611,7 +605,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .jw-cdn.org
 .jwpcdn.com
 .jwpsrv.com
-.k8s.io
 .kakaocdn.net
 .kc-usercontent.com
 .kinja-img.com
@@ -668,7 +661,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .mfcimg.com
 .minotar.net
 .mirror-media.xyz
-.mirrors.utermux.dev
 .misskeyusercontent.com
 .misskeyusercontent.jp
 .missuo.ru
@@ -686,7 +678,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .msftncsi.com
 .msftstatic.com
 .muscache.com
-.mvnrepository.com
 .mxmcdn.net
 .myanalytics.cdn.office.net
 .myavlive.com
@@ -747,7 +738,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .operacdn.com
 .oreillystatic.com
 .otstatic.com
-.packagist.org
 .packd.liuxingbaoyu.xyz
 .pagecdn.io
 .pages.dev
@@ -810,14 +800,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .pstatic.net
 .pstorage.space
 .public.cdn.office.net
-.public.ecr.aws
 .push.services.mozilla.com
 .px-cloud.net
 .pxgcdn.com
 .pximg.net
 .pxlecdn.com
-.pypi.org
-.pythonhosted.org
 .qbittorrent.org
 .qiniuyun22.xyz
 .qooqlevideo.com
@@ -847,7 +834,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .redditstatic.com
 .registry.gitplac.si
 .replicate.delivery
-.repo.anaconda.com
 .res.office365.com
 .rescript-lang.org
 .rlcdn.com
@@ -1058,6 +1044,8 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .webp.se
 .webpkgcache.com
 .website-files.com
+.widen.net
+.widencdn.net
 .widget.cluster.groovehq.com
 .widget.clutch.co
 .widgets.marketplace.aws.dev
@@ -1089,7 +1077,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .xnxx-cdn.com
 .xvideos-cdn.com
 .yammerusercontent.com
-.yarnpkg.com
 .yastatic.net
 .yelpcdn.com
 .yimg.com
@@ -1207,7 +1194,6 @@ assets-fe.change.org
 assets-growth-common.circleci.com
 assets-next.matters.news
 assets-next.mattersprotocol.io
-assets-production.packagecloud.io
 assets-s3-us-east-1.ceros.com
 assets-themes.chess.com
 assets-v2.super.so
@@ -1401,7 +1387,6 @@ badges.gitter.im
 badges.greenkeeper.io
 bcdn.starapps.studio
 bcmedia.bitchute.com
-binaries.prisma.sh
 blacklist.tampermonkey.net
 blade-public-static.blade-group.com
 blob.sololearn.com
@@ -1548,7 +1533,6 @@ cdn.cmcmarkets.com
 cdn.cms-twdigitalassets.com
 cdn.cnn.com
 cdn.cnx-software.com
-cdn.cocoapods.org
 cdn.codeblackbelt.com
 cdn.commandbar.com
 cdn.commento.io
@@ -1670,6 +1654,7 @@ cdn.mathjax.org
 cdn.matterhorn.app
 cdn.mcauto-images-production.sendgrid.net
 cdn.mcr.ea.com
+cdn.metadata.io
 cdn.mewe.com
 cdn.micro.blog
 cdn.minecraft-server-list.com
@@ -2049,11 +2034,8 @@ disco.headliner.link
 divhunt-site.b-cdn.net
 divhunt.b-cdn.net
 dl.airdroid.com
-dl.nwjs.io
-dl2.nwjs.io
 dlassets-ssl.xboxlive.com
 do.featurebase.app
-docker.cloudsmith.io
 docs.rs
 doppler-config.cbsivideo.com
 doujin-assets.dmm.co.jp
@@ -2062,6 +2044,7 @@ drop.ndtv.com
 drscdn.500px.org
 dynamic-assets.coinbase.com
 dz2cdn1.dzone.com
+e.calibermind.com
 e.deviantart.net
 e.linear.app
 e3.365dm.com
@@ -2215,7 +2198,6 @@ go.vercel.com
 godoc.org
 gohugo.io
 google-ohttp-relay-safebrowsing.fastly-edge.com
-gopkg.in
 graph.facebook.com
 gravatar.cat.net
 gstatic.com
@@ -2612,7 +2594,6 @@ marketing.figma.com
 marketing.thingiverse.com
 marketplace-web-assets.vinted.com
 mastodon-static.miao.dev
-maven.google.com
 mcdn.vrporn.com
 mcdnds.vrporn.com
 mcdns.vrporn.com
@@ -2743,8 +2724,6 @@ no-cache.hubspot.com
 nodeassets.nbcnews.com
 nodei.co
 npm.antfu.dev
-npm.im
-npm.jsr.io
 ntp.msn.com
 null.jsbin.com
 o.n1mp.org
@@ -2768,7 +2747,6 @@ optimizationguide-pa.googleapis.com
 optimizely.com
 organizer.bizzabo.com
 osint.digitalside.it
-oss-binaries.phusionpassenger.com
 oss.1p3a.com
 oss.moe.cat
 ovo.wxw.moe
@@ -2783,10 +2761,7 @@ p.udn.com.tw
 p2.bahamut.com.tw
 pacdn.500px.org
 package-assets.oomol.com
-packages-cf.termux.dev
-packages.httpie.io
 packages.jetbrains.team
-packages.termux.dev
 panel-production-libs.b-cdn.net
 participants.evolv.ai
 parts.blog.livedoor.jp
@@ -2825,8 +2800,6 @@ pictures-cdn.porn.com
 pim-media.intel.com
 pkg-cdn.jetbrains.team
 pkg-size.dev
-pkg.cloudflare.com
-pkg.cloudflareclient.com
 pkg.csb.dev
 pkgs.dev.azure.com
 pl.ea.com
@@ -2847,7 +2820,6 @@ player.louisvuitton.com
 player.vimeo.com
 players.brightcove.net
 playgroundcdn.typescriptlang.org
-plugins-artifacts.gradle.org
 plugins.dprint.dev
 plus.unsplash.com
 polyfill-fe.toss.im
@@ -2876,7 +2848,6 @@ profile-images.xing.com
 promotions.betfair.com
 proxy.beyondwords.io
 proxy.cors.sh
-proxy.golang.org
 proxy.joinmastodon.org
 ps.w.org
 psp-logos.uptimerobot.com
@@ -2902,22 +2873,10 @@ raw.github.com
 rawmarkdown.cloudflareaccess.org
 rebound.postmarkapp.com
 redircdn.com
-registry-cdn.wapm.io
 registry.api.cnn.io
-registry.bower.io
-registry.npmjs.com
-registry.npmjs.org
 registry.oomol.com
 regmedia.co.uk
-release.runcloud.io
 renderer-assets.typeform.com
-replicate.npmjs.com
-repo.gradle.org
-repo.hex.pm
-repo.maven.apache.org
-repo.nextdns.io
-repo1.maven.org
-repository.jboss.org
 res-geo.cdn.office.net
 res.abc.net.au
 res.cloudinary.com
@@ -3079,7 +3038,6 @@ simplicity.trustpilot.com
 sites.chase.com
 sites.super.so
 skills-assets.pstmn.io
-skimdb.npmjs.com
 sm.ign.com
 smd-cms.nasa.gov
 sn-s3-cdn.angry.im
@@ -3156,7 +3114,6 @@ static-main.moovit.com
 static-media.fox.com
 static-mh.content.disney.io
 static-overlay.ubisoft.com
-static-production.npmjs.com
 static-r.kamihimeproject.net
 static-redesign.cnbcfm.com
 static-resource.np.community.playstation.net
@@ -3290,7 +3247,6 @@ static.newmobilelife.com
 static.news.bitcoin.com
 static.nhentai.net
 static.nicehash.com
-static.npmjs.com
 static.nrk.no
 static.observablehq.com
 static.oklink.com
@@ -3319,7 +3275,6 @@ static.redhat.com
 static.registration.bluehost.com
 static.reo.dev
 static.replay.io
-static.rust-lang.org
 static.scarf.sh
 static.seel.com
 static.skyassets.com
