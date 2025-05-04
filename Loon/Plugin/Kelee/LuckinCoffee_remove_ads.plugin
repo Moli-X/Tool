@@ -1,15 +1,15 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/LuckinCoffee_remove_ads.plugin
-#!name=瑞幸咖啡去广告
-#!desc=移除开屏广告、弹窗和各类横幅推广。
+#!name = 瑞幸咖啡去广告
+#!desc = 移除开屏广告、弹窗和各类横幅推广。
 #App链接=https://apps.apple.com/app/id1296749505
-#!author=Sliverkiss[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=
-#!system_version=
-#!loon_version=3.2.4(787)
+#!author = Sliverkiss[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/LuckinCoffee_remove_ads.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/LuckinCoffee.png
-#!date=2024-11-28 00:00:00
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/LuckinCoffee.png
+#!date = 2024-11-28 00:00:00
 
 [Rewrite]
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/growUp\/calendarList reject
@@ -28,4 +28,4 @@
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNew reject
 
 [MitM]
-hostname=capi.lkcoffee.com
+hostname = capi.lkcoffee.com

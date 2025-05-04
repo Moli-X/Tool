@@ -1,29 +1,29 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/BitqiuPan_remove_ads.plugin
-#!name=比特球云盘去广告
-#!desc=移除开屏广告和各类横幅推广。
+#!name = 比特球云盘去广告
+#!desc = 移除开屏广告和各类横幅推广。
 #App链接=https://apps.apple.com/app/id1388178609
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=
-#!system_version=
-#!loon_version=3.2.4(787)
+#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BitqiuPan_remove_ads.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BitqiuPan.png
-#!date=2024-11-28 00:00:00
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BitqiuPan.png
+#!date = 2024-11-28 00:00:00
 
 [Rule]
-DOMAIN,cnlogs.umeng.com,REJECT
-DOMAIN,errlog.umeng.com,REJECT
-DOMAIN,errnewlog.umeng.com,REJECT
-DOMAIN,ucc.umeng.com,REJECT
-DOMAIN,ulogs.umeng.com,REJECT
-DOMAIN,utoken.umeng.com,REJECT
-DOMAIN,deeplink.umeng.com,REJECT
-DOMAIN,aspect-upush.umeng.com,REJECT
-DOMAIN,plbslog.umeng.com,REJECT
-DOMAIN,log.umtrack.com,REJECT
-DOMAIN,aaid.umeng.com,REJECT
-DOMAIN,log.umsns.com,REJECT
+DOMAIN, cnlogs.umeng.com, REJECT
+DOMAIN, errlog.umeng.com, REJECT
+DOMAIN, errnewlog.umeng.com, REJECT
+DOMAIN, ucc.umeng.com, REJECT
+DOMAIN, ulogs.umeng.com, REJECT
+DOMAIN, utoken.umeng.com, REJECT
+DOMAIN, deeplink.umeng.com, REJECT
+DOMAIN, aspect-upush.umeng.com, REJECT
+DOMAIN, plbslog.umeng.com, REJECT
+DOMAIN, log.umtrack.com, REJECT
+DOMAIN, aaid.umeng.com, REJECT
+DOMAIN, log.umsns.com, REJECT
 
 [Rewrite]
 ^https:\/\/pan-api\.bitqiu\.com\/activity\/getPromoteGuide$ reject-dict
@@ -33,4 +33,4 @@ DOMAIN,log.umsns.com,REJECT
 ^https:\/\/pan-api\.bitqiu\.com\/activity\/guides$ reject-dict
 
 [MitM]
-hostname=pan-api.bitqiu.com
+hostname = pan-api.bitqiu.com

@@ -1,58 +1,58 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Keep_remove_ads.plugin
-#!name=Keep去广告
-#!desc=移除开屏广告、应用内广告和弹窗广告。移除首页活动标签、关注推荐、文章相关推荐。修改首页默认标签为推荐页面。
+#!name = Keep去广告
+#!desc = 移除开屏广告、应用内广告和弹窗广告。移除首页活动标签、关注推荐、文章相关推荐。修改首页默认标签为推荐页面。
 #App链接=https://apps.apple.com/app/id952694580
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=
-#!system_version=
-#!loon_version=3.2.4(787)
+#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Keep_remove_ads.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Keep.png
-#!date=2025-03-05 08:57:39
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Keep.png
+#!date = 2025-03-05 08:57:39
 
 [Rule]
-DOMAIN,httpdns.n.netease.com,REJECT
-DOMAIN,httpdns.calorietech.com,REJECT
+DOMAIN, httpdns.n.netease.com, REJECT
+DOMAIN, httpdns.calorietech.com, REJECT
 
-DOMAIN,hc-ssp.sm.cn,REJECT
+DOMAIN, hc-ssp.sm.cn, REJECT
 
-DOMAIN,adsmind.gdtimg.com,REJECT
-DOMAIN,adsmind.ugdtimg.com,REJECT
-DOMAIN,c2.gdt.qq.com,REJECT
-DOMAIN,huatuocode.huatuo.qq.com,REJECT
-DOMAIN,info4.video.qq.com,REJECT
-DOMAIN,info6.video.qq.com,REJECT
-DOMAIN,ios.bugly.qq.com,REJECT
-DOMAIN,pro.bugly.qq.com,REJECT
-DOMAIN,ios.video.mpush.qq.com,REJECT
-DOMAIN,us.l.qq.com,REJECT
-DOMAIN,mi.gdt.qq.com,REJECT
-DOMAIN,otheve.beacon.qq.com,REJECT
-DOMAIN,pgdt.gtimg.cn,REJECT
-DOMAIN,pgdt.ugdtimg.com,REJECT
-DOMAIN,qzs.gdtimg.com,REJECT
-DOMAIN,qzs.qq.com,REJECT
-DOMAIN,rmonitor.qq.com,REJECT
-DOMAIN,sdk.e.qq.com,REJECT
-DOMAIN,sdkconfig.video.qq.com,REJECT
-DOMAIN,t.gdt.qq.com,REJECT
-DOMAIN,tmead.y.qq.com,REJECT
-DOMAIN,tmeadbak.y.qq.com,REJECT
-DOMAIN,tmeadcomm.y.qq.com,REJECT
-DOMAIN,tpns.qq.com,REJECT
-DOMAIN,v.gdt.qq.com,REJECT
-DOMAIN,v2.gdt.qq.com,REJECT
-DOMAIN,win.gdt.qq.com,REJECT
-DOMAIN,wup.imtt.qq.com,REJECT
-DOMAIN,tpstelemetry.tencent.com,REJECT
-DOMAIN,ii.gdt.qq.com,REJECT
-DOMAIN-KEYWORD,trace.qq.com,REJECT
-DOMAIN-KEYWORD,trace.video.qq.com,REJECT
-DOMAIN-SUFFIX,gdt.qq.com,REJECT
-DOMAIN-SUFFIX,l.qq.com,REJECT
-DOMAIN-SUFFIX,ugdtimg.com,REJECT
-IP-CIDR,47.110.187.87/32,REJECT,no-resolve
+DOMAIN, adsmind.gdtimg.com, REJECT
+DOMAIN, adsmind.ugdtimg.com, REJECT
+DOMAIN, c2.gdt.qq.com, REJECT
+DOMAIN, huatuocode.huatuo.qq.com, REJECT
+DOMAIN, info4.video.qq.com, REJECT
+DOMAIN, info6.video.qq.com, REJECT
+DOMAIN, ios.bugly.qq.com, REJECT
+DOMAIN, pro.bugly.qq.com, REJECT
+DOMAIN, ios.video.mpush.qq.com, REJECT
+DOMAIN, us.l.qq.com, REJECT
+DOMAIN, mi.gdt.qq.com, REJECT
+DOMAIN, otheve.beacon.qq.com, REJECT
+DOMAIN, pgdt.gtimg.cn, REJECT
+DOMAIN, pgdt.ugdtimg.com, REJECT
+DOMAIN, qzs.gdtimg.com, REJECT
+DOMAIN, qzs.qq.com, REJECT
+DOMAIN, rmonitor.qq.com, REJECT
+DOMAIN, sdk.e.qq.com, REJECT
+DOMAIN, sdkconfig.video.qq.com, REJECT
+DOMAIN, t.gdt.qq.com, REJECT
+DOMAIN, tmead.y.qq.com, REJECT
+DOMAIN, tmeadbak.y.qq.com, REJECT
+DOMAIN, tmeadcomm.y.qq.com, REJECT
+DOMAIN, tpns.qq.com, REJECT
+DOMAIN, v.gdt.qq.com, REJECT
+DOMAIN, v2.gdt.qq.com, REJECT
+DOMAIN, win.gdt.qq.com, REJECT
+DOMAIN, wup.imtt.qq.com, REJECT
+DOMAIN, tpstelemetry.tencent.com, REJECT
+DOMAIN, ii.gdt.qq.com, REJECT
+DOMAIN-KEYWORD, trace.qq.com, REJECT
+DOMAIN-KEYWORD, trace.video.qq.com, REJECT
+DOMAIN-SUFFIX, gdt.qq.com, REJECT
+DOMAIN-SUFFIX, l.qq.com, REJECT
+DOMAIN-SUFFIX, ugdtimg.com, REJECT
+IP-CIDR, 47.110.187.87/32, REJECT, no-resolve
 
 [Rewrite]
 ^https:\/\/api\.gotokeep\.com\/search\/v6\/default\/keyword\/list reject-dict
@@ -68,4 +68,4 @@ IP-CIDR,47.110.187.87/32,REJECT,no-resolve
 ^https:\/\/api\.gotokeep\.com\/config\/v3\/basic response-body-json-jq '.data.homeTabs |= map(select(.name != "活动")) | .data.homeTabs[1].default = true | .data.homeTabs[2].default = false'
 
 [MitM]
-hostname=api.gotokeep.com,kad.gotokeep.com
+hostname = api.gotokeep.com, kad.gotokeep.com

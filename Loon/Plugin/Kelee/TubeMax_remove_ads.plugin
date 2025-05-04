@@ -1,29 +1,29 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/TubeMax_remove_ads.plugin
-#!name=TubeMax去广告
-#!desc=过滤TubeMax广告
+#!name = TubeMax去广告
+#!desc = 过滤TubeMax广告
 #App链接=https://apps.apple.com/app/id1634335563
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=
-#!system_version=
-#!loon_version=3.2.4(787)
+#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/TubeMax_remove_ads.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TubeMax.png
-#!date=2024-11-28 00:00:00
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TubeMax.png
+#!date = 2024-11-28 00:00:00
 
 [Rule]
-DOMAIN,app.tubemaxapp.com,PROXY
-DOMAIN-SUFFIX,adjust.com,REJECT
-DOMAIN-SUFFIX,applvn.com,REJECT
-DOMAIN-SUFFIX,app-measurement.com,REJECT
-DOMAIN-SUFFIX,pangle.io,REJECT
-DOMAIN-SUFFIX,applovin.com,REJECT
-DOMAIN-SUFFIX,appier.net,REJECT
-DOMAIN-SUFFIX,adsmoloco.com,REJECT
-DOMAIN-SUFFIX,adcanvas.com,REJECT
+DOMAIN, app.tubemaxapp.com, PROXY
+DOMAIN-SUFFIX, adjust.com, REJECT
+DOMAIN-SUFFIX, applvn.com, REJECT
+DOMAIN-SUFFIX, app-measurement.com, REJECT
+DOMAIN-SUFFIX, pangle.io, REJECT
+DOMAIN-SUFFIX, applovin.com, REJECT
+DOMAIN-SUFFIX, appier.net, REJECT
+DOMAIN-SUFFIX, adsmoloco.com, REJECT
+DOMAIN-SUFFIX, adcanvas.com, REJECT
 
 [Rewrite]
 ^https:\/\/.*\.i18n-pglstatp\.com\/obj\/ad-pattern-sg reject
 
 [MitM]
-hostname=*.i18n-pglstatp.com
+hostname = *.i18n-pglstatp.com

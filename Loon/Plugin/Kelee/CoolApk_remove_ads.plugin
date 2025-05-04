@@ -1,15 +1,15 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/CoolApk_remove_ads.plugin
-#!name=酷安去广告
-#!desc=过滤酷安广告
+#!name = 酷安去广告
+#!desc = 过滤酷安广告
 #App链接=https://apps.apple.com/app/id1422581869
-#!author=RuCu6[https://github.com/RuCu6],可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=
-#!system_version=
-#!loon_version=3.2.4(787)
+#!author = RuCu6[https://github.com/RuCu6],可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/CoolApk_remove_ads.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CoolApk.png
-#!date=2025-03-27 01:02:54
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CoolApk.png
+#!date = 2025-03-27 01:02:54
 
 [Rewrite]
 ^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch reject-dict
@@ -27,4 +27,4 @@
 ^https:\/\/api\.coolapk\.com\/v6\/main\/init response-body-json-jq '.data |= map(select(.entityId? | [944,945,6390] | index(.) | not) | if .entityId == 20131 then .entities |= map(select(.title != "酷品")) else . end)'
 
 [MitM]
-hostname=api.coolapk.com
+hostname = api.coolapk.com

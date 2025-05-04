@@ -1,25 +1,25 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/iQiYi_Video_remove_ads.plugin
-#!name=爱奇艺去广告
-#!desc=移除开屏广告、焦点图广告、瀑布流广告、搜索页面广告、移除青少年弹窗，精简底栏和我的页面。
+#!name = 爱奇艺去广告
+#!desc = 移除开屏广告、焦点图广告、瀑布流广告、搜索页面广告、移除青少年弹窗，精简底栏和我的页面。
 #App链接=https://apps.apple.com/app/id1190755526
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=
-#!system_version=
-#!loon_version=3.2.4(787)
+#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/iQiYi_Video_remove_ads.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/iQiYi_Video.png
-#!date=2025-03-17 01:40:54
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/iQiYi_Video.png
+#!date = 2025-03-17 01:40:54
 
 [Rule]
-IP-CIDR,103.44.59.54/32,REJECT,no-resolve
-IP-CIDR,111.63.147.158/32,REJECT,no-resolve
-IP-CIDR,116.211.198.237/32,REJECT,no-resolve
+IP-CIDR, 103.44.59.54/32, REJECT, no-resolve
+IP-CIDR, 111.63.147.158/32, REJECT, no-resolve
+IP-CIDR, 116.211.198.237/32, REJECT, no-resolve
 
-DOMAIN-SUFFIX,cupid.iqiyi.com,DIRECT
+DOMAIN-SUFFIX, cupid.iqiyi.com, DIRECT
 
-DOMAIN,api.iqiyi.com,REJECT
-DOMAIN,access.if.iqiyi.com,REJECT
+DOMAIN, api.iqiyi.com, REJECT
+DOMAIN, access.if.iqiyi.com, REJECT
 
 [Rewrite]
 ^https:\/\/cards\.iqiyi\.com\/views_home\/3\.0\/qy_home\? response-body-json-del base.statistics
@@ -65,4 +65,4 @@ DOMAIN,access.if.iqiyi.com,REJECT
 ^https?:\/\/iface2\.iqiyi\.com\/aggregate\/3\.0\/getMyMenus\? response-body-json-jq '.data |= map(select(.statistic.block != "wd_liebiao_2") | select(all(.menuList[]?.statistic2.block; . != "wd_liebiao_3")))'
 
 [MitM]
-hostname=-i.vip.iqiyi.com,*.iqiyi.com
+hostname = -i.vip.iqiyi.com, *.iqiyi.com

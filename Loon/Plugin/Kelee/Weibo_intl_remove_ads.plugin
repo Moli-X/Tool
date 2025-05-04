@@ -1,15 +1,15 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Weibo_intl_remove_ads.plugin
-#!name=微博轻享版去广告
-#!desc=过滤轻享版广告，移除各部分推广模块。
+#!name = 微博轻享版去广告
+#!desc = 过滤轻享版广告，移除各部分推广模块。
 #App链接=https://apps.apple.com/app/id1215210046
-#!author=kokoryh[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=
-#!system_version=
-#!loon_version=3.2.4(787)
+#!author = kokoryh[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Weibo_intl_remove_ads.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weibo_intl.png
-#!date=2025-03-05 10:07:41
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weibo_intl.png
+#!date = 2025-03-05 10:07:41
 
 [Rewrite]
 ^https?:\/\/api\.weibo\.cn\/2\/ad\/weibointl\? reject-dict
@@ -22,4 +22,4 @@
 ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=user_center& response-body-json-jq 'if .data.cards then .data.cards[].items |= map(select(.type != "personal_vip")) | .data.cards |= map(select((.items | length) > 0)) end'
 
 [MitM]
-hostname=api.weibo.cn,weibointl.api.weibo.cn
+hostname = api.weibo.cn, weibointl.api.weibo.cn

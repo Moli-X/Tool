@@ -1,79 +1,79 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/YY_Voice_remove_ads.plugin
-#!name=YY去广告
-#!desc=移除开屏广告、应用内弹窗，精简底栏和我的页面。
+#!name = YY去广告
+#!desc = 移除开屏广告、应用内弹窗，精简底栏和我的页面。
 #App链接=https://apps.apple.com/app/id427941017
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=
-#!system_version=
-#!loon_version=3.2.4(787)
+#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/YY_Voice_remove_ads.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YY_Voice.png
-#!date=2025-03-06 00:38:1906
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YY_Voice.png
+#!date = 2025-03-06 00:38:1906
 
 [Rule]
-DOMAIN,yyapp-httpdns.gslb.yy.com,REJECT
-DOMAIN,union-httpdns.gslb.yy.com,REJECT
-DOMAIN,httpdns-v6.gslb.yy.com,REJECT
+DOMAIN, yyapp-httpdns.gslb.yy.com, REJECT
+DOMAIN, union-httpdns.gslb.yy.com, REJECT
+DOMAIN, httpdns-v6.gslb.yy.com, REJECT
 
-DOMAIN,splash.yy.com,REJECT
+DOMAIN, splash.yy.com, REJECT
 
-DOMAIN,dsp-ad.yy.com,REJECT
+DOMAIN, dsp-ad.yy.com, REJECT
 
-DOMAIN,adsmind.gdtimg.com,REJECT
-DOMAIN,adsmind.ugdtimg.com,REJECT
-DOMAIN,c2.gdt.qq.com,REJECT
-DOMAIN,huatuocode.huatuo.qq.com,REJECT
-DOMAIN,info4.video.qq.com,REJECT
-DOMAIN,info6.video.qq.com,REJECT
-DOMAIN,ios.bugly.qq.com,REJECT
-DOMAIN,ios.video.mpush.qq.com,REJECT
-DOMAIN,mi.gdt.qq.com,REJECT
-DOMAIN,otheve.beacon.qq.com,REJECT
-DOMAIN,pgdt.gtimg.cn,REJECT
-DOMAIN,pgdt.ugdtimg.com,REJECT
-DOMAIN,qzs.gdtimg.com,REJECT
-DOMAIN,qzs.qq.com,REJECT
-DOMAIN,rmonitor.qq.com,REJECT
-DOMAIN,sdk.e.qq.com,REJECT
-DOMAIN,sdkconfig.video.qq.com,REJECT
-DOMAIN,t.gdt.qq.com,REJECT
-DOMAIN,tmead.y.qq.com,REJECT
-DOMAIN,tmeadbak.y.qq.com,REJECT
-DOMAIN,tmeadcomm.y.qq.com,REJECT
-DOMAIN,tpns.qq.com,REJECT
-DOMAIN,v.gdt.qq.com,REJECT
-DOMAIN,v2.gdt.qq.com,REJECT
-DOMAIN,win.gdt.qq.com,REJECT
-DOMAIN,wup.imtt.qq.com,REJECT
-DOMAIN,tpstelemetry.tencent.com,REJECT
-DOMAIN-KEYWORD,trace.qq.com,REJECT
-DOMAIN-KEYWORD,trace.video.qq.com,REJECT
-DOMAIN-SUFFIX,gdt.qq.com,REJECT
-DOMAIN-SUFFIX,l.qq.com,REJECT
-DOMAIN-SUFFIX,ugdtimg.com,REJECT
-IP-CIDR,47.110.187.87/32,REJECT,no-resolve
+DOMAIN, adsmind.gdtimg.com, REJECT
+DOMAIN, adsmind.ugdtimg.com, REJECT
+DOMAIN, c2.gdt.qq.com, REJECT
+DOMAIN, huatuocode.huatuo.qq.com, REJECT
+DOMAIN, info4.video.qq.com, REJECT
+DOMAIN, info6.video.qq.com, REJECT
+DOMAIN, ios.bugly.qq.com, REJECT
+DOMAIN, ios.video.mpush.qq.com, REJECT
+DOMAIN, mi.gdt.qq.com, REJECT
+DOMAIN, otheve.beacon.qq.com, REJECT
+DOMAIN, pgdt.gtimg.cn, REJECT
+DOMAIN, pgdt.ugdtimg.com, REJECT
+DOMAIN, qzs.gdtimg.com, REJECT
+DOMAIN, qzs.qq.com, REJECT
+DOMAIN, rmonitor.qq.com, REJECT
+DOMAIN, sdk.e.qq.com, REJECT
+DOMAIN, sdkconfig.video.qq.com, REJECT
+DOMAIN, t.gdt.qq.com, REJECT
+DOMAIN, tmead.y.qq.com, REJECT
+DOMAIN, tmeadbak.y.qq.com, REJECT
+DOMAIN, tmeadcomm.y.qq.com, REJECT
+DOMAIN, tpns.qq.com, REJECT
+DOMAIN, v.gdt.qq.com, REJECT
+DOMAIN, v2.gdt.qq.com, REJECT
+DOMAIN, win.gdt.qq.com, REJECT
+DOMAIN, wup.imtt.qq.com, REJECT
+DOMAIN, tpstelemetry.tencent.com, REJECT
+DOMAIN-KEYWORD, trace.qq.com, REJECT
+DOMAIN-KEYWORD, trace.video.qq.com, REJECT
+DOMAIN-SUFFIX, gdt.qq.com, REJECT
+DOMAIN-SUFFIX, l.qq.com, REJECT
+DOMAIN-SUFFIX, ugdtimg.com, REJECT
+IP-CIDR, 47.110.187.87/32, REJECT, no-resolve
 
-DOMAIN,api-c.dutils.com,REJECT
-DOMAIN,api-d.dutils.com,REJECT
-DOMAIN,api-p0.yksdks.com,REJECT
-DOMAIN,cache-verify.dutils.com,REJECT
-DOMAIN,cdn-api-verify.dutils.com,REJECT
-DOMAIN,devs-data.dutils.com,REJECT
-DOMAIN,log-verify.dutils.com,REJECT
-DOMAIN,m.mpl.dutils.com,REJECT
-DOMAIN,api.share.mob.com,REJECT
-DOMAIN,api.verify.mob.com,REJECT
-DOMAIN,log-verify.mob.com,REJECT
-DOMAIN,sdk.push.mob.com,REJECT
+DOMAIN, api-c.dutils.com, REJECT
+DOMAIN, api-d.dutils.com, REJECT
+DOMAIN, api-p0.yksdks.com, REJECT
+DOMAIN, cache-verify.dutils.com, REJECT
+DOMAIN, cdn-api-verify.dutils.com, REJECT
+DOMAIN, devs-data.dutils.com, REJECT
+DOMAIN, log-verify.dutils.com, REJECT
+DOMAIN, m.mpl.dutils.com, REJECT
+DOMAIN, api.share.mob.com, REJECT
+DOMAIN, api.verify.mob.com, REJECT
+DOMAIN, log-verify.mob.com, REJECT
+DOMAIN, sdk.push.mob.com, REJECT
 
-DOMAIN,dsp-x.jd.com,REJECT
-DOMAIN,xlog.jd.com,REJECT
-DOMAIN,janapi.jd.com,REJECT
+DOMAIN, dsp-x.jd.com, REJECT
+DOMAIN, xlog.jd.com, REJECT
+DOMAIN, janapi.jd.com, REJECT
 
-DOMAIN,sdk.tianmu.mobi,REJECT
+DOMAIN, sdk.tianmu.mobi, REJECT
 
-DOMAIN,sdk.beizi.biz,REJECT
+DOMAIN, sdk.beizi.biz, REJECT
 
 [Rewrite]
 ^https:\/\/yyapp-fastnet\.yy\.com\/dispatch\? reject-dict
@@ -89,4 +89,4 @@ DOMAIN,sdk.beizi.biz,REJECT
 ^https:\/\/personal-center\.yy\.com\/personalCenter\/list\? response-body-json-jq '.data.modules |= map(select(.moduleName != "Banner轮播")) | .data.modules[] |= if .entrances != null then .entrances |= map(select(.name != "度小满借钱" and .name != "手机充值" and .name != "免流量")) else . end'
 
 [MitM]
-hostname=yyapp-act-entrance.yy.com,yyapp-fastnet.yy.com,personal-center.yy.com,tab.yy.com,data.3g.yy.com,yyapp-idx.yy.com
+hostname = yyapp-act-entrance.yy.com, yyapp-fastnet.yy.com, personal-center.yy.com, tab.yy.com, data.3g.yy.com, yyapp-idx.yy.com

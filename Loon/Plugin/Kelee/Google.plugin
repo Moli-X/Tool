@@ -1,19 +1,19 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Google.plugin
-#!name=Google搜索重定向
-#!desc=将Google搜索重定向至.com域名，如遇频繁跳转请禁用本插件。
+#!name = Google搜索重定向
+#!desc = 将Google搜索重定向至.com域名，如遇频繁跳转请禁用本插件。
 #App链接=
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=
-#!system_version=
-#!loon_version=3.2.4(787)
+#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Google.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Google.png
-#!date=2024-11-28 00:00:00
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Google.png
+#!date = 2024-11-28 00:00:00
 
 [Rewrite]
 ^https?:\/\/(www.)?(g|google)\.cn 307 https://www.google.com
 ^https?:\/\/(ditu|maps).google\.cn 307 https://maps.google.com
 
 [MitM]
-hostname=www.google.cn
+hostname = www.google.cn

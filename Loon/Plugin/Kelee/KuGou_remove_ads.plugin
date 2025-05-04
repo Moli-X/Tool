@@ -1,34 +1,34 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/KuGou_remove_ads.plugin
-#!name=酷狗音乐去广告
-#!desc=移除开屏广告、应用各类弹窗、各类横幅广告、评论区广告和播放器界面广告。
+#!name = 酷狗音乐去广告
+#!desc = 移除开屏广告、应用各类弹窗、各类横幅广告、评论区广告和播放器界面广告。
 #App链接=https://apps.apple.com/app/id472208016
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=
-#!system_version=
-#!loon_version=3.2.4(787)
+#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/KuGou_remove_ads.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KuGou.png
-#!date=2025-03-09 03:19:39
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KuGou.png
+#!date = 2025-03-09 03:19:39
 
 [Rule]
-DOMAIN,ads.service.kugou.com,REJECT
-DOMAIN,adstats.tencentmusic.com,REJECT
-DOMAIN,adsmind.gdtimg.com,REJECT
-DOMAIN,adserviceretry.kugou.com,REJECT
-DOMAIN,adserviceretry.kglink.cn,REJECT
-DOMAIN,ad.tencentmusic.com,REJECT
-DOMAIN,adservice.kugou.com,REJECT
-DOMAIN,splashimgretrybssdl.cloud.kugou.com,REJECT
+DOMAIN, ads.service.kugou.com, REJECT
+DOMAIN, adstats.tencentmusic.com, REJECT
+DOMAIN, adsmind.gdtimg.com, REJECT
+DOMAIN, adserviceretry.kugou.com, REJECT
+DOMAIN, adserviceretry.kglink.cn, REJECT
+DOMAIN, ad.tencentmusic.com, REJECT
+DOMAIN, adservice.kugou.com, REJECT
+DOMAIN, splashimgretrybssdl.cloud.kugou.com, REJECT
 
-DOMAIN,ios.bugly.qq.com,REJECT
-DOMAIN,sdk.e.qq.com,REJECT
-DOMAIN,us.l.qq.com,REJECT
-DOMAIN-SUFFIX,ugdtimg.com,REJECT
+DOMAIN, ios.bugly.qq.com, REJECT
+DOMAIN, sdk.e.qq.com, REJECT
+DOMAIN, us.l.qq.com, REJECT
+DOMAIN-SUFFIX, ugdtimg.com, REJECT
 
-DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX, gdt.qq.com, REJECT
 
-URL-REGEX,"^http:\/\/log\.stat\.kugou\.com\/mobile\/ad\.html",REJECT
+URL-REGEX, "^http:\/\/log\.stat\.kugou\.com\/mobile\/ad\.html", REJECT
 
 [Rewrite]
 ^https:\/\/fx\.service\.kugou\.com\/mfx-kugoulive\/ad\/ reject-dict
@@ -60,4 +60,4 @@ URL-REGEX,"^http:\/\/log\.stat\.kugou\.com\/mobile\/ad\.html",REJECT
 ^https:\/\/gateway(retry)?\.kugou\.com\/ocean\/v\d\/tab\/list_v\d response-body-json-jq 'def namesToRemove:["AI帮唱","长相思2","K歌","小说","游戏"];def removeParentIfNameMatches:if type=="object"then with_entries(select(.value|(type=="object"and .name as $name|$name|IN(namesToRemove[])|not)))|map_values(removeParentIfNameMatches)else .end;removeParentIfNameMatches'
 
 [MitM]
-hostname=gateway.kugou.com,fx.service.kugou.com,hwstore.kugou.com,ep.kugou.com,gatewayretry.kugou.com,gzacshow.kugou.com,m1fxgroup.kugou.com
+hostname = gateway.kugou.com, fx.service.kugou.com, hwstore.kugou.com, ep.kugou.com, gatewayretry.kugou.com, gzacshow.kugou.com, m1fxgroup.kugou.com

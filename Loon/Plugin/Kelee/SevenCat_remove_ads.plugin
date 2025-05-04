@@ -1,20 +1,20 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/SevenCat_remove_ads.plugin
-#!name=七猫小说去广告
-#!desc=移除大部分七猫小说广告，但受限于七猫小说自身对MitM和VPN状态的检测，部分页面广告无法移除。
+#!name = 七猫小说去广告
+#!desc = 移除大部分七猫小说广告，但受限于七猫小说自身对MitM和VPN状态的检测，部分页面广告无法移除。
 #App链接=https://apps.apple.com/app/id1387717110
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=
-#!system_version=
-#!loon_version=3.2.4(787)
+#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/SevenCat_remove_ads.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SevenCat.png
-#!date=2024-11-28 00:00:00
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SevenCat.png
+#!date = 2024-11-28 00:00:00
 
 [Rule]
-DOMAIN,cdn-ad.wtzw.com,REJECT
-DOMAIN,cdn-new-ad.wtzw.com,REJECT
-DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN, cdn-ad.wtzw.com, REJECT
+DOMAIN, cdn-new-ad.wtzw.com, REJECT
+DOMAIN-SUFFIX, gdt.qq.com, REJECT
 
 [Rewrite]
 ^https:\/\/api-cfg\.wtzw\.com\/v\d\/splash\/ reject-dict
@@ -35,4 +35,4 @@ DOMAIN-SUFFIX,gdt.qq.com,REJECT
 ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/user\/my-center\? response-body-json-del data.func_area[1]  data.func_area[2]
 
 [MitM]
-hostname=api-cfg.wtzw.com,sf3-fe-tos.pglstatp-toutiao.com,api-bc.wtzw.com,api-gw.wtzw.com,cdn.wtzw.com
+hostname = api-cfg.wtzw.com, sf3-fe-tos.pglstatp-toutiao.com, api-bc.wtzw.com, api-gw.wtzw.com, cdn.wtzw.com

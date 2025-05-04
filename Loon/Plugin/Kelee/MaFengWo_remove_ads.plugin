@@ -1,34 +1,34 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/MaFengWo_remove_ads.plugin
-#!name=马蜂窝去广告
-#!desc=移除首页信息流广告、商城横幅推广、我的页面弹窗。
+#!name = 马蜂窝去广告
+#!desc = 移除首页信息流广告、商城横幅推广、我的页面弹窗。
 #App链接=https://apps.apple.com/app/id406596432
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=
-#!system_version=
-#!loon_version=3.2.4(787)
+#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/MaFengWo_remove_ads.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MaFengWo.png
-#!date=2024-11-28 00:00:00
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MaFengWo.png
+#!date = 2024-11-28 00:00:00
 
 [Rule]
-IP-CIDR,119.29.29.98/32,REJECT,no-resolve
-URL-REGEX,"^http:\/\/162\.14\.3\.250\/v4",REJECT
+IP-CIDR, 119.29.29.98/32, REJECT, no-resolve
+URL-REGEX, "^http:\/\/162\.14\.3\.250\/v4", REJECT
 
-DOMAIN,advert.mafengwo.cn,REJECT
+DOMAIN, advert.mafengwo.cn, REJECT
 
-DOMAIN,api-c.dutils.com,REJECT
-DOMAIN,api-d.dutils.com,REJECT
-DOMAIN,api-p0.yksdks.com,REJECT
-DOMAIN,cache-verify.dutils.com,REJECT
-DOMAIN,cdn-api-verify.dutils.com,REJECT
-DOMAIN,devs-data.dutils.com,REJECT
-DOMAIN,log-verify.dutils.com,REJECT
-DOMAIN,m.mpl.dutils.com,REJECT
-DOMAIN,api.share.mob.com,REJECT
-DOMAIN,api.verify.mob.com,REJECT
-DOMAIN,log-verify.mob.com,REJECT
-DOMAIN,sdk.push.mob.com,REJECT
+DOMAIN, api-c.dutils.com, REJECT
+DOMAIN, api-d.dutils.com, REJECT
+DOMAIN, api-p0.yksdks.com, REJECT
+DOMAIN, cache-verify.dutils.com, REJECT
+DOMAIN, cdn-api-verify.dutils.com, REJECT
+DOMAIN, devs-data.dutils.com, REJECT
+DOMAIN, log-verify.dutils.com, REJECT
+DOMAIN, m.mpl.dutils.com, REJECT
+DOMAIN, api.share.mob.com, REJECT
+DOMAIN, api.verify.mob.com, REJECT
+DOMAIN, log-verify.mob.com, REJECT
+DOMAIN, sdk.push.mob.com, REJECT
 
 [Rewrite]
 ^https:\/\/mapi\.mafengwo\.cn\/discovery\/get_index\/v7\? response-body-json-jq '.data.list |= map(select(.data.business_type != "gdcpm"))'
@@ -38,4 +38,4 @@ DOMAIN,sdk.push.mob.com,REJECT
 ^https:\/\/mapi\.mafengwo\.cn\/user\/growth\/get_growth_tip\/v1\? reject-dict
 
 [MitM]
-hostname=mapi.mafengwo.cn
+hostname = mapi.mafengwo.cn

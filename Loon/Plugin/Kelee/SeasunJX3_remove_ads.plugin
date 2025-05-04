@@ -1,15 +1,15 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/SeasunJX3_remove_ads.plugin
-#!name=剑网三无界去广告
-#!desc=移除热门推送活动，并解决无法在Loon运行时更新和登录的问题。
+#!name = 剑网三无界去广告
+#!desc = 移除热门推送活动，并解决无法在Loon运行时更新和登录的问题。
 #App链接=https://apps.apple.com/app/id1002355194
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=iOS,iPadOS,macOS
-#!system_version=
-#!loon_version=3.2.4(787)
+#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag = 去广告
+#!system = iOS,iPadOS,macOS
+#!system_version = 
+#!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/SeasunJX3_remove_ads.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SeasunJX3.png
-#!date=2025-03-05 01:04:13
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SeasunJX3.png
+#!date = 2025-03-05 01:04:13
 
 [General]
 real-ip=*-update.xoyocdn.com,xg-flow.xoyo.com
@@ -18,4 +18,4 @@ real-ip=*-update.xoyocdn.com,xg-flow.xoyo.com
 ^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt reject
 
 [MitM]
-hostname=jx3comm.xoyocdn.com
+hostname = jx3comm.xoyocdn.com

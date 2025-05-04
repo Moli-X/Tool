@@ -1,15 +1,15 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/MaiMai_remove_ads.plugin
-#!name=脉脉去广告
-#!desc=移除开屏广告、信息流广告、横幅推广、相关帖子推荐。
+#!name = 脉脉去广告
+#!desc = 移除开屏广告、信息流广告、横幅推广、相关帖子推荐。
 #App链接=https://apps.apple.com/app/id718659370
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=
-#!system_version=
-#!loon_version=3.2.4(787)
+#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/MaiMai_remove_ads.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MaiMai.png
-#!date=2024-11-28 00:00:00
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MaiMai.png
+#!date = 2024-11-28 00:00:00
 
 [Rewrite]
 ^https:\/\/(h3\.)?open\.taou\.com\/maimai\/adshow\? reject-dict
@@ -21,7 +21,7 @@
 ^https:\/\/(h3\.)?open\.taou\.com\/maimai\/feed\/v6\/detail_recommend_feeds\? response-body-json-del feeds
 
 [Script]
-http-response ^https:\/\/(h3\.)?open\.taou\.com\/maimai\/(feed|gossip)\/v\d\/(focus_feed|gossip_detail_comment|feed_detail_comment?)\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/MaiMai_remove_ads.js,requires-body=true,tag=移除信息流和评论区大块广告
+http-response ^https:\/\/(h3\.)?open\.taou\.com\/maimai\/(feed|gossip)\/v\d\/(focus_feed|gossip_detail_comment|feed_detail_comment?)\? script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/MaiMai_remove_ads.js, requires-body = true, tag = 移除信息流和评论区大块广告
 
 [MitM]
-hostname=open.taou.com,h3.open.taou.com
+hostname = open.taou.com, h3.open.taou.com
