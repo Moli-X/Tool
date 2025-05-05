@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3620
+# 规则统计: 3627
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-30T14:24:59.917Z
-# Last Updated: 2025-05-03T14:55:02.022Z
+# Last Updated: 2025-05-04T18:30:05.602Z
 # License: AGPL 3.0
-# Size: 3537
+# Size: 3544
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1766,6 +1766,7 @@ cdn.st-note.com,CDN
 cdn.starapps.studio,CDN
 cdn.stash.com,CDN
 cdn.staticdelivr.com,CDN
+cdn.staticswin.com,CDN
 cdn.stellarhosted.com,CDN
 cdn.substack.com,CDN
 cdn.sunofbeaches.com,CDN
@@ -2509,6 +2510,7 @@ img8.yna.co.kr,CDN
 img9.socialshopwave.com,CDN
 img9.yna.co.kr,CDN
 imgcdn.cna.com.tw,CDN
+imgfile.shop,CDN
 imgix.setapp.com,CDN
 imgopt.infoq.com,CDN
 imgproxy.fourthwall.com,CDN
@@ -2665,6 +2667,7 @@ media.kit.com,CDN
 media.lantern.io,CDN
 media.licdn.com,CDN
 media.loom-app.com,CDN
+media.maptiler.com,CDN
 media.mas.to,CDN
 media.masto.nu,CDN
 media.minecraftforum.net,CDN
@@ -2921,6 +2924,7 @@ resizing.flixster.com,CDN
 resource-accel.fs.com,CDN
 resource.akashic.coe.nicovideo.jp,CDN
 resource.fs.com,CDN
+resource.tnlmediagene.com,CDN
 resource.video.nimg.jp,CDN
 resources-cache.prod.sketch.com,CDN
 resources-live.sketch.cloud,CDN
@@ -3297,6 +3301,7 @@ static.parallels.com,CDN
 static.peatio.com,CDN
 static.pfrt.yna.co.kr,CDN
 static.pingcap.com,CDN
+static.planetminecraft.com,CDN
 static.playstation.com,CDN
 static.plus.net,CDN
 static.politico.com,CDN
@@ -3328,6 +3333,7 @@ static.telegraph.co.uk,CDN
 static.tenki.jp,CDN
 static.test-beta.com,CDN
 static.theguardian.com,CDN
+static.threatlocker.com,CDN
 static.toiimg.com,CDN
 static.tokenview.io,CDN
 static.toss.im,CDN
@@ -3414,6 +3420,7 @@ sts.online.visualstudio.com,CDN
 sts3.wsj.net,CDN
 stubdownloader.services.mozilla.com,CDN
 support.content.office.net,CDN
+sw.cool3c.com,CDN
 sync.getpublica.com,CDN
 t.betterstack.com,CDN
 t.nhentai.net,CDN

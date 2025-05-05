@@ -1,5 +1,5 @@
 # 规则名称: DownloadCDN_Global
-# 规则统计: 197
+# 规则统计: 199
 
 DOMAIN, account-api.bandainamcoid.com
 DOMAIN, account.bandainamcoid.com
@@ -174,6 +174,7 @@ DOMAIN, windbg.download.prss.microsoft.com
 DOMAIN, xvcf1.xboxlive.com
 DOMAIN, xvcf2.xboxlive.com
 DOMAIN-SUFFIX, cloudflarestorage.com
+DOMAIN-SUFFIX, hf.co
 DOMAIN-SUFFIX, storage.live.com
 DOMAIN-KEYWORD, epicgames-download
 AND, ((DOMAIN-KEYWORD, cache), (DOMAIN-SUFFIX, steamcontent.com))
@@ -191,6 +192,7 @@ AND, ((DOMAIN-KEYWORD, cdn), (DOMAIN-KEYWORD, -epicgames-))
 # FiveM游戏下载、更新[国际]
 # GOG游戏下载、更新[国际]
 # Hikari Field游戏下载及更新[国际]
+# Hugging Face模型下载
 # Origin艺电游戏平台[国际]
 # Riot游戏下载、更新[国际]
 # Steam游戏下载、游戏更新、创意工坊下载、Steam.TV直播、社区实况直播[国际]

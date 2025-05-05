@@ -12,7 +12,7 @@
 #!date = 2025-03-07 00:52:30
 
 [Rewrite]
-^https?:\/\/gql(-fed)?\.reddit\.com response-body-json-jq jq-path="https://kelee.one/Resource/JQLang/Reddit/Reddit_remove_ads.jq"
+^https?:\/\/gql(-fed)?\.reddit\.com response-body-json-jq jq-path = "https://kelee.one/Resource/JQLang/Reddit/Reddit_remove_ads.jq"
 
 [MitM]
 hostname = gql.reddit.com, gql-fed.reddit.com
