@@ -12,7 +12,8 @@
 #!date = 2025-04-22 00:22:22
 
 [Script]
-http-response ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$ script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/JD_Price.js, requires-body = true, timeout = 10, tag = 捕获令牌
+http-request ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$ script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/JD_Price.js, requires-body = true, timeout = 10, tag = 捕获令牌
+
 http-response ^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/JD_Price.js, requires-body = true, timeout = 10, tag = 京东比价
 
 [MitM]

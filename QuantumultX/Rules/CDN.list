@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3628
+# 规则统计: 3627
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-30T14:24:59.917Z
-# Last Updated: 2025-05-05T12:28:20.064Z
+# Last Updated: 2025-05-05T14:32:36.054Z
 # License: AGPL 3.0
-# Size: 3545
+# Size: 3544
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -422,7 +422,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .gamccdn.com,CDN
 .gamesgamescdn.com,CDN
 .gammacdn.com,CDN
-.gannetcdn.com,CDN
 .gateway.originprotocol.com,CDN
 .gateway.pinata.cloud,CDN
 .gateway.serph.network,CDN
@@ -1006,7 +1005,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .ubembed.com,CDN
 .uber-assets.com,CDN
 .ucarecdn.com,CDN
-.ucloud133.com,CDN
 .udify.app,CDN
 .uicdn.net,CDN
 .ungh.cc,CDN
@@ -1315,6 +1313,7 @@ assets.prowritingaid.com,CDN
 assets.queue-it.net,CDN
 assets.quillbot.com,CDN
 assets.raspberrypi.com,CDN
+assets.redbullshop.com,CDN
 assets.repair.org,CDN
 assets.safing.io,CDN
 assets.salesmartly.com,CDN
@@ -1785,7 +1784,6 @@ cdn.travis-ci.com,CDN
 cdn.travis-ci.org,CDN
 cdn.trustedsite.com,CDN
 cdn.trustpilot.net,CDN
-cdn.tryadapp.com,CDN
 cdn.ttgtmedia.com,CDN
 cdn.ttloli.com,CDN
 cdn.tuk.dev,CDN
@@ -2270,7 +2268,6 @@ i.vgy.me,CDN
 i.xgroovy.com,CDN
 i.xozilla.xxx,CDN
 i.xxxshake.com,CDN
-i1.anysex.com,CDN
 i2.anysex.com,CDN
 i2.bahamut.com.tw,CDN
 i2.hentaifox.com,CDN
@@ -2463,6 +2460,7 @@ img.openshop.com.hk,CDN
 img.pawoo.net,CDN
 img.perfops.net,CDN
 img.picacomic.com,CDN
+img.redbull.com,CDN
 img.reg.ru,CDN
 img.reimu.net,CDN
 img.represent.com,CDN
@@ -2766,7 +2764,6 @@ objects.g0v.social,CDN
 objects.hit.moe,CDN
 ocsp.digicert.com,CDN
 ocsp.godaddy.com,CDN
-ocsp.int-x3.letsencrypt.org,CDN
 ocsp.sectigo.com,CDN
 ocsp.usertrust.com,CDN
 oct8neproxy.azurewebsites.net,CDN
@@ -2906,6 +2903,7 @@ r2cdn.perplexity.ai,CDN
 rapid-cdn.yottaa.com,CDN
 raw.github.com,CDN
 rawmarkdown.cloudflareaccess.org,CDN
+rbds-static.redbull.com,CDN
 rebound.postmarkapp.com,CDN
 redircdn.com,CDN
 registry.api.cnn.io,CDN
@@ -2984,6 +2982,7 @@ s3-zen.mds.yandex.net,CDN
 s3.2233778.xyz,CDN
 s3.aaaaa.io,CDN
 s3.acg.mn,CDN
+s3.anilist.co,CDN
 s3.arkjp.net,CDN
 s3.c.im,CDN
 s3.coinmarketcap.com,CDN
@@ -3009,6 +3008,7 @@ s3.us-west-001.backblazeb2.com,CDN
 s3.us-west-002.backblazeb2.com,CDN
 s3.us-west-004.backblazeb2.com,CDN
 s3media.squarespace.com,CDN
+s4.anilist.co,CDN
 s4.itho.me,CDN
 s4.maxstream.org,CDN
 s5.maxstream.org,CDN
@@ -3057,7 +3057,6 @@ segment.digitalocean.com,CDN
 sentry.ainopara.com,CDN
 service-icons.zeabur.com,CDN
 services.linkfire.com,CDN
-settings.kiwibrowser.com,CDN
 sf-coze-web-cdn.coze.com,CDN
 sf-flow-web-cdn.ciciai.com,CDN
 sfiles.cnyes.cool,CDN
@@ -3213,7 +3212,6 @@ static.doujins.com,CDN
 static.drtuber.com,CDN
 static.dw.com,CDN
 static.dzeninfra.ru,CDN
-static.e621.net,CDN
 static.edge.microsoftapp.net,CDN
 static.eroterest.net,CDN
 static.esimplus.net,CDN
@@ -3362,6 +3360,7 @@ static.zaobao.com.sg,CDN
 static.zuora.com,CDN
 static01.nyt.com,CDN
 static02.nyt.com,CDN
+static1.e621.net,CDN
 static1.lottiefiles.com,CDN
 static1.muchohentai.com,CDN
 static1.smartbear.co,CDN
@@ -3420,6 +3419,7 @@ streaming.split.io,CDN
 sts.online.visualstudio.com,CDN
 sts3.wsj.net,CDN
 stubdownloader.services.mozilla.com,CDN
+styleguide-assets.shannons.com.au,CDN
 support.content.office.net,CDN
 sw.cool3c.com,CDN
 sync.getpublica.com,CDN
@@ -3519,7 +3519,6 @@ use.typekit.net,CDN
 user-images.trustpilot.com,CDN
 user-uploads.perchance.org,CDN
 usercontent.flodesk.com,CDN
-userfiles.uptimerobot.com,CDN
 userpic.redgifs.com,CDN
 useruploads.visualwebsiteoptimizer.com,CDN
 utteranc.es,CDN

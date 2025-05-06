@@ -9,7 +9,7 @@
 #!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Block_HTTPDNS.plugin
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png
-#!date = 2025-04-22 14:25:47
+#!date = 2025-05-06 02:31:58
 
 [Rule]
 DOMAIN, yyapp-httpdns.gslb.yy.com, REJECT
@@ -161,6 +161,7 @@ DOMAIN, apidns.kwd.inkuai.com, REJECT
 DOMAIN, apidns-js.kwd.inkuai.com, REJECT
 
 DOMAIN, httpdns.meituan.com, REJECT
+DOMAIN, httpdnsmultiapi.meituan.com, REJECT
 DOMAIN, httpdnsmultiapivip.meituan.com, REJECT
 URL-REGEX, "^http:\/\/103\.37\.155\.60\/fetch", REJECT
 

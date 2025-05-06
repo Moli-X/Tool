@@ -32,7 +32,7 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 ^https:\/\/api-cfg\.wtzw\.com\/v\d\/operation\/index\?ad_personal_switch reject-dict
 ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/withdraw\/init reject-dict
 
-^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/user\/my-center\? response-body-json-del data.func_area[1]  data.func_area[2]
+^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/user\/my-center\? response-body-json-del data.func_area[1] data.func_area[2]
 
 [MitM]
 hostname = api-cfg.wtzw.com, sf3-fe-tos.pglstatp-toutiao.com, api-bc.wtzw.com, api-gw.wtzw.com, cdn.wtzw.com
