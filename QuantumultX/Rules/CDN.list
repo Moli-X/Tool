@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3627
+# 规则统计: 3635
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-30T14:24:59.917Z
-# Last Updated: 2025-05-05T14:32:36.054Z
+# Last Updated: 2025-05-06T16:12:36.250Z
 # License: AGPL 3.0
-# Size: 3544
+# Size: 3552
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -312,6 +312,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .dditscdn.com,CDN
 .ddpic.info,CDN
 .delegated-ipfs.dev,CDN
+.dellcdn.com,CDN
 .deno.land,CDN
 .denopkg.com,CDN
 .descopecdn.com,CDN
@@ -623,6 +624,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .larksuitecdn.com,CDN
 .lbpicpic.com,CDN
 .lbpictupian.com,CDN
+.ldstatic.com,CDN
 .lencr.org,CDN
 .liangzipic.com,CDN
 .licensebuttons.net,CDN
@@ -1655,6 +1657,7 @@ cdn.lemonsqueezy.com,CDN
 cdn.libravatar.org,CDN
 cdn.lihkg.com,CDN
 cdn.linearicons.com,CDN
+cdn.linux.do,CDN
 cdn.livechatinc.com,CDN
 cdn.loom.com,CDN
 cdn.macstories.net,CDN
@@ -2284,6 +2287,10 @@ icons.ly,CDN
 icons.veryicon.com,CDN
 icons.zeabur.com,CDN
 iframe.nbcnews.com,CDN
+ih0.redbubble.net,CDN
+ih1.redbubble.net,CDN
+ih2.redbubble.net,CDN
+ih3.redbubble.net,CDN
 ik.imgkit.net,CDN
 imag.malavida.com,CDN
 image-forwarder.notaku.so,CDN
@@ -3496,6 +3503,7 @@ uhf.microsoft.com,CDN
 ui-cdn.digitalocean.com,CDN
 ui-statics-cf.streamable.com,CDN
 ui.contentstack.com,CDN
+ui.powerreviews.com,CDN
 ui.trailhead.com,CDN
 unlimited-cdn.waifu2x.net,CDN
 unsubscribe-imgs.leavemealone.com,CDN

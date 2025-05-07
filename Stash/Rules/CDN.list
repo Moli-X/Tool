@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3625
+# 规则统计: 3633
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -74,9 +74,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-30T14:24:59.917Z
-# Last Updated: 2025-05-05T14:32:36.054Z
+# Last Updated: 2025-05-06T16:12:36.250Z
 # License: AGPL 3.0
-# Size: 3544
+# Size: 3552
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -310,6 +310,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .dditscdn.com
 .ddpic.info
 .delegated-ipfs.dev
+.dellcdn.com
 .deno.land
 .denopkg.com
 .descopecdn.com
@@ -621,6 +622,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .larksuitecdn.com
 .lbpicpic.com
 .lbpictupian.com
+.ldstatic.com
 .lencr.org
 .liangzipic.com
 .licensebuttons.net
@@ -1653,6 +1655,7 @@ cdn.lemonsqueezy.com
 cdn.libravatar.org
 cdn.lihkg.com
 cdn.linearicons.com
+cdn.linux.do
 cdn.livechatinc.com
 cdn.loom.com
 cdn.macstories.net
@@ -2282,6 +2285,10 @@ icons.ly
 icons.veryicon.com
 icons.zeabur.com
 iframe.nbcnews.com
+ih0.redbubble.net
+ih1.redbubble.net
+ih2.redbubble.net
+ih3.redbubble.net
 ik.imgkit.net
 imag.malavida.com
 image-forwarder.notaku.so
@@ -3494,6 +3501,7 @@ uhf.microsoft.com
 ui-cdn.digitalocean.com
 ui-statics-cf.streamable.com
 ui.contentstack.com
+ui.powerreviews.com
 ui.trailhead.com
 unlimited-cdn.waifu2x.net
 unsubscribe-imgs.leavemealone.com
