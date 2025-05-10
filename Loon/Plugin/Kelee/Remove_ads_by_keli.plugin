@@ -9,7 +9,7 @@
 #!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Remove_ads_by_keli.plugin
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/KeLee.png
-#!date = 2024-12-02 10:07:27
+#!date = 2025-05-10 03:30:00
 
 [Rule]
 DOMAIN, acdn.adnxs.com, REJECT
@@ -104,7 +104,7 @@ DOMAIN, open-pixon.ads-pixiv.net, REJECT
 
 ^https?:\/\/us\.l\.qq\.com\/exapp reject-200
 
-^https:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(explorePage\/getAdverList|init\/startInit) reject
+^https:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/init\/startInit$ reject
 
 ^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab reject-dict
 ^https:\/\/dict\.youdao\.com\/homepage\/tile reject-dict

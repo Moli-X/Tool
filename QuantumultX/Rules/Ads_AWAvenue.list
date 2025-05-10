@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 783
+# 规则统计: 786
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 774
-#Update content: add ubixai、zhangyu、yuedong、ruishi ads block.
-#Update time: 2025-04-29 18:01:30 UTC+8
+#Total lines: 777
+#Update content: more xiaohongshu ads block. #136
+#Update time: 2025-05-10 00:22:18 UTC+8
 #Version: 1.6.5-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -66,6 +66,7 @@
 .ads-api-o.api.leiniao.com,Ads_AWAvenue
 .ads-api.tiktok.com,Ads_AWAvenue
 .ads-api.twitter.com,Ads_AWAvenue
+.ads-img-al.xhscdn.com,Ads_AWAvenue
 .ads-img-qc.xhscdn.com,Ads_AWAvenue
 .ads-marketing-vivofs.vivo.com.cn,Ads_AWAvenue
 .ads-sdk-api.ranfenghd.com,Ads_AWAvenue
@@ -73,7 +74,6 @@
 .ads-video-al.xhscdn.com,Ads_AWAvenue
 .ads-video-qc.xhscdn.com,Ads_AWAvenue
 .ads.95516.com,Ads_AWAvenue
-.ads.flurry.com,Ads_AWAvenue
 .ads.google.cn,Ads_AWAvenue
 .ads.huan.tv,Ads_AWAvenue
 .ads.huantest.com,Ads_AWAvenue
@@ -83,6 +83,7 @@
 .ads.music.126.net,Ads_AWAvenue
 .ads.pinterest.com,Ads_AWAvenue
 .ads.pubmatic.com,Ads_AWAvenue
+.ads.raidrive.com,Ads_AWAvenue
 .ads.servebom.com,Ads_AWAvenue
 .ads.service.kugou.com,Ads_AWAvenue
 .ads.tiktok.com,Ads_AWAvenue
@@ -548,6 +549,7 @@
 .p6-be-pack-sign.pglstatp-toutiao.com,Ads_AWAvenue
 .pagead2.googleadservices.com,Ads_AWAvenue
 .pagead2.googlesyndication.com,Ads_AWAvenue
+.pay.sboot.cn,Ads_AWAvenue
 .pcdn.xmcdn.com,Ads_AWAvenue
 .pcm-img.zhls.qq.com,Ads_AWAvenue
 .pgdt.gtimg.cn,Ads_AWAvenue
@@ -759,6 +761,7 @@
 .widgets.pinterest.com,Ads_AWAvenue
 .wildcard.moatads.com.edgekey.net,Ads_AWAvenue
 .win.gdt.qq.com,Ads_AWAvenue
+.wn.x.jd.com,Ads_AWAvenue
 .ws-keyboard.shouji.sogou.com,Ads_AWAvenue
 .ws.sj.qq.com,Ads_AWAvenue
 .wv.inner-active.mobi,Ads_AWAvenue
