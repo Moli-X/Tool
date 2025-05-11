@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3639
+# 规则统计: 3646
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -74,9 +74,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-30T14:24:59.917Z
-# Last Updated: 2025-05-09T14:52:57.882Z
+# Last Updated: 2025-05-11T10:30:14.959Z
 # License: AGPL 3.0
-# Size: 3558
+# Size: 3565
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -193,10 +193,14 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .bytedapm.com
 .c-dn.net
 .cartocdn.com
+.cas-bridge.xethub.hf.co
 .cbsnewsstatic.com
 .cdn-centaurus.com
 .cdn-cookieyes.com
+.cdn-lfs-eu-1.hf.co
+.cdn-lfs-us-1.hf.co
 .cdn-lfs-us-1.huggingface.co
+.cdn-lfs.hf.co
 .cdn-lfs.huggingface.co
 .cdn-one.com
 .cdn-spurit.com
@@ -969,6 +973,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .tedcdn.com
 .telemetry.services.yofi.ai
 .teraboxcdn.com
+.thesourcemediaassets.com
 .thirdwebcdn.com
 .thisiscdn.com
 .tiktokcdn-us.com
@@ -1281,6 +1286,7 @@ assets.jable.tv
 assets.jolipage.co
 assets.kagi.com
 assets.keysquare.io
+assets.khoros.com
 assets.kraken.com
 assets.leetcode.com
 assets.lemonsqueezy.com
@@ -1373,6 +1379,7 @@ at.cbsi.com
 attach.mobile01.com
 attach2.mobile01.com
 attachments.office.net
+aurora-customization-usw2.lithium.com
 auth.split.io
 avatar.freepik.com
 avatar.stefanjudis.com

@@ -1,18 +1,105 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/QiDian_remove_ads.plugin
 #!name = 起点读书去广告
-#!desc = 移除起点读书开屏广告、每日导读、发现页活动弹窗、底栏活动标签及其他推广行为。
+#!desc = 移除起点读书开屏广告、每日导读、各类弹窗、文末广告、搜索填充词，精简我的页面。
 #App链接=https://apps.apple.com/app/id534174796
-#!author = app2smile[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag = 去广告
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/QiDian_remove_ads.plugin
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QiDian.png
-#!date = 2024-11-28 00:00:00
+#!date = 2025-05-11 18:12:05
 
-[Script]
-http-response ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/(deeplink\/geturl|dailyrecommend\/getdailyrecommend)|v1\/(client\/getconf$|bookshelf\/getHoverAdv|adv\/getadvlistbatch\?positions=iOS_tab)) script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/QiDian_remove_ads.js, requires-body = true, tag = 起点读书去广告
+[Rule]
+DOMAIN, adsmind.gdtimg.com, REJECT
+DOMAIN, adsmind.ugdtimg.com, REJECT
+DOMAIN, c2.gdt.qq.com, REJECT
+DOMAIN, huatuocode.huatuo.qq.com, REJECT
+DOMAIN, info4.video.qq.com, REJECT
+DOMAIN, info6.video.qq.com, REJECT
+DOMAIN, ios.bugly.qq.com, REJECT
+DOMAIN, pro.bugly.qq.com, REJECT
+DOMAIN, ios.video.mpush.qq.com, REJECT
+DOMAIN, us.l.qq.com, REJECT
+DOMAIN, mi.gdt.qq.com, REJECT
+DOMAIN, otheve.beacon.qq.com, REJECT
+DOMAIN, pgdt.gtimg.cn, REJECT
+DOMAIN, pgdt.ugdtimg.com, REJECT
+DOMAIN, qzs.gdtimg.com, REJECT
+DOMAIN, qzs.qq.com, REJECT
+DOMAIN, rmonitor.qq.com, REJECT
+DOMAIN, sdk.e.qq.com, REJECT
+DOMAIN, sdkconfig.video.qq.com, REJECT
+DOMAIN, t.gdt.qq.com, REJECT
+DOMAIN, tmead.y.qq.com, REJECT
+DOMAIN, tmeadbak.y.qq.com, REJECT
+DOMAIN, tmeadcomm.y.qq.com, REJECT
+DOMAIN, tpns.qq.com, REJECT
+DOMAIN, v.gdt.qq.com, REJECT
+DOMAIN, v2.gdt.qq.com, REJECT
+DOMAIN, win.gdt.qq.com, REJECT
+DOMAIN, wup.imtt.qq.com, REJECT
+DOMAIN, tpstelemetry.tencent.com, REJECT
+DOMAIN, ii.gdt.qq.com, REJECT
+DOMAIN-KEYWORD, trace.qq.com, REJECT
+DOMAIN-KEYWORD, trace.video.qq.com, REJECT
+DOMAIN-SUFFIX, gdt.qq.com, REJECT
+DOMAIN-SUFFIX, l.qq.com, REJECT
+DOMAIN-SUFFIX, ugdtimg.com, REJECT
+IP-CIDR, 47.110.187.87/32, REJECT, no-resolve
+
+DOMAIN, ali-stats.jpush.cn, REJECT
+DOMAIN, ce3e75d5.jpush.cn, REJECT
+DOMAIN, config-junion.jpush.cn, REJECT
+DOMAIN, config.jpush.cn, REJECT
+DOMAIN, fcapi-ipv6.jpush.cn, REJECT
+DOMAIN, gd-stats.jpush.cn, REJECT
+DOMAIN, s.jpush.cn, REJECT
+DOMAIN, sdk.verification.jiguang.cn, REJECT
+DOMAIN, sis-ipv6.jpush.cn, REJECT
+DOMAIN, smartop-sdkapi.jiguang.cn, REJECT
+DOMAIN, status-ipv6.jpush.cn, REJECT
+DOMAIN, tsis.jpush.cn, REJECT
+DOMAIN, user.jpush.cn, REJECT
+DOMAIN-SUFFIX, jiguang.cn, REJECT
+DOMAIN-SUFFIX, jpush.cn, REJECT
+DOMAIN-SUFFIX, jpush.io, REJECT
+
+[Rewrite]
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/client\/getconf$ response-body-json-replace Data.WolfEye 0 Data.CloudSetting.TeenShowFreq 0
+
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/client\/getconf$ response-body-json-del Data.ActivityPageBackPushNoticeFrequency Data.ActivityIcon Data.ActivityPopup Data.LuckBag
+
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v4\/client\/getsplashscreen\? reject-dict
+
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/adv\/ reject-dict
+
+^https:\/\/ywab\.reader\.qq\.com\/user\/experiments\/v2\? reject-dict
+
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/checkin\/simpleinfo\? reject-dict
+
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/push\/getdialog\? reject-dict
+
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v2\/dailyrecommend\/getdailyrecommend\? response-body-json-replace Data.Items []
+
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/message\/getpushedmessagelist$ reject-dict
+
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/maintain\/playstrip$ reject-dict
+
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/dailyrecommend\/recommendBook\? reject-dict
+
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/freshman\/bookshelfbtn$ reject-dict
+
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/bookshelf\/getTopOperation$ reject-dict
+
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v3\/user\/getaccountpage\? response-body-json-del Data.BenefitButtonList
+
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/booksearch\/hotWords\? reject-dict
+
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/followsubscribe\/showChapterEndModule\? reject-dict
+
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/young\/getconf$ reject-dict
 
 [MitM]
-hostname = magev6.if.qidian.com
+hostname = magev6.if.qidian.com, ywab.reader.qq.com

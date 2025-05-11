@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3641
+# 规则统计: 3648
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-04-30T14:24:59.917Z
-# Last Updated: 2025-05-09T14:52:57.882Z
+# Last Updated: 2025-05-11T10:30:14.959Z
 # License: AGPL 3.0
-# Size: 3558
+# Size: 3565
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -195,10 +195,14 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .bytedapm.com,CDN
 .c-dn.net,CDN
 .cartocdn.com,CDN
+.cas-bridge.xethub.hf.co,CDN
 .cbsnewsstatic.com,CDN
 .cdn-centaurus.com,CDN
 .cdn-cookieyes.com,CDN
+.cdn-lfs-eu-1.hf.co,CDN
+.cdn-lfs-us-1.hf.co,CDN
 .cdn-lfs-us-1.huggingface.co,CDN
+.cdn-lfs.hf.co,CDN
 .cdn-lfs.huggingface.co,CDN
 .cdn-one.com,CDN
 .cdn-spurit.com,CDN
@@ -971,6 +975,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .tedcdn.com,CDN
 .telemetry.services.yofi.ai,CDN
 .teraboxcdn.com,CDN
+.thesourcemediaassets.com,CDN
 .thirdwebcdn.com,CDN
 .thisiscdn.com,CDN
 .tiktokcdn-us.com,CDN
@@ -1283,6 +1288,7 @@ assets.jable.tv,CDN
 assets.jolipage.co,CDN
 assets.kagi.com,CDN
 assets.keysquare.io,CDN
+assets.khoros.com,CDN
 assets.kraken.com,CDN
 assets.leetcode.com,CDN
 assets.lemonsqueezy.com,CDN
@@ -1375,6 +1381,7 @@ at.cbsi.com,CDN
 attach.mobile01.com,CDN
 attach2.mobile01.com,CDN
 attachments.office.net,CDN
+aurora-customization-usw2.lithium.com,CDN
 auth.split.io,CDN
 avatar.freepik.com,CDN
 avatar.stefanjudis.com,CDN
