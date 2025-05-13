@@ -2,14 +2,14 @@
 #!name = 百度贴吧去广告
 #!desc = 移除开屏广告、信息流广告和帖内广告，精简侧拉抽屉及我的页面。需注意此插件会导致新回复等通知功能不可用，需手动进入消息页点击查看。仅限iOS 15及以上版本系统使用。
 #App链接=https://apps.apple.com/app/id477927812
-#!author = ZenmoFeiShi[https://github.com/ZenmoFeiShi], 可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md], app2smile[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!author = app2smile[https://github.com/app2smile], 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag = 去广告
 #!system = 
 #!system_version = 15
 #!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Tieba_remove_ads.plugin
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Tieba.png
-#!date = 2025-05-10 03:19:10
+#!date = 2025-05-13 02:19:34
 
 [Rule]
 DOMAIN, afd.baidu.com, REJECT
@@ -17,19 +17,137 @@ DOMAIN, mobads.baidu.com, REJECT
 DOMAIN, 180.76.76.200, REJECT
 IP-CIDR, 180.76.76.200/32, REJECT, no-resolve
 
+DOMAIN, yyapp-httpdns.gslb.yy.com, REJECT
+DOMAIN, union-httpdns.gslb.yy.com, REJECT
+DOMAIN, httpdns-v6.gslb.yy.com, REJECT
+
+AND, ((DOMAIN-KEYWORD, -ad-), (DOMAIN-SUFFIX, byteimg.com)), REJECT
+AND, ((DOMAIN-KEYWORD, -ttam-), (DOMAIN-SUFFIX, ibyteimg.com)), REJECT
+AND, ((DOMAIN-KEYWORD, ssdk-), (DOMAIN-SUFFIX, pangle.io)), REJECT
+AND, ((DOMAIN-KEYWORD, pangolin), (DOMAIN-SUFFIX, sgsnssdk.com)), REJECT
+AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -short.bytetos.com)), REJECT
+AND, ((DOMAIN-KEYWORD, v), (DOMAIN-KEYWORD, -be-pack.pglstatp-toutiao.com)), REJECT
+AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -be-pack.pglstatp-toutiao.com)), REJECT
+AND, ((DOMAIN-KEYWORD, s), (DOMAIN-KEYWORD, -fe-scm.pglstatp-toutiao.com)), REJECT
+AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -ttcdn-tos.pstatp.com)), REJECT
+AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -fe-tos.pglstatp-toutiao.com)), REJECT
+AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -static.i18n-pglstatp.com)), REJECT
+AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -cdn-tos.bytescm.com)), REJECT //误杀
+AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
+AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
+AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
+AND, ((DOMAIN-KEYWORD, ads), (DOMAIN-KEYWORD, normal), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+AND, ((DOMAIN-KEYWORD, api), (DOMAIN-KEYWORD, -access-), (DOMAIN-SUFFIX, pangle.io)), REJECT
+AND, ((DOMAIN-KEYWORD, api), (DOMAIN-KEYWORD, -log-), (DOMAIN-SUFFIX, pangle.io)), REJECT
+AND, ((DOMAIN-KEYWORD, api), (DOMAIN-KEYWORD, -dual-event-), (DOMAIN-SUFFIX, pangle.io)), REJECT
+AND, ((DOMAIN-KEYWORD, api), (DOMAIN-KEYWORD, pangolin), (DOMAIN-SUFFIX, sgsnssdk.com)), REJECT
+AND, ((DOMAIN-KEYWORD, ads), (DOMAIN-KEYWORD, -normal-lq), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+URL-REGEX, "^http:\/\/p\d+-be-pack-sign\.pglstatp-toutiao\.com\/(ad-app-package|web\.business\.image)\/", REJECT
+DOMAIN, mon.zijieapi.com, REJECT
+DOMAIN, lf-ad-ies.bytecdn.cn, REJECT
+DOMAIN, i.snssdk.com, REJECT
+DOMAIN, is.snssdk.com, REJECT
+DOMAIN, bds.snssdk.com, REJECT
+DOMAIN, dm.bytedance.com, REJECT
+DOMAIN, dm.pstatp.com, REJECT
+DOMAIN, dm.toutiao.com, REJECT
+DOMAIN, log.snssdk.com, REJECT
+DOMAIN, s3a.pstatp.com, REJECT
+DOMAIN, sdfp.snssdk.com, REJECT
+DOMAIN, tosv.boe.byted.org, REJECT
+DOMAIN, tosv.byted.org, REJECT
+DOMAIN, extlog.snssdk.com, REJECT
+DOMAIN, mssdk-bu.bytedance.com, REJECT
+DOMAIN, toblog.ctobsnssdk.com, REJECT
+DOMAIN, mssdk.volces.com, REJECT
+DOMAIN, pangolin.snssdk.com, REJECT
+DOMAIN, gromore.pangolin-sdk-toutiao.com, REJECT
+DOMAIN, ether-pack.pangolin-sdk-toutiao.com, REJECT
+DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
+DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT
+DOMAIN-KEYWORD, log-api.pangolin-sdk-toutiao, REJECT
+DOMAIN-KEYWORD, -ad.byteoversea.com, REJECT
+DOMAIN-KEYWORD, video-cn.snssdk.com, REJECT
+DOMAIN-KEYWORD, asiad.byteactivity, REJECT
+
+DOMAIN, adsmind.gdtimg.com, REJECT
+DOMAIN, adsmind.ugdtimg.com, REJECT
+DOMAIN, c2.gdt.qq.com, REJECT
+DOMAIN, huatuocode.huatuo.qq.com, REJECT
+DOMAIN, info4.video.qq.com, REJECT
+DOMAIN, info6.video.qq.com, REJECT
+DOMAIN, ios.bugly.qq.com, REJECT
+DOMAIN, pro.bugly.qq.com, REJECT
+DOMAIN, ios.video.mpush.qq.com, REJECT
+DOMAIN, us.l.qq.com, REJECT
+DOMAIN, mi.gdt.qq.com, REJECT
+DOMAIN, otheve.beacon.qq.com, REJECT
+DOMAIN, pgdt.gtimg.cn, REJECT
+DOMAIN, pgdt.ugdtimg.com, REJECT
+DOMAIN, qzs.gdtimg.com, REJECT
+DOMAIN, qzs.qq.com, REJECT
+DOMAIN, rmonitor.qq.com, REJECT
+DOMAIN, sdk.e.qq.com, REJECT
+DOMAIN, sdkconfig.video.qq.com, REJECT
+DOMAIN, t.gdt.qq.com, REJECT
+DOMAIN, tmead.y.qq.com, REJECT
+DOMAIN, tmeadbak.y.qq.com, REJECT
+DOMAIN, tmeadcomm.y.qq.com, REJECT
+DOMAIN, tpns.qq.com, REJECT
+DOMAIN, v.gdt.qq.com, REJECT
+DOMAIN, v2.gdt.qq.com, REJECT
+DOMAIN, win.gdt.qq.com, REJECT
+DOMAIN, wup.imtt.qq.com, REJECT
+DOMAIN, tpstelemetry.tencent.com, REJECT
+DOMAIN, ii.gdt.qq.com, REJECT
+DOMAIN-KEYWORD, trace.qq.com, REJECT
+DOMAIN-KEYWORD, trace.video.qq.com, REJECT
+DOMAIN-SUFFIX, gdt.qq.com, REJECT
+DOMAIN-SUFFIX, l.qq.com, REJECT
+DOMAIN-SUFFIX, ugdtimg.com, REJECT
+IP-CIDR, 47.110.187.87/32, REJECT, no-resolve
+
+DOMAIN, afd.baidu.com, REJECT
+DOMAIN, als.baidu.com, REJECT
+DOMAIN, bgg.baidu.com, REJECT
+DOMAIN, cpro.baidustatic.com, REJECT
+DOMAIN, feed-image.baidu.com, REJECT
+DOMAIN, click-bes.baidu.com, REJECT
+DOMAIN, eclick.baidu.com, REJECT
+DOMAIN, mobads-logs.baidu.com, REJECT
+DOMAIN, mobads-pre-config.cdn.bcebos.com, REJECT
+DOMAIN, mobads.baidu.com, REJECT
+DOMAIN, nadvideo2.baidu.com, REJECT
+DOMAIN, wn.pos.baidu.com, REJECT
+DOMAIN, miniapp-ad.cdn.bcebos.com, REJECT
+DOMAIN, mobads-pre-config.cdn.bcebos.com, REJECT
+DOMAIN-SUFFIX, union.baidu.cn, REJECT
+DOMAIN-SUFFIX, union.baidu.com, REJECT
+
+DOMAIN, gdfp.gifshow.com, REJECT
+DOMAIN, open.e.kuaishou.com, REJECT
+DOMAIN, adtrack.e.kuaishou.com, REJECT
+DOMAIN-SUFFIX, adukwai.com, REJECT
+
+DOMAIN, rpe.xdplt.com, REJECT
+
 [Rewrite]
-^https:\/\/tiebac\.baidu\.com\/c\/f\/search\/discover reject-dict
-^https:\/\/tiebac\.baidu\.com\/c\/f\/forum\/forumGuide reject-dict
-^https:\/\/tiebac\.baidu\.com\/c\/u\/chat\/getChatSubscriptionList reject-dict
+^https:\/\/tieba\.baidu\.com\/c\/f\/member\/getMemberPopups$ reject-dict
+
+^https:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile$ response-body-json-del recom_naws_list namoaixud_entry custom_grid duxiaoman_entry finance_tab
+
+^https:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile$ response-body-json-replace user.shake_ad_switch.is_show 0
+
+^https:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile$ response-body-json-jq '.zone_info |= map(select(.type as $t | ["commerce","banner","game"] | index($t) | not))'
+
+^https:\/\/tiebac\.baidu\.com\/c\/f\/sidebar\/home$ response-body-json-del task_list game_center tools tools.yunying_tools_list tools.show_tools_list
+^https:\/\/tiebac\.baidu\.com\/c\/f\/sidebar\/home$ response-body-json-jq '.tools.show_tools_list |= map(.tools_list |= map(select(.title != "度小满钱包")))'
+
+^https:\/\/tiebac\.baidu\.com\/c\/f\/search\/discover$ reject-dict
+
+^https:\/\/tiebac\.baidu\.com\/c\/f\/frs\/frsBottom$ response-body-json-del card_activity
 
 [Script]
-http-response ^https:\/\/tiebac\.baidu\.com\/livefeed\/feed script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Tieba_remove_ads.js, requires-body = true, tag = 清理首页
-http-response ^https:\/\/tiebac\.baidu\.com\/c\/f\/sidebar\/home script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Tieba_remove_ads.js, requires-body = true, tag = 清理侧拉抽屉
-http-response ^https:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Tieba_remove_ads.js, requires-body = true, tag = 清理我的页面
-http-response ^https:\/\/tieba\.baidu\.com\/c\/f\/frs\/frsBottom script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Tieba_remove_ads.js, requires-body = true, tag = 清理首页
-
-http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/tieba-json.js, requires-body = true, timeout = 10, tag = JSON处理
-
 http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/tieba-proto.js, requires-body = true, binary-body-mode = true, timeout = 10, tag = Proto处理
 
 [MitM]
