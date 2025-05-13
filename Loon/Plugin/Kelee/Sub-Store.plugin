@@ -11,7 +11,7 @@
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Sub-Store.png
 #!select = 节点缓存有效期,1分钟,5分钟,10分钟,30分钟,1小时,2小时,3小时,6小时,12小时,24小时,48小时,72小时
 #!select = 响应头缓存有效期,1分钟,5分钟,10分钟,30分钟,1小时,2小时,3小时,6小时,12小时,24小时,48小时,72小时
-#!date = 2024-11-28 00:00:00
+#!date = 2025-05-13 15:17:08
 
 [Rule]
 DOMAIN, sub-store.vercel.app, PROXY

@@ -9,10 +9,10 @@
 #!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/SeasunJX3_remove_ads.plugin
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SeasunJX3.png
-#!date = 2025-03-05 01:04:13
+#!date = 2025-05-13 15:17:08
 
 [General]
-real-ip=*-update.xoyocdn.com,xg-flow.xoyo.com
+real-ip = *-update.xoyocdn.com, xg-flow.xoyo.com
 
 [Rewrite]
 ^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt reject

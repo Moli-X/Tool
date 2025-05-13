@@ -9,13 +9,7 @@
 #!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/AutoHome_remove_ads.plugin
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AutoHome.png
-#!date = 2024-11-28 00:00:00
-
-[Rule]
-IP-CIDR, 119.29.29.98/32, REJECT, no-resolve
-IP-CIDR, 119.29.29.99/32, REJECT, no-resolve
-URL-REGEX, "^http:\/\/182\.254\.116\.116\/d", REJECT
-DOMAIN, adproxy.autohome.com.cn, REJECT
+#!date = 2025-05-13 15:17:08
 
 [Rewrite]
 ^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/findEquitysV5 reject-dict

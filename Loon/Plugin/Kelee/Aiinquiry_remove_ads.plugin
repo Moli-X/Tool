@@ -9,10 +9,7 @@
 #!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Aiinquiry_remove_ads.plugin
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Aiinquiry.png
-#!date = 2024-11-28 00:00:00
-
-[Rule]
-URL-REGEX, "^http:\/\/180\.76\.76\.112\/v\d\/", REJECT
+#!date = 2025-05-13 15:17:08
 
 [Rewrite]
 ^https:\/\/aiqicha\.baidu\.com\/app\/bannerPicAjax reject-dict

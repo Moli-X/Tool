@@ -9,7 +9,7 @@
 #!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Block_HTTPDNS.plugin
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png
-#!date = 2025-05-10 02:46:59
+#!date = 2025-05-13 15:17:08
 
 [Rule]
 DOMAIN, yyapp-httpdns.gslb.yy.com, REJECT
@@ -143,6 +143,7 @@ IP-CIDR, 103.224.222.208/32, REJECT, no-resolve
 IP-CIDR, 119.29.29.98/32, REJECT, no-resolve
 IP-CIDR, 119.29.29.99/32, REJECT, no-resolve
 URL-REGEX, "^http:\/\/182\.254\.116\.116\/d", REJECT
+URL-REGEX, "^http:\/\/119\.29\.29\.98\/d\?", REJECT
 
 DOMAIN, dotserver.douyucdn.cn, REJECT
 ^http:\/\/203\.107\.1\.33\/\d+\/ss
@@ -205,9 +206,20 @@ DOMAIN, hd.xiaojukeji.com, REJECT
 
 DOMAIN, httpdns.zybang.com, REJECT
 
-[Rewrite]
-^https?:\/\/119\.29\.29\.\d+\/d reject-200
+URL-REGEX, "^http:\/\/203\.107\.1\.33\/191607\/resolve\?", REJECT
+URL-REGEX, "^http:\/\/119\.29\.29\.29\/d", REJECT
 
+DOMAIN, serveraddr.service.kugou.com, REJECT
+DOMAIN, twns.p2ptun.qq.com, REJECT
+DOMAIN, tp2p.kg.qq.com, REJECT
+IP-CIDR, 81.71.61.216/32, REJECT, no-resolve
+
+URL-REGEX, "^http:\/\/54\.222\.159\.138:8053\/httpdns\/", REJECT
+URL-REGEX, "^http:\/\/101\.42\.130\.147:8053\/httpdns\/", REJECT
+URL-REGEX, "^http:\/\/106\.55\.220\.18:8053\/httpdns\/", REJECT
+URL-REGEX, "^http:\/\/139\.196\.12\.179:8053\/httpdns\/", REJECT
+
+[Rewrite]
 ^https?:\/\/203\.107\.1\.1/\d+/ss reject
 ^https?:\/\/203\.107\.1\.33/\d+/ss reject
 ^https?:\/\/203\.107\.1\.66/\d+/ss reject
@@ -224,5 +236,7 @@ DOMAIN, httpdns.zybang.com, REJECT
 
 ^https:\/\/msglb\.91160\.com\/msg\/outer\/broker\/get$ reject-dict
 
+^https:\/\/gslbali\.ximalaya\.com\/linkeye-cloud\/httpdns\/ reject
+
 [MitM]
-hostname = 119.29.29.*, 203.107.1.1, 203.107.1.33, 203.107.1.66, 203.107.1.67, 203.107.1.97, 2401:b180:2000:30::1c, 2401:b180:2000:20::10, amdc.alipay.com, appconf.mail.163.com, msglb.91160.com
+hostname = 203.107.1.1, 203.107.1.33, 203.107.1.66, 203.107.1.67, 203.107.1.97, 2401:b180:2000:30::1c, 2401:b180:2000:20::10, amdc.alipay.com, appconf.mail.163.com, msglb.91160.com

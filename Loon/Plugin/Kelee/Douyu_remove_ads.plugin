@@ -9,14 +9,10 @@
 #!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Douyu_remove_ads.plugin
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Douyu.png
-#!date = 2024-11-28 00:00:00
+#!date = 2025-05-13 15:17:08
 
 [Rule]
-URL-REGEX, "^http:\/\/203\.107\.1\.33\/\d+\/ss", REJECT
-URL-REGEX, "^http:\/\/203\.107\.1\.34\/\d+\/ss", REJECT
 URL-REGEX, "^http:\/\/linkmicschedule\.douyucdn\.cn\/im_schedule\/im_gate_list", REJECT
-IP-CIDR, 119.29.29.98/32, REJECT, no-resolve
-IP-CIDR, 119.29.29.99/32, REJECT, no-resolve
 
 AND, ((DEST-PORT, 18000), (PROTOCOL, STUN)), REJECT
 DOMAIN, stun1.douyucdn.cn, REJECT

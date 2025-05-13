@@ -9,13 +9,7 @@
 #!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/PuPuMall_remove_ads.plugin
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PuPuMall.png
-#!date = 2024-11-28 00:00:00
-
-[Rule]
-URL-REGEX, "^http:\/\/54\.222\.159\.138:8053\/httpdns\/", REJECT
-URL-REGEX, "^http:\/\/101\.42\.130\.147:8053\/httpdns\/", REJECT
-URL-REGEX, "^http:\/\/106\.55\.220\.18:8053\/httpdns\/", REJECT
-URL-REGEX, "^http:\/\/139\.196\.12\.179:8053\/httpdns\/", REJECT
+#!date = 2025-05-13 15:17:08
 
 [Rewrite]
 ^https:\/\/j1\.pupuapi\.com\/client\/account\/discount\/order reject
