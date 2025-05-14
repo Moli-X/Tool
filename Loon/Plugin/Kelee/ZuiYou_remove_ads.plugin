@@ -9,7 +9,7 @@
 #!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/ZuiYou_remove_ads.plugin
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ZuiYou.png
-#!date = 2025-05-13 15:17:08
+#!date = 2025-05-14 01:51:31
 
 [Rule]
 DOMAIN, adapi.izuiyou.com, REJECT
@@ -20,8 +20,6 @@ URL-REGEX, "^http:\/\/file-share\.izuiyou\.com\/octopus\/media\/templates\/searc
 ^https?:\/\/api\.izuiyou\.com\/config\/get_banner reject-dict
 ^https?:\/\/api\.izuiyou\.com\/ad\/ reject
 ^https:\/\/zyfile\.izuiyou\.com\/zyfile\/c2\/a0\/[a-z0-9-]+\.json reject-dict
-^https:\/\/gromore\.pangolin-sdk-toutiao\.com\/api\/ad\/ reject
-^https:\/\/lf-cdn-tos\.bytescm\.com\/obj\/static\/ad\/ reject
 
 ^https?:\/\/203\.107\.1\.1/\d+/ss reject
 ^https?:\/\/203\.107\.1\.33/\d+/ss reject
@@ -32,4 +30,4 @@ URL-REGEX, "^http:\/\/file-share\.izuiyou\.com\/octopus\/media\/templates\/searc
 ^https?:\/\/2401:b180:2000:20::10\/\d+\/d reject
 
 [MitM]
-hostname = api.izuiyou.com, gromore.pangolin-sdk-toutiao.com, lf-cdn-tos.bytescm.com, zyfile.izuiyou.com, 203.107.1.1, 203.107.1.33, 203.107.1.66, 203.107.1.67, 203.107.1.97
+hostname = api.izuiyou.com, zyfile.izuiyou.com, 203.107.1.1, 203.107.1.33, 203.107.1.66, 203.107.1.67, 203.107.1.97
