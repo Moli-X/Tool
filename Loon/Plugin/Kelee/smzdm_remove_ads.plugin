@@ -9,22 +9,35 @@
 #!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/smzdm_remove_ads.plugin
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/smzdm.png
-#!date = 2025-05-15 03:41:01
+#!date = 2025-05-15 15:19:01
+
+[Rule]
+DOMAIN, adx-api.zdmimg.com, REJECT
 
 [Rewrite]
 ^https:\/\/app-api\.smzdm\.com\/util\/loading\? reject-dict
+
+^https:\/\/app-api\.smzdm\.com\/util\/update$ response-body-json-replace data.silence_local_push 0 data.baichuan_redirect_switch 0
+
+^https:\/\/app-api\.smzdm\.com\/util\/update$ response-body-json-del data.silence_local_push_msg data.video_cache_num_configs data.haojia_widget
+
+^https:\/\/app-api\.smzdm\.com\/util\/update$ response-body-json-jq 'def r: if type=="object" then if has("ad_campaign_name") and (.ad_campaign_name|type=="string") and (.ad_campaign_name|test("\\S")) then empty else . end elif type=="array" then map(r) else . end; .data.operation_float |= map(map(r))'
 
 ^https:\/\/homepage-api\.smzdm\.com\/v3\/home\? response-body-json-jq jq-path="https://kelee.one/Resource/JQLang/smzdm/home_smzdm_remove_ads.jq"
 
 ^https:\/\/h5\.smzdm\.com\/user\/coupon\/coupon_list\? reject
 
-^https:\/\/haojia-api\.smzdm\.com\/home\/list\? response-body-json-jq '.data.banner_v2 |= if type == "array" then map(select(has("hongbao") | not)) else . end | .data.rows |= map(if .ad_campaign_id == null or .ad_campaign_id == "" then . else empty end)'
+^https:\/\/haojia-api\.smzdm\.com\/home\/list\? response-body-json-jq '.data.banner_v2 |= map(select(.cell_type != "23003"))'
 
 ^https:\/\/haojia\.m\.smzdm\.com\/detail_modul\/user_related_modul\? response-body-json-del data.super_coupon
 
-^https:\/\/user-api\.smzdm\.com\/vip$ response-body-json-del data.big_banner 
+^https:\/\/user-api\.smzdm\.com\/vip$ response-body-json-del data.big_banner
 
 ^https:\/\/user-api\.smzdm\.com\/vip\/bottom_card_list\? reject-dict
 
+^https:\/\/article-api\.smzdm\.com\/publish\/get_bubble\? reject-dict
+
+^https:\/\/s-api\.smzdm\.com\/sou\/search_default_keyword\? reject-dict
+
 [MitM]
-hostname = app-api.smzdm.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, user-api.smzdm.com
+hostname = app-api.smzdm.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, user-api.smzdm.com, article-api.smzdm.com, s-api.smzdm.com
