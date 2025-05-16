@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3652
+# 规则统计: 3653
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-05-13T12:57:52.667Z
-# Last Updated: 2025-05-13T12:57:53.879Z
+# Last Updated: 2025-05-16T06:49:32.679Z
 # License: AGPL 3.0
-# Size: 3569
+# Size: 3570
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -113,7 +113,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .agechecker.northern-apps.com,CDN
 .ahcdn.com,CDN
 .airio3.live,CDN
-.akamai-content-network.com,CDN
 .akidoo.top,CDN
 .alexdav.id,CDN
 .algolianet.com,CDN
@@ -1453,6 +1452,7 @@ cacerts.digicert.com,CDN
 cache-05.filehippo.net,CDN
 cache.armorgames.com,CDN
 cache.hackedfreegames.com,CDN
+cache.omnicalculator.com,CDN
 canny-assets.io,CDN
 cassette.sphdigital.com.sg,CDN
 cc-embed.adobe.com,CDN
@@ -1667,7 +1667,6 @@ cdn.lemonsqueezy.com,CDN
 cdn.libravatar.org,CDN
 cdn.lihkg.com,CDN
 cdn.linearicons.com,CDN
-cdn.linux.do,CDN
 cdn.livechatinc.com,CDN
 cdn.loom.com,CDN
 cdn.macstories.net,CDN
@@ -1697,6 +1696,7 @@ cdn.neverbounce.com,CDN
 cdn.nolt.io,CDN
 cdn.now.gg,CDN
 cdn.nperf.com,CDN
+cdn.omnicalculator.com,CDN
 cdn.one.store,CDN
 cdn.onesignal.com,CDN
 cdn.onetime.dog,CDN
@@ -3527,6 +3527,7 @@ unsubscribe-imgs.leavemealone.com,CDN
 updates.signal.org,CDN
 updates2.signal.org,CDN
 upload.wikimedia.org,CDN
+uploads-cdn.omnicalculator.com,CDN
 uploads.codesandbox.io,CDN
 uploads.guim.co.uk,CDN
 uploads.linear.app,CDN

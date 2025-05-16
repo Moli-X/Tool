@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3650
+# 规则统计: 3651
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -74,9 +74,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-05-13T12:57:52.667Z
-# Last Updated: 2025-05-13T12:57:53.879Z
+# Last Updated: 2025-05-16T06:49:32.679Z
 # License: AGPL 3.0
-# Size: 3569
+# Size: 3570
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -111,7 +111,6 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .agechecker.northern-apps.com
 .ahcdn.com
 .airio3.live
-.akamai-content-network.com
 .akidoo.top
 .alexdav.id
 .algolianet.com
@@ -1451,6 +1450,7 @@ cacerts.digicert.com
 cache-05.filehippo.net
 cache.armorgames.com
 cache.hackedfreegames.com
+cache.omnicalculator.com
 canny-assets.io
 cassette.sphdigital.com.sg
 cc-embed.adobe.com
@@ -1665,7 +1665,6 @@ cdn.lemonsqueezy.com
 cdn.libravatar.org
 cdn.lihkg.com
 cdn.linearicons.com
-cdn.linux.do
 cdn.livechatinc.com
 cdn.loom.com
 cdn.macstories.net
@@ -1695,6 +1694,7 @@ cdn.neverbounce.com
 cdn.nolt.io
 cdn.now.gg
 cdn.nperf.com
+cdn.omnicalculator.com
 cdn.one.store
 cdn.onesignal.com
 cdn.onetime.dog
@@ -3525,6 +3525,7 @@ unsubscribe-imgs.leavemealone.com
 updates.signal.org
 updates2.signal.org
 upload.wikimedia.org
+uploads-cdn.omnicalculator.com
 uploads.codesandbox.io
 uploads.guim.co.uk
 uploads.linear.app
