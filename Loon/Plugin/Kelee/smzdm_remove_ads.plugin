@@ -9,7 +9,7 @@
 #!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/smzdm_remove_ads.plugin
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/smzdm.png
-#!date = 2025-05-15 15:19:01
+#!date = 2025-05-16 03:30:15
 
 [Rule]
 DOMAIN, adx-api.zdmimg.com, REJECT
@@ -40,4 +40,4 @@ DOMAIN, adx-api.zdmimg.com, REJECT
 ^https:\/\/s-api\.smzdm\.com\/sou\/search_default_keyword\? reject-dict
 
 [MitM]
-hostname = app-api.smzdm.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, user-api.smzdm.com, article-api.smzdm.com, s-api.smzdm.com
+hostname = app-api.smzdm.com, homepage-api.smzdm.com, h5.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, user-api.smzdm.com, article-api.smzdm.com, s-api.smzdm.com
