@@ -1,6 +1,6 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/CatEarFM_remove_ads.plugin
 #!name = 猫耳FM去广告
-#!desc = 移除开屏广告、横幅推广、移除青少年模式弹窗，精简首页顶部入口和发现页面。
+#!desc = 移除开屏广告、移除青少年模式弹窗，精简首页顶部入口。
 #App链接=https://apps.apple.com/app/id1148465254
 #!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag = 去广告
@@ -9,35 +9,28 @@
 #!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/CatEarFM_remove_ads.plugin
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CatEarFM.png
-#!date = 2025-05-13 15:17:08
+#!date = 2025-05-17 04:51:20
 
 [Rewrite]
-^https:\/\/app\.missevan\.com\/site\/launch\? response-body-json-del info
+^https:\/\/app\.missevan\.com\/site\/launch\? reject-dict
 
-^https:\/\/app\.missevan\.com\/site\/config$ response-body-json-del info.homepage_top_task_button info.teenager_popup_mode
+^https:\/\/data\.missevan\.com\/site\/ad-track$ reject-dict
 
-^https:\/\/app\.missevan\.com\/site\/get-top$ response-body-json-del info.search_words info.extra_banners
+^https:\/\/app\.missevan\.com\/site\/config$ response-body-json-del info.tab_bar_live 0 info.enable_tab_bar_live_notice false info.teenager_popup_mode 0
 
-^https:\/\/app\.missevan\.com\/you-might-like\/my-favors\? response-body-json-del info.video_card
-^https:\/\/app\.missevan\.com\/you-might-like\/my-favors\? response-body-json-jq '.info.ranks.data|=map(select(.name!="直播榜"))'
+^https:\/\/app\.missevan\.com\/site\/config$ response-body-json-del info.httpdns info.homepage_top_task_button
 
-^https:\/\/fm\.missevan\.com\/api\/v2\/recommended\/top\? response-body-json-del info
+^https:\/\/app\.missevan\.com\/site\/config$ response-body-json-jq '.info.cronet |= (fromjson | .quic = false | tojson)'
 
-^https:\/\/app\.missevan\.com\/drama\/catalog-homepage\? response-body-json-del info.extra_banners
+^https:\/\/app\.missevan\.com\/x\/recommend\/get-popup$ reject-dict
 
-^https:\/\/fm\.missevan\.com\/api\/v\d\/chatroom\/open\/search-recommend-list$ reject-dict
+^https:\/\/app\.missevan\.com\/site\/tabs\? esponse-body-json-jq '.info.tabs |= map(select(.title as $t | ["直播", "发现", "广播剧", "听书", "分类"] | index($t) != null))'
 
-^https:\/\/app\.missevan\.com\/catalog\/sound-homepage\? response-body-json-del info.extra_banners
+^https:\/\/app\.missevan\.com\/site\/icons\? esponse-body-json-jq '.info.icons |= map(select(.title as $t | $t == "直播" or $t == "必听剧" or $t == "免费榜" or $t == "夜猫子" or $t == "启动音"))'
 
-^https:\/\/fm\.missevan\.com\/api\/v\d\/chatroom\/sound\/recommend\? response-body-json-del info
+^https:\/\/fm\.missevan\.com\/api\/v2\/recommended\/top\? reject-dict
 
-^https:\/\/app\.missevan\.com\/sound\/recommend\? reject-dict
-^https:\/\/app\.missevan\.com\/drama\/get-recommend-by-id\? reject-dict
-
-
-^https:\/\/fm\.missevan\.com\/api\/v\d\/meta\/banner$ reject-dict
-
-^https:\/\/app\.missevan\.com\/site\/icons\? response-body-json-jq '.info.icons |= (if . == null then null else map(select(.title != "直播" and .title != "周边商城")) end)'
+^https:\/\/fm\.missevan\.com\/api\/v2\/chatroom\/sound\/recommend\? reject-dict
 
 [MitM]
-hostname = app.missevan.com, fm.missevan.com
+hostname = app.missevan.com, data.missevan.com, fm.missevan.com
