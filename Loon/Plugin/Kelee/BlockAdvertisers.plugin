@@ -9,7 +9,7 @@
 #!loon_version = 3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!date = 2025-05-14 02:57:41
+#!date = 2025-05-18 21:06:58
 
 [Rule]
 AND, ((DOMAIN-KEYWORD, -ad-), (DOMAIN-SUFFIX, byteimg.com)), REJECT
@@ -158,6 +158,7 @@ DOMAIN, info6.video.qq.com, REJECT
 DOMAIN, ios.bugly.qq.com, REJECT
 DOMAIN, pro.bugly.qq.com, REJECT
 DOMAIN, ios.video.mpush.qq.com, REJECT
+DOMAIN, mazu.m.qq.com, REJECT // 误杀
 DOMAIN, us.l.qq.com, REJECT
 DOMAIN, mi.gdt.qq.com, REJECT
 DOMAIN, otheve.beacon.qq.com, REJECT
@@ -214,6 +215,7 @@ DOMAIN, plbslog.umeng.com, REJECT
 DOMAIN, log.umtrack.com, REJECT
 DOMAIN, aaid.umeng.com, REJECT
 DOMAIN, log.umsns.com, REJECT
+DOMAIN, ulogs.umengcloud.com, REJECT
 
 DOMAIN, adtracker.adfunlink.com, REJECT
 
