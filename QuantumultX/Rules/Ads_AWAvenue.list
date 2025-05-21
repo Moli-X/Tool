@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 828
+# 规则统计: 830
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 819
-#Update content: remove some invalid domain.
-#Update time: 2025-05-21 09:34:42 UTC+8
+#Total lines: 821
+#Update content: block more lebo、adjust ads.
+#Update time: 2025-05-21 17:53:35 UTC+8
 #Version: 1.6.5-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -61,6 +61,7 @@
 .adguanggao.eee114.com,Ads_AWAvenue
 .adjust.cn,Ads_AWAvenue
 .adjust.com,Ads_AWAvenue
+.adks.hpplay.cn,Ads_AWAvenue
 .adlink-api.huan.tv,Ads_AWAvenue
 .adm.funshion.com,Ads_AWAvenue
 .ads-api-o.api.leiniao.com,Ads_AWAvenue
@@ -168,6 +169,7 @@
 .analysis.chatglm.cn,Ads_AWAvenue
 .analysis.yozocloud.cn,Ads_AWAvenue
 .analytics-api.samsunghealthcn.com,Ads_AWAvenue
+.analytics.adjust.cn,Ads_AWAvenue
 .analytics.google.com,Ads_AWAvenue
 .analytics.pinterest.com,Ads_AWAvenue
 .analytics.pointdrive.linkedin.com,Ads_AWAvenue
