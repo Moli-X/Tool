@@ -1,15 +1,15 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Block_HTTPDNS.plugin
-#!name = HTTPDNS拦截器
-#!desc = 拦截常见的HTTPDNS服务，以确保这些请求都能够在Loon的DNS框架下工作。
+#!name=HTTPDNS拦截器
+#!desc=拦截常见的HTTPDNS服务，以确保这些请求都能够在Loon的DNS框架下工作。
 #App链接=
-#!author = 可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md], VirgilClyne[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag = DNS
-#!system = 
-#!system_version = 
-#!loon_version = 3.2.4(787)
+#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md], VirgilClyne[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=DNS
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Block_HTTPDNS.plugin
-#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png
-#!date = 2025-05-13 21:58:49
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png
+#!date=2025-05-13 21:58:49
 
 [Rule]
 DOMAIN, yyapp-httpdns.gslb.yy.com, REJECT
@@ -240,4 +240,4 @@ URL-REGEX, "^http:\/\/139\.196\.12\.179:8053\/httpdns\/", REJECT
 ^https:\/\/gslbali\.ximalaya\.com\/linkeye-cloud\/httpdns\/ reject
 
 [MitM]
-hostname = 203.107.1.1, 203.107.1.33, 203.107.1.66, 203.107.1.67, 203.107.1.97, 2401:b180:2000:30::1c, 2401:b180:2000:20::10, amdc.alipay.com, appconf.mail.163.com, msglb.91160.com
+hostname=203.107.1.1, 203.107.1.33, 203.107.1.66, 203.107.1.67, 203.107.1.97, 2401:b180:2000:30::1c, 2401:b180:2000:20::10, amdc.alipay.com, appconf.mail.163.com, msglb.91160.com

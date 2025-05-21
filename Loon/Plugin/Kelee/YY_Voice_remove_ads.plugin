@@ -1,15 +1,15 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/YY_Voice_remove_ads.plugin
-#!name = YY去广告
-#!desc = 移除开屏广告、应用内弹窗，精简底栏和我的页面。
+#!name=YY去广告
+#!desc=移除开屏广告、应用内弹窗，精简底栏和我的页面。
 #App链接=https://apps.apple.com/app/id427941017
-#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag = 去广告
-#!system = 
-#!system_version = 
-#!loon_version = 3.2.4(787)
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/YY_Voice_remove_ads.plugin
-#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YY_Voice.png
-#!date = 2025-05-13 15:17:08
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YY_Voice.png
+#!date=2025-05-13 15:17:08
 
 [Rule]
 DOMAIN, splash.yy.com, REJECT
@@ -30,4 +30,4 @@ DOMAIN, dsp-ad.yy.com, REJECT
 ^https:\/\/personal-center\.yy\.com\/personalCenter\/list\? response-body-json-jq '.data.modules |= map(select(.moduleName != "Banner轮播")) | .data.modules[] |= if .entrances != null then .entrances |= map(select(.name != "度小满借钱" and .name != "手机充值" and .name != "免流量")) else . end'
 
 [MitM]
-hostname = yyapp-act-entrance.yy.com, yyapp-fastnet.yy.com, personal-center.yy.com, tab.yy.com, data.3g.yy.com, yyapp-idx.yy.com
+hostname=yyapp-act-entrance.yy.com, yyapp-fastnet.yy.com, personal-center.yy.com, tab.yy.com, data.3g.yy.com, yyapp-idx.yy.com

@@ -1,15 +1,15 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Uki_remove_ads.plugin
-#!name = Uki去广告
-#!desc = 移除开屏广告、应用内悬浮窗，各类横幅、信息流广告、搜索填充词、我的页面广告。
+#!name=Uki去广告
+#!desc=移除开屏广告、应用内悬浮窗，各类横幅、信息流广告、搜索填充词、我的页面广告。
 #App链接=https://apps.apple.com/app/id1298912284
-#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag = 去广告
-#!system = 
-#!system_version = 
-#!loon_version = 3.2.4(787)
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Uki_remove_ads.plugin
-#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Uki.png
-#!date = 2025-05-13 15:17:08
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Uki.png
+#!date=2025-05-13 15:17:08
 
 [Rewrite]
 ^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/startInfo$ reject-dict
@@ -20,13 +20,13 @@
 ^https:\/\/api\.chenlongtech\.cn\/v\d\/user\/checkQTSheInsurance$ reject-dict
 
 [Script]
-http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/lover\/productList script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Uki_remove_ads.js, requires-body = true, tag = 移除匹配卡横幅
+http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/lover\/productList script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Uki_remove_ads.js, requires-body=true, tag=移除匹配卡横幅
 
-http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/closeFriend\/home script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Uki_remove_ads.js, requires-body = true, tag = 移除密友横幅
+http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/closeFriend\/home script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Uki_remove_ads.js, requires-body=true, tag=移除密友横幅
 
-http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/party\/config$ script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Uki_remove_ads.js, requires-body = true, tag = 移除娱乐页面横幅和悬浮窗配置
+http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/party\/config$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Uki_remove_ads.js, requires-body=true, tag=移除娱乐页面横幅和悬浮窗配置
 
-http-response ^https:\/\/api\.chenlongtech\.cn\/v1\/post\/fetchSearchRecommend$ script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Uki_remove_ads.js, requires-body = true, tag = 移除广场搜索填充词
+http-response ^https:\/\/api\.chenlongtech\.cn\/v1\/post\/fetchSearchRecommend$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Uki_remove_ads.js, requires-body=true, tag=移除广场搜索填充词
 
 [MitM]
-hostname = api.chenlongtech.cn
+hostname=api.chenlongtech.cn

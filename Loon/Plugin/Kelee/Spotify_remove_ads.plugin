@@ -1,19 +1,19 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Spotify_remove_ads.plugin
-#!name = Spotify去广告
-#!desc = 过滤Spotify播放广告，移除随机播放，恢复歌手和专辑列表的正常展示。建议重新登录并清除缓存，且音质不能设置为超高，仅建议iOS 15及以上设备使用。
+#!name=Spotify去广告
+#!desc=过滤Spotify播放广告，移除随机播放，恢复歌手和专辑列表的正常展示。建议重新登录并清除缓存，且音质不能设置为超高，仅建议iOS 15及以上设备使用。
 #App链接=https://apps.apple.com/app/id324684580
-#!author = app2smile[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag = 去广告
-#!system = 
-#!system_version = 
-#!loon_version = 3.2.4(787)
+#!author=app2smile[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Spotify_remove_ads.plugin
-#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Spotify.png
-#!date = 2025-05-13 15:17:08
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Spotify.png
+#!date=2025-05-13 15:17:08
 
 [Script]
-http-request ^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Spotify_remove_ads.js, timeout = 10, tag = JSON处理
-http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path = https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Spotify_proto.js, requires-body = true, binary-body-mode = true, timeout = 10, tag = Proto处理
+http-request ^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Spotify_remove_ads.js, timeout=10, tag=JSON处理
+http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Spotify_proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=Proto处理
 
 [MitM]
-hostname = spclient.wg.spotify.com
+hostname=spclient.wg.spotify.com

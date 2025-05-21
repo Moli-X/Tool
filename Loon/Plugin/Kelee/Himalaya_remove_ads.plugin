@@ -1,15 +1,15 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Himalaya_remove_ads.plugin
-#!name = 喜马拉雅去广告
-#!desc = 移除开屏广告、播放器广告、各类推荐内容，精简频道和我的页面。
+#!name=喜马拉雅去广告
+#!desc=移除开屏广告、播放器广告、各类推荐内容，精简频道和我的页面。
 #App链接=https://apps.apple.com/app/id876336838
-#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag = 去广告
-#!system = 
-#!system_version = 
-#!loon_version = 3.2.4(787)
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Himalaya_remove_ads.plugin
-#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Himalaya.png
-#!date = 2025-05-13 15:17:08
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Himalaya.png
+#!date=2025-05-13 15:17:08
 
 [Rule]
 DOMAIN, adse.ximalaya.com, REJECT
@@ -60,4 +60,4 @@ DOMAIN, adbehavior.wsa.ximalaya.com, REJECT
 ^https:\/\/(mobile|mobilehera|mobwsa)\.ximalaya\.com\/mobile-user\/v\d\/purchased\/recommend\/ reject-dict
 
 [MitM]
-hostname = gslbali.ximalaya.com, search.ximalaya.com, searchwsa.ximalaya.com, mobile.ximalaya.com, mobilehera.ximalaya.com, mobwsa.ximalaya.com, m.ximalaya.com, mwsa.ximalaya.com
+hostname=gslbali.ximalaya.com, search.ximalaya.com, searchwsa.ximalaya.com, mobile.ximalaya.com, mobilehera.ximalaya.com, mobwsa.ximalaya.com, m.ximalaya.com, mwsa.ximalaya.com

@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3655
+# 规则统计: 3658
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-05-13T12:57:52.667Z
-# Last Updated: 2025-05-19T11:55:01.367Z
+# Last Updated: 2025-05-20T13:32:56.283Z
 # License: AGPL 3.0
-# Size: 3572
+# Size: 3575
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -269,6 +269,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .chasecdn.com,CDN
 .chcdn.xyz,CDN
 .chesscomfiles.com,CDN
+.cktu01.sbs,CDN
 .claudeusercontent.com,CDN
 .cldup.com,CDN
 .clientmetrics-pa.googleapis.com,CDN
@@ -3475,6 +3476,7 @@ telemetry.split.io,CDN
 telemetry.stepsecurity.io,CDN
 telemetry.vercel.com,CDN
 telemetry2.devolutions.net,CDN
+texture.laby.net,CDN
 th.bing.com,CDN
 th1s_rule5et_1s_m4d3_by_5ukk4w_ruleset.skk.moe,CDN
 themes.fourthwall.com,CDN
@@ -3656,3 +3658,4 @@ wwwimages2.adobe.com,CDN
 xpaywalletcdn.azureedge.net,CDN
 yep.video.yahoo.com,CDN
 zephr-templates.cnbc.com,CDN
+zod.dev,CDN

@@ -1,15 +1,15 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/51Job_remove_ads.plugin
-#!name = 前程无忧去广告
-#!desc = 移除开屏广告、弹窗、信息流推广、职位页面推广和各类横幅推广。
+#!name=前程无忧去广告
+#!desc=移除开屏广告、弹窗、信息流推广、职位页面推广和各类横幅推广。
 #App链接=https://apps.apple.com/app/id415443644
-#!author = 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag = 去广告
-#!system = 
-#!system_version = 
-#!loon_version = 3.2.4(787)
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/51Job_remove_ads.plugin
-#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/51Job.png
-#!date = 2025-05-13 15:17:08
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/51Job.png
+#!date=2025-05-13 15:17:08
 
 [Rewrite]
 ^https:\/\/appapi\.51job\.com\/api\/market\/get_launch\.php\? reject-dict
@@ -31,4 +31,4 @@
 ^https:\/\/cupid\.51job(app)?\.com\/open\/operation\/get\/banner-list\? reject-dict
 
 [MitM]
-hostname = appapi.51job.com, cupid.51job.com, cupid.51jobapp.com
+hostname=appapi.51job.com, cupid.51job.com, cupid.51jobapp.com
