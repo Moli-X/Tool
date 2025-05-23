@@ -1,7 +1,7 @@
 /*
 引用地址 https://raw.githubusercontent.com/RuCu6/Loon/refs/heads/main/Scripts/amap.js
 */
-// 2025-03-31 09:45
+// 2025-05-02 20:40
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -33,6 +33,10 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
   if (obj?.data?.lubanData?.skin?.dataList?.length > 0) {
     // oss营销皮肤
     obj.data.lubanData.skin.dataList = [];
+  }
+  if (obj?.data?.matrixData?.c3DiversionCard?.dataList?.length > 0) {
+    // 打车订单附近景点推荐列表
+    obj.data.matrixData.c3DiversionCard.dataList = [];
   }
   if (obj?.data?.matrixData?.DiversionCard?.dataList?.length > 0) {
     // 打车订单附近景点推荐列表
@@ -278,12 +282,14 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
   const items = [
     "CouponBanner", // 高德红包
     // "anchor",
+    "adStoreBigBannerModule", // 广告横幅 打车券之类的
     "adv_compliance_info", // 服务提供方
     "adv_gift",
     // "base_info",
     "bigListBizRec", // 周边景点推荐 三张景点大图
     "bottomDescription", // 底部描述 高德酒店 全网比价
     // "brand_introduction",
+    "brand_service", // 品牌服务
     "brand_shop_bar",
     // "brand_story",
     "checkIn",
@@ -311,6 +317,8 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     // "detail_bottom_shop_service",
     "discount_commodity", // 优惠团购
     "divergentRecommendModule", // 你可能还喜欢
+    "enhanceCustomerServiceFixedBottom", // 品牌服务专区
+    "enhanceCustomerServicePoiModule", // 品牌服务专区
     // "evaluate", // 高德出行评分
     // "events",
     "everyOneToSee", // 大家还在看
@@ -323,6 +331,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     // "ggc_entry",
     // "hkfMiniPortal", // 订票页面 飞机 火车 汽车
     "horizontalGoodsShelf",
+    "hospital_strategy", // 就医攻略
     "hotPlay", // 热门玩法
     "hot_new_house_estate",
     "hot_shop",
@@ -379,6 +388,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "officerenthouse",
     "officesellhouse",
     "official_account", // 其他平台官方账号
+    "official_account_hospital", // 官方渠道 支付宝小程序
     "oldsellhouse",
     // "opentime", // 营业时间
     "operation_banner", // 横版图片推广
@@ -433,10 +443,15 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "second_surround_estate_tab", // 周边房产
     "service_shop", // 中介门店
     "shopBaseCase", // 小区装修案例
+    "shopStructGift", // 礼品广告位
     // "shop_news",
+    "shoppingMallEvent", // 逛街必看
     "similarShelfRecommend", // 看过这里的人也喜欢
+    "similarShopRecommend", // 附近相似店铺推荐
     "smallListBizRec", // 周边热门酒店
     "smallOrListBizRec",
+    "societyPublicExperience", // 地图共建
+    "subscription", // 商家号
     // "surroundFacilityInfo", // 小区周边配套
     "surroundHouseTab", //周边房源
     "surroundOldSellHouse", // 同城二手房

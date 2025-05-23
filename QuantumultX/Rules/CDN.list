@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3660
+# 规则统计: 3665
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-05-13T12:57:52.667Z
-# Last Updated: 2025-05-21T05:19:03.637Z
+# Last Updated: 2025-05-22T20:00:17.690Z
 # License: AGPL 3.0
-# Size: 3577
+# Size: 3582
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1339,6 +1339,7 @@ assets.st-note.com,CDN
 assets.stash.com,CDN
 assets.static-upwork.com,CDN
 assets.stickpng.com,CDN
+assets.stigg.io,CDN
 assets.swoogo.com,CDN
 assets.the-independent.com,CDN
 assets.time.com,CDN
@@ -1430,6 +1431,7 @@ bunnycdn-video-assets.b-cdn.net,CDN
 businessunitprofile-cdn.trustpilot.net,CDN
 busuanzi.ibruce.info,CDN
 c.1password.com,CDN
+c.animaapp.com,CDN
 c.fantia.jp,CDN
 c.marsflag.com,CDN
 c.navattic.com,CDN
@@ -1464,6 +1466,7 @@ cdn-a.sonyentertainmentnetwork.com,CDN
 cdn-app.pathfactory.com,CDN
 cdn-assets.circleci.com,CDN
 cdn-avatars.huggingface.co,CDN
+cdn-b.saashub.com,CDN
 cdn-bundler.nice-team.net,CDN
 cdn-c.leavemealone.com,CDN
 cdn-cf-east.streamable.com,CDN
@@ -3193,6 +3196,7 @@ static.adguardvpn.com,CDN
 static.afterpay.com,CDN
 static.ahrefs.com,CDN
 static.aizanmei.org,CDN
+static.animaapp.com,CDN
 static.anyporn.com,CDN
 static.anysex.com,CDN
 static.apkpure.com,CDN
@@ -3658,6 +3662,7 @@ www.tbstat.com,CDN
 www.typescriptlang.org,CDN
 wwwimages2.adobe.com,CDN
 xpaywalletcdn.azureedge.net,CDN
+y.yarn.co,CDN
 yep.video.yahoo.com,CDN
 zephr-templates.cnbc.com,CDN
 zod.dev,CDN
