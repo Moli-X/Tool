@@ -30,6 +30,7 @@ DOMAIN-KEYWORD,nicegram
 DOMAIN-KEYWORD,telegram
 IP-CIDR,149.154.160.0/20,no-resolve
 IP-CIDR,185.76.151.0/24,no-resolve
+IP-CIDR,5.28.192.0/18,no-resolve
 IP-CIDR,91.105.192.0/23,no-resolve
 IP-CIDR,91.108.12.0/22,no-resolve
 IP-CIDR,91.108.16.0/22,no-resolve
@@ -53,8 +54,9 @@ IP-ASN,62041,no-resolve
 # > Europe(DC2 🇮🇳IN ➜ 🇪🇺EU)
 # > Europe(DC4 🇪🇺EU)
 # > Singapore(DC5 🇸🇬SG))
+# > Unknow IPs
 # Nicegram
 # Swiftgram
 # Turrit
 # iMe
-# 最后更新时间：2024-12-11 19:50
+# 最后更新时间：2025-05-28 20:30
