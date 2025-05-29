@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3670
+# 规则统计: 3674
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-05-13T12:57:52.667Z
-# Last Updated: 2025-05-25T13:05:07.048Z
+# Last Updated: 2025-05-29T12:58:12.749Z
 # License: AGPL 3.0
-# Size: 3587
+# Size: 3591
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -2314,6 +2314,8 @@ ih3.redbubble.net,CDN
 ik.imgkit.net,CDN
 imag.malavida.com,CDN
 image-forwarder.notaku.so,CDN
+image-stgus.samsung.com,CDN
+image-us.samsung.com,CDN
 image.ap-mail.org,CDN
 image.civitai.com,CDN
 image.cnbcfm.com,CDN
@@ -2397,6 +2399,7 @@ images.prismic.io,CDN
 images.profile.autodesk.com,CDN
 images.ptt.cc,CDN
 images.purevpn-tools.com,CDN
+images.samsung.com,CDN
 images.scalero.io,CDN
 images.scrolller.com,CDN
 images.spot.im,CDN
@@ -3649,6 +3652,7 @@ widgets.turnto.com,CDN
 widgets.zohosalesiq.com,CDN
 wikiwandv2-19431.kxcdn.com,CDN
 wimg.rule34.xxx,CDN
+wire.shodan.io,CDN
 wl-apps.yourwebsite.life,CDN
 wp.salesforce.com,CDN
 wpmedia.tealium.com,CDN
