@@ -12,7 +12,7 @@ TG Channel：https://t.me/QuantX
     <th>名称</th>
   </tr>
   <tr>
-    <td rowspan="136"><strong>去广告插件</strong></td>
+    <td rowspan="138"><strong>去广告插件</strong></td>
   <tr>
     <td>001</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin">广告平台拦截器</a></td>
@@ -553,6 +553,14 @@ TG Channel：https://t.me/QuantX
     <td>135</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/DingdongMaicai_remove_ads.plugin">叮咚买菜去广告</a></td>
   </tr>
+  <tr>
+    <td>136</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BodianMusic_remove_ads.plugin">波点音乐去广告</a></td>
+  </tr>
+  <tr>
+    <td>137</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/ShopKeeperAdmin_remove_ads.plugin">小店掌柜去广告</a></td>
+  </tr>
     <td></td>
     <td></td>
     <td></td>
@@ -562,25 +570,21 @@ TG Channel：https://t.me/QuantX
     <th>名称</th>
   </tr>
   <tr>
-    <td rowspan="6"><strong>自签插件</strong></td>
+    <td rowspan="5"><strong>自签插件</strong></td>
   <tr>
     <td>01</td>
-    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/UnionPay_remove_ads_with_ssl_unpinning.plugin">云闪付去广告</a></td>
-  </tr>
-  <tr>
-    <td>02</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/DouBan_remove_ads.plugin">豆瓣去广告</a></td>
   </tr>
   <tr>
-    <td>03</td>
+    <td>02</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BaiduMap_remove_ads.plugin">百度地图去广告</a></td>
   </tr>
   <tr>
-    <td>04</td>
+    <td>03</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/FC_Box_remove_ads.plugin">丰巢去广告</a></td>
   </tr>
   <tr>
-    <td>05</td>
+    <td>04</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/ZhiLianZhaoPin_remove_ads.plugin">智联招聘去广告</a></td>
   </tr>
     <td></td>
@@ -592,74 +596,74 @@ TG Channel：https://t.me/QuantX
     <th>名称</th>
   </tr>
   <tr>
-    <td rowspan="25"><strong>功能插件</strong></td>
+    <td rowspan="24"><strong>功能插件</strong></td>
+  <tr>
   <tr>
     <td>01</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Block_HTTPDNS.plugin">HTTPDNS拦截器</a></td>
+  </tr>
+    <td>02</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/LoonGallery.plugin">插件仓库</a></td>
   </tr>
   <tr>
-    <td>02</td>
+    <td>03</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script-Hub.plugin">Script-Hub</a></td>
   </tr>
   <tr>
-    <td>03</td>
+    <td>04</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Sub-Store.plugin">Sub-Store</a></td>
   </tr>
   <tr>
-    <td>04</td>
+    <td>05</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Google.plugin">Google重定向</a></td>
   </tr>
   <tr>
-    <td>05</td>
+    <td>06</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/1.1.1.1.plugin">1.1.1.1配置管理</a></td>
   </tr>
   <tr>
-    <td>06</td>
+    <td>07</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BoxJs.plugin">BoxJs</a></td>
   </tr>
   <tr>
-    <td>07</td>
+    <td>08</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/WARP_Node_Query.plugin">WARP节点查询</a></td>
   </tr>
   <tr>
-    <td>08</td>
+    <td>09</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/JD_Price.plugin">京东比价</a></td>
   </tr>
   <tr>
-    <td>09</td>
+    <td>10</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/YouTubeSubtitlesTranslation.plugin">YouTube翻译</a></td>
   </tr>
   <tr>
-    <td>10</td>
+    <td>11</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Auto_Join_TF.plugin">自动加入TF</a></td>
   </tr>
   <tr>
-    <td>11</td>
+    <td>12</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/VVebo_repair.plugin">VVebo时间线修复</a></td>
   </tr>
   <tr>
-    <td>12</td>
+    <td>13</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/TestFlightRegionUnlock.plugin">TestFlight地区解锁</a></td>
   </tr>
   <tr>
-    <td>13</td>
+    <td>14</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Switch_github_mirror.plugin">GitHub加速</a></td>
   </tr>
   <tr>
-    <td>14</td>
+    <td>15</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Node_detection_tool.plugin">节点检测工具</a></td>
   </tr>
   <tr>
-    <td>15</td>
+    <td>16</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/QQ_Redirect.plugin">QQ链接解锁</a></td>
   </tr>
   <tr>
-    <td>16</td>
-    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Fileball_mount.plugin">Fileball网盘挂载</a></td>
-  </tr>
-  <tr>
     <td>17</td>
-    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Block_HTTPDNS.plugin">拦截HTTPDNS</a></td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Fileball_mount.plugin">Fileball网盘挂载</a></td>
   </tr>
   <tr>
     <td>18</td>
@@ -667,27 +671,22 @@ TG Channel：https://t.me/QuantX
   </tr>
   <tr>
     <td>19</td>
-    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/TikTok_redirect.plugin">TikTok多地区解锁</a></td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Spotify_lyrics_translation.plugin">Spotify歌词翻译</a></td>
   </tr>
   <tr>
     <td>20</td>
-    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Spotify_lyrics_translation.plugin">Spotify歌词翻译</a></td>
-  </tr>
-
-  <tr>
-    <td>21</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/NodeLinkCheck.Plugin">代理链路检测</a></td>
   </tr>
   <tr>
-    <td>22</td>
+    <td>21</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/QuickSearch.plugin">快捷搜索</a></td>
   </tr>
   <tr>
-    <td>23</td>
+    <td>22</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/UnnooQuan_remove_watermark.plugin">知识星球去水印</a></td>
   </tr>
   <tr>
-    <td>24</td>
+    <td>23</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/AppleWeatherEnhancer.plugin">Apple天气增强</a></td>
   </tr>
     <td></td>
