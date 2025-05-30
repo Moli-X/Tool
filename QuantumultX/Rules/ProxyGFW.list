@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7427
+# 规则统计: 7433
 
 HOST,cloud.oracle.com,ProxyGFW
 HOST,steambroadcast.akamaized.net,ProxyGFW
@@ -5202,9 +5202,15 @@ HOST-SUFFIX,s.yimg.com,ProxyGFW
 HOST-SUFFIX,s1.nudezz.com,ProxyGFW
 HOST-SUFFIX,s1heng.com,ProxyGFW
 HOST-SUFFIX,s1s1s1.com,ProxyGFW
+HOST-SUFFIX,s3-ap-northeast-1.amazonaws.com,ProxyGFW
+HOST-SUFFIX,s3-ap-northeast-2.amazonaws.com,ProxyGFW
 HOST-SUFFIX,s3-ap-southeast-1.amazonaws.com,ProxyGFW
 HOST-SUFFIX,s3-ap-southeast-2.amazonaws.com,ProxyGFW
+HOST-SUFFIX,s3-eu-central-1.amazonaws.com,ProxyGFW
 HOST-SUFFIX,s3.amazonaws.com,ProxyGFW
+HOST-SUFFIX,s3.ap-northeast-2.amazonaws.com,ProxyGFW
+HOST-SUFFIX,s3.eu-central-1.amazonaws.com,ProxyGFW
+HOST-SUFFIX,s3.us-east-1.amazonaws.com,ProxyGFW
 HOST-SUFFIX,s4miniarchive.com,ProxyGFW
 HOST-SUFFIX,s8forum.com,ProxyGFW
 HOST-SUFFIX,sa.hao123.com,ProxyGFW
