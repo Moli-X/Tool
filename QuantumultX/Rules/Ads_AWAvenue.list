@@ -1,19 +1,20 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 830
+# 规则统计: 834
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 821
-#Update content: Purge jsdelivr CDN cache
-#Update time: 2025-05-28 16:42:07 UTC+8
+#Total lines: 825
+#Update content: add HKTVMALL ads block. #143
+#Update time: 2025-05-30 20:03:25 UTC+8
 #Version: 1.6.5-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500026601.vodplayer.wxamedia.com,Ads_AWAvenue
 .8le8le.com,Ads_AWAvenue
+.8rn1y79f02-1.algolianet.com,Ads_AWAvenue
 .a0.app.xiaomi.com,Ads_AWAvenue
 .aaid.umeng.com,Ads_AWAvenue
 .abtest-ch.snssdk.com,Ads_AWAvenue
@@ -22,6 +23,8 @@
 .ad-scope.com.cn,Ads_AWAvenue
 .ad-sdk-config.youdao.com,Ads_AWAvenue
 .ad-sdk.huxiu.com,Ads_AWAvenue
+.ad-splash-tracking.hktvmall.com,Ads_AWAvenue
+.ad-splash.hktvmall.com,Ads_AWAvenue
 .ad.12306.cn,Ads_AWAvenue
 .ad.51wnl.com,Ads_AWAvenue
 .ad.api.3g.youku.com,Ads_AWAvenue
@@ -444,6 +447,7 @@
 .lf6-ad-union-sdk.pglstatp-toutiao.com,Ads_AWAvenue
 .lh3.googleadsserving.cn,Ads_AWAvenue
 .litchiads.com,Ads_AWAvenue
+.live-api.hktvmall.com,Ads_AWAvenue
 .liveats-vod.video.ptqy.gitv.tv,Ads_AWAvenue
 .livemonitor.huan.tv,Ads_AWAvenue
 .livep.l.aiseet.atianqi.com,Ads_AWAvenue
