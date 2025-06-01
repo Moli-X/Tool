@@ -222,6 +222,7 @@ DOMAIN,ws.ksmobile.net,reject
 DOMAIN,yt-adp.nosdn.127.net,reject
 DOMAIN,yt-adp.ws.126.net,reject
 DOMAIN-SUFFIX,107iwh.cn,reject
+DOMAIN-SUFFIX,21e18b62f2.4a41fff8a6.com,reject
 DOMAIN-SUFFIX,22c.in,reject
 DOMAIN-SUFFIX,2700.5mgrgsc.cn,reject
 DOMAIN-SUFFIX,29b124c44a.com,reject
@@ -229,6 +230,7 @@ DOMAIN-SUFFIX,2qpqwkx.cn,reject
 DOMAIN-SUFFIX,2xmzazd.cn,reject
 DOMAIN-SUFFIX,3adtjg.com,reject
 DOMAIN-SUFFIX,42yenxh.cn,reject
+DOMAIN-SUFFIX,4a41fff8a6.com,reject
 DOMAIN-SUFFIX,51.la,reject
 DOMAIN-SUFFIX,51daeka.com,reject
 DOMAIN-SUFFIX,578d72001a.com,reject
@@ -325,6 +327,7 @@ DOMAIN-SUFFIX,eyebrowscrambledlater.com,reject
 DOMAIN-SUFFIX,fanza.cc,reject
 DOMAIN-SUFFIX,farmcrapsubsist.com,reject
 DOMAIN-SUFFIX,farwine.com,reject
+DOMAIN-SUFFIX,fmiqcupku.com,reject
 DOMAIN-SUFFIX,gdt.qq.com,reject
 DOMAIN-SUFFIX,gemini.yahoo.com,reject
 DOMAIN-SUFFIX,ggsfq.com,reject
@@ -371,6 +374,7 @@ DOMAIN-SUFFIX,jianxinshanghai.com,reject
 DOMAIN-SUFFIX,jidukeji.com,reject
 DOMAIN-SUFFIX,jknmthwd.xyz,reject
 DOMAIN-SUFFIX,js.51toubu.com,reject
+DOMAIN-SUFFIX,js.capndr.com,reject
 DOMAIN-SUFFIX,js.users.51.la,reject
 DOMAIN-SUFFIX,js.waqool.com,reject
 DOMAIN-SUFFIX,js.wpshsdk.com,reject
@@ -598,22 +602,22 @@ IP-CIDR6,## IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 ## */
 ## /*
 ## ACL4SSR BadAD: 589 Domains/IP/Others From https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-## Adblock4limbo: 555 Domains/IP/Others From https://github.com/limbopro/Adblock4limbo
-## EasyList China: 4422 Domains/IP/Others From https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt
+## Adblock4limbo: 561 Domains/IP/Others From https://github.com/limbopro/Adblock4limbo
+## EasyList China: 4396 Domains/IP/Others From https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt
 ## EasyList/EasylistChina/EasyPrivacy 隐私追踪器/去广告分流规则请在Github仓库 Adblock4limbo -> rule 文件夹下查找，按需添加...
-## EasyList: 29322 Domains/IP/Others From https://easylist.to/easylist/easylist.txt
-## EasyPrivacy: 42035 Domains/IP/Others From https://easylist.to/easylist/easyprivacy.txt
+## EasyList: 28008 Domains/IP/Others From https://easylist.to/easylist/easylist.txt
+## EasyPrivacy: 41838 Domains/IP/Others From https://easylist.to/easylist/easyprivacy.txt
 ## IP-CIDR,101.227.200.11/32,no-resolve
 ## IP-CIDR,101.227.200.28/32,no-resolve
 ## IP-CIDR,101.227.97.240/32,no-resolve
 ## IP-CIDR,118.89.204.198/32,no-resolve
 ## IP-CIDR,124.192.153.42/32,no-resolve
-## Last updated at  1/5月/2025/00:00
-## Peter Lowe’s Ad and tracking server list: 3445 Domains/IP/Others From https://pgl.yoyo.org/adservers/serverlist.php
+## Last updated at  1/6月/2025/00:00
+## Peter Lowe’s Ad and tracking server list: 3427 Domains/IP/Others From https://pgl.yoyo.org/adservers/serverlist.php
 ## Repo: https://github.com/limbopro/Adblock4limbo  
 ## Written by limbopro
 ## 仓库地址：https://github.com/limbopro/Adblock4limbo/tree/main/rule
-## 以上共计: 80368 Domains/IP/Others (非去重统计)
+## 以上共计: 78819 Domains/IP/Others (非去重统计)
 ## 原文参阅 https://limbopro.com/archives/12904.html
 ## 参阅 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list
 ## 如需完整配置，参阅请原文 https://limbopro.com/archives/12904.html
