@@ -1,6 +1,6 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/Spotify_remove_ads.plugin
 #!name=Spotify去广告
-#!desc=移除播放广告，恢复歌手和专辑列表的正常展示。
+#!desc=移除播放广告，恢复歌手和专辑列表的正常展示。修改插件自定义配置项需要重新登陆方可生效。
 #App链接=https://apps.apple.com/app/id324684580
 #!author=001ProMax[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Spotify_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Spotify.png
-#!date=2025-06-01 00:10:38
+#!date=2025-06-02 19:39:26
 
 [Argument]
 tab=switch, "false", "true", tag=移除底栏创建按钮, desc=此开关控制是否移除底栏创建按钮
