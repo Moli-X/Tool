@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3674
+# 规则统计: 3679
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-05-13T12:57:52.667Z
-# Last Updated: 2025-05-30T19:26:48.675Z
+# Last Updated: 2025-06-01T16:04:20.832Z
 # License: AGPL 3.0
-# Size: 3591
+# Size: 3596
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1590,6 +1590,7 @@ cdn.docsbot.com,CDN
 cdn.document360.io,CDN
 cdn.donmai.us,CDN
 cdn.dotaoutpost.com,CDN
+cdn.downdetector.com,CDN
 cdn.download.it,CDN
 cdn.drata.com,CDN
 cdn.dribbble.com,CDN
@@ -1991,6 +1992,7 @@ code.ionicframework.com,CDN
 code.jquery.com,CDN
 code.piano.io,CDN
 code.upscope.io,CDN
+comm.res.easebar.com,CDN
 common-header.nimg.jp,CDN
 components.clever-cloud.com,CDN
 components.justanswer.com,CDN
@@ -3565,6 +3567,9 @@ usercontent.flodesk.com,CDN
 userpic.redgifs.com,CDN
 useruploads.visualwebsiteoptimizer.com,CDN
 utteranc.es,CDN
+v-tiles1.downdetector.com,CDN
+v-tiles2.downdetector.com,CDN
+v-tiles3.downdetector.com,CDN
 v.w-x.co,CDN
 v2-images.crackle.com,CDN
 v2.listenloop.com,CDN
