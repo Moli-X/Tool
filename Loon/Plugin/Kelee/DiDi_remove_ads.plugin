@@ -9,10 +9,12 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/DiDi_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DiDi.png
-#!date=2025-05-30 00:16:27
+#!date=22025-06-03 19:47:21
 
 [Rule]
 DOMAIN, gwp.xiaojukeji.com, REJECT
+AND, ((IP-ASN, 45090, no-resolve), (DEST-PORT, 25641), (PROTOCOL, TCP)), REJECT
+AND, ((IP-ASN, 63646, no-resolve), (DEST-PORT, 25641), (PROTOCOL, TCP)), REJECT
 
 [Rewrite]
 ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget reject-dict

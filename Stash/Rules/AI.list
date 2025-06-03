@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 46
+# 规则统计: 47
 
 DOMAIN,ai.google.dev
 DOMAIN,alkalicore-pa.clients6.google.com
@@ -22,6 +22,7 @@ DOMAIN-SUFFIX,geller-pa.googleapis.com
 DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,groq.com
 DOMAIN-SUFFIX,jasper.ai
 DOMAIN-SUFFIX,makersuite.google.com
@@ -40,9 +41,9 @@ DOMAIN-KEYWORD,openai
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-05-21T05:19:00.337Z
+# Last Updated: 2025-06-03T11:52:36.128Z
 # License: AGPL 3.0
-# Size: 36
+# Size: 37
 # Sukka's Ruleset - AIGC Domains
 # This file contains domains of OpenAI, Claude.
 ################## EOF ##################
