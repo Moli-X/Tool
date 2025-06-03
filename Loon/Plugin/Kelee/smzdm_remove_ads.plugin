@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/smzdm_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/smzdm.png
-#!date=2025-05-21 14:54:15
+#!date=2025-06-03 09:01:17
 
 [Rule]
 DOMAIN, adx-api.zdmimg.com, REJECT
@@ -25,6 +25,8 @@ DOMAIN, adx-api.zdmimg.com, REJECT
 
 ^https:\/\/homepage-api\.smzdm\.com\/v3\/home\? response-body-json-jq jq-path="https://kelee.one/Resource/JQLang/smzdm/home_smzdm_remove_ads.jq"
 
+^https:\/\/app-api\.smzdm\.com\/mychannel\/list$ reject-dict
+
 ^https:\/\/h5\.smzdm\.com\/user\/coupon\/coupon_list\? reject
 
 ^https:\/\/haojia-api\.smzdm\.com\/home\/list\? response-body-json-jq '.data.rows |= map(select(.cell_type == "39001")) | .data.banner_v2 |= map(select(.cell_type == "21028"))'
@@ -33,7 +35,7 @@ DOMAIN, adx-api.zdmimg.com, REJECT
 
 ^https:\/\/haojia\.m\.smzdm\.com\/detail_modul\/other_modul\? response-body-json-del data.banner
 
-^https:\/\/user-api\.smzdm\.com\/vip$ response-body-json-del data.big_banner
+^https:\/\/user-api\.smzdm\.com\/vip$ response-body-json-del data.activity_entrance_info data.big_banner data.top_banner data.banner_switch
 
 ^https:\/\/user-api\.smzdm\.com\/vip\/bottom_card_list\? reject-dict
 
