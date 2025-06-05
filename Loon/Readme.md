@@ -602,7 +602,6 @@ TG Channel：https://t.me/QuantX
   <tr>
     <td rowspan="24"><strong>功能插件</strong></td>
   <tr>
-  <tr>
     <td>01</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Block_HTTPDNS.plugin">HTTPDNS拦截器</a></td>
   </tr>
