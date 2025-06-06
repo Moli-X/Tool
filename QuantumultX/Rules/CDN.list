@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3683
+# 规则统计: 3689
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-05-13T12:57:52.667Z
-# Last Updated: 2025-06-04T06:49:30.605Z
+# Last Updated: 2025-06-06T09:51:08.527Z
 # License: AGPL 3.0
-# Size: 3600
+# Size: 3606
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -456,6 +456,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .graphql.org,CDN
 .gravatar.com,CDN
 .gravity.jup.io,CDN
+.gtranslate.net,CDN
 .gw3.io,CDN
 .h-cdn.co,CDN
 .h-cdn.com,CDN
@@ -972,6 +973,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .szjal.cn,CDN
 .tapecontent.net,CDN
 .targetimg1.com,CDN
+.tauri.app,CDN
 .teamtailor-cdn.com,CDN
 .tedcdn.com,CDN
 .telemetry.services.yofi.ai,CDN
@@ -1494,6 +1496,7 @@ cdn-node.diskpart.com,CDN
 cdn-public.sociabble.com,CDN
 cdn-raw.modrinth.com,CDN
 cdn-rdstaticassets.readdle.com,CDN
+cdn-seo.airdroid.com,CDN
 cdn-service.jp.sumologic.com,CDN
 cdn-share-sprites.flaticon.com,CDN
 cdn-static-1.medium.com,CDN
@@ -2361,6 +2364,7 @@ images-news.now.com,CDN
 images-sports.now.com,CDN
 images-static.trustpilot.com,CDN
 images.991.com,CDN
+images.airdroid.com,CDN
 images.anandtech.com,CDN
 images.applegamingwiki.com,CDN
 images.arigatotravel.com,CDN
@@ -2971,6 +2975,7 @@ resources.digital-cloud.medallia.com,CDN
 resources.help.salesforce.com,CDN
 resources.whatwg.org,CDN
 rest.happierleads.com,CDN
+rs-cdn.splashtop.com,CDN
 rsi.grafana.com,CDN
 rsms.me,CDN
 rtcg-access.bytevcloud.com,CDN
@@ -3094,6 +3099,7 @@ secure.telegraph.co.uk,CDN
 segapi.clerk.com,CDN
 segment.digitalocean.com,CDN
 sentry.ainopara.com,CDN
+seo-wp.airdroid.com,CDN
 service-icons.zeabur.com,CDN
 services.linkfire.com,CDN
 sf-coze-web-cdn.coze.com,CDN
