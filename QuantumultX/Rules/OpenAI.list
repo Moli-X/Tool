@@ -1,9 +1,8 @@
 # 规则名称: OpenAI
-# 规则统计: 46
+# 规则统计: 45
 
 HOST,browser-intake-datadoghq.com,OpenAI
 HOST,chat.openai.com.cdn.cloudflare.net,OpenAI
-HOST,gemini.google.com,OpenAI
 HOST,openai-api.arkoselabs.com,OpenAI
 HOST,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,OpenAI
 HOST,openaicomproductionae4b.blob.core.windows.net,OpenAI
@@ -40,10 +39,10 @@ IP-ASN,20473,OpenAI
 # AUTHOR: blackmatrix7
 # DOMAIN-KEYWORD: 1
 # DOMAIN-SUFFIX: 24
-# DOMAIN: 8
+# DOMAIN: 7
 # IP-ASN: 1
 # IP-CIDR: 2
 # NAME: OpenAI
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# TOTAL: 36
-# UPDATED: 2024-07-03 16:18:28
+# TOTAL: 35
+# UPDATED: 2025-06-06 09:20:00
