@@ -1,7 +1,7 @@
 /*
 引用地址 https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/xiaohongshu.js
 */
-// 2025-03-22 19:55
+// 2025-06-09 21:55
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -11,7 +11,7 @@ if (url.includes("/v1/interaction/comment/video/download")) {
   // 评论区实况照片保存请求
   let commitsCache = JSON.parse($persistentStore.read("redBookCommentLivePhoto")); // 读取持久化存储
   if (commitsCache) {
-    let commitsRsp = JSON.parse(commitsCache);
+    let commitsRsp = commitsCache;
     if (commitsRsp?.livePhotos?.length > 0 && obj?.data?.video) {
       for (const item of commitsRsp.livePhotos) {
         if (item?.videId === obj?.data?.video?.video_id) {
@@ -280,7 +280,7 @@ if (url.includes("/v1/interaction/comment/video/download")) {
     if (!commitsCache) {
       commitsRsp = { noteId: note_id, livePhotos: livePhotos };
     } else {
-      commitsRsp = JSON.parse(commitsCache);
+      commitsRsp = commitsCache;
       if (commitsRsp?.noteId === note_id) {
         commitsRsp.livePhotos = deduplicateLivePhotos(commitsRsp.livePhotos.concat(livePhotos));
       } else {
