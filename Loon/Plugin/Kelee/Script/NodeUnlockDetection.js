@@ -2,7 +2,8 @@
  * 节点解锁查询
  * 感谢并修改自 https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js
  * 脚本功能：检查节点是否支持Dazn/Discovery/Param/Disney/Netflix/ChatGPT/YouTube解锁服务
- * 原作者：XIAO_KOP
+ * 原作者：XIAO_KOP  keywos
+ * 2025.6.7  修复ChatGPT检测（禁用308重定向） by dcpengx
  */
 const NF_BASE_URL = "https://www.netflix.com/title/81280792";
 const DISNEY_BASE_URL = 'https://www.disneyplus.com';
@@ -411,6 +412,7 @@ function gptTest() {
             url: GPT_BASE_URL,
             node: nodeName,
             timeout: 5000, //ms
+            'auto-redirect':false,   //  关闭自动重定向
         }
         $httpClient.get(params, (errormsg,response,data) => {
             console.log("----------GPT--------------");
@@ -421,7 +423,7 @@ function gptTest() {
                 resolve("不支持 ChatGPT")
                 return;
             } 
-            let resp = JSON.stringify(data)
+            let resp = JSON.stringify(response)
             console.log("ChatGPT Main Test")
             let jdg = resp.indexOf("text/plain")
             if (jdg == -1) {
