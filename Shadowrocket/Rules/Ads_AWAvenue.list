@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 834
+# 规则统计: 835
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 825
-#Update content: add HKTVMALL ads block. #143
-#Update time: 2025-05-30 20:03:25 UTC+8
+#Total lines: 826
+#Update content: add more wangmai ads block. #148
+#Update time: 2025-06-11 16:53:46 UTC+8
 #Version: 1.6.5-release
 .1500020991.vodplayer.wxamedia.com
 .1500022744.vodplayer.wxamedia.com
@@ -635,6 +635,7 @@
 .sdk-cache.video.ptqy.gitv.tv
 .sdk.1rtb.net
 .sdk.ad.smaato.net
+.sdk.adx.adwangmai.com
 .sdk.beizi.biz
 .sdk.cferw.com
 .sdk.e.qq.com
