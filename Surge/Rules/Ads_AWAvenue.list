@@ -1,15 +1,15 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 835
+# 规则统计: 834
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 826
-#Update content: add more wangmai ads block. #148
-#Update time: 2025-06-11 16:53:46 UTC+8
-#Version: 1.6.5-release
+#Total lines: 825
+#Update content: remove Google Analytics, its reasonable.
+#Update time: 2025-06-12 17:20:33 UTC+8
+#Version: 1.6.6-release
 .1500020991.vodplayer.wxamedia.com
 .1500022744.vodplayer.wxamedia.com
 .1500026601.vodplayer.wxamedia.com
@@ -173,7 +173,6 @@
 .analysis.yozocloud.cn
 .analytics-api.samsunghealthcn.com
 .analytics.adjust.cn
-.analytics.google.com
 .analytics.pinterest.com
 .analytics.pointdrive.linkedin.com
 .analytics.query.yahoo.com
