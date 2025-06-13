@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3689
+# 规则统计: 3691
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -74,9 +74,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-05-13T12:57:52.667Z
-# Last Updated: 2025-06-10T14:53:53.848Z
+# Last Updated: 2025-06-12T15:35:08.020Z
 # License: AGPL 3.0
-# Size: 3608
+# Size: 3610
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -2056,6 +2056,7 @@ dam.freshworks.com
 damassets.autodesk.net
 dassets.shimano.com
 data.jsdelivr.com
+data.osmand.net
 data.pendo.io
 data.schemaapp.com
 data.web.clickup.com
@@ -2656,6 +2657,7 @@ mangaz-static.j-comi.jp
 mantisloader.mantis-awx.com
 maps.geoapify.com
 maps.gstatic.com
+maptile.osmand.net
 marber-cdn.economist.com
 marfeelexperimentsexperienceengine.mrf.io
 marketing.figma.com
