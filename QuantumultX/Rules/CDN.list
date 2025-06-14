@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3693
+# 规则统计: 3699
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-05-13T12:57:52.667Z
-# Last Updated: 2025-06-12T15:35:08.020Z
+# Last Updated: 2025-06-14T11:45:51.495Z
 # License: AGPL 3.0
-# Size: 3610
+# Size: 3616
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -419,6 +419,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .framercdn.com,CDN
 .framerstatic.com,CDN
 .framerusercontent.com,CDN
+.frontapp.com,CDN
 .fsdn.com,CDN
 .fsvod1.com,CDN
 .ftcdn.net,CDN
@@ -804,6 +805,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .prcdn.co,CDN
 .pressablecdn.com,CDN
 .pressidiumcdn.com,CDN
+.prhcdn.com,CDN
 .privacy-gateway.cloudflare.com,CDN
 .prod.public.atl-paas.net,CDN
 .project1content.com,CDN
@@ -1828,6 +1830,7 @@ cdn.viafoura.net,CDN
 cdn.vidible.tv,CDN
 cdn.vidyard.com,CDN
 cdn.viglink.com,CDN
+cdn.violet.vin,CDN
 cdn.vuukle.com,CDN
 cdn.wccftech.com,CDN
 cdn.webclicks24.com,CDN
@@ -2106,6 +2109,7 @@ edge-cloud-resource-static.azureedge.net,CDN
 edge-consumer-static.azureedge.net,CDN
 edge-mobile-static.azureedge.net,CDN
 edge.marker.io,CDN
+edge.nodeseek.com,CDN
 edge.personalizer.io,CDN
 edge.sitecorecloud.io,CDN
 edge1.certona.net,CDN
@@ -2267,6 +2271,7 @@ hub-assets.displaycal.net,CDN
 hubspotonwebflow.com,CDN
 hv-monsterdb-data.skk.moe,CDN
 i-cdn.embed.ly,CDN
+i.111666.best,CDN
 i.1password.com,CDN
 i.anysex.com,CDN
 i.bang.com,CDN
@@ -2485,6 +2490,7 @@ img.imgdd.com,CDN
 img.informer.com,CDN
 img.itch.zone,CDN
 img.javstore.net,CDN
+img.jjbb.me,CDN
 img.jsdelivr.com,CDN
 img.kbhgames.com,CDN
 img.kemono.su,CDN

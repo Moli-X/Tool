@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3691
+# 规则统计: 3697
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -74,9 +74,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-05-13T12:57:52.667Z
-# Last Updated: 2025-06-12T15:35:08.020Z
+# Last Updated: 2025-06-14T11:45:51.495Z
 # License: AGPL 3.0
-# Size: 3610
+# Size: 3616
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -417,6 +417,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .framercdn.com
 .framerstatic.com
 .framerusercontent.com
+.frontapp.com
 .fsdn.com
 .fsvod1.com
 .ftcdn.net
@@ -802,6 +803,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .prcdn.co
 .pressablecdn.com
 .pressidiumcdn.com
+.prhcdn.com
 .privacy-gateway.cloudflare.com
 .prod.public.atl-paas.net
 .project1content.com
@@ -1826,6 +1828,7 @@ cdn.viafoura.net
 cdn.vidible.tv
 cdn.vidyard.com
 cdn.viglink.com
+cdn.violet.vin
 cdn.vuukle.com
 cdn.wccftech.com
 cdn.webclicks24.com
@@ -2104,6 +2107,7 @@ edge-cloud-resource-static.azureedge.net
 edge-consumer-static.azureedge.net
 edge-mobile-static.azureedge.net
 edge.marker.io
+edge.nodeseek.com
 edge.personalizer.io
 edge.sitecorecloud.io
 edge1.certona.net
@@ -2265,6 +2269,7 @@ hub-assets.displaycal.net
 hubspotonwebflow.com
 hv-monsterdb-data.skk.moe
 i-cdn.embed.ly
+i.111666.best
 i.1password.com
 i.anysex.com
 i.bang.com
@@ -2483,6 +2488,7 @@ img.imgdd.com
 img.informer.com
 img.itch.zone
 img.javstore.net
+img.jjbb.me
 img.jsdelivr.com
 img.kbhgames.com
 img.kemono.su
