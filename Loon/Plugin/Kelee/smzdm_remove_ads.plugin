@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/smzdm_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/smzdm.png
-#!date=2025-06-10 00:02:18
+#!date=2025-06-14 03:41:00
 
 [Rule]
 DOMAIN, adx-api.zdmimg.com, REJECT
@@ -19,7 +19,7 @@ DOMAIN, adx-api.zdmimg.com, REJECT
 
 ^https:\/\/app-api\.smzdm\.com\/util\/update$ response-body-json-replace data.silence_local_push 0 data.baichuan_redirect_switch 0
 
-^https:\/\/app-api\.smzdm\.com\/util\/update$ response-body-json-del data.silence_local_push_msg data.video_cache_num_configs data.haojia_widget data.widget
+^https:\/\/app-api\.smzdm\.com\/util\/update$ response-body-json-del data.silence_local_push_msg data.video_cache_num_configs data.haojia_widget data.widget data.operation_float
 
 ^https:\/\/app-api\.smzdm\.com\/util\/update$ response-body-json-jq 'def r: if type=="object" then if has("ad_campaign_name") and (.ad_campaign_name|type=="string") and (.ad_campaign_name|test("\\S")) then empty else . end elif type=="array" then map(r) else . end; .data.operation_float |= map(map(r))'
 
@@ -49,5 +49,8 @@ DOMAIN, adx-api.zdmimg.com, REJECT
 
 ^https:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags\? response-body-json-jq '.data.search_hot.home |= map(select(.article_tag.article_title != "广告"))'
 
+^https:\/\/haojia-api\.smzdm\.com\/detail\/\d+\? response-body-json-del data.quan_log
+^https:\/\/haojia-cdn\.smzdm\.com\/preload\/\d+\/fiphone\/v\d+_\d+_\d+\/wx\d+\/im\d+\/[a-z0-9]+\/h5(?:c[0-9a-f]+)?\.json$ response-body-json-del data.quan_log
+
 [MitM]
-hostname=app-api.smzdm.com, homepage-api.smzdm.com, h5.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, user-api.smzdm.com, article-api.smzdm.com, s-api.smzdm.com
+hostname=app-api.smzdm.com, homepage-api.smzdm.com, h5.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, user-api.smzdm.com, article-api.smzdm.com, s-api.smzdm.com, haojia-cdn.smzdm.com
