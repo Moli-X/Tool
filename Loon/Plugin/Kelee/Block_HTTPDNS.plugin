@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Block_HTTPDNS.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png
-#!date=2025-05-13 21:58:49
+#!date=2025-06-16 12:29:05
 
 [Rule]
 DOMAIN, yyapp-httpdns.gslb.yy.com, REJECT
@@ -32,7 +32,6 @@ AND, ((DOMAIN-KEYWORD, tnc), (AND, ((OR, ((DOMAIN-KEYWORD, -bjlgy), (DOMAIN-KEYW
 DOMAIN, dns.weixin.qq.com, REJECT
 DOMAIN, dns.weixin.qq.com.cn, REJECT
 DOMAIN, aedns.weixin.qq.com, REJECT
-DOMAIN, paydns.wechatpay.cn, REJECT
 IP-CIDR, 39.156.140.30/32, REJECT, no-resolve
 IP-CIDR, 39.156.140.47/32, REJECT, no-resolve
 IP-CIDR, 39.156.140.245/32, REJECT, no-resolve

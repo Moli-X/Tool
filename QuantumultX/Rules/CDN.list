@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3702
+# 规则统计: 3706
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-05-13T12:57:52.667Z
-# Last Updated: 2025-06-15T03:54:07.073Z
+# Last Updated: 2025-06-16T02:35:40.319Z
 # License: AGPL 3.0
-# Size: 3619
+# Size: 3623
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -289,6 +289,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .cnbetacdn.com,CDN
 .codeberg.page,CDN
 .codepenassets.com,CDN
+.colliderimages.com,CDN
 .combinatronics.io,CDN
 .content-storage-upload.googleapis.com,CDN
 .content001.bet365.com,CDN
@@ -1034,6 +1035,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .uvcdn.com,CDN
 .v-cdn.net,CDN
 .v2ex.co,CDN
+.valnetcdn.com,CDN
 .vanillicon.com,CDN
 .vcmdiawe.com,CDN
 .vercel.app,CDN
@@ -1678,6 +1680,7 @@ cdn.kobo.com,CDN
 cdn.langshop.app,CDN
 cdn.leandata.com,CDN
 cdn.lemonsqueezy.com,CDN
+cdn.lgrckt-in.com,CDN
 cdn.libravatar.org,CDN
 cdn.lihkg.com,CDN
 cdn.linearicons.com,CDN
@@ -1990,6 +1993,7 @@ cms-assets.webediamovies.pro,CDN
 cms-assets.xboxservices.com,CDN
 cms-cdn.goat.com,CDN
 cms-cdn.now.gg,CDN
+cms.blavity.com,CDN
 cms.recordedfuture.com,CDN
 cms.therecord.media,CDN
 cms.typenetwork.com,CDN

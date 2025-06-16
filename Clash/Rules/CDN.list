@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3700
+# 规则统计: 3704
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -74,9 +74,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-05-13T12:57:52.667Z
-# Last Updated: 2025-06-15T03:54:07.073Z
+# Last Updated: 2025-06-16T02:35:40.319Z
 # License: AGPL 3.0
-# Size: 3619
+# Size: 3623
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -287,6 +287,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .cnbetacdn.com
 .codeberg.page
 .codepenassets.com
+.colliderimages.com
 .combinatronics.io
 .content-storage-upload.googleapis.com
 .content001.bet365.com
@@ -1032,6 +1033,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .uvcdn.com
 .v-cdn.net
 .v2ex.co
+.valnetcdn.com
 .vanillicon.com
 .vcmdiawe.com
 .vercel.app
@@ -1676,6 +1678,7 @@ cdn.kobo.com
 cdn.langshop.app
 cdn.leandata.com
 cdn.lemonsqueezy.com
+cdn.lgrckt-in.com
 cdn.libravatar.org
 cdn.lihkg.com
 cdn.linearicons.com
@@ -1988,6 +1991,7 @@ cms-assets.webediamovies.pro
 cms-assets.xboxservices.com
 cms-cdn.goat.com
 cms-cdn.now.gg
+cms.blavity.com
 cms.recordedfuture.com
 cms.therecord.media
 cms.typenetwork.com
