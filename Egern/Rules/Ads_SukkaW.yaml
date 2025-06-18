@@ -292,10 +292,10 @@ URL-REGEX,/\d+/sign_d
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-06-06T14:10:03.828Z
-# Last Updated: 2025-06-17T16:10:22.682Z
+# Last Updated: 2025-06-18T07:47:37.841Z
 # License: AGPL 3.0
 # Size: 278
-# Size: 83799
+# Size: 83817
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Domains
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-mining
@@ -3843,6 +3843,7 @@ URL-REGEX,/\d+/sign_d
 .ads-game-configuration-master.ads.prd.ie.internal.unity3d.com
 .ads-gdl.imovideo.ru
 .ads-image.production-public.tubi.io
+.ads-img-al.xhscdn.com
 .ads-interfaces.sc-cdn.net
 .ads-leaseweb.appsgeyser.com
 .ads-media.gameforge.com
@@ -7213,7 +7214,10 @@ URL-REGEX,/\d+/sign_d
 .apk02061oo.xyz
 .apk02070oo.xyz
 .aplobv.xexymix.com
+.apm-fe.xiaohongshu.com
 .apm-log-upload-os.hoyoverse.com
+.apm-native.xiaohongshu.com
+.apm-track.xiaohongshu.com
 .apm.relationshipone.com
 .apm.tnet.nl
 .apm.yahoo.co.jp
@@ -16447,6 +16451,7 @@ URL-REGEX,/\d+/sign_d
 .d20903hof2l33q.cloudfront.net
 .d20kffh39acpue.cloudfront.net
 .d20nuqz94uw3np.cloudfront.net
+.d20vwa69zln1wj.cloudfront.net
 .d219kvfj8xp5vh.cloudfront.net
 .d21o24qxwf7uku.cloudfront.net
 .d21rpkgy8pahcu.cloudfront.net
@@ -22988,6 +22993,8 @@ URL-REGEX,/\d+/sign_d
 .edinmaw.top
 .edioca.com
 .edipsumw.top
+.edith-seb.xiaohongshu.com
+.edith.xiaohongshu.com
 .edition25.com
 .editiontowritin.org
 .ediuschina.com
@@ -23021,6 +23028,7 @@ URL-REGEX,/\d+/sign_d
 .educontinua.javeriana.edu.co
 .educontinua.unisabana.edu.co
 .educrated.com
+.edukicationandasm.com
 .eduynp.fcl-hid.com
 .edvaor.estro.ua
 .edvfwlacluo.com
@@ -24730,6 +24738,7 @@ URL-REGEX,/\d+/sign_d
 .eurotax-sk.autovistagroup.com
 .eurotaxsrbija-si.autovistagroup.com
 .eusdbk.philosophyofficial.com
+.eutecnimzptot.space
 .euuniu.htb-energy.co.jp
 .euvhrz.naturestore.co.kr
 .euvshmpgabfk.com
@@ -25743,6 +25752,7 @@ URL-REGEX,/\d+/sign_d
 .femetrics.grammarly.io
 .femetrics.qagr.io
 .feminine-branch.pro
+.femininequarter.com
 .fenaglesummula.com
 .fengkongcloud.com
 .fenixm.com
@@ -26107,6 +26117,7 @@ URL-REGEX,/\d+/sign_d
 .flarby.com
 .flash.cn
 .flash.sec.intl.miui.com
+.flash.xiaohongshu.com
 .flashb.id
 .flashnetic.com
 .flashplayerfeedback.adobe.com
@@ -30411,6 +30422,7 @@ URL-REGEX,/\d+/sign_d
 .guxidrookr.com
 .guyuqx.vinorama.at
 .gvagns.obelee.com
+.gvdjmcztiqwhw.website
 .gvdmkf.major-expert.ru
 .gvdqzy.milanoo.com
 .gvemhzxalv.com
@@ -35296,6 +35308,7 @@ URL-REGEX,/\d+/sign_d
 .jauntyit.com
 .jaup0lake.com
 .jauql.top
+.jausheewhocoary.net
 .jautauhoch.com
 .jauwaust.com
 .javascriptcdnlive.com
@@ -39101,6 +39114,7 @@ URL-REGEX,/\d+/sign_d
 .lltmch.zurifurniture.com
 .lltrck.com
 .lltynlnoui.com
+.llvlzvroqokmj.top
 .llvvfz.mariapiacasa.com.br
 .llwoyl.mirraw.com
 .llykjmzkqvvqy.top
@@ -55458,6 +55472,7 @@ URL-REGEX,/\d+/sign_d
 .qmgwny.autobarn.com.au
 .qmgzkb.dedoles.sk
 .qmiiln.tower.jp
+.qmjrlbwnlmram.com
 .qmlrmarmalebo.top
 .qmlzcm.petshop.ru
 .qmogjaezcv.club
@@ -62941,6 +62956,7 @@ URL-REGEX,/\d+/sign_d
 .sparrow.uitvaartzorg-vanraemdonck.be
 .sparrow.workingincontent.com
 .sparrowaboveaveragedefence.com
+.spartollage.top
 .spc.personalcreations.com
 .spcode.baidu.com
 .spdate.com
@@ -67628,6 +67644,7 @@ URL-REGEX,/\d+/sign_d
 .stream.datago.ru
 .stream.kolorowey.com
 .stream.spongead.com
+.stream27.com
 .streamback.ff.avast.com
 .streamhg05032026.shop
 .streampsh.top
@@ -83934,6 +83951,7 @@ static.estebull.com
 static.g.iqiyi.com
 static.g.ppstream.com
 static.g.pptv.com
+static.javcdn.vip
 static.jebe.renren.com
 static.m.sjzhushou.com
 static.mibi.xiaomi.com

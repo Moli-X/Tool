@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 834
+# 规则统计: 838
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 825
-#Update content: remove Google Analytics, its reasonable.
-#Update time: 2025-06-12 17:20:33 UTC+8
+#Total lines: 829
+#Update content: block netese analytics、ifly logs、meituan analytics.
+#Update time: 2025-06-18 13:13:16 UTC+8
 #Version: 1.6.6-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -298,6 +298,7 @@
 .cws-cctv.conviva.com,Ads_AWAvenue
 .d.applovin.com,Ads_AWAvenue
 .d.applvn.com,Ads_AWAvenue
+.data-sdk-uuid-log.d.meituan.net,Ads_AWAvenue
 .data.ads.oppomobile.com,Ads_AWAvenue
 .data.chsmarttv.com,Ads_AWAvenue
 .data.mistat.india.xiaomi.com,Ads_AWAvenue
@@ -371,6 +372,7 @@
 .gvideo.qpic.cn,Ads_AWAvenue
 .h-adashx.ut.taobao.com,Ads_AWAvenue
 .h.trace.qq.com,Ads_AWAvenue
+.h5.analytics.126.net,Ads_AWAvenue
 .h5.hpplay.com.cn,Ads_AWAvenue
 .hanlanad.com,Ads_AWAvenue
 .hc-ssp.sm.cn,Ads_AWAvenue
@@ -473,6 +475,7 @@
 .log.avlyun.sec.intl.miui.com,Ads_AWAvenue
 .log.byteoversea.com,Ads_AWAvenue
 .log.fc.yahoo.com,Ads_AWAvenue
+.log.iflytek.com,Ads_AWAvenue
 .log.kuwo.cn,Ads_AWAvenue
 .log.pinterest.com,Ads_AWAvenue
 .log.popin.cc,Ads_AWAvenue
@@ -657,6 +660,7 @@
 .securemetrics.apple.com,Ads_AWAvenue
 .securepubads.g.doubleclick.net,Ads_AWAvenue
 .sensors-log.dongqiudi.com,Ads_AWAvenue
+.sentry.music.163.com,Ads_AWAvenue
 .service.changhong.upgrade2.huan.tv,Ads_AWAvenue
 .service.vmos.cn,Ads_AWAvenue
 .sf16-static.i18n-pglstatp.com,Ads_AWAvenue

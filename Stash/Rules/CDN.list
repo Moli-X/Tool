@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3704
+# 规则统计: 3708
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -74,9 +74,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-05-13T12:57:52.667Z
-# Last Updated: 2025-06-16T02:35:40.319Z
+# Last Updated: 2025-06-18T07:47:39.180Z
 # License: AGPL 3.0
-# Size: 3623
+# Size: 3627
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -989,6 +989,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .tile.openstreetmap.de
 .tile.openstreetmap.org
 .tile.osm.org
+.tiles-api.maps.komoot.net
 .tindiemedia.com
 .tiqcdn.com
 .tkcdns.com
@@ -1778,6 +1779,7 @@ cdn.search.brave.com
 cdn.sedo.com
 cdn.segment.com
 cdn.seondf.com
+cdn.seonintelligence.com
 cdn.setapp.com
 cdn.sheetjs.com
 cdn.shopify.com
@@ -2199,6 +2201,7 @@ files.mastodon.social
 files.namecheap.com
 files.readme.io
 files.reg.ru
+files.scamadviser.com
 files.slack.com
 files.smashing.media
 files.svc.ui.com
@@ -3543,6 +3546,7 @@ top1cdn.top1health.com
 topbar-static.piano.io
 torrindex.net
 touchgal-image.moyu.moe
+tourpic-vector.maps.komoot.net
 townsquare.media
 tracking.inflection.io
 truth.bahamut.com.tw
