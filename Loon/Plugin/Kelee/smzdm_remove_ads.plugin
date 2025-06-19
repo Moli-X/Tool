@@ -1,6 +1,6 @@
 # 原链接 : https://kelee.one/Tool/Loon/Plugin/smzdm_remove_ads.plugin
 #!name=什么值得买去广告
-#!desc=移除开屏广告、信息流广告、各类横幅广告、搜索页广告，精简我的页面。
+#!desc=移除开屏广告、信息流广告、各类横幅广告、搜索页广告，移除活动皮肤，精简我的页面。
 #App链接=https://apps.apple.com/app/id518213356
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/smzdm_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/smzdm.png
-#!date=2025-06-14 03:41:00
+#!date=2025-06-19 10:50:43
 
 [Rule]
 DOMAIN, adx-api.zdmimg.com, REJECT
@@ -28,6 +28,8 @@ DOMAIN, adx-api.zdmimg.com, REJECT
 ^https:\/\/app-api\.smzdm\.com\/mychannel\/list$ reject-dict
 
 ^https:\/\/h5\.smzdm\.com\/user\/coupon\/coupon_list\? reject
+
+^https:\/\/haojia-api\.smzdm\.com\/home\/list\? response-body-json-del data.header_operation.theme
 
 ^https:\/\/haojia-api\.smzdm\.com\/home\/list\? response-body-json-jq '.data.rows |= map(select(.cell_type == "39001")) | .data.banner_v2 |= map(select(.cell_type == "21028"))'
 
