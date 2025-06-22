@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3719
+# 规则统计: 3721
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-06-21T07:43:06.770Z
-# Last Updated: 2025-06-21T07:43:07.901Z
+# Last Updated: 2025-06-21T17:24:34.102Z
 # License: AGPL 3.0
-# Size: 3636
+# Size: 3638
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -569,7 +569,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .ipfs.genenetwork.org,CDN
 .ipfs.greyh.at,CDN
 .ipfs.infura.io,CDN
-.ipfs.ink,CDN
 .ipfs.io,CDN
 .ipfs.jbb.one,CDN
 .ipfs.kaleido.art,CDN
@@ -1062,6 +1061,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .w3s.link,CDN
 .walmartimages.com,CDN
 .warnermediacdn.com,CDN
+.watchlycdn.com,CDN
 .wdfiles.com,CDN
 .web.app,CDN
 .webp.se,CDN
@@ -2031,6 +2031,7 @@ consent.dw.com,CDN
 consentdeliveryfd.azurefd.net,CDN
 consumersite-assets.trustpilot.net,CDN
 consumersiteimages.trustpilot.net,CDN
+content-a.strava.com,CDN
 content-cdn.y2mate.com,CDN
 content-management-files.canva.com,CDN
 content-prod-live.cert.starbucks.com,CDN
@@ -3464,6 +3465,7 @@ static8.lottiefiles.com,CDN
 static9.lottiefiles.com,CDN
 staticctf.ubisoft.com,CDN
 staticintl.cloudcachetci.com,CDN
+staticm.fastcomments.com,CDN
 statics-marketingsites-eas-ms-com.akamaized.net,CDN
 statics.erothots.co,CDN
 statics.goorm.io,CDN

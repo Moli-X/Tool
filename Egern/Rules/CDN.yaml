@@ -73,9 +73,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-06-21T07:43:06.770Z
-# Last Updated: 2025-06-21T07:43:07.901Z
+# Last Updated: 2025-06-21T17:24:34.102Z
 # License: AGPL 3.0
-# Size: 3636
+# Size: 3638
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -566,7 +566,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .ipfs.genenetwork.org
 .ipfs.greyh.at
 .ipfs.infura.io
-.ipfs.ink
 .ipfs.io
 .ipfs.jbb.one
 .ipfs.kaleido.art
@@ -1059,6 +1058,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .w3s.link
 .walmartimages.com
 .warnermediacdn.com
+.watchlycdn.com
 .wdfiles.com
 .web.app
 .webp.se
@@ -2028,6 +2028,7 @@ consent.dw.com
 consentdeliveryfd.azurefd.net
 consumersite-assets.trustpilot.net
 consumersiteimages.trustpilot.net
+content-a.strava.com
 content-cdn.y2mate.com
 content-management-files.canva.com
 content-prod-live.cert.starbucks.com
@@ -3461,6 +3462,7 @@ static8.lottiefiles.com
 static9.lottiefiles.com
 staticctf.ubisoft.com
 staticintl.cloudcachetci.com
+staticm.fastcomments.com
 statics-marketingsites-eas-ms-com.akamaized.net
 statics.erothots.co
 statics.goorm.io
