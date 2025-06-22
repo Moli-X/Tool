@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3719
+# 规则统计: 3731
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -74,9 +74,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-06-21T07:43:06.770Z
-# Last Updated: 2025-06-21T17:24:34.102Z
+# Last Updated: 2025-06-22T09:13:39.369Z
 # License: AGPL 3.0
-# Size: 3638
+# Size: 3650
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -309,6 +309,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .customerioforms.com
 .customeriomail.com
 .cwwcdn.com
+.dam-cdn.atl.orangelogic.com
 .data.debugbear.com
 .dataplane.rudderstack.com
 .datocms-assets.com
@@ -608,6 +609,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .jpg5.su
 .jpgjingpinx.com
 .js-eu1.hubspot.com
+.js.hs-banner.com
 .js.hubspot.com
 .js.hubspotfeedback.com
 .js.org
@@ -1158,6 +1160,7 @@ answers-afd.microsoft.com
 api-esp-ap.piano.io
 api-eu.mixpanel.com
 api-frameworks.vercel.sh
+api-lytics.macpaw.com
 api.allorigins.win
 api.bintray.com
 api.crashguard.me
@@ -1500,6 +1503,7 @@ cdn-media-1.freecodecamp.org
 cdn-media-2.freecodecamp.org
 cdn-mobile.aptoide.com
 cdn-node.diskpart.com
+cdn-public-apis.moonlock.com
 cdn-public.sociabble.com
 cdn-raw.modrinth.com
 cdn-rdstaticassets.readdle.com
@@ -1784,11 +1788,13 @@ cdn.sedo.com
 cdn.segment.com
 cdn.seondf.com
 cdn.seonintelligence.com
+cdn.servicebell.com
 cdn.setapp.com
 cdn.sheetjs.com
 cdn.shopify.com
 cdn.shoppinggives.com
 cdn.simpleicons.org
+cdn.sitesearch360.com
 cdn.sketch.com
 cdn.skymavis.com
 cdn.smooch.io
@@ -1820,6 +1826,7 @@ cdn.transcend.io
 cdn.transifex.com
 cdn.travis-ci.com
 cdn.travis-ci.org
+cdn.tronscan.org
 cdn.trustedsite.com
 cdn.trustpilot.net
 cdn.ttgtmedia.com
@@ -1993,6 +2000,7 @@ cloudflare.tv
 cloudfront.barilliance.com
 cloudfront.codeproject.com
 cloudinary-res.cloudinary.com
+cmd-cdn.cleanmymac.com
 cmp-cdn.p.aws.economist.com
 cms-assets.nodecraft.com
 cms-assets.webediamovies.pro
@@ -2087,6 +2095,7 @@ decart-oasis.azureedge.net
 demo.unified-streaming.com
 demotiles.maplibre.org
 denali-static.grammarly.com
+design-assets.hubspot.com
 design-system.yext.com
 design.mayoclinic.org
 designsystem.brevo.com
@@ -2870,6 +2879,8 @@ pcdn-my.pcloud.com
 pcdn-www.pcloud.com
 pcz.javidol.org
 pengtu.cc
+perf-na1.hsforms.com
+perf.hsforms.com
 pg2dhpc3p5ec22g3.jkforum.net
 pgw.udn.com.tw
 phishing.army
@@ -3339,6 +3350,7 @@ static.launchdarkly.com
 static.licdn.com
 static.linear.app
 static.lingq.com
+static.macupdate.com
 static.maxmind.com
 static.mediafire.com
 static.meiguo.com

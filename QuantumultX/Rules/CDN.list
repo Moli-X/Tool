@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3721
+# 规则统计: 3733
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-06-21T07:43:06.770Z
-# Last Updated: 2025-06-21T17:24:34.102Z
+# Last Updated: 2025-06-22T09:13:39.369Z
 # License: AGPL 3.0
-# Size: 3638
+# Size: 3650
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -311,6 +311,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .customerioforms.com,CDN
 .customeriomail.com,CDN
 .cwwcdn.com,CDN
+.dam-cdn.atl.orangelogic.com,CDN
 .data.debugbear.com,CDN
 .dataplane.rudderstack.com,CDN
 .datocms-assets.com,CDN
@@ -610,6 +611,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .jpg5.su,CDN
 .jpgjingpinx.com,CDN
 .js-eu1.hubspot.com,CDN
+.js.hs-banner.com,CDN
 .js.hubspot.com,CDN
 .js.hubspotfeedback.com,CDN
 .js.org,CDN
@@ -1160,6 +1162,7 @@ answers-afd.microsoft.com,CDN
 api-esp-ap.piano.io,CDN
 api-eu.mixpanel.com,CDN
 api-frameworks.vercel.sh,CDN
+api-lytics.macpaw.com,CDN
 api.allorigins.win,CDN
 api.bintray.com,CDN
 api.crashguard.me,CDN
@@ -1502,6 +1505,7 @@ cdn-media-1.freecodecamp.org,CDN
 cdn-media-2.freecodecamp.org,CDN
 cdn-mobile.aptoide.com,CDN
 cdn-node.diskpart.com,CDN
+cdn-public-apis.moonlock.com,CDN
 cdn-public.sociabble.com,CDN
 cdn-raw.modrinth.com,CDN
 cdn-rdstaticassets.readdle.com,CDN
@@ -1786,11 +1790,13 @@ cdn.sedo.com,CDN
 cdn.segment.com,CDN
 cdn.seondf.com,CDN
 cdn.seonintelligence.com,CDN
+cdn.servicebell.com,CDN
 cdn.setapp.com,CDN
 cdn.sheetjs.com,CDN
 cdn.shopify.com,CDN
 cdn.shoppinggives.com,CDN
 cdn.simpleicons.org,CDN
+cdn.sitesearch360.com,CDN
 cdn.sketch.com,CDN
 cdn.skymavis.com,CDN
 cdn.smooch.io,CDN
@@ -1822,6 +1828,7 @@ cdn.transcend.io,CDN
 cdn.transifex.com,CDN
 cdn.travis-ci.com,CDN
 cdn.travis-ci.org,CDN
+cdn.tronscan.org,CDN
 cdn.trustedsite.com,CDN
 cdn.trustpilot.net,CDN
 cdn.ttgtmedia.com,CDN
@@ -1995,6 +2002,7 @@ cloudflare.tv,CDN
 cloudfront.barilliance.com,CDN
 cloudfront.codeproject.com,CDN
 cloudinary-res.cloudinary.com,CDN
+cmd-cdn.cleanmymac.com,CDN
 cmp-cdn.p.aws.economist.com,CDN
 cms-assets.nodecraft.com,CDN
 cms-assets.webediamovies.pro,CDN
@@ -2089,6 +2097,7 @@ decart-oasis.azureedge.net,CDN
 demo.unified-streaming.com,CDN
 demotiles.maplibre.org,CDN
 denali-static.grammarly.com,CDN
+design-assets.hubspot.com,CDN
 design-system.yext.com,CDN
 design.mayoclinic.org,CDN
 designsystem.brevo.com,CDN
@@ -2872,6 +2881,8 @@ pcdn-my.pcloud.com,CDN
 pcdn-www.pcloud.com,CDN
 pcz.javidol.org,CDN
 pengtu.cc,CDN
+perf-na1.hsforms.com,CDN
+perf.hsforms.com,CDN
 pg2dhpc3p5ec22g3.jkforum.net,CDN
 pgw.udn.com.tw,CDN
 phishing.army,CDN
@@ -3341,6 +3352,7 @@ static.launchdarkly.com,CDN
 static.licdn.com,CDN
 static.linear.app,CDN
 static.lingq.com,CDN
+static.macupdate.com,CDN
 static.maxmind.com,CDN
 static.mediafire.com,CDN
 static.meiguo.com,CDN
