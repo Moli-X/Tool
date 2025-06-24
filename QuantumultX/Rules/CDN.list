@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3733
+# 规则统计: 3745
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -75,10 +75,10 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-06-21T07:43:06.770Z
-# Last Updated: 2025-06-22T09:13:39.369Z
+# Last Updated: 2025-06-23T15:23:00.146Z
+# Last Updated: 2025-06-23T16:57:32.501Z
 # License: AGPL 3.0
-# Size: 3650
+# Size: 3662
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -176,6 +176,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .bitgetimg.com,CDN
 .blackbaudcdn.net,CDN
 .bleepstatic.com,CDN
+.blink-script.com,CDN
 .blobcdn.com,CDN
 .blogblog.com,CDN
 .bmp.ovh,CDN
@@ -413,6 +414,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .flaglog.com,CDN
 .flagpedia.net,CDN
 .flk-ipfs.xyz,CDN
+.fmcdn.net,CDN
 .fncstatic.com,CDN
 .fontawesome.com,CDN
 .fonts.com,CDN
@@ -1472,6 +1474,7 @@ cache-05.filehippo.net,CDN
 cache.armorgames.com,CDN
 cache.hackedfreegames.com,CDN
 cache.omnicalculator.com,CDN
+cached.rebuyengine.com,CDN
 canny-assets.io,CDN
 cassette.sphdigital.com.sg,CDN
 cc-embed.adobe.com,CDN
@@ -1514,6 +1517,7 @@ cdn-service.jp.sumologic.com,CDN
 cdn-share-sprites.flaticon.com,CDN
 cdn-static-1.medium.com,CDN
 cdn-static.talent.com,CDN
+cdn-swell-assets.yotpo.com,CDN
 cdn-thumbs.imagevenue.com,CDN
 cdn-uicons.flaticon.com,CDN
 cdn-web.fydeos.io,CDN
@@ -1640,6 +1644,7 @@ cdn.gamemonkey.org,CDN
 cdn.gatherings.franchise.minecraft-services.net,CDN
 cdn.gdl.gg,CDN
 cdn.geekzone.co.nz,CDN
+cdn.gethypervisual.com,CDN
 cdn.getkoala.com,CDN
 cdn.gettr.com,CDN
 cdn.ghostery.com,CDN
@@ -1767,6 +1772,7 @@ cdn.quickemailverification.com,CDN
 cdn.rauno.me,CDN
 cdn.readme.io,CDN
 cdn.ready-market.com.tw,CDN
+cdn.rebuyengine.com,CDN
 cdn.recovermycart.com,CDN
 cdn.redhat.com,CDN
 cdn.redoc.ly,CDN
@@ -1796,6 +1802,7 @@ cdn.sheetjs.com,CDN
 cdn.shopify.com,CDN
 cdn.shoppinggives.com,CDN
 cdn.simpleicons.org,CDN
+cdn.simplelocalize.io,CDN
 cdn.sitesearch360.com,CDN
 cdn.sketch.com,CDN
 cdn.skymavis.com,CDN
@@ -2285,6 +2292,7 @@ gtranslate.io,CDN
 hawk.tomsguide.com,CDN
 headway-widget.net,CDN
 heatmap-external-a.strava.com,CDN
+hello.zonos.com,CDN
 hentaiworldtv.b-cdn.net,CDN
 heroicons.com,CDN
 hhhhhhome86227170.wordpress.com,CDN
@@ -3070,6 +3078,7 @@ s3.coinmarketcap.com,CDN
 s3.cointelegraph.com,CDN
 s3.documentcloud.org,CDN
 s3.doujin.sh,CDN
+s3.duellinksmeta.com,CDN
 s3.dzeninfra.ru,CDN
 s3.envato.com,CDN
 s3.eu-central-003.backblazeb2.com,CDN
@@ -3120,6 +3129,7 @@ scripts.webeo.com,CDN
 sdata.ndtv.com,CDN
 sdk.customfit.ai,CDN
 sdk.listenlive.co,CDN
+sdk.loyaltylion.net,CDN
 sdk.qikify.com,CDN
 sdk.snapkit.com,CDN
 sdk.split.io,CDN
@@ -3501,6 +3511,7 @@ storage.gra.cloud.ovh.net,CDN
 storage.ko-fi.com,CDN
 storage.moegirl.tw,CDN
 storage.sciencecast.org,CDN
+storage.windiscover.com,CDN
 storage.withfabric.xyz,CDN
 storageapi.fleek.co,CDN
 storageapi.fleek.one,CDN
@@ -3701,6 +3712,7 @@ widget.user.com,CDN
 widget.usersnap.com,CDN
 widget.uservoice.com,CDN
 widgets-red.media.weather.com,CDN
+widgets.automizely.com,CDN
 widgets.coaches.gnc.com,CDN
 widgets.flickr.com,CDN
 widgets.listenlive.co,CDN
