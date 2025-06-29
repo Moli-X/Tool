@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Remove_ads_by_keli.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/KeLee.png
-#!date=2025-05-13 15:17:08
+#!date=2025-06-29 18:20:40
 
 [Rule]
 DOMAIN, acdn.adnxs.com, REJECT
@@ -53,8 +53,6 @@ DOMAIN, open-pixon.ads-pixiv.net, REJECT
 
 ^http:\/\/mercury-gateway\.ixiaochuan\.cn\/mercury\/v1\/ad\/ reject
 
-^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner) reject-dict
-
 ^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start reject-200
 ^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\/ reject-200
 ^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen reject-200
@@ -74,6 +72,8 @@ DOMAIN, open-pixon.ads-pixiv.net, REJECT
 ^https:\/\/apiwz\.midukanshu\.com\/advert\/getPopup$ reject
 ^https:\/\/apiwz\.midukanshu\.com\/advert\/treasureInfo$ reject
 ^https:\/\/apiwz\.midukanshu\.com\/config\/getAds$ reject
+
+^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/myTab\? response-body-json-del data.banners
 
 ^http:\/\/img\.dailmo\.com\/img\/61\/23c7125bfe6166d69f3bff5b0ca4d31e\.jpg reject
 ^http:\/\/img\.dailmo\.com\/img\/50\/edb40c6392f848df37f9c31d8a6f90f6\.jpg reject

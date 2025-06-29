@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Weibo_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weibo.png
-#!date=2025-05-15 22:51:24
+#!date=2025-06-26 18:00:24
 
 [Rule]
 DOMAIN-SUFFIX, uve.weibo.com, DIRECT
@@ -18,7 +18,7 @@ DOMAIN, huodong.weibo.cn, REJECT
 DOMAIN-SUFFIX, biz.weibo.com, REJECT
 
 [Rewrite]
-^https:\/\/api\.weibo\.cn\/2\/(?:ug\/checkin\/list|push\/daily) reject-dict
+^https:\/\/api\.weibo\.cn\/2\/(?:ug\/checkin\/list|push\/daily|push\/info) reject-dict
 ^https:\/\/api\.weibo\.cn\/2\/!\/live\/media_homelist\? reject-dict
 
 ^https:\/\/api\.weibo\.cn\/2\/comments\/bullet_screens\? reject-dict
