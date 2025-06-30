@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3747
+# 规则统计: 3761
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-06-23T15:23:00.146Z
-# Last Updated: 2025-06-24T14:03:50.782Z
+# Last Updated: 2025-06-30T13:01:59.968Z
 # License: AGPL 3.0
-# Size: 3664
+# Size: 3678
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -88,6 +88,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .1passwordusercontent.ca
 .1passwordusercontent.com
 .1passwordusercontent.eu
+.2img.net
 .2mdn.net
 .4cdn.org
 .4everland.io
@@ -513,6 +514,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .ignimgs.com
 .iili.io
 .ik.imagekit.io
+.illiweb.com
 .image8899.net
 .imagebam.com
 .imageban.ru
@@ -854,6 +856,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .readthedocs.io
 .reasoningtheory.net
 .recharts.org
+.redcdn.net
 .redd.it
 .redditmedia.com
 .redditstatic.com
@@ -1129,6 +1132,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 0x0.st
 3dna.nationbuilder.com
 4gtvimg2.4gtv.tv
+a-cdn.anthropic.com
 a.deviantart.net
 a.fireside.fm
 a.gawby.com
@@ -1233,6 +1237,7 @@ assets-v2.super.so
 assets-www.xbox.com
 assets.aboutamazon.com
 assets.adobedtm.com
+assets.airbuddy.app
 assets.apilayer.com
 assets.apnews.com
 assets.atlasobscura.com
@@ -1400,6 +1405,7 @@ at.cbsi.com
 attach.mobile01.com
 attach2.mobile01.com
 attachments.office.net
+audio.rfa.org
 aurora-customization-usw2.lithium.com
 auth.split.io
 avatar.freepik.com
@@ -1427,6 +1433,7 @@ badges.greenkeeper.io
 bcdn.starapps.studio
 bcmedia.bitchute.com
 before.good-apps.co
+bhl.scpwikicn.com
 blacklist.tampermonkey.net
 blade-public-static.blade-group.com
 blob.sololearn.com
@@ -1791,6 +1798,7 @@ cdn.sc.gl
 cdn.scaleflex.it
 cdn.schemaapp.com
 cdn.sciencecast.org
+cdn.scpwiki.com
 cdn.scripts.wtwhmedia.com
 cdn.search.brave.com
 cdn.sedo.com
@@ -2288,6 +2296,7 @@ google-ohttp-relay-safebrowsing.fastly-edge.com
 graph.facebook.com
 gravatar.cat.net
 gstatic.com
+gstatic.olympics.com
 gt1.onlyhentaistuff.com
 gtranslate.io
 hawk.tomsguide.com
@@ -2335,6 +2344,7 @@ i.nhentai.net
 i.niupic.com
 i.pcmag.com
 i.rtings.com
+i.servimg.com
 i.snap.as
 i.vgy.me
 i.xgroovy.com
@@ -2537,6 +2547,7 @@ img.moedog.org
 img.moegirl.tw
 img.moviefap.com
 img.mresou.com
+img.olympics.com
 img.openshop.com.hk
 img.pawoo.net
 img.perfops.net
@@ -2609,6 +2620,8 @@ int.mwbbiz.com
 integrations.gitbook.com
 interactive-examples.mdn.mozilla.net
 interactive.guim.co.uk
+interwiki.scpwiki.com
+interwiki.scpwikicn.com
 ip-ranges.amazonaws.com
 ipfs.d.tube
 irp-cdn.multiscreensite.com
@@ -3435,6 +3448,7 @@ static.telegraph.co.uk
 static.tenki.jp
 static.test-beta.com
 static.theguardian.com
+static.themebuilder.aws.arc.pub
 static.threatlocker.com
 static.toiimg.com
 static.tokenview.io

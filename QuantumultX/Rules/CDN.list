@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3747
+# 规则统计: 3761
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-06-23T15:23:00.146Z
-# Last Updated: 2025-06-24T14:03:50.782Z
+# Last Updated: 2025-06-30T13:01:59.968Z
 # License: AGPL 3.0
-# Size: 3664
+# Size: 3678
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -88,6 +88,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .1passwordusercontent.ca,CDN
 .1passwordusercontent.com,CDN
 .1passwordusercontent.eu,CDN
+.2img.net,CDN
 .2mdn.net,CDN
 .4cdn.org,CDN
 .4everland.io,CDN
@@ -513,6 +514,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .ignimgs.com,CDN
 .iili.io,CDN
 .ik.imagekit.io,CDN
+.illiweb.com,CDN
 .image8899.net,CDN
 .imagebam.com,CDN
 .imageban.ru,CDN
@@ -854,6 +856,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .readthedocs.io,CDN
 .reasoningtheory.net,CDN
 .recharts.org,CDN
+.redcdn.net,CDN
 .redd.it,CDN
 .redditmedia.com,CDN
 .redditstatic.com,CDN
@@ -1129,6 +1132,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 0x0.st,CDN
 3dna.nationbuilder.com,CDN
 4gtvimg2.4gtv.tv,CDN
+a-cdn.anthropic.com,CDN
 a.deviantart.net,CDN
 a.fireside.fm,CDN
 a.gawby.com,CDN
@@ -1233,6 +1237,7 @@ assets-v2.super.so,CDN
 assets-www.xbox.com,CDN
 assets.aboutamazon.com,CDN
 assets.adobedtm.com,CDN
+assets.airbuddy.app,CDN
 assets.apilayer.com,CDN
 assets.apnews.com,CDN
 assets.atlasobscura.com,CDN
@@ -1400,6 +1405,7 @@ at.cbsi.com,CDN
 attach.mobile01.com,CDN
 attach2.mobile01.com,CDN
 attachments.office.net,CDN
+audio.rfa.org,CDN
 aurora-customization-usw2.lithium.com,CDN
 auth.split.io,CDN
 avatar.freepik.com,CDN
@@ -1427,6 +1433,7 @@ badges.greenkeeper.io,CDN
 bcdn.starapps.studio,CDN
 bcmedia.bitchute.com,CDN
 before.good-apps.co,CDN
+bhl.scpwikicn.com,CDN
 blacklist.tampermonkey.net,CDN
 blade-public-static.blade-group.com,CDN
 blob.sololearn.com,CDN
@@ -1791,6 +1798,7 @@ cdn.sc.gl,CDN
 cdn.scaleflex.it,CDN
 cdn.schemaapp.com,CDN
 cdn.sciencecast.org,CDN
+cdn.scpwiki.com,CDN
 cdn.scripts.wtwhmedia.com,CDN
 cdn.search.brave.com,CDN
 cdn.sedo.com,CDN
@@ -2288,6 +2296,7 @@ google-ohttp-relay-safebrowsing.fastly-edge.com,CDN
 graph.facebook.com,CDN
 gravatar.cat.net,CDN
 gstatic.com,CDN
+gstatic.olympics.com,CDN
 gt1.onlyhentaistuff.com,CDN
 gtranslate.io,CDN
 hawk.tomsguide.com,CDN
@@ -2335,6 +2344,7 @@ i.nhentai.net,CDN
 i.niupic.com,CDN
 i.pcmag.com,CDN
 i.rtings.com,CDN
+i.servimg.com,CDN
 i.snap.as,CDN
 i.vgy.me,CDN
 i.xgroovy.com,CDN
@@ -2537,6 +2547,7 @@ img.moedog.org,CDN
 img.moegirl.tw,CDN
 img.moviefap.com,CDN
 img.mresou.com,CDN
+img.olympics.com,CDN
 img.openshop.com.hk,CDN
 img.pawoo.net,CDN
 img.perfops.net,CDN
@@ -2609,6 +2620,8 @@ int.mwbbiz.com,CDN
 integrations.gitbook.com,CDN
 interactive-examples.mdn.mozilla.net,CDN
 interactive.guim.co.uk,CDN
+interwiki.scpwiki.com,CDN
+interwiki.scpwikicn.com,CDN
 ip-ranges.amazonaws.com,CDN
 ipfs.d.tube,CDN
 irp-cdn.multiscreensite.com,CDN
@@ -3435,6 +3448,7 @@ static.telegraph.co.uk,CDN
 static.tenki.jp,CDN
 static.test-beta.com,CDN
 static.theguardian.com,CDN
+static.themebuilder.aws.arc.pub,CDN
 static.threatlocker.com,CDN
 static.toiimg.com,CDN
 static.tokenview.io,CDN
