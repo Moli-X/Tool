@@ -12,7 +12,7 @@ TG Channel：https://t.me/QuantX
     <th>名称</th>
   </tr>
   <tr>
-    <td rowspan="139"><strong>去广告插件</strong></td>
+    <td rowspan="141"><strong>去广告插件</strong></td>
   <tr>
     <td>001</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx">广告平台拦截器</a></td>
@@ -564,6 +564,14 @@ TG Channel：https://t.me/QuantX
   <tr>
     <td>138</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://kelee.one/Tool/Loon/Lpx/YueDanBa_remove_ads.lpx">省钱快报去广告</a></td>
+  </tr>
+  <tr>
+    <td>139</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://kelee.one/Tool/Loon/Lpx/WaCaiJiZhang_remove_ads.lpx">挖财记账去广告</a></td>
+  </tr>
+  <tr>
+    <td>140</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://kelee.one/Tool/Loon/Lpx/ZAKER_remove_ads.lpx">ZAKER去广告</a></td>
   </tr>
     <td></td>
     <td></td>
