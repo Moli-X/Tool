@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3762
+# 规则统计: 3769
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-06-23T15:23:00.146Z
-# Last Updated: 2025-06-30T15:59:41.934Z
+# Last Updated: 2025-07-01T07:13:43.912Z
 # License: AGPL 3.0
-# Size: 3679
+# Size: 3686
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -285,6 +285,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .cloudflare.ltd,CDN
 .cloudflarestream.com,CDN
 .cloudfront.net,CDN
+.cloudfront.net.in,CDN
 .cloudimg.io,CDN
 .cmail19.com,CDN
 .cmail20.com,CDN
@@ -605,6 +606,8 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .ipns.co,CDN
 .itsre-sumo.mozilla.net,CDN
 .itvstatic.com,CDN
+.javcdn.li,CDN
+.javcdn.vip,CDN
 .javplayer.me,CDN
 .javtxt.com,CDN
 .jbkcdn.com,CDN
@@ -2130,6 +2133,7 @@ dl.airdroid.com,CDN
 dlassets-ssl.xboxlive.com,CDN
 do.featurebase.app,CDN
 docs.rs,CDN
+domain.expiring-soon.xyz,CDN
 doppler-config.cbsivideo.com,CDN
 doujin-assets.dmm.co.jp,CDN
 downloads.coindesk.com,CDN
@@ -3013,6 +3017,7 @@ registry.api.cnn.io,CDN
 registry.oomol.com,CDN
 regmedia.co.uk,CDN
 renderer-assets.typeform.com,CDN
+res-etl-ssl.mypikpak.com,CDN
 res-geo.cdn.office.net,CDN
 res.abc.net.au,CDN
 res.cloudinary.com,CDN
@@ -3168,6 +3173,7 @@ services.linkfire.com,CDN
 sf-coze-web-cdn.coze.com,CDN
 sf-flow-web-cdn.ciciai.com,CDN
 sfiles.cnyes.cool,CDN
+sg-thumbnail-drive.mypikpak.com,CDN
 shell.cdn.office.net,CDN
 shopify.cleverecommerce.com,CDN
 shots.codepen.io,CDN
@@ -3389,6 +3395,7 @@ static.monei.net,CDN
 static.moomoo.com,CDN
 static.moonpay.com,CDN
 static.music.com,CDN
+static.mypikpak.com,CDN
 static.mysph.sph.com.sg,CDN
 static.mytonwallet.io,CDN
 static.na1.visioncritical.com,CDN

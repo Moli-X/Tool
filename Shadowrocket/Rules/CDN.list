@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3762
+# 规则统计: 3769
 
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-06-23T15:23:00.146Z
-# Last Updated: 2025-06-30T15:59:41.934Z
+# Last Updated: 2025-07-01T07:13:43.912Z
 # License: AGPL 3.0
-# Size: 3679
+# Size: 3686
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -285,6 +285,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .cloudflare.ltd
 .cloudflarestream.com
 .cloudfront.net
+.cloudfront.net.in
 .cloudimg.io
 .cmail19.com
 .cmail20.com
@@ -605,6 +606,8 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .ipns.co
 .itsre-sumo.mozilla.net
 .itvstatic.com
+.javcdn.li
+.javcdn.vip
 .javplayer.me
 .javtxt.com
 .jbkcdn.com
@@ -2130,6 +2133,7 @@ dl.airdroid.com
 dlassets-ssl.xboxlive.com
 do.featurebase.app
 docs.rs
+domain.expiring-soon.xyz
 doppler-config.cbsivideo.com
 doujin-assets.dmm.co.jp
 downloads.coindesk.com
@@ -3013,6 +3017,7 @@ registry.api.cnn.io
 registry.oomol.com
 regmedia.co.uk
 renderer-assets.typeform.com
+res-etl-ssl.mypikpak.com
 res-geo.cdn.office.net
 res.abc.net.au
 res.cloudinary.com
@@ -3168,6 +3173,7 @@ services.linkfire.com
 sf-coze-web-cdn.coze.com
 sf-flow-web-cdn.ciciai.com
 sfiles.cnyes.cool
+sg-thumbnail-drive.mypikpak.com
 shell.cdn.office.net
 shopify.cleverecommerce.com
 shots.codepen.io
@@ -3389,6 +3395,7 @@ static.monei.net
 static.moomoo.com
 static.moonpay.com
 static.music.com
+static.mypikpak.com
 static.mysph.sph.com.sg
 static.mytonwallet.io
 static.na1.visioncritical.com
