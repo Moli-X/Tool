@@ -1,7 +1,7 @@
 /*
 引用地址：https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/weibo.js
 */
-// 2025-05-05 19:45
+// 2025-07-03 21:20
 
 const url = $request.url;
 if (!$response) $done({});
@@ -154,7 +154,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
             if ([6, 15, 41]?.includes(item?.type)) {
               continue;
             }
-            if (["荐读", "推荐", "相关内容", "相关评论"]?.includes(item?.adType)) {
+            if (["荐读", "评论总结", "推荐", "相关内容", "相关评论"]?.includes(item?.adType)) {
               continue;
             }
             newItems.push(item);
