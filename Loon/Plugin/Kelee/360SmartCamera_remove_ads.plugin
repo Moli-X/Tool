@@ -1,0 +1,22 @@
+# 原链接 : https://kelee.one/Tool/Loon/Plugin/360SmartCamera_remove_ads.plugin
+#!name=360摄像机去广告
+#!desc=移除开屏广告、首页推广、底栏商城入口及我的页面推广。
+#App链接=https://apps.apple.com/app/id958068931
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
+#!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/360SmartCamera_remove_ads.plugin
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/360SmartCamera.png
+#!date=2025-05-13 15:17:08
+
+[Rule]
+DOMAIN, ad.jia.360.cn, REJECT
+DOMAIN, ad.iot.360.cn, REJECT
+
+[Rewrite]
+^https:\/\/jia\.360\.cn\/conf\/v1\.json response-body-json-del tab_conf ad_conf activity
+ 
+[MitM]
+hostname=jia.360.cn

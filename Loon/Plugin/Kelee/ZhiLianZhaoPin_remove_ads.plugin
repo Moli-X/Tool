@@ -1,0 +1,25 @@
+# 原链接 : https://kelee.one/Tool/Loon/Plugin/ZhiLianZhaoPin_remove_ads.plugin
+#!name=智联招聘去广告
+#!desc=移除开屏广告、弹窗、职位页面推广和各类横幅推广。需要IPA签名注入方可使用，App Store用户请勿使用此插件，务必点击下方主页链接查看详细教程。
+#App链接=https://apps.apple.com/app/id488033535
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
+#!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/ZhiLianZhaoPin_remove_ads.plugin
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ZhiLianZhaoPin.png
+#!date=2025-05-13 15:17:08
+
+[Rule]
+URL-REGEX, "^https:\/\/(ask|cgate)\.zhaopin\.com\/operation\/ad\/", REJECT
+
+[Rewrite]
+^https:\/\/ask\.zhaopin\.com\/plat-zqa-server\/home\/\d\.\d\.\d\/getHomeContents\? response-body-json-del data.templates[0].data.banner
+
+^https:\/\/cgate\.zhaopin\.com\/resumeapi\/resumeCheck\/positionDetailBottomTipCheck$ reject-dict
+
+^https:\/\/cgate\.zhaopin\.com\/bdp\/commercial\/queryLinkData$ reject
+
+[MitM]
+hostname=ask.zhaopin.com, cgate.zhaopin.com
