@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/JiaKaoBaoDian_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/JiaKaoBaoDian_remove_ads.lpx
 #!name=驾考宝典去广告
 #!desc=移除开屏广告、横幅广告、悬浮窗广告、社区帖子广告，精简我的页面。
 #App链接=https://apps.apple.com/app/id491024740
@@ -12,16 +12,26 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
+# 广告配置
 ^https:\/\/scs\.kakamobi\.cn\/api\/open\/v3\/advert-sdk\/ reject-dict
+# 广告横幅
 ^https:\/\/cheyouquan\.kakamobi\.com\/api\/open\/group\/recommend-subscribe-tag\.htm reject-dict
+# 应用配置 - 悬浮窗
 ^https:\/\/swallow\.kakamobi\.cn\/api\/open\/config\/get-config\.htm reject-dict
+# 悬浮窗
 ^https:\/\/monkey\.kakamobi\.cn\/api\/open\/live\/get-recommend-live-protocol\.htm reject-dict
+# 新用户弹窗
 ^https:\/\/jiaxiao-awd\.kakamobi\.cn\/api\/h5\/v4\/home-lead-advertise\/abtest\.htm reject-dict
+# 买车页面弹窗
 ^https:\/\/mcbd\.maiche\.com\/api\/open\/v3\/user\/get-popup-window\.htm reject-dict
+# 我的页面 - 精选服务
 ^https:\/\/jiakao-misc\.kakamobi\.cn\/api\/open\/my-tab-config\/selection-list\.htm reject-dict
+# 我的页面 - 横幅
 ^https:\/\/jiakao-misc\.kakamobi\.cn\/api\/open\/my-tab-config\/banner-list\.htm reject-dict
 ^https:\/\/squirrel\.kakamobi\.cn\/api\/open\/recommend-goods\/get-my-page-banner\.htm reject-dict
+# 买车页面广告
 ^https:\/\/mcbd\.maiche\.com\/api\/open\/v2\/jiakao-business\/get-naben-advert\.htm reject-dict
+# 其他广告
 ^https:\/\/monkey\.kakamobi\.cn\/api\/open\/live-room\/get-resource\.htm reject-dict
 
 [MitM]

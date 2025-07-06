@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/RedPaper_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx
 #!name=小红书去广告
 #!desc=过滤信息流推广，移除图片及视频水印，如有异常，请先清除缓存再尝试。
 #App链接=https://apps.apple.com/app/id741292507
@@ -15,14 +15,18 @@
 AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
 
 [Rewrite]
+# 小红书水印
 ^https:\/\/ci\.xiaohongshu\.com\/system_config\/watermark reject-img
 
+# 惊喜弹窗
 ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/surprisebox\/(?:get_style|open|submit_action) reject-dict
 ^https:\/\/www\.xiaohongshu\.com\/api\/marketing\/box\/trigger\? reject-dict
 
+# 信息流
 ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(?:v2\/guide\/user_banner|v3\/note\/guide) reject-dict
 ^https:\/\/www\.xiaohongshu\.com\/api\/sns\/(?:v1\/ads\/resource|v2\/hey\/\w+\/hey_gallery) reject-dict
 
+# 搜索页
 ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/search\/banner_list$ response-body-json-replace data {}
 ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/search\/hot_list$ response-body-json-replace data.items []
 ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v4\/search\/hint response-body-json-replace data.hint_words []

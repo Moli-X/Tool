@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/KwaiVideoeditor_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/KwaiVideoeditor_remove_ads.lpx
 #!name=快影去广告
 #!desc=移除开屏广告、信息流推广、横幅推广，移除悬浮部件。
 #App链接=https://apps.apple.com/app/id1195860596
@@ -12,15 +12,20 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
+# 开屏广告
 ^https:\/\/api\.kmovie\.gifshow\.com\/rest\/n\/kmovie\/app\/resource\/get\? reject-dict
 
+# 剪辑 - 创意试手
 ^https:\/\/api\.kmovie\.gifshow\.com\/rest\/n\/kmovie\/app\/banner\/common\/getBannerByTypeV2\? response-body-json-jq 'del(.list[] | select(.bannerChannelName == "活动"))'
 ^https:\/\/api\.kmovie\.gifshow\.com\/rest\/n\/kmovie\/app\/banner\/common\/getAllBannerPage\? response-body-json-jq 'del(.data[] | select(.bannerChannelName == "活动"))'
 
+# 剪同款 - 横幅推广
 ^https:\/\/api\.kmovie\.gifshow\.com\/rest\/n\/kmovie\/app\/banner\/common\/getBannerByType\? reject-dict
 
+# 剪同款 - 信息流广告
 ^https:\/\/api\.kmovie\.gifshow\.com\/rest\/n\/kmovie\/app\/merchant\/ad\/ reject-dict
 
+# 悬浮部件 - 多品类模板师招募
 ^https:\/\/api\.kmovie\.gifshow\.com\/rest\/n\/kmovie\/app\/resource\/activity\/pendant\? reject-dict
 
 [MitM]

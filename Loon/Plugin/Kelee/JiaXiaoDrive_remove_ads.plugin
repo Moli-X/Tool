@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/JiaXiaoDrive_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/JiaXiaoDrive_remove_ads.lpx
 #!name=驾校一点通去广告
 #!desc=移除开屏广告、各页面广告横幅、弹窗广告，移除社区广告。
 #App链接=https://apps.apple.com/app/id620262310
@@ -12,11 +12,19 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
+# 广告配置
 ^https:\/\/richmanrules\.ksedt\.com\/serverConfig\/3\/adConfig\.json reject-dict
+# 弹窗广告
 ^https:\/\/gouche\.ksedt\.com\/config\/popup\/info$ reject-dict
+# 直播课
+# ^https:\/\/muses\.ksedt\.com\/jxedtLiving\/ reject
+# 考试 - 信息流广告、右上角免费领秘籍入口
 ^https:\/\/richmanrules\.ksedt\.com\/intellectWaterfallBidding\/find$ reject-dict
+# 考试 - 满分通关技巧直播课入口
 ^https:\/\/op\.ksedt\.com\/jxedtLive\/liveIntroduceResource reject-dict
+# 我的页面广告
 ^https:\/\/richmanrules\.ksedt\.com\/intellectWaterfall\/find$ reject-dict
+# 清理应用配置 - 首页广告result.homead / 推广页面result.h5_promotion_page / 广告间隔配置result.advert_interval / 二手车信息流result.abtest_h5url / 懂车帝信息流result.launchApp / 购车页面配置result.goucheConfig / 购车页面result.gouche / 直播页面配置result.mainLiveConfig / 发现result.discover / 广告SDK视频result.adSdkSwitch4testPointVideo / 广告SDK视频result.adSdkSwitch4simulationExam / 考试页面加载广告切换result.examPageLoadADSwitch
 http-response ^https:\/\/api\.ksedt\.com\/api\/config\/ response-body-json-del result.homead result.h5_promotion_page result.advert_interval result.abtest_h5url result.launchApp result.goucheConfig result.gouche result.mainLiveConfig result.discover result.adSdkSwitch4testPointVideo result.adSdkSwitch4simulationExam result.examPageLoadADSwitch
 
 [MitM]

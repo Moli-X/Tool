@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/SeasunJX3_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/SeasunJX3_remove_ads.lpx
 #!name=剑网三无界去广告
 #!desc=移除热门推送活动，并解决无法在Loon运行时更新和登录的问题。
 #App链接=https://apps.apple.com/app/id1002355194
@@ -15,6 +15,7 @@
 real-ip=*-update.xoyocdn.com, xg-flow.xoyo.com
 
 [Rewrite]
+# 热点推送
 ^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt reject
 
 [MitM]

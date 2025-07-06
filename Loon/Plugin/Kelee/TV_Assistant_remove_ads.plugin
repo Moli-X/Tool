@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/TV_Assistant_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/TV_Assistant_remove_ads.lpx
 #!name=乐播投屏去广告
 #!desc=移除开屏广告、首页横幅推广、全网全网热投榜，移除我的页面横幅推广。
 #App链接=https://apps.apple.com/app/id1116038378
@@ -12,13 +12,19 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
+# 首页 - 弹窗
 ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_home_pop_up reject-dict
+# 首页 - 顶部横幅推广
 ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_home_tips reject-dict
+# 首页 - 底部横幅推广
 ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_index_operate2 reject-dict
+# 首页 - 全网热投榜
 ^https:\/\/saas\.hpplay\.cn\/api\/lebo-rabbit\/app-card\/list reject-dict
+# 我的页面 - 横幅推广
 ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app-user-banner reject-dict
 
 [Script]
+# 移除底栏视频标签
 http-response ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_tab_red_dot\?user-tag=1$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/TV_Assistant_remove_ads.js, requires-body=true, tag=移除底栏视频标签
 
 [MitM]

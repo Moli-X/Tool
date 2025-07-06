@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/XiaoHeiHe_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/XiaoHeiHe_remove_ads.lpx
 #!name=小黑盒去广告
 #!desc=移除开屏广告和热点板块信息流广告
 #App链接=https://apps.apple.com/app/id1244505010
@@ -12,7 +12,9 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
+# 开屏广告
 ^https:\/\/api\.xiaoheihe\.cn\/account\/get_ads_info_v2 reject-dict
+# 移除热点板块信息流广告
 ^https:\/\/api\.xiaoheihe\.cn\/bbs\/app\/feeds\/news response-body-json-jq '.result.links |= map(if .content_type == 27 then del(.title, .ad_pm, .img_gif, .idea_id, .ad_report, .label, .source, .intranet_only, .ad_cm, .content_type, .PROTOCOL, .img, .ad_ratio) else . end)'
 
 [MitM]

@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/SafetyHome_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/SafetyHome_remove_ads.lpx
 #!name=360智慧生活去广告
 #!desc=移除开屏广告、首页推广横幅、商城入口及我的页面推广。
 #App链接=https://apps.apple.com/app/id1488904375
@@ -15,6 +15,7 @@
 DOMAIN, ad.iot.360.cn, REJECT
 
 [Rewrite]
+# 商城入口
 ^https:\/\/app\.home\.360\.cn\/v1\/config\/custom_config reject-dict
 
 [MitM]

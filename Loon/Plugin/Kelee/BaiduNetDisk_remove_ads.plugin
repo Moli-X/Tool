@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/BaiduNetDisk_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/BaiduNetDisk_remove_ads.lpx
 #!name=百度网盘去广告
 #!desc=移除开屏广告、首页卡片广告、传输页面广告、各类弹窗，精简侧拉抽屉和我的页面。
 #App链接=https://apps.apple.com/app/id547166701
@@ -12,13 +12,20 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
+# 应用配置
 ^https:\/\/pan\.baidu\.com\/api\/getconfig reject-dict
 ^https:\/\/pan\.baidu\.com\/api\/getsyscfg reject-dict
+# 签到任务配置
 ^https:\/\/pan\.baidu\.com\/api\/taskscore\/tasklist reject-dict
+# 弹窗配置
 ^https:\/\/pan\.baidu\.com\/act\/api\/activityentry reject-dict
+# 信息流广告
 ^https:\/\/pan\.baidu\.com\/act\/api\/activityentry reject-dict
+# 我的 - 游戏中心
 ^https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user\?method=gamecenter reject-dict
+# 我的页面 - 其他推广
 ^https:\/\/pan\.baidu\.com\/act\/v2\/welfare\/list reject-dict
+# 广告配置
 ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/pcs\/adv reject-dict
 
 [MitM]

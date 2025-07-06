@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/VideoGo_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/VideoGo_remove_ads.lpx
 #!name=萤石云视频去广告
 #!desc=移除开屏广告、首页推广、我的页面推广。
 #App链接=https://apps.apple.com/app/id571195405
@@ -14,12 +14,16 @@
 [Rewrite]
 ^https:\/\/api\.ys7\.com\/api\/ads reject
 ^https:\/\/i\.ys7\.com\/api\/user\/tabList reject-dict
+# 我的页面 - 轮播图推广
 ^https:\/\/api\.ys7\.com\/v3\/config\/service\/entrance\/bannerInfo reject-dict
+# 智能 - 玩法 - 精选专题
 ^https:\/\/api\.ys7\.com\/v3\/intelligent-app\/apps\/linkage reject-dict
 ^https:\/\/api\.ys7\.com\/v3\/configurations\/gray\/info\?grayTypes=185 reject-dict
+# 天气视频
 ^https:\/\/api\.ys7\.com\/v3\/videoclips\/square\/video\/query reject-dict
 
 [Script]
+# http-response ^https:\/\/api\.ys7\.com\/v3\/valueadded\/operation\/config\/master\/station script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VideoGo_remove_ads.js, requires-body=true, tag=我的页面去广告
 
 [MitM]
 hostname=api.ys7.com, i.ys7.com

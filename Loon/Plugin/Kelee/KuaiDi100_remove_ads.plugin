@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/KuaiDi100_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/KuaiDi100_remove_ads.lpx
 #!name=快递100去广告
 #!desc=移除横幅广告、弹窗广告，精简首页。
 #App链接=https://apps.apple.com/app/id458270120
@@ -12,10 +12,13 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
+# 广告配置
 ^https?:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do$ response-body-json-del adsplash adIsConsumable adProductId nologin_tips index_banner me_banner index_banner_shadow adshongbao adsapp_homepage_ticket_pop adsoptimizationsend adsapp_activity_ad_array adbanner adposition adShowAgainTime
 
+# 精简首页
 ^https?:\/\/p\.kuaidi100\.com\/apicenter\/xcx\.dox response-body-json-del data.secondMenuList
 
+# 弹窗和横幅推广
 ^https?:\/\/p\.kuaidi100\.com\/advertisement\/ reject-dict
 ^https?:\/\/p\.kuaidi100\.com\/e-commerce\/act\/actInfo\? reject-dict
 ^https?:\/\/p\.kuaidi100\.com\/apicenter\/card\.dox reject-dict

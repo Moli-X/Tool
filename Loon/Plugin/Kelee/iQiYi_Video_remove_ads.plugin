@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/iQiYi_Video_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/iQiYi_Video_remove_ads.lpx
 #!name=爱奇艺去广告
 #!desc=移除开屏广告、焦点图广告、瀑布流广告、搜索页面广告、移除青少年弹窗，精简底栏和我的页面。
 #App链接=https://apps.apple.com/app/id1190755526
@@ -12,56 +12,82 @@
 #!date=2025-05-13 15:17:08
 
 [Rule]
+# 拦截HTTPDNS
 IP-CIDR, 103.44.59.54/32, REJECT, no-resolve
 IP-CIDR, 111.63.147.158/32, REJECT, no-resolve
 IP-CIDR, 116.211.198.237/32, REJECT, no-resolve
 
+# 放行地址
 DOMAIN-SUFFIX, cupid.iqiyi.com, DIRECT
 
+# 拦截地址
 DOMAIN, api.iqiyi.com, REJECT
 DOMAIN, access.if.iqiyi.com, REJECT
 
 [Rewrite]
+# 首页 - 焦点图广告、卡片广告
 ^https:\/\/cards\.iqiyi\.com\/views_home\/3\.0\/qy_home\? response-body-json-del base.statistics
 
+# 首页 - 焦点图广告、卡片广告 // 如果 "cards[*].alias_name" 的值是 "focus" 或 "ad_mobile_flow" 或 "ad_trueview"，则删除所在的对象
 ^https:\/\/cards\.iqiyi\.com\/views_home\/3\.0\/qy_home\? response-body-json-jq 'del(.cards[] | select(.alias_name == "focus" or .alias_name == "ad_mobile_flow" or .alias_name == "ad_trueview"))'
 
+# 其他页面 - 焦点图广告、卡片广告 // 删除 "base.statistics.ad_str" 字段 // 如果 "cards[*].alias_name" 的值是 "entrence_focus" 或 "ad_trueview"，则删除所在的对象
 ^https:\/\/cards\.iqiyi\.com\/views_category\/3\.0\/category_home\? response-body-json-jq 'del(.base.statistics | select(.ad_str)) | del(.cards[] | select(.alias_name == "entrence_focus" or .alias_name == "ad_trueview"))'
 
+# 瀑布流广告 // 删除 "base.statistics.ad_str" 字段 // 如果 "cards[*].blocks[*].block_class" 存在，则删除它所在的对象
 ^https:\/\/cards\.iqiyi\.com\/waterfall(-plt)?\/3\.0\/feed\? response-body-json-jq 'del(.base.statistics | select(.ad_str)) | del(.. | select(.block_class?))'
 
+# 播放页 - 评论区活动标签入口
 ^https:\/\/cards\.iqiyi\.com\/views_plt\/3\.0\/player_tabs_v2\? response-body-json-del kv_pair.activity_tab
 
+# 播放页 - 会员推广"play_vip_promotion" 详情标签v2"play_detail_tag" 聊天室入口"play_chat_entrance" 非会员视频关联位广告"play_ad_no_vip" 竖图-精彩短视频"play_vertical_short_video" 综艺定制card-1"play_rap_custom" 混剪"play_topical_tab 竖屏内容"play_vertical" 猜你喜欢"play_water_fall_like" 卡片广告"cards[*].blocks[*].block_class"
+# 如果 "cards[*].alias_name" 的值是 "play_vip_promotion" 或 "play_detail_tag" 或 "play_chat_entrance" 或 "play_ad_no_vip" 或 "play_vertical_short_video" 或 "play_rap_custom" 或 "play_topical_tab" 或 "play_vertical"，则删除所在的对象
+# 如果 "cards[*].blocks[*].block_class" 存在，则删除它所在的对象
 ^https:\/\/cards\.iqiyi\.com\/views_plt\/3\.0\/player_tabs_v2\? response-body-json-jq 'del(.cards[] | select(.alias_name == "play_vip_promotion" or .alias_name == "play_detail_tag" or .alias_name == "play_chat_entrance" or .alias_name == "play_ad_no_vip" or .alias_name == "play_vertical_short_video" or .alias_name == "play_rap_custom" or .alias_name == "play_topical_tab" or .alias_name == "play_vertical" or .alias_name == "play_water_fall_like")) | del(.. | select(.block_class?))'
 
+# 播放页
 ^https:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments\? response-body-json-jq ''
 
+# 搜索页面广告
 ^https:\/\/cards\.iqiyi\.com\/views_search\/3\.0\/hot_query_search\? response-body-json-jq '.cards |= map(select(.alias_name as $name | $name != "ad_trueview" and $name != "ad_mobile_flow" and $name != "search_mid_text_ad")) | if .base.statistics.ad_str? then del(.base.statistics) else . end'
 
+# 左上角天气
 ^https?:\/\/iface2\.iqiyi\.com\/control\/3\.0\/init_proxy\? reject-dict
 
+# 播放页开通会员提示
 ^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show\? reject-dict
 
+# 播放页多余动效
 ^https?:\/\/iface2\.iqiyi\.com\/ivos\/interact\/video\/data\? reject-dict
 
+# 播放页升级白金会员按钮
 ^https?:\/\/iface2\.iqiyi\.com\/video\/3\.0\/v_interface_proxy\? reject-dict
 
+# 青少年弹窗
 ^https?:\/\/iface2\.iqiyi\.com\/views_pop\/3\.0\/pop_control\? reject-dict
 
+# 视频评论区广告 // 如果"cards[*].alias_name"路径存在就保留当前对象
 ^https?:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments\? response-body-json-jq '.cards |= map(select(has("alias_name")))'
 
+# 精简底栏 - 底栏皮肤
 ^https?:\/\/iface2\.iqiyi\.com\/views_menus\/3\.0\/bottom_theme\? response-body-json-del theme_list
+# 精简底栏 - 按钮
 ^https?:\/\/iface2\.iqiyi\.com\/views_menus\/3\.0\/bottom_theme\? response-body-json-jq '.cards |= map(.items |= map(select(.other.bottom_tab_type == "rec" or .other.bottom_tab_type == "my")))'
 
+# 顶部标签页
 ^https?:\/\/iface2\.iqiyi\.com\/views_menus\/3\.0\/home_top_menu\? response-body-json-jq '.nav_group_data[].nav_list |= map(select(. == "0" or . == "2" or . == "1007" or . == "1" or . == "6" or . == "3"))'
 
+# 修改全局配置
 ^https?:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/common_switch\? response-body-json-del content.resource.cast_device_ad
 ^https?:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/common_switch\? response-body-json-replace content.switchs.app_ad.app_ad_enable 0 content.switchs.app_ad.app_ad_duration 0 content.switchs.ios_tech.kPreadAdHintSwitch 0 content.switchs.ios_tech.ad_download 0 content.switchs.m_qiyi_ios_tech.KFocusAdVideoPlayTimesIn4G 0
 
+# 开屏广告和播放广告
 ^https?:\/\/(kjp|t7z)\.cupid\.iqiyi\.com\/mixer\? response-body-json-del adSlots
 
+# 搜索框填充词
 ^https?:\/\/search\.video\.iqiyi\.com\/q\? response-body-json-del data
 
+# 我的页面菜单
 ^https?:\/\/iface2\.iqiyi\.com\/aggregate\/3\.0\/getMyMenus\? response-body-json-jq '.data |= map(select(.statistic.block != "wd_liebiao_2") | select(all(.menuList[]?.statistic2.block; . != "wd_liebiao_3")))'
 
 [MitM]

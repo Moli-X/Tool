@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/Fileball_mount.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/Fileball_mount.lpx
 #!name=Fileball网盘挂载
 #!desc=支持挂载阿里云盘、夸克网盘和PikPak网盘，点击下方署名查看使用方法。
 #App链接=https://apps.apple.com/app/id1558391784
@@ -12,6 +12,7 @@
 #!date=2025-05-13 15:17:08
 
 [Script]
+# 阿里云盘、夸克网盘和PikPak网盘挂载
 http-request ^http:\/\/(aliyun|quark|pikpak)\.example\.com script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Fileball_mount.js, requires-body=true, tag=三合一网盘挂载
 
 [MitM]

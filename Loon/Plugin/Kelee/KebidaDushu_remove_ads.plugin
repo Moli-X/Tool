@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/KebidaDushu_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/KebidaDushu_remove_ads.lpx
 #!name=帆书去广告
 #!desc=移除弹窗和会员任务，精简首页、听书页面、课程菜单和我的页面。
 #App链接=https://apps.apple.com/app/id963152777
@@ -12,6 +12,7 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
+# 帆书移除广告
 ^https?:\/\/popup\.dushu365\.com\/api\/v2\/sfo\/(user_)?popup_(config|display)s reject
 ^https?:\/\/g[a-z0-9-]+\.dushu365\.com\/chief-orch\/config\/config\/v\d+\/(shortCut|appUpdateUnite|loadingAd) reject
 ^https?:\/\/g[a-z0-9-]+\.dushu365\.com\/fs-retain\/trialVip\/v\d+\/requestTrialVipPopDoNotSendReward reject

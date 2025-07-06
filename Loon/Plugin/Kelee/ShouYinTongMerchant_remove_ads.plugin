@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/ShouYinTongMerchant_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/ShouYinTongMerchant_remove_ads.lpx
 #!name=收银通商户端去广告
 #!desc=移除开屏广告和首页推广
 #App链接=https://apps.apple.com/app/id1539897140
@@ -12,13 +12,17 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
+# 开屏广告
 ^https:\/\/syt\.leshuazf\.com\/merchant\/merchant\/showOpenScreenAd$ reject-dict
 
+# 首页 - 商e借横幅
 ^https:\/\/m\.fqfin\.cn\/cls\/leshuapay\/preCredit\.json$ reject-dict
 ^https:\/\/syt\.leshuazf\.com\/merchant\/messageCenter\/stationLetterList$ reject-dict
 
+# 首页 - 信贷广告和收款单横幅
 ^https:\/\/syt\.leshuazf\.com\/merchant\/merchant\/getBannerConfig$ reject-dict
 
+# 首页 - 弹窗
 ^https:\/\/syt\.leshuazf\.com\/merchant\/popup\/getPopupInfo$ reject-dict
 
 [MitM]

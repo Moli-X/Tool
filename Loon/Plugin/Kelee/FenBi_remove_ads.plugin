@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/FenBi_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/FenBi_remove_ads.lpx
 #!name=粉笔去广告
 #!desc=移除开屏广告、首页弹窗和悬浮窗。
 #App链接=https://apps.apple.com/app/id584660358
@@ -12,11 +12,19 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
+# 开屏广告
 ^https:\/\/tiku\.fenbi\.com\/activity\/app\/launcher reject-dict
+# 首页 - 弹窗
 ^https:\/\/keapi\.fenbi\.com\/app\/iphone\/\w+\/popup reject-dict
+# 首页 - 新用户注册送好礼全屏弹窗
 ^https:\/\/market-api\.fenbi\.com\/iphone\/v1\/assistant\/info reject-dict
+# 首页 - 悬浮窗 - 笔面常备资料
 ^https:\/\/market-api\.fenbi\.com\/iphone\/v1\/assistant\/entrance\/show reject-dict
 
+# 首页 - 轮播图 [会有空白占位]
+# ^https:\/\/tiku\.fenbi\.com\/iphone\/\w+\/banners\/v2 reject-dict
+# 首页 - 横向滚动板块
+# ^https:\/\/keapi\.fenbi\.com\/app\/iphone\/\w+\/small_banner reject-dict
 
 [MitM]
 hostname=keapi.fenbi.com, market-api.fenbi.com, tiku.fenbi.com

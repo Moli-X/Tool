@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/Uki_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/Uki_remove_ads.lpx
 #!name=Uki去广告
 #!desc=移除开屏广告、应用内悬浮窗，各类横幅、信息流广告、搜索填充词、我的页面广告。
 #App链接=https://apps.apple.com/app/id1298912284
@@ -12,20 +12,29 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
+# 首页悬浮窗
 ^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/startInfo$ reject-dict
+# 首页横幅
 ^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/indexBanner$ reject-dict
+# 弹窗配置
 ^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/getPopup reject-dict
 ^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/allPopUpConfig$ reject-dict
+# 广告配置
 ^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/advConf$ reject-dict
+# 私聊交友护航弹窗
 ^https:\/\/api\.chenlongtech\.cn\/v\d\/user\/checkQTSheInsurance$ reject-dict
 
 [Script]
+# 匹配卡横幅
 http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/lover\/productList script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Uki_remove_ads.js, requires-body=true, tag=移除匹配卡横幅
 
+# 密友横幅
 http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/closeFriend\/home script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Uki_remove_ads.js, requires-body=true, tag=移除密友横幅
 
+# 娱乐页面横幅和悬浮窗配置
 http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/party\/config$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Uki_remove_ads.js, requires-body=true, tag=移除娱乐页面横幅和悬浮窗配置
 
+# 广场搜索填充词
 http-response ^https:\/\/api\.chenlongtech\.cn\/v1\/post\/fetchSearchRecommend$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Uki_remove_ads.js, requires-body=true, tag=移除广场搜索填充词
 
 [MitM]

@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/ZuiYou_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/ZuiYou_remove_ads.lpx
 #!name=最右去广告
 #!desc=移除开屏广告、信息流广告和广告轮播图。
 #App链接=https://apps.apple.com/app/id942443472
@@ -12,15 +12,22 @@
 #!date=2025-05-14 01:51:31
 
 [Rule]
+# 其他广告
 DOMAIN, adapi.izuiyou.com, REJECT
+# 信息流广告
 URL-REGEX, "^http:\/\/mercury-gateway\.ixiaochuan\.cn\/mercury\/v1\/ad\/", REJECT-DICT
+# 搜索 - 榜单页面
 URL-REGEX, "^http:\/\/file-share\.izuiyou\.com\/octopus\/media\/templates\/search_home_page_(nv|nv_v2)\/search_home_page_nv", REJECT
 
 [Rewrite]
+# 轮播图广告
 ^https?:\/\/api\.izuiyou\.com\/config\/get_banner reject-dict
+# 其他广告
 ^https?:\/\/api\.izuiyou\.com\/ad\/ reject
+# 首页 - 悬浮窗
 ^https:\/\/zyfile\.izuiyou\.com\/zyfile\/c2\/a0\/[a-z0-9-]+\.json reject-dict
 
+# 小川在线HTTPDNS
 ^https?:\/\/203\.107\.1\.1/\d+/ss reject
 ^https?:\/\/203\.107\.1\.33/\d+/ss reject
 ^https?:\/\/203\.107\.1\.66/\d+/ss reject

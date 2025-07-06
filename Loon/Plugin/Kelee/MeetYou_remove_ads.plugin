@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/MeetYou_remove_ads.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/MeetYou_remove_ads.lpx
 #!name=美柚去广告
 #!desc=移除开屏广告、弹窗推广和信息流推广，移除青少年模式弹窗和我的页面推广。
 #App链接=https://apps.apple.com/app/id634896669
@@ -12,12 +12,15 @@
 #!date=2025-05-13 15:17:08
 
 [Rule]
+# 广告接口
 DOMAIN, ad.seeyouyima.com, REJECT
 DOMAIN, axxd.xmseeyouyima.com, REJECT
 
 [Rewrite]
+# 帖子底部 - 推荐阅读
 ^https:\/\/circle\.(xm)?seeyouyima\.com\/v\d\/article_recommend\? reject
 
+# 青少年模式弹窗
 ^https:\/\/common\.seeyouyima\.com\/v2\/conf_list$ response-body-json-del data.confList.Minor_mode_card
 
 [MitM]

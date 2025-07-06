@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/WARP_Node_Query.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/WARP_Node_Query.lpx
 #!name=WARP节点查询
 #!desc=显示WARP节点的详细信息，请在所有节点页面选择一个节点长按，出现菜单后进行测试。
 #App链接=https://itunes.apple.com/app/id1423538627
@@ -12,6 +12,7 @@
 #!date=2025-05-13 15:17:08
 
 [Script]
+# WARP节点查询
 generic script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/1.1.1.1.panel.js, timeout=10, tag=WARP · INFO,img-url=icloud.circle.system
 
 [MitM]

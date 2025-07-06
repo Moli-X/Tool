@@ -1,4 +1,4 @@
-# 原链接 : https://kelee.one/Tool/Loon/Plugin/FollowRSS_checkin.plugin
+# 原链接 : https://kelee.one/Tool/Loon/Lpx/FollowRSS_checkin.lpx
 #!name=Follow每日签到
 #!desc=Follow每日签到，需要进入此插件的主页链接，阅读使用说明操作。
 #App链接=https://follow.is
@@ -17,6 +17,7 @@ cookie=input, "", tag=Cookie, desc=这里需要输入Cookie的值
 cron=input, "0 1 * * *", tag=定时参数, desc=这里需要输入符合CRON表达式的参数
 
 [Script]
+# 定时签到
 cron {cron} script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FollowRSS_checkin.js, tag=Follow每日签到, timeout=120, argument=[{token},{cookie}]
 
 [MitM]
