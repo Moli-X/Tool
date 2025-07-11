@@ -1,4 +1,4 @@
-# 更新日期：2024-12-20
+# 更新日期：2025-07-12
 
 name: Fork & Edit
 
@@ -84,7 +84,7 @@ jobs:
             # 定义关联数组（使用简洁的键名）
             declare -A files=(
                 # 苹果
-                ["APNs"]="https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
+                ["APNs"]="https://kelee.one/Tool/Loon/Lsr/ApplePushNotificationService.lsr"
                 ["Apple"]="https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
                 ["AppleProxy"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleProxy/AppleProxy.list"
                 ["AppStore"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppStore/AppStore.list"  
