@@ -12,20 +12,16 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
-# 阅读页面视频广告
 ^https:\/\/base\.mkzcdn\.com\/advert\/app\/read\/v\d reject-dict
 ^https:\/\/base\.mkzcdn\.com\/advert\/app\/story\/read\/v\d reject-dict
 
-# 任务激励视频
 ^https:\/\/base\.mkzcdn\.com\/advert\/app\/task\/motivate\/v\d reject-dict
 ^https:\/\/base\.mkzcdn\.com\/advert\/app\/task\/motivate\/v\d reject-dict
 
-# 我的页面 - 邀请好友、客栈魔法屋
 ^https:\/\/base\.mkzcdn\.com\/advert\/app\/user\/slide\d\/v\d\/ reject-dict
 
 [Script]
-# 配置修改
-http-response ^https:\/\/base\.mkzcdn\.com\/app\/config\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/MKZ_remove_ads.js, requires-body=true, tag=配置修改
+http-response ^https:\/\/base\.mkzcdn\.com\/app\/config\/ script-path=https://kelee.one/Resource/JavaScript/MKZ/MKZ_remove_ads.js, requires-body=true, tag=配置修改
 
 [MitM]
 hostname=base.mkzcdn.com

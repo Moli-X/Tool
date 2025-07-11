@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3769
+# 规则统计: 3778
 
 HOST,cdn-msp.18comic.org,CDN
 HOST,cdn-msp.18comic.vip,CDN
@@ -76,9 +76,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-06-23T15:23:00.146Z
-# Last Updated: 2025-07-01T07:13:43.912Z
+# Last Updated: 2025-07-11T11:31:43.584Z
 # License: AGPL 3.0
-# Size: 3686
+# Size: 3695
 # Size: 70
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -670,7 +670,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .macysassets.com,CDN
 .makeuseofimages.com,CDN
 .mangadex.network,CDN
-.mangguo-youku.com,CDN
 .mapi.4kvm.net,CDN
 .marketing.aws.dev,CDN
 .mcusercontent.com,CDN
@@ -1089,6 +1088,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .wixmp.com,CDN
 .wixstatic.com,CDN
 .wixstudio.io,CDN
+.wmfusercontent.org,CDN
 .wolongcdnm3u8.com,CDN
 .wolongzywcdn3.com,CDN
 .workers.dev,CDN
@@ -1491,6 +1491,7 @@ cassette.sphdigital.com.sg,CDN
 cc-embed.adobe.com,CDN
 cc.boyfriendtv.com,CDN
 cdn-1.ggjav.com,CDN
+cdn-1.strava.com,CDN
 cdn-a.sonyentertainmentnetwork.com,CDN
 cdn-app.pathfactory.com,CDN
 cdn-assets.circleci.com,CDN
@@ -1563,6 +1564,7 @@ cdn.auth0.com,CDN
 cdn.autoketing.org,CDN
 cdn.axieinfinity.com,CDN
 cdn.babylonjs.com,CDN
+cdn.beacondb.net,CDN
 cdn.bfe.dev,CDN
 cdn.bfldr.com,CDN
 cdn.bigcloud.click,CDN
@@ -1979,6 +1981,7 @@ cdnjs.cat.net,CDN
 cdnjs.cloudflare.com,CDN
 cdnl.moviefap.com,CDN
 cdnl.tnaflix.com,CDN
+cdnmedia.ero-video.net,CDN
 cdns.gigya.com,CDN
 cdns.zbporn.com,CDN
 cdnsecakmi.kaltura.com,CDN
@@ -2636,6 +2639,7 @@ jac.yahoosandbox.com,CDN
 jaws.pbs.org,CDN
 jfe-cdn.qualtrics.com,CDN
 jira-frontend-bifrost.prod-east.frontend.public.atl-paas.net,CDN
+jnmedia.ero-video.net,CDN
 js-1-cdn.airdroid.com,CDN
 js-cdn.blockchair.io,CDN
 js-eu1.hsforms.net,CDN
@@ -3150,6 +3154,7 @@ sdata.ndtv.com,CDN
 sdk.customfit.ai,CDN
 sdk.listenlive.co,CDN
 sdk.loyaltylion.net,CDN
+sdk.privacy-center.org,CDN
 sdk.qikify.com,CDN
 sdk.snapkit.com,CDN
 sdk.split.io,CDN
@@ -3590,7 +3595,11 @@ thumbor.forbes.com,CDN
 thumbs.onlyfans.com,CDN
 thumbs2.sendvid.com,CDN
 thumbsnap.com,CDN
+ti1.knews.cc,CDN
+ti2.knews.cc,CDN
+tiles.openfreemap.org,CDN
 tiles.stadiamaps.com,CDN
+tiles.versatiles.org,CDN
 tiles.windy.com,CDN
 time.cloudflare.com,CDN
 time.google.com,CDN

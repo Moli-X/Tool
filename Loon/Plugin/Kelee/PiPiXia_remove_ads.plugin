@@ -12,19 +12,14 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
-# 广告下发
 ^https:\/\/api(5-lq)?\.pipix\.com\/api\/ad\/ reject-dict
 
-# 横幅
 ^https:\/\/api(5-lq)?\.pipix\.com\/bds\/banner\/ reject-dict
 
-# 关注 - 近期热门皮友
 ^https:\/\/api(5-lq)?\.pipix\.com\/bds\/feed\/follow_feed\/ reject-dict
 
-# 移除视频流广告
 ^https:\/\/api(5-lq)?\.pipix\.com\/bds\/feed\/stream\/v2\/ response-body-json-jq '.data.data |= map(select(has("ad_info") | not))'
 
-# 精简我的页面
 ^https:\/\/api(5-lq)?\.pipix\.com\/bds\/user\/check_in\/ response-body-json-jq '.data.profile_entrances |= map(select(.title != "放心借" and .title != "洋钱罐借款")) | del(.data.pet_interface_message)'
 
 [MitM]

@@ -12,7 +12,6 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
-# 商品购买连接
 ^https:\/\/app\.chengfenmiao\.com\/item\/closet\? reject-dict
  
 [MitM]

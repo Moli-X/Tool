@@ -12,20 +12,13 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
-# 应用配置
 ^https:\/\/pan\.baidu\.com\/api\/getconfig reject-dict
 ^https:\/\/pan\.baidu\.com\/api\/getsyscfg reject-dict
-# 签到任务配置
 ^https:\/\/pan\.baidu\.com\/api\/taskscore\/tasklist reject-dict
-# 弹窗配置
 ^https:\/\/pan\.baidu\.com\/act\/api\/activityentry reject-dict
-# 信息流广告
 ^https:\/\/pan\.baidu\.com\/act\/api\/activityentry reject-dict
-# 我的 - 游戏中心
 ^https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user\?method=gamecenter reject-dict
-# 我的页面 - 其他推广
 ^https:\/\/pan\.baidu\.com\/act\/v2\/welfare\/list reject-dict
-# 广告配置
 ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/pcs\/adv reject-dict
 
 [MitM]

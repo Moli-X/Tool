@@ -17,65 +17,45 @@ DOMAIN, ipv6.kkmh.com, REJECT
 DOMAIN, ipv4.kkmh.com, REJECT
 
 [Rewrite]
-# 广告配置
 ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ad\/ reject-dict
 
-# 首页弹窗
 ^https:\/\/(cdn-)?h5\.kuaikanmanhua\.com\/user\/scene\/api\/new_user\/sign_in\/list reject-dict
 
-# 活动广告
 ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/activities\/get reject-dict
 ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/mine\/business_config reject-dict
 
-# 游戏 - 活动配置
 ^https:\/\/(cdn-)?topic\.kkmh\.com\/gamecard\/v\d\/activityModule\/userSignInInfo\?activitySignInConfigId reject-dict
 ^https:\/\/(cdn-)?topic\.kkmh\.com\/gamecard\/v\d\/activityModule\/fetchButtonInfo\?buttonConfigId reject-dict
 ^https:\/\/(cdn-)?topic\.kkmh\.com\/gamecard\/v\d\/activityText\/getUserActivityTextInfo\?activityTextConfigId reject-dict
 
-# 漫画阅读悬浮按钮广告
 ^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/kb\/comic_page_banner\/detail reject-dict
 
-# 推广气泡
 ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/fake_push\/info reject-dict
 
-# 商城周边 - 弹窗
 ^https:\/\/(cdn-)?shop\.kkmh\.com\/mbff\/popup_administration\/page_management_popup_administration$ reject-dict
 
-# 我的页面 - 精简
 ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/mine\/business_config reject-dict
-# 我的页面 - 横幅广告图
 ^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/banner_tip_list reject-dict
-# 我的页面 - 横幅广告语
 ^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/charge_tip_list reject-dict
-# # 我的页面 - 钱包广告语
 ^https:\/\/h5\.kuaikanmanhua\.com\/v\d\/kb\/recharge_good\/list_h5 reject-dict
 ^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/kb\/wallet reject-dict
 
-# 萌新礼
 ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/checkin\/api\/new_user\/tab_info$ reject-dict
 ^https:\/\/h5\.kuaikanmanhua\.com\/game-h5\/new-user-welfare\/index\.html reject-200
 
-# 会员弹窗
 ^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/platform_base\/popups_display$ reject-dict
 
-# 社区 - 关注推荐
-# ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/home\/recommend_users reject-dict
 
-# 福利中心、悬浮部件
 ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/checkin\/task_center\/get_by_task_type reject-dict
 
 [Script]
-# 修改广告参数
-http-response ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ironman\/comic\/recommend script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/KuaiKanComic_remove_ads.js, requires-body=true, tag=修改广告参数
+http-response ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ironman\/comic\/recommend script-path=https://kelee.one/Resource/JavaScript/KuaiKanComic/KuaiKanComic_remove_ads.js, requires-body=true, tag=修改广告参数
 
-# 首页 - 热门 - 顶部标签
-http-response ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ironman\/discovery_v\d\/tab_list_v\d script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/KuaiKanComic_remove_ads.js, requires-body=true, tag=精简首页热门标签
+http-response ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ironman\/discovery_v\d\/tab_list_v\d script-path=https://kelee.one/Resource/JavaScript/KuaiKanComic/KuaiKanComic_remove_ads.js, requires-body=true, tag=精简首页热门标签
 
-# 社区 - 发现 - 顶部标签
-http-response ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/homepage\/comicVideo\/v\d\/configs script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/KuaiKanComic_remove_ads.js, requires-body=true, tag=精简社区标签
+http-response ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/homepage\/comicVideo\/v\d\/configs script-path=https://kelee.one/Resource/JavaScript/KuaiKanComic/KuaiKanComic_remove_ads.js, requires-body=true, tag=精简社区标签
 
-# 社区 - 信息流
-http-response ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/unified_feed$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/KuaiKanComic_remove_ads.js, requires-body=true, tag=精简社区信息流
+http-response ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/unified_feed$ script-path=https://kelee.one/Resource/JavaScript/KuaiKanComic/KuaiKanComic_remove_ads.js, requires-body=true, tag=精简社区信息流
 
 [MitM]
 hostname=api.kkmh.com, cdn-api.kkmh.com, social.kkmh.com, cdn-social.kkmh.com, h5.kuaikanmanhua.com, cdn-h5.kuaikanmanhua.com, pay.kkmh.com, cdn-pay.kkmh.com, shop.kkmh.com, cdn-shop.kkmh.com, topic.kkmh.com, cdn-topic.kkmh.com

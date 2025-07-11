@@ -20,12 +20,10 @@ DOMAIN, info4.video.qq.com, REJECT
 DOMAIN, info6.video.qq.com, REJECT
 DOMAIN, ios.bugly.qq.com, REJECT
 DOMAIN, ios.video.mpush.qq.com, REJECT
-# DOMAIN, mazu.m.qq.com, REJECT // 误杀
 DOMAIN, mi.gdt.qq.com, REJECT
 DOMAIN, otheve.beacon.qq.com, REJECT
 DOMAIN, pgdt.gtimg.cn, REJECT
 DOMAIN, pgdt.ugdtimg.com, REJECT
-# DOMAIN, qzonestyle.gtimg.cn, REJECT // 误杀
 DOMAIN, qzs.gdtimg.com, REJECT
 DOMAIN, qzs.qq.com, REJECT
 DOMAIN, rmonitor.qq.com, REJECT
@@ -53,7 +51,6 @@ URL-REGEX, "^http:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_k_main_page_banner\
 ^https:\/\/wallpaper-\d+\.file\.myqcloud\.com\/dsl\/ reject-dict
 ^https?:\/\/wallpaper-\d+\.file\.myqcloud\.com\/hikari\/ reject-dict
 ^https:\/\/amsweb-cdn-\S+-\d+\.file\.myqcloud\.com\/video\/ad_profile\/ reject-dict
-# 右下角轮播动画
 ^https:\/\/wnsaviator\.kg\.qq\.com\/wnsaviator\/api\/v1\/transMerge\?_webcgikey=get_activity_entry$ reject-dict
 
 [MitM]

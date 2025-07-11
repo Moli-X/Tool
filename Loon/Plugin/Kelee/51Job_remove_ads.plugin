@@ -9,35 +9,30 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/51Job_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/51Job.png
-#!date=2025-05-13 15:17:08
+#!date=2025-07-11 17:40:27
 
 [Rewrite]
-# 开屏广告
-^https:\/\/appapi\.51job\.com\/api\/market\/get_launch\.php\? reject-dict
+^https:\/\/appapi\.51jobapp\.com\/api\/market\/get_launch\.php\? reject-dict
 
-# 职位 - 下拉二楼
-^https:\/\/cupid\.51job(app)?\.com\/open\/51job-activities\/secJob\/queryHomeSecondConfigV2\? reject-dict
+^https:\/\/cupid\.51jobapp\.com\/open\/operation\/get\/latest\/banner-list\? reject-dict
 
-# 职位 - 招聘信息流广告
-^https:\/\/cupid\.51job(app)?\.com\/open\/noauth\/recommend\/job-tab-dynamic\? response-body-json-del resultbody.adsTabFeeds
+^https:\/\/cupid\.51jobapp\.com\/open\/noauth\/recommend\/job-tab-dynamic\? response-body-json-del resultbody.adsTabFeeds
 
-# 职位 - 职位详情 - 竞争力分析
-^https:\/\/cupid\.51job(app)?\.com\/open\/noauth\/jobs\/detail\/sesame-competitive\/ reject-dict
 
-# 任务弹窗
-^https:\/\/cupid\.51job(app)?\.com\/open\/user-task\/user\/task\/ response-body-json-del resultbody.availableTaskList
+^https:\/\/cupid\.51jobapp\.com\/open\/51job-activities\/secJob\/queryHomeSecondConfigV2\? reject-dict
 
-# 简历向导
-^https:\/\/cupid\.51jobapp(app)?\.com\/open\/resume\/strategy\/resume-build\? reject-dict
+^https:\/\/cupid\.51jobapp\.com\/open\/noauth\/jobs\/detail\/sesame-competitive\/ reject-dict
 
-# 弹窗
-^https:\/\/cupid\.51job(app)?\.com\/open\/noauth\/popUp\/ reject-dict
+^https:\/\/cupid\.51jobapp\.com\/open\/noauth\/jobs\/job-detail\/user-rights\? reject-dict
 
-# 我的页面 - 横幅推广
-^https:\/\/cupid\.51job(app)?\.com\/open\/tab\/good-job\/modules response-body-json-del resultbody.bannerList
+^https:\/\/cupid\.51jobapp\.com\/open\/user-task\/user\/task\/ response-body-json-del resultbody.availableTaskList
 
-# 消息页面 - 无忧小助手 - 横幅推广
-^https:\/\/cupid\.51job(app)?\.com\/open\/operation\/get\/banner-list\? reject-dict
+^https:\/\/cupid\.51jobapp\.com\/open\/resume\/strategy\/resume-build\? reject-dict
+
+^https:\/\/cupid\.51jobapp\.com\/launch-hub\/open\/noauth\/popUp\/ reject-dict
+^https:\/\/cupid\.51jobapp\.com\/launch-hub\/open\/noauth\/popUp\/getHomePagePopUp\? reject-dict
+
+^https:\/\/cupid\.51jobapp\.com\/open\/tab\/good-job\/modules\? response-body-json-del resultbody.bannerList
 
 [MitM]
-hostname=appapi.51job.com, cupid.51job.com, cupid.51jobapp.com
+hostname=appapi.51jobapp.com, cupid.51jobapp.com

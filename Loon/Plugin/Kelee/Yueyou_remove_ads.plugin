@@ -12,11 +12,9 @@
 #!date=2025-05-13 15:17:08
 
 [Rule]
-# 广告接口
 DOMAIN, ads.reader.yueyouxs.com, REJECT
 
 [Rewrite]
-# 修改应用配置
 ^https:\/\/goway\.reader\.yueyouxs\.com\/assemble\/app\/basic\/getAppInfo\? response-body-json-del data.isShowDLPopup data.isShowGame data.touTiaoShowDlPopup data.offLineDownload.WatchVideoBtnDesc data.readVipFirstCfg data.readVipNormalCfg data.notifyAd data.hotStartSplashTime data.hotStartReqSwitch data.isShowBFTab data.popReqDelayTime data.benefitCfg data.chestTask data.hotStartAd data.activeTagList data.secondOrderCfg data.secondOrderList data.blockedWordsCfg data.aaReportListCfg data.pddAdSwitch data.isShowShelfAuthPopup data.firstPopUpAmount
 
 ^https:\/\/goway\.reader\.yueyouxs\.com\/assemble\/app\/basic\/getAppInfo\? response-body-json-replace data.isAdClosed true 

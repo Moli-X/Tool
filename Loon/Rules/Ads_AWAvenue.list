@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 838
+# 规则统计: 837
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 829
-#Update content: Update domain_regex.txt
-#Update time: 2025-06-26 21:44:45 UTC+8
+#Total lines: 828
+#Update content: remove “terms-drcn.platform.dbankcloud.cn” fix #155
+#Update time: 2025-07-09 22:19:32 UTC+8
 #Version: 1.6.6-release
 .1500020991.vodplayer.wxamedia.com
 .1500022744.vodplayer.wxamedia.com
@@ -710,7 +710,6 @@
 .tdsdk.xdrig.com
 .telemetry.sdk.inmobi.com
 .tencent-dtv.m.cn.miaozhen.com
-.terms-drcn.platform.dbankcloud.cn
 .test.ad.xiaomi.com
 .test.e.ad.xiaomi.com
 .tj.b.qq.com

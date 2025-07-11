@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 813
+# 规则统计: 821
 
 HOST,acg.tv,ChinaDomain
 HOST,assets1.xboxlive.cn,ChinaDomain
@@ -12,6 +12,7 @@ HOST,dl.ubnt.com,ChinaDomain
 HOST,doh.pub,ChinaDomain
 HOST,gstore.val.manlaxy.com,ChinaDomain
 HOST,i.dell.com,ChinaDomain
+HOST,kms.03k.org,ChinaDomain
 HOST,lv.queniujq.cn,ChinaDomain
 HOST,media.cdn.queniuqe.com,ChinaDomain
 HOST,ocsp.globalsign.com,ChinaDomain
@@ -22,6 +23,7 @@ HOST,www.intel.cn,ChinaDomain
 HOST,www.layuicdn.com,ChinaDomain
 HOST-SUFFIX,10010.com,ChinaDomain
 HOST-SUFFIX,10086.cn,ChinaDomain
+HOST-SUFFIX,110.com,ChinaDomain
 HOST-SUFFIX,111.com,ChinaDomain
 HOST-SUFFIX,115.com,ChinaDomain
 HOST-SUFFIX,115cdn.com,ChinaDomain
@@ -70,6 +72,7 @@ HOST-SUFFIX,36kr.com,ChinaDomain
 HOST-SUFFIX,36krcdn.com,ChinaDomain
 HOST-SUFFIX,39.net,ChinaDomain
 HOST-SUFFIX,3dmgame.com,ChinaDomain
+HOST-SUFFIX,4008823823.com,ChinaDomain
 HOST-SUFFIX,4399.com,ChinaDomain
 HOST-SUFFIX,51cto.com,ChinaDomain
 HOST-SUFFIX,51ctocdn.cn,ChinaDomain
@@ -115,10 +118,12 @@ HOST-SUFFIX,aligames.com,ChinaDomain
 HOST-SUFFIX,aliimg.com,ChinaDomain
 HOST-SUFFIX,alikunlun.com,ChinaDomain
 HOST-SUFFIX,alikunlun.net,ChinaDomain
+HOST-SUFFIX,alimama.com,ChinaDomain
 HOST-SUFFIX,alios.cn,ChinaDomain
 HOST-SUFFIX,alipan.com,ChinaDomain
 HOST-SUFFIX,alipay.cn,ChinaDomain
 HOST-SUFFIX,alipay.com,ChinaDomain
+HOST-SUFFIX,alipaydev.com,ChinaDomain
 HOST-SUFFIX,alipayobjects.com,ChinaDomain
 HOST-SUFFIX,aliyun.com,ChinaDomain
 HOST-SUFFIX,aliyuncs.com,ChinaDomain
@@ -390,6 +395,7 @@ HOST-SUFFIX,hwccpc.cn,ChinaDomain
 HOST-SUFFIX,hwccpc.com,ChinaDomain
 HOST-SUFFIX,hwht.com,ChinaDomain
 HOST-SUFFIX,hwtrip.com,ChinaDomain
+HOST-SUFFIX,hwwt8.com,ChinaDomain
 HOST-SUFFIX,ialicdn.com,ChinaDomain
 HOST-SUFFIX,ibreader.com,ChinaDomain
 HOST-SUFFIX,ibuscloud.com,ChinaDomain
@@ -436,6 +442,7 @@ HOST-SUFFIX,jstarkan.com,ChinaDomain
 HOST-SUFFIX,kaiyanapp.com,ChinaDomain
 HOST-SUFFIX,kdslife.com,ChinaDomain
 HOST-SUFFIX,keepcdn.com,ChinaDomain
+HOST-SUFFIX,kfcapp.cn,ChinaDomain
 HOST-SUFFIX,kingsoft-office-service.com,ChinaDomain
 HOST-SUFFIX,kkmh.com,ChinaDomain
 HOST-SUFFIX,klook.com,ChinaDomain
@@ -666,6 +673,7 @@ HOST-SUFFIX,takungpao.com,ChinaDomain
 HOST-SUFFIX,tantanapp.com,ChinaDomain
 HOST-SUFFIX,tanx.com,ChinaDomain
 HOST-SUFFIX,taobao.com,ChinaDomain
+HOST-SUFFIX,taobao.org,ChinaDomain
 HOST-SUFFIX,taobaocdn.com,ChinaDomain
 HOST-SUFFIX,taopiaopiao.com,ChinaDomain
 HOST-SUFFIX,tb.cn,ChinaDomain
@@ -807,9 +815,9 @@ USER-AGENT,TeslaMap,ChinaDomain
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-06-23T15:23:00.241Z
+# Last Updated: 2025-07-11T11:31:42.180Z
 # License: AGPL 3.0
-# Size: 802
+# Size: 810
 # Sukka's Ruleset - Domestic Domains
 # This file contains known addresses that are avaliable in the Mainland China.
 ################## EOF ##################

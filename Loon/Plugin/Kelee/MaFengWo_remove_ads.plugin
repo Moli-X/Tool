@@ -12,17 +12,13 @@
 #!date=2025-05-13 15:17:08
 
 [Rule]
-# 首页 - 发现 - 横幅广告
 DOMAIN, advert.mafengwo.cn, REJECT
 
 [Rewrite]
-# 首页 - 信息流广告
 ^https:\/\/mapi\.mafengwo\.cn\/discovery\/get_index\/v7\? response-body-json-jq '.data.list |= map(select(.data.business_type != "gdcpm"))'
 
-# 商城 - 顶部横幅
 ^https:\/\/mapi\.mafengwo\.cn\/sales\/home\/get_header\/v3\? response-body-json-jq '.data.list[] |= ( .data |= del(.banners) )'
 
-# 我的 - 打卡成就勋章弹窗
 ^https:\/\/mapi\.mafengwo\.cn\/user\/growth\/get_growth_tip\/v1\? reject-dict
 
 [MitM]

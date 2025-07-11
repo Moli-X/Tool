@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 813
+# 规则统计: 821
 
 DOMAIN,acg.tv
 DOMAIN,assets1.xboxlive.cn
@@ -12,6 +12,7 @@ DOMAIN,dl.ubnt.com
 DOMAIN,doh.pub
 DOMAIN,gstore.val.manlaxy.com
 DOMAIN,i.dell.com
+DOMAIN,kms.03k.org
 DOMAIN,lv.queniujq.cn
 DOMAIN,media.cdn.queniuqe.com
 DOMAIN,ocsp.globalsign.com
@@ -22,6 +23,7 @@ DOMAIN,www.intel.cn
 DOMAIN,www.layuicdn.com
 DOMAIN-SUFFIX,10010.com
 DOMAIN-SUFFIX,10086.cn
+DOMAIN-SUFFIX,110.com
 DOMAIN-SUFFIX,111.com
 DOMAIN-SUFFIX,115.com
 DOMAIN-SUFFIX,115cdn.com
@@ -70,6 +72,7 @@ DOMAIN-SUFFIX,36kr.com
 DOMAIN-SUFFIX,36krcdn.com
 DOMAIN-SUFFIX,39.net
 DOMAIN-SUFFIX,3dmgame.com
+DOMAIN-SUFFIX,4008823823.com
 DOMAIN-SUFFIX,4399.com
 DOMAIN-SUFFIX,51cto.com
 DOMAIN-SUFFIX,51ctocdn.cn
@@ -115,10 +118,12 @@ DOMAIN-SUFFIX,aligames.com
 DOMAIN-SUFFIX,aliimg.com
 DOMAIN-SUFFIX,alikunlun.com
 DOMAIN-SUFFIX,alikunlun.net
+DOMAIN-SUFFIX,alimama.com
 DOMAIN-SUFFIX,alios.cn
 DOMAIN-SUFFIX,alipan.com
 DOMAIN-SUFFIX,alipay.cn
 DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,alipaydev.com
 DOMAIN-SUFFIX,alipayobjects.com
 DOMAIN-SUFFIX,aliyun.com
 DOMAIN-SUFFIX,aliyuncs.com
@@ -390,6 +395,7 @@ DOMAIN-SUFFIX,hwccpc.cn
 DOMAIN-SUFFIX,hwccpc.com
 DOMAIN-SUFFIX,hwht.com
 DOMAIN-SUFFIX,hwtrip.com
+DOMAIN-SUFFIX,hwwt8.com
 DOMAIN-SUFFIX,ialicdn.com
 DOMAIN-SUFFIX,ibreader.com
 DOMAIN-SUFFIX,ibuscloud.com
@@ -436,6 +442,7 @@ DOMAIN-SUFFIX,jstarkan.com
 DOMAIN-SUFFIX,kaiyanapp.com
 DOMAIN-SUFFIX,kdslife.com
 DOMAIN-SUFFIX,keepcdn.com
+DOMAIN-SUFFIX,kfcapp.cn
 DOMAIN-SUFFIX,kingsoft-office-service.com
 DOMAIN-SUFFIX,kkmh.com
 DOMAIN-SUFFIX,klook.com
@@ -666,6 +673,7 @@ DOMAIN-SUFFIX,takungpao.com
 DOMAIN-SUFFIX,tantanapp.com
 DOMAIN-SUFFIX,tanx.com
 DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,taobao.org
 DOMAIN-SUFFIX,taobaocdn.com
 DOMAIN-SUFFIX,taopiaopiao.com
 DOMAIN-SUFFIX,tb.cn
@@ -807,9 +815,9 @@ USER-AGENT,TeslaMap
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-06-23T15:23:00.241Z
+# Last Updated: 2025-07-11T11:31:42.180Z
 # License: AGPL 3.0
-# Size: 802
+# Size: 810
 # Sukka's Ruleset - Domestic Domains
 # This file contains known addresses that are avaliable in the Mainland China.
 ################## EOF ##################

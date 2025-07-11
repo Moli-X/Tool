@@ -12,19 +12,14 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
-# 人保头条
 ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/h\/headlines\/queryHeadlines reject
-# 启动开屏
 ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/update\/startupPage\/v1 reject-dict
-# 猜你喜欢
 ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/guessYouLike\/v3 reject-dict
 
 [Script]
-# 主页推广
-http-response ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/homeInit\/v3 script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/PICC_Insurance_remove_ads.js, requires-body=true, tag=移除主页推广
+http-response ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/homeInit\/v3 script-path=https://kelee.one/Resource/JavaScript/PICC_Insurance/PICC_Insurance_remove_ads.js, requires-body=true, tag=移除主页推广
 
-# 我的页面
-http-response ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/v3 script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/PICC_Insurance_remove_ads.js, requires-body=true, tag=移除我的页面推广
+http-response ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/v3 script-path=https://kelee.one/Resource/JavaScript/PICC_Insurance/PICC_Insurance_remove_ads.js, requires-body=true, tag=移除我的页面推广
 
 [MitM]
 hostname=zgrb.epicc.com.cn

@@ -13,10 +13,8 @@
 
 
 [Rewrite]
-# 广告下发
 ^https:\/\/god\.gameyw\.netease\.com\/v\d\/ad reject
 
-# 底栏游戏入口
 ^https:\/\/app-conf\.ds\.163\.com\/v1\/app\/base\/conf\/static\/start-config\? response-body-replace-regex \{"os":"all","weight":50\.0,"hidden":false,"name":"游戏"\},\{"os":"all","weight":50\.0,"hidden":false,"name":"频道"\}, null
 
 [MitM]

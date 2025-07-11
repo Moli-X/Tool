@@ -12,13 +12,10 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
-# 广告下发
 ^https:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/queryInfoFlow$ reject-dict
 
-# 首页下拉直播
 ^https:\/\/ccsp-egmas\.sf-express\.com\/cx-app-video\/video\/app\/video\/labelClusterList$ reject-dict
 
-# 我的页面 - 兑换专区
 ^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/memberGoods\/pointMallService\/goodsList$ reject-dict
 
 [MitM]

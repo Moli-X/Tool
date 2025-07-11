@@ -12,55 +12,38 @@
 #!date=2025-05-13 15:17:08
 
 [Rewrite]
-# 修改配置 - 从TCP传输强制修改为HTTP传输、青少年弹窗
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/client\/getconf$ response-body-json-replace Data.WolfEye 0 Data.CloudSetting.TeenShowFreq 0
 
-# 修改配置 - 移除活动页面返回推送通知频率、右下角悬浮图标、活动弹窗、福袋
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/client\/getconf$ response-body-json-del Data.ActivityPageBackPushNoticeFrequency Data.ActivityIcon Data.ActivityPopup Data.LuckBag
 
-# 开屏广告
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v4\/client\/getsplashscreen\? reject-dict
 
-# 广告下发
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/adv\/ reject-dict
 
-# 腾讯阅读广告
 ^https:\/\/ywab\.reader\.qq\.com\/user\/experiments\/v2\? reject-dict
 
-# 签到
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/checkin\/simpleinfo\? reject-dict
 
-# 通知提醒
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/push\/getdialog\? reject-dict
 
-# 书架 - 每日导读
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v2\/dailyrecommend\/getdailyrecommend\? response-body-json-replace Data.Items []
 
-# 书架 - 顶部 - 大咖荐书
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/message\/getpushedmessagelist$ reject-dict
 
-# 书架 - 顶部 - 养书提醒
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/maintain\/playstrip$ reject-dict
 
-# 书架 - 猜你喜欢
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/dailyrecommend\/recommendBook\? reject-dict
 
-# 书架 - 推广按钮
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/freshman\/bookshelfbtn$ reject-dict
 
-# 书架 - 顶部活动
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/bookshelf\/getTopOperation$ reject-dict
 
-# 我的页面精简
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v3\/user\/getaccountpage\? response-body-json-del Data.BenefitButtonList
 
-# 搜索 - 填充词
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/booksearch\/hotWords\? reject-dict
 
-# 阅读页面 - 章末广告
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/followsubscribe\/showChapterEndModule\? reject-dict
 
-# 青少年弹窗
 ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/young\/getconf$ reject-dict
 
 [MitM]

@@ -12,41 +12,29 @@
 #!date=2025-05-23 13:32:55
 
 [Rule]
-# 信息流广告
 DOMAIN, kad.gotokeep.com, REJECT
 
 [Rewrite]
-# 精简配置
 ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v1\/configs$ response-body-json-del data.adTimeoutReport data.spotShowReport data.adSupplementIntervalMinutes data.adSupplementSwitch data.hotFeedSpotAdRequestMoment data.activityBrandFeedSpotAdRequestMoment data.searchFeedSpotAdRequestMoment data.feedDetailSpotAdRequestMoment data.homePageFeedSpotAdRequestMoment data.followFeedSpotAdRequestMoment data.hotFeedRecommendSpotAdRequestMoment data.activityFeedSpotAdRequestMoment data.hotFeedFindSpotAdRequestMoment data.hotFeedSpotFixedPositionSecond data.searchFeedSpotFixedPositionSecond data.followFeedSpotFixedPositionSecond data.activityFeedSpotFixedPositionSecond data.searchFeedSpotFixedPositionThird data.hotFeedFindSpotFixedPositionSecond data.hotFeedFindSpotFixedPositionThird data.activityFeedSpotFixedPositionInitial data.activityFeedSpotFixedPositionThird data.hotFeedDynamicSpotPosition data.feedDetailDynamicSpotPosition data.hotFeedRecommendDynamicSpotPosition data.hotFeedFindDynamicSpotPosition data.homePageFeedDynamicSpotPosition data.followFeedDynamicSpotPosition data.searchFeedSpotPositionDynamic data.activityFeedSpotPositionDynamic data.activityBrandFeedSpotPositionDynamic data.splashAdLoadTimeLimit data.courseAdLoadTimeLimit data.feedAdLoadTimeLimit data.aliHCSpotConfig data.gdtSpotConfig data.pugcThresholdPercent data.pugcStepMinSeconds data.pugcStepMaxSeconds data.pugcPreLoadEarlySeconds data.pugcLoadPostPreRolls data.closeConfirmButtonText
 
-# 开屏广告
 ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v1\/ad\/ reject-dict
 
-# 搜索填充词
 ^https:\/\/api\.gotokeep\.com\/search\/v6\/default\/keyword\/list\? reject-dict
 
-# 关注 - 关注推荐
 ^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/followPage\? reject-dict
 
-# 首页 - 推荐 - 课程推荐
 ^https:\/\/api\.gotokeep\.com\/twins\/union\/feed\/union_feed_all$ response-body-json-jq '.data.modules |= map(select(.code == "unionFeedEntry"))'
 
-# 文章相关推荐
 ^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/entryDetail\? response-body-json-replace data {}
 
-# 弹窗
 ^https:\/\/api\.gotokeep\.com\/guide-webapp\/v1\/popup\/getPopUp\? reject-dict
 
-# 精简底栏和首页顶部标签 - 底栏入口仅保首页、运动和我的、首页，顶部标签仅保留社区、推荐、课程、计划、路线
 ^https:\/\/api\.gotokeep\.com\/config\/v3\/basic\? response-body-json-jq '.data.bottomBarControl.tabs |= map(select(.tabType | . == "home" or . == "dynamic_sports" or . == "personal")) | .data.homeTabs |= map(select(.type | . == "socialTab" or . == "union_feed_all" or . == "homeRecommend" or . == "suitTab" or . == "union_feed_route"))'
 
-# 搜索 - 榜单
 ^https:\/\/api\.gotokeep\.com\/search\/v5\/hotCourse\/list$ reject-dict
 
-# 搜索 - 热门话题
 ^https:\/\/api\.gotokeep\.com\/search\/v4\/hotHashtag\/list$ reject-dict
 
-# 搜索 - 热搜推荐词
 ^https:\/\/api\.gotokeep\.com\/search\/v4\/hotword\/list\? reject-dict
 
 [MitM]
