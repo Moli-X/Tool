@@ -40,7 +40,7 @@
 ^https:\/\/beta-luna\.douyin\.com\/luna\/commerce\/v2\/commerce_info\? reject-dict
 
 [Script]
-http-response ^https:\/\/beta-luna\.douyin\.com\/luna\/me\/recently-played-media\? script-path=https://kelee.one/Resource/JavaScript/SodaMusic/SodaMusic_remove_ads.js, requires-body=true, tag=移除播放页面视频流
+http-response ^https:\/\/beta-luna\.douyin\.com\/luna\/me\/recently-played-media\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/SodaMusic_remove_ads.js, requires-body=true, tag=移除播放页面视频流
 
 [MitM]
 hostname=webcast-open.douyin.com, beta-luna.douyin.com, api.qishui.com

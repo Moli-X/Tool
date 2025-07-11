@@ -17,9 +17,9 @@
 ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/guessYouLike\/v3 reject-dict
 
 [Script]
-http-response ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/homeInit\/v3 script-path=https://kelee.one/Resource/JavaScript/PICC_Insurance/PICC_Insurance_remove_ads.js, requires-body=true, tag=移除主页推广
+http-response ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/homeInit\/v3 script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/PICC_Insurance_remove_ads.js, requires-body=true, tag=移除主页推广
 
-http-response ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/v3 script-path=https://kelee.one/Resource/JavaScript/PICC_Insurance/PICC_Insurance_remove_ads.js, requires-body=true, tag=移除我的页面推广
+http-response ^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/v3 script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/PICC_Insurance_remove_ads.js, requires-body=true, tag=移除我的页面推广
 
 [MitM]
 hostname=zgrb.epicc.com.cn

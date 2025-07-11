@@ -31,7 +31,7 @@
 ^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/sensor-banners\? reject-dict
 
 [Script]
-http-response ^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/plaza-flow\? script-path=https://kelee.one/Resource/JavaScript/BooHee/BooHee_remove_ads.js, requires-body=true, tag=移除广场推荐页面横幅
+http-response ^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/plaza-flow\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BooHee_remove_ads.js, requires-body=true, tag=移除广场推荐页面横幅
 
 [MitM]
 hostname=api.boohee.com, bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn, lego.boohee.com, status.boohee.com
