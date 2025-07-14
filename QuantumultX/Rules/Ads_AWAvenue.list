@@ -1,15 +1,15 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 838
+# 规则统计: 847
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 829
-#Update content: 屏蔽某app开屏广告 #156
-#Update time: 2025-07-12 02:38:03 UTC+8
-#Version: 1.6.6-release
+#Total lines: 838
+#Update content: 拦截一些 Huichuan、zhuoxin 等不良广告
+#Update time: 2025-07-14 02:48:08 UTC+8
+#Version: 1.6.7-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500026601.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -126,6 +126,7 @@
 .adsmind.gdtimg.com,Ads_AWAvenue
 .adsmind.ugdtimg.com,Ads_AWAvenue
 .adsp.xunlei.com,Ads_AWAvenue
+.adstat.izuiyou.com,Ads_AWAvenue
 .adstats.tencentmusic.com,Ads_AWAvenue
 .adstore-1252524079.file.myqcloud.com,Ads_AWAvenue
 .adstore-index-1252524079.file.myqcloud.com,Ads_AWAvenue
@@ -199,6 +200,7 @@
 .api-gd.hiaiabc.com,Ads_AWAvenue
 .api-htp.beizi.biz,Ads_AWAvenue
 .api.ad.xiaomi.com,Ads_AWAvenue
+.api.anythinktech.com,Ads_AWAvenue
 .api.e.kuaishou.com,Ads_AWAvenue
 .api.fu.xcultur.com,Ads_AWAvenue
 .api.htp.hubcloud.com.cn,Ads_AWAvenue
@@ -293,11 +295,13 @@
 .config.unityads.unity3d.com,Ads_AWAvenue
 .cpc-service-square.aiclk.com,Ads_AWAvenue
 .cpro.baidustatic.com,Ads_AWAvenue
+.crash2.zhihu.com,Ads_AWAvenue
 .crashlyticsreports-pa.googleapis.com,Ads_AWAvenue
 .csjplatform.com,Ads_AWAvenue
 .cws-cctv.conviva.com,Ads_AWAvenue
 .d.applovin.com,Ads_AWAvenue
 .d.applvn.com,Ads_AWAvenue
+.da.anythinktech.com,Ads_AWAvenue
 .data-sdk-uuid-log.d.meituan.net,Ads_AWAvenue
 .data.ads.oppomobile.com,Ads_AWAvenue
 .data.chsmarttv.com,Ads_AWAvenue
@@ -305,7 +309,6 @@
 .data.mistat.rus.xiaomi.com,Ads_AWAvenue
 .data.mistat.xiaomi.com,Ads_AWAvenue
 .datacollection.uve.weibo.com,Ads_AWAvenue
-.datk.anythinktech.com,Ads_AWAvenue
 .dc.sigmob.cn,Ads_AWAvenue
 .de.tynt.com,Ads_AWAvenue
 .diagnosis.ad.xiaomi.com,Ads_AWAvenue
@@ -388,6 +391,7 @@
 .httpdns.bcelive.com,Ads_AWAvenue
 .httpdns.ocloud.oppomobile.com,Ads_AWAvenue
 .hugelog.fcbox.com,Ads_AWAvenue
+.huichuan-mc.sm.cn,Ads_AWAvenue
 .huichuan.sm.cn,Ads_AWAvenue
 .hw-ot-ad.a.yximgs.com,Ads_AWAvenue
 .hw-p2p-pull.video-voip.com,Ads_AWAvenue
@@ -399,6 +403,7 @@
 .i.l-new.inmobicdn.net,Ads_AWAvenue
 .i.l.inmobicdn.net,Ads_AWAvenue
 .iad.apple.com,Ads_AWAvenue
+.iad.g.163.com,Ads_AWAvenue
 .iadctest.qwapi.com,Ads_AWAvenue
 .iadsdk.apple.com,Ads_AWAvenue
 .iadworkbench.apple.com,Ads_AWAvenue
@@ -421,6 +426,7 @@
 .impression-asia.liftoff.io,Ads_AWAvenue
 .impression.appsflyer.com,Ads_AWAvenue
 .in.treasuredata.com,Ads_AWAvenue
+.ios.bugly.qq.com,Ads_AWAvenue
 .iot-eu-logser.realme.com,Ads_AWAvenue
 .iot-logser.realme.com,Ads_AWAvenue
 .ipv4.kkmh.com,Ads_AWAvenue
@@ -543,6 +549,7 @@
 .mtj.baidu.com,Ads_AWAvenue
 .nadvideo2.baidu.com,Ads_AWAvenue
 .newvoice.chiq5.smart-tv.cn,Ads_AWAvenue
+.nex.163.com,Ads_AWAvenue
 .nmetrics.samsung.com,Ads_AWAvenue
 .notes-analytics-events.apple.com,Ads_AWAvenue
 .notify.sec.miui.com,Ads_AWAvenue
@@ -715,6 +722,7 @@
 .test.e.ad.xiaomi.com,Ads_AWAvenue
 .tj.b.qq.com,Ads_AWAvenue
 .tj.video.qq.com,Ads_AWAvenue
+.tk.anythinktech.com,Ads_AWAvenue
 .tmead.y.qq.com,Ads_AWAvenue
 .tmeadcomm.y.qq.com,Ads_AWAvenue
 .tmfmazu-wangka.m.qq.com,Ads_AWAvenue
@@ -839,3 +847,4 @@
 .ytx-file.110route.cn,Ads_AWAvenue
 .zeus.ad.xiaomi.com,Ads_AWAvenue
 .zhihu-web-analytics.zhihu.com,Ads_AWAvenue
+.zxid-m.mobileservice.cn,Ads_AWAvenue
