@@ -1,17 +1,29 @@
 # 规则名称: QQMail
-# 规则统计: 14
+# 规则统计: 26
 
 
-  - DOMAIN-SUFFIX,dl.mail.qq.com          # 附件下载,QQMail
-  - DOMAIN-SUFFIX,dl.mail.qq.com          # 附件下载payload:,QQMail
+  
+  # 📁 静态资源,QQMail
+  # 📎 邮件内容资源,QQMail
+  # 📦 微信相关服务（邮箱集成）,QQMail
+  # 📮 QQ邮箱相关,QQMail
+  - DOMAIN,cube.weixinbridge.com,QQMail
+  - DOMAIN,cube.weixinbridge.com          # 微信邮箱桥,QQMail
+  - DOMAIN,gzc-dfsdown.mail.ftn.qq.com    # 附件下载子域（大文件）,QQMail
+  - DOMAIN,rescdn.qqmail.com              # 邮箱静态资源加载（JS/CSS）,QQMail
+  - DOMAIN-SUFFIX,dl.mail.qq.com          # 附件下载服务,QQMail
   - DOMAIN-SUFFIX,exmail.qq.com           # 企业邮箱网页版,QQMail
-  - DOMAIN-SUFFIX,imap.qq.com             # IMAP服务（收邮件）,QQMail
+  - DOMAIN-SUFFIX,imap.qq.com             # IMAP收信服务,QQMail
   - DOMAIN-SUFFIX,img.mail.qq.com         # 邮箱图标资源,QQMail
-  - DOMAIN-SUFFIX,mail.qpic.cn            # 邮件中加载图片、附件,QQMail
+  - DOMAIN-SUFFIX,mail.ftn.qq.com         # 文件中转服务主域,QQMail
+  - DOMAIN-SUFFIX,mail.qpic.cn            # 邮件中图片/附件资源,QQMail
   - DOMAIN-SUFFIX,mail.qq.com             # QQ邮箱网页版主域,QQMail
   - DOMAIN-SUFFIX,pop.qq.com              # POP3服务,QQMail
   - DOMAIN-SUFFIX,push.mail.qq.com        # 推送服务,QQMail
-  - DOMAIN-SUFFIX,smtp.qq.com             # SMTP服务（发邮件）,QQMail
+  - DOMAIN-SUFFIX,qqmail.com              # 通用邮箱域名,QQMail
+  - DOMAIN-SUFFIX,res.wx.qq.com           # 微信资源加载,QQMail
+  - DOMAIN-SUFFIX,smtp.qq.com             # SMTP发信服务,QQMail
+  - DOMAIN-SUFFIX,ssl.captcha.qq.com      # 验证码服务,QQMail
+  - DOMAIN-SUFFIX,weixinbridge.com        # 邮箱微信桥主域,QQMail
   - DOMAIN-SUFFIX,wx.mail.qq.com          # QQ邮箱网页版微信相关,QQMail
 # NAME: QQ邮箱
-payload:,QQMail
