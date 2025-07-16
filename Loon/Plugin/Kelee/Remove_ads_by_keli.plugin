@@ -9,7 +9,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Remove_ads_by_keli.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/KeLee.png
-#!date=2025-07-07 19:27:38
+#!date=2025-07-16 02:25:05
 
 [Rule]
 DOMAIN, acdn.adnxs.com, REJECT
@@ -124,8 +124,6 @@ DOMAIN, open-pixon.ads-pixiv.net, REJECT
 ^https?:\/\/toblog\.ctobsnssdk\.com reject-200
 ^https?:\/\/conf-darwin\.xycdn\.com reject-dict
 ^https?:\/\/sdk1xyajs\.data\.kuiniuca\.com reject
-
-^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/yesList reject
 
 ^https:\/\/iyes\.youku\.com\/uts\/v1\/start\/ reject-dict
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.get\/ reject-dict
