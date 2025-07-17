@@ -12,8 +12,8 @@
 #!date=2025-07-04 16:36:19
 
 [Argument]
-tab=switch, "false", "true", tag=移除底栏创建按钮, desc=此开关控制是否移除底栏创建按钮
-useractivity=switch, "true", "false", tag=启用Apple设备接力, desc=此开关控制是否使用Apple设备接力
+tab=switch, false, true, tag=移除底栏创建按钮, desc=此开关控制是否移除底栏创建按钮
+useractivity=switch, true, false, tag=启用Apple设备接力, desc=此开关控制是否使用Apple设备接力
 
 [Rule]
 AND, ((DOMAIN, spclient.wg.spotify.com), (PROTOCOL, QUIC)), REJECT

@@ -12,18 +12,18 @@
 #!date=2025-05-13 15:17:08
 
 [Argument]
-MY=switch, "false", "true", tag=[隐藏底栏]漫游标签, desc=
-DT=switch, "false", "true", tag=[隐藏底部]笔记标签, desc=
-FX=switch, "false", "true", tag=[隐藏底部]发现标签, desc=
-PRGG=switch, "false", "true", tag=[隐藏首页]问候语, desc=
-PRRK=switch, "false", "true", tag=[隐藏首页]排行榜, desc=
-PRDRD=switch, "false", "true", tag=[隐藏首页]每日推荐, desc=
-PRSCVPT=switch, "false", "true", tag=[隐藏首页]推荐歌单, desc=
-PRST=switch, "false", "true", tag=[隐藏首页]最近常听, desc=
-PRRR=switch, "false", "true", tag=[隐藏首页]雷达歌单, desc=
-HMPR=switch, "false", "true", tag=[隐藏首页]音乐合伙人, desc=
-PRMST=switch, "false", "true", tag=[隐藏首页]推荐专属歌单, desc=
-PRCN=switch, "false", "true", tag=[隐藏首页]你的专属歌单, desc=
+MY=switch, false, true, tag=[隐藏底栏]漫游标签, desc=
+DT=switch, false, true, tag=[隐藏底部]笔记标签, desc=
+FX=switch, false, true, tag=[隐藏底部]发现标签, desc=
+PRGG=switch, false, true, tag=[隐藏首页]问候语, desc=
+PRRK=switch, false, true, tag=[隐藏首页]排行榜, desc=
+PRDRD=switch, false, true, tag=[隐藏首页]每日推荐, desc=
+PRSCVPT=switch, false, true, tag=[隐藏首页]推荐歌单, desc=
+PRST=switch, false, true, tag=[隐藏首页]最近常听, desc=
+PRRR=switch, false, true, tag=[隐藏首页]雷达歌单, desc=
+HMPR=switch, false, true, tag=[隐藏首页]音乐合伙人, desc=
+PRMST=switch, false, true, tag=[隐藏首页]推荐专属歌单, desc=
+PRCN=switch, false, true, tag=[隐藏首页]你的专属歌单, desc=
 
 [Rule]
 DOMAIN, iadmat.nosdn.127.net, REJECT

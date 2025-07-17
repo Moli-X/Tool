@@ -9,12 +9,12 @@
 #!loon_version=3.2.9(837)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Bilibili_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Bilibili.png
-#!date=2025-07-16 00:09:32
+#!date=2025-07-17 01:41:21
 
 [Argument]
 showUpList=select, "auto", "show", "hide", tag=[动态]中[最常访问]的显示方式, desc=auto：仅当列表中存在直播状态时显示；show：始终显示；hide：始终隐藏。
-filterTopReplies=switch, "true", "false", tag=移除评论区置顶广告, desc=移除评论区置顶广告
-airborne=switch, "false", "true", tag=空降助手, desc=用于跳过视频中的广告
+filterTopReplies=switch, true, false, tag=移除评论区置顶广告, desc=移除评论区置顶广告
+airborne=switch, false, true, tag=空降助手, desc=用于跳过视频中的广告
 logLevel=select, "off", "error", "warn", "info", "debug", tag=日志等级, desc=脚本的日志输出等级
 
 [Rule]
@@ -37,7 +37,6 @@ DOMAIN-SUFFIX,chat.bilibili.com,REJECT
 ^https:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive\? mock-response-body data-type=text status-code=200 data="{"code":0,"data":{"closeType":"close_win","container":[],"showTime":""},"message":"success"}"
 ^https:\/\/api\.bilibili\.com\/pgc\/view\/v2\/app\/season\? response-body-json-jq 'del(.data.payment)'
 
-^https:\/\/api\.bilibili\.com\/pgc\/page\/(bangumi|cinema\/tab)\? response-body-json-jq '.result.modules |= if . then map(if (.style | startswith("tip")) or (.module_id | IN(241, 1283, 1441, 1284)) then .items = [] elif .style | startswith("banner") then .items |= if . then map(select(.link | contains("play"))) else [] end elif .style | startswith("function") then .items |= if . then map(select(.blink | startswith("bilibili"))) else [] end end) end'
 
 ^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\/story\? response-body-json-jq 'if .data.items then .data.items |= map(select((.ad_info == null) and (.card_goto | startswith("ad") | not)) | del(.story_cart_icon, .free_flow_toast)) end'
 
@@ -62,9 +61,9 @@ DOMAIN-SUFFIX,chat.bilibili.com,REJECT
 ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.view\.v1\.View\/TFInfo$ mock-response-body data-type=base64 data="AAAAAAIIAQ==" mock-data-is-base64=true
 
 [Script]
-http-request ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_airborne_kokoryh.js, requires-body=true, binary-body-mode=true, enable={airborne}, argument=[{logLevel}], tag=空降助手
+http-request ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_request_kokoryh.js, requires-body=true, binary-body-mode=true, enable={airborne}, argument=[{logLevel}], tag=空降助手
 
-http-response ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.(show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(unite)?\.v1\.View\/(View|ViewProgress|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/(DmView|DmSegMobile)|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_kokoryh.js, requires-body=true, binary-body-mode=true, argument=[{showUpList}, {filterTopReplies}, {airborneDm}, {logLevel}], tag=ProtoBuf处理
+http-response ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.(show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(unite)?\.v1\.View\/(View|ViewProgress|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/DmView|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_response_kokoryh.js, requires-body=true, binary-body-mode=true, argument=[{showUpList}, {filterTopReplies}, {airborneDm}, {logLevel}], tag=ProtoBuf处理
 
 [MitM]
 hostname=grpc.biliapi.net, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, line3-h5-mobile-api.biligame.com

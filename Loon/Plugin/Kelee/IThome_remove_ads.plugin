@@ -12,8 +12,8 @@
 #!date=2025-05-13 15:17:08
 
 [Argument]
-removeTopSwitch=switch, "true", "false", tag=移除置顶项, desc=移除置顶文章
-removeBannerSwitch=switch, "true", "false", tag=移除轮播图, desc=移除轮播图
+removeTopSwitch=switch, true, false, tag=移除置顶项, desc=移除置顶文章
+removeBannerSwitch=switch, true, false, tag=移除轮播图, desc=移除轮播图
 
 [Rewrite]
 ^https?:\/\/api\.zuihuimai\.com\/static\/.*\/hongbao reject

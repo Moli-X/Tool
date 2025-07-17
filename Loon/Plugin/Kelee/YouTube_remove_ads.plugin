@@ -12,12 +12,12 @@
 #!date=2025-05-13 15:17:08
 
 [Argument]
-blockUpload=switch, "false", "true", tag=隐藏上传按钮, desc=用于隐藏YouTube底栏的上传按钮
-blockShorts=switch, "false", "true", tag=隐藏Shorts按钮, desc=用于隐藏YouTube底栏的Shorts按钮
-blockImmersive=switch, "false", "true", tag=隐藏选段按钮, desc=用于隐藏YouTube Music底栏的选段按钮
+blockUpload=switch, false, true, tag=隐藏上传按钮, desc=用于隐藏YouTube底栏的上传按钮
+blockShorts=switch, false, true, tag=隐藏Shorts按钮, desc=用于隐藏YouTube底栏的Shorts按钮
+blockImmersive=switch, false, true, tag=隐藏选段按钮, desc=用于隐藏YouTube Music底栏的选段按钮
 captionLang=select, "zh-Hans", "zh-Hant", "ja", "ko", "en", "off", tag=字幕翻译语言, desc=需要把YouTube字幕翻译翻译为何种语言
 lyricLang=select, "zh-Hans", "zh-Hant", "ja", "ko", "en", "off", tag=歌词翻译语言, desc=需要把YouTube Music字幕翻译翻译为何种语言
-debug=switch, "false", "true", tag=启用调试模式, desc=此插件的调试模式
+debug=switch, false, true, tag=启用调试模式, desc=此插件的调试模式
 
 [Rule]
 AND, ((DOMAIN-SUFFIX, googlevideo.com), (PROTOCOL, QUIC)), REJECT

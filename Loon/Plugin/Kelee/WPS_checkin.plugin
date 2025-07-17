@@ -12,7 +12,7 @@
 #!date=2025-05-13 15:17:08
 
 [Argument]
-CaptureCookie=switch, "false", "true", tag=捕获Cookie, desc=此开关控制插件是否捕获Cookie
+CaptureCookie=switch, false, true, tag=捕获Cookie, desc=此开关控制插件是否捕获Cookie
 AK=input, "", tag=百度API Key, desc=这里需要输入有效的百度API Key
 SK=input, "", tag=百度Secret Key, desc=这里需要输入有效的百度Secret Key
 DAY=input, "1", tag=兑换天数, desc=每日签到时自动兑换的天数，可不做更改。
