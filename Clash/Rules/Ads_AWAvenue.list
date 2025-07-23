@@ -1,15 +1,15 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 840
+# 规则统计: 849
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 831
-#Update content: 清理失效域名完毕，暂时告一段落
-#Update time: 2025-07-22 17:37:34 UTC+8
-#Version: 1.6.7-release
+#Total lines: 840
+#Update content: Block 360's intrusive shopping ads.
+#Update time: 2025-07-23 19:37:23 UTC+8
+#Version: 1.6.8-release
 .1500020991.vodplayer.wxamedia.com
 .1500022744.vodplayer.wxamedia.com
 .1500026601.vodplayer.wxamedia.com
@@ -155,11 +155,14 @@
 .adxlog-adnet.vivo.com.cn
 .adxserver.ad.cmvideo.cn
 .aegis.qq.com
+.aem.dentsuchina.cn
 .afs.googlesyndication.com
 .agn.aty.sohu.com
 .aiseet.aa.atianqi.com
 .ali-ad.a.yximgs.com
 .ali-p2p-v2.pull.yximgs.com
+.alicoccdncnc-xn.inter.71edge.com
+.alicoccdnct-xn.inter.71edge.com
 .alog.umeng.com
 .alogus.umeng.com
 .als.baidu.com
@@ -228,6 +231,7 @@
 .bdapi-ads.realmemobile.com
 .bdapi-in-ads.realmemobile.com
 .bdapi.ads.oppomobile.com
+.bdcdncnc.inter.71edge.com
 .beacon-api.aliyuncs.com
 .beacon.qq.com
 .beaconcdn.qq.com
@@ -411,6 +415,7 @@
 .img-c.heytapimage.com
 .img-x.jd.com
 .img.adnyg.com.w.kunlungr.com
+.img2.360buyimg.com
 .impression-asia.chinaliftoff.io
 .impression-asia.liftoff.io
 .impression.appsflyer.com
@@ -492,6 +497,7 @@
 .m-adnet.hiaiabc.com
 .m.ad.zhangyue.com
 .m.atm.youku.com
+.m.iqiyipic.com
 .m1.ad.10010.com
 .mapi.m.jd.com
 .masdkv6.3g.qq.com
@@ -675,6 +681,7 @@
 .staging-notify.sec.miui.com
 .stat.dongqiudi.com
 .stat.y.qq.com
+.static-s.iqiyi.com
 .static.ads-twitter.com
 .statics.woozooo.com
 .stats.wp.com
@@ -833,7 +840,9 @@
 .xlviiirdr.com
 .xlviirdr.com
 .xycdn.com
+.yk-ssp-ad.cp31.ott.cibntv.net
 .yk-ssp.ad.youku.com
+.ykad-data.cp31.ott.cibntv.net
 .ykad-data.youku.com
 .ykad-gateway.youku.com
 .youku-acs.m.taobao.com

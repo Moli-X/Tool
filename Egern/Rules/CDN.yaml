@@ -11,9 +11,15 @@ DOMAIN-KEYWORD,-res.cloudinary.com
 DOMAIN-KEYWORD,-thumbs.pornhost.com
 DOMAIN-KEYWORD,-thumbs.worldsex.com
 DOMAIN-KEYWORD,99avcdn
+DOMAIN-KEYWORD,assets.trustpilot.net
 DOMAIN-KEYWORD,cdn.adultempire.com
+DOMAIN-KEYWORD,cdn.trustpilot.net
 DOMAIN-KEYWORD,dsn.algolia.net
 DOMAIN-KEYWORD,fonts.hanime1
+DOMAIN-KEYWORD,images.trustpilot.com
+DOMAIN-KEYWORD,images.trustpilot.net
+DOMAIN-KEYWORD,scripts.trustpilot.com
+DOMAIN-KEYWORD,static.trustpilot.com
 DOMAIN-KEYWORD,vdownload.hanime1
 DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 DOMAIN-KEYWORD,web-assets.zendesk
@@ -72,11 +78,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-07-21T08:09:50.380Z
-# Last Updated: 2025-07-21T15:51:53.681Z
+# Last Updated: 2025-07-23T11:34:44.940Z
+# Last Updated: 2025-07-23T11:34:49.265Z
 # License: AGPL 3.0
-# Size: 3697
-# Size: 70
+# Size: 3698
+# Size: 76
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -1487,6 +1493,7 @@ cache.omnicalculator.com
 cached.rebuyengine.com
 canny-assets.io
 cassette.sphdigital.com.sg
+categoriespages-cdn.trustpilot.net
 cc-embed.adobe.com
 cc.boyfriendtv.com
 cdn-1.ggjav.com

@@ -1,15 +1,15 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 840
+# 规则统计: 849
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 831
-#Update content: 清理失效域名完毕，暂时告一段落
-#Update time: 2025-07-22 17:37:34 UTC+8
-#Version: 1.6.7-release
+#Total lines: 840
+#Update content: Block 360's intrusive shopping ads.
+#Update time: 2025-07-23 19:37:23 UTC+8
+#Version: 1.6.8-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500026601.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -155,11 +155,14 @@
 .adxlog-adnet.vivo.com.cn,Ads_AWAvenue
 .adxserver.ad.cmvideo.cn,Ads_AWAvenue
 .aegis.qq.com,Ads_AWAvenue
+.aem.dentsuchina.cn,Ads_AWAvenue
 .afs.googlesyndication.com,Ads_AWAvenue
 .agn.aty.sohu.com,Ads_AWAvenue
 .aiseet.aa.atianqi.com,Ads_AWAvenue
 .ali-ad.a.yximgs.com,Ads_AWAvenue
 .ali-p2p-v2.pull.yximgs.com,Ads_AWAvenue
+.alicoccdncnc-xn.inter.71edge.com,Ads_AWAvenue
+.alicoccdnct-xn.inter.71edge.com,Ads_AWAvenue
 .alog.umeng.com,Ads_AWAvenue
 .alogus.umeng.com,Ads_AWAvenue
 .als.baidu.com,Ads_AWAvenue
@@ -228,6 +231,7 @@
 .bdapi-ads.realmemobile.com,Ads_AWAvenue
 .bdapi-in-ads.realmemobile.com,Ads_AWAvenue
 .bdapi.ads.oppomobile.com,Ads_AWAvenue
+.bdcdncnc.inter.71edge.com,Ads_AWAvenue
 .beacon-api.aliyuncs.com,Ads_AWAvenue
 .beacon.qq.com,Ads_AWAvenue
 .beaconcdn.qq.com,Ads_AWAvenue
@@ -411,6 +415,7 @@
 .img-c.heytapimage.com,Ads_AWAvenue
 .img-x.jd.com,Ads_AWAvenue
 .img.adnyg.com.w.kunlungr.com,Ads_AWAvenue
+.img2.360buyimg.com,Ads_AWAvenue
 .impression-asia.chinaliftoff.io,Ads_AWAvenue
 .impression-asia.liftoff.io,Ads_AWAvenue
 .impression.appsflyer.com,Ads_AWAvenue
@@ -492,6 +497,7 @@
 .m-adnet.hiaiabc.com,Ads_AWAvenue
 .m.ad.zhangyue.com,Ads_AWAvenue
 .m.atm.youku.com,Ads_AWAvenue
+.m.iqiyipic.com,Ads_AWAvenue
 .m1.ad.10010.com,Ads_AWAvenue
 .mapi.m.jd.com,Ads_AWAvenue
 .masdkv6.3g.qq.com,Ads_AWAvenue
@@ -675,6 +681,7 @@
 .staging-notify.sec.miui.com,Ads_AWAvenue
 .stat.dongqiudi.com,Ads_AWAvenue
 .stat.y.qq.com,Ads_AWAvenue
+.static-s.iqiyi.com,Ads_AWAvenue
 .static.ads-twitter.com,Ads_AWAvenue
 .statics.woozooo.com,Ads_AWAvenue
 .stats.wp.com,Ads_AWAvenue
@@ -833,7 +840,9 @@
 .xlviiirdr.com,Ads_AWAvenue
 .xlviirdr.com,Ads_AWAvenue
 .xycdn.com,Ads_AWAvenue
+.yk-ssp-ad.cp31.ott.cibntv.net,Ads_AWAvenue
 .yk-ssp.ad.youku.com,Ads_AWAvenue
+.ykad-data.cp31.ott.cibntv.net,Ads_AWAvenue
 .ykad-data.youku.com,Ads_AWAvenue
 .ykad-gateway.youku.com,Ads_AWAvenue
 .youku-acs.m.taobao.com,Ads_AWAvenue

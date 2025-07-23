@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3780
+# 规则统计: 3787
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -14,9 +14,15 @@ HOST-KEYWORD,-res.cloudinary.com,CDN
 HOST-KEYWORD,-thumbs.pornhost.com,CDN
 HOST-KEYWORD,-thumbs.worldsex.com,CDN
 HOST-KEYWORD,99avcdn,CDN
+HOST-KEYWORD,assets.trustpilot.net,CDN
 HOST-KEYWORD,cdn.adultempire.com,CDN
+HOST-KEYWORD,cdn.trustpilot.net,CDN
 HOST-KEYWORD,dsn.algolia.net,CDN
 HOST-KEYWORD,fonts.hanime1,CDN
+HOST-KEYWORD,images.trustpilot.com,CDN
+HOST-KEYWORD,images.trustpilot.net,CDN
+HOST-KEYWORD,scripts.trustpilot.com,CDN
+HOST-KEYWORD,static.trustpilot.com,CDN
 HOST-KEYWORD,vdownload.hanime1,CDN
 HOST-KEYWORD,vod-adaptive.akamaized.net,CDN
 HOST-KEYWORD,web-assets.zendesk,CDN
@@ -75,11 +81,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-07-21T08:09:50.380Z
-# Last Updated: 2025-07-21T15:51:53.681Z
+# Last Updated: 2025-07-23T11:34:44.940Z
+# Last Updated: 2025-07-23T11:34:49.265Z
 # License: AGPL 3.0
-# Size: 3697
-# Size: 70
+# Size: 3698
+# Size: 76
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -1490,6 +1496,7 @@ cache.omnicalculator.com,CDN
 cached.rebuyengine.com,CDN
 canny-assets.io,CDN
 cassette.sphdigital.com.sg,CDN
+categoriespages-cdn.trustpilot.net,CDN
 cc-embed.adobe.com,CDN
 cc.boyfriendtv.com,CDN
 cdn-1.ggjav.com,CDN
