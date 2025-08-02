@@ -746,8 +746,8 @@ jobs:
         curl -s https://raw.githubusercontent.com/luestr/ProxyResource/main/README.md | \
         sed -n '/<table>/,/<\/table>/p' >> Tool-repo/Loon/Readme.md
     
-        # 替换 Plugin 部分
-        sed -i 's|https://kelee.one/Tool/Loon/Plugin|https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee|g' Tool-repo/Loon/Readme.md
+        # 替换 Lpx 部分
+        sed -i 's|https://kelee.one/Tool/Loon/Lpx|https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee|g' Tool-repo/Loon/Readme.md
 
     
     
