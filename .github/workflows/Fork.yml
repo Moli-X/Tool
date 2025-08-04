@@ -445,7 +445,7 @@ jobs:
             
             # 将原链接添加到文件开头
            # echo "# 原链接 : $url" | cat - "Tool-repo/Loon/Plugin/Kelee/$plugin_name.plugin" > temp && mv temp "Tool-repo/Loon/Plugin/Kelee/$plugin_name.plugin"
-            sed -i "1s|^|# 原链接 : $url\n|" "Tool-repo/Loon/Plugin/Kelee/$plugin_name.plugin"  # 在文件开头添加原链接
+            # sed -i "1s|^|# 原链接 : $url\n|" "Tool-repo/Loon/Plugin/Kelee/$plugin_name.plugin"  # 在文件开头添加原链接
         done
 
         # 删除 error.log 文件
