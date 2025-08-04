@@ -1,20 +1,22 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 849
+# 规则统计: 856
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 840
-#Update content: Block 360's intrusive shopping ads.
-#Update time: 2025-07-23 19:37:23 UTC+8
+#Total lines: 848
+#Update content: 修复读取规则的小问题
+#Update time: 2025-08-03 17:29:46 UTC+8
 #Version: 1.6.8-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500026601.vodplayer.wxamedia.com,Ads_AWAvenue
+.1rtb.com,Ads_AWAvenue
 .8le8le.com,Ads_AWAvenue
 .8rn1y79f02-1.algolianet.com,Ads_AWAvenue
+.a.market.xiaomi.com,Ads_AWAvenue
 .a0.app.xiaomi.com,Ads_AWAvenue
 .aaid.umeng.com,Ads_AWAvenue
 .abtest-ch.snssdk.com,Ads_AWAvenue
@@ -59,6 +61,7 @@
 .adexpo.tencentmusic.com,Ads_AWAvenue
 .adfilter.imtt.qq.com,Ads_AWAvenue
 .adguanggao.eee114.com,Ads_AWAvenue
+.adintl.cn,Ads_AWAvenue
 .adjust.cn,Ads_AWAvenue
 .adjust.com,Ads_AWAvenue
 .adks.hpplay.cn,Ads_AWAvenue
@@ -149,6 +152,7 @@
 .adx-os.anythinktech.com,Ads_AWAvenue
 .adx.ads.heytapmobi.com,Ads_AWAvenue
 .adx.ads.oppomobile.com,Ads_AWAvenue
+.adx.adwangmai.com,Ads_AWAvenue
 .adx.appsdk.com.cn,Ads_AWAvenue
 .adx.sogaha.cn,Ads_AWAvenue
 .adx.tuia.cn,Ads_AWAvenue
@@ -302,6 +306,7 @@
 .data-sdk-uuid-log.d.meituan.net,Ads_AWAvenue
 .data.ads.oppomobile.com,Ads_AWAvenue
 .data.chsmarttv.com,Ads_AWAvenue
+.data.hicloud.com,Ads_AWAvenue
 .data.mistat.india.xiaomi.com,Ads_AWAvenue
 .data.mistat.rus.xiaomi.com,Ads_AWAvenue
 .data.mistat.xiaomi.com,Ads_AWAvenue
@@ -470,6 +475,7 @@
 .log-verify.hiaiabc.com,Ads_AWAvenue
 .log.ad.xiaomi.com,Ads_AWAvenue
 .log.aispeech.com,Ads_AWAvenue
+.log.aliyuncs.com,Ads_AWAvenue
 .log.amemv.com,Ads_AWAvenue
 .log.appstore3.huan.tv,Ads_AWAvenue
 .log.avlyun.com,Ads_AWAvenue
@@ -524,7 +530,6 @@
 .mobaliyun.res.mgtv.com,Ads_AWAvenue
 .mobile.da.mgtv.com,Ads_AWAvenue
 .mobilelog.upqzfile.com,Ads_AWAvenue
-.mon.zijieapi.com,Ads_AWAvenue
 .monitor-ads-test.huan.tv,Ads_AWAvenue
 .monitor-uu.play.aiseet.atianqi.com,Ads_AWAvenue
 .monitor.music.qq.com,Ads_AWAvenue
@@ -730,7 +735,6 @@
 .tnc3-aliec2.bytedance.com,Ads_AWAvenue
 .tnc3-aliec2.snssdk.com,Ads_AWAvenue
 .tnc3-aliec2.toutiaoapi.com,Ads_AWAvenue
-.tnc3-aliec2.zijieapi.com,Ads_AWAvenue
 .tnc3-alisc1.bytedance.com,Ads_AWAvenue
 .tnc3-alisc1.snssdk.com,Ads_AWAvenue
 .tnc3-alisc1.toutiaoapi.com,Ads_AWAvenue
@@ -763,6 +767,7 @@
 .tytx.m.cn.miaozhen.com,Ads_AWAvenue
 .tz.sec.xiaomi.com,Ads_AWAvenue
 .uapi.ads.heytapmobi.com,Ads_AWAvenue
+.ubixioe.com,Ads_AWAvenue
 .udc.yahoo.com,Ads_AWAvenue
 .udcm.yahoo.com,Ads_AWAvenue
 .uedas.qidian.com,Ads_AWAvenue
@@ -793,7 +798,6 @@
 .v2mi.gdt.qq.com,Ads_AWAvenue
 .v3-ad.video.yximgs.com,Ads_AWAvenue
 .v3.gdt.qq.com,Ads_AWAvenue
-.vali-ugc.cp31.ott.cibntv.net,Ads_AWAvenue
 .vd6.l.qq.com,Ads_AWAvenue
 .vi.l.qq.com,Ads_AWAvenue
 .video-ad.sm.cn,Ads_AWAvenue
@@ -803,6 +807,7 @@
 .vipauth.hpplay.cn,Ads_AWAvenue
 .vipgslb.hpplay.cn,Ads_AWAvenue
 .virusinfo-cloudscan-cn.heytapmobi.com,Ads_AWAvenue
+.vlion.cn,Ads_AWAvenue
 .vlive.qqvideo.tc.qq.com,Ads_AWAvenue
 .volc.bj.ad.track.66mobi.com,Ads_AWAvenue
 .vungle.com,Ads_AWAvenue
@@ -840,6 +845,7 @@
 .xlviiirdr.com,Ads_AWAvenue
 .xlviirdr.com,Ads_AWAvenue
 .xycdn.com,Ads_AWAvenue
+.yfanads.com,Ads_AWAvenue
 .yk-ssp-ad.cp31.ott.cibntv.net,Ads_AWAvenue
 .yk-ssp.ad.youku.com,Ads_AWAvenue
 .ykad-data.cp31.ott.cibntv.net,Ads_AWAvenue
@@ -848,5 +854,6 @@
 .youku-acs.m.taobao.com,Ads_AWAvenue
 .ytx-file.110route.cn,Ads_AWAvenue
 .zeus.ad.xiaomi.com,Ads_AWAvenue
+.zhangyuyidong.cn,Ads_AWAvenue
 .zhihu-web-analytics.zhihu.com,Ads_AWAvenue
 .zxid-m.mobileservice.cn,Ads_AWAvenue

@@ -1,20 +1,22 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 849
+# 规则统计: 856
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 840
-#Update content: Block 360's intrusive shopping ads.
-#Update time: 2025-07-23 19:37:23 UTC+8
+#Total lines: 848
+#Update content: 修复读取规则的小问题
+#Update time: 2025-08-03 17:29:46 UTC+8
 #Version: 1.6.8-release
 .1500020991.vodplayer.wxamedia.com
 .1500022744.vodplayer.wxamedia.com
 .1500026601.vodplayer.wxamedia.com
+.1rtb.com
 .8le8le.com
 .8rn1y79f02-1.algolianet.com
+.a.market.xiaomi.com
 .a0.app.xiaomi.com
 .aaid.umeng.com
 .abtest-ch.snssdk.com
@@ -59,6 +61,7 @@
 .adexpo.tencentmusic.com
 .adfilter.imtt.qq.com
 .adguanggao.eee114.com
+.adintl.cn
 .adjust.cn
 .adjust.com
 .adks.hpplay.cn
@@ -149,6 +152,7 @@
 .adx-os.anythinktech.com
 .adx.ads.heytapmobi.com
 .adx.ads.oppomobile.com
+.adx.adwangmai.com
 .adx.appsdk.com.cn
 .adx.sogaha.cn
 .adx.tuia.cn
@@ -302,6 +306,7 @@
 .data-sdk-uuid-log.d.meituan.net
 .data.ads.oppomobile.com
 .data.chsmarttv.com
+.data.hicloud.com
 .data.mistat.india.xiaomi.com
 .data.mistat.rus.xiaomi.com
 .data.mistat.xiaomi.com
@@ -470,6 +475,7 @@
 .log-verify.hiaiabc.com
 .log.ad.xiaomi.com
 .log.aispeech.com
+.log.aliyuncs.com
 .log.amemv.com
 .log.appstore3.huan.tv
 .log.avlyun.com
@@ -524,7 +530,6 @@
 .mobaliyun.res.mgtv.com
 .mobile.da.mgtv.com
 .mobilelog.upqzfile.com
-.mon.zijieapi.com
 .monitor-ads-test.huan.tv
 .monitor-uu.play.aiseet.atianqi.com
 .monitor.music.qq.com
@@ -730,7 +735,6 @@
 .tnc3-aliec2.bytedance.com
 .tnc3-aliec2.snssdk.com
 .tnc3-aliec2.toutiaoapi.com
-.tnc3-aliec2.zijieapi.com
 .tnc3-alisc1.bytedance.com
 .tnc3-alisc1.snssdk.com
 .tnc3-alisc1.toutiaoapi.com
@@ -763,6 +767,7 @@
 .tytx.m.cn.miaozhen.com
 .tz.sec.xiaomi.com
 .uapi.ads.heytapmobi.com
+.ubixioe.com
 .udc.yahoo.com
 .udcm.yahoo.com
 .uedas.qidian.com
@@ -793,7 +798,6 @@
 .v2mi.gdt.qq.com
 .v3-ad.video.yximgs.com
 .v3.gdt.qq.com
-.vali-ugc.cp31.ott.cibntv.net
 .vd6.l.qq.com
 .vi.l.qq.com
 .video-ad.sm.cn
@@ -803,6 +807,7 @@
 .vipauth.hpplay.cn
 .vipgslb.hpplay.cn
 .virusinfo-cloudscan-cn.heytapmobi.com
+.vlion.cn
 .vlive.qqvideo.tc.qq.com
 .volc.bj.ad.track.66mobi.com
 .vungle.com
@@ -840,6 +845,7 @@
 .xlviiirdr.com
 .xlviirdr.com
 .xycdn.com
+.yfanads.com
 .yk-ssp-ad.cp31.ott.cibntv.net
 .yk-ssp.ad.youku.com
 .ykad-data.cp31.ott.cibntv.net
@@ -848,5 +854,6 @@
 .youku-acs.m.taobao.com
 .ytx-file.110route.cn
 .zeus.ad.xiaomi.com
+.zhangyuyidong.cn
 .zhihu-web-analytics.zhihu.com
 .zxid-m.mobileservice.cn

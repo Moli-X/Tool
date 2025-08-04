@@ -1,28 +1,2 @@
 # 原链接 : https://kelee.one/Tool/Loon/Lpx/Sub-Store.lpx
-#!name=Sub-Store
-#!desc=高级订阅管理工具，使用前请在本插件的详情页面为[PROXY]项分配代理策略。
-#App链接=https://sub.store
-#!author=Peng-YM[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=订阅管理
-#!system=
-#!system_version=
-#!loon_version=3.2.1(749)
-#!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Sub-Store.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Sub-Store.png
-#!select=节点缓存有效期,1分钟,5分钟,10分钟,30分钟,1小时,2小时,3小时,6小时,12小时,24小时,48小时,72小时
-#!select=响应头缓存有效期,1分钟,5分钟,10分钟,30分钟,1小时,2小时,3小时,6小时,12小时,24小时,48小时,72小时
-#!date=2025-05-13 15:17:08
-
-[Rule]
-DOMAIN, sub-store.vercel.app, PROXY
-DOMAIN, ip-api.com, PROXY
-
-[Script]
-http-request ^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))) script-path=https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-1.min.js, requires-body=true, timeout=120, tag=Sub-Store Core
-
-http-request ^https?:\/\/sub\.store script-path=https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-0.min.js, requires-body=true, timeout=120, tag=Sub-Store Simple
-
-cron "0 0 1 ? * ?" script-path=https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/cron-sync-artifacts.min.js, tag=Sub-Store Sync
-
-[MitM]
-hostname=sub.store
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'kelee.one',cType: 'managed',cRay: '969d063eab23619c',cH: 'CzasMDO5Xc3PnzcxTHGnn7BT.t__RqIKOkkLOGY6FsY-1754299704-1.2.1.1-zDkTKTrgfy8J.Z35dMHlPaLi4AaMFM4AE3GacmHEAwAzPpcAU7.AtTzC_cZHZiax',cUPMDTk:"/Tool/Loon/Lpx/Sub-Store.lpx?__cf_chl_tk=YKW08D8uClL2YsrJ4xPwAfpTB4WKMaaVWNpNtmPZ8nI-1754299704-1.0.1.1-HukrfYLp9U7GWuVRYGCCIp2lk6ukctJ04LGCT7YlRCc",cFPWv: 'b',cITimeS: '1754299704',cTplC:0,cTplV:5,cTplB: 'cf',fa:"/Tool/Loon/Lpx/Sub-Store.lpx?__cf_chl_f_tk=YKW08D8uClL2YsrJ4xPwAfpTB4WKMaaVWNpNtmPZ8nI-1754299704-1.0.1.1-HukrfYLp9U7GWuVRYGCCIp2lk6ukctJ04LGCT7YlRCc",md: 'RhEOEel4OFxOmJeYXXUqIzVznb_HpQ5D5EVy3YY5Krk-1754299704-1.2.1.1-ETdphvp4G3EYaJzbne.DFagCAivu_PWVFoXg.MifgrvOjHKCNh3c75aNCu8sT6LK5ZxR.l_b06nPLZhLXYZQ2gmr9_K_r_5mQuUzcvAWDgnuvxC11oeOgFx3mdR0vYgLSWwh5DUrlgovKHBaFZLTareWlCBquYas.QQy4kJ7YoWmEoeduFQ_XIzky5m2Pu81AHLfKA0eKaz3n4m8i3RpRFysogd8hzbYdc_FhVv0HuuAPK6Y8Rp42hYn528o4D_O83GxkQfPPt8BXZRnfi_Do8nfNSATcifyyd_r83VsP0SllKhPqm8X4M1pnnHA.4PMn4276JIlK1M3oqXLk3KaGsjcguLRKQYDVA5GHBIBPuy2KFQ0.W.os9YM6ZW7x5gpXJ8QUZQoJXDmCpYURAXYam2cKK32CbAt6_u.2Zu4WD3.C_7HjLQBfjI4RgI42Aoa.3kztsoJ_52Ke3k4T_DvjoHhnwFTGosT7XoWtoCwwOBay0Df4zYYvpoe_a_reazQA6HmQD3oLbeCBtZsx8f2L.l59IpEL6rYBut7Vfz9BxK9rTm0EfXxz.qYiBmBD1oyOQELJyevZQVABvWjEB8hDvfX8xF_6zxwAtBZH9CH8QH6CoGK4rBatGIcljndXINFae4sp.8vo2dy1918DK8hiAcCuh7GcvdA3wWb6FabMR3lIjtDsyF8kFhvMshd0jacED0LXLsJlKoSxPtxIdnrvA1lB_Rr0b.S7NAubO9xiBOC_mE27RHksB_dQoTzfeXUf4ORGljrCOS7RQEG0ruPvJ.4MzQcbMcW6FVBnnAI93vbjUqOHo7HowWFzbAhQQKdmIPZ7Um7oy6mcjrLUyVm6ALN10XVpSMPVEdqy5CQQy2vwkMW2KQipx6NpuB2misLCWRn73WjWppJfFPkE7ShPRkdQKfoP10BYFmDJ_nhnRsg3we.ra2IPOQ7Ls8vFBfhlG_8B46bjOO8iaLOFuPIkiGB9qu2n.yZ43ithseShbTg7EUXNkyD04CVJL9CZJTz0NgQifB5sbL.zvMXilk4hw',mdrd: '',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=969d063eab23619c';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/Tool/Loon/Lpx/Sub-Store.lpx?__cf_chl_rt_tk=YKW08D8uClL2YsrJ4xPwAfpTB4WKMaaVWNpNtmPZ8nI-1754299704-1.0.1.1-HukrfYLp9U7GWuVRYGCCIp2lk6ukctJ04LGCT7YlRCc"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>

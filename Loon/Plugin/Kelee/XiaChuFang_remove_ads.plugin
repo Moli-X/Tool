@@ -1,28 +1,2 @@
 # 原链接 : https://kelee.one/Tool/Loon/Lpx/XiaChuFang_remove_ads.lpx
-#!name=下厨房去广告
-#!desc=移除开屏广告、信息流推广、各类横幅推广，精简首页标签。
-#App链接=https://apps.apple.com/app/id460979760
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=
-#!system_version=
-#!loon_version=3.2.4(787)
-#!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/XiaChuFang_remove_ads.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/XiaChuFang.png
-#!date=2025-05-13 15:17:08
-
-[Rewrite]
-^https:\/\/api\.xiachufang\.com\/v2\/ad\/ reject-dict
-
-^https:\/\/api\.xiachufang\.com\/v2\/homepage\/paged_waterfall_recommendations\.json$ response-body-json-jq 'del(.multiplex_cells[] | select(.recommendation_cell.impression_sensor_events[]?.properties.target_type? == "ad"))'
-
-^https:\/\/api\.xiachufang\.com\/v2\/config\/get\.json$ response-body-json-jq 'del(.content.tab_name[] | select(. == "减脂" or . == "商店" or . == "分类"))'
-
-^https:\/\/api\.xiachufang\.com\/v2\/account\/feeds_v7\.json reject-dict
-
-^https:\/\/api\.xiachufang\.com\/v2\/homepage1810\/init_page\.json reject-dict
-
-^https:\/\/api\.xiachufang\.com\/v2\/mark_mission\/get_sticker_info\.json reject-dict
-
-[MitM]
-hostname=api.xiachufang.com
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'kelee.one',cType: 'managed',cRay: '969d06475817a0b6',cH: '3QBUg.FU._yEzglTSvnPfv8UXyTP_dRxCMI__b9RmiU-1754299705-1.2.1.1-R1tFzT6cPoValb1TejTlZC1Zu5JZqkujT.RlaFqDEeEwSeAsASQToD.g5WLmvsCt',cUPMDTk:"/Tool/Loon/Lpx/XiaChuFang_remove_ads.lpx?__cf_chl_tk=QjAL0Sf8wqK3bIMeozsW5BPCqaWSxMxTppGTHrboXlw-1754299705-1.0.1.1-cff0T8JNAxLeqfNzZW9kPkvCk9aMyqIQ9wjDqjUJ3Fc",cFPWv: 'b',cITimeS: '1754299705',cTplC:0,cTplV:5,cTplB: 'cf',fa:"/Tool/Loon/Lpx/XiaChuFang_remove_ads.lpx?__cf_chl_f_tk=QjAL0Sf8wqK3bIMeozsW5BPCqaWSxMxTppGTHrboXlw-1754299705-1.0.1.1-cff0T8JNAxLeqfNzZW9kPkvCk9aMyqIQ9wjDqjUJ3Fc",md: 'jRNbjrBpqAx52GhpbnAKKN8M2aYq1j4W351PZj1DbbE-1754299705-1.2.1.1-Mbw8QCRRExB8moYa0HOHL28hNLlq3TYNnFdifsoXROwobjz0kkSzXFw5CVmLdH6tRf5wgcK8gaW9p.o8NibdDkm2GNoirV22m9Bq5LVOpCvgT5JPXq3iVYprUoeo0Y5fG_lkYpgLbvNsTYVUNmYx_cyl8dgBZs0R6wx4h63HAtxGsUIzz6XyvPa_B2a3E0BbzYhJoKYJ7pZ7FGo4jiGWahs6SysD9ltnKGXgwn28_.xauTUJeZgrQnZPhGKtAyo9T.629nThT66F46QBH3twJWlkZJ1HamB36lV1TunXur0H2QFCwqGynjLu8.8CSEs.YO8InV..aozfOeDCjTgflUv7tqcBx77iXDZjNL9XFcWKdAfMtqv_lFN1r63JnfuztONIsm1KnkrsL70hts3BCh8S4XayyF9bh4FkjQ3ll5X9pRggiCogrjEyxtnbZF.3ztY7ChJLJ8ZRaMNqHCaQHM8o4iM6qV4bzQCviGFmJ.Vc8wSBo_6FR6F5GNF549GYu11yReN8a4IuMcfEWOtROq5foPb2NUl7pvgjz9QDXytub7oE3tNqaFfGtN3FEukNH0vZfoouZJYceVgUzPHXKMJZUR__9wgi4Eof7OllQWZh4WqVgCYhNhz0jqoWjmmQ9FhJfgueVzrc9Q69J7KEwrUc3c7DcBqkU6zGP3.Wcl_bBelIDF0FgokpO_rBYFaZgFs_oHxqSmVw.p2uBf6EH7uZ2Yh38KDdC5mxK5I8opzxpa_QPGMdq5fTPiyxImViKtZF62WDpxQMeBG7Axox8sN.12UfbKc2EN8nEzvxdf0qO1AIRUIunW_LiUMB0cKot0f9GljWQPHrchmYlGrrSTuEs_r8Xz07vruIZwxjr_tsMMIeb5PWO2vezoqlHXJLjjSApF_Rr6UTnArgPqBES2aZakgd2kuirNrikM1xqov2B604EbPSFJc7SFp1x26oE0vkY2Uz_f_gBCp2QDTXYq51FkLDE7VXbiWZhNBkwMI7qOk9ks_cTUqlYoNQbuemPusomtxMGHjfKcLB1jvzPgEsO1cjlfTZdACqIIajNl8',mdrd: '',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=969d06475817a0b6';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/Tool/Loon/Lpx/XiaChuFang_remove_ads.lpx?__cf_chl_rt_tk=QjAL0Sf8wqK3bIMeozsW5BPCqaWSxMxTppGTHrboXlw-1754299705-1.0.1.1-cff0T8JNAxLeqfNzZW9kPkvCk9aMyqIQ9wjDqjUJ3Fc"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>

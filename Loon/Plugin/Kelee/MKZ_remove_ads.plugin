@@ -1,27 +1,2 @@
 # 原链接 : https://kelee.one/Tool/Loon/Lpx/MKZ_remove_ads.lpx
-#!name=漫客栈去广告
-#!desc=移除开屏广告、漫画广告、小说章末广告，精简我的页面。
-#App链接=https://apps.apple.com/app/id1189885433
-#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
-#!tag=去广告
-#!system=
-#!system_version=
-#!loon_version=3.2.4(787)
-#!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/MKZ_remove_ads.plugin
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MKZ.png
-#!date=2025-05-13 15:17:08
-
-[Rewrite]
-^https:\/\/base\.mkzcdn\.com\/advert\/app\/read\/v\d reject-dict
-^https:\/\/base\.mkzcdn\.com\/advert\/app\/story\/read\/v\d reject-dict
-
-^https:\/\/base\.mkzcdn\.com\/advert\/app\/task\/motivate\/v\d reject-dict
-^https:\/\/base\.mkzcdn\.com\/advert\/app\/task\/motivate\/v\d reject-dict
-
-^https:\/\/base\.mkzcdn\.com\/advert\/app\/user\/slide\d\/v\d\/ reject-dict
-
-[Script]
-http-response ^https:\/\/base\.mkzcdn\.com\/app\/config\/ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/MKZ_remove_ads.js, requires-body=true, tag=配置修改
-
-[MitM]
-hostname=base.mkzcdn.com
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'kelee.one',cType: 'managed',cRay: '969d06238912eaf4',cH: 'VUSmSr_42nB_eA4LXPR58ug0z8l4XhF4HOcc6s7E_BY-1754299699-1.2.1.1-hsPSqR_xIHzmDvud45mo5r9TbKz5zfdiiCPJVG.12wwjBax4BAgUkVGYZOxy3fWK',cUPMDTk:"/Tool/Loon/Lpx/MKZ_remove_ads.lpx?__cf_chl_tk=10iekhpISXQah8g2t_tzEnvKrb_zeis4ps2Li3RycTw-1754299699-1.0.1.1-Nz.zo0lmfL9vfYEn8RXKkZDQzR351HuQ4tsLvtwUC6k",cFPWv: 'b',cITimeS: '1754299699',cTplC:0,cTplV:5,cTplB: 'cf',fa:"/Tool/Loon/Lpx/MKZ_remove_ads.lpx?__cf_chl_f_tk=10iekhpISXQah8g2t_tzEnvKrb_zeis4ps2Li3RycTw-1754299699-1.0.1.1-Nz.zo0lmfL9vfYEn8RXKkZDQzR351HuQ4tsLvtwUC6k",md: 'PMQgSnWnRTnLV_7doHmJU8n5ekvg4O5z8KlpijRey2E-1754299699-1.2.1.1-JawXPG3ZuBcJXWNQkTFTkH3C9mxduxD4PQvj0XRsLk2uV8o4ZH_Uer7pHVdaMrhlYHACixHNVglnju9Fy0iAI05ylYz8T2tiUTJUjtmIJH7dOssWfVyOp3reQUAwiWNsXu6pY8GCnwpewHpqOi7ahKK4nQh6KqVnFUbKyGrhQYiY1.ssu2gwq2MyiOnzU7c0kG.dwxgk7lzbhE37JiIKNRZkNMjPzZBrvtPQXW88ui346qqCxPg7SwyI5NGcsPtac7.VUP0s9cZW82mHMo5vHcKdA9bhCu.w9pY3PgNbJ6nZqTyZMdrfzV2l3kNPJrhxgvaUF.xD5s9VCuNrfrbKe9nO8ySNgsDUDv70jW0OTIri11uxkcK8lNsCA1ZywSYItNmXOuk5FPfLhy3GbFk.AFi2bx3afhvVwWfiHNoVyQ1k3iAJ6A8BJ.oRLdfqM4m7m2XxlALswKkOXT87GPwDu6ROy9mNmEwV0csFeGBaBygGECU.RF7_oHbVZQi9LRNbutI9YuQoPFou23cAOZ8HyrhpBfxruHBLdWEjUmpESri6OnCBQFid4u5nCkntUHkP.bMLK_KdY705EVeAaVKj6VXL8EPC3PPNTdlj1Gzk7MKV0hCypQs8A3t6D5BxTFC2k6e3EYpCBGtz4qKV1xBGVQ01OfkMk_9_w1zLU5KVK24Py9VcXHC.Bjm4fz7Jr1W23fFSm1PIRqzt7zxZv8PzVddgUaO2bKFHiDyX3SlKo2ZpeoR8IuV5NU27YkEndZtCWHY3YI3r0JrfUkxnqX.1TPMKQIjq65ZgO7MddnFW4atpIZ8LssRS059U806cDXSW_S7za5QtpoNeS220khxpE6.5uUvOkOOhpyQHTYQWEvzm1gChaDzg25n75Y1TL_HdjXTF9ucQR4NLaElBLRguI4vbucEJaBza0nG3egfo2cFCiT.J6nxx32ZuPIYTKxDkTTqK89UvHDxjHELj9DDzgzvpNqnKnYMA9a3H.2zZVCHv91gQSFGytW4n1P4PTeu31GVcuAnNgYOeP7Ys0L58bQ',mdrd: '',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=969d06238912eaf4';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/Tool/Loon/Lpx/MKZ_remove_ads.lpx?__cf_chl_rt_tk=10iekhpISXQah8g2t_tzEnvKrb_zeis4ps2Li3RycTw-1754299699-1.0.1.1-Nz.zo0lmfL9vfYEn8RXKkZDQzR351HuQ4tsLvtwUC6k"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
