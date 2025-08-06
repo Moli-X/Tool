@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3825
+# 规则统计: 3833
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -82,9 +82,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-07-23T11:34:44.940Z
-# Last Updated: 2025-08-05T13:37:19.569Z
+# Last Updated: 2025-08-06T09:47:49.590Z
 # License: AGPL 3.0
-# Size: 3736
+# Size: 3744
 # Size: 76
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -2512,6 +2512,7 @@ images.spot.im,CDN
 images.spr.so,CDN
 images.store.crowdstrike.com,CDN
 images.svc.ui.com,CDN
+images.tg.cc,CDN
 images.tokopedia.net,CDN
 images.typeform.com,CDN
 images.unsplash.com,CDN
@@ -2546,6 +2547,7 @@ img-prod-cms-rt-microsoft-com.akamaized.net,CDN
 img-s-msn-com.akamaized.net,CDN
 img.177pica.com,CDN
 img.3movs.com,CDN
+img.4gamers.com.tw,CDN
 img.4khd.com,CDN
 img.adspower.net,CDN
 img.agrd.eu,CDN
@@ -2610,6 +2612,7 @@ img.sparemin.com,CDN
 img.sparknotes.com,CDN
 img.supjav.com,CDN
 img.telemetr.io,CDN
+img.tg.cc,CDN
 img.thingiverse.com,CDN
 img.timero.xyz,CDN
 img.toto.im,CDN
@@ -2757,6 +2760,7 @@ makerworld.bblmw.com,CDN
 mangaz-books.j-comi.jp,CDN
 mangaz-static.j-comi.jp,CDN
 mantisloader.mantis-awx.com,CDN
+map.vesselfinder.net,CDN
 maps.geoapify.com,CDN
 maps.gstatic.com,CDN
 maptile.osmand.net,CDN
@@ -3047,6 +3051,7 @@ public.mocortech.com,CDN
 public.saasexch.com,CDN
 public.zoorix.com,CDN
 publicsuffix.org,CDN
+puku-dist.4gamers.com.tw,CDN
 pytorch.org,CDN
 qmod.quotemedia.com,CDN
 quriobot.com,CDN
@@ -3264,6 +3269,7 @@ st-eu.dynamicyield.com,CDN
 st.agrd.eu,CDN
 st.deviantart.net,CDN
 st.dynamicyield.com,CDN
+st.transfer.it,CDN
 st1.zoom.us,CDN
 st2.zoom.us,CDN
 st3.zoom.us,CDN
@@ -3524,6 +3530,7 @@ static.underhentai.net,CDN
 static.uptimia.com,CDN
 static.v2ex.com,CDN
 static.vanta.com,CDN
+static.vesselfinder.net,CDN
 static.vinted.com,CDN
 static.vocadb.net,CDN
 static.webclicks24.com,CDN
@@ -3636,6 +3643,7 @@ thumbnail.missav.com,CDN
 thumbnailer.mixcloud.com,CDN
 thumbnails.applegamingwiki.com,CDN
 thumbnails.cbsig.net,CDN
+thumbor.4gamers.com.tw,CDN
 thumbor.forbes.com,CDN
 thumbs.onlyfans.com,CDN
 thumbs2.sendvid.com,CDN
