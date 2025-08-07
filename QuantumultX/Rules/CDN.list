@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3833
+# 规则统计: 3841
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -82,9 +82,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-07-23T11:34:44.940Z
-# Last Updated: 2025-08-06T09:47:49.590Z
+# Last Updated: 2025-08-06T17:53:10.984Z
 # License: AGPL 3.0
-# Size: 3744
+# Size: 3752
 # Size: 76
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -120,6 +120,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .agechecker.northern-apps.com,CDN
 .ahcdn.com,CDN
 .airio3.live,CDN
+.airtableusercontent.com,CDN
 .akidoo.top,CDN
 .alexdav.id,CDN
 .algolianet.com,CDN
@@ -1942,6 +1943,7 @@ cdn1.stamped.io,CDN
 cdn1.suno.ai,CDN
 cdn1.sysgears.com,CDN
 cdn1.techbang.com,CDN
+cdn1.telegram.space,CDN
 cdn1.unrealengine.com,CDN
 cdn1.xxxsx.com,CDN
 cdn10.bigcommerce.com,CDN
@@ -1981,10 +1983,12 @@ cdn4.bigcommerce.com,CDN
 cdn4.edgedatg.com,CDN
 cdn4.iconfinder.com,CDN
 cdn4.sysgears.com,CDN
+cdn4.telegram.space,CDN
 cdn5.bigcommerce.com,CDN
 cdn5.edgedatg.com,CDN
 cdn5.hextom.com,CDN
 cdn5.iconfinder.com,CDN
+cdn5.telegram.space,CDN
 cdn6.aptoide.com,CDN
 cdn6.bigcommerce.com,CDN
 cdn6.edgedatg.com,CDN
@@ -2267,6 +2271,7 @@ fesdk.nexon.com,CDN
 fiddle.fastly.dev,CDN
 fiddle.jshell.net,CDN
 file.izanmei.net,CDN
+file1.hkepc.com,CDN
 files.armorgames.com,CDN
 files.buildwithfern.com,CDN
 files.jotform.com,CDN
@@ -2369,6 +2374,7 @@ i.guim.co.uk,CDN
 i.gzn.jp,CDN
 i.hamreus.com,CDN
 i.hentaifox.com,CDN
+i.hkepc.com,CDN
 i.ibb.co,CDN
 i.iheart.com,CDN
 i.imagepost.com,CDN
@@ -2437,6 +2443,7 @@ image.mgstage.com,CDN
 image.mux.com,CDN
 image.nmb.best,CDN
 image.p-c2-x.abema-tv.com,CDN
+image.prntscr.com,CDN
 image.send.grammarly.com,CDN
 image.ship.vercel.com,CDN
 image.shutterstock.com,CDN
@@ -3336,6 +3343,7 @@ static.addtoany.com,CDN
 static.adguardvpn.com,CDN
 static.afterpay.com,CDN
 static.ahrefs.com,CDN
+static.airtable.com,CDN
 static.aizanmei.org,CDN
 static.animaapp.com,CDN
 static.anyporn.com,CDN
