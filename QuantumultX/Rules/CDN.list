@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3843
+# 规则统计: 3849
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -82,9 +82,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-07-23T11:34:44.940Z
-# Last Updated: 2025-08-08T08:47:38.316Z
+# Last Updated: 2025-08-08T15:43:41.937Z
 # License: AGPL 3.0
-# Size: 3754
+# Size: 3760
 # Size: 76
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1255,6 +1255,7 @@ assets-next.mattersprotocol.io,CDN
 assets-s3-us-east-1.ceros.com,CDN
 assets-themes.chess.com,CDN
 assets-v2.super.so,CDN
+assets-www.readspeaker.com,CDN
 assets-www.xbox.com,CDN
 assets.aboutamazon.com,CDN
 assets.adobedtm.com,CDN
@@ -1481,6 +1482,7 @@ c.animaapp.com,CDN
 c.fantia.jp,CDN
 c.marsflag.com,CDN
 c.navattic.com,CDN
+c.pki.goog,CDN
 c.s-microsoft.com,CDN
 c.speedtestcustom.com,CDN
 c.start.me,CDN
@@ -1525,6 +1527,7 @@ cdn-cms.tunein.com,CDN
 cdn-dynmedia-1.microsoft.com,CDN
 cdn-edge.karte.io,CDN
 cdn-eu.dynamicyield.com,CDN
+cdn-eu.readspeaker.com,CDN
 cdn-fck.tnaflix.com,CDN
 cdn-forum.networklessons.com,CDN
 cdn-front.freepik.com,CDN
@@ -1552,6 +1555,7 @@ cdn-static.talent.com,CDN
 cdn-swell-assets.yotpo.com,CDN
 cdn-thumbs.imagevenue.com,CDN
 cdn-uicons.flaticon.com,CDN
+cdn-us.readspeaker.com,CDN
 cdn-web.fydeos.io,CDN
 cdn-web.orbstack.dev,CDN
 cdn-web.tunein.com,CDN
@@ -3762,6 +3766,8 @@ vpncdn.protonweb.com,CDN
 vscode-sync-insiders.trafficmanager.net,CDN
 vscode-sync.trafficmanager.net,CDN
 vsmarketplacebadge.apphb.com,CDN
+vte-eu.readspeaker.com,CDN
+vte-us.readspeaker.com,CDN
 vuejs.org,CDN
 vz-2222604c-50b.b-cdn.net,CDN
 vz-c0fe498e-5ab.b-cdn.net,CDN
