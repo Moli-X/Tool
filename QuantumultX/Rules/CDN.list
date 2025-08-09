@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3849
+# 规则统计: 3852
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -82,9 +82,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-07-23T11:34:44.940Z
-# Last Updated: 2025-08-08T15:43:41.937Z
+# Last Updated: 2025-08-09T12:36:24.935Z
 # License: AGPL 3.0
-# Size: 3760
+# Size: 3763
 # Size: 76
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -128,6 +128,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .alphafish.top,CDN
 .amaicdn.com,CDN
 .ampproject.org,CDN
+.ancestrycdn.com,CDN
 .angular.dev,CDN
 .angular.io,CDN
 .angularjs.org,CDN
@@ -1831,6 +1832,7 @@ cdn.roboflow.com,CDN
 cdn.royaleapi.com,CDN
 cdn.safecharge.com,CDN
 cdn.sanity.io,CDN
+cdn.sapphire.microsoftapp.net,CDN
 cdn.sc.gl,CDN
 cdn.scaleflex.it,CDN
 cdn.schemaapp.com,CDN
@@ -2492,6 +2494,7 @@ images.en.aptoide.com,CDN
 images.everyplate.com,CDN
 images.fandango.com,CDN
 images.financemagnates.com,CDN
+images.findagrave.com,CDN
 images.flightradar24.com,CDN
 images.freeimages.com,CDN
 images.g2crowd.com,CDN
