@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3850
+# 规则统计: 3857
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -80,9 +80,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-07-23T11:34:44.940Z
-# Last Updated: 2025-08-09T12:36:24.935Z
+# Last Updated: 2025-08-09T16:54:19.490Z
 # License: AGPL 3.0
-# Size: 3763
+# Size: 3770
 # Size: 76
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1865,6 +1865,7 @@ cdn.stash.com
 cdn.staticdelivr.com
 cdn.staticswin.com
 cdn.stellarhosted.com
+cdn.streamlabs.com
 cdn.substack.com
 cdn.sunofbeaches.com
 cdn.svgator.com
@@ -2218,6 +2219,7 @@ embed.runkit.com
 embed.savvycal.com
 embed.tawk.to
 embed.ted.com
+embed.twitch.tv
 embed.typeform.com
 embedr.flickr.com
 embedwistia-a.akamaihd.net
@@ -2407,6 +2409,7 @@ i.xxxshake.com
 i2.anysex.com
 i2.bahamut.com.tw
 i2.hentaifox.com
+i2.nhentai.net
 i3.anysex.com
 i4.anysex.com
 ias.r10s.jp
@@ -2479,6 +2482,7 @@ images.arigatotravel.com
 images.axios.com
 images.bfmtv.com
 images.blackmagicdesign.com
+images.blockscan.com
 images.carfax.com
 images.contentful.com
 images.contentstack.io
@@ -3273,6 +3277,7 @@ sourcepoint.theguardian.com
 sp-spiegel-de.spiegel.de
 sp.nba.com
 sp.replit.com
+sp.streamlabs.com
 spcdn.incartupsell.com
 spoprod-a.akamaihd.net
 sprig.figma.com
@@ -3292,6 +3297,7 @@ start-page.buffer.com
 static-00.iconduck.com
 static-1.bitchute.com
 static-2.bitchute.com
+static-2c.gitbook.com
 static-2v.gitbook.com
 static-3.bitchute.com
 static-4.bitchute.com
@@ -3630,6 +3636,7 @@ t0.gstatic.com
 t1.gstatic.com
 t1.picb.cc
 t2.gstatic.com
+t2.nhentai.net
 t2.picb.cc
 t3.gstatic.com
 t3.picb.cc

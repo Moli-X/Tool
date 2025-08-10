@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3852
+# 规则统计: 3859
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -82,9 +82,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-07-23T11:34:44.940Z
-# Last Updated: 2025-08-09T12:36:24.935Z
+# Last Updated: 2025-08-09T16:54:19.490Z
 # License: AGPL 3.0
-# Size: 3763
+# Size: 3770
 # Size: 76
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1867,6 +1867,7 @@ cdn.stash.com,CDN
 cdn.staticdelivr.com,CDN
 cdn.staticswin.com,CDN
 cdn.stellarhosted.com,CDN
+cdn.streamlabs.com,CDN
 cdn.substack.com,CDN
 cdn.sunofbeaches.com,CDN
 cdn.svgator.com,CDN
@@ -2220,6 +2221,7 @@ embed.runkit.com,CDN
 embed.savvycal.com,CDN
 embed.tawk.to,CDN
 embed.ted.com,CDN
+embed.twitch.tv,CDN
 embed.typeform.com,CDN
 embedr.flickr.com,CDN
 embedwistia-a.akamaihd.net,CDN
@@ -2409,6 +2411,7 @@ i.xxxshake.com,CDN
 i2.anysex.com,CDN
 i2.bahamut.com.tw,CDN
 i2.hentaifox.com,CDN
+i2.nhentai.net,CDN
 i3.anysex.com,CDN
 i4.anysex.com,CDN
 ias.r10s.jp,CDN
@@ -2481,6 +2484,7 @@ images.arigatotravel.com,CDN
 images.axios.com,CDN
 images.bfmtv.com,CDN
 images.blackmagicdesign.com,CDN
+images.blockscan.com,CDN
 images.carfax.com,CDN
 images.contentful.com,CDN
 images.contentstack.io,CDN
@@ -3275,6 +3279,7 @@ sourcepoint.theguardian.com,CDN
 sp-spiegel-de.spiegel.de,CDN
 sp.nba.com,CDN
 sp.replit.com,CDN
+sp.streamlabs.com,CDN
 spcdn.incartupsell.com,CDN
 spoprod-a.akamaihd.net,CDN
 sprig.figma.com,CDN
@@ -3294,6 +3299,7 @@ start-page.buffer.com,CDN
 static-00.iconduck.com,CDN
 static-1.bitchute.com,CDN
 static-2.bitchute.com,CDN
+static-2c.gitbook.com,CDN
 static-2v.gitbook.com,CDN
 static-3.bitchute.com,CDN
 static-4.bitchute.com,CDN
@@ -3632,6 +3638,7 @@ t0.gstatic.com,CDN
 t1.gstatic.com,CDN
 t1.picb.cc,CDN
 t2.gstatic.com,CDN
+t2.nhentai.net,CDN
 t2.picb.cc,CDN
 t3.gstatic.com,CDN
 t3.picb.cc,CDN
