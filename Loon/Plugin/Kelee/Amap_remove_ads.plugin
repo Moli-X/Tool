@@ -1,14 +1,14 @@
 #!name=高德地图去广告
 #!desc=过滤高德地图开屏广告、各页面推广，精简我的页面。
 #App链接=https://apps.apple.com/app/id461703208
-#!author=RuCu6[https://github.com/RuCu6], kokoryh[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!author=RuCu6[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Amap_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Amap.png
-#!date=2025-05-22 21:41:32
+#!date=2025-08-10 11:02:38
 
 [Rule]
 AND, ((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"), (USER-AGENT, "AMapiPhone*")), REJECT
@@ -31,6 +31,7 @@ DOMAIN-SUFFIX, v.smtcdns.com, REJECT
 ^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? reject-dict
 ^https:\/\/m5\.amap\.com\/ws\/valueadded\/weather\/v2\? reject-dict
 ^https:\/\/sns\.amap\.com\/ws\/msgbox\/pull_mp\? reject-dict
+^https:\/\/ai\.amap\.com\/v1\/ai_rec\/home_qs\? reject-dict
 
 ^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:order\/car\/(?:feedback\/get_card_questions|feedback\/viptips|king_toolbox_car_bubble|remark\/satisfactionConf|rights_information)|tips\/onscene_visual_optimization) reject-dict
 ^https:\/\/m5-zb\.amap\.com\/ws\/boss\/pay\/web\/paySuccess\/info\/request reject-dict
@@ -53,4 +54,4 @@ http-response ^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\
 http-response ^https:\/\/(?:info|m5)\.amap\.com\/ws\/shield\/search\/(?:common\/coupon\/info|poi\/detail) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Amap_remove_ads.js, requires-body=true, tag=移除导航详情页推广
 
 [MitM]
-hostname=m5.amap.com, m5-zb.amap.com, oss.amap.com, sns.amap.com
+hostname=m5.amap.com, m5-zb.amap.com, oss.amap.com, sns.amap.com, ai.amap.com

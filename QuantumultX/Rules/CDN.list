@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3859
+# 规则统计: 3864
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -82,9 +82,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-07-23T11:34:44.940Z
-# Last Updated: 2025-08-09T16:54:19.490Z
+# Last Updated: 2025-08-10T09:13:46.357Z
 # License: AGPL 3.0
-# Size: 3770
+# Size: 3775
 # Size: 76
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -135,6 +135,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .anpoimages.com,CDN
 .anpustream.com,CDN
 .ant.design,CDN
+.anyhentai.com,CDN
 .aolcdn.com,CDN
 .aosikaimage.com,CDN
 .api.instabug.com,CDN
@@ -1090,6 +1091,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .watchlycdn.com,CDN
 .wdfiles.com,CDN
 .web.app,CDN
+.webinfcdn.com,CDN
 .webp.se,CDN
 .webpkgcache.com,CDN
 .website-files.com,CDN
@@ -1199,7 +1201,6 @@ api.fontshare.com,CDN
 api.iconify.design,CDN
 api.indexnow.org,CDN
 api.instantly.ai,CDN
-api.mintlify.com,CDN
 api.mixpanel.com,CDN
 api.producthunt.com,CDN
 api.pwnedpasswords.com,CDN
@@ -1208,6 +1209,7 @@ api.roboflow.com,CDN
 api.weather.com,CDN
 api.web3.storage,CDN
 apichatwidget.usepylon.com,CDN
+apim.m3pd.com,CDN
 app-api.vidjet.io,CDN
 app-spm.com,CDN
 app-static.eu.posthog.com,CDN
@@ -1703,6 +1705,7 @@ cdn.hashnode.com,CDN
 cdn.headwayapp.co,CDN
 cdn.hellofresh.com,CDN
 cdn.hextom.com,CDN
+cdn.highporn.net,CDN
 cdn.hiive.space,CDN
 cdn.hinative.com,CDN
 cdn.hk01.com,CDN
@@ -2236,6 +2239,7 @@ encrypted-vtbn0.gstatic.com,CDN
 encrypted-vtbn1.gstatic.com,CDN
 encrypted-vtbn2.gstatic.com,CDN
 encrypted-vtbn3.gstatic.com,CDN
+eomd1.fembeqq.xyz,CDN
 epic-social-social-modules-prod.ol.epicgames.com,CDN
 error.rakuten.co.jp,CDN
 eslint-react.xyz,CDN
@@ -2594,6 +2598,7 @@ img.fortawesome.com,CDN
 img.freepik.com,CDN
 img.hellofresh.com,CDN
 img.hentaihaven.xxx,CDN
+img.highporn.net,CDN
 img.huffingtonpost.com,CDN
 img.icons8.com,CDN
 img.ifunny.co,CDN
