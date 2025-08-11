@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3864
+# 规则统计: 3866
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -82,9 +82,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-07-23T11:34:44.940Z
-# Last Updated: 2025-08-10T09:13:46.357Z
+# Last Updated: 2025-08-10T18:28:05.575Z
 # License: AGPL 3.0
-# Size: 3775
+# Size: 3777
 # Size: 76
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -2026,6 +2026,7 @@ cdnl.moviefap.com,CDN
 cdnl.tnaflix.com,CDN
 cdnmedia.ero-video.net,CDN
 cdns.gigya.com,CDN
+cdns.us.gigya.com,CDN
 cdns.zbporn.com,CDN
 cdnsecakmi.kaltura.com,CDN
 cdnstatic.porno-cum.com,CDN
@@ -2921,6 +2922,7 @@ newassets.hcaptcha.com,CDN
 news-assets.apple.com,CDN
 news-data.pts.org.tw,CDN
 newsletter.postmarkapp.com,CDN
+newsstatic.rthk.hk,CDN
 next-images.123rf.com,CDN
 next-images.opencollective.com,CDN
 nextra.site,CDN
