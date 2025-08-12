@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3864
+# 规则统计: 3866
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -80,9 +80,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-07-23T11:34:44.940Z
-# Last Updated: 2025-08-10T18:28:05.575Z
+# Last Updated: 2025-08-12T10:49:13.477Z
 # License: AGPL 3.0
-# Size: 3777
+# Size: 3779
 # Size: 76
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -135,7 +135,6 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .ant.design
 .anyhentai.com
 .aolcdn.com
-.aosikaimage.com
 .api.instabug.com
 .api.loganalytics.io
 .app-analytics-services.com
@@ -714,7 +713,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .msftconnecttest.com
 .msftncsi.com
 .msftstatic.com
-.mubicdn.com
+.mubicdn.net
 .muscache.com
 .mxmcdn.net
 .myanalytics.cdn.office.net
@@ -1089,7 +1088,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .watchlycdn.com
 .wdfiles.com
 .web.app
-.webinfcdn.com
+.webinfcdn.net
 .webp.se
 .webpkgcache.com
 .website-files.com
@@ -1669,7 +1668,6 @@ cdn.european-alternatives.eu
 cdn.evbstatic.com
 cdn.faire.com
 cdn.fastcomments.com
-cdn.fastmediaing.com
 cdn.fera.ai
 cdn.filen.io
 cdn.firebase.com
@@ -2330,6 +2328,7 @@ frames-commandbar-prod.commandbar.com
 freeshippingbar.herokuapp.com
 front-resource.fs.com
 frontend-apps.workos.com
+frontend-assets.supabase.com
 frontend.floatplane.com
 fs2.onlyhentaistuff.com
 fscdn.eppo.cloud
@@ -2786,6 +2785,7 @@ mantisloader.mantis-awx.com
 map.vesselfinder.net
 maps.geoapify.com
 maps.gstatic.com
+maps.wplace.live
 maptile.osmand.net
 marber-cdn.economist.com
 marfeelexperimentsexperienceengine.mrf.io
@@ -2980,7 +2980,6 @@ pbs.floatplane.com
 pcdn-my.pcloud.com
 pcdn-www.pcloud.com
 pcz.javidol.org
-pengtu.cc
 perf-na1.hsforms.com
 perf.hsforms.com
 pg2dhpc3p5ec22g3.jkforum.net
@@ -3347,6 +3346,7 @@ static-main.moovit.com
 static-media.fox.com
 static-mh.content.disney.io
 static-overlay.ubisoft.com
+static-production.npmjs.com
 static-r.kamihimeproject.net
 static-redesign.cnbcfm.com
 static-resource.np.community.playstation.net
@@ -3491,6 +3491,7 @@ static.newmobilelife.com
 static.news.bitcoin.com
 static.nhentai.net
 static.nicehash.com
+static.npmjs.com
 static.nrk.no
 static.nyse.com
 static.observablehq.com
@@ -3656,6 +3657,7 @@ tags.news.com.au
 talk.hyvor.com
 talk.washingtonpost.com
 talon-website-prod.ecosec.on.epicgames.com
+tanju.vip
 telemetry.1passwordservices.com
 telemetry.business.githubcopilot.com
 telemetry.individual.githubcopilot.com

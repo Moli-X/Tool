@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3866
+# 规则统计: 3868
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -82,9 +82,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-07-23T11:34:44.940Z
-# Last Updated: 2025-08-10T18:28:05.575Z
+# Last Updated: 2025-08-12T10:49:13.477Z
 # License: AGPL 3.0
-# Size: 3777
+# Size: 3779
 # Size: 76
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -137,7 +137,6 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .ant.design,CDN
 .anyhentai.com,CDN
 .aolcdn.com,CDN
-.aosikaimage.com,CDN
 .api.instabug.com,CDN
 .api.loganalytics.io,CDN
 .app-analytics-services.com,CDN
@@ -716,7 +715,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .msftconnecttest.com,CDN
 .msftncsi.com,CDN
 .msftstatic.com,CDN
-.mubicdn.com,CDN
+.mubicdn.net,CDN
 .muscache.com,CDN
 .mxmcdn.net,CDN
 .myanalytics.cdn.office.net,CDN
@@ -1091,7 +1090,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .watchlycdn.com,CDN
 .wdfiles.com,CDN
 .web.app,CDN
-.webinfcdn.com,CDN
+.webinfcdn.net,CDN
 .webp.se,CDN
 .webpkgcache.com,CDN
 .website-files.com,CDN
@@ -1671,7 +1670,6 @@ cdn.european-alternatives.eu,CDN
 cdn.evbstatic.com,CDN
 cdn.faire.com,CDN
 cdn.fastcomments.com,CDN
-cdn.fastmediaing.com,CDN
 cdn.fera.ai,CDN
 cdn.filen.io,CDN
 cdn.firebase.com,CDN
@@ -2332,6 +2330,7 @@ frames-commandbar-prod.commandbar.com,CDN
 freeshippingbar.herokuapp.com,CDN
 front-resource.fs.com,CDN
 frontend-apps.workos.com,CDN
+frontend-assets.supabase.com,CDN
 frontend.floatplane.com,CDN
 fs2.onlyhentaistuff.com,CDN
 fscdn.eppo.cloud,CDN
@@ -2788,6 +2787,7 @@ mantisloader.mantis-awx.com,CDN
 map.vesselfinder.net,CDN
 maps.geoapify.com,CDN
 maps.gstatic.com,CDN
+maps.wplace.live,CDN
 maptile.osmand.net,CDN
 marber-cdn.economist.com,CDN
 marfeelexperimentsexperienceengine.mrf.io,CDN
@@ -2982,7 +2982,6 @@ pbs.floatplane.com,CDN
 pcdn-my.pcloud.com,CDN
 pcdn-www.pcloud.com,CDN
 pcz.javidol.org,CDN
-pengtu.cc,CDN
 perf-na1.hsforms.com,CDN
 perf.hsforms.com,CDN
 pg2dhpc3p5ec22g3.jkforum.net,CDN
@@ -3349,6 +3348,7 @@ static-main.moovit.com,CDN
 static-media.fox.com,CDN
 static-mh.content.disney.io,CDN
 static-overlay.ubisoft.com,CDN
+static-production.npmjs.com,CDN
 static-r.kamihimeproject.net,CDN
 static-redesign.cnbcfm.com,CDN
 static-resource.np.community.playstation.net,CDN
@@ -3493,6 +3493,7 @@ static.newmobilelife.com,CDN
 static.news.bitcoin.com,CDN
 static.nhentai.net,CDN
 static.nicehash.com,CDN
+static.npmjs.com,CDN
 static.nrk.no,CDN
 static.nyse.com,CDN
 static.observablehq.com,CDN
@@ -3658,6 +3659,7 @@ tags.news.com.au,CDN
 talk.hyvor.com,CDN
 talk.washingtonpost.com,CDN
 talon-website-prod.ecosec.on.epicgames.com,CDN
+tanju.vip,CDN
 telemetry.1passwordservices.com,CDN
 telemetry.business.githubcopilot.com,CDN
 telemetry.individual.githubcopilot.com,CDN
