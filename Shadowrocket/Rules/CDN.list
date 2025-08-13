@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3868
+# 规则统计: 3875
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -82,9 +82,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-07-23T11:34:44.940Z
-# Last Updated: 2025-08-12T10:49:13.477Z
+# Last Updated: 2025-08-13T08:11:26.443Z
 # License: AGPL 3.0
-# Size: 3779
+# Size: 3786
 # Size: 76
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -650,6 +650,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .kinsta.page
 .kirafile.com
 .klarnacdn.net
+.kleecks-cdn.com
 .kwcdn.com
 .kym-cdn.com
 .larksuitecdn.com
@@ -1553,6 +1554,7 @@ cdn-seo.airdroid.com
 cdn-service.jp.sumologic.com
 cdn-share-sprites.flaticon.com
 cdn-static-1.medium.com
+cdn-static.paw.cloud
 cdn-static.talent.com
 cdn-swell-assets.yotpo.com
 cdn-thumbs.imagevenue.com
@@ -1641,6 +1643,7 @@ cdn.datacamp.com
 cdn.datatables.net
 cdn.datdota.com
 cdn.db-ip.com
+cdn.db.io
 cdn.decrypt.co
 cdn.delight-vr.com
 cdn.designsystem.arm.com
@@ -2212,6 +2215,7 @@ edge1.certona.net
 edgeassetservice.azureedge.net
 edgecdn-embza6g8cacagcbn.z01.azurefd.net
 edgestatic.azureedge.net
+edgestorewebpme-d2hnhfgbgnfmfuha.z01.azurefd.net
 eep.io
 eightcha.com
 embed-cloudfront.wistia.com
@@ -2326,6 +2330,7 @@ fonts.upset.dev
 fonts.zapier.com
 fonts1.unidays.world
 forest-mt-s3.seekrtech.com
+form-assets.mailchimp.com
 frames-commandbar-prod.commandbar.com
 freeshippingbar.herokuapp.com
 front-resource.fs.com
@@ -2593,6 +2598,7 @@ img.decrypt.co
 img.dlsite.jp
 img.domaintools.com
 img.etimg.com
+img.fastcybers.com
 img.foresightnews.pro
 img.fortawesome.com
 img.freepik.com
@@ -3419,6 +3425,7 @@ static.eroterest.net
 static.esimplus.net
 static.ettoday.net
 static.euronews.com
+static.fastboostcdn.com
 static.fasthosts.co.uk
 static.fboom.me
 static.fbot.me

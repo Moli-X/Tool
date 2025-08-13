@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3868
+# 规则统计: 3875
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -82,9 +82,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-07-23T11:34:44.940Z
-# Last Updated: 2025-08-12T10:49:13.477Z
+# Last Updated: 2025-08-13T08:11:26.443Z
 # License: AGPL 3.0
-# Size: 3779
+# Size: 3786
 # Size: 76
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -650,6 +650,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .kinsta.page,CDN
 .kirafile.com,CDN
 .klarnacdn.net,CDN
+.kleecks-cdn.com,CDN
 .kwcdn.com,CDN
 .kym-cdn.com,CDN
 .larksuitecdn.com,CDN
@@ -1553,6 +1554,7 @@ cdn-seo.airdroid.com,CDN
 cdn-service.jp.sumologic.com,CDN
 cdn-share-sprites.flaticon.com,CDN
 cdn-static-1.medium.com,CDN
+cdn-static.paw.cloud,CDN
 cdn-static.talent.com,CDN
 cdn-swell-assets.yotpo.com,CDN
 cdn-thumbs.imagevenue.com,CDN
@@ -1641,6 +1643,7 @@ cdn.datacamp.com,CDN
 cdn.datatables.net,CDN
 cdn.datdota.com,CDN
 cdn.db-ip.com,CDN
+cdn.db.io,CDN
 cdn.decrypt.co,CDN
 cdn.delight-vr.com,CDN
 cdn.designsystem.arm.com,CDN
@@ -2212,6 +2215,7 @@ edge1.certona.net,CDN
 edgeassetservice.azureedge.net,CDN
 edgecdn-embza6g8cacagcbn.z01.azurefd.net,CDN
 edgestatic.azureedge.net,CDN
+edgestorewebpme-d2hnhfgbgnfmfuha.z01.azurefd.net,CDN
 eep.io,CDN
 eightcha.com,CDN
 embed-cloudfront.wistia.com,CDN
@@ -2326,6 +2330,7 @@ fonts.upset.dev,CDN
 fonts.zapier.com,CDN
 fonts1.unidays.world,CDN
 forest-mt-s3.seekrtech.com,CDN
+form-assets.mailchimp.com,CDN
 frames-commandbar-prod.commandbar.com,CDN
 freeshippingbar.herokuapp.com,CDN
 front-resource.fs.com,CDN
@@ -2593,6 +2598,7 @@ img.decrypt.co,CDN
 img.dlsite.jp,CDN
 img.domaintools.com,CDN
 img.etimg.com,CDN
+img.fastcybers.com,CDN
 img.foresightnews.pro,CDN
 img.fortawesome.com,CDN
 img.freepik.com,CDN
@@ -3419,6 +3425,7 @@ static.eroterest.net,CDN
 static.esimplus.net,CDN
 static.ettoday.net,CDN
 static.euronews.com,CDN
+static.fastboostcdn.com,CDN
 static.fasthosts.co.uk,CDN
 static.fboom.me,CDN
 static.fbot.me,CDN
