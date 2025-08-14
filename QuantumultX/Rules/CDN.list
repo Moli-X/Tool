@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3875
+# 规则统计: 3899
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -39,6 +39,8 @@ HOST-WILDCARD,cdn-msp?.18comic.org,CDN
 HOST-WILDCARD,cdn-msp?.18comic.vip,CDN
 HOST-WILDCARD,cdn-msp?.jmcomic-zzz.one,CDN
 HOST-WILDCARD,cdn-msp?.jmcomic.me,CDN
+HOST-WILDCARD,cdn.*.microsoft.com,CDN
+HOST-WILDCARD,cdn.*.office.net,CDN
 HOST-WILDCARD,cdn?-dl.pornhost.com,CDN
 HOST-WILDCARD,cdn?.18girlssex.com,CDN
 HOST-WILDCARD,cdn?.mikuclub.fun,CDN
@@ -81,11 +83,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-07-23T11:34:44.940Z
-# Last Updated: 2025-08-13T08:11:26.443Z
+# Last Updated: 2025-08-14T05:58:46.607Z
+# Last Updated: 2025-08-14T10:22:09.998Z
 # License: AGPL 3.0
-# Size: 3786
-# Size: 76
+# Size: 3808
+# Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -716,6 +718,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .msftconnecttest.com,CDN
 .msftncsi.com,CDN
 .msftstatic.com,CDN
+.msocdn.com,CDN
 .mubicdn.net,CDN
 .muscache.com,CDN
 .mxmcdn.net,CDN
@@ -783,6 +786,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .pages.dev,CDN
 .parastorage.com,CDN
 .parceljs.org,CDN
+.parsecusercontent.com,CDN
 .pastebin.com,CDN
 .patientpop.com,CDN
 .patreonusercontent.com,CDN
@@ -1322,6 +1326,7 @@ assets.genius.com,CDN
 assets.getkirby.com,CDN
 assets.github.dev,CDN
 assets.goat.com,CDN
+assets.gorgias.help,CDN
 assets.grammarly.com,CDN
 assets.grooveapps.com,CDN
 assets.guim.co.uk,CDN
@@ -1467,10 +1472,12 @@ bookface-static.ycombinator.com,CDN
 bot.ivy.ai,CDN
 brand-sdk.kmsmep.com,CDN
 brandwidgets.outtra.com,CDN
+brew.sh,CDN
 brick.a.ssl.fastly.net,CDN
 brick.freetls.fastly.net,CDN
 bst.icons8.com,CDN
 bucket1.notaku.so,CDN
+bundle.5gtb.com,CDN
 bundle.dyn-rev.app,CDN
 bundle.trysavvy.com,CDN
 bundlephobia.com,CDN
@@ -1572,6 +1579,7 @@ cdn.18jav.tv,CDN
 cdn.24.co.za,CDN
 cdn.7tv.app,CDN
 cdn.accounts.autodesk.com,CDN
+cdn.accounts.firefox.com,CDN
 cdn.accounts.nintendo.com,CDN
 cdn.adguard.com,CDN
 cdn.adguard.info,CDN
@@ -1633,6 +1641,7 @@ cdn.configcat.com,CDN
 cdn.consentmanager.net,CDN
 cdn.contentful.com,CDN
 cdn.conveythis.com,CDN
+cdn.create.microsoft.com,CDN
 cdn.credible.com,CDN
 cdn.css.net,CDN
 cdn.cuty.io,CDN
@@ -1646,6 +1655,7 @@ cdn.db-ip.com,CDN
 cdn.db.io,CDN
 cdn.decrypt.co,CDN
 cdn.delight-vr.com,CDN
+cdn.designerapp.osi.office.net,CDN
 cdn.designsystem.arm.com,CDN
 cdn.deta.space,CDN
 cdn.devolutions.net,CDN
@@ -1704,6 +1714,7 @@ cdn.growthbook.io,CDN
 cdn.hackernoon.com,CDN
 cdn.hashnode.com,CDN
 cdn.headwayapp.co,CDN
+cdn.heapanalytics.com,CDN
 cdn.hellofresh.com,CDN
 cdn.hextom.com,CDN
 cdn.highporn.net,CDN
@@ -1759,6 +1770,7 @@ cdn.mcr.ea.com,CDN
 cdn.metadata.io,CDN
 cdn.mewe.com,CDN
 cdn.micro.blog,CDN
+cdn.mikrotik.com,CDN
 cdn.minecraft-server-list.com,CDN
 cdn.miohentai.com,CDN
 cdn.missav.com,CDN
@@ -1853,6 +1865,7 @@ cdn.setapp.com,CDN
 cdn.sheetjs.com,CDN
 cdn.shopify.com,CDN
 cdn.shoppinggives.com,CDN
+cdn.sift.com,CDN
 cdn.simpleicons.org,CDN
 cdn.simplelocalize.io,CDN
 cdn.sitesearch360.com,CDN
@@ -1876,6 +1889,7 @@ cdn.substack.com,CDN
 cdn.sunofbeaches.com,CDN
 cdn.svgator.com,CDN
 cdn.tailwindcss.com,CDN
+cdn.techcommunity.microsoft.com,CDN
 cdn.termius.com,CDN
 cdn.theatlantic.com,CDN
 cdn.thenewstack.io,CDN
@@ -2186,6 +2200,7 @@ divhunt.b-cdn.net,CDN
 dl.airdroid.com,CDN
 dlassets-ssl.xboxlive.com,CDN
 do.featurebase.app,CDN
+docs.brew.sh,CDN
 docs.rs,CDN
 domain.expiring-soon.xyz,CDN
 doppler-config.cbsivideo.com,CDN
@@ -2659,13 +2674,16 @@ img1.ak.crunchyroll.com,CDN
 img1.socialshopwave.com,CDN
 img1.yna.co.kr,CDN
 img2.javdove.com,CDN
+img2.javmost.com,CDN
 img2.socialshopwave.com,CDN
 img2.tnaflix.com,CDN
 img2.yna.co.kr,CDN
 img3.airdroid.com,CDN
+img3.javmost.com,CDN
 img3.socialshopwave.com,CDN
 img3.yna.co.kr,CDN
 img4.airdroid.com,CDN
+img4.javmost.com,CDN
 img4.socialshopwave.com,CDN
 img4.yna.co.kr,CDN
 img5.socialshopwave.com,CDN
@@ -2680,6 +2698,11 @@ img8.yna.co.kr,CDN
 img9.socialshopwave.com,CDN
 img9.yna.co.kr,CDN
 imgcdn.cna.com.tw,CDN
+imgcn.bgmbk.tv,CDN
+imgcn2.bgmbk.tv,CDN
+imgcn3.bgmbk.tv,CDN
+imgcn4.bgmbk.tv,CDN
+imgcn5.bgmbk.tv,CDN
 imgfile.shop,CDN
 imgix.setapp.com,CDN
 imgopt.infoq.com,CDN
@@ -2935,6 +2958,7 @@ nextra.site,CDN
 ni-assets.azureedge.net,CDN
 nightly.link,CDN
 no-cache.hubspot.com,CDN
+node.green,CDN
 nodeassets.nbcnews.com,CDN
 nodei.co,CDN
 npm.antfu.dev,CDN

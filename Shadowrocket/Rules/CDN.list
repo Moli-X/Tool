@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3875
+# 规则统计: 3899
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -39,6 +39,8 @@ DOMAIN-WILDCARD,cdn-msp?.18comic.org
 DOMAIN-WILDCARD,cdn-msp?.18comic.vip
 DOMAIN-WILDCARD,cdn-msp?.jmcomic-zzz.one
 DOMAIN-WILDCARD,cdn-msp?.jmcomic.me
+DOMAIN-WILDCARD,cdn.*.microsoft.com
+DOMAIN-WILDCARD,cdn.*.office.net
 DOMAIN-WILDCARD,cdn?-dl.pornhost.com
 DOMAIN-WILDCARD,cdn?.18girlssex.com
 DOMAIN-WILDCARD,cdn?.mikuclub.fun
@@ -81,11 +83,11 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-07-23T11:34:44.940Z
-# Last Updated: 2025-08-13T08:11:26.443Z
+# Last Updated: 2025-08-14T05:58:46.607Z
+# Last Updated: 2025-08-14T10:22:09.998Z
 # License: AGPL 3.0
-# Size: 3786
-# Size: 76
+# Size: 3808
+# Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -716,6 +718,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .msftconnecttest.com
 .msftncsi.com
 .msftstatic.com
+.msocdn.com
 .mubicdn.net
 .muscache.com
 .mxmcdn.net
@@ -783,6 +786,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .pages.dev
 .parastorage.com
 .parceljs.org
+.parsecusercontent.com
 .pastebin.com
 .patientpop.com
 .patreonusercontent.com
@@ -1322,6 +1326,7 @@ assets.genius.com
 assets.getkirby.com
 assets.github.dev
 assets.goat.com
+assets.gorgias.help
 assets.grammarly.com
 assets.grooveapps.com
 assets.guim.co.uk
@@ -1467,10 +1472,12 @@ bookface-static.ycombinator.com
 bot.ivy.ai
 brand-sdk.kmsmep.com
 brandwidgets.outtra.com
+brew.sh
 brick.a.ssl.fastly.net
 brick.freetls.fastly.net
 bst.icons8.com
 bucket1.notaku.so
+bundle.5gtb.com
 bundle.dyn-rev.app
 bundle.trysavvy.com
 bundlephobia.com
@@ -1572,6 +1579,7 @@ cdn.18jav.tv
 cdn.24.co.za
 cdn.7tv.app
 cdn.accounts.autodesk.com
+cdn.accounts.firefox.com
 cdn.accounts.nintendo.com
 cdn.adguard.com
 cdn.adguard.info
@@ -1633,6 +1641,7 @@ cdn.configcat.com
 cdn.consentmanager.net
 cdn.contentful.com
 cdn.conveythis.com
+cdn.create.microsoft.com
 cdn.credible.com
 cdn.css.net
 cdn.cuty.io
@@ -1646,6 +1655,7 @@ cdn.db-ip.com
 cdn.db.io
 cdn.decrypt.co
 cdn.delight-vr.com
+cdn.designerapp.osi.office.net
 cdn.designsystem.arm.com
 cdn.deta.space
 cdn.devolutions.net
@@ -1704,6 +1714,7 @@ cdn.growthbook.io
 cdn.hackernoon.com
 cdn.hashnode.com
 cdn.headwayapp.co
+cdn.heapanalytics.com
 cdn.hellofresh.com
 cdn.hextom.com
 cdn.highporn.net
@@ -1759,6 +1770,7 @@ cdn.mcr.ea.com
 cdn.metadata.io
 cdn.mewe.com
 cdn.micro.blog
+cdn.mikrotik.com
 cdn.minecraft-server-list.com
 cdn.miohentai.com
 cdn.missav.com
@@ -1853,6 +1865,7 @@ cdn.setapp.com
 cdn.sheetjs.com
 cdn.shopify.com
 cdn.shoppinggives.com
+cdn.sift.com
 cdn.simpleicons.org
 cdn.simplelocalize.io
 cdn.sitesearch360.com
@@ -1876,6 +1889,7 @@ cdn.substack.com
 cdn.sunofbeaches.com
 cdn.svgator.com
 cdn.tailwindcss.com
+cdn.techcommunity.microsoft.com
 cdn.termius.com
 cdn.theatlantic.com
 cdn.thenewstack.io
@@ -2186,6 +2200,7 @@ divhunt.b-cdn.net
 dl.airdroid.com
 dlassets-ssl.xboxlive.com
 do.featurebase.app
+docs.brew.sh
 docs.rs
 domain.expiring-soon.xyz
 doppler-config.cbsivideo.com
@@ -2659,13 +2674,16 @@ img1.ak.crunchyroll.com
 img1.socialshopwave.com
 img1.yna.co.kr
 img2.javdove.com
+img2.javmost.com
 img2.socialshopwave.com
 img2.tnaflix.com
 img2.yna.co.kr
 img3.airdroid.com
+img3.javmost.com
 img3.socialshopwave.com
 img3.yna.co.kr
 img4.airdroid.com
+img4.javmost.com
 img4.socialshopwave.com
 img4.yna.co.kr
 img5.socialshopwave.com
@@ -2680,6 +2698,11 @@ img8.yna.co.kr
 img9.socialshopwave.com
 img9.yna.co.kr
 imgcdn.cna.com.tw
+imgcn.bgmbk.tv
+imgcn2.bgmbk.tv
+imgcn3.bgmbk.tv
+imgcn4.bgmbk.tv
+imgcn5.bgmbk.tv
 imgfile.shop
 imgix.setapp.com
 imgopt.infoq.com
@@ -2935,6 +2958,7 @@ nextra.site
 ni-assets.azureedge.net
 nightly.link
 no-cache.hubspot.com
+node.green
 nodeassets.nbcnews.com
 nodei.co
 npm.antfu.dev
