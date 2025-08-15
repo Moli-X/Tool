@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3899
+# 规则统计: 3912
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -84,9 +84,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-14T05:58:46.607Z
-# Last Updated: 2025-08-14T10:22:09.998Z
+# Last Updated: 2025-08-14T16:05:39.366Z
 # License: AGPL 3.0
-# Size: 3808
+# Size: 3821
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -759,6 +759,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .npm.io
 .npmcdn.com
 .npmfs.com
+.npms.io
 .nv7s.com
 .nxcli.io
 .nxedge.io
@@ -898,6 +899,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .s-nbcnews.com
 .s3.wasabisys.com
 .safebrowsing.apple
+.sascdn.com
 .sb-cd.com
 .sbcdnvideo.com
 .sc-cdn.com
@@ -908,6 +910,8 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .scribdassets.com
 .scripts.gatorapi.com
 .seadn.io
+.seecdn.com
+.seeusercontent.com
 .sendspace.com
 .senja.io
 .sentry-cdn.com
@@ -1466,6 +1470,7 @@ before.good-apps.co
 bhl.scpwikicn.com
 blacklist.tampermonkey.net
 blade-public-static.blade-group.com
+blob.jortage.com
 blob.sololearn.com
 boards.greenhouse.io
 bookface-static.ycombinator.com
@@ -2097,6 +2102,7 @@ cms.blavity.com
 cms.recordedfuture.com
 cms.therecord.media
 cms.typenetwork.com
+cms.worldpokerdeals.com
 cmtycdn.powerpages.microsoft.com
 code.benco.io
 code.buywithprime.amazon.com
@@ -2156,6 +2162,7 @@ creator-image.javhd.com
 crl.usertrust.com
 crl.verisign.com
 crt.comodoca.com
+crt.sectigo.com
 crt.usertrust.com
 csp.microsoft.com
 css-1-cdn.airdroid.com
@@ -2771,6 +2778,7 @@ jssocdn.indiatimes.com
 kdata1.com
 keyframe-cdn.abcnews.com
 lain.bgm.tv
+lastfm.freetls.fastly.net
 latency-test.lab.skk.moe
 latency-test.skk.moe
 launcher-files.modrinth.com
@@ -2796,6 +2804,7 @@ live.fanmingming.com
 live.visually-io.com
 livedoor.blogimg.jp
 livemap-tiles1.waze.com
+lm.visualon.info
 load.csell.co
 loader.mantis-intelligence.com
 log-collector.17app.co
@@ -3307,6 +3316,7 @@ snippets.freshchat.com
 snyk-widget.herokuapp.com
 social-cdn.vivaldi.net
 social-reaction-api.hk01.com
+socialpic.video.friday.tw
 solve-widget.forethought.ai
 source.domaintools.com
 source.unsplash.com
@@ -3718,6 +3728,8 @@ tiles.openfreemap.org
 tiles.stadiamaps.com
 tiles.versatiles.org
 tiles.windy.com
+time-a.nist.gov
+time.akamai.com
 time.cloudflare.com
 time.google.com
 time.windows.com
@@ -3790,6 +3802,7 @@ v2-images.crackle.com
 v2.listenloop.com
 v2uploads.zopim.io
 vanilla-extract.style
+vbmspic.video.friday.tw
 vcdn.anysex.com
 versionbadg.es
 vetted.ai

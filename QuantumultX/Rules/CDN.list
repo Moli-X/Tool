@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3899
+# 规则统计: 3912
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -84,9 +84,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-14T05:58:46.607Z
-# Last Updated: 2025-08-14T10:22:09.998Z
+# Last Updated: 2025-08-14T16:05:39.366Z
 # License: AGPL 3.0
-# Size: 3808
+# Size: 3821
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -759,6 +759,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .npm.io,CDN
 .npmcdn.com,CDN
 .npmfs.com,CDN
+.npms.io,CDN
 .nv7s.com,CDN
 .nxcli.io,CDN
 .nxedge.io,CDN
@@ -898,6 +899,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .s-nbcnews.com,CDN
 .s3.wasabisys.com,CDN
 .safebrowsing.apple,CDN
+.sascdn.com,CDN
 .sb-cd.com,CDN
 .sbcdnvideo.com,CDN
 .sc-cdn.com,CDN
@@ -908,6 +910,8 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .scribdassets.com,CDN
 .scripts.gatorapi.com,CDN
 .seadn.io,CDN
+.seecdn.com,CDN
+.seeusercontent.com,CDN
 .sendspace.com,CDN
 .senja.io,CDN
 .sentry-cdn.com,CDN
@@ -1466,6 +1470,7 @@ before.good-apps.co,CDN
 bhl.scpwikicn.com,CDN
 blacklist.tampermonkey.net,CDN
 blade-public-static.blade-group.com,CDN
+blob.jortage.com,CDN
 blob.sololearn.com,CDN
 boards.greenhouse.io,CDN
 bookface-static.ycombinator.com,CDN
@@ -2097,6 +2102,7 @@ cms.blavity.com,CDN
 cms.recordedfuture.com,CDN
 cms.therecord.media,CDN
 cms.typenetwork.com,CDN
+cms.worldpokerdeals.com,CDN
 cmtycdn.powerpages.microsoft.com,CDN
 code.benco.io,CDN
 code.buywithprime.amazon.com,CDN
@@ -2156,6 +2162,7 @@ creator-image.javhd.com,CDN
 crl.usertrust.com,CDN
 crl.verisign.com,CDN
 crt.comodoca.com,CDN
+crt.sectigo.com,CDN
 crt.usertrust.com,CDN
 csp.microsoft.com,CDN
 css-1-cdn.airdroid.com,CDN
@@ -2771,6 +2778,7 @@ jssocdn.indiatimes.com,CDN
 kdata1.com,CDN
 keyframe-cdn.abcnews.com,CDN
 lain.bgm.tv,CDN
+lastfm.freetls.fastly.net,CDN
 latency-test.lab.skk.moe,CDN
 latency-test.skk.moe,CDN
 launcher-files.modrinth.com,CDN
@@ -2796,6 +2804,7 @@ live.fanmingming.com,CDN
 live.visually-io.com,CDN
 livedoor.blogimg.jp,CDN
 livemap-tiles1.waze.com,CDN
+lm.visualon.info,CDN
 load.csell.co,CDN
 loader.mantis-intelligence.com,CDN
 log-collector.17app.co,CDN
@@ -3307,6 +3316,7 @@ snippets.freshchat.com,CDN
 snyk-widget.herokuapp.com,CDN
 social-cdn.vivaldi.net,CDN
 social-reaction-api.hk01.com,CDN
+socialpic.video.friday.tw,CDN
 solve-widget.forethought.ai,CDN
 source.domaintools.com,CDN
 source.unsplash.com,CDN
@@ -3718,6 +3728,8 @@ tiles.openfreemap.org,CDN
 tiles.stadiamaps.com,CDN
 tiles.versatiles.org,CDN
 tiles.windy.com,CDN
+time-a.nist.gov,CDN
+time.akamai.com,CDN
 time.cloudflare.com,CDN
 time.google.com,CDN
 time.windows.com,CDN
@@ -3790,6 +3802,7 @@ v2-images.crackle.com,CDN
 v2.listenloop.com,CDN
 v2uploads.zopim.io,CDN
 vanilla-extract.style,CDN
+vbmspic.video.friday.tw,CDN
 vcdn.anysex.com,CDN
 versionbadg.es,CDN
 vetted.ai,CDN
