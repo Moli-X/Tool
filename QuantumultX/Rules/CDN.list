@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3912
+# 规则统计: 3916
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -84,9 +84,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-14T05:58:46.607Z
-# Last Updated: 2025-08-14T16:05:39.366Z
+# Last Updated: 2025-08-15T05:39:34.886Z
 # License: AGPL 3.0
-# Size: 3821
+# Size: 3825
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1214,6 +1214,8 @@ api.producthunt.com,CDN
 api.pwnedpasswords.com,CDN
 api.qrserver.com,CDN
 api.roboflow.com,CDN
+api.simplesvg.com,CDN
+api.unisvg.com,CDN
 api.weather.com,CDN
 api.web3.storage,CDN
 apichatwidget.usepylon.com,CDN
@@ -2454,6 +2456,7 @@ icons.internetbrands.com,CDN
 icons.leavemealone.com,CDN
 icons.llamao.fi,CDN
 icons.ly,CDN
+icons.simplesvg.com,CDN
 icons.veryicon.com,CDN
 icons.zeabur.com,CDN
 iframe.nbcnews.com,CDN
@@ -3752,6 +3755,7 @@ tuf-repo.github.com,CDN
 turbo.build,CDN
 tvdownloaddw-a.akamaihd.net,CDN
 twemoji.maxcdn.com,CDN
+twenty-icons.com,CDN
 typeface.nyt.com,CDN
 typescript-eslint.io,CDN
 typescript.azureedge.net,CDN
