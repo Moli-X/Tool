@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3916
+# 规则统计: 3919
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -84,9 +84,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-14T05:58:46.607Z
-# Last Updated: 2025-08-15T05:39:34.886Z
+# Last Updated: 2025-08-16T06:04:09.441Z
 # License: AGPL 3.0
-# Size: 3825
+# Size: 3828
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1338,6 +1338,7 @@ assets.grooveapps.com
 assets.guim.co.uk
 assets.gumroad.com
 assets.habr.com
+assets.hackmd.io
 assets.hearstapps.com
 assets.holopin.io
 assets.humix.com
@@ -2545,6 +2546,7 @@ images.macrumors.com
 images.mattel.net
 images.microcms-assets.io
 images.moegoat.com
+images.mooncloud.top
 images.moovitapp.com
 images.newrepublic.com
 images.now-tv.com
@@ -3074,6 +3076,7 @@ players.brightcove.net
 playgroundcdn.typescriptlang.org
 plugins.dprint.dev
 plus.unsplash.com
+pmecdn.protonweb.com
 polyfill-fe.toss.im
 polyfill.bbhub.io
 pomf2.lain.la

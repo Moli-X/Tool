@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3916
+# 规则统计: 3919
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -84,9 +84,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-14T05:58:46.607Z
-# Last Updated: 2025-08-15T05:39:34.886Z
+# Last Updated: 2025-08-16T06:04:09.441Z
 # License: AGPL 3.0
-# Size: 3825
+# Size: 3828
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1338,6 +1338,7 @@ assets.grooveapps.com,CDN
 assets.guim.co.uk,CDN
 assets.gumroad.com,CDN
 assets.habr.com,CDN
+assets.hackmd.io,CDN
 assets.hearstapps.com,CDN
 assets.holopin.io,CDN
 assets.humix.com,CDN
@@ -2545,6 +2546,7 @@ images.macrumors.com,CDN
 images.mattel.net,CDN
 images.microcms-assets.io,CDN
 images.moegoat.com,CDN
+images.mooncloud.top,CDN
 images.moovitapp.com,CDN
 images.newrepublic.com,CDN
 images.now-tv.com,CDN
@@ -3074,6 +3076,7 @@ players.brightcove.net,CDN
 playgroundcdn.typescriptlang.org,CDN
 plugins.dprint.dev,CDN
 plus.unsplash.com,CDN
+pmecdn.protonweb.com,CDN
 polyfill-fe.toss.im,CDN
 polyfill.bbhub.io,CDN
 pomf2.lain.la,CDN
