@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3919
+# 规则统计: 3925
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -84,9 +84,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-14T05:58:46.607Z
-# Last Updated: 2025-08-16T06:04:09.441Z
+# Last Updated: 2025-08-17T12:18:18.489Z
 # License: AGPL 3.0
-# Size: 3828
+# Size: 3834
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1392,6 +1392,7 @@ assets.science.nasa.gov,CDN
 assets.sendinblue.com,CDN
 assets.shazam.com,CDN
 assets.sololearn.com,CDN
+assets.speedvitals.com,CDN
 assets.squarespace.com,CDN
 assets.squarewebsites.org,CDN
 assets.st-note.com,CDN
@@ -1485,6 +1486,7 @@ brick.a.ssl.fastly.net,CDN
 brick.freetls.fastly.net,CDN
 bst.icons8.com,CDN
 bucket1.notaku.so,CDN
+bulletin.svc.litv.tv,CDN
 bundle.5gtb.com,CDN
 bundle.dyn-rev.app,CDN
 bundle.trysavvy.com,CDN
@@ -2331,6 +2333,7 @@ files.writefreely.org,CDN
 files.yande.re,CDN
 filestore.community.support.microsoft.com,CDN
 filestore.fortinet.com,CDN
+fino.svc.litv.tv,CDN
 firebase-settings.crashlytics.com,CDN
 firebaseinstallations.googleapis.com,CDN
 firebaselogging-pa.googleapis.com,CDN
@@ -2777,6 +2780,7 @@ js1.chargebee.com,CDN
 jsdelivr.b-cdn.net,CDN
 jsdelivr.ioiox.net,CDN
 jslibs.blackmagicdesign.com,CDN
+jsmodule.svc.litv.tv,CDN
 jsonplaceholder.typicode.com,CDN
 jssdk.opin.media,CDN
 jssocdn.indiatimes.com,CDN
@@ -3071,6 +3075,7 @@ play.xfvod.pro,CDN
 player-frontend.cnevids.com,CDN
 player.cnevids.com,CDN
 player.louisvuitton.com,CDN
+player.svc.litv.tv,CDN
 player.vimeo.com,CDN
 players.brightcove.net,CDN
 playgroundcdn.typescriptlang.org,CDN
@@ -3587,6 +3592,7 @@ static.srcspot.com,CDN
 static.staff-start.com,CDN
 static.start.me,CDN
 static.status.io,CDN
+static.svc.litv.tv,CDN
 static.telegraph.co.uk,CDN
 static.tenki.jp,CDN
 static.test-beta.com,CDN

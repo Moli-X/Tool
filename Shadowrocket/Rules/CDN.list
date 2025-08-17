@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3919
+# 规则统计: 3925
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -84,9 +84,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-14T05:58:46.607Z
-# Last Updated: 2025-08-16T06:04:09.441Z
+# Last Updated: 2025-08-17T12:18:18.489Z
 # License: AGPL 3.0
-# Size: 3828
+# Size: 3834
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1392,6 +1392,7 @@ assets.science.nasa.gov
 assets.sendinblue.com
 assets.shazam.com
 assets.sololearn.com
+assets.speedvitals.com
 assets.squarespace.com
 assets.squarewebsites.org
 assets.st-note.com
@@ -1485,6 +1486,7 @@ brick.a.ssl.fastly.net
 brick.freetls.fastly.net
 bst.icons8.com
 bucket1.notaku.so
+bulletin.svc.litv.tv
 bundle.5gtb.com
 bundle.dyn-rev.app
 bundle.trysavvy.com
@@ -2331,6 +2333,7 @@ files.writefreely.org
 files.yande.re
 filestore.community.support.microsoft.com
 filestore.fortinet.com
+fino.svc.litv.tv
 firebase-settings.crashlytics.com
 firebaseinstallations.googleapis.com
 firebaselogging-pa.googleapis.com
@@ -2777,6 +2780,7 @@ js1.chargebee.com
 jsdelivr.b-cdn.net
 jsdelivr.ioiox.net
 jslibs.blackmagicdesign.com
+jsmodule.svc.litv.tv
 jsonplaceholder.typicode.com
 jssdk.opin.media
 jssocdn.indiatimes.com
@@ -3071,6 +3075,7 @@ play.xfvod.pro
 player-frontend.cnevids.com
 player.cnevids.com
 player.louisvuitton.com
+player.svc.litv.tv
 player.vimeo.com
 players.brightcove.net
 playgroundcdn.typescriptlang.org
@@ -3587,6 +3592,7 @@ static.srcspot.com
 static.staff-start.com
 static.start.me
 static.status.io
+static.svc.litv.tv
 static.telegraph.co.uk
 static.tenki.jp
 static.test-beta.com
