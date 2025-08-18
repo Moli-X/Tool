@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 857
+# 规则统计: 859
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 849
-#Update content: add Kuwo Music ads domain.
-#Update time: 2025-08-05 16:30:12 UTC+8
+#Total lines: 851
+#Update content: 拦截某博广告，感谢 @0xLac #161
+#Update time: 2025-08-18 16:44:05 UTC+8
 #Version: 1.6.8-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -245,8 +245,10 @@
 .bgg.baidu.com,Ads_AWAvenue
 .bianxian.com,Ads_AWAvenue
 .bingads.microsoft.com,Ads_AWAvenue
+.biz.weibo.com,Ads_AWAvenue
 .bj.ad.track.66mobi.com,Ads_AWAvenue
 .books-analytics-events.apple.com,Ads_AWAvenue
+.bootpreload.uve.weibo.com,Ads_AWAvenue
 .browsercfg-drcn.cloud.dbankcloud.cn,Ads_AWAvenue
 .bsrv.qq.com,Ads_AWAvenue
 .bugly.qq.com,Ads_AWAvenue

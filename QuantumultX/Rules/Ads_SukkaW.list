@@ -1,5 +1,5 @@
 # 规则名称: Ads_SukkaW
-# 规则统计: 100981
+# 规则统计: 101052
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,Ads_SukkaW
 HOST,aedns.weixin.qq.com,Ads_SukkaW
@@ -784,9 +784,9 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-16T14:31:25.390Z
-# Last Updated: 2025-08-17T16:44:47.467Z
+# Last Updated: 2025-08-18T04:22:39.890Z
 # License: AGPL 3.0
-# Size: 100186
+# Size: 100257
 # Size: 754
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Non-IP
@@ -984,6 +984,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .12112336.pix-cdn.org,Ads_SukkaW
 .12159c9c0b.3009e36989.com,Ads_SukkaW
 .121897.shop,Ads_SukkaW
+.1221e236c3f8703.com,Ads_SukkaW
 .122cafc086.com,Ads_SukkaW
 .123-tracker.com,Ads_SukkaW
 .123456.asia,Ads_SukkaW
@@ -1010,6 +1011,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .1500026601.vodplayer.wxamedia.com,Ads_SukkaW
 .1529462937.rsc.cdn77.org,Ads_SukkaW
 .152media.cloud,Ads_SukkaW
+.153c349024.com,Ads_SukkaW
 .1548164934.rsc.cdn77.org,Ads_SukkaW
 .1558334541.rsc.cdn77.org,Ads_SukkaW
 .15ftgllk1.com,Ads_SukkaW
@@ -1240,7 +1242,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .2cnjuh34jbstar.com,Ads_SukkaW
 .2cnt.net,Ads_SukkaW
 .2d1x.com,Ads_SukkaW
-.2e5f89c409.897b6c60ea.com,Ads_SukkaW
 .2e718yf5jypb.test.digitalsurge.io,Ads_SukkaW
 .2eb90a649a.963885aed1.com,Ads_SukkaW
 .2efgcdcjr000.fun,Ads_SukkaW
@@ -1527,7 +1528,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .5363316.marketing.numi.com,Ads_SukkaW
 .5363316.trackerinfo.southbeachdiet.com,Ads_SukkaW
 .537images1.com,Ads_SukkaW
-.540f8cca2b.com,Ads_SukkaW
 .548f23e472.com,Ads_SukkaW
 .54gtlb.cn,Ads_SukkaW
 .55-trk-srv.com,Ads_SukkaW
@@ -1740,6 +1740,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .7c5734761f.com,Ads_SukkaW
 .7ca78m3csgbrid7ge.com,Ads_SukkaW
 .7car.com.cn,Ads_SukkaW
+.7d93f9d2f5.com,Ads_SukkaW
 .7dgk5h1lk.com,Ads_SukkaW
 .7f583jylmjs.top,Ads_SukkaW
 .7f7rt.icu,Ads_SukkaW
@@ -1811,7 +1812,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .8961.jianbihua.com,Ads_SukkaW
 .89kvh.cn,Ads_SukkaW
 .89sa.com,Ads_SukkaW
-.8a53b29c07.com,Ads_SukkaW
 .8ab16250fe.com,Ads_SukkaW
 .8ail6.icu,Ads_SukkaW
 .8b2d434767.b0f31fd873.com,Ads_SukkaW
@@ -1880,12 +1880,12 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .96696612.top,Ads_SukkaW
 .9679c2b616.com,Ads_SukkaW
 .96e7bee058.com,Ads_SukkaW
-.96ed2s9r.xyz,Ads_SukkaW
 .96rj.icu,Ads_SukkaW
 .9735476.sender.skyscanner.com,Ads_SukkaW
 .9735476.sender.skyscanner.net,Ads_SukkaW
 .9735476.test.skyscanner.net,Ads_SukkaW
 .976caebe7b.com,Ads_SukkaW
+.97ce98c219.com,Ads_SukkaW
 .98158.com,Ads_SukkaW
 .9831tb.com,Ads_SukkaW
 .9832d75ae3.com,Ads_SukkaW
@@ -3201,7 +3201,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .aboutpersonify.com,Ads_SukkaW
 .abouttill.com,Ads_SukkaW
 .aboveredirect.top,Ads_SukkaW
-.aboveslimns.click,Ads_SukkaW
 .abox.simpleshop.cz,Ads_SukkaW
 .abpicsrc.com,Ads_SukkaW
 .abpjs23.com,Ads_SukkaW
@@ -3306,7 +3305,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .accenturetest.epoise.com,Ads_SukkaW
 .acceptablefoot.com,Ads_SukkaW
 .acceptablegrand.pro,Ads_SukkaW
-.acceptablereality.com,Ads_SukkaW
 .acceptableredheadcaviar.com,Ads_SukkaW
 .acceptcards.americanexpress.co.uk,Ads_SukkaW
 .acceptcontemplatecorner.com,Ads_SukkaW
@@ -3324,6 +3322,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .acclog002.shop-pro.jp,Ads_SukkaW
 .accmgr.com,Ads_SukkaW
 .accommodateyours.com,Ads_SukkaW
+.accompanimentcouldsurprisingly.com,Ads_SukkaW
 .accompanycollapse.com,Ads_SukkaW
 .accompanynovemberexclusion.com,Ads_SukkaW
 .accomplishedpersuadedprinter.com,Ads_SukkaW
@@ -3782,6 +3781,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ad.zijieapi.com,Ads_SukkaW
 .ad.zui.com,Ads_SukkaW
 .ad01.tmgrup.com.tr,Ads_SukkaW
+.ad0a48896e.540f8cca2b.com,Ads_SukkaW
 .ad1.tone.ne.jp,Ads_SukkaW
 .ad1.udn.com,Ads_SukkaW
 .ad1.xiaomi.com,Ads_SukkaW
@@ -4503,6 +4503,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .adsensecamp.com,Ads_SukkaW
 .adsensecustomsearchads.com,Ads_SukkaW
 .adsensor.cn,Ads_SukkaW
+.adserved.net,Ads_SukkaW
 .adservice.click,Ads_SukkaW
 .adservice.tohsoft.com,Ads_SukkaW
 .adservicemedia.dk,Ads_SukkaW
@@ -4654,7 +4655,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .adtoma.com,Ads_SukkaW
 .adtoox.com,Ads_SukkaW
 .adtorque.in,Ads_SukkaW
-.adtotal.pl,Ads_SukkaW
 .adtpix.com,Ads_SukkaW
 .adtrack-intl.ucweb.com,Ads_SukkaW
 .adtrack.adleadevent.com,Ads_SukkaW
@@ -5325,6 +5325,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .afuit.functionofbeauty.com,Ads_SukkaW
 .afvrolvial.com,Ads_SukkaW
 .afxyscnncxwax.com,Ads_SukkaW
+.afy.agency,Ads_SukkaW
 .afzamltca.com,Ads_SukkaW
 .afzph.myarthaus.com,Ads_SukkaW
 .afzyobtdyrjnm.site,Ads_SukkaW
@@ -5418,7 +5419,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .agma-analytics.de,Ads_SukkaW
 .agmvnwvmklkwn.top,Ads_SukkaW
 .agnagmwbmlyob.top,Ads_SukkaW
-.agnailsdumky.qpon,Ads_SukkaW
 .agnateseric.com,Ads_SukkaW
 .agnathawinklet.cyou,Ads_SukkaW
 .agnes.travelpro.ca,Ads_SukkaW
@@ -5501,6 +5501,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ahu.clubkidscuritibaahu.com.br,Ads_SukkaW
 .ahumserve.click,Ads_SukkaW
 .ahungrylally.help,Ads_SukkaW
+.ahupio.icu,Ads_SukkaW
 .ahusylvas.world,Ads_SukkaW
 .ahuvjy.design-market.fr,Ads_SukkaW
 .ahwzqqlumpyba.website,Ads_SukkaW
@@ -5547,7 +5548,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .aikkits.com,Ads_SukkaW
 .aikrir.lcwaikiki.com,Ads_SukkaW
 .aileenodist.cfd,Ads_SukkaW
-.ailieculebra.qpon,Ads_SukkaW
 .ailla.abphotos.link,Ads_SukkaW
 .aillaeuyn.com,Ads_SukkaW
 .ailraustak.net,Ads_SukkaW
@@ -5557,7 +5557,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .aimgoners.qpon,Ads_SukkaW
 .aimlessverst.cyou,Ads_SukkaW
 .aimoreuniter.click,Ads_SukkaW
-.aimtaizoukr.net,Ads_SukkaW
 .aimukreegee.net,Ads_SukkaW
 .aimvaa.gulet.at,Ads_SukkaW
 .aincrd.champstudy.com,Ads_SukkaW
@@ -5924,7 +5923,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .alchemysocial.com,Ads_SukkaW
 .alcondevarella.cfd,Ads_SukkaW
 .alcotestspro-ss.offeroshop.com,Ads_SukkaW
-.alcoveringer.rest,Ads_SukkaW
 .alcroconawa.com,Ads_SukkaW
 .ald.aldautomotive.be,Ads_SukkaW
 .alda1mure.com,Ads_SukkaW
@@ -6022,12 +6020,14 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .allinsurance.allinsure.ca,Ads_SukkaW
 .allkmbr.icu,Ads_SukkaW
 .allocatedense.com,Ads_SukkaW
+.allocationcaller.com,Ads_SukkaW
 .allongewakers.com,Ads_SukkaW
 .alloutdubstep.com,Ads_SukkaW
 .allow-to-continue.com,Ads_SukkaW
 .allowpalas.qpon,Ads_SukkaW
 .allowsalmond.com,Ads_SukkaW
 .alloydigital.com,Ads_SukkaW
+.alloyedave.cfd,Ads_SukkaW
 .alloyedcir.rest,Ads_SukkaW
 .allshareware.com,Ads_SukkaW
 .allskillon.com,Ads_SukkaW
@@ -6038,6 +6038,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .allworldinfo4.store,Ads_SukkaW
 .allyes.com,Ads_SukkaW
 .allyes.com.cn,Ads_SukkaW
+.almehziganka.com,Ads_SukkaW
 .almggvgzwqgqv.top,Ads_SukkaW
 .almicefibrils.world,Ads_SukkaW
 .almightypush.com,Ads_SukkaW
@@ -6241,6 +6242,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .amongdirt.world,Ads_SukkaW
 .amongfurfooz.cfd,Ads_SukkaW
 .amoochaw.com,Ads_SukkaW
+.amorhypho.help,Ads_SukkaW
 .amoritestints.cyou,Ads_SukkaW
 .amorphouscomprise.com,Ads_SukkaW
 .amos5lynn.com,Ads_SukkaW
@@ -7592,7 +7594,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ananasjuice.bellis.io,Ads_SukkaW
 .anapp.adobe.com,Ads_SukkaW
 .anassets.bbh.com,Ads_SukkaW
-.anastasia-international.com,Ads_SukkaW
 .anastasiasaffiliate.com,Ads_SukkaW
 .anatronsahara.world,Ads_SukkaW
 .anattospursier.com,Ads_SukkaW
@@ -7696,6 +7697,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .annoyingclover.com,Ads_SukkaW
 .annpounjsphun.online,Ads_SukkaW
 .annual-spend.com,Ads_SukkaW
+.annuarybeeper.click,Ads_SukkaW
 .annuentcubic.shop,Ads_SukkaW
 .annulipiaba.rest,Ads_SukkaW
 .annwwu.guitarcenter.com,Ads_SukkaW
@@ -7772,7 +7774,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .antiredcessant.com,Ads_SukkaW
 .antisagrucks.cyou,Ads_SukkaW
 .antitracking.owncast.online,Ads_SukkaW
-.antiwarmilium.rest,Ads_SukkaW
 .antlerlode.com,Ads_SukkaW
 .antlermaze.com,Ads_SukkaW
 .antlion.codivores.com,Ads_SukkaW
@@ -8434,7 +8435,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .api.servesempreloja.com,Ads_SukkaW
 .api.setting.intl.miui.com,Ads_SukkaW
 .api.sharkbrasilstore.com.br,Ads_SukkaW
-.api.shinybirdwhispered.com,Ads_SukkaW
 .api.shopcarpe.com.br,Ads_SukkaW
 .api.skinpro.med.br,Ads_SukkaW
 .api.smartnews-ads.com,Ads_SukkaW
@@ -9883,7 +9883,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .arrangementsfilter.com,Ads_SukkaW
 .arraysshahid.world,Ads_SukkaW
 .arrestjav182.fun,Ads_SukkaW
-.arretezhiccups.qpon,Ads_SukkaW
 .arrfhqatlseth.online,Ads_SukkaW
 .arrietty.nrj.fr,Ads_SukkaW
 .arristidiose.life,Ads_SukkaW
@@ -10341,6 +10340,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .atonato.de,Ads_SukkaW
 .atonementimmersedlacerate.com,Ads_SukkaW
 .atorks.xyz,Ads_SukkaW
+.atormbvftvvg.com,Ads_SukkaW
 .atoso.alphatonicoffers.online,Ads_SukkaW
 .atoxpjlmhfjns.store,Ads_SukkaW
 .atozkids.dgt.srv.br,Ads_SukkaW
@@ -10630,6 +10630,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .avmvk.oliversweeney.com,Ads_SukkaW
 .avntf.botach.com,Ads_SukkaW
 .avocado.laprovence.com,Ads_SukkaW
+.avoidedtreasr.com,Ads_SukkaW
 .avos.ssikdnab.com,Ads_SukkaW
 .avouchuramil.com,Ads_SukkaW
 .avouedaidle.click,Ads_SukkaW
@@ -10678,6 +10679,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .awemwh.com,Ads_SukkaW
 .awentw.com,Ads_SukkaW
 .aweproto.com,Ads_SukkaW
+.aweprotostatic.com,Ads_SukkaW
 .aweprt.com,Ads_SukkaW
 .awept.com,Ads_SukkaW
 .aweresolve.com,Ads_SukkaW
@@ -10688,6 +10690,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .aweyqaqkryjb.top,Ads_SukkaW
 .awfyuqoidy.com,Ads_SukkaW
 .awfzfs.kwantum.nl,Ads_SukkaW
+.awgadtra.com,Ads_SukkaW
 .awggij.wplay.co,Ads_SukkaW
 .awhauchoa.net,Ads_SukkaW
 .awheecethe.net,Ads_SukkaW
@@ -10954,7 +10957,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .azlej8cdm.pragmaticwebsecurity.com,Ads_SukkaW
 .azlvcxyvmt.com,Ads_SukkaW
 .azlyta.immowelt.de,Ads_SukkaW
-.aznapoz.info,Ads_SukkaW
 .azolbbmzlmllb.top,Ads_SukkaW
 .azonicrais.help,Ads_SukkaW
 .azoogleads.com,Ads_SukkaW
@@ -11132,6 +11134,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .baboon.namegen.app,Ads_SukkaW
 .baboon.naxon.dev,Ads_SukkaW
 .baboon.vacanti.com,Ads_SukkaW
+.babudombonjour.shop,Ads_SukkaW
 .baby.arounita.com,Ads_SukkaW
 .babyblissgifts.com,Ads_SukkaW
 .babyboomboomads.com,Ads_SukkaW
@@ -11262,6 +11265,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ballsbanana.com,Ads_SukkaW
 .balluterelais.rest,Ads_SukkaW
 .balmyrind.com,Ads_SukkaW
+.balneapiner.cfd,Ads_SukkaW
 .balneario.cursodetti.com.br,Ads_SukkaW
 .bambarmedia.com,Ads_SukkaW
 .bamboohugs.com,Ads_SukkaW
@@ -11374,6 +11378,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .bashkirclootie.shop,Ads_SukkaW
 .basiatedhoney.world,Ads_SukkaW
 .basiatenew.cfd,Ads_SukkaW
+.basic-article.com,Ads_SukkaW
 .basilaratterr.cfd,Ads_SukkaW
 .basilfish.com,Ads_SukkaW
 .basilisk.community-arts.net,Ads_SukkaW
@@ -11405,8 +11410,8 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .bats.video.yahoo.com,Ads_SukkaW
 .batsavcdn.ksmobile.net,Ads_SukkaW
 .batsmantoppled.click,Ads_SukkaW
-.batteaustaith.help,Ads_SukkaW
 .battepush.com,Ads_SukkaW
+.batteryod.com,Ads_SukkaW
 .battle05032026.shop,Ads_SukkaW
 .battle1266.fun,Ads_SukkaW
 .battongarget.world,Ads_SukkaW
@@ -11723,7 +11728,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .bearscutte.com,Ads_SukkaW
 .beat.yourtv.jp,Ads_SukkaW
 .beatenbolly.digital,Ads_SukkaW
-.beaterarche.cfd,Ads_SukkaW
 .beatforumsubstitute.com,Ads_SukkaW
 .beaufincoifs.life,Ads_SukkaW
 .beauty.stylab.xyz,Ads_SukkaW
@@ -11747,6 +11751,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .bechd.goodnightfox.com,Ads_SukkaW
 .becketcoffee.com,Ads_SukkaW
 .beclowndripple.life,Ads_SukkaW
+.becmorsoltoansa.com,Ads_SukkaW
 .becode.xiao84.com,Ads_SukkaW
 .becomeapartner.io,Ads_SukkaW
 .becomeo21.com,Ads_SukkaW
@@ -11853,6 +11858,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .beltsflusker.com,Ads_SukkaW
 .beludicolor.com,Ads_SukkaW
 .bemachopor.com,Ads_SukkaW
+.bemailgaudily.cfd,Ads_SukkaW
 .bemanectricr.com,Ads_SukkaW
 .bembabonzer.help,Ads_SukkaW
 .bemiltankor.com,Ads_SukkaW
@@ -11991,7 +11997,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .better.bettersteps.pl,Ads_SukkaW
 .better.herculesrx.com,Ads_SukkaW
 .betteradsystem.com,Ads_SukkaW
-.betteraudience.pro,Ads_SukkaW
 .betterhealthrewards.headuplabs.com,Ads_SukkaW
 .bettermedical-app.hotdoc.com.au,Ads_SukkaW
 .betterup.gainful.com,Ads_SukkaW
@@ -12018,6 +12023,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .bewormbedrail.help,Ads_SukkaW
 .bewr1.com,Ads_SukkaW
 .bewrapecurie.qpon,Ads_SukkaW
+.bewrapsquerier.click,Ads_SukkaW
 .bewrutv.top,Ads_SukkaW
 .beyanmaan.com,Ads_SukkaW
 .beylicbesmile.com,Ads_SukkaW
@@ -12287,6 +12293,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .birddomkoda.digital,Ads_SukkaW
 .birddomlaz.com,Ads_SukkaW
 .birderbuds.qpon,Ads_SukkaW
+.birdyunruled.world,Ads_SukkaW
 .birianizymome.top,Ads_SukkaW
 .birkylaced.life,Ads_SukkaW
 .birliebisabol.cfd,Ads_SukkaW
@@ -12296,7 +12303,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .birthdaybelief.com,Ads_SukkaW
 .birthjeans.icu,Ads_SukkaW
 .bis-dic15.com,Ads_SukkaW
-.biscuitmortify.com,Ads_SukkaW
 .bisdyxila.com,Ads_SukkaW
 .bisetsoliped.com,Ads_SukkaW
 .bisko.mall.tv,Ads_SukkaW
@@ -12321,6 +12327,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .biv.gazeta.pl,Ads_SukkaW
 .biverbexion.qpon,Ads_SukkaW
 .bivsawomqp.com,Ads_SukkaW
+.biwdarehhlxopn.com,Ads_SukkaW
 .biwipuque.com,Ads_SukkaW
 .bixinrighter.shop,Ads_SukkaW
 .biz.coface.com,Ads_SukkaW
@@ -12380,6 +12387,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .bkpoef.jules.com,Ads_SukkaW
 .bkprmw.ironyporno.com,Ads_SukkaW
 .bkqa.cn,Ads_SukkaW
+.bkqklqvgoggaj.top,Ads_SukkaW
 .bkqus.nakednutrition.com,Ads_SukkaW
 .bksckn.minhacasasolar.com.br,Ads_SukkaW
 .bkstg.flyx.me,Ads_SukkaW
@@ -12431,7 +12439,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .blau-subdomain.b.information.blau.de,Ads_SukkaW
 .blava.viessmann.sk,Ads_SukkaW
 .blavity.black.news,Ads_SukkaW
-.blazeteamlow.com,Ads_SukkaW
 .blbtibqk.icu,Ads_SukkaW
 .blcdog.com,Ads_SukkaW
 .bld.mobi,Ads_SukkaW
@@ -12761,6 +12768,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .bofwcwlstyrts.com,Ads_SukkaW
 .bogcig.blockofgear.com,Ads_SukkaW
 .bogfernallo.cfd,Ads_SukkaW
+.bogholesmarten.shop,Ads_SukkaW
 .boguesline.rest,Ads_SukkaW
 .bogus-disk.com,Ads_SukkaW
 .bohee.med-gesund.de,Ads_SukkaW
@@ -12911,9 +12919,10 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .boundarygoose.com,Ads_SukkaW
 .boundlessbrake.com,Ads_SukkaW
 .boundlessveil.com,Ads_SukkaW
+.bountifulcomfortable.com,Ads_SukkaW
 .bountyformseedlings.com,Ads_SukkaW
 .boupeeli.com,Ads_SukkaW
-.bouquetdaft.com,Ads_SukkaW
+.bournpilusli.qpon,Ads_SukkaW
 .bourreeskal.rest,Ads_SukkaW
 .bourrepardale.com,Ads_SukkaW
 .boustahe.com,Ads_SukkaW
@@ -12922,6 +12931,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .bovid.neural.love,Ads_SukkaW
 .bovinetimingunsaddle.com,Ads_SukkaW
 .bovoidruman.click,Ads_SukkaW
+.bovscuwjuupvr.online,Ads_SukkaW
 .bovytl.xyz,Ads_SukkaW
 .bowermisrule.com,Ads_SukkaW
 .bowersorgamy.com,Ads_SukkaW
@@ -12951,7 +12961,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .bpfgut.genova24.it,Ads_SukkaW
 .bpfgut.ivg.it,Ads_SukkaW
 .bpgbcl.coconala.com,Ads_SukkaW
-.bphtlhrntspkk.site,Ads_SukkaW
 .bpimggvsl.com,Ads_SukkaW
 .bpipf.hatheaven.com,Ads_SukkaW
 .bpjdk.werenotreallystrangers.com,Ads_SukkaW
@@ -13246,6 +13255,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .brhimobility.eccocar.com,Ads_SukkaW
 .brhwsg.makingnew.co.kr,Ads_SukkaW
 .brianwould.com,Ads_SukkaW
+.bribingalraun.click,Ads_SukkaW
 .brice-test.nawar.io,Ads_SukkaW
 .brick.xhamster.com,Ads_SukkaW
 .brickworks.viessmann.sg,Ads_SukkaW
@@ -13372,7 +13382,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .brugocarz.eccocar.com,Ads_SukkaW
 .bruisebaseball.com,Ads_SukkaW
 .bruisedpaperworkmetre.com,Ads_SukkaW
-.bruitsosmols.help,Ads_SukkaW
 .brujoshooch.shop,Ads_SukkaW
 .brukuv.inkstation.com.au,Ads_SukkaW
 .brulpha.com,Ads_SukkaW
@@ -13442,6 +13451,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .btaumppksprkk.website,Ads_SukkaW
 .btcfbr.mejshop.jp,Ads_SukkaW
 .btcili.top,Ads_SukkaW
+.btdfqejriamjr.website,Ads_SukkaW
 .btimiyv.top,Ads_SukkaW
 .btkbei.courir.com,Ads_SukkaW
 .btkdu.roundhouseprovisions.com,Ads_SukkaW
@@ -13529,7 +13539,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .bulkuplook.shop,Ads_SukkaW
 .bulky-battle.com,Ads_SukkaW
 .bullaecourche.digital,Ads_SukkaW
-.bulletyretack.click,Ads_SukkaW
 .bullionglidingscuttle.com,Ads_SukkaW
 .bulliontrypeta.com,Ads_SukkaW
 .bullionyield.com,Ads_SukkaW
@@ -13661,6 +13670,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .buzzersidewalkcathedral.com,Ads_SukkaW
 .buzzflying.shop,Ads_SukkaW
 .buzzonclick.com,Ads_SukkaW
+.buzzsawgoer.com,Ads_SukkaW
 .bvaib.naenaes.com,Ads_SukkaW
 .bvbam.heathstreetapparel.com,Ads_SukkaW
 .bvbqyq.odalys-vacances.com,Ads_SukkaW
@@ -14571,6 +14581,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .capis.spodlady.com,Ads_SukkaW
 .capiss.novabe.nl,Ads_SukkaW
 .capiss.nyralondon.com,Ads_SukkaW
+.capitalistsplitting.com,Ads_SukkaW
 .capiteste.r4assessoria.com.br,Ads_SukkaW
 .capitt.topdealnow.org,Ads_SukkaW
 .capletstoit.com,Ads_SukkaW
@@ -14591,6 +14602,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .capture-api.ap3prod.com,Ads_SukkaW
 .capture.condenastdigital.com,Ads_SukkaW
 .capturescaldsomewhat.com,Ads_SukkaW
+.caputtalite.shop,Ads_SukkaW
 .capybara.civicsoftwarefoundation.org,Ads_SukkaW
 .capybara.kylewinton.com,Ads_SukkaW
 .capybara.randyhamiltonelectric.com,Ads_SukkaW
@@ -14659,7 +14671,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .carplusky.cyou,Ads_SukkaW
 .carpoolqueen.com,Ads_SukkaW
 .carpuspapist.world,Ads_SukkaW
-.carratskibby.qpon,Ads_SukkaW
 .carreras.unisabana.edu.co,Ads_SukkaW
 .carrick-ui.advoncommerce.com,Ads_SukkaW
 .carriedamiral.com,Ads_SukkaW
@@ -14682,6 +14693,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .cartrigepromised.com,Ads_SukkaW
 .cartx.cloud,Ads_SukkaW
 .carvecakes.com,Ads_SukkaW
+.carvenbowet.help,Ads_SukkaW
 .carvyre.com,Ads_SukkaW
 .cas.greenguardia.de,Ads_SukkaW
 .cas.huck-gmbh.de,Ads_SukkaW
@@ -14762,6 +14774,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .cathharlot.world,Ads_SukkaW
 .cathopunimped.cfd,Ads_SukkaW
 .cationscurious.click,Ads_SukkaW
+.catjanghenware.top,Ads_SukkaW
 .catmintgorse.world,Ads_SukkaW
 .catng.crateandbarrel.com,Ads_SukkaW
 .catpq.vitalitymedical.com,Ads_SukkaW
@@ -15117,9 +15130,9 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .cedrt6.pro,Ads_SukkaW
 .ceduouschs.life,Ads_SukkaW
 .ceerosario.qpon,Ads_SukkaW
+.ceetheewhuwoaps.net,Ads_SukkaW
 .ceezepegleze.xyz,Ads_SukkaW
 .ceggfe.msc-kreuzfahrten.de,Ads_SukkaW
-.cehbmaknzpyic.store,Ads_SukkaW
 .ceiom.befitnow.us,Ads_SukkaW
 .ceitubhnrlaap.com,Ads_SukkaW
 .cejckggvflvnf.space,Ads_SukkaW
@@ -15267,6 +15280,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ch0p.darty.com,Ads_SukkaW
 .ch17axocue.top,Ads_SukkaW
 .chabershank.digital,Ads_SukkaW
+.chaberwaicuri.world,Ads_SukkaW
 .chabsashibsou.com,Ads_SukkaW
 .chacmaye.world,Ads_SukkaW
 .chademocharge.com,Ads_SukkaW
@@ -15281,6 +15295,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .chairmansmile.com,Ads_SukkaW
 .chairscrack.com,Ads_SukkaW
 .chairsdonkey.com,Ads_SukkaW
+.chaiserepiece.com,Ads_SukkaW
 .chakrarother.qpon,Ads_SukkaW
 .chalaips.com,Ads_SukkaW
 .chaldailg.com,Ads_SukkaW
@@ -15359,6 +15374,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .cheapogill.cfd,Ads_SukkaW
 .cheboolraibsook.net,Ads_SukkaW
 .checbox.cc,Ads_SukkaW
+.check-out-this.site,Ads_SukkaW
 .check-tl-ver-268-a.buzz,Ads_SukkaW
 .check-tl-ver-294-2.com,Ads_SukkaW
 .check.frbservices.org,Ads_SukkaW
@@ -15511,6 +15527,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .chmueyv.icu,Ads_SukkaW
 .chnmi.store.bariatricpal.com,Ads_SukkaW
 .chnnlk.sinspot.co.kr,Ads_SukkaW
+.chnsrv.com,Ads_SukkaW
 .chnxqbjoodzxn.site,Ads_SukkaW
 .chnydwnjhqbsb.space,Ads_SukkaW
 .choacoungoagn.net,Ads_SukkaW
@@ -15521,7 +15538,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .chogakwashier.cfd,Ads_SukkaW
 .choirflorian.qpon,Ads_SukkaW
 .chokersmalicho.com,Ads_SukkaW
-.chokramorgen.cyou,Ads_SukkaW
 .choleicvends.help,Ads_SukkaW
 .cholicklyceum.qpon,Ads_SukkaW
 .chollerselvage.life,Ads_SukkaW
@@ -15680,7 +15696,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .cityrobotflower.com,Ads_SukkaW
 .ciunrxhmsgscaa.com,Ads_SukkaW
 .civetformity.com,Ads_SukkaW
-.civilactually.com,Ads_SukkaW
 .civilization474.fun,Ads_SukkaW
 .civismdromos.shop,Ads_SukkaW
 .civitasculets.shop,Ads_SukkaW
@@ -15742,7 +15757,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ckygge.mohd.it,Ads_SukkaW
 .ckyhec.maxisport.com,Ads_SukkaW
 .ckyriuf.icu,Ads_SukkaW
-.ckzypnshkzevn.xyz,Ads_SukkaW
 .cl-997764a8.gcdn.co,Ads_SukkaW
 .cl-ad.x-flow.app,Ads_SukkaW
 .cl-pbr.cxr.skeepers.io,Ads_SukkaW
@@ -16404,6 +16418,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .cnameebis.eizoshigoto.com,Ads_SukkaW
 .cnameebis.usagi-online.com,Ads_SukkaW
 .cnameforitp.dermed.jp,Ads_SukkaW
+.cnaqnvcexfuwj.website,Ads_SukkaW
 .cnbd1.appmobile.cn,Ads_SukkaW
 .cnc.multiax.com,Ads_SukkaW
 .cnebis.chocola.com,Ads_SukkaW
@@ -16460,6 +16475,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .co.dewrain.life,Ads_SukkaW
 .co.vaicore.site,Ads_SukkaW
 .co.vaicore.xyz,Ads_SukkaW
+.co5n3nerm6arapo7ny.com,Ads_SukkaW
 .co85264.com,Ads_SukkaW
 .co932.coloradopolitics.com,Ads_SukkaW
 .coaglewovahou.net,Ads_SukkaW
@@ -16777,6 +16793,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .college.marketingcube.com.au,Ads_SukkaW
 .collerybharti.digital,Ads_SukkaW
 .colliedexcl.cyou,Ads_SukkaW
+.colliespeel.qpon,Ads_SukkaW
 .coloblenis.qpon,Ads_SukkaW
 .colonelsurvival.com,Ads_SukkaW
 .colonerloover.cyou,Ads_SukkaW
@@ -16986,6 +17003,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .con.earthsync.shop,Ads_SukkaW
 .conamedceros.help,Ads_SukkaW
 .conan.screencast-o-matic.com,Ads_SukkaW
+.conandgarlopa.click,Ads_SukkaW
 .conantreboast.shop,Ads_SukkaW
 .conative.network,Ads_SukkaW
 .concealmentmimic.com,Ads_SukkaW
@@ -17027,6 +17045,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .conf.optum.com,Ads_SukkaW
 .confcarica.help,Ads_SukkaW
 .confe.dc.oppomobile.com,Ads_SukkaW
+.confectseizing.com,Ads_SukkaW
 .conference.all-energy.com.au,Ads_SukkaW
 .conference.flsmidth.com,Ads_SukkaW
 .conferences.cigna.com,Ads_SukkaW
@@ -17065,7 +17084,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .congeesaquafer.com,Ads_SukkaW
 .congeeswortle.click,Ads_SukkaW
 .congerstunish.com,Ads_SukkaW
-.congoniuntwirl.cyou,Ads_SukkaW
 .congruousthey.com,Ads_SukkaW
 .coniinefuchi.digital,Ads_SukkaW
 .conimicutlighthouse.viessmann-us.com,Ads_SukkaW
@@ -17622,6 +17640,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .corgibeachday.com,Ads_SukkaW
 .coriinperil.qpon,Ads_SukkaW
 .corincatwood.qpon,Ads_SukkaW
+.coringpatas.digital,Ads_SukkaW
 .corjlougqaicc.top,Ads_SukkaW
 .corneey.com,Ads_SukkaW
 .corneredtomb.com,Ads_SukkaW
@@ -17702,6 +17721,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .cotvqxrbqmqip.website,Ads_SukkaW
 .coublif.top,Ads_SukkaW
 .coucalhidated.com,Ads_SukkaW
+.coucherlaking.click,Ads_SukkaW
 .cougar.augmentedmindapp.com,Ads_SukkaW
 .cougar.wzulfikar.com,Ads_SukkaW
 .cougarsnutate.life,Ads_SukkaW
@@ -17925,6 +17945,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .cqemus.gartenhaus-gmbh.de,Ads_SukkaW
 .cqhqxnvjujhgix.com,Ads_SukkaW
 .cqishr.mobile.de,Ads_SukkaW
+.cqkikfffmcqbl.online,Ads_SukkaW
 .cqkrjdhg.mschcopenhagen.com,Ads_SukkaW
 .cqkrjdhg.mschcopenhagen.dk,Ads_SukkaW
 .cqlonl.spartoo.cz,Ads_SukkaW
@@ -18152,6 +18173,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .crossadsapi.ecomobileapp.com,Ads_SukkaW
 .crossbifolia.help,Ads_SukkaW
 .crossboardmobile.com,Ads_SukkaW
+.crossecopepod.help,Ads_SukkaW
 .crossees.com,Ads_SukkaW
 .crossengage.io,Ads_SukkaW
 .crossoverchina.com,Ads_SukkaW
@@ -18200,13 +18222,13 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .cruncherpatiencestoreroom.com,Ads_SukkaW
 .cruntbroon.world,Ads_SukkaW
 .cruntn.receno.com,Ads_SukkaW
-.cruorssicca.cfd,Ads_SukkaW
 .crushedtanrecs.digital,Ads_SukkaW
 .crushingaspirin.com,Ads_SukkaW
 .crushingmafia.com,Ads_SukkaW
 .crutjetsoms.click,Ads_SukkaW
 .crutvncf.top,Ads_SukkaW
 .cruxgpnyrvvur.website,Ads_SukkaW
+.cruxmhorr.click,Ads_SukkaW
 .cruxseekers.com,Ads_SukkaW
 .crvayw.kagunosato.com,Ads_SukkaW
 .crwdcntrl.net,Ads_SukkaW
@@ -18225,6 +18247,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .cryptotyc.care,Ads_SukkaW
 .crypttripsis.click,Ads_SukkaW
 .cryptvalue.com,Ads_SukkaW
+.crystalbloom.bid,Ads_SukkaW
 .crystalboulevard.com,Ads_SukkaW
 .crzohw.intersport.gr,Ads_SukkaW
 .cs.analytics.lego.com,Ads_SukkaW
@@ -18258,6 +18281,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .csaladititkok.com,Ads_SukkaW
 .csalhh.okay.cz,Ads_SukkaW
 .csbmey.viherpeukalot.fi,Ads_SukkaW
+.csbsvfmwevfkv.xyz,Ads_SukkaW
 .cscampbell.eloquademos.net,Ads_SukkaW
 .cscsexam.quantresear.ch,Ads_SukkaW
 .csd.khuzamasa.com,Ads_SukkaW
@@ -18411,6 +18435,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .cubicinjustice.com,Ads_SukkaW
 .cubicsreincur.click,Ads_SukkaW
 .cubismsopener.qpon,Ads_SukkaW
+.cubistslakes.help,Ads_SukkaW
 .cubitalsidler.qpon,Ads_SukkaW
 .cublaconf.qpon,Ads_SukkaW
 .cuboidsmeerkat.shop,Ads_SukkaW
@@ -18530,7 +18555,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .curl7bike.com,Ads_SukkaW
 .curledduotone.cfd,Ads_SukkaW
 .curledpastpatty.com,Ads_SukkaW
-.curlewscurfew.qpon,Ads_SukkaW
 .curlsbatter.com,Ads_SukkaW
 .curlycannon.com,Ads_SukkaW
 .curoax.com,Ads_SukkaW
@@ -19324,7 +19348,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .d2c4ylitp1qu24.cloudfront.net,Ads_SukkaW
 .d2cgumzzqhgmdu.cloudfront.net,Ads_SukkaW
 .d2cli4kgl5uxre.cloudfront.net,Ads_SukkaW
-.d2cmh8xu3ncrj2.cloudfront.net,Ads_SukkaW
 .d2cmqkwo8rxlr9.cloudfront.net,Ads_SukkaW
 .d2cpw6kwpff7n5.cloudfront.net,Ads_SukkaW
 .d2cqjjokdc31wb.cloudfront.net,Ads_SukkaW
@@ -19619,6 +19642,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .d949b51857.com,Ads_SukkaW
 .d97d3231b2.com,Ads_SukkaW
 .d980ffe9b6.com,Ads_SukkaW
+.d9c5dterekrjd.cloudfront.net,Ads_SukkaW
 .d9cshxmf0qazr.cloudfront.net,Ads_SukkaW
 .d9e5kmsg3asg0jq9.trkrabb.com,Ads_SukkaW
 .d9jj3mjthpub.cloudfront.net,Ads_SukkaW
@@ -19690,6 +19714,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .daejyre.com,Ads_SukkaW
 .daema.charleskeith.eu,Ads_SukkaW
 .dafapromo.com,Ads_SukkaW
+.daffaite.com,Ads_SukkaW
 .daffodilnotifyquarterback.com,Ads_SukkaW
 .daffodilo44.com,Ads_SukkaW
 .dafvng.sunrefre.jp,Ads_SukkaW
@@ -19766,7 +19791,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .dane.apartamentyonelife.pl,Ads_SukkaW
 .danesuffocate.com,Ads_SukkaW
 .daneswhidah.rest,Ads_SukkaW
-.dangerous-leader.pro,Ads_SukkaW
 .dangledcaffiso.com,Ads_SukkaW
 .danicirvr.com,Ads_SukkaW
 .danseurdindled.help,Ads_SukkaW
@@ -19793,7 +19817,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .daringsgoddamn.help,Ads_SukkaW
 .daringsupport.com,Ads_SukkaW
 .dariolunus.com,Ads_SukkaW
-.darkandlight.ru,Ads_SukkaW
 .darnerquarte.qpon,Ads_SukkaW
 .darnobedienceupscale.com,Ads_SukkaW
 .darren01.oss-cn-beijing.aliyuncs.com,Ads_SukkaW
@@ -23497,6 +23520,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .deaconsodimmigration.com,Ads_SukkaW
 .dead-management.com,Ads_SukkaW
 .dead-put.com,Ads_SukkaW
+.deadlinescreechvisit.com,Ads_SukkaW
 .deadlyfeasible.com,Ads_SukkaW
 .deadmentionsunday.com,Ads_SukkaW
 .deafeningphone.com,Ads_SukkaW
@@ -23628,6 +23652,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .defensevest.com,Ads_SukkaW
 .defensive-living.com,Ads_SukkaW
 .defiantexemplifytheme.com,Ads_SukkaW
+.defile.sbs,Ads_SukkaW
 .definedbootnervous.com,Ads_SukkaW
 .definiterise.pro,Ads_SukkaW
 .definitive-priority.com,Ads_SukkaW
@@ -23658,6 +23683,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .deksoarguph.net,Ads_SukkaW
 .delacebirrs.shop,Ads_SukkaW
 .delayeddisputecommotion.com,Ads_SukkaW
+.delectabletown.com,Ads_SukkaW
 .delete-me-2.branchcustom.xyz,Ads_SukkaW
 .delete-me.branchcustom.xyz,Ads_SukkaW
 .delete.atea.fi,Ads_SukkaW
@@ -23670,6 +23696,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .deliman.net,Ads_SukkaW
 .delimezaniah.world,Ads_SukkaW
 .delimitcogitos.rest,Ads_SukkaW
+.delirious-year.com,Ads_SukkaW
 .deliv12.com,Ads_SukkaW
 .deliver.ifeng.com,Ads_SukkaW
 .deliver.oztam.com.au,Ads_SukkaW
@@ -24059,6 +24086,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .dhqiveduzcsym.space,Ads_SukkaW
 .dhrhzii89gpwo.cloudfront.net,Ads_SukkaW
 .dhrubo.dhrubomart.com,Ads_SukkaW
+.dhruqpiaftxwk.online,Ads_SukkaW
 .dhrzn.risefestival.com,Ads_SukkaW
 .dhsjpz.bugaboo.com,Ads_SukkaW
 .dhukul.com,Ads_SukkaW
@@ -24249,6 +24277,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .dimoo.monos.com,Ads_SukkaW
 .dimpled-frame.pro,Ads_SukkaW
 .dimplesbanyoro.top,Ads_SukkaW
+.dimplesnoyful.help,Ads_SukkaW
 .dimrv.yema.com,Ads_SukkaW
 .dimufywhy.com,Ads_SukkaW
 .dineticfulfill.cyou,Ads_SukkaW
@@ -24269,6 +24298,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .dioqto.totaljobs.com,Ads_SukkaW
 .diplexbeduins.rest,Ads_SukkaW
 .dippingearlier.com,Ads_SukkaW
+.dippymeinies.click,Ads_SukkaW
 .diptaich.com,Ads_SukkaW
 .direcompulsion.com,Ads_SukkaW
 .direct-aws-a1.com,Ads_SukkaW
@@ -24343,6 +24373,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .discovery.tom.com,Ads_SukkaW
 .discreetfield.com,Ads_SukkaW
 .discreetquarter.com,Ads_SukkaW
+.disdainplayedbluster.com,Ads_SukkaW
 .disguised-dad.com,Ads_SukkaW
 .disgustingmad.com,Ads_SukkaW
 .dishesha.net,Ads_SukkaW
@@ -24656,6 +24687,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .dmp.sbermarketing.ru,Ads_SukkaW
 .dmpcdn.el-mundo.net,Ads_SukkaW
 .dmpxs.com,Ads_SukkaW
+.dmqhhvoihe.com,Ads_SukkaW
 .dmqykw.thirtymall.com,Ads_SukkaW
 .dmr.cnhoney.com,Ads_SukkaW
 .dmrtx.com,Ads_SukkaW
@@ -24756,7 +24788,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .doctrinekettleworsening.com,Ads_SukkaW
 .documentaryselfless.com,Ads_SukkaW
 .docyjy.ryderwear.com,Ads_SukkaW
-.dodderytactite.com,Ads_SukkaW
 .dodgebugs.com,Ads_SukkaW
 .dodgyfactoidprecut.com,Ads_SukkaW
 .dodoismnevell.rest,Ads_SukkaW
@@ -25072,7 +25103,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .dqefxd.kaigoworker.jp,Ads_SukkaW
 .dqfre.helloadorn.com,Ads_SukkaW
 .dqhgoyjewgm.com,Ads_SukkaW
-.dqhooyeampqsg.space,Ads_SukkaW
 .dqif5bl25s0bf.cloudfront.net,Ads_SukkaW
 .dqjrxj.icu,Ads_SukkaW
 .dqkovz.patatam.co.uk,Ads_SukkaW
@@ -25124,7 +25154,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .drcuqemd.xyz,Ads_SukkaW
 .dre.dreamkue.com,Ads_SukkaW
 .dreadfullyemulateconservation.com,Ads_SukkaW
-.dreadfulprofitable.com,Ads_SukkaW
 .dream.dreamheavenbd.xyz,Ads_SukkaW
 .dreamdatte.com,Ads_SukkaW
 .dreamlikefostergala.com,Ads_SukkaW
@@ -25146,11 +25175,13 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .dreport.meituan.net,Ads_SukkaW
 .drfdisvc.walmart.com,Ads_SukkaW
 .drga.dubairealestate.net,Ads_SukkaW
+.drgfelufnknwy.space,Ads_SukkaW
 .driddleteemful.world,Ads_SukkaW
 .driftingchef.com,Ads_SukkaW
 .driftpizza.com,Ads_SukkaW
 .drihmae.com,Ads_SukkaW
 .drimquop.com,Ads_SukkaW
+.drimysduxes.shop,Ads_SukkaW
 .drinrwafhyvmh.website,Ads_SukkaW
 .drippingzone.com,Ads_SukkaW
 .drive.carpoollogistics.com,Ads_SukkaW
@@ -25177,7 +25208,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .dronywalt.rest,Ads_SukkaW
 .drooptgyassa.life,Ads_SukkaW
 .droopy-management.com,Ads_SukkaW
-.dropalcoholnarrow.com,Ads_SukkaW
 .dropdeadgems.org,Ads_SukkaW
 .droppedternion.shop,Ads_SukkaW
 .dropsyuveas.life,Ads_SukkaW
@@ -25591,6 +25621,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .dxeldq.madeindesign.com,Ads_SukkaW
 .dxfnmores.com,Ads_SukkaW
 .dxifoo.ecco-verde.de,Ads_SukkaW
+.dxjkpofscuzmb.online,Ads_SukkaW
 .dxkuwz.domyown.com,Ads_SukkaW
 .dxlqiq.garbarino.com,Ads_SukkaW
 .dxop.bcbsla.com,Ads_SukkaW
@@ -25943,6 +25974,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .eaueb.shopsweatshaper.com,Ads_SukkaW
 .eauicw.artnature.co.jp,Ads_SukkaW
 .eavefrom.net,Ads_SukkaW
+.eawwktyplyneq.com,Ads_SukkaW
 .eaxmvpgmvsazo.site,Ads_SukkaW
 .eayrqn.eufylife.com,Ads_SukkaW
 .eazmyzhwgykum.store,Ads_SukkaW
@@ -26276,7 +26308,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .edge.y108.ca,Ads_SukkaW
 .edgedc.falabella.com,Ads_SukkaW
 .edgemanmopoke.com,Ads_SukkaW
-.edgevertise.com,Ads_SukkaW
 .edgexml.com,Ads_SukkaW
 .edgilypuckery.digital,Ads_SukkaW
 .edhmnn.com,Ads_SukkaW
@@ -26355,6 +26386,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .eedom.cliphair.co.uk,Ads_SukkaW
 .eedos.norelie-uk.com,Ads_SukkaW
 .eegamaub.net,Ads_SukkaW
+.eeglaithoughie.net,Ads_SukkaW
 .eegnd.flightuniform.com,Ads_SukkaW
 .eegrailseezie.net,Ads_SukkaW
 .eehassoosostoa.com,Ads_SukkaW
@@ -27357,6 +27389,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .emmz.4him4her.com,Ads_SukkaW
 .emogi.com,Ads_SukkaW
 .emon.glannz.com,Ads_SukkaW
+.emonduplajifreefile.monster,Ads_SukkaW
 .emonyevg.click,Ads_SukkaW
 .empdat.com,Ads_SukkaW
 .emphidaho.com,Ads_SukkaW
@@ -27590,9 +27623,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .enigmaticvoyage.com,Ads_SukkaW
 .enigwatch-redtrack.enigwatch.com,Ads_SukkaW
 .eniobs.moncler.com,Ads_SukkaW
-.enjoygrandmothercaricature.com,Ads_SukkaW
 .enjoyup29.top,Ads_SukkaW
-.enkraalshanks.cyou,Ads_SukkaW
 .enkvum.xyz,Ads_SukkaW
 .enlargeethoxy.shop,Ads_SukkaW
 .enlightenedmountain.com,Ads_SukkaW
@@ -27608,6 +27639,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .enosistraunge.help,Ads_SukkaW
 .enoughrawin.cyou,Ads_SukkaW
 .enoughturtlecontrol.com,Ads_SukkaW
+.enquirefrancas.digital,Ads_SukkaW
 .enquiry.marketingcube.com.au,Ads_SukkaW
 .enquirysavagely.com,Ads_SukkaW
 .enrheumgecko.shop,Ads_SukkaW
@@ -27880,7 +27912,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .erqgoroithcuu.space,Ads_SukkaW
 .erqtga.xyz,Ads_SukkaW
 .err.ifengcloud.ifeng.com,Ads_SukkaW
-.errantssulu.rest,Ads_SukkaW
 .error-analytics-production.shopifysvc.com,Ads_SukkaW
 .error-analytics-sessions-production.shopifysvc.com,Ads_SukkaW
 .error-collector.ted.com,Ads_SukkaW
@@ -28026,7 +28057,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .etherealpinnacle.com,Ads_SukkaW
 .etherinchebule.help,Ads_SukkaW
 .etherolcowing.life,Ads_SukkaW
-.etherripping.qpon,Ads_SukkaW
 .ethicalfootball.pro,Ads_SukkaW
 .ethmoidostiole.rest,Ads_SukkaW
 .ethnallosing.cfd,Ads_SukkaW
@@ -28663,6 +28693,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .exdynsrv.com,Ads_SukkaW
 .exe.bid,Ads_SukkaW
 .execgroup.convio.com,Ads_SukkaW
+.execpukka.com,Ads_SukkaW
 .executeknowledge.com,Ads_SukkaW
 .execution-ci360.rai.it,Ads_SukkaW
 .executivebriefing.coniferhealth.com,Ads_SukkaW
@@ -28791,6 +28822,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .extlog.snssdk.com,Ads_SukkaW
 .extmaps-api.yandex.net,Ads_SukkaW
 .extopae.icu,Ads_SukkaW
+.extpxgmisex.com,Ads_SukkaW
 .extra.wijck.com,Ads_SukkaW
 .extracthorizontaldashing.com,Ads_SukkaW
 .extractobservation.com,Ads_SukkaW
@@ -28884,7 +28916,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .f.majestically.nl,Ads_SukkaW
 .f.revotas.com,Ads_SukkaW
 .f023.bostonherald.com,Ads_SukkaW
-.f0b02e7c3f.com,Ads_SukkaW
 .f0d5add3ea.com,Ads_SukkaW
 .f0nn.oney.fr,Ads_SukkaW
 .f1.06ps.com,Ads_SukkaW
@@ -28998,6 +29029,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .fairfaxmedia.sharedcount.com,Ads_SukkaW
 .fairfeeling.com,Ads_SukkaW
 .fairiesbranch.com,Ads_SukkaW
+.fairiesnopals.qpon,Ads_SukkaW
 .fairlyleadingenquiry.com,Ads_SukkaW
 .fairmonks.com,Ads_SukkaW
 .fairygaze.com,Ads_SukkaW
@@ -29508,6 +29540,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .fhdnds.mrmarvis.com,Ads_SukkaW
 .fheiu43bcdhsj.top,Ads_SukkaW
 .fhgh9sd.com,Ads_SukkaW
+.fhidzinivqjfv.site,Ads_SukkaW
 .fhiwyq.axiory.com,Ads_SukkaW
 .fhjrpcmkyrkvi.space,Ads_SukkaW
 .fhl05150ps.com,Ads_SukkaW
@@ -29656,6 +29689,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .fingkndk.com,Ads_SukkaW
 .finificchilcat.click,Ads_SukkaW
 .finisheddaysflamboyant.com,Ads_SukkaW
+.finisheddisdainsmug.com,Ads_SukkaW
 .finkingmuff.life,Ads_SukkaW
 .finlandripgut.cyou,Ads_SukkaW
 .finlearningcluster.com,Ads_SukkaW
@@ -29669,6 +29703,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .fipsta.urbanara.co.uk,Ads_SukkaW
 .fipsta.worldfitness.de,Ads_SukkaW
 .fiqaz.yourtmj.com,Ads_SukkaW
+.fiqhbus.shop,Ads_SukkaW
 .firdoagh.net,Ads_SukkaW
 .fire.solutions.jci.com,Ads_SukkaW
 .firebaselogging.googleapis.com,Ads_SukkaW
@@ -29773,6 +29808,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .fkmzox.teinei.co.jp,Ads_SukkaW
 .fkodb.nelliesclean.com,Ads_SukkaW
 .fkojwcmyymgjt.online,Ads_SukkaW
+.fkpztzciioaugp.com,Ads_SukkaW
 .fkquf.sudowrite.com,Ads_SukkaW
 .fkrwxzvxljbyh.website,Ads_SukkaW
 .fksngj.bonnyread.com.tw,Ads_SukkaW
@@ -30224,13 +30260,12 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .forwhimsicottan.com,Ads_SukkaW
 .foryanmachan.com,Ads_SukkaW
 .forzubatr.com,Ads_SukkaW
-.foshauxoalie.net,Ads_SukkaW
 .fosslatvia.digital,Ads_SukkaW
 .fotao9.com,Ads_SukkaW
+.fotiveearns.com,Ads_SukkaW
 .fotmrrwfgprar.fun,Ads_SukkaW
 .fou2684.xyz,Ads_SukkaW
 .fouettbrauna.com,Ads_SukkaW
-.foulardcereous.help,Ads_SukkaW
 .foulierne.qpon,Ads_SukkaW
 .foullyploce.cfd,Ads_SukkaW
 .foundationhorny.com,Ads_SukkaW
@@ -30686,6 +30721,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .fuck-dating.com,Ads_SukkaW
 .fuckthat.xyz,Ads_SukkaW
 .fucoidsfreemen.help,Ads_SukkaW
+.fucosesbred.cfd,Ads_SukkaW
 .fucpa.sk-ii.com,Ads_SukkaW
 .fucppurxhrjtj.store,Ads_SukkaW
 .fudezz.bolasport.com,Ads_SukkaW
@@ -30736,10 +30772,8 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .fundingsidenote.com,Ads_SukkaW
 .fundraising.centuryresources.com,Ads_SukkaW
 .fundtraveller.com,Ads_SukkaW
-.fungiaver.help,Ads_SukkaW
 .fungidcolder.com,Ads_SukkaW
 .fungideased.shop,Ads_SukkaW
-.funkedtheol.rest,Ads_SukkaW
 .funkierwone.world,Ads_SukkaW
 .funlivibioid.world,Ads_SukkaW
 .funnelserv.systems,Ads_SukkaW
@@ -30760,8 +30794,10 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .furlhp.kango.mynavi.jp,Ads_SukkaW
 .furnishings.bellacor.com,Ads_SukkaW
 .furnituredl.istaging.co,Ads_SukkaW
+.furowo.org,Ads_SukkaW
 .furphycabots.cfd,Ads_SukkaW
 .furryfork.com,Ads_SukkaW
+.furrytented.world,Ads_SukkaW
 .fursisotype.digital,Ads_SukkaW
 .furvt.finishline.com,Ads_SukkaW
 .furyprosecutionkitchen.com,Ads_SukkaW
@@ -30781,6 +30817,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .fusterdonnie.shop,Ads_SukkaW
 .fut.mondo.link,Ads_SukkaW
 .futfp.nanamacs.com,Ads_SukkaW
+.futhacifl.com,Ads_SukkaW
 .futseerdoa.com,Ads_SukkaW
 .futtahagenes.world,Ads_SukkaW
 .futtahunsews.cyou,Ads_SukkaW
@@ -30820,6 +30857,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .fvmpm.fromrebel.com,Ads_SukkaW
 .fvpsgi.niceonesa.com,Ads_SukkaW
 .fvuitt.alibabuy.com,Ads_SukkaW
+.fvuwdaaimjtgv.space,Ads_SukkaW
 .fvvyjd.jtv.com,Ads_SukkaW
 .fvyqblc.icu,Ads_SukkaW
 .fvzva.frankandeileen.com,Ads_SukkaW
@@ -30861,6 +30899,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .fxqikdwtgabho.website,Ads_SukkaW
 .fxreferral.americanexpress.com,Ads_SukkaW
 .fxsdex.longvadon.com,Ads_SukkaW
+.fxsupzozeialv.online,Ads_SukkaW
 .fxyvcz.thecompanystore.com,Ads_SukkaW
 .fy60.icu,Ads_SukkaW
 .fyber.com,Ads_SukkaW
@@ -31232,7 +31271,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .gauilydoges.life,Ads_SukkaW
 .gaujokop.com,Ads_SukkaW
 .gauotyfrryrtl.website,Ads_SukkaW
-.gauphaujoagoaje.net,Ads_SukkaW
 .gaupingeyewink.com,Ads_SukkaW
 .gaupsootoagrauk.net,Ads_SukkaW
 .gauqoith.com,Ads_SukkaW
@@ -31352,7 +31390,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .gdmgsecure.com,Ads_SukkaW
 .gdmxjbjjo.com,Ads_SukkaW
 .gdn.bigfishgames.com,Ads_SukkaW
-.gdnmpkvslbckh.xyz,Ads_SukkaW
 .gdonm.alpinulin.com,Ads_SukkaW
 .gdonqrdtzhvfq.space,Ads_SukkaW
 .gdpdk.atlasskateboarding.com,Ads_SukkaW
@@ -31412,7 +31449,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .gekhasaks.com,Ads_SukkaW
 .gekko.spiceworks.com,Ads_SukkaW
 .gekoaftcbwmgm.site,Ads_SukkaW
-.gelableguard.cfd,Ads_SukkaW
 .gelcorkir.qpon,Ads_SukkaW
 .geleemglair.shop,Ads_SukkaW
 .gelenixpro-ss.olladeals.com,Ads_SukkaW
@@ -31958,7 +31994,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .gimbletwindsor.world,Ads_SukkaW
 .gimes.site,Ads_SukkaW
 .gimg.baidu.com,Ads_SukkaW
-.gimmaledgar.click,Ads_SukkaW
 .gimpieryauds.life,Ads_SukkaW
 .gimpsgenips.com,Ads_SukkaW
 .gimuci.psychobunny.jp,Ads_SukkaW
@@ -32087,7 +32122,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .glamhawk.com,Ads_SukkaW
 .glamipixel.com,Ads_SukkaW
 .glamsic.com,Ads_SukkaW
-.glaregestapo.help,Ads_SukkaW
 .glaringregister.com,Ads_SukkaW
 .glass.autovistagroup.com,Ads_SukkaW
 .glassbox-hlx-igw.bankofamerica.com,Ads_SukkaW
@@ -32096,6 +32130,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .glassmilheart.com,Ads_SukkaW
 .glassmoni.researchgate.net,Ads_SukkaW
 .glaultoa.com,Ads_SukkaW
+.glaumsootchi.net,Ads_SukkaW
 .glaurtas.com,Ads_SukkaW
 .glauryrhenic.cfd,Ads_SukkaW
 .glaushoaftee.net,Ads_SukkaW
@@ -32207,6 +32242,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .glxrina.site,Ads_SukkaW
 .glxsos.site,Ads_SukkaW
 .glxta.site,Ads_SukkaW
+.glycidnates.cyou,Ads_SukkaW
 .glymanicale.com,Ads_SukkaW
 .glyparuha.com,Ads_SukkaW
 .glyphskapa.help,Ads_SukkaW
@@ -33146,6 +33182,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .goi08160kh.com,Ads_SukkaW
 .goi08161kh.com,Ads_SukkaW
 .goi08170kh.com,Ads_SukkaW
+.goi08180kh.com,Ads_SukkaW
 .goihs.kyliecosmetics.com,Ads_SukkaW
 .gokrafxr.icu,Ads_SukkaW
 .golachbutea.cfd,Ads_SukkaW
@@ -33231,6 +33268,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .goprnexiyvrv.com,Ads_SukkaW
 .gopsachuwilr.net,Ads_SukkaW
 .gopypteti.com,Ads_SukkaW
+.goqpicjzxmksm.space,Ads_SukkaW
 .goralsdowdy.shop,Ads_SukkaW
 .goraps.com,Ads_SukkaW
 .gorclck.com,Ads_SukkaW
@@ -33247,6 +33285,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .goshawkwaily.cfd,Ads_SukkaW
 .goshbiopsy.com,Ads_SukkaW
 .gosports.all4fysio.nl,Ads_SukkaW
+.gosreaumur.life,Ads_SukkaW
 .gosrv.cl,Ads_SukkaW
 .gossamerwing.com,Ads_SukkaW
 .gossepconcur.help,Ads_SukkaW
@@ -33367,6 +33406,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .grairdou.com,Ads_SukkaW
 .graissiftapsou.net,Ads_SukkaW
 .graithexpire.com,Ads_SukkaW
+.graitsensimseeh.net,Ads_SukkaW
 .graivampouth.net,Ads_SukkaW
 .graizoah.com,Ads_SukkaW
 .graksecmee.net,Ads_SukkaW
@@ -33431,7 +33471,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .greenhouserewrite.com,Ads_SukkaW
 .greenjapan-cname.green-japan.com,Ads_SukkaW
 .greenlinknow.com,Ads_SukkaW
-.greenneck.pro,Ads_SukkaW
 .greenplasticdua.com,Ads_SukkaW
 .greepseedrobouk.net,Ads_SukkaW
 .greerogloo.net,Ads_SukkaW
@@ -33537,7 +33576,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .grt02.com,Ads_SukkaW
 .grtyj.com,Ads_SukkaW
 .grubby-freedom.com,Ads_SukkaW
-.grubby-sink.pro,Ads_SukkaW
 .grubbybaken.cfd,Ads_SukkaW
 .grubpaths.com,Ads_SukkaW
 .grughouteersok.net,Ads_SukkaW
@@ -36272,7 +36310,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .guessesrabbins.rest,Ads_SukkaW
 .guessrp50.com,Ads_SukkaW
 .guest.vistage.com,Ads_SukkaW
-.guestconspiracy.com,Ads_SukkaW
 .guestrivy.cyou,Ads_SukkaW
 .gugliapuckery.click,Ads_SukkaW
 .gugnbstkwgp.com,Ads_SukkaW
@@ -36297,7 +36334,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .guitarlearning.deplike.com,Ads_SukkaW
 .guitarpro.cc,Ads_SukkaW
 .gujkugoesff.com,Ads_SukkaW
-.gujoakeejirs.net,Ads_SukkaW
 .gukmodukuleqasfo.com,Ads_SukkaW
 .gukojsxudod.com,Ads_SukkaW
 .gukviels.com,Ads_SukkaW
@@ -36544,7 +36580,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .hairgaudery.cfd,Ads_SukkaW
 .hairoak.com,Ads_SukkaW
 .hairofrivals.qpon,Ads_SukkaW
-.hairyalligatorviolently.com,Ads_SukkaW
 .haitang77.com,Ads_SukkaW
 .haithalaneroid.com,Ads_SukkaW
 .haivauciraty.com,Ads_SukkaW
@@ -36833,6 +36868,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .hdbltq.top,Ads_SukkaW
 .hdc.maxli.cn,Ads_SukkaW
 .hde1.repentignychevrolet.com,Ads_SukkaW
+.hdhjlhkmhxkjm.website,Ads_SukkaW
 .hdickeu.top,Ads_SukkaW
 .hdicsm.autoscout24.be,Ads_SukkaW
 .hdinmau.top,Ads_SukkaW
@@ -37436,6 +37472,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .hlreoc.gonuldensevenler.com,Ads_SukkaW
 .hlrqi.lasioinc.com,Ads_SukkaW
 .hlserve.com,Ads_SukkaW
+.hlsrjzlljx.com,Ads_SukkaW
 .hltckl.vendulalondon.com,Ads_SukkaW
 .hltpdd.icu,Ads_SukkaW
 .hlxyidqacaivu.site,Ads_SukkaW
@@ -37521,7 +37558,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .hoeencpohchbi.online,Ads_SukkaW
 .hoeyelm.shop,Ads_SukkaW
 .hoggeeagalma.life,Ads_SukkaW
-.hoglinooth.net,Ads_SukkaW
 .hoglinsu.com,Ads_SukkaW
 .hogstyridder.shop,Ads_SukkaW
 .hogtiedhalawi.com,Ads_SukkaW
@@ -37632,6 +37668,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .hornet.newburycompanies.com,Ads_SukkaW
 .hornet.stechstudio.com,Ads_SukkaW
 .hornsattune.shop,Ads_SukkaW
+.horoutavitamin.click,Ads_SukkaW
 .horrifychamma.qpon,Ads_SukkaW
 .horse.adventurousmachines.com,Ads_SukkaW
 .horse.erms.app,Ads_SukkaW
@@ -37838,6 +37875,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .htavmphxrjbba.space,Ads_SukkaW
 .htc.oaken.com,Ads_SukkaW
 .htcnbx.odkarla.cz,Ads_SukkaW
+.htdixisbyvulc.store,Ads_SukkaW
 .htdvt.com,Ads_SukkaW
 .htewng.plesio.bg,Ads_SukkaW
 .htflq.lumindrops.com,Ads_SukkaW
@@ -37912,6 +37950,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .huizj.deskr.co,Ads_SukkaW
 .hujup.hushblankets.com,Ads_SukkaW
 .hukepears.com,Ads_SukkaW
+.hulagrorgouftee.net,Ads_SukkaW
 .hulichuang.mobi,Ads_SukkaW
 .hulloasneighs.com,Ads_SukkaW
 .hullsbinned.cyou,Ads_SukkaW
@@ -38078,7 +38117,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .hyena.kitafund.com,Ads_SukkaW
 .hyena.m1guelpf.blog,Ads_SukkaW
 .hyena.wearegray.co,Ads_SukkaW
-.hyeninecymbel.cfd,Ads_SukkaW
 .hyenineshuba.shop,Ads_SukkaW
 .hyeorg.gmarket.co.kr,Ads_SukkaW
 .hygeistagua.com,Ads_SukkaW
@@ -38358,7 +38396,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .iddu1vvb7sk8-a.akamaihd.net,Ads_SukkaW
 .idealdiscussion.pro,Ads_SukkaW
 .idealmedia.io,Ads_SukkaW
-.idealsshivy.cfd,Ads_SukkaW
 .ideas.nanawall.com,Ads_SukkaW
 .idencebalneae.cfd,Ads_SukkaW
 .identicaldrench.com,Ads_SukkaW
@@ -38474,7 +38511,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ifont.site,Ads_SukkaW
 .iforcircles-1.online,Ads_SukkaW
 .iforms.iso.com,Ads_SukkaW
-.ifourgoomoo.net,Ads_SukkaW
 .ifqgd.hashstash.co,Ads_SukkaW
 .ifqn.cn,Ads_SukkaW
 .ifqtfo.rugsusa.com,Ads_SukkaW
@@ -38499,7 +38535,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .igc0.destinia.at,Ads_SukkaW
 .igdcv.nydj.com,Ads_SukkaW
 .igdkxrljusxvt.space,Ads_SukkaW
-.igenfhyirixubn.xyz,Ads_SukkaW
 .igexin.com,Ads_SukkaW
 .igexlg.weltbild.de,Ads_SukkaW
 .igfjkh.vw.com.tr,Ads_SukkaW
@@ -38527,7 +38562,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .igokedropit.net,Ads_SukkaW
 .igpnt.truereligion.com,Ads_SukkaW
 .igraard.xyz,Ads_SukkaW
-.igraineanaudia.cyou,Ads_SukkaW
 .igrid.org,Ads_SukkaW
 .igsev.stonewallkitchen.com,Ads_SukkaW
 .igszvdjpvxqdt.online,Ads_SukkaW
@@ -38563,7 +38597,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ihpyig.hometogo.ch,Ads_SukkaW
 .ihqcdcwzcte.com,Ads_SukkaW
 .ihrdf.steelecanvas.com,Ads_SukkaW
-.ihrmxdxueuttf.store,Ads_SukkaW
 .ihsbmjddrsllpae.com,Ads_SukkaW
 .ihsgawkish.qpon,Ads_SukkaW
 .ihssdas.icu,Ads_SukkaW
@@ -38588,6 +38621,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .iieze.honeybirdette.com,Ads_SukkaW
 .iigcqr.linio.com.mx,Ads_SukkaW
 .iigmlx.com,Ads_SukkaW
+.iiifuvtswkylrqc.com,Ads_SukkaW
 .iiillililllillillilillililililllliiiillllliilili.com,Ads_SukkaW
 .iiiqdhbkppkxw.space,Ads_SukkaW
 .iiqtru.aunworks.jp,Ads_SukkaW
@@ -38650,6 +38684,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ilfmju.right-on.co.jp,Ads_SukkaW
 .ilfzt.pb2foods.com,Ads_SukkaW
 .ilgjz.originalfootwear.com,Ads_SukkaW
+.ilgklwdngyn.com,Ads_SukkaW
 .ili.dtu0itqvnilimdqlq554qf1.online,Ads_SukkaW
 .iliacusurines.cfd,Ads_SukkaW
 .iliayp.touscesko.cz,Ads_SukkaW
@@ -38674,6 +38709,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .illuzio.jegy.hu,Ads_SukkaW
 .ilm.winalist.com,Ads_SukkaW
 .ilm.winalist.fr,Ads_SukkaW
+.ilmat-deo.com,Ads_SukkaW
 .ilnfdq.cybozu.co.jp,Ads_SukkaW
 .ilnjj.breathesans.com,Ads_SukkaW
 .ilona.pharmazee.co,Ads_SukkaW
@@ -41431,7 +41467,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ivx.lacompagnie.com,Ads_SukkaW
 .ivy.pconline.com.cn,Ads_SukkaW
 .ivykiosk.com,Ads_SukkaW
-.ivynjtsidwnqh.online,Ads_SukkaW
 .ivzaq2irg.com,Ads_SukkaW
 .ivzxsd.bredenkids.ee,Ads_SukkaW
 .iw.pentonmarketingsvcs.com,Ads_SukkaW
@@ -41447,7 +41482,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .iwgfdj.iko-yo.net,Ads_SukkaW
 .iwgmgnwbgbfs.xyz,Ads_SukkaW
 .iwhaurouzy.net,Ads_SukkaW
-.iwhoadaipty.net,Ads_SukkaW
 .iwhp.cn,Ads_SukkaW
 .iwhzhi.packstyle.jp,Ads_SukkaW
 .iwilmio.top,Ads_SukkaW
@@ -41459,6 +41493,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .iwpzelmgabuij.online,Ads_SukkaW
 .iws2.io.naver.com,Ads_SukkaW
 .iwursero.top,Ads_SukkaW
+.iwvxwcsvpfbmc.store,Ads_SukkaW
 .ix2.deepsexvids.com,Ads_SukkaW
 .ix4.icu,Ads_SukkaW
 .ixa9ill0f7bg.grundbuch.zentraler-antragsservice.com,Ads_SukkaW
@@ -41647,6 +41682,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .jbeof.tableclothsfactory.com,Ads_SukkaW
 .jbezdi.ilsole24ore.com,Ads_SukkaW
 .jbfmhrwqxrieyd.com,Ads_SukkaW
+.jbgnwogznynqa.top,Ads_SukkaW
 .jbgsq.natureasmedicine.blog,Ads_SukkaW
 .jbium.meijer-juweliers.nl,Ads_SukkaW
 .jbjewellery.jb-jewellery.rs,Ads_SukkaW
@@ -41773,6 +41809,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .jeedmact.sc.com,Ads_SukkaW
 .jeejujou.net,Ads_SukkaW
 .jeeliweetoz.com,Ads_SukkaW
+.jeephiptichoa.net,Ads_SukkaW
 .jeepsujous.net,Ads_SukkaW
 .jeerylessee.life,Ads_SukkaW
 .jeestauglahity.net,Ads_SukkaW
@@ -41816,7 +41853,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .jewelryforest.com,Ads_SukkaW
 .jewingsaughen.cfd,Ads_SukkaW
 .jewruta.top,Ads_SukkaW
-.jey90080425s.cfd,Ads_SukkaW
 .jeyd.cn,Ads_SukkaW
 .jeyttn.snipes.com,Ads_SukkaW
 .jezebelbotels.help,Ads_SukkaW
@@ -41944,7 +41980,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .jillsclickcorner.com,Ads_SukkaW
 .jilnwawaf.com,Ads_SukkaW
 .jimbm.charlestyrwhitt.com,Ads_SukkaW
-.jimpketal.rest,Ads_SukkaW
+.jimjumssicle.cyou,Ads_SukkaW
 .jimpreissue.cyou,Ads_SukkaW
 .jimvyeibtxunimh.com,Ads_SukkaW
 .jinair.nsc.jinair.com,Ads_SukkaW
@@ -42070,6 +42106,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .jnoknz.bradfordexchange.ca,Ads_SukkaW
 .jnokwkokqkakk.top,Ads_SukkaW
 .jnqus.essentialelementsnutrition.com,Ads_SukkaW
+.jntdelly.cyou,Ads_SukkaW
 .jnunn.alppouch.com,Ads_SukkaW
 .jnvbrctrxjuvy.com,Ads_SukkaW
 .jnvgvhkfkrgvp.site,Ads_SukkaW
@@ -42197,6 +42234,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .jollyspring.com,Ads_SukkaW
 .jolmen.click,Ads_SukkaW
 .jomoukrebsoxy.net,Ads_SukkaW
+.jomydzspwjs.com,Ads_SukkaW
 .jonahsrodsman.rest,Ads_SukkaW
 .jonvalmays.world,Ads_SukkaW
 .joofoushipsuny.net,Ads_SukkaW
@@ -42274,6 +42312,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .jqbwkzmboown.top,Ads_SukkaW
 .jqezp.aroma360.nl,Ads_SukkaW
 .jqflf.homefurnitureandpatio.com,Ads_SukkaW
+.jqhnvaeiq.com,Ads_SukkaW
 .jqlzwb.bauhaus.fi,Ads_SukkaW
 .jqmebveabmvq.top,Ads_SukkaW
 .jqmft.pyramidcollection.com,Ads_SukkaW
@@ -42613,6 +42652,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .jynifoueisain.com,Ads_SukkaW
 .jynwlg.veromoda.com,Ads_SukkaW
 .jyoyqnyjymbbj.top,Ads_SukkaW
+.jyozavobzrzkq.top,Ads_SukkaW
 .jyuicr.codemonkey.com,Ads_SukkaW
 .jyumzv.dcshoes.com.br,Ads_SukkaW
 .jyupgi.eurostarshotels.co.uk,Ads_SukkaW
@@ -42731,7 +42771,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .kampanja.bhtelecom.ba,Ads_SukkaW
 .kampanjat.atea.fi,Ads_SukkaW
 .kampanjer.yxvisa.no,Ads_SukkaW
-.kanaskying.cyou,Ads_SukkaW
 .kanatbour.help,Ads_SukkaW
 .kangaroo.kraenk.de,Ads_SukkaW
 .kangaroo.triplightfantastic.com,Ads_SukkaW
@@ -42752,6 +42791,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .karewachooser.cfd,Ads_SukkaW
 .karinereis.anunciojuridico.com.br,Ads_SukkaW
 .karma.mdpcdn.com,Ads_SukkaW
+.karmacardium.click,Ads_SukkaW
 .karoon.xyz,Ads_SukkaW
 .karpatzi.com,Ads_SukkaW
 .kartik.devishetty.com,Ads_SukkaW
@@ -42971,12 +43011,12 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .kfjwapsftuxtw.online,Ads_SukkaW
 .kfjxcw.immobilier.ch,Ads_SukkaW
 .kfkuxgyf.com,Ads_SukkaW
+.kflxwqsmgegwh.space,Ads_SukkaW
 .kfmsltodvutodo.xyz,Ads_SukkaW
 .kfndek.monoweek.com,Ads_SukkaW
 .kfnmb.brellohealth.com,Ads_SukkaW
 .kfocken.icu,Ads_SukkaW
 .kfpnqug.cn,Ads_SukkaW
-.kfpuxzmsanfbb.website,Ads_SukkaW
 .kfpxthgobigqk.site,Ads_SukkaW
 .kfqjyh.govplanet.com,Ads_SukkaW
 .kftfhp.furusato-tax.jp,Ads_SukkaW
@@ -43008,7 +43048,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .kgqxzw.blue-tomato.com,Ads_SukkaW
 .kgqzgj.rougegorge.com,Ads_SukkaW
 .kgrdiu.saveur-biere.com,Ads_SukkaW
-.kgrdxllwloebc.site,Ads_SukkaW
 .kgruphurl.world,Ads_SukkaW
 .kgrvt.ukmedi.co.uk,Ads_SukkaW
 .kgska.aswemove.com,Ads_SukkaW
@@ -43308,7 +43347,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .knkkpmtdesg.com,Ads_SukkaW
 .knlob.com,Ads_SukkaW
 .knlqeu.jewlr.com,Ads_SukkaW
-.knmdcrgyufqzn.website,Ads_SukkaW
 .knnfl.muddymats.com,Ads_SukkaW
 .knopnf.asambeauty.com,Ads_SukkaW
 .knoppedsatine.world,Ads_SukkaW
@@ -43326,6 +43364,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .knowledge.vaisala.com,Ads_SukkaW
 .knowledge.verdantis.com,Ads_SukkaW
 .knowledgeable-tree.com,Ads_SukkaW
+.known-television.com,Ads_SukkaW
 .knownamount.com,Ads_SukkaW
 .knoyoopj.xyz,Ads_SukkaW
 .knpid.mywonderpaws.com,Ads_SukkaW
@@ -43350,6 +43389,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .koalascochal.qpon,Ads_SukkaW
 .koapsuha.net,Ads_SukkaW
 .koaptouw.com,Ads_SukkaW
+.koasoophoapsoot.net,Ads_SukkaW
 .koauq.top,Ads_SukkaW
 .kobcgj.getneuromd.com,Ads_SukkaW
 .kobel.services,Ads_SukkaW
@@ -43383,7 +43423,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .komarchfetters.help,Ads_SukkaW
 .komnqabvgmajm.top,Ads_SukkaW
 .komoona.com,Ads_SukkaW
-.koniasippets.cyou,Ads_SukkaW
 .konize.click,Ads_SukkaW
 .kontextua.com,Ads_SukkaW
 .konv.tasz.hu,Ads_SukkaW
@@ -43718,6 +43757,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .kyislod.top,Ads_SukkaW
 .kyjoyk.modoza.com,Ads_SukkaW
 .kylgloxgxpyk.com,Ads_SukkaW
+.kylikeswitted.world,Ads_SukkaW
 .kyompa.luxdeco.com,Ads_SukkaW
 .kyson.kakao.com,Ads_SukkaW
 .kyszhn.qvc.jp,Ads_SukkaW
@@ -43972,7 +44012,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ladies-loves-dream.com,Ads_SukkaW
 .ladiesmatchesfinder.com,Ads_SukkaW
 .ladqoxljrmqxw.space,Ads_SukkaW
-.ladsans.com,Ads_SukkaW
 .ladsatz.com,Ads_SukkaW
 .ladsipz.com,Ads_SukkaW
 .ladskiz.com,Ads_SukkaW
@@ -43984,7 +44023,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .laetinudish.qpon,Ads_SukkaW
 .laf1ma3eban85ana.com,Ads_SukkaW
 .lafacw.xyz,Ads_SukkaW
-.lagerssisith.qpon,Ads_SukkaW
 .lagpetalia.help,Ads_SukkaW
 .lagzoids.com,Ads_SukkaW
 .lahom.teamwarrior.com,Ads_SukkaW
@@ -44126,11 +44164,11 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .larrupsshapka.qpon,Ads_SukkaW
 .laruv.jlobeauty.com,Ads_SukkaW
 .las4srv.com,Ads_SukkaW
+.lasagnetangue.com,Ads_SukkaW
 .lascivioushelpfulstool.com,Ads_SukkaW
 .lasciviousregardedherald.com,Ads_SukkaW
 .lasijulidan.com,Ads_SukkaW
 .lassoedgleams.digital,Ads_SukkaW
-.lassoflat.help,Ads_SukkaW
 .lastanonymous.com,Ads_SukkaW
 .lasttaco.com,Ads_SukkaW
 .latam.thomsonreuters.com,Ads_SukkaW
@@ -44145,6 +44183,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .latelyninetyfeelings.com,Ads_SukkaW
 .latentdesert.com,Ads_SukkaW
 .latest-news.pro,Ads_SukkaW
+.lathesfeoffee.qpon,Ads_SukkaW
 .latinosvesting.rest,Ads_SukkaW
 .latinwayy.com,Ads_SukkaW
 .lationsandind.com,Ads_SukkaW
@@ -44660,7 +44699,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .lhevhb.hjgreek.com,Ads_SukkaW
 .lhewdj.fnac.pt,Ads_SukkaW
 .lhgvpd.onlinetour.co.kr,Ads_SukkaW
-.lhjkqdgxnrmjo.site,Ads_SukkaW
 .lhlext.e-aircon.jp,Ads_SukkaW
 .lhmbtyppk.xyz,Ads_SukkaW
 .lhmmm.pinklily.com,Ads_SukkaW
@@ -44704,6 +44742,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .lidsaich.net,Ads_SukkaW
 .lidzbmzyymrah.space,Ads_SukkaW
 .liecso.e-himart.co.kr,Ads_SukkaW
+.liedergoddamn.world,Ads_SukkaW
 .lieforepawsado.com,Ads_SukkaW
 .liegelygosport.com,Ads_SukkaW
 .lierbiotics.click,Ads_SukkaW
@@ -45684,7 +45723,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .linkvetdev.insights.md,Ads_SukkaW
 .linodippers.click,Ads_SukkaW
 .linonabye.world,Ads_SukkaW
-.linseydopers.cyou,Ads_SukkaW
 .lintelsunshod.digital,Ads_SukkaW
 .lintolsascarid.qpon,Ads_SukkaW
 .lintyahimsas.com,Ads_SukkaW
@@ -45768,7 +45806,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .liwxfq.customink.com,Ads_SukkaW
 .lixiangmo.com,Ads_SukkaW
 .lixir.wargers.org,Ads_SukkaW
-.lixiveaeronat.help,Ads_SukkaW
 .liyauw.getwinesdirect.com,Ads_SukkaW
 .lizard.donald.cat,Ads_SukkaW
 .lizard.priorart.dev,Ads_SukkaW
@@ -45789,6 +45826,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ljfbnc.shooos.ro,Ads_SukkaW
 .ljfdwtlrurnoxok.com,Ads_SukkaW
 .ljfii.alepel.com,Ads_SukkaW
+.ljgrjkosayabm.site,Ads_SukkaW
 .ljgvbbkzykzka.top,Ads_SukkaW
 .ljhoc.destify.com,Ads_SukkaW
 .ljimtyl.top,Ads_SukkaW
@@ -45871,6 +45909,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .lltnvjrmhlguu.com,Ads_SukkaW
 .lltrck.com,Ads_SukkaW
 .llttdmytouxkxu.com,Ads_SukkaW
+.llvlzvroqoomk.top,Ads_SukkaW
 .llvlzvrwkolmm.top,Ads_SukkaW
 .llvvfz.mariapiacasa.com.br,Ads_SukkaW
 .llwgnafyieumn.store,Ads_SukkaW
@@ -45890,7 +45929,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .lmdljboquvute.space,Ads_SukkaW
 .lmdmi.kindpatches.com,Ads_SukkaW
 .lmeci.stuartweitzman.com,Ads_SukkaW
-.lmejmdznwwtth.space,Ads_SukkaW
 .lmeniu.timberland.com.au,Ads_SukkaW
 .lmepbq.com,Ads_SukkaW
 .lmeurbnjs.com,Ads_SukkaW
@@ -48984,6 +49022,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .lodgersuveal.qpon,Ads_SukkaW
 .lodjo.electrifyexpo.com,Ads_SukkaW
 .lodlww.carcon.co.jp,Ads_SukkaW
+.lodwvsxr.com,Ads_SukkaW
 .loe.ipvzdelavanie.sk,Ads_SukkaW
 .loeqrqbaejqk.top,Ads_SukkaW
 .loeqrqbaezbr.top,Ads_SukkaW
@@ -49007,6 +49046,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .lofi.xiteedibles.com,Ads_SukkaW
 .lofo3l15c674.platform.replai.io,Ads_SukkaW
 .lofqvl.icu,Ads_SukkaW
+.loftedcarlish.world,Ads_SukkaW
 .loftmentiple.com,Ads_SukkaW
 .log-185a61e7.bendigobank.com.au,Ads_SukkaW
 .log-2ffe60ee.westpac.com.au,Ads_SukkaW
@@ -49340,7 +49380,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .lojusypsa.com,Ads_SukkaW
 .lokalwerben.t-online.de,Ads_SukkaW
 .loki8lave.com,Ads_SukkaW
-.lokimaki.com,Ads_SukkaW
 .lolhk.shopfurme.com,Ads_SukkaW
 .loli.sukaporn.com,Ads_SukkaW
 .lolly.needforsweet.de,Ads_SukkaW
@@ -49420,6 +49459,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .loulouly.net,Ads_SukkaW
 .loululant.cfd,Ads_SukkaW
 .loumax.resamatic.fr,Ads_SukkaW
+.loungedcabrie.com,Ads_SukkaW
 .loungyserger.com,Ads_SukkaW
 .lourdoueisienne.website,Ads_SukkaW
 .loursquests.rest,Ads_SukkaW
@@ -49430,7 +49470,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .lousefodgel.com,Ads_SukkaW
 .lousyhookier.rest,Ads_SukkaW
 .louthernavaids.qpon,Ads_SukkaW
-.louvaramnesty.cyou,Ads_SukkaW
 .louxoxo.com,Ads_SukkaW
 .lovableswing.pro,Ads_SukkaW
 .love-romancejunction.com,Ads_SukkaW
@@ -49757,6 +49796,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .lslynl.chiashake.cz,Ads_SukkaW
 .lspfuw.siwonschool.com,Ads_SukkaW
 .lspvo.weldernation.com,Ads_SukkaW
+.lspwaatl.com,Ads_SukkaW
 .lsrot.renefurtererusa.com,Ads_SukkaW
 .lsss.lomestar.de,Ads_SukkaW
 .lsv5.belambra.fr,Ads_SukkaW
@@ -49990,6 +50030,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .lvqo.cn,Ads_SukkaW
 .lvsats.gardner-white.com,Ads_SukkaW
 .lvsm.cn,Ads_SukkaW
+.lvubwrnhxktlo.online,Ads_SukkaW
 .lvula.4joypaddles.com,Ads_SukkaW
 .lvvbqeaqvrzrj.top,Ads_SukkaW
 .lvxwerrkoesma.com,Ads_SukkaW
@@ -50265,6 +50306,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .m7xssfiit.com,Ads_SukkaW
 .m821.saratogian.com,Ads_SukkaW
 .m886.kmbc.com,Ads_SukkaW
+.m8ix4fqk.xyz,Ads_SukkaW
 .m8ryjf38a.com,Ads_SukkaW
 .m8zgls6zt.com,Ads_SukkaW
 .m9s3h265lq.com,Ads_SukkaW
@@ -50378,7 +50420,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .magic.ubmfashion.com,Ads_SukkaW
 .magicaljoin.com,Ads_SukkaW
 .magicallyitalian.com,Ads_SukkaW
-.magicianboundary.com,Ads_SukkaW
 .magicianguideours.com,Ads_SukkaW
 .magicianmost.com,Ads_SukkaW
 .magicminibox.com,Ads_SukkaW
@@ -52635,6 +52676,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .mbox9e.offermatica.com,Ads_SukkaW
 .mbpqvffspd.com,Ads_SukkaW
 .mbs.modernbuilderssupply.com,Ads_SukkaW
+.mbsegno.shop,Ads_SukkaW
 .mbuht.presscription.co.uk,Ads_SukkaW
 .mbuncha.com,Ads_SukkaW
 .mbvlmx.com,Ads_SukkaW
@@ -53064,6 +53106,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .mediniku.viessmann.lt,Ads_SukkaW
 .mediocre-hire.pro,Ads_SukkaW
 .mediocrebrilliant.com,Ads_SukkaW
+.mediumassignment.com,Ads_SukkaW
 .mediwebinars.com,Ads_SukkaW
 .medlemskap.nof.no,Ads_SukkaW
 .medleyads.com,Ads_SukkaW
@@ -53089,7 +53132,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .medtronicsolutions.com,Ads_SukkaW
 .medusasglance.com,Ads_SukkaW
 .medyanetads.com,Ads_SukkaW
-.meecareephiroa.net,Ads_SukkaW
 .meek-level.com,Ads_SukkaW
 .meendocash.com,Ads_SukkaW
 .meenehboq.com,Ads_SukkaW
@@ -53128,7 +53170,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .megloudoony.com,Ads_SukkaW
 .megmhokluck.shop,Ads_SukkaW
 .megohmcopout.digital,Ads_SukkaW
-.megratitchoa.net,Ads_SukkaW
 .megydyk.icu,Ads_SukkaW
 .meharigoloch.rest,Ads_SukkaW
 .mehedi.iback-bd.com,Ads_SukkaW
@@ -55314,6 +55355,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .mflhovbovbyaeg.com,Ads_SukkaW
 .mfmkkv.sorgenia.it,Ads_SukkaW
 .mfmls.mikesbikes.com,Ads_SukkaW
+.mfokuvfzcevjp.website,Ads_SukkaW
 .mfpkshfl.com,Ads_SukkaW
 .mfqdo.jpcycles.com,Ads_SukkaW
 .mfunss.yopagomenos.co,Ads_SukkaW
@@ -56220,7 +56262,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .motherdandelionpert.com,Ads_SukkaW
 .motion.kollmorgen.com,Ads_SukkaW
 .motionflowers.com,Ads_SukkaW
-.motionless-exit.pro,Ads_SukkaW
 .motionlessbelief.com,Ads_SukkaW
 .motionlessmeeting.com,Ads_SukkaW
 .motionspots.com,Ads_SukkaW
@@ -56351,6 +56392,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .mr2cnjuh34jb.com,Ads_SukkaW
 .mr3o.online,Ads_SukkaW
 .mrarl.kiki.world,Ads_SukkaW
+.mraza2dosa.com,Ads_SukkaW
 .mrbxwaxxv.xyz,Ads_SukkaW
 .mrcru.abbottlyon.com,Ads_SukkaW
 .mre6.destinia.ma,Ads_SukkaW
@@ -56381,7 +56423,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .mrprt.standardandstrange.com,Ads_SukkaW
 .mrqmn.oilperfumery.com,Ads_SukkaW
 .mrsclausknowsawin.petsy.com.au,Ads_SukkaW
-.mrskrtke.xyz,Ads_SukkaW
 .mrsterri.world,Ads_SukkaW
 .mrtlisx.top,Ads_SukkaW
 .mrtnsvr.com,Ads_SukkaW
@@ -56591,6 +56632,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .muddiesbanak.top,Ads_SukkaW
 .muddledaftermath.com,Ads_SukkaW
 .muddledmemory.com,Ads_SukkaW
+.muddyhonorarymy.com,Ads_SukkaW
 .muddyjunior.pro,Ads_SukkaW
 .mudejarforches.qpon,Ads_SukkaW
 .mudlessryme.click,Ads_SukkaW
@@ -56678,6 +56720,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .mushywaste.com,Ads_SukkaW
 .musiccampusmanure.com,Ads_SukkaW
 .musicid.samsungcloudsolution.com,Ads_SukkaW
+.musicnote.info,Ads_SukkaW
 .musivedeepish.shop,Ads_SukkaW
 .musjidsfeedway.world,Ads_SukkaW
 .muskilyeeling.rest,Ads_SukkaW
@@ -57118,6 +57161,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .naarnurm.com,Ads_SukkaW
 .nabauxou.net,Ads_SukkaW
 .nabflj.kibuc.com,Ads_SukkaW
+.nabungaigabi.net,Ads_SukkaW
 .nachodusking.com,Ads_SukkaW
 .nachophobiaunengaged.com,Ads_SukkaW
 .nacketousaltoar.net,Ads_SukkaW
@@ -57184,6 +57228,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .nappyonsetstiffness.com,Ads_SukkaW
 .naprfjbdpqn.com,Ads_SukkaW
 .napywxqqiihpe.com,Ads_SukkaW
+.narcmoormen.com,Ads_SukkaW
 .nardineactaeon.cfd,Ads_SukkaW
 .nariclakings.rest,Ads_SukkaW
 .narkalignevil.com,Ads_SukkaW
@@ -57373,7 +57418,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .nehcj.tryprodenta.com,Ads_SukkaW
 .neighboringyellow.com,Ads_SukkaW
 .neighborlywatch.com,Ads_SukkaW
-.neilbitting.cyou,Ads_SukkaW
 .nejqon.selectizm.com,Ads_SukkaW
 .nekgtz.bluestoneperennials.com,Ads_SukkaW
 .neladyhe.com,Ads_SukkaW
@@ -57531,9 +57575,9 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .newapi.com,Ads_SukkaW
 .newarkdriving.com,Ads_SukkaW
 .newartreview.com,Ads_SukkaW
+.newbiquge.org,Ads_SukkaW
 .newbluetrue.xyz,Ads_SukkaW
 .newcallytic.world,Ads_SukkaW
-.newcard.pro,Ads_SukkaW
 .newchallenges-dsp.com,Ads_SukkaW
 .newcm.newcastlemotors.com,Ads_SukkaW
 .newcomerapart.com,Ads_SukkaW
@@ -57665,6 +57709,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .news.vendingparis.com,Ads_SukkaW
 .news.verimatrix.com,Ads_SukkaW
 .news.virginiabusiness.com,Ads_SukkaW
+.newsatads.com,Ads_SukkaW
 .newscadence.com,Ads_SukkaW
 .newscatalanaoccidente.com,Ads_SukkaW
 .newsflash.elliemae.com,Ads_SukkaW
@@ -57751,6 +57796,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .nfs.coveredforlife.ca,Ads_SukkaW
 .nftfdj.icu,Ads_SukkaW
 .nfthe.goclove.com,Ads_SukkaW
+.nftjgafb.com,Ads_SukkaW
 .nftognhkculllrx.com,Ads_SukkaW
 .nftxfd.top,Ads_SukkaW
 .nfudeh.jadebag.co.kr,Ads_SukkaW
@@ -57929,6 +57975,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .njtdqm.madeindesign.de,Ads_SukkaW
 .njtfmqaexc.com,Ads_SukkaW
 .njtwub.schneider.de,Ads_SukkaW
+.njvhktxvqdrcj.xyz,Ads_SukkaW
 .njxnsb.paodeacucar.com,Ads_SukkaW
 .njzjs.evenflo.com,Ads_SukkaW
 .njzwlqzpuxpcv.website,Ads_SukkaW
@@ -58646,7 +58693,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .nzdtbadbjtiva.store,Ads_SukkaW
 .nzevatokdp.com,Ads_SukkaW
 .nzfcvv.xyz,Ads_SukkaW
-.nzjpmdzsbtixb.website,Ads_SukkaW
 .nzme-ads.co.nz,Ads_SukkaW
 .nzmkzl.mytheresa.com,Ads_SukkaW
 .nzoj.cn,Ads_SukkaW
@@ -58790,7 +58836,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .obhtt.innosupps.com,Ads_SukkaW
 .obhxvb.tmktools.ru,Ads_SukkaW
 .obitualallheal.life,Ads_SukkaW
-.obixlzxvxgcmf.site,Ads_SukkaW
 .objecthero.com,Ads_SukkaW
 .objectsnetwork.com,Ads_SukkaW
 .oblaaezkiofaa.online,Ads_SukkaW
@@ -58856,7 +58901,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ocheredtellies.digital,Ads_SukkaW
 .ochpv.scotts.com,Ads_SukkaW
 .ochre-app.hotdoc.com.au,Ads_SukkaW
-.ochreswagwit.cfd,Ads_SukkaW
 .oci.dyn.com,Ads_SukkaW
 .ociqz.aroma360.de,Ads_SukkaW
 .ocjaibfuunvhi.store,Ads_SukkaW
@@ -59065,6 +59109,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .oglzhm.monclick.it,Ads_SukkaW
 .ognunn.chavesnamao.com.br,Ads_SukkaW
 .ogoampoodopet.com,Ads_SukkaW
+.ogojnnyabwoqn.top,Ads_SukkaW
 .ogpdwe.livin24.com,Ads_SukkaW
 .ogpnpauyoknvc.online,Ads_SukkaW
 .ogpzj.tumi.com,Ads_SukkaW
@@ -59432,6 +59477,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .omni.vikingrivercruises.com,Ads_SukkaW
 .omni.westernasset.com,Ads_SukkaW
 .omni.yellowpages.com,Ads_SukkaW
+.omnibuswaist.com,Ads_SukkaW
 .omnifpc.devry.edu,Ads_SukkaW
 .omnifpcs.devry.edu,Ads_SukkaW
 .omniomar.com,Ads_SukkaW
@@ -60001,6 +60047,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .orca.overbold.co,Ads_SukkaW
 .orchidea46.com,Ads_SukkaW
 .orcinhyi.com,Ads_SukkaW
+.orcinoloutbegs.help,Ads_SukkaW
 .ordbng.extra.com.br,Ads_SukkaW
 .ordenemuraled.world,Ads_SukkaW
 .order.cribofart.com,Ads_SukkaW
@@ -60340,12 +60387,12 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .outeatlaweour.digital,Ads_SukkaW
 .outelectrodean.com,Ads_SukkaW
 .outfawnlootie.com,Ads_SukkaW
-.outflewtouches.rest,Ads_SukkaW
 .outfoldassize.life,Ads_SukkaW
 .outfoxnapalms.com,Ads_SukkaW
 .outgrinapprox.shop,Ads_SukkaW
 .outheelrelict.com,Ads_SukkaW
 .outhisskirsch.shop,Ads_SukkaW
+.outhowlexserts.shop,Ads_SukkaW
 .outhueoutfall.shop,Ads_SukkaW
 .outlainwires.cyou,Ads_SukkaW
 .outlandishanalyst.pro,Ads_SukkaW
@@ -60355,7 +60402,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .outlookabsorb.com,Ads_SukkaW
 .outlookads.live.com,Ads_SukkaW
 .outlungbrulzie.qpon,Ads_SukkaW
-.outmovestound.cfd,Ads_SukkaW
 .outnidorinoom.com,Ads_SukkaW
 .outoctillerytor.com,Ads_SukkaW
 .outpasssterol.world,Ads_SukkaW
@@ -60511,9 +60557,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .oxbqgytmsr.com,Ads_SukkaW
 .oxbskt.autotrader.com.au,Ads_SukkaW
 .oxdejn.lavprisel.dk,Ads_SukkaW
-.oxflyvaried.qpon,Ads_SukkaW
 .oxgckudfiv.com,Ads_SukkaW
-.oxggcpdorbixe.xyz,Ads_SukkaW
 .oxgnxuoxiizko.xyz,Ads_SukkaW
 .oxifwsabgd.nzz.ch,Ads_SukkaW
 .oxjb.cn,Ads_SukkaW
@@ -60565,14 +60609,12 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .oznlro.sanity.com.au,Ads_SukkaW
 .ozonemedia.com,Ads_SukkaW
 .ozonicutrecht.shop,Ads_SukkaW
-.ozonouswombed.cfd,Ads_SukkaW
 .ozorrjtydqrjd.online,Ads_SukkaW
 .ozsbe.goggles4u.com,Ads_SukkaW
 .ozuvdfqzkqxho.store,Ads_SukkaW
 .ozvdo.execupgrades.com,Ads_SukkaW
 .ozvlyz.justmusic.de,Ads_SukkaW
 .ozxvyaklufsce.space,Ads_SukkaW
-.ozycode.cfd,Ads_SukkaW
 .p-behacdn.ksmobile.net,Ads_SukkaW
 .p-cg64-slinganalytics.movetv.com,Ads_SukkaW
 .p-events.ivideosmart.com,Ads_SukkaW
@@ -60684,7 +60726,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .pac.thetimes.co.uk,Ads_SukkaW
 .pac.thetimes.com,Ads_SukkaW
 .pacaka.conxxx.pro,Ads_SukkaW
-.pacersbukh.cfd,Ads_SukkaW
 .pachegaimax.net,Ads_SukkaW
 .packagingsolutions.filamatic.com,Ads_SukkaW
 .packallfluky.digital,Ads_SukkaW
@@ -60887,6 +60928,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .palminumbral.life,Ads_SukkaW
 .palmytree.com,Ads_SukkaW
 .palpalcoma.shop,Ads_SukkaW
+.palsybecamedislike.com,Ads_SukkaW
 .paltrydot.pro,Ads_SukkaW
 .paluspili.world,Ads_SukkaW
 .pam.hottur.com.br,Ads_SukkaW
@@ -60907,6 +60949,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .pandemybromide.top,Ads_SukkaW
 .pandora.xiaomi.com,Ads_SukkaW
 .panel-cn.com,Ads_SukkaW
+.pangaeainfima.com,Ads_SukkaW
 .pangake.club,Ads_SukkaW
 .pangle-b.io,Ads_SukkaW
 .pangle.io,Ads_SukkaW
@@ -60977,6 +61020,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .parpendflaunch.cyou,Ads_SukkaW
 .parquet.armparquet.it,Ads_SukkaW
 .parrahbeety.life,Ads_SukkaW
+.parralltamul.click,Ads_SukkaW
 .parredcoelia.digital,Ads_SukkaW
 .parrot.alookwithin.ca,Ads_SukkaW
 .parrot.lovably.com,Ads_SukkaW
@@ -61732,6 +61776,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .pcp.coupert.com,Ads_SukkaW
 .pcqhe.cn,Ads_SukkaW
 .pcs.capgroup.com,Ads_SukkaW
+.pctgeronto.help,Ads_SukkaW
 .pctlwm.com,Ads_SukkaW
 .pctsrv.com,Ads_SukkaW
 .pcuud.replacements.com,Ads_SukkaW
@@ -61786,7 +61831,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .pe.txbe.at,Ads_SukkaW
 .peacebanana.com,Ads_SukkaW
 .peacefullimit.com,Ads_SukkaW
-.peacefulshadowway.com,Ads_SukkaW
 .peach-analytics.vercel.app,Ads_SukkaW
 .peafowl.prod.fyi,Ads_SukkaW
 .peafowl.projectstrackt.dev,Ads_SukkaW
@@ -61813,7 +61857,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .pedangaishons.com,Ads_SukkaW
 .pedesesboronia.world,Ads_SukkaW
 .pedetesgoes.click,Ads_SukkaW
-.pedialanorchi.click,Ads_SukkaW
 .pedropanther.com,Ads_SukkaW
 .peejoopsajou.net,Ads_SukkaW
 .peep1alea.com,Ads_SukkaW
@@ -62187,6 +62230,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .pietexture.com,Ads_SukkaW
 .pietosounowed.help,Ads_SukkaW
 .piewifegee.qpon,Ads_SukkaW
+.pifqpymik.com,Ads_SukkaW
 .pig.civicplatform.org,Ads_SukkaW
 .pig.curtisherbert.com,Ads_SukkaW
 .pig.nigano.com,Ads_SukkaW
@@ -62500,7 +62544,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .pkg.balluff.com,Ads_SukkaW
 .pkhevp.suplinx.com,Ads_SukkaW
 .pkhhyool.com,Ads_SukkaW
-.pkhtedxfloany.xyz,Ads_SukkaW
 .pkhxhihfathkc.store,Ads_SukkaW
 .pkiawn.konvy.com,Ads_SukkaW
 .pkimbc.bestsecret.com,Ads_SukkaW
@@ -62511,6 +62554,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .pkmba.habroksports.com,Ads_SukkaW
 .pkmvjx.my-store.ch,Ads_SukkaW
 .pknh27a7j.com,Ads_SukkaW
+.pknkqmkdrfe.com,Ads_SukkaW
 .pkntazdb.thebnbuniversity.com,Ads_SukkaW
 .pkoplink.com,Ads_SukkaW
 .pkqfky.direct-abris.com,Ads_SukkaW
@@ -62582,9 +62626,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .placiditylever.com,Ads_SukkaW
 .placidperson.com,Ads_SukkaW
 .plagosenicks.qpon,Ads_SukkaW
-.plaidiebinocs.qpon,Ads_SukkaW
 .plainfeelings.com,Ads_SukkaW
-.plainlyhorizontally.com,Ads_SukkaW
 .plan.devbyexample.com,Ads_SukkaW
 .planaealunars.click,Ads_SukkaW
 .planarian.614deals.com,Ads_SukkaW
@@ -62701,10 +62743,12 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .plkhvn.keibi-baito.com,Ads_SukkaW
 .pll.pearlinsurance.com,Ads_SukkaW
 .pllsadrp.net,Ads_SukkaW
+.pllwhiuiwzvct.site,Ads_SukkaW
 .plmggovrsbdf.com,Ads_SukkaW
 .plmqlbihwqket.top,Ads_SukkaW
 .plnmf.lovebyemi.com,Ads_SukkaW
 .plo.pearlinsurance.com,Ads_SukkaW
+.plodparticularly.com,Ads_SukkaW
 .plokij1.com,Ads_SukkaW
 .plorvexmoon13.online,Ads_SukkaW
 .plotfuldharma.shop,Ads_SukkaW
@@ -62839,7 +62883,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .podcast.e.adobe.com,Ads_SukkaW
 .poddiastrepen.shop,Ads_SukkaW
 .podefr2.net,Ads_SukkaW
-.poder.cloud,Ads_SukkaW
 .podiumpresto.com,Ads_SukkaW
 .podname.com,Ads_SukkaW
 .podph.mielleorganics.com,Ads_SukkaW
@@ -63029,6 +63072,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .positivelyassertappreciation.com,Ads_SukkaW
 .positivepurpose.pro,Ads_SukkaW
 .posoleredries.click,Ads_SukkaW
+.posopts.com,Ads_SukkaW
 .possibilities.theajinetwork.com,Ads_SukkaW
 .possibilityfoundationwallpaper.com,Ads_SukkaW
 .possibleboats.com,Ads_SukkaW
@@ -63056,16 +63100,13 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .pothooklegated.digital,Ads_SukkaW
 .pothutepu.com,Ads_SukkaW
 .potixulert.c-stickers.fr,Ads_SukkaW
-.potlingdesand.help,Ads_SukkaW
 .potomacsprats.com,Ads_SukkaW
 .potoosmonauli.cfd,Ads_SukkaW
-.potpxgxuszbiu.online,Ads_SukkaW
 .potsaglu.net,Ads_SukkaW
 .potskolu.net,Ads_SukkaW
 .potslascivious.com,Ads_SukkaW
 .pottledmate.life,Ads_SukkaW
 .pouchedathelia.com,Ads_SukkaW
-.poucywheezed.help,Ads_SukkaW
 .poufflibri.shop,Ads_SukkaW
 .poufsgaults.shop,Ads_SukkaW
 .pouhoshootake.net,Ads_SukkaW
@@ -63271,6 +63312,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .premiumvertising.com,Ads_SukkaW
 .prenesi-mojm.mercator.si,Ads_SukkaW
 .preonesetro.com,Ads_SukkaW
+.prepaidpilikai.rest,Ads_SukkaW
 .preparationsinstantdisposition.com,Ads_SukkaW
 .prepareplanes.com,Ads_SukkaW
 .presage.io,Ads_SukkaW
@@ -63459,6 +63501,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .proceedvulnerable.com,Ads_SukkaW
 .process.global360.com,Ads_SukkaW
 .processedagrarian.com,Ads_SukkaW
+.processesdisplease.com,Ads_SukkaW
 .processestheycod.com,Ads_SukkaW
 .processor.asccommunications.com,Ads_SukkaW
 .processplantation.com,Ads_SukkaW
@@ -63553,6 +63596,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .profusesupport.com,Ads_SukkaW
 .progmxs.com,Ads_SukkaW
 .programmaticnexus.com,Ads_SukkaW
+.programmeelaborate.com,Ads_SukkaW
 .programmes-skema.skema-bs.fr,Ads_SukkaW
 .programmes-skema.skema.edu,Ads_SukkaW
 .programparkproud.com,Ads_SukkaW
@@ -63653,6 +63697,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .prosperent.com,Ads_SukkaW
 .prosumsit.com,Ads_SukkaW
 .protagcdn.com,Ads_SukkaW
+.protally.net,Ads_SukkaW
 .protawe.com,Ads_SukkaW
 .proteinfrivolousfertilised.com,Ads_SukkaW
 .proteininnovationpioneer.com,Ads_SukkaW
@@ -63709,6 +63754,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .pruebascol.arin-innovation.com,Ads_SukkaW
 .prugskh.com,Ads_SukkaW
 .prugskh.net,Ads_SukkaW
+.pruhdekarch.world,Ads_SukkaW
 .pruip.intotheam.com,Ads_SukkaW
 .prutosom.com,Ads_SukkaW
 .prutothchacma.help,Ads_SukkaW
@@ -63716,7 +63762,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .prvc.io,Ads_SukkaW
 .prvizg.shurgard.be,Ads_SukkaW
 .prvqz.fableandmane.com,Ads_SukkaW
-.prwave.info,Ads_SukkaW
 .prx.wayfair.com,Ads_SukkaW
 .prx6.destinia.ch,Ads_SukkaW
 .przucu.elkjop.no,Ads_SukkaW
@@ -63753,7 +63798,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .psidiumcloud.digital,Ads_SukkaW
 .psigradinals.com,Ads_SukkaW
 .psilaurgi.net,Ads_SukkaW
-.psipausaix.net,Ads_SukkaW
 .psipsustuwe.com,Ads_SukkaW
 .psisbrach.digital,Ads_SukkaW
 .pskuagktarplq.space,Ads_SukkaW
@@ -63768,7 +63812,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .psoagreechubsak.com,Ads_SukkaW
 .psockapa.net,Ads_SukkaW
 .psoke.magneticme.com,Ads_SukkaW
-.psomeedsie.net,Ads_SukkaW
 .psomokoojito.net,Ads_SukkaW
 .psonstrentie.info,Ads_SukkaW
 .psoostelrupt.net,Ads_SukkaW
@@ -63870,7 +63913,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ptomw.com,Ads_SukkaW
 .ptoohunaurgurdu.net,Ads_SukkaW
 .ptookrolsex.net,Ads_SukkaW
-.ptoovoognairti.net,Ads_SukkaW
 .ptoptaglyphi.com,Ads_SukkaW
 .ptougeegnep.net,Ads_SukkaW
 .ptouglaiksiky.net,Ads_SukkaW
@@ -64357,6 +64399,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .qbjit.circalasvegas.com,Ads_SukkaW
 .qbkraweaoeozo.top,Ads_SukkaW
 .qbl4.ecetech.fr,Ads_SukkaW
+.qblhbrwh.com,Ads_SukkaW
 .qblkeu.vamvelosiped.ru,Ads_SukkaW
 .qbrfvxzvhmyvh.space,Ads_SukkaW
 .qbrth.ezcontacts.com,Ads_SukkaW
@@ -64368,6 +64411,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .qbtxlmvdniubas.com,Ads_SukkaW
 .qbuec.elvtd.com,Ads_SukkaW
 .qbuzkdoatnpgs.com,Ads_SukkaW
+.qbwebebwkevoo.top,Ads_SukkaW
 .qbwkux.home24.at,Ads_SukkaW
 .qbwniy.baldur-garten.at,Ads_SukkaW
 .qc.arstechnica.com,Ads_SukkaW
@@ -64401,7 +64445,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .qcogiellq.com,Ads_SukkaW
 .qcppad.merrell.com,Ads_SukkaW
 .qcpzd.shopatlasgrey.com,Ads_SukkaW
-.qcqfkzglgynfr.site,Ads_SukkaW
 .qcqrkaoogjx.com,Ads_SukkaW
 .qcqwvzaqu.com,Ads_SukkaW
 .qctjfywk.bestpetfoods.nl,Ads_SukkaW
@@ -64531,6 +64574,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .qhnbqrpobwplq.online,Ads_SukkaW
 .qhnhi.bulkbookstore.com,Ads_SukkaW
 .qhnojvbyxfgcf.click,Ads_SukkaW
+.qhpvxgje.com,Ads_SukkaW
 .qhsuo.missjessies.com,Ads_SukkaW
 .qhtqr.mindbodygreen.com,Ads_SukkaW
 .qhunetsq.com,Ads_SukkaW
@@ -64585,6 +64629,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .qjith.nativepet.com,Ads_SukkaW
 .qjjfc.eloquii.com,Ads_SukkaW
 .qjjgra.vendome.jp,Ads_SukkaW
+.qjjquuouhdcz.com,Ads_SukkaW
 .qjlkjd.studio.co.uk,Ads_SukkaW
 .qjlo.cn,Ads_SukkaW
 .qjmsmj.invia.cz,Ads_SukkaW
@@ -64593,7 +64638,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .qjritrcuhlknj.store,Ads_SukkaW
 .qjrrenqr.com,Ads_SukkaW
 .qjrvummavqjtr.website,Ads_SukkaW
-.qjskjiztddgxp.store,Ads_SukkaW
 .qjurou.laredoute.com,Ads_SukkaW
 .qjuy.cn,Ads_SukkaW
 .qjwcjt.revolveclothing.com,Ads_SukkaW
@@ -64727,6 +64771,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .qopcjl.detomaso-watches.com,Ads_SukkaW
 .qophcigars.rest,Ads_SukkaW
 .qophnumbs.com,Ads_SukkaW
+.qoqg.cn,Ads_SukkaW
 .qoqv.com,Ads_SukkaW
 .qoqzf.astridandmiyu.com,Ads_SukkaW
 .qortex.ai,Ads_SukkaW
@@ -64939,6 +64984,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .questions.theanswerco.com,Ads_SukkaW
 .questrominfo.bu.edu,Ads_SukkaW
 .questtest.epoise.com,Ads_SukkaW
+.queuingouvrier.cyou,Ads_SukkaW
 .qugcc.oakcha.com,Ads_SukkaW
 .qugedj.paprika-shopping.nl,Ads_SukkaW
 .quhdnr.musiciansfriend.com,Ads_SukkaW
@@ -65189,6 +65235,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .r.tropictube.com,Ads_SukkaW
 .r.wz.de,Ads_SukkaW
 .r0.mail.ru,Ads_SukkaW
+.r023m83skv5v.com,Ads_SukkaW
 .r033o0p37qr4v914m06om.xyz,Ads_SukkaW
 .r066.dailytribune.com,Ads_SukkaW
 .r0hpdbkqs.com,Ads_SukkaW
@@ -65284,6 +65331,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .rainyhand.com,Ads_SukkaW
 .rainyrule.com,Ads_SukkaW
 .raisedghostsscalpel.com,Ads_SukkaW
+.raisedlicenseexpedient.com,Ads_SukkaW
 .raisinmeets.click,Ads_SukkaW
 .raizoaripophad.net,Ads_SukkaW
 .rajf.cn,Ads_SukkaW
@@ -65361,6 +65409,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .rash-thanks.pro,Ads_SukkaW
 .rashcolonizeexpand.com,Ads_SukkaW
 .rashlyblowfly.com,Ads_SukkaW
+.rashogrisy.com,Ads_SukkaW
 .rasoresbenacus.cfd,Ads_SukkaW
 .raspberry55o.com,Ads_SukkaW
 .raspedexsculp.com,Ads_SukkaW
@@ -65439,7 +65488,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .rbjvdj.dmail.it,Ads_SukkaW
 .rbkidelmug.com,Ads_SukkaW
 .rbkmzhc.icu,Ads_SukkaW
-.rblpzclousuzr.online,Ads_SukkaW
 .rbncmx.chopperexchange.com,Ads_SukkaW
 .rbone.link,Ads_SukkaW
 .rbosr.lull.com,Ads_SukkaW
@@ -65476,6 +65524,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .rc.visionsolutions.com,Ads_SukkaW
 .rc.vtex.com.br,Ads_SukkaW
 .rca.lol,Ads_SukkaW
+.rcamwwajaj.com,Ads_SukkaW
 .rcbsrm.fivefoxes.co.jp,Ads_SukkaW
 .rccnyh.airportrentalcars.com,Ads_SukkaW
 .rcdcqwnmplklc.store,Ads_SukkaW
@@ -65493,6 +65542,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .rclamerouts.shop,Ads_SukkaW
 .rclmo.dia.com,Ads_SukkaW
 .rcm.shinobi.jp,Ads_SukkaW
+.rcnalhvjaxzkw.online,Ads_SukkaW
 .rcounter.rambler.ru,Ads_SukkaW
 .rcqiho.emp.de,Ads_SukkaW
 .rcqtck.dsquared2.com,Ads_SukkaW
@@ -65581,6 +65631,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .re-media.info,Ads_SukkaW
 .re.stjude.org,Ads_SukkaW
 .re.taotaosou.com,Ads_SukkaW
+.re41qiitb1.com,Ads_SukkaW
 .reabuseinduna.world,Ads_SukkaW
 .reacdf311.cn,Ads_SukkaW
 .reach-id.orbit.tm-awx.com,Ads_SukkaW
@@ -65654,6 +65705,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .rebootrewire.com,Ads_SukkaW
 .rebootsormers.com,Ads_SukkaW
 .rebsbange.digital,Ads_SukkaW
+.rebukeirresistiblesubstitute.com,Ads_SukkaW
 .rebukemusclesshark.com,Ads_SukkaW
 .rebushhomard.cfd,Ads_SukkaW
 .rebuteragazze.shop,Ads_SukkaW
@@ -65822,7 +65874,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .reedsinterfering.com,Ads_SukkaW
 .reedthatm.biz,Ads_SukkaW
 .reeiarhshieg.com,Ads_SukkaW
-.reejwydeuoezk.site,Ads_SukkaW
 .reeksberake.cyou,Ads_SukkaW
 .reelnk.com,Ads_SukkaW
 .reeokx.reima.com,Ads_SukkaW
@@ -65877,6 +65928,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .refrigeratebranchtheological.com,Ads_SukkaW
 .reftaulu.digital,Ads_SukkaW
 .refundradar.com,Ads_SukkaW
+.refundsjudoist.click,Ads_SukkaW
 .refwkk.cas.sk,Ads_SukkaW
 .refwkk.mojewypieki.com,Ads_SukkaW
 .refwkk.omnicalculator.com,Ads_SukkaW
@@ -65980,6 +66032,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .relay.happ.social,Ads_SukkaW
 .relay.information.maileva.com,Ads_SukkaW
 .relay.velpa.pl,Ads_SukkaW
+.relayerragees.cyou,Ads_SukkaW
 .reldoven.help,Ads_SukkaW
 .releasedfinish.com,Ads_SukkaW
 .releasepath.com,Ads_SukkaW
@@ -66524,6 +66577,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .rhinoceros.codeagain.com,Ads_SukkaW
 .rhinoceros.krieger.io,Ads_SukkaW
 .rhinoceros.valeriaborgese.it,Ads_SukkaW
+.rhizotaspanule.world,Ads_SukkaW
 .rhksxx.nencinisport.it,Ads_SukkaW
 .rhlctb.jjkeller.com,Ads_SukkaW
 .rhndvagz.icu,Ads_SukkaW
@@ -66626,7 +66680,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .riniacofh.com,Ads_SukkaW
 .rinjtdunqtm.com,Ads_SukkaW
 .rinl.cn,Ads_SukkaW
-.riotednauplii.cyou,Ads_SukkaW
 .riotjav11.fun,Ads_SukkaW
 .riotousgrit.com,Ads_SukkaW
 .riovdv.mustit.co.kr,Ads_SukkaW
@@ -66740,6 +66793,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .rlebg.ugears.us,Ads_SukkaW
 .rlemd.assistivepower.com,Ads_SukkaW
 .rlftd.staples.com,Ads_SukkaW
+.rlgybjefafbjp.online,Ads_SukkaW
 .rliuumrtkzzpg.space,Ads_SukkaW
 .rliwiqr.icu,Ads_SukkaW
 .rllbu.lovisa.co.uk,Ads_SukkaW
@@ -66766,7 +66820,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .rmbsfh.icu,Ads_SukkaW
 .rmcje.remedymeds.com,Ads_SukkaW
 .rmdvca.belvilla.de,Ads_SukkaW
-.rmeqbinaicgnf.online,Ads_SukkaW
 .rmervvomrorrv.top,Ads_SukkaW
 .rmgdapfnccsharpprd.azurewebsites.net,Ads_SukkaW
 .rmggipaazeupw.site,Ads_SukkaW
@@ -66950,6 +67003,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .roseincome.com,Ads_SukkaW
 .roseletreefers.top,Ads_SukkaW
 .rosenberg.appmetrica.webvisor.com,Ads_SukkaW
+.roseouspecite.life,Ads_SukkaW
 .rossoad.com,Ads_SukkaW
 .rostrumwifish.shop,Ads_SukkaW
 .rosysolvingscallion.com,Ads_SukkaW
@@ -66986,7 +67040,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .roupas.leveeconfortavel.com.br,Ads_SukkaW
 .roupas.reginafernandez.com.br,Ads_SukkaW
 .rouserolios.qpon,Ads_SukkaW
-.rouserswoodoo.cyou,Ads_SukkaW
 .routenex.xyz,Ads_SukkaW
 .routes.navibration.com,Ads_SukkaW
 .rouwhapt.com,Ads_SukkaW
@@ -67610,6 +67663,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .runetki.co,Ads_SukkaW
 .runmanpoe.click,Ads_SukkaW
 .runningdestructioncleanliness.com,Ads_SukkaW
+.runny-milk.com,Ads_SukkaW
 .runtieroxytone.shop,Ads_SukkaW
 .runwaff.com,Ads_SukkaW
 .ruovq.rarecarat.com,Ads_SukkaW
@@ -67684,7 +67738,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .rwqovmoezrmrj.top,Ads_SukkaW
 .rwrnkb.lifelongcollectibles.com,Ads_SukkaW
 .rwryla.theblockshop.com.au,Ads_SukkaW
-.rwulzuaqsafn.com,Ads_SukkaW
 .rwupyp.swimmy.fr,Ads_SukkaW
 .rwwmbymaezljq.top,Ads_SukkaW
 .rwwmbymaezzlk.top,Ads_SukkaW
@@ -67715,6 +67768,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ryaqlywkoylk.top,Ads_SukkaW
 .rybfjx.sportscheck.com,Ads_SukkaW
 .rydmuxmuocztf.space,Ads_SukkaW
+.ryemnlgddrxss.website,Ads_SukkaW
 .ryepcqrlebdxd.website,Ads_SukkaW
 .rygdzlvrladuc.store,Ads_SukkaW
 .ryhiuxqxohoiv.website,Ads_SukkaW
@@ -67729,7 +67783,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ryrv0j.greenbeanbuddy.com,Ads_SukkaW
 .rysxxu.zajezdy.cz,Ads_SukkaW
 .rythtg.top,Ads_SukkaW
-.rytinafolles.cfd,Ads_SukkaW
 .ryujsqssracyc.space,Ads_SukkaW
 .ryvapi.fragrancenet.com,Ads_SukkaW
 .ryvvzl.icu,Ads_SukkaW
@@ -67802,7 +67855,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .s.cameratico.com,Ads_SukkaW
 .s.cant3am.com,Ads_SukkaW
 .s.chatie.ai,Ads_SukkaW
-.s.chnsrv.com,Ads_SukkaW
 .s.cirasync.com,Ads_SukkaW
 .s.clientes.construrama.com,Ads_SukkaW
 .s.columbiathreadneedle.ch,Ads_SukkaW
@@ -67861,7 +67913,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .s.dstfgh.com,Ads_SukkaW
 .s.dsvrqo.com,Ads_SukkaW
 .s.dsx827.com,Ads_SukkaW
-.s.dt6ycu.com,Ads_SukkaW
 .s.durhamregion.com,Ads_SukkaW
 .s.duriandelivery.com.sg,Ads_SukkaW
 .s.easternpickle.com,Ads_SukkaW
@@ -68403,7 +68454,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .saec-metrics.telenet.be,Ads_SukkaW
 .saeimayawning.shop,Ads_SukkaW
 .saelphol.com,Ads_SukkaW
-.safariclear.click,Ads_SukkaW
 .safe-connection21.com,Ads_SukkaW
 .safe.catiiexpress.com,Ads_SukkaW
 .safebrowsdv.com,Ads_SukkaW
@@ -68433,7 +68483,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .sagxlv.daniellashevel.com,Ads_SukkaW
 .sahin.techeverbd.com,Ads_SukkaW
 .sai7348.xyz,Ads_SukkaW
-.saicnonfat.cfd,Ads_SukkaW
 .said3page.com,Ads_SukkaW
 .saige.boinclo.co.uk,Ads_SukkaW
 .sailcovertend.com,Ads_SukkaW
@@ -68582,7 +68631,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .saphenaraga.rest,Ads_SukkaW
 .sapi.tremendous.com,Ads_SukkaW
 .sapi.valorabroker.io,Ads_SukkaW
-.sapiensahmedi.click,Ads_SukkaW
 .saponinconatus.com,Ads_SukkaW
 .sapphofolky.life,Ads_SukkaW
 .sappmetrics.sprint.com,Ads_SukkaW
@@ -68634,7 +68682,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .sats.spiegel.de,Ads_SukkaW
 .sattiostiounper.com,Ads_SukkaW
 .saturndynamic.pt,Ads_SukkaW
-.sauboufougroay.net,Ads_SukkaW
 .saucingsurrein.cyou,Ads_SukkaW
 .saugellaviso.it,Ads_SukkaW
 .saulaupady.com,Ads_SukkaW
@@ -68807,7 +68854,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .scadobe.ohpointcard.com,Ads_SukkaW
 .scadobe.vpay.co.kr,Ads_SukkaW
 .scalaephenate.life,Ads_SukkaW
-.scalagegyn.qpon,Ads_SukkaW
 .scalavicine.world,Ads_SukkaW
 .scale.amisisstore.com.br,Ads_SukkaW
 .scale.berzerk.com.br,Ads_SukkaW
@@ -68959,6 +69005,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .scout.bergfreunde.nl,Ads_SukkaW
 .scout.bergfreunde.no,Ads_SukkaW
 .scout.bergfreunde.se,Ads_SukkaW
+.scowpoppanasals.com,Ads_SukkaW
 .scp.deltadentalwa.com,Ads_SukkaW
 .scptp1.com,Ads_SukkaW
 .scptpx.com,Ads_SukkaW
@@ -69024,7 +69071,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .scubdy.magnet.com.au,Ads_SukkaW
 .scuffercyanean.cyou,Ads_SukkaW
 .scuhuh.cucannetshop.jp,Ads_SukkaW
-.sculkstapis.cfd,Ads_SukkaW
 .sculldistill.shop,Ads_SukkaW
 .sculledkartvel.life,Ads_SukkaW
 .scullerbiker.cfd,Ads_SukkaW
@@ -69093,6 +69139,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .sdegwynml.bmaci.me,Ads_SukkaW
 .sdfewed.com,Ads_SukkaW
 .sdfscftg.com,Ads_SukkaW
+.sdfsdvc.com,Ads_SukkaW
 .sdg.desihamster.pro,Ads_SukkaW
 .sdgbg.carcan.com,Ads_SukkaW
 .sdgfnkipnutxy.store,Ads_SukkaW
@@ -69162,7 +69209,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .seahorse.habitstack.com,Ads_SukkaW
 .seahorseinfo.agilent.com,Ads_SukkaW
 .seamanmonoazo.digital,Ads_SukkaW
-.seamerdorse.shop,Ads_SukkaW
 .seamless.wtaxattorney.com,Ads_SukkaW
 .seao.business.samsung.com,Ads_SukkaW
 .seaofads.com,Ads_SukkaW
@@ -73003,6 +73049,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .sheep.vaxstandby.com,Ads_SukkaW
 .sheeplm.top,Ads_SukkaW
 .sheerboose.shop,Ads_SukkaW
+.sheererwhirrey.life,Ads_SukkaW
 .sheerrabbler.com,Ads_SukkaW
 .sheerssantali.life,Ads_SukkaW
 .sheeshumte.net,Ads_SukkaW
@@ -73055,6 +73102,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .shine.starshot.com,Ads_SukkaW
 .shingonannates.com,Ads_SukkaW
 .shiny-toe.com,Ads_SukkaW
+.shinybirdwhispered.com,Ads_SukkaW
 .shinypond.com,Ads_SukkaW
 .shipskiwies.life,Ads_SukkaW
 .shipsmarter.idrivelogistics.com,Ads_SukkaW
@@ -73200,7 +73248,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .shrillbighearted.com,Ads_SukkaW
 .shrillbirlie.cfd,Ads_SukkaW
 .shrillspoon.com,Ads_SukkaW
-.shriviands.click,Ads_SukkaW
 .shrubshyloid.cfd,Ads_SukkaW
 .shs.youvegotthismath.com,Ads_SukkaW
 .shshuoshu.com,Ads_SukkaW
@@ -73271,7 +73318,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .sidejav11.fun,Ads_SukkaW
 .sidenoteproductionbond.com,Ads_SukkaW
 .siegesgrovel.life,Ads_SukkaW
-.siemensvenula.cyou,Ads_SukkaW
 .sienadrachma.shop,Ads_SukkaW
 .sierrakermit.com,Ads_SukkaW
 .sievepalmful.com,Ads_SukkaW
@@ -73386,7 +73432,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .simule.ademiconbr.com,Ads_SukkaW
 .simurgmina.world,Ads_SukkaW
 .sinaearthy.life,Ads_SukkaW
-.sincenturypro.org,Ads_SukkaW
 .sincerebuffalo.com,Ads_SukkaW
 .sincerecompatriot.com,Ads_SukkaW
 .sinceregarden.sincere-garden.jp,Ads_SukkaW
@@ -73500,7 +73545,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .sizcsi.eobuv.cz,Ads_SukkaW
 .siziestlaquear.click,Ads_SukkaW
 .sizybn.shipsltd.co.jp,Ads_SukkaW
-.sizygiasoso.rest,Ads_SukkaW
 .sizzledoutfort.com,Ads_SukkaW
 .sizzling-camp.pro,Ads_SukkaW
 .sizzlingsmoke.com,Ads_SukkaW
@@ -73543,6 +73587,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .skadnetwork.singular.net,Ads_SukkaW
 .skaffa.tidyapp.se,Ads_SukkaW
 .skaffmuller.digital,Ads_SukkaW
+.skaselyravelin.cfd,Ads_SukkaW
 .skated.co,Ads_SukkaW
 .skaterdelimer.rest,Ads_SukkaW
 .skatestooped.com,Ads_SukkaW
@@ -73692,7 +73737,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .slipperyslope.mjolner.dk,Ads_SukkaW
 .slipstream.skyscanner.net,Ads_SukkaW
 .slipupsgimpy.rest,Ads_SukkaW
-.slishsnocher.qpon,Ads_SukkaW
 .slit.lewd.rip,Ads_SukkaW
 .slivingwhata.digital,Ads_SukkaW
 .slopeac.com,Ads_SukkaW
@@ -73960,6 +74004,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .smtpmail.velpa.pl,Ads_SukkaW
 .smtps.go.fr.scc.com,Ads_SukkaW
 .smtrcs.redhat.com,Ads_SukkaW
+.smtsjogsxfov.com,Ads_SukkaW
 .smtx.belfius.be,Ads_SukkaW
 .smtx.dvv.be,Ads_SukkaW
 .smtx.godo.com.au,Ads_SukkaW
@@ -74120,7 +74165,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .soagopsigeegouk.net,Ads_SukkaW
 .soaheeme.net,Ads_SukkaW
 .soahu1wnmt6l.www.replai.io,Ads_SukkaW
-.soajojaujoapeet.net,Ads_SukkaW
 .soakingcerfoil.com,Ads_SukkaW
 .soaneefooy.net,Ads_SukkaW
 .soap.ppc4laundry.com,Ads_SukkaW
@@ -74516,7 +74560,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .sonalkyls.qpon,Ads_SukkaW
 .soncyfirearm.com,Ads_SukkaW
 .songhailambs.digital,Ads_SukkaW
-.songishneater.cyou,Ads_SukkaW
 .songs.newdelica.com,Ads_SukkaW
 .songsterritory.com,Ads_SukkaW
 .songtopbrand.com,Ads_SukkaW
@@ -74574,6 +74617,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .soundcloud-pax.pandora.com,Ads_SukkaW
 .soundsagum.qpon,Ads_SukkaW
 .soundstocking.com,Ads_SukkaW
+.soupfintreacle.rest,Ads_SukkaW
 .soupystick.pro,Ads_SukkaW
 .sour1bare.com,Ads_SukkaW
 .sour7will.com,Ads_SukkaW
@@ -75030,7 +75074,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .spxl.socy.es,Ads_SukkaW
 .spxsvrvxwouyp.site,Ads_SukkaW
 .spy.epornleak.com,Ads_SukkaW
-.spyboatbhavani.cyou,Ads_SukkaW
 .spyboatsticta.cyou,Ads_SukkaW
 .spyfocusshop-ss.offeroshop.com,Ads_SukkaW
 .spyglass.reklon.net,Ads_SukkaW
@@ -75073,7 +75116,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .squid.adart.cc,Ads_SukkaW
 .squid.antevo.com.au,Ads_SukkaW
 .squiggly-dance.pro,Ads_SukkaW
-.squiggly-fill.pro,Ads_SukkaW
 .squirrel.cividi.ch,Ads_SukkaW
 .squirrel.laravel-mix.com,Ads_SukkaW
 .squirrel.malaynahocker.com,Ads_SukkaW
@@ -76928,7 +76970,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ssgwf.vidavida.de,Ads_SukkaW
 .sshalwsbcoidgj.com,Ads_SukkaW
 .sshhfy.ray-ban.com,Ads_SukkaW
-.sshonpeivfugf.xyz,Ads_SukkaW
 .ssi.statusfalgar.se,Ads_SukkaW
 .sside.colesia.it,Ads_SukkaW
 .sside.ferroibsa.it,Ads_SukkaW
@@ -79220,6 +79261,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .staging.link.findeck.de,Ads_SukkaW
 .staging.narrateapp.com,Ads_SukkaW
 .staging.refer.wagr.us,Ads_SukkaW
+.stagingjobshq.com,Ads_SukkaW
 .stahhx.inversapub.com,Ads_SukkaW
 .staiderkidhood.help,Ads_SukkaW
 .stainedspurdie.shop,Ads_SukkaW
@@ -79236,12 +79278,12 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .stalesummer.com,Ads_SukkaW
 .stalkchoroti.qpon,Ads_SukkaW
 .stamenbs4.com,Ads_SukkaW
+.stamnoifroths.qpon,Ads_SukkaW
 .stampbesidescontrived.com,Ads_SukkaW
 .stampersports.digital,Ads_SukkaW
 .stampsmindlessscrap.com,Ads_SukkaW
 .stan.xing.com,Ads_SukkaW
 .stanceshodden.shop,Ads_SukkaW
-.stanjenhaji.qpon,Ads_SukkaW
 .stankyrich.com,Ads_SukkaW
 .stanzakaty.rest,Ads_SukkaW
 .stap.atividadescursiva.com,Ads_SukkaW
@@ -82802,6 +82844,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .steel-savings.com,Ads_SukkaW
 .steel.newmill.com,Ads_SukkaW
 .steelmaiden.com,Ads_SukkaW
+.steeplereconciliation.com,Ads_SukkaW
 .steepsister.com,Ads_SukkaW
 .steepsquirrel.com,Ads_SukkaW
 .steepto.com,Ads_SukkaW
@@ -82847,6 +82890,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .sterkisg.com,Ads_SukkaW
 .sternstripara.digital,Ads_SukkaW
 .steroidbazaarbalance.com,Ads_SukkaW
+.steroidslaughteradvertise.com,Ads_SukkaW
 .stesywijy.com,Ads_SukkaW
 .steun.touringcars.com,Ads_SukkaW
 .stewaitsoumirg.com,Ads_SukkaW
@@ -82868,7 +82912,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .stgw.fashionspark.com,Ads_SukkaW
 .stgxau.icu,Ads_SukkaW
 .stickyadstv.com,Ads_SukkaW
-.stickysaggard.shop,Ads_SukkaW
 .stifeyuruna.life,Ads_SukkaW
 .stiff-lake.pro,Ads_SukkaW
 .stiffgame.com,Ads_SukkaW
@@ -82993,11 +83036,11 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .storm.audifly.com.br,Ads_SukkaW
 .storygize.net,Ads_SukkaW
 .storystaffrings.com,Ads_SukkaW
+.storyunicornupper.com,Ads_SukkaW
 .stossaukrek.net,Ads_SukkaW
 .stotsendle.cyou,Ads_SukkaW
 .stoupseehebsaur.net,Ads_SukkaW
 .stovenchequer.life,Ads_SukkaW
-.stoviesleech.help,Ads_SukkaW
 .stowedimams.cyou,Ads_SukkaW
 .stowhiwhothu.com,Ads_SukkaW
 .stowpsunovert.qpon,Ads_SukkaW
@@ -83424,6 +83467,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .subtlemillenniumgallop.com,Ads_SukkaW
 .subtlyreeving.rest,Ads_SukkaW
 .suburbanabolishflare.com,Ads_SukkaW
+.subwardidym.help,Ads_SukkaW
 .success.azzure-it.com,Ads_SukkaW
 .success.benico.com,Ads_SukkaW
 .success.catman.global,Ads_SukkaW
@@ -83529,6 +83573,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .superchichair.com,Ads_SukkaW
 .superfastcdn.com,Ads_SukkaW
 .superfasti.co,Ads_SukkaW
+.superficial-chain.com,Ads_SukkaW
 .superficial-sensitive.com,Ads_SukkaW
 .superficial-work.com,Ads_SukkaW
 .superficialeyes.com,Ads_SukkaW
@@ -83599,6 +83644,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .surviseproper.click,Ads_SukkaW
 .susciteuintjie.cyou,Ads_SukkaW
 .susianulidia.com,Ads_SukkaW
+.suspectlensemphasis.com,Ads_SukkaW
 .suspectplainrevulsion.com,Ads_SukkaW
 .sussxcvvprcwu.com,Ads_SukkaW
 .sussymopani.rest,Ads_SukkaW
@@ -83815,6 +83861,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .swavoo.top,Ads_SukkaW
 .swcnmtb.top,Ads_SukkaW
 .swdced.open32.nl,Ads_SukkaW
+.sweaty-product.com,Ads_SukkaW
 .sweatypositive.com,Ads_SukkaW
 .sweatysynchronize.com,Ads_SukkaW
 .sweb.ulta.com,Ads_SukkaW
@@ -83851,7 +83898,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .swelternitwit.click,Ads_SukkaW
 .sweltydusty.cfd,Ads_SukkaW
 .swerilxb.top,Ads_SukkaW
-.swhqcerqyqejk.website,Ads_SukkaW
 .swiddenluckier.shop,Ads_SukkaW
 .swidprxaafwha.store,Ads_SukkaW
 .swift.avenue.so,Ads_SukkaW
@@ -84060,6 +84106,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .symantec.ecs.arrow.com,Ads_SukkaW
 .symjgg.icu,Ads_SukkaW
 .symmorybewept.com,Ads_SukkaW
+.sympatheticleague.com,Ads_SukkaW
 .sympathizecrewfrugality.com,Ads_SukkaW
 .synacast.com,Ads_SukkaW
 .synaxarhavior.help,Ads_SukkaW
@@ -84854,7 +84901,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ta.taxslayer.com,Ads_SukkaW
 .ta.trs.cn,Ads_SukkaW
 .ta3nfsordd.com,Ads_SukkaW
-.taabwatts.click,Ads_SukkaW
 .taaqhr6axacd2um.com,Ads_SukkaW
 .taarducape.cyou,Ads_SukkaW
 .tabardspagurid.qpon,Ads_SukkaW
@@ -85440,6 +85486,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .tangerine.optika-oftalmos.si,Ads_SukkaW
 .tangerineprestigiousbehaved.com,Ads_SukkaW
 .tangibleteam.com,Ads_SukkaW
+.tangilefarcied.life,Ads_SukkaW
 .tanglerpainted.life,Ads_SukkaW
 .tangletrace.com,Ads_SukkaW
 .tango-deg.com,Ads_SukkaW
@@ -85785,6 +85832,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .tasktrivialaggregated.com,Ads_SukkaW
 .taslg.modernofficefurniture.com,Ads_SukkaW
 .tasselapp.com,Ads_SukkaW
+.tasselswogiet.life,Ads_SukkaW
 .tasspuerile.click,Ads_SukkaW
 .tastedaftknowledge.com,Ads_SukkaW
 .tastelesstrees.com,Ads_SukkaW
@@ -85878,7 +85926,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .tauzo.xyz,Ads_SukkaW
 .taviigkzclwqh.space,Ads_SukkaW
 .tawdryson.com,Ads_SukkaW
-.tawkingaze.cfd,Ads_SukkaW
 .taxility.com,Ads_SukkaW
 .taxingbracked.qpon,Ads_SukkaW
 .taxissung.com,Ads_SukkaW
@@ -86112,6 +86159,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .tea.tescobank.com,Ads_SukkaW
 .tea2.tescobank.com,Ads_SukkaW
 .teach.graduateprogram.org,Ads_SukkaW
+.teachebumwood.click,Ads_SukkaW
 .teachetarsi.world,Ads_SukkaW
 .teachscape.vo.llnwd.net,Ads_SukkaW
 .teads.tv,Ads_SukkaW
@@ -86189,10 +86237,10 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .ted.dailymail.co.uk,Ads_SukkaW
 .teddedsheeney.digital,Ads_SukkaW
 .tediousbear.com,Ads_SukkaW
+.tediousdisinterested.com,Ads_SukkaW
 .tedioustooth.com,Ads_SukkaW
 .tediouswasp.com,Ads_SukkaW
 .tediumumbers.life,Ads_SukkaW
-.tedurtathashis.net,Ads_SukkaW
 .teedipoaduw.net,Ads_SukkaW
 .teefiksummin.visma.fi,Ads_SukkaW
 .teejubilee.com,Ads_SukkaW
@@ -86340,6 +86388,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .tenzondace.cyou,Ads_SukkaW
 .teotnajhxmwts.site,Ads_SukkaW
 .tepatonol.com,Ads_SukkaW
+.tephraeyedot.rest,Ads_SukkaW
 .tepidhalkahs.world,Ads_SukkaW
 .tepidpolicy.com,Ads_SukkaW
 .ter.centrodayuda.com,Ads_SukkaW
@@ -86369,6 +86418,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .terrasdsdstd.com,Ads_SukkaW
 .terriblethumb.com,Ads_SukkaW
 .terrificdark.com,Ads_SukkaW
+.terrificlet.com,Ads_SukkaW
 .teryt111.fun,Ads_SukkaW
 .teslaamg.obs.cn-east-3.myhuaweicloud.com,Ads_SukkaW
 .test-ad.lucia-c.com,Ads_SukkaW
@@ -86519,6 +86569,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .text.rahmenvereinbarungen.de,Ads_SukkaW
 .text6film.com,Ads_SukkaW
 .textileintersectionroam.com,Ads_SukkaW
+.textureblaze.co,Ads_SukkaW
 .texturetrick.com,Ads_SukkaW
 .teyourmarketing.trungaleegan.com,Ads_SukkaW
 .teyvmb.moniquelhuillier.com,Ads_SukkaW
@@ -86641,6 +86692,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .theadgateway.com,Ads_SukkaW
 .thebaintwaite.click,Ads_SukkaW
 .thebestdates.net,Ads_SukkaW
+.thebestgame2020.com,Ads_SukkaW
 .thebigvan.com,Ads_SukkaW
 .thebitmeister.com,Ads_SukkaW
 .thecatmachine.com,Ads_SukkaW
@@ -86893,6 +86945,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .tiledaristae.rest,Ads_SukkaW
 .tilt.bankofamerica.com,Ads_SukkaW
 .tiltgardenheadlight.com,Ads_SukkaW
+.tiltschaster.com,Ads_SukkaW
 .tilttrk.com,Ads_SukkaW
 .tiltuploafer.com,Ads_SukkaW
 .tilxgwpyoigje.store,Ads_SukkaW
@@ -86917,6 +86970,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .tinjsicyt.com,Ads_SukkaW
 .tinkerwidth.com,Ads_SukkaW
 .tinlikezabaism.life,Ads_SukkaW
+.tinnilybagdi.cfd,Ads_SukkaW
 .tinos.bio-logos.com,Ads_SukkaW
 .tinselspecifically.com,Ads_SukkaW
 .tinted-run.com,Ads_SukkaW
@@ -87573,6 +87627,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .toprevenuecpmnetwork.com,Ads_SukkaW
 .toprevenuegate.com,Ads_SukkaW
 .topsexmovs.com,Ads_SukkaW
+.topslsorters.rest,Ads_SukkaW
 .topsolutionsmedia.com,Ads_SukkaW
 .topspin.npo.nl,Ads_SukkaW
 .topsrcs.com,Ads_SukkaW
@@ -87587,7 +87642,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .torioluor.com,Ads_SukkaW
 .torkeauwu.com,Ads_SukkaW
 .torn6back.com,Ads_SukkaW
-.tornmonitor.pro,Ads_SukkaW
 .toroa.merchnow.com,Ads_SukkaW
 .toronaoi.help,Ads_SukkaW
 .toronto-content.cresa.com,Ads_SukkaW
@@ -87630,7 +87684,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .toursibex.rest,Ads_SukkaW
 .tousiwoaptuy.net,Ads_SukkaW
 .tousledspheral.digital,Ads_SukkaW
-.toutingculets.shop,Ads_SukkaW
 .touvxlii.top,Ads_SukkaW
 .tovbus.cn,Ads_SukkaW
 .tovespiquener.com,Ads_SukkaW
@@ -91397,6 +91450,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .trczmhupxxgew.space,Ads_SukkaW
 .treadbun.com,Ads_SukkaW
 .treadhospitality.com,Ads_SukkaW
+.treaguehaire.digital,Ads_SukkaW
 .treasonfinding.com,Ads_SukkaW
 .treasured-phase.pro,Ads_SukkaW
 .treatedscale.com,Ads_SukkaW
@@ -91464,7 +91518,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .trinkumjuneau.help,Ads_SukkaW
 .triodessloking.cyou,Ads_SukkaW
 .trionalsepti.rest,Ads_SukkaW
-.tripl3a.com,Ads_SukkaW
 .triplestat.online,Ads_SukkaW
 .triplewhale-pixel.web.app,Ads_SukkaW
 .triposkerflop.rest,Ads_SukkaW
@@ -92191,7 +92244,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .trt.usedrop.io,Ads_SukkaW
 .trtjigpsscmv9epe10.com,Ads_SukkaW
 .tru.am,Ads_SukkaW
-.trucesenode.cyou,Ads_SukkaW
 .trucestaff.com,Ads_SukkaW
 .trucialkouros.help,Ads_SukkaW
 .truckstomatoes.com,Ads_SukkaW
@@ -92473,6 +92525,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .tuagol.gartenmoebel.de,Ads_SukkaW
 .tuanxue360.net,Ads_SukkaW
 .tuaos.xyz,Ads_SukkaW
+.tuaxwuvc.com,Ads_SukkaW
 .tubbylay.com,Ads_SukkaW
 .tube6sour.com,Ads_SukkaW
 .tubecorp.com,Ads_SukkaW
@@ -92859,6 +92912,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .uaid.vtwenty.com,Ads_SukkaW
 .uaiosio.top,Ads_SukkaW
 .uaiqp.top,Ads_SukkaW
+.uajgudlcrmuxas.com,Ads_SukkaW
 .uakarisigneur.com,Ads_SukkaW
 .uakexicw.com,Ads_SukkaW
 .ualkzq.moobel1.ee,Ads_SukkaW
@@ -93300,7 +93354,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .umbel.com,Ads_SukkaW
 .umbeldemonic.world,Ads_SukkaW
 .umbelssonhood.help,Ads_SukkaW
-.umbrousbepile.qpon,Ads_SukkaW
 .umccle.traktorpool.hu,Ads_SukkaW
 .umcicv.europcar.com,Ads_SukkaW
 .umdjbtaekbkeg.space,Ads_SukkaW
@@ -93314,6 +93367,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .umewjp.chanti.no,Ads_SukkaW
 .umexalim.com,Ads_SukkaW
 .umfszv.m-style.co.kr,Ads_SukkaW
+.umfvjbzluwlum.space,Ads_SukkaW
 .umguf.samialert.com,Ads_SukkaW
 .umgxftbnartw.xyz,Ads_SukkaW
 .umhyck.belvilla.com,Ads_SukkaW
@@ -93347,6 +93401,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .unafirerechart.shop,Ads_SukkaW
 .unarmedindustry.com,Ads_SukkaW
 .unasonoric.com,Ads_SukkaW
+.unathrowler.com,Ads_SukkaW
 .unattr.com,Ads_SukkaW
 .unawareburn.com,Ads_SukkaW
 .unbagacidity.cyou,Ads_SukkaW
@@ -93404,6 +93459,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .unfamiiliardate.net,Ads_SukkaW
 .unfamiillardates.net,Ads_SukkaW
 .unfamllliardates.com,Ads_SukkaW
+.unfinewhose.digital,Ads_SukkaW
 .unflatsmopple.life,Ads_SukkaW
 .unfortunate-can.com,Ads_SukkaW
 .unfortunatechampionship.com,Ads_SukkaW
@@ -93472,6 +93528,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .unl1zvy2zuyn.franchiseplus.nl,Ads_SukkaW
 .unlawfuldamage.com,Ads_SukkaW
 .unleash.livepix.gg,Ads_SukkaW
+.unlevelyen.qpon,Ads_SukkaW
 .unlimbhutlet.cfd,Ads_SukkaW
 .unlistybrian.com,Ads_SukkaW
 .unlivetribe.cyou,Ads_SukkaW
@@ -93492,7 +93549,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .unmeetbookies.com,Ads_SukkaW
 .unmefwsycamtq.space,Ads_SukkaW
 .unmistgenoms.world,Ads_SukkaW
-.unmiterxray.help,Ads_SukkaW
 .unmobledrumly.rest,Ads_SukkaW
 .unnervesuede.cyou,Ads_SukkaW
 .unpanchamon.com,Ads_SukkaW
@@ -93500,6 +93556,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .unpjmm.mangatori.fr,Ads_SukkaW
 .unplcwbletj.com,Ads_SukkaW
 .unpliedzenonic.qpon,Ads_SukkaW
+.unpufframpler.com,Ads_SukkaW
 .unqhsd.onkyodirect.jp,Ads_SukkaW
 .unrakenunc.help,Ads_SukkaW
 .unrealpain.com,Ads_SukkaW
@@ -93616,6 +93673,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .upaasnvrjvgexm.com,Ads_SukkaW
 .upalytics.com,Ads_SukkaW
 .uparceuson.com,Ads_SukkaW
+.upasesethyl.digital,Ads_SukkaW
 .upbearscanners.cyou,Ads_SukkaW
 .upblowcorbed.top,Ads_SukkaW
 .upbypuntel.click,Ads_SukkaW
@@ -93636,7 +93694,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .updeckquaying.world,Ads_SukkaW
 .updservice.site,Ads_SukkaW
 .upeayz.eksisozluk.com,Ads_SukkaW
-.upflarekolush.help,Ads_SukkaW
 .upfmqr.carmensteffens.com.br,Ads_SukkaW
 .upgliscorom.com,Ads_SukkaW
 .upgullypirns.cyou,Ads_SukkaW
@@ -93645,7 +93702,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .upliftsearch.com,Ads_SukkaW
 .upload.euleriancdn.net,Ads_SukkaW
 .uplog.inews.qq.com,Ads_SukkaW
-.uploomcompare.rest,Ads_SukkaW
 .uplyxzkvncinj.space,Ads_SukkaW
 .upodaitie.net,Ads_SukkaW
 .uponomanytetor.com,Ads_SukkaW
@@ -93933,6 +93989,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .utxokv.emp.co.uk,Ads_SukkaW
 .utxrjhooc.com,Ads_SukkaW
 .utxryadtemckkeo.com,Ads_SukkaW
+.utysolomonaut.com,Ads_SukkaW
 .uu09cjylmzsym.top,Ads_SukkaW
 .uu1.3gu.com,Ads_SukkaW
 .uu11881.com,Ads_SukkaW
@@ -94057,7 +94114,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .uyislot.top,Ads_SukkaW
 .uyivht.robertgraham.us,Ads_SukkaW
 .uylodc.ecosa.com.au,Ads_SukkaW
-.uynibyhcolhkb.online,Ads_SukkaW
 .uypg.cn,Ads_SukkaW
 .uyqx.cn,Ads_SukkaW
 .uyretut.top,Ads_SukkaW
@@ -94121,6 +94177,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .vaazarqvklkl.top,Ads_SukkaW
 .vaazaryemzmq.top,Ads_SukkaW
 .vacancymonies.rest,Ads_SukkaW
+.vacantazon.com,Ads_SukkaW
 .vacantborder.com,Ads_SukkaW
 .vachoumpuh.net,Ads_SukkaW
 .vacoufbangled.help,Ads_SukkaW
@@ -94164,6 +94221,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .valveiq3.com.au.websitedesignroom.net.websitedesignroom.net.jumia.sn,Ads_SukkaW
 .valvesgabi.life,Ads_SukkaW
 .valvyre.com,Ads_SukkaW
+.vamperskidlike.rest,Ads_SukkaW
 .vampirebat.datingmedellin.com,Ads_SukkaW
 .vampirebat.febolos.es,Ads_SukkaW
 .vampirebat.git-tower.com,Ads_SukkaW
@@ -94196,6 +94254,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .varnishspag.help,Ads_SukkaW
 .vartoken.com,Ads_SukkaW
 .varun.fullleafteacompany.com,Ads_SukkaW
+.varxdptsb.xyz,Ads_SukkaW
 .varypollintelligent.com,Ads_SukkaW
 .varys.asongofzandc.xyz,Ads_SukkaW
 .varz.mcyoung.xyz,Ads_SukkaW
@@ -94260,6 +94319,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .vbtdzb.fyndiq.se,Ads_SukkaW
 .vbtrax.com,Ads_SukkaW
 .vbvng.pancheros.com,Ads_SukkaW
+.vbwjazaybjqwj.top,Ads_SukkaW
 .vbxhdp.uwalls.pl,Ads_SukkaW
 .vbykiprxfpvpt.space,Ads_SukkaW
 .vbzkwgybbaygv.top,Ads_SukkaW
@@ -94354,6 +94414,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .veiltrench.com,Ads_SukkaW
 .veinletcarrack.cfd,Ads_SukkaW
 .veinourdreams.com,Ads_SukkaW
+.vejrp6iq25.com,Ads_SukkaW
 .velafamed.cfd,Ads_SukkaW
 .velduncinus.cfd,Ads_SukkaW
 .velocecdn.com,Ads_SukkaW
@@ -94525,6 +94586,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .vhlxvootwytjt.online,Ads_SukkaW
 .vhmewg.edreams.fr,Ads_SukkaW
 .vhmjci.edreams.co.uk,Ads_SukkaW
+.vhnfgssknrqod.xyz,Ads_SukkaW
 .vhodzh.pdonna.ru,Ads_SukkaW
 .vhpabx.herffjones.com,Ads_SukkaW
 .vhpyuhwr.xyz,Ads_SukkaW
@@ -94564,7 +94626,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .vice4beek.com,Ads_SukkaW
 .vicecomradecompare.com,Ads_SukkaW
 .vicesus.com,Ads_SukkaW
-.vicinepulsed.cyou,Ads_SukkaW
 .vick6duty.com,Ads_SukkaW
 .vicky.tweaknology.org,Ads_SukkaW
 .victimenmesh.life,Ads_SukkaW
@@ -94864,6 +94925,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .vlrlav.rodinnebalenie.sk,Ads_SukkaW
 .vlrst.rhinousainc.com,Ads_SukkaW
 .vltjn.bucketsquad.com,Ads_SukkaW
+.vlwjtruuudqyl.site,Ads_SukkaW
 .vlzuz.bcbg.com,Ads_SukkaW
 .vlzyxkjxfrpku.space,Ads_SukkaW
 .vm.loveamberx.co.uk,Ads_SukkaW
@@ -95163,6 +95225,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .vstserv.com,Ads_SukkaW
 .vsuxohwtabqvw.store,Ads_SukkaW
 .vsxlnynlnmbbr.site,Ads_SukkaW
+.vsyniucsilumn.online,Ads_SukkaW
 .vt.mak.com,Ads_SukkaW
 .vtahuqrjsdsokl.xyz,Ads_SukkaW
 .vtbe.cn,Ads_SukkaW
@@ -95186,6 +95249,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .vtlpkoshbpquo.online,Ads_SukkaW
 .vtmmn.ancientaurajewelry.com,Ads_SukkaW
 .vtneexam.quantresear.ch,Ads_SukkaW
+.vtnguthuo.com,Ads_SukkaW
 .vtodss.livenation.com,Ads_SukkaW
 .vtohfxij.com,Ads_SukkaW
 .vtomqskmhqyco.online,Ads_SukkaW
@@ -95322,6 +95386,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .vybbem.womanhit.ru,Ads_SukkaW
 .vydelavejtesnami.pg.cz,Ads_SukkaW
 .vyebov.entrenet.jp,Ads_SukkaW
+.vyebzzqlojerz.top,Ads_SukkaW
 .vyeysj.foto-mundus.de,Ads_SukkaW
 .vyfrxuytzn.com,Ads_SukkaW
 .vygwmjgwwjalq.top,Ads_SukkaW
@@ -95513,7 +95578,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .wait8hurl.com,Ads_SukkaW
 .waitheja.net,Ads_SukkaW
 .waitingnumber.com,Ads_SukkaW
-.wakedsowder.rest,Ads_SukkaW
+.waivesricer.com,Ads_SukkaW
 .wakemcf.com,Ads_SukkaW
 .wakuwaku.ne.jp,Ads_SukkaW
 .wal.wolfram.com,Ads_SukkaW
@@ -95664,13 +95729,13 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .waveinverter.com,Ads_SukkaW
 .waves.retentionscience.com,Ads_SukkaW
 .wavesmachine.com,Ads_SukkaW
+.wavevoyager.co,Ads_SukkaW
 .wavingscrambledesert.com,Ads_SukkaW
 .wavrlh.cedok.cz,Ads_SukkaW
 .wavzlt.michaelstars.com,Ads_SukkaW
 .wawhingoathe.com,Ads_SukkaW
 .wawhoufteedaksu.com,Ads_SukkaW
 .waxapushlite.com,Ads_SukkaW
-.waxerthammuz.shop,Ads_SukkaW
 .waxhawares.rest,Ads_SukkaW
 .waxierowldom.help,Ads_SukkaW
 .waxsirens.com,Ads_SukkaW
@@ -96325,6 +96390,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .weekprie.world,Ads_SukkaW
 .weem.weemco.com,Ads_SukkaW
 .weemtinnen.help,Ads_SukkaW
+.weepiercaptor.cfd,Ads_SukkaW
 .weeshoowhiph.net,Ads_SukkaW
 .weetsheminee.shop,Ads_SukkaW
 .weewci.icu,Ads_SukkaW
@@ -96389,6 +96455,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .wellheater-ss.offeroshop.com,Ads_SukkaW
 .wellheatershop-ss.offeroshop.com,Ads_SukkaW
 .wellhello.com,Ads_SukkaW
+.wellmadecampaign.com,Ads_SukkaW
 .wellness.palomarhealth.org,Ads_SukkaW
 .welltodo-type.com,Ads_SukkaW
 .wellworn-lead.com,Ads_SukkaW
@@ -96399,6 +96466,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .wemqip.misli.com,Ads_SukkaW
 .wemtagoowhoohiz.net,Ads_SukkaW
 .wencheracubens.rest,Ads_SukkaW
+.wenchespandect.cfd,Ads_SukkaW
 .wenchestylari.life,Ads_SukkaW
 .wendelstein-1b.com,Ads_SukkaW
 .wendingoughts.cfd,Ads_SukkaW
@@ -96589,7 +96657,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .whomsudsikaxu.com,Ads_SukkaW
 .whoogled.com,Ads_SukkaW
 .whookroo.com,Ads_SukkaW
-.whoomsogleloo.net,Ads_SukkaW
 .whoppercreaky.com,Ads_SukkaW
 .whorlswombat.click,Ads_SukkaW
 .whoucheehy.net,Ads_SukkaW
@@ -96602,7 +96669,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .whqxcturoervf.space,Ads_SukkaW
 .whrq.whoer.net,Ads_SukkaW
 .whrwlxg.icu,Ads_SukkaW
-.whsegoster.qpon,Ads_SukkaW
 .whulsaux.com,Ads_SukkaW
 .whupsharry.cfd,Ads_SukkaW
 .whussletrevet.top,Ads_SukkaW
@@ -96616,7 +96682,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .whynessspriggy.cyou,Ads_SukkaW
 .wi1f.icu,Ads_SukkaW
 .wicdn.cloud,Ads_SukkaW
-.wickingdeals.qpon,Ads_SukkaW
 .wickspommage.life,Ads_SukkaW
 .wickycursors.qpon,Ads_SukkaW
 .wickyuprowel.digital,Ads_SukkaW
@@ -96689,7 +96754,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .win-rtb2-apac.applabs.live,Ads_SukkaW
 .win.staticstuff.net,Ads_SukkaW
 .win.websearchertrk.com,Ads_SukkaW
-.winbetas.rest,Ads_SukkaW
 .windelidlety.qpon,Ads_SukkaW
 .windfallicontelegraph.com,Ads_SukkaW
 .windingnegotiation.com,Ads_SukkaW
@@ -96700,6 +96764,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .windsurf-telemetry.codeium.com,Ads_SukkaW
 .windyplentiful.com,Ads_SukkaW
 .wingssecrecyfailed.com,Ads_SukkaW
+.winisheam.cfd,Ads_SukkaW
 .winkleads.com,Ads_SukkaW
 .winneradsmedia.com,Ads_SukkaW
 .winnersmindset.org,Ads_SukkaW
@@ -96709,6 +96774,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .winr.online,Ads_SukkaW
 .winslinks.com,Ads_SukkaW
 .winter05032026.shop,Ads_SukkaW
+.winterbedroomauction.com,Ads_SukkaW
 .winzessolicit.com,Ads_SukkaW
 .wio06210j7.com,Ads_SukkaW
 .wio06230j7.com,Ads_SukkaW
@@ -96878,6 +96944,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .wmptengate.com,Ads_SukkaW
 .wmptpr.com,Ads_SukkaW
 .wmpuem.com,Ads_SukkaW
+.wmqycwlhobgqb.space,Ads_SukkaW
 .wmtten.com,Ads_SukkaW
 .wmvroh.sgd.de,Ads_SukkaW
 .wmwwmblvqlkw.top,Ads_SukkaW
@@ -97017,7 +97084,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .worrisomedifference.com,Ads_SukkaW
 .worritdundee.help,Ads_SukkaW
 .worryinginadmissible.com,Ads_SukkaW
-.worst-recognition.pro,Ads_SukkaW
 .worthequally.com,Ads_SukkaW
 .worthlessbend.com,Ads_SukkaW
 .worthyboxersympathy.com,Ads_SukkaW
@@ -97143,7 +97209,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .wsknow.net,Ads_SukkaW
 .wsl.winpett.com.br,Ads_SukkaW
 .wslcjxvi.com,Ads_SukkaW
-.wslkplcxsl.xyz,Ads_SukkaW
 .wsmcdn.audioeye.com,Ads_SukkaW
 .wsnfvioo.com,Ads_SukkaW
 .wsnrfb.modlily.com,Ads_SukkaW
@@ -97217,6 +97282,8 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .wttd.madeleine.fr,Ads_SukkaW
 .wttd.madeleine.gr,Ads_SukkaW
 .wtuqaaypj.com,Ads_SukkaW
+.wu2088-608.shop,Ads_SukkaW
+.wuaafacwszsqh.store,Ads_SukkaW
 .wubizigeng.com,Ads_SukkaW
 .wucnmte.top,Ads_SukkaW
 .wucnwte.top,Ads_SukkaW
@@ -97516,6 +97583,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .wzjs1.oss-accelerate.aliyuncs.com,Ads_SukkaW
 .wzkhzb.cantao.com.br,Ads_SukkaW
 .wzkjip.coru.com,Ads_SukkaW
+.wzlbzbzlobyqq.top,Ads_SukkaW
 .wzlzgwdtasjfs.online,Ads_SukkaW
 .wznhwz.benz24.de,Ads_SukkaW
 .wzogvlbvqbqkq.top,Ads_SukkaW
@@ -97647,6 +97715,8 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .xdvdniwqttspt.website,Ads_SukkaW
 .xdvdrg.globalindustrial.com,Ads_SukkaW
 .xdyjt.com,Ads_SukkaW
+.xeaieghqighjm.site,Ads_SukkaW
+.xebecsunowing.cfd,Ads_SukkaW
 .xebetp.icu,Ads_SukkaW
 .xeccotftw.com,Ads_SukkaW
 .xecmgrhmhnixuw.xyz,Ads_SukkaW
@@ -97716,7 +97786,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .xhohnr.fdm.pl,Ads_SukkaW
 .xhovaqdubabj.com,Ads_SukkaW
 .xhpypf.meitan.ru,Ads_SukkaW
-.xhqhggtclqrryw.xyz,Ads_SukkaW
 .xhqmvu.k-uno.co.jp,Ads_SukkaW
 .xhtgfx.deutschesee.de,Ads_SukkaW
 .xhuahy.juwelo.it,Ads_SukkaW
@@ -98202,6 +98271,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .xzwcng.vans.com.au,Ads_SukkaW
 .xzwcwyntxbgrd.com,Ads_SukkaW
 .xzxbep.plantei.com.br,Ads_SukkaW
+.xzxjtukltgeee.online,Ads_SukkaW
 .xzzozpiegg.com,Ads_SukkaW
 .y-t.topya.com,Ads_SukkaW
 .y.crazyporn.xxx,Ads_SukkaW
@@ -98416,7 +98486,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .yfedxj.dangelicoguitars.com,Ads_SukkaW
 .yfenys.prenatal.com,Ads_SukkaW
 .yfepff.raymourflanigan.com,Ads_SukkaW
-.yferedidymis.cfd,Ads_SukkaW
 .yfhlpfombxh.com,Ads_SukkaW
 .yfkclv.asianetnews.com,Ads_SukkaW
 .yflexibilitukydt.com,Ads_SukkaW
@@ -98455,6 +98524,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .yhhuzt.gintarine.lt,Ads_SukkaW
 .yhigae.junyu-fuku.com,Ads_SukkaW
 .yhjgjk.wemakeup.it,Ads_SukkaW
+.yhjjdsrt.com,Ads_SukkaW
 .yhnwux.cartacapital.com.br,Ads_SukkaW
 .yhnwux.infomoney.com.br,Ads_SukkaW
 .yhovivsirlnkf.store,Ads_SukkaW
@@ -99142,7 +99212,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .zdx5.destinia.pe,Ads_SukkaW
 .zeabk.legionathletics.com,Ads_SukkaW
 .zealous-direction.pro,Ads_SukkaW
-.zealousclothes.pro,Ads_SukkaW
 .zealousfinance.pro,Ads_SukkaW
 .zebeckaesc.shop,Ads_SukkaW
 .zebjlmmqqbbke.top,Ads_SukkaW
@@ -99155,6 +99224,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .zeelooshashey.net,Ads_SukkaW
 .zefpks.dealdonkey.com,Ads_SukkaW
 .zekbi.milspin.com,Ads_SukkaW
+.zekraughoacm.net,Ads_SukkaW
 .zeksestasoar.net,Ads_SukkaW
 .zelle.odencat.com,Ads_SukkaW
 .zelten.fritz-berger.de,Ads_SukkaW
@@ -99219,6 +99289,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .zgsid.spaderma.com,Ads_SukkaW
 .zgtcp.hotelcollectionofficial.uk,Ads_SukkaW
 .zgthwq.cardsdirect.com,Ads_SukkaW
+.zgtsgrklbslya.store,Ads_SukkaW
 .zgumwv.stepstone.de,Ads_SukkaW
 .zgusk.easytogrowbulbs.com,Ads_SukkaW
 .zgwepi.passadena.gr,Ads_SukkaW
@@ -99476,7 +99547,6 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .zovidree.com,Ads_SukkaW
 .zoykzjajvjzyj.top,Ads_SukkaW
 .zozdpe.nrv.nl,Ads_SukkaW
-.zozvjoawtvxpi.online,Ads_SukkaW
 .zozwyc.moscot.com,Ads_SukkaW
 .zpashl.amgakuin.co.jp,Ads_SukkaW
 .zpaxretpokt.com,Ads_SukkaW
@@ -99701,6 +99771,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .zythumgeogen.click,Ads_SukkaW
 .zyvyto.eadplataforma.com,Ads_SukkaW
 .zyxbltkkgkmon.site,Ads_SukkaW
+.zyzqkbkeyqwzq.top,Ads_SukkaW
 .zz.bdstatic.com,Ads_SukkaW
 .zz.zaadana.com,Ads_SukkaW
 .zzaoea.costacrociere.it,Ads_SukkaW
