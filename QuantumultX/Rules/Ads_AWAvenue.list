@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 859
+# 规则统计: 862
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 851
-#Update content: 拦截某博广告，感谢 @0xLac #161
-#Update time: 2025-08-18 16:44:05 UTC+8
+#Total lines: 854
+#Update content: 追加 tieba 追踪日志 by PΣΛᄃΣ
+#Update time: 2025-08-19 14:09:45 UTC+8
 #Version: 1.6.8-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -387,6 +387,7 @@
 .heads-ak.spotify.com.edgesuite.net,Ads_AWAvenue
 .heads-fa.spotify.com,Ads_AWAvenue
 .hexagon-analytics.com,Ads_AWAvenue
+.hlog.bigda.com,Ads_AWAvenue
 .hm.baidu.com,Ads_AWAvenue
 .hmma.baidu.com,Ads_AWAvenue
 .hotupgrade.hpplay.cn,Ads_AWAvenue
@@ -523,6 +524,7 @@
 .mini-prog-drm.vodplayvideo.net,Ads_AWAvenue
 .mission-pub.smart-tv.cn,Ads_AWAvenue
 .miui-fxcse.avlyun.com,Ads_AWAvenue
+.mlog.bigda.com,Ads_AWAvenue
 .mmgame.qpic.cn,Ads_AWAvenue
 .mnqlog.ldmnq.com,Ads_AWAvenue
 .moatads.com,Ads_AWAvenue
@@ -782,6 +784,7 @@
 .umengacs.m.taobao.com,Ads_AWAvenue
 .umengjmacs.m.taobao.com,Ads_AWAvenue
 .umini.shujupie.com,Ads_AWAvenue
+.union-mlog.bigda.com,Ads_AWAvenue
 .union.baidu.cn,Ads_AWAvenue
 .union.baidu.com,Ads_AWAvenue
 .update.avlyun.sec.miui.com,Ads_AWAvenue
