@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3927
+# 规则统计: 3929
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -84,9 +84,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-14T05:58:46.607Z
-# Last Updated: 2025-08-19T09:04:12.314Z
+# Last Updated: 2025-08-22T17:28:06.359Z
 # License: AGPL 3.0
-# Size: 3836
+# Size: 3838
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -241,6 +241,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/,CDN
 .cdn.manage.runcloud.io,CDN
 .cdn.medallia.com,CDN
 .cdn.mozilla.net,CDN
+.cdn.neustar,CDN
 .cdn.nimg.jp,CDN
 .cdn.nintendo.net,CDN
 .cdn.optimizely.com,CDN
@@ -2982,6 +2983,7 @@ node.green,CDN
 nodeassets.nbcnews.com,CDN
 nodei.co,CDN
 npm.antfu.dev,CDN
+ns-cdn.neustar.biz,CDN
 ntp.msn.com,CDN
 null.jsbin.com,CDN
 o.n1mp.org,CDN

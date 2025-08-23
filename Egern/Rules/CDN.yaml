@@ -81,9 +81,9 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-14T05:58:46.607Z
-# Last Updated: 2025-08-19T09:04:12.314Z
+# Last Updated: 2025-08-22T17:28:06.359Z
 # License: AGPL 3.0
-# Size: 3836
+# Size: 3838
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -238,6 +238,7 @@ URL-REGEX,^http://www\.microsoft\.com/pkiops/
 .cdn.manage.runcloud.io
 .cdn.medallia.com
 .cdn.mozilla.net
+.cdn.neustar
 .cdn.nimg.jp
 .cdn.nintendo.net
 .cdn.optimizely.com
@@ -2979,6 +2980,7 @@ node.green
 nodeassets.nbcnews.com
 nodei.co
 npm.antfu.dev
+ns-cdn.neustar.biz
 ntp.msn.com
 null.jsbin.com
 o.n1mp.org
