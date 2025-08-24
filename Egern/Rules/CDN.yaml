@@ -29,6 +29,7 @@ DOMAIN-WILDCARD,*.kuaikan-cdn?.com
 DOMAIN-WILDCARD,*.skyearth?.xyz
 DOMAIN-WILDCARD,appcenter-filemanagement-*.cloudapp.net
 DOMAIN-WILDCARD,assets*.freshdesk.com
+DOMAIN-WILDCARD,assets.*.imaga.co
 DOMAIN-WILDCARD,blog-imgs-??.2nt.com
 DOMAIN-WILDCARD,blog-imgs-??.fc2.com
 DOMAIN-WILDCARD,browser-intake-*-datadoghq.com
@@ -79,11 +80,11 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-08-22T17:28:05.742Z
-# Last Updated: 2025-08-22T17:28:06.359Z
+# Last Updated: 2025-08-23T13:15:06.142Z
+# Last Updated: 2025-08-23T13:15:10.392Z
 # License: AGPL 3.0
-# Size: 3838
-# Size: 77
+# Size: 3841
+# Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -1403,6 +1404,7 @@ assets.time.com
 assets.toiimg.com
 assets.tokopedia.net
 assets.toot.cafe
+assets.tvtropes.org
 assets.twitch.tv
 assets.unifi-ai.com
 assets.upload.io
@@ -1468,6 +1470,7 @@ badges.greenkeeper.io
 bcdn.starapps.studio
 bcmedia.bitchute.com
 before.good-apps.co
+beta.eslint-react.xyz
 bhl.scpwikicn.com
 blacklist.tampermonkey.net
 blade-public-static.blade-group.com
@@ -3607,6 +3610,7 @@ static.tp-link.com
 static.tradingview.com
 static.tronscan.org
 static.tumblr.com
+static.tvtropes.org
 static.twitchcdn.net
 static.typingclub.com
 static.ui.com

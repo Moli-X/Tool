@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3928
+# 规则统计: 3932
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -32,6 +32,7 @@ HOST-WILDCARD,*.kuaikan-cdn?.com,CDN
 HOST-WILDCARD,*.skyearth?.xyz,CDN
 HOST-WILDCARD,appcenter-filemanagement-*.cloudapp.net,CDN
 HOST-WILDCARD,assets*.freshdesk.com,CDN
+HOST-WILDCARD,assets.*.imaga.co,CDN
 HOST-WILDCARD,blog-imgs-??.2nt.com,CDN
 HOST-WILDCARD,blog-imgs-??.fc2.com,CDN
 HOST-WILDCARD,browser-intake-*-datadoghq.com,CDN
@@ -82,11 +83,11 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-08-22T17:28:05.742Z
-# Last Updated: 2025-08-22T17:28:06.359Z
+# Last Updated: 2025-08-23T13:15:06.142Z
+# Last Updated: 2025-08-23T13:15:10.392Z
 # License: AGPL 3.0
-# Size: 3838
-# Size: 77
+# Size: 3841
+# Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -1406,6 +1407,7 @@ assets.time.com,CDN
 assets.toiimg.com,CDN
 assets.tokopedia.net,CDN
 assets.toot.cafe,CDN
+assets.tvtropes.org,CDN
 assets.twitch.tv,CDN
 assets.unifi-ai.com,CDN
 assets.upload.io,CDN
@@ -1471,6 +1473,7 @@ badges.greenkeeper.io,CDN
 bcdn.starapps.studio,CDN
 bcmedia.bitchute.com,CDN
 before.good-apps.co,CDN
+beta.eslint-react.xyz,CDN
 bhl.scpwikicn.com,CDN
 blacklist.tampermonkey.net,CDN
 blade-public-static.blade-group.com,CDN
@@ -3610,6 +3613,7 @@ static.tp-link.com,CDN
 static.tradingview.com,CDN
 static.tronscan.org,CDN
 static.tumblr.com,CDN
+static.tvtropes.org,CDN
 static.twitchcdn.net,CDN
 static.typingclub.com,CDN
 static.ui.com,CDN
