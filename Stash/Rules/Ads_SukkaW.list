@@ -1,5 +1,5 @@
 # 规则名称: Ads_SukkaW
-# 规则统计: 104566
+# 规则统计: 104568
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,aedns.weixin.qq.com
@@ -612,6 +612,7 @@ DOMAIN-WILDCARD,polaris*-normal-*.zijieapi.com
 DOMAIN-WILDCARD,policy*.cookieinformation.com
 DOMAIN-WILDCARD,prebid-cache*.ifunny.co
 DOMAIN-WILDCARD,press-continue.*.top
+DOMAIN-WILDCARD,profile-ourtime.*.workers.dev
 DOMAIN-WILDCARD,profitablecpm*.com
 DOMAIN-WILDCARD,pttavm.*.com.tr
 DOMAIN-WILDCARD,putrr*.com
@@ -716,6 +717,7 @@ DOMAIN-WILDCARD,vincomplaza.*.top
 DOMAIN-WILDCARD,violation-*.surge.sh
 DOMAIN-WILDCARD,vnote-*.myqcloud.com
 DOMAIN-WILDCARD,vns86.oss-*.aliyuncs.com
+DOMAIN-WILDCARD,voice-ourtime.*.workers.dev
 DOMAIN-WILDCARD,vssid.*.cc
 DOMAIN-WILDCARD,w*statistics.info
 DOMAIN-WILDCARD,weoidnet*.b-cdn.net
@@ -793,11 +795,11 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 #   - https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-newsletters.txt
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-08-24T15:09:29.127Z
 # Last Updated: 2025-08-26T17:05:20.825Z
+# Last Updated: 2025-08-27T05:16:11.999Z
 # License: AGPL 3.0
 # Size: 103761
-# Size: 767
+# Size: 769
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Non-IP
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-mining

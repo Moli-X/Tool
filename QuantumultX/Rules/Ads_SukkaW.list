@@ -1,5 +1,5 @@
 # 规则名称: Ads_SukkaW
-# 规则统计: 104569
+# 规则统计: 104571
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,Ads_SukkaW
 HOST,aedns.weixin.qq.com,Ads_SukkaW
@@ -612,6 +612,7 @@ HOST-WILDCARD,polaris*-normal-*.zijieapi.com,Ads_SukkaW
 HOST-WILDCARD,policy*.cookieinformation.com,Ads_SukkaW
 HOST-WILDCARD,prebid-cache*.ifunny.co,Ads_SukkaW
 HOST-WILDCARD,press-continue.*.top,Ads_SukkaW
+HOST-WILDCARD,profile-ourtime.*.workers.dev,Ads_SukkaW
 HOST-WILDCARD,profitablecpm*.com,Ads_SukkaW
 HOST-WILDCARD,pttavm.*.com.tr,Ads_SukkaW
 HOST-WILDCARD,putrr*.com,Ads_SukkaW
@@ -716,6 +717,7 @@ HOST-WILDCARD,vincomplaza.*.top,Ads_SukkaW
 HOST-WILDCARD,violation-*.surge.sh,Ads_SukkaW
 HOST-WILDCARD,vnote-*.myqcloud.com,Ads_SukkaW
 HOST-WILDCARD,vns86.oss-*.aliyuncs.com,Ads_SukkaW
+HOST-WILDCARD,voice-ourtime.*.workers.dev,Ads_SukkaW
 HOST-WILDCARD,vssid.*.cc,Ads_SukkaW
 HOST-WILDCARD,w*statistics.info,Ads_SukkaW
 HOST-WILDCARD,weoidnet*.b-cdn.net,Ads_SukkaW
@@ -796,11 +798,11 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 #   - https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-newsletters.txt
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-08-24T15:09:29.127Z
 # Last Updated: 2025-08-26T17:05:20.825Z
+# Last Updated: 2025-08-27T05:16:11.999Z
 # License: AGPL 3.0
 # Size: 103761
-# Size: 767
+# Size: 769
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Non-IP
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-mining
