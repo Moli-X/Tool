@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 844
+# 规则统计: 840
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,acg.tv
@@ -826,10 +826,6 @@ DOMAIN-SUFFIX,zui.com
 DOMAIN-SUFFIX,zuimeitianqi.com
 DOMAIN-SUFFIX,zuoyebang.com
 DOMAIN-SUFFIX,zybang.com
-DOMAIN-WILDCARD,*.ffzy-online?.com
-DOMAIN-WILDCARD,*.ffzy-play?.com
-DOMAIN-WILDCARD,*.lz-cdn?.com
-DOMAIN-WILDCARD,*.lz-cdn??.com
 DOMAIN-WILDCARD,*.qhimgs?.com
 USER-AGENT,%E4%BC%98%E9%85%B7*
 USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*
@@ -838,9 +834,9 @@ USER-AGENT,TeslaMap
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-08-08T08:47:37.805Z
+# Last Updated: 2025-08-28T11:24:00.041Z
 # License: AGPL 3.0
-# Size: 833
+# Size: 829
 # Sukka's Ruleset - Domestic Domains
 # This file contains known addresses that are avaliable in the Mainland China.
 ################## EOF ##################
