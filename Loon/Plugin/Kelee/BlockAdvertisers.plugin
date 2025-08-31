@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!date=2025-08-27 03:06:48
+#!date=2025-08-31 04:23:37
 
 [Rule]
 AND, ((DOMAIN-KEYWORD, tnc), (OR, ((DOMAIN-SUFFIX, capcutapi.com), (DOMAIN-SUFFIX, zijieapi.com), (DOMAIN-SUFFIX, isnssdk.com), (DOMAIN-SUFFIX, toutiaoapi.com), (DOMAIN-SUFFIX, bytedance.com), (DOMAIN-SUFFIX, snssdk.com), (DOMAIN-SUFFIX, sgsnssdk.com)))), DIRECT
@@ -16,6 +16,10 @@ AND, ((DOMAIN-KEYWORD, tnc), (OR, ((DOMAIN-SUFFIX, capcutapi.com), (DOMAIN-SUFFI
 AND, ((OR, ((DOMAIN-KEYWORD, api-access), (DOMAIN-KEYWORD, log-api))), (DOMAIN-KEYWORD, pangolin-sdk-toutiao)), REJECT
 AND, ((DOMAIN-KEYWORD, -ad-), (DOMAIN-SUFFIX, byteimg.com)), REJECT
 AND, ((DOMAIN-KEYWORD, ads), (DOMAIN-KEYWORD, normal), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+
+DOMAIN, gromore.pangolin-sdk-toutiao.com, REJECT
+DOMAIN, sf3-fe-tos.pglstatp-toutiao.com, REJECT
+
 DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
 DOMAIN-KEYWORD, -ad.byteoversea.com, REJECT
 DOMAIN-KEYWORD, asiad.byteactivity, REJECT
