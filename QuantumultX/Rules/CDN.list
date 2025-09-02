@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3915
+# 规则统计: 3918
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -84,9 +84,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-26T17:05:20.970Z
-# Last Updated: 2025-08-31T19:19:28.027Z
+# Last Updated: 2025-09-01T17:10:37.268Z
 # License: AGPL 3.0
-# Size: 3824
+# Size: 3827
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1008,6 +1008,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .strpst.com,CDN
 .stylexjs.com,CDN
 .substackcdn.com,CDN
+.supabase.co,CDN
 .superfiliate-cdn.com,CDN
 .surge.sh,CDN
 .surrit.com,CDN
@@ -1679,6 +1680,7 @@ cdn.delight-vr.com,CDN
 cdn.designerapp.osi.office.net,CDN
 cdn.designsystem.arm.com,CDN
 cdn.deta.space,CDN
+cdn.devdojo.com,CDN
 cdn.devolutions.net,CDN
 cdn.dexscreener.com,CDN
 cdn.dnsimple.com,CDN
@@ -3116,6 +3118,7 @@ proxy.spigotmc.org,CDN
 ps.w.org,CDN
 psp-logos.uptimerobot.com,CDN
 pub.creaders.net,CDN
+public-assets.postmarkapp.com,CDN
 public-assets.typeform.com,CDN
 public-cdn.bblmw.com,CDN
 public-files.gumroad.com,CDN

@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 840
+# 规则统计: 842
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,ChinaDomain
 HOST,acg.tv,ChinaDomain
@@ -694,6 +694,8 @@ HOST-SUFFIX,taobao.com,ChinaDomain
 HOST-SUFFIX,taobao.org,ChinaDomain
 HOST-SUFFIX,taobaocdn.com,ChinaDomain
 HOST-SUFFIX,taopiaopiao.com,ChinaDomain
+HOST-SUFFIX,tapimg.com,ChinaDomain
+HOST-SUFFIX,taptap.cn,ChinaDomain
 HOST-SUFFIX,tb.cn,ChinaDomain
 HOST-SUFFIX,tbcache.com,ChinaDomain
 HOST-SUFFIX,tbcdn.cn,ChinaDomain
@@ -834,9 +836,9 @@ USER-AGENT,TeslaMap,ChinaDomain
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-08-28T11:24:00.041Z
+# Last Updated: 2025-09-02T10:58:20.655Z
 # License: AGPL 3.0
-# Size: 829
+# Size: 831
 # Sukka's Ruleset - Domestic Domains
 # This file contains known addresses that are avaliable in the Mainland China.
 ################## EOF ##################
