@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3918
+# 规则统计: 3922
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -84,9 +84,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-26T17:05:20.970Z
-# Last Updated: 2025-09-01T17:10:37.268Z
+# Last Updated: 2025-09-02T17:05:23.250Z
 # License: AGPL 3.0
-# Size: 3827
+# Size: 3831
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -844,6 +844,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .pressidiumcdn.com,CDN
 .prhcdn.com,CDN
 .privacy-gateway.cloudflare.com,CDN
+.prod-east.frontend.public.atl-paas.net,CDN
 .prod.public.atl-paas.net,CDN
 .project1content.com,CDN
 .proxy.startpage.com,CDN
@@ -1038,6 +1039,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .tile.openstreetmap.org,CDN
 .tile.osm.org,CDN
 .tiles-api.maps.komoot.net,CDN
+.tiles.mapbox.com,CDN
 .tindiemedia.com,CDN
 .tiqcdn.com,CDN
 .tkcdns.com,CDN
@@ -1218,6 +1220,7 @@ api.fontshare.com,CDN
 api.iconify.design,CDN
 api.indexnow.org,CDN
 api.instantly.ai,CDN
+api.media.atlassian.com,CDN
 api.mixpanel.com,CDN
 api.producthunt.com,CDN
 api.pwnedpasswords.com,CDN
@@ -1450,6 +1453,7 @@ assets9.lottiefiles.com,CDN
 assetscdn-wchat.eu.freshchat.com,CDN
 assetscdn.jable.tv,CDN
 at.cbsi.com,CDN
+atl-global.atlassian.com,CDN
 attach.mobile01.com,CDN
 attach2.mobile01.com,CDN
 attachments.office.net,CDN
@@ -1568,6 +1572,7 @@ cdn-img2.iporntv.net,CDN
 cdn-img3.iporntv.net,CDN
 cdn-live.foreignaffairs.com,CDN
 cdn-longterm.mee6.xyz,CDN
+cdn-loyalty.yotpo.com,CDN
 cdn-main.plus500.com,CDN
 cdn-media-0.freecodecamp.org,CDN
 cdn-media-1.freecodecamp.org,CDN
@@ -2759,7 +2764,6 @@ j.udn.com.tw,CDN
 jac.yahoosandbox.com,CDN
 jaws.pbs.org,CDN
 jfe-cdn.qualtrics.com,CDN
-jira-frontend-bifrost.prod-east.frontend.public.atl-paas.net,CDN
 jnmedia.ero-video.net,CDN
 js-1-cdn.airdroid.com,CDN
 js-cdn.blockchair.io,CDN
