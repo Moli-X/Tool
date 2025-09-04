@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3922
+# 规则统计: 3930
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -84,9 +84,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-26T17:05:20.970Z
-# Last Updated: 2025-09-02T17:05:23.250Z
+# Last Updated: 2025-09-03T16:09:26.000Z
 # License: AGPL 3.0
-# Size: 3831
+# Size: 3839
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -932,6 +932,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .shgcdn.com,CDN
 .shields.io,CDN
 .shopifycdn.com,CDN
+.shoplineimg.com,CDN
 .shoppulse88.store,CDN
 .shortpixel.ai,CDN
 .simgbb.com,CDN
@@ -1482,6 +1483,8 @@ badges.crowdin.net,CDN
 badges.frapsoft.com,CDN
 badges.gitter.im,CDN
 badges.greenkeeper.io,CDN
+barracuda-assets.zoovu.com,CDN
+barracuda-cdn.zoovu.com,CDN
 bcdn.starapps.studio,CDN
 bcmedia.bitchute.com,CDN
 before.good-apps.co,CDN
@@ -1512,6 +1515,7 @@ bundles.npr.org,CDN
 bunnycdn-video-assets.b-cdn.net,CDN
 businessunitprofile-cdn.trustpilot.net,CDN
 busuanzi.ibruce.info,CDN
+c-bin.b-cdn.net,CDN
 c.1password.com,CDN
 c.animaapp.com,CDN
 c.fantia.jp,CDN
@@ -1566,6 +1570,7 @@ cdn-eu.readspeaker.com,CDN
 cdn-fck.tnaflix.com,CDN
 cdn-forum.networklessons.com,CDN
 cdn-front.freepik.com,CDN
+cdn-icons-png.flaticon.com,CDN
 cdn-images-1.medium.com,CDN
 cdn-images.mailchimp.com,CDN
 cdn-img2.iporntv.net,CDN
@@ -1894,6 +1899,7 @@ cdn.servicebell.com,CDN
 cdn.setapp.com,CDN
 cdn.sheetjs.com,CDN
 cdn.shopify.com,CDN
+cdn.shoplineapp.com,CDN
 cdn.shoppinggives.com,CDN
 cdn.sift.com,CDN
 cdn.simpleicons.org,CDN
@@ -3142,6 +3148,7 @@ quriobot.com,CDN
 r.r10s.jp,CDN
 r2.1hanime.com,CDN
 r2.leadsy.ai,CDN
+r2cdn.myshopline.com,CDN
 r2cdn.perplexity.ai,CDN
 rapid-cdn.yottaa.com,CDN
 raw.github.com,CDN
@@ -3756,6 +3763,7 @@ touchgal-image.moyu.moe,CDN
 tourpic-vector.maps.komoot.net,CDN
 townsquare.media,CDN
 tracking.inflection.io,CDN
+trekcdnprod.azureedge.net,CDN
 truth.bahamut.com.tw,CDN
 tuf-repo-cdn.sigstore.dev,CDN
 tuf-repo.github.com,CDN
