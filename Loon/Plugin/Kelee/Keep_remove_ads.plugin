@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Keep_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Keep.png
-#!date=2025-05-23 13:32:55
+#!date=2025-09-07 18:09:57
 
 [Rule]
 DOMAIN, kad.gotokeep.com, REJECT
@@ -35,6 +35,8 @@ DOMAIN, kad.gotokeep.com, REJECT
 ^https:\/\/api\.gotokeep\.com\/search\/v4\/hotHashtag\/list$ reject-dict
 
 ^https:\/\/api\.gotokeep\.com\/search\/v4\/hotword\/list\? reject-dict
+
+^https:\/\/api\.gotokeep\.com\/pencil-webapp\/play\/v1\/games\? response-body-json-jq '.data.games[].microGames[] |= if .leftIcon? and .leftIcon.type == "aiMode" then del(.leftIcon) else . end'
 
 [MitM]
 hostname=api.gotokeep.com
