@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3942
+# 规则统计: 3949
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -84,9 +84,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-26T17:05:20.970Z
-# Last Updated: 2025-09-08T19:34:19.963Z
+# Last Updated: 2025-09-09T12:05:12.064Z
 # License: AGPL 3.0
-# Size: 3851
+# Size: 3858
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1996,6 +1996,7 @@ cdn0.techbang.com,CDN
 cdn01.jotfor.ms,CDN
 cdn02.jotfor.ms,CDN
 cdn03.jotfor.ms,CDN
+cdn1.affirm.com,CDN
 cdn1.airdroid.com,CDN
 cdn1.bigcommerce.com,CDN
 cdn1.dan.com,CDN
@@ -2343,6 +2344,7 @@ fesdk.nexon.com,CDN
 fiddle.fastly.dev,CDN
 fiddle.jshell.net,CDN
 file.izanmei.net,CDN
+file.zoom.us,CDN
 file1.hkepc.net,CDN
 files.armorgames.com,CDN
 files.buildwithfern.com,CDN
@@ -2615,6 +2617,7 @@ images1.cmp.optimizely.com,CDN
 images1.vinted.net,CDN
 images1.welcomesoftware.com,CDN
 images2.cmp.optimizely.com,CDN
+images2.giant-bicycles.com,CDN
 images2.welcomesoftware.com,CDN
 images3.cmp.optimizely.com,CDN
 images3.welcomesoftware.com,CDN
@@ -3510,6 +3513,7 @@ static.freedownloadmanager.org,CDN
 static.freeimages.com,CDN
 static.getbutton.io,CDN
 static.gettyimages.com,CDN
+static.giant-bicycles.com,CDN
 static.gitbook.com,CDN
 static.gl-inet.com,CDN
 static.global.visioncritical.com,CDN
@@ -3528,6 +3532,7 @@ static.ifunny.co,CDN
 static.incapsula.com,CDN
 static.independent.co.uk,CDN
 static.inferno.iheart.com,CDN
+static.inflect.com,CDN
 static.infomaniak.ch,CDN
 static.institution.grammarly.com,CDN
 static.iris.informa.com,CDN
@@ -3881,6 +3886,8 @@ web-assets.waze.com,CDN
 web-assets.zendesk.co.jp,CDN
 web-assets.zendesk.com,CDN
 web-cdn.bitrise.io,CDN
+web-sdk-cdn.eyefitu.com,CDN
+web-sdk.eyefitu.com,CDN
 web-static.archive.org,CDN
 web-static.pages.iheart.com,CDN
 web-toolbar.playstation.com,CDN

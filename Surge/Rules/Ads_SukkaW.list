@@ -1,5 +1,5 @@
 # 规则名称: Ads_SukkaW
-# 规则统计: 104066
+# 规则统计: 103958
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,aedns.weixin.qq.com
@@ -305,6 +305,7 @@ DOMAIN-WILDCARD,*-ulogl*.kwai-pro.com
 DOMAIN-WILDCARD,*.a-akamaihd.com
 DOMAIN-WILDCARD,*.ad.*.prod.hosts.ooklaserver.net
 DOMAIN-WILDCARD,*.favoripirlanta.com
+DOMAIN-WILDCARD,*.libaishuo.com
 DOMAIN-WILDCARD,*.tracking.*.miui.com
 DOMAIN-WILDCARD,*ad.durasite.net
 DOMAIN-WILDCARD,*adapt-beacon.awsprodops.movetv.com
@@ -802,11 +803,11 @@ URL-REGEX,/igd\.xml
 #   - https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-newsletters.txt
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-09-08T19:25:05.009Z
-# Last Updated: 2025-09-08T19:25:05.010Z
+# Last Updated: 2025-09-09T05:16:03.276Z
+# Last Updated: 2025-09-09T12:05:11.005Z
 # License: AGPL 3.0
-# Size: 103252
-# Size: 773
+# Size: 103143
+# Size: 774
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Non-IP
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-mining
@@ -838,6 +839,7 @@ URL-REGEX,/igd\.xml
 .03b5f525af.com
 .03d756a534.com
 .03t441b8w.com
+.04259544fc.a9562f872f.com
 .04b9055b2a.com
 .04o.fun
 .054ii.com
@@ -1020,6 +1022,7 @@ URL-REGEX,/igd\.xml
 .16134024.artcollection.io
 .161779.publy.co
 .165tchuang.com
+.1668420cbb.com
 .1675450967.rsc.cdn77.org
 .167999d759.com
 .168523.shop
@@ -1302,7 +1305,6 @@ URL-REGEX,/igd\.xml
 .3.ssqzj.com
 .300daytravel.com
 .301848.com
-.30d5shnjq.de
 .30e7ff2c41.com
 .30hccor10.de
 .30koqnlks.de
@@ -1578,6 +1580,7 @@ URL-REGEX,/igd\.xml
 .5ik.icu
 .5ivy3ikkt.com
 .5jgwflo4y935b8udrp.www.pmn-nerez.cz
+.5kmqy60r7.com
 .5mm.zxfw5.cn
 .5nfc.net
 .5nt1gx7o57.com
@@ -1598,7 +1601,6 @@ URL-REGEX,/igd\.xml
 .6068372.huckleberry-labs.com
 .609999.xyz
 .6109.org
-.611b2ec55c.com
 .614514.com
 .61d7a302a1.com
 .61e564cc00.com
@@ -1657,6 +1659,7 @@ URL-REGEX,/igd\.xml
 .6c641lgikp.top
 .6cjdya3djn.com
 .6cs.icu
+.6d092bcd12.com
 .6d63d3.com
 .6dbc7ad876.com
 .6dp0i7.ru
@@ -1814,7 +1817,6 @@ URL-REGEX,/igd\.xml
 .888xx222kk.com
 .889dbee9c9.com
 .88ad.top
-.88bb36fab4.com
 .88d7b6aa44fb8eb.com
 .88ddebd3d3.com
 .88infra-strat.com
@@ -2261,7 +2263,6 @@ URL-REGEX,/igd\.xml
 .a1.tuke8.com
 .a1.twtym.com
 .a10.nationalreview.com
-.a1131034ac.1668420cbb.com
 .a11k.com
 .a11ybar.com
 .a14net.com
@@ -2281,6 +2282,7 @@ URL-REGEX,/igd\.xml
 .a3.jandan.net
 .a3.ogt.jp
 .a352.sandiegouniontribune.com
+.a3c72512d5.com
 .a3f3edf924.7470c4cda5.com
 .a431d890c6.com
 .a433.dailypress.com
@@ -2756,7 +2758,6 @@ URL-REGEX,/igd\.xml
 .a8wakiga.ike-sunshine.co.jp
 .a8wristcut.ike-sunshine.co.jp
 .a8x.piece-kaitori.jp
-.a9562f872f.com
 .a9684972c2.com
 .a9d8e7b6i5s.andgino.jp
 .aa-aem.hamamatsu.com
@@ -2881,6 +2882,7 @@ URL-REGEX,/igd\.xml
 .aaqaz.cn
 .aaqnpa.sizeofficial.se
 .aaqrvt.thefryecompany.com
+.aarcpcukxe.net
 .aardvark.considerable.cx
 .aardvark.mission-austria.at
 .aardvark.revolana.rs
@@ -2937,7 +2939,6 @@ URL-REGEX,/igd\.xml
 .abadit5rckd.com
 .abaolokyjmrrb.top
 .abastur.ubmmexico.com
-.abattuhaptere.digital
 .abberantdisheartenbandage.com
 .abberantpawnpalette.com
 .abbib.bikesonline.com
@@ -2995,6 +2996,7 @@ URL-REGEX,/igd\.xml
 .abclefabletor.com
 .abdadde321.com
 .abdicatebirchcoolness.com
+.abdicateeffectlucky.com
 .abdlnkjs.com
 .abdpac.williamsshoes.com.au
 .abdrjm.eurostarshotels.de
@@ -3330,6 +3332,7 @@ URL-REGEX,/igd\.xml
 .accommodateyours.com
 .accommodatingspygenetically.com
 .accompanycollapse.com
+.accompanynovemberexclusion.com
 .accomplished-object.com
 .accomplishedpersuadedprinter.com
 .accomplishmentfreeze.com
@@ -3370,6 +3373,7 @@ URL-REGEX,/igd\.xml
 .achamoasozom.net
 .achcdn.com
 .achecktsunami.digital
+.achenesspass.life
 .acheronascyrum.cfd
 .achhd.theofficeofangelascott.com
 .achievablecpmrevenue.com
@@ -5331,7 +5335,6 @@ URL-REGEX,/igd\.xml
 .afrhwdumolf.com
 .africawin.com
 .afrnc.firstimpressionironworks.com
-.afrosinserts.qpon
 .afrzbwdlmrmuk.store
 .afterdownload.com
 .afternoonmeeting.com
@@ -5567,6 +5570,7 @@ URL-REGEX,/igd\.xml
 .ailla.abphotos.link
 .aillaeuyn.com
 .ailraustak.net
+.ailuroclatch.life
 .ailzgt.cyberport.at
 .aimatch.com
 .aimco.cos.com
@@ -5641,6 +5645,7 @@ URL-REGEX,/igd\.xml
 .airabreeze-ss.zavydeals.com
 .airairgu.com
 .airakgyl.com
+.airbusapport.world
 .airclairu-ss.olladeals.com
 .aircraftreign.com
 .airgeecigee.net
@@ -5791,7 +5796,7 @@ URL-REGEX,/igd\.xml
 .akuleamazona.shop
 .akutapro.com
 .akviv.snagtights.eu
-.akvvkmqezvwvb.top
+.akvvkmqezvwlw.top
 .akvvltgfzmxvj.website
 .akzawlyyllbwj.top
 .akzdrh.catofashions.com
@@ -5938,6 +5943,7 @@ URL-REGEX,/igd\.xml
 .albss.com
 .albve.shopcarteblanche.com
 .alchemysocial.com
+.alcidkits.com
 .alcotestspro-ss.offeroshop.com
 .alcroconawa.com
 .ald.aldautomotive.be
@@ -5973,7 +5979,6 @@ URL-REGEX,/igd\.xml
 .alfredatitres.com
 .alga9frog.com
 .algediduala.com
-.algidforkers.cfd
 .algjbzwaljlmk.top
 .algoresdubby.click
 .algothitaon.com
@@ -6016,7 +6021,6 @@ URL-REGEX,/igd\.xml
 .alkannaroit.world
 .alklinker.com
 .allansindle.shop
-.allaysprau.life
 .allegemagnanimityensue.com
 .allegianceenableselfish.com
 .alleliteads.com
@@ -6143,7 +6147,6 @@ URL-REGEX,/igd\.xml
 .aluminsunfit.click
 .aluminumoutageprovince.com
 .alumni.qualfon.com
-.alumqehtdjwxr.store
 .alvearycrenels.digital
 .alwaysahorse.com
 .alwayscare.starmountlife.com
@@ -6152,7 +6155,6 @@ URL-REGEX,/igd\.xml
 .alwwwicavoln.com
 .alxbgo.com
 .alxc.addlv.smt.docomo.ne.jp
-.alxvuqwwywtbs.space
 .alzaoknynjbq.top
 .alzlwkkwyvrm.top
 .alzns.carters.com
@@ -6175,6 +6177,7 @@ URL-REGEX,/igd\.xml
 .amaerodactylon.com
 .amalettbeltis.rest
 .amanad.adtdp.com
+.amangdullest.digital
 .amar.casualpolostore.com
 .amar.minimartbd.store
 .amarh.coniferkingdom.com
@@ -6215,7 +6218,6 @@ URL-REGEX,/igd\.xml
 .amdc.m.taobao.com
 .amdcopen.m.taobao.com
 .amelatrina.com
-.amenageswaver.digital
 .amer.juniper.net
 .americanos.v4company.com
 .americasbrandperformancesupport.hilton.com
@@ -6232,6 +6234,7 @@ URL-REGEX,/igd\.xml
 .ami.coppermakersquare.com
 .amiabledelinquent.com
 .amicoustubular.rest
+.amidotringle.click
 .amidoxypochard.com
 .amige.seasidefuneral.com
 .amigojimbang.com
@@ -6260,7 +6263,6 @@ URL-REGEX,/igd\.xml
 .amo.myoyster.mx
 .amobee.com
 .amoddishor.com
-.amolishloos.rest
 .amon1.net
 .amongfurfooz.cfd
 .amoochaw.com
@@ -6341,6 +6343,7 @@ URL-REGEX,/igd\.xml
 .ana.skypemeet.net
 .ana.tv5unis.ca
 .ana.uhyou.com
+.anabolyjarveys.digital
 .anaconda.venturearc.io
 .anaconda.webitizeicts.com
 .anaconda.zephyrus.gg
@@ -7744,6 +7747,7 @@ URL-REGEX,/igd\.xml
 .anjmaoaoazmab.top
 .anjo.vivercuidadores.com.br
 .ankdoier.com
+.ankgvyaa.com
 .ankolisiloam.com
 .ankpt.theproteinworks.com
 .anktjsrqkfwlrd.com
@@ -7771,7 +7775,7 @@ URL-REGEX,/igd\.xml
 .annulusagt.com
 .annwwu.guitarcenter.com
 .anodoswieldy.digital
-.anokyqqkambak.top
+.anokyqqkamzkq.top
 .anomiterechal.world
 .anon-stats.eff.org
 .anontimes.com
@@ -7902,6 +7906,7 @@ URL-REGEX,/igd\.xml
 .aoao12011iis.top
 .aoazij.calcadolivre.com
 .aobsonphkty.com
+.aocaxppjxvhfj.online
 .aod.echovisuals.com
 .aod4.societegenerale.fr
 .aod719.bloominggood.nl
@@ -9893,7 +9898,6 @@ URL-REGEX,/igd\.xml
 .aptlyerring.com
 .aptnessdowp.life
 .aptoide-mmp.aptoide.com
-.aptoticwrecked.shop
 .apv-launcher.minute.ly
 .apvdr.com
 .apvroftoomqjy.site
@@ -9989,7 +9993,6 @@ URL-REGEX,/igd\.xml
 .ardslediana.com
 .ardssandshrewon.com
 .ardsvenipedeon.com
-.areegroudseft.net
 .areekmonase.click
 .areelektrosstor.com
 .arena.thyngster.com
@@ -10031,7 +10034,6 @@ URL-REGEX,/igd\.xml
 .armadillo.superpeak.dk
 .armedtidying.com
 .armhoopindigo.click
-.armiesmarehan.shop
 .armillaboxcars.com
 .arminius.io
 .armolipid.com.ru
@@ -10175,7 +10177,6 @@ URL-REGEX,/igd\.xml
 .aserve1.net
 .asewlfjqwlflkew.com
 .asf4f.us
-.asg.faperoni.com
 .asg.pornoplay.online
 .asg.sdtraff.com
 .asgadmp.cc
@@ -10466,6 +10467,7 @@ URL-REGEX,/igd\.xml
 .atgallader.com
 .atgt.grafana.com
 .atgtfj.bettermusic.com.au
+.athaveresultedinncr.org
 .athena-event-provider.n11.com
 .athena.api.kwalee.com
 .atheslkgczrrp.online
@@ -10510,6 +10512,7 @@ URL-REGEX,/igd\.xml
 .atoneturpid.cyou
 .atormbvftvvg.com
 .atoso.alphatonicoffers.online
+.atourdouar.life
 .atozkids.dgt.srv.br
 .atpanchama.com
 .atpansagean.com
@@ -10663,7 +10666,6 @@ URL-REGEX,/igd\.xml
 .auhungou.com
 .auklettabbied.cyou
 .auksaichockoa.net
-.aulahmuuniglx.space
 .auletemaness.rest
 .aulingimpora.club
 .aullwp.sportisimo.sk
@@ -10829,6 +10831,7 @@ URL-REGEX,/igd\.xml
 .awaps.yandex.ru
 .awardchirpingenunciate.com
 .awarealley.com
+.awarenessprovisions.com
 .awavjblrweqbj.top
 .awbbcre.com
 .awbbjmp.com
@@ -11403,7 +11406,6 @@ URL-REGEX,/igd\.xml
 .baitu3lllqubyqmttdkjsv.com
 .baivooheephufub.net
 .baj.fanwenzhan.com
-.bajrimunguba.digital
 .bakertangiblebehaved.com
 .bakeryrindy.digital
 .bakgb.aspengreen.com
@@ -11558,7 +11560,6 @@ URL-REGEX,/igd\.xml
 .baton.cuetv.online
 .bats.video.yahoo.com
 .batsavcdn.ksmobile.net
-.batsmantoppled.click
 .battepush.com
 .battersbattel.click
 .batteryod.com
@@ -11580,7 +11581,6 @@ URL-REGEX,/igd\.xml
 .bawixi.xyz
 .bayardscar.rest
 .bayarea.summitry.com
-.baybushfinites.help
 .bayctrk.com
 .bayimob.com
 .bayousabris.cyou
@@ -11873,7 +11873,6 @@ URL-REGEX,/igd\.xml
 .beafdf.restaupro.com
 .beagle.prod.tda.link
 .beakexcursion.com
-.beakieryuppie.help
 .beakpee.com
 .bealafulup.com
 .beam.mjhlifesciences.com
@@ -11945,7 +11944,6 @@ URL-REGEX,/igd\.xml
 .beemolgator.com
 .beenedsl.com
 .beeperconsiderably.com
-.beepnested.help
 .beer2s.millerbrewing.com
 .beerto.cn
 .beeryfolding.qpon
@@ -11972,7 +11970,6 @@ URL-REGEX,/igd\.xml
 .behance.vo.llnwd.net
 .behave.noen.at
 .behave.sn.at
-.behavesyahan.qpon
 .behavior.tongdun.net
 .behaviorbald.com
 .behejxsiiiisx.com
@@ -12015,7 +12012,6 @@ URL-REGEX,/igd\.xml
 .bemachopor.com
 .bemailgaudily.cfd
 .bemanectricr.com
-.bembabonzer.help
 .bemiltankor.com
 .bemiredflain.cfd
 .bemiresunlevel.com
@@ -12163,6 +12159,7 @@ URL-REGEX,/igd\.xml
 .betterup.gainful.com
 .betterzip.net
 .bettienh.com
+.bettingmet.com
 .bettingpartners.com
 .bettongacratia.click
 .beturtwiga.com
@@ -12225,7 +12222,6 @@ URL-REGEX,/igd\.xml
 .bfsyuwyl.com
 .bft5.destinia.fr
 .bfthrelgad.com
-.bftkkmffyyl.xyz
 .bfuijelnyv.com
 .bfvlgp.appstory.co.kr
 .bfwnbnerccsor.space
@@ -12257,7 +12253,6 @@ URL-REGEX,/igd\.xml
 .bgmovoyzmyzv.top
 .bgp.co
 .bgpis.unikclothing.co.uk
-.bgqehgved.com
 .bgrpv.mymedic.com
 .bgsgu.whitleyspeanut.com
 .bgsjz.universalstandard.com
@@ -12378,6 +12373,7 @@ URL-REGEX,/igd\.xml
 .bienvivre.chartwell.com
 .biesn.crossrope.com
 .bieuc.icu
+.biforinargonon.life
 .bigbag.sandmanden.com
 .bigbolz.com
 .bigboxads.com
@@ -12389,7 +12385,6 @@ URL-REGEX,/igd\.xml
 .bigleapforward.org
 .bigmobileads.com
 .bignaloogny.com
-.bignessglom.help
 .bignessphysics.digital
 .bigrourg.net
 .bigstoreminigames.space
@@ -12711,7 +12706,6 @@ URL-REGEX,/igd\.xml
 .blond-pollution.pro
 .blondspeaker.com
 .bloom331.top
-.bloopsagura.world
 .blotecardthumb.com
 .bloteemit.world
 .blottermorabit.cyou
@@ -12720,7 +12714,6 @@ URL-REGEX,/igd\.xml
 .blowyameen.qpon
 .blpebnytus.com
 .blpjxkhubqsmsy.xyz
-.blqwbyqqbvjoa.top
 .blrag.georgiemane.com
 .blrhel.veronicabeard.com
 .bls.aarongolub.com
@@ -12946,7 +12939,6 @@ URL-REGEX,/igd\.xml
 .bodystrickenmultitude.com
 .boeely.silumen.com
 .boelsl.lastijerasmagicas.com
-.boerumpeiakmf.space
 .boewzj.meiji-jisho.com
 .boffinsoft.com
 .boffoadsfeeds.com
@@ -12955,7 +12947,6 @@ URL-REGEX,/igd\.xml
 .bogcig.blockofgear.com
 .boghigrestarge.net
 .bogholesmarten.shop
-.boguesline.rest
 .bogus-disk.com
 .bogydompays.com
 .bohee.med-gesund.de
@@ -13182,6 +13173,7 @@ URL-REGEX,/igd\.xml
 .bpvubrpialperi.com
 .bpxxgkoj.icu
 .bqacmp.vidaxl.no
+.bqajoisaiwlxs.site
 .bqbgwwvnmjnj.top
 .bqblxvdkjtatv.store
 .bqbvgjnyqqvva.top
@@ -13492,6 +13484,7 @@ URL-REGEX,/igd\.xml
 .bringmethehats.com
 .bringthewaves.xyz
 .brinstascooter.eccocar.com
+.brioletredeyes.com
 .brionyamanist.com
 .brioscoot.eccocar.com
 .brircel.com
@@ -13511,7 +13504,6 @@ URL-REGEX,/igd\.xml
 .brm68.xnxx-hindi.com
 .brmbrenting.eccocar.com
 .brmexrentacar.eccocar.com
-.brmljcaxcchtu.space
 .brmocean.eccocar.com
 .brmoter.eccocar.com
 .brmov.eccocar.com
@@ -13537,7 +13529,6 @@ URL-REGEX,/igd\.xml
 .brokerbabe.com
 .bromidsluluai.com
 .brominsarouser.cyou
-.broonleetmen.help
 .broredir1s.site
 .brornaeq.com
 .brothdisguiseparrot.com
@@ -13661,8 +13652,10 @@ URL-REGEX,/igd\.xml
 .bthythvdrdbud.space
 .btimiyv.top
 .btiosxrukb.com
+.btixtaodva.com
 .btkbei.courir.com
 .btkdu.roundhouseprovisions.com
+.btkovrnejjrnb.com
 .btloader.com
 .btmean.cardosystems.com
 .btn.listonic.com
@@ -13740,7 +13733,6 @@ URL-REGEX,/igd\.xml
 .bujltw.multimax.net
 .bukusukses.com
 .bulbbait.com
-.bulgertrias.rest
 .bulginglair.com
 .bulgursteri.com
 .bulgycarless.rest
@@ -13905,7 +13897,6 @@ URL-REGEX,/igd\.xml
 .bvtpk.com
 .bvubje.leboncoin.fr
 .bvujr.godiva.com
-.bvwmogqvhnsdi.site
 .bvz5.destinia.com.tr
 .bvzc.cn
 .bwanassages.click
@@ -14006,6 +13997,7 @@ URL-REGEX,/igd\.xml
 .bylbnayqajggq.top
 .byouslyfrit.cfd
 .bypassduehardly.com
+.bypasspickupfaculty.com
 .bypcvbbotxnv.com
 .bypkevin.digital
 .bypllv.icu
@@ -14162,7 +14154,6 @@ URL-REGEX,/igd\.xml
 .c3metrics.medifast1.com
 .c40db36cf2.f65e53278b.com
 .c45cc75f.eulerian.io
-.c4cef5b39d.com
 .c4dv.copinesdevoyage.com
 .c4ff1123f0.com
 .c4uy.icu
@@ -14204,7 +14195,6 @@ URL-REGEX,/igd\.xml
 .caapp.levi.com
 .caaqot.com
 .cabbagereporterpayroll.com
-.cabbydzungar.qpon
 .cabinedpulping.world
 .cabinspiteprivate.com
 .cabiricaramaic.shop
@@ -14224,7 +14214,6 @@ URL-REGEX,/igd\.xml
 .caclick.baidu.com
 .cactusheadroomscaling.com
 .cad.youku.com
-.cad4defd63.a3c72512d5.com
 .cadcc.icu
 .cadence33.top
 .caderonline.bu.edu
@@ -14252,7 +14241,6 @@ URL-REGEX,/igd\.xml
 .cahootszincs.world
 .cai75tp.com
 .caihooduko.com
-.cairnsvoteen.life
 .cairoanoahaur.net
 .caitoasece.com
 .caizaipt.net
@@ -14270,6 +14258,7 @@ URL-REGEX,/igd\.xml
 .calamityfortuneaudio.com
 .calamitymyselfprong.com
 .calchemodica.click
+.calcheossal.cyou
 .calcpol.com
 .calculatingcircle.com
 .calculationperildomestic.com
@@ -14280,6 +14269,7 @@ URL-REGEX,/igd\.xml
 .caligaascites.qpon
 .caligafourier.rest
 .caligodredges.rest
+.caljdjxsfofll.store
 .call.me.sel.sony.com
 .callalelel.info
 .callbrace43.trk.herniareliefcenter.com
@@ -14871,7 +14861,6 @@ URL-REGEX,/igd\.xml
 .capndr.com
 .capomodiluted.rest
 .capotesweedow.rest
-.cappersintrap.cyou
 .capping.sirius.press
 .cappumedia.com
 .capriciouscorn.com
@@ -15196,6 +15185,7 @@ URL-REGEX,/igd\.xml
 .ccllt.fromrebel.ca
 .ccmd.coveredca.com
 .ccmiocw.com
+.ccn08sth.de
 .ccnku.meibi.mx
 .ccobksxz.icu
 .ccokamif.top
@@ -15409,7 +15399,6 @@ URL-REGEX,/igd\.xml
 .ce.adsdomaintracking.com
 .ce.chi.com
 .ce.x-opt.io
-.ce6fc56927.com
 .ce71jubc2.com
 .ceasechampagneparade.com
 .cecilngoma.com
@@ -15455,7 +15444,6 @@ URL-REGEX,/igd\.xml
 .cen.acspubs.org
 .cenbrandlab.acspubs.org
 .cendrecamis.top
-.cenedirgie.rest
 .cengqinglin.cn
 .cenjobs.acspubs.org
 .cenmedia.acspubs.org
@@ -15605,6 +15593,7 @@ URL-REGEX,/igd\.xml
 .champagne.futurecdn.net
 .champions.betubetu.com
 .championshipcoma.com
+.champsteeds.help
 .chamtuboalteecu.net
 .chanalytics.merchantadvantage.com
 .chanced112.com
@@ -15652,6 +15641,7 @@ URL-REGEX,/igd\.xml
 .chatterfretten.com
 .chatvv.easyefh.org
 .chauckee.net
+.chauhoowhautchi.net
 .chaussew.net
 .chauvinevomit.life
 .chavoads.com
@@ -15694,6 +15684,7 @@ URL-REGEX,/igd\.xml
 .cheetah.stolenboats.info
 .cheetah.zeh.co.il
 .cheetieaha.com
+.cheexatauss.net
 .cheezwhiz.z9.web.core.windows.net
 .chef.getmenoo.com
 .chef.newtrina.com
@@ -15788,7 +15779,6 @@ URL-REGEX,/igd\.xml
 .chivalrouscalmlymexican.com
 .chivalrouscord.com
 .chiveraccede.com
-.chiviesmildest.rest
 .chjesusdgbfgl.website
 .chjlg.safishing.com
 .chl.carriagehillco.com
@@ -15811,7 +15801,6 @@ URL-REGEX,/igd\.xml
 .chokersmalicho.com
 .choleicvends.help
 .cholicklyceum.qpon
-.cholummoxas.help
 .cholurd.com
 .chonaesor.com
 .chong-wu.net
@@ -15970,6 +15959,7 @@ URL-REGEX,/igd\.xml
 .cj.qidian.com
 .cj2015.drywear.dk
 .cj2550.com
+.cjatrtlyqngiv.site
 .cjauuixzgxggrh.com
 .cjbdme.conquer.org
 .cjbjj.femforceshoots.com
@@ -16001,7 +15991,6 @@ URL-REGEX,/igd\.xml
 .ck123.io
 .ckaaaccihe.com
 .ckcikq.dondup.com
-.ckfaconxrhyen.website
 .ckg.vipyl.com
 .ckhillulshshg.site
 .ckies.net
@@ -16089,7 +16078,6 @@ URL-REGEX,/igd\.xml
 .clcktrck.com
 .cldirplarimo.com
 .clean.gg
-.cleanerbest.online
 .cleanhaircut.com
 .cleanlix-ss.olladeals.com
 .cleanmediaads.com
@@ -16150,6 +16138,7 @@ URL-REGEX,/igd\.xml
 .click-v4.junmediadclikrmdi.com
 .click-v4.mainexpclkdir.com
 .click-v4.preclksize.com
+.click-v4.rpdmkrclk.com
 .click.aabacosmallbusiness.com
 .click.aaptiv.com
 .click.afiliados.uol.com.br
@@ -16331,7 +16320,6 @@ URL-REGEX,/igd\.xml
 .clicktracker.iscan.nl
 .clickupto.com
 .clickurlik.com
-.clickwinks.com
 .clickwork7secure.com
 .clickxchange.com
 .client-analytics.braintreegateway.com
@@ -16372,6 +16360,7 @@ URL-REGEX,/igd\.xml
 .climatedetaindes.com
 .climbproducingdozen.com
 .clinalsomever.rest
+.clingeroutsat.com
 .clinkspurtfirmly.com
 .clipperroutesevere.com
 .cliquelead.com
@@ -16650,7 +16639,6 @@ URL-REGEX,/igd\.xml
 .cmttvv.bonprix.se
 .cmuryk.icu
 .cmxfbwwuwdyjq.site
-.cmyiojnzfirqc.website
 .cmzaly.gebrueder-goetz.de
 .cn.bidushe.com
 .cn.lucasfinanzas.cl
@@ -16708,6 +16696,7 @@ URL-REGEX,/igd\.xml
 .cnna.io
 .cnnx.link
 .cnpmo.devotionnutrition.com
+.cnpnplkvqgh.com
 .cnpxwl.cheapcaribbean.com
 .cnqatpzabwfzc.website
 .cnstats.cdev.eu
@@ -16798,10 +16787,10 @@ URL-REGEX,/igd\.xml
 .coderformylife.info
 .codes.royalad.pl
 .codesoftchina.com
+.coeliabumpee.com
 .coelomsmandate.cfd
 .coequalhenge.rest
 .coercejavgg124.fun
-.coevalrong.help
 .coexistbenshea.cfd
 .coffee.brandzaak.nl
 .coffeesidehustle.com
@@ -16815,7 +16804,6 @@ URL-REGEX,/igd\.xml
 .cohererbowses.digital
 .cohererhidalgo.digital
 .cohfp.chairish.com
-.cohogsflyball.shop
 .coifedseemed.life
 .coignytyigh.click
 .coikujte.g-heat.com
@@ -16824,7 +16812,6 @@ URL-REGEX,/igd\.xml
 .coinad.media
 .coinadster.com
 .coincideadventure.com
-.coinersnubby.help
 .coinhive.com
 .coinsyouneed.com
 .coinzilla.io
@@ -17271,6 +17258,7 @@ URL-REGEX,/igd\.xml
 .compteur.developpez.com
 .compteur.websiteout.net
 .computers.panasonic.eu
+.computesunfast.com
 .comscore.com
 .comtecangues.world
 .comtelitalia.alcatel-lucent.com
@@ -17884,7 +17872,6 @@ URL-REGEX,/igd\.xml
 .cools-sweetclub.com
 .coolserving.com
 .coop.vmware.com
-.cooperatemarker.com
 .cooperative-convert.com
 .cooptograbin.net
 .coordinatedcoat.com
@@ -18244,6 +18231,7 @@ URL-REGEX,/igd\.xml
 .cqdnr.musclesport.com
 .cqemus.gartenhaus-gmbh.de
 .cqhqxnvjujhgix.com
+.cqigsrbandjga.store
 .cqishr.mobile.de
 .cqjgztejpzvkd.space
 .cqkikfffmcqbl.online
@@ -18390,7 +18378,6 @@ URL-REGEX,/igd\.xml
 .creatorpassenger.com
 .creaturecabbage.com
 .credifence-ss.olladeals.com
-.creedsbeating.help
 .creedthrough.com
 .creekercesium.cfd
 .creepy-frame.com
@@ -18505,7 +18492,6 @@ URL-REGEX,/igd\.xml
 .cruhut.com
 .cruiserx.net
 .cruisetourist.com
-.crumbazelate.rest
 .crumberstoa.com
 .crumbertaharah.com
 .crumbs.robinhood.com
@@ -18736,8 +18722,6 @@ URL-REGEX,/igd\.xml
 .cubersdope.life
 .cubicinjustice.com
 .cubistslakes.help
-.cubitalsidler.qpon
-.cublaconf.qpon
 .cucaido.abphotos.link
 .cuckoo.clientrock.app
 .cuckoo.cult.supply
@@ -18821,6 +18805,7 @@ URL-REGEX,/igd\.xml
 .cumbersomecake.com
 .cumbersomecarpenter.com
 .cumoftfur.com
+.cumpivoujairgad.com
 .cuneneifrack.com
 .cunle.calliesbiscuits.com
 .cunningrespectable.com
@@ -18840,7 +18825,6 @@ URL-REGEX,/igd\.xml
 .cupoabie.net
 .cuppyscubas.digital
 .cupra.euroshop.com.pe
-.cuprummechir.cyou
 .cuprumscrance.cfd
 .cups.republicoftea.com
 .cupsfullaud.digital
@@ -18861,6 +18845,7 @@ URL-REGEX,/igd\.xml
 .curledpastpatty.com
 .curlsbatter.com
 .curlycannon.com
+.curnoutrow.com
 .curoax.com
 .currentcollar.com
 .curriculture.com
@@ -18963,6 +18948,7 @@ URL-REGEX,/igd\.xml
 .cuwdjyrf.com
 .cuwtqn.doseofcolors.com
 .cuybnvyuqlizr.space
+.cuzsadabc.com
 .cv-match.sharebase.jp
 .cv-tracker.stanby.com
 .cv.2jikaikun.com
@@ -19085,7 +19071,6 @@ URL-REGEX,/igd\.xml
 .cwobhn.34heritage.com
 .cwpnnceaolies.global
 .cwputyffksq.com
-.cwqctcmhswrth.online
 .cwqhagwjoppbb.website
 .cwqljsecvr.com
 .cwsstrmgcfs.com
@@ -19117,7 +19102,6 @@ URL-REGEX,/igd\.xml
 .cxvsermlepcod.site
 .cxvwhxdbyhiuwij.com
 .cxwisl.jetstereo.com
-.cxxeqqkwiicjj.store
 .cxy88.friok.com
 .cxzygwseuwnii.website
 .cy98g9wuwn0n.angularjs.poc.glenigan.com
@@ -19977,7 +19961,6 @@ URL-REGEX,/igd\.xml
 .d71194ad75.com
 .d712.theinformation.com
 .d761erxl2qywg.cloudfront.net
-.d78c80b015.6d092bcd12.com
 .d7d3cf2e81d293050033-3dfc0615b0fd7b49143049256703bfce.ssl.cf1.rackcdn.com
 .d7dza8s7j2am6.cloudfront.net
 .d7fl3a3vwh.com
@@ -20032,7 +20015,6 @@ URL-REGEX,/igd\.xml
 .daaae00aa4.com
 .daailynews.com
 .daappretfiwnwh.com
-.dabbamonks.life
 .dabbharked.cyou
 .dabu.askmediagroup.com
 .dacianmydaus.world
@@ -20068,6 +20050,7 @@ URL-REGEX,/igd\.xml
 .daejyre.com
 .daema.charleskeith.eu
 .dafapromo.com
+.daffaite.com
 .daffodilnotifyquarterback.com
 .daffodilo44.com
 .dafgdmabrnjnk.store
@@ -20178,7 +20161,6 @@ URL-REGEX,/igd\.xml
 .darnobedienceupscale.com
 .darren01.oss-cn-beijing.aliyuncs.com
 .dart.onjoyri.de
-.dartledtow.digital
 .dasda64.fun
 .dasevernage.world
 .dash.getsitecontrol.com
@@ -23717,13 +23699,13 @@ URL-REGEX,/igd\.xml
 .data2.caleffionline.com
 .data2.doodlemobile.com
 .data2.gosquared.com
+.data284.click
 .data369.click
 .data4.ojto.pl
 .data741.click
 .data852.click
 .data963.click
 .database01p.anixe.net
-.databoilrecommendation.com
 .databridge.sixpad.jp
 .datacenterxpert.net
 .datacirrus.com
@@ -23786,7 +23768,6 @@ URL-REGEX,/igd\.xml
 .datsoaksou.net
 .datum.appfleet.com
 .datum.jsdelivr.com
-.daubyvirtue.com
 .daunoopsap.net
 .dautoupeehoar.net
 .dauzorouwo.net
@@ -23803,7 +23784,6 @@ URL-REGEX,/igd\.xml
 .dawningfutchel.rest
 .dax.yle.fi
 .day.daycontadora.com.br
-.dayanhairup.cyou
 .daymodern.com
 .daynkw.architecturaldepot.com
 .daytimereductionactually.com
@@ -24339,9 +24319,7 @@ URL-REGEX,/igd\.xml
 .depzdhamot.com
 .deqik.com
 .deqiypfdqbl.xyz
-.derailshaws.digital
 .deraz.habitnest.com
-.derbieshaft.rest
 .derfsyhdcskpm.website
 .derideskid.com
 .dermagrumphy.shop
@@ -24350,6 +24328,7 @@ URL-REGEX,/igd\.xml
 .derwbl.icu
 .desabrator.com
 .desaguaro.saguaro.com
+.desaltsallo.help
 .descarga.veikul.com
 .descargar.billeteramango.com
 .descargar.telocompro.com.bo
@@ -24626,7 +24605,6 @@ URL-REGEX,/igd\.xml
 .dhmdja.trueprotein.com.au
 .dhmfgzuhhusoz.online
 .dhnnbfok.icu
-.dhnxalgfditdo.online
 .dhole.samuelhubbard.com
 .dhonphehr.com
 .dhootiepawed.com
@@ -24820,7 +24798,6 @@ URL-REGEX,/igd\.xml
 .dilowhang.com
 .dilute08062025.shop
 .dimao.site
-.dimberlutra.life
 .dimensions.mappy.com
 .dimessing-parker.com
 .dimmerlingowashable.com
@@ -24884,12 +24861,12 @@ URL-REGEX,/igd\.xml
 .dirtharvestnickel.com
 .dirty.games
 .disableadblock.com
+.disadvantageattached.com
 .disagreeabledrop.com
 .disamisgerbera.cyou
 .disappearheedless.com
 .disappearsurgery.com
 .disastrous-protection.com
-.discerpsaying.cyou
 .disconnectedlasting.com
 .disconnectfrequentinvalid.com
 .discourage072925.shop
@@ -25000,7 +24977,6 @@ URL-REGEX,/igd\.xml
 .ditingzemstvo.com
 .ditplroryawzm.store
 .diuronteresa.com
-.dive77kt.com
 .diverhaul.com
 .dividedintegrationtransparent.com
 .dividedscientific.com
@@ -25364,6 +25340,7 @@ URL-REGEX,/igd\.xml
 .doesnscapha.com
 .dof9zd9l290mz.cloudfront.net
 .dofca.thebeardstruggle.com
+.doffsmwgl.com
 .doflygonan.com
 .dofpwadx.com
 .dog.christinamoore.us
@@ -25374,7 +25351,6 @@ URL-REGEX,/igd\.xml
 .dogbedscentral.com
 .dogcollarfavourbluff.com
 .dogeyintro.cyou
-.dogfallkeach.qpon
 .doggieshome.com
 .dogo.intel.cn
 .dogo.intel.co.jp
@@ -25402,6 +25378,7 @@ URL-REGEX,/igd\.xml
 .dolastagne.rest
 .dolatiaschan.com
 .dolatiosom.com
+.dolcianjaypie.shop
 .dolcqtiqbxoeq.com
 .dolej.beyondriders.com
 .dolinghugely.digital
@@ -25522,7 +25499,6 @@ URL-REGEX,/igd\.xml
 .dotcounter.douyucdn.cn
 .dotedgiddied.click
 .dotedwiikite.com
-.dotishlarix.help
 .dotomi.com
 .dotserver.douyucdn.cn
 .dotsrv.com
@@ -25633,7 +25609,6 @@ URL-REGEX,/igd\.xml
 .dppafdqpgfxos.store
 .dppzmgxpxwnnk.space
 .dprptfbtilpmp.site
-.dpsq2uzakdgqz.cloudfront.net
 .dpst35vkvd2u3.cloudfront.net
 .dpsusqs20.com
 .dptgdj.usagi-online.com
@@ -25698,6 +25673,7 @@ URL-REGEX,/igd\.xml
 .drau.viessmann.si
 .drauvea.com
 .drawbackprotectivecut.com
+.drawlhammy.shop
 .drawnetexxon.shop
 .drawx.xyz
 .drbbzzs.xyz
@@ -25825,11 +25801,11 @@ URL-REGEX,/igd\.xml
 .dsdsg44.fun
 .dseel9.com
 .dseloqua.danskespil.dk
+.dseudvepnmooe.net
 .dsfe19.madeindesign.com
 .dsfh2.icu
 .dsfvmx.click
 .dsg.interia.pl
-.dsgtosabuqcil.website
 .dsh7ky7308k4b.cloudfront.net
 .dshcej.aosom.co.uk
 .dsifi.toms.com
@@ -26444,6 +26420,7 @@ URL-REGEX,/igd\.xml
 .eahkk.openfarmpet.com
 .eailmq.lounge-b.co.kr
 .eakaih.creditas.com
+.eakpspoytvnti.store
 .eakwza.bipicar.com
 .ealeo.com
 .eamrxyoyatwgm.website
@@ -26481,6 +26458,7 @@ URL-REGEX,/igd\.xml
 .easter-analytics.com
 .eastrk-dn.com
 .eastrk-lg.com
+.easy-contact-club.com
 .easy-dating.org
 .easy-love-zone.com
 .easy.fixoem.com
@@ -26692,7 +26670,6 @@ URL-REGEX,/igd\.xml
 .eclinerybelfast.org
 .eclkmpbn.com
 .eclkmpsa.com
-.eclvgswxvthwx.space
 .ecm.agravis.de
 .ecma.bdimg.com
 .ecmb.bdimg.com
@@ -27047,7 +27024,6 @@ URL-REGEX,/igd\.xml
 .egeemsob.com
 .egg.afisha.ru
 .egg0.icu
-.eggerschummed.rest
 .eggplantgapmatter.com
 .eggvkzypd.com
 .eghgapukoueeut.com
@@ -27530,7 +27506,6 @@ URL-REGEX,/igd\.xml
 .elr.sfr.fr
 .elrpru.herbchamberslincoln.com
 .els298548211.medtronic.com
-.elshinchafer.world
 .elshintele.cyou
 .eltlio.boribori.co.kr
 .eltontry.com
@@ -27929,7 +27904,6 @@ URL-REGEX,/igd\.xml
 .eminentend.com
 .eminp.rebeccaminkoff.com
 .emjs.mkzhan.com
-.emkarto.fun
 .emkho.killcliff.com
 .emkt.stefanini.com
 .emlink.hermo.my
@@ -27960,7 +27934,6 @@ URL-REGEX,/igd\.xml
 .emsq.cn
 .emsservice.de
 .emsxbfwzbeuqm.online
-.emtsvbsf.com
 .emu.blitzpower.com
 .emu.cortexfutura.com
 .emu.motala.no
@@ -28040,6 +28013,7 @@ URL-REGEX,/igd\.xml
 .enews.alfaromeo.it
 .enews.learninga-z.com
 .enews10.yxlady.net
+.enfbgiiqdlhox.xyz
 .enformarabite.world
 .eng.ca.bebelelo.com
 .eng.info.mouser.com
@@ -28189,7 +28163,6 @@ URL-REGEX,/igd\.xml
 .enquirysavagely.com
 .enraged-contest.pro
 .enrageperplexparable.com
-.enrheumgecko.shop
 .enrichyummy.com
 .enroll.workforcewellness.com
 .enrolldi.glic.com
@@ -28405,6 +28378,7 @@ URL-REGEX,/igd\.xml
 .equiremukentsi.org
 .equity.e2g.com
 .equivalentcudgeltriumphant.com
+.equivkiby.com
 .equwxrqjyl.com
 .eqviibkgn.com
 .eqvioe.polihome.gr
@@ -28433,7 +28407,6 @@ URL-REGEX,/igd\.xml
 .erestature.com
 .erezb.gethlth.com
 .erg.ihclam.cn
-.ergateponces.shop
 .ergiekszra.com
 .ergrbp.hobidunya.com
 .ericasfz.com
@@ -28615,6 +28588,7 @@ URL-REGEX,/igd\.xml
 .etgkbu.unieuro.it
 .ethalbateau.rest
 .ethena.online
+.etheniccoarsen.com
 .etherealbamboo.com
 .ethereallagoon.com
 .etherealpinnacle.com
@@ -28779,6 +28753,7 @@ URL-REGEX,/igd\.xml
 .eumtjfyvqtamt.store
 .eung95wkni.com
 .eunow4u.com
+.eunuchsresoak.digital
 .eunzi.beistravel.com
 .euomc.pcaskin.com
 .euonymcozen.help
@@ -29159,6 +29134,7 @@ URL-REGEX,/igd\.xml
 .evidencestunundermine.com
 .eviewonline.certinal.com
 .evil-candle.pro
+.evilerkirtled.click
 .evilexchanged.com
 .evilstrike.pro
 .eviltracker.net
@@ -29180,6 +29156,7 @@ URL-REGEX,/igd\.xml
 .evs.data.ciceksepeti.com
 .evs.icy-lake.kickstarter.com
 .evs.sgmt.loom.com
+.evspnideufht.com
 .evsw-zfdmag.one
 .evt-api.ntm.eu
 .evt.24.com
@@ -29212,6 +29189,7 @@ URL-REGEX,/igd\.xml
 .ewoirpdb.helsam.dk
 .ewoirpdb.mecindo.se
 .eworfe.babyartikel.de
+.ewotranwrieqs.online
 .ewouwamsubsouvy.net
 .ewqeq23.fun
 .ewqws55.fun
@@ -29341,6 +29319,7 @@ URL-REGEX,/igd\.xml
 .expertnifg.com
 .experts.cutter.com
 .experttrafficcounter.com
+.expiryphenyls.shop
 .explodclikmn.com
 .explodeddeitycomparatively.com
 .explorads.com
@@ -29569,6 +29548,7 @@ URL-REGEX,/igd\.xml
 .fadesunshine.com
 .fadjqqe.top
 .fadkra.footway.pt
+.fadsimz.com
 .fadsipz.com
 .faduz.xyz
 .fafdnhthodzfc.space
@@ -29654,7 +29634,6 @@ URL-REGEX,/igd\.xml
 .fandmo.com
 .fanfishupases.world
 .fangfeeling.com
-.fangignoompordo.net
 .fanglinad.com
 .fanjs.top
 .fannonfipples.shop
@@ -29747,7 +29726,6 @@ URL-REGEX,/igd\.xml
 .fathiwhopy.com
 .fathom.app.silverbeak.com
 .fathom.tdvm.net
-.fathomderelict.com
 .fatiguenoodlecomb.com
 .fatihaholyday.click
 .fatsosjogs.com
@@ -29820,7 +29798,6 @@ URL-REGEX,/igd\.xml
 .fbo-statistics-collector-tc.is.flippingbook.com
 .fbphnn.icu
 .fbqbxpwmmpme.com
-.fbscnurbvnxpqb.xyz
 .fbsg.fayebsg.com
 .fbss.reviewscard.com
 .fbsskb.atono2.com
@@ -29989,7 +29966,6 @@ URL-REGEX,/igd\.xml
 .felidae.theforeignarchitect.com
 .felidae.top10partnersuche.ch
 .feline-fortune.pro
-.fellauntorn.cyou
 .fellestmatweed.com
 .fellowishmael.life
 .fellowshiplyricsceasless.com
@@ -30014,7 +29990,6 @@ URL-REGEX,/igd\.xml
 .fermataintima.com
 .fermateiridous.digital
 .fermerypaten.life
-.fermiumarenose.life
 .fernierfalsely.shop
 .ferninsecurecrawling.com
 .feronyv.com
@@ -30167,6 +30142,7 @@ URL-REGEX,/igd\.xml
 .fiexpectthat.org
 .fiezaits.com
 .fifeappmt.cfd
+.fifecostouwoo.net
 .fifef.gohaus.com
 .fight.offtherecord.com
 .fightingdesert.com
@@ -30264,7 +30240,6 @@ URL-REGEX,/igd\.xml
 .fine.xkglow.com
 .finedintersection.com
 .finednothue.com
-.finedsurmisecopper.com
 .finemines.com
 .finessebaitsupply.com
 .finger-info.net
@@ -30347,7 +30322,6 @@ URL-REGEX,/igd\.xml
 .fiu07100kl.com
 .fiu07101kl.com
 .fiuoo.molarclean.com
-.fivemoreish.help
 .fivesidedsquare.com
 .fiwf54qahl.com
 .fiwhibse.com
@@ -30387,6 +30361,7 @@ URL-REGEX,/igd\.xml
 .fjuga.top
 .fjutxytvnrfxl.site
 .fjxnlcppq.com
+.fjxxuccmjexrx.site
 .fk3nf1xeh.top
 .fkakp.ekster.com
 .fkcejf.gradinamax.ro
@@ -30541,6 +30516,7 @@ URL-REGEX,/igd\.xml
 .floweryflavor.com
 .floweryoperation.com
 .flowing.fkplus.com
+.flowpanlive.com
 .flpfl.sokolovelaw.com
 .flpwto.lohaco.jp
 .flqoezitoyuse.today
@@ -30630,7 +30606,6 @@ URL-REGEX,/igd\.xml
 .fo0qofhtaw.com
 .fo1ykm6ph1.com
 .foachouwheeh.com
-.foalslunk.click
 .foambench.com
 .foamingdetenue.help
 .foapsovi.net
@@ -30737,7 +30712,6 @@ URL-REGEX,/igd\.xml
 .forgetfulpromptlyappointment.com
 .forgetfulsnail.com
 .forgetsmousily.digital
-.forgoerashler.world
 .forgonemeaking.rest
 .forgotgnatpalsy.com
 .forkaxially.world
@@ -30751,7 +30725,6 @@ URL-REGEX,/igd\.xml
 .form.promerica.com.do
 .form.vocalink.com
 .formaciones.arin-innovation.com
-.formalcrock.digital
 .formalitydetached.com
 .formarshtompchan.com
 .formatinfo.top
@@ -30828,6 +30801,7 @@ URL-REGEX,/igd\.xml
 .forms2.vistage.com
 .formulaire.lecnfpt.fr
 .formysql.com
+.fornixbattels.life
 .forooqso.tv
 .forpci3.siege-corp.com
 .forprimeapeon.com
@@ -30835,7 +30809,6 @@ URL-REGEX,/igd\.xml
 .forsakenburn.com
 .forsawka.com
 .forscprts.com
-.forsookmurexes.world
 .forsphealan.com
 .forthbootyintricate.com
 .forthcomingmugged.com
@@ -31118,12 +31091,12 @@ URL-REGEX,/igd\.xml
 .free-datings.com
 .free-surfers.com
 .free.ranklet4.com
-.freebyheight.shop
 .freecontent.date
 .freecontent.stream
 .freeconverter.io
 .freecounter.ovh
 .freecounterstat.ovh
+.freedatinghookup.com
 .freeddns.us
 .freedrive.cn
 .freepopnews.skin
@@ -31203,7 +31176,6 @@ URL-REGEX,/igd\.xml
 .frontwear.pro
 .frookshop-winsive.com
 .froseizedorganization.com
-.frostdivinityrelevant.com
 .frostnsullivan.advancedtech.com
 .frostpocket.com
 .frostscanty.com
@@ -31347,6 +31319,7 @@ URL-REGEX,/igd\.xml
 .fufoir.aif.ru
 .fugsslosher.com
 .fuhhg.tanaorjewelry.com
+.fuhrerstanking.com
 .fuicmy.hana-mail.jp
 .fujhobzuztqvx.website
 .fujifilmdb.fujifilmdiosynth.com
@@ -31418,7 +31391,6 @@ URL-REGEX,/igd\.xml
 .fusoidactuate.com
 .fusrv.com
 .fussockrecruit.life
-.fusterdonnie.shop
 .fusulaptt.shop
 .fut.mondo.link
 .futfp.nanamacs.com
@@ -31491,7 +31463,6 @@ URL-REGEX,/igd\.xml
 .fwsigpacfqznc.site
 .fwtrck.com
 .fwvgek.supportpets.com
-.fwxrtkyjxkujs.xyz
 .fx9.freepornoboss.com
 .fxdepo.com
 .fxdxrkicoqxxrbe.com
@@ -31760,7 +31731,6 @@ URL-REGEX,/igd\.xml
 .gahhfg.bobo.com.br
 .gahkj.zomasleep.com
 .gahkoekeybyxv.online
-.gahnitemiddes.qpon
 .gahnncrwlchkjw.com
 .gahroundwhat.com
 .gahypawsppxnz.website
@@ -31925,12 +31895,12 @@ URL-REGEX,/igd\.xml
 .gbctdetk.com
 .gbcxsgsjbemty.site
 .gbdke.schwankgrills.com
+.gbdoyxqikbvfigb.xyz
 .gbdrn.mr-fothergills.com
 .gbedxtcoyviwt.space
 .gbengene.com
 .gbevrhrgpslkz.online
 .gbfodvfasdusmh.com
-.gbgbknnocpwzb.online
 .gbgomscmeyenl.site
 .gbgvq.stitchery.com
 .gbiathrilzik.com
@@ -31948,7 +31918,6 @@ URL-REGEX,/igd\.xml
 .gbphe.letswander.co
 .gbqgwes.icu
 .gbqofs.com
-.gbrffroyqajzm.website
 .gbrvxs.xlo.sk
 .gbs.aquariumspecialty.com
 .gbsmw33tfi.com
@@ -32069,7 +32038,6 @@ URL-REGEX,/igd\.xml
 .gekhasaks.com
 .gekko.spiceworks.com
 .gekroutoukr.net
-.gelcorkir.qpon
 .gelenixpro-ss.olladeals.com
 .gelsauceepteerg.net
 .gemuzyste.com
@@ -32185,7 +32153,6 @@ URL-REGEX,/igd\.xml
 .gersumflicks.rest
 .gesandeve.life
 .gesefqqloaauga.com
-.gesticfuril.shop
 .gestiondocumentaire.ricoh.fr
 .get-beta.kabbee.com
 .get-dev.mastersapp.com
@@ -32518,7 +32485,6 @@ URL-REGEX,/igd\.xml
 .gglx.me
 .ggm.clemonsboats.com
 .ggm.schietsmotorsports.com
-.ggmbjybfylctk.space
 .ggmvge.cheapoair.ca
 .ggpig.melodymaison.co.uk
 .ggreatstuff.com
@@ -32613,6 +32579,7 @@ URL-REGEX,/igd\.xml
 .gihehazfdm.com
 .gihnloxojlkxt.store
 .gikpnm.medmartonline.com
+.gilarditus.com
 .gillspaste.com
 .gillynn.com
 .gilverkebab.click
@@ -32749,7 +32716,6 @@ URL-REGEX,/igd\.xml
 .glaidipt.net
 .glaigaunsoroogh.com
 .glaikrahauvoam.net
-.glairsaulrou.com
 .glaistethab.com
 .glaiwhee.net
 .glamhawk.com
@@ -32857,7 +32823,6 @@ URL-REGEX,/igd\.xml
 .gloporn.com
 .glorious-card.pro
 .gloriousbeef.com
-.glosantewar.qpon
 .gloubauzaifoupe.net
 .gloucmilsignid.net
 .glougloowhoumt.net
@@ -33782,10 +33747,8 @@ URL-REGEX,/igd\.xml
 .goavesyuruk.qpon
 .goazlf.mytoys.de
 .gobacktothefuture.biz
-.gobbledunmolds.rest
 .gobeyond.superiorgroup.com
 .gobsfip.cfd
-.gocartalmanac.click
 .gocertiport.pearsonvue.com
 .gochiftouts.net
 .gocjj.tiffany.ca
@@ -33803,7 +33766,6 @@ URL-REGEX,/igd\.xml
 .godoxevez.com
 .godpvqnszo.com
 .godseedband.com
-.godsonsburundi.life
 .godvd.cleansimpleeats.com
 .gofenews.com
 .gofqpma.kimkimblehair.com
@@ -33825,6 +33787,7 @@ URL-REGEX,/igd\.xml
 .goi08210kh.com
 .goi08211kh.com
 .goihs.kyliecosmetics.com
+.gojjutccrvayv.store
 .gokrafxr.icu
 .golachbutea.cfd
 .gold.questrade.com
@@ -33846,6 +33809,7 @@ URL-REGEX,/igd\.xml
 .gomain2.pro
 .gomerchant.groupon.com
 .gomnlt.com
+.gondmemhoolpdd.xyz
 .gondolagnome.com
 .gone.pronhub.fun
 .gonophsglisky.rest
@@ -33973,7 +33937,6 @@ URL-REGEX,/igd\.xml
 .gp.oddo-bhf.com
 .gp.zaiyunli.cn
 .gpaqa.marymaxim.ca
-.gpbmzdzzhcymp.space
 .gpcjz.kotomi.com.au
 .gpfol.rootsbyga.com
 .gpfvumsxtbf.com
@@ -34057,6 +34020,7 @@ URL-REGEX,/igd\.xml
 .granularcloud.com
 .grapefruitstarchbeep.com
 .grapo.doomlings.com
+.graqtcdjzqmib.store
 .grarnuns.com
 .grassedbirder.life
 .grassfedsalmon.com
@@ -34065,6 +34029,7 @@ URL-REGEX,/igd\.xml
 .gratificationpotsstrode.com
 .gratificationpurpleladder.com
 .gratisdescarga.xyz
+.gratpinkeen.rest
 .grauglak.com
 .grautaupsetu.net
 .grautoolso.net
@@ -37388,7 +37353,6 @@ URL-REGEX,/igd\.xml
 .gvjomk.carrea.pl
 .gvkuvskyddnud.website
 .gvlme.emango.si
-.gvltrklny.xyz
 .gvmomuqjv1.swyftx.com
 .gvnjrg.tutorcircle.hk
 .gvt2.com
@@ -37422,7 +37386,6 @@ URL-REGEX,/igd\.xml
 .gwlrbbtxmguuz.today
 .gwm.admc-me.com
 .gwogrgq.icu
-.gwpifpeauhhwk.online
 .gwqtum.philips.de
 .gwropn.soelu.com
 .gwrtdp-tn690bfadt.tclclouds.com
@@ -37495,13 +37458,11 @@ URL-REGEX,/igd\.xml
 .gyyuansu.com
 .gz-data.com
 .gzads.com
-.gzaqwebtipm.com
 .gzbcuy.mamarella.com
 .gzbte.thelipbar.com
 .gzcfm.petfinn.com
 .gzct.u3.ucweb.com
 .gzees.theperfumebox.com
-.gzehixpheoz.com
 .gzepglphhwkez.site
 .gzfsqrc.icu
 .gzglgztqdvowj.site
@@ -37519,7 +37480,6 @@ URL-REGEX,/igd\.xml
 .gzslhnszxh.com
 .gzuvq.sanitairkamer.nl
 .gzyxqdhtkomzx.space
-.gzzfcmflxfspx.store
 .h-adashx.ut.alibaba.com
 .h-adashx.ut.ele.me
 .h-adashx.ut.taobao.com
@@ -37692,7 +37652,6 @@ URL-REGEX,/igd\.xml
 .hare.startupbootcamp.com.au
 .hareliphowlets.world
 .haresmodus.com
-.hargaizethoump.com
 .harm6stop.com
 .harman.epoise.com
 .harmantest.epoise.com
@@ -37709,11 +37668,9 @@ URL-REGEX,/igd\.xml
 .harrier.progress.fyi
 .harrier.scdamerica.com.au
 .harris.ni.com
-.harrowsratine.cyou
 .harsh-award.com
 .harshplant.com
 .harshstipulatesemblance.com
-.harsletsurya.digital
 .hartattenuate.com
 .hartnessintl.com
 .harvest.graindata.com
@@ -37745,7 +37702,6 @@ URL-REGEX,/igd\.xml
 .hatwhipbesiege.com
 .hauhws.asgoodasnew.de
 .hauixd.halistores.com
-.haujocaikak.com
 .hauledneedy.com
 .hauledskirmish.com
 .haunchfossil.com
@@ -37889,6 +37845,8 @@ URL-REGEX,/igd\.xml
 .hdbltq.top
 .hdc.maxli.cn
 .hde1.repentignychevrolet.com
+.hdexwslkxekj.net
+.hdfgkplqne.com
 .hdhjlhkmhxkjm.website
 .hdicsm.autoscout24.be
 .hdinmau.top
@@ -38029,6 +37987,7 @@ URL-REGEX,/igd\.xml
 .helpcollar.com
 .helpcoy.cfd
 .helpdesk.thinkhdi.com
+.helpedpalisse.cfd
 .helpflame.com
 .hematalmuffs.qpon
 .hemblx.vans.cl
@@ -38052,7 +38011,6 @@ URL-REGEX,/igd\.xml
 .herebygreedyrivers.com
 .herediadentata.cfd
 .heredialulab.life
-.heresyflurt.life
 .hermes.allo-media.net
 .hermichermicgenerationhers.com
 .hero6bell.com
@@ -38221,6 +38179,7 @@ URL-REGEX,/igd\.xml
 .hiad.myweb.hinet.net
 .hiad.vmall.com
 .hiafzeakglirp.website
+.hiajcgduerzom.space
 .hiaphrilloig.com
 .hiasor.com
 .hibachiwambly.world
@@ -38230,7 +38189,6 @@ URL-REGEX,/igd\.xml
 .hibylu.smartbuyglasses.no
 .hicam.net
 .hidcolouredclink.com
-.hiddenmilk.com
 .hidecatastropheappend.com
 .hidelgofer.cyou
 .hidespptn.shop
@@ -38238,7 +38196,6 @@ URL-REGEX,/igd\.xml
 .hidlessonana.com
 .hidlinsboart.com
 .hidrogtm.imaginemarketingdigital.com
-.hieuwbkd.com
 .hifisgtm.trysprinkle.com
 .higbju.lovelingjewelry.co.kr
 .high-on-ads.com
@@ -38429,7 +38386,6 @@ URL-REGEX,/igd\.xml
 .hjnzt.skechers.com
 .hjoddysekhmji.site
 .hjprq.larroude.com
-.hjslphtc.com
 .hjvprx.top
 .hjvzfa.top
 .hjxajf.com
@@ -38954,7 +38910,6 @@ URL-REGEX,/igd\.xml
 .hue2b.com
 .hueadsxml.com
 .huechl.paige.com
-.hueddui.com
 .huehue.fresha.com
 .hugdi.talbots.com
 .hugelog.fcbox.com
@@ -38983,6 +38938,7 @@ URL-REGEX,/igd\.xml
 .hummingbird.mavencoalition.io
 .hummingexam.com
 .humourspot.com
+.humpasylum.com
 .humpdecompose.com
 .humsoolt.net
 .hunbya.mrwonderfulshop.es
@@ -39033,6 +38989,7 @@ URL-REGEX,/igd\.xml
 .husbandnights.com
 .husdv.sokolovelaw.com
 .husfly.com
+.hushhiglkatcz.store
 .huskinessimminentstylus.com
 .husky.sogou.com
 .huskypartydance.com
@@ -39157,13 +39114,13 @@ URL-REGEX,/igd\.xml
 .hyknzlikidbdf.website
 .hyleanwheeled.world
 .hylplj.icu
-.hymenalmatinee.help
 .hyperadx.com
 .hyperbanner.net
 .hyperlegend.com
 .hyperlinksecure.com
 .hyperpromote.com
 .hypersnap.net
+.hypertrackeraff.com
 .hypnodyfretty.qpon
 .hypnoticwound.com
 .hypnotizebaseballjesus.com
@@ -39322,6 +39279,7 @@ URL-REGEX,/igd\.xml
 .iaumyc.icu
 .iavebq.desart.co.kr
 .iaw-events.polarbyte.com
+.iaxequqrqxbpxql.com
 .iaxmmw9fbx.com
 .iazcpoptkwapp.store
 .iazwzp.lyst.com
@@ -39362,6 +39320,7 @@ URL-REGEX,/igd\.xml
 .icafzttxirztu.space
 .icanmining.ru
 .icare.quantum-health.com
+.icarusnippily.com
 .icarusrt.earthyselect.com
 .icarusrt.moonwlkr.com
 .icas.ikea.com
@@ -39483,7 +39442,6 @@ URL-REGEX,/igd\.xml
 .idx.lat
 .idyllicjazz.com
 .idylsrebank.com
-.idyokrbxyyu.com
 .idyurlio.top
 .ie8eamus.com
 .ieakf.drinkbrez.com
@@ -39595,7 +39553,6 @@ URL-REGEX,/igd\.xml
 .ignslkgs.com
 .igofvz.jdsports.at
 .igogofidvjas.xyz
-.igokedropit.net
 .igpnt.truereligion.com
 .igraard.xyz
 .igrid.org
@@ -39629,7 +39586,6 @@ URL-REGEX,/igd\.xml
 .ihhwrq.peyrouse-hair-shop.com
 .ihi.flowplayer.com
 .ihnbqe.shane.co.jp
-.ihpccfkeptxcj.website
 .ihphbcdn.net
 .ihphbcdn.xyz
 .ihpyig.hometogo.ch
@@ -39764,6 +39720,7 @@ URL-REGEX,/igd\.xml
 .iltcaf.immobilienscout24.de
 .ilvgn.johnnyjanosik.com
 .ilvqos.lyst.es
+.ilvumbonf.net
 .ilyaoipntdyol.space
 .ilyf4amifh.com
 .ilyonanalytics.herokuapp.com
@@ -40362,7 +40319,6 @@ URL-REGEX,/igd\.xml
 .imaginative-hope.com
 .imaginative-room.com
 .imaginative-trade7.com
-.imaginativebattle.com
 .imagine.ricoh.nl
 .imaginemothcurved.com
 .imagingforay.cfd
@@ -40582,6 +40538,7 @@ URL-REGEX,/igd\.xml
 .inadequateconsolation.com
 .inadnetwork.xyz
 .inaltariaon.com
+.inanebinding.com
 .inappi.co
 .inappi.me
 .inappropriatejessamycookery.com
@@ -40606,6 +40563,7 @@ URL-REGEX,/igd\.xml
 .incomehippo.com
 .incoming-telemetry.thunderbird.net
 .incomparable-pair.com
+.incompatibledancenightclub.com
 .incompetencesorting.com
 .incompetentjoke.com
 .inconclusiveaction.com
@@ -41729,12 +41687,12 @@ URL-REGEX,/igd\.xml
 .inkornesto.com
 .inktad.com
 .inkvm.com
-.inliketankert.rest
+.inlacesmilchig.help
 .inlks.topliftpros.com
 .inlog01.hket.com
 .inlugiar.com
-.inlwhyhdnpjxk.website
 .inmanebsskir.com
+.inmeatsbummers.life
 .inmense.site
 .inminuner.com
 .inmobi.cn
@@ -42197,9 +42155,9 @@ URL-REGEX,/igd\.xml
 .ionfip.gamemeca.com
 .ionfip.spoclip.com
 .ionigravida.com
-.ionisegauds.click
 .ioniserpinones.com
 .ionizertrois.com
+.iononeunsewed.rest
 .iooecb.bergzeit.de
 .ioovmg.flexicar.es
 .ioovrf.coen.co.jp
@@ -42394,10 +42352,8 @@ URL-REGEX,/igd\.xml
 .isic.kopirkaostrava.cz
 .isicpartner.mamechut.cz
 .isifewulrraaf.com
-.isiyrnziicvme.space
 .isjoui.cainz.com
 .isl.caminos.click
-.islamictigroid.click
 .islandjav182.fun
 .islylyxhgtmex.online
 .ismail.natureenergybd.com
@@ -42406,7 +42362,6 @@ URL-REGEX,/igd\.xml
 .isnet.habrokathletics.com
 .isoamidtrusion.com
 .isogonsekoi.shop
-.isogrivtriary.cyou
 .isolatedcompliments.com
 .isolatedovercomepasted.com
 .isolatespokesman.com
@@ -42497,7 +42452,6 @@ URL-REGEX,/igd\.xml
 .itv.hexun.com
 .itvalleynews.com
 .itwawa.leaderplant.com
-.itwboqvnouvcn.store
 .itweedler.com
 .itweepinbelltor.com
 .itzekromom.com
@@ -42506,6 +42460,7 @@ URL-REGEX,/igd\.xml
 .iucnwto.top
 .iufmhnbxvkzcy.store
 .iugbhsu.com
+.iugvoo.icu
 .iuhvtj.mcdrogerie.ch
 .iuhwuq.trendhim.dk
 .iujcwb.sklep15230.shoparena.pl
@@ -42549,6 +42504,7 @@ URL-REGEX,/igd\.xml
 .ivrnfvlcgubm.www.cefirates.com
 .ivstat.indavideo.hu
 .ivstracker.net
+.ivthtocxl.com
 .ivvn.cn
 .ivwkkh.nexity.fr
 .ivx.lacompagnie.com
@@ -42587,7 +42543,6 @@ URL-REGEX,/igd\.xml
 .ix2.deepsexvids.com
 .ix4.icu
 .ixa9ill0f7bg.grundbuch.zentraler-antragsservice.com
-.ixabcdszeufqo.icu
 .ixbua.xyz
 .ixcirsgywnnmi.website
 .ixereewa.com
@@ -42766,7 +42721,6 @@ URL-REGEX,/igd\.xml
 .jbejv.katieloxton.com
 .jbeof.tableclothsfactory.com
 .jbezdi.ilsole24ore.com
-.jbfmhrwqxrieyd.com
 .jbgnwogznynqa.top
 .jbgsq.natureasmedicine.blog
 .jbjddd.ideastore.com.br
@@ -42810,6 +42764,7 @@ URL-REGEX,/igd\.xml
 .jcsgu.everythingcatholic.com
 .jcula.knixteen.ca
 .jcwlsofn.icu
+.jcwylmuatiaqv.store
 .jcygiprezlteb.store
 .jcyhvrsstqcgek.com
 .jcyyxq.joker-ev.jp
@@ -42925,6 +42880,7 @@ URL-REGEX,/igd\.xml
 .jerdwlplgwpzz.online
 .jergocast.com
 .jerld.com
+.jeroud.com
 .jeruk.tarpys.com
 .jervinaneback.com
 .jeryt111.fun
@@ -42942,6 +42898,7 @@ URL-REGEX,/igd\.xml
 .jeuxkcukgb.xyz
 .jewelryforest.com
 .jewelsobstructionerosion.com
+.jewshipplaya.life
 .jewuiaqsufaztj.com
 .jeyd.cn
 .jeyttn.snipes.com
@@ -43083,7 +43040,6 @@ URL-REGEX,/igd\.xml
 .jinx.skullctf.com
 .jioads.akamaized.net
 .jiohog.regalopublicidad.com
-.jipperwinned.world
 .jipxzz.icu
 .jiraisansezap.net
 .jirnxq.guud.com
@@ -43201,7 +43157,6 @@ URL-REGEX,/igd\.xml
 .jnazbbqjgykjb.top
 .jncx1s.michaellindahl.com
 .jnecc.jadedldn.com
-.jngqqljojzlon.top
 .jnhfex.diezauberscheren.de
 .jniic.pacas.com
 .jnjbq.monicavinader.com
@@ -43241,7 +43196,6 @@ URL-REGEX,/igd\.xml
 .jocgl.ruggable.de
 .jockchevage.shop
 .jocmiglenedsupi.com
-.jocoalsoang.net
 .joda.corriereadriatico.it
 .joda.ilgazzettino.it
 .joda.ilmattino.it
@@ -43271,6 +43225,8 @@ URL-REGEX,/igd\.xml
 .joi09071pt.com
 .joi09080pt.com
 .joi09081pt.com
+.joi09090pt.com
+.joi09091pt.com
 .joias.baglione.com.br
 .joias.dibalijoias.com
 .join-staging.kloaked.app
@@ -43459,6 +43415,7 @@ URL-REGEX,/igd\.xml
 .jqwjbyqawgqla.top
 .jqwwny.hotelpass.com
 .jqwww.download
+.jqxcrdytprcmk.online
 .jqzibkhgthxpb.website
 .jqzlkmlzbajmn.top
 .jraasj.kobo.com
@@ -43555,7 +43512,6 @@ URL-REGEX,/igd\.xml
 .jsomtq.telescope.com
 .jsonads.upnerd.net
 .jspqms.bellevue-ferienhaus.de
-.jsqlysrsrfauh.website
 .jsqng.covesmart.com
 .jsqygwl.top
 .jssdk.net
@@ -43583,7 +43539,6 @@ URL-REGEX,/igd\.xml
 .jtisp.illesteva.com
 .jtjed.emango.gr
 .jtknl.ashanderie.com
-.jtmodrscunnjp.xyz
 .jtnmyp.yokoshop.com
 .jtoph.gibsonlook.com
 .jtosgk.123pneus.fr
@@ -43633,7 +43588,6 @@ URL-REGEX,/igd\.xml
 .juicebard.com
 .juiceblocks.com
 .juicedcarton.world
-.juicilypyruvil.rest
 .juicyads.com
 .juicyads.me
 .juicycash.net
@@ -43704,7 +43658,6 @@ URL-REGEX,/igd\.xml
 .jvgcr.bluetreelandscaping.com
 .jvhuqrpsw.com
 .jviyau.pelicanwater.com
-.jvlrcbfxijxgk.store
 .jvoaz.beautystat.com
 .jvpipr.hometogo.se
 .jvrsr.bettabot.com
@@ -43804,7 +43757,6 @@ URL-REGEX,/igd\.xml
 .jznits.igrotime.ru
 .jznmkamkabgnb.top
 .jzogljnmwaknv.top
-.jzokkejvjbevz.top
 .jzoxch.menswearhouse.com
 .jzprtb.1stdibs.com
 .jzqbyykjorwjy.top
@@ -43911,6 +43863,7 @@ URL-REGEX,/igd\.xml
 .kangaroo.triplightfantastic.com
 .kangaroohiccups.com
 .kanoodle.com
+.kantarstoenail.com
 .kantiwl.com
 .kanuassociates.com
 .kaocko.swaglift.com
@@ -43931,7 +43884,6 @@ URL-REGEX,/igd\.xml
 .kartik.devishetty.net
 .kascb.jamsworld.com
 .kastafor.com
-.kasteehoordopee.net
 .kat.sprouties.ae
 .katecrochetvanity.com
 .kathalmasts.shop
@@ -43983,7 +43935,6 @@ URL-REGEX,/igd\.xml
 .kbzcg.ryzesuperfoods.com
 .kc.katieconsiders.com
 .kc3mmffdbt.com
-.kcadhykrdusou.com
 .kcclwhmbuhxvphx.com
 .kcdklhbjjctiz.online
 .kcdrr.mesotheliomahope.com
@@ -44069,6 +44020,7 @@ URL-REGEX,/igd\.xml
 .keeper.fs1inc.com
 .keepinfit.net
 .keeptraumatic.com
+.keestoutflee.cyou
 .keestrobbing.rest
 .keet1liod.com
 .keewoach.net
@@ -44146,6 +44098,7 @@ URL-REGEX,/igd\.xml
 .kfiip.stevemadden.ca
 .kfjxcw.immobilier.ch
 .kfkewuaghmbfm.website
+.kflosfpnwfzrc.store
 .kflxwqsmgegwh.space
 .kfmsltodvutodo.xyz
 .kfndek.monoweek.com
@@ -44226,7 +44179,6 @@ URL-REGEX,/igd\.xml
 .kick1pore.com
 .kickhoistsuccess.com
 .kiddbs.baby-calendar.jp
-.kidderszebec.click
 .kidpowers.com
 .kidsdeservethebest.childrenswi.org
 .kidsdeservethebest.chw.org
@@ -44276,6 +44228,7 @@ URL-REGEX,/igd\.xml
 .kingstownst.mywellnessoffer.com
 .kingsvips.com
 .kingtrck1.com
+.kinkhabsnittle.life
 .kinley.com
 .kinnvg.vintage-motors.net
 .kinsencreen.digital
@@ -44453,7 +44406,6 @@ URL-REGEX,/igd\.xml
 .kmlnllmoajogg.top
 .kmmgoogle.oss-ap-southeast-1.aliyuncs.com
 .kmmpf.chatnoirlondon.com
-.kmolerhebok.cfd
 .kmpjpwwaoeet.com
 .kmqaek.icu
 .kmqghr.bristolshop.be
@@ -44619,7 +44571,6 @@ URL-REGEX,/igd\.xml
 .kppgz.grandinroad.com
 .kpphqv.emp-online.it
 .kppqi.pavlok.com
-.kppsfwywv.xyz
 .kpqgh.directmeds.com
 .kpqoiewdruvvr.website
 .kpr2exp21.com
@@ -44628,7 +44579,6 @@ URL-REGEX,/igd\.xml
 .kpshx.douguo.com
 .kpsxmpevuhdwf.space
 .kptve.trualchemyskin.com
-.kpwqnkzwsogkw.online
 .kq272lw4c.com
 .kq6mv8mpvs4m10r449nms6.xyz
 .kqchxa.denizbutik.com
@@ -44774,7 +44724,6 @@ URL-REGEX,/igd\.xml
 .kufvoyagp.xyz
 .kugqq.fillingpieces.com
 .kuguopush.com
-.kuhniapipiri.world
 .kuiv.cn
 .kuiyizyzoadmf.online
 .kujts.aroma360official.com.br
@@ -44792,7 +44741,6 @@ URL-REGEX,/igd\.xml
 .kupefoarsadseer.com
 .kupll.freshcleantees.com
 .kuqpdxek.today
-.kurdishriles.cfd
 .kuresdd.top
 .kurlkyja.com
 .kusampeckier.shop
@@ -44838,9 +44786,10 @@ URL-REGEX,/igd\.xml
 .kwcnmtd.top
 .kweisid.top
 .kweizad.top
+.kwfdzfptmqlin.website
 .kwfmyt.medpets.de
 .kwfvcxbiqglkm.online
-.kwglnqnbgnkjg.top
+.kwglnqnbgnkyj.top
 .kwgs.letudiant.fr
 .kwhcgsqn2f.com
 .kwhiwu.xplant.co.kr
@@ -45131,7 +45080,6 @@ URL-REGEX,/igd\.xml
 .lacinfo.motorolasolutions.com
 .lack4skip.com
 .lackadaisicalkite.com
-.lackersmank.help
 .lacmoidrobands.shop
 .lactealovened.life
 .lactoidmogged.cyou
@@ -45410,7 +45358,7 @@ URL-REGEX,/igd\.xml
 .lby2kd27c.com
 .lbylqerzmzjky.top
 .lbyngbim.com
-.lbyybvnqoywyj.top
+.lbyybvnqoywmw.top
 .lbzyjmbvmkoov.top
 .lc-event.pixiv.net
 .lc.caravanyou.com
@@ -45429,7 +45377,6 @@ URL-REGEX,/igd\.xml
 .lcdpq.spanx.com
 .lcdsyj.daily.co.jp
 .lcefua.timberland.ru
-.lcfamqtgupf.xyz
 .lcfauizghtxzb.website
 .lcfhyh.rejuvenation-therapeutics.com
 .lcfxto.differenta.bg
@@ -45539,6 +45486,7 @@ URL-REGEX,/igd\.xml
 .leaktrailercondo.com
 .leakvideohd.store
 .leakvideos.online
+.leancontextplacid.com
 .leanglesab.world
 .leanplum.com
 .leaplunchroom.com
@@ -45633,10 +45581,10 @@ URL-REGEX,/igd\.xml
 .leevesheeham.net
 .leezeept.com
 .lefoq.freshlypicked.com
-.lefselmanor.rest
 .left5lock.com
 .leftcandle.com
 .leftliquid.com
+.leftsarabist.life
 .leg.legmaster.co.uk
 .legacyportal.nettvservices.com
 .legalhold.ediscovery.com
@@ -45704,7 +45652,6 @@ URL-REGEX,/igd\.xml
 .leroaboy.net
 .leryt111.fun
 .lesauras.shop
-.lesetanoa.cyou
 .lessonsnetwork.com
 .let1.devialet.com
 .letaimparou.net
@@ -45741,6 +45688,7 @@ URL-REGEX,/igd\.xml
 .lexichamelt.cyou
 .lexip.4pcdn.de
 .lexolbuvjhmau.online
+.lexorawebnet.com
 .lexvek.gap.ae
 .leynqj.newport.se
 .lezntf.heydudeshoesusa.com
@@ -45940,7 +45888,6 @@ URL-REGEX,/igd\.xml
 .limepeal.com
 .limeybilgy.click
 .limineshucks.com
-.limnsloaming.world
 .limone.iltrovatore.it
 .limp-organization.pro
 .limp-total.pro
@@ -45955,7 +45902,6 @@ URL-REGEX,/igd\.xml
 .line1-log.biligame.net
 .line6agar.com
 .lineartechnik.item24.de
-.linenerfulcrum.click
 .lineodtpdajrz.store
 .linerstusche.qpon
 .lineside.networkrail.co.uk
@@ -46980,11 +46926,13 @@ URL-REGEX,/igd\.xml
 .lk.parisfoodies.fr
 .lk.vrstories.com
 .lkaowvjzjfkyd.store
+.lkbaqbugqvmvv.store
 .lkcmhagkoakpp.online
 .lkcxde.miliboo.de
 .lkdao.junehomes.com
 .lkdje.hergroomie.com
 .lkdqrtsj6g.com
+.lkedvhnt.com
 .lkglo.hoop.app
 .lkhez.aveneusa.com
 .lkhpb.marciano.com
@@ -47004,6 +46952,7 @@ URL-REGEX,/igd\.xml
 .lkqd.net
 .lkr-trk.reply.com
 .lkr.reply.eu
+.lkrhxbrrztyfw.space
 .lksbnrs.com
 .lksiz.mydancerbox.com
 .lksrhj.green-acres.pt
@@ -47091,6 +47040,7 @@ URL-REGEX,/igd\.xml
 .lms.roblox.com
 .lmstciyqyn.com
 .lmsukdmymagqfb.com
+.lmtmgjiwghnogl.com
 .lmtra.lonepeakoverland.com
 .lmufb.theswellscore.com
 .lmvrjabakezky.top
@@ -47135,7 +47085,6 @@ URL-REGEX,/igd\.xml
 .lnxfgm.party-calendar.net
 .lnyswskqgbtll.site
 .lnzlvr.notosiki.co.jp
-.loachesexplees.click
 .loachmawkish.rest
 .load.43290662000156.bsmultas.com.br
 .load.a.500recetasceroazucar.com
@@ -50522,7 +50471,6 @@ URL-REGEX,/igd\.xml
 .login.e-ticket.co.jp
 .login.mobcomedia.com
 .login.mymedia.club
-.login.reklama.network
 .login.rtbwire.com
 .login.trinytymedia.com
 .loginside.co.kr
@@ -50975,7 +50923,6 @@ URL-REGEX,/igd\.xml
 .lrfrance.wolterskluwer.com
 .lrgermany.wolterskluwer.com
 .lrgqv.goellevet.com
-.lrhffbdwkplxf.website
 .lrhungary.wolterskluwer.com
 .lrhyty.meteovista.be
 .lrhyty.weeronline.nl
@@ -51005,6 +50952,7 @@ URL-REGEX,/igd\.xml
 .lsdm.co
 .lsdqxnyg.com
 .lshovs.matrizauto.pt
+.lsiszlerwgure.store
 .lsixuz.agrifournitures.fr
 .lsjarh.top
 .lsjkdj.mynamenecklace.ie
@@ -51022,7 +50970,6 @@ URL-REGEX,/igd\.xml
 .lsyaicl.icu
 .lszjuj.chemnitzer-jobanzeiger.de
 .lt0nm.sim-lab.eu
-.ltafuzncubta.com
 .ltassrv.com
 .ltbvd.xsuit.com
 .ltcmak.alodokter.com
@@ -51117,14 +51064,12 @@ URL-REGEX,/igd\.xml
 .lucnxzoylxmvu.love
 .lucrinearraign.com
 .lucysaftly.shop
-.ludibrynecklet.qpon
 .ludicrousarch.com
 .ludicrousfreshencovering.com
 .ludmila.anunciojuridico.com.br
 .luegnh.sneakercage.gr
 .lufberythala.qpon
 .lufydapo.com
-.luggeremunct.click
 .lugirsbhpifnl.store
 .lugleelateech.net
 .luglyn.bobbleheadhall.com
@@ -51193,7 +51138,6 @@ URL-REGEX,/igd\.xml
 .luteintankas.digital
 .lutn.cn
 .lutoorgourgi.com
-.lutsoowhauda.net
 .luttc.erogenos.com
 .lutttkpgmlqsf.website
 .luuib.sillysanta.se
@@ -51379,7 +51323,6 @@ URL-REGEX,/igd\.xml
 .lzrljv.tradera.com
 .lzuc.sfr.fr
 .lzvwxy.hometogo.pl
-.lzvwybvvyrkqm.top
 .lzwxzz.chintaistyle.jp
 .lzxdx24yib.com
 .m-adash.m.taobao.com
@@ -53728,7 +53671,6 @@ URL-REGEX,/igd\.xml
 .mascotsevap.cyou
 .maserati.info
 .masklink.org
-.maskoimocmain.cyou
 .masogjmltljhl.one
 .masqueradethousand.com
 .mass1soma.com
@@ -53801,10 +53743,10 @@ URL-REGEX,/igd\.xml
 .matwbp.iask.sina.com.cn
 .matytt.tone.ne.jp
 .maugresizer.com
+.mauholeroufouwy.net
 .maui.shakaguide.com
 .mauiv.innisfree.com
 .maumeeeffuse.com
-.maungychiders.click
 .mausk.shopbeam.com
 .mauvineinez.cyou
 .mavencosshen.com
@@ -53823,7 +53765,6 @@ URL-REGEX,/igd\.xml
 .maxigamma.com
 .maxim.pub
 .maximumdecimus.clicknplay.to
-.maximumductpictorial.com
 .maxtat.55truck.com
 .maxudijuz.com
 .maxvaluead.com
@@ -53848,6 +53789,7 @@ URL-REGEX,/igd\.xml
 .mb102.com
 .mb103.com
 .mb104.com
+.mb57.com
 .mba.oldrepublictitle.com
 .mbaedurr.com
 .mbainfo.ust.hk
@@ -53925,7 +53867,6 @@ URL-REGEX,/igd\.xml
 .mcc-tags.cisco.com
 .mcc.mycoffeecapsules.co.nz
 .mccntp.raen.com
-.mcctndeffuklz.online
 .mccylg.rutlandcycling.com
 .mcdfun.spainhomes.com
 .mcdmetric.aaa.com
@@ -54218,6 +54159,7 @@ URL-REGEX,/igd\.xml
 .meaulcockups.com
 .mebwzhffdaval.website
 .mec.hilton.com
+.mecatetonguey.life
 .mecfo.cbdmd.com
 .mechanicladenthereby.com
 .mecio.farmhousefreshgoods.com
@@ -54417,7 +54359,6 @@ URL-REGEX,/igd\.xml
 .meldhayrake.click
 .melilotmikra.qpon
 .melilotsteem.click
-.mellatemyrica.qpon
 .mellow-weird.com
 .mellowhush.com
 .melodiouschorus.com
@@ -56676,7 +56617,6 @@ URL-REGEX,/igd\.xml
 .mffjt.nuethix.com
 .mfiukbfywkkjhp.com
 .mfkfkhfhmfkfkhfh.top
-.mflhovbovbyaeg.com
 .mfmkkv.sorgenia.it
 .mfmls.mikesbikes.com
 .mfmqk.redbubble.com
@@ -56725,7 +56665,6 @@ URL-REGEX,/igd\.xml
 .mgntat.mno.link
 .mgopc.ddrbbqsupply.com
 .mgpnz.shopakira.com
-.mgpsmeqekhyewwt.com
 .mgptul.finson.com
 .mgr.biltmorehotel.com
 .mgrorgvk.com
@@ -56868,7 +56807,6 @@ URL-REGEX,/igd\.xml
 .minigame5-normal-hl.zijieapi.com
 .minigame5-normal-lq.zijieapi.com
 .minisplat.cn
-.ministrycosmeticrigour.com
 .miniye.xjts.cn
 .mink.faq-bregenzerwald.com
 .minnow.clintwinter.me
@@ -56903,7 +56841,6 @@ URL-REGEX,/igd\.xml
 .misc.api.snaptube.app
 .misc1bulk.com
 .miscreantmoon.com
-.misdoesamasta.help
 .misdoestulwar.cfd
 .miserable-physical.com
 .miseventos.orem.com.mx
@@ -57139,6 +57076,7 @@ URL-REGEX,/igd\.xml
 .mlkklg.suncamp.de
 .mllog.jd.com
 .mlmswk.janpara.co.jp
+.mlmxlnsyrsyepcn.net
 .mlmxlnsyrsyepcn.xyz
 .mlnadvertising.com
 .mlnbike.com
@@ -57364,7 +57302,6 @@ URL-REGEX,/igd\.xml
 .mocluvrxsluqj.space
 .moda.ubmfashion.com
 .modecleaning.com
-.modelerrisked.rest
 .moderatedead.com
 .modificationdispatch.com
 .modistpuddy.click
@@ -57448,7 +57385,6 @@ URL-REGEX,/igd\.xml
 .moneyclutchtrack.com
 .moneymakercdn.com
 .monfzx.pioro.co
-.mongolsilth.com
 .mongoose.cse-algolia.fr
 .mongoose.scrumgenius.com
 .mongoose.thechocolatelife.com
@@ -57538,6 +57474,7 @@ URL-REGEX,/igd\.xml
 .moqdy.icu
 .mordeegroo.net
 .mordoops.com
+.mordoorsie.net
 .more.citygames-bremen.de
 .more.citygames-duesseldorf.de
 .more.citygames-muenster.de
@@ -57577,7 +57514,6 @@ URL-REGEX,/igd\.xml
 .mosquito.zero.io
 .mosspf.com
 .mosspf.net
-.mossptt.click
 .mossru.com
 .mostauthor.com
 .mostcolonizetoilet.com
@@ -57810,6 +57746,7 @@ URL-REGEX,/igd\.xml
 .msourcecargo.com
 .msp.newsbreak.com
 .mspac.miragescreensystems.com
+.mspdfibsvyvbo.com
 .msr.globaljet.aero
 .msr.p-antiaging.com
 .msr.selection-schwander.ch
@@ -57833,6 +57770,7 @@ URL-REGEX,/igd\.xml
 .mstmsbz.com
 .msub.mmail.northeast.aaa.com
 .msurc.armygearus.com
+.msxxcxrktbrdn.site
 .msyezrek.com
 .msz3.destinia.cn
 .mt.arambaz.com
@@ -57953,11 +57891,13 @@ URL-REGEX,/igd\.xml
 .mtx.lastminute.com.au
 .mtyciy.solebox.com
 .mtypitea.net
+.mtyxmamrsjxyr.space
 .mtzjj.trycreate.co
 .mtztr.kizik.com
 .mtzznt.huarenstore.com
 .muajg.davidsbridal.com
 .mubkemxsr.xyz
+.mucheldecoyer.digital
 .muchescrapped.rest
 .mucho.us-assistance.org
 .muckierfrowzly.shop
@@ -57969,7 +57909,6 @@ URL-REGEX,/igd\.xml
 .muddledmemory.com
 .muddlestheist.shop
 .muddyclassic.com
-.mudlessryme.click
 .mudobtnarda.com
 .mudsillungraft.world
 .muenqeogbvcuj.store
@@ -58031,7 +57970,6 @@ URL-REGEX,/igd\.xml
 .mundi.zuremod.com
 .munfan.munfanmart.com
 .muni360.com
-.munitedhertzes.click
 .munitesoudan.help
 .munkrudhhv.com
 .munna.chocobarii.com
@@ -58075,6 +58013,7 @@ URL-REGEX,/igd\.xml
 .muteknife.com
 .mutemailbox.com
 .mutenessquiz.com
+.mutinedgunster.com
 .mutsjeamenism.com
 .mutualhappy.com
 .mutulessatara.help
@@ -58126,7 +58065,6 @@ URL-REGEX,/igd\.xml
 .mwf7.montecarlowellness.com
 .mwgehrudb.com
 .mwilmix.top
-.mwjvscbqiom.com
 .mws.verisk.com
 .mwshqx.swing2sleep.de
 .mwt.mukuru.com
@@ -58144,7 +58082,6 @@ URL-REGEX,/igd\.xml
 .mx2.happ.social
 .mx6.3pornhere.com
 .mxafaw.icu
-.mxaftibjsi.com
 .mxaserver.mxplay.com
 .mxdzxd.mister-auto.com
 .mxeeslnguh.com
@@ -58432,6 +58369,7 @@ URL-REGEX,/igd\.xml
 .mywebpage.ni.com
 .mywondertrip.com
 .myxuak.mir-kubikov.ru
+.myzontoutlove.world
 .mzarqhufj4.com
 .mzenze.linio.com.co
 .mzgpfa.brics.it
@@ -58539,7 +58477,6 @@ URL-REGEX,/igd\.xml
 .nailerskazak.click
 .nailsome.marketing-tech.io
 .naipsouz.net
-.nairbigg.rest
 .naistophoje.net
 .naivepot.com
 .naivestatement.com
@@ -58574,7 +58511,6 @@ URL-REGEX,/igd\.xml
 .naprfjbdpqn.com
 .narcmoormen.com
 .narkalignevil.com
-.narrowmaidroyal.com
 .narwhal.bounty.studio
 .narwhal.quickbudget.xyz
 .nasi.etherscan.com
@@ -58647,6 +58583,7 @@ URL-REGEX,/igd\.xml
 .nbitr.truenutrition.com
 .nbizzi.store.ferrari.com
 .nbkft.thersipo.com
+.nbkpigxextkjn.website
 .nbmhu.sattache.com
 .nbohze.thenorthface.ru
 .nbomqr.schulranzenwelt.de
@@ -58790,7 +58727,6 @@ URL-REGEX,/igd\.xml
 .nelo2-col.linecorp.com
 .nelson.packzin.com.br
 .nelvyvlfyjksw.space
-.nemadueful.digital
 .nemppa.com
 .nend.net
 .nenzr.victoriabeckhambeauty.com
@@ -59226,7 +59162,6 @@ URL-REGEX,/igd\.xml
 .ni8.lafuma.com
 .nialuk.dorifurniture.co.kr
 .niaumxovmqpur.online
-.nibbybeteela.cfd
 .niblewren.co
 .niblicchimb.cfd
 .nibongfauld.digital
@@ -59316,6 +59251,8 @@ URL-REGEX,/igd\.xml
 .nio09070lt.com
 .nio09080lt.com
 .nio09081lt.com
+.nio09090lt.com
+.nio09091lt.com
 .nioks.carowinds.com
 .nipbpkcqe.com
 .nipe4head.com
@@ -59336,7 +59273,6 @@ URL-REGEX,/igd\.xml
 .niu05170jd.top
 .niu05171jd.top
 .niu05180jd.top
-.niveousbrome.rest
 .niwinn.com
 .niwooghu.com
 .niyamafunster.help
@@ -59385,6 +59321,7 @@ URL-REGEX,/igd\.xml
 .nkscs.fierceforward.com
 .nktbo.pillowcube.com
 .nktydx.icu
+.nkwowhhnlaibe.site
 .nkwuqowtoshbc.com
 .nkwvwb.fluevog.com
 .nkydma.newbuild.studio
@@ -59408,6 +59345,7 @@ URL-REGEX,/igd\.xml
 .nlgsc.jessicalondon.com
 .nlgzhd.yoox.com
 .nlhmnj.travelking.sk
+.nlhuinvovrgkm.space
 .nlika.mantrabrand.com
 .nljjem.honeys-onlineshop.com
 .nljyjt.icu
@@ -59593,6 +59531,7 @@ URL-REGEX,/igd\.xml
 .nostalgicknot.com
 .nostalgicneed.com
 .nostrilquarryprecursor.com
+.nosydorymen.com
 .nosyfuze.cyou
 .notcardboard.com
 .notconscious.com
@@ -59641,7 +59580,6 @@ URL-REGEX,/igd\.xml
 .novi.webnovi.eu
 .novibet.partners
 .novicedragged.com
-.novicefearing.digital
 .novostimira.biz
 .now-dns.net
 .now-dns.org
@@ -59786,7 +59724,6 @@ URL-REGEX,/igd\.xml
 .nrnmbyjsyxgr.xyz
 .nrnrj.shopcrystalflush.com
 .nroeoxk.icu
-.nrotuzagll.com
 .nrpon.nutribullet.co.uk
 .nrprg.drmartens.com
 .nrpukcsgboqr0gz2o8.www.bolighub.dk
@@ -59911,7 +59848,6 @@ URL-REGEX,/igd\.xml
 .nucgsx.indestructibleshoes.com
 .nuctok.topten10mall.com
 .nudapp.com
-.nuddjarbird.help
 .nuddmuckite.qpon
 .nudecorvees.com
 .nudgeduck.com
@@ -59966,7 +59902,6 @@ URL-REGEX,/igd\.xml
 .nunsourdaultozy.net
 .nuqozsvweq.com
 .nuquds.citizenwatch.com
-.nuqutunqnun.com
 .nuqwe.com
 .nurflv.bureauxlocaux.com
 .nurij.fathead.com
@@ -59983,6 +59918,7 @@ URL-REGEX,/igd\.xml
 .nussar.tuttocialde.it
 .nutatedtriol.com
 .nutateshazanim.com
+.nutlzt.icu
 .nutrifymazic.cfd
 .nutritiousbean.com
 .nutritiousrush.com
@@ -60008,6 +59944,7 @@ URL-REGEX,/igd\.xml
 .nvpokyko.icu
 .nvtsxcitcvalyml.com
 .nvtve.ticketsforless.com
+.nvueqrqnansqq.com
 .nvumcv.standoil.kr
 .nvuwpi.jelmoli-shop.ch
 .nvxlag.liligo.fr
@@ -60174,7 +60111,6 @@ URL-REGEX,/igd\.xml
 .oadz.com
 .oae.overland-adventures.eu
 .oae6.carrefour-banque.fr
-.oaeauyefrqavz.website
 .oaevgrhpiytej.website
 .oaevvwccwrysd.site
 .oafishchance.com
@@ -60221,10 +60157,8 @@ URL-REGEX,/igd\.xml
 .obeseglobewimp.com
 .obetgtqx.calumet.de
 .obeyerscompel.life
-.obeygrush.cyou
 .obeyroman.com
 .obeysatman.com
-.obeyscenters.shop
 .obfrok.partyking.no
 .obgqkiilwzy.com
 .obguj.wishgardenherbs.com
@@ -60340,7 +60274,6 @@ URL-REGEX,/igd\.xml
 .ocvoqvalko.com
 .ocvr.cn
 .ocwlhv.ecid.com.br
-.ocxelruljrn.xyz
 .oczehj.bookaacruises.com
 .odalrevaursartu.net
 .odamcsk.top
@@ -60444,6 +60377,7 @@ URL-REGEX,/igd\.xml
 .offshoregeology.com
 .offshuppetchan.com
 .offsigilyphor.com
+.offspringthisscarcely.com
 .offsteelixa.com
 .ofgik.site
 .ofgulpinan.com
@@ -60475,7 +60409,6 @@ URL-REGEX,/igd\.xml
 .ofwdvh.suntransfers.com
 .ofwq.cn
 .ofxvob.plantura.garden
-.ofyuxfqhsexkj.online
 .ofzaqfcrfyaqd.com
 .ofzqe.red-equipment.us
 .ogacl.lovecrafts.com
@@ -60507,6 +60440,7 @@ URL-REGEX,/igd\.xml
 .ogpdwe.livin24.com
 .ogpzj.tumi.com
 .ogrepsougie.net
+.ogrootoaloamept.net
 .ogtcggtsbulfs.online
 .oguaumtdjyqoe.online
 .ogucv.visitkingsisland.com
@@ -60777,6 +60711,7 @@ URL-REGEX,/igd\.xml
 .omarcheopson.com
 .omasameowing.world
 .omasatra.com
+.omatri.info
 .omazeiros.com
 .ombet.condition1.com
 .omciecoa37tw4.com
@@ -61123,6 +61058,7 @@ URL-REGEX,/igd\.xml
 .onkavst.com
 .onldlx.snowuniverse.com
 .onliesttoyos.life
+.online-adnetwork.com
 .online-mt-com-455208869.p06.elqsandbox.com
 .online.assuranceagency.com
 .online.cphi.cn
@@ -61375,7 +61311,6 @@ URL-REGEX,/igd\.xml
 .optimizer.poxo.com
 .optimizesrv.com
 .optimum-xyz.com
-.optimummontera.qpon
 .optionen.hager.de
 .optionsdisk.com
 .optiqblue-ss.offeroshop.com
@@ -61450,7 +61385,6 @@ URL-REGEX,/igd\.xml
 .orangutan.renovare.org
 .oraubsoux.net
 .orbicalrykes.com
-.orbicunposed.cfd
 .orbidder.otto.de
 .orbitcarrot.com
 .orbitnotify.com
@@ -61651,7 +61585,6 @@ URL-REGEX,/igd\.xml
 .ossrhydonr.com
 .ossshucklean.com
 .ossuarysilique.com
-.ostendemitter.digital
 .ostmenduelist.click
 .ostrich.getschools.org
 .ostrich.hegic-tokenizer.co
@@ -61915,6 +61848,7 @@ URL-REGEX,/igd\.xml
 .ow5a.net
 .owa.any.run
 .owa.carhartt.com
+.owagawjgamjon.top
 .owaicoobsoog.com
 .oway.mobi
 .owchaavetonb.com
@@ -61942,7 +61876,6 @@ URL-REGEX,/igd\.xml
 .owmvrtlsijiyw.website
 .ownip.net
 .ownthmorningb.org
-.owomjmknjoova.top
 .owougoodoom.net
 .owp-sg-prop.americanexpress.com
 .owp-tw.americanexpress.com
@@ -61967,7 +61900,6 @@ URL-REGEX,/igd\.xml
 .oxado.com
 .oxaxks.europlan.ru
 .oxbbzxqfnv.com
-.oxbqgytmsr.com
 .oxbskt.autotrader.com.au
 .oxdejn.lavprisel.dk
 .oxfbambrpxoud.xyz
@@ -62008,6 +61940,7 @@ URL-REGEX,/igd\.xml
 .oyqbnnbwwvabg.top
 .oyssqe.easyvoyage.com
 .oysterbywordwishful.com
+.oyudmaizidpnx.space
 .oyuluswjqnpzr.site
 .oywusyjg.com
 .oyxyawosqdljl.com
@@ -62153,11 +62086,11 @@ URL-REGEX,/igd\.xml
 .pacesconcise.com
 .pachegaimax.net
 .packagingsolutions.filamatic.com
-.packallfluky.digital
 .packeteagle.com
 .packsofgood.com
 .padreedoulreeh.net
 .padsabs.com
+.padsans.com
 .padsatz.com
 .padsims.com
 .padskis.com
@@ -62363,7 +62296,6 @@ URL-REGEX,/igd\.xml
 .panda.teraskolmio.fi
 .panda.unpublished.app
 .pandasuite.io
-.pandavapricks.cfd
 .pandemybromide.top
 .pandora.xiaomi.com
 .panel-cn.com
@@ -62458,7 +62390,6 @@ URL-REGEX,/igd\.xml
 .parteonroll.xyz
 .participationfinessemachinery.com
 .participationwhitehandwriting.com
-.partisbkbndr.click
 .partner-affilbox.telly.cz
 .partner-app.softwareselect.com
 .partner-staging.miso.kr
@@ -63320,6 +63251,7 @@ URL-REGEX,/igd\.xml
 .penguin.revolana.com
 .penguincaviarsuccession.com
 .pennilesscomingall.com
+.pensildammer.com
 .pentalime.com
 .penxiangge.com
 .peonagefoliary.cyou
@@ -63535,6 +63467,7 @@ URL-REGEX,/igd\.xml
 .phinathuu.com
 .phinnk.airtrip.jp
 .phirussacmush.net
+.phkavwzvgjjtw.online
 .phkhcp.luminaire.fr
 .phlebotomyexam.quantresear.ch
 .phloxsub73ulata.com
@@ -63674,7 +63607,6 @@ URL-REGEX,/igd\.xml
 .pimpoint.inriver.com
 .pin.hpplay.cn
 .pin6d37stu.com
-.pinacaban.cyou
 .pinchsquirrel.com
 .pincourse.com
 .pine.clk.click
@@ -64130,7 +64062,6 @@ URL-REGEX,/igd\.xml
 .playvideodirect.com
 .plbcsd.vidaxl.se
 .plbusiness.samsung.com
-.plcjonyujoudf.online
 .plczro.21dressroom.com
 .pldlz.com
 .ple.pearlinsurance.com
@@ -64144,13 +64075,13 @@ URL-REGEX,/igd\.xml
 .plesk.page
 .pleuricunpeel.world
 .plexop.net
+.plexurepuan.qpon
 .plfavetxktgvw.space
 .plfwxtgu.icu
 .pliantdummyexasperation.com
 .pliing.com
 .plinkedredress.rest
 .plinksplanet.com
-.plitchkhalifs.cfd
 .pljuin.lensmode.com
 .plkhvn.keibi-baito.com
 .pll.pearlinsurance.com
@@ -64167,7 +64098,6 @@ URL-REGEX,/igd\.xml
 .plotrabbit.com
 .plotzn.apmex.com
 .ploughplbroch.com
-.ploveryholism.click
 .plowh.com
 .plowingjaseys.life
 .ploy.batmobi.net
@@ -64253,6 +64183,7 @@ URL-REGEX,/igd\.xml
 .pnaagn.haekplanter-heijnen.dk
 .pncloudfl.com
 .pncqz.quince.com
+.pnd.gs
 .pndqb.scentiment.com
 .pndvhjgixorbq.online
 .pnekru6pxrum-a.akamaihd.net
@@ -64325,6 +64256,7 @@ URL-REGEX,/igd\.xml
 .poisism.com
 .poiuy12.com
 .pokjsxhfxeum.com
+.pokomoofimbles.cyou
 .pokrc.hotelcollection.ca
 .pol3.cheque-domicile.fr
 .polainaupeeks.net
@@ -64374,14 +64306,12 @@ URL-REGEX,/igd\.xml
 .pondmanshrove.shop
 .pondov.cfd
 .ponerapinnage.help
-.poneviddhal.qpon
 .pongopoteen.click
 .ponk.pro
 .ponno.onlineponnobd.com
 .ponos.zeronaught.com
 .pontiflex.com
 .ponyo.cheriefm.fr
-.pooaivin.qpon
 .pooir.myquietfuel.com
 .pool.onjoyri.de
 .pool.onjoyride.com
@@ -65011,6 +64941,7 @@ URL-REGEX,/igd\.xml
 .profitablegatetocontent.com
 .profitableratecpm.com
 .profitabletrustednetwork.com
+.profitpeelers.com
 .profitrumour.com
 .profitsence.com
 .proftrafficcounter.com
@@ -65031,6 +64962,7 @@ URL-REGEX,/igd\.xml
 .projectagoralibs.com
 .projectagoraservices.com
 .projectagoratech.com
+.projectcooperate.com
 .projectwonderful.com
 .proll.shemrec.cc
 .promdamagecomplain.com
@@ -65110,7 +65042,6 @@ URL-REGEX,/igd\.xml
 .propsynergy.com
 .propu.sh
 .prosecutorremarkablegodforsaken.com
-.prosedfrowny.rest
 .prosedglisten.cfd
 .prosperent.com
 .prostrikemagazine.com
@@ -65119,6 +65050,7 @@ URL-REGEX,/igd\.xml
 .protawe.com
 .protected-by.clarium.io
 .protectioncleave.com
+.protectorfolded.com
 .proteinfrivolousfertilised.com
 .proteininnovationpioneer.com
 .proteinshippingwhether.com
@@ -65315,7 +65247,6 @@ URL-REGEX,/igd\.xml
 .pteleaspiring.top
 .ptelj.loveshackfancy.com
 .pteooxkve.com
-.ptephatauss.net
 .ptestofooltouts.net
 .ptewegleecha.net
 .ptgbydghejqfz.online
@@ -65339,6 +65270,7 @@ URL-REGEX,/igd\.xml
 .pto-slb-09.com
 .ptoagnoovudsuh.net
 .ptoaksauseegh.net
+.ptoampauteeftie.net
 .ptoamsitholrexo.net
 .ptoftashulsee.com
 .ptooruksit.net
@@ -65356,8 +65288,8 @@ URL-REGEX,/igd\.xml
 .ptphd.terijon.com
 .ptpzzvnnstyslr.com
 .ptrenx.vidaxl.com.au
+.ptreyhmq.com
 .ptrmnx.icu
-.ptrnhoyssaughn.com
 .ptsc.shoplocal.com
 .pttsite.com
 .pttzjo.top
@@ -65486,7 +65418,6 @@ URL-REGEX,/igd\.xml
 .punkahtollery.qpon
 .punkierdetruck.com
 .punknatrix.life
-.punningscepter.life
 .punogchdnwcrri.com
 .punoocke.com
 .punosy.best
@@ -65503,6 +65434,7 @@ URL-REGEX,/igd\.xml
 .puqexkqchuavgy.com
 .purchaserconnectionleaden.com
 .purchasesupremo.tiadoingles.com.br
+.pureenergyflow.com
 .purifydimeprove.com
 .purlmanmalgre.life
 .purp.sukaporn.com
@@ -65716,7 +65648,6 @@ URL-REGEX,/igd\.xml
 .pylon.micstatic.com
 .pylqeypkcxzka.site
 .pymoqb.ied.it
-.pyoidlepry.cfd
 .pyonbq.rakurakumeisai.jp
 .pyonbrj41b.com
 .pyosismajeure.click
@@ -65741,7 +65672,6 @@ URL-REGEX,/igd\.xml
 .pyxjkx.springjapan.com
 .pyxytj.icu
 .pzajdh.guicheweb.com.br
-.pzaoxbazj.com
 .pzapi-ij.com
 .pzapi-kg.com
 .pzcld.easymealz.ca
@@ -66208,6 +66138,8 @@ URL-REGEX,/igd\.xml
 .qogonsuqq.com
 .qogrux.com
 .qohlsl.drawer.fr
+.qohxqmbkcaw.com
+.qoifssjotwese.space
 .qojhc.unique-vintage.com
 .qokyjcdfhuub.com
 .qolhpm.iparts.pl
@@ -66303,7 +66235,7 @@ URL-REGEX,/igd\.xml
 .qrcode.visit-thassos.com
 .qrdbc.aroma360.se
 .qrddvulqu.com
-.qrealqezjqklw.top
+.qrealqezjvjro.top
 .qreport.qunar.com
 .qrgiuvorhhxsa.store
 .qrgzm.topnutritionandfitness.com
@@ -66424,6 +66356,7 @@ URL-REGEX,/igd\.xml
 .qucnmty.top
 .qucnwty.top
 .qudajie.com
+.queanpattle.com
 .queasypolenta.com
 .queasytonight.com
 .queenjam.com
@@ -66480,7 +66413,6 @@ URL-REGEX,/igd\.xml
 .quiz.resolucaoonline.com
 .quiz.survifu.com
 .quizmastersagaciousernie.com
-.quizzedtoot.help
 .quizzicalpartner.com
 .quizzicalzephyr.com
 .qujishu.com
@@ -66803,7 +66735,6 @@ URL-REGEX,/igd\.xml
 .rajyiv.kimyoung.co.kr
 .rake.11st.co.kr
 .rake.tmap.co.kr
-.rakefulpenoche.click
 .rakesh.csatmantra.com
 .rakesh.yogicshaadi.com
 .rakib.fashionsomahar.com
@@ -66818,7 +66749,6 @@ URL-REGEX,/igd\.xml
 .ramp.purch.com
 .rampionyeta.world
 .rampjs-cdn.system1.com
-.ramplorboardly.click
 .ramplorbugan.digital
 .ramracetamales.top
 .ramtacompear.qpon
@@ -66872,7 +66802,6 @@ URL-REGEX,/igd\.xml
 .rastusnauplii.digital
 .rat.einfachlebenforum.com
 .rat.rakuten.co.jp
-.ratbagenround.rest
 .rate2self.com
 .rate8deny.com
 .ratedeaddisk.com
@@ -66885,7 +66814,6 @@ URL-REGEX,/igd\.xml
 .ratterynubs.qpon
 .rattlekindergartencultivate.com
 .rattlestrample.shop
-.ratwoodjowlish.digital
 .raucousgimbals.shop
 .raudk.rainguard.com
 .raulaimuphie.net
@@ -66939,6 +66867,7 @@ URL-REGEX,/igd\.xml
 .rbkidelmug.com
 .rbkmzhc.icu
 .rbmbmbrmnhq.com
+.rbmcnf.pro
 .rbncmx.chopperexchange.com
 .rbnvpy.klingel.at
 .rbone.link
@@ -66988,7 +66917,6 @@ URL-REGEX,/igd\.xml
 .rcgwej.lights.co.uk
 .rcilgeill.com
 .rciokmwkjiwuw.store
-.rclamerouts.shop
 .rclmo.dia.com
 .rcm.shinobi.jp
 .rcnalhvjaxzkw.online
@@ -67037,7 +66965,6 @@ URL-REGEX,/igd\.xml
 .rdfnq.etrgovinica.si
 .rdhag.sansmatin.co.uk
 .rdhsefvixvaws.space
-.rdiloktcbwkhg.online
 .rdkct.kickgame.co.uk
 .rdkro.beistravel.com
 .rdllwd.gasjeans.com
@@ -67437,7 +67364,6 @@ URL-REGEX,/igd\.xml
 .regulationprivilegescan.top
 .rehabilitatereason.com
 .rehabilitationforegoingdefendant.com
-.rehaytewhimsic.cfd
 .rehearmirish.rest
 .rehearsejuniorloaded.com
 .rehearslittle.world
@@ -67495,12 +67421,10 @@ URL-REGEX,/igd\.xml
 .relievedjoke.com
 .religionhaltnon.com
 .religionrush.com
-.relinedbicker.help
 .relinescoude.rest
 .relinkcutitis.qpon
 .relishsinew.com
 .relodgerimiest.cyou
-.relostthetine.cfd
 .reltrd.peteralexander.com.au
 .reluctancefleck.com
 .reluctanceleatheroptional.com
@@ -67929,6 +67853,7 @@ URL-REGEX,/igd\.xml
 .rezync.com
 .rfajl.teppermans.com
 .rfaoqpthoguh.com
+.rfbsmjdidmec.com
 .rfdqlehuiufyk.click
 .rfecp.antlerfarms.com
 .rferl.c.goolara.net
@@ -67936,7 +67861,6 @@ URL-REGEX,/igd\.xml
 .rfgkp.kathrynwilson.com
 .rfgsdgg.top
 .rfhaalawjdmk.xyz
-.rfhdiykjbiyba.space
 .rfifavwhiomx.com
 .rfihub.com
 .rfihub.net
@@ -68010,7 +67934,6 @@ URL-REGEX,/igd\.xml
 .rhava.supportpets.com
 .rhdcmp.maxcolchon.com
 .rhdifs.top
-.rhedaeteri.qpon
 .rhemestreets.shop
 .rhendam.com
 .rheoantilia.cyou
@@ -68075,7 +67998,6 @@ URL-REGEX,/igd\.xml
 .riddancemanufacturerextraction.com
 .riddedbaile.com
 .rideblackbird.com
-.ridgetoust.click
 .ridingpertconquest.com
 .ridmvd.dazzystore.com
 .ridve.simmsfishing.com
@@ -68132,12 +68054,10 @@ URL-REGEX,/igd\.xml
 .ripe8book.com
 .riperemote.com
 .riperequest.com
-.ripesenjoins.shop
 .ripewhining.com
 .rippetsewen.world
 .rippledtubae.digital
 .ripplyearlier.digital
-.riprapsskittle.help
 .ripzey.carrieres-publiques.com
 .rir8h6qxk.com
 .riraconianstar.com
@@ -68155,7 +68075,6 @@ URL-REGEX,/igd\.xml
 .risk8belt.com
 .riskerspont.help
 .riskexcel.com
-.risokwhh.com
 .risselwark.cyou
 .rissomcherte.qpon
 .riszraezsijnw.online
@@ -68191,7 +68110,6 @@ URL-REGEX,/igd\.xml
 .rjgglf.ncchomelearning.co.uk
 .rjgsjm.gigameubel.nl
 .rjguonqztwmgs.store
-.rjicwpdsfdypl.store
 .rjif.cn
 .rjilbs.intermediair.nl
 .rjjynf.showcase-tv.com
@@ -68253,6 +68171,7 @@ URL-REGEX,/igd\.xml
 .rliwiqr.icu
 .rllbu.lovisa.co.uk
 .rlltft.floridafinecars.com
+.rlnvbmsxrreot.store
 .rlog-api.under9.co
 .rlog.9gag.com
 .rlog.popin.cc
@@ -68277,7 +68196,6 @@ URL-REGEX,/igd\.xml
 .rmdvca.belvilla.de
 .rmervvomroavq.top
 .rmgdapfnccsharpprd.azurewebsites.net
-.rmggipaazeupw.site
 .rmguf.joesjeans.com
 .rmhfrtnd.com
 .rmishe.com
@@ -68408,7 +68326,6 @@ URL-REGEX,/igd\.xml
 .roinjg.mkluzkoviny.cz
 .rojj.cn
 .rokymedia.com
-.rollafkhgfene.space
 .rollconnection.com
 .rollerbizarreunanimously.com
 .rollserver.xyz
@@ -68456,6 +68373,7 @@ URL-REGEX,/igd\.xml
 .ropvea.surthrival.com
 .roqairs.com
 .roquetssixtine.rest
+.rorialonely.com
 .roristegla.com
 .roritchou.net
 .ros.designernapratica.com
@@ -68495,6 +68413,7 @@ URL-REGEX,/igd\.xml
 .roulette.abzorbagames.com
 .round.t3.gg
 .roundaboutpoisonousglobe.com
+.rounderica.help
 .roundflow.net
 .roundsnocturn.help
 .roungenaish.help
@@ -68564,7 +68483,7 @@ URL-REGEX,/igd\.xml
 .rqbtux.margaretha.no
 .rqbvgm.aleupominek.pl
 .rqd.qq.com
-.rqejawwjlovlj.top
+.rqejawwjlomjw.top
 .rqelulyegh.com
 .rqgmu.lakepajamas.com
 .rqhadd.vop.co.kr
@@ -69317,7 +69236,6 @@ URL-REGEX,/igd\.xml
 .s.baidu.com
 .s.beawoman.mx
 .s.beop.io
-.s.bigpornhd.mom
 .s.blinds.ca
 .s.blinds.com
 .s.bluebeam.software
@@ -69972,7 +69890,6 @@ URL-REGEX,/igd\.xml
 .safebrowsdv.com
 .safecoprograms.com
 .safelinkconverter.com
-.safelistextreme.com
 .safepass.citizen.com
 .safestcontentgate.com
 .safesync.com
@@ -70345,6 +70262,7 @@ URL-REGEX,/igd\.xml
 .scadobe.bccard.com
 .scadobe.ohpointcard.com
 .scadobe.vpay.co.kr
+.scakuvap.com
 .scalaephenate.life
 .scalavicine.world
 .scale.amisisstore.com.br
@@ -70468,6 +70386,7 @@ URL-REGEX,/igd\.xml
 .scnon.perpetualtraffic.com
 .scnt.rambler.ru
 .scode.randomhouse.com
+.scogginslipe.com
 .scohmallt.com
 .scoldak.com
 .sconat.com
@@ -71027,7 +70946,6 @@ URL-REGEX,/igd\.xml
 .seeweejaspis.qpon
 .seeya.calmkidz.in
 .seezfull.com
-.seezoacaulod.net
 .sefsbjrxplvaiap.com
 .sefsdvc.com
 .segapi.splice.com
@@ -71067,10 +70985,10 @@ URL-REGEX,/igd\.xml
 .sem.tkc-biyou.jp
 .semasu.net
 .semblehomages.cyou
-.semeel.click
 .semeionerudit.cyou
 .semeseamidol.cyou
 .seminarlotus.rest
+.semiprotylari.qpon
 .semplesapolune.com
 .senagosther.click
 .send.hollandcasino.nl
@@ -75051,7 +74969,6 @@ URL-REGEX,/igd\.xml
 .shikflinyaj.com
 .shili.downxia.com
 .shili.wanyx.com
-.shillukjunkies.help
 .shimmering-spot.com
 .shimpooy.com
 .shine.starshot.com
@@ -75394,9 +75311,7 @@ URL-REGEX,/igd\.xml
 .simpletopay.americanexpress.com.au
 .simplewebanalysis.com
 .simpli.fi
-.simplistic-fold.com
 .simplistic-recover.com
-.simpsculler.cyou
 .simpsmeasle.qpon
 .simsivwfaaf.com
 .simulateswing.com
@@ -75404,7 +75319,6 @@ URL-REGEX,/igd\.xml
 .sinaminbinocs.cyou
 .sincenturypro.org
 .sincerebuffalo.com
-.sincerecompatriot.com
 .sinceregarden.sincere-garden.jp
 .sincerepelican.com
 .sinceresubstance.com
@@ -75582,6 +75496,7 @@ URL-REGEX,/igd\.xml
 .skegsnonjury.cyou
 .skeinermicmac.help
 .skeletalstreet.com
+.sketchinferiorunits.com
 .sketchpals.com
 .skfgnsvkjfgvv.com
 .skgpzivadwdte.buzz
@@ -75613,7 +75528,6 @@ URL-REGEX,/igd\.xml
 .skkjtopbgnflw.website
 .sklup.trysourse.com
 .skmcwz.haselmode.co.kr
-.skmezipywjqqf.store
 .sknkggfnm.com
 .skolshrinks.qpon
 .skroutza.skroutz.gr
@@ -75660,7 +75574,6 @@ URL-REGEX,/igd\.xml
 .slahpxqb6wto.com
 .slakyareola.cfd
 .slanterwaggly.cyou
-.slashesgul.cfd
 .slashstar.net
 .slaunch.shopcanopy.com
 .slaunch.spectrumtherapeutics.com
@@ -76083,7 +75996,6 @@ URL-REGEX,/igd\.xml
 .snoutochrana.digital
 .snowdayonline.xyz
 .snowflake.qq.com
-.snowldupes.digital
 .snowman.odencat.com
 .snowmansphereabrasive.com
 .snowmentor.com
@@ -76156,7 +76068,6 @@ URL-REGEX,/igd\.xml
 .social.talenttitan.com
 .social.tinyview.com
 .socialbars-web1.com
-.sociidipper.world
 .sociomantic.com
 .socket.streamable.com
 .sockjs-goguardian.pusher.com
@@ -76802,6 +76713,7 @@ URL-REGEX,/igd\.xml
 .specialsnake.com
 .speciedevex.com
 .specificallycries.com
+.specificallyglimmerdispose.com
 .specificmedia.com
 .spectacularpercentage.com
 .spectacularstamp.com
@@ -76882,7 +76794,6 @@ URL-REGEX,/igd\.xml
 .splash.appsgeyser.com
 .splatky.aquatrend.sk
 .splay.maerkbare.dk
-.splaymtier.shop
 .splaysyrian.help
 .splendid-concert.com
 .splendid-negotiation.com
@@ -76891,7 +76802,6 @@ URL-REGEX,/igd\.xml
 .splendlddates.net
 .splicky.com
 .splitexpenses.oworld.fr
-.splittingpick.com
 .splletaz.bycortsen.com
 .splsgi.coco-gourmet.com
 .spmaeu.gumtree.com.au
@@ -76958,7 +76868,6 @@ URL-REGEX,/igd\.xml
 .sponsors.salesforceben.com
 .sponsors.vvng.com
 .spoods.rce.veeseo.com
-.spookstropin.qpon
 .spookyascentfranchise.com
 .spookyexchange.com
 .spookyskate.com
@@ -76990,6 +76899,7 @@ URL-REGEX,/igd\.xml
 .spotless-reveal.com
 .spotlesspersianwhereas.com
 .spotlessstamp.com
+.spotlightprayers.com
 .spotofspawn.com
 .spotscenered.info
 .spotsconcealedunlikely.com
@@ -77037,12 +76947,10 @@ URL-REGEX,/igd\.xml
 .spt.performgroup.com
 .sptrck.com
 .sptrkr.com
-.spurdogpints.cyou
 .spuriousair.com
 .spurioussquirrel.com
 .spuriousstranger.com
 .spxl.socy.es
-.spxsvrvxwouyp.site
 .spy.epornleak.com
 .spyfocusshop-ss.offeroshop.com
 .spyglass.reklon.net
@@ -85580,7 +85488,6 @@ URL-REGEX,/igd\.xml
 .steun.touringcars.com
 .stevetrainer.shop
 .stevungegn.com
-.stewishaspic.cfd
 .stfynw.esprit.be
 .stg-apigw.samsungdmroute.com
 .stg-bnc-papago.naver.com
@@ -86022,7 +85929,6 @@ URL-REGEX,/igd\.xml
 .style.onvz.nl
 .style.stylejatra.com
 .style.thestylefactory.xyz
-.stylebursary.qpon
 .styles.hautelook.com
 .stylish-airport.com
 .stylish-knife.com
@@ -86236,7 +86142,6 @@ URL-REGEX,/igd\.xml
 .summerwm1.com
 .summit.ubm-licensing.com
 .summonsyahwist.cfd
-.sumwdqykprdwj.online
 .sun.solar-haus.de
 .sunburnbbl.life
 .suncanny.marvel.com
@@ -86335,6 +86240,7 @@ URL-REGEX,/igd\.xml
 .surveys.executiveboard.com
 .surviseproper.click
 .suryue.e-oshibai.com
+.susannefine.cyou
 .susianulidia.com
 .suspectlensemphasis.com
 .suspectplainrevulsion.com
@@ -86347,7 +86253,6 @@ URL-REGEX,/igd\.xml
 .sutean.com
 .sutraf.com
 .suttenbattish.cfd
-.sutzcaladow.com
 .suunta.visma.fi
 .suurl.nuudcare.de
 .suvgo.lacedhair.com
@@ -87672,7 +87577,6 @@ URL-REGEX,/igd\.xml
 .tacticsextreme.com
 .tad.suning.com
 .tadata.afafb.com
-.tadcacsimn.com
 .tadseeker.com
 .taduhy.timberland.co.uk
 .taemhn.zamst-online.jp
@@ -88719,7 +88623,6 @@ URL-REGEX,/igd\.xml
 .tbk.p61gallery.com
 .tbknig.ecc.jp
 .tbmgyz.centerparcs.de
-.tbmvpgwyoqxfoax.com
 .tbodclpaicx.com
 .tbpot.com
 .tbsxkmwsmksjj.buzz
@@ -89066,6 +88969,7 @@ URL-REGEX,/igd\.xml
 .telemetry.bowflex.ca
 .telemetry.bowflex.com
 .telemetry.boxt.co.uk
+.telemetry.broadcom.com
 .telemetry.canva.com
 .telemetry.chrobinson.com
 .telemetry.codefusion.technology
@@ -89119,6 +89023,7 @@ URL-REGEX,/igd\.xml
 .telemetrydeck.com
 .telephoneapparatus.com
 .teleport.soom.la
+.telialkeryx.click
 .telreegnoacougn.net
 .telulr.golfgalaxy.com
 .temails.productnotice.thomsonreuters.com
@@ -89148,7 +89053,6 @@ URL-REGEX,/igd\.xml
 .tenserrelents.com
 .tensuao.club
 .tent0mown.com
-.tentaclesbirthday.com
 .tentersforesay.qpon
 .tentflooring.biljax.com
 .tenthsfrumpy.com
@@ -89363,12 +89267,11 @@ URL-REGEX,/igd\.xml
 .tfuodg.memolife.de
 .tfwjtrkuueobz.online
 .tfwloy.perene.fr
-.tfystjhfaqwosic.xyz
+.tfxswxtxcickc.space
 .tfzah.icu
 .tg.coffeeandbibletime.com
 .tg.meitu.com
 .tg1.premiumimpression.com
-.tgankgcp.com
 .tgb1l.icu
 .tgbfha.lily-brw.com
 .tgfkhk.tire-hood.com
@@ -89434,13 +89337,13 @@ URL-REGEX,/igd\.xml
 .thaqyl.mediamarkt.nl
 .thashoargolto.com
 .thaudray.com
+.thauftoaceensy.net
 .thaufudrehis.net
 .thaugnaixi.net
 .thawbootsamplitude.com
 .thawnappy.com
 .thbeq.honestpaws.com
 .thdmd.raneystruckparts.com
-.thduyzmbtrb.com
 .the-lead-tracker.com
 .the-ozone-project.com
 .the.chayapest.com
@@ -89524,6 +89427,7 @@ URL-REGEX,/igd\.xml
 .therapeuticcars.com
 .therawolf-ss.olladeals.com
 .theretounstuff.cyou
+.theriannaevi.shop
 .thermometercourtroomfusion.com
 .theroot.black.news
 .thesis08062025.shop
@@ -89546,6 +89450,7 @@ URL-REGEX,/igd\.xml
 .thidooraurgih.com
 .thienylsuffuse.help
 .thilushouph.net
+.thimaihaptique.net
 .thimhudlop.com
 .thind-gke-euw.prd.data.corp.unity3d.com
 .thingsafterthought.com
@@ -89604,6 +89509,7 @@ URL-REGEX,/igd\.xml
 .thriseds.com
 .thrive.metagenics.com
 .thrivingmarketplace.com
+.throatentrepreneur.com
 .throbpeesash.life
 .thronosgeneura.com
 .throughthesumeme.com
@@ -89637,7 +89543,6 @@ URL-REGEX,/igd\.xml
 .thuwhehyli.com
 .thwitepartlet.shop
 .thymelecatch.click
-.thymsmovers.life
 .thyroidaketon.com
 .ti.tradetracker.net
 .ti4la.icu
@@ -89714,6 +89619,7 @@ URL-REGEX,/igd\.xml
 .tilhyw.lampen24.nl
 .tilt.bankofamerica.com
 .tiltgardenheadlight.com
+.tilthsaustere.shop
 .tiltschaster.com
 .tilttrk.com
 .tiltuploafer.com
@@ -90258,6 +90164,7 @@ URL-REGEX,/igd\.xml
 .to.uptime.app
 .toad.ettiennevorster.co.za
 .toad.frontendmentor.io
+.toageenoaci.net
 .toangroi.xyz
 .toasoudouh.net
 .toasttutor.com
@@ -90371,7 +90278,6 @@ URL-REGEX,/igd\.xml
 .tooriteeda.net
 .toorl.sheex.com
 .toothcauldron.com
-.toothsdunite.cfd
 .toozouchoor.net
 .top-fwz1.mail.ru
 .top-performance.best
@@ -90446,6 +90352,7 @@ URL-REGEX,/igd\.xml
 .tortoisesun.com
 .toru0vane.com
 .tos.botex.dk
+.totedasouth.qpon
 .totemcash.com
 .totentacruelor.com
 .totesnobis.com
@@ -90465,12 +90372,10 @@ URL-REGEX,/igd\.xml
 .touchdowndeveloping.com
 .toughhire.com
 .tour.lostmountains.sa
-.touringfewsome.rest
 .tourism.visitorlando.com
 .touristbaconwrath.com
 .touristfuel.com
 .touroumu.com
-.toursibex.rest
 .tousiwoaptuy.net
 .touslygreys.world
 .touvxlii.top
@@ -90567,7 +90472,6 @@ URL-REGEX,/igd\.xml
 .tqeferty33.fun
 .tqftse.cariru.jp
 .tqgav.frugalcabinetsonline.com
-.tqisbudqqjnif.online
 .tqiwqa.jdsports.ie
 .tqjojh.icu
 .tqjzhlpytkfvz.online
@@ -92683,6 +92587,7 @@ URL-REGEX,/igd\.xml
 .tracker-dot-dfty-optimeeze-leroymerlinfr.appspot.com
 .tracker-dot-optimeeze.appspot.com
 .tracker-rec.smart-bdash.com
+.tracker-remp.active.radio
 .tracker-server.high-cdn.com
 .tracker-v4.gamedock.io
 .tracker.3dissue.com
@@ -93960,6 +93865,7 @@ URL-REGEX,/igd\.xml
 .tracks1.ferrari.com
 .tracks3.ferrari.com
 .tracksfaster.com
+.tracksgloss.com
 .trackside.redbull.racing
 .trackspeeder.com
 .tracksrv.zdf.de
@@ -94040,7 +93946,6 @@ URL-REGEX,/igd\.xml
 .trail.thomsonreuters.com.sg
 .trail.thomsonreuters.in
 .trailbox.net
-.trailerhg.xyz
 .trailmadamecorrelation.com
 .training.graduateschool.edu
 .training.hager.co.uk
@@ -94357,7 +94262,6 @@ URL-REGEX,/igd\.xml
 .triggertag.gorillanation.com
 .trimmoits.com
 .trinkumjuneau.help
-.triodessloking.cyou
 .trioecsduomi.digital
 .triplestat.online
 .triplewhale-pixel.web.app
@@ -95119,7 +95023,6 @@ URL-REGEX,/igd\.xml
 .trusty-research.com
 .trustyfine.com
 .trustzonevpn.info
-.truthburlap.com
 .trutheyesstab.com
 .truthfullybrickbravely.com
 .truuhmoen.com
@@ -95140,6 +95043,7 @@ URL-REGEX,/igd\.xml
 .try.ecisecurepay.com
 .try.jaranda.kr
 .try.joonapp.io
+.try.opera.com
 .try.popchart.family
 .try.postmuseapp.com
 .try.surveydose.com
@@ -95208,6 +95112,7 @@ URL-REGEX,/igd\.xml
 .tsedvc.aboutyou.ch
 .tsg.thesteelgallery.co.uk
 .tsgla.soundmaxx-online.de
+.tsgygcljbnbhbd.com
 .tshirt.fridayclothingbd.com
 .tshts.xaliorganics.com
 .tshuxi.bbqguys.com
@@ -95253,7 +95158,6 @@ URL-REGEX,/igd\.xml
 .tsureslipper.com
 .tsvnqvqvvqvr.com
 .tswafl.lascana.nl
-.tsxrqrgmemkfenv.com
 .tsyndicate.com
 .tt.biquge.la
 .tt.energie.guide-infos.fr
@@ -95523,7 +95427,6 @@ URL-REGEX,/igd\.xml
 .twilmii.top
 .twin-iq.kickfire.com
 .twinboutjuly.com
-.twincdn.com
 .twinelandlord.com
 .twinfill.com
 .twinpinenetwork.com
@@ -95638,7 +95541,6 @@ URL-REGEX,/igd\.xml
 .tzafr.katespadeoutlet.com
 .tzahvkqybkdrx.store
 .tzartiangue.cyou
-.tzarurnful.rest
 .tzegilo.com
 .tzehd.directmeds.com
 .tzethaungot.com
@@ -95921,7 +95823,6 @@ URL-REGEX,/igd\.xml
 .ueinicrbijpbjir.com
 .ueivh.greenllamaclean.com
 .uektedsni.com
-.uelclnfeaxlur.online
 .ueleu.pacersteamstore.com
 .uenqeotul.com
 .uep.gaijin.net
@@ -95944,7 +95845,6 @@ URL-REGEX,/igd\.xml
 .ufeonk.viravira.co
 .ufeuca.icu
 .ufgl.cn
-.ufgojgcxudqmg.website
 .ufgsz.kiki.world
 .ufiidvv.icu
 .ufjwqdmqzlquq.world
@@ -95993,7 +95893,6 @@ URL-REGEX,/igd\.xml
 .ugroocuw.net
 .ugrpu.warmies.com
 .ugssd.fredericks.com
-.ugttoldo.shop
 .ugueolbcmmrlq.site
 .ugvbua.optykaworld.pl
 .ugxqhefppsuid.site
@@ -96290,7 +96189,6 @@ URL-REGEX,/igd\.xml
 .undergodoublycongruous.com
 .undergomason.com
 .undergonequiveringnearby.com
-.underlifrying.world
 .underlymeered.shop
 .understanding3x.fun
 .understandspoiledabnormality.com
@@ -96310,7 +96208,6 @@ URL-REGEX,/igd\.xml
 .unequalbrake.com
 .unequaledchair.com
 .unequaltrail.com
-.unerectsirgang.help
 .unfacedrodders.shop
 .unfairgenelullaby.com
 .unfaithveinier.cyou
@@ -96334,7 +96231,6 @@ URL-REGEX,/igd\.xml
 .unhoedbeaks.click
 .unhotpockily.help
 .unhulloutbend.shop
-.unhurtblite.click
 .uni.okane-reco-plus.com
 .uni7.uniplaces.com
 .unicontainers.com
@@ -96398,7 +96294,6 @@ URL-REGEX,/igd\.xml
 .unlock.onedreamsports.de
 .unlock.plainbear.co.uk
 .unlockcontent.org
-.unlockswervehustle.com
 .unluckydoubt.com
 .unlustymawkin.click
 .unluxioer.com
@@ -96406,7 +96301,6 @@ URL-REGEX,/igd\.xml
 .unmantyker.com
 .unmectappic.com
 .unmeetbookies.com
-.unmefwsycamtq.space
 .unmistgenoms.world
 .unneedylobfig.click
 .unnervesuede.cyou
@@ -96419,7 +96313,6 @@ URL-REGEX,/igd\.xml
 .unpjmm.mangatori.fr
 .unplankbedcord.rest
 .unplantconquer.shop
-.unplcwbletj.com
 .unpliedzenonic.qpon
 .unpufframpler.com
 .unrealistic-due.com
@@ -96471,7 +96364,6 @@ URL-REGEX,/igd\.xml
 .untiingwayless.cfd
 .untiltpianola.digital
 .untimburra.com
-.untimely-chemistry.com
 .untimely-hate.pro
 .untitled.dwstatic.com
 .untmm.virtuepb.com
@@ -96482,7 +96374,6 @@ URL-REGEX,/igd\.xml
 .untristseaside.com
 .untropiuson.com
 .untrueorder.com
-.untumidajenjo.rest
 .untwirlbasis.world
 .unusedstone.com
 .unusuallypilgrim.com
@@ -96577,7 +96468,6 @@ URL-REGEX,/igd\.xml
 .uposnmb.icu
 .uposz.procoffeegear.com
 .uppbrl.thomassabo.com
-.uppererresorb.rest
 .uppersrepage.help
 .uppitytime.com
 .uppsyduckan.com
@@ -96612,6 +96502,7 @@ URL-REGEX,/igd\.xml
 .upush.co
 .upuwtorepi.com
 .upvx.cn
+.upwentfiddler.help
 .upwkcv.vidaxl.ro
 .upwnas.golfhouse.at
 .upwwgd.zentempel.com
@@ -96945,9 +96836,12 @@ URL-REGEX,/igd\.xml
 .uwetid.apposta.com
 .uwezxr.provenwinners.com
 .uwhevailoo.net
+.uwhothoofaci.net
 .uwi34.rvs-products.nl
 .uwilmit.top
+.uwkz.cn
 .uwkzjf.forgesboutique.fr
+.uwlovullbg.com
 .uwmtsgdp.socialtoast.ai
 .uwoafszotqxvs.online
 .uwoaptee.com
@@ -97077,7 +96971,6 @@ URL-REGEX,/igd\.xml
 .vaipagraire.net
 .vairujouque.net
 .vaitotoo.net
-.vaitunoagoapsee.net
 .vaiwhoojoapseet.net
 .vajwbkkmklkzq.top
 .vak345.com
@@ -97103,7 +96996,6 @@ URL-REGEX,/igd\.xml
 .valueinaudible.com
 .valuerabjure.com
 .valuerstarringarmistice.com
-.valvesgabi.life
 .valvyre.com
 .vamperskidlike.rest
 .vampeybutyric.world
@@ -97282,12 +97174,12 @@ URL-REGEX,/igd\.xml
 .vdvho.theshoecareshop.com
 .vdvkiu.rhein-ruhr-jobanzeiger.de
 .vdxbpy.ozie.co.jp
-.vdzna.com
 .vdzrjr.kenminkyosai.or.jp
 .ve.velocityclinical.com
 .vebed.tennibot.com
 .vebv8me7q.com
 .vectioncorpse.digital
+.vedettelakhs.com
 .vedhalmin.com
 .vedikaagenes.rest
 .vedreloonsi.net
@@ -97372,7 +97264,6 @@ URL-REGEX,/igd\.xml
 .vernaellac.com
 .verninbans.world
 .verninchange.com
-.verrellwisses.cyou
 .verseballs.com
 .verseexposurethanksgiving.com
 .versindopers.rest
@@ -97776,13 +97667,13 @@ URL-REGEX,/igd\.xml
 .vjbljqaamxq.com
 .vjdciu.com
 .vjecr.greenleaf-blends.nl
-.vjembmkzbeevl.top
 .vjexlzlxe.com
 .vjharl.xyz
 .vjjgpt.diamond.jp
 .vjkzs.feralfungi.com
 .vjlakwgjnokv.top
 .vjlklyblqmvqj.top
+.vjlyljbylmbez.top
 .vjml.cn
 .vjmmwgkymzwmz.top
 .vjmrjomeljomj.top
@@ -97918,7 +97809,7 @@ URL-REGEX,/igd\.xml
 .vmzok.plouise.co.uk
 .vmzqqmlpwwmazjnio.com
 .vnacg.anthros.com
-.vnaymmzomvkby.top
+.vnaymmzomvkqj.top
 .vnbbrx.top
 .vnbrcfmdndguz.life
 .vncibxgkp.com
@@ -97946,7 +97837,6 @@ URL-REGEX,/igd\.xml
 .vnwqkvykgogoz.top
 .vnwu.cn
 .vnzwxk.e-bebek.com
-.voamogroag.net
 .voanerehazim.net
 .voawhoowhapooth.net
 .vocalsure.com
@@ -98399,6 +98289,7 @@ URL-REGEX,/igd\.xml
 .w5ftl8bhu3.com
 .w6.chabad.org
 .w6f5f8r9.fun
+.w6xdba54n.com
 .w7.berlin.de
 .w740.newstimes.com
 .w88.abc.com
@@ -98497,7 +98388,6 @@ URL-REGEX,/igd\.xml
 .waiads.com
 .waifometolie.net
 .waifoozoujou.com
-.wailakisegno.world
 .wainfulosperm.rest
 .wairedelamp.click
 .waishauglid.net
@@ -98615,7 +98505,6 @@ URL-REGEX,/igd\.xml
 .watch.watchshopbd.com
 .watchcpm.com
 .watchetifuters.cloud
-.watchfulbolt.com
 .watchfulsorrow.com
 .watchheeddandy.com
 .watchingthat.com
@@ -99315,7 +99204,6 @@ URL-REGEX,/igd\.xml
 .weco.gasteo.de
 .weco.ilon.de
 .wecvhi.ekftei2weudt.info
-.wecxkuxiuluuk.space
 .wedauspicy.com
 .weddingeeos.com
 .wedgingcivism.shop
@@ -99395,7 +99283,6 @@ URL-REGEX,/igd\.xml
 .wellworn-lead.com
 .wellworn-phrase.com
 .welovecinema.global.communications.bnpparibas
-.welsgrouty.rest
 .welsherteams.com
 .wemqip.misli.com
 .wemtagoowhoohiz.net
@@ -99426,11 +99313,12 @@ URL-REGEX,/igd\.xml
 .westevents.presidio.com
 .westycrined.help
 .wet-judge.com
+.wetbirdchats.cfd
 .wettigo136.com
 .wevbgr.vidaxl.it
 .wew.dushiwenxue.net
 .wewbxx.hircus.fr
-.wewlorozwoqjw.top
+.wewlorozwoqbj.top
 .wextap.com
 .wexwujojvhamp.space
 .wezbvq.heine-shop.nl
@@ -99444,13 +99332,13 @@ URL-REGEX,/igd\.xml
 .wfjkzgbcjnezi.fun
 .wfmcgd.msccruzeiros.com.br
 .wfmlp.eml.wegmans.com
-.wfnetwork.com
 .wfowsdmxkkmwwd.com
 .wfredir.net
+.wfvjthtb.com
 .wg-aff.com
 .wga.vitalipartners.com
 .wgbtsixsjhkyln.com
-.wgbvmabknaoml.top
+.wgbvmabknyngq.top
 .wgceetonr.com
 .wgchrrammzv.com
 .wgeaqi.laredoute.gr
@@ -99477,7 +99365,6 @@ URL-REGEX,/igd\.xml
 .whagrolt.com
 .whahmy.timberland.es
 .whaiftoohie.net
-.whaigrauboatcho.net
 .whaijoorgoo.com
 .whairtoa.com
 .whale.gdebrauwer.dev
@@ -99550,6 +99437,7 @@ URL-REGEX,/igd\.xml
 .whisperingsummit.com
 .whispermeeting.com
 .whisperofisaak.com
+.whistle35.com
 .whistledadjoining.com
 .whistlingmoderate.com
 .whitefish.antonopoulos-stores.gr
@@ -99636,9 +99524,9 @@ URL-REGEX,/igd\.xml
 .wienersghastly.life
 .wifingcaryl.digital
 .wifwexbuzhgbp.space
+.wiganstannaic.world
 .wigetmedia.com
 .wigk.cn
-.wigkswxmurpfn.website
 .wigkxx.jetcost.com
 .wiglikeleve.help
 .wigqae.icu
@@ -99668,6 +99556,7 @@ URL-REGEX,/igd\.xml
 .willplug.com
 .willyerdyking.top
 .wiltaustaug.com
+.wiltinfume.com
 .wiltiqkc.com
 .win-dsp.branchdsp.io
 .win-rtb2-apac.affinity.net
@@ -99754,7 +99643,6 @@ URL-REGEX,/igd\.xml
 .wj9uod3838.com
 .wjdwnkoukunmvgj.com
 .wjebboljoveyk.top
-.wjeccjrnkwymay.com
 .wjgbmybylmqgy.top
 .wjiebpblheplc.site
 .wjimtye.top
@@ -99885,7 +99773,6 @@ URL-REGEX,/igd\.xml
 .wnd2.destinia.cat
 .wndw.nl
 .wnegmu.timberland.nl
-.wnehzjjvjdhaz.online
 .wneia.iaskhot.com
 .wnffvyjs.com
 .wnfjdlpeo.com
@@ -99982,6 +99869,7 @@ URL-REGEX,/igd\.xml
 .workhorsefunds.com
 .workmancolon.com
 .workmandudleyamplitude.com
+.workmaninfantryrevolve.com
 .workoperation.com
 .workplace.ricoh.co.uk
 .workplace.ricoh.de
@@ -100001,7 +99889,6 @@ URL-REGEX,/igd\.xml
 .worldtraffic.trade
 .worm.communitytrustproject.org
 .wormedpopery.world
-.worrelsottie.qpon
 .worried-sample.com
 .worriednumber.com
 .worriedwine.com
@@ -100086,7 +99973,6 @@ URL-REGEX,/igd\.xml
 .wqfflc.plantopedia.de
 .wqhuludpb.com
 .wqkcsg.armandthiery.fr
-.wqmwfawndtamb.website
 .wqq881m8uwq1k5m-4p7lv7.xyz
 .wqrv.cn
 .wqs4.destinia.pt
@@ -100618,6 +100504,7 @@ URL-REGEX,/igd\.xml
 .xaqnbj.cn
 .xarukaawenabr.site
 .xatnxlpyx.com
+.xawlop.com
 .xaxqjecautpdn.store
 .xay5o.toscane-boutique.fr
 .xaybbkzhceysr.website
@@ -100684,6 +100571,7 @@ URL-REGEX,/igd\.xml
 .xebetp.icu
 .xeccotftw.com
 .xecmgrhmhnixuw.xyz
+.xedaifojosm.net
 .xedlxeuz.icu
 .xedtotoro.help
 .xeeptq.dyatkovo.ru
@@ -100708,7 +100596,6 @@ URL-REGEX,/igd\.xml
 .xfobuc.serenaandlily.com
 .xfpublrejrx.com
 .xfqynrp.cn
-.xfskzfixuokxt.space
 .xftsjv.top
 .xfvjamqqqv.com
 .xfvrkhjmanrnr.online
@@ -100731,6 +100618,7 @@ URL-REGEX,/igd\.xml
 .xghpzp.medicis-patrimoine.com
 .xgkrkm.qualitybath.com
 .xglcva.racechip.us
+.xgozhrjmwwgxf.site
 .xgspzv.troyestore.com
 .xgtxdf.saihok.jp
 .xgvenv.farmatodo.com.co
@@ -100774,8 +100662,8 @@ URL-REGEX,/igd\.xml
 .xiqvza.dickblick.com
 .xirses.wargo.jp
 .xis.vipergirls.to
-.xisbaqnqbb.com
 .xitongku.cc
+.xitsievucdlde.space
 .xitvce.webtretho.com
 .xiuksf.worten.es
 .xivhuwmzobzo.com
@@ -100991,6 +100879,7 @@ URL-REGEX,/igd\.xml
 .xqrydt.icu
 .xqslse.annadiva.nl
 .xqtcur.kirklands.com
+.xqtoisaowmys.net
 .xqupwc.emp.at
 .xqvenulmbseas.space
 .xqwjahdlami.com
@@ -101044,7 +100933,6 @@ URL-REGEX,/igd\.xml
 .xscmzs.tenki.jp
 .xshellcn.com
 .xsjozargcetmw.website
-.xslkieqjs.com
 .xslmpq.ohou.se
 .xsph.ru
 .xsrezl.icu
@@ -101208,6 +101096,7 @@ URL-REGEX,/igd\.xml
 .xyahug.luxuryonly.com
 .xycgec.theoutlet.ru
 .xycqtidq.greenunicornfarms.com
+.xycyblnwl.net
 .xygxko.shop-apotheke.ch
 .xyhojp.lacoste.com
 .xyhyieyyqljos.site
@@ -101224,6 +101113,7 @@ URL-REGEX,/igd\.xml
 .xyubqngzgscfk.website
 .xyxctjbggrd.com
 .xyxgbs.lezhin.com
+.xyxmrpcpbq.net
 .xyxvzyihkdwgs.website
 .xyxz.site
 .xyz.dinkusa.com
@@ -101298,6 +101188,7 @@ URL-REGEX,/igd\.xml
 .yaload.ru
 .yaltchoaiz.com
 .yama1hove.com
+.yamamaistark.world
 .yamanaisleepry.com
 .yami8alea.com
 .yammersbookery.click
@@ -101379,7 +101270,6 @@ URL-REGEX,/igd\.xml
 .yddtah.takingshape.com
 .ydeyxx.glamira.ch
 .ydhilninhp.com
-.ydiggeurkhusl.store
 .ydjrew.fairplay142.com
 .ydjtykzkwwcclo.com
 .ydosfw.filippa-k.com
@@ -101650,6 +101540,7 @@ URL-REGEX,/igd\.xml
 .ymprove.web.de
 .ymqlrkznenfcd.world
 .ymqnky.bagaggio.com.br
+.ymrghezhbhfie.website
 .ymrtre.scandinavianoutdoor.fi
 .ymtracking.com
 .ymvikp.estadao.com.br
@@ -101702,7 +101593,6 @@ URL-REGEX,/igd\.xml
 .yonsandileer.com
 .yopo0hx26.com
 .yoqqiev.top
-.yoshatia.com
 .yotrack.cdn.ybn.io
 .yottlyscript.com
 .you.pixellot.link
@@ -101789,6 +101679,7 @@ URL-REGEX,/igd\.xml
 .yqaxvu.leilian-online.com
 .yqcevojseau.com
 .yqcgzf.specialized-onlinestore.jp
+.yqg.jobui.com
 .yqigli.tourlane.de
 .yqjsyabpzegzd.space
 .yqksfmuwfzoca.site
@@ -101894,7 +101785,6 @@ URL-REGEX,/igd\.xml
 .yuwenbin.host
 .yuwutgiyxytje.space
 .yuxftr.nain.co.kr
-.yvbuerttabdr.com
 .yvcjyi.beymen.com
 .yvcpcerfetgoc.space
 .yvdaeg.on-running.com
@@ -101915,7 +101805,6 @@ URL-REGEX,/igd\.xml
 .ywayoh.ecipo.hu
 .ywbpzuqu.com
 .ywcqef.lyst.com.nl
-.ywg.jobui.com
 .ywhikg.surplex.com
 .ywkiyt.candere.com
 .ywlywcynr.com
@@ -102247,7 +102136,6 @@ URL-REGEX,/igd\.xml
 .zevdh.plug.tech
 .zevwkbzlbkmle.top
 .zevwrl.top
-.zewoiayqitsjf.store
 .zeybco.bradford.com.au
 .zeydoo.com
 .zezyjywaaqyqw.top
@@ -102395,7 +102283,6 @@ URL-REGEX,/igd\.xml
 .zjhlsx.exxpozed.de
 .zjhswy.comeup.com.tr
 .zjib0.icu
-.zjjwvwcwkicbp.space
 .zjjxp.online
 .zjkpxw.tesco.hu
 .zjkrwiisn.com
@@ -102479,7 +102366,7 @@ URL-REGEX,/igd\.xml
 .zmhsxr.hometogo.com
 .zmiqg.eccouncil.org
 .zmjagawa.com
-.zmkevvbavolye.top
+.zmkevvbavolwq.top
 .zmkp6jvq4.com
 .zmkpximmigltq.website
 .zml-apm-prd.dbv4.noncd.db.de
@@ -102488,7 +102375,6 @@ URL-REGEX,/igd\.xml
 .zmnjl.rosary.com
 .zmonei.com
 .zmpgln.icu
-.zmpolbfrymcfw.online
 .zmpvij.bonprix.fr
 .zmqdez.ru
 .zmqyzjlzooabq.top
@@ -102518,6 +102404,7 @@ URL-REGEX,/igd\.xml
 .znqpe.honest.com
 .znrttr.jaypore.com
 .znsebkpnpczim.website
+.zntyosjbsivry.site
 .znvgru.karenlondon.com
 .znycxdjoyexaj.website
 .znymzgnpmebhu.online
@@ -102557,8 +102444,8 @@ URL-REGEX,/igd\.xml
 .zontqiwjmdzbv.space
 .zoofaubogaujoo.net
 .zoojoujoaseeh.com
+.zooloumasovay.net
 .zoom.zshu.net
-.zoopeebouwauluh.net
 .zooplus.fr
 .zoopouweeglede.net
 .zoovanuzauphoth.net
@@ -102609,6 +102496,7 @@ URL-REGEX,/igd\.xml
 .zqpbuczqykxcb.space
 .zqprq.lablanca.com
 .zqqiynddnpjtf.space
+.zqswaomjynrud.online
 .zqtk.net
 .zqvee2re50mr.com
 .zqvvzrlevbzvb.top
@@ -102659,6 +102547,7 @@ URL-REGEX,/igd\.xml
 .zspza.snapsupplements.com
 .zsrda.snagtights.ca
 .zsseb.bioyouthlabs.com
+.zsszrgvbeisuv.space
 .zsthu.thefryeandco.com
 .zt2088.com
 .ztarkm.johnnie-o.com
@@ -102849,6 +102738,7 @@ a.alimama.cn
 a.dounanhuahui.com
 a.glcdn.co
 a.hl.mi.com
+a.macked.app
 a.tool.lu
 a0.app.xiaomi.com
 a460.cell.phone.ringtone.samsung.sms13.de
@@ -103074,6 +102964,7 @@ amdc.m.youku.com
 ana.masky.biddingx.com
 analysis.chatglm.cn
 analysis.yozocloud.cn
+analytics-js-cdn.liferay.com
 analytics.infomaniak.com
 analytics.msn.com
 analytics.spotify.com
@@ -103740,6 +103631,7 @@ pv.dakawm.cc
 pv.vipwm.cc
 pv.zol.com.cn
 pvnapp.zol.com.cn
+q
 qapm.baidu.com
 qappcenterv6.3g.qq.com
 qchannel04.cn
