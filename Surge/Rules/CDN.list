@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3949
+# 规则统计: 3960
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -84,9 +84,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-26T17:05:20.970Z
-# Last Updated: 2025-09-09T12:05:12.064Z
+# Last Updated: 2025-09-10T11:38:46.562Z
 # License: AGPL 3.0
-# Size: 3858
+# Size: 3869
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -256,6 +256,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .cdn.runcloud.io
 .cdn.s7s.ai
 .cdn.serverable.com
+.cdn.shift8web.com
 .cdn.signalfx.com
 .cdn.skk.moe
 .cdn.survey.medallia.com
@@ -1186,6 +1187,7 @@ a5.behance.net
 a57.foxnews.com
 academy-public.coinmarketcap.com
 account-cdn.svc.ui.com
+account-widget-mfe.gcore.com
 accounts-cdn.9gag.com
 adkit.9pub.io
 aff.equalweb.com
@@ -1505,6 +1507,7 @@ brew.sh
 brick.a.ssl.fastly.net
 brick.freetls.fastly.net
 bst.icons8.com
+bucket.noy.asia
 bucket1.notaku.so
 bulletin.svc.litv.tv
 bundle.5gtb.com
@@ -1674,6 +1677,7 @@ cdn.consentmanager.net
 cdn.contentful.com
 cdn.conveythis.com
 cdn.cracked.sh
+cdn.craft.cloud
 cdn.create.microsoft.com
 cdn.credible.com
 cdn.css.net
@@ -2419,6 +2423,7 @@ gohugo.io
 google-ohttp-relay-safebrowsing.fastly-edge.com
 graph.facebook.com
 gravatar.cat.net
+gravatar.tapglb.com
 gstatic.com
 gstatic.olympics.com
 gt1.onlyhentaistuff.com
@@ -2579,6 +2584,7 @@ images.idgesg.net
 images.kick.com
 images.loox.io
 images.macrumors.com
+images.mathworks.com
 images.mattel.net
 images.microcms-assets.io
 images.moegoat.com
@@ -2689,6 +2695,7 @@ img.moedog.org
 img.moegirl.tw
 img.moviefap.com
 img.mresou.com
+img.noy.asia
 img.olympics.com
 img.openshop.com.hk
 img.pawoo.net
@@ -2788,6 +2795,7 @@ js-eu1.hsforms.net
 js-s3.quickcep.com
 js.braintreegateway.com
 js.chargebee.com
+js.chargify.com
 js.chilipiper.com
 js.createsend1.com
 js.hsforms.net
@@ -2797,6 +2805,7 @@ js.klarna.com
 js.memberful.com
 js.navattic.com
 js.partnerstack.com
+js.pngtree.com
 js.prosopo.io
 js.pusher.com
 js.puter.com
@@ -3107,6 +3116,7 @@ playgroundcdn.typescriptlang.org
 plugins.dprint.dev
 plus.unsplash.com
 pmecdn.protonweb.com
+png.pngtree.com
 polyfill-fe.toss.im
 polyfill.bbhub.io
 pomf2.lain.la
@@ -3607,6 +3617,7 @@ static.scarf.sh
 static.seel.com
 static.serverhunter.com
 static.skyassets.com
+static.smartframe.io
 static.snapchat.com
 static.snaptube.in
 static.snyk.io
