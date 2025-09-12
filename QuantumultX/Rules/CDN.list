@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3962
+# 规则统计: 3980
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -84,9 +84,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-26T17:05:20.970Z
-# Last Updated: 2025-09-10T17:18:55.086Z
+# Last Updated: 2025-09-11T17:02:28.186Z
 # License: AGPL 3.0
-# Size: 3871
+# Size: 3889
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1193,6 +1193,7 @@ adkit.9pub.io,CDN
 aff.equalweb.com,CDN
 affportal.bhphoto.com,CDN
 agi.armorgames.com,CDN
+ah-cdn.merge.dev,CDN
 aimg.fc2.com,CDN
 ajax.cat.net,CDN
 ajax.cdnjs.com,CDN
@@ -1654,6 +1655,7 @@ cdn.c1.amplience.net,CDN
 cdn.calibermind.com,CDN
 cdn.cameo.com,CDN
 cdn.camweara.com,CDN
+cdn.candy.ai,CDN
 cdn.cbd.int,CDN
 cdn.cfr.org,CDN
 cdn.changelog.com,CDN
@@ -2130,9 +2132,11 @@ cloudflare.tv,CDN
 cloudfront.barilliance.com,CDN
 cloudfront.codeproject.com,CDN
 cloudinary-res.cloudinary.com,CDN
+cm1.aminoapps.com,CDN
 cmd-cdn.cleanmymac.com,CDN
 cmp-cdn.p.aws.economist.com,CDN
 cms-assets.nodecraft.com,CDN
+cms-assets.unrealengine.com,CDN
 cms-assets.webediamovies.pro,CDN
 cms-assets.xboxservices.com,CDN
 cms-cdn.goat.com,CDN
@@ -2156,6 +2160,7 @@ common-header.nimg.jp,CDN
 components.clever-cloud.com,CDN
 components.justanswer.com,CDN
 components.trynow.net,CDN
+components.unrealengine.com,CDN
 config.extension.grammarly.com,CDN
 connect-js.stripe.com,CDN
 connect.facebook.net,CDN
@@ -2730,6 +2735,7 @@ img0.yna.co.kr,CDN
 img1.ak.crunchyroll.com,CDN
 img1.socialshopwave.com,CDN
 img1.yna.co.kr,CDN
+img2.gelbooru.com,CDN
 img2.javdove.com,CDN
 img2.javmost.com,CDN
 img2.socialshopwave.com,CDN
@@ -2740,9 +2746,11 @@ img3.javmost.com,CDN
 img3.socialshopwave.com,CDN
 img3.yna.co.kr,CDN
 img4.airdroid.com,CDN
+img4.gelbooru.com,CDN
 img4.javmost.com,CDN
 img4.socialshopwave.com,CDN
 img4.yna.co.kr,CDN
+img5.gelbooru.com,CDN
 img5.socialshopwave.com,CDN
 img5.yna.co.kr,CDN
 img6.airdroid.com,CDN
@@ -2794,6 +2802,7 @@ js-1-cdn.airdroid.com,CDN
 js-cdn.blockchair.io,CDN
 js-eu1.hsforms.net,CDN
 js-s3.quickcep.com,CDN
+js.assemblyexchange.com,CDN
 js.braintreegateway.com,CDN
 js.chargebee.com,CDN
 js.chargify.com,CDN
@@ -3050,6 +3059,7 @@ p.sda1.dev,CDN
 p.typekit.net,CDN
 p.udn.com.tw,CDN
 p2.bahamut.com.tw,CDN
+pa1.aninoapps.com,CDN
 pacdn.500px.org,CDN
 package-assets.oomol.com,CDN
 packages.jetbrains.team,CDN
@@ -3117,6 +3127,7 @@ players.brightcove.net,CDN
 playgroundcdn.typescriptlang.org,CDN
 plugins.dprint.dev,CDN
 plus.unsplash.com,CDN
+pm1.aninoapps.com,CDN
 pmecdn.protonweb.com,CDN
 png.pngtree.com,CDN
 polyfill-fe.toss.im,CDN
@@ -3243,6 +3254,7 @@ s1.divhunt.com,CDN
 s1.feedly.com,CDN
 s1.maxstream.org,CDN
 s1.qwant.com,CDN
+s1.zerochan.net,CDN
 s10.maxstream.org,CDN
 s11.maxstream.org,CDN
 s13.maxstream.org,CDN
@@ -3402,6 +3414,7 @@ static-4.bitchute.com,CDN
 static-act.imoim.net,CDN
 static-assets-1.truthsocial.com,CDN
 static-assets-prod.epicgames.com,CDN
+static-assets-prod.unrealengine.com,CDN
 static-assets-web.flixcart.com,CDN
 static-assets.clubhouseapi.com,CDN
 static-assets.codecademy.com,CDN
@@ -3457,6 +3470,7 @@ static.ahrefs.com,CDN
 static.airtable.com,CDN
 static.aizanmei.org,CDN
 static.animaapp.com,CDN
+static.aninoapps.com,CDN
 static.anyporn.com,CDN
 static.anysex.com,CDN
 static.apkpure.com,CDN
@@ -3666,6 +3680,7 @@ static.xxxshake.com,CDN
 static.yfsp.tv,CDN
 static.zaobao.com,CDN
 static.zaobao.com.sg,CDN
+static.zerochan.net,CDN
 static.zuora.com,CDN
 static01.nyt.com,CDN
 static02.nyt.com,CDN
@@ -3885,6 +3900,7 @@ w.chatlio.com,CDN
 w.soundcloud.com,CDN
 w2.influxdata.com,CDN
 wa.arounddeal.com,CDN
+wa1.aninoapps.com,CDN
 wac-cdn.atlassian.com,CDN
 waitlisted.co,CDN
 wandi-6402.kxcdn.com,CDN
@@ -3951,8 +3967,10 @@ www-cdn.uscardforum.com,CDN
 www-res.cablelabs.com,CDN
 www-static.ripe.net,CDN
 www.10086.win,CDN
+www.acgpix.de,CDN
 www.bbthat.com,CDN
 www.gstatic.com,CDN
+www.paypalobjects.com,CDN
 www.pngmart.com,CDN
 www.tbstat.com,CDN
 www.typescriptlang.org,CDN
