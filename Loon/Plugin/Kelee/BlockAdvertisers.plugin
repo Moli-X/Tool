@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!date=2025-09-04 21:47:00
+#!date=2025-09-16 13:41:39
 
 [Rule]
 AND, ((DOMAIN-KEYWORD, tnc), (OR, ((DOMAIN-SUFFIX, capcutapi.com), (DOMAIN-SUFFIX, zijieapi.com), (DOMAIN-SUFFIX, isnssdk.com), (DOMAIN-SUFFIX, toutiaoapi.com), (DOMAIN-SUFFIX, bytedance.com), (DOMAIN-SUFFIX, snssdk.com), (DOMAIN-SUFFIX, sgsnssdk.com)))), DIRECT
@@ -16,8 +16,28 @@ AND, ((DOMAIN-KEYWORD, tnc), (OR, ((DOMAIN-SUFFIX, capcutapi.com), (DOMAIN-SUFFI
 AND, ((OR, ((DOMAIN-KEYWORD, api-access), (DOMAIN-KEYWORD, log-api))), (DOMAIN-KEYWORD, pangolin-sdk-toutiao)), REJECT
 AND, ((DOMAIN-KEYWORD, -ad-), (DOMAIN-SUFFIX, byteimg.com)), REJECT
 AND, ((DOMAIN-KEYWORD, ads), (DOMAIN-KEYWORD, normal), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+DOMAIN, lf-ad-ies.bytecdn.cn, REJECT
+DOMAIN, dig.bdurl.net, REJECT
+DOMAIN, extlog.snssdk.com, REJECT
+DOMAIN, i.snssdk.com, REJECT
+DOMAIN, mcs.snssdk.com, REJECT
+DOMAIN-SUFFIX, bds.snssdk.com, REJECT
+DOMAIN-SUFFIX, byteadverts.com, REJECT
+DOMAIN-SUFFIX, ctobsnssdk.com, REJECT
+DOMAIN-SUFFIX, pangolin-dsp-toutiao-b.com, REJECT
+DOMAIN-SUFFIX, pangolin-dsp-toutiao.com, REJECT
+DOMAIN-SUFFIX, pangolin-sdk-toutiao-b.com, REJECT
+DOMAIN-SUFFIX, pangolin-sdk-toutiao.com, REJECT
+DOMAIN-SUFFIX, pangolin-sdk-toutiao1.com, REJECT
+DOMAIN-SUFFIX, pangolin.snssdk.com, REJECT
+DOMAIN-SUFFIX, panplayable-toutiao-b.com, REJECT
+DOMAIN-SUFFIX, panplayable-toutiao.com, REJECT
+DOMAIN-SUFFIX, pglstatp-sdk-toutiao.com, REJECT
+DOMAIN-SUFFIX, pglstatp-snssdk-toutiao.com, REJECT
+DOMAIN-SUFFIX, pglstatp-toutiao-b.com, REJECT
+DOMAIN-SUFFIX, pglstatp-toutiao.com, REJECT
+DOMAIN-SUFFIX, sf3-ttcdn-tos.pstatp.com, REJECT
 
-DOMAIN, gromore.pangolin-sdk-toutiao.com, REJECT
 DOMAIN, sf3-fe-tos.pglstatp-toutiao.com, REJECT
 
 DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
