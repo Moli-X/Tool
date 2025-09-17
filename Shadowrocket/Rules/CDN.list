@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3998
+# 规则统计: 4010
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -84,9 +84,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-26T17:05:20.970Z
-# Last Updated: 2025-09-16T18:53:12.990Z
+# Last Updated: 2025-09-17T08:43:07.714Z
 # License: AGPL 3.0
-# Size: 3907
+# Size: 3919
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -394,6 +394,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .epimg.net
 .erocdn.co
 .eroimg.net
+.esc-apps-cdn.com
 .esm.run
 .esm.sh
 .espncdn.com
@@ -705,6 +706,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .media.strapiapp.com
 .media.tumblr.com
 .media.zestyio.com
+.mediadecathlon.com
 .mediadelivery.net
 .meetupstatic.com
 .mercdn.net
@@ -1248,6 +1250,7 @@ app-static.turtl.co
 app.1password.com
 app.backinstock.org
 app.brightback.com
+app.cart-bot.net
 app.chatwoot.com
 app.cookieyes.com
 app.groove.cm
@@ -1485,6 +1488,7 @@ az700632.vo.msecnd.net
 b.peatio.com
 b.sf-syn.com
 b5x-sentry.1passwordservices.com
+backinstock.useamp.com
 badbits.dwebops.pub
 badge.buildkite.com
 badge.fury.io
@@ -1517,6 +1521,7 @@ bucket.noy.asia
 bucket1.notaku.so
 bulletin.svc.litv.tv
 bundle.5gtb.com
+bundle.9gtb.com
 bundle.dyn-rev.app
 bundle.trysavvy.com
 bundlephobia.com
@@ -1556,6 +1561,7 @@ cacerts.rapidssl.com
 cache-05.filehippo.net
 cache.armorgames.com
 cache.hackedfreegames.com
+cache.industry.siemens.com
 cache.omnicalculator.com
 cached.rebuyengine.com
 canny-assets.io
@@ -1566,6 +1572,7 @@ cc.boyfriendtv.com
 cdn-1.ggjav.com
 cdn-1.strava.com
 cdn-a.sonyentertainmentnetwork.com
+cdn-app.cart-bot.net
 cdn-app.pathfactory.com
 cdn-assets.circleci.com
 cdn-avatars.huggingface.co
@@ -2234,6 +2241,7 @@ d4.alternativeto.net
 dam.freshworks.com
 damassets.autodesk.net
 dassets.shimano.com
+data.cdn.siemens.com
 data.jsdelivr.com
 data.osmand.net
 data.pendo.io
@@ -2796,6 +2804,7 @@ import-cdn.default.com
 ims.windy.com
 info.cloudflare.com
 info.knak.com
+instafeed.nfcube.com
 int.mwbbiz.com
 integrations.gitbook.com
 interactive-examples.mdn.mozilla.net
@@ -2868,6 +2877,7 @@ lib.arvancloud.ir
 libraries.hund.io
 libs.quillbot.com
 lift-ai-js.marketlinc.com
+light.spicegems.org
 lightning.cnn.com
 limitless.cmax.ai
 link.storjshare.io
@@ -3644,6 +3654,7 @@ static.redhat.com
 static.registration.bluehost.com
 static.reo.dev
 static.replay.io
+static.returngo.ai
 static.roboflow.com
 static.salidzini.lv
 static.scarf.sh
@@ -3950,6 +3961,7 @@ webstatic.chargebee.com
 widget.automizely.com
 widget.datablocks.se
 widget.docsbot.ai
+widget.finlogix.com
 widget.freshworks.com
 widget.gotolstoy.com
 widget.intercom.io

@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3998
+# 规则统计: 4010
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -84,9 +84,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-26T17:05:20.970Z
-# Last Updated: 2025-09-16T18:53:12.990Z
+# Last Updated: 2025-09-17T08:43:07.714Z
 # License: AGPL 3.0
-# Size: 3907
+# Size: 3919
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -394,6 +394,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .epimg.net,CDN
 .erocdn.co,CDN
 .eroimg.net,CDN
+.esc-apps-cdn.com,CDN
 .esm.run,CDN
 .esm.sh,CDN
 .espncdn.com,CDN
@@ -705,6 +706,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .media.strapiapp.com,CDN
 .media.tumblr.com,CDN
 .media.zestyio.com,CDN
+.mediadecathlon.com,CDN
 .mediadelivery.net,CDN
 .meetupstatic.com,CDN
 .mercdn.net,CDN
@@ -1248,6 +1250,7 @@ app-static.turtl.co,CDN
 app.1password.com,CDN
 app.backinstock.org,CDN
 app.brightback.com,CDN
+app.cart-bot.net,CDN
 app.chatwoot.com,CDN
 app.cookieyes.com,CDN
 app.groove.cm,CDN
@@ -1485,6 +1488,7 @@ az700632.vo.msecnd.net,CDN
 b.peatio.com,CDN
 b.sf-syn.com,CDN
 b5x-sentry.1passwordservices.com,CDN
+backinstock.useamp.com,CDN
 badbits.dwebops.pub,CDN
 badge.buildkite.com,CDN
 badge.fury.io,CDN
@@ -1517,6 +1521,7 @@ bucket.noy.asia,CDN
 bucket1.notaku.so,CDN
 bulletin.svc.litv.tv,CDN
 bundle.5gtb.com,CDN
+bundle.9gtb.com,CDN
 bundle.dyn-rev.app,CDN
 bundle.trysavvy.com,CDN
 bundlephobia.com,CDN
@@ -1556,6 +1561,7 @@ cacerts.rapidssl.com,CDN
 cache-05.filehippo.net,CDN
 cache.armorgames.com,CDN
 cache.hackedfreegames.com,CDN
+cache.industry.siemens.com,CDN
 cache.omnicalculator.com,CDN
 cached.rebuyengine.com,CDN
 canny-assets.io,CDN
@@ -1566,6 +1572,7 @@ cc.boyfriendtv.com,CDN
 cdn-1.ggjav.com,CDN
 cdn-1.strava.com,CDN
 cdn-a.sonyentertainmentnetwork.com,CDN
+cdn-app.cart-bot.net,CDN
 cdn-app.pathfactory.com,CDN
 cdn-assets.circleci.com,CDN
 cdn-avatars.huggingface.co,CDN
@@ -2234,6 +2241,7 @@ d4.alternativeto.net,CDN
 dam.freshworks.com,CDN
 damassets.autodesk.net,CDN
 dassets.shimano.com,CDN
+data.cdn.siemens.com,CDN
 data.jsdelivr.com,CDN
 data.osmand.net,CDN
 data.pendo.io,CDN
@@ -2796,6 +2804,7 @@ import-cdn.default.com,CDN
 ims.windy.com,CDN
 info.cloudflare.com,CDN
 info.knak.com,CDN
+instafeed.nfcube.com,CDN
 int.mwbbiz.com,CDN
 integrations.gitbook.com,CDN
 interactive-examples.mdn.mozilla.net,CDN
@@ -2868,6 +2877,7 @@ lib.arvancloud.ir,CDN
 libraries.hund.io,CDN
 libs.quillbot.com,CDN
 lift-ai-js.marketlinc.com,CDN
+light.spicegems.org,CDN
 lightning.cnn.com,CDN
 limitless.cmax.ai,CDN
 link.storjshare.io,CDN
@@ -3644,6 +3654,7 @@ static.redhat.com,CDN
 static.registration.bluehost.com,CDN
 static.reo.dev,CDN
 static.replay.io,CDN
+static.returngo.ai,CDN
 static.roboflow.com,CDN
 static.salidzini.lv,CDN
 static.scarf.sh,CDN
@@ -3950,6 +3961,7 @@ webstatic.chargebee.com,CDN
 widget.automizely.com,CDN
 widget.datablocks.se,CDN
 widget.docsbot.ai,CDN
+widget.finlogix.com,CDN
 widget.freshworks.com,CDN
 widget.gotolstoy.com,CDN
 widget.intercom.io,CDN
