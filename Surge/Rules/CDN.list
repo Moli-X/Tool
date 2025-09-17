@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3989
+# 规则统计: 3998
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -84,9 +84,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-26T17:05:20.970Z
-# Last Updated: 2025-09-15T19:53:52.301Z
+# Last Updated: 2025-09-16T18:53:12.990Z
 # License: AGPL 3.0
-# Size: 3898
+# Size: 3907
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -199,6 +199,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .botsrv2.com
 .boxcdn.net
 .bp.blogspot.com
+.brightcovecdn.com
 .brightspotcdn.com
 .bstarstatic.com
 .bstatic.com
@@ -1240,6 +1241,7 @@ api.web3.storage
 apichatwidget.usepylon.com
 apim.m3pd.com
 app-api.vidjet.io
+app-cdn.logo.com
 app-spm.com
 app-static.eu.posthog.com
 app-static.turtl.co
@@ -1771,6 +1773,7 @@ cdn.hk01.com
 cdn.hongkongcard.com
 cdn.hypershort.com
 cdn.icomoon.io
+cdn.icon-icons.com
 cdn.iconfinder.com
 cdn.imageengine.io
 cdn.img.ly
@@ -2024,6 +2027,7 @@ cdn1.suno.ai
 cdn1.sysgears.com
 cdn1.techbang.com
 cdn1.telegram.space
+cdn1.telesco.pe
 cdn1.unrealengine.com
 cdn10.bigcommerce.com
 cdn11.bigcommerce.com
@@ -2063,11 +2067,13 @@ cdn4.edgedatg.com
 cdn4.iconfinder.com
 cdn4.sysgears.com
 cdn4.telegram.space
+cdn4.telesco.pe
 cdn5.bigcommerce.com
 cdn5.edgedatg.com
 cdn5.hextom.com
 cdn5.iconfinder.com
 cdn5.telegram.space
+cdn5.telesco.pe
 cdn6.aptoide.com
 cdn6.bigcommerce.com
 cdn6.edgedatg.com
@@ -2591,6 +2597,7 @@ images.freeimages.com
 images.g2crowd.com
 images.github.media
 images.hothardware.com
+images.icon-icons.com
 images.idgesg.net
 images.indianexpress.com
 images.kick.com
@@ -3126,6 +3133,7 @@ play.vidyard.com
 play.xfvod.pro
 player-frontend.cnevids.com
 player.cnevids.com
+player.interactivity.brightcove.com
 player.louisvuitton.com
 player.svc.litv.tv
 player.vimeo.com
@@ -3726,6 +3734,7 @@ stats.setapp.macpaw.dev
 status.canarymail.io
 status.ui.com
 stbff.newfold.com
+stc.utdstc.com
 steamcdn-a.akamaihd.net
 steamusercontent-a.akamaihd.net
 steamuserimages-a.akamaihd.net
