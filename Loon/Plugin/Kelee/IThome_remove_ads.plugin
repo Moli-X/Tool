@@ -1,25 +1,25 @@
 #!name=IT之家去广告
-#!desc=过滤IT之家信息流广告和文末广告，自定义移除置顶和轮播图。自定义移除项需在插件配置，此插件仅支持8.30及以上版本客户端。
+#!desc=过滤IT之家信息流广告和文末广告，自定义移除置顶和轮播图，自定义移除项需在插件配置。
 #App链接=https://apps.apple.com/app/id570610859
-#!author=Keywos[https://github.com/Keywos], 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/IThome_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/IThome.png
-#!date=2025-05-13 15:17:08
+#!date=2025-09-18 04:08:07
 
 [Argument]
-removeTopSwitch=switch, true, false, tag=移除置顶项, desc=移除置顶文章
-removeBannerSwitch=switch, true, false, tag=移除轮播图, desc=移除轮播图
+removeBanners = switch, false, true, tag=移除全部横幅, desc=启用后将移除全部横幅
+removePinnedArticles = switch, false, true, tag=移除置顶文章, desc=启用后将移除置顶文章
 
 [Rewrite]
 ^https?:\/\/api\.zuihuimai\.com\/static\/.*\/hongbao reject
 ^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$ reject
 
 [Script]
-http-response ^https:\/\/napi\.ithome\.com\/api\/(?:news\/index|topmenu\/getfeeds\?|api\/douyin\/GetLiveInfo) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/IThome_remove_ads.js, requires-body=true, tag=IT之家去广告, argument=[{removeTopSwitch},{removeBannerSwitch}]
+http-response ^https:\/\/napi\.ithome\.com\/api\/topmenu\/getfeeds\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/IThome_remove_ads.js, requires-body=true, tag=IT之家去广告, argument=[{removeBanners},{removePinnedArticles}]
  
 [MitM]
 hostname=napi.ithome.com, api.zuihuimai.com, dat.ruanmei.com

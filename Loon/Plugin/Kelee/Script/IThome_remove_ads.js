@@ -1,62 +1,70 @@
-/*
-引用脚本https://raw.githubusercontent.com/toulanboy/scripts/master/ithome_ad/ithome_ad.js
-脚本二改https://github.com/Keywos/rule/raw/main/JS/ithomes.js
-*/
-const isLoon = typeof $loon !== "undefined";
-let url = $request.url,
-  i = JSON.parse($response.body),
-  FeedTypes = [10023], //直播tip
-  banner = true,
-  tops = true,
-  bannerAd = true;
+// 2025-09-18 04:07:34
 
-if (isLoon) {
-  bannerAd = $persistentStore.read("移除轮播图广告") === "开启";
-  // banner = $persistentStore.read("移除全部轮播图") === "开启";
-  // tops = $persistentStore.read("移除置顶项") === "开启";
-  tops = $argument.removeTopSwitch;
-  banner = $argument.removeBannerSwitch;
-  bannerAd = banner;
-} else if (typeof $argument !== "undefined" && $argument !== "") {
-  let ins = {};
-  try {
-    ins = JSON.parse($argument);
-  } catch (e) {}
-  bannerAd = ins.bannerAd != 0;
-  banner = ins.banner != 0;
-  tops = ins.top != 0;
-}
+(() => {
+    if (!$response?.body) return $done({});
 
-if (/api\/douyin\/GetLiveInfo/.test(url)) {
-  if (i?.data) {
-    i.data = "{}";
-    i.success = true;
-    i.showType = null;
-    i.messageType = null;
-  }
-} else if (i?.data?.list) {
-  if (bannerAd && !banner) {
-    for (const Type of i.data.list) {
-      if (Type.feedType == "10002") {
-        Type.feedContent.focusNewsData = Type.feedContent.focusNewsData.filter(
-          (i) => {
-            return i.isAd === false; // 轮播图广告
-          }
-        );
-        break;
-      }
+    const { url } = $request;
+    const bodyStr = $response.body;
+
+    if (!url.includes("/api/topmenu/getfeeds?")) {
+        return $done({});
     }
-  }
-  banner && FeedTypes.push(10002); //轮播
-  tops && FeedTypes.push(10003); //置顶
-  FeedTypes.push(10004); // 信息流红包广告
-  i.data.list = i.data.list.filter((i) => {
-    return (
-      !FeedTypes.includes(i.feedType) &&
-      !i.feedContent.smallTags?.[0]?.text?.includes("广告"));
-  });
-}
-$done({ body: JSON.stringify(i) });
 
-// prettier-ignore
-function getin() {return Object.fromEntries($argument.split("&").map((i) => i.split("=")).map(([k, v]) => [k, decodeURIComponent(v)]));}
+    let data;
+    try {
+        data = JSON.parse(bodyStr);
+    } catch (e) {
+        return $done({});
+    }
+
+    if (!data?.data?.list || !Array.isArray(data.data.list)) {
+        return $done({});
+    }
+
+    let modified = false;
+    const list = data.data.list;
+
+    const removeBanners = $argument.removeBanners;
+    const removePinnedArticles = $argument.removePinnedArticles;
+
+    if (removeBanners || removePinnedArticles) {
+        const originalLength = list.length;
+        list.filter(item => {
+            const ft = item.feedType;
+            if ((removeBanners && ft === 10002) || (removePinnedArticles && ft === 10003)) {
+                return false;
+            }
+            return true;
+        });
+        modified ||= (list.length !== originalLength);
+    }
+
+    for (let i = 0; i < list.length; i++) {
+        const item = list[i];
+
+        if (item.feedContent?.flag === 2) {
+            list.splice(i, 1);
+            i--;
+            modified = true;
+            continue;
+        }
+
+        const focusNews = item.feedContent?.focusNewsData;
+        if (Array.isArray(focusNews)) {
+            let removedCount = 0;
+            for (let j = focusNews.length - 1; j >= 0; j--) {
+                if (focusNews[j].isAd === true) {
+                    focusNews.splice(j, 1);
+                    removedCount++;
+                }
+            }
+            if (removedCount > 0) {
+                modified = true;
+            }
+        }
+    }
+
+    $done(modified ? {
+        body: JSON.stringify(data),
+    } : {});
+})();
