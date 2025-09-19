@@ -1,70 +1,82 @@
-// 2025-09-18 04:07:34
+// 2025-09-18 21:40:48
 
 (() => {
     if (!$response?.body) return $done({});
 
-    const { url } = $request;
-    const bodyStr = $response.body;
-
-    if (!url.includes("/api/topmenu/getfeeds?")) {
-        return $done({});
-    }
-
-    let data;
-    try {
-        data = JSON.parse(bodyStr);
-    } catch (e) {
-        return $done({});
-    }
-
-    if (!data?.data?.list || !Array.isArray(data.data.list)) {
-        return $done({});
-    }
-
     let modified = false;
-    const list = data.data.list;
+    let body;
+    
+    try {
+        body = JSON.parse($response.body);
+    } catch (e) {
+        console.log(`JSON解析失败: ${e.message}`);
+        return $done({});
+    }
 
-    const removeBanners = $argument.removeBanners;
-    const removePinnedArticles = $argument.removePinnedArticles;
-
-    if (removeBanners || removePinnedArticles) {
-        const originalLength = list.length;
-        list.filter(item => {
-            const ft = item.feedType;
-            if ((removeBanners && ft === 10002) || (removePinnedArticles && ft === 10003)) {
-                return false;
+    // 获取参数值
+    const removeAllBanners = $argument?.removeAllBanners !== undefined ? $argument.removeAllBanners : true;
+    const removePinnedArticles = $argument?.removePinnedArticles !== undefined ? $argument.removePinnedArticles : true;
+    
+    // 移除全部横幅
+    const removeAllBannersFunc = () => {
+        if (!removeAllBanners) return;
+        
+        if (Array.isArray(body?.data?.list)) {
+            const originalLength = body.data.list.length;
+            body.data.list = body.data.list.filter(item => 
+                item.feedType !== 10002
+            );
+            modified ||= (originalLength !== body.data.list.length);
+        }
+    };
+    
+    // 移除置顶文章
+    const removePinnedArticlesFunc = () => {
+        if (!removePinnedArticles) return;
+        
+        if (Array.isArray(body?.data?.list)) {
+            const originalLength = body.data.list.length;
+            body.data.list = body.data.list.filter(item => 
+                item.feedType !== 10003
+            );
+            modified ||= (originalLength !== body.data.list.length);
+        }
+    };
+    
+    // 移除横幅广告
+    const removeBannerAdsFunc = () => {
+        if (!Array.isArray(body?.data?.list)) return;
+        
+        body.data.list.forEach(item => {
+            if (item.feedContent?.focusNewsData && Array.isArray(item.feedContent.focusNewsData)) {
+                const originalLength = item.feedContent.focusNewsData.length;
+                item.feedContent.focusNewsData = item.feedContent.focusNewsData.filter(ad => 
+                    !ad.isAd
+                );
+                modified ||= (originalLength !== item.feedContent.focusNewsData.length);
             }
-            return true;
         });
-        modified ||= (list.length !== originalLength);
-    }
-
-    for (let i = 0; i < list.length; i++) {
-        const item = list[i];
-
-        if (item.feedContent?.flag === 2) {
-            list.splice(i, 1);
-            i--;
-            modified = true;
-            continue;
-        }
-
-        const focusNews = item.feedContent?.focusNewsData;
-        if (Array.isArray(focusNews)) {
-            let removedCount = 0;
-            for (let j = focusNews.length - 1; j >= 0; j--) {
-                if (focusNews[j].isAd === true) {
-                    focusNews.splice(j, 1);
-                    removedCount++;
-                }
-            }
-            if (removedCount > 0) {
-                modified = true;
-            }
-        }
-    }
-
+    };
+    
+    // 移除信息流广告
+    const removeFeedAdsFunc = () => {
+        if (!Array.isArray(body?.data?.list)) return;
+        
+        const originalLength = body.data.list.length;
+        body.data.list = body.data.list.filter(item => 
+            !(item.feedContent?.flag === 2)
+        );
+        modified ||= (originalLength !== body.data.list.length);
+    };
+    
+    // 执行所有过滤函数
+    removeAllBannersFunc();
+    removePinnedArticlesFunc();
+    removeBannerAdsFunc();
+    removeFeedAdsFunc();
+    
+    // 仅在修改时重新序列化
     $done(modified ? {
-        body: JSON.stringify(data),
+        body: JSON.stringify(body),
     } : {});
 })();
