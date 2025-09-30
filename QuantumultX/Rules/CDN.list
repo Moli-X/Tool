@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4028
+# 规则统计: 4036
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -84,9 +84,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-26T17:05:20.970Z
-# Last Updated: 2025-09-28T17:16:11.496Z
+# Last Updated: 2025-09-29T18:18:49.966Z
 # License: AGPL 3.0
-# Size: 3937
+# Size: 3945
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1162,6 +1162,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .yimg.jp,CDN
 .ymq.cool,CDN
 .yourimageshare.com,CDN
+.ypcdn.com,CDN
 .ypncdn.com,CDN
 .yps.link,CDN
 .ytimg.com,CDN
@@ -1371,6 +1372,7 @@ assets.ifttt.com,CDN
 assets.ipstack.com,CDN
 assets.jable.tv,CDN
 assets.jolipage.co,CDN
+assets.juksy.com,CDN
 assets.kagi.com,CDN
 assets.keysquare.io,CDN
 assets.khoros.com,CDN
@@ -1427,6 +1429,7 @@ assets.static-upwork.com,CDN
 assets.stickpng.com,CDN
 assets.stigg.io,CDN
 assets.swoogo.com,CDN
+assets.tatlerasia.com,CDN
 assets.the-independent.com,CDN
 assets.time.com,CDN
 assets.toiimg.com,CDN
@@ -1953,6 +1956,7 @@ cdn.sunofbeaches.com,CDN
 cdn.svgator.com,CDN
 cdn.syftdata.com,CDN
 cdn.tailwindcss.com,CDN
+cdn.tatlerasia.com,CDN
 cdn.techcommunity.microsoft.com,CDN
 cdn.termius.com,CDN
 cdn.theatlantic.com,CDN
@@ -2027,6 +2031,7 @@ cdn1.bigcommerce.com,CDN
 cdn1.dan.com,CDN
 cdn1.edgedatg.com,CDN
 cdn1.epicgames.com,CDN
+cdn1.ettoday.net,CDN
 cdn1.hentaicity.com,CDN
 cdn1.hotmoza.tv,CDN
 cdn1.iconfinder.com,CDN
@@ -2255,7 +2260,6 @@ david-dm.org,CDN
 db.onlinewebfonts.com,CDN
 dc-cdn.cdw.com,CDN
 dd.dexscreener.com,CDN
-ddcdn.comtucdncom.com,CDN
 demo.unified-streaming.com,CDN
 demotiles.maplibre.org,CDN
 denali-static.grammarly.com,CDN
@@ -2648,6 +2652,7 @@ images.tokopedia.net,CDN
 images.typeform.com,CDN
 images.unsplash.com,CDN
 images.videolan.org,CDN
+images.voguehk.com,CDN
 images.web3.storage,CDN
 images.weserv.nl,CDN
 images.wikia.com,CDN
@@ -2780,7 +2785,6 @@ img4.gelbooru.com,CDN
 img4.javmost.com,CDN
 img4.socialshopwave.com,CDN
 img4.yna.co.kr,CDN
-img5.gelbooru.com,CDN
 img5.socialshopwave.com,CDN
 img5.yna.co.kr,CDN
 img6.airdroid.com,CDN
@@ -2952,6 +2956,7 @@ media.dev.to,CDN
 media.discordapp.net,CDN
 media.dlsite.com,CDN
 media.e4le.me,CDN
+media.ettoday.net,CDN
 media.evolv.ai,CDN
 media.fc2.com,CDN
 media.flaticon.com,CDN
@@ -3406,7 +3411,6 @@ sites.chase.com,CDN
 sites.super.so,CDN
 skills-assets.pstmn.io,CDN
 sm.ign.com,CDN
-smd-cms.nasa.gov,CDN
 sn-s3-cdn.angry.im,CDN
 snippet.growsumo.com,CDN
 snippet.maze.co,CDN
@@ -3426,6 +3430,7 @@ sp.replit.com,CDN
 sp.streamlabs.com,CDN
 spcdn.incartupsell.com,CDN
 spoprod-a.akamaihd.net,CDN
+spotlightimage.biggo.com,CDN
 sprig.figma.com,CDN
 ss7.vzw.com,CDN
 ssl.gstatic.com,CDN
@@ -3458,6 +3463,7 @@ static-assets.clubhouseapi.com,CDN
 static-assets.codecademy.com,CDN
 static-assets.coinbase.com,CDN
 static-assets.freeanimehentai.net,CDN
+static-assets.juksy.com,CDN
 static-assets.mapbox.com,CDN
 static-assets.npr.org,CDN
 static-assets.vinted.com,CDN
@@ -3615,6 +3621,7 @@ static.launchdarkly.com,CDN
 static.licdn.com,CDN
 static.linear.app,CDN
 static.lingq.com,CDN
+static.lwn.net,CDN
 static.macupdate.com,CDN
 static.maxmind.com,CDN
 static.mediafire.com,CDN
@@ -3841,6 +3848,7 @@ time.apple.com,CDN
 time.cloudflare.com,CDN
 time.google.com,CDN
 time.windows.com,CDN
+tn.tubepornclassic.com,CDN
 tn.txxx.tube,CDN
 tn.upornia.com,CDN
 tn.vjav.com,CDN
