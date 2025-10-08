@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4057
+# 规则统计: 4064
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -84,9 +84,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-26T17:05:20.970Z
-# Last Updated: 2025-10-05T18:15:08.011Z
+# Last Updated: 2025-10-08T12:57:16.841Z
 # License: AGPL 3.0
-# Size: 3966
+# Size: 3973
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -129,6 +129,8 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .algolianet.com,CDN
 .alonestreaming.com,CDN
 .alphafish.top,CDN
+.am-cdn.online,CDN
+.am-cdn.pics,CDN
 .amaicdn.com,CDN
 .ampproject.org,CDN
 .ancestrycdn.com,CDN
@@ -1283,6 +1285,7 @@ assets-app.circleci.com,CDN
 assets-cdn.123rf.com,CDN
 assets-cdn.abcnews.com,CDN
 assets-cdn.abcotvs.net,CDN
+assets-cdn.anh.moe,CDN
 assets-cdn.jable.tv,CDN
 assets-cdn.porn.com,CDN
 assets-cdn.watchdisneyfe.com,CDN
@@ -1645,6 +1648,7 @@ cdn.adguard.info,CDN
 cdn.adsninja.ca,CDN
 cdn.aimerce.ai,CDN
 cdn.amcharts.com,CDN
+cdn.amh.moe,CDN
 cdn.announcekit.app,CDN
 cdn.answeroverflow.com,CDN
 cdn.app.fossa.com,CDN
@@ -2297,6 +2301,7 @@ downloads.coindesk.com,CDN
 drop.ndtv.com,CDN
 drscdn.500px.org,CDN
 dynamic-assets.coinbase.com,CDN
+dynamic-cdn.cms.ayoba.me,CDN
 dz2cdn1.dzone.com,CDN
 e.calibermind.com,CDN
 e.deviantart.net,CDN
@@ -2949,6 +2954,7 @@ media-cdn.atlassian.com,CDN
 media-cdn.comfy.social,CDN
 media-cdn.epicgames.com,CDN
 media-central.indianexpress.com,CDN
+media-cms.ayoba.me,CDN
 media-cms.onesignal.com,CDN
 media-s3-us-east-1.ceros.com,CDN
 media.beehiiv.com,CDN
@@ -3607,6 +3613,7 @@ static.gigabyte.com,CDN
 static.gitbook.com,CDN
 static.gl-inet.com,CDN
 static.global.visioncritical.com,CDN
+static.gmgard.com,CDN
 static.gnome.org,CDN
 static.gopro.com,CDN
 static.grammarly.com,CDN

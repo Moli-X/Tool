@@ -81,9 +81,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-08-26T17:05:20.970Z
-# Last Updated: 2025-10-05T18:15:08.011Z
+# Last Updated: 2025-10-08T12:57:16.841Z
 # License: AGPL 3.0
-# Size: 3966
+# Size: 3973
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -126,6 +126,8 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .algolianet.com
 .alonestreaming.com
 .alphafish.top
+.am-cdn.online
+.am-cdn.pics
 .amaicdn.com
 .ampproject.org
 .ancestrycdn.com
@@ -1280,6 +1282,7 @@ assets-app.circleci.com
 assets-cdn.123rf.com
 assets-cdn.abcnews.com
 assets-cdn.abcotvs.net
+assets-cdn.anh.moe
 assets-cdn.jable.tv
 assets-cdn.porn.com
 assets-cdn.watchdisneyfe.com
@@ -1642,6 +1645,7 @@ cdn.adguard.info
 cdn.adsninja.ca
 cdn.aimerce.ai
 cdn.amcharts.com
+cdn.amh.moe
 cdn.announcekit.app
 cdn.answeroverflow.com
 cdn.app.fossa.com
@@ -2294,6 +2298,7 @@ downloads.coindesk.com
 drop.ndtv.com
 drscdn.500px.org
 dynamic-assets.coinbase.com
+dynamic-cdn.cms.ayoba.me
 dz2cdn1.dzone.com
 e.calibermind.com
 e.deviantart.net
@@ -2946,6 +2951,7 @@ media-cdn.atlassian.com
 media-cdn.comfy.social
 media-cdn.epicgames.com
 media-central.indianexpress.com
+media-cms.ayoba.me
 media-cms.onesignal.com
 media-s3-us-east-1.ceros.com
 media.beehiiv.com
@@ -3604,6 +3610,7 @@ static.gigabyte.com
 static.gitbook.com
 static.gl-inet.com
 static.global.visioncritical.com
+static.gmgard.com
 static.gnome.org
 static.gopro.com
 static.grammarly.com
