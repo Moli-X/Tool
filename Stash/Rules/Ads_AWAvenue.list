@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 862
+# 规则统计: 864
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 854
-#Update content: 添加一个广告IP #173
-#Update time: 2025-10-09 03:33:07 UTC+8
+#Total lines: 856
+#Update content: 新增拦截 Microsoft Edge浏览器的遥测域名 #172
+#Update time: 2025-10-09 10:38:06 UTC+8
 #Version: 1.6.8-release
 .1500020991.vodplayer.wxamedia.com
 .1500022744.vodplayer.wxamedia.com
@@ -249,6 +249,8 @@
 .bj.ad.track.66mobi.com
 .books-analytics-events.apple.com
 .bootpreload.uve.weibo.com
+.browser.events.data.msn.cn
+.browser.events.data.msn.com
 .browsercfg-drcn.cloud.dbankcloud.cn
 .bsrv.qq.com
 .bugly.qq.com
