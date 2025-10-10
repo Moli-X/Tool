@@ -8,14 +8,13 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/IThome_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/IThome.png
-#!date=2025-09-27 00:39:45
+#!date=2025-10-09 22:32:05
 
 [Argument]
 removePinnedArticles = switch, false, true, tag=移除置顶文章, desc=启用后将移除置顶文章
 removeAllBanners = switch, false, true, tag=移除全部横幅, desc=启用后将移除全部横幅
 
 [Rewrite]
-^https?:\/\/api\.zuihuimai\.com\/static\/.*\/hongbao reject
 ^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$ reject
 
 [Script]

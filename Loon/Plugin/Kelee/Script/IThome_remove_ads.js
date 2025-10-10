@@ -1,4 +1,4 @@
-// 2025-09-18 21:40:48
+// 2025-10-09 22:29:11
 
 (() => {
     if (!$response?.body) return $done({});
@@ -58,13 +58,13 @@
         });
     };
     
-    // 移除信息流广告
+    // 移除信息流广告（合并：flag===2 或 feedType===10004，任一满足即移除）
     const removeFeedAdsFunc = () => {
         if (!Array.isArray(body?.data?.list)) return;
         
         const originalLength = body.data.list.length;
         body.data.list = body.data.list.filter(item => 
-            !(item.feedContent?.flag === 2)
+            !(item.feedContent?.flag === 2 || item.feedType === 10004)
         );
         modified ||= (originalLength !== body.data.list.length);
     };
