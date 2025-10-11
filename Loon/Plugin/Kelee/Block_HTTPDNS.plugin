@@ -224,7 +224,7 @@ URL-REGEX, "^http:\/\/139\.196\.12\.179:8053\/httpdns\/", REJECT
 
 ^https?:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$ reject-dict
 
-^https?:\/\/amdc\.alipay\.com\/query
+^https?:\/\/amdc\.alipay\.com\/query reject-dict
 
 ^https?:\/\/cdn\.wup\.huya\.com\/monitor\/monitor\.jsp reject
 

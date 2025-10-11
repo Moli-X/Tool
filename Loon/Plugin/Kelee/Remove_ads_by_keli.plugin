@@ -122,9 +122,6 @@ DOMAIN, open-pixon.ads-pixiv.net, REJECT
 ^https?:\/\/conf-darwin\.xycdn\.com reject-dict
 ^https?:\/\/sdk1xyajs\.data\.kuiniuca\.com reject
 
-^https:\/\/iyes\.youku\.com\/uts\/v1\/start\/ reject-dict
-^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.get\/ reject-dict
-
 ^https:\/\/gw\.chuangkit\.com\/team\/app\/common\/ad\/ reject-dict
 
 ^https:\/\/qiye\.gaoding\.com\/api\/v3\/oc\/v2\/delivery-pits\/ios-splash\/ reject-dict
@@ -134,7 +131,7 @@ DOMAIN, open-pixon.ads-pixiv.net, REJECT
 
 ^https:\/\/api\.zcool\.com\.cn\/v\d\.\d\.\d/common\/open-screen reject-dict
 
-^https:\/\/shealthyapi\.senssun\.com\/v1\/app\/banner\/findByType\?type=bottom$
+^https:\/\/shealthyapi\.senssun\.com\/v1\/app\/banner\/findByType\?type=bottom$ reject-dict
 
 ^https:\/\/lanfanapp\.com\/api\/v1\/ads\/ reject-dict
 
