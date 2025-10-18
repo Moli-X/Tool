@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4066
+# 规则统计: 4080
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -26,55 +26,67 @@ DOMAIN-KEYWORD,static.trustpilot.com
 DOMAIN-KEYWORD,vdownload.hanime1
 DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 DOMAIN-KEYWORD,web-assets.zendesk
-DOMAIN-WILDCARD,*.fsvod
-DOMAIN-WILDCARD,*.img.*.sendibm
-DOMAIN-WILDCARD,*.kuaikan-cdn
-DOMAIN-WILDCARD,*.skyearth
+DOMAIN-WILDCARD,*.fsvod?.com
+DOMAIN-WILDCARD,*.img.*.sendibm?.com
+DOMAIN-WILDCARD,*.kuaikan-cdn?.com
+DOMAIN-WILDCARD,*.skyearth?.xyz
 DOMAIN-WILDCARD,appcenter-filemanagement-*.cloudapp.net
 DOMAIN-WILDCARD,assets*.freshdesk.com
 DOMAIN-WILDCARD,assets.*.imaga.co
-DOMAIN-WILDCARD,blog-imgs-
+DOMAIN-WILDCARD,blog-imgs-??.2nt.com
+DOMAIN-WILDCARD,blog-imgs-??.fc2.com
 DOMAIN-WILDCARD,browser-intake-*-datadoghq.com
-DOMAIN-WILDCARD,cdn
 DOMAIN-WILDCARD,cdn-*.microsoft.com
-DOMAIN-WILDCARD,cdn-msp
+DOMAIN-WILDCARD,cdn-msp?.18comic.org
+DOMAIN-WILDCARD,cdn-msp?.18comic.vip
+DOMAIN-WILDCARD,cdn-msp?.jmcomic-zzz.one
+DOMAIN-WILDCARD,cdn-msp?.jmcomic.me
 DOMAIN-WILDCARD,cdn.*.microsoft.com
 DOMAIN-WILDCARD,cdn.*.office.net
+DOMAIN-WILDCARD,cdn?-dl.pornhost.com
+DOMAIN-WILDCARD,cdn?.18girlssex.com
+DOMAIN-WILDCARD,cdn?.mikuclub.fun
 DOMAIN-WILDCARD,cdns.*.gigya.com
 DOMAIN-WILDCARD,chunk-*.mux.com
-DOMAIN-WILDCARD,file
-DOMAIN-WILDCARD,i
+DOMAIN-WILDCARD,file?.mikuclub.fun
+DOMAIN-WILDCARD,i?.nhentai.net
 DOMAIN-WILDCARD,image*.cloudokyo.cloud
-DOMAIN-WILDCARD,img
 DOMAIN-WILDCARD,img-*.now.com
+DOMAIN-WILDCARD,img?.porngo.com
+DOMAIN-WILDCARD,img??.porngo.com
 DOMAIN-WILDCARD,object-storage-*.vexxhost.net
 DOMAIN-WILDCARD,ocsp.*.amazontrust.com
 DOMAIN-WILDCARD,proxy-*.dailymotion.com
-DOMAIN-WILDCARD,rr
-DOMAIN-WILDCARD,s
+DOMAIN-WILDCARD,rr?---??.ouo.si
 DOMAIN-WILDCARD,s*.hanime1
 DOMAIN-WILDCARD,s3-*.figma.com
 DOMAIN-WILDCARD,s3.*.wasabisys.com
+DOMAIN-WILDCARD,s?.maxstream.org
+DOMAIN-WILDCARD,s??.maxstream.org
+DOMAIN-WILDCARD,s???.pornone.com
 DOMAIN-WILDCARD,sdk.*.braze.eu
-DOMAIN-WILDCARD,static
-DOMAIN-WILDCARD,stream
-DOMAIN-WILDCARD,t
+DOMAIN-WILDCARD,static?.tgstat.ru
+DOMAIN-WILDCARD,static??.tgstat.ru
+DOMAIN-WILDCARD,stream?.kissjav.com
+DOMAIN-WILDCARD,stream??.kissjav.com
+DOMAIN-WILDCARD,t?.nhentai.net
 DOMAIN-WILDCARD,th-*.pornone.com
 DOMAIN-WILDCARD,uploads-*.insided.com
-DOMAIN-WILDCARD,v.rn
-DOMAIN-WILDCARD,video
+DOMAIN-WILDCARD,v.rn???.xyz
 DOMAIN-WILDCARD,video*.cloudokyo.cloud
-DOMAIN-WILDCARD,video-thumbnail
 DOMAIN-WILDCARD,video-thumbnail2.fc2.com
-DOMAIN-WILDCARD,vip-videoprem*-thumbnail
+DOMAIN-WILDCARD,video-thumbnail?.liaoningmovie.net
+DOMAIN-WILDCARD,video?-thumbnail?.fc2.com
+DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
+DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-10-10T18:09:31.629Z
-# Last Updated: 2025-10-16T15:02:58.411Z
+# Last Updated: 2025-10-17T13:08:04.454Z
+# Last Updated: 2025-10-17T13:08:04.897Z
 # License: AGPL 3.0
-# Size: 3987
+# Size: 3989
 # Size: 78
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1963,6 +1975,7 @@ cdn.techcommunity.microsoft.com
 cdn.termius.com
 cdn.theatlantic.com
 cdn.thenewstack.io
+cdn.thewirecutter.com
 cdn.thingiverse.com
 cdn.tiny.cloud
 cdn.tinypass.com
@@ -2999,6 +3012,7 @@ media.nbcconnecticut.com
 media.nbclosangeles.com
 media.nbcnewyork.com
 media.newyorker.com
+media.nngroup.com
 media.nownews.com
 media.npr.org
 media.orz.uno
