@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4080
+# 规则统计: 4082
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -22,6 +22,7 @@ HOST-KEYWORD,fonts.hanime1,CDN
 HOST-KEYWORD,images.trustpilot.com,CDN
 HOST-KEYWORD,images.trustpilot.net,CDN
 HOST-KEYWORD,scripts.trustpilot.com,CDN
+HOST-KEYWORD,static.grammarly.com,CDN
 HOST-KEYWORD,static.trustpilot.com,CDN
 HOST-KEYWORD,vdownload.hanime1,CDN
 HOST-KEYWORD,vod-adaptive.akamaized.net,CDN
@@ -83,11 +84,11 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-10-17T13:08:04.454Z
-# Last Updated: 2025-10-17T13:08:04.897Z
+# Last Updated: 2025-10-21T13:51:57.912Z
+# Last Updated: 2025-10-21T13:51:58.835Z
 # License: AGPL 3.0
-# Size: 3989
-# Size: 78
+# Size: 3990
+# Size: 79
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -440,6 +441,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .flaglog.com,CDN
 .flagpedia.net,CDN
 .flk-ipfs.xyz,CDN
+.flsrv.net,CDN
 .fmcdn.net,CDN
 .fncstatic.com,CDN
 .fontawesome.com,CDN

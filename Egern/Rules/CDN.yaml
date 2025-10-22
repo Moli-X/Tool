@@ -19,6 +19,7 @@ DOMAIN-KEYWORD,fonts.hanime1
 DOMAIN-KEYWORD,images.trustpilot.com
 DOMAIN-KEYWORD,images.trustpilot.net
 DOMAIN-KEYWORD,scripts.trustpilot.com
+DOMAIN-KEYWORD,static.grammarly.com
 DOMAIN-KEYWORD,static.trustpilot.com
 DOMAIN-KEYWORD,vdownload.hanime1
 DOMAIN-KEYWORD,vod-adaptive.akamaized.net
@@ -80,11 +81,11 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-10-17T13:08:04.454Z
-# Last Updated: 2025-10-17T13:08:04.897Z
+# Last Updated: 2025-10-21T13:51:57.912Z
+# Last Updated: 2025-10-21T13:51:58.835Z
 # License: AGPL 3.0
-# Size: 3989
-# Size: 78
+# Size: 3990
+# Size: 79
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -437,6 +438,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .flaglog.com
 .flagpedia.net
 .flk-ipfs.xyz
+.flsrv.net
 .fmcdn.net
 .fncstatic.com
 .fontawesome.com
