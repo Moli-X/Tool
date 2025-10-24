@@ -1,4 +1,4 @@
-// 2025-10-09 22:29:11
+// 2025-10-24 03:22:31
 
 (() => {
     if (!$response?.body) return $done({});
@@ -58,16 +58,31 @@
         });
     };
     
-    // 移除信息流广告（合并：flag===2 或 feedType===10004，任一满足即移除）
-    const removeFeedAdsFunc = () => {
-        if (!Array.isArray(body?.data?.list)) return;
-        
-        const originalLength = body.data.list.length;
-        body.data.list = body.data.list.filter(item => 
-            !(item.feedContent?.flag === 2 || item.feedType === 10004)
-        );
-        modified ||= (originalLength !== body.data.list.length);
-    };
+// 移除信息流广告（flag===2 或 feedType===10004，或 smallTags 中有 text==="广告"）
+const removeFeedAdsFunc = () => {
+    if (!Array.isArray(body?.data?.list)) return;
+
+    const originalLength = body.data.list.length;
+    body.data.list = body.data.list.filter(item => {
+
+        if (item.feedContent?.flag === 2 || item.feedType === 10004) {
+            return false;
+        }
+
+        if (item.feedContent?.smallTags && Array.isArray(item.feedContent.smallTags)) {
+            const hasAdTag = item.feedContent.smallTags.some(tag => 
+                typeof tag.text === 'string' && tag.text === '广告'
+            );
+            if (hasAdTag) {
+                return false;
+            }
+        }
+
+        return true;
+    });
+
+    modified ||= (originalLength !== body.data.list.length);
+};
     
     // 执行所有过滤函数
     removeAllBannersFunc();
