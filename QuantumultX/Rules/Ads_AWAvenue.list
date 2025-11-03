@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 862
+# 规则统计: 863
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 854
-#Update content: fix Mosdns_v5.py error
-#Update time: 2025-10-31 13:44:46 UTC+8
+#Total lines: 855
+#Update content: add “adashx.m.taobao.com”
+#Update time: 2025-11-03 17:56:56 UTC+8
 #Version: 1.6.8-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -48,6 +48,7 @@
 .adapi.izuiyou.com,Ads_AWAvenue
 .adapi.yynetwk.com,Ads_AWAvenue
 .adashbc.ut.taobao.com,Ads_AWAvenue
+.adashx.m.taobao.com,Ads_AWAvenue
 .adc.hpplay.cn,Ads_AWAvenue
 .adcdn.hpplay.cn,Ads_AWAvenue
 .adcdn.tencentmusic.com,Ads_AWAvenue
