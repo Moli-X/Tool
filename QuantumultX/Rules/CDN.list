@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4091
+# 规则统计: 4087
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -85,9 +85,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-10-21T13:51:57.912Z
-# Last Updated: 2025-11-01T16:13:23.309Z
+# Last Updated: 2025-11-03T15:03:48.003Z
 # License: AGPL 3.0
-# Size: 3999
+# Size: 3995
 # Size: 79
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1026,6 +1026,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .substackcdn.com,CDN
 .supabase.co,CDN
 .superfiliate-cdn.com,CDN
+.superhumanstatic.com,CDN
 .surge.sh,CDN
 .surrit.com,CDN
 .surrit.store,CDN
@@ -1271,9 +1272,6 @@ app.quotemedia.com,CDN
 app.roboflow.com,CDN
 app.viral-loops.com,CDN
 appassets.mvtdev.com,CDN
-apple-relay.apple.com,CDN
-apple-relay.cloudflare.com,CDN
-apple-relay.fastly-edge.com,CDN
 apps-static.route4me.com,CDN
 apps.bazaarvoice.com,CDN
 apps.profitihub.com,CDN
@@ -2245,8 +2243,6 @@ conversiongorilla.com,CDN
 cookie-cdn.cookiepro.com,CDN
 corp-backend.brevo.com,CDN
 cors-proxy.htmldriven.com,CDN
-cp2.cloudflare.com,CDN
-cp4.cloudflare.com,CDN
 cpwebassets.codepen.io,CDN
 craftassets.unraid.net,CDN
 cravatar.eu,CDN
