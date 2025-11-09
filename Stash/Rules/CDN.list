@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4094
+# 规则统计: 4113
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -85,9 +85,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-10-21T13:51:57.912Z
-# Last Updated: 2025-11-07T20:16:06.992Z
+# Last Updated: 2025-11-08T15:29:22.256Z
 # License: AGPL 3.0
-# Size: 4002
+# Size: 4021
 # Size: 79
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -552,6 +552,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .imageban.ru
 .imagedelivery.net
 .imagehub.cc
+.images-dnxlive.com
 .images-iherb.com
 .images.androeed.ru
 .images.arcpublishing.com
@@ -640,6 +641,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .itvstatic.com
 .javcdn.li
 .javcdn.vip
+.javhucdn.com
 .javplayer.me
 .javtxt.com
 .jbkcdn.com
@@ -1201,6 +1203,7 @@ a.fireside.fm
 a.gawby.com
 a.kickstarter.com
 a.klaviyo.com
+a.pomf.cat
 a5.behance.net
 a57.foxnews.com
 academy-public.coinmarketcap.com
@@ -1483,6 +1486,7 @@ assetscdn.jable.tv
 at.cbsi.com
 atl-global.atlassian.com
 attach.mobile01.com
+attach.setn.com
 attach2.mobile01.com
 attachments.office.net
 audio.rfa.org
@@ -1737,6 +1741,7 @@ cdn.dnsimple.com
 cdn.docsbot.com
 cdn.document360.io
 cdn.donmai.us
+cdn.doofinder.com
 cdn.dotaoutpost.com
 cdn.downdetector.com
 cdn.download.it
@@ -2063,6 +2068,7 @@ cdn1.sysgears.com
 cdn1.techbang.com
 cdn1.telegram.space
 cdn1.telesco.pe
+cdn1.tubeteen18.com
 cdn1.unrealengine.com
 cdn10.bigcommerce.com
 cdn11.bigcommerce.com
@@ -2086,6 +2092,7 @@ cdn2.suno.ai
 cdn2.sysgears.com
 cdn2.techbang.com
 cdn2.ttloli.com
+cdn2.tubeteen18.com
 cdn2.turboviplay.cc
 cdn2.unrealengine.com
 cdn3.bigcommerce.com
@@ -2096,6 +2103,7 @@ cdn3.iconfinder.com
 cdn3.onlyfans.com
 cdn3.stamped.io
 cdn3.sysgears.com
+cdn3.tubeteen18.com
 cdn3.unrealengine.com
 cdn4.bigcommerce.com
 cdn4.edgedatg.com
@@ -2103,12 +2111,14 @@ cdn4.iconfinder.com
 cdn4.sysgears.com
 cdn4.telegram.space
 cdn4.telesco.pe
+cdn4.tubeteen18.com
 cdn5.bigcommerce.com
 cdn5.edgedatg.com
 cdn5.hextom.com
 cdn5.iconfinder.com
 cdn5.telegram.space
 cdn5.telesco.pe
+cdn5.tubeteen18.com
 cdn6.aptoide.com
 cdn6.bigcommerce.com
 cdn6.edgedatg.com
@@ -2768,6 +2778,7 @@ img.moedog.org
 img.moegirl.tw
 img.moviefap.com
 img.mresou.com
+img.news.ebc.net.tw
 img.noy.asia
 img.olympics.com
 img.openshop.com.hk
@@ -2842,6 +2853,7 @@ imgrs.apkcombo.com
 imgs.plurk.com
 imgs.search.brave.com
 imgs.xkcd.com
+imgs02.aventertainments.com
 imgs3.hcaptcha.com
 imgsrv.crunchyroll.com
 imgssl.constantcontact.com
@@ -3264,6 +3276,7 @@ quests.armorgames.com
 quriobot.com
 r.r10s.jp
 r2.1hanime.com
+r2.gear4music.com
 r2.leadsy.ai
 r2cdn.myshopline.com
 r2cdn.perplexity.ai
@@ -3543,6 +3556,7 @@ static-mh.content.disney.io
 static-overlay.ubisoft.com
 static-production.npmjs.com
 static-r.kamihimeproject.net
+static-r2.gear4music.com
 static-redesign.cnbcfm.com
 static-resource.np.community.playstation.net
 static-secure-uploads.ui.com
@@ -3632,6 +3646,7 @@ static.foxnews.com
 static.frame.work
 static.freedownloadmanager.org
 static.freeimages.com
+static.generated.photos
 static.getbutton.io
 static.gettyimages.com
 static.giant-bicycles.com
@@ -3809,8 +3824,10 @@ statici.icloud.com
 staticintl.cloudcachetci.com
 staticm.fastcomments.com
 statics-marketingsites-eas-ms-com.akamaized.net
+statics-prod.mirrordaily.news
 statics.erothots.co
 statics.goorm.io
+statics.mnnews.tw
 statics.simpshub.com
 statics.streamable.com
 staticsource1.redotpay.com
@@ -3915,6 +3932,7 @@ top1cdn.top1health.com
 topbar-static.piano.io
 torrindex.net
 touchgal-image.moyu.moe
+tour-content-cdn.kellymadisonmedia.com
 tourpic-vector.maps.komoot.net
 townsquare.media
 tracking.inflection.io
@@ -4095,3 +4113,4 @@ y.yarn.co
 yep.video.yahoo.com
 zephr-templates.cnbc.com
 zod.dev
+zzz.wxw.moe

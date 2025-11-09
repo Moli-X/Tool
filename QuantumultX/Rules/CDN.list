@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4094
+# 规则统计: 4113
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -85,9 +85,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-10-21T13:51:57.912Z
-# Last Updated: 2025-11-07T20:16:06.992Z
+# Last Updated: 2025-11-08T15:29:22.256Z
 # License: AGPL 3.0
-# Size: 4002
+# Size: 4021
 # Size: 79
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -552,6 +552,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .imageban.ru,CDN
 .imagedelivery.net,CDN
 .imagehub.cc,CDN
+.images-dnxlive.com,CDN
 .images-iherb.com,CDN
 .images.androeed.ru,CDN
 .images.arcpublishing.com,CDN
@@ -640,6 +641,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .itvstatic.com,CDN
 .javcdn.li,CDN
 .javcdn.vip,CDN
+.javhucdn.com,CDN
 .javplayer.me,CDN
 .javtxt.com,CDN
 .jbkcdn.com,CDN
@@ -1201,6 +1203,7 @@ a.fireside.fm,CDN
 a.gawby.com,CDN
 a.kickstarter.com,CDN
 a.klaviyo.com,CDN
+a.pomf.cat,CDN
 a5.behance.net,CDN
 a57.foxnews.com,CDN
 academy-public.coinmarketcap.com,CDN
@@ -1483,6 +1486,7 @@ assetscdn.jable.tv,CDN
 at.cbsi.com,CDN
 atl-global.atlassian.com,CDN
 attach.mobile01.com,CDN
+attach.setn.com,CDN
 attach2.mobile01.com,CDN
 attachments.office.net,CDN
 audio.rfa.org,CDN
@@ -1737,6 +1741,7 @@ cdn.dnsimple.com,CDN
 cdn.docsbot.com,CDN
 cdn.document360.io,CDN
 cdn.donmai.us,CDN
+cdn.doofinder.com,CDN
 cdn.dotaoutpost.com,CDN
 cdn.downdetector.com,CDN
 cdn.download.it,CDN
@@ -2063,6 +2068,7 @@ cdn1.sysgears.com,CDN
 cdn1.techbang.com,CDN
 cdn1.telegram.space,CDN
 cdn1.telesco.pe,CDN
+cdn1.tubeteen18.com,CDN
 cdn1.unrealengine.com,CDN
 cdn10.bigcommerce.com,CDN
 cdn11.bigcommerce.com,CDN
@@ -2086,6 +2092,7 @@ cdn2.suno.ai,CDN
 cdn2.sysgears.com,CDN
 cdn2.techbang.com,CDN
 cdn2.ttloli.com,CDN
+cdn2.tubeteen18.com,CDN
 cdn2.turboviplay.cc,CDN
 cdn2.unrealengine.com,CDN
 cdn3.bigcommerce.com,CDN
@@ -2096,6 +2103,7 @@ cdn3.iconfinder.com,CDN
 cdn3.onlyfans.com,CDN
 cdn3.stamped.io,CDN
 cdn3.sysgears.com,CDN
+cdn3.tubeteen18.com,CDN
 cdn3.unrealengine.com,CDN
 cdn4.bigcommerce.com,CDN
 cdn4.edgedatg.com,CDN
@@ -2103,12 +2111,14 @@ cdn4.iconfinder.com,CDN
 cdn4.sysgears.com,CDN
 cdn4.telegram.space,CDN
 cdn4.telesco.pe,CDN
+cdn4.tubeteen18.com,CDN
 cdn5.bigcommerce.com,CDN
 cdn5.edgedatg.com,CDN
 cdn5.hextom.com,CDN
 cdn5.iconfinder.com,CDN
 cdn5.telegram.space,CDN
 cdn5.telesco.pe,CDN
+cdn5.tubeteen18.com,CDN
 cdn6.aptoide.com,CDN
 cdn6.bigcommerce.com,CDN
 cdn6.edgedatg.com,CDN
@@ -2768,6 +2778,7 @@ img.moedog.org,CDN
 img.moegirl.tw,CDN
 img.moviefap.com,CDN
 img.mresou.com,CDN
+img.news.ebc.net.tw,CDN
 img.noy.asia,CDN
 img.olympics.com,CDN
 img.openshop.com.hk,CDN
@@ -2842,6 +2853,7 @@ imgrs.apkcombo.com,CDN
 imgs.plurk.com,CDN
 imgs.search.brave.com,CDN
 imgs.xkcd.com,CDN
+imgs02.aventertainments.com,CDN
 imgs3.hcaptcha.com,CDN
 imgsrv.crunchyroll.com,CDN
 imgssl.constantcontact.com,CDN
@@ -3264,6 +3276,7 @@ quests.armorgames.com,CDN
 quriobot.com,CDN
 r.r10s.jp,CDN
 r2.1hanime.com,CDN
+r2.gear4music.com,CDN
 r2.leadsy.ai,CDN
 r2cdn.myshopline.com,CDN
 r2cdn.perplexity.ai,CDN
@@ -3543,6 +3556,7 @@ static-mh.content.disney.io,CDN
 static-overlay.ubisoft.com,CDN
 static-production.npmjs.com,CDN
 static-r.kamihimeproject.net,CDN
+static-r2.gear4music.com,CDN
 static-redesign.cnbcfm.com,CDN
 static-resource.np.community.playstation.net,CDN
 static-secure-uploads.ui.com,CDN
@@ -3632,6 +3646,7 @@ static.foxnews.com,CDN
 static.frame.work,CDN
 static.freedownloadmanager.org,CDN
 static.freeimages.com,CDN
+static.generated.photos,CDN
 static.getbutton.io,CDN
 static.gettyimages.com,CDN
 static.giant-bicycles.com,CDN
@@ -3809,8 +3824,10 @@ statici.icloud.com,CDN
 staticintl.cloudcachetci.com,CDN
 staticm.fastcomments.com,CDN
 statics-marketingsites-eas-ms-com.akamaized.net,CDN
+statics-prod.mirrordaily.news,CDN
 statics.erothots.co,CDN
 statics.goorm.io,CDN
+statics.mnnews.tw,CDN
 statics.simpshub.com,CDN
 statics.streamable.com,CDN
 staticsource1.redotpay.com,CDN
@@ -3915,6 +3932,7 @@ top1cdn.top1health.com,CDN
 topbar-static.piano.io,CDN
 torrindex.net,CDN
 touchgal-image.moyu.moe,CDN
+tour-content-cdn.kellymadisonmedia.com,CDN
 tourpic-vector.maps.komoot.net,CDN
 townsquare.media,CDN
 tracking.inflection.io,CDN
@@ -4095,3 +4113,4 @@ y.yarn.co,CDN
 yep.video.yahoo.com,CDN
 zephr-templates.cnbc.com,CDN
 zod.dev,CDN
+zzz.wxw.moe,CDN

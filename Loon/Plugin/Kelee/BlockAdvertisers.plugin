@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!date=2025-10-26 01:24:37
+#!date=2025-11-08 21:21:51
 
 [Rule]
 AND, ((DOMAIN-KEYWORD, tnc), (OR, ((DOMAIN-SUFFIX, capcutapi.com), (DOMAIN-SUFFIX, zijieapi.com), (DOMAIN-SUFFIX, isnssdk.com), (DOMAIN-SUFFIX, toutiaoapi.com), (DOMAIN-SUFFIX, bytedance.com), (DOMAIN-SUFFIX, snssdk.com), (DOMAIN-SUFFIX, sgsnssdk.com)))), DIRECT
@@ -171,6 +171,7 @@ DOMAIN, beacon-api.aliyuncs.com, REJECT
 DOMAIN, adash.man.aliyuncs.com, REJECT
 DOMAIN, applog.uc.cn, REJECT
 AND, ((DOMAIN-KEYWORD, adash), (DOMAIN-SUFFIX, ut.taobao.com)), REJECT
+URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch", REJECT
 
 DOMAIN, huichuan.sm.cn, REJECT
 

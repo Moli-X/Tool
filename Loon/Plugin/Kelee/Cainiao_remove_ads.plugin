@@ -11,8 +11,6 @@
 #!date=2025-05-13 15:17:08
 
 [Rule]
-AND, ((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"), (USER-AGENT, "Cainiao4iPhone*")), REJECT
-
 DOMAIN, acs4baichuan.m.taobao.com, REJECT
 DOMAIN, adsmind.ugdtimg.com, REJECT
 DOMAIN, amdc.m.youku.com, REJECT

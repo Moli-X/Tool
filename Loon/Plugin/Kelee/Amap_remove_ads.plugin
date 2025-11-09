@@ -11,8 +11,6 @@
 #!date=2025-09-04 23:46:49
 
 [Rule]
-AND, ((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"), (USER-AGENT, "AMapiPhone*")), REJECT
-
 DOMAIN, amap-aos-info-nogw.amap.com, REJECT
 DOMAIN, free-aos-cdn-image.amap.com, REJECT
 DOMAIN-SUFFIX, v.smtcdns.com, REJECT
