@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!date=2025-11-08 21:21:51
+#!date=2025-11-10 18:30:23
 
 [Rule]
 AND, ((DOMAIN-KEYWORD, tnc), (OR, ((DOMAIN-SUFFIX, capcutapi.com), (DOMAIN-SUFFIX, zijieapi.com), (DOMAIN-SUFFIX, isnssdk.com), (DOMAIN-SUFFIX, toutiaoapi.com), (DOMAIN-SUFFIX, bytedance.com), (DOMAIN-SUFFIX, snssdk.com), (DOMAIN-SUFFIX, sgsnssdk.com)))), DIRECT
@@ -103,10 +103,9 @@ DOMAIN, mobads-pre-config.cdn.bcebos.com, REJECT
 DOMAIN-SUFFIX, union.baidu.cn, REJECT
 DOMAIN-SUFFIX, union.baidu.com, REJECT
 
-DOMAIN, ad.tencentmusic.com, REJECT
 DOMAIN, adsmind.gdtimg.com, REJECT
 DOMAIN, adsmind.ugdtimg.com, REJECT
-DOMAIN, mc.tencentmusic.com, REJECT
+DOMAIN, ads.privacy.qq.com, REJECT
 DOMAIN, c2.gdt.qq.com, REJECT
 DOMAIN, 2fwin.gdt.qq.com, REJECT
 DOMAIN, huatuocode.huatuo.qq.com, REJECT
@@ -115,7 +114,6 @@ DOMAIN, info6.video.qq.com, REJECT
 DOMAIN, ios.bugly.qq.com, REJECT
 DOMAIN, pro.bugly.qq.com, REJECT
 DOMAIN, ios.video.mpush.qq.com, REJECT
-DOMAIN, us.l.qq.com, REJECT
 DOMAIN, mi.gdt.qq.com, REJECT
 DOMAIN, otheve.beacon.qq.com, REJECT
 DOMAIN, pgdt.gtimg.cn, REJECT
@@ -136,11 +134,19 @@ DOMAIN, win.gdt.qq.com, REJECT
 DOMAIN, wup.imtt.qq.com, REJECT
 DOMAIN, tpstelemetry.tencent.com, REJECT
 DOMAIN, ii.gdt.qq.com, REJECT
+DOMAIN, otheve.beacon.qq.com, REJECT
+DOMAIN, stat.y.qq.com, REJECT
+DOMAIN, stat6.y.qq.com, REJECT
+DOMAIN, oth.str.mdt.qq.com, REJECT
+DOMAIN, h.trace.qq.com, REJECT
+DOMAIN, sdk.e.qq.com, REJECT
+DOMAIN, tangram.e.qq.com, REJECT
 DOMAIN-KEYWORD, trace.qq.com, REJECT
 DOMAIN-KEYWORD, trace.video.qq.com, REJECT
 DOMAIN-KEYWORD, ad.hunyuan.tencent.com, REJECT
 DOMAIN-SUFFIX, gdt.qq.com, REJECT
 DOMAIN-SUFFIX, l.qq.com, REJECT
+DOMAIN-SUFFIX, imtmp.net, REJECT
 DOMAIN-SUFFIX, ugdtimg.com, REJECT
 IP-CIDR, 47.110.187.87/32, REJECT, no-resolve
 

@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Block_HTTPDNS.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png
-#!date=2025-08-20 00:30:31
+#!date=2025-11-10 18:52:24
 
 [Rule]
 DOMAIN, yyapp-httpdns.gslb.yy.com, REJECT
@@ -90,6 +90,7 @@ URL-REGEX, "^http:\/\/112\.65\.200\.117\/resolve", REJECT
 URL-REGEX, "^http:\/\/112\.64\.218\.119\/resolve", REJECT
 URL-REGEX, "^http:\/\/114\.116\.215\.110\/resolve", REJECT
 URL-REGEX, "^http:\/\/116\.63\.10\.31\/resolve", REJECT
+URL-REGEX, "^http:\/\/203\.119\.206\.8\/\d+\/resolve\?", REJECT
 
 DOMAIN, httpdns.browser.miui.com, REJECT
 DOMAIN, resolver.msg.xiaomi.net, REJECT
