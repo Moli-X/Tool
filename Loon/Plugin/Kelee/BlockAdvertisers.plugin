@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!date=2025-11-10 18:30:23
+#!date=2025-11-11 15:17:16
 
 [Rule]
 AND, ((DOMAIN-KEYWORD, tnc), (OR, ((DOMAIN-SUFFIX, capcutapi.com), (DOMAIN-SUFFIX, zijieapi.com), (DOMAIN-SUFFIX, isnssdk.com), (DOMAIN-SUFFIX, toutiaoapi.com), (DOMAIN-SUFFIX, bytedance.com), (DOMAIN-SUFFIX, snssdk.com), (DOMAIN-SUFFIX, sgsnssdk.com)))), DIRECT
@@ -72,10 +72,25 @@ DOMAIN-SUFFIX, supersonicads.com, REJECT
 DOMAIN-SUFFIX, appsad.cn, REJECT
 
 DOMAIN-SUFFIX, beizi.biz, REJECT
+DOMAIN-SUFFIX, ad-scope.com.cn, REJECT
+DOMAIN-SUFFIX, adn-plus.com.cn, REJECT
+DOMAIN-SUFFIX, beizi.biz, REJECT
+DOMAIN-SUFFIX, adhub.com.cn, REJECT
+DOMAIN-SUFFIX, adnplus.com.cn, REJECT
+DOMAIN-SUFFIX, adscope.com.cn, REJECT
+DOMAIN-SUFFIX, adscope.cn, REJECT
+DOMAIN-SUFFIX, adscope.xyz, REJECT
+DOMAIN-SUFFIX, beizi.info, REJECT
+DOMAIN-SUFFIX, beizi.online, REJECT
 
 DOMAIN-SUFFIX, miaozhen.com, REJECT
 
 DOMAIN-SUFFIX, admobile.top, REJECT
+DOMAIN-SUFFIX, tianmu.mobi, REJECT
+DOMAIN-SUFFIX, admobile.mobi, REJECT
+DOMAIN-SUFFIX, admobile.net.cn, REJECT
+DOMAIN-SUFFIX, popadshop.com, REJECT
+DOMAIN-SUFFIX, admobile.vip, REJECT
 
 DOMAIN-SUFFIX, yksdks.com, REJECT
 DOMAIN-SUFFIX, dutils.com, REJECT
@@ -160,6 +175,34 @@ DOMAIN-SUFFIX, umtrack.com, REJECT
 DOMAIN-SUFFIX, umeng.com, REJECT
 DOMAIN-SUFFIX, umsns.com, REJECT
 DOMAIN-SUFFIX, umengcloud.com, REJECT
+DOMAIN-SUFFIX, lydass.net, REJECT
+DOMAIN-SUFFIX, lydass.com.cn, REJECT
+DOMAIN-SUFFIX, lydaas.net, REJECT
+DOMAIN-SUFFIX, lydass.cn, REJECT
+DOMAIN-SUFFIX, lydaas.cn, REJECT
+DOMAIN-SUFFIX, lydaas.com.cn, REJECT
+DOMAIN-SUFFIX, fwosapp.com, REJECT
+DOMAIN-SUFFIX, rhinokeen.com, REJECT
+DOMAIN-SUFFIX, lydaas.com, REJECT
+DOMAIN-SUFFIX, xixikf.com, REJECT
+DOMAIN-SUFFIX, wrating.com, REJECT
+DOMAIN-SUFFIX, puata.info, REJECT
+DOMAIN-SUFFIX, mobmore.com, REJECT
+DOMAIN-SUFFIX, um0.cn, REJECT
+DOMAIN-SUFFIX, umv0.com, REJECT
+DOMAIN-SUFFIX, umtrack1.com, REJECT
+DOMAIN-SUFFIX, eshiqi.com, REJECT
+DOMAIN-SUFFIX, umv5.com, REJECT
+DOMAIN-SUFFIX, dratio.com, REJECT
+DOMAIN-SUFFIX, umtrack0.com, REJECT
+DOMAIN-SUFFIX, uyunad.com, REJECT
+DOMAIN-SUFFIX, whalecloud.com, REJECT
+DOMAIN-SUFFIX, umtrack2.com, REJECT
+DOMAIN-SUFFIX, umengcloud.com, REJECT
+DOMAIN-SUFFIX, umeng.com, REJECT
+DOMAIN-SUFFIX, umtrack.com, REJECT
+DOMAIN-SUFFIX, um1.cn, REJECT
+DOMAIN-SUFFIX, umsns.com, REJECT
 
 DOMAIN-SUFFIX, adfunlink.com, REJECT
 
