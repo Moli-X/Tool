@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4114
+# 规则统计: 4105
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -85,9 +85,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-10-21T13:51:57.912Z
-# Last Updated: 2025-11-09T16:33:51.035Z
+# Last Updated: 2025-11-10T15:03:30.029Z
 # License: AGPL 3.0
-# Size: 4022
+# Size: 4013
 # Size: 79
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -354,6 +354,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .design-system.economist.com
 .devrum.uptime.com
 .dilcdn.com
+.directupload.net
 .disconnect.me
 .discourse-cdn.com
 .disquscdn.com
@@ -1333,7 +1334,6 @@ assets.capterra.com
 assets.cello.so
 assets.change.org
 assets.chaos.social
-assets.chess24.com
 assets.clever-cloud.com
 assets.clickfunnels.com
 assets.cloudpilot.ai
@@ -1658,7 +1658,6 @@ cdn.adguard.info
 cdn.adsninja.ca
 cdn.aimerce.ai
 cdn.amcharts.com
-cdn.amh.moe
 cdn.announcekit.app
 cdn.answeroverflow.com
 cdn.app.fossa.com
@@ -1696,7 +1695,6 @@ cdn.cbd.int
 cdn.cfr.org
 cdn.changelog.com
 cdn.channel.io
-cdn.chess24.com
 cdn.circle.so
 cdn.clever-cloud.com
 cdn.cliqz.com
@@ -2013,7 +2011,6 @@ cdn.v2ex.com
 cdn.vector.co
 cdn.verifypass.com
 cdn.viafoura.net
-cdn.vidible.tv
 cdn.vidyard.com
 cdn.viglink.com
 cdn.violet.vin
@@ -2236,7 +2233,6 @@ consentdeliveryfd.azurefd.net
 consumersite-assets.trustpilot.net
 consumersiteimages.trustpilot.net
 content-a.strava.com
-content-cdn.y2mate.com
 content-management-files.canva.com
 content-prod-live.cert.starbucks.com
 content.any.run
@@ -2692,7 +2688,6 @@ images.tokopedia.net
 images.typeform.com
 images.unsplash.com
 images.videolan.org
-images.voguehk.com
 images.web3.storage
 images.weserv.nl
 images.whoer.com
@@ -2765,7 +2760,6 @@ img.imgdd.com
 img.informer.com
 img.itch.zone
 img.javstore.net
-img.jjbb.me
 img.jsdelivr.com
 img.kbhgames.com
 img.kemono.su
@@ -2804,6 +2798,7 @@ img.timero.xyz
 img.toto.im
 img.utdstc.com
 img.vim-cn.com
+img.voguehk.com
 img.washingtonpost.com
 img.windy.com
 img.xhacgn.com
@@ -3522,7 +3517,6 @@ static-assets-web.flixcart.com
 static-assets.clubhouseapi.com
 static-assets.codecademy.com
 static-assets.coinbase.com
-static-assets.freeanimehentai.net
 static-assets.juksy.com
 static-assets.mapbox.com
 static-assets.npr.org
@@ -3678,7 +3672,6 @@ static.iris.informa.com
 static.itch.io
 static.iyf.tv
 static.j51.net
-static.javcdn.info
 static.javhd.com
 static.jsbin.com
 static.k2s.cc
@@ -3828,7 +3821,6 @@ statics-marketingsites-eas-ms-com.akamaized.net
 statics-prod.mirrordaily.news
 statics.erothots.co
 statics.goorm.io
-statics.mnnews.tw
 statics.simpshub.com
 statics.streamable.com
 staticsource1.redotpay.com
@@ -3900,7 +3892,6 @@ telemetry2.devolutions.net
 texture.laby.net
 th.bing.com
 themes.fourthwall.com
-thingproxy.freeboard.io
 thumbnail.missav.com
 thumbnailer.mixcloud.com
 thumbnails.applegamingwiki.com

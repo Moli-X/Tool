@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4114
+# 规则统计: 4105
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -85,9 +85,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-10-21T13:51:57.912Z
-# Last Updated: 2025-11-09T16:33:51.035Z
+# Last Updated: 2025-11-10T15:03:30.029Z
 # License: AGPL 3.0
-# Size: 4022
+# Size: 4013
 # Size: 79
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -354,6 +354,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .design-system.economist.com,CDN
 .devrum.uptime.com,CDN
 .dilcdn.com,CDN
+.directupload.net,CDN
 .disconnect.me,CDN
 .discourse-cdn.com,CDN
 .disquscdn.com,CDN
@@ -1333,7 +1334,6 @@ assets.capterra.com,CDN
 assets.cello.so,CDN
 assets.change.org,CDN
 assets.chaos.social,CDN
-assets.chess24.com,CDN
 assets.clever-cloud.com,CDN
 assets.clickfunnels.com,CDN
 assets.cloudpilot.ai,CDN
@@ -1658,7 +1658,6 @@ cdn.adguard.info,CDN
 cdn.adsninja.ca,CDN
 cdn.aimerce.ai,CDN
 cdn.amcharts.com,CDN
-cdn.amh.moe,CDN
 cdn.announcekit.app,CDN
 cdn.answeroverflow.com,CDN
 cdn.app.fossa.com,CDN
@@ -1696,7 +1695,6 @@ cdn.cbd.int,CDN
 cdn.cfr.org,CDN
 cdn.changelog.com,CDN
 cdn.channel.io,CDN
-cdn.chess24.com,CDN
 cdn.circle.so,CDN
 cdn.clever-cloud.com,CDN
 cdn.cliqz.com,CDN
@@ -2013,7 +2011,6 @@ cdn.v2ex.com,CDN
 cdn.vector.co,CDN
 cdn.verifypass.com,CDN
 cdn.viafoura.net,CDN
-cdn.vidible.tv,CDN
 cdn.vidyard.com,CDN
 cdn.viglink.com,CDN
 cdn.violet.vin,CDN
@@ -2236,7 +2233,6 @@ consentdeliveryfd.azurefd.net,CDN
 consumersite-assets.trustpilot.net,CDN
 consumersiteimages.trustpilot.net,CDN
 content-a.strava.com,CDN
-content-cdn.y2mate.com,CDN
 content-management-files.canva.com,CDN
 content-prod-live.cert.starbucks.com,CDN
 content.any.run,CDN
@@ -2692,7 +2688,6 @@ images.tokopedia.net,CDN
 images.typeform.com,CDN
 images.unsplash.com,CDN
 images.videolan.org,CDN
-images.voguehk.com,CDN
 images.web3.storage,CDN
 images.weserv.nl,CDN
 images.whoer.com,CDN
@@ -2765,7 +2760,6 @@ img.imgdd.com,CDN
 img.informer.com,CDN
 img.itch.zone,CDN
 img.javstore.net,CDN
-img.jjbb.me,CDN
 img.jsdelivr.com,CDN
 img.kbhgames.com,CDN
 img.kemono.su,CDN
@@ -2804,6 +2798,7 @@ img.timero.xyz,CDN
 img.toto.im,CDN
 img.utdstc.com,CDN
 img.vim-cn.com,CDN
+img.voguehk.com,CDN
 img.washingtonpost.com,CDN
 img.windy.com,CDN
 img.xhacgn.com,CDN
@@ -3522,7 +3517,6 @@ static-assets-web.flixcart.com,CDN
 static-assets.clubhouseapi.com,CDN
 static-assets.codecademy.com,CDN
 static-assets.coinbase.com,CDN
-static-assets.freeanimehentai.net,CDN
 static-assets.juksy.com,CDN
 static-assets.mapbox.com,CDN
 static-assets.npr.org,CDN
@@ -3678,7 +3672,6 @@ static.iris.informa.com,CDN
 static.itch.io,CDN
 static.iyf.tv,CDN
 static.j51.net,CDN
-static.javcdn.info,CDN
 static.javhd.com,CDN
 static.jsbin.com,CDN
 static.k2s.cc,CDN
@@ -3828,7 +3821,6 @@ statics-marketingsites-eas-ms-com.akamaized.net,CDN
 statics-prod.mirrordaily.news,CDN
 statics.erothots.co,CDN
 statics.goorm.io,CDN
-statics.mnnews.tw,CDN
 statics.simpshub.com,CDN
 statics.streamable.com,CDN
 staticsource1.redotpay.com,CDN
@@ -3900,7 +3892,6 @@ telemetry2.devolutions.net,CDN
 texture.laby.net,CDN
 th.bing.com,CDN
 themes.fourthwall.com,CDN
-thingproxy.freeboard.io,CDN
 thumbnail.missav.com,CDN
 thumbnailer.mixcloud.com,CDN
 thumbnails.applegamingwiki.com,CDN
