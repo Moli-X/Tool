@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/PinDuoDuo_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PinDuoDuo.png
-#!date=2025-11-05 05:02:01
+#!date=2025-11-13 19:47:47
 
 [Rule]
 AND, ((URL-REGEX, "^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\/d(\d)?"), (USER-AGENT, "*com.xunmeng.pinduoduo*")), REJECT
@@ -29,7 +29,6 @@ DOMAIN, th-a.pinduoduo.com, REJECT
 DOMAIN, ta-a.pinduoduo.com, REJECT
 DOMAIN, meta.pinduoduo.com, REJECT
 DOMAIN, apm-a.pinduoduo.com, REJECT
-DOMAIN, m.pinduoduo.net, REJECT
 
 [Rewrite]
 ^https:\/\/api\.pinduoduo\.com\/api\/aristotle\/unrated_order_for_unreceived_tab\? reject-dict

@@ -8,11 +8,12 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/DiDi_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DiDi.png
-#!date=2025-09-10 09:50:58
+#!date=2025-11-13 20:33:12
 
 [Rule]
 DOMAIN, gwp.xiaojukeji.com, REJECT
 AND, ((IP-ASN, 45090, no-resolve), (DEST-PORT, 25641), (PROTOCOL, TCP)), REJECT
+AND, ((IP-ASN, 55990, no-resolve), (DEST-PORT, 25641), (PROTOCOL, TCP)), REJECT
 AND, ((IP-ASN, 63646, no-resolve), (DEST-PORT, 25641), (PROTOCOL, TCP)), REJECT
 
 [Rewrite]
@@ -28,7 +29,7 @@ AND, ((IP-ASN, 63646, no-resolve), (DEST-PORT, 25641), (PROTOCOL, TCP)), REJECT
 
 ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget\? response-body-json-del data.mult_home_banner
 
-^https:\/\/common\.diditaxi\.com\.cn\/common\/v5\/usercenter\/layout$ response-body-json-del data.instances.center_marketing_card data.instances.center_widget_list
+^https:\/\/common\.diditaxi\.com\.cn\/common\/v5\/usercenter\/layout$ response-body-json-del data.instances.center_marketing_card data.instances.center_widget_list data.instances.center_member_card
 
 ^https:\/\/common\.diditaxi\.com\.cn\/common\/v5\/usercenter\/layout$ response-body-json-jq '.data.instances.center_wallet_finance_card.data.view_info |= map(select(.title == "优惠卡券" or .title == "余额" or .title == "福利金"))'
 
