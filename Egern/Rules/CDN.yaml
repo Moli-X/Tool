@@ -34,6 +34,10 @@ DOMAIN-WILDCARD,assets.*.imaga.co
 DOMAIN-WILDCARD,blog-imgs-??.2nt.com
 DOMAIN-WILDCARD,blog-imgs-??.fc2.com
 DOMAIN-WILDCARD,browser-intake-*-datadoghq.com
+DOMAIN-WILDCARD,cdn*.boysfood.com
+DOMAIN-WILDCARD,cdn*.pigav.com
+DOMAIN-WILDCARD,cdn*.porn87.com
+DOMAIN-WILDCARD,cdn*.pornhost.com
 DOMAIN-WILDCARD,cdn-*.microsoft.com
 DOMAIN-WILDCARD,cdn-msp?.18comic.org
 DOMAIN-WILDCARD,cdn-msp?.18comic.vip
@@ -46,6 +50,7 @@ DOMAIN-WILDCARD,cdn?.18girlssex.com
 DOMAIN-WILDCARD,cdn?.mikuclub.fun
 DOMAIN-WILDCARD,cdns.*.gigya.com
 DOMAIN-WILDCARD,chunk-*.mux.com
+DOMAIN-WILDCARD,fastly-*.allmovie.com
 DOMAIN-WILDCARD,file?.mikuclub.fun
 DOMAIN-WILDCARD,i?.nhentai.net
 DOMAIN-WILDCARD,image*.cloudokyo.cloud
@@ -81,11 +86,11 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2025-10-21T13:51:57.912Z
-# Last Updated: 2025-11-10T15:03:30.029Z
+# Last Updated: 2025-11-12T20:27:10.526Z
+# Last Updated: 2025-11-12T20:27:11.165Z
 # License: AGPL 3.0
-# Size: 4013
-# Size: 79
+# Size: 4034
+# Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -379,6 +384,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .dwcdn.net
 .dweb.eu.org
 .dweb.link
+.dwncdn.net
 .dynamic-static-assets.com
 .e.crashlytics.com
 .easylist.to
@@ -551,6 +557,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .imageban.ru
 .imagedelivery.net
 .imagehub.cc
+.images-amazon.com
 .images-dnxlive.com
 .images-iherb.com
 .images.androeed.ru
@@ -687,6 +694,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .line-scdn.net
 .live-video.net
 .livemediahost.com
+.lllcdn.autos
 .local.webcontainer.io
 .localizecdn.com
 .locimg.com
@@ -1037,6 +1045,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .swiftypecdn.com
 .sxccdn.com
 .szjal.cn
+.t8cdn.com
 .tapecontent.net
 .targetimg1.com
 .tauri.app
@@ -1223,6 +1232,7 @@ ajax.microsoft.com
 ak.sail-horizon.com
 akamai-assets.squarespace.com
 akamai-origin.myanimelist.net
+alcdn.msauth.net
 alt.idgesg.net
 amazon-omni-cdn.com
 amp.akamaized.net
@@ -1348,7 +1358,6 @@ assets.dify.ai
 assets.dnsfilter.com
 assets.documentcloud.org
 assets.dub.co
-assets.dwncdn.net
 assets.ecomm.ui.com
 assets.embeddables.com
 assets.euractiv.com
@@ -1416,6 +1425,7 @@ assets.play.xbox.com
 assets.plurk.com
 assets.polarbyte.com
 assets.poool.fr
+assets.porndig.com
 assets.positional-bucket.com
 assets.prowritingaid.com
 assets.queue-it.net
@@ -1588,7 +1598,10 @@ categoriespages-cdn.trustpilot.net
 cc-embed.adobe.com
 cc.boyfriendtv.com
 cdn-1.ggjav.com
+cdn-1.porn87.com
 cdn-1.strava.com
+cdn-2.porn87.com
+cdn-3.porn87.com
 cdn-a.sonyentertainmentnetwork.com
 cdn-app.cart-bot.net
 cdn-app.pathfactory.com
@@ -1630,6 +1643,7 @@ cdn-seo.airdroid.com
 cdn-service.jp.sumologic.com
 cdn-share-sprites.flaticon.com
 cdn-static-1.medium.com
+cdn-static-push.porndig.com
 cdn-static.paw.cloud
 cdn-static.talent.com
 cdn-swell-assets.yotpo.com
@@ -1804,6 +1818,7 @@ cdn.icomoon.io
 cdn.icon-icons.com
 cdn.iconfinder.com
 cdn.imageengine.io
+cdn.imago-images.com
 cdn.img.ly
 cdn.infoq.com
 cdn.insightmediagroup.io
@@ -1836,6 +1851,7 @@ cdn.lgrckt-in.com
 cdn.libravatar.org
 cdn.lihkg.com
 cdn.linearicons.com
+cdn.lineicons.com
 cdn.livechatinc.com
 cdn.logbase.io
 cdn.login.unity.com
@@ -1856,6 +1872,7 @@ cdn.minecraft-server-list.com
 cdn.miohentai.com
 cdn.missav.com
 cdn.modrinth.com
+cdn.moeload.com
 cdn.music.com
 cdn.myanimelist.net
 cdn.myfonts.net
@@ -1928,6 +1945,7 @@ cdn.rive.app
 cdn.road.cc
 cdn.robinpro.gallery
 cdn.roboflow.com
+cdn.roof.ai
 cdn.royaleapi.com
 cdn.safecharge.com
 cdn.sanity.io
@@ -2395,6 +2413,8 @@ fast.appcues.com
 fast.wistia.com
 fast.wistia.net
 fastly-cloud.typenetwork.com
+fastly-gce.allmovie.com
+fastly-s3.allmovie.com
 fastporndelivery.hqporner.com
 favicon.pirsch.io
 favicon.yandex.net
@@ -2574,6 +2594,7 @@ ih2.redbubble.net
 ih3.redbubble.net
 ik.imgkit.net
 imag.malavida.com
+image-cdn.porndig.com
 image-forwarder.notaku.so
 image-stgus.samsung.com
 image-us.samsung.com
@@ -2754,9 +2775,11 @@ img.huffingtonpost.com
 img.icons8.com
 img.ifunny.co
 img.imgdd.com
+img.imoutomoe.net
 img.informer.com
 img.itch.zone
 img.javstore.net
+img.javynow.com
 img.jsdelivr.com
 img.kbhgames.com
 img.kemono.su
@@ -2979,6 +3002,7 @@ media-cdn.epicgames.com
 media-central.indianexpress.com
 media-cms.ayoba.me
 media-cms.onesignal.com
+media-hls.growcdnssedge.com
 media-s3-us-east-1.ceros.com
 media.beehiiv.com
 media.breitbart.com
@@ -3036,6 +3060,7 @@ media.pointandplace.com
 media.printables.com
 media.pullopen.xyz
 media.ra.kroll.com
+media.remax-prod.eng.remax.tech
 media.shopimind.com
 media.smooch.io
 media.steampowered.com
@@ -3540,6 +3565,7 @@ static-files.bitchute.com
 static-forms.klaviyo.com
 static-gcp.freepikcompany.com
 static-id.fc2.com
+static-images.remax.com
 static-landing.probiplacehold.cot.com
 static-lccn.leetcode.com
 static-main.moovit.com
