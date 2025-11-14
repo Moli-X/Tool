@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4131
+# 规则统计: 4138
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2025-11-12T20:27:11.165Z
+# Last Updated: 2025-11-13T20:34:01.724Z
 # License: AGPL 3.0
-# Size: 4034
+# Size: 4041
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1596,6 +1596,7 @@ cache.industry.siemens.com,CDN
 cache.omnicalculator.com,CDN
 cached.rebuyengine.com,CDN
 canny-assets.io,CDN
+canvas-lb.tubitv.com,CDN
 cassette.sphdigital.com.sg,CDN
 categoriespages-cdn.trustpilot.net,CDN
 cc-embed.adobe.com,CDN
@@ -2676,6 +2677,7 @@ images.hothardware.com,CDN
 images.icon-icons.com,CDN
 images.idgesg.net,CDN
 images.indianexpress.com,CDN
+images.justwatch.com,CDN
 images.kick.com,CDN
 images.loox.io,CDN
 images.macrumors.com,CDN
@@ -2709,6 +2711,7 @@ images.tokopedia.net,CDN
 images.typeform.com,CDN
 images.unsplash.com,CDN
 images.videolan.org,CDN
+images.vudu.com,CDN
 images.web3.storage,CDN
 images.weserv.nl,CDN
 images.whoer.com,CDN
@@ -2721,6 +2724,7 @@ images1.vinted.net,CDN
 images1.welcomesoftware.com,CDN
 images2.cmp.optimizely.com,CDN
 images2.giant-bicycles.com,CDN
+images2.vudu.com,CDN
 images2.welcomesoftware.com,CDN
 images3.cmp.optimizely.com,CDN
 images3.welcomesoftware.com,CDN
@@ -2996,6 +3000,7 @@ marfeelexperimentsexperienceengine.mrf.io,CDN
 marketing.figma.com,CDN
 marketing.thingiverse.com,CDN
 marketplace-web-assets.vinted.com,CDN
+mcdn.tubi.tv,CDN
 mcdn.vrporn.com,CDN
 mcdnds.vrporn.com,CDN
 mcdns.vrporn.com,CDN
@@ -3567,6 +3572,7 @@ static-exp3.licdn.com,CDN
 static-files.bitchute.com,CDN
 static-forms.klaviyo.com,CDN
 static-gcp.freepikcompany.com,CDN
+static-homepage-en.pluto.tv,CDN
 static-id.fc2.com,CDN
 static-images.remax.com,CDN
 static-landing.probiplacehold.cot.com,CDN
@@ -3956,6 +3962,7 @@ townsquare.media,CDN
 tracking.inflection.io,CDN
 trekcdnprod.azureedge.net,CDN
 truth.bahamut.com.tw,CDN
+tubi.video,CDN
 tuf-repo-cdn.sigstore.dev,CDN
 tuf-repo.github.com,CDN
 turbo.build,CDN
