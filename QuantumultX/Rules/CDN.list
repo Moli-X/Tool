@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4138
+# 规则统计: 4146
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2025-11-13T20:34:01.724Z
+# Last Updated: 2025-11-14T20:11:06.906Z
 # License: AGPL 3.0
-# Size: 4041
+# Size: 4049
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -370,6 +370,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .docker.io,CDN
 .dockerstatic.com,CDN
 .dogehls.xyz,CDN
+.dolphin-anty-cdn.com,CDN
 .doodcdn.co,CDN
 .doppiocdn.com,CDN
 .doppiocdn.live,CDN
@@ -1880,6 +1881,7 @@ cdn.moeload.com,CDN
 cdn.music.com,CDN
 cdn.myanimelist.net,CDN
 cdn.myfonts.net,CDN
+cdn.myfutanari.com,CDN
 cdn.myportfolio.com,CDN
 cdn.nba.com,CDN
 cdn.ndtv.com,CDN
@@ -2196,6 +2198,7 @@ checkout.stripe.com,CDN
 chunk-composing.canva.com,CDN
 ci.testling.com,CDN
 cimg.cnyes.cool,CDN
+clara.iwara.tv,CDN
 claritystatic.azureedge.net,CDN
 clickup.marketlinc.com,CDN
 clientsdk.launchdarkly.com,CDN
@@ -2435,6 +2438,7 @@ file.zoom.us,CDN
 file1.hkepc.net,CDN
 files.armorgames.com,CDN
 files.buildwithfern.com,CDN
+files.iwara.tv,CDN
 files.jotform.com,CDN
 files.kick.com,CDN
 files.mastodon.ktachibana.party,CDN
@@ -2522,6 +2526,7 @@ hello.zonos.com,CDN
 hentaiworldtv.b-cdn.net,CDN
 heroicons.com,CDN
 hhhhhhome86227170.wordpress.com,CDN
+himeko.iwara.tv,CDN
 hips.hearstapps.com,CDN
 hls.hentaicity.com,CDN
 home.integrate.com,CDN
@@ -2745,6 +2750,7 @@ img-fnc.ebc.net.tw,CDN
 img-prod-cms-rt-microsoft-com.akamaized.net,CDN
 img-s-msn-com.akamaized.net,CDN
 img.177pica.com,CDN
+img.321cdn.com,CDN
 img.3movs.com,CDN
 img.4gamers.com.tw,CDN
 img.4khd.com,CDN
@@ -3593,6 +3599,7 @@ static-us.afterpay.com,CDN
 static-web-prod.skillshare.com,CDN
 static-web.grammarly.com,CDN
 static-www.onlyoffice.com,CDN
+static.3dporndude.com,CDN
 static.4shared.com,CDN
 static.ada.support,CDN
 static.addtoany.com,CDN
@@ -3790,6 +3797,7 @@ static.start.me,CDN
 static.status.io,CDN
 static.svc.litv.tv,CDN
 static.telegraph.co.uk,CDN
+static.tella.tv,CDN
 static.tenki.jp,CDN
 static.test-beta.com,CDN
 static.theguardian.com,CDN
