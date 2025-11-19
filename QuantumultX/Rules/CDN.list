@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4147
+# 规则统计: 4158
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2025-11-15T09:12:44.383Z
+# Last Updated: 2025-11-19T01:41:19.954Z
 # License: AGPL 3.0
-# Size: 4050
+# Size: 4061
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -549,6 +549,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .i.optimole.com,CDN
 .ibytedtos.com,CDN
 .ibyteimg.com,CDN
+.icfcdn.com,CDN
 .icon.horse,CDN
 .iframe.ly,CDN
 .iggcdn.com,CDN
@@ -794,6 +795,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .npmcdn.com,CDN
 .npmfs.com,CDN
 .npms.io,CDN
+.nsimg.net,CDN
 .nv7s.com,CDN
 .nxcli.io,CDN
 .nxedge.io,CDN
@@ -1745,6 +1747,7 @@ cdn.datdota.com,CDN
 cdn.db-ip.com,CDN
 cdn.db.io,CDN
 cdn.decrypt.co,CDN
+cdn.decrypt.day,CDN
 cdn.delight-vr.com,CDN
 cdn.designerapp.osi.office.net,CDN
 cdn.designsystem.arm.com,CDN
@@ -2222,6 +2225,7 @@ cms-assets.xboxservices.com,CDN
 cms-cdn.goat.com,CDN
 cms-cdn.now.gg,CDN
 cms.blavity.com,CDN
+cms.myfonts.com,CDN
 cms.recordedfuture.com,CDN
 cms.therecord.media,CDN
 cms.typenetwork.com,CDN
@@ -2529,6 +2533,7 @@ heroicons.com,CDN
 hhhhhhome86227170.wordpress.com,CDN
 himeko.iwara.tv,CDN
 hips.hearstapps.com,CDN
+hiveplayer-static.bamgrid.com,CDN
 hls.hentaicity.com,CDN
 home.integrate.com,CDN
 hp.foxnews.com,CDN
@@ -2545,6 +2550,7 @@ i.dailymail.co.uk,CDN
 i.gawby.com,CDN
 i.geekflare.com,CDN
 i.giphy.com,CDN
+i.git99.com,CDN
 i.guim.co.uk,CDN
 i.gzn.jp,CDN
 i.hamreus.com,CDN
@@ -3260,6 +3266,7 @@ polyfill-fe.toss.im,CDN
 polyfill.bbhub.io,CDN
 pomf2.lain.la,CDN
 pool.jortage.com,CDN
+pp-static.monotype.com,CDN
 pplx-next-static-public.perplexity.ai,CDN
 pplx-res.cloudinary.com,CDN
 pptstatic.iyf.tv,CDN
@@ -3475,6 +3482,7 @@ secure.fanboy.co.nz,CDN
 secure.telegraph.co.uk,CDN
 segapi.clerk.com,CDN
 segment.digitalocean.com,CDN
+sellon.shiprocket.in,CDN
 sentry.ainopara.com,CDN
 seo-wp.airdroid.com,CDN
 sequoia.cdn-apple.com,CDN
@@ -3524,6 +3532,7 @@ speedmedia2.jfrog.com,CDN
 spoprod-a.akamaihd.net,CDN
 spotlightimage.biggo.com,CDN
 sprig.figma.com,CDN
+sr-cdn-1.shiprocket.in,CDN
 ss7.vzw.com,CDN
 ssl.gstatic.com,CDN
 st-eu.dynamicyield.com,CDN
@@ -3599,6 +3608,7 @@ static-sv.fc2.com,CDN
 static-us.afterpay.com,CDN
 static-web-prod.skillshare.com,CDN
 static-web.grammarly.com,CDN
+static-webfonts.myfonts.com,CDN
 static-www.onlyoffice.com,CDN
 static.3dporndude.com,CDN
 static.4shared.com,CDN
@@ -3758,6 +3768,7 @@ static.onlyfans.com,CDN
 static.oomol.com,CDN
 static.openreplay.com,CDN
 static.opensea.io,CDN
+static.opensuse.org,CDN
 static.oracle.com,CDN
 static.parallels.com,CDN
 static.peatio.com,CDN

@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 871
+# 规则统计: 880
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 863
-#Update content: 追加一个遗漏的
-#Update time: 2025-11-13 15:26:28 UTC+8
+#Total lines: 872
+#Update content: 新增 jihuoniao ads、advlion ads、qiming ADX、etool ads 拦截，close #184 感谢@VJMOD
+#Update time: 2025-11-18 14:48:37 UTC+8
 #Version: 1.6.9-release
 .1500020991.vodplayer.wxamedia.com
 .1500022744.vodplayer.wxamedia.com
@@ -145,12 +145,14 @@
 .advice-ads.s3.amazonaws.com
 .adview.cn
 .adx-ad.smart-tv.cn
+.adx-api.jinmo.tech
 .adx-bj-req.anythinktech.com
 .adx-bj.anythinktech.com
 .adx-cn.anythinktech.com
 .adx-drcn.op.dbankcloud.cn
 .adx-open-service.youku.com
 .adx-os.anythinktech.com
+.adx-saas.advlion.com
 .adx.ads.heytapmobi.com
 .adx.ads.oppomobile.com
 .adx.adwangmai.com
@@ -250,6 +252,7 @@
 .bianxian.com
 .bingads.microsoft.com
 .biz.weibo.com
+.bj-td-menta-01-callback.advlion.com
 .bj.ad.track.66mobi.com
 .books-analytics-events.apple.com
 .bootpreload.uve.weibo.com
@@ -260,6 +263,7 @@
 .bugly.qq.com
 .business-api.tiktok.com
 .c.bidtoolads.com
+.c.etoolads.cn
 .c.evidon.com
 .c.gj.qq.com
 .c.kuaiduizuoye.com
@@ -541,6 +545,7 @@
 .mobilelog.upqzfile.com
 .monitor-ads-test.huan.tv
 .monitor-uu.play.aiseet.atianqi.com
+.monitor.adxsenmeng.com
 .monitor.music.qq.com
 .monitor.uu.qq.com
 .monsetting.toutiao.com
@@ -617,6 +622,7 @@
 .proxy.advp.apple.com
 .public.gdtimg.com
 .q.i.gdt.qq.com
+.qmlog.baertt.com
 .qn-cdnfile1pcdn.msstatic.com
 .qqdata.ab.qq.com
 .qzs.gdtimg.com
@@ -637,8 +643,10 @@
 .rpt.gdt.qq.com
 .rt.applovin.com
 .rt.applvn.com
+.rtb.adxsenmeng.com
 .rtb.voiceads.cn
 .s.amazon-adsystem.com
+.s1.cdn-sg.advlion.com
 .s8t.teads.tv
 .saad.ms.zhangyue.net
 .saas.hpplay.cn
@@ -722,6 +730,7 @@
 .t7z.cupid.iqiyi.com
 .t7z.cupid.ptqy.gitv.tv
 .tangram.e.qq.com
+.target.ads.jihuoniao.com
 .tdc.qq.com
 .tdsdk.cpatrk.net
 .tdsdk.xdrig.com

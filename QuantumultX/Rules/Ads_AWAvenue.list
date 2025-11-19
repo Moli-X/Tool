@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 871
+# 规则统计: 880
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 863
-#Update content: 追加一个遗漏的
-#Update time: 2025-11-13 15:26:28 UTC+8
+#Total lines: 872
+#Update content: 新增 jihuoniao ads、advlion ads、qiming ADX、etool ads 拦截，close #184 感谢@VJMOD
+#Update time: 2025-11-18 14:48:37 UTC+8
 #Version: 1.6.9-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -145,12 +145,14 @@
 .advice-ads.s3.amazonaws.com,Ads_AWAvenue
 .adview.cn,Ads_AWAvenue
 .adx-ad.smart-tv.cn,Ads_AWAvenue
+.adx-api.jinmo.tech,Ads_AWAvenue
 .adx-bj-req.anythinktech.com,Ads_AWAvenue
 .adx-bj.anythinktech.com,Ads_AWAvenue
 .adx-cn.anythinktech.com,Ads_AWAvenue
 .adx-drcn.op.dbankcloud.cn,Ads_AWAvenue
 .adx-open-service.youku.com,Ads_AWAvenue
 .adx-os.anythinktech.com,Ads_AWAvenue
+.adx-saas.advlion.com,Ads_AWAvenue
 .adx.ads.heytapmobi.com,Ads_AWAvenue
 .adx.ads.oppomobile.com,Ads_AWAvenue
 .adx.adwangmai.com,Ads_AWAvenue
@@ -250,6 +252,7 @@
 .bianxian.com,Ads_AWAvenue
 .bingads.microsoft.com,Ads_AWAvenue
 .biz.weibo.com,Ads_AWAvenue
+.bj-td-menta-01-callback.advlion.com,Ads_AWAvenue
 .bj.ad.track.66mobi.com,Ads_AWAvenue
 .books-analytics-events.apple.com,Ads_AWAvenue
 .bootpreload.uve.weibo.com,Ads_AWAvenue
@@ -260,6 +263,7 @@
 .bugly.qq.com,Ads_AWAvenue
 .business-api.tiktok.com,Ads_AWAvenue
 .c.bidtoolads.com,Ads_AWAvenue
+.c.etoolads.cn,Ads_AWAvenue
 .c.evidon.com,Ads_AWAvenue
 .c.gj.qq.com,Ads_AWAvenue
 .c.kuaiduizuoye.com,Ads_AWAvenue
@@ -541,6 +545,7 @@
 .mobilelog.upqzfile.com,Ads_AWAvenue
 .monitor-ads-test.huan.tv,Ads_AWAvenue
 .monitor-uu.play.aiseet.atianqi.com,Ads_AWAvenue
+.monitor.adxsenmeng.com,Ads_AWAvenue
 .monitor.music.qq.com,Ads_AWAvenue
 .monitor.uu.qq.com,Ads_AWAvenue
 .monsetting.toutiao.com,Ads_AWAvenue
@@ -617,6 +622,7 @@
 .proxy.advp.apple.com,Ads_AWAvenue
 .public.gdtimg.com,Ads_AWAvenue
 .q.i.gdt.qq.com,Ads_AWAvenue
+.qmlog.baertt.com,Ads_AWAvenue
 .qn-cdnfile1pcdn.msstatic.com,Ads_AWAvenue
 .qqdata.ab.qq.com,Ads_AWAvenue
 .qzs.gdtimg.com,Ads_AWAvenue
@@ -637,8 +643,10 @@
 .rpt.gdt.qq.com,Ads_AWAvenue
 .rt.applovin.com,Ads_AWAvenue
 .rt.applvn.com,Ads_AWAvenue
+.rtb.adxsenmeng.com,Ads_AWAvenue
 .rtb.voiceads.cn,Ads_AWAvenue
 .s.amazon-adsystem.com,Ads_AWAvenue
+.s1.cdn-sg.advlion.com,Ads_AWAvenue
 .s8t.teads.tv,Ads_AWAvenue
 .saad.ms.zhangyue.net,Ads_AWAvenue
 .saas.hpplay.cn,Ads_AWAvenue
@@ -722,6 +730,7 @@
 .t7z.cupid.iqiyi.com,Ads_AWAvenue
 .t7z.cupid.ptqy.gitv.tv,Ads_AWAvenue
 .tangram.e.qq.com,Ads_AWAvenue
+.target.ads.jihuoniao.com,Ads_AWAvenue
 .tdc.qq.com,Ads_AWAvenue
 .tdsdk.cpatrk.net,Ads_AWAvenue
 .tdsdk.xdrig.com,Ads_AWAvenue
