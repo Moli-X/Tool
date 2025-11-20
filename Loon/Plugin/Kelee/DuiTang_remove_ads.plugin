@@ -8,18 +8,20 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/DuiTang_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DuiTang.png
-#!date=2025-11-19 01:56:42
+#!date=2025-11-20 02:07:17
 
 [Rewrite]
 ^https:\/\/xapi\.duitang\.com\/napi\/ads\/\? reject-dict
 
 ^https:\/\/meta\.duitang\.com\/napi\/infra\/settings\/ response-body-json-del data.AD_LINKS
 
-^https:\/\/(vs)?api-2\.duitang\.com\/napi\/vienna\/daren\/daren\/recommend\/ reject-dict
+^https:\/\/api-2\.duitang\.com\/napi\/vienna\/daren\/daren\/recommend\/ reject-dict
 
-^https:\/\/(vs)?api-2\.duitang\.com\/napi\/home\/bottom_tab\/detail\/\? response-body-json-jq '.data.tabs |= map(select(.group == "home" or .group == "category" or .group == "me"))'
+^https:\/\/www\.duitang\.com\/napi\/hot\/search\/list\/ reject-dict
 
-^https:\/\/(vs)?api-2\.duitang\.com\/napi\/settings\/ response-body-json-del data.SPLASH_SWING_OPEN data.STICKER_SEARCH_HOT_KEYWORDS data.REWARD_AD_PAG_EDITOR data.REWARD_AD_PHOTO_EDITOR data.REWARD_AD_CUTOUT_NUM data.MAIN_EVENTS data.QA_TOOLTIP_BOTTOM data.OC_FOLLOW_OFFICIAL data.AD_MENU_SELECTIONS data.FEATURE_TEMPLATES data.FEEDBACK_URL data.AVATAR_MALL_UPDATE data.WATERMARK_MALL_UPDATE data.OC_MALL_UPDATE data["3D_AVATAR_UPDATE"] data.BENEFIT_LIST data.SHARE_BANNER
+^https:\/\/(www|api-2)\.duitang\.com\/napi\/home\/bottom_tab\/detail\/\? response-body-json-jq '.data.tabs |= map(select(.group == "home" or .group == "category" or .group == "me"))'
+
+^https:\/\/api-2\.duitang\.com\/napi\/settings\/ response-body-json-del data.SPLASH_SWING_OPEN data.STICKER_SEARCH_HOT_KEYWORDS data.REWARD_AD_PAG_EDITOR data.REWARD_AD_PHOTO_EDITOR data.REWARD_AD_CUTOUT_NUM data.MAIN_EVENTS data.QA_TOOLTIP_BOTTOM data.OC_FOLLOW_OFFICIAL data.AD_MENU_SELECTIONS data.FEATURE_TEMPLATES data.FEEDBACK_URL data.AVATAR_MALL_UPDATE data.WATERMARK_MALL_UPDATE data.OC_MALL_UPDATE data["3D_AVATAR_UPDATE"] data.BENEFIT_LIST data.SHARE_BANNER
 
 [MitM]
-hostname=api-2.duitang.com, vsapi-2.duitang.com, meta.duitang.com
+hostname=www.duitang.com, api-2.duitang.com, meta.duitang.com

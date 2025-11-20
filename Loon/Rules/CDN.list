@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4158
+# 规则统计: 4180
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -90,9 +90,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2025-11-19T01:41:19.954Z
+# Last Updated: 2025-11-19T15:21:33.614Z
 # License: AGPL 3.0
-# Size: 4061
+# Size: 4083
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -313,6 +313,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .cloudfront.net
 .cloudfront.net.in
 .cloudimg.io
+.cloudinary.vpsvc.com
 .cloudlin.vip
 .cmail19.com
 .cmail20.com
@@ -1015,6 +1016,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .staticblitz.com
 .staticflickr.com
 .staticimgly.com
+.staticstack.net
 .staticworld.net
 .statuspage.io
 .steamstatic.com
@@ -1036,6 +1038,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .stripeassets.com
 .stripecdn.com
 .stripst.com
+.strpssts-ana.com
 .strpst.com
 .stylexjs.com
 .substackcdn.com
@@ -1351,6 +1354,7 @@ assets.clever-cloud.com
 assets.clickfunnels.com
 assets.cloudpilot.ai
 assets.cmcmarkets.com
+assets.codeguru.com
 assets.codepen.io
 assets.coinbase.com
 assets.coingecko.com
@@ -1695,6 +1699,7 @@ cdn.bfe.dev
 cdn.bfldr.com
 cdn.bigcloud.click
 cdn.birdie.so
+cdn.blogarama.com
 cdn.botframework.com
 cdn.branch.io
 cdn.brandfetch.io
@@ -1915,6 +1920,7 @@ cdn.pendo.io
 cdn.perfops.net
 cdn.permutive.com
 cdn.pgvt.io
+cdn.pi.spectrum.net
 cdn.piano.io
 cdn.pickystory.com
 cdn.picrew.me
@@ -2191,6 +2197,7 @@ cf.channel.io
 cf.eip.telegraph.co.uk
 cf.hamreus.com
 cf.javfree.me
+cf.mhgui.com
 cf.shopee.tw
 cfvod.kaltura.com
 chart.googleapis.com
@@ -2278,6 +2285,7 @@ conversiongorilla.com
 cookie-cdn.cookiepro.com
 corp-backend.brevo.com
 cors-proxy.htmldriven.com
+covers.openlibrary.org
 cpwebassets.codepen.io
 craftassets.unraid.net
 cravatar.eu
@@ -2402,6 +2410,9 @@ eu-images.contentstack.com
 eu.cdnbye.com
 eu.hamreus.com
 eu01ccistatic.zoom.us
+eu1.hamreus.com
+eu2.hamreus.com
+eu3.hamreus.com
 euc-widget.freshworks.com
 event.ithome.com.tw
 events-delivery.apple.com
@@ -2714,6 +2725,7 @@ images.samsung.com
 images.scalero.io
 images.scrolller.com
 images.softwaresuggest.com
+images.spectrumnews1.com
 images.spot.im
 images.spr.so
 images.store.crowdstrike.com
@@ -2841,6 +2853,7 @@ img.vim-cn.com
 img.voguehk.com
 img.washingtonpost.com
 img.windy.com
+img.xbooru.com
 img.xhacgn.com
 img.xjh.me
 img.youtube.com
@@ -3081,6 +3094,7 @@ media.pointandplace.com
 media.printables.com
 media.pullopen.xyz
 media.ra.kroll.com
+media.raven.news
 media.remax-prod.eng.remax.tech
 media.shopimind.com
 media.smooch.io
@@ -3391,6 +3405,7 @@ s1.bycsi.com
 s1.coincarp.com
 s1.divhunt.com
 s1.feedly.com
+s1.freebeacon.com
 s1.maxstream.org
 s1.qwant.com
 s1.zerochan.net
@@ -3398,6 +3413,7 @@ s10.maxstream.org
 s11.maxstream.org
 s13.maxstream.org
 s2.coinmarketcap.com
+s2.freebeacon.com
 s2.qwant.com
 s3-alpha-sig.figma.com
 s3-alpha.figma.com
@@ -3421,6 +3437,7 @@ s3.envato.com
 s3.eu-central-003.backblazeb2.com
 s3.eu-central-2.wasabisys.com
 s3.filebase.com
+s3.freebeacon.com
 s3.go2778.com
 s3.m.0x.mk
 s3.masto.ai
@@ -3436,6 +3453,7 @@ s3.us-west-002.backblazeb2.com
 s3.us-west-004.backblazeb2.com
 s3media.squarespace.com
 s4.anilist.co
+s4.freebeacon.com
 s4.itho.me
 s8.maxstream.org
 s9.maxstream.org
@@ -3911,6 +3929,7 @@ sts3.wsj.net
 stubdownloader.services.mozilla.com
 styleguide-assets.shannons.com.au
 support.content.office.net
+swan.prod.merch.vpsvc.com
 sync.getpublica.com
 t.betterstack.com
 t.nhentai.net
@@ -4023,6 +4042,9 @@ us.123rf.com
 us.hamreus.com
 us01ccistatic.zoom.us
 us1-prod-images.disco-api.com
+us1.hamreus.com
+us2.hamreus.com
+us3.hamreus.com
 use.fortawesome.com
 use.typekit.com
 use.typekit.net
