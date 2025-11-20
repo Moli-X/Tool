@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!date=2025-11-20 01:25:54
+#!date=2025-11-20 19:45:41
 
 [Rule]
 AND, ((DOMAIN-KEYWORD, tnc), (OR, ((DOMAIN-SUFFIX, capcutapi.com), (DOMAIN-SUFFIX, zijieapi.com), (DOMAIN-SUFFIX, isnssdk.com), (DOMAIN-SUFFIX, toutiaoapi.com), (DOMAIN-SUFFIX, bytedance.com), (DOMAIN-SUFFIX, snssdk.com), (DOMAIN-SUFFIX, sgsnssdk.com)))), DIRECT
@@ -142,24 +142,24 @@ DOMAIN-SUFFIX, imtmp.net, REJECT
 DOMAIN-SUFFIX, ugdtimg.com, REJECT
 IP-CIDR, 47.110.187.87/32, REJECT, no-resolve
 
-DOMAIN-SUFFIX, opadlink.com
-DOMAIN-SUFFIX, staevent.work
-DOMAIN-SUFFIX, openinstall.online
-DOMAIN-SUFFIX, statchannel.store
-DOMAIN-SUFFIX, oplinking.com
-DOMAIN-SUFFIX, deepinstall.com
-DOMAIN-SUFFIX, openinstall.com
-DOMAIN-SUFFIX, installtongji.top
-DOMAIN-SUFFIX, openlink.cc
-DOMAIN-SUFFIX, opstatistics.com
-DOMAIN-SUFFIX, installtongji.online
-DOMAIN-SUFFIX, statschannel.xyz
-DOMAIN-SUFFIX, staevent.xyz
-DOMAIN-SUFFIX, opstatistics.cn
-DOMAIN-SUFFIX, openinstall.top
-DOMAIN-SUFFIX, openinstall.io
-DOMAIN-SUFFIX, statsinstall.xyz
-DOMAIN-SUFFIX, statchannel.top
+DOMAIN-SUFFIX, opadlink.com, REJECT
+DOMAIN-SUFFIX, staevent.work, REJECT
+DOMAIN-SUFFIX, openinstall.online, REJECT
+DOMAIN-SUFFIX, statchannel.store, REJECT
+DOMAIN-SUFFIX, oplinking.com, REJECT
+DOMAIN-SUFFIX, deepinstall.com, REJECT
+DOMAIN-SUFFIX, openinstall.com, REJECT
+DOMAIN-SUFFIX, installtongji.top, REJECT
+DOMAIN-SUFFIX, openlink.cc, REJECT
+DOMAIN-SUFFIX, opstatistics.com, REJECT
+DOMAIN-SUFFIX, installtongji.online, REJECT
+DOMAIN-SUFFIX, statschannel.xyz, REJECT
+DOMAIN-SUFFIX, staevent.xyz, REJECT
+DOMAIN-SUFFIX, opstatistics.cn, REJECT
+DOMAIN-SUFFIX, openinstall.top, REJECT
+DOMAIN-SUFFIX, openinstall.io, REJECT
+DOMAIN-SUFFIX, statsinstall.xyz, REJECT
+DOMAIN-SUFFIX, statchannel.top, REJECT
 
 DOMAIN-SUFFIX, getui.com, REJECT
 DOMAIN-SUFFIX, getui.net, REJECT
