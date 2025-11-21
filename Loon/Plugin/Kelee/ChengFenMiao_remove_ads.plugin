@@ -1,5 +1,5 @@
 #!name=成分喵去广告
-#!desc=移除广告组件请求，移除被查商品购买连接。
+#!desc=移除首页推广活动、广告组件请求、移除被查商品购买链接、搜索发现。
 #App链接=https://apps.apple.com/app/id6444000785
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
@@ -8,10 +8,17 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/ChengFenMiao_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ChengFenMiao.png
-#!date=2025-05-13 15:17:08
+#!date=2025-11-21 13:02:33
 
 [Rewrite]
+^https:\/\/app\.chengfenmiao\.com\/Listing\/LiveHots\? reject-dict
+
+^https:\/\/app\.chengfenmiao\.com\/helper\/VersionCheck\? reject-dict
+
 ^https:\/\/app\.chengfenmiao\.com\/item\/closet\? reject-dict
+^https:\/\/app\.chengfenmiao\.com\/helper\/setting\? response-body-json-del detail_buy_sites bottom_sites
+
+^https:\/\/app\.chengfenmiao\.com\/Helper\/HotWords\? reject-dict
  
 [MitM]
 hostname=app.chengfenmiao.com
