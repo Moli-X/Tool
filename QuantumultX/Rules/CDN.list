@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4183
+# 规则统计: 4186
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2025-11-20T13:41:08.241Z
+# Last Updated: 2025-11-22T06:16:12.021Z
 # License: AGPL 3.0
-# Size: 4086
+# Size: 4089
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1025,6 +1025,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .steamusercontent.com,CDN
 .steemitimages.com,CDN
 .sthlstatic.com,CDN
+.storage.boilerplate.com,CDN
 .storage.cloudconvert.com,CDN
 .storage.googleapis.com,CDN
 .storage.infomaniak.com,CDN
@@ -1253,6 +1254,7 @@ analytics.twitter.com,CDN
 analytics.welcomesoftware.com,CDN
 anchor.digitalocean.com,CDN
 android-safebrowsing.google.com,CDN
+api-cdn.shutterstock.com,CDN
 api-esp-ap.piano.io,CDN
 api-eu.mixpanel.com,CDN
 api-frameworks.vercel.sh,CDN
@@ -3507,6 +3509,7 @@ sellon.shiprocket.in,CDN
 sentry.ainopara.com,CDN
 seo-wp.airdroid.com,CDN
 sequoia.cdn-apple.com,CDN
+server.arcgisonline.com,CDN
 service-icons.zeabur.com,CDN
 services.linkfire.com,CDN
 sf-coze-web-cdn.coze.com,CDN

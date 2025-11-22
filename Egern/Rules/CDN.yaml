@@ -87,9 +87,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2025-11-20T13:41:08.241Z
+# Last Updated: 2025-11-22T06:16:12.021Z
 # License: AGPL 3.0
-# Size: 4086
+# Size: 4089
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1022,6 +1022,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .steamusercontent.com
 .steemitimages.com
 .sthlstatic.com
+.storage.boilerplate.com
 .storage.cloudconvert.com
 .storage.googleapis.com
 .storage.infomaniak.com
@@ -1250,6 +1251,7 @@ analytics.twitter.com
 analytics.welcomesoftware.com
 anchor.digitalocean.com
 android-safebrowsing.google.com
+api-cdn.shutterstock.com
 api-esp-ap.piano.io
 api-eu.mixpanel.com
 api-frameworks.vercel.sh
@@ -3504,6 +3506,7 @@ sellon.shiprocket.in
 sentry.ainopara.com
 seo-wp.airdroid.com
 sequoia.cdn-apple.com
+server.arcgisonline.com
 service-icons.zeabur.com
 services.linkfire.com
 sf-coze-web-cdn.coze.com
