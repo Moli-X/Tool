@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/smzdm_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/smzdm.png
-#!date=2025-11-12 04:00:04
+#!date=2025-11-27 21:44:57
 
 [Rule]
 DOMAIN, adx-api.zdmimg.com, REJECT
@@ -48,7 +48,7 @@ DOMAIN, adx-api.zdmimg.com, REJECT
 
 ^https:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags\? response-body-json-del data.search_faxian data.tonglan data.hongbao
 
-^https:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags\? response-body-json-jq '.data.search_hot.home |= map(select(.article_tag.article_title != "广告"))'
+^https:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags\? response-body-json-jq '.data.search_hot.home |= map(select(.article_tag.article_title != "广告")) | .data.search_hot.home |= map(select(has("pos")))'
 
 ^https:\/\/s-api\.smzdm\.com\/sou\/popup_coupon\? reject-dict
 
