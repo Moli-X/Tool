@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4199
+# 规则统计: 4203
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -90,9 +90,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2025-11-26T05:16:08.970Z
+# Last Updated: 2025-11-29T08:15:20.314Z
 # License: AGPL 3.0
-# Size: 4102
+# Size: 4106
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1080,6 +1080,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .tile.osm.org
 .tiles-api.maps.komoot.net
 .tiles.mapbox.com
+.tiles.virtualearth.net
 .tindiemedia.com
 .tiqcdn.com
 .tkcdns.com
@@ -2370,6 +2371,7 @@ e.linear.app
 e3.365dm.com
 eaassets-a.akamaihd.net
 easylist-downloads.adblockplus.org
+ecn.dev.virtualearth.net
 ecommplugins-scripts.trustpilot.com
 ecommplugins-trustboxsettings.trustpilot.com
 edata.ndtv.com
@@ -3345,6 +3347,7 @@ pytorch.org
 qmod.quotemedia.com
 quests.armorgames.com
 quriobot.com
+r.bing.com
 r.r10s.jp
 r2.1hanime.com
 r2.gear4music.com
@@ -4048,6 +4051,7 @@ unsubscribe-imgs.leavemealone.com
 uos-support-files.svc.ui.com
 updates.signal.org
 updates2.signal.org
+upload.movim.eu
 upload.wikimedia.org
 uploads-cdn.omnicalculator.com
 uploads.codesandbox.io
