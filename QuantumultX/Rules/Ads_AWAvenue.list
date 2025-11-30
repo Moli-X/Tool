@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 880
+# 规则统计: 907
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 872
-#Update content: 新增 jihuoniao ads、advlion ads、qiming ADX、etool ads 拦截，close #184 感谢@VJMOD
-#Update time: 2025-11-18 14:48:37 UTC+8
+#Total lines: 899
+#Update content: 新增 AdSet神蓍、小寻广告、掌阅log、银联广告、B612咔叽广告、更多的网易云广告、360生活广告、UC日志收集、巨量数据采集、更多的快手广告拦截。
+#Update time: 2025-11-30 15:03:32 UTC+8
 #Version: 1.6.9-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -35,21 +35,27 @@
 .ad.doubleclick.net,Ads_AWAvenue
 .ad.gameley.com,Ads_AWAvenue
 .ad.hpplay.cn,Ads_AWAvenue
+.ad.iot.360.cn,Ads_AWAvenue
+.ad.jia.360.cn,Ads_AWAvenue
+.ad.life.360.cn,Ads_AWAvenue
 .ad.partner.gifshow.com,Ads_AWAvenue
 .ad.qingting.fm,Ads_AWAvenue
 .ad.qq.com,Ads_AWAvenue
 .ad.richmob.cn,Ads_AWAvenue
+.ad.shenshiads.com,Ads_AWAvenue
 .ad.shunchangzhixing.com,Ads_AWAvenue
 .ad.tencentmusic.com,Ads_AWAvenue
 .ad.toutiao.com,Ads_AWAvenue
 .ad.v3mh.com,Ads_AWAvenue
 .ad.winrar.com.cn,Ads_AWAvenue
 .ad.ximalaya.com,Ads_AWAvenue
+.ad.xunkids.com,Ads_AWAvenue
 .ad.zijieapi.com,Ads_AWAvenue
 .adapi.izuiyou.com,Ads_AWAvenue
 .adapi.yynetwk.com,Ads_AWAvenue
 .adashbc.ut.taobao.com,Ads_AWAvenue
 .adashx.m.taobao.com,Ads_AWAvenue
+.adashxgc.ut.taobao.com,Ads_AWAvenue
 .adc.hpplay.cn,Ads_AWAvenue
 .adcdn.hpplay.cn,Ads_AWAvenue
 .adcdn.tencentmusic.com,Ads_AWAvenue
@@ -81,6 +87,7 @@
 .ads-video-al.xhscdn.com,Ads_AWAvenue
 .ads-video-qc.xhscdn.com,Ads_AWAvenue
 .ads.95516.com,Ads_AWAvenue
+.ads.cup.com.cn,Ads_AWAvenue
 .ads.google.cn,Ads_AWAvenue
 .ads.huan.tv,Ads_AWAvenue
 .ads.huantest.com,Ads_AWAvenue
@@ -134,6 +141,7 @@
 .adtago.s3.amazonaws.com,Ads_AWAvenue
 .adtech.yahooinc.com,Ads_AWAvenue
 .adtrack.quark.cn,Ads_AWAvenue
+.adv-api.shenshiads.com,Ads_AWAvenue
 .adv.sec.intl.miui.com,Ads_AWAvenue
 .adv.sec.miui.com,Ads_AWAvenue
 .advertising-api-eu.amazon.com,Ads_AWAvenue
@@ -179,6 +187,7 @@
 .analysis.yozocloud.cn,Ads_AWAvenue
 .analytics-api.samsunghealthcn.com,Ads_AWAvenue
 .analytics.adjust.cn,Ads_AWAvenue
+.analytics.oceanengine.com,Ads_AWAvenue
 .analytics.pinterest.com,Ads_AWAvenue
 .analytics.pointdrive.linkedin.com,Ads_AWAvenue
 .analytics.query.yahoo.com,Ads_AWAvenue
@@ -200,7 +209,9 @@
 .api-access.pangolin-sdk-toutiao3.com,Ads_AWAvenue
 .api-access.pangolin-sdk-toutiao4.com,Ads_AWAvenue
 .api-access.pangolin-sdk-toutiao5.com,Ads_AWAvenue
+.api-ad-data.kajicam.com,Ads_AWAvenue
 .api-ad-product.huxiu.com,Ads_AWAvenue
+.api-ad.kajicam.com,Ads_AWAvenue
 .api-adservices.apple.com,Ads_AWAvenue
 .api-gd.hiaiabc.com,Ads_AWAvenue
 .api-htp.beizi.biz,Ads_AWAvenue
@@ -223,6 +234,7 @@
 .apiyd.my91app.com,Ads_AWAvenue
 .app-measurement.com,Ads_AWAvenue
 .appcfg.v.qq.com,Ads_AWAvenue
+.applog-perf.uc.cn,Ads_AWAvenue
 .applog.lc.quark.cn,Ads_AWAvenue
 .applog.uc.cn,Ads_AWAvenue
 .applog.zijieapi.com,Ads_AWAvenue
@@ -343,6 +355,7 @@
 .eclick.baidu.com,Ads_AWAvenue
 .edge.ads.twitch.tv,Ads_AWAvenue
 .ef-dongfeng.tanx.com,Ads_AWAvenue
+.engine.dcad01.com,Ads_AWAvenue
 .entry.baidu.com,Ads_AWAvenue
 .errlog.umeng.com,Ads_AWAvenue
 .errnewlog.umeng.com,Ads_AWAvenue
@@ -419,6 +432,7 @@
 .iad.apple.com,Ads_AWAvenue
 .iad.g.163.com,Ads_AWAvenue
 .iadctest.qwapi.com,Ads_AWAvenue
+.iadmusicmat.music.126.net,Ads_AWAvenue
 .iadsdk.apple.com,Ads_AWAvenue
 .iadworkbench.apple.com,Ads_AWAvenue
 .ifacelog.iqiyi.com,Ads_AWAvenue
@@ -495,6 +509,7 @@
 .log.byteoversea.com,Ads_AWAvenue
 .log.fc.yahoo.com,Ads_AWAvenue
 .log.iflytek.com,Ads_AWAvenue
+.log.ireader.com,Ads_AWAvenue
 .log.kuwo.cn,Ads_AWAvenue
 .log.pinterest.com,Ads_AWAvenue
 .log.popin.cc,Ads_AWAvenue
@@ -507,15 +522,18 @@
 .log1.cmpassport.com,Ads_AWAvenue
 .logbak.hicloud.com,Ads_AWAvenue
 .logrcv.aiclk.com,Ads_AWAvenue
+.logrcv.yunxish.com,Ads_AWAvenue
 .logs.amap.com,Ads_AWAvenue
 .logservice.hicloud.com,Ads_AWAvenue
 .logservice1.hicloud.com,Ads_AWAvenue
 .logtj.kugou.com,Ads_AWAvenue
 .logupdate.avlyun.sec.miui.com,Ads_AWAvenue
+.logwebs.kugou.com,Ads_AWAvenue
 .luimg.baidu.com,Ads_AWAvenue
 .m-adnet.hiaiabc.com,Ads_AWAvenue
 .m.ad.zhangyue.com,Ads_AWAvenue
 .m.atm.youku.com,Ads_AWAvenue
+.m.shenshiads.com,Ads_AWAvenue
 .m1.ad.10010.com,Ads_AWAvenue
 .mapi.m.jd.com,Ads_AWAvenue
 .masdkv6.3g.qq.com,Ads_AWAvenue
@@ -542,6 +560,7 @@
 .mobaliyun.res.mgtv.com,Ads_AWAvenue
 .mobile.da.mgtv.com,Ads_AWAvenue
 .mobilead.kuwo.cn,Ads_AWAvenue
+.mobilelog.kugou.com,Ads_AWAvenue
 .mobilelog.upqzfile.com,Ads_AWAvenue
 .monitor-ads-test.huan.tv,Ads_AWAvenue
 .monitor-uu.play.aiseet.atianqi.com,Ads_AWAvenue
@@ -569,6 +588,7 @@
 .offerwall.yandex.net,Ads_AWAvenue
 .ogads-pa.clients6.google.com,Ads_AWAvenue
 .omgmta.play.aiseet.atianqi.com,Ads_AWAvenue
+.open-set-api.shenshiads.com,Ads_AWAvenue
 .open.e.kuaishou.cn,Ads_AWAvenue
 .open.e.kuaishou.com,Ads_AWAvenue
 .open.kuaishouzt.com,Ads_AWAvenue
@@ -598,6 +618,7 @@
 .p4-be-pack-sign.pglstatp-toutiao.com,Ads_AWAvenue
 .p5-be-pack-sign.pglstatp-toutiao.com,Ads_AWAvenue
 .p6-be-pack-sign.pglstatp-toutiao.com,Ads_AWAvenue
+.p66-ad.adkwai.com,Ads_AWAvenue
 .pagead2.googleadservices.com,Ads_AWAvenue
 .pagead2.googlesyndication.com,Ads_AWAvenue
 .pangolin-sdk-toutiao-b.com,Ads_AWAvenue
@@ -650,6 +671,8 @@
 .s8t.teads.tv,Ads_AWAvenue
 .saad.ms.zhangyue.net,Ads_AWAvenue
 .saas.hpplay.cn,Ads_AWAvenue
+.safebrowsing.googleapis.com,Ads_AWAvenue
+.safebrowsing.urlsec.gg.com,Ads_AWAvenue
 .samsung-com.112.2o7.net,Ads_AWAvenue
 .samsungads.com,Ads_AWAvenue
 .saxysec.com,Ads_AWAvenue
@@ -674,6 +697,7 @@
 .sdkconfig.play.aiseet.atianqi.com,Ads_AWAvenue
 .sdkconfig.video.qq.com,Ads_AWAvenue
 .sdkoptedge.chinanetcenter.com,Ads_AWAvenue
+.sdkreport.e.qq.com,Ads_AWAvenue
 .sdktmp.hubcloud.com.cn,Ads_AWAvenue
 .sdownload.stargame.com,Ads_AWAvenue
 .search.ixigua.com,Ads_AWAvenue
@@ -774,6 +798,7 @@
 .trace.qq.com,Ads_AWAvenue
 .tracelog-debug.aiclk.com,Ads_AWAvenue
 .tracelog-debug.qquanquan.com,Ads_AWAvenue
+.tracelog-debug.yunxish.com,Ads_AWAvenue
 .track.lc.quark.cn,Ads_AWAvenue
 .track.uc.cn,Ads_AWAvenue
 .tracker.ai.xiaomi.com,Ads_AWAvenue
@@ -864,6 +889,7 @@
 .wxsnsdy.wxs.qq.com,Ads_AWAvenue
 .wxsnsdythumb.wxs.qq.com,Ads_AWAvenue
 .xc.gdt.qq.com,Ads_AWAvenue
+.xcx.dcad01.com,Ads_AWAvenue
 .xiaomi-dtv.m.cn.miaozhen.com,Ads_AWAvenue
 .xlog.jd.com,Ads_AWAvenue
 .xlviiirdr.com,Ads_AWAvenue
@@ -880,4 +906,5 @@
 .zeus.ad.xiaomi.com,Ads_AWAvenue
 .zhangyuyidong.cn,Ads_AWAvenue
 .zhihu-web-analytics.zhihu.com,Ads_AWAvenue
+.zjres-ad.kajicam.com,Ads_AWAvenue
 .zxid-m.mobileservice.cn,Ads_AWAvenue
