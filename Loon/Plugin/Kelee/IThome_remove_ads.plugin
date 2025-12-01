@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/IThome_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/IThome.png
-#!date=2025-10-24 03:22:31
+#!date=2025-12-01 01:25:27
 
 [Argument]
 removePinnedArticles = switch, false, true, tag=移除置顶文章, desc=启用后将移除置顶文章
@@ -18,7 +18,7 @@ removeAllBanners = switch, false, true, tag=移除全部横幅, desc=启用后�
 ^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$ reject
 
 [Script]
-http-response ^https:\/\/napi\.ithome\.com\/api\/(news\/indexv2\/iphone\/\d+$|topmenu\/getfeeds\?) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/IThome_remove_ads.js, requires-body=true, tag=IT之家去广告, argument=[{removeAllBanners},{removePinnedArticles}]
+http-response ^https:\/\/napi\.ithome\.com\/api\/(news\/indexv2\/iphone\/\d+|topmenu\/getfeeds\?) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/IThome_remove_ads.js, requires-body=true, tag=IT之家去广告, argument=[{removeAllBanners},{removePinnedArticles}]
 
 [MitM]
 hostname=napi.ithome.com, api.zuihuimai.com, dat.ruanmei.com
