@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!date=2025-11-29 20:19:07
+#!date=2025-12-05 00:50:43
 
 [Rule]
 AND, ((DOMAIN-KEYWORD, tnc), (OR, ((DOMAIN-SUFFIX, capcutapi.com), (DOMAIN-SUFFIX, zijieapi.com), (DOMAIN-SUFFIX, isnssdk.com), (DOMAIN-SUFFIX, toutiaoapi.com), (DOMAIN-SUFFIX, bytedance.com), (DOMAIN-SUFFIX, snssdk.com), (DOMAIN-SUFFIX, sgsnssdk.com)))), DIRECT
@@ -354,7 +354,6 @@ DOMAIN-SUFFIX, bxsnews.com, REJECT
 
 DOMAIN-SUFFIX, ranfenghd.com, REJECT
 
-DOMAIN-SUFFIX, mmstat.com, REJECT
 DOMAIN-SUFFIX, miaozhen.com, REJECT
 
 DOMAIN-SUFFIX, qchannel01.cn, REJECT

@@ -1,7 +1,7 @@
 /*
 脚本引用https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/babytree.js
 */
-// 2023-11-22 19:25
+// 2024-10-28 01:35
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -58,20 +58,18 @@ if (url.includes("/app_index/get_app_tab")) {
   // 首页信息流
   if (obj?.data?.list?.length > 0) {
     obj.data.list = obj.data.list.filter(
-      (i) => ["发表了", "提问了"]?.includes(i?.action_desc) && !i?.hasOwnProperty("seeding_goods_info")
+      (i) => ["发表了", "提问了"]?.includes(i?.action_desc) && !i.hasOwnProperty("seeding_goods_info")
     );
   }
 } else if (url.includes("/mobile_search_new/search_index")) {
   // 搜索列表
   if (obj?.data?.find_search) {
-    // 搜索发现
-    delete obj.data.find_search;
+    delete obj.data.find_search; // 搜索发现
   }
 } else if (url.includes("/user/get_user_info")) {
   // 我的页面
   if (obj?.data?.video_show) {
-    // 顶部婴儿视频
-    delete obj.data.video_show;
+    delete obj.data.video_show; // 顶部婴儿视频
   }
 }
 

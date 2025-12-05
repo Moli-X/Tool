@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 907
+# 规则统计: 906
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 899
-#Update content: 新增 AdSet神蓍、小寻广告、掌阅log、银联广告、B612咔叽广告、更多的网易云广告、360生活广告、UC日志收集、巨量数据采集、更多的快手广告拦截。
-#Update time: 2025-11-30 15:03:32 UTC+8
+#Total lines: 898
+#Update content: fix AdguardTeam/FiltersRegistry/pull/1154
+#Update time: 2025-12-05 09:34:56 UTC+8
 #Version: 1.6.9-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -371,7 +371,6 @@
 .firebaselogging-pa.googleapis.com,Ads_AWAvenue
 .flurry.com,Ads_AWAvenue
 .frontend-perf-service.e.kuaishou.com,Ads_AWAvenue
-.fundingchoicesmessages.google.com,Ads_AWAvenue
 .fxgate.baidu.com,Ads_AWAvenue
 .g-adnet.hiaiabc.com,Ads_AWAvenue
 .g-staic.ganjingworld.com,Ads_AWAvenue

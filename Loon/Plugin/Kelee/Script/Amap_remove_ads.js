@@ -1,7 +1,7 @@
 /*
 引用地址 https://raw.githubusercontent.com/RuCu6/Loon/refs/heads/main/Scripts/amap.js
 */
-// 2025-09-01 06:05
+// 2025-11-01 19:30
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -415,6 +415,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "portal_entrance", // 高德旅游版块 引流到旅游频道
     // "question_answer_card", // 问问 地点附近的热门问题
     "quickLink", // 地点详情页图标 酒店 景点 热榜
+    "quickLinksPortal", // 房产频道
     "relatedRecommends", // 附近同类型酒店
     // "realtorRealStep",
     "renthouse",
