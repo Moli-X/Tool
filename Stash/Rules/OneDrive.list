@@ -1,7 +1,8 @@
 # 规则名称: OneDrive
-# 规则统计: 18
+# 规则统计: 19
 
 DOMAIN-SUFFIX,livefilestore.com
+DOMAIN-SUFFIX,microsoftpersonalcontent.com
 DOMAIN-SUFFIX,oneclient.sfx.ms
 DOMAIN-SUFFIX,onedrive.com
 DOMAIN-SUFFIX,onedrive.live.com
@@ -18,4 +19,4 @@ DOMAIN-KEYWORD,skydrive
 PROCESS-NAME,OneDrive
 PROCESS-NAME,OneDriveUpdater
 # 内容：OneDrive
-# 数量：18条
+# 数量：19条
