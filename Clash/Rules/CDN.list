@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4210
+# 规则统计: 4219
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -90,9 +90,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2025-12-10T16:28:59.207Z
+# Last Updated: 2025-12-11T14:24:57.060Z
 # License: AGPL 3.0
-# Size: 4113
+# Size: 4122
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -534,6 +534,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .hits.b3log.org
 .hommec.com
 .howtogeekimages.com
+.hrcdn.net
 .hs-scripts.com
 .hs-scripts.net
 .hsappstatic.net
@@ -1397,6 +1398,7 @@ assets.gcore.pro
 assets.geeksforgeeks.org
 assets.genius.com
 assets.getkirby.com
+assets.getpostman.com
 assets.github.dev
 assets.goat.com
 assets.gorgias.help
@@ -1410,6 +1412,7 @@ assets.hearstapps.com
 assets.holopin.io
 assets.humix.com
 assets.ifttt.com
+assets.ipapi.com
 assets.ipstack.com
 assets.jable.tv
 assets.jolipage.co
@@ -1610,6 +1613,7 @@ cache-05.filehippo.net
 cache.armorgames.com
 cache.hackedfreegames.com
 cache.industry.siemens.com
+cache.ip-api.com
 cache.omnicalculator.com
 cached.rebuyengine.com
 canny-assets.io
@@ -2361,6 +2365,7 @@ dlassets-ssl.xboxlive.com
 do.featurebase.app
 docs.brew.sh
 docs.rs
+documenter-assets.pstmn.io
 domain.expiring-soon.xyz
 doppler-config.cbsivideo.com
 doujin-assets.dmm.co.jp
@@ -2634,6 +2639,7 @@ icons.ly
 icons.simplesvg.com
 icons.veryicon.com
 icons.zeabur.com
+identity-assets.getpostman.com
 idportal-cdn-prd.unity.com
 iframe.nbcnews.com
 ih0.redbubble.net
@@ -3738,6 +3744,7 @@ static.freedownloadmanager.org
 static.freeimages.com
 static.generated.photos
 static.getbutton.io
+static.getpostman.com
 static.gettyimages.com
 static.giant-bicycles.com
 static.gigabyte.com
@@ -3763,6 +3770,8 @@ static.inferno.iheart.com
 static.inflect.com
 static.infomaniak.ch
 static.institution.grammarly.com
+static.ipgeolocation.io
+static.iplocate.io
 static.iris.informa.com
 static.itch.io
 static.iyf.tv
