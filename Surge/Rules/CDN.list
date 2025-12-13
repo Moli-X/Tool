@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4223
+# 规则统计: 4229
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -90,9 +90,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2025-12-12T16:53:48.217Z
+# Last Updated: 2025-12-13T06:49:01.975Z
 # License: AGPL 3.0
-# Size: 4126
+# Size: 4132
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -102,6 +102,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .1passwordusercontent.ca
 .1passwordusercontent.com
 .1passwordusercontent.eu
+.2024cdn.sx
+.2025cdn.sx
+.2026cdn.sx
 .2img.net
 .2mdn.net
 .4cdn.org
@@ -437,6 +440,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .fbsbx.com
 .featureassets.org
 .feedercdn.com
+.fembeqv2.xyz
 .ffzy888.com
 .filecunhua.top
 .files.bbci.co.uk
@@ -496,6 +500,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .githubusercontent.com
 .gitlab-static.net
 .gitlab.io
+.gitmirror.com
 .gitpage.si
 .glass.adidas.com
 .glbimg.com
@@ -927,6 +932,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .redditstatic.com
 .registry.gitplac.si
 .replicate.delivery
+.report-uri.com
 .res.office365.com
 .rescript-lang.org
 .rlcdn.com
@@ -1975,7 +1981,6 @@ cdn.redoc.ly
 cdn.redwap.xyz
 cdn.registerdisney.go.com
 cdn.reimu.net
-cdn.report-uri.com
 cdn.rex.contents.rakuten.co.jp
 cdn.rive.app
 cdn.road.cc
@@ -2628,6 +2633,7 @@ i3.anysex.com
 i4.anysex.com
 ias.r10s.jp
 icdn.javxx.com
+icdn.missav123.to
 ichef.bbci.co.uk
 icms-image.slatic.net
 icon.icepanel.io
