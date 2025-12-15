@@ -3,9 +3,9 @@
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 897
-#Update content: fix uBlockOrigin/uAssets/issues/31096 close
-#Update time: 2025-12-11 21:51:15 UTC+8
+#Total lines: 894
+#Update content: fix umeng error #185 close
+#Update time: 2025-12-15 14:46:15 UTC+8
 #Version: 1.6.9-release
 .1500020991.vodplayer.wxamedia.com
 .1500022744.vodplayer.wxamedia.com
@@ -334,7 +334,6 @@
 .de.tynt.com
 .diagnosis.ad.xiaomi.com
 .dig.bdurl.net
-.dl.zuimeitianqi.com
 .dlogs.bwton.com
 .dm.toutiao.com
 .domain.aishengji.com
@@ -354,8 +353,6 @@
 .ef-dongfeng.tanx.com
 .engine.dcad01.com
 .entry.baidu.com
-.errlog.umeng.com
-.errnewlog.umeng.com
 .et-eus.w.inmobi.com
 .event.tradplusad.com
 .events-drcn.op.dbankcloud.cn
@@ -666,7 +663,6 @@
 .s8t.teads.tv
 .saad.ms.zhangyue.net
 .saas.hpplay.cn
-.safebrowsing.googleapis.com
 .safebrowsing.urlsec.gg.com
 .samsung-com.112.2o7.net
 .samsungads.com
@@ -734,6 +730,7 @@
 .supply.inmobicdn.net
 .sv-video.play.aiseet.atianqi.com
 .syh-imp.cdnjtzy.com
+.syh.zybang.com
 .szbdyd.com
 .t-dsp.pinduoduo.com
 .t.applovin.com

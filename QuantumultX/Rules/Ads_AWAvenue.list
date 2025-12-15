@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 905
+# 规则统计: 902
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 897
-#Update content: fix uBlockOrigin/uAssets/issues/31096 close
-#Update time: 2025-12-11 21:51:15 UTC+8
+#Total lines: 894
+#Update content: fix umeng error #185 close
+#Update time: 2025-12-15 14:46:15 UTC+8
 #Version: 1.6.9-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -337,7 +337,6 @@
 .de.tynt.com,Ads_AWAvenue
 .diagnosis.ad.xiaomi.com,Ads_AWAvenue
 .dig.bdurl.net,Ads_AWAvenue
-.dl.zuimeitianqi.com,Ads_AWAvenue
 .dlogs.bwton.com,Ads_AWAvenue
 .dm.toutiao.com,Ads_AWAvenue
 .domain.aishengji.com,Ads_AWAvenue
@@ -357,8 +356,6 @@
 .ef-dongfeng.tanx.com,Ads_AWAvenue
 .engine.dcad01.com,Ads_AWAvenue
 .entry.baidu.com,Ads_AWAvenue
-.errlog.umeng.com,Ads_AWAvenue
-.errnewlog.umeng.com,Ads_AWAvenue
 .et-eus.w.inmobi.com,Ads_AWAvenue
 .event.tradplusad.com,Ads_AWAvenue
 .events-drcn.op.dbankcloud.cn,Ads_AWAvenue
@@ -669,7 +666,6 @@
 .s8t.teads.tv,Ads_AWAvenue
 .saad.ms.zhangyue.net,Ads_AWAvenue
 .saas.hpplay.cn,Ads_AWAvenue
-.safebrowsing.googleapis.com,Ads_AWAvenue
 .safebrowsing.urlsec.gg.com,Ads_AWAvenue
 .samsung-com.112.2o7.net,Ads_AWAvenue
 .samsungads.com,Ads_AWAvenue
@@ -737,6 +733,7 @@
 .supply.inmobicdn.net,Ads_AWAvenue
 .sv-video.play.aiseet.atianqi.com,Ads_AWAvenue
 .syh-imp.cdnjtzy.com,Ads_AWAvenue
+.syh.zybang.com,Ads_AWAvenue
 .szbdyd.com,Ads_AWAvenue
 .t-dsp.pinduoduo.com,Ads_AWAvenue
 .t.applovin.com,Ads_AWAvenue
