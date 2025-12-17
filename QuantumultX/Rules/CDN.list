@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4235
+# 规则统计: 4239
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2025-12-15T08:31:04.612Z
+# Last Updated: 2025-12-16T14:50:28.941Z
 # License: AGPL 3.0
-# Size: 4138
+# Size: 4142
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1506,6 +1506,7 @@ assets.wikiwand.com,CDN
 assets.xboxservices.com,CDN
 assets.xmind.net,CDN
 assets.yande.re,CDN
+assets.zendesk.com,CDN
 assets.zerohedge.com,CDN
 assets.zilliz.com,CDN
 assets0.headwayapp.co,CDN
@@ -3118,6 +3119,7 @@ media.invisioncic.com,CDN
 media.istockphoto.com,CDN
 media.kit.com,CDN
 media.lantern.io,CDN
+media.letsdeel.com,CDN
 media.licdn.com,CDN
 media.loom-app.com,CDN
 media.maptiler.com,CDN
@@ -3231,6 +3233,7 @@ oneocsp.microsoft.com,CDN
 ooo.0o0.ooo,CDN
 open-vsx.org,CDN
 openapi.vercel.sh,CDN
+openreplay-new.deel.tools,CDN
 openseauserdata.com,CDN
 opensignal.cdnbye.com,CDN
 optimizationguide-pa.googleapis.com,CDN
@@ -3861,6 +3864,7 @@ static.returngo.ai,CDN
 static.roboflow.com,CDN
 static.salidzini.lv,CDN
 static.scarf.sh,CDN
+static.sdkassets.chime.aws,CDN
 static.seel.com,CDN
 static.serverhunter.com,CDN
 static.skyassets.com,CDN
@@ -4178,7 +4182,7 @@ webfonts.zoho.com,CDN
 webobjects2.cdw.com,CDN
 webp.frostming.com,CDN
 website-cdn.ipinfo.io,CDN
-website-media.deel.com,CDN
+website-media,CDN
 website-prod.cache.wpscdn.com,CDN
 webstatic.chargebee.com,CDN
 widget.automizely.com,CDN
