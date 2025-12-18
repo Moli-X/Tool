@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4246
+# 规则统计: 4250
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2025-12-17T17:03:56.966Z
+# Last Updated: 2025-12-18T09:19:04.386Z
 # License: AGPL 3.0
-# Size: 4149
+# Size: 4153
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -192,6 +192,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .bdzybf7.com,CDN
 .bestfreecdn.com,CDN
 .bestjavcdn.com,CDN
+.betterstackcdn.com,CDN
 .bftuvip.com,CDN
 .bfzypic.com,CDN
 .bgstatic.com,CDN
@@ -1317,6 +1318,7 @@ apps.bazaarvoice.com,CDN
 apps.profitihub.com,CDN
 apps.sophi.io,CDN
 apps.voxmedia.com,CDN
+appstatico.electronic.us,CDN
 archive.mozilla.org,CDN
 article-image-ix.nikkei.com,CDN
 artworks.thetvdb.com,CDN
@@ -2234,6 +2236,7 @@ cf.mhgui.com,CDN
 cf.shopee.tw,CDN
 cfvod.kaltura.com,CDN
 chart.googleapis.com,CDN
+chat-assets.front.app,CDN
 chat.digitalgenius.com,CDN
 chatwidgetmetrics-proxy.usepylon.com,CDN
 checkout-sdk.bigcommerce.com,CDN
@@ -3391,6 +3394,7 @@ r.r10s.jp,CDN
 r2.1hanime.com,CDN
 r2.gear4music.com,CDN
 r2.leadsy.ai,CDN
+r2cdn.corespeed.io,CDN
 r2cdn.myshopline.com,CDN
 r2cdn.perplexity.ai,CDN
 r34xyz.b-cdn.net,CDN

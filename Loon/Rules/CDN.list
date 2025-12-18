@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4246
+# 规则统计: 4250
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -90,9 +90,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2025-12-17T17:03:56.966Z
+# Last Updated: 2025-12-18T09:19:04.386Z
 # License: AGPL 3.0
-# Size: 4149
+# Size: 4153
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -192,6 +192,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .bdzybf7.com
 .bestfreecdn.com
 .bestjavcdn.com
+.betterstackcdn.com
 .bftuvip.com
 .bfzypic.com
 .bgstatic.com
@@ -1317,6 +1318,7 @@ apps.bazaarvoice.com
 apps.profitihub.com
 apps.sophi.io
 apps.voxmedia.com
+appstatico.electronic.us
 archive.mozilla.org
 article-image-ix.nikkei.com
 artworks.thetvdb.com
@@ -2234,6 +2236,7 @@ cf.mhgui.com
 cf.shopee.tw
 cfvod.kaltura.com
 chart.googleapis.com
+chat-assets.front.app
 chat.digitalgenius.com
 chatwidgetmetrics-proxy.usepylon.com
 checkout-sdk.bigcommerce.com
@@ -3391,6 +3394,7 @@ r.r10s.jp
 r2.1hanime.com
 r2.gear4music.com
 r2.leadsy.ai
+r2cdn.corespeed.io
 r2cdn.myshopline.com
 r2cdn.perplexity.ai
 r34xyz.b-cdn.net
