@@ -87,9 +87,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2025-12-16T14:50:28.941Z
+# Last Updated: 2025-12-17T17:03:56.966Z
 # License: AGPL 3.0
-# Size: 4142
+# Size: 4149
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -232,6 +232,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .cdn-lfs.hf.co
 .cdn-lfs.huggingface.co
 .cdn-one.com
+.cdn-plain.com
 .cdn-spurit.com
 .cdn-telegram.org
 .cdn-uploads.huggingface.co
@@ -1240,6 +1241,7 @@ academy-public.coinmarketcap.com
 account-cdn.svc.ui.com
 account-widget-mfe.gcore.com
 accounts-cdn.9gag.com
+acdn.mercury.com
 adkit.9pub.io
 aff.equalweb.com
 affportal.bhphoto.com
@@ -1431,6 +1433,7 @@ assets.mailgun.com
 assets.mastercard.com
 assets.matters.news
 assets.mayoclinic.org
+assets.mcp.corespeed.io
 assets.media-platform.com
 assets.monei.com
 assets.monica.im
@@ -1903,6 +1906,7 @@ cdn.mathjax.org
 cdn.matterhorn.app
 cdn.mcauto-images-production.sendgrid.net
 cdn.mcr.ea.com
+cdn.mercury.com
 cdn.metadata.io
 cdn.mewe.com
 cdn.micro.blog
@@ -2234,6 +2238,7 @@ checkout.stripe.com
 chunk-composing.canva.com
 ci.testling.com
 cimg.cnyes.cool
+circle-flags.zeljko.me
 clara.iwara.tv
 claritystatic.azureedge.net
 clickup.marketlinc.com
@@ -3045,6 +3050,7 @@ load.csell.co
 loader.mantis-intelligence.com
 log-collector.17app.co
 logo.clearbit.com
+logos.composio.dev
 logos.kiwibrowser.com
 logos.speedtestcustom.com
 loutre.blockchair.io
@@ -3298,6 +3304,7 @@ pkg-size.dev
 pkg.csb.dev
 pkgs.dev.azure.com
 pl.ea.com
+placeholder.pics
 platform-assets.typekit.net
 platform.instagram.com
 platform.theverge.com
