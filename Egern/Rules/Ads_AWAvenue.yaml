@@ -3,9 +3,9 @@
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 893
-#Update content: fix  #190
-#Update time: 2025-12-21 13:53:35 UTC+8
+#Total lines: 897
+#Update content: add blocked for qumao and med pro ads.
+#Update time: 2025-12-23 20:06:33 UTC+8
 #Version: 1.6.9-release
 .1500020991.vodplayer.wxamedia.com
 .1500022744.vodplayer.wxamedia.com
@@ -138,6 +138,7 @@
 .adtago.s3.amazonaws.com
 .adtech.yahooinc.com
 .adtrack.quark.cn
+.adtracker.medproad.com
 .adv-api.shenshiads.com
 .adv.sec.intl.miui.com
 .adv.sec.miui.com
@@ -532,6 +533,7 @@
 .mazu.m.qq.com
 .mbdlog.iqiyi.com
 .mcs.zijieapi.com
+.medproad.com
 .metrics.data.hicloud.com
 .metrics.icloud.com
 .metrics.mzstatic.com
@@ -635,6 +637,7 @@
 .proxy.advp.apple.com
 .public.gdtimg.com
 .q.i.gdt.qq.com
+.qcwx.medproad.com
 .qmlog.baertt.com
 .qn-cdnfile1pcdn.msstatic.com
 .qqdata.ab.qq.com
@@ -732,6 +735,7 @@
 .syh-imp.cdnjtzy.com
 .syh.zybang.com
 .szbdyd.com
+.t-adx.52qumao.com
 .t-dsp.pinduoduo.com
 .t.applovin.com
 .t.l.qq.com

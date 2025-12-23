@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 901
+# 规则统计: 905
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 893
-#Update content: fix  #190
-#Update time: 2025-12-21 13:53:35 UTC+8
+#Total lines: 897
+#Update content: add blocked for qumao and med pro ads.
+#Update time: 2025-12-23 20:06:33 UTC+8
 #Version: 1.6.9-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -141,6 +141,7 @@
 .adtago.s3.amazonaws.com,Ads_AWAvenue
 .adtech.yahooinc.com,Ads_AWAvenue
 .adtrack.quark.cn,Ads_AWAvenue
+.adtracker.medproad.com,Ads_AWAvenue
 .adv-api.shenshiads.com,Ads_AWAvenue
 .adv.sec.intl.miui.com,Ads_AWAvenue
 .adv.sec.miui.com,Ads_AWAvenue
@@ -535,6 +536,7 @@
 .mazu.m.qq.com,Ads_AWAvenue
 .mbdlog.iqiyi.com,Ads_AWAvenue
 .mcs.zijieapi.com,Ads_AWAvenue
+.medproad.com,Ads_AWAvenue
 .metrics.data.hicloud.com,Ads_AWAvenue
 .metrics.icloud.com,Ads_AWAvenue
 .metrics.mzstatic.com,Ads_AWAvenue
@@ -638,6 +640,7 @@
 .proxy.advp.apple.com,Ads_AWAvenue
 .public.gdtimg.com,Ads_AWAvenue
 .q.i.gdt.qq.com,Ads_AWAvenue
+.qcwx.medproad.com,Ads_AWAvenue
 .qmlog.baertt.com,Ads_AWAvenue
 .qn-cdnfile1pcdn.msstatic.com,Ads_AWAvenue
 .qqdata.ab.qq.com,Ads_AWAvenue
@@ -735,6 +738,7 @@
 .syh-imp.cdnjtzy.com,Ads_AWAvenue
 .syh.zybang.com,Ads_AWAvenue
 .szbdyd.com,Ads_AWAvenue
+.t-adx.52qumao.com,Ads_AWAvenue
 .t-dsp.pinduoduo.com,Ads_AWAvenue
 .t.applovin.com,Ads_AWAvenue
 .t.l.qq.com,Ads_AWAvenue
