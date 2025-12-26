@@ -87,9 +87,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2025-12-24T09:47:12.696Z
+# Last Updated: 2025-12-26T01:37:38.155Z
 # License: AGPL 3.0
-# Size: 4162
+# Size: 4166
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -932,6 +932,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .redditstatic.com
 .registry.gitplac.si
 .replicate.delivery
+.replicateassets.com
 .report-uri.com
 .res.office365.com
 .rescript-lang.org
@@ -1075,6 +1076,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .teamtailor-cdn.com
 .tedcdn.com
 .telemetry.services.yofi.ai
+.teo-rum.com
 .teraboxcdn.com
 .thesourcemediaassets.com
 .thirdwebcdn.com
@@ -3207,7 +3209,6 @@ nav.yumenosora.co.jp
 navismithapis-cdn.com
 nbcnewsdigital-static.nbcuni.com
 nel.heroku.com
-nel.teo-rum.com
 net-fe-static-assets.network-controller.svc.ui.com
 netlify.apollo.io
 newassets.hcaptcha.com
@@ -3572,6 +3573,7 @@ sequoia.cdn-apple.com
 server.arcgisonline.com
 service-icons.zeabur.com
 services.linkfire.com
+sessions-bugsnag.docker.com
 sf-coze-web-cdn.coze.com
 sf-flow-web-cdn.ciciai.com
 sfiles.cnyes.cool
@@ -4034,6 +4036,7 @@ telemetry2.devolutions.net
 texture.laby.net
 th.bing.com
 themes.fourthwall.com
+themes.hibootstrap.com
 thumbnail.missav.com
 thumbnailer.mixcloud.com
 thumbnails.applegamingwiki.com
@@ -4244,6 +4247,7 @@ www-static.ripe.net
 www.10086.win
 www.acgpix.de
 www.bbthat.com
+www.envoyproxy.io
 www.gstatic.com
 www.paypalobjects.com
 www.pngmart.com
