@@ -1,14 +1,14 @@
 #!name=滴滴出行去广告
-#!desc=移除开屏广告、精简首页、底栏和我的页面。
+#!desc=移除开屏广告、弹窗广告、横幅推广，精简底栏和我的页面。
 #App链接=https://apps.apple.com/app/id554499054
-#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md], ZenmoFeiShi[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/DiDi_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DiDi.png
-#!date=2025-12-28 21:03:34
+#!date=2025-12-29 17:07:29
 
 [Rule]
 DOMAIN, gwp.xiaojukeji.com, REJECT
@@ -29,21 +29,27 @@ AND, ((IP-ASN, 63646, no-resolve), (DEST-PORT, 25641), (PROTOCOL, TCP)), REJECT
 
 ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget\? response-body-json-del data.mult_home_banner
 
-^https:\/\/common\.diditaxi\.com\.cn\/common\/v5\/usercenter\/layout$ response-body-json-del data.instances.center_marketing_card data.instances.center_widget_list data.instances.center_member_card
-
-^https:\/\/common\.diditaxi\.com\.cn\/common\/v5\/usercenter\/layout$ response-body-json-jq '.data.instances.center_wallet_finance_card.data.view_info |= map(select(.title == "优惠卡券" or .title == "余额" or .title == "福利金"))'
+^https:\/\/common\.diditaxi\.com\.cn\/common\/v5\/usercenter\/layout$ response-body-json-jq '.data |= (.instances |= (to_entries | map(select(.key as $k | ["center_base_info_card", "center_tool_card", "center_wallet_finance_card", "center_order_related_card"] | index($k))) | from_entries)) | .data.instances.center_wallet_finance_card.data.view_info |= map(select(.title == "优惠卡券" or .title == "余额" or .title == "福利金"))'
 
 ^https:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds\? reject-dict
 
 ^https:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf reject-dict
 
-^https:\/\/api\.udache\.com\/gulfstream\/porsche\/v1\/dache_homepage_layout\? response-body-json-del data.instances.car_icon_01.data.icon_info_new_agreement
+^https:\/\/api\.udache\.com\/gulfstream\/porsche\/v1\/dache_homepage_layout\? response-body-json-jq '.data |= (.instances |= (to_entries | map(select(.key | test("feed_back_|dache_main_member|order_container_|dache_main_core_icon|dache_main_card_"))) | from_entries))'
+
+^https:\/\/api\.udache\.com\/gulfstream\/porsche\/v1\/pSFCHomePage\? response-body-json-jq '.data |= (if . == null then null else {hot_route_info, legal_info} end) | . as $root | .data.tab_list = ($root.data.tab_list | map(select(.tab_id == "passenger")))'
+
+
+^https:\/\/poi\.map\.xiaojukeji\.com\/mapapi\/recommend\? reject-dict
+
+^https:\/\/daijia\.kuaidadi\.com:443\/gateway\? response-body-json-del data.variantInfo
+^https:\/\/daijia\.kuaidadi\.com:443\/gateway\? response-body-json-jq '.data |= with_entries(select(.value.isAd != 1))'
+
+^https:\/\/api\.udache\.com\/intercity\/ticket\/api\/v1\/core\/getFullPageInfoLayout\? response-body-json-jq '.data.disorder_components |= (map(select(.name == "history_order_card" or .name == "inprogress_order_card" or .name == "station_calendar" or .name == "main_card_v2" or .name == "user_history_order")))'
+
+^https:\/\/htwkop\.xiaojukeji\.com:443\/gateway\? response-body-json-del data.didi-bike-homepage-popup data.variantInfo
 
 ^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? response-body-json-jq '.data |= map(if .name|IN("daijia_journey_new_tcp_switch","daijia_tcp_init","daijia_tcp_msg_encrypt","daijia_tcp_site_info","daijia_tcp_site_report")then.allow=false else. end)'
 
-^https:\/\/freight\.xiaojukeji\.com\/gateway reject-dict
-
-^https:\/\/daijia\.kuaidadi\.com:443\/gateway reject-dict
-
 [MitM]
-hostname=as.xiaojukeji.com, common.diditaxi.com.cn, conf.diditaxi.com.cn, lion.didialift.com, api.udache.com, ct.xiaojukeji.com, res.xiaojukeji.com, daijia.kuaidadi.com, freight.xiaojukeji.com, 112.53.55.225, 139.199.240.84, 113.46.225.*, 162.14.157.*, 123.207.209.*, 120.241.142.*,120.241.143.*, 116.85.*
+hostname=as.xiaojukeji.com, common.diditaxi.com.cn, conf.diditaxi.com.cn, lion.didialift.com, api.udache.com, ct.xiaojukeji.com, res.xiaojukeji.com, 112.53.55.225, 139.199.240.84, 113.46.225.*, 162.14.157.*, 123.207.209.*, 120.241.142.*,120.241.143.*, 116.85.*
