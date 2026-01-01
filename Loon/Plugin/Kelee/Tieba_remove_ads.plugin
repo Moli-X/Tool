@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Tieba_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Tieba.png
-#!date=2026-01-01 06:35:44
+#!date=2026-01-01 15:45:01
 
 [Argument]
 per_filter_video_thread=select, "true", "false", tag=拦截推荐页面视频帖, desc=此项决定是否拦截首页推荐标签下的视频帖
@@ -33,16 +33,20 @@ IP-CIDR, 180.76.76.200/32, REJECT, no-resolve
 ^https?:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile$ response-body-json-replace user.shake_ad_switch.is_show 0
 ^https?:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile$ response-body-json-jq '.custom_grid |= map(select(.title != "游戏大厅" and .title != "预约管理" and .title != "领话费" and .title != "短故事")) | .zone_info |= map(.common_func |= (if .common_func_noraml then .common_func_noraml |= map(select(.name != "创建智能体")) else . end)) | .zone_info |= map(select(.type != "commerce" and .type != "banner" and .type != "game"))'
 
-^https?:\/\/tieba\.baidu\.com\/c\/f\/forum\/forumGuide$ reject-dict
+^https?:\/\/tieba\.baidu\.com\/c\/f\/forum\/forumGuide$ response-body-json-del hot_search
 ^https?:\/\/tieba\.baidu\.com\/c\/f\/search\/discover$ reject-dict
+
+^https:\/\/tieba\.baidu\.com\/c\/f\/forum\/getForumAlbum$ reject-dict
 
 ^https?:\/\/tieba\.baidu\.com\/c\/f\/frs\/frsBottom\? response-body-json-del card_activity
 ^https?:\/\/tiebac\.baidu\.com\/c\/f\/frs\/frsBottom$ response-body-json-del card_activity
 
+^http:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/hotforum$ reject-dict
+
 ^https?:\/\/tiebac\.baidu\.com\/c\/f\/sidebar\/home$ response-body-json-del game_center tools task_list vip_banner
 
 [Script]
-http-response ^https?:\/\/tieba(?:c)?\.baidu\.com\/c\/(f\/excellent\/personalized|s\/adNewLog|f\/frs\/page|b\/ad\/adBid|f\/ad\/getFeedAd|f\/pb\/page|f\/pb\/floor|f\/frs\/generalTabList)\?cmd=\d+&format=protobuf script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/tieba-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=ProtoBuf处理, argument=[{per_filter_video_thread}]
+http-response ^https?:\/\/tieba(?:c)?\.baidu\.com\/c\/(f\/excellent\/personalized|f\/frs\/page|b\/ad\/adBid|f\/ad\/getFeedAd|f\/pb\/page|f\/frs\/generalTabList)\?cmd=\d+&format=protobuf script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/tieba-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=ProtoBuf处理, argument=[{per_filter_video_thread}]
 
 [MitM]
 hostname=tiebac.baidu.com, tieba.baidu.com
