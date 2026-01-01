@@ -144,11 +144,16 @@ if(resStatus !== 200) {
     } else if (url.includes("excellent/personalized")) {
         console.log('贴吧-personalized');
         const argOptions = {
-            per_filter_video_thread: 0,
+            per_filter_video_thread: false, // ✅ 默认值改为 false（布尔）
         };
         switch (typeof $argument) {
             case 'string':
-                const params = Object.fromEntries($argument.split('&').map(item => item.split('=')));
+                const params = Object.fromEntries($argument.split('&').map(item => {
+                    const [key, value] = item.split('=');
+                    if (value === "true") return [key, true];   // ✅ 转换字符串 "true" → true
+                    if (value === "false") return [key, false];  // ✅ 转换字符串 "false" → false
+                    return [key, value]; // 其他保持原样
+                }));
                 Object.assign(argOptions, params);
                 break;
             case 'object':
@@ -159,7 +164,7 @@ if(resStatus !== 200) {
         const personalizedResIdlObj = PersonalizedResIdl.fromBinary(binaryBody,{readUnknownField: true});
         removeGoodsInfo(personalizedResIdlObj.data.bannerList?.app);
         personalizedResIdlObj.data.threadList = removeThread(personalizedResIdlObj.data.threadList,
-            +argOptions.per_filter_video_thread);
+            argOptions.per_filter_video_thread); // ✅ 直接传布尔值，无需 +
         if(personalizedResIdlObj.data.liveAnswer){
             console.log('去除推荐页上方的banner广告');
             personalizedResIdlObj.data.liveAnswer = null;

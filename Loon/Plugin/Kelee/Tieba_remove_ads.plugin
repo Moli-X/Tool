@@ -1,37 +1,48 @@
 #!name=百度贴吧去广告
-#!desc=移除开屏广告、信息流广告和帖内广告，精简侧拉抽屉及我的页面。需注意此插件会导致新回复等通知功能不可用，需手动进入消息页点击查看。仅限iOS 15及以上版本系统使用。
+#!desc=移除开屏广告、信息流广告和帖内广告，精简侧拉抽屉及我的页面。
 #App链接=https://apps.apple.com/app/id477927812
-#!author=app2smile[https://github.com/app2smile], 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md], app2smile[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
 #!system_version=15
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Tieba_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Tieba.png
-#!date=2025-11-20 01:28:27
+#!date=2026-01-01 06:35:44
+
+[Argument]
+per_filter_video_thread=select, "true", "false", tag=拦截推荐页面视频帖, desc=此项决定是否拦截首页推荐标签下的视频帖
 
 [Rule]
 DOMAIN, 180.76.76.200, REJECT
 IP-CIDR, 180.76.76.200/32, REJECT, no-resolve
 
 [Rewrite]
-^https:\/\/tieba\.baidu\.com\/c\/f\/member\/getMemberPopups$ reject-dict
+^https?:\/\/tiebac\.baidu\.com\/c\/s\/sync$ response-body-json-del activity_switch video_report_config advertisement_config next_start push_strategy_new live_activity_guide h5_pop_ups duxiaoman_url is_need_remind_live_rooms floating_icon ad_stlog_switch first_time_motivate windowStrategyList ad_adsense ad_config videoup_guide_pop ad_origin_config_switch needNewUserLead h5_pop_ups_config alaTabColor search_guide ad_sdk_priority low_version_pop_config ad_num_competition_frs live_new_user_guide_day screen_fill_data_result yy_live_tab ad_num_competition_personalize complete_apk_url user_activity homepage_guide bottom_bubble_config home_screen_ad afSearch_tab recent_client_info video_activity namoaixud_url yy_live_config user_growth_task_list cloud_control_data_info wl_config.pb_banner_funad_cache_strategy wl_config.pb_comment_asyncafd_cache_strategy wl_config.download_edge_float wl_config.download_pause_retain_dialog_conf wl_config.download_mobile_dialog_conf wl_config.download_fake_progress_config_a wl_config.download_fake_progress_config_b scheme_whitelist
 
-^https:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile$ response-body-json-del recom_naws_list namoaixud_entry custom_grid duxiaoman_entry finance_tab
+^https?:\/\/tiebac\.baidu\.com\/c\/s\/sync$ response-body-json-replace wl_config.home_ad_num 0 wl_config.frs_ad_num 0 wl_config.pb_comment_ad_num 0 wl_config.index_bear_density 0 wl_config.frs_bear_density 0 wl_config.index_bear_first_floor_max 999999999 wl_config.index_bear_first_floor_min 999999999
 
-^https:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile$ response-body-json-replace user.shake_ad_switch.is_show 0
+^https?:\/\/tiebac\.baidu\.com\/c\/s\/sync$ response-body-json-jq '.index_tab_info |= map(select(.tab_name == "推荐")) | .top_level_navi |= {"推荐": .["推荐"], "侧边栏": .["侧边栏"], "关注": .["关注"]}'
 
-^https:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile$ response-body-json-jq '.zone_info |= map(select(.type as $t | ["commerce","banner","game"] | index($t) | not))'
+^https?:\/\/tiebac\.baidu\.com\/c\/f\/forum\/getInterestClassList$ reject-dict
 
-^https:\/\/tiebac\.baidu\.com\/c\/f\/sidebar\/home$ response-body-json-del task_list game_center tools tools.yunying_tools_list tools.show_tools_list
-^https:\/\/tiebac\.baidu\.com\/c\/f\/sidebar\/home$ response-body-json-jq '.tools.show_tools_list |= map(.tools_list |= map(select(.title != "度小满钱包")))'
+^https?:\/\/tiebac\.baidu\.com\/c\/f\/search\/discover$ reject-dict
+^https?:\/\/tieba\.baidu\.com\/mo\/q\/search\/startPage\? mock-response-body data-type=json data="{"no":0,"error":"success"}" status-code=200
 
-^https:\/\/tiebac\.baidu\.com\/c\/f\/search\/discover$ reject-dict
+^https?:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile$ response-body-json-del url_map user_agent_info bubble_info duxiaoman_entry uc_card finance_tab vip_banner ala_live_info recom_naws_list duxiaoman user.consume_info namoaixud_entry
+^https?:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile$ response-body-json-replace user.shake_ad_switch.is_show 0
+^https?:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile$ response-body-json-jq '.custom_grid |= map(select(.title != "游戏大厅" and .title != "预约管理" and .title != "领话费" and .title != "短故事")) | .zone_info |= map(.common_func |= (if .common_func_noraml then .common_func_noraml |= map(select(.name != "创建智能体")) else . end)) | .zone_info |= map(select(.type != "commerce" and .type != "banner" and .type != "game"))'
 
-^https:\/\/tiebac\.baidu\.com\/c\/f\/frs\/frsBottom$ response-body-json-del card_activity
+^https?:\/\/tieba\.baidu\.com\/c\/f\/forum\/forumGuide$ reject-dict
+^https?:\/\/tieba\.baidu\.com\/c\/f\/search\/discover$ reject-dict
+
+^https?:\/\/tieba\.baidu\.com\/c\/f\/frs\/frsBottom\? response-body-json-del card_activity
+^https?:\/\/tiebac\.baidu\.com\/c\/f\/frs\/frsBottom$ response-body-json-del card_activity
+
+^https?:\/\/tiebac\.baidu\.com\/c\/f\/sidebar\/home$ response-body-json-del game_center tools task_list vip_banner
 
 [Script]
-http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/tieba-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=ProtoBuf处理
+http-response ^https?:\/\/tieba(?:c)?\.baidu\.com\/c\/(f\/excellent\/personalized|s\/adNewLog|f\/frs\/page|b\/ad\/adBid|f\/ad\/getFeedAd|f\/pb\/page|f\/pb\/floor|f\/frs\/generalTabList)\?cmd=\d+&format=protobuf script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/tieba-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=ProtoBuf处理, argument=[{per_filter_video_thread}]
 
 [MitM]
 hostname=tiebac.baidu.com, tieba.baidu.com
