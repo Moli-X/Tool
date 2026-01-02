@@ -8,17 +8,23 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BaiduNetDisk_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BaiduNetDisk.png
-#!date=2025-05-13 15:17:08
+#!date=2026-01-02 06:40:04
 
 [Rewrite]
-^https:\/\/pan\.baidu\.com\/api\/getconfig reject-dict
-^https:\/\/pan\.baidu\.com\/api\/getsyscfg reject-dict
-^https:\/\/pan\.baidu\.com\/api\/taskscore\/tasklist reject-dict
-^https:\/\/pan\.baidu\.com\/act\/api\/activityentry reject-dict
-^https:\/\/pan\.baidu\.com\/act\/api\/activityentry reject-dict
-^https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user\?method=gamecenter reject-dict
-^https:\/\/pan\.baidu\.com\/act\/v2\/welfare\/list reject-dict
-^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/pcs\/adv reject-dict
+^https:\/\/pan\.baidu\.com\/api\/getconfig\? reject-dict
+^https:\/\/pan\.baidu\.com\/api\/getsyscfg\? reject-dict
 
+^https:\/\/pan\.baidu\.com\/api\/taskscore\/tasklist\? reject-dict
+
+^https:\/\/pan\.baidu\.com\/act\/api\/activityentry\? reject-dict
+
+^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/pcs\/adv\? reject-dict
+
+^https:\/\/pan\.baidu\.com\/api\/plugin\/get\? reject-dict
+
+^https:\/\/pan\.baidu\.com\/recommend\/query\/list\? reject-dict
+
+^https:\/\/pan\.baidu\.com\/feed\/kingkongdistrict\? response-body-json-jq '.data.data |= map(select(.type != "novel" and .type != "shortplay" and .type != "print" and .type != "job_hunt"))'
+ 
 [MitM]
 hostname=pan.baidu.com
