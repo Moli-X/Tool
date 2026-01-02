@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4269
+# 规则统计: 4277
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-01-01T14:29:16.012Z
+# Last Updated: 2026-01-02T08:26:52.832Z
 # License: AGPL 3.0
-# Size: 4172
+# Size: 4180
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -152,6 +152,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .ant.design,CDN
 .anyhentai.com,CDN
 .aolcdn.com,CDN
+.apac.orbitor.dev,CDN
 .api.instabug.com,CDN
 .api.loganalytics.io,CDN
 .app-analytics-services.com,CDN
@@ -367,6 +368,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .descopecdn.com,CDN
 .design-system.economist.com,CDN
 .devrum.uptime.com,CDN
+.dget.top,CDN
 .digikeyassets.com,CDN
 .dilcdn.com,CDN
 .directupload.net,CDN
@@ -426,6 +428,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .etsystatic.com,CDN
 .eu-browse.startpage.com,CDN
 .eu-proxy.startpage.com,CDN
+.eu.orbitor.dev,CDN
 .events.backtrace.io,CDN
 .exp-tas.com,CDN
 .externulls.com,CDN
@@ -624,8 +627,10 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .ipfs.cyou,CDN
 .ipfs.decoo.io,CDN
 .ipfs.denarius.io,CDN
+.ipfs.ecolatam.com,CDN
 .ipfs.eternum.io,CDN
 .ipfs.eth.aragon.network,CDN
+.ipfs.filebase.io,CDN
 .ipfs.fleek.co,CDN
 .ipfs.fooock.com,CDN
 .ipfs.funnychain.co,CDN
@@ -642,6 +647,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .ipfs.mrh.io,CDN
 .ipfs.mttk.net,CDN
 .ipfs.namebase.io,CDN
+.ipfs.orbitor.dev,CDN
 .ipfs.overpi.com,CDN
 .ipfs.runfission.com,CDN
 .ipfs.scalaproject.io,CDN
@@ -701,6 +707,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .kwcdn.com,CDN
 .kym-cdn.com,CDN
 .larksuitecdn.com,CDN
+.latam.orbitor.dev,CDN
 .lazcdn.com,CDN
 .lbpicpic.com,CDN
 .lbpictupian.com,CDN
@@ -2457,6 +2464,7 @@ error.rakuten.co.jp,CDN
 eslint-react.xyz,CDN
 eslint.org,CDN
 eslint.style,CDN
+eu-assets.i.posthog.com,CDN
 eu-images.contentstack.com,CDN
 eu.cdnbye.com,CDN
 eu.hamreus.com,CDN
@@ -2502,6 +2510,7 @@ fiddle.fastly.dev,CDN
 fiddle.jshell.net,CDN
 file.ahu.moe,CDN
 file.izanmei.net,CDN
+file.xiaohai.ai,CDN
 file.zoom.us,CDN
 file1.hkepc.net,CDN
 files.armorgames.com,CDN
@@ -2854,7 +2863,6 @@ img.catwvod.xyz,CDN
 img.clerk.com,CDN
 img.community.ui.com,CDN
 img.connatix.com,CDN
-img.coomer.su,CDN
 img.decrypt.co,CDN
 img.dlsite.jp,CDN
 img.domaintools.com,CDN
@@ -2879,12 +2887,12 @@ img.javstore.net,CDN
 img.javynow.com,CDN
 img.jsdelivr.com,CDN
 img.kbhgames.com,CDN
-img.kemono.su,CDN
 img.logokit.com,CDN
 img.ltyears.com,CDN
 img.lvv2.com,CDN
 img.m.mw,CDN
 img.majors.im,CDN
+img.manyse.com,CDN
 img.ml0987.com,CDN
 img.moedog.org,CDN
 img.moegirl.tw,CDN
@@ -2939,7 +2947,6 @@ img3.javmost.com,CDN
 img3.socialshopwave.com,CDN
 img3.yna.co.kr,CDN
 img4.airdroid.com,CDN
-img4.gelbooru.com,CDN
 img4.javmost.com,CDN
 img4.socialshopwave.com,CDN
 img4.yna.co.kr,CDN
@@ -2984,7 +2991,6 @@ interactive.guim.co.uk,CDN
 interwiki.scpwiki.com,CDN
 interwiki.scpwikicn.com,CDN
 ip-ranges.amazonaws.com,CDN
-ipfs.d.tube,CDN
 irp-cdn.multiscreensite.com,CDN
 isitmaintained.com,CDN
 j.udn.com.tw,CDN
@@ -3067,7 +3073,6 @@ lm.visualon.info,CDN
 load.csell.co,CDN
 loader.mantis-intelligence.com,CDN
 log-collector.17app.co,CDN
-logo.clearbit.com,CDN
 logos.composio.dev,CDN
 logos.kiwibrowser.com,CDN
 logos.speedtestcustom.com,CDN
@@ -3115,6 +3120,7 @@ media.cnn.com,CDN
 media.contentapi.ea.com,CDN
 media.convertkit.com,CDN
 media.crazyshit.com,CDN
+media.d.tube,CDN
 media.daily.dev,CDN
 media.datacenterdynamics.com,CDN
 media.dev.to,CDN
@@ -3330,14 +3336,13 @@ platform.twitter.com,CDN
 platform.vox.com,CDN
 platforms.makemytrip.com,CDN
 play.gotolstoy.com,CDN
-play.izanmei.net,CDN
 play.publicradio.org,CDN
 play.vidyard.com,CDN
 play.xfvod.pro,CDN
+play.xiaoh.ai,CDN
 player-frontend.cnevids.com,CDN
 player.cnevids.com,CDN
 player.interactivity.brightcove.com,CDN
-player.louisvuitton.com,CDN
 player.svc.litv.tv,CDN
 player.vimeo.com,CDN
 players.brightcove.net,CDN
@@ -3538,7 +3543,6 @@ safebrowsing.google.com,CDN
 safebrowsing.googleapis.com,CDN
 sandpack-cdn-staging.blazingly.io,CDN
 sandpack-cdn-v2.codesandbox.io,CDN
-sato.manyse.com,CDN
 sbl.onfastspring.com,CDN
 scache.vzw.com,CDN
 scache1.vzw.com,CDN
@@ -3821,6 +3825,7 @@ static.iplocate.io,CDN
 static.iris.informa.com,CDN
 static.itch.io,CDN
 static.iyf.tv,CDN
+static.izanmei.icu,CDN
 static.j51.net,CDN
 static.javhd.com,CDN
 static.jsbin.com,CDN
@@ -3939,6 +3944,7 @@ static.vocadb.net,CDN
 static.webclicks24.com,CDN
 static.whatsapp.net,CDN
 static.workday.com,CDN
+static.wwto.net,CDN
 static.xgroovy.com,CDN
 static.xns.one,CDN
 static.xxxshake.com,CDN
@@ -4043,6 +4049,7 @@ telemetry.split.io,CDN
 telemetry.stepsecurity.io,CDN
 telemetry.vercel.com,CDN
 telemetry2.devolutions.net,CDN
+test.manyse.com,CDN
 texture.laby.net,CDN
 th.bing.com,CDN
 themes.fourthwall.com,CDN
@@ -4123,6 +4130,7 @@ uploads.linear.app,CDN
 uploads.sitepoint.com,CDN
 upos-sz-mirroralibstar1.bilivideo.com,CDN
 upos-sz-mirrorcosbstar1.bilivideo.com,CDN
+us-assets.i.posthog.com,CDN
 us-js.zonka.co,CDN
 us.123rf.com,CDN
 us.hamreus.com,CDN

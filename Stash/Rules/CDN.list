@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4269
+# 规则统计: 4277
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -90,9 +90,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-01-01T14:29:16.012Z
+# Last Updated: 2026-01-02T08:26:52.832Z
 # License: AGPL 3.0
-# Size: 4172
+# Size: 4180
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -152,6 +152,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .ant.design
 .anyhentai.com
 .aolcdn.com
+.apac.orbitor.dev
 .api.instabug.com
 .api.loganalytics.io
 .app-analytics-services.com
@@ -367,6 +368,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .descopecdn.com
 .design-system.economist.com
 .devrum.uptime.com
+.dget.top
 .digikeyassets.com
 .dilcdn.com
 .directupload.net
@@ -426,6 +428,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .etsystatic.com
 .eu-browse.startpage.com
 .eu-proxy.startpage.com
+.eu.orbitor.dev
 .events.backtrace.io
 .exp-tas.com
 .externulls.com
@@ -624,8 +627,10 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .ipfs.cyou
 .ipfs.decoo.io
 .ipfs.denarius.io
+.ipfs.ecolatam.com
 .ipfs.eternum.io
 .ipfs.eth.aragon.network
+.ipfs.filebase.io
 .ipfs.fleek.co
 .ipfs.fooock.com
 .ipfs.funnychain.co
@@ -642,6 +647,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .ipfs.mrh.io
 .ipfs.mttk.net
 .ipfs.namebase.io
+.ipfs.orbitor.dev
 .ipfs.overpi.com
 .ipfs.runfission.com
 .ipfs.scalaproject.io
@@ -701,6 +707,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .kwcdn.com
 .kym-cdn.com
 .larksuitecdn.com
+.latam.orbitor.dev
 .lazcdn.com
 .lbpicpic.com
 .lbpictupian.com
@@ -2457,6 +2464,7 @@ error.rakuten.co.jp
 eslint-react.xyz
 eslint.org
 eslint.style
+eu-assets.i.posthog.com
 eu-images.contentstack.com
 eu.cdnbye.com
 eu.hamreus.com
@@ -2502,6 +2510,7 @@ fiddle.fastly.dev
 fiddle.jshell.net
 file.ahu.moe
 file.izanmei.net
+file.xiaohai.ai
 file.zoom.us
 file1.hkepc.net
 files.armorgames.com
@@ -2854,7 +2863,6 @@ img.catwvod.xyz
 img.clerk.com
 img.community.ui.com
 img.connatix.com
-img.coomer.su
 img.decrypt.co
 img.dlsite.jp
 img.domaintools.com
@@ -2879,12 +2887,12 @@ img.javstore.net
 img.javynow.com
 img.jsdelivr.com
 img.kbhgames.com
-img.kemono.su
 img.logokit.com
 img.ltyears.com
 img.lvv2.com
 img.m.mw
 img.majors.im
+img.manyse.com
 img.ml0987.com
 img.moedog.org
 img.moegirl.tw
@@ -2939,7 +2947,6 @@ img3.javmost.com
 img3.socialshopwave.com
 img3.yna.co.kr
 img4.airdroid.com
-img4.gelbooru.com
 img4.javmost.com
 img4.socialshopwave.com
 img4.yna.co.kr
@@ -2984,7 +2991,6 @@ interactive.guim.co.uk
 interwiki.scpwiki.com
 interwiki.scpwikicn.com
 ip-ranges.amazonaws.com
-ipfs.d.tube
 irp-cdn.multiscreensite.com
 isitmaintained.com
 j.udn.com.tw
@@ -3067,7 +3073,6 @@ lm.visualon.info
 load.csell.co
 loader.mantis-intelligence.com
 log-collector.17app.co
-logo.clearbit.com
 logos.composio.dev
 logos.kiwibrowser.com
 logos.speedtestcustom.com
@@ -3115,6 +3120,7 @@ media.cnn.com
 media.contentapi.ea.com
 media.convertkit.com
 media.crazyshit.com
+media.d.tube
 media.daily.dev
 media.datacenterdynamics.com
 media.dev.to
@@ -3330,14 +3336,13 @@ platform.twitter.com
 platform.vox.com
 platforms.makemytrip.com
 play.gotolstoy.com
-play.izanmei.net
 play.publicradio.org
 play.vidyard.com
 play.xfvod.pro
+play.xiaoh.ai
 player-frontend.cnevids.com
 player.cnevids.com
 player.interactivity.brightcove.com
-player.louisvuitton.com
 player.svc.litv.tv
 player.vimeo.com
 players.brightcove.net
@@ -3538,7 +3543,6 @@ safebrowsing.google.com
 safebrowsing.googleapis.com
 sandpack-cdn-staging.blazingly.io
 sandpack-cdn-v2.codesandbox.io
-sato.manyse.com
 sbl.onfastspring.com
 scache.vzw.com
 scache1.vzw.com
@@ -3821,6 +3825,7 @@ static.iplocate.io
 static.iris.informa.com
 static.itch.io
 static.iyf.tv
+static.izanmei.icu
 static.j51.net
 static.javhd.com
 static.jsbin.com
@@ -3939,6 +3944,7 @@ static.vocadb.net
 static.webclicks24.com
 static.whatsapp.net
 static.workday.com
+static.wwto.net
 static.xgroovy.com
 static.xns.one
 static.xxxshake.com
@@ -4043,6 +4049,7 @@ telemetry.split.io
 telemetry.stepsecurity.io
 telemetry.vercel.com
 telemetry2.devolutions.net
+test.manyse.com
 texture.laby.net
 th.bing.com
 themes.fourthwall.com
@@ -4123,6 +4130,7 @@ uploads.linear.app
 uploads.sitepoint.com
 upos-sz-mirroralibstar1.bilivideo.com
 upos-sz-mirrorcosbstar1.bilivideo.com
+us-assets.i.posthog.com
 us-js.zonka.co
 us.123rf.com
 us.hamreus.com
