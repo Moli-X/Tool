@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4287
+# 规则统计: 4289
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-01-03T13:58:35.537Z
+# Last Updated: 2026-01-06T06:38:25.722Z
 # License: AGPL 3.0
-# Size: 4190
+# Size: 4192
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -2325,6 +2325,7 @@ consentdeliveryfd.azurefd.net,CDN
 consumersite-assets.trustpilot.net,CDN
 consumersiteimages.trustpilot.net,CDN
 content-a.strava.com,CDN
+content-cdn.svc.ui.com,CDN
 content-management-files.canva.com,CDN
 content-prod-live.cert.starbucks.com,CDN
 content.any.run,CDN
@@ -3770,6 +3771,7 @@ static.coingecko.com,CDN
 static.comicbz.com,CDN
 static.community.workday.com,CDN
 static.convertio.co,CDN
+static.corespeed.io,CDN
 static.corp.google.com,CDN
 static.crunchyroll.com,CDN
 static.crypto.com,CDN
@@ -4230,7 +4232,7 @@ webfonts.zoho.com,CDN
 webobjects2.cdw.com,CDN
 webp.frostming.com,CDN
 website-cdn.ipinfo.io,CDN
-website-media,CDN
+website-media.deel.com,CDN
 website-prod.cache.wpscdn.com,CDN
 webstatic.chargebee.com,CDN
 widget.automizely.com,CDN
