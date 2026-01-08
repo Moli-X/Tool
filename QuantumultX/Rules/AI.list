@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 58
+# 规则统计: 59
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,AI
 HOST,ai.google.dev,AI
@@ -28,6 +28,7 @@ HOST-SUFFIX,cloudcode-pa.googleapis.com,AI
 HOST-SUFFIX,deepmind.com,AI
 HOST-SUFFIX,deepmind.google,AI
 HOST-SUFFIX,dify.ai,AI
+HOST-SUFFIX,g.ai,AI
 HOST-SUFFIX,geller-pa.googleapis.com,AI
 HOST-SUFFIX,gemini.google,AI
 HOST-SUFFIX,gemini.google.com,AI
@@ -52,9 +53,9 @@ HOST-KEYWORD,openai,AI
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2026-01-07T10:42:18.639Z
+# Last Updated: 2026-01-08T01:50:26.900Z
 # License: AGPL 3.0
-# Size: 48
+# Size: 49
 # Sukka's Ruleset - AIGC Domains
 # This file contains domains of OpenAI, Claude.
 ################## EOF ##################
