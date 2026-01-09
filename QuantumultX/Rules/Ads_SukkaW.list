@@ -1,5 +1,5 @@
 # 规则名称: Ads_SukkaW
-# 规则统计: 90540
+# 规则统计: 90544
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,Ads_SukkaW
 HOST,aedns.weixin.qq.com,Ads_SukkaW
@@ -382,10 +382,10 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-12-10T05:52:28.258Z
-# Last Updated: 2026-01-08T17:18:54.922Z
+# Last Updated: 2026-01-09T09:56:49.696Z
 # License: AGPL 3.0
 # Size: 354
-# Size: 90147
+# Size: 90151
 # Sukka's Ruleset - Reject Base
 # Sukka's Ruleset - Reject Non-IP
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-mining
@@ -16681,6 +16681,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .collector.net-logger.com,Ads_SukkaW
 .collector.pi.spectrum.net,Ads_SukkaW
 .collector.plarium.com,Ads_SukkaW
+.collector.pmc.com,Ads_SukkaW
 .collector.prod.expedia.com,Ads_SukkaW
 .collector.quillbot.com,Ads_SukkaW
 .collector.reelevant.com,Ads_SukkaW
@@ -56668,6 +56669,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .pig.pupuapi.com,Ads_SukkaW
 .pigeon.thankyuu.com,Ads_SukkaW
 .pigeoncontentmentcotton.com,Ads_SukkaW
+.pigeonkit.com,Ads_SukkaW
 .pigeonsetc.com,Ads_SukkaW
 .piggeryenguard.cfd,Ads_SukkaW
 .pigmentpaper.com,Ads_SukkaW
@@ -59364,6 +59366,7 @@ URL-REGEX,/igd\.xml,Ads_SukkaW
 .quickpcfixer.click,Ads_SukkaW
 .quicksandear.com,Ads_SukkaW
 .quickshare.cfd,Ads_SukkaW
+.quicktrick.net,Ads_SukkaW
 .quiddity.goguardian.com,Ads_SukkaW
 .quietknowledge.com,Ads_SukkaW
 .quietleaffield.com,Ads_SukkaW
@@ -90257,6 +90260,7 @@ promote.biz.weibo.cn,Ads_SukkaW
 proxyhog.prisma-data.net,Ads_SukkaW
 prt-stsdk.vivo.com.cn,Ads_SukkaW
 ps.map.baidu.com,Ads_SukkaW
+pub.elevate14r.com,Ads_SukkaW
 puma-api.iqiyi.com,Ads_SukkaW
 puma.api.iqiyi.com,Ads_SukkaW
 push.m.youku.com,Ads_SukkaW

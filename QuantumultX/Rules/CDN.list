@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4294
+# 规则统计: 4309
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-01-07T17:17:54.197Z
+# Last Updated: 2026-01-09T09:56:50.452Z
 # License: AGPL 3.0
-# Size: 4197
+# Size: 4212
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -333,6 +333,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .codepenassets.com,CDN
 .colliderimages.com,CDN
 .combinatronics.io,CDN
+.commondatastorage.googleapis.com,CDN
 .content-storage-upload.googleapis.com,CDN
 .content001.bet365.com,CDN
 .contenthub.allstate.com,CDN
@@ -880,6 +881,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .pnpm.io,CDN
 .pocket-image-cache.com,CDN
 .poecdn.net,CDN
+.poki-cdn.com,CDN
 .polyfill-fastly.io,CDN
 .pool.ntp.org,CDN
 .porn-cdn.com,CDN
@@ -1359,6 +1361,7 @@ assets-v2.i-scmp.com,CDN
 assets-v2.super.so,CDN
 assets-www.readspeaker.com,CDN
 assets-www.xbox.com,CDN
+assets.about.me,CDN
 assets.aboutamazon.com,CDN
 assets.adobedtm.com,CDN
 assets.airbuddy.app,CDN
@@ -1724,6 +1727,7 @@ cdn.accounts.nintendo.com,CDN
 cdn.adguard.com,CDN
 cdn.adguard.info,CDN
 cdn.adsninja.ca,CDN
+cdn.affine.pro,CDN
 cdn.aimerce.ai,CDN
 cdn.amcharts.com,CDN
 cdn.announcekit.app,CDN
@@ -2348,6 +2352,7 @@ cors-proxy.htmldriven.com,CDN
 cover.comicbz.com,CDN
 cover.yymanhua.com,CDN
 covers.openlibrary.org,CDN
+cpp-content.bhn.cards,CDN
 cpwebassets.codepen.io,CDN
 craftassets.unraid.net,CDN
 cravatar.eu,CDN
@@ -2384,6 +2389,7 @@ data.web.clickup.com,CDN
 david-dm.org,CDN
 db.onlinewebfonts.com,CDN
 dc-cdn.cdw.com,CDN
+dd.blackhawknetwork.com,CDN
 dd.dexscreener.com,CDN
 demo.unified-streaming.com,CDN
 demotiles.maplibre.org,CDN
@@ -2406,6 +2412,7 @@ dl.airdroid.com,CDN
 dlassets-ssl.xboxlive.com,CDN
 do.featurebase.app,CDN
 docs.brew.sh,CDN
+docs.mrchromebox.tech,CDN
 docs.rs,CDN
 documenter-assets.pstmn.io,CDN
 domain.expiring-soon.xyz,CDN
@@ -2506,6 +2513,7 @@ fastly-cloud.typenetwork.com,CDN
 fastly-gce.allmovie.com,CDN
 fastly-s3.allmovie.com,CDN
 fastporndelivery.hqporner.com,CDN
+favicon.im,CDN
 favicon.pirsch.io,CDN
 favicon.yandex.net,CDN
 favicons.nextdns.io,CDN
@@ -2573,6 +2581,7 @@ front-resource.fs.com,CDN
 frontend-apps.workos.com,CDN
 frontend-assets.supabase.com,CDN
 frontend.floatplane.com,CDN
+fs.mingpao.com,CDN
 fs2.onlyhentaistuff.com,CDN
 fscdn.eppo.cloud,CDN
 g-static.ap4r.com,CDN
@@ -2736,6 +2745,7 @@ image.xmanhua.net,CDN
 image.yuntu.com.tw,CDN
 image.yymanhua.com,CDN
 imagecdn.clips4sale.com,CDN
+imagecdn.mixlr.com,CDN
 imagehost.player.fm,CDN
 imageio.forbes.com,CDN
 imageproxy.ifunny.co,CDN
@@ -2943,8 +2953,10 @@ img.yna.co.kr,CDN
 img.youtube.com,CDN
 img0.socialshopwave.com,CDN
 img0.yna.co.kr,CDN
+img04.en25.com,CDN
 img1.ak.crunchyroll.com,CDN
 img1.socialshopwave.com,CDN
+img1.yeggi.com,CDN
 img1.yna.co.kr,CDN
 img2.gelbooru.com,CDN
 img2.javdove.com,CDN
@@ -3444,6 +3456,7 @@ registry.oomol.com,CDN
 regmedia.co.uk,CDN
 reload.getsentry.net,CDN
 renderer-assets.typeform.com,CDN
+report-uri.cloudflare.com,CDN
 res-etl-ssl.mypikpak.com,CDN
 res-geo.cdn.office.net,CDN
 res.abc.net.au,CDN
@@ -3565,6 +3578,7 @@ scache2.vzw.com,CDN
 scdn.clerk.com,CDN
 scdn.line-apps.com,CDN
 scontent.whatsapp.net,CDN
+screenshot.domains,CDN
 screenshots.codesandbox.io,CDN
 screenshots.debian.net,CDN
 screenshots.downloadtorrentfile.com,CDN
@@ -4186,6 +4200,7 @@ video.cdnbye.com,CDN
 video.dailymail.co.uk,CDN
 video1.7mmtv.sx,CDN
 video2.7mmtv.sx,CDN
+video3.mingpao.com,CDN
 videos.elephas.app,CDN
 videos.ohentai.org,CDN
 videos2-h.sendvid.com,CDN
