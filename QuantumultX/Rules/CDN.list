@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4311
+# 规则统计: 4323
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-01-10T06:43:44.240Z
+# Last Updated: 2026-01-11T15:53:05.404Z
 # License: AGPL 3.0
-# Size: 4214
+# Size: 4226
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1329,6 +1329,7 @@ app.viral-loops.com,CDN
 appassets.mvtdev.com,CDN
 apps-static.route4me.com,CDN
 apps.bazaarvoice.com,CDN
+apps.paidy.com,CDN
 apps.profitihub.com,CDN
 apps.sophi.io,CDN
 apps.voxmedia.com,CDN
@@ -1722,9 +1723,11 @@ cdn.17app.co,CDN
 cdn.18jav.tv,CDN
 cdn.24.co.za,CDN
 cdn.7tv.app,CDN
+cdn.accessibly.app,CDN
 cdn.accounts.autodesk.com,CDN
 cdn.accounts.firefox.com,CDN
 cdn.accounts.nintendo.com,CDN
+cdn.activity.smart-bdash.com,CDN
 cdn.adguard.com,CDN
 cdn.adguard.info,CDN
 cdn.adsninja.ca,CDN
@@ -1788,6 +1791,7 @@ cdn.configcat.com,CDN
 cdn.consentmanager.net,CDN
 cdn.contentful.com,CDN
 cdn.conveythis.com,CDN
+cdn.corso.com,CDN
 cdn.cracked.sh,CDN
 cdn.craft.cloud,CDN
 cdn.create.microsoft.com,CDN
@@ -2557,6 +2561,7 @@ firebaselogging.googleapis.com,CDN
 firebaseremoteconfig.googleapis.com,CDN
 firefox.settings.services.mozilla.com,CDN
 fiverr-res.cloudinary.com,CDN
+flagsapi.com,CDN
 flo.uri.sh,CDN
 flows.trysavvy.com,CDN
 font-public.canva.com,CDN
@@ -2705,6 +2710,7 @@ ih1.redbubble.net,CDN
 ih2.redbubble.net,CDN
 ih3.redbubble.net,CDN
 ik.imgkit.net,CDN
+im.np-payment-gateway.com,CDN
 imag.malavida.com,CDN
 image-cdn.porndig.com,CDN
 image-forwarder.notaku.so,CDN
@@ -3020,6 +3026,7 @@ isitmaintained.com,CDN
 j.udn.com.tw,CDN
 jac.yahoosandbox.com,CDN
 jaws.pbs.org,CDN
+jetpack.wordpress.com,CDN
 jfe-cdn.qualtrics.com,CDN
 jnmedia.ero-video.net,CDN
 js-1-cdn.airdroid.com,CDN
@@ -3046,6 +3053,7 @@ js.pusher.com,CDN
 js.puter.com,CDN
 js.qualified.com,CDN
 js.recurly.com,CDN
+js.rtoaster.jp,CDN
 js.short.io,CDN
 js.smile.io,CDN
 js.stripe.com,CDN
@@ -3223,6 +3231,7 @@ media4.giphy.com,CDN
 medias.meow.social,CDN
 medium-media.vgm.io,CDN
 megapx-assets.dcard.tw,CDN
+melonbooks.akamaized.net,CDN
 meteorclient.com,CDN
 metrics.kapa.ai,CDN
 micro.rubiconproject.com,CDN
@@ -3486,6 +3495,7 @@ reviews-badge.capterra.com,CDN
 rs-cdn.splashtop.com,CDN
 rsi.grafana.com,CDN
 rsms.me,CDN
+rt.rtoaster.jp,CDN
 rtcg-access.bytevcloud.com,CDN
 rts-static-prod.freshworksapi.com,CDN
 rules.ac,CDN
@@ -3592,6 +3602,7 @@ scripts.webeo.com,CDN
 sdata.ndtv.com,CDN
 sdk.customfit.ai,CDN
 sdk.gleap.io,CDN
+sdk.helloextend.com,CDN
 sdk.listenlive.co,CDN
 sdk.loyaltylion.net,CDN
 sdk.privacy-center.org,CDN
@@ -4148,6 +4159,7 @@ ui.contentstack.com,CDN
 ui.powerreviews.com,CDN
 ui.trailhead.com,CDN
 uim.9uu22.com,CDN
+unavatar.io,CDN
 unlimited-cdn.waifu2x.net,CDN
 unsubscribe-imgs.leavemealone.com,CDN
 uos-support-files.svc.ui.com,CDN
