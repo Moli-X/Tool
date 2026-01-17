@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4324
+# 规则统计: 4320
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-01-14T15:33:40.025Z
+# Last Updated: 2026-01-17T10:36:29.428Z
 # License: AGPL 3.0
-# Size: 4227
+# Size: 4223
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -117,6 +117,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .99avcdn.net,CDN
 .99avcdn.org,CDN
 .9cache.com,CDN
+.a.klaviyo.com,CDN
 .a.storyblok.com,CDN
 .a1tb.com,CDN
 .a7s.imgix.com,CDN
@@ -1251,7 +1252,6 @@ a.deviantart.net,CDN
 a.fireside.fm,CDN
 a.gawby.com,CDN
 a.kickstarter.com,CDN
-a.klaviyo.com,CDN
 a.pomf.cat,CDN
 a5.behance.net,CDN
 a57.foxnews.com,CDN
@@ -1643,6 +1643,7 @@ c6.patreon.com,CDN
 c7.patreon.com,CDN
 c8.patreon.com,CDN
 ca.nfs.pub,CDN
+ca1.onlyhentaistuff.com,CDN
 cacerts.digicert.com,CDN
 cacerts.rapidssl.com,CDN
 cache-05.filehippo.net,CDN
@@ -1773,6 +1774,7 @@ cdn.cbd.int,CDN
 cdn.cfr.org,CDN
 cdn.changelog.com,CDN
 cdn.channel.io,CDN
+cdn.chord.co,CDN
 cdn.circle.so,CDN
 cdn.clever-cloud.com,CDN
 cdn.cliqz.com,CDN
@@ -1784,7 +1786,6 @@ cdn.cnn.com,CDN
 cdn.cnx-software.com,CDN
 cdn.codeblackbelt.com,CDN
 cdn.commandbar.com,CDN
-cdn.commento.io,CDN
 cdn.comparitech.com,CDN
 cdn.concert.io,CDN
 cdn.configcat.com,CDN
@@ -1864,9 +1865,6 @@ cdn.gettr.com,CDN
 cdn.ghostery.com,CDN
 cdn.giftcardpro.app,CDN
 cdn.gigya.com,CDN
-cdn.glitch.com,CDN
-cdn.glitch.global,CDN
-cdn.glitch.me,CDN
 cdn.gofundme.com,CDN
 cdn.googlesource.com,CDN
 cdn.graph.office.net,CDN
@@ -1971,7 +1969,6 @@ cdn.one.store,CDN
 cdn.onesignal.com,CDN
 cdn.onetime.dog,CDN
 cdn.onfastspring.com,CDN
-cdn.onlyhentaistuff.com,CDN
 cdn.openai.com,CDN
 cdn.osxdaily.com,CDN
 cdn.paddle.com,CDN
@@ -2290,7 +2287,6 @@ cloudflare.tv,CDN
 cloudfront.barilliance.com,CDN
 cloudfront.codeproject.com,CDN
 cloudinary-res.cloudinary.com,CDN
-cm1.aminoapps.com,CDN
 cmd-cdn.cleanmymac.com,CDN
 cmp-cdn.p.aws.economist.com,CDN
 cms-assets.nodecraft.com,CDN
@@ -2347,7 +2343,6 @@ content.jwplatform.com,CDN
 content.kaspersky-labs.com,CDN
 content.overwolf.com,CDN
 content.powerapps.com,CDN
-content.product.glitch.com,CDN
 content.wepik.com,CDN
 contents-thumbnail2.fc2.com,CDN
 conversiongorilla.com,CDN
@@ -2406,6 +2401,7 @@ design.keyoxide.org,CDN
 design.mayoclinic.org,CDN
 designsystem.brevo.com,CDN
 detectportal.firefox.com,CDN
+devicons.railway.com,CDN
 devnull.perfops.net,CDN
 dh-site.b-cdn.net,CDN
 dims.apnews.com,CDN
@@ -2618,7 +2614,6 @@ gravatar.tapglb.com,CDN
 groundnews.b-cdn.net,CDN
 gstatic.com,CDN
 gstatic.olympics.com,CDN
-gt1.onlyhentaistuff.com,CDN
 gtranslate.io,CDN
 hawk.tomsguide.com,CDN
 hawky.pcgamer.com,CDN
@@ -3699,6 +3694,7 @@ static-2v.gitbook.com,CDN
 static-3.bitchute.com,CDN
 static-4.bitchute.com,CDN
 static-act.imoim.net,CDN
+static-app.klaviyo.com,CDN
 static-assets-1.truthsocial.com,CDN
 static-assets-prod.epicgames.com,CDN
 static-assets-prod.unrealengine.com,CDN
