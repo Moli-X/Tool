@@ -87,9 +87,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-01-17T10:36:29.428Z
+# Last Updated: 2026-01-19T12:19:04.126Z
 # License: AGPL 3.0
-# Size: 4223
+# Size: 4228
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -607,6 +607,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .imostatic.com
 .in.appcenter.ms
 .infura-ipfs.io
+.ingest.atoms.dev
 .ingest.de.sentry.io
 .ingest.sentry.io
 .ingest.us.sentry.io
@@ -1349,6 +1350,7 @@ assets-cdn.porn.com
 assets-cdn.watchdisneyfe.com
 assets-cms.kraken.com
 assets-docs.circleci.com
+assets-docs.dify.ai
 assets-fe.change.org
 assets-growth-common.circleci.com
 assets-next.matters.news
@@ -2141,6 +2143,7 @@ cdn02.jotfor.ms
 cdn03.jotfor.ms
 cdn1.affirm.com
 cdn1.airdroid.com
+cdn1.bambulab.com
 cdn1.bigcommerce.com
 cdn1.dan.com
 cdn1.edgedatg.com
@@ -3226,6 +3229,7 @@ megapx-assets.dcard.tw
 melonbooks.akamaized.net
 meteorclient.com
 metrics.kapa.ai
+mgx-backend-cdn.metadl.com
 micro.rubiconproject.com
 mintlify.b-cdn.net
 mir-s3-cdn-cf.behance.net
@@ -3422,6 +3426,7 @@ public-assets.postmarkapp.com
 public-assets.typeform.com
 public-cdn.bblmw.com
 public-files.gumroad.com
+public-frontend-cos.metadl.com
 public-img.mewe.com
 public-pages.cbinsights.com
 public.flourish.studio

@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4320
+# 规则统计: 4325
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-01-17T10:36:29.428Z
+# Last Updated: 2026-01-19T12:19:04.126Z
 # License: AGPL 3.0
-# Size: 4223
+# Size: 4228
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -610,6 +610,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .imostatic.com,CDN
 .in.appcenter.ms,CDN
 .infura-ipfs.io,CDN
+.ingest.atoms.dev,CDN
 .ingest.de.sentry.io,CDN
 .ingest.sentry.io,CDN
 .ingest.us.sentry.io,CDN
@@ -1352,6 +1353,7 @@ assets-cdn.porn.com,CDN
 assets-cdn.watchdisneyfe.com,CDN
 assets-cms.kraken.com,CDN
 assets-docs.circleci.com,CDN
+assets-docs.dify.ai,CDN
 assets-fe.change.org,CDN
 assets-growth-common.circleci.com,CDN
 assets-next.matters.news,CDN
@@ -2144,6 +2146,7 @@ cdn02.jotfor.ms,CDN
 cdn03.jotfor.ms,CDN
 cdn1.affirm.com,CDN
 cdn1.airdroid.com,CDN
+cdn1.bambulab.com,CDN
 cdn1.bigcommerce.com,CDN
 cdn1.dan.com,CDN
 cdn1.edgedatg.com,CDN
@@ -3229,6 +3232,7 @@ megapx-assets.dcard.tw,CDN
 melonbooks.akamaized.net,CDN
 meteorclient.com,CDN
 metrics.kapa.ai,CDN
+mgx-backend-cdn.metadl.com,CDN
 micro.rubiconproject.com,CDN
 mintlify.b-cdn.net,CDN
 mir-s3-cdn-cf.behance.net,CDN
@@ -3425,6 +3429,7 @@ public-assets.postmarkapp.com,CDN
 public-assets.typeform.com,CDN
 public-cdn.bblmw.com,CDN
 public-files.gumroad.com,CDN
+public-frontend-cos.metadl.com,CDN
 public-img.mewe.com,CDN
 public-pages.cbinsights.com,CDN
 public.flourish.studio,CDN
