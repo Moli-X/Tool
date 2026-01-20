@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4325
+# 规则统计: 4329
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -90,9 +90,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-01-19T12:19:04.126Z
+# Last Updated: 2026-01-20T09:57:26.119Z
 # License: AGPL 3.0
-# Size: 4228
+# Size: 4232
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -550,6 +550,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .hs-scripts.com
 .hs-scripts.net
 .hsappstatic.net
+.hsbrowserreports.com
 .hscollectedforms.net
 .hsstatic.net
 .hsto.org
@@ -3013,6 +3014,7 @@ info.cloudflare.com
 info.knak.com
 instafeed.nfcube.com
 int.mwbbiz.com
+intake-logging.wikimedia.org
 integrations.gitbook.com
 interactive-examples.mdn.mozilla.net
 interactive.guim.co.uk
@@ -3260,6 +3262,7 @@ namedotcom-cdn.name.tools
 nav.yumenosora.co.jp
 navismithapis-cdn.com
 nbcnewsdigital-static.nbcuni.com
+nel.bgptools-agent-cf.com
 nel.heroku.com
 net-fe-static-assets.network-controller.svc.ui.com
 netlify.apollo.io
@@ -4238,6 +4241,7 @@ vz-c0fe498e-5ab.b-cdn.net
 w.chatlio.com
 w.soundcloud.com
 w2.influxdata.com
+w3-reporting.reddit.com
 wa.arounddeal.com
 wa1.aninoapps.com
 wac-cdn.atlassian.com
