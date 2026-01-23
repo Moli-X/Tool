@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4329
+# 规则统计: 4337
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-01-20T09:57:26.119Z
+# Last Updated: 2026-01-22T16:03:26.029Z
 # License: AGPL 3.0
-# Size: 4232
+# Size: 4240
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1376,6 +1376,7 @@ assets.auth.magic.link,CDN
 assets.awwwards.com,CDN
 assets.basehub.com,CDN
 assets.bbhub.io,CDN
+assets.bbystatic.com,CDN
 assets.bitstamp.net,CDN
 assets.bitwarden.com,CDN
 assets.bnidx.com,CDN
@@ -1687,6 +1688,8 @@ cdn-fck.tnaflix.com,CDN
 cdn-forum.networklessons.com,CDN
 cdn-front.freepik.com,CDN
 cdn-icons-png.flaticon.com,CDN
+cdn-image01.casetify.com,CDN
+cdn-image02.casetify.com,CDN
 cdn-images-1.medium.com,CDN
 cdn-images.mailchimp.com,CDN
 cdn-img2.iporntv.net,CDN
@@ -1707,6 +1710,7 @@ cdn-rdstaticassets.readdle.com,CDN
 cdn-seo.airdroid.com,CDN
 cdn-service.jp.sumologic.com,CDN
 cdn-share-sprites.flaticon.com,CDN
+cdn-stamplib.casetify.com,CDN
 cdn-static-1.medium.com,CDN
 cdn-static-push.porndig.com,CDN
 cdn-static.paw.cloud,CDN
@@ -1773,6 +1777,7 @@ cdn.calibermind.com,CDN
 cdn.cameo.com,CDN
 cdn.camweara.com,CDN
 cdn.candy.ai,CDN
+cdn.casetify.com,CDN
 cdn.cbd.int,CDN
 cdn.cfr.org,CDN
 cdn.changelog.com,CDN
@@ -4044,6 +4049,7 @@ steamusercontent-a.akamaihd.net,CDN
 steamuserimages-a.akamaihd.net,CDN
 steamvideo-a.akamaihd.net,CDN
 storage-b.picacomic.com,CDN
+storage.courtlistener.com,CDN
 storage.crisp.chat,CDN
 storage.deepin.org,CDN
 storage.gra.cloud.ovh.net,CDN
@@ -4059,6 +4065,7 @@ storageapi2.fleek.co,CDN
 store-images.microsoft.com,CDN
 store-images.s-microsoft.com,CDN
 stories.freepiklabs.com,CDN
+storybooks.fluentui.dev,CDN
 stream.mux.com,CDN
 streaming.split.io,CDN
 sts.online.visualstudio.com,CDN
@@ -4192,6 +4199,7 @@ us3.hamreus.com,CDN
 use.fortawesome.com,CDN
 use.typekit.com,CDN
 use.typekit.net,CDN
+usehooks-ts.com,CDN
 user-images.trustpilot.com,CDN
 user-uploads.perchance.org,CDN
 usercontent.flodesk.com,CDN
