@@ -87,9 +87,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-01-22T16:03:26.029Z
+# Last Updated: 2026-01-23T16:44:58.181Z
 # License: AGPL 3.0
-# Size: 4240
+# Size: 4243
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -188,6 +188,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .badoocdn.com
 .balley.top
 .bblcdn.com
+.bbystatic.com
 .bdzybf7.com
 .bestfreecdn.com
 .bestjavcdn.com
@@ -1113,6 +1114,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .tmsimg.com
 .tnastatic.com
 .tnmr.org
+.toiimg.com
 .tokyvideo.com
 .torproject.org
 .tpdfiles.com
@@ -1373,7 +1375,6 @@ assets.auth.magic.link
 assets.awwwards.com
 assets.basehub.com
 assets.bbhub.io
-assets.bbystatic.com
 assets.bitstamp.net
 assets.bitwarden.com
 assets.bnidx.com
@@ -1511,7 +1512,6 @@ assets.swoogo.com
 assets.tatlerasia.com
 assets.the-independent.com
 assets.time.com
-assets.toiimg.com
 assets.tokopedia.net
 assets.toot.cafe
 assets.tvtropes.org
@@ -2340,6 +2340,7 @@ content-a.strava.com
 content-cdn.svc.ui.com
 content-management-files.canva.com
 content-prod-live.cert.starbucks.com
+content.9gtb.com
 content.any.run
 content.api.news
 content.arduino.cc
@@ -3606,6 +3607,7 @@ scripts.dailymail.co.uk
 scripts.scriptwrapper.com
 scripts.webeo.com
 sdata.ndtv.com
+sdk-static.loyaltylion.net
 sdk.customfit.ai
 sdk.gleap.io
 sdk.helloextend.com
@@ -3853,6 +3855,7 @@ static.gl-inet.com
 static.global.visioncritical.com
 static.gmgard.com
 static.gnome.org
+static.goaffpro.com
 static.gopro.com
 static.grammarly.com
 static.guim.co.uk
@@ -3972,7 +3975,6 @@ static.test-beta.com
 static.theguardian.com
 static.themebuilder.aws.arc.pub
 static.threatlocker.com
-static.toiimg.com
 static.tokenview.io
 static.toss.im
 static.touhoudb.com
@@ -4053,6 +4055,7 @@ storage.gra.cloud.ovh.net
 storage.ko-fi.com
 storage.moegirl.tw
 storage.sciencecast.org
+storage.synctrack.io
 storage.tally.so
 storage.windiscover.com
 storage.withfabric.xyz

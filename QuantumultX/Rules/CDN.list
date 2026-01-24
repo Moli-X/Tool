@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4337
+# 规则统计: 4340
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-01-22T16:03:26.029Z
+# Last Updated: 2026-01-23T16:44:58.181Z
 # License: AGPL 3.0
-# Size: 4240
+# Size: 4243
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -191,6 +191,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .badoocdn.com,CDN
 .balley.top,CDN
 .bblcdn.com,CDN
+.bbystatic.com,CDN
 .bdzybf7.com,CDN
 .bestfreecdn.com,CDN
 .bestjavcdn.com,CDN
@@ -1116,6 +1117,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .tmsimg.com,CDN
 .tnastatic.com,CDN
 .tnmr.org,CDN
+.toiimg.com,CDN
 .tokyvideo.com,CDN
 .torproject.org,CDN
 .tpdfiles.com,CDN
@@ -1376,7 +1378,6 @@ assets.auth.magic.link,CDN
 assets.awwwards.com,CDN
 assets.basehub.com,CDN
 assets.bbhub.io,CDN
-assets.bbystatic.com,CDN
 assets.bitstamp.net,CDN
 assets.bitwarden.com,CDN
 assets.bnidx.com,CDN
@@ -1514,7 +1515,6 @@ assets.swoogo.com,CDN
 assets.tatlerasia.com,CDN
 assets.the-independent.com,CDN
 assets.time.com,CDN
-assets.toiimg.com,CDN
 assets.tokopedia.net,CDN
 assets.toot.cafe,CDN
 assets.tvtropes.org,CDN
@@ -2343,6 +2343,7 @@ content-a.strava.com,CDN
 content-cdn.svc.ui.com,CDN
 content-management-files.canva.com,CDN
 content-prod-live.cert.starbucks.com,CDN
+content.9gtb.com,CDN
 content.any.run,CDN
 content.api.news,CDN
 content.arduino.cc,CDN
@@ -3609,6 +3610,7 @@ scripts.dailymail.co.uk,CDN
 scripts.scriptwrapper.com,CDN
 scripts.webeo.com,CDN
 sdata.ndtv.com,CDN
+sdk-static.loyaltylion.net,CDN
 sdk.customfit.ai,CDN
 sdk.gleap.io,CDN
 sdk.helloextend.com,CDN
@@ -3856,6 +3858,7 @@ static.gl-inet.com,CDN
 static.global.visioncritical.com,CDN
 static.gmgard.com,CDN
 static.gnome.org,CDN
+static.goaffpro.com,CDN
 static.gopro.com,CDN
 static.grammarly.com,CDN
 static.guim.co.uk,CDN
@@ -3975,7 +3978,6 @@ static.test-beta.com,CDN
 static.theguardian.com,CDN
 static.themebuilder.aws.arc.pub,CDN
 static.threatlocker.com,CDN
-static.toiimg.com,CDN
 static.tokenview.io,CDN
 static.toss.im,CDN
 static.touhoudb.com,CDN
@@ -4056,6 +4058,7 @@ storage.gra.cloud.ovh.net,CDN
 storage.ko-fi.com,CDN
 storage.moegirl.tw,CDN
 storage.sciencecast.org,CDN
+storage.synctrack.io,CDN
 storage.tally.so,CDN
 storage.windiscover.com,CDN
 storage.withfabric.xyz,CDN
