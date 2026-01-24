@@ -1,5 +1,5 @@
 # 规则名称: YouTube
-# 规则统计: 19
+# 规则统计: 16
 
 DOMAIN,youtubei.googleapis.com
 DOMAIN,yt3.ggpht.com
@@ -15,8 +15,5 @@ DOMAIN-SUFFIX,youtubekids.com
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-KEYWORD,youtube
-USER-AGENT,*youtube*
-USER-AGENT,YouTube*
-USER-AGENT,com.google.ios.youtube*
 # 内容：YouTube
 # 数量：17条
