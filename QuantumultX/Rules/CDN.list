@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4353
+# 规则统计: 4359
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-01-26T17:01:40.038Z
+# Last Updated: 2026-01-27T16:09:02.012Z
 # License: AGPL 3.0
-# Size: 4256
+# Size: 4262
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1394,6 +1394,7 @@ assets.calendly.com,CDN
 assets.canny.io,CDN
 assets.capterra.com,CDN
 assets.cello.so,CDN
+assets.cgtrader.com,CDN
 assets.change.org,CDN
 assets.chaos.social,CDN
 assets.clever-cloud.com,CDN
@@ -1688,6 +1689,7 @@ cdn-client.medium.com,CDN
 cdn-cms.tunein.com,CDN
 cdn-dynmedia-1.microsoft.com,CDN
 cdn-edge.karte.io,CDN
+cdn-en.aptoide.com,CDN
 cdn-eu.dynamicyield.com,CDN
 cdn-eu.readspeaker.com,CDN
 cdn-fck.tnaflix.com,CDN
@@ -1753,6 +1755,7 @@ cdn.answeroverflow.com,CDN
 cdn.app.fossa.com,CDN
 cdn.app.neononepay.com,CDN
 cdn.apponic.com,CDN
+cdn.aptoide.com,CDN
 cdn.arcade.software,CDN
 cdn.arduino.cc,CDN
 cdn.arstechnica.net,CDN
@@ -2880,6 +2883,7 @@ img-api.mac4ever.com,CDN
 img-cos.mandaoo.com,CDN
 img-en.fs.com,CDN
 img-fnc.ebc.net.tw,CDN
+img-new.cgtrader.com,CDN
 img-prod-cms-rt-microsoft-com.akamaized.net,CDN
 img-s-msn-com.akamaized.net,CDN
 img.177pica.com,CDN
@@ -3162,6 +3166,7 @@ media.beehiiv.com,CDN
 media.breitbart.com,CDN
 media.bundlehunt.com,CDN
 media.canva.com,CDN
+media.cgtrader.com,CDN
 media.cleanshot.cloud,CDN
 media.cmx.edu.kg,CDN
 media.cnn.com,CDN
@@ -3755,6 +3760,7 @@ static-forms.klaviyo.com,CDN
 static-gcp.freepikcompany.com,CDN
 static-homepage-en.pluto.tv,CDN
 static-id.fc2.com,CDN
+static-images.aptoide.com,CDN
 static-images.remax.com,CDN
 static-landing.probiplacehold.cot.com,CDN
 static-lccn.leetcode.com,CDN
