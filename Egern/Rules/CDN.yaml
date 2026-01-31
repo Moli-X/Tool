@@ -87,9 +87,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-01-29T13:28:36.778Z
+# Last Updated: 2026-01-30T20:44:46.186Z
 # License: AGPL 3.0
-# Size: 4268
+# Size: 4281
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -682,7 +682,6 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .jdbstatic.com
 .jinyingimage.com
 .jisuimage.com
-.jotai.org
 .jpg5.su
 .jpgjingpinx.com
 .js-eu1.hubspot.com
@@ -940,6 +939,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .reactjs.org
 .readthedocs.io
 .reasoningtheory.net
+.rechargecdn.com
 .recharts.org
 .redcdn.net
 .redd.it
@@ -1747,6 +1747,8 @@ cdn.adsninja.ca
 cdn.affine.pro
 cdn.aimerce.ai
 cdn.amcharts.com
+cdn.amgreatness.com
+cdn.animenewsnetwork.com
 cdn.announcekit.app
 cdn.answeroverflow.com
 cdn.app.fossa.com
@@ -1768,6 +1770,7 @@ cdn.bfldr.com
 cdn.bigcloud.click
 cdn.birdie.so
 cdn.blogarama.com
+cdn.bogos.io
 cdn.boldmethod.com
 cdn.botframework.com
 cdn.branch.io
@@ -2037,6 +2040,7 @@ cdn.road.cc
 cdn.robinpro.gallery
 cdn.roboflow.com
 cdn.roof.ai
+cdn.roseperl.com
 cdn.royaleapi.com
 cdn.safecharge.com
 cdn.sanity.io
@@ -2117,6 +2121,7 @@ cdn.uptimia.com
 cdn.us-east-1.prod.moon.dubai.aws.dev
 cdn.usd.fan
 cdn.userreport.com
+cdn.userway.org
 cdn.v2ex.com
 cdn.vector.co
 cdn.verifypass.com
@@ -2334,6 +2339,7 @@ components.cyclingfactory.be
 components.justanswer.com
 components.trynow.net
 components.unrealengine.com
+conf.config-security.com
 config.extension.grammarly.com
 connect-js.stripe.com
 connect.facebook.net
@@ -3046,6 +3052,7 @@ jaws.pbs.org
 jetpack.wordpress.com
 jfe-cdn.qualtrics.com
 jnmedia.ero-video.net
+jotai.org
 js-1-cdn.airdroid.com
 js-cdn.blockchair.io
 js-eu1.hsforms.net
@@ -3055,6 +3062,7 @@ js.braintreegateway.com
 js.chargebee.com
 js.chargify.com
 js.chilipiper.com
+js.convertflow.co
 js.createsend1.com
 js.hsforms.net
 js.jotform.com
@@ -3086,6 +3094,7 @@ jslibs.blackmagicdesign.com
 jsmodule.svc.litv.tv
 jsonplaceholder.typicode.com
 jssdk.opin.media
+jssdkcdns.mparticle.com
 jssocdn.indiatimes.com
 kdata1.com
 keyframe-cdn.abcnews.com
@@ -3125,6 +3134,7 @@ log-collector.17app.co
 logos.composio.dev
 logos.kiwibrowser.com
 logos.speedtestcustom.com
+logs.blip.net
 loutre.blockchair.io
 lucide.dev
 lumiere-a.akamaihd.net
@@ -3811,6 +3821,7 @@ static.beebom.com
 static.bit.cloud
 static.bit.dev
 static.bitfinex.com
+static.blip.net
 static.bodor.com
 static.bravoporn.com
 static.buffer.com
@@ -3936,6 +3947,7 @@ static.narrativ.com
 static.netify.ai
 static.newmobilelife.com
 static.news.bitcoin.com
+static.newsbreak.com
 static.nhentai.net
 static.nicehash.com
 static.npmjs.com
@@ -3973,6 +3985,7 @@ static.reo.dev
 static.replay.io
 static.returngo.ai
 static.roboflow.com
+static.rumble.com
 static.salidzini.lv
 static.scarf.sh
 static.sdkassets.chime.aws

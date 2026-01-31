@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4365
+# 规则统计: 4378
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-01-29T13:28:36.778Z
+# Last Updated: 2026-01-30T20:44:46.186Z
 # License: AGPL 3.0
-# Size: 4268
+# Size: 4281
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -685,7 +685,6 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .jdbstatic.com,CDN
 .jinyingimage.com,CDN
 .jisuimage.com,CDN
-.jotai.org,CDN
 .jpg5.su,CDN
 .jpgjingpinx.com,CDN
 .js-eu1.hubspot.com,CDN
@@ -943,6 +942,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .reactjs.org,CDN
 .readthedocs.io,CDN
 .reasoningtheory.net,CDN
+.rechargecdn.com,CDN
 .recharts.org,CDN
 .redcdn.net,CDN
 .redd.it,CDN
@@ -1750,6 +1750,8 @@ cdn.adsninja.ca,CDN
 cdn.affine.pro,CDN
 cdn.aimerce.ai,CDN
 cdn.amcharts.com,CDN
+cdn.amgreatness.com,CDN
+cdn.animenewsnetwork.com,CDN
 cdn.announcekit.app,CDN
 cdn.answeroverflow.com,CDN
 cdn.app.fossa.com,CDN
@@ -1771,6 +1773,7 @@ cdn.bfldr.com,CDN
 cdn.bigcloud.click,CDN
 cdn.birdie.so,CDN
 cdn.blogarama.com,CDN
+cdn.bogos.io,CDN
 cdn.boldmethod.com,CDN
 cdn.botframework.com,CDN
 cdn.branch.io,CDN
@@ -2040,6 +2043,7 @@ cdn.road.cc,CDN
 cdn.robinpro.gallery,CDN
 cdn.roboflow.com,CDN
 cdn.roof.ai,CDN
+cdn.roseperl.com,CDN
 cdn.royaleapi.com,CDN
 cdn.safecharge.com,CDN
 cdn.sanity.io,CDN
@@ -2120,6 +2124,7 @@ cdn.uptimia.com,CDN
 cdn.us-east-1.prod.moon.dubai.aws.dev,CDN
 cdn.usd.fan,CDN
 cdn.userreport.com,CDN
+cdn.userway.org,CDN
 cdn.v2ex.com,CDN
 cdn.vector.co,CDN
 cdn.verifypass.com,CDN
@@ -2337,6 +2342,7 @@ components.cyclingfactory.be,CDN
 components.justanswer.com,CDN
 components.trynow.net,CDN
 components.unrealengine.com,CDN
+conf.config-security.com,CDN
 config.extension.grammarly.com,CDN
 connect-js.stripe.com,CDN
 connect.facebook.net,CDN
@@ -3049,6 +3055,7 @@ jaws.pbs.org,CDN
 jetpack.wordpress.com,CDN
 jfe-cdn.qualtrics.com,CDN
 jnmedia.ero-video.net,CDN
+jotai.org,CDN
 js-1-cdn.airdroid.com,CDN
 js-cdn.blockchair.io,CDN
 js-eu1.hsforms.net,CDN
@@ -3058,6 +3065,7 @@ js.braintreegateway.com,CDN
 js.chargebee.com,CDN
 js.chargify.com,CDN
 js.chilipiper.com,CDN
+js.convertflow.co,CDN
 js.createsend1.com,CDN
 js.hsforms.net,CDN
 js.jotform.com,CDN
@@ -3089,6 +3097,7 @@ jslibs.blackmagicdesign.com,CDN
 jsmodule.svc.litv.tv,CDN
 jsonplaceholder.typicode.com,CDN
 jssdk.opin.media,CDN
+jssdkcdns.mparticle.com,CDN
 jssocdn.indiatimes.com,CDN
 kdata1.com,CDN
 keyframe-cdn.abcnews.com,CDN
@@ -3128,6 +3137,7 @@ log-collector.17app.co,CDN
 logos.composio.dev,CDN
 logos.kiwibrowser.com,CDN
 logos.speedtestcustom.com,CDN
+logs.blip.net,CDN
 loutre.blockchair.io,CDN
 lucide.dev,CDN
 lumiere-a.akamaihd.net,CDN
@@ -3814,6 +3824,7 @@ static.beebom.com,CDN
 static.bit.cloud,CDN
 static.bit.dev,CDN
 static.bitfinex.com,CDN
+static.blip.net,CDN
 static.bodor.com,CDN
 static.bravoporn.com,CDN
 static.buffer.com,CDN
@@ -3939,6 +3950,7 @@ static.narrativ.com,CDN
 static.netify.ai,CDN
 static.newmobilelife.com,CDN
 static.news.bitcoin.com,CDN
+static.newsbreak.com,CDN
 static.nhentai.net,CDN
 static.nicehash.com,CDN
 static.npmjs.com,CDN
@@ -3976,6 +3988,7 @@ static.reo.dev,CDN
 static.replay.io,CDN
 static.returngo.ai,CDN
 static.roboflow.com,CDN
+static.rumble.com,CDN
 static.salidzini.lv,CDN
 static.scarf.sh,CDN
 static.sdkassets.chime.aws,CDN
