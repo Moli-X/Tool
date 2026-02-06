@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4384
+# 规则统计: 4438
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-02-04T09:55:53.789Z
+# Last Updated: 2026-02-06T07:55:48.121Z
 # License: AGPL 3.0
-# Size: 4287
+# Size: 4341
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -841,6 +841,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .onekey-asset.com,CDN
 .onelink-edge.com,CDN
 .onrender.com,CDN
+.openinframap.org,CDN
 .opentelemetry.io,CDN
 .operacdn.com,CDN
 .oreillystatic.com,CDN
@@ -1107,9 +1108,15 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .tiktokcdn.com,CDN
 .tildacdn.com,CDN
 .tildacdn.net,CDN
+.tile-cyclosm.openstreetmap.fr,CDN
+.tile.openstreetmap.bzh,CDN
 .tile.openstreetmap.de,CDN
+.tile.openstreetmap.fr,CDN
 .tile.openstreetmap.org,CDN
+.tile.osm.ch,CDN
 .tile.osm.org,CDN
+.tile.osmz.ru,CDN
+.tile.stamen.com,CDN
 .tiles-api.maps.komoot.net,CDN
 .tiles.mapbox.com,CDN
 .tiles.virtualearth.net,CDN
@@ -1666,6 +1673,7 @@ cache.omnicalculator.com,CDN
 cached.rebuyengine.com,CDN
 canny-assets.io,CDN
 canvas-lb.tubitv.com,CDN
+cartodb-basemaps-a.global.ssl.fastly.net,CDN
 cassette.sphdigital.com.sg,CDN
 categoriespages-cdn.trustpilot.net,CDN
 cc-embed.adobe.com,CDN
@@ -1903,6 +1911,7 @@ cdn.hiive.space,CDN
 cdn.hinative.com,CDN
 cdn.hk01.com,CDN
 cdn.hongkongcard.com,CDN
+cdn.hubble.team,CDN
 cdn.hypershort.com,CDN
 cdn.i-scmp.com,CDN
 cdn.icomoon.io,CDN
@@ -2013,6 +2022,7 @@ cdn.pixabay.com,CDN
 cdn.pkg.svc.ui.com,CDN
 cdn.plaid.com,CDN
 cdn.player.fm,CDN
+cdn.playersupport.riotgames.com,CDN
 cdn.playwire.com,CDN
 cdn.plot.ly,CDN
 cdn.plu.mx,CDN
@@ -2040,6 +2050,7 @@ cdn.redwap.xyz,CDN
 cdn.registerdisney.go.com,CDN
 cdn.reimu.net,CDN
 cdn.rex.contents.rakuten.co.jp,CDN
+cdn.rgpub.io,CDN
 cdn.rive.app,CDN
 cdn.road.cc,CDN
 cdn.robinpro.gallery,CDN
@@ -2627,6 +2638,7 @@ gearbox.imgix.com,CDN
 genesis-cdn.ff.com,CDN
 geoip-js.com,CDN
 geojson.io,CDN
+geoserveis.icgc.cat,CDN
 gfx-data.news-engineering.aws.wapo.pub,CDN
 gitpkg-fork.vercel.sh,CDN
 global-assets.fitch.group,CDN
@@ -3140,6 +3152,7 @@ logos.composio.dev,CDN
 logos.kiwibrowser.com,CDN
 logos.speedtestcustom.com,CDN
 logs.blip.net,CDN
+lolstatic-a.akamaihd.net,CDN
 loutre.blockchair.io,CDN
 lucide.dev,CDN
 lumiere-a.akamaihd.net,CDN
@@ -3649,6 +3662,7 @@ sdk-static.loyaltylion.net,CDN
 sdk.customfit.ai,CDN
 sdk.gleap.io,CDN
 sdk.helloextend.com,CDN
+sdk.hubble.team,CDN
 sdk.listenlive.co,CDN
 sdk.loyaltylion.net,CDN
 sdk.privacy-center.org,CDN
@@ -4165,12 +4179,52 @@ thumbor.forbes.com,CDN
 thumbs.onlyfans.com,CDN
 thumbs2.sendvid.com,CDN
 thumbsnap.com,CDN
+tile.loc.gov,CDN
+tile.mapzen.com,CDN
+tile.mtbmap.cz,CDN
+tile.nextzen.org,CDN
+tile.opentopomap.org,CDN
+tile.openweathermap.org,CDN
+tile.osm.be,CDN
+tile.osmand.net,CDN
+tile.ourmap.us,CDN
+tile.poloha.net,CDN
+tile.skybrush.io,CDN
+tile.thunderforest.com,CDN
+tile.waymarkedtrails.org,CDN
 tile2.intervals.icu,CDN
+tile2.opencyclemap.org,CDN
+tilecache.rainviewer.com,CDN
+tiledbasemaps.arcgis.com,CDN
+tilemaps.icgc.cat,CDN
+tiles-a.koordinates.com,CDN
+tiles.arcgis.com,CDN
+tiles.arcticconnect.ca,CDN
+tiles.gsj.jp,CDN
+tiles.immich.cloud,CDN
+tiles.mapilion.com,CDN
+tiles.mapillary.com,CDN
+tiles.maps.eox.at,CDN
+tiles.maps.opensearch.org,CDN
+tiles.mapterhorn.com,CDN
 tiles.meteoguard.dtn.com,CDN
 tiles.openfreemap.org,CDN
+tiles.openrailwaymap.org,CDN
+tiles.openseamap.org,CDN
+tiles.openskimap.org,CDN
+tiles.planet.com,CDN
 tiles.stadiamaps.com,CDN
+tiles.terria.io,CDN
 tiles.versatiles.org,CDN
 tiles.windy.com,CDN
+tiles.wmflabs.org,CDN
+tiles0.planet.com,CDN
+tiles1.planet.com,CDN
+tiles2.mapiful.com,CDN
+tiles2.planet.com,CDN
+tiles3.planet.com,CDN
+tileserver.gnome.org,CDN
+tileserver.memomaps.de,CDN
 time-a.nist.gov,CDN
 time.akamai.com,CDN
 time.apple.com,CDN
