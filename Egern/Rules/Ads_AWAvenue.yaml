@@ -3,9 +3,9 @@
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 905
-#Update content: 将"隐私"和"不受欢迎"域名拆分为独立文件(仅调整脚本逻辑未改动规则内容)
-#Update time: 2026-02-06 19:13:38 UTC+8
+#Total lines: 904
+#Update content: remove “m1.ad.10010.com”
+#Update time: 2026-02-10 15:15:29 UTC+8
 #Version: 1.6.9-release
 .1500020991.vodplayer.wxamedia.com
 .1500022744.vodplayer.wxamedia.com
@@ -531,7 +531,6 @@
 .m.ad.zhangyue.com
 .m.atm.youku.com
 .m.shenshiads.com
-.m1.ad.10010.com
 .mapi.m.jd.com
 .masdkv6.3g.qq.com
 .mazu.m.qq.com
