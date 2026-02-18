@@ -8,7 +8,7 @@
 #!loon_version=3.2.1(749)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Sub-Store.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Sub-Store.png
-#!date=2026-02-12 21:17:09
+#!date=2026-02-18 13:39:04
 
 [Rule]
 DOMAIN, sub-store.vercel.app, PROXY
@@ -20,6 +20,8 @@ cron=input, "55 23 * * *", tag=定时参数, desc=这里需要输入符合CRON�
 http-request ^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))) script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js, requires-body=true, timeout=120, tag=Sub-Store Core
 
 http-request ^https?:\/\/sub\.store script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js, requires-body=true, timeout=120, tag=Sub-Store Simple
+
+cron {cron} script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js, timeout=120, tag=Sub-Store Sync
 
 [MitM]
 hostname=sub.store

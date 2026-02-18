@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/AppleWeatherEnhancer.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AppleWeather.png
-#!date=2025-09-11 15:47:00
+#!date=2026-02-18 13:51:48
 
 [Argument]
 DataSets=input, "airQuality,currentWeather,forecastDaily,forecastHourly,forecastNextHour,locationInfo,news,historicalComparisons,weatherAlerts,weatherChanges", tag=数据集, desc=选中的数据集会被包含在请求中。
@@ -33,14 +33,11 @@ DOMAIN-SUFFIX, tthr.apple.com, REJECT-DROP
 AND, ((OR, ((IP-CIDR, 17.0.0.0/8, no-resolve), (IP-CIDR6, 2620:149::/32, no-resolve))), (PROTOCOL, QUIC)), REJECT
 
 [Script]
-http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v1\/availability\/ script-path=https://github.com/NSRingo/WeatherKit/releases/download/v2.0.6/response.bundle.js, requires-body=true, tag=Availability响应处理, argument=[{DataSets},{Weather.Provider},{NextHour.Provider},{AQI.Provider},{AQI.ReplaceProviders},{AQI.ComparisonProvider},{AQI.Local.ReplaceScales},{AQI.Local.Scale},{AQI.Local.ConvertUnits},{API.ColorfulClouds.Token},{API.QWeather.Host},{API.QWeather.Token},{API.WAQI.Token},{LogLevel}]
+http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v1\/availability\/ requires-body=1, script-path=https://github.com/NSRingo/WeatherKit/releases/download/v3.0.0/response.bundle.js, tag=🌤 WeatherKit.api.v1.availability.response, argument=[{Weather.Replace},{Weather.Provider},{NextHour.Fill},{NextHour.Provider},{AirQuality.Current.Fill},{AirQuality.Current.Pollutants.Provider},{AirQuality.Current.Index.Replace},{AirQuality.Current.Index.Provider},{AirQuality.Current.Index.ForceCNPrimaryPollutants},{AirQuality.Comparison.Fill},{AirQuality.Comparison.Yesterday.PollutantsProvider},{AirQuality.Comparison.Yesterday.IndexProvider},{AirQuality.Calculate.Algorithm},{AirQuality.Calculate.AllowOverRange},{API.ColorfulClouds.Token},{API.QWeather.Host},{API.QWeather.Token},{API.WAQI.Token},{LogLevel}]
 
-http-request ^https?:\/\/weatherkit\.apple\.com\/api\/v2\/weather\/ script-path=https://github.com/NSRingo/WeatherKit/releases/download/v2.0.6/request.bundle.js, tag=Weather请求处理, argument=[{DataSets},{Weather.Provider},{NextHour.Provider},{AQI.Provider},{AQI.ReplaceProviders},{AQI.ComparisonProvider},{AQI.Local.ReplaceScales},{AQI.Local.Scale},{AQI.Local.ConvertUnits},{API.ColorfulClouds.Token},{API.QWeather.Host},{API.QWeather.Token},{API.WAQI.Token},{LogLevel}]
+http-request ^https?:\/\/weatherkit\.apple\.com\/api\/v2\/weather\/ script-path=https://github.com/NSRingo/WeatherKit/releases/download/v3.0.0/request.bundle.js, tag=🌤 WeatherKit.api.v1.weather.request, argument=[{Weather.Replace},{Weather.Provider},{NextHour.Fill},{NextHour.Provider},{AirQuality.Current.Fill},{AirQuality.Current.Pollutants.Provider},{AirQuality.Current.Index.Replace},{AirQuality.Current.Index.Provider},{AirQuality.Current.Index.ForceCNPrimaryPollutants},{AirQuality.Comparison.Fill},{AirQuality.Comparison.Yesterday.PollutantsProvider},{AirQuality.Comparison.Yesterday.IndexProvider},{AirQuality.Calculate.Algorithm},{AirQuality.Calculate.AllowOverRange},{API.ColorfulClouds.Token},{API.QWeather.Host},{API.QWeather.Token},{API.WAQI.Token},{LogLevel}]
 
-http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v2\/weather\/ script-path=https://github.com/NSRingo/WeatherKit/releases/download/v2.0.6/response.bundle.js, requires-body=true, binary-body-mode=true, tag=Weather响应处理, argument=[{DataSets},{Weather.Provider},{NextHour.Provider},{AQI.Provider},{AQI.ReplaceProviders},{AQI.ComparisonProvider},{AQI.Local.ReplaceScales},{AQI.Local.Scale},{AQI.Local.ConvertUnits},{API.ColorfulClouds.Token},{API.QWeather.Host},{API.QWeather.Token},{API.WAQI.Token},{LogLevel}]
+http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v2\/weather\/ requires-body=1, binary-body-mode=1, script-path=https://github.com/NSRingo/WeatherKit/releases/download/v3.0.0/response.bundle.js, tag=🌤 WeatherKit.api.v2.weather.response, argument=[{Weather.Replace},{Weather.Provider},{NextHour.Fill},{NextHour.Provider},{AirQuality.Current.Fill},{AirQuality.Current.Pollutants.Provider},{AirQuality.Current.Index.Replace},{AirQuality.Current.Index.Provider},{AirQuality.Current.Index.ForceCNPrimaryPollutants},{AirQuality.Comparison.Fill},{AirQuality.Comparison.Yesterday.PollutantsProvider},{AirQuality.Comparison.Yesterday.IndexProvider},{AirQuality.Calculate.Algorithm},{AirQuality.Calculate.AllowOverRange},{API.ColorfulClouds.Token},{API.QWeather.Host},{API.QWeather.Token},{API.WAQI.Token},{LogLevel}]
 
 [MitM]
 hostname=weatherkit.apple.com
-
-17.0.0.0/8
-2620:149::/32
