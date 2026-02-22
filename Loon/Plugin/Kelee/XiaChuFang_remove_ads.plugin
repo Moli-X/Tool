@@ -1,5 +1,5 @@
 #!name=下厨房去广告
-#!desc=移除开屏广告、信息流推广、各类横幅推广，精简首页标签。
+#!desc=移除开屏广告、页面推广及横幅，精简首页标签。
 #App链接=https://apps.apple.com/app/id460979760
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
@@ -8,18 +8,21 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/XiaChuFang_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/XiaChuFang.png
-#!date=2025-05-13 15:17:08
+#!date=2026-02-22 04:07:10
 
 [Rewrite]
 ^https:\/\/api\.xiachufang\.com\/v2\/ad\/ reject-dict
 
 ^https:\/\/api\.xiachufang\.com\/v2\/homepage\/paged_waterfall_recommendations\.json$ response-body-json-jq 'del(.multiplex_cells[] | select(.recommendation_cell.impression_sensor_events[]?.properties.target_type? == "ad"))'
 
-^https:\/\/api\.xiachufang\.com\/v2\/config\/get\.json$ response-body-json-jq 'del(.content.tab_name[] | select(. == "减脂" or . == "商店" or . == "分类"))'
+^https:\/\/api\.xiachufang\.com\/v2\/config\/get\.json$ response-body-json-del content.recipe_ad content.splash_ad_req_time content.splash_sdk_ad_req_time content.splash_ad_lifecycle_interval content.waterfall_ad_feedback content.homepage_waterfall_test_ad_pos content.ad_app_look_around content.ad_sdk_text_removal_keywords
+
 
 ^https:\/\/api\.xiachufang\.com\/v2\/account\/feeds_v7\.json reject-dict
 
 ^https:\/\/api\.xiachufang\.com\/v2\/homepage1810\/init_page\.json reject-dict
+
+^https:\/\/api\.xiachufang\.com\/v2\/homepage\/ranking_list\/paged_homepage_ranking_list_section_v2\.json$ response-body-json-jq '.cells |= map(del(.side_slip_activity_cell, .dish_square_cell))'
 
 ^https:\/\/api\.xiachufang\.com\/v2\/mark_mission\/get_sticker_info\.json reject-dict
 

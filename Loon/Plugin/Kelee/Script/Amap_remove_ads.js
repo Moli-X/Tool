@@ -584,7 +584,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
       let list = obj.data.modules.list_data.data;
       if (list?.content?.length > 0) {
         // brandAdCard广告卡片 toplist_al人气榜单 高德指南
-        list.content = list.content.filter((i) => !["brandAdCard", "toplist_al"]?.includes(i?.item_type));
+        list.content = list.content.filter((i) => !["brandAdCard", "toplist_al"].includes(i?.item_type));
       }
     }
   }
@@ -594,9 +594,9 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     if (obj?.tip_list?.length > 0) {
       for (let item of obj.tip_list) {
         if (
-          ["12"]?.includes(item?.tip?.datatype_spec) ||
-          ["ad", "poi_ad", "toplist"]?.includes(item?.tip?.result_type) ||
-          ["ad", "exct_query_sug_merge_theme", "query_sug_merge_theme", "sp"]?.includes(item?.tip?.task_tag)
+          ["12"].includes(item?.tip?.datatype_spec) ||
+          ["ad", "poi_ad", "toplist"].includes(item?.tip?.result_type) ||
+          ["ad", "exct_query_sug_merge_theme", "query_sug_merge_theme", "sp"].includes(item?.tip?.task_tag)
         ) {
           continue;
         } else {
@@ -612,9 +612,9 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
         let newTips = [];
         if (item?.tip_list?.length > 0) {
           for (let ii of item.tip_list) {
-            if (["12"]?.includes(ii?.tip?.datatype_spec)) {
+            if (["12"].includes(ii?.tip?.datatype_spec)) {
               continue;
-            } else if (["ad", "poi_ad"]?.includes(ii?.tip?.result_type)) {
+            } else if (["ad", "poi_ad"].includes(ii?.tip?.result_type)) {
               continue;
             } else {
               newTips.push(ii);
