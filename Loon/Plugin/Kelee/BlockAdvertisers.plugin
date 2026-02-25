@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!date=2026-01-30 00:13:33
+#!date=2026-02-25 18:57:56
 
 [Rule]
 AND, ((DOMAIN-KEYWORD, tnc), (OR, ((DOMAIN-SUFFIX, capcutapi.com), (DOMAIN-SUFFIX, zijieapi.com), (DOMAIN-SUFFIX, isnssdk.com), (DOMAIN-SUFFIX, toutiaoapi.com), (DOMAIN-SUFFIX, bytedance.com), (DOMAIN-SUFFIX, snssdk.com), (DOMAIN-SUFFIX, sgsnssdk.com)))), DIRECT
@@ -319,7 +319,6 @@ DOMAIN, app-analytics-services.com, REJECT
 DOMAIN, odm.app-ads-services.com, REJECT
 DOMAIN, firebaselogging-pa.googleapis.com, REJECT
 DOMAIN, firebaseinappmessaging.googleapis.com, REJECT
-DOMAIN, firebaseremoteconfig.googleapis.com, REJECT
 DOMAIN, fundingchoicesmessages.google.com, REJECT
 DOMAIN-SUFFIX, doubleclick.net, REJECT
 DOMAIN-SUFFIX, doubleclick-cn.net, REJECT
