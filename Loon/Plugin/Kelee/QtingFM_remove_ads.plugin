@@ -8,18 +8,28 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/QtingFM_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QtingFM.png
-#!date=2025-05-13 15:17:08
+#!date=2026-02-27 02:47:52
+
+[Rule]
+DOMAIN, ad.qtfm.cn, REJECT
+DOMAIN, adlaunch.qtfm.cn, REJECT
 
 [Rewrite]
+^https:\/\/app\.qtfm\.cn\/recommendapi\/v8\/ai_assistant_point$ reject-dict
+
+^https:\/\/app\.qtfm\.cn\/m-bff\/v1\/signin\/show_homepage_icon$ reject-dict
+
 ^https:\/\/app\.qtfm\.cn\/recommendapi\/v\d\/emotion$ reject
 
 ^https:\/\/search\.qtfm\.cn\/v\d\/keyword\/default$ reject
 
 ^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/signin\/show_homepage_icon$ response-body-json-replace data.display_icon false
 
-^https:\/\/app\.qtfm\.cn\/recommendapi\/v\d\/hotpage\? response-body-json-jq 'del(.data.head[].data[] | select(.title == "超级会员")) | del(.data.head[].data[] | select(.link.type == "RadioStation")) | del(.data.head[] | select(.title == "听头条")) | del(.data.feeds[] | select(.type == "ListenListRadio"))'
+^https:\/\/app\.qtfm\.cn\/recommendapi\/v\d\/hotpage\? response-body-json-jq '.data.head |= map(select(.type == "IconGrid")) | .data.feeds |= map(select(.type == "Channel" or .type == "Radio" or .type == "ListenListChannel"))'
 
-^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/channel\/\d{6}\/playpage\/\d{8} response-body-json-del data.related_recommend
+^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/channel\/\d{6}\/playpage\/\d{8} response-body-json-del data.related_recommend data.recommend_bar
+
+^https:\/\/app\.qtfm\.cn\/m-bff\/v1\/user\/task\/play$ reject-dict
 
 ^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/mylistenpage response-body-json-del data.banner
 
@@ -31,7 +41,13 @@
 
 ^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/subscribed_channels\? response-body-json-del data.recommends
 
-^https:\/\/entry\.qtfm\.cn\/api\/v\d\/personal\/\?carrier response-body-json-jq 'delpaths([["data", "membership"], ["data", "level_info"]]) | .data.discovery.entries |= map(select(.title != "借钱"))'
+^https:\/\/entry\.qtfm\.cn\/api\/v\d\/personal\/\?carrier reject-dict
+
+^https:\/\/app\.qtfm\.cn\/m-bff\/v1\/channelpage\/\d+$ response-body-json-del data.vip_recommend data.recommend_delivery
+
+^https:\/\/search\.qtfm\.cn\/v3\/entry$ reject-dict
+
+^https:\/\/woqt2\.qtfm\.cn\/v2\/userConfig\? reject-dict
 
 [MitM]
-hostname=app.qtfm.cn, entry.qtfm.cn, recpage-c.qtfm.cn, user.qtfm.cn, search.qtfm.cn
+hostname=app.qtfm.cn, entry.qtfm.cn, recpage-c.qtfm.cn, user.qtfm.cn, search.qtfm.cn, woqt2.qtfm.cn
