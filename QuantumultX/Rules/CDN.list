@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4475
+# 规则统计: 4481
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-02-26T07:53:08.273Z
+# Last Updated: 2026-02-27T10:07:33.353Z
 # License: AGPL 3.0
-# Size: 4378
+# Size: 4384
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -409,6 +409,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .easylist.to,CDN
 .ebayimg.com,CDN
 .ebaystatic.com,CDN
+.eclipsecontent.org,CDN
 .edge.storage-yahoo.jp,CDN
 .edgeone.app,CDN
 .edgestorewebcdn.azureedge.net,CDN
@@ -557,6 +558,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .hscollectedforms.net,CDN
 .hsstatic.net,CDN
 .hsto.org,CDN
+.htv-hydaelyn.com,CDN
 .hubspotlinks.com,CDN
 .hubspotusercontent-eu1.net,CDN
 .hubspotusercontent-na1.net,CDN
@@ -1804,6 +1806,7 @@ cdn.bsky.social,CDN
 cdn.builder.io,CDN
 cdn.builderprofile.aws.dev,CDN
 cdn.bullwhip.cloud,CDN
+cdn.buttercms.com,CDN
 cdn.buymeacoffee.com,CDN
 cdn.c1.amplience.net,CDN
 cdn.calibermind.com,CDN
@@ -2865,6 +2868,7 @@ images.macrumors.com,CDN
 images.mathworks.com,CDN
 images.mattel.net,CDN
 images.microcms-assets.io,CDN
+images.mobilism.org,CDN
 images.moegoat.com,CDN
 images.moovitapp.com,CDN
 images.newrepublic.com,CDN
@@ -4089,6 +4093,7 @@ static.vesselfinder.net,CDN
 static.vinted.com,CDN
 static.vocadb.net,CDN
 static.webclicks24.com,CDN
+static.websites.data-crypt.com,CDN
 static.whatsapp.net,CDN
 static.workday.com,CDN
 static.wwto.net,CDN
@@ -4354,6 +4359,7 @@ vcdn.anysex.com,CDN
 vectorified.com,CDN
 versionbadg.es,CDN
 vetted.ai,CDN
+vg-bunny-cdn.b-cdn.net,CDN
 vice-prod.sdiapi.com,CDN
 vice-web-statics-cdn.vice.com,CDN
 video-images.vice.com,CDN
