@@ -41,8 +41,6 @@ const keyc = 'pin'
 const keyd = 'gan'
 const keye = 'pi'
 const keyf = 'ob'
-const keyg = 'qi'
-const keyh = 'xin'
 const bay = 'edtest'
 
 let result = {}
@@ -329,7 +327,7 @@ async function getDirectRequestInfo({ PROXIES = [] } = {}) {
   const { CN_IP, CN_INFO } = await getDirectInfo(undefined, $.lodash_get(arg, 'DOMESTIC_IPv4'))
   const { POLICY } = await getRequestInfo(
     new RegExp(
-      `cip\\.cc|for${keyb}\\.${keya}${bay}\\.cn|rmb\\.${keyc}${keyd}\\.com\\.cn|api-v3\\.${keya}${bay}\\.cn|ipservice\\.ws\\.126\\.net|api\\.bilibili\\.com|api\\.live\\.bilibili\\.com|myip\\.ipip\\.net|ip\\.ip233\\.cn|ua${keye}\\.wo${keyf}x\\.cn|ip\\.im|ips\\.market\\.alicloudapi\\.com|api\\.ip\\.plus|appc\.${keyg}${keyh}\.com`
+      `cip\\.cc|for${keyb}\\.${keya}${bay}\\.cn|rmb\\.${keyc}${keyd}\\.com\\.cn|api-v3\\.${keya}${bay}\\.cn|ipservice\\.ws\\.126\\.net|api\\.bilibili\\.com|api\\.live\\.bilibili\\.com|myip\\.ipip\\.net|ip\\.ip233\\.cn|ua${keye}\\.wo${keyf}x\\.cn|ip\\.im|ips\\.market\\.alicloudapi\\.com|api\\.ip\\.plus|ip\\.qtfm\\.cn|dashi\\.163\\.com|api\\.zhuishushenqi\\.com|admin-app\\.edifier\\.com`
     ),
     PROXIES
   )
@@ -404,7 +402,7 @@ async function getDirectInfo(ip, provider) {
   if (provider == 'cip') {
     try {
       const res = await http({
-        url: `http://cip.cc/${ip ? encodeURIComponent(ip) : ''}`,
+        url: `https://cip.cc/${ip ? encodeURIComponent(ip) : ''}`,
         headers: { 'User-Agent': 'curl/7.16.3 (powerpc-apple-darwin9.0) libcurl/7.16.3' },
       })
       let body = String($.lodash_get(res, 'body'))
@@ -420,10 +418,10 @@ async function getDirectInfo(ip, provider) {
     } catch (e) {
       $.logErr(`${msg} 发生错误: ${e.message || e}`)
     }
-  } else if (!ip && provider == 'qixin') {
+  } else if (!ip && provider == 'qtfm') {
     try {
       const res = await http({
-        url: `https://appc.${keyg}${keyh}.com/v4/general/getAreaByIP`,
+        url: `https://ip.qtfm.cn/ip`,
         headers: {
           'User-Agent':
             'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.14',
@@ -433,20 +431,40 @@ async function getDirectInfo(ip, provider) {
       try {
         body = JSON.parse(body)
       } catch (e) {}
-      const countryCode = $.lodash_get(body, 'data.code')
-      isCN = countryCode === 'CN'
-      CN_IP = $.lodash_get(body, 'data.clientIp')
+      const data = body?.data
+      const ip = data?.ip
+      isCN = data?.country === '中国'
+      CN_IP = ip
       CN_INFO = [
-        [
-          '位置:',
-          getflag(countryCode),
-          $.lodash_get(body, 'data.provinceName'),
-          $.lodash_get(body, 'data.cityName'),
-          $.lodash_get(body, 'data.districtName'),
-        ]
-          .filter(i => i)
-          .join(' '),
-        ['运营商:', $.lodash_get(body, 'data.owner')].filter(i => i).join(' '),
+        ['位置:', isCN ? getflag('CN') : '', data?.region, data?.city].filter(i => i).join(' '),
+        ['运营商:', data?.isp].filter(i => i).join(' '),
+      ]
+        .filter(i => i)
+        .join('\n')
+    } catch (e) {
+      $.logErr(`${msg} 发生错误: ${e.message || e}`)
+    }
+  } else if (!ip && provider == '163') {
+    try {
+      const res = await http({
+        url: `https://dashi.163.com/fgw/mailsrv-ipdetail/detail`,
+        headers: {
+          'User-Agent':
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.14',
+        },
+      })
+      let body = String($.lodash_get(res, 'body'))
+      try {
+        body = JSON.parse(body)
+      } catch (e) {}
+      let data = $.lodash_get(body, 'result')
+      const ip = data?.ip
+      const countryCode = data?.countryCode
+      isCN = countryCode === 'CN'
+      CN_IP = ip
+      CN_INFO = [
+        ['位置:', getflag(countryCode), data?.province, data?.city].filter(i => i).join(' '),
+        ['运营商:', data?.isp || data?.org].filter(i => i).join(' '),
       ]
         .filter(i => i)
         .join('\n')
@@ -519,6 +537,70 @@ async function getDirectInfo(ip, provider) {
     } catch (e) {
       $.logErr(`${msg} 发生错误: ${e.message || e}`)
     }
+  } else if (!ip && provider == 'zssq') {
+    try {
+      const res = await http({
+        url: `https://api.zhuishushenqi.com/user/getCity`,
+        headers: {
+          'User-Agent':
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.14',
+        },
+      })
+      let body = String($.lodash_get(res, 'body'))
+      try {
+        body = JSON.parse(body)
+      } catch (e) {}
+
+      isCN = $.lodash_get(body, 'data.country') === '中国'
+      CN_IP = $.lodash_get(body, 'data.ip')
+      CN_INFO = [
+        [
+          '位置:',
+          isCN ? getflag('CN') : undefined,
+          $.lodash_get(body, 'data.country'),
+          $.lodash_get(body, 'data.province'),
+          $.lodash_get(body, 'data.city'),
+        ]
+          .filter(i => i)
+          .join(' '),
+      ]
+        .filter(i => i)
+        .join('\n')
+    } catch (e) {
+      $.logErr(`${msg} 发生错误: ${e.message || e}`)
+    }
+  } else if (!ip && provider == 'edifier') {
+    try {
+      const res = await http({
+        url: `https://admin-app.edifier.com/edifier_provider/public/user-ip`,
+        headers: {
+          'User-Agent':
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.14',
+        },
+      })
+      let body = String($.lodash_get(res, 'body'))
+      try {
+        body = JSON.parse(body)
+      } catch (e) {}
+
+      isCN = $.lodash_get(body, 'data.country') === '中国'
+      CN_IP = $.lodash_get(body, 'data.ip')
+      CN_INFO = [
+        [
+          '位置:',
+          isCN ? getflag('CN') : undefined,
+          $.lodash_get(body, 'data.country'),
+          $.lodash_get(body, 'data.province'),
+          $.lodash_get(body, 'data.city'),
+        ]
+          .filter(i => i)
+          .join(' '),
+      ]
+        .filter(i => i)
+        .join('\n')
+    } catch (e) {
+      $.logErr(`${msg} 发生错误: ${e.message || e}`)
+    }
   } else if (!ip && provider == '126') {
     try {
       const res = await http({
@@ -546,7 +628,9 @@ async function getDirectInfo(ip, provider) {
         ]
           .filter(i => i)
           .join(' '),
-        ['运营商:', $.lodash_get(body, 'result.operator')].filter(i => i).join(' '),
+        ['运营商:', $.lodash_get(body, 'result.operator') || $.lodash_get(body, 'result.company')]
+          .filter(i => i)
+          .join(' '),
       ]
         .filter(i => i)
         .join('\n')
@@ -773,12 +857,22 @@ async function getProxyInfo(ip, provider) {
 
   if (provider == 'ipinfo') {
     try {
+      let token = $.lodash_get(arg, 'LANDING_IPv4_KEY')
+      if (!token) throw new Error('请在 LANDING_IPv4_KEY 填写 ipinfo 的 token')
+      token = token
+        .split(/,|，/)
+        .map(i => i.trim())
+        .filter(i => i)
+      token = token[Math.floor(Math.random() * token.length)]
+      if (token.length > 1) {
+        $.log(`随机使用 ipinfo 的 token: ${token}`)
+      }
       const res = await http({
         ...(ip ? {} : getNodeOpt()),
-
-        url: `https://ipinfo.io/widget/${ip ? encodeURIComponent(ip) : ''}`,
+        url: ip
+          ? `https://ipinfo.io/${encodeURIComponent(ip)}/json?token=${encodeURIComponent(token)}`
+          : `https://ipinfo.io/json?token=${encodeURIComponent(token)}`,
         headers: {
-          Referer: 'https://ipinfo.io/',
           'User-Agent':
             'Mozilla/5.0 (iPhone CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 Edg/109.0.0.0',
         },
@@ -788,51 +882,14 @@ async function getProxyInfo(ip, provider) {
         body = JSON.parse(body)
       } catch (e) {}
       PROXY_IP = ip || $.lodash_get(body, 'ip')
-      const companyType = $.lodash_get(body, 'company.type')
-      const asnType = $.lodash_get(body, 'asn.type')
       PROXY_INFO = [
         ['位置:', getflag(body.country), body.country.replace(/\s*中国\s*/, ''), body.region, body.city]
           .filter(i => i)
           .join(' '),
-        [
-          '运营商:',
-          $.lodash_get(body, 'company.name') || $.lodash_get(body, 'asn.name') || '-',
-          companyType ? ` | ${companyType}` : '',
-        ]
-          .filter(i => i)
-          .join(' '),
-        $.lodash_get(arg, 'ORG') == 1
-          ? [
-              '组织:',
-              $.lodash_get(body, 'asn.name') || $.lodash_get(body, 'org') || '-',
-              asnType ? ` | ${asnType}` : '',
-            ]
-              .filter(i => i)
-              .join(' ')
-          : undefined,
-        $.lodash_get(arg, 'ASN') == 1
-          ? ['ASN:', $.lodash_get(body, 'asn.asn') || '-'].filter(i => i).join(' ')
-          : undefined,
+        ['运营商:', $.lodash_get(body, 'org') || '-'].filter(i => i).join(' '),
       ]
         .filter(i => i)
         .join('\n')
-      if (!ip && $.lodash_get(arg, 'PRIVACY') == '1') {
-        const privacyObj = $.lodash_get(body, 'privacy') || {}
-        let privacy = []
-        const privacyMap = {
-          true: '✓',
-          false: '✗',
-          '': '-',
-        }
-        Object.keys(privacyObj).forEach(key => {
-          privacy.push(`${key.toUpperCase()}: ${privacyMap[privacyObj[key]]}`)
-        })
-        if (privacy.length > 0) {
-          PROXY_PRIVACY = `隐私安全:\n${privacy.join('\n')}`
-        } else {
-          PROXY_PRIVACY = `隐私安全: -`
-        }
-      }
     } catch (e) {
       $.logErr(`${msg} 发生错误: ${e.message || e}`)
     }
@@ -1266,7 +1323,7 @@ const DOMAIN_RESOLVERS = {
   },
   ali: async function (domain, type) {
     const resp = await http({
-      url: `http://223.6.6.6/resolve`,
+      url: `https://223.6.6.6/resolve`,
       params: {
         edns_client_subnet: '223.6.6.6/24',
         name: domain,
@@ -1285,7 +1342,7 @@ const DOMAIN_RESOLVERS = {
   },
   tencent: async function (domain, type) {
     const resp = await http({
-      url: `http://119.28.28.28/d`,
+      url: `https://119.28.28.28/d`,
       params: {
         ip: '119.28.28.28',
         dn: domain,
