@@ -8,11 +8,22 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Block_HTTPDNS.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png
-#!date=2026-02-28 20:52:04
+#!date=2026-03-01 23:16:49
 
 [Rule]
-URL-REGEX, "^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\/(\d+\/)?resolve(\?)?", REJECT
-URL-REGEX, "^http:\/\/\[[0-9a-fA-F:]+\]\/(\d+\/)?resolve(\?)?", REJECT
+DOMAIN-KEYWORD, httpdns, REJECT
+DOMAIN-KEYWORD, httpsdns, REJECT
+
+USER-AGENT, "httpdns*", REJECT
+USER-AGENT, "httpsdns*", REJECT
+USER-AGENT, "Httpdns*", REJECT
+USER-AGENT, "Httpsdns*", REJECT
+
+
+URL-REGEX, "^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(?:\/v?[0-9]+)?\/(?:sign_)?(?:(?:d|ss)[46]?|resolve)\?", REJECT
+
+
+URL-REGEX, "^http:\/\/\[[0-9a-fA-F:]+\](?:\/v?[0-9]+)?\/(?:sign_)?(?:(?:d|ss)[46]?|resolve)\?", REJECT
 
 DOMAIN, yyapp-httpdns.gslb.yy.com, REJECT
 DOMAIN, union-httpdns.gslb.yy.com, REJECT
@@ -75,7 +86,6 @@ IP-CIDR6, 2408:8711:10:10::20/128, REJECT, no-resolve
 IP-CIDR6, 2409:8702:4860:10::4d/128, REJECT, no-resolve
 
 DOMAIN, httpdns.kg.qq.com, REJECT
-URL-REGEX, "^http:\/\/182\.256\.116\.116\/d", REJECT
 
 DOMAIN, httpdns.bilivideo.com, REJECT
 
@@ -113,9 +123,6 @@ DOMAIN, dns.iqiyi.com, REJECT
 DOMAIN, doh.iqiyi.com, REJECT
 DOMAIN, dns.qiyipic.iqiyi.com, REJECT
 DOMAIN, httpdns.n.shifen.com, REJECT
-URL-REGEX, "^http:\/\/180\.76\.76\.112\/v\d\/", REJECT
-URL-REGEX, "^http:\/\/180\.76\.76\.112\/v\d\/resolve", REJECT
-URL-REGEX, "^http:\/\/180\.76\.76\.220\/v\d\/resolve", REJECT
 IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
 
 IP-CIDR, 180.76.76.200/32, REJECT, no-resolve
@@ -130,16 +137,10 @@ IP-CIDR, 103.224.222.208/32, REJECT, no-resolve
 
 IP-CIDR, 119.29.29.98/32, REJECT, no-resolve
 IP-CIDR, 119.29.29.99/32, REJECT, no-resolve
-URL-REGEX, "^http:\/\/182\.254\.116\.116\/d", REJECT
-URL-REGEX, "^http:\/\/119\.29\.29\.98\/d\?", REJECT
 
 DOMAIN, dotserver.douyucdn.cn, REJECT
-^http:\/\/203\.107\.1\.33\/\d+\/ss
-^http:\/\/203\.107\.1\.34\/\d+\/ss
 
 DOMAIN, hdns.ksyun.com, REJECT
-
-URL-REGEX, "^http:\/\/162\.14\.3\.250\/v4", REJECT
 
 DOMAIN, httpdns.push.oppomobile.com, REJECT
 DOMAIN, httpdns.ocloud.oppomobile.com, REJECT
@@ -153,16 +154,6 @@ DOMAIN, httpdns.meituan.com, REJECT
 DOMAIN, httpdnsmultiapi.meituan.com, REJECT
 DOMAIN, httpdnsmultiapivip.meituan.com, REJECT
 URL-REGEX, "^http:\/\/103\.37\.155\.60\/fetch", REJECT
-
-URL-REGEX, "^http:\/\/81\.69\.130\.131\/d", REJECT
-URL-REGEX, "^http:\/\/101\.35\.204\.35\/d", REJECT
-URL-REGEX, "^http:\/\/101\.35\.212\.35\/d", REJECT
-URL-REGEX, "^http:\/\/114\.110\.96\.6\/d", REJECT
-URL-REGEX, "^http:\/\/114\.110\.96\.26\/d", REJECT
-URL-REGEX, "^http:\/\/114\.110\.97\.30\/d", REJECT
-URL-REGEX, "^http:\/\/114\.110\.97\.97\/d", REJECT
-URL-REGEX, "^http:\/\/121\.5\.84\.85\/d", REJECT
-URL-REGEX, "^http:\/\/\[2402:4e00:1411:201:0:9964:ba21:5a41\]\/d", REJECT
 
 DOMAIN, httpdns.music.163.com, REJECT
 DOMAIN, httpdns.n.netease.com, REJECT
@@ -183,7 +174,7 @@ DOMAIN, httpdns.calorietech.com, REJECT
 DOMAIN, dns.weibo.cn, REJECT
 IP-CIDR, 39.97.130.51/32, REJECT, no-resolve
 IP-CIDR, 39.97.128.148/32, REJECT, no-resolve
-URL-REGEX, "^http:\/\/api\.weibo\.cn\/2\/httpdns\/config", REJECT
+URL-REGEX, "^http:\/\/api\.weibo\.cn\/\d+\/httpdns\/config", REJECT
 URL-REGEX, "^http:\/\/api\.weibo\.cn\/httpdns\/config", REJECT
 
 URL-REGEX, "^http:\/\/103\.41\.167\.237\/v2\/resolv", REJECT
@@ -194,19 +185,14 @@ DOMAIN, hd.xiaojukeji.com, REJECT
 
 DOMAIN, httpdns.zybang.com, REJECT
 
-URL-REGEX, "^http:\/\/119\.29\.29\.29\/d", REJECT
-
 DOMAIN, serveraddr.service.kugou.com, REJECT
 DOMAIN, twns.p2ptun.qq.com, REJECT
 DOMAIN, tp2p.kg.qq.com, REJECT
 IP-CIDR, 81.71.61.216/32, REJECT, no-resolve
 
-URL-REGEX, "^http:\/\/54\.222\.159\.138:8053\/httpdns\/", REJECT
-URL-REGEX, "^http:\/\/101\.42\.130\.147:8053\/httpdns\/", REJECT
-URL-REGEX, "^http:\/\/106\.55\.220\.18:8053\/httpdns\/", REJECT
-URL-REGEX, "^http:\/\/139\.196\.12\.179:8053\/httpdns\/", REJECT
+URL-REGEX, "^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?):\d+\/httpdns\/", REJECT
 
-USER-AGENT, "HttpdnsSDK*", REJECT
+URL-REGEX, "^http:\/\/\[[0-9a-fA-F:]+\]:\d+\/httpdns\/", REJECT
 
 [Rewrite]
 ^https?:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$ reject-dict
