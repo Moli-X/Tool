@@ -8,7 +8,7 @@
 #!loon_version=3.3.8(936)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Bilibili_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Bilibili.png
-#!date=2026-02-18 13:37:42
+#!date=2026-03-04 10:32:43
 
 [Argument]
 displayUpList=select, "show", "hide", "auto", tag=[动态]中[最常访问]的显示方式, desc=auto：仅当列表中存在直播状态时显示；show：始终显示；hide：始终隐藏。
@@ -41,7 +41,7 @@ AND, ((DOMAIN-SUFFIX, chat.bilibili.com), (OR, ((DOMAIN-KEYWORD, stun), (DOMAIN-
 
 ^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\/story\? response-body-json-jq 'if .data.items then .data.items |= map(select((.ad_info == null) and (.card_goto | IN("vertical_ad_av", "vertical_ad_live", "vertical_ad_picture") | not)) | del(.story_cart_icon, .free_flow_toast, .image_infos, .course_info, .game_info)) end'
 
-^https:\/\/ap[ip]\.bilibili\.com\/x\/(resource\/(top\/activity|patch\/tab(\/v2)?)|v2\/search\/square|vip\/ads\/materials)\? mock-response-body data-type=text status-code=200 data="{"code":-404,"message":"-404","ttl":1,"data":null}"
+^https:\/\/ap[ip]\.bilibili\.com\/x\/(?:resource\/(?:top\/activity|patch\/tab(?:\/v2)?)|v2\/search\/square|vip\/ads\/materials)\? mock-response-body data-type=text status-code=200 data="{"code":-404,"message":"-404","ttl":1,"data":null}"
 
 ^https:\/\/line3-h5-mobile-api\.biligame\.com\/game\/live\/large_card_material\? reject-dict
 
@@ -57,17 +57,17 @@ AND, ((DOMAIN-SUFFIX, chat.bilibili.com), (OR, ((DOMAIN-KEYWORD, stun), (DOMAIN-
 
 ^https:\/\/grpc\.biliapi\.net\/bilibili\.app\.interface\.v1\.Search\/DefaultWords$ mock-response-body data-type=text data="AAAAACEaHeaQnOe0ouinhumikeOAgeeVquWJp+aIlnVw5Li7KAE=" mock-data-is-base64=true
 
-^https:\/\/grpc\.biliapi\.net\/bilibili\.app\.(view\.v1\.View\/TFInfo|viewunite\.v1\.View\/ViewEndPage)$ mock-response-body data-type=text data="AAAAAAA=" mock-data-is-base64=true
+^https:\/\/grpc\.biliapi\.net\/bilibili\.app\.(?:view\.v1\.View\/TFInfo|viewunite\.v1\.View\/ViewEndPage)$ mock-response-body data-type=text data="AAAAAAA=" mock-data-is-base64=true
 ^https:\/\/grpc\.biliapi\.net\/bilibili\.app\.(interface\.v1\.(Teenagers\/ModeStatus|Search\/DefaultWords)|view\.v1\.View\/TFInfo|viewunite\.v1\.View\/ViewEndPage)$ response-header-add grpc-status 0
 
 [Script]
-http-request ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_request_kokoryh.js, argument=[{logLevel}], requires-body=true, binary-body-mode=true, timeout=10, enable={sponsorBlock}, tag=空降助手
+http-request ^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_request_kokoryh.js, argument=[{logLevel}], requires-body=true, binary-body-mode=true, timeout=10, enable={sponsorBlock}, tag=空降助手
 
-http-request ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.viewunite\.v1\.View\/View|main\.community\.reply\.v1\.Reply\/MainList)$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_request_kokoryh.js, argument=[{purifyComment}, {logLevel}], requires-body=true, binary-body-mode=true, timeout=10, enable={optimizeRequest}, tag=请求处理
+http-request ^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(?:app\.viewunite\.v1\.View\/View|main\.community\.reply\.v1\.Reply\/MainList)$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_request_kokoryh.js, argument=[{purifyComment}, {logLevel}], requires-body=true, binary-body-mode=true, timeout=10, enable={optimizeRequest}, tag=请求处理
 
-http-response ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.(show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(unite)?\.v1\.View\/(View|ViewProgress|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/DmView|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_response_kokoryh.js, argument=[{displayUpList}, {purifyComment}, {sponsorBlock}, {logLevel}], requires-body=true, binary-body-mode=true, tag=ProtoBuf处理
+http-response ^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(?:app\.(?:show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(?:unite)?\.v1\.View\/(?:View|ViewProgress|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/DmView|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_proto_response_kokoryh.js, argument=[{displayUpList}, {purifyComment}, {sponsorBlock}, {logLevel}], requires-body=true, binary-body-mode=true, tag=ProtoBuf处理
 
-http-response ^https:\/\/api\.live\.bilibili\.com\/xlive\/(app-interface\/v2\/index\/feed|app-room\/v1\/index\/getInfoBy(Room|User))\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_json_kokoryh.js, requires-body=true, tag=移除直播间广告
+http-response ^https:\/\/api\.live\.bilibili\.com\/xlive\/(?:app-interface\/v2\/index\/feed|app-room\/v1\/index\/getInfoBy(?:Room|User))\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Bilibili_json_kokoryh.js, requires-body=true, tag=移除直播间广告
 
 [MitM]
 hostname=grpc.biliapi.net, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, line3-h5-mobile-api.biligame.com
