@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4489
+# 规则统计: 4494
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2025-11-12T20:27:10.526Z
-# Last Updated: 2026-03-06T12:17:17.957Z
+# Last Updated: 2026-03-08T18:33:58.644Z
 # License: AGPL 3.0
-# Size: 4392
+# Size: 4397
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1040,6 +1040,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .ssl-images-amazon.com,CDN
 .sstatic.net,CDN
 .stack.imgur.com,CDN
+.stackassets.com,CDN
 .stackblitz.io,CDN
 .stapecdn.com,CDN
 .static-assets.photoshop.adobe.com,CDN
@@ -1801,6 +1802,7 @@ cdn.bitmovin.com,CDN
 cdn.blogarama.com,CDN
 cdn.bogos.io,CDN
 cdn.boldmethod.com,CDN
+cdn.boostcommerce.io,CDN
 cdn.botframework.com,CDN
 cdn.branch.io,CDN
 cdn.brandfetch.io,CDN
@@ -1900,6 +1902,7 @@ cdn.fontshare.com,CDN
 cdn.forms.office.net,CDN
 cdn.fosstodon.org,CDN
 cdn.fourthwall.com,CDN
+cdn.foxycart.com,CDN
 cdn.freebiesupply.com,CDN
 cdn.freecodecamp.org,CDN
 cdn.freesound.org,CDN
@@ -1928,6 +1931,7 @@ cdn.hero-sms.com,CDN
 cdn.hextom.com,CDN
 cdn.highporn.net,CDN
 cdn.hiive.space,CDN
+cdn.himetrica.com,CDN
 cdn.hinative.com,CDN
 cdn.hk01.com,CDN
 cdn.hongkongcard.com,CDN
@@ -2451,6 +2455,7 @@ data.osmand.net,CDN
 data.pendo.io,CDN
 data.schemaapp.com,CDN
 data.web.clickup.com,CDN
+data3.answerbase.com,CDN
 david-dm.org,CDN
 db.onlinewebfonts.com,CDN
 dc-cdn.cdw.com,CDN
