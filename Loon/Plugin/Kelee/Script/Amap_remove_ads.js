@@ -1,7 +1,7 @@
 /*
 引用地址 https://raw.githubusercontent.com/RuCu6/Loon/refs/heads/main/Scripts/amap.js
 */
-// 2025-11-01 19:30
+// 2026-03-09 08:15
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -26,6 +26,10 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
   }
 } else if (url.includes("/boss/car/order/content_info")) {
   // 打车页面
+  if (obj?.data?.lubanData?.benefitsCard?.dataList?.length > 0) {
+    // 打车权益
+    obj.data.lubanData.benefitsCard.dataList = [];
+  }
   if (obj?.data?.lubanData?.popup?.dataList?.length > 0) {
     // 优惠弹窗
     obj.data.lubanData.popup.dataList = [];
@@ -305,6 +309,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "collector_guide", // 游玩的图文指南
     "commonAiAgent", // ai门店助手
     "commonGoodsShelf", // 商品信息
+    "commonHkfMiniPortal", // 订火车票
     "common_coupon_bar", // 领券条幅 新客专享 省钱卡
     "common_coupon_card", // 优惠券卡片
     // "companyInfo", // 简介
@@ -333,8 +338,9 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "footer_tel_button",
     // "foreclosurehouse",
     // "gallery_info", // 现场照片
-    // "ggc_entry",
-    // "hkfMiniPortal", // 订票页面 飞机 火车 汽车
+    "ggc_entry", // 优惠券横幅
+    "hkfMiniPortal", // 订票页面 飞机 火车 汽车
+    "hkfCalendarRecommend", // 春节火车票
     "horizontalGoodsShelf",
     "hospital_strategy", // 就医攻略
     "hotPlay", // 热门玩法
@@ -407,6 +413,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "poiDetailBottomBar",
     "poiDetailBottomBarOperation",
     "poiDetailCommonConfig",
+    "poiDetailNewBeltCardV2",
     "poiDetailNewBeltV2", // 金秋出行 横幅
     "poiDetailWaterFeed", // 附近景点瀑布流 新
     "poiDetailWaterFeedTitle", // 更多人气好去处 新
@@ -452,6 +459,7 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "second_surround_estate_tab", // 周边房产
     "service_shop", // 中介门店
     "shopBaseCase", // 小区装修案例
+    "shopStdActivity", // 店铺活动
     "shopStructGift", // 礼品广告位
     // "shop_news",
     "shoppingMallEvent", // 逛街必看
