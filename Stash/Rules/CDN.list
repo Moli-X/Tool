@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4499
+# 规则统计: 4501
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -90,9 +90,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-03-10T14:56:40.480Z
-# Last Updated: 2026-03-13T17:26:37.960Z
+# Last Updated: 2026-03-14T09:27:52.519Z
 # License: AGPL 3.0
-# Size: 4402
+# Size: 4404
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -708,6 +708,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .jsdelivr.net
 .jspm.dev
 .jspm.io
+.jspm.org
 .jstatic.xyz
 .jw-cdn.org
 .jwpcdn.com
@@ -1530,6 +1531,7 @@ assets.scaleway.com
 assets.science.nasa.gov
 assets.sendinblue.com
 assets.shazam.com
+assets.shots.so
 assets.slater.app
 assets.sololearn.com
 assets.speedvitals.com
