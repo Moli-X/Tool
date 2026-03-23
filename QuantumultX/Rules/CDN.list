@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4508
+# 规则统计: 4509
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -27,6 +27,7 @@ HOST-KEYWORD,static.trustpilot.com,CDN
 HOST-KEYWORD,vdownload.hanime1,CDN
 HOST-KEYWORD,vod-adaptive.akamaized.net,CDN
 HOST-KEYWORD,web-assets.zendesk,CDN
+HOST-WILDCARD,*-intake-*-datadoghq.com,CDN
 HOST-WILDCARD,*.fsvod?.com,CDN
 HOST-WILDCARD,*.img.*.sendibm?.com,CDN
 HOST-WILDCARD,*.kuaikan-cdn?.com,CDN
@@ -36,7 +37,6 @@ HOST-WILDCARD,assets*.freshdesk.com,CDN
 HOST-WILDCARD,assets.*.imaga.co,CDN
 HOST-WILDCARD,blog-imgs-??.2nt.com,CDN
 HOST-WILDCARD,blog-imgs-??.fc2.com,CDN
-HOST-WILDCARD,browser-intake-*-datadoghq.com,CDN
 HOST-WILDCARD,cdn*.boysfood.com,CDN
 HOST-WILDCARD,cdn*.pigav.com,CDN
 HOST-WILDCARD,cdn*.porn87.com,CDN
@@ -89,10 +89,10 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2026-03-10T14:56:40.480Z
-# Last Updated: 2026-03-22T17:16:39.255Z
+# Last Updated: 2026-03-23T13:01:59.231Z
+# Last Updated: 2026-03-23T13:02:00.086Z
 # License: AGPL 3.0
-# Size: 4411
+# Size: 4412
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -4497,6 +4497,7 @@ www.10086.win,CDN
 www.acgpix.de,CDN
 www.bbthat.com,CDN
 www.envoyproxy.io,CDN
+www.fumadocs.dev,CDN
 www.gstatic.com,CDN
 www.pngmart.com,CDN
 www.tbstat.com,CDN

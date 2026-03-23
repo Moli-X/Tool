@@ -24,6 +24,7 @@ DOMAIN-KEYWORD,static.trustpilot.com
 DOMAIN-KEYWORD,vdownload.hanime1
 DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 DOMAIN-KEYWORD,web-assets.zendesk
+DOMAIN-WILDCARD,*-intake-*-datadoghq.com
 DOMAIN-WILDCARD,*.fsvod?.com
 DOMAIN-WILDCARD,*.img.*.sendibm?.com
 DOMAIN-WILDCARD,*.kuaikan-cdn?.com
@@ -33,7 +34,6 @@ DOMAIN-WILDCARD,assets*.freshdesk.com
 DOMAIN-WILDCARD,assets.*.imaga.co
 DOMAIN-WILDCARD,blog-imgs-??.2nt.com
 DOMAIN-WILDCARD,blog-imgs-??.fc2.com
-DOMAIN-WILDCARD,browser-intake-*-datadoghq.com
 DOMAIN-WILDCARD,cdn*.boysfood.com
 DOMAIN-WILDCARD,cdn*.pigav.com
 DOMAIN-WILDCARD,cdn*.porn87.com
@@ -86,10 +86,10 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2026-03-10T14:56:40.480Z
-# Last Updated: 2026-03-22T17:16:39.255Z
+# Last Updated: 2026-03-23T13:01:59.231Z
+# Last Updated: 2026-03-23T13:02:00.086Z
 # License: AGPL 3.0
-# Size: 4411
+# Size: 4412
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -4494,6 +4494,7 @@ www.10086.win
 www.acgpix.de
 www.bbthat.com
 www.envoyproxy.io
+www.fumadocs.dev
 www.gstatic.com
 www.pngmart.com
 www.tbstat.com
