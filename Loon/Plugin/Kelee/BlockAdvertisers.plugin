@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!date=2026-03-24 15:05:51
+#!date=2026-03-25 20:36:30
 
 [Rule]
 DOMAIN-KEYWORD, adstrategy, REJECT
@@ -382,9 +382,9 @@ DOMAIN-SUFFIX, advlion.com, REJECT
 DOMAIN-SUFFIX, shanghailingye.cn, REJECT
 
 DOMAIN-SUFFIX, shenshiads.com, REJECT
-DOMAIN-SUFFIX, adshenshi.com
-DOMAIN-SUFFIX, qidianad.com
-DOMAIN-SUFFIX, kuaichuanad.com
+DOMAIN-SUFFIX, adshenshi.com, REJECT
+DOMAIN-SUFFIX, qidianad.com, REJECT
+DOMAIN-SUFFIX, kuaichuanad.com, REJECT
 
 DOMAIN-SUFFIX, tradplusad.com, REJECT
 
