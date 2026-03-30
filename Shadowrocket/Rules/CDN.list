@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4517
+# 规则统计: 4521
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -90,9 +90,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-03-23T13:01:59.231Z
-# Last Updated: 2026-03-29T06:10:13.881Z
+# Last Updated: 2026-03-29T17:30:52.394Z
 # License: AGPL 3.0
-# Size: 4420
+# Size: 4424
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -524,6 +524,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .graphql.org
 .gravatar.com
 .gravity.jup.io
+.grouponcdn.com
 .gsuus.com
 .gszyi.com
 .gtranslate.net
@@ -1266,6 +1267,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .ziglang.org
 .zippyshare.com
 .zkcdn.net
+.zobj.net
 .zohocdn.com
 .zohostatic.com
 .zohostatic.eu
@@ -2896,6 +2898,7 @@ images.microcms-assets.io
 images.mobilism.org
 images.moegoat.com
 images.moovitapp.com
+images.nebula.tv
 images.newrepublic.com
 images.now-tv.com
 images.nvidia.com
@@ -3817,6 +3820,7 @@ st2.zoom.us
 st3.zoom.us
 st6-20.vk.com
 staging-pubfeed.linkby.com
+starlight.nebula.tv
 start-page.buffer.com
 static-00.iconduck.com
 static-1.bitchute.com
