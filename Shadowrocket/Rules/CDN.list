@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4521
+# 规则统计: 4526
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -90,9 +90,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-03-23T13:01:59.231Z
-# Last Updated: 2026-03-30T17:43:33.291Z
+# Last Updated: 2026-03-31T15:36:18.442Z
 # License: AGPL 3.0
-# Size: 4424
+# Size: 4429
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -491,6 +491,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .gamccdn.com
 .gamesgamescdn.com
 .gammacdn.com
+.garmincdn.com
 .gateway.originprotocol.com
 .gateway.pinata.cloud
 .gateway.serph.network
@@ -2653,6 +2654,7 @@ font-public.canva.com
 fonts.bunny.net
 fonts.cat.net
 fonts.codeberg.org
+fonts.garmin.com
 fonts.gishan.cc
 fonts.googleapis.com
 fonts.gstatic.com
@@ -3594,6 +3596,7 @@ res-geo.cdn.office.net
 res.abc.net.au
 res.cloudinary.com
 res.craft.do
+res.garmin.com
 res2.weblium.site
 resize-image.vocus.cc
 resize.blogsys.jp
@@ -3764,6 +3767,7 @@ sf-ibf-va.larksuitecdn.com
 sf19-scmcdn.larksuitecdn.com
 sfiles.cnyes.cool
 sg-thumbnail-drive.mypikpak.com
+share-assets.fe.garmin.com
 share.chessbase.com
 shell.cdn.office.net
 shopify.cleverecommerce.com
@@ -3976,6 +3980,7 @@ static.foxnews.com
 static.frame.work
 static.freedownloadmanager.org
 static.freeimages.com
+static.garmin.com
 static.generated.photos
 static.getbutton.io
 static.getpostman.com

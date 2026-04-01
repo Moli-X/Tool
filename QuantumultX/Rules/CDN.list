@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4521
+# 规则统计: 4526
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,9 +90,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-03-23T13:01:59.231Z
-# Last Updated: 2026-03-30T17:43:33.291Z
+# Last Updated: 2026-03-31T15:36:18.442Z
 # License: AGPL 3.0
-# Size: 4424
+# Size: 4429
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -491,6 +491,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .gamccdn.com,CDN
 .gamesgamescdn.com,CDN
 .gammacdn.com,CDN
+.garmincdn.com,CDN
 .gateway.originprotocol.com,CDN
 .gateway.pinata.cloud,CDN
 .gateway.serph.network,CDN
@@ -2653,6 +2654,7 @@ font-public.canva.com,CDN
 fonts.bunny.net,CDN
 fonts.cat.net,CDN
 fonts.codeberg.org,CDN
+fonts.garmin.com,CDN
 fonts.gishan.cc,CDN
 fonts.googleapis.com,CDN
 fonts.gstatic.com,CDN
@@ -3594,6 +3596,7 @@ res-geo.cdn.office.net,CDN
 res.abc.net.au,CDN
 res.cloudinary.com,CDN
 res.craft.do,CDN
+res.garmin.com,CDN
 res2.weblium.site,CDN
 resize-image.vocus.cc,CDN
 resize.blogsys.jp,CDN
@@ -3764,6 +3767,7 @@ sf-ibf-va.larksuitecdn.com,CDN
 sf19-scmcdn.larksuitecdn.com,CDN
 sfiles.cnyes.cool,CDN
 sg-thumbnail-drive.mypikpak.com,CDN
+share-assets.fe.garmin.com,CDN
 share.chessbase.com,CDN
 shell.cdn.office.net,CDN
 shopify.cleverecommerce.com,CDN
@@ -3976,6 +3980,7 @@ static.foxnews.com,CDN
 static.frame.work,CDN
 static.freedownloadmanager.org,CDN
 static.freeimages.com,CDN
+static.garmin.com,CDN
 static.generated.photos,CDN
 static.getbutton.io,CDN
 static.getpostman.com,CDN
