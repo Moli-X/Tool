@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 912
+# 规则统计: 914
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 904
-#Update content: remove “m1.ad.10010.com”
-#Update time: 2026-02-10 15:15:29 UTC+8
+#Total lines: 906
+#Update content: add domain #206
+#Update time: 2026-04-07 20:55:56 UTC+8
 #Version: 1.6.9-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -210,6 +210,7 @@
 .apd-pcdnwxlogin.teg.tencent-cloud.net,Ads_AWAvenue
 .apd-pcdnwxnat.teg.tencent-cloud.net,Ads_AWAvenue
 .apd-pcdnwxstat.teg.tencent-cloud.net,Ads_AWAvenue
+.api-access.pangolin-sdk-toutiao-b.com,Ads_AWAvenue
 .api-access.pangolin-sdk-toutiao.com,Ads_AWAvenue
 .api-access.pangolin-sdk-toutiao1.com,Ads_AWAvenue
 .api-access.pangolin-sdk-toutiao2.com,Ads_AWAvenue
@@ -559,6 +560,7 @@
 .mobads.baidu.com,Ads_AWAvenue
 .mobaliyun.res.mgtv.com,Ads_AWAvenue
 .mobile.da.mgtv.com,Ads_AWAvenue
+.mobile.events.data.microsoft.com,Ads_AWAvenue
 .mobilead.kuwo.cn,Ads_AWAvenue
 .mobilelog.kugou.com,Ads_AWAvenue
 .mobilelog.upqzfile.com,Ads_AWAvenue
