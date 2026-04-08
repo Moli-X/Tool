@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4534
+# 规则统计: 4539
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -28,6 +28,7 @@ DOMAIN-KEYWORD,vdownload.hanime1
 DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 DOMAIN-KEYWORD,web-assets.zendesk
 DOMAIN-WILDCARD,*-intake-*-datadoghq.com
+DOMAIN-WILDCARD,*-intake.*.datadoghq.com
 DOMAIN-WILDCARD,*.fsvod?.com
 DOMAIN-WILDCARD,*.img.*.sendibm?.com
 DOMAIN-WILDCARD,*.kuaikan-cdn?.com
@@ -89,11 +90,11 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2026-03-23T13:01:59.231Z
-# Last Updated: 2026-04-06T13:21:04.772Z
+# Last Updated: 2026-04-08T12:05:27.745Z
+# Last Updated: 2026-04-08T12:05:28.536Z
 # License: AGPL 3.0
-# Size: 4437
-# Size: 84
+# Size: 4441
+# Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -2133,6 +2134,7 @@ cdn.sketch.com
 cdn.skymavis.com
 cdn.smooch.io
 cdn.snaptravel.com
+cdn.socket.io
 cdn.softswiss.net
 cdn.sphlabs.com
 cdn.split.io
@@ -2545,6 +2547,7 @@ embed-cloudfront.wistia.com
 embed-ssl.wistia.com
 embed-v2.testimonial.to
 embed.culturalspot.org
+embed.getwally.net
 embed.reddit.com
 embed.runkit.com
 embed.savvycal.com
@@ -3270,6 +3273,7 @@ media.cnn.com
 media.contentapi.ea.com
 media.convertkit.com
 media.crazyshit.com
+media.currys.biz
 media.d.tube
 media.daily.dev
 media.datacenterdynamics.com
@@ -4021,6 +4025,7 @@ static.institution.grammarly.com
 static.ipgeolocation.io
 static.iplocate.io
 static.iris.informa.com
+static.isitetv.com
 static.itch.io
 static.iyf.tv
 static.izanmei.icu

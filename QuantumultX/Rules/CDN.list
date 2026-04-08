@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4534
+# 规则统计: 4539
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -28,6 +28,7 @@ HOST-KEYWORD,vdownload.hanime1,CDN
 HOST-KEYWORD,vod-adaptive.akamaized.net,CDN
 HOST-KEYWORD,web-assets.zendesk,CDN
 HOST-WILDCARD,*-intake-*-datadoghq.com,CDN
+HOST-WILDCARD,*-intake.*.datadoghq.com,CDN
 HOST-WILDCARD,*.fsvod?.com,CDN
 HOST-WILDCARD,*.img.*.sendibm?.com,CDN
 HOST-WILDCARD,*.kuaikan-cdn?.com,CDN
@@ -89,11 +90,11 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2026-03-23T13:01:59.231Z
-# Last Updated: 2026-04-06T13:21:04.772Z
+# Last Updated: 2026-04-08T12:05:27.745Z
+# Last Updated: 2026-04-08T12:05:28.536Z
 # License: AGPL 3.0
-# Size: 4437
-# Size: 84
+# Size: 4441
+# Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -2133,6 +2134,7 @@ cdn.sketch.com,CDN
 cdn.skymavis.com,CDN
 cdn.smooch.io,CDN
 cdn.snaptravel.com,CDN
+cdn.socket.io,CDN
 cdn.softswiss.net,CDN
 cdn.sphlabs.com,CDN
 cdn.split.io,CDN
@@ -2545,6 +2547,7 @@ embed-cloudfront.wistia.com,CDN
 embed-ssl.wistia.com,CDN
 embed-v2.testimonial.to,CDN
 embed.culturalspot.org,CDN
+embed.getwally.net,CDN
 embed.reddit.com,CDN
 embed.runkit.com,CDN
 embed.savvycal.com,CDN
@@ -3270,6 +3273,7 @@ media.cnn.com,CDN
 media.contentapi.ea.com,CDN
 media.convertkit.com,CDN
 media.crazyshit.com,CDN
+media.currys.biz,CDN
 media.d.tube,CDN
 media.daily.dev,CDN
 media.datacenterdynamics.com,CDN
@@ -4021,6 +4025,7 @@ static.institution.grammarly.com,CDN
 static.ipgeolocation.io,CDN
 static.iplocate.io,CDN
 static.iris.informa.com,CDN
+static.isitetv.com,CDN
 static.itch.io,CDN
 static.iyf.tv,CDN
 static.izanmei.icu,CDN
