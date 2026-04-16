@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4550
+# 规则统计: 4539
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -91,9 +91,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-04-08T12:05:27.745Z
-# Last Updated: 2026-04-15T19:26:22.868Z
+# Last Updated: 2026-04-16T09:46:44.666Z
 # License: AGPL 3.0
-# Size: 4452
+# Size: 4441
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -167,6 +167,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .appmifile.com,CDN
 .appsflyersdk.com,CDN
 .aspnetcdn.com,CDN
+.assets-gap.com,CDN
 .assets-servd.host,CDN
 .assets-yammer.com,CDN
 .assets.adidas.com,CDN
@@ -1276,6 +1277,8 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .zohostatic.eu,CDN
 .zohowebstatic.com,CDN
 .zorocdn.xyz,CDN
+.zpi.cx,CDN
+.zpicdn.lol,CDN
 0x0.st,CDN
 3dna.nationbuilder.com,CDN
 4gtvimg2.4gtv.tv,CDN
@@ -1310,7 +1313,6 @@ ak.sail-horizon.com,CDN
 akamai-assets.squarespace.com,CDN
 akamai-origin.myanimelist.net,CDN
 alcdn.msauth.net,CDN
-alt.idgesg.net,CDN
 amazon-omni-cdn.com,CDN
 amp.akamaized.net,CDN
 amp.azure.net,CDN
@@ -1383,7 +1385,6 @@ assets-app.circleci.com,CDN
 assets-cdn.123rf.com,CDN
 assets-cdn.abcnews.com,CDN
 assets-cdn.abcotvs.net,CDN
-assets-cdn.anh.moe,CDN
 assets-cdn.jable.tv,CDN
 assets-cdn.porn.com,CDN
 assets-cdn.watchdisneyfe.com,CDN
@@ -1577,7 +1578,6 @@ assets.visioncritical.net,CDN
 assets.vodafone.co.uk,CDN
 assets.vogue.com,CDN
 assets.volvo.com,CDN
-assets.wikiwand.com,CDN
 assets.xboxservices.com,CDN
 assets.xmind.net,CDN
 assets.yande.re,CDN
@@ -1585,6 +1585,7 @@ assets.zendesk.com,CDN
 assets.zephr.com,CDN
 assets.zerohedge.com,CDN
 assets.zilliz.com,CDN
+assets.zpic.biz,CDN
 assets0.headwayapp.co,CDN
 assets1.lottiefiles.com,CDN
 assets10.lottiefiles.com,CDN
@@ -1698,6 +1699,7 @@ c7.patreon.com,CDN
 c8.patreon.com,CDN
 ca.nfs.pub,CDN
 ca1.onlyhentaistuff.com,CDN
+ca2.onlyhentaistuff.com,CDN
 cacerts.digicert.com,CDN
 cacerts.rapidssl.com,CDN
 cache-05.filehippo.net,CDN
@@ -1867,7 +1869,6 @@ cdn.convertbox.com,CDN
 cdn.conveythis.com,CDN
 cdn.corso.com,CDN
 cdn.cr-proxy.com,CDN
-cdn.cracked.sh,CDN
 cdn.craft.cloud,CDN
 cdn.create.microsoft.com,CDN
 cdn.credible.com,CDN
@@ -1943,7 +1944,6 @@ cdn.giftcardpro.app,CDN
 cdn.gigya.com,CDN
 cdn.gofundme.com,CDN
 cdn.googlesource.com,CDN
-cdn.graph.office.net,CDN
 cdn.growthbook.io,CDN
 cdn.hackaday.io,CDN
 cdn.hackernoon.com,CDN
@@ -2181,6 +2181,7 @@ cdn.trustpilot.net,CDN
 cdn.ttgtmedia.com,CDN
 cdn.ttloli.com,CDN
 cdn.tuk.dev,CDN
+cdn.tvpagewidgets.com,CDN
 cdn.unrealengine.com,CDN
 cdn.unwire.hk,CDN
 cdn.up-timely.com,CDN
@@ -2204,7 +2205,6 @@ cdn.webclicks24.com,CDN
 cdn.weglot.com,CDN
 cdn.whoer.com,CDN
 cdn.wikimg.net,CDN
-cdn.wikiwand.com,CDN
 cdn.wikiwiki.jp,CDN
 cdn.windowsreport.com,CDN
 cdn.wishpond.net,CDN
@@ -2344,7 +2344,6 @@ cdp.sph.com.sg,CDN
 cds.connatix.com,CDN
 celebrities-small.porndig.com,CDN
 certificates.godaddy.com,CDN
-certona.gap.com,CDN
 cf-assets.www.cloudflare.com,CDN
 cf-images.ap-northeast-1.prod.boltdns.net,CDN
 cf-images.us-east-1.prod.boltdns.net,CDN
@@ -2376,7 +2375,6 @@ cloud.redhat.com,CDN
 cloud.typenetwork.com,CDN
 cloudflare.tv,CDN
 cloudfront.barilliance.com,CDN
-cloudfront.codeproject.com,CDN
 cloudinary-res.cloudinary.com,CDN
 cmd-cdn.cleanmymac.com,CDN
 cmp-cdn.p.aws.economist.com,CDN
@@ -2432,12 +2430,14 @@ content.9gtb.com,CDN
 content.any.run,CDN
 content.api.news,CDN
 content.arduino.cc,CDN
+content.gapinc.com,CDN
 content.gitbook.com,CDN
 content.invisioncic.com,CDN
 content.jwplatform.com,CDN
 content.kaspersky-labs.com,CDN
 content.overwolf.com,CDN
 content.powerapps.com,CDN
+content.presspage.com,CDN
 content.wepik.com,CDN
 contents-thumbnail2.fc2.com,CDN
 conversiongorilla.com,CDN
@@ -2496,6 +2496,7 @@ design.codeberg.org,CDN
 design.keyoxide.org,CDN
 design.mayoclinic.org,CDN
 designsystem.brevo.com,CDN
+detectportal.brave-http-only.com,CDN
 detectportal.firefox.com,CDN
 dev.visualwebsiteoptimizer.com,CDN
 devicons.railway.com,CDN
@@ -2539,7 +2540,6 @@ edge.marker.io,CDN
 edge.nodeseek.com,CDN
 edge.personalizer.io,CDN
 edge.sitecorecloud.io,CDN
-edge1.certona.net,CDN
 edgeassetservice.azureedge.net,CDN
 edgecdn-embza6g8cacagcbn.z01.azurefd.net,CDN
 edgestatic.azureedge.net,CDN
@@ -2602,6 +2602,7 @@ explorer-api.walletconnect.com,CDN
 external-content.duckduckgo.com,CDN
 f.convertkit.com,CDN
 f.start.me,CDN
+f.upanh.tv,CDN
 f000.backblazeb2.com,CDN
 f001.backblazeb2.com,CDN
 f002.backblazeb2.com,CDN
@@ -2628,8 +2629,7 @@ fesdk.nexon.com,CDN
 fiddle.fastly.dev,CDN
 fiddle.jshell.net,CDN
 file.ahu.moe,CDN
-file.izanmei.net,CDN
-file.xiaohai.ai,CDN
+file.izanm.org,CDN
 file.zoom.us,CDN
 file1.hkepc.net,CDN
 files.armorgames.com,CDN
@@ -2689,7 +2689,6 @@ frontend-apps.workos.com,CDN
 frontend-assets.supabase.com,CDN
 frontend.floatplane.com,CDN
 fs.mingpao.com,CDN
-fs2.onlyhentaistuff.com,CDN
 fscdn.eppo.cloud,CDN
 g-static.ap4r.com,CDN
 g.newsweek.com,CDN
@@ -2846,13 +2845,11 @@ image.send.grammarly.com,CDN
 image.ship.vercel.com,CDN
 image.shutterstock.com,CDN
 image.status.io,CDN
-image.stheadline.com,CDN
 image.telanganatoday.com,CDN
 image.theblockbeats.info,CDN
 image.thefly.com,CDN
 image.tmdb.org,CDN
 image.vuukle.com,CDN
-image.westinyou.com,CDN
 image.worthepenny.com,CDN
 image.xmanhua.net,CDN
 image.yuntu.com.tw,CDN
@@ -2901,7 +2898,6 @@ images.g2crowd.com,CDN
 images.github.media,CDN
 images.hothardware.com,CDN
 images.icon-icons.com,CDN
-images.idgesg.net,CDN
 images.indianexpress.com,CDN
 images.justwatch.com,CDN
 images.kick.com,CDN
@@ -3065,6 +3061,7 @@ img.utdstc.com,CDN
 img.vim-cn.com,CDN
 img.voguehk.com,CDN
 img.washingtonpost.com,CDN
+img.wikiwand.com,CDN
 img.windy.com,CDN
 img.xbooru.com,CDN
 img.xhacgn.com,CDN
@@ -3146,7 +3143,6 @@ jfe-cdn.qualtrics.com,CDN
 jnmedia.ero-video.net,CDN
 jotai.org,CDN
 js-1-cdn.airdroid.com,CDN
-js-cdn.blockchair.io,CDN
 js-eu1.hsforms.net,CDN
 js-s3.quickcep.com,CDN
 js.assemblyexchange.com,CDN
@@ -3228,7 +3224,6 @@ logos.kiwibrowser.com,CDN
 logos.speedtestcustom.com,CDN
 logs.blip.net,CDN
 lolstatic-a.akamaihd.net,CDN
-loutre.blockchair.io,CDN
 lucide.dev,CDN
 lumiere-a.akamaihd.net,CDN
 lzd-img-global.slatic.net,CDN
@@ -3278,7 +3273,6 @@ media.contentapi.ea.com,CDN
 media.convertkit.com,CDN
 media.crazyshit.com,CDN
 media.currys.biz,CDN
-media.d.tube,CDN
 media.daily.dev,CDN
 media.datacenterdynamics.com,CDN
 media.dev.to,CDN
@@ -3331,7 +3325,6 @@ media.printables.com,CDN
 media.pullopen.xyz,CDN
 media.ra.kroll.com,CDN
 media.raven.news,CDN
-media.remax-prod.eng.remax.tech,CDN
 media.shopimind.com,CDN
 media.smooch.io,CDN
 media.steampowered.com,CDN
@@ -3383,9 +3376,9 @@ mui.com,CDN
 mwcm.nyt.com,CDN
 mwf-service.akamaized.net,CDN
 my-json-server.typicode.com,CDN
-mycommerce.akamaized.net,CDN
 na-library.klarnaservices.com,CDN
 namedotcom-cdn.name.tools,CDN
+nas2.d.tube,CDN
 nav.yumenosora.co.jp,CDN
 navismithapis-cdn.com,CDN
 nbcnewsdigital-static.nbcuni.com,CDN
@@ -3509,12 +3502,12 @@ platform.theverge.com,CDN
 platform.twitter.com,CDN
 platform.vox.com,CDN
 platforms.makemytrip.com,CDN
+play.d.tube,CDN
 play.gotolstoy.com,CDN
 play.modujx11.com,CDN
 play.publicradio.org,CDN
 play.vidyard.com,CDN
 play.xfvod.pro,CDN
-play.xiaoh.ai,CDN
 player-frontend.cnevids.com,CDN
 player.cnevids.com,CDN
 player.interactivity.brightcove.com,CDN
@@ -3789,7 +3782,6 @@ sg-thumbnail-drive.mypikpak.com,CDN
 share-assets.fe.garmin.com,CDN
 share.chessbase.com,CDN
 shell.cdn.office.net,CDN
-shopify.cleverecommerce.com,CDN
 shots.codepen.io,CDN
 showcase.abovemarket.com,CDN
 sig.grumpybumpers.com,CDN
@@ -3892,7 +3884,6 @@ static-homepage-en.pluto.tv,CDN
 static-id.fc2.com,CDN
 static-images.aptoide.com,CDN
 static-images.remax.com,CDN
-static-landing.probiplacehold.cot.com,CDN
 static-lccn.leetcode.com,CDN
 static-main.moovit.com,CDN
 static-media.fox.com,CDN
@@ -3966,9 +3957,12 @@ static.coinall.ltd,CDN
 static.coingecko.com,CDN
 static.comicbz.com,CDN
 static.community.workday.com,CDN
+static.contentpass.net,CDN
 static.convertio.co,CDN
 static.corespeed.io,CDN
 static.corp.google.com,CDN
+static.cracked.ax,CDN
+static.cracked.sh,CDN
 static.crunchyroll.com,CDN
 static.crypto.com,CDN
 static.deepl.com,CDN
@@ -4066,7 +4060,6 @@ static.mypikpak.com,CDN
 static.mysph.sph.com.sg,CDN
 static.mytonwallet.io,CDN
 static.na1.visioncritical.com,CDN
-static.namebeta.com,CDN
 static.narrativ.com,CDN
 static.netify.ai,CDN
 static.newmobilelife.com,CDN
@@ -4084,7 +4077,6 @@ static.olelive.com,CDN
 static.onlinewebfonts.com,CDN
 static.onlyfans.com,CDN
 static.openreplay.com,CDN
-static.opensea.io,CDN
 static.opensuse.org,CDN
 static.oracle.com,CDN
 static.parallels.com,CDN
@@ -4164,6 +4156,7 @@ static.xgroovy.com,CDN
 static.xns.one,CDN
 static.xxxshake.com,CDN
 static.yfsp.tv,CDN
+static.zanmei.ai,CDN
 static.zaobao.com,CDN
 static.zaobao.com.sg,CDN
 static.zenn.studio,CDN
@@ -4285,7 +4278,6 @@ thumbs.onlyfans.com,CDN
 thumbs2.sendvid.com,CDN
 thumbsnap.com,CDN
 tile.loc.gov,CDN
-tile.mapzen.com,CDN
 tile.mtbmap.cz,CDN
 tile.nextzen.org,CDN
 tile.opentopomap.org,CDN
@@ -4322,7 +4314,6 @@ tiles.stadiamaps.com,CDN
 tiles.terria.io,CDN
 tiles.versatiles.org,CDN
 tiles.windy.com,CDN
-tiles.wmflabs.org,CDN
 tiles0.planet.com,CDN
 tiles1.planet.com,CDN
 tiles2.mapiful.com,CDN
@@ -4444,7 +4435,6 @@ vip.dytt-img.com,CDN
 vir.wsj.net,CDN
 viu-static.akamaized.net,CDN
 vjs.zencdn.net,CDN
-vod.jfly.xyz,CDN
 vpncdn.protonweb.com,CDN
 vscode-sync-insiders.trafficmanager.net,CDN
 vscode-sync.trafficmanager.net,CDN
@@ -4547,7 +4537,6 @@ wwwimages2.adobe.com,CDN
 ximage.c-spanvideo.org,CDN
 xpaywalletcdn.azureedge.net,CDN
 y.yarn.co,CDN
-yep.video.yahoo.com,CDN
 zephr-templates.cnbc.com,CDN
 zod.dev,CDN
 zzz.wxw.moe,CDN
