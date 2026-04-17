@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4539
+# 规则统计: 4547
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -91,9 +91,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-04-08T12:05:27.745Z
-# Last Updated: 2026-04-16T09:46:44.666Z
+# Last Updated: 2026-04-16T17:49:31.665Z
 # License: AGPL 3.0
-# Size: 4441
+# Size: 4449
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -458,6 +458,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .filecunhua.top
 .files.bbci.co.uk
 .files.gitbook.io
+.files.sooplive.co.kr
 .files.wordpress.com
 .fimfiction-static.net
 .firebaseapp.com
@@ -610,6 +611,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .imagetwist.com
 .img-dpreview.com
 .img.haiwaikan.com
+.img.sooplive.com
 .img1.acsta.net
 .img2.acsta.net
 .img3.acsta.net
@@ -1578,6 +1580,7 @@ assets.visioncritical.net
 assets.vodafone.co.uk
 assets.vogue.com
 assets.volvo.com
+assets.vrchat.com
 assets.xboxservices.com
 assets.xmind.net
 assets.yande.re
@@ -1639,6 +1642,7 @@ badges.greenkeeper.io
 banners.chessbase.com
 barracuda-assets.zoovu.com
 barracuda-cdn.zoovu.com
+bcdn.alotporn.com
 bcdn.starapps.studio
 bcmedia.bitchute.com
 before.good-apps.co
@@ -3214,6 +3218,7 @@ live-storage.fc2.com
 live.fanmingming.com
 live.visually-io.com
 livedoor.blogimg.jp
+liveimg.sooplive.com
 livemap-tiles1.waze.com
 lm.visualon.info
 load.csell.co
@@ -3609,6 +3614,7 @@ res.abc.net.au
 res.cloudinary.com
 res.craft.do
 res.garmin.com
+res.sooplive.com
 res2.weblium.site
 resize-image.vocus.cc
 resize.blogsys.jp
@@ -4114,6 +4120,7 @@ static.snaptube.in
 static.snyk.io
 static.socialshopwave.com
 static.solarwinds.com
+static.sooplive.com
 static.spankbang.com
 static.spigotmc.org
 static.srcspot.com
@@ -4203,6 +4210,7 @@ steamcdn-a.akamaihd.net
 steamusercontent-a.akamaihd.net
 steamuserimages-a.akamaihd.net
 steamvideo-a.akamaihd.net
+stimg.sooplive.com
 storage-b.picacomic.com
 storage.courtlistener.com
 storage.crisp.chat

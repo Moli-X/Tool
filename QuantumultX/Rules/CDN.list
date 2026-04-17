@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4539
+# 规则统计: 4547
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -91,9 +91,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-04-08T12:05:27.745Z
-# Last Updated: 2026-04-16T09:46:44.666Z
+# Last Updated: 2026-04-16T17:49:31.665Z
 # License: AGPL 3.0
-# Size: 4441
+# Size: 4449
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -458,6 +458,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .filecunhua.top,CDN
 .files.bbci.co.uk,CDN
 .files.gitbook.io,CDN
+.files.sooplive.co.kr,CDN
 .files.wordpress.com,CDN
 .fimfiction-static.net,CDN
 .firebaseapp.com,CDN
@@ -610,6 +611,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .imagetwist.com,CDN
 .img-dpreview.com,CDN
 .img.haiwaikan.com,CDN
+.img.sooplive.com,CDN
 .img1.acsta.net,CDN
 .img2.acsta.net,CDN
 .img3.acsta.net,CDN
@@ -1578,6 +1580,7 @@ assets.visioncritical.net,CDN
 assets.vodafone.co.uk,CDN
 assets.vogue.com,CDN
 assets.volvo.com,CDN
+assets.vrchat.com,CDN
 assets.xboxservices.com,CDN
 assets.xmind.net,CDN
 assets.yande.re,CDN
@@ -1639,6 +1642,7 @@ badges.greenkeeper.io,CDN
 banners.chessbase.com,CDN
 barracuda-assets.zoovu.com,CDN
 barracuda-cdn.zoovu.com,CDN
+bcdn.alotporn.com,CDN
 bcdn.starapps.studio,CDN
 bcmedia.bitchute.com,CDN
 before.good-apps.co,CDN
@@ -3214,6 +3218,7 @@ live-storage.fc2.com,CDN
 live.fanmingming.com,CDN
 live.visually-io.com,CDN
 livedoor.blogimg.jp,CDN
+liveimg.sooplive.com,CDN
 livemap-tiles1.waze.com,CDN
 lm.visualon.info,CDN
 load.csell.co,CDN
@@ -3609,6 +3614,7 @@ res.abc.net.au,CDN
 res.cloudinary.com,CDN
 res.craft.do,CDN
 res.garmin.com,CDN
+res.sooplive.com,CDN
 res2.weblium.site,CDN
 resize-image.vocus.cc,CDN
 resize.blogsys.jp,CDN
@@ -4114,6 +4120,7 @@ static.snaptube.in,CDN
 static.snyk.io,CDN
 static.socialshopwave.com,CDN
 static.solarwinds.com,CDN
+static.sooplive.com,CDN
 static.spankbang.com,CDN
 static.spigotmc.org,CDN
 static.srcspot.com,CDN
@@ -4203,6 +4210,7 @@ steamcdn-a.akamaihd.net,CDN
 steamusercontent-a.akamaihd.net,CDN
 steamuserimages-a.akamaihd.net,CDN
 steamvideo-a.akamaihd.net,CDN
+stimg.sooplive.com,CDN
 storage-b.picacomic.com,CDN
 storage.courtlistener.com,CDN
 storage.crisp.chat,CDN
