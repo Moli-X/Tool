@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4549
+# 规则统计: 4550
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -91,9 +91,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-04-08T12:05:27.745Z
-# Last Updated: 2026-04-19T12:42:31.857Z
+# Last Updated: 2026-04-21T03:37:05.215Z
 # License: AGPL 3.0
-# Size: 4451
+# Size: 4452
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1137,6 +1137,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .tile.osm.org
 .tile.osmz.ru
 .tile.stamen.com
+.tile.thunderforest.com
 .tiles-api.maps.komoot.net
 .tiles.mapbox.com
 .tiles.virtualearth.net
@@ -4297,7 +4298,6 @@ tile.osmand.net
 tile.ourmap.us
 tile.poloha.net
 tile.skybrush.io
-tile.thunderforest.com
 tile.waymarkedtrails.org
 tile2.intervals.icu
 tile2.opencyclemap.org
@@ -4305,6 +4305,7 @@ tilecache.rainviewer.com
 tiledbasemaps.arcgis.com
 tilemaps.icgc.cat
 tiles-a.koordinates.com
+tiles-eu.stadiamaps.com
 tiles.arcgis.com
 tiles.arcticconnect.ca
 tiles.gsj.jp
