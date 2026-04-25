@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4551
+# 规则统计: 4555
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -91,9 +91,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-04-08T12:05:27.745Z
-# Last Updated: 2026-04-24T03:31:11.843Z
+# Last Updated: 2026-04-25T10:44:04.492Z
 # License: AGPL 3.0
-# Size: 4453
+# Size: 4457
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1231,6 +1231,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .wixmp.com
 .wixstatic.com
 .wixstudio.io
+.wklcdn.com
 .wmfusercontent.org
 .wolongcdnm3u8.com
 .wolongzywcdn3.com
@@ -2579,9 +2580,11 @@ encrypted-vtbn1.gstatic.com
 encrypted-vtbn2.gstatic.com
 encrypted-vtbn3.gstatic.com
 eomd1.fembeqq.xyz
+ep1.pinkbike.org
 epic-social-social-modules-prod.ol.epicgames.com
 error.rakuten.co.jp
 errors.figma.com
+es.pinkbike.org
 eslint-react.xyz
 eslint.org
 eslint.style
@@ -2709,6 +2712,7 @@ geojson.io
 geoserveis.icgc.cat
 gfx-data.news-engineering.aws.wapo.pub
 gibs-c.earthdata.nasa.gov
+gis.pinkbike.org
 gitpkg-fork.vercel.sh
 global-assets.fitch.group
 global.divhunt.com
