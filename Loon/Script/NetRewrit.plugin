@@ -9,8 +9,7 @@
 
 ^https:\/\/(.*\.)?kelee\.one(\/.*)? response-header-replace content-disposition inline
 
-# 不强制改所有类型，只针对文本类
-^https:\/\/(.*\.)?kelee\.one(\/.*)? response-header-replace content-type application/json;\x20charset=utf-8
+^https:\/\/(.*\.)?kelee\.one(\/.*)? response-header-replace content-type text/plain;\x20charset=utf-8
 
 [MITM]
 hostname = *.kelee.one, kelee.one
