@@ -1,7 +1,13 @@
 // ==UserScript==
 // @name         NetRewrit
+// @description  跳过kelee.one限制
 // @match        *://*.kelee.one/*
+// @version      0.1
+// @namespace    http://tampermonkey.net/
+// @include      *://*.kelee.one/*
 // @grant        GM_xmlhttpRequest
+// @downloadURL https://update.greasyfork.org/scripts/575499/NetRewrit.user.js
+// @updateURL https://update.greasyfork.org/scripts/575499/NetRewrit.meta.js
 // ==/UserScript==
 
 (function () {
