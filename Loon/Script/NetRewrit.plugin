@@ -5,11 +5,15 @@
 #!tag=⚙️ ▸ Function
 
 [Rewrite]
+# kelee
 ^https:\/\/(.*\.)?kelee\.one(\/.*)? header-replace User-Agent Surge\x20iOS/9527
-
 ^https:\/\/(.*\.)?kelee\.one(\/.*)? response-header-replace content-disposition inline
-
 ^https:\/\/(.*\.)?kelee\.one(\/.*)? response-header-replace content-type text/plain;\x20charset=utf-8
 
+# loon.103516.xyz（新增）
+^https:\/\/(.*\.)?loon\.103516\.xyz(\/.*)? header-replace User-Agent Surge\x20iOS/9527
+^https:\/\/(.*\.)?loon\.103516\.xyz(\/.*)? response-header-replace content-disposition inline
+^https:\/\/(.*\.)?loon\.103516\.xyz(\/.*)? response-header-replace content-type text/plain;\x20charset=utf-8
+
 [MITM]
-hostname = *.kelee.one, kelee.one,*.loon.103516,loon.103516.xyz
+hostname = *.kelee.one, kelee.one, *.loon.103516.xyz, loon.103516.xyz
