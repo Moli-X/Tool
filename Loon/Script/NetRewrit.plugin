@@ -20,7 +20,7 @@
 ^https:\/\/(.*\.)?loon\.103516\.xyz(\/.*)? response-header-replace content-type application/json;\x20charset=utf-8
 
 ^https:\/\/raw\.githubusercontent\.com\/.* response-header-replace content-disposition inline
-^https:\/\/raw\.githubusercontent\.com\/.* response-header-replace content-type application/json
+^https:\/\/raw\.githubusercontent\.com\/.* response-header-replace content-type application/json;\x20charset=utf-8
 
 [MITM]
 hostname = kelee.one, *.kelee.one, loon.103516.xyz, *.loon.103516.xyz, raw.githubusercontent.com
