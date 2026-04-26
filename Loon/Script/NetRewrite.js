@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name         NetRewrit
 // @description  跳过Cloudflare私有仓库限制
+// @license      GPL License
 // @match        *://*.kelee.one/*
 // @match        *://loon.103516.xyz/*
 // @version      1.0
