@@ -12,4 +12,4 @@
 ^https:\/\/(.*\.)?kelee\.one(\/.*)? response-header-replace content-type text/plain;\x20charset=utf-8
 
 [MITM]
-hostname = *.kelee.one, kelee.one
+hostname = *.kelee.one, kelee.one,*.loon.103516,loon.103516.xyz
