@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         NetRewrit
-// @description  跳过kelee.one限制
+// @description  跳过Cloudflare私有仓库限制
 // @match        *://*.kelee.one/*
-// @version      0.1
+// @match        *://loon.103516.xyz/*
+// @version      1.0
 // @namespace    http://tampermonkey.net/
-// @include      *://*.kelee.one/*
+// @include      *://*.cloudflare.com/*
 // @grant        GM_xmlhttpRequest
 // @downloadURL https://update.greasyfork.org/scripts/575499/NetRewrit.user.js
 // @updateURL https://update.greasyfork.org/scripts/575499/NetRewrit.meta.js
