@@ -6,20 +6,17 @@
 #!icon=https://github.com/Moli-X/Resources/raw/main/Icon/Image/Moli.png
 #!tag=功能增强
 
-[Argument]
-hub_exclude = switch,true,false,tag=中心排除
-
 [Rewrite]
+# 排除 hub.kelee.one
+^https:\/\/((?!hub\.kelee\.one)(.*\.)?kelee\.one)(\/.*)? header-replace User-Agent Surge\x20iOS/9527
+^https:\/\/((?!hub\.kelee\.one)(.*\.)?kelee\.one)(\/.*)? response-header-replace content-disposition inline
+^https:\/\/((?!hub\.kelee\.one)(.*\.)?kelee\.one)(\/.*)? response-header-replace content-type text/plain;\x20charset=utf-8
 
-# ===== kelee（排除 hub.kelee.one）=====
-^https:\/\/(?!hub\.kelee\.one)(.*\.)?kelee\.one(\/.*)? header-replace User-Agent Surge\x20iOS/9527
-^https:\/\/(?!hub\.kelee\.one)(.*\.)?kelee\.one(\/.*)? response-header-replace content-disposition inline
-^https:\/\/(?!hub\.kelee\.one)(.*\.)?kelee\.one(\/.*)? response-header-replace content-type text/plain;\x20charset=utf-8
-
-# ===== loon =====
+# loon.103516.xyz（不排除）
 ^https:\/\/(.*\.)?loon\.103516\.xyz(\/.*)? header-replace User-Agent Surge\x20iOS/9527
 ^https:\/\/(.*\.)?loon\.103516\.xyz(\/.*)? response-header-replace content-disposition inline
 ^https:\/\/(.*\.)?loon\.103516\.xyz(\/.*)? response-header-replace content-type text/plain;\x20charset=utf-8
+
 
 [MITM]
 hostname = kelee.one, *.kelee.one, loon.103516.xyz, *.loon.103516.xyz
