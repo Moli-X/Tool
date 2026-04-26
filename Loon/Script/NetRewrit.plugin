@@ -11,20 +11,18 @@ hub_exclude = switch,true,false,tag=中心排除
 
 [Rewrite]
 
-# kelee（永远生效）
-^https:\/\/(.*\.)?kelee\.one(\/.*)? header-replace User-Agent Surge\x20iOS/9527 enable={hub_exclude}
-^https:\/\/(.*\.)?kelee\.one(\/.*)? response-header-replace content-disposition inline enable={hub_exclude}
-^https:\/\/(.*\.)?kelee\.one(\/.*)? response-header-replace content-type text/plain;\x20charset=utf-8 enable={hub_exclude}
+# ===== kelee（永远生效）=====
+^https:\/\/(.*\.)?kelee\.one(\/.*)? header-replace User-Agent Surge\x20iOS/9527
+^https:\/\/(.*\.)?kelee\.one(\/.*)? response-header-replace content-disposition inline
+^https:\/\/(.*\.)?kelee\.one(\/.*)? response-header-replace content-type text/plain;\x20charset=utf-8
 
-# hub（由开关控制）
-^https:\/\/hub\.kelee\.one(\/.*)? header-replace User-Agent Surge\x20iOS/9527 enable={hub_exclude}
-^https:\/\/hub\.kelee\.one(\/.*)? response-header-replace content-disposition inline enable={hub_exclude}
-^https:\/\/hub\.kelee\.one(\/.*)? response-header-replace content-type text/plain;\x20charset=utf-8 enable={hub_exclude}
-
-# loon
+# ===== loon（永远生效）=====
 ^https:\/\/(.*\.)?loon\.103516\.xyz(\/.*)? header-replace User-Agent Surge\x20iOS/9527
 ^https:\/\/(.*\.)?loon\.103516\.xyz(\/.*)? response-header-replace content-disposition inline
 ^https:\/\/(.*\.)?loon\.103516\.xyz(\/.*)? response-header-replace content-type text/plain;\x20charset=utf-8
+
+[Script]
+http-response ^https:\/\/hub\.kelee\.one\/.* script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Hub.js requires-body=true, timeout=60, tag=hub资源预览, enable={hub_exclude}
 
 [MITM]
 hostname = kelee.one, *.kelee.one, loon.103516.xyz, *.loon.103516.xyz
