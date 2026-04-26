@@ -12,14 +12,14 @@ hub_exclude = switch,true,false,tag=中心排除
 [Rewrite]
 
 # kelee（永远生效）
-^https:\/\/(.*\.)?kelee\.one(\/.*)? header-replace User-Agent Surge\x20iOS/9527 argument=hub_exclude
-^https:\/\/(.*\.)?kelee\.one(\/.*)? response-header-replace content-disposition inline argument=hub_exclude
-^https:\/\/(.*\.)?kelee\.one(\/.*)? response-header-replace content-type text/plain;\x20charset=utf-8 argument=hub_exclude
+^https:\/\/(.*\.)?kelee\.one(\/.*)? header-replace User-Agent Surge\x20iOS/9527 enable={hub_exclude}
+^https:\/\/(.*\.)?kelee\.one(\/.*)? response-header-replace content-disposition inline enable={hub_exclude}
+^https:\/\/(.*\.)?kelee\.one(\/.*)? response-header-replace content-type text/plain;\x20charset=utf-8 enable={hub_exclude}
 
 # hub（由开关控制）
-^https:\/\/hub\.kelee\.one(\/.*)? header-replace User-Agent Surge\x20iOS/9527 argument=hub_exclude
-^https:\/\/hub\.kelee\.one(\/.*)? response-header-replace content-disposition inline argument=hub_exclude
-^https:\/\/hub\.kelee\.one(\/.*)? response-header-replace content-type text/plain;\x20charset=utf-8 argument=hub_exclude
+^https:\/\/hub\.kelee\.one(\/.*)? header-replace User-Agent Surge\x20iOS/9527 enable={hub_exclude}
+^https:\/\/hub\.kelee\.one(\/.*)? response-header-replace content-disposition inline enable={hub_exclude}
+^https:\/\/hub\.kelee\.one(\/.*)? response-header-replace content-type text/plain;\x20charset=utf-8 enable={hub_exclude}
 
 # loon
 ^https:\/\/(.*\.)?loon\.103516\.xyz(\/.*)? header-replace User-Agent Surge\x20iOS/9527
