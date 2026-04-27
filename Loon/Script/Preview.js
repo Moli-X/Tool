@@ -1,39 +1,51 @@
+// 强制预览 script.hub（绕过下载机制）
+
 let url = $request.url;
-let body = $response.body || "";
 
-// ==============================
-// 1. 只处理文本类（防止二进制炸掉）
-// ==============================
-if (!body || body.length === 0) {
-  body = "Empty response";
+// ======================
+// 1. 提取真实目标（_end_ 后面一般是 plugin 链）
+// ======================
+let match = url.match(/_start_\/(.*?)\/_end_/);
+
+let realUrl = null;
+
+if (match && match[1]) {
+  realUrl = decodeURIComponent(match[1]);
+} else {
+  realUrl = url;
 }
 
-// 判断是否像二进制
-const isBinary = /[\x00-\x08\x0E-\x1F]/.test(body);
+// ======================
+// 2. 重新请求真实内容（关键）
+// ======================
+$httpClient.get(realUrl, function(error, response, data) {
 
-if (isBinary) {
-  body = "⚠️ Binary content detected, preview blocked";
-}
+  if (error || !data) {
+    $done({
+      body: "❌ Fetch failed: " + error
+    });
+    return;
+  }
 
-// ==============================
-// 2. HTML 转义
-// ==============================
-function escapeHtml(text) {
-  return text
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
-}
+  // ======================
+  // 3. HTML 转义
+  // ======================
+  function escapeHtml(text) {
+    return text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+  }
 
-// ==============================
-// 3. UI 页面
-// ==============================
-let html = `
+  // ======================
+  // 4. 强制 HTML 展示
+  // ======================
+  let html = `
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Plugin Preview</title>
+<title>ScriptHub 强制预览</title>
 <style>
 body {
   font-family: Menlo, monospace;
@@ -45,24 +57,27 @@ body {
 </style>
 </head>
 <body>
-URL: ${url}
 
-----------------------------
+🔗 URL:
+${url}
 
-${escapeHtml(body)}
+------------------------
+
+📄 CONTENT:
+${escapeHtml(data)}
+
 </body>
 </html>
 `;
 
-// ==============================
-// 4. 返回 HTML（核心）
-// ==============================
-$done({
-  response: {
-    headers: {
-      "Content-Type": "text/html; charset=utf-8",
-      "Cache-Control": "no-store"
-    },
-    body: html
-  }
+  $done({
+    response: {
+      headers: {
+        "Content-Type": "text/html; charset=utf-8",
+        "Cache-Control": "no-store"
+      },
+      body: html
+    }
+  });
+
 });
