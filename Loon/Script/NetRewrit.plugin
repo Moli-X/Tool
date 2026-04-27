@@ -20,7 +20,8 @@
 ^https:\/\/raw\.githubusercontent\.com\/(?!.*\.(png|jpg|jpeg|gif|webp)$).* response-header-replace content-disposition inline
 ^https:\/\/raw\.githubusercontent\.com\/(?!.*\.(png|jpg|jpeg|gif|webp)$).* response-header-replace content-type application/json;\x20charset=utf-8
 
-^https?:\/\/script\.hub\/file\/_start_\/.* url script-response-body https://github.com/Moli-X/Tool/raw/X/Loon/Script/NetRewrite.js
+^https?:\/\/script\.hub\/file\/_start_\/.* response-header-replace content-disposition inline
+^https?:\/\/script\.hub\/file\/_start_\/.* response-header-replace content-type application/json;\x20charset=utf-8
 
 [MITM]
 hostname = kelee.one, *.kelee.one, loon.103516.xyz, *.loon.103516.xyz, raw.githubusercontent.com, script.hub
