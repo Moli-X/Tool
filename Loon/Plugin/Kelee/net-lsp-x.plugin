@@ -1,0 +1,24 @@
+#!name=网络信息 𝕏
+#!desc=国内外 IP, 运营商, ASN, ORG, 位置, 策略; IPv6; 入口落地; 隐私; LAN; SSID. 自己设置对应域名的分流. 支持网络变化时进行查询通知. 支持长按节点进行查询. 提供 https://net-lsp-x.com 数据接口, 参数与模块参数相同. 详细参数设置见频道说明: https://t.me/zhetengsha
+#!author=@keywos @xream https://t.me/zhetengsha[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/net-lsp-x.plugin
+#App链接=https://t.me/zhetengsha
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
+
+[Rule]
+DOMAIN-SUFFIX,speedtest.cn,DIRECT
+DOMAIN-SUFFIX,ip.im,DIRECT
+DOMAIN-SUFFIX,ip.plus,DIRECT
+
+[Script]
+# Request
+http-request ^https?:\/\/net-lsp-x\.com script-path=https://raw.githubusercontent.com/xream/scripts/main/surge/modules/network-info/net-lsp-x.js, timeout=120, tag=网络信息请求 𝕏
+
+# Event
+network-changed script-path=https://raw.githubusercontent.com/xream/scripts/main/surge/modules/network-info/net-lsp-x.js, timeout=120, tag=网络信息变化 𝕏, argument="TYPE=EVENT&icon=globe.asia.australia&icon-color=#6699FF&LAN=0&SSID=0&IPv6=0&MASK=0&DOMESTIC_IPv4=spcn&DOMESTIC_IPv6=ddnspod&LANDING_IPv4=ipapi&LANDING_IPv6=ipsb&PRIVACY=0&FLAG=1&ENTRANCE_DELAY=0&EVENT_DELAY=3"
+
+# Interaction
+generic script-path=https://raw.githubusercontent.com/xream/scripts/main/surge/modules/network-info/net-lsp-x.js, timeout=120, tag=网络信息查询 𝕏, img-url=location.circle.system
+
+[MITM]
+hostname = net-lsp-x.com

@@ -1,0 +1,21 @@
+#!name=墨鱼手记页一键添加插件
+#!desc=Tab栏显示Loon，代表网页变身成功，即可一键添加插件
+#!author=@ddgksf2013 @小白脸 @xream @keywos @ckyb[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!tag=工具
+#!icon=https://avatars.githubusercontent.com/u/116851128?v=4
+#!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/ScriptHub.Loon.plugin
+#App链接=https://ddgksf2013.top
+#!pluginUrl=https://ddgksf2013.top/module/ScriptHub.Loon.plugin
+
+[General]
+force-http-engine-hosts = script.hub, *.script.hub
+
+[Rule]
+AND, ((DOMAIN-SUFFIX, ddgksf2013.top), (PROTOCOL, QUIC)), REJECT-NO-DROP
+
+[Script]
+http-response ^https?:\/\/ddgksf2013.top\/$ script-path=https://ddgksf2013.top/scripts/web.loon.js, timeout=300, tag=网页变身
+http-request ^https?:\/\/script\.hub\/file\/_start_\/.+type=(?:qx-rewrite|surge-module|loon-plugin|all-module) script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/Rewrite-Parser.js, timeout=300, tag=脚本转换
+
+[MITM]
+hostname = script.hub, *.script.hub, ddgksf2013.top
