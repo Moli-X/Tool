@@ -269,6 +269,9 @@ jobs:
         
         # 定义插件及其原链接
         declare -A plugins=(
+            [ScriptHub.Loon]="https://ddgksf2013.top/module/ScriptHub.Loon.plugin"
+            [net-lsp-x]="https://raw.githubusercontent.com/xream/scripts/main/surge/modules/network-info/net-lsp-x.plugin"
+            [123Pan]="https://loon.103516.xyz/Plugin/123Pan.lpx"
             [QQMusic_remove_ads]="https://git.repcz.link/kelee.one/Tool/Loon/Lpx/QQMusic_remove_ads.lpx"
             [Spotify]="https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.plugin"
             [Boxjs]="https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.plugin"
