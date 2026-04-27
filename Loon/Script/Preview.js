@@ -1,35 +1,36 @@
-// 强制预览 script.hub（绕过下载机制）
+// ScriptHub 强制预览（最终强攻版）
 
 let url = $request.url;
 
-// ======================
-// 1. 提取真实目标（_end_ 后面一般是 plugin 链）
-// ======================
+// ==============================
+// 1. 提取真实链接（_start_ 和 _end_ 中间）
+// ==============================
 let match = url.match(/_start_\/(.*?)\/_end_/);
+let target = match ? decodeURIComponent(match[1]) : url;
 
-let realUrl = null;
+// ==============================
+// 2. 直接二次请求真实内容
+// ==============================
+$httpClient.get(target, function (error, response, data) {
 
-if (match && match[1]) {
-  realUrl = decodeURIComponent(match[1]);
-} else {
-  realUrl = url;
-}
-
-// ======================
-// 2. 重新请求真实内容（关键）
-// ======================
-$httpClient.get(realUrl, function(error, response, data) {
-
+  // ============================
+  // 失败兜底
+  // ============================
   if (error || !data) {
-    $done({
-      body: "❌ Fetch failed: " + error
-    });
-    return;
+    data = "⚠️ Fetch failed or empty response";
   }
 
-  // ======================
-  // 3. HTML 转义
-  // ======================
+  // ============================
+  // 二进制判断（防乱码）
+  // ============================
+  const isBinary = /[\x00-\x08\x0E-\x1F]/.test(data);
+  if (isBinary) {
+    data = "⚠️ Binary content detected (preview forced)";
+  }
+
+  // ============================
+  // HTML 转义
+  // ============================
   function escapeHtml(text) {
     return text
       .replace(/&/g, "&amp;")
@@ -37,15 +38,15 @@ $httpClient.get(realUrl, function(error, response, data) {
       .replace(/>/g, "&gt;");
   }
 
-  // ======================
-  // 4. 强制 HTML 展示
-  // ======================
+  // ============================
+  // 强制预览页面（核心）
+  // ============================
   let html = `
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>ScriptHub 强制预览</title>
+<title>ScriptHub Force Preview</title>
 <style>
 body {
   font-family: Menlo, monospace;
@@ -58,18 +59,24 @@ body {
 </head>
 <body>
 
-🔗 URL:
+🔗 Original URL:
 ${url}
 
-------------------------
+📦 Target:
+${target}
 
-📄 CONTENT:
+----------------------------
+
+📄 Content:
 ${escapeHtml(data)}
 
 </body>
 </html>
 `;
 
+  // ============================
+  // 强制返回 HTML（关键）
+  // ============================
   $done({
     response: {
       headers: {
