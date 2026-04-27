@@ -1,19 +1,23 @@
-// ScriptHub 强制预览版（稳定增强）
+let url = $request.url;
+let body = $response.body || "";
 
-let body = $response.body;
-let headers = $response.headers || {};
-
-// ====== 1. 兜底处理（二进制 / 空内容）======
+// ==============================
+// 1. 只处理文本类（防止二进制炸掉）
+// ==============================
 if (!body || body.length === 0) {
-  body = "⚠️ Empty response";
+  body = "Empty response";
 }
 
-// 有些 plugin/snippet 是乱码/二进制
-if (body.length > 500000) {
-  body = "⚠️ Binary file too large, preview blocked";
+// 判断是否像二进制
+const isBinary = /[\x00-\x08\x0E-\x1F]/.test(body);
+
+if (isBinary) {
+  body = "⚠️ Binary content detected, preview blocked";
 }
 
-// ====== 2. HTML 转义 ======
+// ==============================
+// 2. HTML 转义
+// ==============================
 function escapeHtml(text) {
   return text
     .replace(/&/g, "&amp;")
@@ -21,30 +25,38 @@ function escapeHtml(text) {
     .replace(/>/g, "&gt;");
 }
 
-// ====== 3. 构造网页 ======
+// ==============================
+// 3. UI 页面
+// ==============================
 let html = `
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>ScriptHub Preview</title>
+<title>Plugin Preview</title>
 <style>
 body {
   font-family: Menlo, monospace;
   white-space: pre-wrap;
   padding: 12px;
-  background: #111;
+  background: #0f0f0f;
   color: #00ff88;
 }
 </style>
 </head>
 <body>
+URL: ${url}
+
+----------------------------
+
 ${escapeHtml(body)}
 </body>
 </html>
 `;
 
-// ====== 4. 强制返回 HTML ======
+// ==============================
+// 4. 返回 HTML（核心）
+// ==============================
 $done({
   response: {
     headers: {
