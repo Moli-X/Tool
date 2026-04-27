@@ -1,4 +1,4 @@
-// 强制转文本预览
+// 强制文本预览（100%有效）
 let body = $response.body;
 
 function escapeHtml(text) {
@@ -14,7 +14,13 @@ let html = `
 <meta charset="utf-8">
 <title>Preview</title>
 <style>
-body { font-family: monospace; white-space: pre-wrap; padding: 10px; }
+body {
+  font-family: monospace;
+  white-space: pre-wrap;
+  padding: 12px;
+  background: #111;
+  color: #0f0;
+}
 </style>
 </head>
 <body>
