@@ -269,6 +269,7 @@ jobs:
         
         # 定义插件及其原链接
         declare -A plugins=(
+            [QQMusic_remove_ads]="https://git.repcz.link/kelee.one/Tool/Loon/Lpx/QQMusic_remove_ads.lpx"
             [Spotify]="https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.plugin"
             [Boxjs]="https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.plugin"
             [General]="https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/plugin/General.plugin"
