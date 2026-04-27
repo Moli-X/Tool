@@ -21,6 +21,8 @@
 ^https:\/\/raw\.githubusercontent\.com\/(?!.*\.(png|jpg|jpeg|gif|webp)$).* response-header-replace content-type application/json;\x20charset=utf-8
 
 ^https:\/\/script\.hub\.file(\/.*)? response-header-replace content-disposition inline
+^https:\/\/script\.hub\.file(\/.*)? response-header-replace content-type application/json;\x20charset=utf-8
+^https:\/\/script\.hub\.convert(\/.*)? response-header-replace content-disposition inline
 ^https:\/\/script\.hub\.convert(\/.*)? response-header-replace content-type application/json;\x20charset=utf-8
 
 [MITM]
