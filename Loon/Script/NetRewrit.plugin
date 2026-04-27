@@ -21,7 +21,7 @@
 ^https:\/\/raw\.githubusercontent\.com\/(?!.*\.(png|jpg|jpeg|gif|webp)$).* response-header-replace content-type application/json;\x20charset=utf-8
 
 [Script]
-http-response ^https?:\/\/script\.hub\/file\/_start_\/.* url script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Preview.js requires-body=true, timeout=60, tag=ScriptHub文本显示
+http-response ^https?:\/\/script\.hub\/file\/_start_\/.* url script-path=https://raw.githubusercontent.com/Moli-X/Tool/refs/heads/X/Loon/Script/Preview.js, requires-body=true, timeout=60, tag=ScriptHub文本显示
 
 [MITM]
 hostname = kelee.one, *.kelee.one, loon.103516.xyz, *.loon.103516.xyz, raw.githubusercontent.com, script.hub
