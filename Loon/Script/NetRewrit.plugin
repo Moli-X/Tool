@@ -17,6 +17,10 @@
 ^https:\/\/(.*\.)?loon\.103516\.xyz(\/.*)? response-header-replace content-disposition inline
 ^https:\/\/(.*\.)?loon\.103516\.xyz(\/.*)? response-header-replace content-type application/json;\x20charset=utf-8
 
+^https:\/\/(.*\.)?github\.669697\.xyz(\/.*)? header-replace User-Agent Surge\x20iOS/9527
+^https:\/\/(.*\.)?github\.669697\.xyz(\/.*)? response-header-replace content-disposition inline
+^https:\/\/(.*\.)?github\.669697\.xyz(\/.*)? response-header-replace content-type application/json;\x20charset=utf-8
+
 ^https:\/\/(.*\.)?git\.repcz\.link(\/.*)? header-replace User-Agent Surge\x20iOS/9527
 ^https:\/\/(.*\.)?git\.repcz\.link(\/.*)? response-header-replace content-disposition inline
 ^https:\/\/(.*\.)?git\.repcz\.link(\/.*)? response-header-replace content-type application/json;\x20charset=utf-8
