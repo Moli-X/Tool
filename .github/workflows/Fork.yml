@@ -269,6 +269,7 @@ jobs:
         
         # 定义插件及其原链接
         declare -A plugins=(
+            [SkipProxy]="https://loon.103516.xyz/Plugin/SkipProxy.lpx"
             [ScriptHub.Loon]="https://ddgksf2013.top/module/ScriptHub.Loon.plugin"
             [net-lsp-x]="https://raw.githubusercontent.com/xream/scripts/main/surge/modules/network-info/net-lsp-x.plugin"
             [123Pan]="https://loon.103516.xyz/Plugin/123Pan.lpx"
