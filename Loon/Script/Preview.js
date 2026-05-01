@@ -1,12 +1,13 @@
-let body = $response.body || "";
+let body = $response.body;
 
 $done({
   response: {
     status: 200,
     headers: {
-      "Content-Type": "text/html; charset=utf-8",
-      "Content-Disposition": "inline"
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Disposition": "inline",
+      "Cache-Control": "no-store"
     },
-    body: `<pre style="white-space:pre-wrap;">${body}</pre>`
+    body: String(body)
   }
 });
