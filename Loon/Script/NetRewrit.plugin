@@ -29,7 +29,7 @@
 #^https:\/\/raw\.githubusercontent\.com\/(?!.*\.(png|jpg|jpeg|gif|webp)$).* response-header-replace content-type application/json;\x20charset=utf-8
 
 [Script]
-http-response ^https?:\/\/script\.hub\/file\/.* url script-response-body https://github.com/Moli-X/Tool/raw/X/Loon/Script/Preview.js
+http-response ^https?:\/\/script\.hub\/file\/.* script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Script/Preview.js, requires-body=true, timeout=60, tag=ScriptHub预览
 
 
 [MITM]
