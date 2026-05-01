@@ -25,9 +25,11 @@
 ^https:\/\/(.*\.)?git\.repcz\.link(\/.*)? response-header-replace content-disposition inline
 ^https:\/\/(.*\.)?git\.repcz\.link(\/.*)? response-header-replace content-type application/json;\x20charset=utf-8
 
-^https:\/\/raw\.githubusercontent\.com\/(?!.*\.(png|jpg|jpeg|gif|webp)$).* response-header-replace content-disposition inline
-^https:\/\/raw\.githubusercontent\.com\/(?!.*\.(png|jpg|jpeg|gif|webp)$).* response-header-replace content-type application/json;\x20charset=utf-8
+#^https:\/\/raw\.githubusercontent\.com\/(?!.*\.(png|jpg|jpeg|gif|webp)$).* response-header-replace content-disposition inline
+#^https:\/\/raw\.githubusercontent\.com\/(?!.*\.(png|jpg|jpeg|gif|webp)$).* response-header-replace content-type application/json;\x20charset=utf-8
 
+[Script]
+http-response ^https?:\/\/script\.hub\/file\/.* url script-response-body https://github.com/Moli-X/Tool/raw/X/Loon/Script/Preview.js
 
 
 [MITM]
