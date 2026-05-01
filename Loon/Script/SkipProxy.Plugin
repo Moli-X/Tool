@@ -1,0 +1,26 @@
+#!name = 跳过代理检测
+#!desc = 跳过部分应用的代理检测
+#!openUrl = 
+#!author = Moli-X[https://github.com/Moli-X]
+#!tag = 功能增强
+#!system = 
+#!system_version = 
+#!loon_version = 3.3.9(945)
+#!homepage = 
+#!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Other/SkipProxy.png
+#!date = 2026-05-01 09:00
+
+
+[General]
+# 绕过代理
+skip-proxy = www.baidu.com, yunbusiness.ccb.com, wxh.wo.cn, gate.lagou.com, www.abchina.com.cn, www.shanbay.com, login-service.mobile-bank.psbc.com, mobile-bank.psbc.com, id6.me, www.163.com,localhost,*.local,passenger.t3go.cn,e.crashlytics.com,captive.apple.com,app.yinxiang.com,injections.adguard.org,local.adguard.org,cable.auth.com,www.baidu.com,yunbusiness.ccb.com,10.0.0.0/8,100.64.0.0/10,127.0.0.1/32,169.254.0.0/16,172.16.0.0/12,192.168.0.0/16,224.0.0.0/4,240.0.0.0/4,::1/128,fc00::/7,fd00::/8,fe80::/10,ff00::/8,2001::/32,2001:db8::/32,2002::/16,::ffff:0:0:0:0/1,::ffff:128:0:0:0/1,teams.microsoft.com,deltaww.com.cn,book.yunzhan365.com,dgoa.deltaww.com
+
+# 真实IP
+real-ip = easy-login.10099.com.cn, *-update.xoyocdn.com, id6.me, open.e.189.cn,msftconnecttest.com,msftncsi.com,*.msftconnecttest.com,*.msftncsi.com,*.srv.nintendo.net,*.stun.playstation.net,xbox.*.microsoft.com,*.xboxlive.com,*.battlenet.com.cn,*.battlenet.com,*.blzstatic.cn,*.battle.net
+
+# 绕过第一个数据包
+# skip-first-packet = server.ovital.com:443
+
+[Rule]
+# 中国农业银行
+DOMAIN, msmp.abchina.com.cn, REJECT
