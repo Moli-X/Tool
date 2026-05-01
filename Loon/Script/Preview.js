@@ -1,6 +1,6 @@
-let body = $response.body;
+let body = $response.body || "";
+let headers = $response.headers || {};
 
-// 强制转文本显示（防下载）
 $done({
   response: {
     status: 200,
@@ -8,6 +8,6 @@ $done({
       "Content-Type": "text/plain; charset=utf-8",
       "Content-Disposition": "inline"
     },
-    body: body
+    body: body.toString()
   }
 });
