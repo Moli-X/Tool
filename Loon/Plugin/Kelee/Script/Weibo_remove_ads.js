@@ -1,7 +1,7 @@
 /*
 引用地址：https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/weibo.js
 */
-// 2026-01-19 17:10
+// 2026-04-23 18:00
 
 const url = $request.url;
 if (!$response) $done({});
@@ -1035,6 +1035,10 @@ if (url.includes("/interface/sdk/sdkad.php")) {
       }
       obj.pageHeader.data.items = newItems;
     }
+    if (obj?.detailInfo?.extend?.ai_search_share) {
+      // 底部智搜
+      delete obj.detailInfo.extend.ai_search_share;
+    }
     if (obj?.detailInfo?.extend?.follow_data) {
       // 关注弹窗
       delete obj.detailInfo.extend.follow_data;
@@ -1043,36 +1047,73 @@ if (url.includes("/interface/sdk/sdkad.php")) {
       // 赞赏信息
       delete obj.detailInfo.extend.reward_info;
     }
+    if (obj?.detailInfo?.extend?.sharecontent) {
+      // 微信领红包
+      delete obj.detailInfo.extend.sharecontent;
+    }
     if (obj?.detailInfo?.status?.reward_info) {
       // 赞赏信息
       delete obj.detailInfo.status.reward_info;
+    }
+  } else if (url.includes("/2/statuses/comments_expand_child")) {
+    // 评论区更多回复 二级页面
+    if (obj?.items?.length > 0) {
+      for (let item of obj.items) {
+        removeAvatar(item?.data); // 头像挂件,关注按钮
+      }
     }
   } else if (url.includes("/2/statuses/container_detail_comment")) {
     // 新版 微博评论区
     if (obj?.items?.length > 0) {
       let newItems = [];
       for (let item of obj.items) {
-        if (item?.category === "detail") {
-          removeAvatar(item?.data); // 头像挂件,关注按钮
-          if (item?.data?.comment_bubble) {
-            delete item.data.comment_bubble; // 评论气泡
+        if (item?.type !== "trend" && item?.type !== "comment_header_tip") {
+          // 广告 铁粉标记
+          if (item?.data) {
+            removeAvatar(item?.data); // 头像挂件,关注按钮
+            if (item?.data?.card_type === 236 || item?.data?.itemid === "ai_summary_entrance_real_show") {
+              // 罗伯特总结
+              continue;
+            }
+            if (item?.data?.comment_bubble) {
+              delete item.data.comment_bubble; // 评论气泡
+            }
+            if (item?.data?.comment_bullet_screens_message) {
+              delete item.data.comment_bullet_screens_message; // 评论弹幕
+            }
+            if (item?.data?.hot_icon) {
+              delete item.data.hot_icon; // 热评小图标 弹幕 首评
+            }
+            if (item?.data?.vip_button) {
+              delete item.data.vip_button; // 会员气泡按钮
+            }
           }
-          if (item?.data?.comment_bullet_screens_message) {
-            delete item.data.comment_bullet_screens_message; // 评论弹幕
+          if (item?.items?.length > 0) {
+            let newII = [];
+            for (let ii of item.items) {
+              if (ii?.data) {
+                removeAvatar(ii?.data); // 头像挂件,关注按钮
+                if (/微博智搜/.test(ii?.data?.user?.name)) {
+                  continue;
+                }
+                if (ii?.data?.comment_bubble) {
+                  delete ii.data.comment_bubble; // 评论气泡
+                }
+                if (ii?.data?.comment_bullet_screens_message) {
+                  delete ii.data.comment_bullet_screens_message; // 评论弹幕
+                }
+                if (ii?.data?.hot_icon) {
+                  delete ii.data.hot_icon; // 热评小图标 弹幕 首评
+                }
+                if (ii?.data?.vip_button) {
+                  delete ii.data.vip_button; // 会员气泡按钮
+                }
+              }
+              newII.push(ii);
+            }
+            item.items = newII;
           }
-          if (item?.data?.hot_icon) {
-            delete item.data.hot_icon; // 热评小图标 弹幕 首评
-          }
-          if (item?.data?.vip_button) {
-            delete item.data.vip_button; // 会员气泡按钮
-          }
-          if (["广告", "荐读", "评论总结", "推荐", "相关内容", "相关评论"].includes(item?.data?.adType)) {
-            continue;
-          } else {
-            newItems.push(item);
-          }
-        } else {
-          continue;
+          newItems.push(item);
         }
       }
       obj.items = newItems;

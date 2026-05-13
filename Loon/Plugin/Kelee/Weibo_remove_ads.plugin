@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Weibo_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weibo.png
-#!date=2026-02-22 03:16:14
+#!date=2026-05-13 18:10:34
 
 [Rule]
 DOMAIN-SUFFIX, uve.weibo.com, DIRECT
@@ -58,7 +58,9 @@ http-response ^https:\/\/api\.weibo\.cn\/2\/profile\/(?:container_timeline|deala
 
 http-response ^https:\/\/api\.weibo\.cn\/2\/shproxy\/chaohua\/discovery\/searchactive\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Weibo_remove_ads.js, requires-body=true, tag=移除超话搜索页广告
 
-http-response ^https:\/\/api\.weibo\.cn\/2\/statuses\/(?:container_detail(_comment)?|container_timeline(?:_hot|_topic|_topicpage|_unread)?|repost_timeline|unread_hot_timeline) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Weibo_remove_ads.js, requires-body=true, tag=移除信息流广告
+http-response ^https:\/\/api\.weibo\.cn\/2\/statuses\/(?:comments_expand_child|container_detail_comment) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Weibo_remove_ads.js, requires-body=true, tag=移除评论区广告
+
+http-response ^https:\/\/api\.weibo\.cn\/2\/statuses\/(?:container_detail\?|container_timeline(?:_hot|_topic|_topicpage|_unread)?|repost_timeline|unread_hot_timeline) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Weibo_remove_ads.js, requires-body=true, tag=移除信息流广告
 
 http-response ^https:\/\/api\.weibo\.cn\/2\/statuses\/(?:extend|show)\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Weibo_remove_ads.js, requires-body=true, tag=移除微博详情页广告
 

@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/RedPaper_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/RedPaper.png
-#!date=2026-02-22 03:10:39
+#!date=2026-05-13 18:12:29
 
 [Rule]
 AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
@@ -30,11 +30,11 @@ AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
 [Script]
 http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/(?:imagefeed|live_photo\/save) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/RedPaper_remove_ads.js, requires-body=true, tag=移除图片和实况照片水印
 
-http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system\/service\/ui\/config\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/RedPaper_remove_ads.js, requires-body=true, tag=移除界面整体配置
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system\/service\/ui\/config\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/RedPaper_remove_ads.js, requires-body=true, tag=移除整体配置 ui
 
-http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system_service\/config\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/RedPaper_remove_ads.js, requires-body=true, tag=移除开屏广告
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system_service\/config\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/RedPaper_remove_ads.js, requires-body=true, tag=移除开屏广告 config
 
-http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/RedPaper_remove_ads.js, requires-body=true, tag=移除开屏广告
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/RedPaper_remove_ads.js, requires-body=true, tag=移除开屏广告 splash_config
 
 http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/(?:note\/widgets|user\/followings\/followfeed) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/RedPaper_remove_ads.js, requires-body=true, tag=移除详情页小部件、关注页感兴趣的人
 

@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/AppleWeatherEnhancer.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AppleWeather.png
-#!date=2026-02-25 19:48:36
+#!date=2026-05-13 18:22:25
 
 [Argument]
 Weather.Provider=select, "ColorfulClouds", "WeatherKit", "QWeather", tag=[天气]数据源, desc=使用选定的数据源替换天气数据。
@@ -25,12 +25,12 @@ LogLevel=select, "WARN", "OFF", "ERROR", "INFO", "DEBUG", "ALL", tag=[调试]日
 DOMAIN, weather-analytics-events.apple.com, REJECT-DROP
 DOMAIN, tether.edge.apple, REJECT-DROP
 DOMAIN-SUFFIX, tthr.apple.com, REJECT-DROP
-AND, ((IP-ASN, 714, no-resolve), (PROTOCOL, QUIC)), REJECT-DROP
+AND, ((OR, ((IP-ASN, 714, no-resolve), (IP-ASN, 6185, no-resolve))), (PROTOCOL, QUIC)), REJECT-DROP
 
 [Script]
-http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v1\/availability\/ requires-body=true, script-path=https://github.com/NSRingo/WeatherKit/releases/download/v3.0.9/response.bundle.js, tag=天气可用性响应, argument=[{Weather.Provider},{NextHour.Provider},{AirQuality.Calculate.Algorithm},{API.ColorfulClouds.Token},{API.QWeather.Host},{API.QWeather.Token},{API.WAQI.Token},{Storage},{LogLevel}]
+http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v1\/availability\/ requires-body=true, script-path=https://github.com/NSRingo/WeatherKit/releases/download/v3.1.0/response.bundle.js, tag=天气可用性响应, argument=[{Weather.Provider},{NextHour.Provider},{AirQuality.Calculate.Algorithm},{API.ColorfulClouds.Token},{API.QWeather.Host},{API.QWeather.Token},{API.WAQI.Token},{Storage},{LogLevel}]
 
-http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v2\/weather\/ requires-body=true, binary-body-mode=true, script-path=https://github.com/NSRingo/WeatherKit/releases/download/v3.0.9/response.bundle.js, tag=天气响应, argument=[{Weather.Provider},{NextHour.Provider},{AirQuality.Calculate.Algorithm},{API.ColorfulClouds.Token},{API.QWeather.Host},{API.QWeather.Token},{API.WAQI.Token},{Storage},{LogLevel}]
+http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v2\/weather\/ requires-body=true, binary-body-mode=true, script-path=https://github.com/NSRingo/WeatherKit/releases/download/v3.1.0/response.bundle.js, tag=天气响应, argument=[{Weather.Provider},{NextHour.Provider},{AirQuality.Calculate.Algorithm},{API.ColorfulClouds.Token},{API.QWeather.Host},{API.QWeather.Token},{API.WAQI.Token},{Storage},{LogLevel}]
 
 [MitM]
 hostname=weatherkit.apple.com

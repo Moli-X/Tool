@@ -8,12 +8,13 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Zhihu_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Zhihu.png
-#!date=2026-02-22 03:17:55
+#!date=2026-05-13 18:15:17
 
 [Rule]
 DOMAIN, appcloud.zhihu.com, REJECT
 DOMAIN, appcloud2.in.zhihu.com, REJECT
 DOMAIN, crash2.zhihu.com, REJECT
+DOMAIN, lens.zhihu.com, REJECT
 DOMAIN, mqtt.zhihu.com, REJECT
 DOMAIN, sugar.zhihu.com, REJECT
 DOMAIN, zxid-m.mobileservice.cn, REJECT
@@ -42,7 +43,9 @@ IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT, no-resolve
 ^https:\/\/www\.zhihu\.com\/api\/v4\/search\/related_queries\/(?:article|answer)\/\d+ reject-dict
 
 ^https:\/\/api\.zhihu\.com\/comment_v5\/(?:articles|answers)\/\d+\/list-headers reject-dict
+^https:\/\/api\.zhihu\.com\/comment_v5\/pins\/\d+\/root_comment\? response-body-json-del atmosphere_voting_config
 ^https:\/\/api\.zhihu\.com\/prague\/related_suggestion_native\/feed\? reject-dict
+^https:\/\/api\.zhihu\.com\/related_recommend\/feed\/waterfall\? reject-dict
 ^https:\/\/api\.zhihu\.com\/questions\/\d+(?:\/answers|\/feeds|\?include=) response-body-json-jq 'del(.ad_info, .data.ad_info?, .query_info) | if (.data | type) == "array" then .data |= map(select(.target?.answer_type? // "" | tostring | contains("paid") | not)) else . end'
 ^https:\/\/api\.zhihu\.com\/v5\.1\/topics\/answer\/\d+\/relation reject-dict
 
