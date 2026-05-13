@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4560
+# 规则统计: 4564
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -91,9 +91,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-04-08T12:05:27.745Z
-# Last Updated: 2026-05-05T16:21:47.782Z
+# Last Updated: 2026-05-12T15:43:33.564Z
 # License: AGPL 3.0
-# Size: 4462
+# Size: 4466
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1133,12 +1133,14 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .tile.openstreetmap.de
 .tile.openstreetmap.fr
 .tile.openstreetmap.org
+.tile.opentopomap.org
 .tile.osm.ch
 .tile.osm.org
 .tile.osmz.ru
 .tile.stamen.com
 .tile.thunderforest.com
 .tiles-api.maps.komoot.net
+.tiles.freemap.sk
 .tiles.mapbox.com
 .tiles.virtualearth.net
 .tindiemedia.com
@@ -2202,6 +2204,7 @@ cdn.v2ex.com
 cdn.vector.co
 cdn.verifypass.com
 cdn.viafoura.net
+cdn.videy.co
 cdn.vidyard.com
 cdn.viglink.com
 cdn.violet.vin
@@ -3258,6 +3261,7 @@ maps.geoapify.com
 maps.gstatic.com
 maps.wikimedia.org
 maps.wplace.live
+mapserver.mapy.cz
 maptile.osmand.net
 marber-cdn.economist.com
 marfeelexperimentsexperienceengine.mrf.io
@@ -4301,7 +4305,6 @@ thumbsnap.com
 tile.loc.gov
 tile.mtbmap.cz
 tile.nextzen.org
-tile.opentopomap.org
 tile.openweathermap.org
 tile.osm.be
 tile.osmand.net
@@ -4332,6 +4335,7 @@ tiles.openseamap.org
 tiles.openskimap.org
 tiles.planet.com
 tiles.stadiamaps.com
+tiles.strava.com
 tiles.terria.io
 tiles.versatiles.org
 tiles.windy.com

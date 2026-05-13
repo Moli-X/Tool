@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4560
+# 规则统计: 4564
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -91,9 +91,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-04-08T12:05:27.745Z
-# Last Updated: 2026-05-05T16:21:47.782Z
+# Last Updated: 2026-05-12T15:43:33.564Z
 # License: AGPL 3.0
-# Size: 4462
+# Size: 4466
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1133,12 +1133,14 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .tile.openstreetmap.de,CDN
 .tile.openstreetmap.fr,CDN
 .tile.openstreetmap.org,CDN
+.tile.opentopomap.org,CDN
 .tile.osm.ch,CDN
 .tile.osm.org,CDN
 .tile.osmz.ru,CDN
 .tile.stamen.com,CDN
 .tile.thunderforest.com,CDN
 .tiles-api.maps.komoot.net,CDN
+.tiles.freemap.sk,CDN
 .tiles.mapbox.com,CDN
 .tiles.virtualearth.net,CDN
 .tindiemedia.com,CDN
@@ -2202,6 +2204,7 @@ cdn.v2ex.com,CDN
 cdn.vector.co,CDN
 cdn.verifypass.com,CDN
 cdn.viafoura.net,CDN
+cdn.videy.co,CDN
 cdn.vidyard.com,CDN
 cdn.viglink.com,CDN
 cdn.violet.vin,CDN
@@ -3258,6 +3261,7 @@ maps.geoapify.com,CDN
 maps.gstatic.com,CDN
 maps.wikimedia.org,CDN
 maps.wplace.live,CDN
+mapserver.mapy.cz,CDN
 maptile.osmand.net,CDN
 marber-cdn.economist.com,CDN
 marfeelexperimentsexperienceengine.mrf.io,CDN
@@ -4301,7 +4305,6 @@ thumbsnap.com,CDN
 tile.loc.gov,CDN
 tile.mtbmap.cz,CDN
 tile.nextzen.org,CDN
-tile.opentopomap.org,CDN
 tile.openweathermap.org,CDN
 tile.osm.be,CDN
 tile.osmand.net,CDN
@@ -4332,6 +4335,7 @@ tiles.openseamap.org,CDN
 tiles.openskimap.org,CDN
 tiles.planet.com,CDN
 tiles.stadiamaps.com,CDN
+tiles.strava.com,CDN
 tiles.terria.io,CDN
 tiles.versatiles.org,CDN
 tiles.windy.com,CDN
