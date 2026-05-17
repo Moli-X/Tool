@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Block_HTTPDNS.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png
-#!date=2026-05-16 17:12:20
+#!date=2026-05-17 17:24:28
 
 [Rule]
 DOMAIN-KEYWORD, httpdns, REJECT
@@ -177,9 +177,12 @@ IP-CIDR, 39.97.128.148/32, REJECT, no-resolve
 URL-REGEX, "^http:\/\/api\.weibo\.cn\/\d+\/httpdns\/config", REJECT
 URL-REGEX, "^http:\/\/api\.weibo\.cn\/httpdns\/config", REJECT
 
-URL-REGEX, "^http:\/\/103\.41\.167\.237\/v2\/resolv", REJECT
-IP-CIDR, 118.89.204.198/23, REJECT, no-resolve
+URL-REGEX, ^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\/v\d\/resolv\?, REJECT
+IP-CIDR, 103.41.167.237/32, REJECT, no-resolve
+IP-CIDR, 118.89.204.198/32, REJECT, no-resolve
+IP-CIDR, 182.61.194.7/32, REJECT, no-resolve
 IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT, no-resolve
+IP-CIDR6, 240c:409f:1000::/128, REJECT, no-resolve
 
 DOMAIN, hd.xiaojukeji.com, REJECT
 
