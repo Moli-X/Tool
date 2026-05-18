@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Zhihu_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Zhihu.png
-#!date=2026-05-17 22:29:29
+#!date=2026-05-18 22:52:05
 
 [Rewrite]
 ^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/zhihu\/config\/all\? response-body-json-jq 'def drop_keys: {"km_httpdns_new_config_tars":true,"preFetchHttpDns":true,"httpdns_detector_use_concurrent":true,"httpdns_use_memory_cache":true,"httpdns_new_config_tars":true,"coreNetworkConf_useTars":true,"km_coreNetworkConf_useTars":true,"sugarQuicConfig":true,"quic_dns_detect_enable":true,"quicMixAB":true,"quic_downgrade_enable":true,"quic_priority_strategy":true,"quic_check_health_enable":true,"tquic_configuration":true,"networkExprimentList":true,"tars_ab_list":true,"zaSetExtraRequestHeader":true}; .data.configs |= map(select((drop_keys[.configKey] // false) | not) | if (.configValue | type) == "object" then del(.configValue.delayHttpdns, .configValue.dnsParser, .configValue.HTTPDNS) else . end)'
@@ -21,31 +21,24 @@
 
 ^https:\/\/api\.zhihu\.com\/questions\/\d+\/feeds\? response-body-json-del ad_info
 
-^https:\/\/api\.zhihu\.com\/answers\/v\d\/ response-body-json-del third_business
-^https:\/\/api\.zhihu\.com\/articles\/v\d\/\d+$ response-body-json-del third_business
-^https:\/\/page-info\.zhihu\.com\/articles\/v\d\/\d+$ response-body-json-jq '.structured_content.segments |= (if type == "array" then map(select(.type != "card")) else . end)'
+^https:\/\/api\.zhihu\.com\/next-render\?id=\d+&type=answer reject-dict
 
-^https:\/\/api\.zhihu\.com\/answers\/v\d\/ response-body-json-jq '.structured_content.segments |= map(select(.type != "card"))'
-^https:\/\/api\.zhihu\.com\/articles\/v\d\/\d+\? response-body-json-jq '.structured_content.segments |= map(select(.type != "card"))'
+^https:\/\/api\.zhihu\.com\/comment_v\d\/(answers|pins)\/\d+\/root_comment\? response-body-json-del atmosphere_voting_config
 
-^https:\/\/api\.zhihu\.com\/next-render\?id=\d+&type=answer&scenes=recommend&context_expand=1&is_native=1 reject-dict
+^https:\/\/(api|page-info)\.zhihu\.com\/(articles|answers)\/v\d\/\d+$ response-body-json-del third_business
 
-^https:\/\/api\.zhihu\.com\/comment_v\d\/answers\/\d+\/root_comment\? response-body-json-del atmosphere_voting_config
+^https:\/\/(api|page-info)\.zhihu\.com\/(articles|answers)\/v\d\/\d+$ response-body-json-jq '.structured_content.segments |= map(select(.type != "card"))'
+^https:\/\/api\.zhihu\.com\/topstory\/recommend\? response-body-json-jq '.data[]?.children |= (if type == "array" then map(select(.id != "ring")) else . end)'
 
-^https:\/\/api\.zhihu\.com\/comment_v\\/pins\/\d+\/root_comment\? response-body-json-del atmosphere_voting_config
+^https:\/\/api\.zhihu\.com\/(articles|answers|pins)\/v\d\/\d+\? response-body-json-del third_business ring_info interaction_bar_plugins
 
 ^https:\/\/api\.zhihu\.com\/comment_v\d\/answers\/\d+\/list-headers$ response-body-json-del continuous_consumption_module
-
-^https:\/\/page-info\.zhihu\.com\/answers\/v\d\/\d+$ response-body-json-del third_business
-^https:\/\/page-info\.zhihu\.com\/\/v\d\/\d$ response-body-json-del third_business
 
 ^https:\/\/api\.zhihu\.com\/podcasts\/hub\/v\d$ response-body-json-del banners
 
 ^https:\/\/api\.zhihu\.com\/search\/preset_words\? reject-dict
 
-
 ^https:\/\/api\.zhihu\.com\/search\/recommend_query\/v\d\? response-body-json-jq '.recommend_queries.queries |= map(select(.type == "normal"))'
-
 
 ^https:\/\/zhida\.zhihu\.com\/ai_ingress\/knowledge\/square\/categories\/feeds\?categoryId=1%7D$ reject-dict
 
