@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4575
+# 规则统计: 4578
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -91,9 +91,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-04-08T12:05:27.745Z
-# Last Updated: 2026-05-16T15:21:58.325Z
+# Last Updated: 2026-05-25T11:17:53.471Z
 # License: AGPL 3.0
-# Size: 4477
+# Size: 4480
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -441,6 +441,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .exp-tas.com,CDN
 .externulls.com,CDN
 .ezocdn.com,CDN
+.f-cdn.com,CDN
 .f.hubspotemail.net,CDN
 .f.hubspotfree.net,CDN
 .f.hubspotstarter.net,CDN
@@ -1957,6 +1958,7 @@ cdn.gettr.com,CDN
 cdn.ghostery.com,CDN
 cdn.giftcardpro.app,CDN
 cdn.gigya.com,CDN
+cdn.gist.ai,CDN
 cdn.gofundme.com,CDN
 cdn.googlesource.com,CDN
 cdn.growthbook.io,CDN
@@ -4525,6 +4527,7 @@ widget.freshworks.com,CDN
 widget.gotolstoy.com,CDN
 widget.intercom.io,CDN
 widget.kapa.ai,CDN
+widget.prod.equally.ai,CDN
 widget.reviews.io,CDN
 widget.trustpilot.com,CDN
 widget.usepylon.com,CDN
