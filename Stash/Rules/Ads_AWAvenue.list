@@ -7,8 +7,8 @@
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
 #Total lines: 906
-#Update content: add a fake Telegram IP.(38.190.225.166)
-#Update time: 2026-05-24 21:59:46 UTC+8
+#Update content: fix #209
+#Update time: 2026-05-24 22:11:11 UTC+8
 #Version: 1.6.9-release
 .1500020991.vodplayer.wxamedia.com
 .1500022744.vodplayer.wxamedia.com
@@ -129,6 +129,7 @@
 .adsfilebssdlbig.ali.kugou.com
 .adsfileretry.service.kugou.com
 .adsfs-sdkconfig.heytapimage.com
+.adsfs.heytapimage.com
 .adsfs.oppomobile.com
 .adslvfile.qq.com
 .adsmart.konka.com
@@ -349,7 +350,6 @@
 .doubleclick-cn.net
 .download.changhong.upgrade2.huan.tv
 .downloadxml.changhong.upgrade2.huan.tv
-.drcn-weather.cloud.huawei.com
 .dsp-x.jd.com
 .dsp.fcbox.com
 .dualstack-logs.amap.com
