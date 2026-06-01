@@ -5,10 +5,10 @@
 #!tag=功能增强
 #!system=iOS, iPadOS, macOS, watchOS
 #!system_version=18
-#!loon_version=3.2.4(787)
+#!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/AppleWeatherEnhancer.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AppleWeather.png
-#!date=2026-05-13 18:22:25
+#!date=2026-06-01 17:11:35
 
 [Argument]
 Weather.Provider=select, "ColorfulClouds", "WeatherKit", "QWeather", tag=[天气]数据源, desc=使用选定的数据源替换天气数据。

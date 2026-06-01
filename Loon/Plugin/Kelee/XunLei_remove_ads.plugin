@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.2.4(787)
+#!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/XunLei_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/XunLei.png
-#!date=2025-07-10 21:25:29
+#!date=2026-06-01 17:11:35
 
 [Rewrite]
 ^https:\/\/conf-m-ssl\.xunlei\.com\/external\/ response-body-json-del values.me_config.entrance_list_vertical_enable values.me_config.common_service_list values.me_config.banner_service_list

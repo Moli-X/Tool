@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=iOS, iPadOS
 #!system_version=15
-#!loon_version=3.3.8(936)
+#!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Bilibili_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Bilibili.png
-#!date=2026-04-30 16:24:57
+#!date=2026-06-01 17:11:35
 
 [Argument]
 displayUpList=select, "show", "hide", "auto", tag=[动态]中[最常访问]的显示方式, desc=auto：仅当列表中存在直播状态时显示；show：始终显示；hide：始终隐藏。

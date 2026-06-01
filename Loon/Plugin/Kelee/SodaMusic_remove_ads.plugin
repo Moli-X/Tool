@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.2.4(787)
+#!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/SodaMusic_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SodaMusic.png
-#!date=2025-08-31 05:46:14
+#!date=2026-06-01 17:11:35
 
 [Rewrite]
 ^https:\/\/tnc\d-(bjlgy|ali[a-z]{2})\d?\.zijieapi\.com\/get_domains\/v\d\/\? response-body-json-replace data.opaque_data_enabled 0 data.ttnet_http_dns_enabled 0 data.ttnet_quic_enabled 0 data.ttnet_tt_http_dns 0

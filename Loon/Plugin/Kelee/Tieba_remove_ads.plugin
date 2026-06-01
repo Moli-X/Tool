@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=15
-#!loon_version=3.2.4(787)
+#!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Tieba_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Tieba.png
-#!date=2026-01-01 15:45:01
+#!date=2026-06-01 17:11:35
 
 [Argument]
 per_filter_video_thread=select, "true", "false", tag=拦截推荐页面视频帖, desc=此项决定是否拦截首页推荐标签下的视频帖

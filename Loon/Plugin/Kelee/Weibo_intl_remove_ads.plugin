@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.2.4(787)
+#!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Weibo_intl_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weibo_intl.png
-#!date=2026-05-15 22:35:54
+#!date=2026-06-01 17:11:35
 
 [Rewrite]
 ^https:\/\/bootpreload\.uve\.weibo\.com\/v1\/ad\/preload$ reject-dict
