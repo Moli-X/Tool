@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4589
+# 规则统计: 4596
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -91,9 +91,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-04-08T12:05:27.745Z
-# Last Updated: 2026-06-08T06:14:39.123Z
+# Last Updated: 2026-06-09T15:16:08.294Z
 # License: AGPL 3.0
-# Size: 4491
+# Size: 4498
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1113,6 +1113,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .swiftypecdn.com,CDN
 .sxccdn.com,CDN
 .szjal.cn,CDN
+.t-assets.net,CDN
 .t8cdn.com,CDN
 .tacdn.com,CDN
 .tags.f5.com,CDN
@@ -1577,6 +1578,7 @@ assets.tigerdata.com,CDN
 assets.time.com,CDN
 assets.tokopedia.net,CDN
 assets.toot.cafe,CDN
+assets.transfernow.net,CDN
 assets.tvtropes.org,CDN
 assets.twitch.tv,CDN
 assets.unicorn.studio,CDN
@@ -1730,6 +1732,7 @@ canny-assets.io,CDN
 canvas-lb.tubitv.com,CDN
 cartodb-basemaps-a.global.ssl.fastly.net,CDN
 cassette.sphdigital.com.sg,CDN
+catalogartifact.azureedge.net,CDN
 categoriespages-cdn.trustpilot.net,CDN
 cc-embed.adobe.com,CDN
 cc.boyfriendtv.com,CDN
@@ -2482,6 +2485,7 @@ creative.eizzih.com,CDN
 creator-image.javhd.com,CDN
 crl.usertrust.com,CDN
 crl.verisign.com,CDN
+crl3.digicert.com,CDN
 crt.comodoca.com,CDN
 crt.sectigo.com,CDN
 crt.usertrust.com,CDN
@@ -3144,6 +3148,7 @@ imgcn5.bgmbk.tv,CDN
 imgfile.shop,CDN
 imgix.setapp.com,CDN
 imgopt.infoq.com,CDN
+imgproxy.flathub.org,CDN
 imgproxy.fourthwall.com,CDN
 imgrs.apkcombo.com,CDN
 imgs.plurk.com,CDN
@@ -3408,6 +3413,7 @@ momentjs.com,CDN
 moodular.jotform.com,CDN
 mosaic-blender.fxtwitter.com,CDN
 mosaic.fxtwitter.com,CDN
+mozilla-ohttp.fastly-edge.com,CDN
 mparticle.weather.com,CDN
 mstdn-s3.o3o.studio,CDN
 mta.newfold.com,CDN
@@ -4458,6 +4464,7 @@ v.w-x.co,CDN
 v2.listenloop.com,CDN
 v2uploads.zopim.io,CDN
 vanilla-extract.style,CDN
+variations.brave.com,CDN
 vbmspic.video.friday.tw,CDN
 vcdn.anysex.com,CDN
 vectorified.com,CDN

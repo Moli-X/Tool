@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4589
+# 规则统计: 4596
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -91,9 +91,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-04-08T12:05:27.745Z
-# Last Updated: 2026-06-08T06:14:39.123Z
+# Last Updated: 2026-06-09T15:16:08.294Z
 # License: AGPL 3.0
-# Size: 4491
+# Size: 4498
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1113,6 +1113,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .swiftypecdn.com
 .sxccdn.com
 .szjal.cn
+.t-assets.net
 .t8cdn.com
 .tacdn.com
 .tags.f5.com
@@ -1577,6 +1578,7 @@ assets.tigerdata.com
 assets.time.com
 assets.tokopedia.net
 assets.toot.cafe
+assets.transfernow.net
 assets.tvtropes.org
 assets.twitch.tv
 assets.unicorn.studio
@@ -1730,6 +1732,7 @@ canny-assets.io
 canvas-lb.tubitv.com
 cartodb-basemaps-a.global.ssl.fastly.net
 cassette.sphdigital.com.sg
+catalogartifact.azureedge.net
 categoriespages-cdn.trustpilot.net
 cc-embed.adobe.com
 cc.boyfriendtv.com
@@ -2482,6 +2485,7 @@ creative.eizzih.com
 creator-image.javhd.com
 crl.usertrust.com
 crl.verisign.com
+crl3.digicert.com
 crt.comodoca.com
 crt.sectigo.com
 crt.usertrust.com
@@ -3144,6 +3148,7 @@ imgcn5.bgmbk.tv
 imgfile.shop
 imgix.setapp.com
 imgopt.infoq.com
+imgproxy.flathub.org
 imgproxy.fourthwall.com
 imgrs.apkcombo.com
 imgs.plurk.com
@@ -3408,6 +3413,7 @@ momentjs.com
 moodular.jotform.com
 mosaic-blender.fxtwitter.com
 mosaic.fxtwitter.com
+mozilla-ohttp.fastly-edge.com
 mparticle.weather.com
 mstdn-s3.o3o.studio
 mta.newfold.com
@@ -4458,6 +4464,7 @@ v.w-x.co
 v2.listenloop.com
 v2uploads.zopim.io
 vanilla-extract.style
+variations.brave.com
 vbmspic.video.friday.tw
 vcdn.anysex.com
 vectorified.com
