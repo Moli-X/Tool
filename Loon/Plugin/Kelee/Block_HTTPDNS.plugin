@@ -8,7 +8,7 @@
 #!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Block_HTTPDNS.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png
-#!date=2026-06-12 14:11:07
+#!date=2026-06-15 21:46:05
 
 [Rule]
 DOMAIN-KEYWORD, httpdns, REJECT
@@ -145,6 +145,8 @@ DOMAIN, hdns.ksyun.com, REJECT
 DOMAIN, httpdns.push.oppomobile.com, REJECT
 DOMAIN, httpdns.ocloud.oppomobile.com, REJECT
 
+DOMAIN, cdndns.kwd.inkuai.com, REJECT
+DOMAIN, hdns.k-dyn.com, REJECT
 DOMAIN, kuaishou.httpdns.pro, REJECT
 DOMAIN, httpdns.kwd.inkuai.com, REJECT
 DOMAIN, apidns.kwd.inkuai.com, REJECT
