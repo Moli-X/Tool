@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4596
+# 规则统计: 4599
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -91,9 +91,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-04-08T12:05:27.745Z
-# Last Updated: 2026-06-09T15:16:08.294Z
+# Last Updated: 2026-06-15T02:41:55.598Z
 # License: AGPL 3.0
-# Size: 4498
+# Size: 4501
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -614,6 +614,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .imageshack.us,CDN
 .imagetwist.com,CDN
 .img-dpreview.com,CDN
+.img.gmo.jp,CDN
 .img.haiwaikan.com,CDN
 .img.sooplive.com,CDN
 .img1.acsta.net,CDN
@@ -1728,6 +1729,7 @@ cache.industry.siemens.com,CDN
 cache.ip-api.com,CDN
 cache.omnicalculator.com,CDN
 cached.rebuyengine.com,CDN
+cafe.github.com,CDN
 canny-assets.io,CDN
 canvas-lb.tubitv.com,CDN
 cartodb-basemaps-a.global.ssl.fastly.net,CDN
@@ -3990,6 +3992,7 @@ static.bytepan.com,CDN
 static.c-spanvideo.org,CDN
 static.canva.com,CDN
 static.captcha-delivery.com,CDN
+static.captcha.awswaf.com,CDN
 static.carfax.com,CDN
 static.cdnlogo.com,CDN
 static.chaika.moe,CDN
