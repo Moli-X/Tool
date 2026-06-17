@@ -8,7 +8,7 @@
 #!loon_version=3.5.0(969)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/PinDuoDuo_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PinDuoDuo.png
-#!date=2026-06-12 00:11:01
+#!date=2026-06-17 19:40:16
 
 [Rule]
 AND, ((URL-REGEX, "^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\/d(\d)?"), (USER-AGENT, "*com.xunmeng.pinduoduo*")), REJECT
@@ -49,6 +49,8 @@ DOMAIN, apm-a.pinduoduo.com, REJECT
 ^https:\/\/api\.pinduoduo\.com\/api\/growth\/nagato\/app\/index\/gather\? reject-dict
 ^https:\/\/api\.pinduoduo\.com\/api\/engels\/wait\/receive\/review\? reject-dict
 ^https:\/\/api\.pinduoduo\.com\/api\/buffon\/nasus\/recommend\? reject-dict
+
+^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v2\/query\/goods_detail_with_tags\? reject-dict
 
 ^https:\/\/api\.pinduoduo\.com\/api\/alexa\/homepage\/hub\? response-body-json-del result.dy_module.irregular_banner_dy result.icon_set result.search_bar_hot_query result.dy_module.irregular_banner_dy
 

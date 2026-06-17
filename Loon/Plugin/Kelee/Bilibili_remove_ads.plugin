@@ -8,7 +8,7 @@
 #!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Bilibili_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Bilibili.png
-#!date=2026-06-01 17:11:35
+#!date=2026-06-17 19:34:04
 
 [Argument]
 displayUpList=select, "show", "hide", "auto", tag=[动态]中[最常访问]的显示方式, desc=auto：仅当列表中存在直播状态时显示；show：始终显示；hide：始终隐藏。
@@ -28,7 +28,8 @@ AND, ((DOMAIN-SUFFIX, chat.bilibili.com), (OR, ((DOMAIN-KEYWORD, stun), (DOMAIN-
 [Rewrite]
 ^https:\/\/api\.bilibili\.com\/x\/pd-proxy\/tracker\? response-body-json-jq '.data[][]?="stun.chat.bilibili.com:3478"'
 
-^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/(list|show|event\/list2)\? response-body-json-jq '.data |= with_entries(if .key | IN("show", "event_list") then .value = [] else . end)'
+^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/(show|event\/list2)\? response-body-json-jq '.data |= with_entries(if .key | IN("show", "event_list") then .value = [] else . end)'
+^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list\? mock-response-body data-type=text status-code=200 data="OK"
 
 ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab\/v2\? response-body-json-jq jq-path="https://kelee.one/Resource/JQLang/Bilibili/tab_Bilibili_remove_ads.jq"
 
