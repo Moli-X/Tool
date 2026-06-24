@@ -25,9 +25,9 @@
 
 ^https:\/\/api\.zhihu\.com\/comment_v\d\/(answers|pins)\/\d+\/root_comment\? response-body-json-del atmosphere_voting_config
 
-^https:\/\/(api|page-info)\.zhihu\.com\/(articles|answers)\/v\d\/\d+$ response-body-json-del third_business
+^https:\/\/(api|page-info)(?:\.zhihu)?\.com\/answers\/v\d\/\d+(?:\?.*)?$ response-body-json-del third_business float_search_word
 
-^https:\/\/(api|page-info)\.zhihu\.com\/(articles|answers)\/v\d\/\d+$ response-body-json-jq '.structured_content.segments |= map(select(.type != "card"))'
+^https:\/\/(api|page-info)(?:\.zhihu)?\.com\/answers\/v\d\/\d+(?:\?.*)?$ response-body-json-jq '.structured_content.segments |= map(select(.type != "card"))'
 ^https:\/\/api\.zhihu\.com\/topstory\/recommend\? response-body-json-jq '.data[]?.children |= (if type == "array" then map(select(.id != "ring")) else . end)'
 
 ^https:\/\/api\.zhihu\.com\/(articles|answers|pins)\/v\d\/\d+\? response-body-json-del third_business ring_info interaction_bar_plugins
@@ -37,12 +37,19 @@
 ^https:\/\/api\.zhihu\.com\/podcasts\/hub\/v\d$ response-body-json-del banners
 
 ^https:\/\/api\.zhihu\.com\/search\/preset_words\? reject-dict
+^https:\/\/api\.zhihu\.com\/search\/related_queries\/question\/\d+$  reject-dict
 
 ^https:\/\/api\.zhihu\.com\/search\/recommend_query\/v\d\? response-body-json-jq '.recommend_queries.queries |= map(select(.type == "normal"))'
+
+^https:\/\/api\.zhihu\.com\/search_v\d\? response-body-json-del pendant
+
+^https:\/\/api\.zhihu\.com\/search\/tabs\? response-body-json-jq '.data |= map(select(.t | IN("general", "ai_zhida", "recent", "people", "zvideo", "ring", "topic", "podcast", "column", "pin", "favlist")))'
 
 ^https:\/\/zhida\.zhihu\.com\/ai_ingress\/knowledge\/square\/categories\/feeds\?categoryId=1%7D$ reject-dict
 
 ^https:\/\/zhida\.zhihu\.com\/ai_ingress\/ai_chat\/guidance$ reject-dict
+
+^https:\/\/api\.zhihu\.com\/content-distribution-core\/bubble\/common\/show$ reject-dict
 
 ^https:\/\/www\.zhihu\.com\/api\/v\d\/members\/homepage_card$ reject-dict
 

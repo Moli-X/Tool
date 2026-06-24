@@ -88,9 +88,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-04-08T12:05:27.745Z
-# Last Updated: 2026-06-19T10:26:43.718Z
+# Last Updated: 2026-06-23T12:52:02.130Z
 # License: AGPL 3.0
-# Size: 4507
+# Size: 4517
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -283,6 +283,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .cdn.survey.medallia.com
 .cdn.turner.com
 .cdn.ubi.com
+.cdn.usestoryteller.com
 .cdn.workos.com
 .cdn1122.com
 .cdn2.hubspot.net
@@ -353,6 +354,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .csp.withgoogle.com
 .ctfassets.net
 .cthd.icu
+.cursor-cdn.com
 .customerioforms.com
 .customeriomail.com
 .cwwcdn.com
@@ -581,6 +583,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .hydaelyn-25x-18.top
 .i-dont-care-about-cookies.eu
 .i.optimole.com
+.i.posthog.com
 .ibytedtos.com
 .ibyteimg.com
 .icfcdn.com
@@ -1537,6 +1540,7 @@ assets.openshift.net
 assets.orz.uno
 assets.peatio.com
 assets.pingie.com
+assets.pingone.com
 assets.pixlee.com
 assets.play.xbox.com
 assets.plurk.com
@@ -2268,6 +2272,7 @@ cdn1.bigcommerce.com
 cdn1.dan.com
 cdn1.edgedatg.com
 cdn1.epicgames.com
+cdn1.espn.net
 cdn1.ettoday.net
 cdn1.hentaicity.com
 cdn1.hotmoza.tv
@@ -2418,6 +2423,7 @@ cms-cdn.now.gg
 cms.blavity.com
 cms.mistral.ai
 cms.myfonts.com
+cms.railway.com
 cms.recordedfuture.com
 cms.socialinsider.io
 cms.therecord.media
@@ -2534,6 +2540,7 @@ dev.visualwebsiteoptimizer.com
 devicons.railway.com
 devnull.perfops.net
 dh-site.b-cdn.net
+digitalhub.fifa.com
 dims.apnews.com
 disco-static.productessentials.app
 disco.headliner.link
@@ -2615,7 +2622,6 @@ es.pinkbike.org
 eslint-react.xyz
 eslint.org
 eslint.style
-eu-assets.i.posthog.com
 eu-images.contentstack.com
 eu.cdnbye.com
 eu.hamreus.com
@@ -3067,6 +3073,7 @@ img.javstore.net
 img.javynow.com
 img.jsdelivr.com
 img.kbhgames.com
+img.kemono.cr
 img.logokit.com
 img.ltyears.com
 img.lvv2.com
@@ -3272,6 +3279,7 @@ logs.blip.net
 lolstatic-a.akamaihd.net
 lucide.dev
 lumiere-a.akamaihd.net
+luminaire.railway.com
 lzd-img-global.slatic.net
 m-cdn.phonearena.com
 m.porn3dx.com
@@ -4278,6 +4286,7 @@ storageapi2.fleek.co
 store-images.microsoft.com
 store-images.s-microsoft.com
 stories.freepiklabs.com
+stories.usestoryteller.com
 storybooks.fluentui.dev
 stream.mux.com
 streaming.split.io
@@ -4426,6 +4435,7 @@ ui.powerreviews.com
 ui.trailhead.com
 uim.9uu22.com
 unavatar.io
+unleash.codeium.com
 unlimited-cdn.waifu2x.net
 unsubscribe-imgs.leavemealone.com
 uos-support-files.svc.ui.com
@@ -4444,7 +4454,6 @@ uploads.pullfrog.com
 uploads.sitepoint.com
 upos-sz-mirroralibstar1.bilivideo.com
 upos-sz-mirrorcosbstar1.bilivideo.com
-us-assets.i.posthog.com
 us-js.zonka.co
 us.123rf.com
 us.hamreus.com
@@ -4512,6 +4521,7 @@ wa.arounddeal.com
 wa1.aninoapps.com
 wac-cdn.atlassian.com
 waitlisted.co
+wall-ui-cdn.p.aws.economist.com
 walter-r2.trakt.tv
 wandi-6402.kxcdn.com
 wcpstatic.microsoft.com

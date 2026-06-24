@@ -8,7 +8,7 @@
 #!loon_version=3.5.0(969)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/PinDuoDuo_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PinDuoDuo.png
-#!date=2026-06-17 19:40:16
+#!date=2026-06-22 19:19:25
 
 [Rule]
 AND, ((URL-REGEX, "^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\/d(\d)?"), (USER-AGENT, "*com.xunmeng.pinduoduo*")), REJECT
@@ -58,7 +58,7 @@ DOMAIN, apm-a.pinduoduo.com, REJECT
 
 ^https:\/\/api\.pinduoduo\.com\/search\? response-body-json-del expansion
 
-^https:\/\/api\.pinduoduo\.com\/api\/philo\/personal\/hub\? response-body-json-del monthly_card_entrance personal_center_style_v2_vo icon_set.icons icon_set.top_personal_icons
+^https:\/\/api\.pinduoduo\.com\/api\/philo\/personal\/hub\? response-body-json-del monthly_card_entrance personal_center_style_v2_vo icon_set.icons icon_set.top_personal_icons personal_banner
 
 ^https:\/\/api\.pinduoduo\.com\/api\/oak\/integration\/render\? response-body-json-del bottom_section_list ui.bottom_section ui.live_section.float_info
 
