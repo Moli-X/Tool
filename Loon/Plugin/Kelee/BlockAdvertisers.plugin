@@ -327,6 +327,7 @@ DOMAIN, firebaseinappmessaging.googleapis.com, REJECT
 DOMAIN, fundingchoicesmessages.google.com, REJECT
 DOMAIN-SUFFIX, doubleclick.net, REJECT
 DOMAIN-SUFFIX, doubleclick-cn.net, REJECT
+DOMAIN-SUFFIX, googlesyndication.com, REJECT
 DOMAIN-SUFFIX, googlesyndication-cn.com, REJECT
 
 DOMAIN-SUFFIX, xinduoad.com, REJECT
@@ -398,11 +399,12 @@ DOMAIN-SUFFIX, medproad.com, REJECT
 DOMAIN-SUFFIX, applovin.com, REJECT
 
 DOMAIN-SUFFIX, iads.unity3d.com, REJECT
+DOMAIN-SUFFIX, unityads.unity3d.com, REJECT
 DOMAIN-SUFFIX, unityads.unitychina.cn, REJECT
 
 DOMAIN-SUFFIX, tapjoy.com, REJECT
 
-DOMAIN-SUFFIX, ads.vungle.com, REJECT
+DOMAIN-SUFFIX, vungle.com, REJECT
 
 DOMAIN-SUFFIX, adsmoloco.com, REJECT
 
@@ -431,6 +433,12 @@ DOMAIN-SUFFIX, skarb.club, REJECT
 DOMAIN-SUFFIX, skarb.work, REJECT
 
 DOMAIN-SUFFIX, amplitude.com, REJECT
+
+DOMAIN-SUFFIX, fivecdm.com, REJECT
+
+DOMAIN-SUFFIX, doubleverify.com, REJECT
+
+DOMAIN, ep7.facebook.com, REJECT
 
 [Rewrite]
 ^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ reject

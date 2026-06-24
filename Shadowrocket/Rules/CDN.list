@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4615
+# 规则统计: 4621
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -91,9 +91,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-04-08T12:05:27.745Z
-# Last Updated: 2026-06-23T12:52:02.130Z
+# Last Updated: 2026-06-24T05:48:35.635Z
 # License: AGPL 3.0
-# Size: 4517
+# Size: 4523
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1249,6 +1249,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .wolongcdnm3u8.com
 .wolongzywcdn3.com
 .workers.dev
+.workoscdn.com
 .wowmodels.com
 .wp.com
 .wpcomstaging.com
@@ -1965,6 +1966,7 @@ cdn.freebiesupply.com
 cdn.freecodecamp.org
 cdn.freesound.org
 cdn.freshdesk.com
+cdn.fundraiseup.com
 cdn.gamemonkey.org
 cdn.gatherings.franchise.minecraft-services.net
 cdn.gdl.gg
@@ -2551,6 +2553,7 @@ divhunt-site.b-cdn.net
 divhunt.b-cdn.net
 dl.airdroid.com
 dlassets-ssl.xboxlive.com
+dlstats.izzyondroid.org
 do.featurebase.app
 docs.brew.sh
 docs.mrchromebox.tech
@@ -2594,6 +2597,7 @@ embed-ssl.wistia.com
 embed-v2.testimonial.to
 embed.culturalspot.org
 embed.getwally.net
+embed.lantern.io
 embed.reddit.com
 embed.runkit.com
 embed.savvycal.com
@@ -2730,6 +2734,7 @@ form-assets.mailchimp.com
 frames-commandbar-prod.commandbar.com
 freeshippingbar.herokuapp.com
 front-resource.fs.com
+frontend-apps-multi-region.workos.com
 frontend-apps.workos.com
 frontend-assets.supabase.com
 frontend-cdn.perplexity.ai
@@ -4060,6 +4065,7 @@ static.foxnews.com
 static.frame.work
 static.freedownloadmanager.org
 static.freeimages.com
+static.fundraiseup.com
 static.garmin.com
 static.generated.photos
 static.getbutton.io
