@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4625
+# 规则统计: 4631
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -90,10 +90,10 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 #
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2026-04-08T12:05:27.745Z
-# Last Updated: 2026-06-30T08:14:31.138Z
+# Last Updated: 2026-06-30T21:42:09.831Z
+# Last Updated: 2026-06-30T21:51:48.457Z
 # License: AGPL 3.0
-# Size: 4527
+# Size: 4533
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -500,6 +500,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .gamccdn.com,CDN
 .gamesgamescdn.com,CDN
 .gammacdn.com,CDN
+.gannett-cdn.com,CDN
 .garmincdn.com,CDN
 .gateway.originprotocol.com,CDN
 .gateway.pinata.cloud,CDN
@@ -2233,6 +2234,7 @@ cdn.userreport.com,CDN
 cdn.userway.org,CDN
 cdn.v2ex.com,CDN
 cdn.vector.co,CDN
+cdn.veeam.com,CDN
 cdn.verifypass.com,CDN
 cdn.viafoura.net,CDN
 cdn.videy.co,CDN
@@ -2463,6 +2465,7 @@ connectivitycheck.gstatic.com,CDN
 consent-manager.ft.com,CDN
 consent-notice.ft.com,CDN
 consent.dw.com,CDN
+consent.formula1.com,CDN
 consentdeliveryfd.azurefd.net,CDN
 consumersite-assets.trustpilot.net,CDN
 consumersiteimages.trustpilot.net,CDN
@@ -2748,6 +2751,7 @@ g-static.ap4r.com,CDN
 g.newsweek.com,CDN
 g1.nyt.com,CDN
 gamemedia.armorgames.com,CDN
+gannett-cdn.ex.co,CDN
 gdb.rferl.org,CDN
 gdb.voanews.com,CDN
 gearbox.imgix.com,CDN
@@ -3350,6 +3354,7 @@ media.evolv.ai,CDN
 media.fc2.com,CDN
 media.fidoalliance.org,CDN
 media.flaticon.com,CDN
+media.formula1.com,CDN
 media.fs.com,CDN
 media.gamestop.com,CDN
 media.geeksforgeeks.org,CDN
@@ -4063,6 +4068,7 @@ static.ffx.io,CDN
 static.figma.com,CDN
 static.filehorse.com,CDN
 static.filestackapi.com,CDN
+static.formula1.com,CDN
 static.foxbusiness.com,CDN
 static.foxnews.com,CDN
 static.frame.work,CDN

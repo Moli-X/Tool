@@ -8,7 +8,7 @@
 #!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Block_HTTPDNS.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png
-#!date=2026-06-15 21:46:05
+#!date=2026-07-01 10:51:17
 
 [Rule]
 DOMAIN-KEYWORD, httpdns, REJECT
@@ -200,6 +200,8 @@ DOMAIN, httpdns.immomo.com, REJECT
 URL-REGEX, "^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?):\d+\/httpdns\/", REJECT
 
 URL-REGEX, "^http:\/\/\[[0-9a-fA-F:]+\]:\d+\/httpdns\/", REJECT
+
+DOMAIN, httpdns.zybang.com, REJECT
 
 [Rewrite]
 ^https?:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$ reject-dict
