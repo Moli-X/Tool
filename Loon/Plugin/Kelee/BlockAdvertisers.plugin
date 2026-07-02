@@ -8,7 +8,7 @@
 #!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!date=2026-07-01 10:51:11
+#!date=2026-07-02 01:08:46
 
 [Rule]
 DOMAIN-KEYWORD, adstrategy, REJECT
@@ -264,6 +264,7 @@ DOMAIN, dsp-x.jd.com, REJECT
 DOMAIN, im-x.jd.com, REJECT
 DOMAIN, xlog.jd.com, REJECT
 DOMAIN, janapi.jd.com, REJECT
+DOMAIN, dg.k.jd.com, REJECT
 
 DOMAIN-SUFFIX, toponadss.com, REJECT
 DOMAIN-SUFFIX, toponad.com, REJECT
