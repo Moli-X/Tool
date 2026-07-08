@@ -1,5 +1,5 @@
 # 规则名称: Telegram
-# 规则统计: 62
+# 规则统计: 63
 
 HOST,api.mixpanel.com,Telegram
 HOST,events-gateway.ncdev.site,Telegram
@@ -33,6 +33,7 @@ HOST-KEYWORD,nicegram,Telegram
 HOST-KEYWORD,telegram,Telegram
 IP-CIDR,149.154.160.0/20,Telegram
 IP-CIDR,185.76.151.0/24,Telegram
+IP-CIDR,194.221.250.50/32,Telegram
 IP-CIDR,5.28.192.0/18,Telegram
 IP-CIDR,91.105.192.0/23,Telegram
 IP-CIDR,91.108.12.0/22,Telegram
@@ -62,4 +63,4 @@ IP-ASN,62041,Telegram
 # Swiftgram
 # Turrit
 # iMe
-# 最后更新时间：2025-05-28 20:30
+# 最后更新时间：2026-07-08 08:33
