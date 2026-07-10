@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4641
+# 规则统计: 4646
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -91,9 +91,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-06-30T21:42:09.831Z
-# Last Updated: 2026-07-09T15:55:46.070Z
+# Last Updated: 2026-07-10T13:25:49.221Z
 # License: AGPL 3.0
-# Size: 4543
+# Size: 4548
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1761,6 +1761,7 @@ cdn-a.sonyentertainmentnetwork.com,CDN
 cdn-app.cart-bot.net,CDN
 cdn-app.pathfactory.com,CDN
 cdn-assets.circleci.com,CDN
+cdn-assets.hinative.com,CDN
 cdn-avatars.huggingface.co,CDN
 cdn-b.saashub.com,CDN
 cdn-blocks.karte.io,CDN
@@ -2158,6 +2159,7 @@ cdn.safecharge.com,CDN
 cdn.sanity.io,CDN
 cdn.sapphire.microsoftapp.net,CDN
 cdn.sc.gl,CDN
+cdn.scalar.com,CDN
 cdn.scaleflex.it,CDN
 cdn.schemaapp.com,CDN
 cdn.sciencecast.org,CDN
@@ -3310,6 +3312,7 @@ m.wsj.net,CDN
 m3.gab.com,CDN
 m3u8-0.c-spanvideo.org,CDN
 m3u8.girigirilove.com,CDN
+magic.scalar.com,CDN
 makerworld.bblmw.com,CDN
 mangaz-books.j-comi.jp,CDN
 mangaz-static.j-comi.jp,CDN
@@ -3549,6 +3552,7 @@ pgw.udn.com.tw,CDN
 ph.langfuse.com,CDN
 ph.northflank.com,CDN
 ph.tryprofound.com,CDN
+pha-prx.ops.cloud.nx.app,CDN
 phishing.army,CDN
 photos5.appleinsider.com,CDN
 pic-bstarstatic.akamaized.net,CDN
@@ -3676,6 +3680,7 @@ rapid-cdn.yottaa.com,CDN
 raw.github.com,CDN
 rawmarkdown.cloudflareaccess.org,CDN
 rbds-static.redbull.com,CDN
+rdr.windy.com,CDN
 reader.readmoo.com,CDN
 rebound.postmarkapp.com,CDN
 redircdn.com,CDN
