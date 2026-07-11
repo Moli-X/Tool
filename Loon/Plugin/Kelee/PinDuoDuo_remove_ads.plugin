@@ -8,7 +8,7 @@
 #!loon_version=3.5.0(969)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/PinDuoDuo_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PinDuoDuo.png
-#!date=2026-06-22 19:19:25
+#!date=2026-07-11 20:21:39
 
 [Rule]
 AND, ((URL-REGEX, "^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\/d(\d)?"), (USER-AGENT, "*com.xunmeng.pinduoduo*")), REJECT
@@ -68,5 +68,8 @@ DOMAIN, apm-a.pinduoduo.com, REJECT
 
 ^https:\/\/api\.pinduoduo\.com\/api\/aristotle\/order_list_v4\? response-body-json-jq '.orders |= map(.order_buttons |= map(del(.order_growth_tip)))'
 
+[Script]
+http-response ^https:\/\/m\.pinduoduo\.net\/mdkd\/package\?from_app_scan script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/PinDuoDuo_remove_ads.js, requires-body=true, tag=移除扫码取件页面商品推荐及弹窗
+
 [MitM]
-hostname=api.pinduoduo.com
+hostname=api.pinduoduo.com, m.pinduoduo.net
