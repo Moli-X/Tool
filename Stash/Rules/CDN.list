@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4646
+# 规则统计: 4650
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -91,9 +91,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-06-30T21:42:09.831Z
-# Last Updated: 2026-07-10T13:25:49.221Z
+# Last Updated: 2026-07-13T06:30:02.736Z
 # License: AGPL 3.0
-# Size: 4548
+# Size: 4552
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -367,6 +367,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .datocms-assets.com
 .daumcdn.net
 .dc-telemetry.net
+.dd-static.net
 .dditsadn.com
 .dditscdn.com
 .ddpic.info
@@ -633,6 +634,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .imglink.win
 .imgmrplay.xyz
 .imgpng.xyz
+.imgproxy.org
 .imgsmail.ru
 .imgtbl.com
 .imgtp.com
@@ -2660,6 +2662,7 @@ events.ld.catamorphic.com
 events.split.io
 events.tableplus.com
 evt.24.com
+exbd.ex.co
 experience-ap.piano.io
 explorer-api.walletconnect.com
 external-content.duckduckgo.com
@@ -3182,6 +3185,7 @@ imgcn3.bgmbk.tv
 imgcn4.bgmbk.tv
 imgcn5.bgmbk.tv
 imgfile.shop
+imgix.datadoghq.com
 imgix.setapp.com
 imgopt.infoq.com
 imgproxy.flathub.org
