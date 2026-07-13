@@ -8,7 +8,7 @@
 #!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!date=2026-07-11 20:45:02
+#!date=2026-07-12 23:46:27
 
 [Rule]
 DOMAIN-KEYWORD, adstrategy, REJECT
@@ -111,7 +111,6 @@ DOMAIN, wn.pos.baidu.com, REJECT
 DOMAIN, miniapp-ad.cdn.bcebos.com, REJECT
 DOMAIN, mobads-pre-config.cdn.bcebos.com, REJECT
 DOMAIN, hm.baidu.com, REJECT
-DOMAIN, api.map.baidu.com, REJECT
 DOMAIN, dlswbr.baidu.com, REJECT
 DOMAIN, miao.baidu.com, REJECT
 DOMAIN-SUFFIX, union.baidu.cn, REJECT
