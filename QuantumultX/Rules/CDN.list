@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4650
+# 规则统计: 4646
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -91,9 +91,9 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-06-30T21:42:09.831Z
-# Last Updated: 2026-07-13T06:30:02.736Z
+# Last Updated: 2026-07-15T19:46:26.179Z
 # License: AGPL 3.0
-# Size: 4552
+# Size: 4548
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1157,6 +1157,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .tiles-api.maps.komoot.net,CDN
 .tiles.freemap.sk,CDN
 .tiles.mapbox.com,CDN
+.tiles.openstreetmap.us,CDN
 .tiles.virtualearth.net,CDN
 .tindiemedia.com,CDN
 .tinifycdn.com,CDN
@@ -2166,7 +2167,6 @@ cdn.scaleflex.it,CDN
 cdn.schemaapp.com,CDN
 cdn.sciencecast.org,CDN
 cdn.scpwiki.com,CDN
-cdn.scripts.wtwhmedia.com,CDN
 cdn.search.brave.com,CDN
 cdn.sedo.com,CDN
 cdn.segment.com,CDN
@@ -2275,7 +2275,6 @@ cdn.you.com,CDN
 cdn.ywxi.net,CDN
 cdn.zapier.com,CDN
 cdn.zeabur.com,CDN
-cdn.zhujiwiki.com,CDN
 cdn.zigpoll.com,CDN
 cdn.zolplay.com,CDN
 cdn0-i.techbang.com,CDN
@@ -2313,6 +2312,7 @@ cdn2.abiresearch.com,CDN
 cdn2.airdroid.com,CDN
 cdn2.auth0.com,CDN
 cdn2.bigcommerce.com,CDN
+cdn2.cameo.com,CDN
 cdn2.dan.com,CDN
 cdn2.downdetector.com,CDN
 cdn2.edgedatg.com,CDN
@@ -2413,7 +2413,6 @@ changelog-widget.canny.io,CDN
 chart.googleapis.com,CDN
 chat-assets.front.app,CDN
 chat.digitalgenius.com,CDN
-chatwidgetmetrics-proxy.usepylon.com,CDN
 checkout-sdk.bigcommerce.com,CDN
 checkout.stripe.com,CDN
 chunk-composing.canva.com,CDN
@@ -2968,7 +2967,6 @@ images.filepuma.com,CDN
 images.financemagnates.com,CDN
 images.findagrave.com,CDN
 images.flightradar24.com,CDN
-images.freeimages.com,CDN
 images.g2crowd.com,CDN
 images.github.media,CDN
 images.hothardware.com,CDN
@@ -3071,7 +3069,6 @@ img.atom.com,CDN
 img.atwiki.jp,CDN
 img.badgesize.io,CDN
 img.biguz.net,CDN
-img.bttimg.com,CDN
 img.catwvod.xyz,CDN
 img.clerk.com,CDN
 img.community.ui.com,CDN
@@ -3104,7 +3101,6 @@ img.kemono.cr,CDN
 img.logokit.com,CDN
 img.ltyears.com,CDN
 img.lvv2.com,CDN
-img.m.mw,CDN
 img.majors.im,CDN
 img.manyse.com,CDN
 img.ml0987.com,CDN
@@ -3122,7 +3118,6 @@ img.picacomic.com,CDN
 img.redbull.com,CDN
 img.reg.ru,CDN
 img.reimu.net,CDN
-img.represent.com,CDN
 img.riskified.com,CDN
 img.sflix.to,CDN
 img.shoplineapp.com,CDN
@@ -3154,7 +3149,6 @@ img1.socialshopwave.com,CDN
 img1.yeggi.com,CDN
 img1.yna.co.kr,CDN
 img2.gelbooru.com,CDN
-img2.javdove.com,CDN
 img2.javmost.com,CDN
 img2.socialshopwave.com,CDN
 img2.tnaflix.com,CDN
@@ -3726,6 +3720,9 @@ rs-cdn.splashtop.com,CDN
 rsi.grafana.com,CDN
 rsms.me,CDN
 rt.rtoaster.jp,CDN
+rt1.maphub.net,CDN
+rt2.maphub.net,CDN
+rt3.maphub.net,CDN
 rtcg-access.bytevcloud.com,CDN
 rts-static-prod.freshworksapi.com,CDN
 rules.ac,CDN
@@ -3782,7 +3779,6 @@ s3.c.im,CDN
 s3.coinmarketcap.com,CDN
 s3.cointelegraph.com,CDN
 s3.documentcloud.org,CDN
-s3.doujin.sh,CDN
 s3.duellinksmeta.com,CDN
 s3.dzeninfra.ru,CDN
 s3.envato.com,CDN
@@ -3960,7 +3956,6 @@ static-ca-cdn.eporner.com,CDN
 static-cache.fboom.me,CDN
 static-cache.k2s.cc,CDN
 static-cdn.123rf.com,CDN
-static-cdn.bytegiftia.top,CDN
 static-cdn.jtvnw.net,CDN
 static-cdn.spot.im,CDN
 static-cdn.usertesting.com,CDN
@@ -4092,7 +4087,6 @@ static.foxbusiness.com,CDN
 static.foxnews.com,CDN
 static.frame.work,CDN
 static.freedownloadmanager.org,CDN
-static.freeimages.com,CDN
 static.fundraiseup.com,CDN
 static.garmin.com,CDN
 static.generated.photos,CDN
@@ -4128,6 +4122,7 @@ static.ipgeolocation.io,CDN
 static.iplocate.io,CDN
 static.iris.informa.com,CDN
 static.isitetv.com,CDN
+static.istockphoto.com,CDN
 static.itch.io,CDN
 static.iyf.tv,CDN
 static.izanmei.icu,CDN
@@ -4144,6 +4139,7 @@ static.linear.app,CDN
 static.lingq.com,CDN
 static.lwn.net,CDN
 static.macupdate.com,CDN
+static.maphub.net,CDN
 static.maxmind.com,CDN
 static.mediafire.com,CDN
 static.meiguo.com,CDN

@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4650
+# 规则统计: 4646
 
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -91,9 +91,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-06-30T21:42:09.831Z
-# Last Updated: 2026-07-13T06:30:02.736Z
+# Last Updated: 2026-07-15T19:46:26.179Z
 # License: AGPL 3.0
-# Size: 4552
+# Size: 4548
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1157,6 +1157,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .tiles-api.maps.komoot.net
 .tiles.freemap.sk
 .tiles.mapbox.com
+.tiles.openstreetmap.us
 .tiles.virtualearth.net
 .tindiemedia.com
 .tinifycdn.com
@@ -2166,7 +2167,6 @@ cdn.scaleflex.it
 cdn.schemaapp.com
 cdn.sciencecast.org
 cdn.scpwiki.com
-cdn.scripts.wtwhmedia.com
 cdn.search.brave.com
 cdn.sedo.com
 cdn.segment.com
@@ -2275,7 +2275,6 @@ cdn.you.com
 cdn.ywxi.net
 cdn.zapier.com
 cdn.zeabur.com
-cdn.zhujiwiki.com
 cdn.zigpoll.com
 cdn.zolplay.com
 cdn0-i.techbang.com
@@ -2313,6 +2312,7 @@ cdn2.abiresearch.com
 cdn2.airdroid.com
 cdn2.auth0.com
 cdn2.bigcommerce.com
+cdn2.cameo.com
 cdn2.dan.com
 cdn2.downdetector.com
 cdn2.edgedatg.com
@@ -2413,7 +2413,6 @@ changelog-widget.canny.io
 chart.googleapis.com
 chat-assets.front.app
 chat.digitalgenius.com
-chatwidgetmetrics-proxy.usepylon.com
 checkout-sdk.bigcommerce.com
 checkout.stripe.com
 chunk-composing.canva.com
@@ -2968,7 +2967,6 @@ images.filepuma.com
 images.financemagnates.com
 images.findagrave.com
 images.flightradar24.com
-images.freeimages.com
 images.g2crowd.com
 images.github.media
 images.hothardware.com
@@ -3071,7 +3069,6 @@ img.atom.com
 img.atwiki.jp
 img.badgesize.io
 img.biguz.net
-img.bttimg.com
 img.catwvod.xyz
 img.clerk.com
 img.community.ui.com
@@ -3104,7 +3101,6 @@ img.kemono.cr
 img.logokit.com
 img.ltyears.com
 img.lvv2.com
-img.m.mw
 img.majors.im
 img.manyse.com
 img.ml0987.com
@@ -3122,7 +3118,6 @@ img.picacomic.com
 img.redbull.com
 img.reg.ru
 img.reimu.net
-img.represent.com
 img.riskified.com
 img.sflix.to
 img.shoplineapp.com
@@ -3154,7 +3149,6 @@ img1.socialshopwave.com
 img1.yeggi.com
 img1.yna.co.kr
 img2.gelbooru.com
-img2.javdove.com
 img2.javmost.com
 img2.socialshopwave.com
 img2.tnaflix.com
@@ -3726,6 +3720,9 @@ rs-cdn.splashtop.com
 rsi.grafana.com
 rsms.me
 rt.rtoaster.jp
+rt1.maphub.net
+rt2.maphub.net
+rt3.maphub.net
 rtcg-access.bytevcloud.com
 rts-static-prod.freshworksapi.com
 rules.ac
@@ -3782,7 +3779,6 @@ s3.c.im
 s3.coinmarketcap.com
 s3.cointelegraph.com
 s3.documentcloud.org
-s3.doujin.sh
 s3.duellinksmeta.com
 s3.dzeninfra.ru
 s3.envato.com
@@ -3960,7 +3956,6 @@ static-ca-cdn.eporner.com
 static-cache.fboom.me
 static-cache.k2s.cc
 static-cdn.123rf.com
-static-cdn.bytegiftia.top
 static-cdn.jtvnw.net
 static-cdn.spot.im
 static-cdn.usertesting.com
@@ -4092,7 +4087,6 @@ static.foxbusiness.com
 static.foxnews.com
 static.frame.work
 static.freedownloadmanager.org
-static.freeimages.com
 static.fundraiseup.com
 static.garmin.com
 static.generated.photos
@@ -4128,6 +4122,7 @@ static.ipgeolocation.io
 static.iplocate.io
 static.iris.informa.com
 static.isitetv.com
+static.istockphoto.com
 static.itch.io
 static.iyf.tv
 static.izanmei.icu
@@ -4144,6 +4139,7 @@ static.linear.app
 static.lingq.com
 static.lwn.net
 static.macupdate.com
+static.maphub.net
 static.maxmind.com
 static.mediafire.com
 static.meiguo.com
