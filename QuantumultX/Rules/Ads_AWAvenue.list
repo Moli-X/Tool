@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 908
+# 规则统计: 906
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 900
-#Update content: 移除一些不应当被拦截的字节域名
-#Update time: 2026-06-15 21:32:00 UTC+8
+#Total lines: 898
+#Update content: [群组内反馈]移除两个不应该被拦截的域名
+#Update time: 2026-07-21 15:28:43 UTC+8
 #Version: 1.6.9-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -343,7 +343,6 @@
 .dc.sigmob.cn,Ads_AWAvenue
 .de.tynt.com,Ads_AWAvenue
 .diagnosis.ad.xiaomi.com,Ads_AWAvenue
-.dig.bdurl.net,Ads_AWAvenue
 .dlogs.bwton.com,Ads_AWAvenue
 .dm.toutiao.com,Ads_AWAvenue
 .domain.aishengji.com,Ads_AWAvenue
@@ -539,7 +538,6 @@
 .masdkv6.3g.qq.com,Ads_AWAvenue
 .mazu.m.qq.com,Ads_AWAvenue
 .mbdlog.iqiyi.com,Ads_AWAvenue
-.mcs.zijieapi.com,Ads_AWAvenue
 .medproad.com,Ads_AWAvenue
 .metrics.data.hicloud.com,Ads_AWAvenue
 .metrics.icloud.com,Ads_AWAvenue
