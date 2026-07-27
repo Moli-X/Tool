@@ -7,9 +7,9 @@
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
 #Total lines: 898
-#Update content: [群组内反馈]移除两个不应该被拦截的域名
-#Update time: 2026-07-21 15:28:43 UTC+8
-#Version: 1.6.9-release
+#Update content: 规则分类重构：拆分广告/隐私/不受欢迎三类规则源，新增Only.Ads/No.Privacy/No.Unwelcome构建变体；新增拦截校园纸条开屏广告，fix #210
+#Update time: 2026-07-27 01:45:52 UTC+8
+#Version: 1.7.6-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500026601.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -89,6 +89,7 @@
 .ads-video-al.xhscdn.com,Ads_AWAvenue
 .ads-video-qc.xhscdn.com,Ads_AWAvenue
 .ads.95516.com,Ads_AWAvenue
+.ads.adfunlink.com,Ads_AWAvenue
 .ads.auctions.yahoo.com,Ads_AWAvenue
 .ads.cup.com.cn,Ads_AWAvenue
 .ads.google.cn,Ads_AWAvenue
@@ -146,6 +147,7 @@
 .adtago.s3.amazonaws.com,Ads_AWAvenue
 .adtech.yahooinc.com,Ads_AWAvenue
 .adtrack.quark.cn,Ads_AWAvenue
+.adtracker.adfunlink.com,Ads_AWAvenue
 .adtracker.medproad.com,Ads_AWAvenue
 .adui.tg.meitu.com,Ads_AWAvenue
 .adv-api.shenshiads.com,Ads_AWAvenue
@@ -441,7 +443,6 @@
 .image-ad.sm.cn,Ads_AWAvenue
 .image.hpplay.cn,Ads_AWAvenue
 .images.outbrainimg.com,Ads_AWAvenue
-.images.pinduoduo.com,Ads_AWAvenue
 .imdns.hpplay.cn,Ads_AWAvenue
 .img-c.heytapimage.com,Ads_AWAvenue
 .img-x.jd.com,Ads_AWAvenue
@@ -900,7 +901,6 @@
 .ykad-data.cp31.ott.cibntv.net,Ads_AWAvenue
 .ykad-data.youku.com,Ads_AWAvenue
 .ykad-gateway.youku.com,Ads_AWAvenue
-.youku-acs.m.taobao.com,Ads_AWAvenue
 .ytx-file.110route.cn,Ads_AWAvenue
 .zeus.ad.xiaomi.com,Ads_AWAvenue
 .zhangyuyidong.cn,Ads_AWAvenue
