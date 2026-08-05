@@ -1,7 +1,7 @@
 # 规则名称: CDN
-# 规则统计: 4672
+# 规则统计: 4677
 
-DOMAIN,7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe
+DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic-zzz.one
@@ -88,14 +88,14 @@ DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
 DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 
 #
-# $content-hash-v1$:17WLpGDJl1Y-3mQXztb58GJxVQpAdiaYsztRGq8kdOU$
-# $content-hash-v1$:5IhgPZWo0mf87nZ2JwluGzYmvfKw74jH06bQ3B2tI9U$
+# $content-hash-v1$:gBtqoyy-vHj1qpjW6s4ghV6HZRqbQw8WA_2DoU9fgoo$
+# $content-hash-v1$:k9faeG2BtOyWf1Et34Ja8h2muexsBXzkpgib2qpP9CY$
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2026-07-31T17:36:02.313Z
-# Last Updated: 2026-08-04T15:40:21.299Z
+# Last Updated: 2026-08-05T12:33:04.405Z
+# Last Updated: 2026-08-05T12:33:04.691Z
 # License: AGPL 3.0
-# Size: 4572
+# Size: 4577
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1307,8 +1307,9 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 0x0.st
 3dna.nationbuilder.com
 4gtvimg2.4gtv.tv
-7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe
+7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 a-cdn.anthropic.com
+a-tiles.locationiq.com
 a.deviantart.net
 a.fireside.fm
 a.gawby.com
@@ -1660,6 +1661,7 @@ avts.wmlabs.net
 awsimgsrc.dmm.co.jp
 axiecdn.axieinfinity.com
 az700632.vo.msecnd.net
+b-tiles.locationiq.com
 b.manufact.com
 b.peatio.com
 b.sf-syn.com
@@ -1676,6 +1678,7 @@ badges.greenkeeper.io
 banners.chessbase.com
 barracuda-assets.zoovu.com
 barracuda-cdn.zoovu.com
+basemap.beacondb.net
 bcdn.alotporn.com
 bcdn.starapps.studio
 bcmedia.bitchute.com
@@ -1714,6 +1717,7 @@ businessunitprofile-cdn.trustpilot.net
 busuanzi.ibruce.info
 bytescale.mobbin.com
 c-bin.b-cdn.net
+c-tiles.locationiq.com
 c.1password.com
 c.animaapp.com
 c.fantia.jp
@@ -4421,6 +4425,7 @@ tiles.arcgis.com
 tiles.arcticconnect.ca
 tiles.gsj.jp
 tiles.immich.cloud
+tiles.locationiq.com
 tiles.mapilion.com
 tiles.mapillary.com
 tiles.maps.eox.at
