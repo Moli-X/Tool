@@ -85,14 +85,14 @@ DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
 DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 
 #
-# $content-hash-v1$:TNVQ6__u8xtgrr_gAd2UY5pWSj2HWOggTfeMc0MPAu0$
 # $content-hash-v1$:gBtqoyy-vHj1qpjW6s4ghV6HZRqbQw8WA_2DoU9fgoo$
+# $content-hash-v1$:vWdDuROBjosrC07UNWIJK7-qs2-SiZwnT9dSSSlqf5c$
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-08-05T12:33:04.405Z
-# Last Updated: 2026-08-07T17:00:24.513Z
+# Last Updated: 2026-08-08T06:31:42.432Z
 # License: AGPL 3.0
-# Size: 4581
+# Size: 4583
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1155,6 +1155,8 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .tile.osmz.ru
 .tile.stamen.com
 .tile.thunderforest.com
+.tile2.opencyclemap.org
+.tile3.opencyclemap.org
 .tiles-api.maps.komoot.net
 .tiles.freemap.sk
 .tiles.mapbox.com
@@ -1752,6 +1754,7 @@ cache.armorgames.com
 cache.hackedfreegames.com
 cache.industry.siemens.com
 cache.ip-api.com
+cache.mapcomplete.org
 cache.omnicalculator.com
 cached.rebuyengine.com
 cafe.github.com
@@ -4416,7 +4419,6 @@ tile.poloha.net
 tile.skybrush.io
 tile.waymarkedtrails.org
 tile2.intervals.icu
-tile2.opencyclemap.org
 tilecache.rainviewer.com
 tiledbasemaps.arcgis.com
 tilemaps.icgc.cat

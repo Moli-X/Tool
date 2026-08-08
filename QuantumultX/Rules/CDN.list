@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4681
+# 规则统计: 4683
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -88,14 +88,14 @@ HOST-WILDCARD,video?-thumbnail?.liaoningmovie.net,CDN
 HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 
 #
-# $content-hash-v1$:TNVQ6__u8xtgrr_gAd2UY5pWSj2HWOggTfeMc0MPAu0$
 # $content-hash-v1$:gBtqoyy-vHj1qpjW6s4ghV6HZRqbQw8WA_2DoU9fgoo$
+# $content-hash-v1$:vWdDuROBjosrC07UNWIJK7-qs2-SiZwnT9dSSSlqf5c$
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-08-05T12:33:04.405Z
-# Last Updated: 2026-08-07T17:00:24.513Z
+# Last Updated: 2026-08-08T06:31:42.432Z
 # License: AGPL 3.0
-# Size: 4581
+# Size: 4583
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1158,6 +1158,8 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .tile.osmz.ru,CDN
 .tile.stamen.com,CDN
 .tile.thunderforest.com,CDN
+.tile2.opencyclemap.org,CDN
+.tile3.opencyclemap.org,CDN
 .tiles-api.maps.komoot.net,CDN
 .tiles.freemap.sk,CDN
 .tiles.mapbox.com,CDN
@@ -1755,6 +1757,7 @@ cache.armorgames.com,CDN
 cache.hackedfreegames.com,CDN
 cache.industry.siemens.com,CDN
 cache.ip-api.com,CDN
+cache.mapcomplete.org,CDN
 cache.omnicalculator.com,CDN
 cached.rebuyengine.com,CDN
 cafe.github.com,CDN
@@ -4419,7 +4422,6 @@ tile.poloha.net,CDN
 tile.skybrush.io,CDN
 tile.waymarkedtrails.org,CDN
 tile2.intervals.icu,CDN
-tile2.opencyclemap.org,CDN
 tilecache.rainviewer.com,CDN
 tiledbasemaps.arcgis.com,CDN
 tilemaps.icgc.cat,CDN
