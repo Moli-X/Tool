@@ -85,14 +85,14 @@ DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
 DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 
 #
+# $content-hash-v1$:9q36crUl6xSEmKGZ6JihoMr6itIT3t1V4hUgDlD59Gk$
 # $content-hash-v1$:gBtqoyy-vHj1qpjW6s4ghV6HZRqbQw8WA_2DoU9fgoo$
-# $content-hash-v1$:vWdDuROBjosrC07UNWIJK7-qs2-SiZwnT9dSSSlqf5c$
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-08-05T12:33:04.405Z
-# Last Updated: 2026-08-08T06:31:42.432Z
+# Last Updated: 2026-08-08T15:02:47.990Z
 # License: AGPL 3.0
-# Size: 4583
+# Size: 4607
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -130,6 +130,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .adguardcdn.com
 .adobeccstatic.com
 .adtidy.org
+.aexp-static.com
 .agechecker-northern-apps.com
 .agechecker.northern-apps.com
 .ahcdn.com
@@ -187,6 +188,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .awsstatic.com
 .awxcdn.com
 .ax1x.com
+.axis-cdn.net
 .azurestaticapps.net
 .b2c-contenthub.com
 .badgen.net
@@ -387,6 +389,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .disquscdn.com
 .divio-media.net
 .dlunar.net
+.dm-static.com
 .dmcdn.net
 .dnvodcdn.me
 .docker.io
@@ -532,6 +535,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .glass.adidas.com
 .glbimg.com
 .global-cdn.me
+.gog-statics.com
 .gold-usergeneratedcontent.net
 .googleadservices.com
 .googleusercontent.com
@@ -934,6 +938,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .pressidiumcdn.com
 .prhcdn.com
 .privacy-gateway.cloudflare.com
+.privacyguidesusercontent.com
 .prod-east.frontend.public.atl-paas.net
 .prod.public.atl-paas.net
 .project1content.com
@@ -1392,6 +1397,7 @@ app.groovefunnels.com
 app.moegirl.tw
 app.quotemedia.com
 app.roboflow.com
+app.shop.pe
 app.viral-loops.com
 appassets.mvtdev.com
 apps-static.route4me.com
@@ -1470,6 +1476,7 @@ assets.coingecko.com
 assets.context.ly
 assets.controld.com
 assets.convertkit.com
+assets.create.roblox.com
 assets.customer.io
 assets.cyberghostvpn.com
 assets.dev.to
@@ -1494,6 +1501,7 @@ assets.foxdcg.com
 assets.freespeechcoalition.com
 assets.frontegg.com
 assets.fxnetworks.com
+assets.game8.co
 assets.garr.it
 assets.gcore.pro
 assets.geeksforgeeks.org
@@ -1589,6 +1597,7 @@ assets.static-upwork.com
 assets.stickpng.com
 assets.stigg.io
 assets.streamlinehq.com
+assets.swiftkey.com
 assets.swoogo.com
 assets.tangled.network
 assets.tatlerasia.com
@@ -1626,17 +1635,23 @@ assets.zilliz.com
 assets.zpic.biz
 assets0.headwayapp.co
 assets1.lottiefiles.com
+assets10.freshdesk.com
 assets10.lottiefiles.com
 assets2.blubrry.com
 assets2.canny.io
+assets2.freshdesk.com
 assets2.lottiefiles.com
+assets3.freshdesk.com
 assets3.lottiefiles.com
 assets4.lottiefiles.com
 assets4.mist-train-girls.com
+assets5.freshdesk.com
 assets5.lottiefiles.com
 assets6.lottiefiles.com
+assets7.freshdesk.com
 assets7.lottiefiles.com
 assets8.lottiefiles.com
+assets9.freshdesk.com
 assets9.lottiefiles.com
 assetscdn-wchat.eu.freshchat.com
 assetscdn.jable.tv
@@ -2493,6 +2508,7 @@ connectivitycheck.gstatic.com
 consent-manager.ft.com
 consent-notice.ft.com
 consent.dw.com
+consent.fmm.io
 consent.formula1.com
 consentdeliveryfd.azurefd.net
 consumersite-assets.trustpilot.net
@@ -2532,6 +2548,7 @@ creator-image.javhd.com
 crl.usertrust.com
 crl.verisign.com
 crl3.digicert.com
+crossborder-integration.global-e.com
 crt.comodoca.com
 crt.sectigo.com
 crt.usertrust.com
@@ -2781,6 +2798,7 @@ g-static.ap4r.com
 g.newsweek.com
 g1.nyt.com
 gamemedia.armorgames.com
+gamesapps-assets.ghub.logitechg.com
 gannett-cdn.ex.co
 gdb.rferl.org
 gdb.voanews.com
@@ -2857,6 +2875,7 @@ i.iwara.tv
 i.jpg.dog
 i.kickstarter.com
 i.loli.best
+i.macsecurity.net
 i.magecdn.com
 i.mediatek.com
 i.meee.com.tw
@@ -2868,6 +2887,7 @@ i.niupic.com
 i.pcmag.com
 i.rtings.com
 i.servimg.com
+i.skiplagged.com
 i.snap.as
 i.typlog.com
 i.vgy.me
@@ -2989,6 +3009,7 @@ images.findagrave.com
 images.flightradar24.com
 images.g2crowd.com
 images.github.media
+images.gog.com
 images.hothardware.com
 images.icon-icons.com
 images.indianexpress.com
@@ -3660,6 +3681,7 @@ prod-packager-packages.codesandbox.io
 prod-streaming-video-msn-com.akamaized.net
 prod-video-cms-amp-microsoft-com.akamaized.net
 prod.addictinggames.com
+prod.docsiteassets.roblox.com
 prodamdnewsencoding.akamaized.net
 production-cmp.isgprivacy.cbsi.com
 profile-images.xing.com
@@ -4183,6 +4205,7 @@ static.monei.net
 static.monotype.com
 static.moomoo.com
 static.moonpay.com
+static.mul-pay.jp
 static.music.com
 static.mypikpak.com
 static.mysph.sph.com.sg
@@ -4200,6 +4223,7 @@ static.nrk.no
 static.nyse.com
 static.observablehq.com
 static.oklink.com
+static.okx.cab
 static.okx.com
 static.olelive.com
 static.onlinewebfonts.com

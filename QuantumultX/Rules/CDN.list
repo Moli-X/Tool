@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4683
+# 规则统计: 4707
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -88,14 +88,14 @@ HOST-WILDCARD,video?-thumbnail?.liaoningmovie.net,CDN
 HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 
 #
+# $content-hash-v1$:9q36crUl6xSEmKGZ6JihoMr6itIT3t1V4hUgDlD59Gk$
 # $content-hash-v1$:gBtqoyy-vHj1qpjW6s4ghV6HZRqbQw8WA_2DoU9fgoo$
-# $content-hash-v1$:vWdDuROBjosrC07UNWIJK7-qs2-SiZwnT9dSSSlqf5c$
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-08-05T12:33:04.405Z
-# Last Updated: 2026-08-08T06:31:42.432Z
+# Last Updated: 2026-08-08T15:02:47.990Z
 # License: AGPL 3.0
-# Size: 4583
+# Size: 4607
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -133,6 +133,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .adguardcdn.com,CDN
 .adobeccstatic.com,CDN
 .adtidy.org,CDN
+.aexp-static.com,CDN
 .agechecker-northern-apps.com,CDN
 .agechecker.northern-apps.com,CDN
 .ahcdn.com,CDN
@@ -190,6 +191,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .awsstatic.com,CDN
 .awxcdn.com,CDN
 .ax1x.com,CDN
+.axis-cdn.net,CDN
 .azurestaticapps.net,CDN
 .b2c-contenthub.com,CDN
 .badgen.net,CDN
@@ -390,6 +392,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .disquscdn.com,CDN
 .divio-media.net,CDN
 .dlunar.net,CDN
+.dm-static.com,CDN
 .dmcdn.net,CDN
 .dnvodcdn.me,CDN
 .docker.io,CDN
@@ -535,6 +538,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .glass.adidas.com,CDN
 .glbimg.com,CDN
 .global-cdn.me,CDN
+.gog-statics.com,CDN
 .gold-usergeneratedcontent.net,CDN
 .googleadservices.com,CDN
 .googleusercontent.com,CDN
@@ -937,6 +941,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .pressidiumcdn.com,CDN
 .prhcdn.com,CDN
 .privacy-gateway.cloudflare.com,CDN
+.privacyguidesusercontent.com,CDN
 .prod-east.frontend.public.atl-paas.net,CDN
 .prod.public.atl-paas.net,CDN
 .project1content.com,CDN
@@ -1395,6 +1400,7 @@ app.groovefunnels.com,CDN
 app.moegirl.tw,CDN
 app.quotemedia.com,CDN
 app.roboflow.com,CDN
+app.shop.pe,CDN
 app.viral-loops.com,CDN
 appassets.mvtdev.com,CDN
 apps-static.route4me.com,CDN
@@ -1473,6 +1479,7 @@ assets.coingecko.com,CDN
 assets.context.ly,CDN
 assets.controld.com,CDN
 assets.convertkit.com,CDN
+assets.create.roblox.com,CDN
 assets.customer.io,CDN
 assets.cyberghostvpn.com,CDN
 assets.dev.to,CDN
@@ -1497,6 +1504,7 @@ assets.foxdcg.com,CDN
 assets.freespeechcoalition.com,CDN
 assets.frontegg.com,CDN
 assets.fxnetworks.com,CDN
+assets.game8.co,CDN
 assets.garr.it,CDN
 assets.gcore.pro,CDN
 assets.geeksforgeeks.org,CDN
@@ -1592,6 +1600,7 @@ assets.static-upwork.com,CDN
 assets.stickpng.com,CDN
 assets.stigg.io,CDN
 assets.streamlinehq.com,CDN
+assets.swiftkey.com,CDN
 assets.swoogo.com,CDN
 assets.tangled.network,CDN
 assets.tatlerasia.com,CDN
@@ -1629,17 +1638,23 @@ assets.zilliz.com,CDN
 assets.zpic.biz,CDN
 assets0.headwayapp.co,CDN
 assets1.lottiefiles.com,CDN
+assets10.freshdesk.com,CDN
 assets10.lottiefiles.com,CDN
 assets2.blubrry.com,CDN
 assets2.canny.io,CDN
+assets2.freshdesk.com,CDN
 assets2.lottiefiles.com,CDN
+assets3.freshdesk.com,CDN
 assets3.lottiefiles.com,CDN
 assets4.lottiefiles.com,CDN
 assets4.mist-train-girls.com,CDN
+assets5.freshdesk.com,CDN
 assets5.lottiefiles.com,CDN
 assets6.lottiefiles.com,CDN
+assets7.freshdesk.com,CDN
 assets7.lottiefiles.com,CDN
 assets8.lottiefiles.com,CDN
+assets9.freshdesk.com,CDN
 assets9.lottiefiles.com,CDN
 assetscdn-wchat.eu.freshchat.com,CDN
 assetscdn.jable.tv,CDN
@@ -2496,6 +2511,7 @@ connectivitycheck.gstatic.com,CDN
 consent-manager.ft.com,CDN
 consent-notice.ft.com,CDN
 consent.dw.com,CDN
+consent.fmm.io,CDN
 consent.formula1.com,CDN
 consentdeliveryfd.azurefd.net,CDN
 consumersite-assets.trustpilot.net,CDN
@@ -2535,6 +2551,7 @@ creator-image.javhd.com,CDN
 crl.usertrust.com,CDN
 crl.verisign.com,CDN
 crl3.digicert.com,CDN
+crossborder-integration.global-e.com,CDN
 crt.comodoca.com,CDN
 crt.sectigo.com,CDN
 crt.usertrust.com,CDN
@@ -2784,6 +2801,7 @@ g-static.ap4r.com,CDN
 g.newsweek.com,CDN
 g1.nyt.com,CDN
 gamemedia.armorgames.com,CDN
+gamesapps-assets.ghub.logitechg.com,CDN
 gannett-cdn.ex.co,CDN
 gdb.rferl.org,CDN
 gdb.voanews.com,CDN
@@ -2860,6 +2878,7 @@ i.iwara.tv,CDN
 i.jpg.dog,CDN
 i.kickstarter.com,CDN
 i.loli.best,CDN
+i.macsecurity.net,CDN
 i.magecdn.com,CDN
 i.mediatek.com,CDN
 i.meee.com.tw,CDN
@@ -2871,6 +2890,7 @@ i.niupic.com,CDN
 i.pcmag.com,CDN
 i.rtings.com,CDN
 i.servimg.com,CDN
+i.skiplagged.com,CDN
 i.snap.as,CDN
 i.typlog.com,CDN
 i.vgy.me,CDN
@@ -2992,6 +3012,7 @@ images.findagrave.com,CDN
 images.flightradar24.com,CDN
 images.g2crowd.com,CDN
 images.github.media,CDN
+images.gog.com,CDN
 images.hothardware.com,CDN
 images.icon-icons.com,CDN
 images.indianexpress.com,CDN
@@ -3663,6 +3684,7 @@ prod-packager-packages.codesandbox.io,CDN
 prod-streaming-video-msn-com.akamaized.net,CDN
 prod-video-cms-amp-microsoft-com.akamaized.net,CDN
 prod.addictinggames.com,CDN
+prod.docsiteassets.roblox.com,CDN
 prodamdnewsencoding.akamaized.net,CDN
 production-cmp.isgprivacy.cbsi.com,CDN
 profile-images.xing.com,CDN
@@ -4186,6 +4208,7 @@ static.monei.net,CDN
 static.monotype.com,CDN
 static.moomoo.com,CDN
 static.moonpay.com,CDN
+static.mul-pay.jp,CDN
 static.music.com,CDN
 static.mypikpak.com,CDN
 static.mysph.sph.com.sg,CDN
@@ -4203,6 +4226,7 @@ static.nrk.no,CDN
 static.nyse.com,CDN
 static.observablehq.com,CDN
 static.oklink.com,CDN
+static.okx.cab,CDN
 static.okx.com,CDN
 static.olelive.com,CDN
 static.onlinewebfonts.com,CDN
