@@ -87,14 +87,14 @@ DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
 DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 
 #
-# $content-hash-v1$:J15pPSvWz9zcmdGcQo0XsNv3WhzYEWgHZaMsO2NcI2U$
+# $content-hash-v1$:Q9m4wvM3r0hHWQppWJe4ZzgwZ0t4SBOxfGN6El1HdxY$
 # $content-hash-v1$:xrflKwrKjWr_-WjPqhA4qnrQLW92K99gGohaedgvDPI$
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-08-09T16:01:35.791Z
-# Last Updated: 2026-08-12T18:15:16.115Z
+# Last Updated: 2026-08-13T13:38:55.331Z
 # License: AGPL 3.0
-# Size: 4624
+# Size: 4626
 # Size: 87
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -660,6 +660,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .ingest.de.sentry.io
 .ingest.sentry.io
 .ingest.us.sentry.io
+.insightcdn.net
 .instant.page
 .intercomassets.com
 .intercomcdn.com
@@ -3985,6 +3986,7 @@ sprig.figma.com
 sr-cdn-1.shiprocket.in
 ss7.vzw.com
 ssl.gstatic.com
+sso-static.razer.com
 st-eu.dynamicyield.com
 st.agrd.eu
 st.codeforces.com
