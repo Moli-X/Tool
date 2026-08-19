@@ -16,13 +16,11 @@ DOMAIN-KEYWORD,assets.trustpilot.net
 DOMAIN-KEYWORD,cdn.adultempire.com
 DOMAIN-KEYWORD,cdn.trustpilot.net
 DOMAIN-KEYWORD,dsn.algolia.net
-DOMAIN-KEYWORD,fonts.hanime1
 DOMAIN-KEYWORD,images.trustpilot.com
 DOMAIN-KEYWORD,images.trustpilot.net
 DOMAIN-KEYWORD,scripts.trustpilot.com
 DOMAIN-KEYWORD,static.grammarly.com
 DOMAIN-KEYWORD,static.trustpilot.com
-DOMAIN-KEYWORD,vdownload.hanime1
 DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 DOMAIN-KEYWORD,web-assets.zendesk
 DOMAIN-WILDCARD,*-intake-*-datadoghq.com
@@ -64,7 +62,6 @@ DOMAIN-WILDCARD,object-storage-*.vexxhost.net
 DOMAIN-WILDCARD,ocsp.*.amazontrust.com
 DOMAIN-WILDCARD,proxy-*.dailymotion.com
 DOMAIN-WILDCARD,rr?---??.ouo.si
-DOMAIN-WILDCARD,s*.hanime1
 DOMAIN-WILDCARD,s3-*.figma.com
 DOMAIN-WILDCARD,s3.*.wasabisys.com
 DOMAIN-WILDCARD,s?.maxstream.org
@@ -87,15 +84,15 @@ DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
 DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 
 #
+# $content-hash-v1$:XSnANR2ej23eV7GFbIL1wqIzrZ_522OY7Ubzre7S8X4$
 # $content-hash-v1$:gsD3DZWCGEeVoR1Qx8rLAoiLIAmF2H72mQqN4zsraik$
-# $content-hash-v1$:xrflKwrKjWr_-WjPqhA4qnrQLW92K99gGohaedgvDPI$
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2026-08-09T16:01:35.791Z
 # Last Updated: 2026-08-14T12:22:28.498Z
+# Last Updated: 2026-08-19T01:29:53.827Z
 # License: AGPL 3.0
 # Size: 4627
-# Size: 87
+# Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
