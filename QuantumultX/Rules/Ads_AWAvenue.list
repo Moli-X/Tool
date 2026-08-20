@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 906
+# 规则统计: 905
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 898
-#Update content: 规则分类重构：拆分广告/隐私/不受欢迎三类规则源，新增Only.Ads/No.Privacy/No.Unwelcome构建变体；新增拦截校园纸条开屏广告，fix #210
-#Update time: 2026-07-27 01:45:52 UTC+8
+#Total lines: 897
+#Update content: Remove log.aliyuncs.com from domain suffix #211 close.\n\nRemoved 'log.aliyuncs.com' from the domain suffix list.
+#Update time: 2026-08-20 11:45:33 UTC+8
 #Version: 1.7.6-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -503,7 +503,6 @@
 .log-verify.hiaiabc.com,Ads_AWAvenue
 .log.ad.xiaomi.com,Ads_AWAvenue
 .log.aispeech.com,Ads_AWAvenue
-.log.aliyuncs.com,Ads_AWAvenue
 .log.amemv.com,Ads_AWAvenue
 .log.appstore3.huan.tv,Ads_AWAvenue
 .log.avlyun.com,Ads_AWAvenue
