@@ -8,7 +8,7 @@
 #!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Snowball_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Snowball.png
-#!date=2026-06-01 17:11:35
+#!date=2026-08-24 19:33:07
 
 [Rewrite]
 ^https:\/\/api\.xueqiu\.com\/snowpard\/launch_strategy\/query\.json\? reject-dict
@@ -22,6 +22,7 @@
 ^https:\/\/api\.xueqiu\.com\/lightsnow\/optional\/banner\/query\.json reject-dict
 
 ^https:\/\/api\.xueqiu\.com\/snowflake-theme\/query\/v1\/hot_event\/rich_tag_new\.json\? reject-dict
+^https:\/\/api\.xueqiu\.com\/query\/search\/ai\/v2\/recommend_search\.json\? reject-dict
 ^https:\/\/api\.xueqiu\.com\/query\/v1\/hot_event\/tag\.json\? reject-dict
 
 ^https:\/\/open\.xueqiu\.com\/mpaas\/config\/content\?.+cube_detail_bottom_operation_trade_button reject-dict
@@ -37,6 +38,10 @@
 ^https:\/\/open\.xueqiu\.com\/mpaas\/config\/content\?.*timeline_tab_name response-body-json-del data.im_notice_show data.request_notice_show data.timeline_tab_name data.profileMenuConfig_anonymous_V12 data.trade_open_account_promotion_url data.trade_unify_open_account_list data.community_ad_download_msg data.home_tab_dynamic data.home_tab_dynamic_before data.home_tab_dynamic_after data. isitor_page_login_config data.open_wechat_mini_app_config data.user_guide_contact_config data.brokers_router_config data.my_page_right_items
 
 ^https:\/\/fund\.xueqiu\.com\/fundx\/activity\/x\/web\/c\/index\/dataByCode\? reject-dict
+
+^https:\/\/api\.xueqiu\.com\/analysis\/status\/v4\/underlying_product\.json\? reject-dict
+
+^https:\/\/api\.xueqiu\.com\/rainbow\/ai\/question\/generate\/status_question\.json\? reject-dict
 
 [MitM]
 hostname=api.xueqiu.com, open.xueqiu.com, stock.xueqiu.com, fund.xueqiu.com, 39.103.79.14, 39.106.97.84, 47.95.49.75, 101.201.62.20, 101.201.62.26, 101.201.175.228, 124.250.48.3, 182.92.145.50, 182.92.251.113
