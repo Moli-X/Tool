@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4732
+# 规则统计: 4739
 
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -87,14 +87,14 @@ DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
 DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 
 #
-# $content-hash-v1$:HwSo5D32zvs1ahMZjNv8CQ7fynxx9ZtXFE1e4ByDx-c$
+# $content-hash-v1$:G-qMFyCSL1QcGfAIr8Ox4c-a5OaF-a-G9L35uo9w3oU$
 # $content-hash-v1$:XSnANR2ej23eV7GFbIL1wqIzrZ_522OY7Ubzre7S8X4$
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-08-19T01:29:53.827Z
-# Last Updated: 2026-08-27T16:33:13.948Z
+# Last Updated: 2026-08-29T20:42:48.719Z
 # License: AGPL 3.0
-# Size: 4633
+# Size: 4640
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -520,6 +520,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .gateway.serph.network
 .gauthstatic.com
 .gayzyimage.com
+.gazzettaobjects.it
 .gcr.si
 .gdvid.info
 .gentcdn.com
@@ -987,6 +988,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .raxcdn.com
 .raygun.io
 .rbxcdn.com
+.rcsobjects.it
 .rdtcdn.com
 .react.dev
 .reactjs.org
@@ -2597,6 +2599,7 @@ db.onlinewebfonts.com
 dc-cdn.cdw.com
 dd.blackhawknetwork.com
 dd.dexscreener.com
+delivery.twentythree.com
 demo.unified-streaming.com
 demotiles.maplibre.org
 denali-static.grammarly.com
@@ -2751,6 +2754,7 @@ file.izanm.org
 file.zoom.us
 file1.hkepc.net
 files.armorgames.com
+files.blocktempo.ai
 files.buildwithfern.com
 files.gempages.net
 files.iwara.tv
@@ -2953,6 +2957,7 @@ image-stgus.samsung.com
 image-us.samsung.com
 image.acg.lol
 image.ap-mail.org
+image.blocktempo.com
 image.civitai.com
 image.cnbcfm.com
 image.comicbz.com
@@ -4350,6 +4355,7 @@ static1.smartbear.co
 static1.squarespace.com
 static10.lottiefiles.com
 static2.avg.com
+static2.giroditalia.it
 static2.lottiefiles.com
 static2.onlyfans.com
 static2.sharepointonline.com
@@ -4611,6 +4617,7 @@ video-meta.humix.com
 video.bsky.app
 video.cdnbye.com
 video.dailymail.co.uk
+video.giroditalia.it
 video1.7mmtv.sx
 video2.7mmtv.sx
 video3.mingpao.com

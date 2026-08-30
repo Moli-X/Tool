@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4732
+# 规则统计: 4739
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -87,14 +87,14 @@ HOST-WILDCARD,video?-thumbnail?.liaoningmovie.net,CDN
 HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 
 #
-# $content-hash-v1$:HwSo5D32zvs1ahMZjNv8CQ7fynxx9ZtXFE1e4ByDx-c$
+# $content-hash-v1$:G-qMFyCSL1QcGfAIr8Ox4c-a5OaF-a-G9L35uo9w3oU$
 # $content-hash-v1$:XSnANR2ej23eV7GFbIL1wqIzrZ_522OY7Ubzre7S8X4$
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-08-19T01:29:53.827Z
-# Last Updated: 2026-08-27T16:33:13.948Z
+# Last Updated: 2026-08-29T20:42:48.719Z
 # License: AGPL 3.0
-# Size: 4633
+# Size: 4640
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -520,6 +520,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .gateway.serph.network,CDN
 .gauthstatic.com,CDN
 .gayzyimage.com,CDN
+.gazzettaobjects.it,CDN
 .gcr.si,CDN
 .gdvid.info,CDN
 .gentcdn.com,CDN
@@ -987,6 +988,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .raxcdn.com,CDN
 .raygun.io,CDN
 .rbxcdn.com,CDN
+.rcsobjects.it,CDN
 .rdtcdn.com,CDN
 .react.dev,CDN
 .reactjs.org,CDN
@@ -2597,6 +2599,7 @@ db.onlinewebfonts.com,CDN
 dc-cdn.cdw.com,CDN
 dd.blackhawknetwork.com,CDN
 dd.dexscreener.com,CDN
+delivery.twentythree.com,CDN
 demo.unified-streaming.com,CDN
 demotiles.maplibre.org,CDN
 denali-static.grammarly.com,CDN
@@ -2751,6 +2754,7 @@ file.izanm.org,CDN
 file.zoom.us,CDN
 file1.hkepc.net,CDN
 files.armorgames.com,CDN
+files.blocktempo.ai,CDN
 files.buildwithfern.com,CDN
 files.gempages.net,CDN
 files.iwara.tv,CDN
@@ -2953,6 +2957,7 @@ image-stgus.samsung.com,CDN
 image-us.samsung.com,CDN
 image.acg.lol,CDN
 image.ap-mail.org,CDN
+image.blocktempo.com,CDN
 image.civitai.com,CDN
 image.cnbcfm.com,CDN
 image.comicbz.com,CDN
@@ -4350,6 +4355,7 @@ static1.smartbear.co,CDN
 static1.squarespace.com,CDN
 static10.lottiefiles.com,CDN
 static2.avg.com,CDN
+static2.giroditalia.it,CDN
 static2.lottiefiles.com,CDN
 static2.onlyfans.com,CDN
 static2.sharepointonline.com,CDN
@@ -4611,6 +4617,7 @@ video-meta.humix.com,CDN
 video.bsky.app,CDN
 video.cdnbye.com,CDN
 video.dailymail.co.uk,CDN
+video.giroditalia.it,CDN
 video1.7mmtv.sx,CDN
 video2.7mmtv.sx,CDN
 video3.mingpao.com,CDN
