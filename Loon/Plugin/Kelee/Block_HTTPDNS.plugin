@@ -8,7 +8,7 @@
 #!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Block_HTTPDNS.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png
-#!date=2026-07-04 20:05:14
+#!date=2026-09-03 16:04:36
 
 [Rule]
 DOMAIN-KEYWORD, httpdns, REJECT
@@ -190,6 +190,10 @@ IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT, no-resolve
 IP-CIDR6, 240c:409f:1000::/128, REJECT, no-resolve
 
 DOMAIN, hd.xiaojukeji.com, REJECT
+IP-CIDR, 116.85.2.41/32, REJECT, no-resolve
+IP-CIDR, 116.85.3.39/32, REJECT, no-resolve
+IP-CIDR, 123.207.209.142/32, REJECT, no-resolve 
+IP-CIDR, 139.199.240.84/32, REJECT, no-resolve
 
 DOMAIN, httpdns.zybang.com, REJECT
 
