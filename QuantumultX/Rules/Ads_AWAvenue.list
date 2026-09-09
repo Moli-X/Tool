@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 949
+# 规则统计: 954
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 943
-#Update content: 新增拦截微博/美图/百度等广告与隐私上报域名#214，感谢@VJMOD
-#Update time: 2026-09-08 21:10:07 UTC+8
+#Total lines: 948
+#Update content: 移除广告主投放后台域名ad.weibo.com与iadworkbench.apple.com，此类后台不属拦截范围
+#Update time: 2026-09-09 23:35:30 UTC+8
 #Version: 1.7.6-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -53,7 +53,6 @@
 .ad.tencentmusic.com,Ads_AWAvenue
 .ad.toutiao.com,Ads_AWAvenue
 .ad.v3mh.com,Ads_AWAvenue
-.ad.weibo.com,Ads_AWAvenue
 .ad.winrar.com.cn,Ads_AWAvenue
 .ad.ximalaya.com,Ads_AWAvenue
 .ad.xunkids.com,Ads_AWAvenue
@@ -86,9 +85,11 @@
 .adjust.com,Ads_AWAvenue
 .adks.hpplay.cn,Ads_AWAvenue
 .adlink-api.huan.tv,Ads_AWAvenue
+.adlog.vivo.com.cn,Ads_AWAvenue
 .adm.funshion.com,Ads_AWAvenue
 .admarketing.yahoo.net,Ads_AWAvenue
 .admobile.top,Ads_AWAvenue
+.adreq.vivo.com.cn,Ads_AWAvenue
 .ads-api-o.api.leiniao.com,Ads_AWAvenue
 .ads-api.tiktok.com,Ads_AWAvenue
 .ads-api.twitter.com,Ads_AWAvenue
@@ -198,7 +199,9 @@
 .adx.sogaha.cn,Ads_AWAvenue
 .adx.tuia.cn,Ads_AWAvenue
 .adxlog-adnet.vivo.com.cn,Ads_AWAvenue
+.adxlog.vivo.com.cn,Ads_AWAvenue
 .adxserver.ad.cmvideo.cn,Ads_AWAvenue
+.adxstatic.vivo.com.cn,Ads_AWAvenue
 .aegis.qq.com,Ads_AWAvenue
 .aem.dentsuchina.cn,Ads_AWAvenue
 .afs.googlesyndication.com,Ads_AWAvenue
@@ -299,6 +302,7 @@
 .bj.ad.track.66mobi.com,Ads_AWAvenue
 .books-analytics-events.apple.com,Ads_AWAvenue
 .bootpreload.uve.weibo.com,Ads_AWAvenue
+.brandadsstatic.vivo.com.cn,Ads_AWAvenue
 .browser.events.data.msn.cn,Ads_AWAvenue
 .browser.events.data.msn.com,Ads_AWAvenue
 .browsercfg-drcn.cloud.dbankcloud.cn,Ads_AWAvenue
@@ -375,6 +379,7 @@
 .downloadxml.changhong.upgrade2.huan.tv,Ads_AWAvenue
 .dsp-x.jd.com,Ads_AWAvenue
 .dsp.fcbox.com,Ads_AWAvenue
+.dsplog-adnet.vivo.com.cn,Ads_AWAvenue
 .dualstack-logs.amap.com,Ads_AWAvenue
 .dxp.baidu.com,Ads_AWAvenue
 .dyp2p-ali.douyucdn.cn,Ads_AWAvenue
@@ -465,7 +470,6 @@
 .iadmoo.apple.com,Ads_AWAvenue
 .iadmusicmat.music.126.net,Ads_AWAvenue
 .iadsdk.apple.com,Ads_AWAvenue
-.iadworkbench.apple.com,Ads_AWAvenue
 .ifacelog.iqiyi.com,Ads_AWAvenue
 .ifs.tanx.com,Ads_AWAvenue
 .ii.gdt.qq.com,Ads_AWAvenue
@@ -712,7 +716,7 @@
 .s8t.teads.tv,Ads_AWAvenue
 .saad.ms.zhangyue.net,Ads_AWAvenue
 .saas.hpplay.cn,Ads_AWAvenue
-.safebrowsing.urlsec.gg.com,Ads_AWAvenue
+.safebrowsing.urlsec.qq.com,Ads_AWAvenue
 .samsung-com.112.2o7.net,Ads_AWAvenue
 .samsungads.com,Ads_AWAvenue
 .saxysec.com,Ads_AWAvenue
@@ -841,6 +845,7 @@
 .tracker-prd.aldi.com.cn,Ads_AWAvenue
 .tracker.ai.xiaomi.com,Ads_AWAvenue
 .tracker.gitee.com,Ads_AWAvenue
+.tracking-adnet.vivo.com.cn,Ads_AWAvenue
 .tracking.miui.com,Ads_AWAvenue
 .tracking.rus.miui.com,Ads_AWAvenue
 .tuiguang.meitu.com,Ads_AWAvenue
