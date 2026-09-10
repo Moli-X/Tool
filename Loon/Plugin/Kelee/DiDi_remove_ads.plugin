@@ -8,7 +8,7 @@
 #!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/DiDi_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DiDi.png
-#!date=2026-09-04 18:10:18
+#!date=2026-09-11 00:35:13
 
 [Rule]
 DOMAIN, gwp.xiaojukeji.com, REJECT
@@ -17,7 +17,7 @@ DOMAIN, gwpgz.diditaxi.com.cn, REJECT
 DOMAIN, adtrack.xiaojukeji.com, REJECT
 
 [Rewrite]
-^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? response-body-json-jq '.data |= map(select(.name != "isUseNetConnectivity"))'
+^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? response-body-json-jq '.data |= map(select(.name != "isUseNetConnectivity") | .assign.args.rootca_pin = 0 | .assign.args.sni_list = {})'
 
 ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/slow\? response-body-json-del data.order_cards.new_loss_banner_card data.order_cards.call_car_card_80
 
@@ -25,7 +25,7 @@ DOMAIN, adtrack.xiaojukeji.com, REJECT
 
 ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast\? response-body-json-del data.disorder_cards.communicate_card data.disorder_cards.not_login_bottom_bar data.disorder_cards.riding_code_card data.order_cards data.disorder_cards.car_icon.data.icon_info_new_agreement
 
-^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/layout$ response-body-json-jq '.data |= (.instances |= (to_entries | map(select(.key as $k | ["center_base_info_card", "center_tool_card", "center_wallet_finance_card", "center_order_related_card"] | index($k))) | from_entries)) | .data.instances.center_wallet_finance_card.data.view_info |= map(select(.title == "优惠卡券"))'
+^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/layout response-body-json-jq '.data |= (.instances |= (to_entries | map(select(.key as $k | ["center_base_info_card", "center_tool_card", "center_wallet_finance_card", "center_order_related_card"] | index($k))) | from_entries)) | .data.instances.center_wallet_finance_card.data.view_info |= map(select(.title == "优惠卡券"))'
 
 ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget\? reject-dict
 ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget$ reject-dict
