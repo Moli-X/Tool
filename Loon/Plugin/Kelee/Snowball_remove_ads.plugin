@@ -35,7 +35,7 @@
 
 ^https:\/\/api\.xueqiu\.com\/livestream\/structure\/live\/hotCard\.json reject-dict
 
-^https:\/\/open\.xueqiu\.com\/mpaas\/config\/content\?.*timeline_tab_name response-body-json-del data.im_notice_show data.request_notice_show data.timeline_tab_name data.profileMenuConfig_anonymous_V12 data.trade_open_account_promotion_url data.trade_unify_open_account_list data.community_ad_download_msg data.home_tab_dynamic data.home_tab_dynamic_before data.home_tab_dynamic_after data. isitor_page_login_config data.open_wechat_mini_app_config data.user_guide_contact_config data.brokers_router_config data.my_page_right_items
+^https:\/\/open\.xueqiu\.com\/mpaas\/config\/content\?.*timeline_tab_name response-body-json-del data.im_notice_show data.request_notice_show data.timeline_tab_name data.profileMenuConfig_anonymous_V12 data.trade_open_account_promotion_url data.trade_unify_open_account_list data.community_ad_download_msg data.home_tab_dynamic data.home_tab_dynamic_before data.home_tab_dynamic_after data.isitor_page_login_config data.open_wechat_mini_app_config data.user_guide_contact_config data.brokers_router_config data.my_page_right_items
 
 ^https:\/\/fund\.xueqiu\.com\/fundx\/activity\/x\/web\/c\/index\/dataByCode\? reject-dict
 
