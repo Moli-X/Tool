@@ -8,7 +8,7 @@
 #!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!date=2026-08-22 10:20:51
+#!date=2026-09-21 00:12:18
 
 [Rule]
 DOMAIN-KEYWORD, adstrategy, REJECT
@@ -420,6 +420,8 @@ DOMAIN-SUFFIX, hzjizhun.com, REJECT
 DOMAIN-SUFFIX, sogaha.cn, REJECT
 
 DOMAIN, zxid-m.mobileservice.cn, REJECT
+
+DOMAIN, xadsmartget.adgain.cn, REJECT
 
 DOMAIN-SUFFIX, tradplusad.com, REJECT
 

@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 954
+# 规则统计: 965
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 948
-#Update content: 移除广告主投放后台域名ad.weibo.com与iadworkbench.apple.com，此类后台不属拦截范围
-#Update time: 2026-09-09 23:35:30 UTC+8
+#Total lines: 959
+#Update content: 新增拦截欢效/章鱼移动/早范/AdGain等广告SDK域名11条，fix #216，感谢@Pideo1
+#Update time: 2026-09-20 20:30:39 UTC+8
 #Version: 1.7.6-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -87,6 +87,7 @@
 .adlink-api.huan.tv,Ads_AWAvenue
 .adlog.vivo.com.cn,Ads_AWAvenue
 .adm.funshion.com,Ads_AWAvenue
+.adm.zhangyuyidong.cn,Ads_AWAvenue
 .admarketing.yahoo.net,Ads_AWAvenue
 .admobile.top,Ads_AWAvenue
 .adreq.vivo.com.cn,Ads_AWAvenue
@@ -151,6 +152,7 @@
 .adsfs.oppomobile.com,Ads_AWAvenue
 .adslvfile.qq.com,Ads_AWAvenue
 .adsmart.konka.com,Ads_AWAvenue
+.adsmartget.datads.cn,Ads_AWAvenue
 .adsmind.gdtimg.com,Ads_AWAvenue
 .adsmind.ugdtimg.com,Ads_AWAvenue
 .adsmoloco.com,Ads_AWAvenue
@@ -369,6 +371,7 @@
 .data.mistat.xiaomi.com,Ads_AWAvenue
 .datacollection.uve.weibo.com,Ads_AWAvenue
 .dc.sigmob.cn,Ads_AWAvenue
+.de.ad.gameley.com,Ads_AWAvenue
 .de.tynt.com,Ads_AWAvenue
 .diagnosis.ad.xiaomi.com,Ads_AWAvenue
 .dlogs.bwton.com,Ads_AWAvenue
@@ -496,6 +499,7 @@
 .iyfbodn.com,Ads_AWAvenue
 .janapi.jd.com,Ads_AWAvenue
 .jiguang.cn,Ads_AWAvenue
+.jp.ad.gameley.com,Ads_AWAvenue
 .jpush.cn,Ads_AWAvenue
 .jpush.html5.qq.com,Ads_AWAvenue
 .jpush.io,Ads_AWAvenue
@@ -609,6 +613,7 @@
 .monitor.uu.qq.com,Ads_AWAvenue
 .monsetting.toutiao.com,Ads_AWAvenue
 .mores.toponad.com,Ads_AWAvenue
+.mpcfg.fancydsp.com,Ads_AWAvenue
 .ms.applovin.com,Ads_AWAvenue
 .ms.applvn.com,Ads_AWAvenue
 .ms4.applovin.com,Ads_AWAvenue
@@ -723,16 +728,20 @@
 .scs.openspeech.cn,Ads_AWAvenue
 .sdk-ab-config.qquanquan.com,Ads_AWAvenue
 .sdk-cache.video.ptqy.gitv.tv,Ads_AWAvenue
+.sdk-track.66mobi.com,Ads_AWAvenue
 .sdk.1rtb.net,Ads_AWAvenue
 .sdk.ad.smaato.net,Ads_AWAvenue
+.sdk.adhuanxiao.com,Ads_AWAvenue
 .sdk.adx.adwangmai.com,Ads_AWAvenue
 .sdk.aqyad.com,Ads_AWAvenue
 .sdk.beizi.biz,Ads_AWAvenue
 .sdk.cferw.com,Ads_AWAvenue
 .sdk.e.qq.com,Ads_AWAvenue
 .sdk.hzsanjiaomao.com,Ads_AWAvenue
+.sdk.hzzfcm.com,Ads_AWAvenue
 .sdk.markmedia.com.cn,Ads_AWAvenue
 .sdk.mobads.adwangmai.com,Ads_AWAvenue
+.sdk.zhangyuyidong.cn,Ads_AWAvenue
 .sdkapi.cloooud.com,Ads_AWAvenue
 .sdkapp.uve.weibo.com,Ads_AWAvenue
 .sdkauth.hpplay.cn,Ads_AWAvenue
@@ -741,6 +750,7 @@
 .sdkconfig.ad.xiaomi.com,Ads_AWAvenue
 .sdkconfig.play.aiseet.atianqi.com,Ads_AWAvenue
 .sdkconfig.video.qq.com,Ads_AWAvenue
+.sdklog.zhangyuyidong.cn,Ads_AWAvenue
 .sdkoptedge.chinanetcenter.com,Ads_AWAvenue
 .sdkreport.e.qq.com,Ads_AWAvenue
 .sdktmp.hubcloud.com.cn,Ads_AWAvenue
@@ -935,6 +945,7 @@
 .wxsnsdy.tc.qq.com,Ads_AWAvenue
 .wxsnsdy.wxs.qq.com,Ads_AWAvenue
 .wxsnsdythumb.wxs.qq.com,Ads_AWAvenue
+.xadsmartget.adgain.cn,Ads_AWAvenue
 .xc.gdt.qq.com,Ads_AWAvenue
 .xcx.dcad01.com,Ads_AWAvenue
 .xiaomi-dtv.m.cn.miaozhen.com,Ads_AWAvenue
