@@ -1,15 +1,15 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 965
+# 规则统计: 967
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 959
-#Update content: 新增拦截欢效/章鱼移动/早范/AdGain等广告SDK域名11条，fix #216，感谢@Pideo1
-#Update time: 2026-09-20 20:30:39 UTC+8
-#Version: 1.7.6-release
+#Total lines: 961
+#Update content: 新增拦截哔咔漫画广告接口与展示页域名2条，fix #204，感谢@0xLac
+#Update time: 2026-09-21 21:56:59 UTC+8
+#Version: 1.7.8-release
 .1500020991.vodplayer.wxamedia.com
 .1500022744.vodplayer.wxamedia.com
 .1500026601.vodplayer.wxamedia.com
@@ -675,6 +675,8 @@
 .pgdt.gtimg.cn
 .pgdt.ugdtimg.com
 .pglstatp-toutiao.com
+.pica-a-display.diwodiwo.xyz
+.pica-ad-api.diwodiwo.xyz
 .pig.pupuapi.com
 .pin.hpplay.cn
 .pixon.ads-pixiv.net
