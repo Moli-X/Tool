@@ -8,7 +8,7 @@
 #!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!date=2026-09-21 00:12:18
+#!date=2026-09-23 11:35:33
 
 [Rule]
 DOMAIN-KEYWORD, adstrategy, REJECT
@@ -228,7 +228,6 @@ DOMAIN, adash.man.aliyuncs.com, REJECT
 DOMAIN, applog.uc.cn, REJECT
 DOMAIN, atoken.m.taobao.com, REJECT
 AND, ((DOMAIN-KEYWORD, adash), (DOMAIN-SUFFIX, ut.taobao.com)), REJECT
-URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch", REJECT
 
 DOMAIN, baichuan-sdk.alicdn.com, REJECT
 DOMAIN, acs4baichuan.m.taobao.com, REJECT
