@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4774
+# 规则统计: 4775
 
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -87,14 +87,14 @@ DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
 DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 
 #
-# $content-hash-v1$:1Bqy3NZl2QCZ2B6FuI9sUiVLuXs9aHp2-7ksnI--2VE$
+# $content-hash-v1$:DX1hkYiHOhaj9imeU4c0uSV3YJ3s_rPvSy2tZZhiFC8$
 # $content-hash-v1$:XSnANR2ej23eV7GFbIL1wqIzrZ_522OY7Ubzre7S8X4$
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-08-19T01:29:53.827Z
-# Last Updated: 2026-09-23T12:32:35.310Z
+# Last Updated: 2026-09-26T15:10:49.838Z
 # License: AGPL 3.0
-# Size: 4675
+# Size: 4676
 # Size: 84
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -680,7 +680,6 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .ipfs.cyou
 .ipfs.decoo.io
 .ipfs.denarius.io
-.ipfs.ecolatam.com
 .ipfs.eternum.io
 .ipfs.eth.aragon.network
 .ipfs.filebase.io
@@ -2641,6 +2640,7 @@ divhunt.b-cdn.net
 dl.airdroid.com
 dlassets-ssl.xboxlive.com
 dlstats.izzyondroid.org
+dma.canyon.com
 dmm-extension.com
 do.featurebase.app
 docs.brew.sh
@@ -3479,6 +3479,7 @@ media.infosec.exchange
 media.inhumanity.com
 media.invisioncic.com
 media.istockphoto.com
+media.karousell.com
 media.kit.com
 media.lantern.io
 media.letsdeel.com
