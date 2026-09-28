@@ -8,7 +8,7 @@
 #!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Block_HTTPDNS.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png
-#!date=2026-09-23 11:40:22
+#!date=2026-09-28 23:26:14
 
 [Rule]
 DOMAIN-KEYWORD, httpdns, REJECT
@@ -107,11 +107,15 @@ DOMAIN, ucdc.upaas.quark.cn, REJECT
 
 DOMAIN, httpdns.danuoyi.tbcache.com, REJECT
 
-URL-REGEX, "^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatchh", REJECT
+URL-REGEX, "^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch", REJECT
 URL-REGEX, "^http:\/\/47\.246\.103\.9\/amdc\/mobileDispatch", REJECT
 URL-REGEX, "^http:\/\/47\.246\.103\.10\/amdc\/mobileDispatch", REJECT
 URL-REGEX, "^http:\/\/59\.82\.113\.10\/amdc\/mobileDispatch", REJECT
 URL-REGEX, "^http:\/\/59\.82\.113\.219\/amdc\/mobileDispatch", REJECT
+DOMAIN, xpis-xcdn.youku.com, REJECT
+DOMAIN, pre-xpis-xcdn.youku.com, REJECT
+DOMAIN, xpis-tel-xcdn.youku.com, REJECT
+DOMAIN, xpis-mob-xcdn.youku.com, REJECT
 
 DOMAIN, httpdns.cctv.com, REJECT
 
