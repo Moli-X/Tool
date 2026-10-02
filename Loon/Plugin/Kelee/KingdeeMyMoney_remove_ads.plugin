@@ -5,24 +5,24 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/KingdeeMyMoney_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KingdeeMyMoney.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/tg\.feidee\.com\/online_ad\/api\/search\.do$ reject-dict
+request if ${url} ~= /^https:\/\/tg\.feidee\.com\/online_ad\/api\/search\.do$/i then reject_dict(200)
 
-^https:\/\/yunmk\.feidee\.net\/cab-market-ws\/market\/v2\/contents$ reject-dict
+request if ${url} ~= /^https:\/\/yunmk\.feidee\.net\/cab-market-ws\/market\/v2\/contents$/i then reject_dict(200)
 
-^https:\/\/tg\.feidee\.com\/vis-ad-engine-ws\/api\/v2\/ads\/.+esultNum reject-dict
+request if ${url} ~= /^https:\/\/tg\.feidee\.com\/vis-ad-engine-ws\/api\/v2\/ads\/.+esultNum/i then reject_dict(200)
 
 
-^https:\/\/api\.feidee\.net\/v1\/configs\/client\/configs reject
+request if ${url} ~= /^https:\/\/api\.feidee\.net\/v1\/configs\/client\/configs/i then reject(404)
 
-^https:\/\/tg\.feidee\.com\/vis-ad-engine-ws\/api\/show reject-dict
+request if ${url} ~= /^https:\/\/tg\.feidee\.com\/vis-ad-engine-ws\/api\/show/i then reject_dict(200)
 
-^https:\/\/yun\.feidee\.net\/cab-periodic-activity-ws\/terminal\/v1\/members\/status reject-dict
+request if ${url} ~= /^https:\/\/yun\.feidee\.net\/cab-periodic-activity-ws\/terminal\/v1\/members\/status/i then reject_dict(200)
 
 [MitM]
 hostname=tg.feidee.com, yunmk.feidee.net, community.feidee.com, api.feidee.net, yun.feidee.net

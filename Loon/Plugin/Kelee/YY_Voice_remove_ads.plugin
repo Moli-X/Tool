@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/YY_Voice_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YY_Voice.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, splash.yy.com, REJECT
@@ -17,17 +17,17 @@ DOMAIN, dsp-ad.yy.com, REJECT
 DOMAIN, ysad.yy.com, REJECT
 
 [Rewrite]
-^https:\/\/yyapp-fastnet\.yy\.com\/dispatch\? reject-dict
+request if ${url} ~= /^https:\/\/yyapp-fastnet\.yy\.com\/dispatch\?/i then reject_dict(200)
 
-^https:\/\/data\.3g\.yy\.com\/popup\/topLiveCardPopup\? reject-dict
-^https:\/\/yyapp-act-entrance\.yy\.com\/entrance\/list\? reject-dict
+request if ${url} ~= /^https:\/\/data\.3g\.yy\.com\/popup\/topLiveCardPopup\?/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/yyapp-act-entrance\.yy\.com\/entrance\/list\?/i then reject_dict(200)
 
-^https:\/\/yyapp-idx\.yy\.com\/mobyy\/nav\/index\/idx\? response-body-json-jq '.data[].modules |= map(select(.name != "新版本滚动条" and .name != "通栏轮播" and .name != "新静默位"))'
+response if ${url} ~= /^https:\/\/yyapp-idx\.yy\.com\/mobyy\/nav\/index\/idx\?/i then response.json.jq(".data[].modules |= map(select(.name != \"新版本滚动条\" and .name != \"通栏轮播\" and .name != \"新静默位\"))")
 
-^https:\/\/tab\.yy\.com\/tabs\? response-body-json-del data.tabsForSelect
-^https:\/\/tab\.yy\.com\/tabs\? response-body-json-jq '.data.tabs |= map(select(.alias == "follow" or .alias == "im" or .alias == "me"))'
+response if ${url} ~= /^https:\/\/tab\.yy\.com\/tabs\?/i then response.json.delete("data.tabsForSelect")
+response if ${url} ~= /^https:\/\/tab\.yy\.com\/tabs\?/i then response.json.jq(".data.tabs |= map(select(.alias == \"follow\" or .alias == \"im\" or .alias == \"me\"))")
 
-^https:\/\/personal-center\.yy\.com\/personalCenter\/list\? response-body-json-jq '.data.modules |= map(select(.moduleName != "Banner轮播")) | .data.modules |= map(if has("entrances") then .entrances |= map(select(.bizCode|IN("jishijiedaikuan","duxiaoman2","chongzhi","freeData")|not)) else . end)'
+response if ${url} ~= /^https:\/\/personal-center\.yy\.com\/personalCenter\/list\?/i then response.json.jq(".data.modules |= map(select(.moduleName != \"Banner轮播\")) | .data.modules |= map(if has(\"entrances\") then .entrances |= map(select(.bizCode|IN(\"jishijiedaikuan\",\"duxiaoman2\",\"chongzhi\",\"freeData\")|not)) else . end)")
 
 [MitM]
 hostname=yyapp-act-entrance.yy.com, yyapp-fastnet.yy.com, personal-center.yy.com, tab.yy.com, data.3g.yy.com, yyapp-idx.yy.com

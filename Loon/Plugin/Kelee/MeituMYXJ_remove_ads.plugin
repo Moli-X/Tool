@@ -5,23 +5,23 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/MeituMYXJ_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MeituMYXJ.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, adui.tg.meitu.com, REJECT
 
 [Rewrite]
-^https:\/\/api\.meiyan\.com\/operation\/home_banner\.json\? reject-dict
+request if ${url} ~= /^https:\/\/api\.meiyan\.com\/operation\/home_banner\.json\?/i then reject_dict(200)
 
-^https:\/\/api\.meiyan\.com\/vip\/permission_update_popup\.json\? reject-dict
-^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\? response-body-json-del response.time_limit response.bubble response.person_center
-^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\? response-body-json-replace response.function_pop.meiyan_style.is_pop false response.onoff.vip_half_window_exit_remain_popup.open 0 response.onoff.vip_home_exit_remain_popup 0
+request if ${url} ~= /^https:\/\/api\.meiyan\.com\/vip\/permission_update_popup\.json\?/i then reject_dict(200)
+response if ${url} ~= /^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\?/i then response.json.delete(["response.time_limit", "response.bubble", "response.person_center"])
+response if ${url} ~= /^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\?/i then response.json.replace(["response.function_pop.meiyan_style.is_pop", "response.onoff.vip_half_window_exit_remain_popup.open", "response.onoff.vip_home_exit_remain_popup"], [false, 0, 0])
 
 [Script]
-http-response ^https:\/\/api\.meiyan\.com\/operation\/home\.json\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/MeituMYXJ_remove_ads.js, requires-body=true, tag=精简首页功能栏目并移除美颜推荐
+response if ${url} ~= /^https:\/\/api\.meiyan\.com\/operation\/home\.json\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/MeituMYXJ_remove_ads.js") with tag="精简首页功能栏目并移除美颜推荐", requires_body=true
 
 [MitM]
 hostname=api.meiyan.com

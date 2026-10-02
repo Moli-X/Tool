@@ -5,21 +5,21 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/MailMaster_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MailMaster.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$ reject-dict
+request if ${url} ~= /^https:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$/i then reject_dict(200)
 
-^https:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/page\/v2\/conf\.do$ response-body-json-del data.functionOperatorInfoList data.memberOperator data.activityTabInfoList
+response if ${url} ~= /^https:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/page\/v2\/conf\.do$/i then response.json.delete(["data.functionOperatorInfoList", "data.memberOperator", "data.activityTabInfoList"])
 
-^https:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/config\/function\.do$ response-body-json-jq '.data.config[] |= if .result.tools then .result.tools |= map(select(.name == "邮件追踪" or .name == "替身邮箱")) else . end | del(.data.config[] | select(.functionName == "Function-AD"))'
+response if ${url} ~= /^https:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/config\/function\.do$/i then response.json.jq(".data.config[] |= if .result.tools then .result.tools |= map(select(.name == \"邮件追踪\" or .name == \"替身邮箱\")) else . end | del(.data.config[] | select(.functionName == \"Function-AD\"))")
 
-^https:\/\/dashi\.163\.com\/task-center-api\/fapi\/task\/list$ reject-dict
+request if ${url} ~= /^https:\/\/dashi\.163\.com\/task-center-api\/fapi\/task\/list$/i then reject_dict(200)
 
-^https:\/\/appconf\.mail\.163\.com\/mailoperating\/mailmaster\/api\/operator\/get$ reject-dict
+request if ${url} ~= /^https:\/\/appconf\.mail\.163\.com\/mailoperating\/mailmaster\/api\/operator\/get$/i then reject_dict(200)
 
 [MitM]
 hostname=appconf.mail.163.com, dashi.163.com

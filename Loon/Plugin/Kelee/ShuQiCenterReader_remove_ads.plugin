@@ -5,23 +5,23 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/ShuQiCenterReader_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ShuQiCenterReader.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, render-web.11222.cn, REJECT
 
 [Rewrite]
-^https:\/\/huichuan\.sm\.cn\/nativead reject-dict
+request if ${url} ~= /^https:\/\/huichuan\.sm\.cn\/nativead/i then reject_dict(200)
 
-^https:\/\/ocean\.shuqireader\.com\/api\/route\/iosReadPage\/adV2 reject-dict
-^https:\/\/ocean\.shuqireader\.com\/api\/route\/ios\/readPage$ reject-dict
-^https:\/\/ocean\.shuqireader\.com\/api\/render\/load\/resource reject
+request if ${url} ~= /^https:\/\/ocean\.shuqireader\.com\/api\/route\/iosReadPage\/adV2/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/ocean\.shuqireader\.com\/api\/route\/ios\/readPage$/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/ocean\.shuqireader\.com\/api\/render\/load\/resource/i then reject(404)
 
 [Script]
-http-response ^https:\/\/ocean\.shuqireader\.com\/sqios\/render\/render\/page\/bookstore$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/ShuQiCenterReader_remove_ads.js, requires-body=true, tag=移除书城横幅和阅读广告
+response if ${url} ~= /^https:\/\/ocean\.shuqireader\.com\/sqios\/render\/render\/page\/bookstore$/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/ShuQiCenterReader_remove_ads.js") with tag="移除书城横幅和阅读广告", requires_body=true
 
 [MitM]
 hostname=ocean.shuqireader.com, huichuan.sm.cn

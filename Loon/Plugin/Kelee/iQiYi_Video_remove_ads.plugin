@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/iQiYi_Video_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/iQiYi_Video.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 IP-CIDR, 103.44.59.54/32, REJECT, no-resolve
@@ -21,47 +21,47 @@ DOMAIN, api.iqiyi.com, REJECT
 DOMAIN, access.if.iqiyi.com, REJECT
 
 [Rewrite]
-^https:\/\/cards\.iqiyi\.com\/views_home\/3\.0\/qy_home\? response-body-json-del base.statistics
+response if ${url} ~= /^https:\/\/cards\.iqiyi\.com\/views_home\/3\.0\/qy_home\?/i then response.json.delete("base.statistics")
 
-^https:\/\/cards\.iqiyi\.com\/views_home\/3\.0\/qy_home\? response-body-json-jq 'del(.cards[] | select(.alias_name == "focus" or .alias_name == "ad_mobile_flow" or .alias_name == "ad_trueview"))'
+response if ${url} ~= /^https:\/\/cards\.iqiyi\.com\/views_home\/3\.0\/qy_home\?/i then response.json.jq("del(.cards[] | select(.alias_name == \"focus\" or .alias_name == \"ad_mobile_flow\" or .alias_name == \"ad_trueview\"))")
 
-^https:\/\/cards\.iqiyi\.com\/views_category\/3\.0\/category_home\? response-body-json-jq 'del(.base.statistics | select(.ad_str)) | del(.cards[] | select(.alias_name == "entrence_focus" or .alias_name == "ad_trueview"))'
+response if ${url} ~= /^https:\/\/cards\.iqiyi\.com\/views_category\/3\.0\/category_home\?/i then response.json.jq("del(.base.statistics | select(.ad_str)) | del(.cards[] | select(.alias_name == \"entrence_focus\" or .alias_name == \"ad_trueview\"))")
 
-^https:\/\/cards\.iqiyi\.com\/waterfall(-plt)?\/3\.0\/feed\? response-body-json-jq 'del(.base.statistics | select(.ad_str)) | del(.. | select(.block_class?))'
+response if ${url} ~= /^https:\/\/cards\.iqiyi\.com\/waterfall(-plt)?\/3\.0\/feed\?/i then response.json.jq("del(.base.statistics | select(.ad_str)) | del(.. | select(.block_class?))")
 
-^https:\/\/cards\.iqiyi\.com\/views_plt\/3\.0\/player_tabs_v2\? response-body-json-del kv_pair.activity_tab
+response if ${url} ~= /^https:\/\/cards\.iqiyi\.com\/views_plt\/3\.0\/player_tabs_v2\?/i then response.json.delete("kv_pair.activity_tab")
 
-^https:\/\/cards\.iqiyi\.com\/views_plt\/3\.0\/player_tabs_v2\? response-body-json-jq 'del(.cards[] | select(.alias_name == "play_vip_promotion" or .alias_name == "play_detail_tag" or .alias_name == "play_chat_entrance" or .alias_name == "play_ad_no_vip" or .alias_name == "play_vertical_short_video" or .alias_name == "play_rap_custom" or .alias_name == "play_topical_tab" or .alias_name == "play_vertical" or .alias_name == "play_water_fall_like")) | del(.. | select(.block_class?))'
+response if ${url} ~= /^https:\/\/cards\.iqiyi\.com\/views_plt\/3\.0\/player_tabs_v2\?/i then response.json.jq("del(.cards[] | select(.alias_name == \"play_vip_promotion\" or .alias_name == \"play_detail_tag\" or .alias_name == \"play_chat_entrance\" or .alias_name == \"play_ad_no_vip\" or .alias_name == \"play_vertical_short_video\" or .alias_name == \"play_rap_custom\" or .alias_name == \"play_topical_tab\" or .alias_name == \"play_vertical\" or .alias_name == \"play_water_fall_like\")) | del(.. | select(.block_class?))")
 
-^https:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments\? response-body-json-jq ''
+response if ${url} ~= /^https:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments\?/i then response.json.jq("")
 
-^https:\/\/cards\.iqiyi\.com\/views_search\/3\.0\/hot_query_search\? response-body-json-jq '.cards |= map(select(.alias_name as $name | $name != "ad_trueview" and $name != "ad_mobile_flow" and $name != "search_mid_text_ad")) | if .base.statistics.ad_str? then del(.base.statistics) else . end'
+response if ${url} ~= /^https:\/\/cards\.iqiyi\.com\/views_search\/3\.0\/hot_query_search\?/i then response.json.jq(".cards |= map(select(.alias_name as $name | $name != \"ad_trueview\" and $name != \"ad_mobile_flow\" and $name != \"search_mid_text_ad\")) | if .base.statistics.ad_str? then del(.base.statistics) else . end")
 
-^https?:\/\/iface2\.iqiyi\.com\/control\/3\.0\/init_proxy\? reject-dict
+request if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/control\/3\.0\/init_proxy\?/i then reject_dict(200)
 
-^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show\? reject-dict
+request if ${url} ~= /^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show\?/i then reject_dict(200)
 
-^https?:\/\/iface2\.iqiyi\.com\/ivos\/interact\/video\/data\? reject-dict
+request if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/ivos\/interact\/video\/data\?/i then reject_dict(200)
 
-^https?:\/\/iface2\.iqiyi\.com\/video\/3\.0\/v_interface_proxy\? reject-dict
+request if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/video\/3\.0\/v_interface_proxy\?/i then reject_dict(200)
 
-^https?:\/\/iface2\.iqiyi\.com\/views_pop\/3\.0\/pop_control\? reject-dict
+request if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/views_pop\/3\.0\/pop_control\?/i then reject_dict(200)
 
-^https?:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments\? response-body-json-jq '.cards |= map(select(has("alias_name")))'
+response if ${url} ~= /^https?:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments\?/i then response.json.jq(".cards |= map(select(has(\"alias_name\")))")
 
-^https?:\/\/iface2\.iqiyi\.com\/views_menus\/3\.0\/bottom_theme\? response-body-json-del theme_list
-^https?:\/\/iface2\.iqiyi\.com\/views_menus\/3\.0\/bottom_theme\? response-body-json-jq '.cards |= map(.items |= map(select(.other.bottom_tab_type == "rec" or .other.bottom_tab_type == "my")))'
+response if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/views_menus\/3\.0\/bottom_theme\?/i then response.json.delete("theme_list")
+response if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/views_menus\/3\.0\/bottom_theme\?/i then response.json.jq(".cards |= map(.items |= map(select(.other.bottom_tab_type == \"rec\" or .other.bottom_tab_type == \"my\")))")
 
-^https?:\/\/iface2\.iqiyi\.com\/views_menus\/3\.0\/home_top_menu\? response-body-json-jq '.nav_group_data[].nav_list |= map(select(. == "0" or . == "2" or . == "1007" or . == "1" or . == "6" or . == "3"))'
+response if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/views_menus\/3\.0\/home_top_menu\?/i then response.json.jq(".nav_group_data[].nav_list |= map(select(. == \"0\" or . == \"2\" or . == \"1007\" or . == \"1\" or . == \"6\" or . == \"3\"))")
 
-^https?:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/common_switch\? response-body-json-del content.resource.cast_device_ad
-^https?:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/common_switch\? response-body-json-replace content.switchs.app_ad.app_ad_enable 0 content.switchs.app_ad.app_ad_duration 0 content.switchs.ios_tech.kPreadAdHintSwitch 0 content.switchs.ios_tech.ad_download 0 content.switchs.m_qiyi_ios_tech.KFocusAdVideoPlayTimesIn4G 0
+response if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/common_switch\?/i then response.json.delete("content.resource.cast_device_ad")
+response if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/common_switch\?/i then response.json.replace(["content.switchs.app_ad.app_ad_enable", "content.switchs.app_ad.app_ad_duration", "content.switchs.ios_tech.kPreadAdHintSwitch", "content.switchs.ios_tech.ad_download", "content.switchs.m_qiyi_ios_tech.KFocusAdVideoPlayTimesIn4G"], [0, 0, 0, 0, 0])
 
-^https?:\/\/(kjp|t7z)\.cupid\.iqiyi\.com\/mixer\? response-body-json-del adSlots
+response if ${url} ~= /^https?:\/\/(kjp|t7z)\.cupid\.iqiyi\.com\/mixer\?/i then response.json.delete("adSlots")
 
-^https?:\/\/search\.video\.iqiyi\.com\/q\? response-body-json-del data
+response if ${url} ~= /^https?:\/\/search\.video\.iqiyi\.com\/q\?/i then response.json.delete("data")
 
-^https?:\/\/iface2\.iqiyi\.com\/aggregate\/3\.0\/getMyMenus\? response-body-json-jq '.data |= map(select(.statistic.block != "wd_liebiao_2") | select(all(.menuList[]?.statistic2.block; . != "wd_liebiao_3")))'
+response if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/aggregate\/3\.0\/getMyMenus\?/i then response.json.jq(".data |= map(select(.statistic.block != \"wd_liebiao_2\") | select(all(.menuList[]?.statistic2.block; . != \"wd_liebiao_3\")))")
 
 [MitM]
 hostname=-i.vip.iqiyi.com, *.iqiyi.com

@@ -5,26 +5,26 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/XiaChuFang_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/XiaChuFang.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/api\.xiachufang\.com\/v2\/ad\/ reject-dict
+request if ${url} ~= /^https:\/\/api\.xiachufang\.com\/v2\/ad\//i then reject_dict(200)
 
-^https:\/\/api\.xiachufang\.com\/v2\/homepage\/paged_waterfall_recommendations\.json$ response-body-json-jq 'del(.multiplex_cells[] | select(.recommendation_cell.impression_sensor_events[]?.properties.target_type? == "ad"))'
+response if ${url} ~= /^https:\/\/api\.xiachufang\.com\/v2\/homepage\/paged_waterfall_recommendations\.json$/i then response.json.jq("del(.multiplex_cells[] | select(.recommendation_cell.impression_sensor_events[]?.properties.target_type? == \"ad\"))")
 
-^https:\/\/api\.xiachufang\.com\/v2\/config\/get\.json$ response-body-json-del content.recipe_ad content.splash_ad_req_time content.splash_sdk_ad_req_time content.splash_ad_lifecycle_interval content.waterfall_ad_feedback content.homepage_waterfall_test_ad_pos content.ad_app_look_around content.ad_sdk_text_removal_keywords
+response if ${url} ~= /^https:\/\/api\.xiachufang\.com\/v2\/config\/get\.json$/i then response.json.delete(["content.recipe_ad", "content.splash_ad_req_time", "content.splash_sdk_ad_req_time", "content.splash_ad_lifecycle_interval", "content.waterfall_ad_feedback", "content.homepage_waterfall_test_ad_pos", "content.ad_app_look_around", "content.ad_sdk_text_removal_keywords"])
 
 
-^https:\/\/api\.xiachufang\.com\/v2\/account\/feeds_v7\.json reject-dict
+request if ${url} ~= /^https:\/\/api\.xiachufang\.com\/v2\/account\/feeds_v7\.json/i then reject_dict(200)
 
-^https:\/\/api\.xiachufang\.com\/v2\/homepage1810\/init_page\.json reject-dict
+request if ${url} ~= /^https:\/\/api\.xiachufang\.com\/v2\/homepage1810\/init_page\.json/i then reject_dict(200)
 
-^https:\/\/api\.xiachufang\.com\/v2\/homepage\/ranking_list\/paged_homepage_ranking_list_section_v2\.json$ response-body-json-jq '.cells |= map(del(.side_slip_activity_cell, .dish_square_cell))'
+response if ${url} ~= /^https:\/\/api\.xiachufang\.com\/v2\/homepage\/ranking_list\/paged_homepage_ranking_list_section_v2\.json$/i then response.json.jq(".cells |= map(del(.side_slip_activity_cell, .dish_square_cell))")
 
-^https:\/\/api\.xiachufang\.com\/v2\/mark_mission\/get_sticker_info\.json reject-dict
+request if ${url} ~= /^https:\/\/api\.xiachufang\.com\/v2\/mark_mission\/get_sticker_info\.json/i then reject_dict(200)
 
 [MitM]
 hostname=api.xiachufang.com

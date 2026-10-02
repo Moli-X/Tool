@@ -5,31 +5,31 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/QiXinBao_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QiXinBao.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/appc\.qixin\.com\/v4\/general\/getSearchPlaceholderRedirect$ reject-dict
+request if ${url} ~= /^https:\/\/appc\.qixin\.com\/v4\/general\/getSearchPlaceholderRedirect$/i then reject_dict(200)
 
-^https:\/\/appc-v6\.qixin\.com\/v4\/general\/getAppFloatAd$ reject-dict
+request if ${url} ~= /^https:\/\/appc-v6\.qixin\.com\/v4\/general\/getAppFloatAd$/i then reject_dict(200)
 
-^https:\/\/appc-v6\.qixin\.com\/v4\/general\/getAppBanners$ reject-dict
+request if ${url} ~= /^https:\/\/appc-v6\.qixin\.com\/v4\/general\/getAppBanners$/i then reject_dict(200)
 
-^https:\/\/appc-v6\.qixin\.com\/v4\/user\/getUserActivitys$ reject-dict
+request if ${url} ~= /^https:\/\/appc-v6\.qixin\.com\/v4\/user\/getUserActivitys$/i then reject_dict(200)
 
-^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/homePageRecommend\/recommendCard\d+ reject-dict
+request if ${url} ~= /^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/homePageRecommend\/recommendCard\d+/i then reject_dict(200)
 
-^https:\/\/appc-v6\.qixin\.com\/v4\/user\/getRecommendPersons$ reject-dict
+request if ${url} ~= /^https:\/\/appc-v6\.qixin\.com\/v4\/user\/getRecommendPersons$/i then reject_dict(200)
 
-^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/getRecommendEnts$ reject-dict
+request if ${url} ~= /^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/getRecommendEnts$/i then reject_dict(200)
 
-^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/getRecommendation$ reject-dict
+request if ${url} ~= /^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/getRecommendation$/i then reject_dict(200)
 
-^https:\/\/appc-v6\.qixin\.com\/v4\/general\/getAppBottomBanners$ reject-dict
+request if ${url} ~= /^https:\/\/appc-v6\.qixin\.com\/v4\/general\/getAppBottomBanners$/i then reject_dict(200)
 
-^https:\/\/qxb-minicode-pic-osscache\.qixin\.com\/web\/ reject
+request if ${url} ~= /^https:\/\/qxb-minicode-pic-osscache\.qixin\.com\/web\//i then reject(404)
 
 [Script]
 

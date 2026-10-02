@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/ZuiYou_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ZuiYou.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, adapi.izuiyou.com, REJECT
@@ -16,9 +16,9 @@ URL-REGEX, "^http:\/\/mercury-gateway\.ixiaochuan\.cn\/mercury\/v1\/ad\/", REJEC
 URL-REGEX, "^http:\/\/file-share\.izuiyou\.com\/octopus\/media\/templates\/search_home_page_(nv|nv_v2)\/search_home_page_nv", REJECT
 
 [Rewrite]
-^https?:\/\/api\.izuiyou\.com\/config\/get_banner reject-dict
-^https?:\/\/api\.izuiyou\.com\/ad\/ reject
-^https:\/\/zyfile\.izuiyou\.com\/zyfile\/c2\/a0\/[a-z0-9-]+\.json reject-dict
+request if ${url} ~= /^https?:\/\/api\.izuiyou\.com\/config\/get_banner/i then reject_dict(200)
+request if ${url} ~= /^https?:\/\/api\.izuiyou\.com\/ad\//i then reject(404)
+request if ${url} ~= /^https:\/\/zyfile\.izuiyou\.com\/zyfile\/c2\/a0\/[a-z0-9-]+\.json/i then reject_dict(200)
 
 [MitM]
 hostname=api.izuiyou.com, zyfile.izuiyou.com

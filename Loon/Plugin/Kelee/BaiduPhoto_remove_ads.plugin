@@ -5,17 +5,17 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BaiduPhoto_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BaiduPhoto.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/pan\.baidu\.com\/act\/api\/conf\?.*conf_key=youa_core_config_ios reject-dict
+request if ${url} ~= /^https:\/\/pan\.baidu\.com\/act\/api\/conf\?.*conf_key=youa_core_config_ios/i then reject_dict(200)
 
-^https:\/\/pan\.baidu\.com\/youai\/material\/v1\/getbynavid\?.*nav_id=1 reject-dict
+request if ${url} ~= /^https:\/\/pan\.baidu\.com\/youai\/material\/v1\/getbynavid\?.*nav_id=1/i then reject_dict(200)
 
-^https:\/\/mbd\.baidu\.com\/ccs\/v1\/start\/confsync\? response-body-json-del data.service.config.advertisement data.service.config.youa.pm_config_ad 
+response if ${url} ~= /^https:\/\/mbd\.baidu\.com\/ccs\/v1\/start\/confsync\?/i then response.json.delete(["data.service.config.advertisement", "data.service.config.youa.pm_config_ad"]) 
 
 [MitM]
 hostname=pan.baidu.com, mbd.baidu.com

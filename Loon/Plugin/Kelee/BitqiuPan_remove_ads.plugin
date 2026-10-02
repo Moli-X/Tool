@@ -5,17 +5,17 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BitqiuPan_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BitqiuPan.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/pan-api\.bitqiu\.com\/activity\/getPromoteGuide$ reject-dict
+request if ${url} ~= /^https:\/\/pan-api\.bitqiu\.com\/activity\/getPromoteGuide$/i then reject_dict(200)
 
-^http:\/\/pan-api\.bitqiu\.com\/activity\/getUrlList$ reject-dict
+request if ${url} ~= /^http:\/\/pan-api\.bitqiu\.com\/activity\/getUrlList$/i then reject_dict(200)
 
-^https:\/\/pan-api\.bitqiu\.com\/activity\/guides$ reject-dict
+request if ${url} ~= /^https:\/\/pan-api\.bitqiu\.com\/activity\/guides$/i then reject_dict(200)
 
 [MitM]
 hostname=pan-api.bitqiu.com

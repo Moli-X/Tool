@@ -5,20 +5,20 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/IThome_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/IThome.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Argument]
 removePinnedArticles = switch, false, true, tag=移除置顶文章, desc=启用后将移除置顶文章
 removeAllBanners = switch, false, true, tag=移除全部横幅, desc=启用后将移除全部横幅
 
 [Rewrite]
-^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$ reject
+request if ${url} ~= /^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$/i then reject(404)
 
 [Script]
-http-response ^https:\/\/napi\.ithome\.com\/api\/(news\/indexv2\/iphone\/\d+|topmenu\/getfeeds\?) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/IThome_remove_ads.js, requires-body=true, tag=IT之家去广告, argument=[{removeAllBanners},{removePinnedArticles}]
+response if ${url} ~= /^https:\/\/napi\.ithome\.com\/api\/(news\/indexv2\/iphone\/\d+|topmenu\/getfeeds\?)/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/IThome_remove_ads.js", {${removeAllBanners}, ${removePinnedArticles}}) with tag="IT之家去广告", requires_body=true
 
 [MitM]
 hostname=napi.ithome.com, api.zuihuimai.com, dat.ruanmei.com

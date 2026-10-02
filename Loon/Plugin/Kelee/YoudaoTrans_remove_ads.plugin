@@ -5,22 +5,22 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/YoudaoTrans_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YoudaoTrans.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/gorgon\.youdao\.com\/gorgon\/v2\/request\.s reject-dict
-^https:\/\/gorgon\.youdao\.com\/gorgon\/brand\/prefetch\.s reject-dict
+request if ${url} ~= /^https:\/\/gorgon\.youdao\.com\/gorgon\/v2\/request\.s/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/gorgon\.youdao\.com\/gorgon\/brand\/prefetch\.s/i then reject_dict(200)
 
-^https:\/\/gorgon\.youdao\.com\/gorgon\/request\.s reject-dict
-^https:\/\/fanyiguan-server\.youdao\.com\/server\/banner\? reject-dict
-^https:\/\/dict\.youdao\.com\/vip\/activity\/fanyiguan\/sevendayfree\/imei\? reject-dict
+request if ${url} ~= /^https:\/\/gorgon\.youdao\.com\/gorgon\/request\.s/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/fanyiguan-server\.youdao\.com\/server\/banner\?/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/dict\.youdao\.com\/vip\/activity\/fanyiguan\/sevendayfree\/imei\?/i then reject_dict(200)
 
-^https:\/\/dict\.youdao\.com\/wordbook\/recommend\?all=false reject-dict
+request if ${url} ~= /^https:\/\/dict\.youdao\.com\/wordbook\/recommend\?all=false/i then reject_dict(200)
 
-^https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/trans_abtest\/online\/iOS\? reject-dict
+request if ${url} ~= /^https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/trans_abtest\/online\/iOS\?/i then reject_dict(200)
 
 [MitM]
 hostname=gorgon.youdao.com, fanyiguan-server.youdao.com, api-overmind.youdao.com, dict.youdao.com

@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Douyu_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Douyu.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 URL-REGEX, "^http:\/\/linkmicschedule\.douyucdn\.cn\/im_schedule\/im_gate_list", REJECT
@@ -20,14 +20,14 @@ DOMAIN, stun1.qvb.qcloud.com, REJECT
 ^(http:\/\/)((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\/(hlsh5p1\.douyucdn2\.cn)(.*) 307 $1$5$6
 
 [Rewrite]
-^https:\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo reject-dict
+request if ${url} ~= /^https:\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo/i then reject_dict(200)
 
-^https:\/\/apiv2\.douyucdn\.cn\/japi\/entrance\/roomRes\/nc\/m\/list response-body-json-del data.pendant_a data.entrance_d
+response if ${url} ~= /^https:\/\/apiv2\.douyucdn\.cn\/japi\/entrance\/roomRes\/nc\/m\/list/i then response.json.delete(["data.pendant_a", "data.entrance_d"])
 
-^https:\/\/venus\.douyucdn\.cn\/venus\/config\/static\/update.+keyCodeSet=flow_config response-body-json-replace greatGodGameSitterSwitch 0 followMoreAnchorEntrance 0 sdklivebanner 0 homeActFloatSwitch 0 bringGoodsSwitch 0 qqGameSwitch 0
+response if ${url} ~= /^https:\/\/venus\.douyucdn\.cn\/venus\/config\/static\/update.+keyCodeSet=flow_config/i then response.json.replace(["greatGodGameSitterSwitch", "followMoreAnchorEntrance", "sdklivebanner", "homeActFloatSwitch", "bringGoodsSwitch", "qqGameSwitch"], [0, 0, 0, 0, 0, 0])
 
 [Script]
-http-response ^https:\/\/apiv2\.douyucdn\.cn\/mgapi\/livenc\/home\/getRecV3 script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Douyu_remove_ads.js, requires-body=true, tag=移除首页轮播图和视频流广告
+response if ${url} ~= /^https:\/\/apiv2\.douyucdn\.cn\/mgapi\/livenc\/home\/getRecV3/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Douyu_remove_ads.js") with tag="移除首页轮播图和视频流广告", requires_body=true
 
 [MitM]
 hostname=rtbapi.douyucdn.cn, apiv2.douyucdn.cn, venus.douyucdn.cn

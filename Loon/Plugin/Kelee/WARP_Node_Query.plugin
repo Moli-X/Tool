@@ -5,13 +5,13 @@
 #!tag=节点检测
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/WARP_Node_Query.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/1.1.1.1.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Script]
-generic script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/1.1.1.1.panel.js, timeout=10, tag=WARP · INFO,img-url=icloud.circle.system
+generic then script("https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/1.1.1.1.panel.js") with tag="WARP · INFO", img_url="icloud.circle.system", timeout=10
 
 [MitM]
 hostname=api.cloudflareclient.com, zero-trust-client.cloudflareclient.com

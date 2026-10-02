@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/WexinMiniPrograms_Remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WeixinMiniPrograms.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, wxsnsdy.wxs.qq.com, REJECT
@@ -22,217 +22,217 @@ DOMAIN, ad.maoyan.com, REJECT
 DOMAIN, e.jparking.cn, REJECT
 
 [Rewrite]
-^https:\/\/webapi\.qmai\.cn\/web\/catering\/advertising\/ reject-dict
-^https:\/\/webapi\.qmai\.cn\/web\/cmk-center\/marketing\/canvas\/advert-reach reject
-^https:\/\/images\.qmai\.cn\/s214925\/2023 reject-dict
+request if ${url} ~= /^https:\/\/webapi\.qmai\.cn\/web\/catering\/advertising\//i then reject_dict(200)
+request if ${url} ~= /^https:\/\/webapi\.qmai\.cn\/web\/cmk-center\/marketing\/canvas\/advert-reach/i then reject(404)
+request if ${url} ~= /^https:\/\/images\.qmai\.cn\/s214925\/2023/i then reject_dict(200)
 
-^https:\/\/creditcardapp\.bankcomm\.com\/cnsvPmpaMdbcardWeb\/page\/getGuidePageAds reject
+request if ${url} ~= /^https:\/\/creditcardapp\.bankcomm\.com\/cnsvPmpaMdbcardWeb\/page\/getGuidePageAds/i then reject(404)
 
-^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic reject
+request if ${url} ~= /^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic/i then reject(404)
 
-^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/api\/v2\/clientPage\/modulesAggregated\? reject-dict
-^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/api\/v2\/clientPage\/getHomeLiveInfo$ reject-dict
-^https:\/\/dsp\.fcbox\.com\/adSearch\/ reject-dict
-^https:\/\/webchatapp\.fcbox\.com\/post\/suggestion\/query$ reject-dict
-^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/marketingEntrance\/v2\/infoWithItems$ reject-dict
-^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/marketingEntrance\/info$ reject-dict
+request if ${url} ~= /^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/api\/v2\/clientPage\/modulesAggregated\?/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/api\/v2\/clientPage\/getHomeLiveInfo$/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/dsp\.fcbox\.com\/adSearch\//i then reject_dict(200)
+request if ${url} ~= /^https:\/\/webchatapp\.fcbox\.com\/post\/suggestion\/query$/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/marketingEntrance\/v2\/infoWithItems$/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/marketingEntrance\/info$/i then reject_dict(200)
 
-^https:\/\/app\.95504\.net\/app\/json\/page_ad\/initPageAd\?ver= reject
-^https:\/\/minipro\.95504\.net\/app\/json\/ad\/getPopAdData reject
-^https:\/\/minipro\.95504\.net\/app\/json\/ad\/getIndexAdData reject
+request if ${url} ~= /^https:\/\/app\.95504\.net\/app\/json\/page_ad\/initPageAd\?ver=/i then reject(404)
+request if ${url} ~= /^https:\/\/minipro\.95504\.net\/app\/json\/ad\/getPopAdData/i then reject(404)
+request if ${url} ~= /^https:\/\/minipro\.95504\.net\/app\/json\/ad\/getIndexAdData/i then reject(404)
 
-^https:\/\/flow\.dmall\.com\/app\/home\/pops reject
+request if ${url} ~= /^https:\/\/flow\.dmall\.com\/app\/home\/pops/i then reject(404)
 
-^https:\/\/api\.yonghuivip\.com\/api\/fp\/homepage\/pop reject
-^https:\/\/activity\.yonghuivip\.com\/api\/app\/fp\/homepage\/pop reject
-^https:\/\/activity\.yonghuivip\.com\/api\/\/web\/shensuan\/ad reject
-^https:\/\/sauron-report\.yonghuivip\.com\/collect reject
+request if ${url} ~= /^https:\/\/api\.yonghuivip\.com\/api\/fp\/homepage\/pop/i then reject(404)
+request if ${url} ~= /^https:\/\/activity\.yonghuivip\.com\/api\/app\/fp\/homepage\/pop/i then reject(404)
+request if ${url} ~= /^https:\/\/activity\.yonghuivip\.com\/api\/\/web\/shensuan\/ad/i then reject(404)
+request if ${url} ~= /^https:\/\/sauron-report\.yonghuivip\.com\/collect/i then reject(404)
 
-^https:\/\/res\.pizzahut\.com\.cn\/CRM reject-dict
+request if ${url} ~= /^https:\/\/res\.pizzahut\.com\.cn\/CRM/i then reject_dict(200)
 
 
-^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/hotActivity reject-dict
+request if ${url} ~= /^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/hotActivity/i then reject_dict(200)
 
-^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/popup reject-dict
-^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/banner reject-dict
-^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/global reject-dict
+request if ${url} ~= /^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/popup/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/banner/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/global/i then reject_dict(200)
 
-^https:\/\/wechat-api\.i-xiaoma\.com\.cn\/app\/v1\/bus\/wechat\/content reject-dict
+request if ${url} ~= /^https:\/\/wechat-api\.i-xiaoma\.com\.cn\/app\/v1\/bus\/wechat\/content/i then reject_dict(200)
 
-^https:\/\/apiproxy\.zuche\.com\/resource\/carrctapi\/home\/marketing reject-dict
-^https:\/\/apiproxy\.zuche\.com\/resource\/carrctapi\/home\/page\/advertising reject-dict
+request if ${url} ~= /^https:\/\/apiproxy\.zuche\.com\/resource\/carrctapi\/home\/marketing/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/apiproxy\.zuche\.com\/resource\/carrctapi\/home\/page\/advertising/i then reject_dict(200)
 
-^https:\/\/miniprogram\.ishansong\.com\/cms\/faq\/query reject-dict
-^https:\/\/ads\.ishansong\.com\/advert reject-dict
+request if ${url} ~= /^https:\/\/miniprogram\.ishansong\.com\/cms\/faq\/query/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/ads\.ishansong\.com\/advert/i then reject_dict(200)
 
 
-^https:\/\/ump\.ems\.com\.cn\/mailAd$ reject
+request if ${url} ~= /^https:\/\/ump\.ems\.com\.cn\/mailAd$/i then reject(404)
 
-^https:\/\/minicap\.caocaokeji\.cn\/advert-bss\/pullAdvert reject-dict
+request if ${url} ~= /^https:\/\/minicap\.caocaokeji\.cn\/advert-bss\/pullAdvert/i then reject_dict(200)
 
-^https:\/\/r2\.gzyct\.com\/qrcode\/advert reject-dict
+request if ${url} ~= /^https:\/\/r2\.gzyct\.com\/qrcode\/advert/i then reject_dict(200)
 
-^https:\/\/applets\.jtexpress\.com\.cn reject-dict
+request if ${url} ~= /^https:\/\/applets\.jtexpress\.com\.cn/i then reject_dict(200)
 
-^https:\/\/api\.hellobike\.com\/api\?adx reject-dict
+request if ${url} ~= /^https:\/\/api\.hellobike\.com\/api\?adx/i then reject_dict(200)
 
-^https:\/\/api\.kuaidihelp\.com\/g_order_core\/v2\/mina\/User\/getBannerList reject-dict
+request if ${url} ~= /^https:\/\/api\.kuaidihelp\.com\/g_order_core\/v2\/mina\/User\/getBannerList/i then reject_dict(200)
 
-^https:\/\/wxproj\.seeyouyima\.com\/data\/today_tips reject-dict
+request if ${url} ~= /^https:\/\/wxproj\.seeyouyima\.com\/data\/today_tips/i then reject_dict(200)
 
-^https:\/\/suyun-guest\.daojia\.com\/api\/kuaigou\/banjia\/review reject-dict
+request if ${url} ~= /^https:\/\/suyun-guest\.daojia\.com\/api\/kuaigou\/banjia\/review/i then reject_dict(200)
 
-^https:\/\/ne\.gdsz\.sinopec\.com\/gateway\/api\/omp\/mt\/appAdvertising reject-dict
+request if ${url} ~= /^https:\/\/ne\.gdsz\.sinopec\.com\/gateway\/api\/omp\/mt\/appAdvertising/i then reject_dict(200)
 
-^https:\/\/qapi\.huolala\.cn\/ads reject-dict
-^https:\/\/qapi\.huolala\.cn\/home_new_user reject-dict
-^https:\/\/qapi\.huolala\.cn\/get_service_list reject-dict
-^https:\/\/appuser-static\.huolala\.cn\/imgs reject-dict
+request if ${url} ~= /^https:\/\/qapi\.huolala\.cn\/ads/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/qapi\.huolala\.cn\/home_new_user/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/qapi\.huolala\.cn\/get_service_list/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/appuser-static\.huolala\.cn\/imgs/i then reject_dict(200)
 
-^https:\/\/apis\.alenable\.com\/mall\/v1\/api\/mall\/skin\/user\/get reject-dict
-^https:\/\/apis\.alenable\.com\/ycx\/v1\/api\/adPut reject-dict
+request if ${url} ~= /^https:\/\/apis\.alenable\.com\/mall\/v1\/api\/mall\/skin\/user\/get/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/apis\.alenable\.com\/ycx\/v1\/api\/adPut/i then reject_dict(200)
 
-^https:\/\/dock\.tenchii\.com\/DockCard\/api\/mini\/card\/list reject-dict
+request if ${url} ~= /^https:\/\/dock\.tenchii\.com\/DockCard\/api\/mini\/card\/list/i then reject_dict(200)
 
-^https:\/\/customer-app\.sto\.cn\/api\/app\/banner\/banner reject-dict
-^https:\/\/sto-customer-app\.oss-cn-shanghai\.aliyuncs\.com\/images reject-dict
+request if ${url} ~= /^https:\/\/customer-app\.sto\.cn\/api\/app\/banner\/banner/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/sto-customer-app\.oss-cn-shanghai\.aliyuncs\.com\/images/i then reject_dict(200)
 
-^https:\/\/supplier-api\.imdada\.cn\/fe\/public\/ad\/spot\?forwardServiceName=growth-activity reject-dict
+request if ${url} ~= /^https:\/\/supplier-api\.imdada\.cn\/fe\/public\/ad\/spot\?forwardServiceName=growth-activity/i then reject_dict(200)
 
-^https:\/\/hdgateway\.zto\.com\/getApolloConfig reject
-^https:\/\/hdgateway\.zto\.com\/track reject
-^https:\/\/hdgateway\.zto\.com\/getAdInfo reject
-^https:\/\/hdgateway\.zto\.com\/listJumperShow reject
-^https:\/\/fscdn\.zto\.com\/fs1 reject
+request if ${url} ~= /^https:\/\/hdgateway\.zto\.com\/getApolloConfig/i then reject(404)
+request if ${url} ~= /^https:\/\/hdgateway\.zto\.com\/track/i then reject(404)
+request if ${url} ~= /^https:\/\/hdgateway\.zto\.com\/getAdInfo/i then reject(404)
+request if ${url} ~= /^https:\/\/hdgateway\.zto\.com\/listJumperShow/i then reject(404)
+request if ${url} ~= /^https:\/\/fscdn\.zto\.com\/fs1/i then reject(404)
 
-^https:\/\/mobile-api\.imlaidian\.com\/api\/args reject-dict
+request if ${url} ~= /^https:\/\/mobile-api\.imlaidian\.com\/api\/args/i then reject_dict(200)
 
-^https:\/\/wxs-weixin\.sd\.zhumanggroup\.com\/api\/v2\/ad reject-dict
+request if ${url} ~= /^https:\/\/wxs-weixin\.sd\.zhumanggroup\.com\/api\/v2\/ad/i then reject_dict(200)
 
-^https:\/\/s\.jiediankeji\.com\/adv reject-dict
+request if ${url} ~= /^https:\/\/s\.jiediankeji\.com\/adv/i then reject_dict(200)
 
-^https:\/\/smarket\.dian\.so reject-dict
-^https:\/\/file\.dian\.so\/c\/leto reject-dict
+request if ${url} ~= /^https:\/\/smarket\.dian\.so/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/file\.dian\.so\/c\/leto/i then reject_dict(200)
 
-^https:\/\/aag\.enmonster\.com\/apa\/index\/advert\/skin reject
+request if ${url} ~= /^https:\/\/aag\.enmonster\.com\/apa\/index\/advert\/skin/i then reject(404)
 
-^https:\/\/ad\.xiaotucc\.com\/advert reject
+request if ${url} ~= /^https:\/\/ad\.xiaotucc\.com\/advert/i then reject(404)
 
-^https:\/\/api-marketing\.zhinengxiyifang\.cn\/api\/v2\/cloudcode\/wechat\/bid reject
+request if ${url} ~= /^https:\/\/api-marketing\.zhinengxiyifang\.cn\/api\/v2\/cloudcode\/wechat\/bid/i then reject(404)
 
-^https:\/\/api\.songguo7\.com\/(\w{3})?mp\/v2\/misc\/(toast|user_operate_info|unlock_without_order|unlock_operate_info) reject-dict
+request if ${url} ~= /^https:\/\/api\.songguo7\.com\/(\w{3})?mp\/v2\/misc\/(toast|user_operate_info|unlock_without_order|unlock_operate_info)/i then reject_dict(200)
 
 
-^https:\/\/ccmsupport-sz\.tenpay\.com\/cgi-bin\/common\/ccm_page_element.cgi reject
+request if ${url} ~= /^https:\/\/ccmsupport-sz\.tenpay\.com\/cgi-bin\/common\/ccm_page_element.cgi/i then reject(404)
 
-^https:\/\/tm-api\.pin-dao\.cn\/home\/api\/index\/activeConfig\/v2 reject-dict
-^https:\/\/tm-api\.pin-dao\.cn\/home\/api\/resource\/config\/homeBannerNodes reject-dict
+request if ${url} ~= /^https:\/\/tm-api\.pin-dao\.cn\/home\/api\/index\/activeConfig\/v2/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/tm-api\.pin-dao\.cn\/home\/api\/resource\/config\/homeBannerNodes/i then reject_dict(200)
 
-^https:\/\/api-fouth-mem\.huazhu\.com\/api\/rights\/bannerList reject-dict
+request if ${url} ~= /^https:\/\/api-fouth-mem\.huazhu\.com\/api\/rights\/bannerList/i then reject_dict(200)
 
-^https:\/\/wxapp\.bestwehotel\.com\/gw3\/app-mini\/trip-hotel-banner\/activity\/getActivityInfo reject-dict
+request if ${url} ~= /^https:\/\/wxapp\.bestwehotel\.com\/gw3\/app-mini\/trip-hotel-banner\/activity\/getActivityInfo/i then reject_dict(200)
 
-^https:\/\/wx\.bthhotels\.com\/miniapp\/weixin\/v1\/home\/index_banner reject-dict
-^https:\/\/app\.homeinns\.com\/api\/v6\/indexs reject-dict
-^https:\/\/app\.homeinns\.com\/api\/v5\/local reject-dict
-^https:\/\/app\.homeinns\.com\/api\/v5\/index reject-dict
+request if ${url} ~= /^https:\/\/wx\.bthhotels\.com\/miniapp\/weixin\/v1\/home\/index_banner/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/app\.homeinns\.com\/api\/v6\/indexs/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/app\.homeinns\.com\/api\/v5\/local/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/app\.homeinns\.com\/api\/v5\/index/i then reject_dict(200)
 
-^https:\/\/mxsa\.mxbc\.net\/api\/v1\/adinfo\/adplace\/query reject-dict
+request if ${url} ~= /^https:\/\/mxsa\.mxbc\.net\/api\/v1\/adinfo\/adplace\/query/i then reject_dict(200)
 
-^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=cms\.htw\.delivery reject-dict
-^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=hm\.fa\.combineHomepageInfo reject-dict
-^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=hm\.fa\.mallRecommend reject-dict
+request if ${url} ~= /^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=cms\.htw\.delivery/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=hm\.fa\.combineHomepageInfo/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=hm\.fa\.mallRecommend/i then reject_dict(200)
 
-^https:\/\/lawsonapi\.yorentown\.com\/area\/sh-lawson\/app\/v1\/mina\/systemSetting reject-dict
-^https:\/\/plt\.yorentown\.com\/pltapp\/v1\/banner reject-dict
+request if ${url} ~= /^https:\/\/lawsonapi\.yorentown\.com\/area\/sh-lawson\/app\/v1\/mina\/systemSetting/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/plt\.yorentown\.com\/pltapp\/v1\/banner/i then reject_dict(200)
 
-^https:\/\/member\.lxjchina\.com\.cn\/mini-server\/home\/page\/banner reject-dict
+request if ${url} ~= /^https:\/\/member\.lxjchina\.com\.cn\/mini-server\/home\/page\/banner/i then reject_dict(200)
 
-^https:\/\/cbd-gateway-service-applets\.hualala\.com\/arch\/api\/banner\/QueryBannerImgList reject-dict
+request if ${url} ~= /^https:\/\/cbd-gateway-service-applets\.hualala\.com\/arch\/api\/banner\/QueryBannerImgList/i then reject_dict(200)
 
-^https:\/\/alittle-tea\.oss-cn-shanghai\.aliyuncs\.com\/images\/platform\/alittle reject-dict
+request if ${url} ~= /^https:\/\/alittle-tea\.oss-cn-shanghai\.aliyuncs\.com\/images\/platform\/alittle/i then reject_dict(200)
 
 
-^https:\/\/api\.prod\.dj\.mstand\.cn\/scrm\/app\/mdm\/index\/listAdv\?types reject-dict
+request if ${url} ~= /^https:\/\/api\.prod\.dj\.mstand\.cn\/scrm\/app\/mdm\/index\/listAdv\?types/i then reject_dict(200)
 
-^https:\/\/gw-passenger-wap\.01zhuanche\.com\/gw-passenger-wap\/zhuanche-passenger-token\/commonSkipToken\/common\/getAdList reject-dict
+request if ${url} ~= /^https:\/\/gw-passenger-wap\.01zhuanche\.com\/gw-passenger-wap\/zhuanche-passenger-token\/commonSkipToken\/common\/getAdList/i then reject_dict(200)
 
-^https:\/\/www\.deppon\.com\/gwapi\/memberService\/eco\/member\/grade\/commonInterface reject-dict
+request if ${url} ~= /^https:\/\/www\.deppon\.com\/gwapi\/memberService\/eco\/member\/grade\/commonInterface/i then reject_dict(200)
 
-^https:\/\/passengerapi\.saicmobility\.com\/(ad\/requestAd|pay\/v1\/queryOpenedCouponPackages) reject-dict
+request if ${url} ~= /^https:\/\/passengerapi\.saicmobility\.com\/(ad\/requestAd|pay\/v1\/queryOpenedCouponPackages)/i then reject_dict(200)
 
-^https:\/\/passenger\.t3go\.cn\/passenger-activity-api\/notoken\/api\/v1\/resource\/getSource reject-dict
+request if ${url} ~= /^https:\/\/passenger\.t3go\.cn\/passenger-activity-api\/notoken\/api\/v1\/resource\/getSource/i then reject_dict(200)
 
-^https:\/\/m\.ctrip\.com\/restapi\/soa2\/13916\/tripAds reject-dict
-^https:\/\/m\.ctrip\.com\/restapi\/soa2\/12673\/queryWeChatHotEvent reject-dict
+request if ${url} ~= /^https:\/\/m\.ctrip\.com\/restapi\/soa2\/13916\/tripAds/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/m\.ctrip\.com\/restapi\/soa2\/12673\/queryWeChatHotEvent/i then reject_dict(200)
 
-^https:\/\/ad\.maoyan\.com\/api\/position\/detail reject-dict
-^https:\/\/wx\.maoyan\.com\/maoyansh\/api\/mobile\/(hotMatchList|eSportsIps) reject-dict
-^https:\/\/vod-movie\.maoyan\.com\/vod\/video\/onlineMovies\.json reject-dict
-^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/movie\/wonderShow reject-dict
-^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/performances\/calendar\/0 reject-dict
-^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/performances\/rob\/main reject-dict
-^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/celebrityBasicList\/query reject-dict
-^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/recommend\/performances reject-dict
-^https:\/\/api\.maoyan\.com\/sns\/common\/feed\/channel\/v2\/list\.json reject-dict
-^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/ad\/detail reject-dict
+request if ${url} ~= /^https:\/\/ad\.maoyan\.com\/api\/position\/detail/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/wx\.maoyan\.com\/maoyansh\/api\/mobile\/(hotMatchList|eSportsIps)/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/vod-movie\.maoyan\.com\/vod\/video\/onlineMovies\.json/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/movie\/wonderShow/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/performances\/calendar\/0/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/performances\/rob\/main/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/celebrityBasicList\/query/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/recommend\/performances/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/api\.maoyan\.com\/sns\/common\/feed\/channel\/v2\/list\.json/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/ad\/detail/i then reject_dict(200)
 
-^https:\/\/mkt-gateway\.tuhu\.cn\/mkt-scene-marketing-service\/api\/scene\/queryScheme reject-dict
+request if ${url} ~= /^https:\/\/mkt-gateway\.tuhu\.cn\/mkt-scene-marketing-service\/api\/scene\/queryScheme/i then reject_dict(200)
 
-^https:\/\/api\.hengdianfilm\.com\/\/cinema\/queryAvailableBannerInfo\/2\?cid= reject-dict
-^https:\/\/api\.hengdianfilm\.com\/\/cinema\/queryAvailableBannerInfo\/4\?cid= reject-dict
+request if ${url} ~= /^https:\/\/api\.hengdianfilm\.com\/\/cinema\/queryAvailableBannerInfo\/2\?cid=/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/api\.hengdianfilm\.com\/\/cinema\/queryAvailableBannerInfo\/4\?cid=/i then reject_dict(200)
 
-^https:\/\/tbgapplet\.carlsberg\.asia\/tuborg\/banner\/(loading|index) reject-dict
+request if ${url} ~= /^https:\/\/tbgapplet\.carlsberg\.asia\/tuborg\/banner\/(loading|index)/i then reject_dict(200)
 
-^https:\/\/api\.pinduoduo\.com\/api\/ktt_gateway\/activity\/feeds\/personal_home_page\/ reject
+request if ${url} ~= /^https:\/\/api\.pinduoduo\.com\/api\/ktt_gateway\/activity\/feeds\/personal_home_page\//i then reject(404)
 
-^https:\/\/ucmp\.sf-express\.com\/proxy\/operation-platform\/info-flow-adver\/query reject-dict
-^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/memberGoods\/pointMallService\/goodsList reject-dict
+request if ${url} ~= /^https:\/\/ucmp\.sf-express\.com\/proxy\/operation-platform\/info-flow-adver\/query/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/memberGoods\/pointMallService\/goodsList/i then reject_dict(200)
 
-^https:\/\/as\.xiaojukeji\.com\/ep\/as\/conf\?ns=daijia-front&name= reject-dict
-^https:\/\/daijia\.kuaidadi\.com\/gateway\?api=prado\.cms\.delivery\.batch&apiVe reject-dict
+request if ${url} ~= /^https:\/\/as\.xiaojukeji\.com\/ep\/as\/conf\?ns=daijia-front&name=/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/daijia\.kuaidadi\.com\/gateway\?api=prado\.cms\.delivery\.batch&apiVe/i then reject_dict(200)
 
-^https:\/\/mcsp\.cloudpnr\.com\/api\/miniapp\/popular\/T_MINIAPP$ response-body-json-del data
-^https:\/\/saas-ad\.cloudpnr\.com\/huifuad-base-api\/api\/tactics\/ad$ response-body-json-del data[0] data[1] data[2]
+response if ${url} ~= /^https:\/\/mcsp\.cloudpnr\.com\/api\/miniapp\/popular\/T_MINIAPP$/i then response.json.delete("data")
+response if ${url} ~= /^https:\/\/saas-ad\.cloudpnr\.com\/huifuad-base-api\/api\/tactics\/ad$/i then response.json.delete(["data[0]", "data[1]", "data[2]"])
 
-^https:\/\/api\.szbgcx\.cn\/account\/adv\/ reject
+request if ${url} ~= /^https:\/\/api\.szbgcx\.cn\/account\/adv\//i then reject(404)
 
-^https:\/\/mobile\.12306\.cn\/wxxcx\/openplatform-inner\/miniprogram\/wifiapps\/appFrontEnd\/v2\/lounge\/open-smooth-common\/qrCode\/getAdvInfo$ reject-dict
-^https:\/\/mobile\.12306\.cn\/wxxcx\/openplatform-inner\/miniprogram\/wifiapps\/tourism\/tourismBase\/api\/scenic\/getThemeProduct? reject-dict
-^https:\/\/mobile\.12306\.cn\/wxxcx\/openplatform-inner\/miniprogram\/wifiapps\/appFrontEnd\/v2\/lounge\/open-smooth-common\/carService\/getCivilzedSlogan reject-dict
+request if ${url} ~= /^https:\/\/mobile\.12306\.cn\/wxxcx\/openplatform-inner\/miniprogram\/wifiapps\/appFrontEnd\/v2\/lounge\/open-smooth-common\/qrCode\/getAdvInfo$/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/mobile\.12306\.cn\/wxxcx\/openplatform-inner\/miniprogram\/wifiapps\/tourism\/tourismBase\/api\/scenic\/getThemeProduct?/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/mobile\.12306\.cn\/wxxcx\/openplatform-inner\/miniprogram\/wifiapps\/appFrontEnd\/v2\/lounge\/open-smooth-common\/carService\/getCivilzedSlogan/i then reject_dict(200)
 
-^https:\/\/rms\.meituan\.com\/api\/v1\/rmsmina\/c\/queryShopPortalInfo\? response-body-json-del data.popUpWindows
+response if ${url} ~= /^https:\/\/rms\.meituan\.com\/api\/v1\/rmsmina\/c\/queryShopPortalInfo\?/i then response.json.delete("data.popUpWindows")
 
-^https:\/\/chong\.qq\.com\/tws\/wxmobile\/GetProduct4App\? response-body-json-jq 'del(.respInfo.reserveProductList) | .respInfo.shortcut |= map(select(.name != "充流量" and .name != "领话费券"))'
-^https:\/\/chong\.qq\.com\/tws\/wxmobile4app\/GetSecondProduct\? response-body-json-jq 'del(.respInfo.productList) | .respInfo.shortcut |= map(select(.name != "充流量" and .name != "领话费券"))'
-^https:\/\/chong\.qq\.com\/tws\/usernumberinfo\/GetUserInfo\? response-body-json-del data.request.number.markSeat.servicehallOperList data.request.number.servicehallOperList data.request.number.markSeat.servicehallFuncList data.request.number.servicehallFuncList
-^https:\/\/wx\.online-cmcc\.cn\/contactpoint\/customer\/api\/list\? reject-dict
-^https:\/\/wx\.10086\.cn\/qwhdhub\/activity\/info reject-dict
+response if ${url} ~= /^https:\/\/chong\.qq\.com\/tws\/wxmobile\/GetProduct4App\?/i then response.json.jq("del(.respInfo.reserveProductList) | .respInfo.shortcut |= map(select(.name != \"充流量\" and .name != \"领话费券\"))")
+response if ${url} ~= /^https:\/\/chong\.qq\.com\/tws\/wxmobile4app\/GetSecondProduct\?/i then response.json.jq("del(.respInfo.productList) | .respInfo.shortcut |= map(select(.name != \"充流量\" and .name != \"领话费券\"))")
+response if ${url} ~= /^https:\/\/chong\.qq\.com\/tws\/usernumberinfo\/GetUserInfo\?/i then response.json.delete(["data.request.number.markSeat.servicehallOperList", "data.request.number.servicehallOperList", "data.request.number.markSeat.servicehallFuncList", "data.request.number.servicehallFuncList"])
+request if ${url} ~= /^https:\/\/wx\.online-cmcc\.cn\/contactpoint\/customer\/api\/list\?/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/wx\.10086\.cn\/qwhdhub\/activity\/info/i then reject_dict(200)
 
 [Script]
-http-response ^https:\/\/webapi\.qmai\.cn\/web\/catering\/design\/homePage-Config script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/kff.js, requires-body=true, tag=企迈点单系统去广告
+response if ${url} ~= /^https:\/\/webapi\.qmai\.cn\/web\/catering\/design\/homePage-Config/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/kff.js") with tag="企迈点单系统去广告", requires_body=true
 
-http-response ^https:\/\/ump\.ems\.com\.cn\/new-generation-extend\/redis\/pageInfoByChannel script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/ems.js, requires-body=true, tag=EMS中国邮政物流速递去广告
+response if ${url} ~= /^https:\/\/ump\.ems\.com\.cn\/new-generation-extend\/redis\/pageInfoByChannel/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/ems.js") with tag="EMS中国邮政物流速递去广告", requires_body=true
 
-http-response ^https:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/xiaotucc.js, requires-body=true, tag=小兔充充去广告
+response if ${url} ~= /^https:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity)/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/xiaotucc.js") with tag="小兔充充去广告", requires_body=true
 
-http-response ^https:\/\/minifm\.maxxipoint\.com\/banner\/list script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FamilyMart.js, requires-body=true, tag=全家微会员去广告
+response if ${url} ~= /^https:\/\/minifm\.maxxipoint\.com\/banner\/list/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FamilyMart.js") with tag="全家微会员去广告", requires_body=true
 
-http-response ^https:\/\/lawsonapi\.yorentown\.com\/area\/sh-lawson\/app\/v1\/home script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/lawson.js, requires-body=true, tag=罗森点点去广告
+response if ${url} ~= /^https:\/\/lawsonapi\.yorentown\.com\/area\/sh-lawson\/app\/v1\/home/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/lawson.js") with tag="罗森点点去广告", requires_body=true
 
-http-response ^https:\/\/miniapp\.sexytea2013\.com\/cms\/slot\/queryByCodes\?codes=INDEX_TOP_BANNER script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/chayanyuese_remove_ads.js, requires-body=true, tag=茶颜悦色去广告
+response if ${url} ~= /^https:\/\/miniapp\.sexytea2013\.com\/cms\/slot\/queryByCodes\?codes=INDEX_TOP_BANNER/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/chayanyuese_remove_ads.js") with tag="茶颜悦色去广告", requires_body=true
 
-http-response ^https:\/\/coco-com\.e\.verystar\.net\/v1\/home\/info script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/coco.js, requires-body=true, tag=COCO点单去广告
+response if ${url} ~= /^https:\/\/coco-com\.e\.verystar\.net\/v1\/home\/info/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/coco.js") with tag="COCO点单去广告", requires_body=true
 
-http-response ^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=hm\.fa\.homeConfig script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/qingju.js, requires-body=true, tag=滴滴青桔去广告
+response if ${url} ~= /^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=hm\.fa\.homeConfig/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/qingju.js") with tag="滴滴青桔去广告", requires_body=true
 
-http-response ^https:\/\/cappapi\.alittle-tea\.com\/open\?method=catering\.set\.ad script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/alittle-tea.js, requires-body=true, tag=一点点+去广告
+response if ${url} ~= /^https:\/\/cappapi\.alittle-tea\.com\/open\?method=catering\.set\.ad/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/alittle-tea.js") with tag="一点点+去广告", requires_body=true
 
-http-response ^https:\/\/api\.prod\.dj\.mstand\.cn\/scrm\/mini\/app\/index\/info script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/M_Stand.js, requires-body=true, tag=M Stand去广告
+response if ${url} ~= /^https:\/\/api\.prod\.dj\.mstand\.cn\/scrm\/mini\/app\/index\/info/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/M_Stand.js") with tag="M Stand去广告", requires_body=true
 
-http-response ^https:\/\/passenger\.t3go\.cn\/(solution\-|common\-)?(passenger\-)?(activity\-|app\-)?api\/notoken\/(trip\/)?api\/(home\/|common\/)?(v[1-3]\/)?(ad\/getNegativescreen|solution\/passenger\/open\/getHomeMenu|leftmenu|getHomeInfoGlobal) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/T3.js, requires-body=true, tag=T3出行去广告
+response if ${url} ~= /^https:\/\/passenger\.t3go\.cn\/(solution\-|common\-)?(passenger\-)?(activity\-|app\-)?api\/notoken\/(trip\/)?api\/(home\/|common\/)?(v[1-3]\/)?(ad\/getNegativescreen|solution\/passenger\/open\/getHomeMenu|leftmenu|getHomeInfoGlobal)/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/T3.js") with tag="T3出行去广告", requires_body=true
 
-http-response ^https:\/\/newton\.gumingnc\.com\/newton-buyer\/newton\/buyer\/(ump|touch|external\/front) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/ming.js, requires-body=true, tag=古茗去广告
+response if ${url} ~= /^https:\/\/newton\.gumingnc\.com\/newton-buyer\/newton\/buyer\/(ump|touch|external\/front)/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/ming.js") with tag="古茗去广告", requires_body=true
 
 [MitM]
 hostname=3pp.starbucks.com.cn, aag.enmonster.com, activity.yonghuivip.com, ad.maoyan.com, ad.xiaotucc.com, ads.ishansong.com, alittle-tea.oss-cn-shanghai.aliyuncs.com, api-fouth-mem.huazhu.com, api-marketing.zhinengxiyifang.cn, api.hellobike.com, api.hengdianfilm.com, api.hongyibo.com.cn, api.kuaidihelp.com, api.maoyan.com, api.mcd.cn, api.pinduoduo.com, api.prod.dj.mstand.cn, api.songguo7.com, api.yonghuivip.com, apiproxy.zuche.com, apis.alenable.com, app.95504.net, app.homeinns.com, applets.jtexpress.com.cn, appuser-static.huolala.cn, as.xiaojukeji.com, capis*.didapinche.com, cappapi.alittle-tea.com, cbd-gateway-service-applets.hualala.com, ccmsupport-sz.tenpay.com, coco-com.e.verystar.net, creditcardapp.bankcomm.com, customer-app.sto.cn, daijia.kuaidadi.com, dock.tenchii.com, dsp.fcbox.com, file.dian.so, flow.dmall.com, fscdn.zto.com, gw-passenger-wap.01zhuanche.com, hdgateway.zto.com, htwkop.xiaojukeji.com, images.qmai.cn, lawsonapi.yorentown.com, m.ctrip.com, mapi.xiaotucc.com, mbmodule-openapi.paas.cmbchina.com, member.lxjchina.com.cn, miniapp.sexytea2013.com, minicap.caocaokeji.cn, minifm.maxxipoint.com, minipro.95504.net, miniprogram.ishansong.com, mkt-gateway.tuhu.cn, mobile-api.imlaidian.com, mxsa.mxbc.net, newton.gumingnc.com, passenger.t3go.cn, passengerapi.saicmobility.com, plt.yorentown.com, qapi.huolala.cn, r2.gzyct.com, res.hongyibo.com.cn, res.pizzahut.com.cn, s.jiediankeji.com, saas-ad.cloudpnr.com, sauron-report.yonghuivip.com, smarket.dian.so, sto-customer-app.oss-cn-shanghai.aliyuncs.com, supplier-api.imdada.cn, suyun-guest.daojia.com, tbgapplet.carlsberg.asia, tm-api.pin-dao.cn, ucmp.sf-express.com, ump.ems.com.cn, vod-movie.maoyan.com, webapi.qmai.cn, webchatapp.fcbox.com, wechat-api.i-xiaoma.com.cn, www.deppon.com, wx.bthhotels.com, wx.maoyan.com, wxapp.bestwehotel.com, wxproj.seeyouyima.com, wxs-weixin.sd.zhumanggroup.com, mcsp.cloudpnr.com, api.szbgcx.cn, rms.meituan.com, chong.qq.com, wx.online-cmcc.cn, wx.10086.cn, ne.gdsz.sinopec.com, mobile.12306.cn

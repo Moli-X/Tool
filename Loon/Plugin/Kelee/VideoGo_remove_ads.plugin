@@ -5,18 +5,18 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/VideoGo_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/VideoGo.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/api\.ys7\.com\/api\/ads reject
-^https:\/\/i\.ys7\.com\/api\/user\/tabList reject-dict
-^https:\/\/api\.ys7\.com\/v3\/config\/service\/entrance\/bannerInfo reject-dict
-^https:\/\/api\.ys7\.com\/v3\/intelligent-app\/apps\/linkage reject-dict
-^https:\/\/api\.ys7\.com\/v3\/configurations\/gray\/info\?grayTypes=185 reject-dict
-^https:\/\/api\.ys7\.com\/v3\/videoclips\/square\/video\/query reject-dict
+request if ${url} ~= /^https:\/\/api\.ys7\.com\/api\/ads/i then reject(404)
+request if ${url} ~= /^https:\/\/i\.ys7\.com\/api\/user\/tabList/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/api\.ys7\.com\/v3\/config\/service\/entrance\/bannerInfo/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/api\.ys7\.com\/v3\/intelligent-app\/apps\/linkage/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/api\.ys7\.com\/v3\/configurations\/gray\/info\?grayTypes=185/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/api\.ys7\.com\/v3\/videoclips\/square\/video\/query/i then reject_dict(200)
 
 [Script]
 

@@ -5,20 +5,20 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/12306_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/12306.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, ad.12306.cn, DIRECT
 
 [Rewrite]
-^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList$ response-body-json-del materialsList advertParam
+response if ${url} ~= /^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList$/i then response.json.delete(["materialsList", "advertParam"])
 
 [Script]
 
-http-request ^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/12306_remove_ads.js, tag=移除12306应用内广告
+request if ${url} ~= /^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/12306_remove_ads.js") with tag="移除12306应用内广告"
 
 [MitM]
 hostname=ad.12306.cn, mobile.12306.cn

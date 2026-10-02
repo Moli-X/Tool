@@ -5,26 +5,26 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/LuckinCoffee_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/LuckinCoffee.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/capi\.lkcoffee\.com\/resource\/m\/growUp\/calendarList reject
+request if ${url} ~= /^https:\/\/capi\.lkcoffee\.com\/resource\/m\/growUp\/calendarList/i then reject(404)
 
-^https:\/\/capi\.lkcoffee\.com\/resource\/m\/promotion\/giftCard\/topPage reject
+request if ${url} ~= /^https:\/\/capi\.lkcoffee\.com\/resource\/m\/promotion\/giftCard\/topPage/i then reject(404)
 
-^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/base\/myLittleLuck reject
+request if ${url} ~= /^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/base\/myLittleLuck/i then reject(404)
 
-^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/menu\/ordinaryUserLayeredArea reject
+request if ${url} ~= /^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/menu\/ordinaryUserLayeredArea/i then reject(404)
 
-^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/common\/modules reject
+request if ${url} ~= /^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/common\/modules/i then reject(404)
 
-^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/homepage\/homePageCoffeeList reject
-^https:\/\/capi\.lkcoffee\.com\/resource\/m\/eorder\/product\/popAppTagProductList reject
+request if ${url} ~= /^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/homepage\/homePageCoffeeList/i then reject(404)
+request if ${url} ~= /^https:\/\/capi\.lkcoffee\.com\/resource\/m\/eorder\/product\/popAppTagProductList/i then reject(404)
 
-^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNew reject
+request if ${url} ~= /^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNew/i then reject(404)
 
 [MitM]
 hostname=capi.lkcoffee.com

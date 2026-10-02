@@ -5,18 +5,18 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Yueyou_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Yueyou.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, ads.reader.yueyouxs.com, REJECT
 
 [Rewrite]
-^https:\/\/goway\.reader\.yueyouxs\.com\/assemble\/app\/basic\/getAppInfo\? response-body-json-del data.isShowDLPopup data.isShowGame data.touTiaoShowDlPopup data.offLineDownload.WatchVideoBtnDesc data.readVipFirstCfg data.readVipNormalCfg data.notifyAd data.hotStartSplashTime data.hotStartReqSwitch data.isShowBFTab data.popReqDelayTime data.benefitCfg data.chestTask data.hotStartAd data.activeTagList data.secondOrderCfg data.secondOrderList data.blockedWordsCfg data.aaReportListCfg data.pddAdSwitch data.isShowShelfAuthPopup data.firstPopUpAmount
+response if ${url} ~= /^https:\/\/goway\.reader\.yueyouxs\.com\/assemble\/app\/basic\/getAppInfo\?/i then response.json.delete(["data.isShowDLPopup", "data.isShowGame", "data.touTiaoShowDlPopup", "data.offLineDownload.WatchVideoBtnDesc", "data.readVipFirstCfg", "data.readVipNormalCfg", "data.notifyAd", "data.hotStartSplashTime", "data.hotStartReqSwitch", "data.isShowBFTab", "data.popReqDelayTime", "data.benefitCfg", "data.chestTask", "data.hotStartAd", "data.activeTagList", "data.secondOrderCfg", "data.secondOrderList", "data.blockedWordsCfg", "data.aaReportListCfg", "data.pddAdSwitch", "data.isShowShelfAuthPopup", "data.firstPopUpAmount"])
 
-^https:\/\/goway\.reader\.yueyouxs\.com\/assemble\/app\/basic\/getAppInfo\? response-body-json-replace data.isAdClosed true 
+response if ${url} ~= /^https:\/\/goway\.reader\.yueyouxs\.com\/assemble\/app\/basic\/getAppInfo\?/i then response.json.replace("data.isAdClosed", true) 
 
 [MitM]
 hostname=goway.reader.yueyouxs.com

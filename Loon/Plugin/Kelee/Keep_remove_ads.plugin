@@ -5,40 +5,40 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Keep_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Keep.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, kad.gotokeep.com, REJECT
 
 [Rewrite]
-^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v1\/configs$ response-body-json-del data.adTimeoutReport data.spotShowReport data.adSupplementIntervalMinutes data.adSupplementSwitch data.hotFeedSpotAdRequestMoment data.activityBrandFeedSpotAdRequestMoment data.searchFeedSpotAdRequestMoment data.feedDetailSpotAdRequestMoment data.homePageFeedSpotAdRequestMoment data.followFeedSpotAdRequestMoment data.hotFeedRecommendSpotAdRequestMoment data.activityFeedSpotAdRequestMoment data.hotFeedFindSpotAdRequestMoment data.hotFeedSpotFixedPositionSecond data.searchFeedSpotFixedPositionSecond data.followFeedSpotFixedPositionSecond data.activityFeedSpotFixedPositionSecond data.searchFeedSpotFixedPositionThird data.hotFeedFindSpotFixedPositionSecond data.hotFeedFindSpotFixedPositionThird data.activityFeedSpotFixedPositionInitial data.activityFeedSpotFixedPositionThird data.hotFeedDynamicSpotPosition data.feedDetailDynamicSpotPosition data.hotFeedRecommendDynamicSpotPosition data.hotFeedFindDynamicSpotPosition data.homePageFeedDynamicSpotPosition data.followFeedDynamicSpotPosition data.searchFeedSpotPositionDynamic data.activityFeedSpotPositionDynamic data.activityBrandFeedSpotPositionDynamic data.splashAdLoadTimeLimit data.courseAdLoadTimeLimit data.feedAdLoadTimeLimit data.aliHCSpotConfig data.gdtSpotConfig data.pugcThresholdPercent data.pugcStepMinSeconds data.pugcStepMaxSeconds data.pugcPreLoadEarlySeconds data.pugcLoadPostPreRolls data.closeConfirmButtonText
+response if ${url} ~= /^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v1\/configs$/i then response.json.delete(["data.adTimeoutReport", "data.spotShowReport", "data.adSupplementIntervalMinutes", "data.adSupplementSwitch", "data.hotFeedSpotAdRequestMoment", "data.activityBrandFeedSpotAdRequestMoment", "data.searchFeedSpotAdRequestMoment", "data.feedDetailSpotAdRequestMoment", "data.homePageFeedSpotAdRequestMoment", "data.followFeedSpotAdRequestMoment", "data.hotFeedRecommendSpotAdRequestMoment", "data.activityFeedSpotAdRequestMoment", "data.hotFeedFindSpotAdRequestMoment", "data.hotFeedSpotFixedPositionSecond", "data.searchFeedSpotFixedPositionSecond", "data.followFeedSpotFixedPositionSecond", "data.activityFeedSpotFixedPositionSecond", "data.searchFeedSpotFixedPositionThird", "data.hotFeedFindSpotFixedPositionSecond", "data.hotFeedFindSpotFixedPositionThird", "data.activityFeedSpotFixedPositionInitial", "data.activityFeedSpotFixedPositionThird", "data.hotFeedDynamicSpotPosition", "data.feedDetailDynamicSpotPosition", "data.hotFeedRecommendDynamicSpotPosition", "data.hotFeedFindDynamicSpotPosition", "data.homePageFeedDynamicSpotPosition", "data.followFeedDynamicSpotPosition", "data.searchFeedSpotPositionDynamic", "data.activityFeedSpotPositionDynamic", "data.activityBrandFeedSpotPositionDynamic", "data.splashAdLoadTimeLimit", "data.courseAdLoadTimeLimit", "data.feedAdLoadTimeLimit", "data.aliHCSpotConfig", "data.gdtSpotConfig", "data.pugcThresholdPercent", "data.pugcStepMinSeconds", "data.pugcStepMaxSeconds", "data.pugcPreLoadEarlySeconds", "data.pugcLoadPostPreRolls", "data.closeConfirmButtonText"])
 
-^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v1\/ad\/ reject-dict
+request if ${url} ~= /^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v1\/ad\//i then reject_dict(200)
 
-^https:\/\/api\.gotokeep\.com\/search\/v6\/default\/keyword\/list\? reject-dict
+request if ${url} ~= /^https:\/\/api\.gotokeep\.com\/search\/v6\/default\/keyword\/list\?/i then reject_dict(200)
 
-^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/followPage\? reject-dict
+request if ${url} ~= /^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/followPage\?/i then reject_dict(200)
 
-^https:\/\/api\.gotokeep\.com\/twins\/union\/feed\/union_feed_all$ response-body-json-jq '.data.modules |= map(select(.code == "unionFeedEntry"))'
+response if ${url} ~= /^https:\/\/api\.gotokeep\.com\/twins\/union\/feed\/union_feed_all$/i then response.json.jq(".data.modules |= map(select(.code == \"unionFeedEntry\"))")
 
-^https:\/\/api\.gotokeep\.com\/twins\/union\/feed\/function\? reject-dict
+request if ${url} ~= /^https:\/\/api\.gotokeep\.com\/twins\/union\/feed\/function\?/i then reject_dict(200)
 
-^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/entryDetail\? response-body-json-replace data {}
+response if ${url} ~= /^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/entryDetail\?/i then response.json.replace("data", "{}")
 
-^https:\/\/api\.gotokeep\.com\/guide-webapp\/v1\/popup\/getPopUp\? reject-dict
+request if ${url} ~= /^https:\/\/api\.gotokeep\.com\/guide-webapp\/v1\/popup\/getPopUp\?/i then reject_dict(200)
 
-^https:\/\/api\.gotokeep\.com\/config\/v3\/basic\? response-body-json-jq '.data.bottomBarControl.tabs |= map(select(.tabType | . == "home" or . == "schedule" or . == "dynamic_sports" or . == "personal")) | .data.homeTabs |= map(select(.type | . == "socialTab" or . == "union_feed_all" or . == "homeRecommend" or . == "suitTab" or . == "union_feed_route"))'
+response if ${url} ~= /^https:\/\/api\.gotokeep\.com\/config\/v3\/basic\?/i then response.json.jq(".data.bottomBarControl.tabs |= map(select(.tabType | . == \"home\" or . == \"schedule\" or . == \"dynamic_sports\" or . == \"personal\")) | .data.homeTabs |= map(select(.type | . == \"socialTab\" or . == \"union_feed_all\" or . == \"homeRecommend\" or . == \"suitTab\" or . == \"union_feed_route\"))")
 
-^https:\/\/api\.gotokeep\.com\/search\/v5\/hotCourse\/list$ reject-dict
+request if ${url} ~= /^https:\/\/api\.gotokeep\.com\/search\/v5\/hotCourse\/list$/i then reject_dict(200)
 
-^https:\/\/api\.gotokeep\.com\/search\/v4\/hotHashtag\/list$ reject-dict
+request if ${url} ~= /^https:\/\/api\.gotokeep\.com\/search\/v4\/hotHashtag\/list$/i then reject_dict(200)
 
-^https:\/\/api\.gotokeep\.com\/search\/v4\/hotword\/list\? reject-dict
+request if ${url} ~= /^https:\/\/api\.gotokeep\.com\/search\/v4\/hotword\/list\?/i then reject_dict(200)
 
-^https:\/\/api\.gotokeep\.com\/pencil-webapp\/play\/v1\/games\? response-body-json-jq '.data.games[].microGames[] |= if .leftIcon? and .leftIcon.type == "aiMode" then del(.leftIcon) else . end'
+response if ${url} ~= /^https:\/\/api\.gotokeep\.com\/pencil-webapp\/play\/v1\/games\?/i then response.json.jq(".data.games[].microGames[] |= if .leftIcon? and .leftIcon.type == \"aiMode\" then del(.leftIcon) else . end")
 
 [MitM]
 hostname=api.gotokeep.com

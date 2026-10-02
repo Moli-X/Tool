@@ -5,27 +5,27 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/EtouchEcalendar_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/EtouchEcalendar.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, sdk.ad.sfys365.com, REJECT
 
 [Rewrite]
-^https:\/\/client-lz\.rili\.cn\/lizhi\/api\/auth\/voice_room_entrance\/list\? reject-dict
+request if ${url} ~= /^https:\/\/client-lz\.rili\.cn\/lizhi\/api\/auth\/voice_room_entrance\/list\?/i then reject_dict(200)
 
-^https:\/\/v0-client-lz\.rili\.cn\/lizhi\/api\/zhwnl\/cal_module\/(datas|config)\? response-body-json-jq '.data |= map(select(.module_name as $name | ["实用工具","会员下icon","天气页面_右上角图标","天气页面_24小时","天气页面_15日","每日插屏","下拉屏保","星座Tab（黄历页）"] | index($name) != null))'
+response if ${url} ~= /^https:\/\/v0-client-lz\.rili\.cn\/lizhi\/api\/zhwnl\/cal_module\/(datas|config)\?/i then response.json.jq(".data |= map(select(.module_name as $name | [\"实用工具\",\"会员下icon\",\"天气页面_右上角图标\",\"天气页面_24小时\",\"天气页面_15日\",\"每日插屏\",\"下拉屏保\",\"星座Tab（黄历页）\"] | index($name) != null))")
 
-^http:\/\/pc\.suishenyun\.net\/peacock\/api\/adspool\? response-body-json-jq '.data |= map((.layout |= map(select(.key_name == "实用工具" or .key_name == "会员下icon" or .key_name == "天气页面_右上角图标" or .key_name == "天气页面_24小时" or .key_name == "天气页面_15日" or .key_name == "每日插屏" or .key_name == "下拉屏保" or .key_name == "星座Tab（黄历页）"))) | select(.layout | length > 0))'
+response if ${url} ~= /^http:\/\/pc\.suishenyun\.net\/peacock\/api\/adspool\?/i then response.json.jq(".data |= map((.layout |= map(select(.key_name == \"实用工具\" or .key_name == \"会员下icon\" or .key_name == \"天气页面_右上角图标\" or .key_name == \"天气页面_24小时\" or .key_name == \"天气页面_15日\" or .key_name == \"每日插屏\" or .key_name == \"下拉屏保\" or .key_name == \"星座Tab（黄历页）\"))) | select(.layout | length > 0))")
 
-^https:\/\/client-lz\.rili\.cn\/lizhi\/api\/fortune\/question_spots\/panel\? reject-dict
+request if ${url} ~= /^https:\/\/client-lz\.rili\.cn\/lizhi\/api\/fortune\/question_spots\/panel\?/i then reject_dict(200)
 
-^https:\/\/client-lz\.rili\.cn\/lizhi\/api\/jujia\/flow\? reject-dict
-^https:\/\/client-lz\.rili\.cn\/lizhi\/api\/album\/hl_card\? reject-dict
+request if ${url} ~= /^https:\/\/client-lz\.rili\.cn\/lizhi\/api\/jujia\/flow\?/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/client-lz\.rili\.cn\/lizhi\/api\/album\/hl_card\?/i then reject_dict(200)
 
-^https:\/\/client-lz\.rili\.cn\/lizhi\/api\/fortune\/overview\? reject-dict
+request if ${url} ~= /^https:\/\/client-lz\.rili\.cn\/lizhi\/api\/fortune\/overview\?/i then reject_dict(200)
 
 [MitM]
 hostname=v0-client-lz.rili.cn, client-lz.rili.cn

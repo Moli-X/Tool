@@ -5,21 +5,21 @@
 #!tag=功能增强
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/VVebo_repair.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/VVebo.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Script]
-http-request ^https:\/\/api\.weibo\.cn\/2\/users\/show\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VVebo_repair.js, tag=修复时间线
+request if ${url} ~= /^https:\/\/api\.weibo\.cn\/2\/users\/show\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VVebo_repair.js") with tag="修复时间线"
 
-http-request ^https:\/\/api\.weibo\.cn\/2\/statuses\/user_timeline\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VVebo_repair.js, tag=修复时间线
+request if ${url} ~= /^https:\/\/api\.weibo\.cn\/2\/statuses\/user_timeline\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VVebo_repair.js") with tag="修复时间线"
 
-http-request ^https:\/\/api\.weibo\.cn\/2\/remind\/unread_count\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VVebo_repair.js, tag=修复时间线
+request if ${url} ~= /^https:\/\/api\.weibo\.cn\/2\/remind\/unread_count\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VVebo_repair.js") with tag="修复时间线"
 
-http-response ^https:\/\/api\.weibo\.cn\/2\/profile\/statuses\/tab\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VVebo_repair.js, requires-body=true, tag=修复时间线
+response if ${url} ~= /^https:\/\/api\.weibo\.cn\/2\/profile\/statuses\/tab\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VVebo_repair.js") with tag="修复时间线", requires_body=true
 
-http-response ^https:\/\/api\.weibo\.cn\/2\/cardlist\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VVebo_repair.js, requires-body=true, tag=修复我的页面
+response if ${url} ~= /^https:\/\/api\.weibo\.cn\/2\/cardlist\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/VVebo_repair.js") with tag="修复我的页面", requires_body=true
 
 [MitM]
 hostname=api.weibo.cn

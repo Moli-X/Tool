@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/SevenCat_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SevenCat.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, cdn-ad.wtzw.com, REJECT
@@ -16,22 +16,22 @@ DOMAIN, cdn-new-ad.wtzw.com, REJECT
 DOMAIN-SUFFIX, gdt.qq.com, REJECT
 
 [Rewrite]
-^https:\/\/api-cfg\.wtzw\.com\/v\d\/splash\/ reject-dict
-^https:\/\/api-bc\.wtzw\.com\/api\/v4\/search\/dispose reject-dict
-^https:\/\/api-bc\.wtzw\.com\/api\/v\d\/book-store\/config reject-dict
-^https:\/\/api-bc\.wtzw\.com\/api\/v\d\/book-store\/push-book reject-dict
-^https:\/\/api-bc\.wtzw\.com\/api\/v\d\/operation reject-dict
-^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
-^https:\/\/api-gw\.wtzw\.com\/welf\/app\/v\d\/task\/red-packet reject-dict
-^https:\/\/cdn\.wtzw\.com\/bookimg\/free\/api\/v\d\/reader\/reader-copy-paragraph-all\.json reject-dict
+request if ${url} ~= /^https:\/\/api-cfg\.wtzw\.com\/v\d\/splash\//i then reject_dict(200)
+request if ${url} ~= /^https:\/\/api-bc\.wtzw\.com\/api\/v4\/search\/dispose/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/api-bc\.wtzw\.com\/api\/v\d\/book-store\/config/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/api-bc\.wtzw\.com\/api\/v\d\/book-store\/push-book/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/api-bc\.wtzw\.com\/api\/v\d\/operation/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\//i then reject(404)
+request if ${url} ~= /^https:\/\/api-gw\.wtzw\.com\/welf\/app\/v\d\/task\/red-packet/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/cdn\.wtzw\.com\/bookimg\/free\/api\/v\d\/reader\/reader-copy-paragraph-all\.json/i then reject_dict(200)
 
-^https:\/\/api-cfg\.wtzw\.com\/v\d\/reward\/ reject
-^https:\/\/api-cfg\.wtzw\.com\/v\d\/adv\/ reject
-^https:\/\/api-cfg\.wtzw\.com\/v\d\/offline-adv\/index reject-dict
-^https:\/\/api-cfg\.wtzw\.com\/v\d\/operation\/index\?ad_personal_switch reject-dict
-^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/withdraw\/init reject-dict
+request if ${url} ~= /^https:\/\/api-cfg\.wtzw\.com\/v\d\/reward\//i then reject(404)
+request if ${url} ~= /^https:\/\/api-cfg\.wtzw\.com\/v\d\/adv\//i then reject(404)
+request if ${url} ~= /^https:\/\/api-cfg\.wtzw\.com\/v\d\/offline-adv\/index/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/api-cfg\.wtzw\.com\/v\d\/operation\/index\?ad_personal_switch/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/withdraw\/init/i then reject_dict(200)
 
-^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/user\/my-center\? response-body-json-del data.func_area[1] data.func_area[2]
+response if ${url} ~= /^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/user\/my-center\?/i then response.json.delete(["data.func_area[1]", "data.func_area[2]"])
 
 [MitM]
 hostname=api-cfg.wtzw.com, sf3-fe-tos.pglstatp-toutiao.com, api-bc.wtzw.com, api-gw.wtzw.com, cdn.wtzw.com

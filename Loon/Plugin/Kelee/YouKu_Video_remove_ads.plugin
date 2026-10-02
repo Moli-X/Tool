@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/YouKu_Video_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YouKu_Video.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, push.m.youku.com, DIRECT
@@ -39,9 +39,9 @@ DOMAIN, pre-acs.youku.com, REJECT
 DOMAIN, youku-acs.m.taobao.com, REJECT
 
 [Rewrite]
-^https:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get response-body-json-del data.data.ad data.data.watermark data.data.ykad
+response if ${url} ~= /^https:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get/i then response.json.delete(["data.data.ad", "data.data.watermark", "data.data.ykad"])
 
-^https:\/\/push\.m\.youku\.com\/collect-api\/get_push_interval_config_wx\? response-body-json-del data.tipContent data.tipContentNew
+response if ${url} ~= /^https:\/\/push\.m\.youku\.com\/collect-api\/get_push_interval_config_wx\?/i then response.json.delete(["data.tipContent", "data.tipContentNew"])
 
 [MitM]
 hostname=push.m.youku.com, un-acs.youku.com

@@ -5,10 +5,10 @@
 #!tag=去广告, 依赖
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Block_HTTPDNS.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png
-#!date=2026-09-28 23:26:14
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN-KEYWORD, httpdns, REJECT
@@ -221,17 +221,17 @@ URL-REGEX, "^http:\/\/\[[0-9a-fA-F:]+\]:\d+\/httpdns\/", REJECT
 DOMAIN, httpdns.zybang.com, REJECT
 
 [Rewrite]
-^https?:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$ reject-dict
+request if ${url} ~= /^https?:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$/i then reject_dict(200)
 
-^https?:\/\/cdn\.wup\.huya\.com\/monitor\/monitor\.jsp reject
+request if ${url} ~= /^https?:\/\/cdn\.wup\.huya\.com\/monitor\/monitor\.jsp/i then reject(404)
 
-^https:\/\/msglb\.91160\.com\/msg\/outer\/broker\/get$ reject-dict
+request if ${url} ~= /^https:\/\/msglb\.91160\.com\/msg\/outer\/broker\/get$/i then reject_dict(200)
 
-^https:\/\/gslbali\.ximalaya\.com\/linkeye-cloud\/httpdns\/ reject
+request if ${url} ~= /^https:\/\/gslbali\.ximalaya\.com\/linkeye-cloud\/httpdns\//i then reject(404)
 
-^https:\/\/ucdc\d?-upaas\.uc\.cn\/api\/v\d\/dns_query\? reject-dict
+request if ${url} ~= /^https:\/\/ucdc\d?-upaas\.uc\.cn\/api\/v\d\/dns_query\?/i then reject_dict(200)
 
-^https:\/\/gw-cn\.jiaoliuqu\.com\/taqu-im-broadcast-srv\/v\d\/Comet\/get\? reject-dict
+request if ${url} ~= /^https:\/\/gw-cn\.jiaoliuqu\.com\/taqu-im-broadcast-srv\/v\d\/Comet\/get\?/i then reject_dict(200)
 
 [MitM]
 hostname=appconf.mail.163.com, msglb.91160.com, ucdc2-upaas.uc.cn, gw-cn.jiaoliuqu.com

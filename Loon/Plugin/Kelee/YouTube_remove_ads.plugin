@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=iOS, iPadOS, macOS
 #!system_version=15
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/YouTube_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YouTube.png
-#!date=2026-07-23 03:47:41
+#!date=2026-10-02 13:57:49
 
 [Argument]
 blockUpload=switch, false, true, tag=隐藏上传按钮, desc=用于隐藏YouTube底栏的上传按钮
@@ -18,11 +18,11 @@ captionLang=select, "zh-Hans", "zh-Hant", "ja", "ko", "en", "off", tag=字幕翻
 debug=switch, false, true, tag=启用调试模式, desc=此插件的调试模式
 
 [Script]
-http-response ^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch|log_event|config))(\?(.*))?$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/YouTube_remove_ads_response.js, requires-body=true, binary-body-mode=true, argument=[{blockUpload},{blockShorts},{blockImmersive},{captionLang},{debug}], tag=YouTube去广告
+response if ${url} ~= /^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch|log_event|config))(\?(.*))?$/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/YouTube_remove_ads_response.js", {${blockUpload}, ${blockShorts}, ${blockImmersive}, ${captionLang}, ${debug}}) with tag="YouTube去广告", requires_body=true, binary_body_mode=true
 
-http-request ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&ack.* script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/YouTube_remove_ads_request.js, requires-body=true, binary-body-mode=true, argument=[{captionLang}], tag=请求初始化
+request if ${url} ~= /^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&ack.*/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/YouTube_remove_ads_request.js", {${captionLang}}) with tag="请求初始化", requires_body=true, binary_body_mode=true
 
-http-request ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/log_event script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/YouTube_remove_ads_request.js, requires-body=true, binary-body-mode=true, argument=[{blockUpload},{blockShorts},{blockImmersive},{captionLang},{debug}], tag=请求日志事件
+request if ${url} ~= /^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/log_event/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/YouTube_remove_ads_request.js", {${blockUpload}, ${blockShorts}, ${blockImmersive}, ${captionLang}, ${debug}}) with tag="请求日志事件", requires_body=true, binary_body_mode=true
 
 [MitM]
 hostname=*.googlevideo.com, youtubei.googleapis.com

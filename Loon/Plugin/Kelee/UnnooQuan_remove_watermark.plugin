@@ -4,15 +4,15 @@
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/UnnooQuan_remove_watermark.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/UnnooQuan.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/api\.zsxq\.com\/v2\/groups\/\d+$ response-body-json-replace resp_data.group.policies.enable_watermark false
+response if ${url} ~= /^https:\/\/api\.zsxq\.com\/v2\/groups\/\d+$/i then response.json.replace("resp_data.group.policies.enable_watermark", false)
 
-^https:\/\/articles\.zsxq\.com\/inline_form\/id_[a-z0-9]+\.html response-body-replace-regex name="group_enable_watermark"\x20value="true" name="group_enable_watermark"\x20value="false"
+response if ${url} ~= /^https:\/\/articles\.zsxq\.com\/inline_form\/id_[a-z0-9]+\.html/i then response.body.replace(/name="group_enable_watermark"\x20value="true"/, "name=\"group_enable_watermark\" value=\"false\"")
 
 [MitM]
 hostname=api.zsxq.com

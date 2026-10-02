@@ -5,13 +5,13 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/XFuse_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/XFuse.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/cili\.xfuse\.fun\/s\/ reject
+request if ${url} ~= /^https:\/\/cili\.xfuse\.fun\/s\//i then reject(404)
 
 [MitM]
 hostname=cili.xfuse.fun, i.micecube.com, img.mofyi.com

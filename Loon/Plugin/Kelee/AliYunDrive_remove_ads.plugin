@@ -5,22 +5,22 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/AliYunDrive_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AliYunDrive.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 IP-CIDR, 203.107.1.1/24, REJECT, no-resolve
 
 [Rewrite]
-^https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_luckyBottle reject-dict
-^https:\/\/api\.alipan\.com\/adrive\/v1\/file\/getTopFolders reject-dict
+request if ${url} ~= /^https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_luckyBottle/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/api\.alipan\.com\/adrive\/v1\/file\/getTopFolders/i then reject_dict(200)
 
 
 [Script]
-http-response ^https:\/\/(biz)?api\.alipan\.com\/apps\/v\d\/users?\/home\/(news|widgets) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AliYunDrive_remove_ads.js, requires-body=true, tag=移除阿里云盘广告
-http-response ^https:\/\/member\.alipan\.com\/v1\/users\/onboard_list script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AliYunDrive_remove_ads.js, requires-body=true, tag=移除阿里云盘广告
+response if ${url} ~= /^https:\/\/(biz)?api\.alipan\.com\/apps\/v\d\/users?\/home\/(news|widgets)/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AliYunDrive_remove_ads.js") with tag="移除阿里云盘广告", requires_body=true
+response if ${url} ~= /^https:\/\/member\.alipan\.com\/v1\/users\/onboard_list/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AliYunDrive_remove_ads.js") with tag="移除阿里云盘广告", requires_body=true
 
 [MitM]
 hostname=api.alipan.com, member.alipan.com, bizapi.alipan.com

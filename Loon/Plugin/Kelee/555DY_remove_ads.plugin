@@ -5,15 +5,15 @@
 #!tag=去广告
 #!system=iOS, iPadOS
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/555DY_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/555DY.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
 
 
-^https:\/\/(app-v1\.ecoliving168\.com|852b95d36\.xwlpk\.cn)\/api\/v1\/movie\/index_recommend\? response-body-json-jq '.data[].list |= map(select(.type != 3)) | .data |= map(select(.layout != "advert_self"))'
+response if ${url} ~= /^https:\/\/(app-v1\.ecoliving168\.com|852b95d36\.xwlpk\.cn)\/api\/v1\/movie\/index_recommend\?/i then response.json.jq(".data[].list |= map(select(.type != 3)) | .data |= map(select(.layout != \"advert_self\"))")
 
 [MitM]
 hostname=app-v1.ecoliving168.com, 852b95d36.xwlpk.cn

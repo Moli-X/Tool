@@ -5,30 +5,30 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/NeteaseNews_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/NeteaseNews.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, nex.163.com, DIRECT
 DOMAIN, gw.m.163.com, DIRECT
 
 [Rewrite]
-^https?:\/\/interface\.music\.163\.com\/eapi\/ad reject
-^https?:\/\/c\.m\.163\.com\/nc\/gl\/ reject
-^https?:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds reject
-^https?:\/\/g1\.163\.com\/madfeedback reject
-^https?:\/\/interface\.music\.163\.com\/eapi\/ad\/ reject
-^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json reject
-^https?:\/\/interface3?\.music\.163\.com/eapi/(ad|abtest|sp|hot|store|search/(specialkeyword|defaultkeyword|hot)) reject
+request if ${url} ~= /^https?:\/\/interface\.music\.163\.com\/eapi\/ad/i then reject(404)
+request if ${url} ~= /^https?:\/\/c\.m\.163\.com\/nc\/gl\//i then reject(404)
+request if ${url} ~= /^https?:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds/i then reject(404)
+request if ${url} ~= /^https?:\/\/g1\.163\.com\/madfeedback/i then reject(404)
+request if ${url} ~= /^https?:\/\/interface\.music\.163\.com\/eapi\/ad\//i then reject(404)
+request if ${url} ~= /^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json/i then reject(404)
+request if ${url} ~= /^https?:\/\/interface3?\.music\.163\.com\/eapi\/(ad|abtest|sp|hot|store|search\/(specialkeyword|defaultkeyword|hot))/i then reject(404)
 
 [Script]
-http-response ^https:\/\/nex\.163\.com\/q script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseNews_remove_ads.js, requires-body=true, tag=移除网易新闻广告
+response if ${url} ~= /^https:\/\/nex\.163\.com\/q/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseNews_remove_ads.js") with tag="移除网易新闻广告", requires_body=true
 
-http-response ^https:\/\/gw\.m\.163\.com\/nc\/api\/v1\/feed\/dynamic\/headline-list\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseNews_remove_ads.js, requires-body=true, tag=移除网易新闻广告
+response if ${url} ~= /^https:\/\/gw\.m\.163\.com\/nc\/api\/v1\/feed\/dynamic\/headline-list\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseNews_remove_ads.js") with tag="移除网易新闻广告", requires_body=true
 
-http-response ^https:\/\/gw\.m\.163\.com\/nc\/api\/v1\/search\/hot-word script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseNews_remove_ads.js, requires-body=true, tag=移除网易新闻广告
+response if ${url} ~= /^https:\/\/gw\.m\.163\.com\/nc\/api\/v1\/search\/hot-word/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseNews_remove_ads.js") with tag="移除网易新闻广告", requires_body=true
 
 [MitM]
 hostname=nex.163.com, interface.music.163.com, c.m.163.com, client.mail.163.com, g1.163.com, support.you.163.com, interface3?.music.163.com, gw.m.163.com

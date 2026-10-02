@@ -5,14 +5,14 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/XiaoHeiHe_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/XiaoHeiHe.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/api\.xiaoheihe\.cn\/account\/get_ads_info_v2 reject-dict
-^https:\/\/api\.xiaoheihe\.cn\/bbs\/app\/feeds\/news response-body-json-jq '.result.links |= map(if .content_type == 27 then del(.title, .ad_pm, .img_gif, .idea_id, .ad_report, .label, .source, .intranet_only, .ad_cm, .content_type, .PROTOCOL, .img, .ad_ratio) else . end)'
+request if ${url} ~= /^https:\/\/api\.xiaoheihe\.cn\/account\/get_ads_info_v2/i then reject_dict(200)
+response if ${url} ~= /^https:\/\/api\.xiaoheihe\.cn\/bbs\/app\/feeds\/news/i then response.json.jq(".result.links |= map(if .content_type == 27 then del(.title, .ad_pm, .img_gif, .idea_id, .ad_report, .label, .source, .intranet_only, .ad_cm, .content_type, .PROTOCOL, .img, .ad_ratio) else . end)")
 
 [MitM]
 hostname=api.xiaoheihe.cn

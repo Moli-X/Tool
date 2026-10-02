@@ -5,10 +5,10 @@
 #!tag=去广告, 依赖
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BlockAdvertisers.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!date=2026-09-23 11:35:33
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN-KEYWORD, adstrategy, REJECT
@@ -477,10 +477,10 @@ DOMAIN-SUFFIX, tobidad.com, REJECT
 DOMAIN, ep7.facebook.com, REJECT
 
 [Rewrite]
-^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ reject
-^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_ reject
-^https:\/\/images\.pinduoduo\.com\/mrk\/ reject
-^https:\/\/images\.pinduoduo\.com\/marketing_api\/ reject
+request if ${url} ~= /^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\//i then reject(404)
+request if ${url} ~= /^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_/i then reject(404)
+request if ${url} ~= /^https:\/\/images\.pinduoduo\.com\/mrk\//i then reject(404)
+request if ${url} ~= /^https:\/\/images\.pinduoduo\.com\/marketing_api\//i then reject(404)
 
 [MitM]
 hostname=video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com

@@ -5,20 +5,20 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/ZhiLianZhaoPin_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ZhiLianZhaoPin.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 URL-REGEX, "^https:\/\/(ask|cgate)\.zhaopin\.com\/operation\/ad\/", REJECT
 
 [Rewrite]
-^https:\/\/ask\.zhaopin\.com\/plat-zqa-server\/home\/\d\.\d\.\d\/getHomeContents\? response-body-json-del data.templates[0].data.banner
+response if ${url} ~= /^https:\/\/ask\.zhaopin\.com\/plat-zqa-server\/home\/\d\.\d\.\d\/getHomeContents\?/i then response.json.delete("data.templates[0].data.banner")
 
-^https:\/\/cgate\.zhaopin\.com\/resumeapi\/resumeCheck\/positionDetailBottomTipCheck$ reject-dict
+request if ${url} ~= /^https:\/\/cgate\.zhaopin\.com\/resumeapi\/resumeCheck\/positionDetailBottomTipCheck$/i then reject_dict(200)
 
-^https:\/\/cgate\.zhaopin\.com\/bdp\/commercial\/queryLinkData$ reject
+request if ${url} ~= /^https:\/\/cgate\.zhaopin\.com\/bdp\/commercial\/queryLinkData$/i then reject(404)
 
 [MitM]
 hostname=ask.zhaopin.com, cgate.zhaopin.com

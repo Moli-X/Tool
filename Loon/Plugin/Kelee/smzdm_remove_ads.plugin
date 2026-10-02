@@ -5,57 +5,57 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/smzdm_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/smzdm.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, adx-api.zdmimg.com, REJECT
 
 [Rewrite]
-^https:\/\/app-api\.smzdm\.com\/util\/loading\? reject-dict
+request if ${url} ~= /^https:\/\/app-api\.smzdm\.com\/util\/loading\?/i then reject_dict(200)
 
-^https:\/\/app-api\.smzdm\.com\/util\/update$ response-body-json-replace data.silence_local_push 0 data.baichuan_redirect_switch 0
+response if ${url} ~= /^https:\/\/app-api\.smzdm\.com\/util\/update$/i then response.json.replace(["data.silence_local_push", "data.baichuan_redirect_switch"], [0, 0])
 
-^https:\/\/app-api\.smzdm\.com\/util\/update$ response-body-json-del data.silence_local_push_msg data.video_cache_num_configs data.haojia_widget data.widget data.operation_float
+response if ${url} ~= /^https:\/\/app-api\.smzdm\.com\/util\/update$/i then response.json.delete(["data.silence_local_push_msg", "data.video_cache_num_configs", "data.haojia_widget", "data.widget", "data.operation_float"])
 
-^https:\/\/app-api\.smzdm\.com\/util\/update$ response-body-json-jq 'def r: if type=="object" then if has("ad_campaign_name") and (.ad_campaign_name|type=="string") and (.ad_campaign_name|test("\\S")) then empty else . end elif type=="array" then map(r) else . end; .data.operation_float |= map(map(r))'
+response if ${url} ~= /^https:\/\/app-api\.smzdm\.com\/util\/update$/i then response.json.jq("def r: if type==\"object\" then if has(\"ad_campaign_name\") and (.ad_campaign_name|type==\"string\") and (.ad_campaign_name|test(\"\\\\S\")) then empty else . end elif type==\"array\" then map(r) else . end; .data.operation_float |= map(map(r))")
 
-^https:\/\/homepage-api\.smzdm\.com\/v3\/home\? response-body-json-jq jq-path="https://kelee.one/Resource/JQLang/smzdm/home_smzdm_remove_ads.jq"
+response if ${url} ~= /^https:\/\/homepage-api\.smzdm\.com\/v3\/home\?/i then response.json.jq_file("https://kelee.one/Resource/JQLang/smzdm/home_smzdm_remove_ads.jq")
 
-^https:\/\/app-api\.smzdm\.com\/mychannel\/list$ reject-dict
+request if ${url} ~= /^https:\/\/app-api\.smzdm\.com\/mychannel\/list$/i then reject_dict(200)
 
-^https:\/\/h5\.smzdm\.com\/user\/coupon\/coupon_list\? reject
+request if ${url} ~= /^https:\/\/h5\.smzdm\.com\/user\/coupon\/coupon_list\?/i then reject(404)
 
-^https:\/\/haojia-api\.smzdm\.com\/home\/list\? response-body-json-del data.header_operation.theme
+response if ${url} ~= /^https:\/\/haojia-api\.smzdm\.com\/home\/list\?/i then response.json.delete("data.header_operation.theme")
 
-^https:\/\/haojia-api\.smzdm\.com\/home\/list\? response-body-json-jq '.data.rows |= map(select(.cell_type == "39001")) | .data.banner_v2 |= map(select(.cell_type == "21028"))'
+response if ${url} ~= /^https:\/\/haojia-api\.smzdm\.com\/home\/list\?/i then response.json.jq(".data.rows |= map(select(.cell_type == \"39001\")) | .data.banner_v2 |= map(select(.cell_type == \"21028\"))")
 
-^https:\/\/haojia\.m\.smzdm\.com\/detail_modul\/user_related_modul\? response-body-json-del data.super_coupon
+response if ${url} ~= /^https:\/\/haojia\.m\.smzdm\.com\/detail_modul\/user_related_modul\?/i then response.json.delete("data.super_coupon")
 
-^https:\/\/haojia\.m\.smzdm\.com\/detail_modul\/other_modul\? response-body-json-del data.banner
+response if ${url} ~= /^https:\/\/haojia\.m\.smzdm\.com\/detail_modul\/other_modul\?/i then response.json.delete("data.banner")
 
-^https:\/\/user-api\.smzdm\.com\/vip$ response-body-json-del data.activity_entrance_info data.big_banner data.top_banner data.banner_switch data.yaoqingshaiwu data.right_info
+response if ${url} ~= /^https:\/\/user-api\.smzdm\.com\/vip$/i then response.json.delete(["data.activity_entrance_info", "data.big_banner", "data.top_banner", "data.banner_switch", "data.yaoqingshaiwu", "data.right_info"])
 
-^https:\/\/user-api\.smzdm\.com\/vip\/bottom_card_list\? reject-dict
+request if ${url} ~= /^https:\/\/user-api\.smzdm\.com\/vip\/bottom_card_list\?/i then reject_dict(200)
 
-^https:\/\/article-api\.smzdm\.com\/publish\/get_bubble\? reject-dict
+request if ${url} ~= /^https:\/\/article-api\.smzdm\.com\/publish\/get_bubble\?/i then reject_dict(200)
 
-^https:\/\/s-api\.smzdm\.com\/sou\/search_default_keyword\? reject-dict
+request if ${url} ~= /^https:\/\/s-api\.smzdm\.com\/sou\/search_default_keyword\?/i then reject_dict(200)
 
-^https:\/\/s-api\.smzdm\.com\/sou\/list_v10\? response-body-json-jq '.data.rows |= map(select(.model_type != "ads")) | .data.top_aladdin |= map(select(has("ad") | not))'
+response if ${url} ~= /^https:\/\/s-api\.smzdm\.com\/sou\/list_v10\?/i then response.json.jq(".data.rows |= map(select(.model_type != \"ads\")) | .data.top_aladdin |= map(select(has(\"ad\") | not))")
 
-^https:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags\? response-body-json-del data.search_faxian data.tonglan data.hongbao
+response if ${url} ~= /^https:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags\?/i then response.json.delete(["data.search_faxian", "data.tonglan", "data.hongbao"])
 
-^https:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags\? response-body-json-jq '.data.hot_tab |= (if type == "array" then map(select(.search_method != "热点主题榜")) else . end) | if .data.hot_tab then .data.hot_tab |= map(if .search_method == "热搜榜搜索热榜" and .rows then .rows |= map(select(.pos != null and ((.pos | tonumber) != null))) else . end) else . end'
+response if ${url} ~= /^https:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags\?/i then response.json.jq(".data.hot_tab |= (if type == \"array\" then map(select(.search_method != \"热点主题榜\")) else . end) | if .data.hot_tab then .data.hot_tab |= map(if .search_method == \"热搜榜搜索热榜\" and .rows then .rows |= map(select(.pos != null and ((.pos | tonumber) != null))) else . end) else . end")
 
-^https:\/\/s-api\.smzdm\.com\/sou\/popup_coupon\? reject-dict
+request if ${url} ~= /^https:\/\/s-api\.smzdm\.com\/sou\/popup_coupon\?/i then reject_dict(200)
 
-^https:\/\/haojia-api\.smzdm\.com\/detail\/\d+\? response-body-json-del data.quan_log
-^https:\/\/haojia-cdn\.smzdm\.com\/preload\/\d+\/fiphone\/v\d+_\d+_\d+\/wx\d+\/im\d+\/[0-9a-z]+\/[0-9a-z]+\.json$ response-body-json-del data.quan_log
+response if ${url} ~= /^https:\/\/haojia-api\.smzdm\.com\/detail\/\d+\?/i then response.json.delete("data.quan_log")
+response if ${url} ~= /^https:\/\/haojia-cdn\.smzdm\.com\/preload\/\d+\/fiphone\/v\d+_\d+_\d+\/wx\d+\/im\d+\/[0-9a-z]+\/[0-9a-z]+\.json$/i then response.json.delete("data.quan_log")
 
-^https:\/\/post\.m\.smzdm\.com\/ajax_app\/ajax_get_footer_list\? response-body-json-del data.tuiguang_ad data.activity_banner
+response if ${url} ~= /^https:\/\/post\.m\.smzdm\.com\/ajax_app\/ajax_get_footer_list\?/i then response.json.delete(["data.tuiguang_ad", "data.activity_banner"])
 
 [MitM]
 hostname=app-api.smzdm.com, homepage-api.smzdm.com, h5.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, user-api.smzdm.com, article-api.smzdm.com, s-api.smzdm.com, haojia-cdn.smzdm.com, post.m.smzdm.com

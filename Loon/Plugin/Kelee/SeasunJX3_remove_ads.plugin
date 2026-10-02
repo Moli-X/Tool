@@ -5,16 +5,16 @@
 #!tag=去广告
 #!system=iOS, iPadOS, macOS
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/SeasunJX3_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SeasunJX3.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [General]
 real-ip=*-update.xoyocdn.com, xg-flow.xoyo.com
 
 [Rewrite]
-^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt reject
+request if ${url} ~= /^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt/i then reject(404)
 
 [MitM]
 hostname=jx3comm.xoyocdn.com

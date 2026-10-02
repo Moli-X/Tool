@@ -5,23 +5,23 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Baidu_input_method_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Baidu_input_method.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https?:\/\/mime\.baidu\.com\/v5\/start_screen_ads/list reject-dict
-^https?:\/\/mime\.baidu\.com\/sapi\/v1\/lccorpus\/(applist|pannellist) reject-dict
+request if ${url} ~= /^https?:\/\/mime\.baidu\.com\/v5\/start_screen_ads\/list/i then reject_dict(200)
+request if ${url} ~= /^https?:\/\/mime\.baidu\.com\/sapi\/v1\/lccorpus\/(applist|pannellist)/i then reject_dict(200)
 
-^https?:\/\/mime\.baidu\.com\/sapi\/v1\/(circle\/joinedlist|lccorpus\/usercorpussync|aihelpactivity\/aihelpresource) reject-dict
-^https?:\/\/mime\.baidu\.com\/commer\/pocket_api\/enterprise_list reject-dict
-^https?:\/\/mbd\.baidu\.com\/ccs\/v1\/start\/confsync\?appname=baidu_input reject-dict
+request if ${url} ~= /^https?:\/\/mime\.baidu\.com\/sapi\/v1\/(circle\/joinedlist|lccorpus\/usercorpussync|aihelpactivity\/aihelpresource)/i then reject_dict(200)
+request if ${url} ~= /^https?:\/\/mime\.baidu\.com\/commer\/pocket_api\/enterprise_list/i then reject_dict(200)
+request if ${url} ~= /^https?:\/\/mbd\.baidu\.com\/ccs\/v1\/start\/confsync\?appname=baidu_input/i then reject_dict(200)
 
-^https:\/\/mime\.baidu\.com\/v5\/(fb\/st\?logtype|(notiv3|cellloc_noti|noti_cloudswitch_noti)\/info) reject-dict
+request if ${url} ~= /^https:\/\/mime\.baidu\.com\/v5\/(fb\/st\?logtype|(notiv3|cellloc_noti|noti_cloudswitch_noti)\/info)/i then reject_dict(200)
 
 [Script]
-http-response ^https?:\/\/mime\.baidu\.com\/(imrobot\/v1\/pub\/relation\/get_robot_list|v5\/custom_page\/(layout|getdata)) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Baidu_input_method_remove_ads.js, requires-body=true, tag=百度输入法去广告
+response if ${url} ~= /^https?:\/\/mime\.baidu\.com\/(imrobot\/v1\/pub\/relation\/get_robot_list|v5\/custom_page\/(layout|getdata))/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Baidu_input_method_remove_ads.js") with tag="百度输入法去广告", requires_body=true
 
 [MitM]
 hostname=imeres.baidu.com, mbd.baidu.com, mime.baidu.com

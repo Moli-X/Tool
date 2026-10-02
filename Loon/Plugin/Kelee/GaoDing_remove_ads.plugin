@@ -5,23 +5,23 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/GaoDing_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/GaoDing.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/v\d\/delivery-pits\/ios-splash\/modules$ reject-dict
+request if ${url} ~= /^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/v\d\/delivery-pits\/ios-splash\/modules$/i then reject_dict(200)
 
-^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/delivery-pits\/(template|mine|home)-page-dialog\/modules$ reject-dict
+request if ${url} ~= /^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/delivery-pits\/(template|mine|home)-page-dialog\/modules$/i then reject_dict(200)
 
-^https:\/\/www\.gaoding\.com\/api\/v\d\/cp\/search-words\/v2\/placeholder reject-dict
+request if ${url} ~= /^https:\/\/www\.gaoding\.com\/api\/v\d\/cp\/search-words\/v2\/placeholder/i then reject_dict(200)
 
-^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/template\/resources$ response-body-json-jq '.pits |= map(select(.module_type != "BANNER"))'
+response if ${url} ~= /^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/template\/resources$/i then response.json.jq(".pits |= map(select(.module_type != \"BANNER\"))")
 
-^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/app_mine\/resources$ response-body-json-jq '.pits |= map(select(.module_type != "BANNER"))'
+response if ${url} ~= /^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/app_mine\/resources$/i then response.json.jq(".pits |= map(select(.module_type != \"BANNER\"))")
 
-^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/(templates|all_editor_tools)\/resources$ response-body-json-jq 'walk(if type == "object" and .badge_img_url? then .badge_img_url="" else . end)'
+response if ${url} ~= /^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/(templates|all_editor_tools)\/resources$/i then response.json.jq("walk(if type == \"object\" and .badge_img_url? then .badge_img_url=\"\" else . end)")
 
 [MitM]
 hostname=www.gaoding.com

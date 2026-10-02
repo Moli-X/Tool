@@ -5,11 +5,11 @@
 #!tag=定时任务
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Auto_Join_TF.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TestFlight.png
 #!input=App_ID
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Argument]
 CaptureAccountToken=switch, false, true, tag=捕获账号令牌, desc=此开关控制插件是否捕获账户令牌 
@@ -22,6 +22,6 @@ TaskMonitor=input, "0 * * * * ?", tag=监控TF定时参数, desc=这里需要输
 DOMAIN, testflight.apple.com, PROXY
 
 [Script]
-http-request ^https?:\/\/testflight\.apple\.com\/v3\/accounts\/.*\/apps$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CaptureAccountToken.js, tag=获取账号令牌, enable={CaptureAccountToken}
-cron {TaskCron} script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoJoinTF.js, tag=自动加入TF, timeout=600, enable={RunTask}
-cron {TaskMonitor} script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoMonitorTF.js, tag=监控TF位置, timeout=30, enable={RunMonitor}
+request if ${url} ~= /^https?:\/\/testflight\.apple\.com\/v3\/accounts\/.*\/apps$/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CaptureAccountToken.js") with enable=${CaptureAccountToken}, tag="获取账号令牌"
+cron ${TaskCron} then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoJoinTF.js") with enable=${RunTask}, tag="自动加入TF", timeout=600
+cron ${TaskMonitor} then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/AutoMonitorTF.js") with enable=${RunMonitor}, tag="监控TF位置", timeout=30

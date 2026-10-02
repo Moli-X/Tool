@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/QQKSong_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QQKSong.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, adsmind.gdtimg.com, REJECT
@@ -47,11 +47,11 @@ IP-CIDR, 47.110.187.87/32, REJECT, no-resolve
 URL-REGEX, "^http:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_k_main_page_banner\/", REJECT
 
 [Rewrite]
-^https:\/\/wallpaper-\d+\.file\.myqcloud\.com\/dsl\/ reject-dict
-^https?:\/\/wallpaper-\d+\.file\.myqcloud\.com\/hikari\/ reject-dict
-^https:\/\/amsweb-cdn-\S+-\d+\.file\.myqcloud\.com\/video\/ad_profile\/ reject-dict
-^https:\/\/tmeadkg\.y\.qq\.com\/maproxy\/getAd$ reject
-^https:\/\/wnsaviator\.kg\.qq\.com\/wnsaviator\/api\/v1\/transMerge\?_webcgikey=get_activity_entry$ reject-dict
+request if ${url} ~= /^https:\/\/wallpaper-\d+\.file\.myqcloud\.com\/dsl\//i then reject_dict(200)
+request if ${url} ~= /^https?:\/\/wallpaper-\d+\.file\.myqcloud\.com\/hikari\//i then reject_dict(200)
+request if ${url} ~= /^https:\/\/amsweb-cdn-\S+-\d+\.file\.myqcloud\.com\/video\/ad_profile\//i then reject_dict(200)
+request if ${url} ~= /^https:\/\/tmeadkg\.y\.qq\.com\/maproxy\/getAd$/i then reject(404)
+request if ${url} ~= /^https:\/\/wnsaviator\.kg\.qq\.com\/wnsaviator\/api\/v1\/transMerge\?_webcgikey=get_activity_entry$/i then reject_dict(200)
 
 [MitM]
 hostname=wallpaper-1258344696.file.myqcloud.com, amsweb-cdn-*-1258344696.file.myqcloud.com, wnsaviator.kg.qq.com, tmeadkg.y.qq.com

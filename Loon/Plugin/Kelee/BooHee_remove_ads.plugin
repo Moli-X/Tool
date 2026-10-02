@@ -5,32 +5,32 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BooHee_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BooHee.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/api\.boohee\.com\/meta-interface\/v2\/index\? response-body-json-del data.recom_cards data.recom_btns
+response if ${url} ~= /^https:\/\/api\.boohee\.com\/meta-interface\/v2\/index\?/i then response.json.delete(["data.recom_cards", "data.recom_btns"])
 
-^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/page_float_bubbles\? reject-dict
+request if ${url} ~= /^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/page_float_bubbles\?/i then reject_dict(200)
 
-^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/tool_buttons\? reject-dict
+request if ${url} ~= /^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/tool_buttons\?/i then reject_dict(200)
 
-^https:\/\/api\.boohee\.com\/app-interface\/v1\/search\/search\? reject-dict
+request if ${url} ~= /^https:\/\/api\.boohee\.com\/app-interface\/v1\/search\/search\?/i then reject_dict(200)
 
-^https:\/\/status\.boohee\.com\/api\/v1\/merged_messages$ reject-dict
+request if ${url} ~= /^https:\/\/status\.boohee\.com\/api\/v1\/merged_messages$/i then reject_dict(200)
 
-^https:\/\/bohe\.sfo-tx-shanghai-01\.saas\.sensorsdata\.cn\/api\/v2\/sfo\/user_popup_configs\? reject-dict
+request if ${url} ~= /^https:\/\/bohe\.sfo-tx-shanghai-01\.saas\.sensorsdata\.cn\/api\/v2\/sfo\/user_popup_configs\?/i then reject_dict(200)
 
-^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/plaza\? response-body-json-del data.tabs[1].badge data.recommend_ads
+response if ${url} ~= /^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/plaza\?/i then response.json.delete(["data.tabs[1].badge", "data.recommend_ads"])
 
-^https:\/\/api\.boohee\.com\/open-interface\/v1\/string\/market_page\?title=metabolism_config$ response-body-json-del top_banner diagnos_config partner_hospital question_answer product brand_story
+response if ${url} ~= /^https:\/\/api\.boohee\.com\/open-interface\/v1\/string\/market_page\?title=metabolism_config$/i then response.json.delete(["top_banner", "diagnos_config", "partner_hospital", "question_answer", "product", "brand_story"])
 
-^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/sensor-banners\? reject-dict
+request if ${url} ~= /^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/sensor-banners\?/i then reject_dict(200)
 
 [Script]
-http-response ^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/plaza-flow\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BooHee_remove_ads.js, requires-body=true, tag=移除广场推荐页面横幅
+response if ${url} ~= /^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/plaza-flow\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BooHee_remove_ads.js") with tag="移除广场推荐页面横幅", requires_body=true
 
 [MitM]
 hostname=api.boohee.com, bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn, lego.boohee.com, status.boohee.com

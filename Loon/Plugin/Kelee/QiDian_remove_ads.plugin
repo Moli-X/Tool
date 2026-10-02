@@ -5,45 +5,45 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/QiDian_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QiDian.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/client\/getconf$ response-body-json-replace Data.WolfEye 0 Data.CloudSetting.TeenShowFreq 0
+response if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/client\/getconf$/i then response.json.replace(["Data.WolfEye", "Data.CloudSetting.TeenShowFreq"], [0, 0])
 
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/client\/getconf$ response-body-json-del Data.ActivityPageBackPushNoticeFrequency Data.ActivityIcon Data.ActivityPopup Data.LuckBag
+response if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/client\/getconf$/i then response.json.delete(["Data.ActivityPageBackPushNoticeFrequency", "Data.ActivityIcon", "Data.ActivityPopup", "Data.LuckBag"])
 
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v4\/client\/getsplashscreen\? reject-dict
+request if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v4\/client\/getsplashscreen\?/i then reject_dict(200)
 
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/adv\/ reject-dict
+request if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/adv\//i then reject_dict(200)
 
-^https:\/\/ywab\.reader\.qq\.com\/user\/experiments\/v2\? reject-dict
+request if ${url} ~= /^https:\/\/ywab\.reader\.qq\.com\/user\/experiments\/v2\?/i then reject_dict(200)
 
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/checkin\/simpleinfo\? reject-dict
+request if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/checkin\/simpleinfo\?/i then reject_dict(200)
 
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/push\/getdialog\? reject-dict
+request if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/push\/getdialog\?/i then reject_dict(200)
 
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v2\/dailyrecommend\/getdailyrecommend\? response-body-json-replace Data.Items []
+response if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v2\/dailyrecommend\/getdailyrecommend\?/i then response.json.replace("Data.Items", "[]")
 
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/message\/getpushedmessagelist$ reject-dict
+request if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/message\/getpushedmessagelist$/i then reject_dict(200)
 
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/maintain\/playstrip$ reject-dict
+request if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/maintain\/playstrip$/i then reject_dict(200)
 
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/dailyrecommend\/recommendBook\? reject-dict
+request if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/dailyrecommend\/recommendBook\?/i then reject_dict(200)
 
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/freshman\/bookshelfbtn$ reject-dict
+request if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/freshman\/bookshelfbtn$/i then reject_dict(200)
 
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/bookshelf\/getTopOperation$ reject-dict
+request if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/bookshelf\/getTopOperation$/i then reject_dict(200)
 
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v3\/user\/getaccountpage\? response-body-json-del Data.BenefitButtonList
+response if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v3\/user\/getaccountpage\?/i then response.json.delete("Data.BenefitButtonList")
 
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/booksearch\/hotWords\? reject-dict
+request if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/booksearch\/hotWords\?/i then reject_dict(200)
 
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/followsubscribe\/showChapterEndModule\? reject-dict
+request if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/followsubscribe\/showChapterEndModule\?/i then reject_dict(200)
 
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/young\/getconf$ reject-dict
+request if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/young\/getconf$/i then reject_dict(200)
 
 [MitM]
 hostname=magev6.if.qidian.com, ywab.reader.qq.com

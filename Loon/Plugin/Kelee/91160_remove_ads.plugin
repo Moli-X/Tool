@@ -5,32 +5,32 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/91160_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/91160.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/msglb\.91160\.com\/msg\/outer\/broker\/get$ reject-dict
+request if ${url} ~= /^https:\/\/msglb\.91160\.com\/msg\/outer\/broker\/get$/i then reject_dict(200)
 
-^https:\/\/patientgate\.91160\.com\/advert-api\/ reject-dict
+request if ${url} ~= /^https:\/\/patientgate\.91160\.com\/advert-api\//i then reject_dict(200)
 
-^https:\/\/soapi\.91160\.com\/homepage-recommendation\/recommendation\/medical\/complex\? response-body-json-del data.checkupList
+response if ${url} ~= /^https:\/\/soapi\.91160\.com\/homepage-recommendation\/recommendation\/medical\/complex\?/i then response.json.delete("data.checkupList")
 
-^https:\/\/soapi\.91160\.com\/homepage-recommendation\/homepage\/flow\? response-body-json-jq '.data.rows |= map(select(.type as $type | ["GOOD", "ARTICLE"] | index($type) | not))'
+response if ${url} ~= /^https:\/\/soapi\.91160\.com\/homepage-recommendation\/homepage\/flow\?/i then response.json.jq(".data.rows |= map(select(.type as $type | [\"GOOD\", \"ARTICLE\"] | index($type) | not))")
 
-^https:\/\/patientgate\.91160\.com\/cube\/v1\/unit_page\/page_data\? response-body-json-jq '.data.modules |= map(select(.name == "announcement" or .name == "guide" or .name == "expert" or .name == "featuredDepartments" or .name == "featureDevice" or .name == "featureTech" or .name == "familyDoctor" or .name == "introduction" or .name == "bus" or .name == "classicCase" or .name == "askEveryone" or .name == "reviews" or .name == "notes"))'
+response if ${url} ~= /^https:\/\/patientgate\.91160\.com\/cube\/v1\/unit_page\/page_data\?/i then response.json.jq(".data.modules |= map(select(.name == \"announcement\" or .name == \"guide\" or .name == \"expert\" or .name == \"featuredDepartments\" or .name == \"featureDevice\" or .name == \"featureTech\" or .name == \"familyDoctor\" or .name == \"introduction\" or .name == \"bus\" or .name == \"classicCase\" or .name == \"askEveryone\" or .name == \"reviews\" or .name == \"notes\"))")
 
-^https:\/\/snsapi\.91160\.com\/vipmemberapi\/mbCombo\/mbComboWords\? reject-dict
+request if ${url} ~= /^https:\/\/snsapi\.91160\.com\/vipmemberapi\/mbCombo\/mbComboWords\?/i then reject_dict(200)
 
-^https:\/\/patientgate\.91160\.com\/rec\/homepage\/open\/getUserGoodsList\? reject-dict
+request if ${url} ~= /^https:\/\/patientgate\.91160\.com\/rec\/homepage\/open\/getUserGoodsList\?/i then reject_dict(200)
 
-^https:\/\/snsapi\.91160\.com\/hotword\/open\/v1\/getSearchExplore\? reject-dict
-^https:\/\/snsapi\.91160\.com\/hotword\/open\/v1\/getHotWordPlate\? reject-dict
+request if ${url} ~= /^https:\/\/snsapi\.91160\.com\/hotword\/open\/v1\/getSearchExplore\?/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/snsapi\.91160\.com\/hotword\/open\/v1\/getHotWordPlate\?/i then reject_dict(200)
 
-^https:\/\/snsapi\.91160\.com\/engine\/backgroundWord\/queryForFrontend\? reject-dict
+request if ${url} ~= /^https:\/\/snsapi\.91160\.com\/engine\/backgroundWord\/queryForFrontend\?/i then reject_dict(200)
 
-^https:\/\/patientappapi\.91160\.com\/cus_index\.php\?c=adver reject
+request if ${url} ~= /^https:\/\/patientappapi\.91160\.com\/cus_index\.php\?c=adver/i then reject(404)
 
 [MitM]
 hostname=patientgate.91160.com, soapi.91160.com, snsapi.91160.com, msglb.91160.com, patientappapi.91160.com

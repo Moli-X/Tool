@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Remove_ads_by_keli.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/KeLee.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, acdn.adnxs.com, REJECT
@@ -46,123 +46,123 @@ DOMAIN, mallapi2.qinlinkeji.com, REJECT // 商城页面
 DOMAIN, open-pixon.ads-pixiv.net, REJECT
 
 [Rewrite]
-^https?:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk reject
+request if ${url} ~= /^https?:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk/i then reject(404)
 
-^https:\/\/cdn\.web\.chelaile\.net\.cn\/info-flow\/index\.html reject
+request if ${url} ~= /^https:\/\/cdn\.web\.chelaile\.net\.cn\/info-flow\/index\.html/i then reject(404)
 
-^http:\/\/mercury-gateway\.ixiaochuan\.cn\/mercury\/v1\/ad\/ reject
+request if ${url} ~= /^http:\/\/mercury-gateway\.ixiaochuan\.cn\/mercury\/v1\/ad\//i then reject(404)
 
-^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start reject-200
-^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\/ reject-200
-^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen reject-200
-^https?:\/\/api-mifit.+?\.huami\.com\/discovery\/mi\/discovery\/.+?_ad\? reject-200
-^https?:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/recommendation\/banner reject
-^https?:\/\/(api-mifit|api-mifit-\w+)\.huami\.com\/discovery\/mi\/discovery\/\w+_ad\? reject
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/homepage_ad\? reject-img
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sleep_ad\? reject-img
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_summary_ad\? reject-img
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_training_ad\? reject-img
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\? reject-img
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\? reject-img
+request if ${url} ~= /^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start/i then reject(200)
+request if ${url} ~= /^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\//i then reject(200)
+request if ${url} ~= /^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen/i then reject(200)
+request if ${url} ~= /^https?:\/\/api-mifit.+?\.huami\.com\/discovery\/mi\/discovery\/.+?_ad\?/i then reject(200)
+request if ${url} ~= /^https?:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/recommendation\/banner/i then reject(404)
+request if ${url} ~= /^https?:\/\/(api-mifit|api-mifit-\w+)\.huami\.com\/discovery\/mi\/discovery\/\w+_ad\?/i then reject(404)
+request if ${url} ~= /^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/homepage_ad\?/i then reject_img(200)
+request if ${url} ~= /^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sleep_ad\?/i then reject_img(200)
+request if ${url} ~= /^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_summary_ad\?/i then reject_img(200)
+request if ${url} ~= /^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_training_ad\?/i then reject_img(200)
+request if ${url} ~= /^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\?/i then reject_img(200)
+request if ${url} ~= /^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\?/i then reject_img(200)
 
-^https:\/\/shopapi\.io\.mi\.com\/mtop\/mf\/resource\/homePage\/pageConfig reject-200
-^https:\/\/api-mifit-cn2\.huami\.com\/discovery\/mi\/cards\/startpage_ad reject
+request if ${url} ~= /^https:\/\/shopapi\.io\.mi\.com\/mtop\/mf\/resource\/homePage\/pageConfig/i then reject(200)
+request if ${url} ~= /^https:\/\/api-mifit-cn2\.huami\.com\/discovery\/mi\/cards\/startpage_ad/i then reject(404)
 
-^https:\/\/apiwz\.midukanshu\.com\/advert\/getPopup$ reject
-^https:\/\/apiwz\.midukanshu\.com\/advert\/treasureInfo$ reject
-^https:\/\/apiwz\.midukanshu\.com\/config\/getAds$ reject
+request if ${url} ~= /^https:\/\/apiwz\.midukanshu\.com\/advert\/getPopup$/i then reject(404)
+request if ${url} ~= /^https:\/\/apiwz\.midukanshu\.com\/advert\/treasureInfo$/i then reject(404)
+request if ${url} ~= /^https:\/\/apiwz\.midukanshu\.com\/config\/getAds$/i then reject(404)
 
-^http:\/\/img\.dailmo\.com\/img\/61\/23c7125bfe6166d69f3bff5b0ca4d31e\.jpg reject
-^http:\/\/img\.dailmo\.com\/img\/50\/edb40c6392f848df37f9c31d8a6f90f6\.jpg reject
-^http:\/\/img\.dailmo\.com\/img\/6\/90585d9e96c73dd49644af57d8501624\.jpg reject
-^http:\/\/img\.dailmo\.com\/img\/5\/6cb2aa237ce1f65944aa1ecb29fbdeef\.jpg reject
-^http:\/\/img\.allahall\.com\/img\/61\/23c7125bfe6166d69f3bff5b0ca4d31e\.jpg reject
-^http:\/\/img\.allahall\.com\/img\/50\/edb40c6392f848df37f9c31d8a6f90f6\.jpg reject
-^http:\/\/img\.allahall\.com\/img\/6\/90585d9e96c73dd49644af57d8501624\.jpg reject
-^http:\/\/img\.allahall\.com\/img\/5\/6cb2aa237ce1f65944aa1ecb29fbdeef\.jpg reject
-^http:\/\/img\.allahall\.com\/img\/59\/6a13a75dfe46ebfdac96bd27ef098885\.jpg reject
-^http:\/\/app\.zhoudamozi\.com\/ad\/.+ reject-200
+request if ${url} ~= /^http:\/\/img\.dailmo\.com\/img\/61\/23c7125bfe6166d69f3bff5b0ca4d31e\.jpg/i then reject(404)
+request if ${url} ~= /^http:\/\/img\.dailmo\.com\/img\/50\/edb40c6392f848df37f9c31d8a6f90f6\.jpg/i then reject(404)
+request if ${url} ~= /^http:\/\/img\.dailmo\.com\/img\/6\/90585d9e96c73dd49644af57d8501624\.jpg/i then reject(404)
+request if ${url} ~= /^http:\/\/img\.dailmo\.com\/img\/5\/6cb2aa237ce1f65944aa1ecb29fbdeef\.jpg/i then reject(404)
+request if ${url} ~= /^http:\/\/img\.allahall\.com\/img\/61\/23c7125bfe6166d69f3bff5b0ca4d31e\.jpg/i then reject(404)
+request if ${url} ~= /^http:\/\/img\.allahall\.com\/img\/50\/edb40c6392f848df37f9c31d8a6f90f6\.jpg/i then reject(404)
+request if ${url} ~= /^http:\/\/img\.allahall\.com\/img\/6\/90585d9e96c73dd49644af57d8501624\.jpg/i then reject(404)
+request if ${url} ~= /^http:\/\/img\.allahall\.com\/img\/5\/6cb2aa237ce1f65944aa1ecb29fbdeef\.jpg/i then reject(404)
+request if ${url} ~= /^http:\/\/img\.allahall\.com\/img\/59\/6a13a75dfe46ebfdac96bd27ef098885\.jpg/i then reject(404)
+request if ${url} ~= /^http:\/\/app\.zhoudamozi\.com\/ad\/.+/i then reject(200)
 
-^https:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash reject
+request if ${url} ~= /^https:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash/i then reject(404)
 
-^https:\/\/gw\.alicdn\.com\/mt\/ reject
-^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} reject
-^https:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4} reject
-^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome reject
+request if ${url} ~= /^https:\/\/gw\.alicdn\.com\/mt\//i then reject(404)
+request if ${url} ~= /^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4}/i then reject(404)
+request if ${url} ~= /^https:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4}/i then reject(404)
+request if ${url} ~= /^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome/i then reject(404)
 
-^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getQQshopData\? reject-dict
-^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getGameData\? reject-dict
-^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getFootData\? reject-dict
+request if ${url} ~= /^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getQQshopData\?/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getGameData\?/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getFootData\?/i then reject_dict(200)
 
-^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\? reject-dict
+request if ${url} ~= /^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\?/i then reject_dict(200)
 
-^http:\/\/home\.umetrip\.com\/gateway\/api\/umetrip\/native reject
-^http:\/\/umerp\.umetrip\.com\/gateway\/api\/umetrip\/native reject
+request if ${url} ~= /^http:\/\/home\.umetrip\.com\/gateway\/api\/umetrip\/native/i then reject(404)
+request if ${url} ~= /^http:\/\/umerp\.umetrip\.com\/gateway\/api\/umetrip\/native/i then reject(404)
 
-^https?:\/\/us\.l\.qq\.com\/exapp reject-200
+request if ${url} ~= /^https?:\/\/us\.l\.qq\.com\/exapp/i then reject(200)
 
-^https:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/init\/startInit$ reject
+request if ${url} ~= /^https:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/init\/startInit$/i then reject(404)
 
-^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab reject-dict
-^https:\/\/dict\.youdao\.com\/homepage\/tile reject-dict
-^https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig reject-dict
-^https:\/\/cdke\.youdao\.com\/course3\/recommend\/dict\/startup reject-dict
-^https:\/\/dict\.youdao\.com\/commonsearch reject-dict
-^https:\/\/dict\.youdao\.com\/vip\/activity\/couponinfo reject-dict
-^https:\/\/dict\.youdao\.com\/dictusertask\/system reject-dict
+request if ${url} ~= /^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/dict\.youdao\.com\/homepage\/tile/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/cdke\.youdao\.com\/course3\/recommend\/dict\/startup/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/dict\.youdao\.com\/commonsearch/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/dict\.youdao\.com\/vip\/activity\/couponinfo/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/dict\.youdao\.com\/dictusertask\/system/i then reject_dict(200)
 
-^https?:\/\/ecard\.shenzhentong\.com\/wxweb\/bwxppub2\/QryAdvertList\.do reject-200
+request if ${url} ~= /^https?:\/\/ecard\.shenzhentong\.com\/wxweb\/bwxppub2\/QryAdvertList\.do/i then reject(200)
 
-^https?:\/\/mob\.mddcloud\.com\.cn\/adApi\/advert\/(first|third)part\/advertList reject-dict
-^https?:\/\/t-dsp\.pinduoduo\.com reject-200
-^https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/preload\.php reject-200
-^http?:\/\/sfo\.mddcloud\.com\.cn\/api\/v2\/sfo\/popup_displays? reject-dict
-^https?:\/\/tower\.ubixioe\.com\/mob\/mediation reject
-^https?:\/\/toblog\.ctobsnssdk\.com reject-200
-^https?:\/\/conf-darwin\.xycdn\.com reject-dict
-^https?:\/\/sdk1xyajs\.data\.kuiniuca\.com reject
+request if ${url} ~= /^https?:\/\/mob\.mddcloud\.com\.cn\/adApi\/advert\/(first|third)part\/advertList/i then reject_dict(200)
+request if ${url} ~= /^https?:\/\/t-dsp\.pinduoduo\.com/i then reject(200)
+request if ${url} ~= /^https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/preload\.php/i then reject(200)
+request if ${url} ~= /^http?:\/\/sfo\.mddcloud\.com\.cn\/api\/v2\/sfo\/popup_displays?/i then reject_dict(200)
+request if ${url} ~= /^https?:\/\/tower\.ubixioe\.com\/mob\/mediation/i then reject(404)
+request if ${url} ~= /^https?:\/\/toblog\.ctobsnssdk\.com/i then reject(200)
+request if ${url} ~= /^https?:\/\/conf-darwin\.xycdn\.com/i then reject_dict(200)
+request if ${url} ~= /^https?:\/\/sdk1xyajs\.data\.kuiniuca\.com/i then reject(404)
 
-^https:\/\/gw\.chuangkit\.com\/team\/app\/common\/ad\/ reject-dict
+request if ${url} ~= /^https:\/\/gw\.chuangkit\.com\/team\/app\/common\/ad\//i then reject_dict(200)
 
-^https:\/\/qiye\.gaoding\.com\/api\/v3\/oc\/v2\/delivery-pits\/ios-splash\/ reject-dict
+request if ${url} ~= /^https:\/\/qiye\.gaoding\.com\/api\/v3\/oc\/v2\/delivery-pits\/ios-splash\//i then reject_dict(200)
 
-^https:\/\/p0\.pipi\.cn\/(adAdmin|mediaplus\/maoyantong_ads_fe)\/\w+\.jpg\?imageMogr2\/quality\/ reject-dict
-^https:\/\/p0\.pipi\.cn\/(adAdmin|mediaplus\/maoyantong_ads_fe)\/\w+\.(jpg|png)\?imageMogr2\/thumbnail\/(860x0|!165x165|!1049x1169) reject-dict
+request if ${url} ~= /^https:\/\/p0\.pipi\.cn\/(adAdmin|mediaplus\/maoyantong_ads_fe)\/\w+\.jpg\?imageMogr2\/quality\//i then reject_dict(200)
+request if ${url} ~= /^https:\/\/p0\.pipi\.cn\/(adAdmin|mediaplus\/maoyantong_ads_fe)\/\w+\.(jpg|png)\?imageMogr2\/thumbnail\/(860x0|!165x165|!1049x1169)/i then reject_dict(200)
 
-^https:\/\/api\.zcool\.com\.cn\/v\d\.\d\.\d/common\/open-screen reject-dict
+request if ${url} ~= /^https:\/\/api\.zcool\.com\.cn\/v\d\.\d\.\d\/common\/open-screen/i then reject_dict(200)
 
-^https:\/\/shealthyapi\.senssun\.com\/v1\/app\/banner\/findByType\?type=bottom$ reject-dict
+request if ${url} ~= /^https:\/\/shealthyapi\.senssun\.com\/v1\/app\/banner\/findByType\?type=bottom$/i then reject_dict(200)
 
-^https:\/\/lanfanapp\.com\/api\/v1\/ads\/ reject-dict
+request if ${url} ~= /^https:\/\/lanfanapp\.com\/api\/v1\/ads\//i then reject_dict(200)
 
-^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_IOS_STARTUP reject-dict
-^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_IOS_DEVICE reject-dict
-^https:\/\/client-api-v2\.oray\.com\/materials\/SUNLOGIN_CLIENT_IOS_PROMOTION reject-dict
+request if ${url} ~= /^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_IOS_STARTUP/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_IOS_DEVICE/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/client-api-v2\.oray\.com\/materials\/SUNLOGIN_CLIENT_IOS_PROMOTION/i then reject_dict(200)
 
-^https:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage reject
+request if ${url} ~= /^https:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage/i then reject(404)
 
-^https:\/\/api\.flydigi\.com\/android\/v2\/ad reject-dict
+request if ${url} ~= /^https:\/\/api\.flydigi\.com\/android\/v2\/ad/i then reject_dict(200)
 
-^https:\/\/api\.xiangji\.qq\.com\/splash$ reject-dict
+request if ${url} ~= /^https:\/\/api\.xiangji\.qq\.com\/splash$/i then reject_dict(200)
 
-^https:\/\/cdn\.cmgadx\.com\/sdk\/pool\/ reject-dict
+request if ${url} ~= /^https:\/\/cdn\.cmgadx\.com\/sdk\/pool\//i then reject_dict(200)
 
-^https:\/\/qadx\.qinlinad\.com\/ad\/ reject-dict
+request if ${url} ~= /^https:\/\/qadx\.qinlinad\.com\/ad\//i then reject_dict(200)
 
-^https:\/\/watch\.iot\.mi\.com\/cgi-op\/api\/v1\/watch\/health\/resource\?business=MI_WATCH_SPORT reject-dict
+request if ${url} ~= /^https:\/\/watch\.iot\.mi\.com\/cgi-op\/api\/v1\/watch\/health\/resource\?business=MI_WATCH_SPORT/i then reject_dict(200)
 
-^https:\/\/watch\.iot\.mi\.com\/cgi-op\/api\/v1\/watch\/health\/resource\?business=MI_HEALTH_DEVICE_TAB_PAGE reject-dict
+request if ${url} ~= /^https:\/\/watch\.iot\.mi\.com\/cgi-op\/api\/v1\/watch\/health\/resource\?business=MI_HEALTH_DEVICE_TAB_PAGE/i then reject_dict(200)
 
-^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryloadingbanner\/ reject-dict
-^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.life\.popup\.get\/ reject-dict
+request if ${url} ~= /^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryloadingbanner\//i then reject_dict(200)
+request if ${url} ~= /^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.life\.popup\.get\//i then reject_dict(200)
 
-^https:\/\/d\.socdm\.com\/adsv\/ reject-dict
+request if ${url} ~= /^https:\/\/d\.socdm\.com\/adsv\//i then reject_dict(200)
 
-^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm mock-response-body data-type=json data="{"imgIndex":"0","adv":{"startup_adv":{"advCntList":[],"buttonList":[]}},"respCode":"0000"}"
+response if ${url} ~= /^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm/i then response.body.mock("json", "{\"imgIndex\":\"0\",\"adv\":{\"startup_adv\":{\"advCntList\":[],\"buttonList\":[]}},\"respCode\":\"0000\"}")
 
-^https?:\/\/cmds\.omesoft\.com\/HypnotistWS\.asmx response-body-replace-regex <GetADResult>\.\*\?<\/GetADResult> <GetADResult>{"ret":0,"msg":"正常","err_code":0,"data":{"ad":[]}}</GetADResult>
+response if ${url} ~= /^https?:\/\/cmds\.omesoft\.com\/HypnotistWS\.asmx/i then response.body.replace(/<GetADResult>\.\*\?<\/GetADResult>/, "<GetADResult>{\"ret\":0,\"msg\":\"正常\",\"err_code\":0,\"data\":{\"ad\":[]}}</GetADResult>")
 
-^https?:\/\/api\.fenxianglife\.com\/njia\/index\/popup\/v2 response-body-json-jq '.data.list=[]'
+response if ${url} ~= /^https?:\/\/api\.fenxianglife\.com\/njia\/index\/popup\/v2/i then response.json.jq(".data.list=[]")
 
 [Script]
 

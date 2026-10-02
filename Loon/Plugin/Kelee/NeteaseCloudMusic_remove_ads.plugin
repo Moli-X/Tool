@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/NeteaseCloudMusic_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/NeteaseCloudMusic.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Argument]
 MY=switch, false, true, tag=[隐藏底栏]漫游标签, desc=
@@ -33,25 +33,25 @@ DOMAIN, ipv4.music.163.com, REJECT
 DOMAIN, ipv6.music.163.com, REJECT
 
 [Rewrite]
-^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(ocpc\/)?ad\/ mock-response-body data-type=text
+response if ${url} ~= /^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(ocpc\/)?ad\//i then response.body.mock("text", "")
 
-^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:delivery\/(batch-)?deliver|moment\/tab\/info\/|side-bar\/mini-program\/music-service\/account|yunbei\/account\/entrance\/) reject-dict
+request if ${url} ~= /^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:delivery\/(batch-)?deliver|moment\/tab\/info\/|side-bar\/mini-program\/music-service\/account|yunbei\/account\/entrance\/)/i then reject_dict(200)
 
-^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:community\/friends\/fans-group\/artist\/group\/|mine\/applet\/redpoint|music\/songshare\/text\/recommend\/|resniche\/position\/play\/new\/|resniche\/tspopup\/show|resource\/comments?\/musiciansaid\/|user\/sub\/artist) reject-dict
-^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:ios\/version|mlivestream\/entrance\/playpage\/|link\/position\/show\/strategy|link\/scene\/show\/resource|v1\/content\/exposure\/comment\/banner\/) reject-dict
+request if ${url} ~= /^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:community\/friends\/fans-group\/artist\/group\/|mine\/applet\/redpoint|music\/songshare\/text\/recommend\/|resniche\/position\/play\/new\/|resniche\/tspopup\/show|resource\/comments?\/musiciansaid\/|user\/sub\/artist)/i then reject_dict(200)
+request if ${url} ~= /^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:ios\/version|mlivestream\/entrance\/playpage\/|link\/position\/show\/strategy|link\/scene\/show\/resource|v1\/content\/exposure\/comment\/banner\/)/i then reject_dict(200)
 
-^https?:\/\/interface\d?\.music\.163.com\/w?e?api\/search\/default mock-response-body data-type=text
-^https?:\/\/interface\d?\.music\.163\.com\/w?eapi\/(?:activity\/bonus\/playpage\/time\/query|resource-exposure\/|search\/(?:chart\/|rcmd\/keyword\/|specialkeyword\/)) reject-dict
+response if ${url} ~= /^https?:\/\/interface\d?\.music\.163.com\/w?e?api\/search\/default/i then response.body.mock("text", "")
+request if ${url} ~= /^https?:\/\/interface\d?\.music\.163\.com\/w?eapi\/(?:activity\/bonus\/playpage\/time\/query|resource-exposure\/|search\/(?:chart\/|rcmd\/keyword\/|specialkeyword\/))/i then reject_dict(200)
 
-^https:\/\/interface\d\.music\.163\.com\/eapi\/my\/podcast\/tab\/recommend reject-dict
+request if ${url} ~= /^https:\/\/interface\d\.music\.163\.com\/eapi\/my\/podcast\/tab\/recommend/i then reject_dict(200)
 
 [Script]
-http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:batch|v2\/resource\/comment\/floor\/get) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseCloudMusic_remove_ads.js, requires-body=true, binary-body-mode=true, timeout=20, tag=评论区、热推、有话想说、分享一下、歌曲下的祝福等小提示
-http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:homepage\/block\/page|link\/page\/rcmd\/(?:block\/resource\/multi\/refresh|resource\/show)) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseCloudMusic_remove_ads.js, requires-body=true, binary-body-mode=true, timeout=20, tag=推荐、home、主页, argument=[{PRGG},{PRRK},{PRDRD},{PRSCVPT},{PRST},{PRRR},{HMPR},{PRMST},{PRCN}]
-http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/home\/framework\/tab script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseCloudMusic_remove_ads.js, requires-body=true, binary-body-mode=true, timeout=20, tag=底部选项卡, argument=[{MY},{DT},{FX}]
-http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/page\/discovery\/resource\/show script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseCloudMusic_remove_ads.js, requires-body=true, binary-body-mode=true, timeout=20, tag=发现页
-http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/position\/show\/resource script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseCloudMusic_remove_ads.js, requires-body=true, binary-body-mode=true, timeout=20, tag=我的页面
-http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/user\/follow\/users\/mixed\/get script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseCloudMusic_remove_ads.js, requires-body=true, binary-body-mode=true, timeout=20, tag=显示未关注你的人
+response if ${url} ~= /^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:batch|v2\/resource\/comment\/floor\/get)/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseCloudMusic_remove_ads.js") with tag="评论区、热推、有话想说、分享一下、歌曲下的祝福等小提示", timeout=20, requires_body=true, binary_body_mode=true
+response if ${url} ~= /^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:homepage\/block\/page|link\/page\/rcmd\/(?:block\/resource\/multi\/refresh|resource\/show))/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseCloudMusic_remove_ads.js", {${PRGG}, ${PRRK}, ${PRDRD}, ${PRSCVPT}, ${PRST}, ${PRRR}, ${HMPR}, ${PRMST}, ${PRCN}}) with tag="推荐、home、主页", timeout=20, requires_body=true, binary_body_mode=true
+response if ${url} ~= /^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/home\/framework\/tab/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseCloudMusic_remove_ads.js", {${MY}, ${DT}, ${FX}}) with tag="底部选项卡", timeout=20, requires_body=true, binary_body_mode=true
+response if ${url} ~= /^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/page\/discovery\/resource\/show/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseCloudMusic_remove_ads.js") with tag="发现页", timeout=20, requires_body=true, binary_body_mode=true
+response if ${url} ~= /^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/position\/show\/resource/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseCloudMusic_remove_ads.js") with tag="我的页面", timeout=20, requires_body=true, binary_body_mode=true
+response if ${url} ~= /^https?:\/\/interface\d?\.music\.163\.com\/eapi\/user\/follow\/users\/mixed\/get/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/NeteaseCloudMusic_remove_ads.js") with tag="显示未关注你的人", timeout=20, requires_body=true, binary_body_mode=true
 
 [MitM]
 hostname=interface*.music.163.com

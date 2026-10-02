@@ -5,19 +5,19 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/KuaiDi100_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KuaiDi100.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https?:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do$ response-body-json-del adsplash adIsConsumable adProductId nologin_tips index_banner me_banner index_banner_shadow adshongbao adsapp_homepage_ticket_pop adsoptimizationsend adsapp_activity_ad_array adbanner adposition adShowAgainTime
+response if ${url} ~= /^https?:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do$/i then response.json.delete(["adsplash", "adIsConsumable", "adProductId", "nologin_tips", "index_banner", "me_banner", "index_banner_shadow", "adshongbao", "adsapp_homepage_ticket_pop", "adsoptimizationsend", "adsapp_activity_ad_array", "adbanner", "adposition", "adShowAgainTime"])
 
-^https?:\/\/p\.kuaidi100\.com\/apicenter\/xcx\.dox response-body-json-del data.secondMenuList
+response if ${url} ~= /^https?:\/\/p\.kuaidi100\.com\/apicenter\/xcx\.dox/i then response.json.delete("data.secondMenuList")
 
-^https?:\/\/p\.kuaidi100\.com\/advertisement\/ reject-dict
-^https?:\/\/p\.kuaidi100\.com\/e-commerce\/act\/actInfo\? reject-dict
-^https?:\/\/p\.kuaidi100\.com\/apicenter\/card\.dox reject-dict
+request if ${url} ~= /^https?:\/\/p\.kuaidi100\.com\/advertisement\//i then reject_dict(200)
+request if ${url} ~= /^https?:\/\/p\.kuaidi100\.com\/e-commerce\/act\/actInfo\?/i then reject_dict(200)
+request if ${url} ~= /^https?:\/\/p\.kuaidi100\.com\/apicenter\/card\.dox/i then reject_dict(200)
 
 [MitM]
 hostname=p.kuaidi100.com

@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BabyTree_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BabyTree.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 URL-REGEX, "^http:\/\/go\.babytree\.com\/go_pregnancy\/api\/(index_activity\/get_app_index_activity|sign\/sign_h_5)\?", REJECT-DICT
@@ -18,9 +18,9 @@ URL-REGEX, "^http:\/\/pic08\.babytreeimg\.com\/knowledge\/2022\/0923\/\w+", REJE
 URL-REGEX, "^http:\/\/plough\.babytree\.com\/plough\.do", REJECT-DICT
 
 [Script]
-http-response ^http:\/\/api\.babytree\.com\/bafconfigcenter_intf\/config\/get\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BabyTree_remove_ads.js, requires-body=true, tag=调整整体配置
-http-response ^http:\/\/go\.babytree\.com\/go_pregnancy\/api\/(app_index\/get_app_tab|cms_column\/get_column_list|feeds\/get_index_feeds_list|user\/get_user_info)\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BabyTree_remove_ads.js, requires-body=true, tag=移除各页面推广
-http-response ^http:\/\/go\.babytree\.com\/go_search\/api\/mobile_search_new\/search_index script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BabyTree_remove_ads.js, requires-body=true, tag=移除搜索列表推广
+response if ${url} ~= /^http:\/\/api\.babytree\.com\/bafconfigcenter_intf\/config\/get\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BabyTree_remove_ads.js") with tag="调整整体配置", requires_body=true
+response if ${url} ~= /^http:\/\/go\.babytree\.com\/go_pregnancy\/api\/(app_index\/get_app_tab|cms_column\/get_column_list|feeds\/get_index_feeds_list|user\/get_user_info)\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BabyTree_remove_ads.js") with tag="移除各页面推广", requires_body=true
+response if ${url} ~= /^http:\/\/go\.babytree\.com\/go_search\/api\/mobile_search_new\/search_index/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BabyTree_remove_ads.js") with tag="移除搜索列表推广", requires_body=true
 
 [MitM]
 hostname=api.babytree.com, go.babytree.com

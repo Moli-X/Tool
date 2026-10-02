@@ -5,10 +5,10 @@
 #!tag=签到
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/FollowRSS_checkin.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/FollowRSS.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Argument]
 token=input, "", tag=csrfToken, desc=这里需要输入csrfToken的值
@@ -16,7 +16,7 @@ cookie=input, "", tag=Cookie, desc=这里需要输入Cookie的值
 cron=input, "0 1 * * *", tag=定时参数, desc=这里需要输入符合CRON表达式的参数
 
 [Script]
-cron {cron} script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FollowRSS_checkin.js, tag=Follow每日签到, timeout=120, argument=[{token},{cookie}]
+cron ${cron} then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/FollowRSS_checkin.js", {${token}, ${cookie}}) with tag="Follow每日签到", timeout=120
 
 [MitM]
 hostname=api.follow.is

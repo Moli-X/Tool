@@ -5,17 +5,17 @@
 #!tag=插件管理
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/LoonGallery.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Loon.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, loon-plugin.vercel.app, PROXY
 DOMAIN, raw.githubusercontent.com, PROXY
 
 [Script]
-http-request ^https?:\/\/xn--ck8h\.com script-path=https://raw.githubusercontent.com/Loon0x00/Loon-Gallery/master/backend/gallery.js, requires-body=true, timeout=120, tag=Loon插件仓库
+request if ${url} ~= /^https?:\/\/xn--ck8h\.com/i then script("https://raw.githubusercontent.com/Loon0x00/Loon-Gallery/master/backend/gallery.js") with tag="Loon插件仓库", timeout=120, requires_body=true
 
 [MitM]
 hostname=xn--ck8h.com

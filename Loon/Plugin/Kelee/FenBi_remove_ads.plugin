@@ -5,36 +5,36 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/FenBi_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/FenBi.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/keapi\.fenbi\.com\/app\/(iphone|ipad)\/position_resource\/get_banners\? reject-dict
+request if ${url} ~= /^https:\/\/keapi\.fenbi\.com\/app\/(iphone|ipad)\/position_resource\/get_banners\?/i then reject_dict(200)
 
-^https:\/\/market-api\.fenbi\.com\/(iphone|ipad)\/v1\/assistant\/info\? reject-dict
+request if ${url} ~= /^https:\/\/market-api\.fenbi\.com\/(iphone|ipad)\/v1\/assistant\/info\?/i then reject_dict(200)
 
-^https:\/\/keapi\.fenbi\.com\/app\/(iphone|ipad)\/position_resource\/get_home_banners\?.*position_resource_type=1 mock-response-body data-type=json data="{"code":1,"msg":"","data":{"positionResourceType":1,"payload":{"items":[{"id":17868,"courseSetId":2,"content":"妹子图","imageUrl":"https://i.im.ge/2025/11/24/4DrVp0.mm.png","url":"null","redirectType":1,"ordinal":8,"createdTime":1746799144383,"startTime":1759850171000,"endTime":4070880000000,"type":0,"bizType":4}],"count":1}}}" status-code=200
+response if ${url} ~= /^https:\/\/keapi\.fenbi\.com\/app\/(iphone|ipad)\/position_resource\/get_home_banners\?.*position_resource_type=1/i then response.body.mock("json", "{\"code\":1,\"msg\":\"\",\"data\":{\"positionResourceType\":1,\"payload\":{\"items\":[{\"id\":17868,\"courseSetId\":2,\"content\":\"妹子图\",\"imageUrl\":\"https://i.im.ge/2025/11/24/4DrVp0.mm.png\",\"url\":\"null\",\"redirectType\":1,\"ordinal\":8,\"createdTime\":1746799144383,\"startTime\":1759850171000,\"endTime\":4070880000000,\"type\":0,\"bizType\":4}],\"count\":1}}}", 200)
 
-^https:\/\/keapi\.fenbi\.com\/app\/(iphone|ipad)\/position_resource\/get_home_banners\?.*position_resource_type=2 reject-dict
+request if ${url} ~= /^https:\/\/keapi\.fenbi\.com\/app\/(iphone|ipad)\/position_resource\/get_home_banners\?.*position_resource_type=2/i then reject_dict(200)
 
-^https:\/\/keapi\.fenbi\.com\/app\/iphone\/\w+\/reddot\? reject-dict
+request if ${url} ~= /^https:\/\/keapi\.fenbi\.com\/app\/iphone\/\w+\/reddot\?/i then reject_dict(200)
 
-^https:\/\/ke\.fenbi\.com\/(iphone|ipad)\/v3\/timetable\/today_with_public_episodes\? reject-dict
+request if ${url} ~= /^https:\/\/ke\.fenbi\.com\/(iphone|ipad)\/v3\/timetable\/today_with_public_episodes\?/i then reject_dict(200)
 
-^https:\/\/hera-webapp\.fenbi\.com\/(iphone|ipad)\/topic\/hotquery\/list\? reject-dict
+request if ${url} ~= /^https:\/\/hera-webapp\.fenbi\.com\/(iphone|ipad)\/topic\/hotquery\/list\?/i then reject_dict(200)
 
-^https:\/\/hera-webapp\.fenbi\.com\/(iphone|ipad)\/explore\/consts\? reject-dict
+request if ${url} ~= /^https:\/\/hera-webapp\.fenbi\.com\/(iphone|ipad)\/explore\/consts\?/i then reject_dict(200)
 
-^https:\/\/hera-webapp\.fenbi\.com\/(iphone|ipad)\/recommend\/info\? response-body-json-del data.rollingBanner
+response if ${url} ~= /^https:\/\/hera-webapp\.fenbi\.com\/(iphone|ipad)\/recommend\/info\?/i then response.json.delete("data.rollingBanner")
 
-^https:\/\/hera-webapp\.fenbi\.com\/(iphone|ipad)\/announcement\/hotquery\/list\? reject-dict
+request if ${url} ~= /^https:\/\/hera-webapp\.fenbi\.com\/(iphone|ipad)\/announcement\/hotquery\/list\?/i then reject_dict(200)
 
-^https:\/\/ke\.fenbi\.com\/(iphone|ipad)\/v3\/apps\/config\? response-body-json-del data.bottomIconInfos.position.iconDefaultUrl data.bottomIconInfos.position.iconSelectedUrl data.bottomIconInfos.position.nightModeIconDefaultUrl data.bottomIconInfos.position.nightModeIconSelectedUrl
+response if ${url} ~= /^https:\/\/ke\.fenbi\.com\/(iphone|ipad)\/v3\/apps\/config\?/i then response.json.delete(["data.bottomIconInfos.position.iconDefaultUrl", "data.bottomIconInfos.position.iconSelectedUrl", "data.bottomIconInfos.position.nightModeIconDefaultUrl", "data.bottomIconInfos.position.nightModeIconSelectedUrl"])
 
-^https:\/\/ke\.fenbi\.com\/(iphone|ipad)\/v3\/user_member\/entry\? reject-dict
-^https:\/\/market-api\.fenbi\.com\/(iphone|ipad)\/v1\/assistant\/my\? reject-dict
+request if ${url} ~= /^https:\/\/ke\.fenbi\.com\/(iphone|ipad)\/v3\/user_member\/entry\?/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/market-api\.fenbi\.com\/(iphone|ipad)\/v1\/assistant\/my\?/i then reject_dict(200)
 
 
 [MitM]

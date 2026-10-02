@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Soul_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Soul.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN-SUFFIX, soulapp.cn, DIRECT
@@ -29,13 +29,13 @@ IP-CIDR, 120.27.235.201/32, REJECT, no-resolve
 IP-CIDR, 121.196.197.147/32, REJECT, no-resolve
 
 [Rewrite]
-^https:\/\/ssp\.soulapp\.cn\/api\/q reject-dict
-^https:\/\/chat-live\.soulapp\.cn\/live\/planet\/recListV2 reject-200
+request if ${url} ~= /^https:\/\/ssp\.soulapp\.cn\/api\/q/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/chat-live\.soulapp\.cn\/live\/planet\/recListV2/i then reject(200)
 
-^https:\/\/(?:api-\w+|gateway-mobile-gray|post)\.soulapp\.cn\/(?:furion\/position\/content|hot\/soul\/rank|mobile\/app\/version\/queryIos|official\/scene\/module|teenager\/config|v2\/post\/gift\/list|v\d\/post\/homepage\/guide\/card) response-body-json-del data
+response if ${url} ~= /^https:\/\/(?:api-\w+|gateway-mobile-gray|post)\.soulapp\.cn\/(?:furion\/position\/content|hot\/soul\/rank|mobile\/app\/version\/queryIos|official\/scene\/module|teenager\/config|v2\/post\/gift\/list|v\d\/post\/homepage\/guide\/card)/i then response.json.delete("data")
 
 [Script]
-http-response ^https:\/\/(?:api-\w+|chat-live|post)\.soulapp\.cn\/(?:chat\/limitInfo|chatroom\/chatClassifyRoomList|homepage\/diamond\/position\/info|v2\/post\/recSquare\/subTabs|v6\/planet\/config) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Soul_remove_ads.js, requires-body=true, tag=移除Soul广告
+response if ${url} ~= /^https:\/\/(?:api-\w+|chat-live|post)\.soulapp\.cn\/(?:chat\/limitInfo|chatroom\/chatClassifyRoomList|homepage\/diamond\/position\/info|v2\/post\/recSquare\/subTabs|v6\/planet\/config)/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Soul_remove_ads.js") with tag="移除Soul广告", requires_body=true
 
 [MitM]
 hostname=api*.soulapp.cn, gateway-mobile-gray.soulapp.cn, post.soulapp.cn, ssp.soulapp.cn

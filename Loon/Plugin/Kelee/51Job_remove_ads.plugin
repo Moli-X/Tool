@@ -5,33 +5,33 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/51Job_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/51Job.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/appapi\.51jobapp\.com\/api\/market\/get_launch\.php\? reject-dict
+request if ${url} ~= /^https:\/\/appapi\.51jobapp\.com\/api\/market\/get_launch\.php\?/i then reject_dict(200)
 
-^https:\/\/cupid\.51jobapp\.com\/open\/operation\/get\/latest\/banner-list\? reject-dict
+request if ${url} ~= /^https:\/\/cupid\.51jobapp\.com\/open\/operation\/get\/latest\/banner-list\?/i then reject_dict(200)
 
-^https:\/\/cupid\.51jobapp\.com\/open\/noauth\/recommend\/job-tab-dynamic\? response-body-json-del resultbody.adsTabFeeds
+response if ${url} ~= /^https:\/\/cupid\.51jobapp\.com\/open\/noauth\/recommend\/job-tab-dynamic\?/i then response.json.delete("resultbody.adsTabFeeds")
 
 
-^https:\/\/cupid\.51jobapp\.com\/open\/51job-activities\/secJob\/queryHomeSecondConfigV2\? reject-dict
+request if ${url} ~= /^https:\/\/cupid\.51jobapp\.com\/open\/51job-activities\/secJob\/queryHomeSecondConfigV2\?/i then reject_dict(200)
 
-^https:\/\/cupid\.51jobapp\.com\/open\/noauth\/jobs\/detail\/sesame-competitive\/ reject-dict
+request if ${url} ~= /^https:\/\/cupid\.51jobapp\.com\/open\/noauth\/jobs\/detail\/sesame-competitive\//i then reject_dict(200)
 
-^https:\/\/cupid\.51jobapp\.com\/open\/noauth\/jobs\/job-detail\/user-rights\? reject-dict
+request if ${url} ~= /^https:\/\/cupid\.51jobapp\.com\/open\/noauth\/jobs\/job-detail\/user-rights\?/i then reject_dict(200)
 
-^https:\/\/cupid\.51jobapp\.com\/open\/user-task\/user\/task\/ response-body-json-del resultbody.availableTaskList
+response if ${url} ~= /^https:\/\/cupid\.51jobapp\.com\/open\/user-task\/user\/task\//i then response.json.delete("resultbody.availableTaskList")
 
-^https:\/\/cupid\.51jobapp\.com\/open\/resume\/strategy\/resume-build\? reject-dict
+request if ${url} ~= /^https:\/\/cupid\.51jobapp\.com\/open\/resume\/strategy\/resume-build\?/i then reject_dict(200)
 
-^https:\/\/cupid\.51jobapp\.com\/launch-hub\/open\/noauth\/popUp\/ reject-dict
-^https:\/\/cupid\.51jobapp\.com\/launch-hub\/open\/noauth\/popUp\/getHomePagePopUp\? reject-dict
+request if ${url} ~= /^https:\/\/cupid\.51jobapp\.com\/launch-hub\/open\/noauth\/popUp\//i then reject_dict(200)
+request if ${url} ~= /^https:\/\/cupid\.51jobapp\.com\/launch-hub\/open\/noauth\/popUp\/getHomePagePopUp\?/i then reject_dict(200)
 
-^https:\/\/cupid\.51jobapp\.com\/open\/tab\/good-job\/modules\? response-body-json-del resultbody.bannerList
+response if ${url} ~= /^https:\/\/cupid\.51jobapp\.com\/open\/tab\/good-job\/modules\?/i then response.json.delete("resultbody.bannerList")
 
 [MitM]
 hostname=appapi.51jobapp.com, cupid.51jobapp.com

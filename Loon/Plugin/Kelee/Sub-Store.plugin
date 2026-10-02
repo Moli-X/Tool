@@ -5,10 +5,10 @@
 #!tag=订阅管理
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Sub-Store.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Sub-Store.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, sub-store.vercel.app, PROXY
@@ -17,9 +17,9 @@ DOMAIN, sub-store.vercel.app, PROXY
 cron=input, "55 23 * * *", tag=定时参数, desc=这里需要输入符合CRON表达式的参数
 
 [Script]
-http-request ^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))) script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js, requires-body=true, timeout=120, tag=Sub-Store Core
-http-request ^https?:\/\/sub\.store script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js, requires-body=true, timeout=120, tag=Sub-Store Simple
-cron {cron} script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js, timeout=120, tag=Sub-Store Sync
+request if ${url} ~= /^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info)))/i then script("https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js") with tag="Sub-Store Core", timeout=120, requires_body=true
+request if ${url} ~= /^https?:\/\/sub\.store/i then script("https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js") with tag="Sub-Store Simple", timeout=120, requires_body=true
+cron ${cron} then script("https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js") with tag="Sub-Store Sync", timeout=120
 
 [MitM]
 hostname=sub.store

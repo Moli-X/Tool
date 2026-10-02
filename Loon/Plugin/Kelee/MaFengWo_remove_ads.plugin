@@ -5,20 +5,20 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/MaFengWo_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MaFengWo.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, advert.mafengwo.cn, REJECT
 
 [Rewrite]
-^https:\/\/mapi\.mafengwo\.cn\/discovery\/get_index\/v7\? response-body-json-jq '.data.list |= map(select(.data.business_type != "gdcpm"))'
+response if ${url} ~= /^https:\/\/mapi\.mafengwo\.cn\/discovery\/get_index\/v7\?/i then response.json.jq(".data.list |= map(select(.data.business_type != \"gdcpm\"))")
 
-^https:\/\/mapi\.mafengwo\.cn\/sales\/home\/get_header\/v3\? response-body-json-jq '.data.list[] |= ( .data |= del(.banners) )'
+response if ${url} ~= /^https:\/\/mapi\.mafengwo\.cn\/sales\/home\/get_header\/v3\?/i then response.json.jq(".data.list[] |= ( .data |= del(.banners) )")
 
-^https:\/\/mapi\.mafengwo\.cn\/user\/growth\/get_growth_tip\/v1\? reject-dict
+request if ${url} ~= /^https:\/\/mapi\.mafengwo\.cn\/user\/growth\/get_growth_tip\/v1\?/i then reject_dict(200)
 
 [MitM]
 hostname=mapi.mafengwo.cn

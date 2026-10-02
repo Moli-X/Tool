@@ -5,27 +5,27 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/BiliComic_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BiliComic.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetActivityTab reject-dict
-^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetBubbles reject-dict
-^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetCommonBanner reject-dict
-^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/SearchBanner reject-dict
-^https:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.SeasonV\d\/GetSeasonInfo reject-dict
-^https:\/\/manga\.bilibili\.com\/twirp\/bookshelf\.v\d\.Bookshelf\/ListEmptyRecommend reject-dict
-^https:\/\/manga\.bilibili\.com\/twirp\/bookshelf\.v\d\.Bookshelf\/NovelRecommend reject-dict
-^https:\/\/manga\.bilibili\.com\/twirp\/novel\.v\d\.Novel\/MoreRecommend reject-dict
-^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetBubbles reject-dict
-^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/AppInit reject-dict
-^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/ListFlash reject-dict
+request if ${url} ~= /^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetActivityTab/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetBubbles/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetCommonBanner/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/SearchBanner/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.SeasonV\d\/GetSeasonInfo/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/manga\.bilibili\.com\/twirp\/bookshelf\.v\d\.Bookshelf\/ListEmptyRecommend/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/manga\.bilibili\.com\/twirp\/bookshelf\.v\d\.Bookshelf\/NovelRecommend/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/manga\.bilibili\.com\/twirp\/novel\.v\d\.Novel\/MoreRecommend/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetBubbles/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/AppInit/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/ListFlash/i then reject_dict(200)
 
 [Script]
-http-response ^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetClassPageAllTabs script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BiliComic_remove_ads.js, requires-body=true, tag=移除顶部标签
-http-response ^https:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.User\/UCenterConf script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BiliComic_remove_ads.js, requires-body=true, tag=精简我的页面
+response if ${url} ~= /^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetClassPageAllTabs/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BiliComic_remove_ads.js") with tag="移除顶部标签", requires_body=true
+response if ${url} ~= /^https:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.User\/UCenterConf/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/BiliComic_remove_ads.js") with tag="精简我的页面", requires_body=true
 
 [MitM]
 hostname=manga.bilibili.com

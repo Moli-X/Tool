@@ -5,49 +5,49 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/QtingFM_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QtingFM.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, ad.qtfm.cn, REJECT
 DOMAIN, adlaunch.qtfm.cn, REJECT
 
 [Rewrite]
-^https:\/\/app\.qtfm\.cn\/recommendapi\/v8\/ai_assistant_point$ reject-dict
+request if ${url} ~= /^https:\/\/app\.qtfm\.cn\/recommendapi\/v8\/ai_assistant_point$/i then reject_dict(200)
 
-^https:\/\/app\.qtfm\.cn\/m-bff\/v1\/signin\/show_homepage_icon$ reject-dict
+request if ${url} ~= /^https:\/\/app\.qtfm\.cn\/m-bff\/v1\/signin\/show_homepage_icon$/i then reject_dict(200)
 
-^https:\/\/app\.qtfm\.cn\/recommendapi\/v\d\/emotion$ reject
+request if ${url} ~= /^https:\/\/app\.qtfm\.cn\/recommendapi\/v\d\/emotion$/i then reject(404)
 
-^https:\/\/search\.qtfm\.cn\/v\d\/keyword\/default$ reject
+request if ${url} ~= /^https:\/\/search\.qtfm\.cn\/v\d\/keyword\/default$/i then reject(404)
 
-^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/signin\/show_homepage_icon$ response-body-json-replace data.display_icon false
+response if ${url} ~= /^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/signin\/show_homepage_icon$/i then response.json.replace("data.display_icon", false)
 
-^https:\/\/app\.qtfm\.cn\/recommendapi\/v\d\/hotpage\? response-body-json-jq '.data.head |= map(select(.type == "IconGrid")) | .data.feeds |= map(select(.type == "Channel" or .type == "Radio" or .type == "ListenListChannel"))'
+response if ${url} ~= /^https:\/\/app\.qtfm\.cn\/recommendapi\/v\d\/hotpage\?/i then response.json.jq(".data.head |= map(select(.type == \"IconGrid\")) | .data.feeds |= map(select(.type == \"Channel\" or .type == \"Radio\" or .type == \"ListenListChannel\"))")
 
-^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/channel\/\d{6}\/playpage\/\d{8} response-body-json-del data.related_recommend data.recommend_bar
+response if ${url} ~= /^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/channel\/\d{6}\/playpage\/\d{8}/i then response.json.delete(["data.related_recommend", "data.recommend_bar"])
 
-^https:\/\/app\.qtfm\.cn\/m-bff\/v1\/user\/task\/play$ reject-dict
+request if ${url} ~= /^https:\/\/app\.qtfm\.cn\/m-bff\/v1\/user\/task\/play$/i then reject_dict(200)
 
-^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/mylistenpage response-body-json-del data.banner
+response if ${url} ~= /^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/mylistenpage/i then response.json.delete("data.banner")
 
-^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/i_listen\/guess_you_like\? reject-dict
+request if ${url} ~= /^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/i_listen\/guess_you_like\?/i then reject_dict(200)
 
-^https:\/\/recpage-c\.qtfm\.cn\/v\d\/favorites$ reject-dict
+request if ${url} ~= /^https:\/\/recpage-c\.qtfm\.cn\/v\d\/favorites$/i then reject_dict(200)
 
-^https:\/\/user\.qtfm\.cn\/u\d\/api\/v\d\/user\/following_podcaster\? reject-dict
+request if ${url} ~= /^https:\/\/user\.qtfm\.cn\/u\d\/api\/v\d\/user\/following_podcaster\?/i then reject_dict(200)
 
-^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/subscribed_channels\? response-body-json-del data.recommends
+response if ${url} ~= /^https:\/\/app\.qtfm\.cn\/m-bff\/v\d\/subscribed_channels\?/i then response.json.delete("data.recommends")
 
-^https:\/\/entry\.qtfm\.cn\/api\/v\d\/personal\/\?carrier reject-dict
+request if ${url} ~= /^https:\/\/entry\.qtfm\.cn\/api\/v\d\/personal\/\?carrier/i then reject_dict(200)
 
-^https:\/\/app\.qtfm\.cn\/m-bff\/v1\/channelpage\/\d+$ response-body-json-del data.vip_recommend data.recommend_delivery
+response if ${url} ~= /^https:\/\/app\.qtfm\.cn\/m-bff\/v1\/channelpage\/\d+$/i then response.json.delete(["data.vip_recommend", "data.recommend_delivery"])
 
-^https:\/\/search\.qtfm\.cn\/v3\/entry$ reject-dict
+request if ${url} ~= /^https:\/\/search\.qtfm\.cn\/v3\/entry$/i then reject_dict(200)
 
-^https:\/\/woqt2\.qtfm\.cn\/v2\/userConfig\? reject-dict
+request if ${url} ~= /^https:\/\/woqt2\.qtfm\.cn\/v2\/userConfig\?/i then reject_dict(200)
 
 [MitM]
 hostname=app.qtfm.cn, entry.qtfm.cn, recpage-c.qtfm.cn, user.qtfm.cn, search.qtfm.cn, woqt2.qtfm.cn

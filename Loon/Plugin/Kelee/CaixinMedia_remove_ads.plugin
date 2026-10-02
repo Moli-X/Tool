@@ -5,32 +5,32 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/CaixinMedia_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CaixinMedia.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/entities\.caixin\.com\/api\/(dataplus\/promotionHints|public\/push\/appIndex|public\/recommendNews) reject-dict
+request if ${url} ~= /^https:\/\/entities\.caixin\.com\/api\/(dataplus\/promotionHints|public\/push\/appIndex|public\/recommendNews)/i then reject_dict(200)
 
-^https:\/\/gateway\.caixin\.com\/api\/app-api\/cxAdInfo\/selectIndexAdInfo reject-dict
-^https:\/\/mappsv5\.caixin\.com\/channelv5\/article_ad_ios_info\.json reject-dict
+request if ${url} ~= /^https:\/\/gateway\.caixin\.com\/api\/app-api\/cxAdInfo\/selectIndexAdInfo/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/mappsv5\.caixin\.com\/channelv5\/article_ad_ios_info\.json/i then reject_dict(200)
 
-^https:\/\/gg\.caixin\.com\/s\?z=caixin&slot=\d+ reject-dict
+request if ${url} ~= /^https:\/\/gg\.caixin\.com\/s\?z=caixin&slot=\d+/i then reject_dict(200)
 
-^https:\/\/msgapi\.caixin\.com\/msg_api\/annmsg\/annlist reject-dict
+request if ${url} ~= /^https:\/\/msgapi\.caixin\.com\/msg_api\/annmsg\/annlist/i then reject_dict(200)
 
 [Script]
-http-response ^https:\/\/entities\.caixin\.com\/api\/dataplus\/columns script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CaixinMedia_remove_ads.js, requires-body=true, tag=移除财新数据通广告
+response if ${url} ~= /^https:\/\/entities\.caixin\.com\/api\/dataplus\/columns/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CaixinMedia_remove_ads.js") with tag="移除财新数据通广告", requires_body=true
 
-http-response ^https:\/\/gateway\.caixin\.com\/api\/app-api\/(caixinapp\/appinfo|search\/getkeyword) script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CaixinMedia_remove_ads.js, requires-body=true, tag=移除文末广告
+response if ${url} ~= /^https:\/\/gateway\.caixin\.com\/api\/app-api\/(caixinapp\/appinfo|search\/getkeyword)/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CaixinMedia_remove_ads.js") with tag="移除文末广告", requires_body=true
 
-http-response ^https:\/\/gateway\.caixin\.com\/api\/app-content\/fm\/index\/list\? script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CaixinMedia_remove_ads.js, requires-body=true, tag=移除财新FM广告
+response if ${url} ~= /^https:\/\/gateway\.caixin\.com\/api\/app-content\/fm\/index\/list\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CaixinMedia_remove_ads.js") with tag="移除财新FM广告", requires_body=true
 
-http-response ^https:\/\/gg\.caixin\.com\/s\?z=caixin&op=\d script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CaixinMedia_remove_ads.js, requires-body=true, tag=移除开屏广告
+response if ${url} ~= /^https:\/\/gg\.caixin\.com\/s\?z=caixin&op=\d/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CaixinMedia_remove_ads.js") with tag="移除开屏广告", requires_body=true
 
-http-response ^https:\/\/mappsv5\.caixin\.com\/articlev5\/\d+\/\d+\.json$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CaixinMedia_remove_ads.js, requires-body=true, tag=移除正文广告
-http-response ^https:\/\/mapps?v5\.caixin\.com\/(channelv5\/list|\/?index_page_v5\/)\w+ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CaixinMedia_remove_ads.js, requires-body=true, tag=移除正文广告
+response if ${url} ~= /^https:\/\/mappsv5\.caixin\.com\/articlev5\/\d+\/\d+\.json$/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CaixinMedia_remove_ads.js") with tag="移除正文广告", requires_body=true
+response if ${url} ~= /^https:\/\/mapps?v5\.caixin\.com\/(channelv5\/list|\/?index_page_v5\/)\w+/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/CaixinMedia_remove_ads.js") with tag="移除正文广告", requires_body=true
 
 [MitM]
 hostname=e*.caixin.com, g*.caixin.com, m*.caixin.com

@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/KuaiKanComic_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KuaiKanComic.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, ad.v3mh.com, REJECT
@@ -16,45 +16,45 @@ DOMAIN, ipv6.kkmh.com, REJECT
 DOMAIN, ipv4.kkmh.com, REJECT
 
 [Rewrite]
-^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ad\/ reject-dict
+request if ${url} ~= /^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ad\//i then reject_dict(200)
 
-^https:\/\/(cdn-)?h5\.kuaikanmanhua\.com\/user\/scene\/api\/new_user\/sign_in\/list reject-dict
+request if ${url} ~= /^https:\/\/(cdn-)?h5\.kuaikanmanhua\.com\/user\/scene\/api\/new_user\/sign_in\/list/i then reject_dict(200)
 
-^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/activities\/get reject-dict
-^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/mine\/business_config reject-dict
+request if ${url} ~= /^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/activities\/get/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/mine\/business_config/i then reject_dict(200)
 
-^https:\/\/(cdn-)?topic\.kkmh\.com\/gamecard\/v\d\/activityModule\/userSignInInfo\?activitySignInConfigId reject-dict
-^https:\/\/(cdn-)?topic\.kkmh\.com\/gamecard\/v\d\/activityModule\/fetchButtonInfo\?buttonConfigId reject-dict
-^https:\/\/(cdn-)?topic\.kkmh\.com\/gamecard\/v\d\/activityText\/getUserActivityTextInfo\?activityTextConfigId reject-dict
+request if ${url} ~= /^https:\/\/(cdn-)?topic\.kkmh\.com\/gamecard\/v\d\/activityModule\/userSignInInfo\?activitySignInConfigId/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/(cdn-)?topic\.kkmh\.com\/gamecard\/v\d\/activityModule\/fetchButtonInfo\?buttonConfigId/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/(cdn-)?topic\.kkmh\.com\/gamecard\/v\d\/activityText\/getUserActivityTextInfo\?activityTextConfigId/i then reject_dict(200)
 
-^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/kb\/comic_page_banner\/detail reject-dict
+request if ${url} ~= /^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/kb\/comic_page_banner\/detail/i then reject_dict(200)
 
-^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/fake_push\/info reject-dict
+request if ${url} ~= /^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/fake_push\/info/i then reject_dict(200)
 
-^https:\/\/(cdn-)?shop\.kkmh\.com\/mbff\/popup_administration\/page_management_popup_administration$ reject-dict
+request if ${url} ~= /^https:\/\/(cdn-)?shop\.kkmh\.com\/mbff\/popup_administration\/page_management_popup_administration$/i then reject_dict(200)
 
-^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/mine\/business_config reject-dict
-^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/banner_tip_list reject-dict
-^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/charge_tip_list reject-dict
-^https:\/\/h5\.kuaikanmanhua\.com\/v\d\/kb\/recharge_good\/list_h5 reject-dict
-^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/kb\/wallet reject-dict
+request if ${url} ~= /^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/mine\/business_config/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/banner_tip_list/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/charge_tip_list/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/h5\.kuaikanmanhua\.com\/v\d\/kb\/recharge_good\/list_h5/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/kb\/wallet/i then reject_dict(200)
 
-^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/checkin\/api\/new_user\/tab_info$ reject-dict
-^https:\/\/h5\.kuaikanmanhua\.com\/game-h5\/new-user-welfare\/index\.html reject-200
+request if ${url} ~= /^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/checkin\/api\/new_user\/tab_info$/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/h5\.kuaikanmanhua\.com\/game-h5\/new-user-welfare\/index\.html/i then reject(200)
 
-^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/platform_base\/popups_display$ reject-dict
+request if ${url} ~= /^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/platform_base\/popups_display$/i then reject_dict(200)
 
 
-^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/checkin\/task_center\/get_by_task_type reject-dict
+request if ${url} ~= /^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/checkin\/task_center\/get_by_task_type/i then reject_dict(200)
 
 [Script]
-http-response ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ironman\/comic\/recommend script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/KuaiKanComic_remove_ads.js, requires-body=true, tag=修改广告参数
+response if ${url} ~= /^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ironman\/comic\/recommend/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/KuaiKanComic_remove_ads.js") with tag="修改广告参数", requires_body=true
 
-http-response ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ironman\/discovery_v\d\/tab_list_v\d script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/KuaiKanComic_remove_ads.js, requires-body=true, tag=精简首页热门标签
+response if ${url} ~= /^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ironman\/discovery_v\d\/tab_list_v\d/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/KuaiKanComic_remove_ads.js") with tag="精简首页热门标签", requires_body=true
 
-http-response ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/homepage\/comicVideo\/v\d\/configs script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/KuaiKanComic_remove_ads.js, requires-body=true, tag=精简社区标签
+response if ${url} ~= /^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/homepage\/comicVideo\/v\d\/configs/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/KuaiKanComic_remove_ads.js") with tag="精简社区标签", requires_body=true
 
-http-response ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/unified_feed$ script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/KuaiKanComic_remove_ads.js, requires-body=true, tag=精简社区信息流
+response if ${url} ~= /^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/unified_feed$/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/KuaiKanComic_remove_ads.js") with tag="精简社区信息流", requires_body=true
 
 [MitM]
 hostname=api.kkmh.com, cdn-api.kkmh.com, social.kkmh.com, cdn-social.kkmh.com, h5.kuaikanmanhua.com, cdn-h5.kuaikanmanhua.com, pay.kkmh.com, cdn-pay.kkmh.com, shop.kkmh.com, cdn-shop.kkmh.com, topic.kkmh.com, cdn-topic.kkmh.com

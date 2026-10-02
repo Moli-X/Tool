@@ -5,19 +5,19 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/XiaoCan_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/XiaoCan.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/gw\.xiaocantech\.com\/rpc header-replace-regex methodname .*(GetBannerList|IsShowOrderAwardPopup|UserLifeShopList|BrandBannerList|GetPromotionGlobalCfg) null
+request if ${url} ~= /^https:\/\/gw\.xiaocantech\.com\/rpc/i then request.header.replace("methodname", /.*(GetBannerList|IsShowOrderAwardPopup|UserLifeShopList|BrandBannerList|GetPromotionGlobalCfg)/, "null")
 
-^https:\/\/web2\.realtech-inc\.com\/oss\/xc-app-assets\/configs\/common\/theme\.json reject-dict
+request if ${url} ~= /^https:\/\/web2\.realtech-inc\.com\/oss\/xc-app-assets\/configs\/common\/theme\.json/i then reject_dict(200)
 
-^https:\/\/sdk\.1rtb\.net\/sdk\/req_ad\? reject-dict
+request if ${url} ~= /^https:\/\/sdk\.1rtb\.net\/sdk\/req_ad\?/i then reject_dict(200)
 
-^https:\/\/gw\.xiaocantech\.com\/g\/pa reject-dict
+request if ${url} ~= /^https:\/\/gw\.xiaocantech\.com\/g\/pa/i then reject_dict(200)
 
 [MitM]
 hostname=gw.xiaocantech.com, web2.realtech-inc.com, sdk.1rtb.net

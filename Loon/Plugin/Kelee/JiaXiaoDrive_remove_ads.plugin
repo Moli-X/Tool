@@ -5,18 +5,18 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/JiaXiaoDrive_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JiaXiaoDrive.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/richmanrules\.ksedt\.com\/serverConfig\/3\/adConfig\.json reject-dict
-^https:\/\/gouche\.ksedt\.com\/config\/popup\/info$ reject-dict
-^https:\/\/richmanrules\.ksedt\.com\/intellectWaterfallBidding\/find$ reject-dict
-^https:\/\/op\.ksedt\.com\/jxedtLive\/liveIntroduceResource reject-dict
-^https:\/\/richmanrules\.ksedt\.com\/intellectWaterfall\/find$ reject-dict
-http-response ^https:\/\/api\.ksedt\.com\/api\/config\/ response-body-json-del result.homead result.h5_promotion_page result.advert_interval result.abtest_h5url result.launchApp result.goucheConfig result.gouche result.mainLiveConfig result.discover result.adSdkSwitch4testPointVideo result.adSdkSwitch4simulationExam result.examPageLoadADSwitch
+request if ${url} ~= /^https:\/\/richmanrules\.ksedt\.com\/serverConfig\/3\/adConfig\.json/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/gouche\.ksedt\.com\/config\/popup\/info$/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/richmanrules\.ksedt\.com\/intellectWaterfallBidding\/find$/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/op\.ksedt\.com\/jxedtLive\/liveIntroduceResource/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/richmanrules\.ksedt\.com\/intellectWaterfall\/find$/i then reject_dict(200)
+response if ${url} ~= /http-response/i then response.json.delete("^https:\\/\\/api\\.ksedt\\.com\\/api\\/config\\/")
 
 [MitM]
 hostname=richmanrules.ksedt.com, gouche.ksedt.com, muses.ksedt.com, op.ksedt.com, api.ksedt.com

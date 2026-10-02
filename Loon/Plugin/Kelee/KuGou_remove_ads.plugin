@@ -5,10 +5,10 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/KuGou_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KuGou.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, ads.service.kugou.com, REJECT
@@ -23,33 +23,33 @@ DOMAIN, splashimgretrybssdl.cloud.kugou.com, REJECT
 URL-REGEX, "^http:\/\/log\.stat\.kugou\.com\/mobile\/ad\.html", REJECT
 
 [Rewrite]
-^https:\/\/fx\.service\.kugou\.com\/mfx-kugoulive\/ad\/ reject-dict
-^https:\/\/gateway(retry)?\.kugou\.com\/adp\/ad\/ reject-dict
-^https:\/\/gateway(retry)?\.kugou\.com\/ads\.gateway\/ reject-dict
+request if ${url} ~= /^https:\/\/fx\.service\.kugou\.com\/mfx-kugoulive\/ad\//i then reject_dict(200)
+request if ${url} ~= /^https:\/\/gateway(retry)?\.kugou\.com\/adp\/ad\//i then reject_dict(200)
+request if ${url} ~= /^https:\/\/gateway(retry)?\.kugou\.com\/ads\.gateway\//i then reject_dict(200)
 
-^https:\/\/gateway(retry)?\.kugou\.com\/v\d\/feeds\/follow_feed_fallback reject-dict
+request if ${url} ~= /^https:\/\/gateway(retry)?\.kugou\.com\/v\d\/feeds\/follow_feed_fallback/i then reject_dict(200)
 
-^https:\/\/gateway(retry)?\.kugou\.com\/mstc\/musicsymbol\/v\d\/system\/profile reject-dict
+request if ${url} ~= /^https:\/\/gateway(retry)?\.kugou\.com\/mstc\/musicsymbol\/v\d\/system\/profile/i then reject_dict(200)
 
-^https:\/\/gateway(retry)?\.kugou\.com\/searchnofocus\/v\d\/search_no_focus_word reject-dict
+request if ${url} ~= /^https:\/\/gateway(retry)?\.kugou\.com\/searchnofocus\/v\d\/search_no_focus_word/i then reject_dict(200)
 
-^https:\/\/gateway(retry)?\.kugou\.com\/adp\/bubble\/v\d\/song_play reject-dict
+request if ${url} ~= /^https:\/\/gateway(retry)?\.kugou\.com\/adp\/bubble\/v\d\/song_play/i then reject_dict(200)
 
-^https:\/\/gateway(retry)?\.kugou\.com\/singerdiscuss\/v\d\/entrance\/comment reject-dict
-^https:\/\/gateway(retry)?\.kugou\.com\/r\/v\d\/general\/putin\/midad reject-dict
+request if ${url} ~= /^https:\/\/gateway(retry)?\.kugou\.com\/singerdiscuss\/v\d\/entrance\/comment/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/gateway(retry)?\.kugou\.com\/r\/v\d\/general\/putin\/midad/i then reject_dict(200)
 
-^https:\/\/gateway(retry)?\.kugou\.com\/ocean\/v\d\/sound\/banner reject-dict
+request if ${url} ~= /^https:\/\/gateway(retry)?\.kugou\.com\/ocean\/v\d\/sound\/banner/i then reject_dict(200)
 
-^https:\/\/gzacshow\.kugou\.com\/mfanxing-home\/cdn\/room\/index\/list_v2 reject-dict
+request if ${url} ~= /^https:\/\/gzacshow\.kugou\.com\/mfanxing-home\/cdn\/room\/index\/list_v2/i then reject_dict(200)
 
-^https:\/\/gzacshow\.kugou\.com\/mfx-rt-show\/cdn\/mo\/show\/headline reject-dict
+request if ${url} ~= /^https:\/\/gzacshow\.kugou\.com\/mfx-rt-show\/cdn\/mo\/show\/headline/i then reject_dict(200)
 
-^https:\/\/m1fxgroup\.kugou\.com\/fxsing\/yqc\/alongInfo\/getUserAlongInfo reject-dict
+request if ${url} ~= /^https:\/\/m1fxgroup\.kugou\.com\/fxsing\/yqc\/alongInfo\/getUserAlongInfo/i then reject_dict(200)
 
-^https:\/\/hwstore\.kugou\.com\/v\d\/get_store_data reject-dict
-^https:\/\/ep\.kugou\.com\/v\d\/album_shop\/get_entrance_info reject-dict
+request if ${url} ~= /^https:\/\/hwstore\.kugou\.com\/v\d\/get_store_data/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/ep\.kugou\.com\/v\d\/album_shop\/get_entrance_info/i then reject_dict(200)
 
-^https:\/\/gateway(retry)?\.kugou\.com\/ocean\/v\d\/tab\/list_v\d response-body-json-jq 'def namesToRemove:["AI帮唱","长相思2","K歌","小说","游戏"];def removeParentIfNameMatches:if type=="object"then with_entries(select(.value|(type=="object"and .name as $name|$name|IN(namesToRemove[])|not)))|map_values(removeParentIfNameMatches)else .end;removeParentIfNameMatches'
+response if ${url} ~= /^https:\/\/gateway(retry)?\.kugou\.com\/ocean\/v\d\/tab\/list_v\d/i then response.json.jq("def namesToRemove:[\"AI帮唱\",\"长相思2\",\"K歌\",\"小说\",\"游戏\"];def removeParentIfNameMatches:if type==\"object\"then with_entries(select(.value|(type==\"object\"and .name as $name|$name|IN(namesToRemove[])|not)))|map_values(removeParentIfNameMatches)else .end;removeParentIfNameMatches")
 
 [MitM]
 hostname=gateway.kugou.com, fx.service.kugou.com, hwstore.kugou.com, ep.kugou.com, gatewayretry.kugou.com, gzacshow.kugou.com, m1fxgroup.kugou.com

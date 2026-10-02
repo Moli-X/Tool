@@ -5,25 +5,25 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/KuaiDuiZuoYe_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KuaiDuiZuoYe.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN, adx.zuoyebang.com, REJECT
 
 [Rewrite]
-^https:\/\/www\.kuaiduizuoye\.com\/init\/ad\/ reject-dict
+request if ${url} ~= /^https:\/\/www\.kuaiduizuoye\.com\/init\/ad\//i then reject_dict(200)
 
-^https:\/\/www\.kuaiduizuoye\.com\/activity\/init\/checkappconfig$ reject-dict
+request if ${url} ~= /^https:\/\/www\.kuaiduizuoye\.com\/activity\/init\/checkappconfig$/i then reject_dict(200)
 
-^https:\/\/www\.kuaiduizuoye\.com\/kdapi\/conf\/appbannersv3$ reject-dict
-^https:\/\/www\.kuaiduizuoye\.com\/kdapi\/conf\/initbanner$ reject-dict
+request if ${url} ~= /^https:\/\/www\.kuaiduizuoye\.com\/kdapi\/conf\/appbannersv3$/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/www\.kuaiduizuoye\.com\/kdapi\/conf\/initbanner$/i then reject_dict(200)
 
-^https:\/\/www\.kuaiduizuoye\.com\/codesearch\/aid\/home$ response-body-json-del data.homeBannerList
+response if ${url} ~= /^https:\/\/www\.kuaiduizuoye\.com\/codesearch\/aid\/home$/i then response.json.delete("data.homeBannerList")
 
-^https:\/\/apivip\.kuaiduizuoye\.com\/viponline\/scancode\/mycard$ reject-dict
+request if ${url} ~= /^https:\/\/apivip\.kuaiduizuoye\.com\/viponline\/scancode\/mycard$/i then reject_dict(200)
 
 [MitM]
 hostname=www.kuaiduizuoye.com, apivip.kuaiduizuoye.com

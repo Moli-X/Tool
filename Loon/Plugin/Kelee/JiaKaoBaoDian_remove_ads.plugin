@@ -5,23 +5,23 @@
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.4.0(962)
+#!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/JiaKaoBaoDian_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JiaKaoBaoDian.png
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rewrite]
-^https:\/\/scs\.kakamobi\.cn\/api\/open\/v3\/advert-sdk\/ reject-dict
-^https:\/\/cheyouquan\.kakamobi\.com\/api\/open\/group\/recommend-subscribe-tag\.htm reject-dict
-^https:\/\/swallow\.kakamobi\.cn\/api\/open\/config\/get-config\.htm reject-dict
-^https:\/\/monkey\.kakamobi\.cn\/api\/open\/live\/get-recommend-live-protocol\.htm reject-dict
-^https:\/\/jiaxiao-awd\.kakamobi\.cn\/api\/h5\/v4\/home-lead-advertise\/abtest\.htm reject-dict
-^https:\/\/mcbd\.maiche\.com\/api\/open\/v3\/user\/get-popup-window\.htm reject-dict
-^https:\/\/jiakao-misc\.kakamobi\.cn\/api\/open\/my-tab-config\/selection-list\.htm reject-dict
-^https:\/\/jiakao-misc\.kakamobi\.cn\/api\/open\/my-tab-config\/banner-list\.htm reject-dict
-^https:\/\/squirrel\.kakamobi\.cn\/api\/open\/recommend-goods\/get-my-page-banner\.htm reject-dict
-^https:\/\/mcbd\.maiche\.com\/api\/open\/v2\/jiakao-business\/get-naben-advert\.htm reject-dict
-^https:\/\/monkey\.kakamobi\.cn\/api\/open\/live-room\/get-resource\.htm reject-dict
+request if ${url} ~= /^https:\/\/scs\.kakamobi\.cn\/api\/open\/v3\/advert-sdk\//i then reject_dict(200)
+request if ${url} ~= /^https:\/\/cheyouquan\.kakamobi\.com\/api\/open\/group\/recommend-subscribe-tag\.htm/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/swallow\.kakamobi\.cn\/api\/open\/config\/get-config\.htm/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/monkey\.kakamobi\.cn\/api\/open\/live\/get-recommend-live-protocol\.htm/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/jiaxiao-awd\.kakamobi\.cn\/api\/h5\/v4\/home-lead-advertise\/abtest\.htm/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/mcbd\.maiche\.com\/api\/open\/v3\/user\/get-popup-window\.htm/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/jiakao-misc\.kakamobi\.cn\/api\/open\/my-tab-config\/selection-list\.htm/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/jiakao-misc\.kakamobi\.cn\/api\/open\/my-tab-config\/banner-list\.htm/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/squirrel\.kakamobi\.cn\/api\/open\/recommend-goods\/get-my-page-banner\.htm/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/mcbd\.maiche\.com\/api\/open\/v2\/jiakao-business\/get-naben-advert\.htm/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/monkey\.kakamobi\.cn\/api\/open\/live-room\/get-resource\.htm/i then reject_dict(200)
 
 [MitM]
 hostname=jiaxiao-awd.kakamobi.cn, cheyouquan.kakamobi.com, swallow.kakamobi.cn, monkey.kakamobi.cn, mcbd.maiche.com, jiakao-misc.kakamobi.cn, squirrel.kakamobi.cn, scs.kakamobi.cn
