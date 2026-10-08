@@ -62,6 +62,7 @@ DOMAIN-WILDCARD,object-storage-*.vexxhost.net
 DOMAIN-WILDCARD,ocsp.*.amazontrust.com
 DOMAIN-WILDCARD,proxy-*.dailymotion.com
 DOMAIN-WILDCARD,rr?---??.ouo.si
+DOMAIN-WILDCARD,rum-ingest.*.signalfx.com
 DOMAIN-WILDCARD,s3-*.figma.com
 DOMAIN-WILDCARD,s3.*.wasabisys.com
 DOMAIN-WILDCARD,s?.maxstream.org
@@ -84,15 +85,15 @@ DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
 DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 
 #
-# $content-hash-v1$:7cnqRfB77U9nLupjyVpaVwHRY3fSitc_SQrZwGmeO7I$
-# $content-hash-v1$:XSnANR2ej23eV7GFbIL1wqIzrZ_522OY7Ubzre7S8X4$
+# $content-hash-v1$:Te3I2rxqrVemcH37iZZ1K1_wCy3mbYzhccHQyzHX8Hk$
+# $content-hash-v1$:mbPxnJQd_eLFh01IPkkroFETNs89FHe-cOZ8vPeBV8Y$
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
-# Last Updated: 2026-08-19T01:29:53.827Z
-# Last Updated: 2026-10-01T14:48:46.522Z
+# Last Updated: 2026-10-08T10:17:52.439Z
+# Last Updated: 2026-10-08T10:17:55.635Z
 # License: AGPL 3.0
-# Size: 4681
-# Size: 84
+# Size: 4685
+# Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
 ################## EOF ##################
@@ -1634,6 +1635,7 @@ assets.unifi-ai.com
 assets.unredacted.org
 assets.upload.io
 assets.userstyles.org
+assets.vanta.com
 assets.vantage.sh
 assets.vercel.com
 assets.video.yahoo.net
@@ -3561,6 +3563,7 @@ mui.com
 mwcm.nyt.com
 mwf-service.akamaized.net
 my-json-server.typicode.com
+n.approveit.today
 na-library.klarnaservices.com
 namedotcom-cdn.name.tools
 nas2.d.tube
@@ -3840,6 +3843,7 @@ rules1.clearurls.xyz
 rules2.clearurls.xyz
 rum-agent.na-01.cloud.solarwinds.com
 rum-cdn.perfops.net
+rum-ingest.us1.signalfx.com
 runkit-packages-static-executables.com
 runkit-packages-static.com
 rv-assets.softonic.com
@@ -4109,6 +4113,7 @@ static-www.onlyoffice.com
 static-www.sendsafely.com
 static.3dporndude.com
 static.4shared.com
+static.acm.account.sony.com
 static.ada.support
 static.addtoany.com
 static.adguardvpn.com
