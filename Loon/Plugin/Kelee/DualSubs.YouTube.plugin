@@ -6,7 +6,7 @@
 #!icon = https://github.com/DualSubs/YouTube/raw/main/src/assets/icon_rounded.png
 #!tag = 🍿️ DualSubs
 #!system = iOS,iPadOS,macOS
-#!date = 2026-10-15 02:15:01
+#!date = 2026-10-16 01:54:49
 #!version = 1.6.0
 #!system_version = 15
 
@@ -26,6 +26,7 @@ response if ${url} ~= /^https:\/\/dualsubs\.github\.io\/api\/YouTube(?:\?.*)?$/i
 ^https?:\/\/([\w-]+)\.googlevideo\.com\/initplayback(\?.*oad=.+)$ reject-img
 
 [Script]
+http-request ^https:\/\/dualsubs\.github\.io\/api\/(?:get|set|delete)(?:\?.*)?$ requires-body=1, script-path=https://github.com/NSNanoCat/PreferencePanes/releases/download/v1.3.1/api.js, tag=PreferencePanes.API
 # YouTube
 http-request ^https?:\/\/(www|m|tv)\.youtube\.com\/youtubei\/v1\/player(\?.+)?$ requires-body=1, script-path=https://github.com/DualSubs/YouTube/releases/download/v1.6.0/request.bundle.js, tag=🍿️ DualSubs.YouTube.Player.request.json, argument=[{Type},{Types},{AutoCC},{Position},{Vendor},{ShowOnly},{Storage},{LogLevel}]
 http-response ^https?:\/\/(www|m|tv)\.youtube\.com\/youtubei\/v1\/player(\?.+)?$ requires-body=1, script-path=https://github.com/DualSubs/YouTube/releases/download/v1.6.0/response.bundle.js, tag=🍿️ DualSubs.YouTube.Player.response.json, argument=[{Type},{Types},{AutoCC},{Position},{Vendor},{ShowOnly},{Storage},{LogLevel}]

@@ -8,7 +8,7 @@
 #!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/QuickSearchn.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Safari.png
-#!date=2026-10-12 15:50:18
+#!date=2026-10-16 11:03:37
 
 [Rewrite]
 
@@ -20,7 +20,6 @@ request if ${url} ~= /^https:\/\/duckduckgo\.com\/\?q=b\+([^&]+).+/i as urlMatch
 request if ${url} ~= /^https:\/\/duckduckgo\.com\/\?q=wk\+([^&]+).+/i as urlMatch then redirect(307, "https://zh.wikipedia.org/wiki/${urlMatch.1}")
 request if ${url} ~= /^https:\/\/duckduckgo\.com\/\?q=qm\+([^&]+).+/i as urlMatch then redirect(307, "https://www.qimai.cn/search/index/country/cn/search/${urlMatch.1}")
 request if ${url} ~= /^https:\/\/duckduckgo\.com\/\?q=gh\+([^&]+).+/i as urlMatch then redirect(307, "https://github.com/search?q=${urlMatch.1}")
-request if ${url} ~= /^https:\/\/duckduckgo\.com\/\?q=([^&]+).+/i as urlMatch then redirect(307, "https://www.google.com/search?q=${urlMatch.1}")
 request if ${url} ~= /^https:\/\/duckduckgo\.com\/\?q=(?!(?:bd|bdimg|gimg|b|wk|qm|gh)\+)([^&]+).+/i as urlMatch then redirect(307, "https://www.google.com/search?q=${urlMatch.1}")
 
 [MitM]
