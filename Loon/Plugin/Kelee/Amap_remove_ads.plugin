@@ -1,56 +1,33 @@
 #!name=高德地图去广告
-#!desc=过滤高德地图开屏广告、各页面推广，精简我的页面。
+#!desc=移除高德地图开屏广告、各页面推广，精简我的页面及配置文件。
 #App链接=https://apps.apple.com/app/id461703208
-#!author=RuCu6[https://github.com/RuCu6], kelv1n1n[https://github.com/kelv1n1n], 可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.5.1(998)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Amap_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Amap.png
-#!date=2026-10-02 13:57:49
-
-[Rule]
-DOMAIN, amap-aos-info-nogw.amap.com, REJECT
-DOMAIN, free-aos-cdn-image.amap.com, REJECT
-DOMAIN-SUFFIX, v.smtcdns.com, REJECT
+#!date=2026-10-19 00:01:27
 
 [Rewrite]
+^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\? response-body-json-del data.adStatementConfig data.adCustomerRetainArchitecture data.adImEntryConfig data.adVenueConfig data.adPerfSwitch data.EndNaviC3AdCard data.infoCpcReport data.hotsaleConfig data.marketing_resource_config data.coupon_risk_asac data.commonCouponSceneLog data.sug_coupon_opt data.giftEntryConfig data.splashscreen data.SplashScreenControl data.splashview_config data.feedback_banner data.TrainOrderBanner data.nearby_business_popup data.shortcut_popup_frequency data.tel_retention_popup data.hotel_activity data.taxi_activity data.hotel_privilege data.sportsActivityConfig data.activity_qingke_contry_control data.920bestwishes data.custom_consultdata.widget_guide data.free_ride data.homepage_resource_config data.home_message_guide data.hotel_tipsicon data.sur_bar data.nearby_map_entry_guide data.comment_info data.small_biz_index data.small_biz_fun data.setpagesearch data.wallet
 
-request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword\?/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/card-service-(?:car-end|route-plan)/i then reject_dict(200)
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\?/i then response.json.delete(["data.commonMaterial", "data.tipsOperationLocation", "data.resourcePlacement"])
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/homepage\?/i then response.json.delete("history_tags")
-request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/tips_adv\?/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/oss\.amap\.com\/ws\/banner\/lists\/\?/i then reject_dict(200)
+^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\? response-body-json-jq jq-path="http://10.0.0.1:5000/updatable.jq"
 
-request if ${url} ~= /^https:\/\/ai\.amap\.com\/v1\/ai_rec\//i then reject_dict(200)
-request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/aos\/main\/page\/product\/list\?/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:main-page-assets|main-page-location|ridewalk-end-fc|usr-profile-fc\/homeV2)/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/(?:mapapi\/hint_text\/offline_data|message\/notice\/list|shield\/search\/new_hotword)/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\?/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/valueadded\/weather\/v2\?/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/sns\.amap\.com\/ws\/msgbox\/pull_mp\?/i then reject_dict(200)
+^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\? response-body-json-jq 'del(.data.tipData, .data.wallet) | .data.cardList |= map(select(.dataKey == "MineNewFootprintCard" or .dataKey == "MineNewBEntranceCardV4")) | (.data.cardList[] | select(.dataKey == "MineNewBEntranceCardV4") | .content.entranceList_1) |= map(select(.id == 7 or .id == 8 or .id == 10 or .id == 17)) | (.data.cardList[] | select(.dataKey == "MineNewBEntranceCardV4") | .content.entranceList_2) |= map(select(.id == 32 or .id == 4 or .id == 9 or .id == 16 or .id == 14))'
 
-request if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:order\/car\/(?:feedback\/get_card_questions|feedback\/viptips|king_toolbox_car_bubble|remark\/satisfactionConf|rights_information)|tips\/onscene_visual_optimization)/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:pay\/web\/paySuccess\/info\/request|transportation\/diversion\/resource\/driving)/i then reject_dict(200)
-response if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/sharedtrip\/taxi\/order_detail_car_tips\?/i then response.json.delete("data.carTips.data.popupInfo")
+^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? response-body-json-del $.data.shadingWords
+^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? response-body-json-jq '.data.toolsRecommend.data.default |= map(select(.id == 102 or .id == 103 or .id == 106 or .id == 151))'
 
-[Script]
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/aos\/perception\/publicTravel\/beforeNavi\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Amap_remove_ads.js") with tag="移除路线规划推广", requires_body=true
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/bus\/plan\/integrate\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Amap_remove_ads.js") with tag="移除路线规划、导航结束页推广", requires_body=true
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/c3frontend\/(?:af-(?:hotel|launch)\/page\/main|af-nearby\/nearby)/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Amap_remove_ads.js") with tag="移除导航详情页底部酒店、处理附近页", requires_body=true
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/(?:routeInfo|routePlan)/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Amap_remove_ads.js") with tag="移除路线规划推广", requires_body=true
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/search_bff\/hotword\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Amap_remove_ads.js") with tag="移除搜索栏推广", requires_body=true
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(?:mps|search\/sp|sug|tips_operation_location)/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Amap_remove_ads.js") with tag="移除搜索详情页推广", requires_body=true
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:card-service-plan-home|main-page)/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Amap_remove_ads.js") with tag="移除首页推广", requires_body=true
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Amap_remove_ads.js") with tag="移除首页推广", requires_body=true
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Amap_remove_ads.js") with tag="移除我的页面推广", requires_body=true
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/search\/nearbyrec_smart\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Amap_remove_ads.js") with tag="移除附近页推广", requires_body=true
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Amap_remove_ads.js") with tag="移除开屏广告", requires_body=true
-response if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:car\/order\/content_info|order_web\/friendly_information)/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Amap_remove_ads.js") with tag="移除打车页推广卡片、弹窗", requires_body=true
-response if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Amap_remove_ads.js") with tag="移除打车页红点角标、天气图标", requires_body=true
-response if ${url} ~= /^https:\/\/(?:info|m5)\.amap\.com\/ws\/shield\/search\/(?:common\/coupon\/info|poi\/detail)/i then script("https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/Amap_remove_ads.js") with tag="移除导航详情页推广", requires_body=true
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-assets\? reject-dict
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-aiqs\? reject-dict
+
+^https:\/\/ai\.amap\.com\/v1\/ai_rec\/home_qs\? reject-dict
+
+^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\? reject-dict
+
+^https:\/\/m5-zb\.amap\.com\/ws\/boss\/car\/order\/content_info\? response-body-json-del data.lubanData.skin
 
 [MitM]
-hostname=*.amap.com
+hostname=m5.amap.com, ai.amap.com, m5-zb.amap.com
