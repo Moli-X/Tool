@@ -1,5 +1,5 @@
 #!name=高德地图去广告
-#!desc=过滤高德地图开屏广告、各页面推广，精简我的页面。
+#!desc=移除开屏广告、首页推荐、搜索推荐、打车广告、地点推荐及广告，精简我的页面。
 #App链接=https://apps.apple.com/app/id461703208
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
@@ -8,9 +8,11 @@
 #!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Amap_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Amap.png
-#!date=2026-10-19 09:00:57
+#!date=2026-10-19 23:24:57
 
 [Rewrite]
+request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\?/i then reject_dict(200)
+
 response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?/i then response.json.delete(["data.adStatementConfig", "data.adCustomerRetainArchitecture", "data.adImEntryConfig", "data.adVenueConfig", "data.adPerfSwitch", "data.EndNaviC3AdCard", "data.infoCpcReport", "data.hotsaleConfig", "data.marketing_resource_config", "data.coupon_risk_asac", "data.commonCouponSceneLog", "data.sug_coupon_opt", "data.giftEntryConfig", "data.splashscreen", "data.SplashScreenControl", "data.splashview_config", "data.feedback_banner", "data.TrainOrderBanner", "data.nearby_business_popup", "data.shortcut_popup_frequency", "data.tel_retention_popup", "data.hotel_activity", "data.taxi_activity", "data.hotel_privilege", "data.sportsActivityConfig", "data.activity_qingke_contry_control", "data.920bestwishes", "data.custom_consultdata.widget_guide", "data.free_ride", "data.homepage_resource_config", "data.home_message_guide", "data.hotel_tipsicon", "data.sur_bar", "data.nearby_map_entry_guide", "data.comment_info", "data.small_biz_index", "data.small_biz_fun", "data.setpagesearch", "data.wallet"])
 
 response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?/i then response.json.jq_file("https://kelee.one/Resource/JQLang/Amap/updatable.jq")
@@ -27,6 +29,8 @@ request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-
 
 request if ${url} ~= /^https:\/\/ai\.amap\.com\/v1\/ai_rec\/home_qs\?/i then reject_dict(200)
 
+response if ${url} ~= /^https:\/\/info\.amap\.com\/ws\/c3frontend\/af-search\/search\?/i then response.json.jq("if (try (.data.modules.quickLink.data.list | type) catch null) == \"array\" then .data.modules.quickLink.data.list |= map(if type == \"object\" and (.badge | type) == \"object\" and (.badge | has(\"text\")) then .badge.text = \"\" else . end) else . end")
+
 request if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?/i then reject_dict(200)
 
 response if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/boss\/car\/order\/content_info\?/i then response.json.delete(["data.lubanData.skin", "data.lubanData.kingToolBoxBubble", "data.lubanData.popup"])
@@ -39,7 +43,15 @@ request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/info_bff\/rankingCard\?/i th
 
 response if ${url} ~= /^https:\/\/center\.amap\.com\/ws\/amc\/server\/conv\/raise_list\?/i then response.json.jq("def on_path($p; $t; f): if (try (getpath($p) | type == $t) catch false) then getpath($p) |= f else . end; on_path([\"data\",\"dataList\"]; \"array\"; map(select(if type == \"object\" then (has(\"categoryId\") or ((.data | type) == \"object\" and .data.id == \"M_100007\")) else false end)))")
 
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\?/i then response.json.delete("data.wordInbox")
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\?/i then response.json.jq("(if (try (.data.shadingWords.data.regions.content | type == \"array\") catch false) then .data.shadingWords.data.regions.content |= map(select(IN(\"quickLink\",\"history\",\"searchFind\"))) else . end) | (if (try (.data.shadingWords.data.modules | type == \"object\") catch false) then .data.shadingWords.data.modules |= with_entries(select(.key == \"searchFind\")) else . end)")
+
+response if ${url} ~= /^https:\/\/info\.amap\.com\/ws\/shield\/search\/poi\/detail\?/i then response.json.delete(["data.modules.combineReviews.data.write_comment.btnRightTag", "data.modules.combineReviews.data.write_comment.title"])
+
+response if ${url} ~= /^https:\/\/info\.amap\.com\/ws\/shield\/search\/poi\/detail\?/i then response.json.jq_file("https://kelee.one/Resource/JQLang/Amap/search_poi_detail.jq")
+
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/smartui\/near_recommend\?/i then response.json.delete("data.operation_activity")
+
+request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\?/i then reject_dict(200)
 
 [MitM]
-hostname=m5.amap.com, ai.amap.com, m5-zb.amap.com, center.amap.com, sns.amap.com
+hostname=m5.amap.com, ai.amap.com, m5-zb.amap.com, center.amap.com, sns.amap.com, info.amap.com
