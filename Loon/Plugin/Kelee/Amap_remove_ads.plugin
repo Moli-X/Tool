@@ -1,33 +1,45 @@
 #!name=高德地图去广告
-#!desc=移除高德地图开屏广告、各页面推广，精简我的页面及配置文件。
+#!desc=过滤高德地图开屏广告、各页面推广，精简我的页面。
 #App链接=https://apps.apple.com/app/id461703208
 #!author=可莉🅥[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=
 #!system_version=
-#!loon_version=3.5.1(998)
+#!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Amap_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Amap.png
-#!date=2026-10-19 00:01:27
+#!date=2026-10-19 09:00:57
 
 [Rewrite]
-^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\? response-body-json-del data.adStatementConfig data.adCustomerRetainArchitecture data.adImEntryConfig data.adVenueConfig data.adPerfSwitch data.EndNaviC3AdCard data.infoCpcReport data.hotsaleConfig data.marketing_resource_config data.coupon_risk_asac data.commonCouponSceneLog data.sug_coupon_opt data.giftEntryConfig data.splashscreen data.SplashScreenControl data.splashview_config data.feedback_banner data.TrainOrderBanner data.nearby_business_popup data.shortcut_popup_frequency data.tel_retention_popup data.hotel_activity data.taxi_activity data.hotel_privilege data.sportsActivityConfig data.activity_qingke_contry_control data.920bestwishes data.custom_consultdata.widget_guide data.free_ride data.homepage_resource_config data.home_message_guide data.hotel_tipsicon data.sur_bar data.nearby_map_entry_guide data.comment_info data.small_biz_index data.small_biz_fun data.setpagesearch data.wallet
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?/i then response.json.delete(["data.adStatementConfig", "data.adCustomerRetainArchitecture", "data.adImEntryConfig", "data.adVenueConfig", "data.adPerfSwitch", "data.EndNaviC3AdCard", "data.infoCpcReport", "data.hotsaleConfig", "data.marketing_resource_config", "data.coupon_risk_asac", "data.commonCouponSceneLog", "data.sug_coupon_opt", "data.giftEntryConfig", "data.splashscreen", "data.SplashScreenControl", "data.splashview_config", "data.feedback_banner", "data.TrainOrderBanner", "data.nearby_business_popup", "data.shortcut_popup_frequency", "data.tel_retention_popup", "data.hotel_activity", "data.taxi_activity", "data.hotel_privilege", "data.sportsActivityConfig", "data.activity_qingke_contry_control", "data.920bestwishes", "data.custom_consultdata.widget_guide", "data.free_ride", "data.homepage_resource_config", "data.home_message_guide", "data.hotel_tipsicon", "data.sur_bar", "data.nearby_map_entry_guide", "data.comment_info", "data.small_biz_index", "data.small_biz_fun", "data.setpagesearch", "data.wallet"])
 
-^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\? response-body-json-jq jq-path="http://10.0.0.1:5000/updatable.jq"
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?/i then response.json.jq_file("https://kelee.one/Resource/JQLang/Amap/updatable.jq")
 
-^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\? response-body-json-jq 'del(.data.tipData, .data.wallet) | .data.cardList |= map(select(.dataKey == "MineNewFootprintCard" or .dataKey == "MineNewBEntranceCardV4")) | (.data.cardList[] | select(.dataKey == "MineNewBEntranceCardV4") | .content.entranceList_1) |= map(select(.id == 7 or .id == 8 or .id == 10 or .id == 17)) | (.data.cardList[] | select(.dataKey == "MineNewBEntranceCardV4") | .content.entranceList_2) |= map(select(.id == 32 or .id == 4 or .id == 9 or .id == 16 or .id == 14))'
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\?/i then response.json.jq("del(.data.tipData, .data.wallet) | .data.cardList |= map(select(.dataKey == \"MineNewFootprintCard\" or .dataKey == \"MineNewBEntranceCardV4\")) | (.data.cardList[] | select(.dataKey == \"MineNewBEntranceCardV4\") | .content.entranceList_1) |= map(select(.id == 7 or .id == 8 or .id == 10 or .id == 17)) | (.data.cardList[] | select(.dataKey == \"MineNewBEntranceCardV4\") | .content.entranceList_2) |= map(select(.id == 32 or .id == 4 or .id == 9 or .id == 16 or .id == 14))")
 
-^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? response-body-json-del $.data.shadingWords
-^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? response-body-json-jq '.data.toolsRecommend.data.default |= map(select(.id == 102 or .id == 103 or .id == 106 or .id == 151))'
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\?/i then response.json.delete("$.data.shadingWords")
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\?/i then response.json.jq(".data.toolsRecommend.data.default |= map(select(.id == 102 or .id == 103 or .id == 106 or .id == 151))")
 
-^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-assets\? reject-dict
-^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-aiqs\? reject-dict
+response if ${url} ~= /^https:\/\/sns\.amap\.com\/ws\/opc\/tools\/list\?/i then response.json.jq("(if (type == \"object\") and ((.data | type) == \"object\") and ((.data.category | type) == \"array\") then (.data.category[] | select(type == \"object\") | .tools | select(type == \"array\") | .[] | select(type == \"object\")) |= del(.tips) else . end) | (if (type == \"object\") and ((.data | type) == \"object\") and ((.data.category | type) == \"array\") then (.data.category[] | select(type == \"object\") | .tools | select(type == \"array\")) |= map(select(if type == \"object\" then (((.id | type) == \"string\" and .id == \"547\") or ((.id | type) == \"number\" and .id == 547)) | not else true end)) else . end)")
 
-^https:\/\/ai\.amap\.com\/v1\/ai_rec\/home_qs\? reject-dict
+request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-assets\?/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-aiqs\?/i then reject_dict(200)
 
-^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\? reject-dict
+request if ${url} ~= /^https:\/\/ai\.amap\.com\/v1\/ai_rec\/home_qs\?/i then reject_dict(200)
 
-^https:\/\/m5-zb\.amap\.com\/ws\/boss\/car\/order\/content_info\? response-body-json-del data.lubanData.skin
+request if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?/i then reject_dict(200)
+
+response if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/boss\/car\/order\/content_info\?/i then response.json.delete(["data.lubanData.skin", "data.lubanData.kingToolBoxBubble", "data.lubanData.popup"])
+
+response if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/boss\/car\/order\/content_info\?/i then response.json.jq("def on_path($p; $t; f): if (try (getpath($p) | type == $t) catch false) then getpath($p) |= f else . end; (on_path([\"data\",\"lubanData\",\"kingToolSort\",\"dataList\"]; \"array\"; map(if type == \"object\" then (if ((try (.biz | type) catch null) == \"object\" and (.biz | has(\"kingToolIdList\"))) then (.biz.kingToolIdList |= (if type == \"array\" then map(select(IN(\"dache_toolbox_GDIntercity\",\"dache_toolbox_hitch\",\"dache_toolbox_chauffeur\",\"dache_toolbox_quality\",\"dache_toolbox_charterCar\"))) else . end)) else . end) else . end))) | on_path([\"data\",\"lubanData\",\"kingToolBox\",\"dataList\"]; \"array\"; map(select(if type == \"object\" then ((try (.biz | type) catch null) == \"object\" and (try (.biz.id | IN(\"dache_toolbox_GDIntercity\",\"dache_toolbox_hitch\",\"dache_toolbox_chauffeur\",\"dache_toolbox_quality\",\"dache_toolbox_charterCar\")) catch false)) else false end)))")
+
+response if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/amap\/hitch\/passenger\/content_info\?/i then response.json.delete("data.lubanData.banner")
+
+request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/info_bff\/rankingCard\?/i then reject_dict(200)
+
+response if ${url} ~= /^https:\/\/center\.amap\.com\/ws\/amc\/server\/conv\/raise_list\?/i then response.json.jq("def on_path($p; $t; f): if (try (getpath($p) | type == $t) catch false) then getpath($p) |= f else . end; on_path([\"data\",\"dataList\"]; \"array\"; map(select(if type == \"object\" then (has(\"categoryId\") or ((.data | type) == \"object\" and .data.id == \"M_100007\")) else false end)))")
+
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\?/i then response.json.delete("data.wordInbox")
 
 [MitM]
-hostname=m5.amap.com, ai.amap.com, m5-zb.amap.com
+hostname=m5.amap.com, ai.amap.com, m5-zb.amap.com, center.amap.com, sns.amap.com
