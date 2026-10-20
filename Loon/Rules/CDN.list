@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4795
+# 规则统计: 4797
 
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,cdn-msp.18comic.org
@@ -88,14 +88,14 @@ DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
 DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 
 #
-# $content-hash-v1$:H3gONQNoDjU99BRyHnZGZMI638YWNDtF0lFZv7rqQk0$
+# $content-hash-v1$:2Ts2l-hGItGkhJyli_jXXwez6GxeIRDxMoMdnb1UZgE$
 # $content-hash-v1$:Te3I2rxqrVemcH37iZZ1K1_wCy3mbYzhccHQyzHX8Hk$
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-10-08T10:17:52.439Z
-# Last Updated: 2026-10-19T06:11:54.136Z
+# Last Updated: 2026-10-20T10:58:08.338Z
 # License: AGPL 3.0
-# Size: 4695
+# Size: 4697
 # Size: 85
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -3547,6 +3547,7 @@ megapx-assets.dcard.tw
 melonbooks.akamaized.net
 meteorclient.com
 metrics.kapa.ai
+metrics.manus.im
 mgx-backend-cdn.metadl.com
 micro.rubiconproject.com
 mintlify.b-cdn.net
@@ -4108,6 +4109,7 @@ static-media.fox.com
 static-mh.content.disney.io
 static-oforms.onlyoffice.com
 static-overlay.ubisoft.com
+static-page.tp-link.com
 static-production.npmjs.com
 static-r.kamihimeproject.net
 static-r2.gear4music.com
