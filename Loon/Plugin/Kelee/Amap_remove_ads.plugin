@@ -8,7 +8,7 @@
 #!loon_version=3.4.0(962)
 #!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Amap_remove_ads.plugin
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Amap.png
-#!date=2026-10-19 23:24:57
+#!date=2026-10-20 12:06:08
 
 [Rewrite]
 request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\?/i then reject_dict(200)
@@ -44,6 +44,8 @@ request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/info_bff\/rankingCard\?/i th
 response if ${url} ~= /^https:\/\/center\.amap\.com\/ws\/amc\/server\/conv\/raise_list\?/i then response.json.jq("def on_path($p; $t; f): if (try (getpath($p) | type == $t) catch false) then getpath($p) |= f else . end; on_path([\"data\",\"dataList\"]; \"array\"; map(select(if type == \"object\" then (has(\"categoryId\") or ((.data | type) == \"object\" and .data.id == \"M_100007\")) else false end)))")
 
 response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\?/i then response.json.jq("(if (try (.data.shadingWords.data.regions.content | type == \"array\") catch false) then .data.shadingWords.data.regions.content |= map(select(IN(\"quickLink\",\"history\",\"searchFind\"))) else . end) | (if (try (.data.shadingWords.data.modules | type == \"object\") catch false) then .data.shadingWords.data.modules |= with_entries(select(.key == \"searchFind\")) else . end)")
+
+response if ${url} ~= /^https:\/\/info\.amap\.com\/ws\/shield\/search_business\/process\/middleLayer\/sug\?/i then response.json.jq(".tip_list |= map(select(.tip.task_tag == \"common_content_general\" or .tip.task_tag == \"sp\"))")
 
 response if ${url} ~= /^https:\/\/info\.amap\.com\/ws\/shield\/search\/poi\/detail\?/i then response.json.delete(["data.modules.combineReviews.data.write_comment.btnRightTag", "data.modules.combineReviews.data.write_comment.title"])
 
