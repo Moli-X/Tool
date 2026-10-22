@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 967
+# 规则统计: 978
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 961
-#Update content: 新增拦截哔咔漫画广告接口与展示页域名2条，fix #204，感谢@0xLac
-#Update time: 2026-09-21 21:56:59 UTC+8
+#Total lines: 972
+#Update content: 新增海信与乐播广告拦截并调整会员推广分类
+#Update time: 2026-10-22 21:27:09 UTC+8
 #Version: 1.7.8-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -22,6 +22,8 @@
 .abtest-ch.snssdk.com,Ads_AWAvenue
 .ad-api.4pyun.com,Ads_AWAvenue
 .ad-cdn.qingting.fm,Ads_AWAvenue
+.ad-cmp.hismarttv.com,Ads_AWAvenue
+.ad-download.hismarttv.com,Ads_AWAvenue
 .ad-files.4pyun.com,Ads_AWAvenue
 .ad-scope.com,Ads_AWAvenue
 .ad-scope.com.cn,Ads_AWAvenue
@@ -303,6 +305,7 @@
 .bj-td-menta-01-callback.advlion.com,Ads_AWAvenue
 .bj.ad.track.66mobi.com,Ads_AWAvenue
 .books-analytics-events.apple.com,Ads_AWAvenue
+.boost-cmp.hismarttv.com,Ads_AWAvenue
 .bootpreload.uve.weibo.com,Ads_AWAvenue
 .brandadsstatic.vivo.com.cn,Ads_AWAvenue
 .browser.events.data.msn.cn,Ads_AWAvenue
@@ -409,6 +412,7 @@
 .fxgate.baidu.com,Ads_AWAvenue
 .g-adnet.hiaiabc.com,Ads_AWAvenue
 .g-staic.ganjingworld.com,Ads_AWAvenue
+.g.cn.miaozhen.com,Ads_AWAvenue
 .g.dtv.cn.miaozhen.com,Ads_AWAvenue
 .g.fancyapi.com,Ads_AWAvenue
 .g2.ganjing.world,Ads_AWAvenue
@@ -484,6 +488,7 @@
 .img-x.jd.com,Ads_AWAvenue
 .img.adnyg.com.w.kunlungr.com,Ads_AWAvenue
 .img2.360buyimg.com,Ads_AWAvenue
+.imp-cmp.hismarttv.com,Ads_AWAvenue
 .impression-asia.chinaliftoff.io,Ads_AWAvenue
 .impression-asia.liftoff.io,Ads_AWAvenue
 .impression.appsflyer.com,Ads_AWAvenue
@@ -530,6 +535,7 @@
 .lives.l.ott.video.qq.com,Ads_AWAvenue
 .livewebbs2pcdn.msstatic.com,Ads_AWAvenue
 .lm10111.jtrincc.cn,Ads_AWAvenue
+.loading-cmp.hismarttv.com,Ads_AWAvenue
 .log-api-mn.huxiu.com,Ads_AWAvenue
 .log-api.huxiu.com,Ads_AWAvenue
 .log-api.pangolin-sdk-toutiao-b.com,Ads_AWAvenue
@@ -619,6 +625,7 @@
 .ms4.applovin.com,Ads_AWAvenue
 .ms4.applvn.com,Ads_AWAvenue
 .msdk.voiceads.cn,Ads_AWAvenue
+.msg-cmp.hismarttv.com,Ads_AWAvenue
 .mssdk.volces.com,Ads_AWAvenue
 .mssdk.zijieapi.com,Ads_AWAvenue
 .mtj.baidu.com,Ads_AWAvenue
@@ -668,6 +675,7 @@
 .pagead2.googleadservices.com,Ads_AWAvenue
 .pagead2.googlesyndication.com,Ads_AWAvenue
 .pangolin-sdk-toutiao-b.com,Ads_AWAvenue
+.paster-cmp.hismarttv.com,Ads_AWAvenue
 .pay.sboot.cn,Ads_AWAvenue
 .pcdn.xmcdn.com,Ads_AWAvenue
 .pcdn.yximgs.com,Ads_AWAvenue
@@ -697,6 +705,7 @@
 .qn-cdnfile1pcdn.msstatic.com,Ads_AWAvenue
 .qqdata.ab.qq.com,Ads_AWAvenue
 .qzs.gdtimg.com,Ads_AWAvenue
+.recmd-cmp.hismarttv.com,Ads_AWAvenue
 .recommend-drcn.hms.dbankcloud.cn,Ads_AWAvenue
 .report.dxunion.cn,Ads_AWAvenue
 .report.tencentmusic.com,Ads_AWAvenue
@@ -707,6 +716,7 @@
 .res2.hubcloud.com.cn,Ads_AWAvenue
 .res3.hubcloud.com.cn,Ads_AWAvenue
 .resolve.umeng.com,Ads_AWAvenue
+.resource-cmp.hismarttv.com,Ads_AWAvenue
 .review.gdtimg.com,Ads_AWAvenue
 .rlog.popin.cc,Ads_AWAvenue
 .rms-drcn.platform.dbankcloud.cn,Ads_AWAvenue
@@ -902,6 +912,7 @@
 .v2-ad.video.yximgs.com,Ads_AWAvenue
 .v2-api-channel-launcher.hismarttv.com,Ads_AWAvenue
 .v2.gdt.qq.com,Ads_AWAvenue
+.v2.reachmax.cn,Ads_AWAvenue
 .v2mi.gdt.qq.com,Ads_AWAvenue
 .v3-ad.video.yximgs.com,Ads_AWAvenue
 .v3.gdt.qq.com,Ads_AWAvenue
