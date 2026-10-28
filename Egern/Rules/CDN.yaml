@@ -87,13 +87,13 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 
 #
 # $content-hash-v1$:2-A-ua7q9c1-wq44SGiChuwVtDSUsjXRsN7wZJVQiU4$
-# $content-hash-v1$:78PqsMRqNkh2DAJydR0OKDFc5MKIGZA-jvrCd0f59JM$
+# $content-hash-v1$:tPXU7t-HaA32vfRfIArd_5FiUqppqpVKy2XA3fJmpv4$
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-10-23T06:28:09.042Z
-# Last Updated: 2026-10-25T14:57:54.006Z
+# Last Updated: 2026-10-28T16:04:31.071Z
 # License: AGPL 3.0
-# Size: 4696
+# Size: 4698
 # Size: 86
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1103,6 +1103,7 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 .static.gartner.com
 .static.mega.co.nz
 .static.microsoft
+.static.pub
 .static.skymavis.com
 .static2cdn.hubspot.com
 .statically.io
@@ -3299,6 +3300,7 @@ imgs3.hcaptcha.com
 imgsrc.dmm.com
 imgsrv.crunchyroll.com
 imgssl.constantcontact.com
+imgur.la
 import-cdn.default.com
 ims.windy.com
 info.cloudflare.com
