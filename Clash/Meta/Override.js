@@ -82,13 +82,13 @@
   <meta name="route-pattern" content="/:user_id/:repository/raw/*name(/*path)" data-turbo-transient>
   <meta name="route-controller" content="blob" data-turbo-transient>
   <meta name="route-action" content="raw" data-turbo-transient>
-  <meta name="fetch-nonce" content="v2:a6b7f4e4-765c-f17a-2cb7-96880bb23db2">
+  <meta name="fetch-nonce" content="v2:3f68092d-4d02-276a-300f-5c39716472dd">
 
     
   <meta name="current-catalog-service-hash" content="f3abb0cc802f3d7b95fc8762b94bdcb13bf39634c40c357301c4aa1d67a256fb">
 
 
-  <meta name="request-id" content="681E:3B148D:1E8A53:272A49:6AF0B92A" data-turbo-transient="true" /><meta name="html-safe-nonce" content="17b45a1d7fdf9bfb195557b4162cee3b0454ec84884b4140a592ba3092de9053" data-turbo-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6bnVsbCwicmVxdWVzdF9pZCI6IjY4MUU6M0IxNDhEOjFFOEE1MzoyNzJBNDk6NkFGMEI5MkEiLCJ2aXNpdG9yX2lkIjoiOTAzNTc4OTI3MzI3NjY2MDAxMCIsInJlZ2lvbl9lZGdlIjoiaWFkIiwicmVnaW9uX3JlbmRlciI6ImNlbnRyYWx1cyJ9" data-turbo-transient="true" /><meta name="visitor-hmac" content="963ece38a6d481b61694b71d7e1cde4d432d714d793917438c6ffb9d9d45df77" data-turbo-transient="true" />
+  <meta name="request-id" content="6447:37F5F6:2187D86:2C5B2D1:6AF17020" data-turbo-transient="true" /><meta name="html-safe-nonce" content="b80eeee932be5e35e38275e73a6365837d0f1bee15fa3348c0a14e8f7c7010f3" data-turbo-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6bnVsbCwicmVxdWVzdF9pZCI6IjY0NDc6MzdGNUY2OjIxODdEODY6MkM1QjJEMTo2QUYxNzAyMCIsInZpc2l0b3JfaWQiOiI4NjMxODAxNDcxMTM5MTQ3ODA4IiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiY2VudHJhbHVzIn0=" data-turbo-transient="true" /><meta name="visitor-hmac" content="6a88b67e3b6774ba96741d0e4b7e876924b3ce04246d2a395ad962a60cbef3c2" data-turbo-transient="true" />
 
 
     <meta name="hovercard-subject-tag" content="repository:719493765" data-turbo-transient>
@@ -195,8 +195,8 @@
 
   <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
 
-  <meta name="release" content="fe82e53c2884a0a2c633253fb5071bb9dbb8e59b" data-turbo-track="reload">
-  <meta name="ui-target" content="canary-2">
+  <meta name="release" content="8efb4608eb43488ab62e39dc1b370294f4eb5809" data-turbo-track="reload">
+  <meta name="ui-target" content="full">
 
   <link rel="mask-icon" href="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg" color="#000000">
   <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
@@ -296,10 +296,10 @@
         <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a class="Link--inTextBlock" href="">Reload</a> to refresh your session.</span>
         <span class="js-stale-session-flash-switched" hidden>You switched accounts on another tab or window. <a class="Link--inTextBlock" href="">Reload</a> to refresh your session.</span>
 
-    <button id="icon-button-6d3740d1-c540-41c5-a339-a1bfa5fc0ffa" aria-labelledby="tooltip-c3cf851b-9ed8-48de-bdd1-16f2ca977a70" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium flash-close js-flash-close">  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x Button-visual">
+    <button id="icon-button-347714a6-4582-436d-a546-4d35b8495d8f" aria-labelledby="tooltip-70e3ee4a-2d3f-4940-a938-b9086151923e" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium flash-close js-flash-close">  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x Button-visual">
     <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
 </svg>
-</button><tool-tip id="tooltip-c3cf851b-9ed8-48de-bdd1-16f2ca977a70" for="icon-button-6d3740d1-c540-41c5-a339-a1bfa5fc0ffa" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Dismiss alert</tool-tip>
+</button><tool-tip id="tooltip-70e3ee4a-2d3f-4940-a938-b9086151923e" for="icon-button-347714a6-4582-436d-a546-4d35b8495d8f" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Dismiss alert</tool-tip>
 
 
   
