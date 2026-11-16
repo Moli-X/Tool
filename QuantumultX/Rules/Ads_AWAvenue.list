@@ -1,14 +1,14 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 973
+# 规则统计: 987
 
 
 #--------------------------------------
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 #Title: AWAvenue Ads Rule
-#Total lines: 967
-#Update content: 新增拦截识x、小黑盒、淘x等App的日志埋点与设备指纹上报域名10条
-#Update time: 2026-11-15 00:37:33 UTC+8
+#Total lines: 981
+#Update content: 新增拦截TopOn聚合与上海领页广告接口8条及崩溃日志与埋点上报域名6条
+#Update time: 2026-11-16 17:36:05 UTC+8
 #Version: 1.7.9-release
 .1500020991.vodplayer.wxamedia.com,Ads_AWAvenue
 .1500022744.vodplayer.wxamedia.com,Ads_AWAvenue
@@ -188,6 +188,7 @@
 .adx.ads.heytapmobi.com,Ads_AWAvenue
 .adx.ads.oppomobile.com,Ads_AWAvenue
 .adx.adwangmai.com,Ads_AWAvenue
+.adx.anythinktech.com,Ads_AWAvenue
 .adx.appsdk.com.cn,Ads_AWAvenue
 .adx.sogaha.cn,Ads_AWAvenue
 .adx.tuia.cn,Ads_AWAvenue
@@ -206,6 +207,7 @@
 .alicoccdnct-xn.inter.71edge.com,Ads_AWAvenue
 .alltbcsp2p.baidu.com,Ads_AWAvenue
 .alog.umeng.com,Ads_AWAvenue
+.alogsus.umeng.com,Ads_AWAvenue
 .alogus.umeng.com,Ads_AWAvenue
 .als.baidu.com,Ads_AWAvenue
 .amdcopen.m.taobao.com,Ads_AWAvenue
@@ -224,6 +226,7 @@
 .analytics.woozooo.com,Ads_AWAvenue
 .analyticsengine.s3.amazonaws.com,Ads_AWAvenue
 .analyze.lemurbrowser.com,Ads_AWAvenue
+.android.bugly.qq.com,Ads_AWAvenue
 .andrqd.play.aiseet.atianqi.com,Ads_AWAvenue
 .ap.dongdianqiu.com,Ads_AWAvenue
 .ap.dongqiudi.com,Ads_AWAvenue
@@ -290,6 +293,7 @@
 .bes-mtj.baidu.com,Ads_AWAvenue
 .bgg.baidu.com,Ads_AWAvenue
 .bianxian.com,Ads_AWAvenue
+.bid.shanghailingye.cn,Ads_AWAvenue
 .biz.weibo.com,Ads_AWAvenue
 .bj-td-menta-01-callback.advlion.com,Ads_AWAvenue
 .bj.ad.track.66mobi.com,Ads_AWAvenue
@@ -336,7 +340,10 @@
 .client-upload.cn-shanghai.log.aliyuncs.com,Ads_AWAvenue
 .clog.miguvideo.com,Ads_AWAvenue
 .cloooud.com,Ads_AWAvenue
+.cn-api-sec.anythinktech.com,Ads_AWAvenue
 .cn-api.anythinktech.com,Ads_AWAvenue
+.cn-da.anythinktech.com,Ads_AWAvenue
+.cn-tk.anythinktech.com,Ads_AWAvenue
 .cnlogs.umeng.com,Ads_AWAvenue
 .cnlogs.umengcloud.com,Ads_AWAvenue
 .cnzz.com,Ads_AWAvenue
@@ -354,6 +361,7 @@
 .d.applovin.com,Ads_AWAvenue
 .d.applvn.com,Ads_AWAvenue
 .da.anythinktech.com,Ads_AWAvenue
+.da.statisticslinks.com,Ads_AWAvenue
 .data-sdk-uuid-log.d.meituan.net,Ads_AWAvenue
 .data.ads.oppomobile.com,Ads_AWAvenue
 .data.chsmarttv.com,Ads_AWAvenue
@@ -386,7 +394,10 @@
 .ef-dongfeng.tanx.com,Ads_AWAvenue
 .engine.dcad01.com,Ads_AWAvenue
 .entry.baidu.com,Ads_AWAvenue
+.errlog.umeng.com,Ads_AWAvenue
+.errlogos.umeng.com,Ads_AWAvenue
 .errnewlog.umeng.com,Ads_AWAvenue
+.errnewlogos.umeng.com,Ads_AWAvenue
 .et-eus.w.inmobi.com,Ads_AWAvenue
 .event.tradplusad.com,Ads_AWAvenue
 .events-drcn.op.dbankcloud.cn,Ads_AWAvenue
@@ -786,6 +797,7 @@
 .sms.ads.oppomobile.com,Ads_AWAvenue
 .sngmta.qq.com,Ads_AWAvenue
 .snowflake.qq.com,Ads_AWAvenue
+.ssapi.anythinktech.com,Ads_AWAvenue
 .ssp.cloooud.com,Ads_AWAvenue
 .staging-notify.sec.miui.com,Ads_AWAvenue
 .stat.dongqiudi.com,Ads_AWAvenue
@@ -831,6 +843,7 @@
 .tj.b.qq.com,Ads_AWAvenue
 .tj.video.qq.com,Ads_AWAvenue
 .tk.anythinktech.com,Ads_AWAvenue
+.tk.statisticslinks.com,Ads_AWAvenue
 .tmead.y.qq.com,Ads_AWAvenue
 .tmeadcomm.y.qq.com,Ads_AWAvenue
 .tmfmazu-wangka.m.qq.com,Ads_AWAvenue
@@ -848,6 +861,7 @@
 .tnc3-bjlgy.bytedance.com,Ads_AWAvenue
 .tnc3-bjlgy.snssdk.com,Ads_AWAvenue
 .tnc3-bjlgy.toutiaoapi.com,Ads_AWAvenue
+.tobapplog.ctobsnssdk.com,Ads_AWAvenue
 .toblog.ctobsnssdk.com,Ads_AWAvenue
 .tpa-hcdn.iqiyi.com,Ads_AWAvenue
 .tpc.googlesyndication-cn.com,Ads_AWAvenue
