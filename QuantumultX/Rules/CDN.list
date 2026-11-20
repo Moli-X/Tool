@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4807
+# 规则统计: 4809
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,CDN
 HOST,cdn-msp.18comic.org,CDN
@@ -89,14 +89,14 @@ HOST-WILDCARD,video?-thumbnail?.liaoningmovie.net,CDN
 HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 
 #
-# $content-hash-v1$:-kBfRg_eH_avxmGI2zA0iqNvhxavUzn3BaXO4HK3ZsY$
 # $content-hash-v1$:2-A-ua7q9c1-wq44SGiChuwVtDSUsjXRsN7wZJVQiU4$
+# $content-hash-v1$:48alCUWr9U0SiDxZckpmgMpu3Fx5F7wv8R8WKr5T1MY$
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-10-23T06:28:09.042Z
-# Last Updated: 2026-11-19T07:36:54.562Z
+# Last Updated: 2026-11-20T07:40:25.044Z
 # License: AGPL 3.0
-# Size: 4706
+# Size: 4708
 # Size: 86
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -235,6 +235,7 @@ HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,CDN
 .bundle.run,CDN
 .bundle.thimatic-apps.com,CDN
 .bunnycdn.com,CDN
+.butterfly-effect-cdn.dev,CDN
 .bytebucket.org,CDN
 .bytedapm.com,CDN
 .c-dn.net,CDN
@@ -1573,6 +1574,7 @@ assets.mayoclinic.org,CDN
 assets.mcp.corespeed.io,CDN
 assets.media-platform.com,CDN
 assets.monei.com,CDN
+assets.monetizationos.com,CDN
 assets.monica.im,CDN
 assets.mozilla.social,CDN
 assets.msn.com,CDN
