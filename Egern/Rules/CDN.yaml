@@ -87,13 +87,13 @@ DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 
 #
 # $content-hash-v1$:2-A-ua7q9c1-wq44SGiChuwVtDSUsjXRsN7wZJVQiU4$
-# $content-hash-v1$:N6sxrU8ZVAcXev1dzkc0ZwEsGfQxXUDedIh7Sdnga_g$
+# $content-hash-v1$:cbzEpISkbHDVxTboK9S7as9iLAAHbyeiXjhcaNuU3mk$
 # GitHub: https://github.com/SukkaW/Surge
 # Homepage: https://ruleset.skk.moe
 # Last Updated: 2026-10-23T06:28:09.042Z
-# Last Updated: 2026-11-26T08:43:16.325Z
+# Last Updated: 2026-11-27T12:05:50.057Z
 # License: AGPL 3.0
-# Size: 4707
+# Size: 4697
 # Size: 86
 # Sukka's Ruleset - CDN Domains
 # This file contains object storage and static assets CDN domains.
@@ -1567,7 +1567,6 @@ assets.mastercard.com
 assets.matters.news
 assets.maxon.net
 assets.mayoclinic.org
-assets.mcp.corespeed.io
 assets.media-platform.com
 assets.monei.com
 assets.monetizationos.com
@@ -1860,6 +1859,7 @@ cdn-public-apis.moonlock.com
 cdn-public.sociabble.com
 cdn-raw.modrinth.com
 cdn-rdstaticassets.readdle.com
+cdn-resize-prod-com.500px.cloud
 cdn-seo.airdroid.com
 cdn-service.jp.sumologic.com
 cdn-share-sprites.flaticon.com
@@ -2200,6 +2200,7 @@ cdn.prod.ext.web.purview.azure.com
 cdn.prod.www.spiegel.de
 cdn.promo.capcomusa.com
 cdn.promotekit.com
+cdn.protect.clerk.com
 cdn.prowritingaid.com
 cdn.quadpay.com
 cdn.quickemailverification.com
@@ -2663,7 +2664,6 @@ doppler-config.cbsivideo.com
 doujin-assets.dmm.co.jp
 downloads.coindesk.com
 drop.ndtv.com
-drscdn.500px.org
 dynamic-assets.coinbase.com
 dynamic-cdn.cms.ayoba.me
 dz2cdn1.dzone.com
@@ -3494,7 +3494,6 @@ media.giphy.com
 media.glassdoor.com
 media.graphassets.com
 media.hachyderm.io
-media.hentaifreak.org
 media.identity.ui.com
 media.infosec.exchange
 media.inhumanity.com
@@ -3656,7 +3655,6 @@ p16-hera-sg.larksuitecdn.com
 p16-hera-va.larksuitecdn.com
 p2.bahamut.com.tw
 pa1.aninoapps.com
-pacdn.500px.org
 packages.jetbrains.team
 panda.dmm.com
 panel-production-libs.b-cdn.net
@@ -3801,8 +3799,6 @@ r2.1hanime.com
 r2.dejavu.moe
 r2.gear4music.com
 r2.leadsy.ai
-r2cdn.c7d.dev
-r2cdn.corespeed.io
 r2cdn.myshopline.com
 r2cdn.perplexity.ai
 r34xyz.b-cdn.net
@@ -3948,7 +3944,6 @@ sbl.onfastspring.com
 scache.vzw.com
 scache1.vzw.com
 scache2.vzw.com
-scdn.clerk.com
 scdn.line-apps.com
 schema-cf.bc0a.com
 scontent.whatsapp.net
@@ -3988,7 +3983,6 @@ secure-uploads.ui.com
 secure.beer7live.com
 secure.fanboy.co.nz
 secure.telegraph.co.uk
-segapi.clerk.com
 segment.digitalocean.com
 sellon.shiprocket.in
 sentry.ainopara.com
@@ -4010,7 +4004,6 @@ share.chessbase.com
 shell.cdn.office.net
 shields.rbtlog.dev
 shots.codepen.io
-showcase.abovemarket.com
 sig.grumpybumpers.com
 sigma9.scpwikicn.com
 signal.cdnbye.com
@@ -4047,7 +4040,6 @@ sp.streamlabs.com
 spcdn.incartupsell.com
 speedmedia2.jfrog.com
 spoprod-a.akamaihd.net
-spotlightimage.biggo.com
 sprig.figma.com
 sr-cdn-1.shiprocket.in
 ss7.vzw.com
@@ -4404,7 +4396,6 @@ static.wwto.net
 static.xgroovy.com
 static.xns.one
 static.xxxshake.com
-static.yfsp.tv
 static.zanmei.ai
 static.zaobao.com
 static.zaobao.com.sg
@@ -4628,7 +4619,6 @@ ui.trailhead.com
 uim.9uu22.com
 unavatar.io
 unleash.codeium.com
-unlimited-cdn.waifu2x.net
 unsubscribe-imgs.leavemealone.com
 uos-support-files.svc.ui.com
 updates.signal.org
